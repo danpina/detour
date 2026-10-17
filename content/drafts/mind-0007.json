@@ -13,19 +13,19 @@
     "type": "estimate",
     "title": "How much can you hold in mind?",
     "body": {
-      "question": "About how many separate chunks of information can the average adult hold in working memory at once?",
+      "question": "About how many separate chunks of information can young adults hold in working memory at once?",
       "unit": "chunks",
       "min": 1,
       "max": 20,
       "scale": "linear",
       "answer": 4,
-      "reveal": "Research since the 2000s suggests about four chunks, not the 'seven plus or minus two' from the famous 1956 paper. Chunking, like grouping digits in a phone number, is how we stretch it."
+      "reveal": "Research since 2001 suggests about four chunks, not the 'seven plus or minus two' from the famous 1956 paper."
     },
     "probes": [
       {
         "id": "mind-0007-p1",
         "kind": "estimate",
-        "question": "About how many chunks can adults hold in working memory at once?",
+        "question": "About how many chunks can young adults hold in working memory at once?",
         "answer": 4,
         "unit": "chunks",
         "min": 1,

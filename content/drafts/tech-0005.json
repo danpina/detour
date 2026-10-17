@@ -11,16 +11,16 @@
     "id": "tech-0005",
     "interest": "tech",
     "type": "fact_why",
-    "title": "The first gigabyte weighed 250 kg",
+    "title": "Gigabyte drives date back to 1980",
     "body": {
-      "claim": "In 1980, IBM's 3380 became the first hard drive to hold a gigabyte, and it weighed about 250 kg.",
-      "why": "Storage has shrunk almost unimaginably. A modern phone holds hundreds of times that capacity in a few grams, and a microSD card holds far more than the 3380 did."
+      "claim": "In 1980, hard drives that could store more than a gigabyte already existed. IBM's 3380 held 2.52 GB.",
+      "why": "IBM introduced the 3380 on 11 June 1980. NEC's N7755, also from 1980, held 1.27 GB. Both were early drives in the gigabyte era."
     },
     "probes": [
       {
         "id": "tech-0005-p1",
         "kind": "tf",
-        "question": "True or false: the first gigabyte-sized hard drive (1980) weighed about 250 kg.",
+        "question": "True or false: hard drives holding more than a gigabyte already existed in 1980.",
         "answer": true
       }
     ],
@@ -30,7 +30,7 @@
         "url": "https://en.wikipedia.org/wiki/History_of_hard_disk_drives"
       },
       {
-        "title": "IBM 3380 (Wikipedia)",
+        "title": "History of IBM magnetic disk drives (Wikipedia)",
         "url": "https://en.wikipedia.org/wiki/History_of_IBM_magnetic_disk_drives"
       }
     ],

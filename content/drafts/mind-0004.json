@@ -14,7 +14,7 @@
     "title": "A random number can steer your guess",
     "body": {
       "claim": "In a classic experiment, people who saw a high random number guessed higher than people who saw a low one.",
-      "why": "Tversky and Kahneman spun a wheel rigged to land on 10 or 65, then asked people to estimate the percentage of African countries in the United Nations. Those who saw 10 guessed lower, on average, than those who saw 65. Our estimates drift toward whatever number we saw first. This is called anchoring."
+      "why": "People spun a wheel rigged to land on 10 or 65, then estimated the percentage of African countries in the United Nations. Those who saw 10 guessed about 25% on average, and those who saw 65 guessed about 45%. Our estimates drift toward whatever number we saw first. This is called anchoring."
     },
     "probes": [
       {
