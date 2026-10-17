@@ -1,5 +1,6 @@
 import Dexie, { type Table } from "dexie";
 import type { Interest } from "@detour/content";
+import type { ReviewRow } from "./fsrs";
 
 export type Settings = {
   id: "main";
@@ -15,6 +16,9 @@ export type DetourEvent = {
   at: number;
   /** Fixed reason codes only (never free text). */
   reason?: string;
+  /** For recall answers: which probe, and whether it was answered correctly. */
+  probe_id?: string;
+  correct?: boolean;
 };
 
 export type SessionRow = {
@@ -29,6 +33,7 @@ class DetourDB extends Dexie {
   settings!: Table<Settings, string>;
   events!: Table<DetourEvent, number>;
   sessions!: Table<SessionRow, number>;
+  reviews!: Table<ReviewRow, string>;
 
   constructor() {
     super("detour");
@@ -36,6 +41,9 @@ class DetourDB extends Dexie {
       settings: "id",
       events: "++id, card_id, event, at",
       sessions: "++id, started_at",
+    });
+    this.version(2).stores({
+      reviews: "probe_id, card_id, due_at",
     });
   }
 }
@@ -48,7 +56,7 @@ try {
 }
 
 // In-memory fallbacks so the app still works when IndexedDB is blocked (rule 7).
-const mem = { settings: undefined as Settings | undefined, events: [] as DetourEvent[], sessions: [] as SessionRow[] };
+const mem = { settings: undefined as Settings | undefined, events: [] as DetourEvent[], sessions: [] as SessionRow[], reviews: new Map<string, ReviewRow>() };
 
 async function safe<T>(fn: () => Promise<T>, fallback: T): Promise<T> {
   try {
@@ -76,6 +84,23 @@ export const store = {
   async completedCardIds(): Promise<Set<string>> {
     const rows = await safe(() => db!.events.where("event").equals("complete").toArray(), [] as DetourEvent[]);
     return new Set([...rows, ...mem.events.filter((e) => e.event === "complete")].map((r) => r.card_id));
+  },
+  async getEvents(): Promise<DetourEvent[]> {
+    const rows = await safe(() => db!.events.toArray(), [] as DetourEvent[]);
+    return rows.length ? rows : [...mem.events];
+  },
+  async getReviews(): Promise<ReviewRow[]> {
+    const rows = await safe(() => db!.reviews.toArray(), [] as ReviewRow[]);
+    const merged = new Map(rows.map((r) => [r.probe_id, r]));
+    for (const [k, v] of mem.reviews) merged.set(k, v);
+    return [...merged.values()];
+  },
+  async getReview(probe_id: string): Promise<ReviewRow | undefined> {
+    return (await safe(() => db!.reviews.get(probe_id), undefined)) ?? mem.reviews.get(probe_id);
+  },
+  async putReview(r: ReviewRow): Promise<void> {
+    mem.reviews.set(r.probe_id, r);
+    await safe(() => db!.reviews.put(r).then(() => undefined), undefined);
   },
   async addSession(s: SessionRow): Promise<void> {
     mem.sessions.push(s);

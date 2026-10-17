@@ -2,29 +2,11 @@ import { useState } from "react";
 import type { Card, Probe } from "@detour/content";
 import { CardShell } from "../CardShell";
 import { SliderGuess } from "../SliderGuess";
-import { cardById } from "../../lib/content";
 import type { CardViewProps } from "./types";
 
-type Recall = Extract<Card, { type: "recall" }>;
-
 /** A probe resurfaced later. Uses the source card's image as a visual cue. */
-export function RecallCard({ card, index, total, onComplete, onNext }: CardViewProps<Recall>) {
-  const source = cardById(card.body.probe_id.replace(/-p\d$/, ""));
-  const probe = source?.probes.find((p) => p.id === card.body.probe_id);
+export function RecallCard({ card: source, probe, index, total, onComplete, onNext }: CardViewProps<Card> & { probe: Probe }) {
   const [answered, setAnswered] = useState<null | boolean>(null);
-
-  if (!source || !probe) {
-    return (
-      <CardShell card={card} index={index} total={total}>
-        <div className="absolute inset-x-0 bottom-0 z-10 p-6">
-          <p>This reminder is no longer available.</p>
-          <button onClick={onNext} className="mt-5 w-full rounded-2xl bg-white py-3.5 font-semibold text-neutral-900">
-            Next
-          </button>
-        </div>
-      </CardShell>
-    );
-  }
 
   const finish = (correct: boolean) => {
     setAnswered(correct);

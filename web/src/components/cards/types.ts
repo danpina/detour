@@ -1,4 +1,4 @@
-export type CardResult = { correct?: boolean };
+export type CardResult = { correct?: boolean; ms?: number };
 
 export type CardViewProps<C> = {
   card: C;

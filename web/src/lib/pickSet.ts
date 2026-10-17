@@ -1,12 +1,15 @@
 import type { Card, Interest } from "@detour/content";
 
+type Options = { allowSeen?: boolean; exclude?: Set<string> };
+
 /**
- * Picks `n` cards for a set. Prefers unseen cards from the chosen interests (round-robin, varying card types),
- * then unseen cards from other interests, then already-seen cards, so a set is full whenever enough cards exist.
- * Step 7 replaces this with the full session engine (reviews + new + drill).
+ * Picks `n` content cards. Prefers unseen cards from the chosen interests (round-robin in the given order,
+ * varying card types), then unseen cards from other interests, then (unless `allowSeen` is false) already-seen
+ * cards, so a set is full whenever enough cards exist. `exclude` ids are never returned.
  */
-export function pickSet(cards: Card[], interests: Interest[], seen: Set<string>, n = 5): Card[] {
-  const content = cards.filter((c) => c.type !== "drill" && c.type !== "recall");
+export function pickSet(cards: Card[], interests: Interest[], seen: Set<string>, n = 5, opts: Options = {}): Card[] {
+  const { allowSeen = true, exclude = new Set<string>() } = opts;
+  const content = cards.filter((c) => c.type !== "drill" && c.type !== "recall" && !exclude.has(c.id));
   const chosen: Card[] = [];
   const used = new Set<string>();
 
@@ -33,6 +36,6 @@ export function pickSet(cards: Card[], interests: Interest[], seen: Set<string>,
 
   take(byInterest(unseen, interests));
   take(byInterest(unseen, others));
-  take(byInterest(content, [...interests, ...others]));
+  if (allowSeen) take(byInterest(content, [...interests, ...others]));
   return chosen;
 }
