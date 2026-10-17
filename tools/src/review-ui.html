@@ -109,7 +109,7 @@ async function loadList(keep) {
 }
 
 async function openDraft(id) {
-  cur = await api('/api/drafts/' + id);
+  cur = { ...(await api('/api/drafts/' + id)), id };
   card = JSON.parse(JSON.stringify(cur.draft.card));
   sel = null; crop = { fx: 0.5, fy: 0.5, zoom: 1 };
   document.querySelectorAll('#list .item').forEach((b) => b.classList.toggle('active', b.dataset.id === id));
@@ -190,7 +190,7 @@ function renderImages(root) {
   const grid = document.createElement('div'); grid.className = 'cands'; grid.style.marginTop = '10px';
   for (const c of cands) {
     const d = document.createElement('div'); d.className = 'cand' + (c.id === sel ? ' sel' : ''); d.dataset.id = c.id;
-    d.innerHTML = `<img loading="lazy" src="${esc(candSrc(c))}" alt=""><div class="t">${esc(c.title)}</div><div class="m">${esc(c.source)} · ${esc(c.license)}</div>`;
+    d.innerHTML = `<img src="${esc(candSrc(c))}" alt=""><div class="t">${esc(c.title)}</div><div class="m">${esc(c.source)} · ${esc(c.license)}</div>`;
     d.addEventListener('click', () => pick(c));
     grid.append(d);
   }
