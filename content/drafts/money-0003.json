@@ -1,0 +1,96 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Zero reserve requirements",
+    "angle": "US banks no longer have to hold a fraction of deposits in reserve"
+  },
+  "created_at": "2026-10-17T17:31:05.880Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0003",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "Banks no longer have to keep a reserve",
+    "body": {
+      "claim": "Since March 2020, US banks have not been required to hold any fraction of their customers' deposits in reserve.",
+      "why": "The Federal Reserve cut its reserve requirement ratios to zero percent, effective 26 March 2020. Before that, larger banks had to hold up to 10% of certain deposits in reserve."
+    },
+    "probes": [
+      {
+        "id": "money-0003-p1",
+        "kind": "tf",
+        "question": "True or false: US banks are currently required to hold 10% of deposits in reserve.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Federal Reserve Board: press release, 15 March 2020",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315b.htm"
+      },
+      {
+        "title": "Reserve requirement (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Reserve_requirement"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Federal Reserve building in Washington D.C., or an illustration of a bank vault",
+    "keywords": [
+      "Federal Reserve",
+      "Eccles Building",
+      "bank vault"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:32:12Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315b.htm",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Reserve_requirement",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The Fed cut reserve requirement ratios to zero percent, effective 26 March 2020",
+        "verdict": "pass",
+        "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315b.htm",
+        "quote": "reduced reserve requirement ratios to zero percent effective on March 26",
+        "note": "Wikipedia's US section gives March 27 in one place but also states March 26."
+      },
+      {
+        "claim": "Since March 2020 US banks are not required to hold any fraction of deposits in reserve",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Reserve_requirement",
+        "quote": "reduced reserve requirement ratios to zero percent effective March 26, 2020"
+      },
+      {
+        "claim": "Before that, larger banks had to hold up to 10% of certain deposits",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Reserve_requirement",
+        "quote": "3% for banks up to $122.3 million, and 10% thereafter"
+      },
+      {
+        "claim": "Probe: US banks are not currently required to hold 10% (answer false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Reserve_requirement",
+        "quote": "reduced reserve requirement ratios to zero percent effective March 26, 2020"
+      },
+      {
+        "claim": "Press release is dated 15 March 2020 (source title)",
+        "verdict": "unverified",
+        "note": "Fetched text confirmed content but date of release not shown in extract; URL contains 20200315."
+      }
+    ],
+    "overall": "flagged"
+  }
+}

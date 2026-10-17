@@ -1,0 +1,123 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "The first computer bug",
+    "angle": "A real moth in a relay, and why the joke worked"
+  },
+  "created_at": "2026-10-17T17:31:05.880Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0003",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "A real moth in a computer",
+    "body": {
+      "claim": "Around 1947, operators of the Harvard Mark II computer found a moth stuck in a relay and taped it into their logbook.",
+      "why": "The note called it the 'first actual case of bug being found'. The joke worked because engineers already used 'bug' for technical glitches: Thomas Edison used the word that way in the 1870s. The moth was just a literal one."
+    },
+    "probes": [
+      {
+        "id": "tech-0003-p1",
+        "kind": "mcq",
+        "question": "What was found stuck in the Harvard Mark II's relay in 1947?",
+        "options": [
+          "A moth",
+          "A beetle",
+          "A spider",
+          "A wire"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0003-p2",
+        "kind": "tf",
+        "question": "True or false: the word 'bug' for a technical glitch was invented in 1947.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Smithsonian National Museum of American History: Log book with computer bug",
+        "url": "https://americanhistory.si.edu/collections/search/object/nmah_334663"
+      },
+      {
+        "title": "Software bug (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Software_bug"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Harvard Mark II logbook page with the moth, or a moth on a surface",
+    "keywords": [
+      "computer bug",
+      "Harvard Mark II",
+      "moth logbook",
+      "Grace Hopper"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:32:05Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://americanhistory.si.edu/collections/search/object/nmah_334663",
+        "fetched": false,
+        "error": "HTTP 403 Forbidden"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Software_bug",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1947 operators of Harvard Mark II found a moth in a relay and taped it into their logbook",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Software_bug",
+        "quote": "The moth was removed and taped into the logbook with the note \"First actual case of bug being found.\"",
+        "note": "Source says c. 1947 and relay (fetched summary); Smithsonian page not fetchable."
+      },
+      {
+        "claim": "The note read 'First actual case of bug being found'",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Software_bug",
+        "quote": "First actual case of bug being found."
+      },
+      {
+        "claim": "Engineers already called technical glitches 'bugs' by the time of the moth",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Software_bug",
+        "quote": "the story shows the word was already common in computing at the time"
+      },
+      {
+        "claim": "Thomas Edison used 'bug' that way in the 1870s",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Software_bug",
+        "quote": "Edison (1878): In a letter to an associate, Thomas Edison described \"Bugs\"",
+        "note": "1878 letter; fits 1870s."
+      },
+      {
+        "claim": "The moth was the first literal bug in a computer",
+        "verdict": "unverified",
+        "note": "Source only gives the logbook's own phrase 'first actual case'. Suggest: 'The logbook called it the first actual case of a bug being found.'"
+      },
+      {
+        "claim": "Probe 1: a moth was found in the relay in 1947",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Software_bug",
+        "quote": "Operators traced an error in the machine to a moth trapped in a relay."
+      },
+      {
+        "claim": "Probe 2: 'bug' was not invented in 1947",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Software_bug",
+        "quote": "\"Bug\" was already engineering jargon for a defect, long before electronic computers existed."
+      }
+    ],
+    "overall": "flagged"
+  }
+}

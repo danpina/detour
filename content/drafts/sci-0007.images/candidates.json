@@ -1,0 +1,81 @@
+{
+  "draft_id": "sci-0007",
+  "created_at": "2026-10-17T17:34:46.631Z",
+  "queries": [
+    "honey honeycomb honey dipper",
+    "honey",
+    "honey honeycomb"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-1438935",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "European honey bee extracts nectar.jpg",
+      "credit": "John Severns (Severnjc) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:European_honey_bee_extracts_nectar.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/European_honey_bee_extracts_nectar.jpg/960px-European_honey_bee_extracts_nectar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1620,
+      "height": 1280,
+      "alt_suggestion": "A European honey bee (Apis mellifera) extracts nectar from an Aster flower using its proboscis. Tiny hairs covering the bee's body maintain a slight electrostatic charge, causing pollen from the flowe",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss071e439835",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Wildfires just northwest of California's Eagle Lake and Honey Lake",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss071e439835",
+      "image_url": "https://images-assets.nasa.gov/image/iss071e439835/iss071e439835~medium.jpg",
+      "alt_suggestion": "iss071e439835 (Aug. 7, 2024) --- Wildfires just northwest of California's Eagle Lake and Honey Lake (far left) are pictured from the International Space Station as it orbited 260 miles above The Golde",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-201",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Dipper or Ladle with Interlocking Zigzag and Step-Fret Designs",
+      "credit": "Ceramist unknown (Ancestral Puebloan), Black-on-white West-central New Mexico / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/201",
+      "image_url": "https://www.artic.edu/iiif/2/4bc31ff3-7ee1-5d15-aeca-b563e562afa5/full/843,/0/default.jpg",
+      "alt_suggestion": "A ceramic vessel with a long handle, its bone-white surface decorated with black geometric designs."
+    },
+    {
+      "id": "wikimedia-33614",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Runny hunny.jpg",
+      "credit": "Scott Bauer, USDA ARS / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Runny_hunny.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Runny_hunny.jpg/960px-Runny_hunny.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1780,
+      "height": 2700,
+      "alt_suggestion": "Honey",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-iss019e009806",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Wakata in Service Module",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss019e009806",
+      "image_url": "https://images-assets.nasa.gov/image/iss019e009806/iss019e009806~medium.jpg",
+      "alt_suggestion": "ISS019-E-009806 (20 April 2009) --- Japan Aerospace Exploration Agency (JAXA) astronaut Koichi Wakata, Expedition 19/20 flight engineer, squeezes honey out of a tube near the galley in the Zvezda Serv",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"honey honeycomb honey dipper\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"honey\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"honey honeycomb\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

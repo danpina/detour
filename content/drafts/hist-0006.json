@@ -1,0 +1,104 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Mammoths and the pyramids",
+    "angle": "Woolly mammoths were still alive when the Great Pyramid was built"
+  },
+  "created_at": "2026-10-17T17:31:05.880Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0006",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "Mammoths and pyramids",
+    "body": {
+      "question": "When the Great Pyramid of Giza was built, were woolly mammoths still alive?",
+      "options": [
+        "Yes, some still were",
+        "No, they were long extinct"
+      ],
+      "answer": 0,
+      "reveal": "A small population of woolly mammoths survived on Wrangel Island, in the Arctic Ocean, until about 4,000 years ago. The Great Pyramid was built around 2600 BC, about 4,600 years ago."
+    },
+    "probes": [
+      {
+        "id": "hist-0006-p1",
+        "kind": "tf",
+        "question": "True or false: woolly mammoths were still alive when the Great Pyramid was built.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Woolly mammoth (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Woolly_mammoth"
+      },
+      {
+        "title": "Great Pyramid of Giza (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A woolly mammoth museum reconstruction or skeleton",
+    "keywords": [
+      "woolly mammoth",
+      "mammoth skeleton",
+      "Wrangel Island"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:32:12Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Woolly_mammoth",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A small population of woolly mammoths survived on Wrangel Island until about 4,000 years ago",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Woolly_mammoth",
+        "quote": "The last known fossil population remained on Wrangel Island in the Arctic Ocean until 4,000 years ago"
+      },
+      {
+        "claim": "Wrangel Island is 'off Siberia'",
+        "verdict": "unverified",
+        "source_url": "https://en.wikipedia.org/wiki/Woolly_mammoth",
+        "note": "Fetched text says 'in the Arctic Ocean'; 'off Siberia' not confirmed. Suggest 'in the Arctic Ocean'."
+      },
+      {
+        "claim": "The Great Pyramid was built around 2560 BC",
+        "verdict": "fail",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+        "quote": "c. 2600 BC",
+        "note": "Page gives c. 2600 BC (Ramsey 2010 study: 2613-2577 BC). Suggest 'around 2600 BC'."
+      },
+      {
+        "claim": "The Great Pyramid was built about 4,500 years ago",
+        "verdict": "fail",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+        "quote": "4626 years ago",
+        "note": "Page infobox says ~4,600 years. Suggest 'about 4,600 years ago'."
+      },
+      {
+        "claim": "Mammoths were still alive when the Great Pyramid was built (guess-first answer and probe)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Woolly_mammoth",
+        "quote": "centuries after the dawn of human civilization and the construction of the Great Pyramid and Sphinx of ancient Egypt",
+        "note": "Directly supports the headline claim."
+      }
+    ],
+    "overall": "flagged"
+  }
+}

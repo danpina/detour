@@ -1,0 +1,82 @@
+{
+  "draft_id": "hist-0006",
+  "created_at": "2026-10-17T17:34:30.037Z",
+  "queries": [
+    "woolly mammoth mammoth skeleton Wrangel Island",
+    "woolly mammoth",
+    "woolly mammoth mammoth skeleton"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-143438055",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Squelette de mammouth laineux (Mammuthus primigenius) en plastique phosphorescent.jpg",
+      "credit": "Gzen92 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Squelette_de_mammouth_laineux_(Mammuthus_primigenius)_en_plastique_phosphorescent.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Squelette_de_mammouth_laineux_%28Mammuthus_primigenius%29_en_plastique_phosphorescent.jpg/960px-Squelette_de_mammouth_laineux_%28Mammuthus_primigenius%29_en_plastique_phosphorescent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4500,
+      "height": 3000,
+      "alt_suggestion": "Woolly mammoth skeleton (Mammuthus primigenius) in phosphorescent plastic à Colmar (Haut-Rhin, France).",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-7385",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Skeletons",
+      "credit": "Giovanni Battista Piranesi Italian, 1720-1778 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/7385",
+      "image_url": "https://www.artic.edu/iiif/2/f5ef5c26-ce4d-6376-dc83-11b3e35b2229/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on heavy ivory laid paper."
+    },
+    {
+      "id": "wikimedia-4236419",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Woolly mammoth (Mammuthus primigenius) - Mauricio Antón.jpg",
+      "credit": "Mauricio Antón / Wikimedia Commons",
+      "license": "CC BY 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Woolly_mammoth_(Mammuthus_primigenius)_-_Mauricio_Ant%C3%B3n.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Woolly_mammoth_%28Mammuthus_primigenius%29_-_Mauricio_Ant%C3%B3n.jpg/960px-Woolly_mammoth_%28Mammuthus_primigenius%29_-_Mauricio_Ant%C3%B3n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1320,
+      "height": 801,
+      "alt_suggestion": "Woolly mammoths (Mammuthus primigenius) in a late Pleistocene landscape in northern Spain. (Information according to the caption of the same image in Alan Turner (2004) National Geographic Prehistoric",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-45345",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "A11: Rhode Island Parlor, c. 1820",
+      "credit": "Designed by Narcissa Niblack Thorne American, 1882–1966 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/45345",
+      "image_url": "https://www.artic.edu/iiif/2/91327516-27ec-f1cb-d0f5-debe3c9367fc/full/843,/0/default.jpg",
+      "alt_suggestion": "Miniature scale model of a large, furnished white-walled room with ornamental moulding, wooden flooring, upholstered wooden chairs, and a large decorative carpet in the floor's center."
+    },
+    {
+      "id": "wikimedia-179863650",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Skull of a woolly mammoth (Mammuthus primigenius).jpg",
+      "credit": "Suyash Dwivedi / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Skull_of_a_woolly_mammoth_(Mammuthus_primigenius).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Skull_of_a_woolly_mammoth_%28Mammuthus_primigenius%29.jpg/960px-Skull_of_a_woolly_mammoth_%28Mammuthus_primigenius%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4096,
+      "height": 2304,
+      "alt_suggestion": "skull of a woolly mammoth (Mammuthus primigenius)",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"woolly mammoth mammoth skeleton Wrangel Island\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"woolly mammoth\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"woolly mammoth mammoth skeleton\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

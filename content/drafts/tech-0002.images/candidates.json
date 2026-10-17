@@ -1,0 +1,82 @@
+{
+  "draft_id": "tech-0002",
+  "created_at": "2026-10-17T17:34:49.824Z",
+  "queries": [
+    "coffee pot Trojan Room Cambridge Computer Laboratory",
+    "coffee pot",
+    "coffee pot Trojan Room"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-88353306",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Krups koffiezetapparaat van Van Nelle, zwart, objectnr 90899-A-B.JPG",
+      "credit": "Krups / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Krups_koffiezetapparaat_van_Van_Nelle,_zwart,_objectnr_90899-A-B.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Krups_koffiezetapparaat_van_Van_Nelle%2C_zwart%2C_objectnr_90899-A-B.JPG/960px-Krups_koffiezetapparaat_van_Van_Nelle%2C_zwart%2C_objectnr_90899-A-B.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 3872,
+      "alt_suggestion": "Objectgegevens Titel: Krups koffiezetapparaat van Van Nelle, zwart Beschrijving: Krups koffiezetapparaat bestaand uit koffiezetapparaat (A) en glazen kan (B) van Van Nelle, zwart, voor 3-4 of voor 10 ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-10916",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Coffee Pot",
+      "credit": "Ansbach Pottery and Porcelain Factory, decorated in the Hague German, c. 1708-1839 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/10916",
+      "image_url": "https://www.artic.edu/iiif/2/6563399c-bf96-b55b-ee9e-781e792a240f/full/843,/0/default.jpg",
+      "alt_suggestion": "Porcelain pear-shaped coffee pot decorated with with gold bands, female mask under spout and painted with harbor landscape in colors. Domed cover is topped by a rosebud knob."
+    },
+    {
+      "id": "wikimedia-58747440",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Coffee Pot No 8473 MET DP133103.jpg",
+      "credit": "Tiffany & Co. / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coffee_Pot_No_8473_MET_DP133103.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Coffee_Pot_No_8473_MET_DP133103.jpg/960px-Coffee_Pot_No_8473_MET_DP133103.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3253,
+      "height": 3790,
+      "alt_suggestion": "American; Drawing; Drawings",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-43768",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "E25: French Bathroom and Boudoir of the Revolutionary Period, 1793–1804",
+      "credit": "Designed by Narcissa Niblack Thorne American, 1882–1966 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/43768",
+      "image_url": "https://www.artic.edu/iiif/2/5663045a-4348-200a-967c-1dea1cb4580d/full/843,/0/default.jpg",
+      "alt_suggestion": "Miniature model of a large, stately room with a circular marble tub sunk into the floor's center and fireplace at right. A central archway reveals a sitting area beyond."
+    },
+    {
+      "id": "wikimedia-124534911",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Coffee pot - 2022-08-30 - Andy Mabbett.jpg",
+      "credit": "Andy Mabbett / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coffee_pot_-_2022-08-30_-_Andy_Mabbett.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Coffee_pot_-_2022-08-30_-_Andy_Mabbett.jpg/960px-Coffee_pot_-_2022-08-30_-_Andy_Mabbett.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 4000,
+      "alt_suggestion": "Coffee pot of unidentified make and pattern, featuring an autumnal wild rose, on sale in a charity thrift shop in Boldmere, Birmingham, England.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"coffee pot Trojan Room Cambridge Computer Laboratory\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"coffee pot\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"coffee pot Trojan Room\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

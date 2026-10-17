@@ -1,0 +1,94 @@
+{
+  "draft_id": "sci-0006",
+  "created_at": "2026-10-17T17:34:45.162Z",
+  "queries": [
+    "lightning thunderstorm lightning strike",
+    "lightning",
+    "lightning thunderstorm"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-42048641",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Port and lighthouse overnight storm with lightning in Port-la-Nouvelle.jpg",
+      "credit": "Maxime Raynal from France / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg/960px-Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5681,
+      "height": 3196,
+      "alt_suggestion": "Lightning during an overnight storm at the port and lighthouse in Port-la-Nouvelle in the Aude department in southern France.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-KSC-2009-3940",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-2009-3940",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-2009-3940",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-2009-3940/KSC-2009-3940~thumb.jpg",
+      "alt_suggestion": "CAPE CANAVERAL, Fla. – A lightning strike on Launch Pad 39A at NASA's Kennedy Space Center in Florida is captured by an Operational Television camera. Eleven lightning strikes occurred within .35 mile",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-45512",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Lightning",
+      "credit": "Charles Courtry (French, 1846-1897) after Georges-Victor Hugo (French, 1867-1925) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/45512",
+      "image_url": "https://www.artic.edu/iiif/2/7123301f-fd0f-269f-ca04-e0cf47f0f1b8/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching in brown on ivory wove paper."
+    },
+    {
+      "id": "wikimedia-75048602",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "004 2018 05 14 Extremes Wetter.jpg",
+      "credit": "Friedrich Haag / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:004_2018_05_14_Extremes_Wetter.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/004_2018_05_14_Extremes_Wetter.jpg/960px-004_2018_05_14_Extremes_Wetter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4335,
+      "height": 3137,
+      "alt_suggestion": "Lightning strikes a conifer Type of meteorological phenomenon: Lightning Title Lightning Instance of type of meteorological phenomenon Part of thunderstorm",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-KSC-07pd2110",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-07pd2110",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-07pd2110",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-07pd2110/KSC-07pd2110~medium.jpg",
+      "alt_suggestion": "KENNEDY SPACE CENTER, FLA. -- A lightning strike is caught on camera during an afternoon thunderstorm at Kennedy Space Center, a common occurrence at this time of the year. In the background, the rota",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Blitze IMGP6376 wp.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Blitze IMGP6376 wp.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"lightning thunderstorm lightning strike\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"lightning\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"lightning thunderstorm\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "draft_id": "num-0001",
+  "created_at": "2026-10-17T17:34:37.916Z",
+  "queries": [
+    "birthday cake birthday candles party",
+    "birthday cake",
+    "birthday cake birthday candles"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-104025935",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wikipedia 20 birthday cake virtual party.jpg",
+      "credit": "Gnom / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wikipedia_20_birthday_cake_virtual_party.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Wikipedia_20_birthday_cake_virtual_party.jpg/960px-Wikipedia_20_birthday_cake_virtual_party.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1536,
+      "alt_suggestion": "having cake at the virtual Wikipedia 20 birthday party",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss073e0134965",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "NASA astronaut Anne McClain celebrates her 46th birthday with a cake",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss073e0134965",
+      "image_url": "https://images-assets.nasa.gov/image/iss073e0134965/iss073e0134965~medium.jpg",
+      "alt_suggestion": "iss073e0134965 (June 7, 2025) --- NASA astronaut and Expedition 73 Flight Engineer Anne McClain celebrates her 46th birthday with a cake, gifts, and cards aboard the International Space Station's Unit",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-13520",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Afternoon Tea Party",
+      "credit": "Mary Cassatt (American, 1844-1926) printed with Leroy (French, active 1876-1900) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/13520",
+      "image_url": "https://www.artic.edu/iiif/2/22eaf094-2d13-50e4-cf46-0a02c12031af/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color aquatint and drypoint, with additions in brush and gold, on ivory laid paper."
+    },
+    {
+      "id": "wikimedia-40641888",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "1 year old birthday cake.jpg",
+      "credit": "JIP / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1_year_old_birthday_cake.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/1_year_old_birthday_cake.jpg/960px-1_year_old_birthday_cake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4032,
+      "height": 3024,
+      "alt_suggestion": "A birthday cake decorated with a candle shaped like the number 1, served at a children's birthday party in Helsinki, Finland.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-9806980",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Wernher von Braun",
+      "credit": "MSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/9806980",
+      "image_url": "https://images-assets.nasa.gov/image/9806980/9806980~medium.jpg",
+      "alt_suggestion": "Dr. von Braun's 50th Birthday Party was celebrated at the Officers Club at Redstone Arsenal, Alabama on March 23, 1962. Dr. von Braun cuts his birthday cake, while congressman Bob Jones looks on.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"birthday cake birthday candles party\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"birthday cake\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"birthday cake birthday candles\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

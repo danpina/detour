@@ -1,0 +1,81 @@
+{
+  "draft_id": "mind-0002",
+  "created_at": "2026-10-17T17:34:32.335Z",
+  "queries": [
+    "basketball gorilla costume attention",
+    "basketball",
+    "basketball gorilla costume"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-66140429",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Basketball, 1. Damen-Basketball-Bundesliga, ChemCats Chemnitz LR10 by Stepro IMG 7684.jpg",
+      "credit": "Steffen Prößdorf / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Basketball,_1._Damen-Basketball-Bundesliga,_ChemCats_Chemnitz_LR10_by_Stepro_IMG_7684.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Basketball%2C_1._Damen-Basketball-Bundesliga%2C_ChemCats_Chemnitz_LR10_by_Stepro_IMG_7684.jpg/960px-Basketball%2C_1._Damen-Basketball-Bundesliga%2C_ChemCats_Chemnitz_LR10_by_Stepro_IMG_7684.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2581,
+      "height": 3872,
+      "alt_suggestion": "Basketball, 1. Damen-Basketball-Bundesliga, ChemCats Chemnitz; Abigail Asoro (9)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss003e7261",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Dezhurov shoots a basketball in Node 1 during Expedition Three",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss003e7261",
+      "image_url": "https://images-assets.nasa.gov/image/iss003e7261/iss003e7261~medium.jpg",
+      "alt_suggestion": "ISS003-E-7261 (October 2001) --- Cosmonaut Vladimir N. Dezhurov, Expedition Three flight engineer, takes a break from his duties, as he plays with a miniature basketball and net in the Unity node on t",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-796",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Atsuita karaori (Noh Costume)",
+      "credit": "Japan / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/796",
+      "image_url": "https://www.artic.edu/iiif/2/2c7b5171-f708-0832-bb41-03f4c8f06b3d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of silk and gold-leaf-over-lacquered-paper strips, warp-float faced 2:1 'z' twill weave with supplementary patterning wefts; lined with silk, plain weave; dyed with safflower, beni."
+    },
+    {
+      "id": "wikimedia-2880974",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bouncing ball strobe edit.jpg",
+      "credit": "MichaelMaggs Edit by Richard Bartz / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bouncing_ball_strobe_edit.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Bouncing_ball_strobe_edit.jpg/960px-Bouncing_ball_strobe_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1800,
+      "height": 1159,
+      "alt_suggestion": "A bouncing ball captured with a stroboscopic flash at 25 images per second. Note that the ball becomes significantly non-spherical after each bounce, especially after the first. That, along with spin ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-iss003e7145",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Culbertson slam dunks a mini basketball in Node 1 during Expedition Three",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss003e7145",
+      "image_url": "https://images-assets.nasa.gov/image/iss003e7145/iss003e7145~medium.jpg",
+      "alt_suggestion": "ISS003-E-7145 (OCTOBER 2001) --- Astronaut Frank L. Culbertson, Jr., Expedition Three mission commander, takes a break from his duties, as he plays with a miniature basketball and net in the Unity nod",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"basketball gorilla costume attention\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"basketball\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"basketball gorilla costume\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

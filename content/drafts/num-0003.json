@@ -1,0 +1,96 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Shuffling a deck of cards",
+    "angle": "52! is so large that a shuffled deck is almost surely unique"
+  },
+  "created_at": "2026-10-17T17:31:05.880Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0003",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "Your shuffled deck is probably unique",
+    "body": {
+      "claim": "Any two properly shuffled decks of 52 cards are almost certain to be in different orders.",
+      "why": "There are 52! ways to order a deck, about 8 × 10^67. With that many possible orders, two properly shuffled decks matching is almost impossible."
+    },
+    "probes": [
+      {
+        "id": "num-0003-p1",
+        "kind": "mcq",
+        "question": "Roughly how many different orders can a 52-card deck be in?",
+        "options": [
+          "About 8 × 10^67",
+          "About 52 million",
+          "About 2,700",
+          "About 10^12"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Factorial (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Factorial"
+      },
+      {
+        "title": "Shuffling (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Shuffling"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A deck of playing cards being shuffled or fanned out",
+    "keywords": [
+      "playing cards",
+      "card shuffle",
+      "deck of cards"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:32:05Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Factorial",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Shuffling",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "52! is about 8 x 10^67",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Shuffling",
+        "quote": "This is approximately 8.0658×10^67 possible orderings.",
+        "note": "Factorial page also lists 8.065817517×10^67."
+      },
+      {
+        "claim": "Chance of two proper shuffles matching is effectively zero",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Shuffling",
+        "quote": "it is exceedingly improbable that two randomly selected, truly randomized decks will be the same."
+      },
+      {
+        "claim": "A well-shuffled deck is almost certainly in an order that has never existed before",
+        "verdict": "unverified",
+        "note": "Source speaks of two random decks matching, not of all decks in history. Suggest: 'Any two properly shuffled decks are almost certain to be in different orders.'"
+      },
+      {
+        "claim": "Probe: roughly 8 x 10^67 orders",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Shuffling",
+        "quote": "There are 52 factorial (expressed in shorthand as 52!) possible orderings of the cards in a 52-card deck."
+      }
+    ],
+    "overall": "flagged"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "draft_id": "mind-0001",
+  "created_at": "2026-10-17T17:34:31.170Z",
+  "queries": [
+    "Hermann Ebbinghaus memory forgetting curve",
+    "Hermann Ebbinghaus",
+    "Hermann Ebbinghaus memory"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-132271825",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Forgetting curve and work of Ebbinghaus.png",
+      "credit": "Productive.Fish / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Forgetting_curve_and_work_of_Ebbinghaus.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Forgetting_curve_and_work_of_Ebbinghaus.png/960px-Forgetting_curve_and_work_of_Ebbinghaus.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1840,
+      "height": 1200,
+      "alt_suggestion": "The forgetting curve is a concept developed by the German psychologist Hermann Ebbinghaus in the late 19th century. According to Ebbinghaus, the forgetting curve represents the decline in memory reten",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-189083327",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hermann Ebbinghaus blue plaque.jpg",
+      "credit": "Vt100 / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hermann_Ebbinghaus_blue_plaque.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Hermann_Ebbinghaus_blue_plaque.jpg/960px-Hermann_Ebbinghaus_blue_plaque.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1214,
+      "height": 1212,
+      "alt_suggestion": "Text on plaque: West House. One of the oldest houses in Seaford. Hermann Ebbinghaus 1850-1909 pioneer psychologist lived here.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-85873323",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "West House, Seaford.jpg",
+      "credit": "Smb1001 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:West_House,_Seaford.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/West_House%2C_Seaford.jpg/960px-West_House%2C_Seaford.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4032,
+      "height": 3024,
+      "alt_suggestion": "West House, Seaford, Sussex, United Kingdom. Blue plaque on the front states \"West House. One of the oldest houses in Seaford. Hermann Ebbinghaus 1850-1909, Pioneer psychologist Lived here.\"",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Hermann Ebbinghaus memory forgetting curve\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Hermann Ebbinghaus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Hermann Ebbinghaus memory\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

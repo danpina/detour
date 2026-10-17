@@ -1,0 +1,81 @@
+{
+  "draft_id": "num-0002",
+  "created_at": "2026-10-17T17:34:39.325Z",
+  "queries": [
+    "hourglass clock time passing",
+    "hourglass",
+    "hourglass clock"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-2949887",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wooden hourglass 3.jpg",
+      "credit": "User:S Sepp / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wooden_hourglass_3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Wooden_hourglass_3.jpg/960px-Wooden_hourglass_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 967,
+      "height": 1959,
+      "alt_suggestion": "Alternative version of image:Wooden hourglass 2.jpg. Wooden hourglass. Total height:25 cm. Wooden disk diameter: 11.5 cm. Running time of the hourglass: 1 hour. Hourglass in other languages: 'timglas'",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-jsc2019e039834",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Hourglasses",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2019e039834",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2019e039834/jsc2019e039834~medium.jpg",
+      "alt_suggestion": "jsc2019e039834 (7/8/2019) --- A preflight view of the Hourglasses on a tabletop. The Hourglass investigation examines the relationship between gravity and the behavior of granular materials such as re",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-57819",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Wall Clock",
+      "credit": "Case by Jean-Pierre Latz (born Cologne [now Germany], active France, 1691–1754) Clockwork by Francis Bayley (active Austrian Netherlands [now Belgium], mid-1700s) Case: Paris; clock: Ghent, Flanders, Austrian Netherlands (now Belgium) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/57819",
+      "image_url": "https://www.artic.edu/iiif/2/ce583554-7fac-705e-2130-ec94c1abb2e2/full/843,/0/default.jpg",
+      "alt_suggestion": "Golden-colored, ornate wall clock adorned with golden flourishes, a bent figure with an arrow at top."
+    },
+    {
+      "id": "wikimedia-118055628",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sand clock Enschede.jpg",
+      "credit": "Gianluca Miscione / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sand_clock_Enschede.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Sand_clock_Enschede.jpg/960px-Sand_clock_Enschede.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3872,
+      "height": 2592,
+      "alt_suggestion": "Sand clock Enschede",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-jsc2019e039832",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Hourglass Apparatus",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2019e039832",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2019e039832/jsc2019e039832~medium.jpg",
+      "alt_suggestion": "jsc2019e039832 (7/8/2019) --- A view of the Hourglass Apparatus. The Hourglass investigation examines the relationship between gravity and the behavior of granular materials such as regolith that cove",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"hourglass clock time passing\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"hourglass\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"hourglass clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "draft_id": "sci-0005",
+  "created_at": "2026-10-17T17:34:43.880Z",
+  "queries": [
+    "sunset blue sky horizon",
+    "sunset",
+    "sunset blue sky"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-21974185",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Royal blue sky over twilight horizon, Landers, California.jpg",
+      "credit": "Jessie Eastland / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Royal_blue_sky_over_twilight_horizon,_Landers,_California.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Royal_blue_sky_over_twilight_horizon%2C_Landers%2C_California.jpg/960px-Royal_blue_sky_over_twilight_horizon%2C_Landers%2C_California.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2112,
+      "height": 2424,
+      "alt_suggestion": "Royal Blue Sky over Twilight Horizon, Landers, California",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA02493",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Sunset on Eros",
+      "credit": "NASA/JPL/JHUAPL / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA02493",
+      "image_url": "https://images-assets.nasa.gov/image/PIA02493/PIA02493~thumb.jpg",
+      "alt_suggestion": "Sunset on Eros",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-81557",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Seascape",
+      "credit": "Pierre-Auguste Renoir (French, 1841–1919) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/81557",
+      "image_url": "https://www.artic.edu/iiif/2/caf4fa39-e2e8-344a-542c-2d9a03ec9d4b/full/843,/0/default.jpg",
+      "alt_suggestion": "Vivid, lush view of rolling waves in purple, white, blue, and green against a bright blue sky with a watercolor-like blending of blues and purples. Sea and sky nearly become one."
+    },
+    {
+      "id": "wikimedia-105649992",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sunset sky silhouette.jpg",
+      "credit": "https://pikwizard.com/photo/sunset-sky-silhouette-/dd28e61242f46c3af608d9261e64f7ac / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sunset_sky_silhouette.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Sunset_sky_silhouette.jpg/960px-Sunset_sky_silhouette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2365,
+      "height": 1774,
+      "alt_suggestion": "louds Sunset Sky Sun Silhouette Landscape Horizon Sunrise Cloud Weather Summer Scenery Sunlight Orange Scenic Season Environment Water Scene Cloudscape Travel Sea Outdoor Outdoors Light Dusk Atmospher",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA01270",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Sunset on Saturn Rings",
+      "credit": "NASA/JPL/STScI / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA01270",
+      "image_url": "https://images-assets.nasa.gov/image/PIA01270/PIA01270~thumb.jpg",
+      "alt_suggestion": "Sunset on Saturn Rings",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Sunset may 2006 panorama.jpg",
+      "license": "GFDL 1.2",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Crepuscular rays at Sunset near Waterberg Plateau.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"sunset blue sky horizon\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"sunset\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"sunset blue sky\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

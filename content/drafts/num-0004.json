@@ -1,0 +1,87 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Wheat and chessboard",
+    "angle": "Doubling grains on each square"
+  },
+  "created_at": "2026-10-17T17:31:05.880Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0004",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "Doubling on a chessboard",
+    "body": {
+      "question": "Put 1 grain of rice on the first chessboard square, 2 on the second, 4 on the third, and keep doubling. About how many grains go on the 64th square alone?",
+      "unit": "grains",
+      "min": 1000,
+      "max": 1e+22,
+      "scale": "log",
+      "answer": 9220000000000000000,
+      "reveal": "About 9.2 quintillion grains (2^63) on the last square alone. The whole board would need about 18.4 quintillion."
+    },
+    "probes": [
+      {
+        "id": "num-0004-p1",
+        "kind": "estimate",
+        "question": "If you double the grains on each of 64 chessboard squares, starting with 1, about how many are on the last square?",
+        "answer": 9220000000000000000,
+        "unit": "grains",
+        "min": 1000,
+        "max": 1e+22,
+        "scale": "log"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wheat and chessboard problem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A chessboard with pieces, or grains of rice on a board",
+    "keywords": [
+      "chessboard",
+      "chess",
+      "rice grains"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:32:05Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "64th square holds 2^63, about 9.2 quintillion grains",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem",
+        "quote": "263 = 9,223,372,036,854,775,808 grains",
+        "note": "Superscript lost in fetch (2^63). 9.22e18 verified by calculation. Source uses wheat; card uses rice (harmless)."
+      },
+      {
+        "claim": "Whole board needs about 18.4 quintillion",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem",
+        "quote": "264 − 1 = 18,446,744,073,709,551,615 grains",
+        "note": "2^64-1."
+      },
+      {
+        "claim": "Probe: last square about 9.22e18",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem",
+        "quote": "263 = 9,223,372,036,854,775,808 grains"
+      }
+    ],
+    "overall": "pass"
+  }
+}

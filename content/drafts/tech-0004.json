@@ -1,0 +1,139 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Apollo 11 program alarms",
+    "angle": "The 1202 alarm and a computer that dropped low-priority work"
+  },
+  "created_at": "2026-10-17T17:31:05.880Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0004",
+    "interest": "tech",
+    "type": "story",
+    "title": "The alarm that didn't stop the landing",
+    "body": {
+      "panels": [
+        {
+          "text": "20 July 1969. Neil Armstrong and Buzz Aldrin are descending toward the Moon in the lunar module Eagle, guided by the Apollo Guidance Computer."
+        },
+        {
+          "text": "Minutes before landing, the computer flashes alarms numbered 1202 and 1201. They are unexpected."
+        },
+        {
+          "text": "In Houston, guidance officer Steve Bales, advised by Jack Garman, has to decide quickly: abort or continue?"
+        },
+        {
+          "text": "The twist: the computer was overloaded, but it had been designed to drop lower-priority tasks and keep the critical ones running. Bales said go, and Eagle landed."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0004-p1",
+        "kind": "mcq",
+        "question": "What did the Apollo computer do when it became overloaded?",
+        "options": [
+          "Dropped low-priority tasks and kept critical ones running",
+          "Shut itself off for good",
+          "Handed control to the radio",
+          "Ignored all alarms"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0004-p2",
+        "kind": "tf",
+        "question": "True or false: the 1202 alarm forced Apollo 11 to abort the landing.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Apollo Guidance Computer (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer"
+      },
+      {
+        "title": "Apollo 11 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Apollo_11"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Apollo 11 lunar module Eagle on the Moon or in descent, or the Apollo Guidance Computer's DSKY panel",
+    "keywords": [
+      "Apollo 11",
+      "lunar module Eagle",
+      "Apollo Guidance Computer",
+      "DSKY"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:32:05Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Apollo_11",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "20 July 1969: Armstrong and Aldrin descending in lunar module Eagle guided by the AGC",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Apollo_11",
+        "quote": "Eagle landed and Armstrong shut the engine down."
+      },
+      {
+        "claim": "Computer flashed 1202 and 1201 alarms minutes before landing",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Apollo_11",
+        "quote": "the LM guidance computer (LGC) distracted the crew with the first of several unexpected 1201 and 1202 program alarms.",
+        "note": "About five minutes into the descent burn."
+      },
+      {
+        "claim": "Nobody in the crew had seen them in a real descent",
+        "verdict": "unverified",
+        "note": "Neither fetched text says this. Suggest dropping, or: 'The alarms were unexpected.'"
+      },
+      {
+        "claim": "Steve Bales was a 'young' guidance officer with 'seconds' to decide",
+        "verdict": "unverified",
+        "note": "Sources name Bales as Guidance Officer/controller but say nothing of age or seconds; Apollo 11 page says Jack Garman judged it safe and told Bales. Suggest: 'Guidance officer Steve Bales, advised by Jack Garman, had to decide quickly.'"
+      },
+      {
+        "claim": "Computer was overloaded but designed to drop lower-priority tasks and keep critical ones",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer",
+        "quote": "The AGC software had been designed with priority scheduling, and automatically recovered, deleting lower priority tasks."
+      },
+      {
+        "claim": "Bales said go and Eagle landed",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer",
+        "quote": "issued several 'GO' calls and the landing was successful."
+      },
+      {
+        "claim": "Probe 1: computer dropped low-priority tasks and kept critical ones running",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer",
+        "quote": "deleting lower priority tasks.",
+        "note": "Distractor 'Shut down and restarted' is partly true (software restart per source); consider rewording distractor."
+      },
+      {
+        "claim": "Probe 2: 1202 alarm did not force an abort",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer",
+        "quote": "issued several 'GO' calls and the landing was successful."
+      }
+    ],
+    "overall": "flagged"
+  }
+}

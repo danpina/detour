@@ -1,0 +1,81 @@
+{
+  "draft_id": "num-0003",
+  "created_at": "2026-10-17T17:34:40.552Z",
+  "queries": [
+    "playing cards card shuffle deck of cards",
+    "playing cards",
+    "playing cards card shuffle"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-752624",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Riffle shuffle.jpg",
+      "credit": "Johnny Blood / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Riffle_shuffle.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Riffle_shuffle.jpg/960px-Riffle_shuffle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 731,
+      "alt_suggestion": "A riffle shuffle being performed during a game of poker at a bar near Madison, Wisconsin",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-s96e5173",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "STS-96 crew plays cards in the Node 1/Unity module",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/s96e5173",
+      "image_url": "https://images-assets.nasa.gov/image/s96e5173/s96e5173~medium.jpg",
+      "alt_suggestion": "S96-E-5173 (2 June 1999) --- A pre-set electronic still camera (ESC) recorded this image of the STS-96 crewmembers playing cards on a break aboard the International Space Station (ISS). From the left ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-21515",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Card Game",
+      "credit": "Utagawa Toyokuni I 初代 歌川 豊国 Japanese, 1769–1825 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/21515",
+      "image_url": "https://www.artic.edu/iiif/2/7d019ace-d654-f8c5-1dee-c1ffe34d8ac6/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color woodblock print; ōban triptych."
+    },
+    {
+      "id": "wikimedia-25934837",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Card shuffle.jpg",
+      "credit": "U.S. Air Force photo by Charles Haymond / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Card_shuffle.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Card_shuffle.jpg/960px-Card_shuffle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1800,
+      "height": 1200,
+      "alt_suggestion": "U.S. Air Force civilian Pierre Flatowicz, 55th Force Support Squadron, shuffles a deck of cards inside Building C on Offutt Air Force Base, Neb., Sept. 13. Flatowicz best finish in a national tourname",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-201107080058HQ",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "STS-135 Launch Day",
+      "credit": "NASA/Jerry Ross / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/201107080058HQ",
+      "image_url": "https://images-assets.nasa.gov/image/201107080058HQ/201107080058HQ~medium.jpg",
+      "alt_suggestion": "NASA Chief, Astronaut Office, Johnson Space Center Peggy Whitson deals cards during a traditional game that is played at the NASA Kennedy Space Center Operations and Checkout Building with the shuttle",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"playing cards card shuffle deck of cards\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"playing cards\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"playing cards card shuffle\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

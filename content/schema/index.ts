@@ -20,6 +20,8 @@ export type Source = z.infer<typeof sourceSchema>;
 const ALLOWED_LICENSE =
   /^(Public domain|CC0( 1\.0)?|CC BY( \d\.\d)?|CC BY-SA( \d\.\d)?|Unsplash License|Pexels License)$/;
 
+export const isAllowedLicense = (license: string) => ALLOWED_LICENSE.test(license.trim());
+
 export const imageSchema = z
   .object({
     file: z.string().regex(/^[a-z0-9-]+\.webp$/, "image file must be a lowercase .webp name"),

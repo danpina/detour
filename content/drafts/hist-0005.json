@@ -1,0 +1,159 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Year Without a Summer",
+    "angle": "Tambora erupts, 1816 is freezing, and Frankenstein is born"
+  },
+  "created_at": "2026-10-17T17:31:05.880Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0005",
+    "interest": "history",
+    "type": "story",
+    "title": "The year summer never came",
+    "body": {
+      "panels": [
+        {
+          "text": "April 1815. Mount Tambora, on an island in Indonesia, erupts. It is the most powerful eruption in recorded history."
+        },
+        {
+          "text": "Ash and sulfur gases spread through the atmosphere and dim the sunlight. By 1816 Europe and North America are cold all summer."
+        },
+        {
+          "text": "Harvests fail and food prices jump. People call 1816 the Year Without a Summer."
+        },
+        {
+          "text": "The twist: at Villa Diodati in Switzerland, a group of friends is stuck indoors by the gloomy weather. They challenge each other to write ghost stories, and young Mary Shelley begins Frankenstein."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0005-p1",
+        "kind": "mcq",
+        "question": "Which volcano's 1815 eruption helped cause the Year Without a Summer?",
+        "options": [
+          "Tambora",
+          "Vesuvius",
+          "Krakatoa",
+          "Mount St. Helens"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0005-p2",
+        "kind": "tf",
+        "question": "True or false: Mary Shelley began writing Frankenstein during that cold, gloomy summer of 1816.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Year Without a Summer (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer"
+      },
+      {
+        "title": "1815 eruption of Mount Tambora (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Mount Tambora's caldera, or a stormy 19th-century landscape painting",
+    "keywords": [
+      "Mount Tambora",
+      "caldera",
+      "volcanic eruption",
+      "Lake Geneva storm"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:32:12Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Mount Tambora, on an island in Indonesia, erupted in April 1815",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora",
+        "quote": "reached a violent climax on 10 April 1815"
+      },
+      {
+        "claim": "It is the most powerful eruption in recorded history",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora",
+        "quote": "the most powerful volcanic eruption in recorded human history"
+      },
+      {
+        "claim": "Ash and sulfur gases dimmed sunlight",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora",
+        "quote": "reflected significant amounts of solar radiation",
+        "note": "Ash/sulfur dioxide reaching the stratosphere also supported by the same page."
+      },
+      {
+        "claim": "By 1816 Europe and North America were cold and wet all summer",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer",
+        "quote": "wet, ungenial summer",
+        "note": "Europe cold/wet supported; North America supported as cold (June frost/snow), 'wet' not explicit for N. America; 'all summer' loose."
+      },
+      {
+        "claim": "Harvests failed and food prices jumped",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer",
+        "quote": "crop failures in New England, Canada, and parts of Europe caused food prices to rise sharply"
+      },
+      {
+        "claim": "1816 called the Year Without a Summer",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora",
+        "quote": "known as the \"Year Without a Summer\""
+      },
+      {
+        "claim": "Friends near Lake Geneva were stuck indoors and challenged each other to write ghost stories",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer",
+        "quote": "Byron proposed a writing contest",
+        "note": "Villa Diodati / ghost stories supported; 'Lake Geneva' only appears in a reference title ('Lake Geneva as Shelley and Byron Knew It'), not body text."
+      },
+      {
+        "claim": "Mary Shelley was 18 when she began Frankenstein",
+        "verdict": "unverified",
+        "source_url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer",
+        "note": "Fetched article says she wrote Frankenstein from this contest but does not state her age. Suggest dropping age or citing a source that gives it."
+      },
+      {
+        "claim": "Probe: Tambora 1815 helped cause the Year Without a Summer",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora",
+        "quote": "Cooling in the Northern Hemisphere in 1816, known as the \"Year Without a Summer\""
+      },
+      {
+        "claim": "Probe: Shelley began Frankenstein in summer 1816",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer",
+        "quote": "led Mary Shelley to write Frankenstein"
+      },
+      {
+        "claim": "Probe distractors Vesuvius/Krakatoa/St. Helens are wrong",
+        "verdict": "unverified",
+        "note": "Not covered by fetched sources; trivially fine since Tambora is stated as the cause."
+      }
+    ],
+    "overall": "flagged"
+  }
+}

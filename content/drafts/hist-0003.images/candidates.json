@@ -1,0 +1,67 @@
+{
+  "draft_id": "hist-0003",
+  "created_at": "2026-10-17T17:34:25.402Z",
+  "queries": [
+    "emu Western Australia farmland",
+    "emu",
+    "emu Western Australia"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-145180142",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Farmland in Coomalbidgup at the boundary of Stokes National Park, January 2024 08.jpg",
+      "credit": "Calistemon / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Farmland_in_Coomalbidgup_at_the_boundary_of_Stokes_National_Park,_January_2024_08.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Farmland_in_Coomalbidgup_at_the_boundary_of_Stokes_National_Park%2C_January_2024_08.jpg/960px-Farmland_in_Coomalbidgup_at_the_boundary_of_Stokes_National_Park%2C_January_2024_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 2592,
+      "alt_suggestion": "Farmland in Coomalbidgup at the western boundary of Stokes National Park, just outside the park along Stokes Inlet Road, Western Australia. An abundance of emus and kangaroos were present in the area.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-145180139",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Farmland in Coomalbidgup at the boundary of Stokes National Park, January 2024 06.jpg",
+      "credit": "Calistemon / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Farmland_in_Coomalbidgup_at_the_boundary_of_Stokes_National_Park,_January_2024_06.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Farmland_in_Coomalbidgup_at_the_boundary_of_Stokes_National_Park%2C_January_2024_06.jpg/960px-Farmland_in_Coomalbidgup_at_the_boundary_of_Stokes_National_Park%2C_January_2024_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 2592,
+      "alt_suggestion": "Farmland in Coomalbidgup at the western boundary of Stokes National Park, just outside the park along Stokes Inlet Road, Western Australia. An abundance of emus and kangaroos were present in the area.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-145180136",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Farmland in Coomalbidgup at the boundary of Stokes National Park, January 2024 01.jpg",
+      "credit": "Calistemon / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Farmland_in_Coomalbidgup_at_the_boundary_of_Stokes_National_Park,_January_2024_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Farmland_in_Coomalbidgup_at_the_boundary_of_Stokes_National_Park%2C_January_2024_01.jpg/960px-Farmland_in_Coomalbidgup_at_the_boundary_of_Stokes_National_Park%2C_January_2024_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 3456,
+      "alt_suggestion": "Farmland in Coomalbidgup at the western boundary of Stokes National Park, just outside the park along Stokes Inlet Road, Western Australia. An abundance of emus and kangaroos were present in the area.",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Emu-wild.jpg",
+      "license": "GFDL 1.2",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"emu Western Australia farmland\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"emu\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"emu Western Australia\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "The Mozart effect",
+    "angle": "Listening to Mozart does not make you smarter"
+  },
+  "created_at": "2026-10-17T17:31:05.880Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0003",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "The Mozart effect is mostly a myth",
+    "body": {
+      "claim": "Listening to Mozart does not make you or your baby lastingly smarter.",
+      "why": "A 1993 study found a brief boost in a spatial reasoning task for adults after listening to Mozart. Later research found little evidence that Mozart specifically makes you smarter, and claims that it boosts babies' development went well beyond the original study."
+    },
+    "probes": [
+      {
+        "id": "mind-0003-p1",
+        "kind": "tf",
+        "question": "True or false: studies have shown that listening to Mozart makes babies lastingly smarter.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mozart effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Mozart_effect"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A portrait of Wolfgang Amadeus Mozart (period painting) or a sheet of music",
+    "keywords": [
+      "Mozart portrait",
+      "Mozart",
+      "sheet music"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:32:05Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mozart_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Listening to Mozart does not make you lastingly smarter",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mozart_effect",
+        "quote": "listening to Mozart has no effect on general intelligence",
+        "note": "Original effect only temporary."
+      },
+      {
+        "claim": "A 1993 study found a brief boost in spatial reasoning after Mozart",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mozart_effect",
+        "quote": "found a temporary enhancement of spatial-reasoning"
+      },
+      {
+        "claim": "The study used 'a Mozart sonata'",
+        "verdict": "unverified",
+        "note": "Fetched text did not confirm sonata. Suggest: 'after listening to Mozart'."
+      },
+      {
+        "claim": "Later studies found the effect small and not specific to Mozart",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mozart_effect",
+        "quote": "any form of music that has energetic and positive emotional qualities",
+        "note": "Meta-analysis: 'little evidence to support the Mozart effect'; 'small' is a mild paraphrase."
+      },
+      {
+        "claim": "The headline 'Mozart makes babies smarter' went far beyond the evidence",
+        "verdict": "unverified",
+        "note": "Source says infant claims were popularized by Don Campbell's 1997 book beyond the research, but no such headline is quoted. Suggest: 'Claims that Mozart boosts babies' development went well beyond the original study, which tested adults on a spatial task.'"
+      },
+      {
+        "claim": "Probe: studies have not shown Mozart makes babies lastingly smarter",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mozart_effect",
+        "quote": "the enhancing effect of the music condition is only temporary"
+      }
+    ],
+    "overall": "flagged"
+  }
+}

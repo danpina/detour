@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0004",
+  "created_at": "2026-10-17T17:34:52.445Z",
+  "queries": [
+    "Apollo 11 lunar module Eagle Apollo Guidance Computer",
+    "Apollo 11",
+    "Apollo 11 lunar module Eagle"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-43988989",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "AS11-36-5391 (21710608621).jpg",
+      "credit": "Project Apollo Archive / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AS11-36-5391_(21710608621).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/AS11-36-5391_%2821710608621%29.jpg/960px-AS11-36-5391_%2821710608621%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4151,
+      "height": 4103,
+      "alt_suggestion": "Apollo 11 Hasselblad image from film magazine 36/N - Trans-Lunar. Buzz Aldrin at LM-5 left window. Apollo Guidance Computer (AGC)'s Display and Keyboard (DSKY) is at lower right.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-jsc2007e034221",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Apollo 11 spacecraft pre-launch",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2007e034221",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2007e034221/jsc2007e034221~medium.jpg",
+      "alt_suggestion": "Personnel atop the 402-ft. Mobile Service Structure look back at the Apollo 11 spacecraft as the tower is moved away during a Countdown Demonstration Test. Photo filed 11 July 1969.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-169560231",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "How the Eagle Landed — the Grumman Construction Log (7610058658).jpg",
+      "credit": "jurvetson / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:How_the_Eagle_Landed_%E2%80%94_the_Grumman_Construction_Log_(7610058658).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/How_the_Eagle_Landed_%E2%80%94_the_Grumman_Construction_Log_%287610058658%29.jpg/960px-How_the_Eagle_Landed_%E2%80%94_the_Grumman_Construction_Log_%287610058658%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3555,
+      "height": 2165,
+      "alt_suggestion": "On July 20, 1969, Eagle landed on the moon. These are the handwritten notes from the Grumman engineers as they pushed to complete Lunar Module LM-5 in 1968. On the last page, they learn than this part",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-NHQ201907190151",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Apollo 11 50th Anniversary Celebration",
+      "credit": "NASA/Aubrey Gemignani / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/NHQ201907190151",
+      "image_url": "https://images-assets.nasa.gov/image/NHQ201907190151/NHQ201907190151~medium.jpg",
+      "alt_suggestion": "A small rover is driven over a visitor at the Apollo 11 50th Anniversary celebration on the National Mall, Friday, July 19, 2019 in Washington. Apollo 11 was the first mission to land astronauts on th",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-102412",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Apollo 11 Crew.jpg",
+      "credit": "NASA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Apollo_11_Crew.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Apollo_11_Crew.jpg/960px-Apollo_11_Crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4200,
+      "height": 3300,
+      "alt_suggestion": "The Apollo 11 lunar landing mission crew, pictured from left to right, Neil A. Armstrong, commander; Michael Collins, command module pilot; and Edwin E. Aldrin Jr., lunar module pilot.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Apollo 11 lunar module Eagle Apollo Guidance Computer\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Apollo 11\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Apollo 11 lunar module Eagle\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

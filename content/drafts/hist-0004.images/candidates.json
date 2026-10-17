@@ -1,0 +1,80 @@
+{
+  "draft_id": "hist-0004",
+  "created_at": "2026-10-17T17:34:27.606Z",
+  "queries": [
+    "Napoleon Bonaparte portrait Jacques-Louis David",
+    "Napoleon Bonaparte",
+    "Napoleon Bonaparte portrait"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-22174172",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Jacques-Louis David - The Emperor Napoleon in His Study at the Tuileries - Google Art Project.jpg",
+      "credit": "Jacques-Louis David / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/960px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3079,
+      "height": 5135,
+      "alt_suggestion": "Jacques-Louis David - The Emperor Napoleon in His Study at the Tuileries - Google Art Project.jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-sts084-714-007",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Earth observations taken from shuttle Atlantis during STS-84 mission",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/sts084-714-007",
+      "image_url": "https://images-assets.nasa.gov/image/sts084-714-007/sts084-714-007~medium.jpg",
+      "alt_suggestion": "STS084-714-007 (15-24 May 1997) --- This 70mm image of the island of Corsica was photographed from the Space Shuttle Atlantis during the STS-84 mission. Birthplace of Napoleon Bonaparte, Corsica is th",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-44262",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Portrait of Jeanbon Saint-André",
+      "credit": "Jacques-Louis David French, 1748-1825 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/44262",
+      "image_url": "https://www.artic.edu/iiif/2/5d7f22f6-e511-642f-ed96-5e4390c17031/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of pen and black ink and brush and black ink with yellow ocher watercolor over graphite, on cream laid paper."
+    },
+    {
+      "id": "wikimedia-38872895",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Napoleon at the Great St. Bernard - Jacques-Louis David - Google Cultural Institute.jpg",
+      "credit": "Jacques-Louis David / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Napoleon_at_the_Great_St._Bernard_-_Jacques-Louis_David_-_Google_Cultural_Institute.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Napoleon_at_the_Great_St._Bernard_-_Jacques-Louis_David_-_Google_Cultural_Institute.jpg/960px-Napoleon_at_the_Great_St._Bernard_-_Jacques-Louis_David_-_Google_Cultural_Institute.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4897,
+      "height": 5850,
+      "alt_suggestion": "Napoleon at the Great St. Bernard - Jacques-Louis David - Google Cultural Institute.jpg",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-113587",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Bust of Caroline Bonaparte, Princess Murat, Queen of Naples",
+      "credit": "Jacques-Louis David French, 1748-1825 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/113587",
+      "image_url": "https://www.artic.edu/iiif/2/6ed20bb2-7f67-e84d-b3de-c3dd109f4007/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of charcoal on off-white laid paper, tipped onto cream wove paper."
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Napoleon Bonaparte portrait Jacques-Louis David\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Napoleon Bonaparte\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Napoleon Bonaparte portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

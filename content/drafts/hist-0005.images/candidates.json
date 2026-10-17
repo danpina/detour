@@ -1,0 +1,81 @@
+{
+  "draft_id": "hist-0005",
+  "created_at": "2026-10-17T17:34:28.858Z",
+  "queries": [
+    "Mount Tambora caldera volcanic eruption",
+    "Mount Tambora",
+    "Mount Tambora caldera"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-7336599",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Mount Tambora Volcano, Sumbawa Island, Indonesia.jpg",
+      "credit": "This image was taken by the NASA Expedition 20 crew. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mount_Tambora_Volcano,_Sumbawa_Island,_Indonesia.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mount_Tambora_Volcano%2C_Sumbawa_Island%2C_Indonesia.jpg/960px-Mount_Tambora_Volcano%2C_Sumbawa_Island%2C_Indonesia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4256,
+      "height": 2828,
+      "alt_suggestion": "This detailed astronaut photograph depicts the summit caldera of the volcano. The huge caldera—6 kilometers in diameter and 1,100 meters deep—formed when Tambora’s estimated 4,000-meter-high peak was ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss059e061823",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Earth observation taken by Expedition 59 crew",
+      "credit": "Christina Koch / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss059e061823",
+      "image_url": "https://images-assets.nasa.gov/image/iss059e061823/iss059e061823~medium.jpg",
+      "alt_suggestion": "iss059e061823 (May 15, 2019) --- The active volcano of Mount Tambora on the Indonesian province island of West Nusa Tenggara is pictured as the International Space Station orbited 256 miles above the ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-57996",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Eruption of Vesuvius",
+      "credit": "Pierre-Jacques Volaire (French, 1729–1799) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/57996",
+      "image_url": "https://www.artic.edu/iiif/2/6a676ee7-39c0-0b88-c37e-36ba0c5e3065/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas."
+    },
+    {
+      "id": "wikimedia-11433843",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Large eruptions.jpg",
+      "credit": "USGS. Combination of the two images by Avenue. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Large_eruptions.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Large_eruptions.jpg/960px-Large_eruptions.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1236,
+      "height": 1155,
+      "alt_suggestion": "Comparison of major United States supereruptions (VEI 7 and 8) with major historical volcanic eruptions in the 19th and 20th century. From left to right: Yellowstone 2.1 Ma, Yellowstone 1.3 Ma, Long V",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-iss020e006563",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Earth Observations taken by the Expedition 20 crew",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss020e006563",
+      "image_url": "https://images-assets.nasa.gov/image/iss020e006563/iss020e006563~medium.jpg",
+      "alt_suggestion": "ISS020-E-006563 (3 June 2009) --- Mount Tambora Volcano, Sumbawa Island in Indonesia is featured in this image photographed by an Expedition 20 crew member on the International Space Station. On April",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Mount Tambora caldera volcanic eruption\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Mount Tambora\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Mount Tambora caldera\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

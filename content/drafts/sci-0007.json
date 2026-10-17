@@ -1,0 +1,109 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Honey never spoils",
+    "angle": "Why honey from ancient tombs is still preserved"
+  },
+  "created_at": "2026-10-17T17:31:05.880Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0007",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Honey is built to last",
+    "body": {
+      "claim": "Honey is so sugary and low in water that microbes struggle to grow in it, so sealed honey can last for centuries.",
+      "why": "Honey is mostly sugar with very little water, which keeps microbes from growing. It is also acidic and contains an enzyme that makes small amounts of hydrogen peroxide. Kept sealed and dry, it can last for centuries."
+    },
+    "probes": [
+      {
+        "id": "sci-0007-p1",
+        "kind": "mcq",
+        "question": "What helps honey resist spoiling?",
+        "options": [
+          "High sugar and very little water",
+          "Being stored cold",
+          "Containing salt",
+          "Being full of alcohol"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0007-p2",
+        "kind": "tf",
+        "question": "True or false: sealed, dry honey can last for centuries.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Honey (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Honey"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A honey dipper with golden honey, or honeycomb",
+    "keywords": [
+      "honey",
+      "honeycomb",
+      "honey dipper"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:32:12Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Honey",
+        "fetched": true
+      },
+      {
+        "url": "https://www.smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690/",
+        "fetched": false,
+        "error": "HTTP 403 Forbidden (also via curl)"
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Honey found in ancient Egyptian tombs was still preserved after thousands of years",
+        "verdict": "fail",
+        "source_url": "https://en.wikipedia.org/wiki/Honey",
+        "quote": "no edible honey has been found in Egyptian tombs; all such cases have been proven to be other substances or only chemical traces",
+        "note": "Contradicted. Suggest using honey residue in a ~4,700-5,500-year-old tomb in Georgia (oldest known honey remains), or drop the tomb claim."
+      },
+      {
+        "claim": "Honey contains very little water, so bacteria and mould struggle to grow",
+        "verdict": "unverified",
+        "source_url": "https://en.wikipedia.org/wiki/Honey",
+        "quote": "honey has a sufficiently high sugar content to inhibit fermentation",
+        "note": "Page credits high sugar and states stability while water stays under ~18%; 'bacteria and mould' not stated. Suggest 'high sugar and low water inhibit fermentation'."
+      },
+      {
+        "claim": "Honey is acidic and contains an enzyme making small amounts of hydrogen peroxide",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Honey",
+        "quote": "partially responsible for honey acidity and suppression of bacterial growth",
+        "note": "Page attributes gluconic acid and hydrogen peroxide to glucose oxidase added by bees; 'small amounts' not explicit."
+      },
+      {
+        "claim": "Stored sealed, it can last almost indefinitely / sealed honey can last for thousands of years",
+        "verdict": "unverified",
+        "source_url": "https://en.wikipedia.org/wiki/Honey",
+        "quote": "Honey, and objects immersed in honey, have been preserved for centuries",
+        "note": "Page supports centuries and humidity control; oldest honey remains are 4,700-5,500 years (residue on vessels, not shown edible). Suggest 'can last for centuries if kept sealed and dry'."
+      },
+      {
+        "claim": "Probe: main reason honey resists spoiling is very little water (vs cold, salt, alcohol)",
+        "verdict": "unverified",
+        "source_url": "https://en.wikipedia.org/wiki/Honey",
+        "note": "Page emphasises high sugar plus low moisture; 'main reason' not explicit. Smithsonian source unfetchable."
+      }
+    ],
+    "overall": "flagged"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "draft_id": "sci-0008",
+  "created_at": "2026-10-17T17:34:48.111Z",
+  "queries": [
+    "Sun Solar Dynamics Observatory solar flare",
+    "Sun",
+    "Sun Solar Dynamics Observatory"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-11131056",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sun - August 1, 2010.jpg",
+      "credit": "NASA/SDO/AIA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sun_-_August_1,_2010.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Sun_-_August_1%2C_2010.jpg/960px-Sun_-_August_1%2C_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4095,
+      "height": 3647,
+      "alt_suggestion": "Flare",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA21958",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Major Solar Flare",
+      "credit": "NASA/GSFC/Solar Dynamics Observatory / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA21958",
+      "image_url": "https://images-assets.nasa.gov/image/PIA21958/PIA21958~medium.jpg",
+      "alt_suggestion": "The Sun erupted with an X8 solar flare, one of the largest of the current solar cycle (Sept. 10, 2017). Its source was the same sunspot region that produced an X9 flare last week. This is shown in two",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-126481",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Solar Effect in the Clouds-Ocean",
+      "credit": "Gustave Le Gray French, 1820–1884 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/126481",
+      "image_url": "https://www.artic.edu/iiif/2/74fa185b-6163-aae0-a040-6907cc1fd15d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of albumen print, from the album \"vistas del mar\"."
+    },
+    {
+      "id": "wikimedia-41247625",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Solar Dynamics Observatory Sees M7.9-Class Solar Flare.jpg",
+      "credit": "NASA/SDO / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Solar_Dynamics_Observatory_Sees_M7.9-Class_Solar_Flare.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Solar_Dynamics_Observatory_Sees_M7.9-Class_Solar_Flare.jpg/960px-Solar_Dynamics_Observatory_Sees_M7.9-Class_Solar_Flare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4096,
+      "height": 3840,
+      "alt_suggestion": "The sun emitted a mid-level solar flare, an M7.9-class, peaking at 4:16 a.m. EDT on June 25, 2015. NASA’s Solar Dynamics Observatory, which watches the sun constantly, captured an image of the event. ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA22244",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "One Small Flare",
+      "credit": "NASA/GSFC/Solar Dynamics Observatory / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA22244",
+      "image_url": "https://images-assets.nasa.gov/image/PIA22244/PIA22244~medium.jpg",
+      "alt_suggestion": "The sun's only visible active region sputtered and spurted and eventually unleashed a small (C-class) flare (Feb. 7, 2018). The flare appears as a brief, bright flash about mid-way through the half-da",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Sun Solar Dynamics Observatory solar flare\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Sun\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Sun Solar Dynamics Observatory\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

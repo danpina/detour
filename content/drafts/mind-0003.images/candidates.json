@@ -1,0 +1,82 @@
+{
+  "draft_id": "mind-0003",
+  "created_at": "2026-10-17T17:34:34.046Z",
+  "queries": [
+    "Mozart portrait Mozart sheet music",
+    "Mozart portrait",
+    "Mozart portrait Mozart"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-90138035",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Print, music sheet-cover (BM 1922,0710.116).jpg",
+      "credit": "https://www.britishmuseum.org/collection/object/P_1922-0710-116 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Print,_music_sheet-cover_(BM_1922,0710.116).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Print%2C_music_sheet-cover_%28BM_1922%2C0710.116%29.jpg/960px-Print%2C_music_sheet-cover_%28BM_1922%2C0710.116%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1178,
+      "height": 1600,
+      "alt_suggestion": "Portrait of Wolfgang Amadeus Mozart on a music sheet for his piano sonatas, edited by Ernst Pauer; bust-length, standing in profile to right, wearing queue wig, jacket, neckerchief and frill, in oval ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-88374",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Portrait of a Musician",
+      "credit": "Alessandro Longhi (Italian, 1733–1813) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/88374",
+      "image_url": "https://www.artic.edu/iiif/2/60699af7-9aab-5e2b-7309-1266286b0810/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas."
+    },
+    {
+      "id": "wikimedia-90331102",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Glover's Transcriptions of Classical Gems (BM 1922,0710.202).jpg",
+      "credit": "Print made by: Michael Watson Published by: Ransford & Son / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Glover%27s_Transcriptions_of_Classical_Gems_(BM_1922,0710.202).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Glover%27s_Transcriptions_of_Classical_Gems_%28BM_1922%2C0710.202%29.jpg/960px-Glover%27s_Transcriptions_of_Classical_Gems_%28BM_1922%2C0710.202%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1854,
+      "height": 2500,
+      "alt_suggestion": "Music cover sheet for 'Glover's Transcriptions of Classical Gems', arranged for piano by F. S. Glover, with portraits of Joseph Haydn, Ludwig van Beethoven, Wolfgang Amadeus Mozart, George Frederick H",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-184372",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Portrait of Emmanuel Rio",
+      "credit": "Albert Schindler (Austrian, 1805–1861) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/184372",
+      "image_url": "https://www.artic.edu/iiif/2/de5574eb-11af-16de-123b-d4d44cea94e9/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on panel."
+    },
+    {
+      "id": "wikimedia-90370226",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Meisterstücke aus den Werken Klassischer Componisten (BM 1922,0710.206).jpg",
+      "credit": "Published by: Carl Simon Published by: Durand, Schoenewerk & Co Published by: E Simon Published by: August Cranz Published by: F Volckmar Published by: Gebrüder",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Meisterst%C3%BCcke_aus_den_Werken_Klassischer_Componisten_(BM_1922,0710.206).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Meisterst%C3%BCcke_aus_den_Werken_Klassischer_Componisten_%28BM_1922%2C0710.206%29.jpg/960px-Meisterst%C3%BCcke_aus_den_Werken_Klassischer_Componisten_%28BM_1922%2C0710.206%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1866,
+      "height": 2500,
+      "alt_suggestion": "Music cover sheet for the music book 'Meisterstücke aus den Werken Klassischer Componisten', arranged for piano by Edwin Schultz, with portraits of Joseph Haydn, Ludwig van Beethoven, Wolfgang Amadeus",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Mozart portrait Mozart sheet music\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Mozart portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Mozart portrait Mozart\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}
