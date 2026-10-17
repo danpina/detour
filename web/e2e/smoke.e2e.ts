@@ -1,0 +1,71 @@
+import { expect, test, type Page } from "@playwright/test";
+
+/** Plays whatever card is on screen until the end screen appears. Cards are random, so this handles every type. */
+async function playSet(page: Page) {
+  for (let step = 0; step < 12; step++) {
+    if (await page.getByText(/You learned/).isVisible()) return;
+    const text = await page.locator("body").innerText();
+
+    if (/Drill/.test(text)) {
+      // Answer both kinds of drill with a plain number, then move on.
+      for (let q = 0; q < 4; q++) {
+        const input = page.getByLabel("Your answer");
+        if (!(await input.isVisible().catch(() => false))) break;
+        await input.fill("1");
+        await page.getByRole("button", { name: "Check" }).click();
+        await page.getByRole("button", { name: /Next question|Finish/ }).click();
+      }
+      await page.getByRole("button", { name: "Next", exact: true }).click();
+    } else if (await page.getByRole("button", { name: "Why?" }).isVisible()) {
+      await page.getByRole("button", { name: "Why?" }).click();
+      await page.getByRole("button", { name: "Next", exact: true }).click();
+    } else if (await page.getByRole("button", { name: "Lock it in" }).isVisible()) {
+      await page.getByRole("button", { name: "Lock it in" }).click();
+      await page.getByRole("button", { name: "Next", exact: true }).click();
+    } else if (await page.getByLabel(/Next (panel|card)/).isVisible()) {
+      // Story: tap through the panels.
+      for (let i = 0; i < 6 && (await page.getByLabel(/Next (panel|card)/).isVisible()); i++) {
+        await page.getByLabel(/Next (panel|card)/).click();
+      }
+    } else {
+      // Guess first or a recall question: pick the first answer option.
+      const options = page.locator("button").filter({ hasNotText: /^(Sources|Report|\u24D8|Next|Check)$/ });
+      if ((await options.count()) === 0) {
+        await page.waitForTimeout(300); // screen is still changing
+        continue;
+      }
+      await options.first().click();
+      await page.getByRole("button", { name: "Next", exact: true }).click({ timeout: 5000 });
+    }
+    await page.waitForTimeout(150);
+  }
+}
+
+test("first run: pick interests, finish a set, see the end screen", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("heading", { name: /What are you curious about/ })).toBeVisible();
+
+  const go = page.getByRole("button", { name: /Pick 3 more/ });
+  await expect(go).toBeDisabled();
+  for (const name of ["History", "Science", "Money & Markets"]) await page.getByRole("button", { name }).first().click();
+  await page.getByRole("button", { name: "Show me a quick one" }).click();
+
+  await playSet(page);
+  await expect(page.getByText("We'll check tomorrow if they stuck.")).toBeVisible();
+});
+
+test("progress and settings work after a set", async ({ page }) => {
+  await page.goto("/");
+  for (const name of ["History", "Science", "Tech"]) await page.getByRole("button", { name }).first().click();
+  await page.getByRole("button", { name: "Show me a quick one" }).click();
+  await playSet(page);
+
+  await page.getByRole("button", { name: "See my progress" }).click();
+  await expect(page.getByRole("heading", { name: "Your progress" })).toBeVisible();
+  await expect(page.getByText(/1 day/)).toBeVisible();
+
+  await page.getByRole("button", { name: /Settings/ }).click();
+  const download = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Export progress" }).click();
+  expect((await download).suggestedFilename()).toMatch(/^detour-progress-\d{4}-\d{2}-\d{2}\.json$/);
+});

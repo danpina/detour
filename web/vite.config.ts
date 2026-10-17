@@ -34,6 +34,8 @@ export default defineConfig({
         // Precache the app shell plus every card image, so Detour works fully offline.
         globPatterns: ["**/*.{js,css,html,svg,png,webp,ico,webmanifest}"],
         navigateFallback: `${base}index.html`,
+        // Static pages like the privacy policy must not be replaced by the app shell.
+        navigateFallbackDenylist: [/privacy\.html$/],
         cleanupOutdatedCaches: true,
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },

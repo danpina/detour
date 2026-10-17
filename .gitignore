@@ -10,3 +10,6 @@ coverage/
 content/drafts/**/*.webp
 content/drafts/**/*.png
 content/drafts/**/*.jpg
+
+web/test-results/
+web/playwright-report/
