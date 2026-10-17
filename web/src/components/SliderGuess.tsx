@@ -64,7 +64,7 @@ export function SliderGuess({ min, max, scale, unit, answer, onLock }: Props) {
           Lock it in
         </button>
       ) : (
-        <div className="mt-4 rounded-2xl bg-white/10 p-4 text-center backdrop-blur">
+        <div role="status" aria-live="polite" className="mt-4 rounded-2xl bg-white/10 p-4 text-center backdrop-blur">
           <div className="text-sm text-white/70">
             You said {formatNumber(value)}
             {unitLabel} · Answer {formatNumber(answer)}

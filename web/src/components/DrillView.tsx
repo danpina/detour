@@ -123,7 +123,7 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
             </form>
 
             {feedback && (
-              <div className="mt-4 rounded-2xl bg-white/10 p-4 text-center">
+              <div role="status" aria-live="polite" className="mt-4 rounded-2xl bg-white/10 p-4 text-center">
                 <p className={`text-lg font-semibold ${feedback.judgement.correct ? "text-emerald-300" : "text-rose-300"}`}>
                   {feedback.judgement.correct ? "✓ " : "✗ "}
                   {feedback.judgement.note}

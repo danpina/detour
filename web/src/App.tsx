@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { Interest } from "@detour/content";
 import { BottomNav, type Tab } from "./components/BottomNav";
 import { EndScreen } from "./components/EndScreen";
+import { HomeScreen } from "./components/HomeScreen";
 import { Onboarding } from "./components/Onboarding";
 import { ProgressScreen } from "./components/ProgressScreen";
 import { SessionView } from "./components/SessionView";
@@ -62,18 +63,7 @@ export function App() {
 
         {screen.name === "onboarding" && <Onboarding initial={interests} onDone={finishOnboarding} />}
 
-        {screen.name === "home" && (
-          <div className="flex h-full flex-col justify-center px-8 pb-16 text-center">
-            <h1 className="text-3xl font-semibold tracking-tight">Quick one?</h1>
-            <p className="mt-2 text-neutral-500 dark:text-neutral-400">Five small cards, about a minute.</p>
-            <button onClick={() => startSet(interests, false)} className="mt-8 w-full rounded-2xl bg-teal-600 py-4 text-lg font-semibold text-white active:scale-[0.98]">
-              Let's go
-            </button>
-            <button onClick={() => startSet(interests, true)} className="mt-3 w-full rounded-2xl border border-neutral-300 py-3.5 font-medium hover:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-900">
-              Keep scrolling
-            </button>
-          </div>
-        )}
+        {screen.name === "home" && <HomeScreen onStart={(feed) => startSet(interests, feed)} onOpenSettings={() => setScreen({ name: "settings" })} />}
 
         {screen.name === "progress" && <ProgressScreen />}
 

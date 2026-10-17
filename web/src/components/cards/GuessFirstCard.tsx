@@ -43,7 +43,7 @@ export function GuessFirstCard({ card, index, total, onComplete, onNext }: CardV
 
         {done && (
           <>
-            <p className="mt-4 text-sm leading-relaxed text-white/90">
+            <p role="status" aria-live="polite" className="mt-4 text-sm leading-relaxed text-white/90">
               <strong>{picked === answer ? "Nice, that's right. " : "Not quite. "}</strong>
               {reveal}
             </p>
