@@ -47,5 +47,61 @@
       "accounting"
     ],
     "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T19:16:36.917Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "About 30% of numbers in many real-world lists start with 1",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+        "quote": "the number 1 appears as the leading significant digit about 30% of the time"
+      },
+      {
+        "claim": "Fewer than 5% start with 9",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+        "quote": "9 appears as the leading significant digit less than 5% of the time"
+      },
+      {
+        "claim": "Benford applies to data spanning several orders of magnitude",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+        "quote": "Benford's law tends to apply most accurately to data that span several orders of magnitude"
+      },
+      {
+        "claim": "Examples include populations and river lengths",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+        "quote": "population numbers, death rates, lengths of rivers"
+      },
+      {
+        "claim": "Small leading digits are far more common in such data",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+        "note": "Implied by the 30% (digit 1) vs under 5% (digit 9) figures quoted above."
+      },
+      {
+        "claim": "Used to spot fabricated figures in accounts",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+        "quote": "applied for forensic auditing and fraud detection",
+        "note": "Page also says it is not foolproof; \"can help spot\" wording is safer than a flat claim."
+      },
+      {
+        "claim": "Probe: ~30% of Benford numbers start with 1 (answer index 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+        "quote": "about 30% of the time"
+      }
+    ],
+    "overall": "pass"
   }
 }

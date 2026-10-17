@@ -46,5 +46,49 @@
       "cerebrum"
     ],
     "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T19:16:38.736Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The idea we use only 10% of our brains is a myth.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth",
+        "quote": "rests in folklore and not science"
+      },
+      {
+        "claim": "Brain imaging shows activity throughout the brain.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth",
+        "quote": "no matter what one is doing, all brain areas are always active"
+      },
+      {
+        "claim": "Damage almost anywhere has some effect.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth",
+        "quote": "Even slight damage to small areas of the brain can have profound effects"
+      },
+      {
+        "claim": "We use virtually all of the brain, at different times.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth",
+        "quote": "We use virtually every part of the brain",
+        "note": "Quote is neurologist Barry Gordon as reported in the article; article also says most areas are used nearly all the time."
+      },
+      {
+        "claim": "Probe: people use only about 10% of their brains (false).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth",
+        "quote": "rests in folklore and not science"
+      }
+    ],
+    "overall": "pass"
   }
 }

@@ -51,5 +51,60 @@
       "wheel of fortune"
     ],
     "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T19:16:38.732Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "People who saw a high random number guessed higher than those who saw a low one (classic experiment).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "Participants whose wheel stopped on 10 guessed lower values (25% on average)",
+        "note": "Fetched text also gives 45% for the 65 group."
+      },
+      {
+        "claim": "Tversky and Kahneman ran the wheel experiment.",
+        "verdict": "unverified",
+        "note": "Fetched portion (first 100k chars) did not show the researcher names; not confirmed."
+      },
+      {
+        "claim": "Wheel rigged to land on 10 or 65.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "predetermined to stop on either 10 or 65"
+      },
+      {
+        "claim": "Participants estimated the percentage of African countries in the UN; the 10 group guessed lower than the 65 group.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "Participants whose wheel stopped on 10 guessed lower values (25% on average)"
+      },
+      {
+        "claim": "Estimates drift toward the first number seen; this is called anchoring.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "influenced by a reference point"
+      },
+      {
+        "claim": "Probe: an obviously random number can still shift estimates (true).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "can be completely irrelevant"
+      },
+      {
+        "claim": "Probe: the pull of a first number is called anchoring.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "a psychological phenomenon in which an individual's judgments or decisions are influenced by a reference point"
+      }
+    ],
+    "overall": "flagged"
   }
 }

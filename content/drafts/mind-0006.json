@@ -65,5 +65,81 @@
       "daguerreotype"
     ],
     "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T19:16:38.736Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Phineas Gage was a railroad construction foreman; accident in Vermont on 13 September 1848.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "blasting foreman directing a work gang that was preparing a railroad roadbed",
+        "note": "Article text gives September 13, 1848 near Cavendish, Vermont (tamping iron inscription says 14th)."
+      },
+      {
+        "claim": "He was packing explosive powder into a rock with an iron bar.",
+        "verdict": "unverified",
+        "note": "Source says the iron packs sand, clay or other inert material above the powder. Suggested: \"packing a blasting hole with an iron tamping bar\"."
+      },
+      {
+        "claim": "Bar about 3 feet 7 inches long, around 6 kg.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "3 feet 7 inches (1.1 m) long and 13¼ pounds (6.0 kg)"
+      },
+      {
+        "claim": "The bar went through his left cheek and out the top of his skull.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "entered under his left cheek",
+        "note": "Exit through top of skull also stated per fetch summary."
+      },
+      {
+        "claim": "He spoke within minutes of the accident.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "spoke within a few minutes",
+        "note": "Card says \"awake within minutes\"; source supports speaking within minutes; he had brief convulsions first."
+      },
+      {
+        "claim": "He survived and lived about twelve years more.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "died on May 21, 1860, at age 36, about 12 years after the accident"
+      },
+      {
+        "claim": "Accounts of personality change were exaggerated.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "almost always distort and exaggerate"
+      },
+      {
+        "claim": "He later worked driving horses in Chile.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "long-distance stagecoach driver on the Valparaiso-Santiago route",
+        "note": "Source: from 1852, stagecoaches pulled by six horses in Chile. Card says \"went back to work\" - fine."
+      },
+      {
+        "claim": "Probe: Gage did not die soon after the accident (false).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "about 12 years after the accident"
+      },
+      {
+        "claim": "Probe: an iron tamping bar passed through his skull.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "tamping iron"
+      }
+    ],
+    "overall": "flagged"
   }
 }

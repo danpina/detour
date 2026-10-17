@@ -54,5 +54,51 @@
       "memory"
     ],
     "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-17T19:16:38.737Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Working_memory",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "About four chunks can be held in working memory.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Working_memory",
+        "quote": "Cowan proposed that working memory has a capacity of about four chunks in young adults",
+        "note": "Source specifies young adults; card says \"average adult\". Suggest \"young adults\"."
+      },
+      {
+        "claim": "The famous \"seven plus or minus two\" paper dates from 1956.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two",
+        "quote": "published in 1956 in Psychological Review"
+      },
+      {
+        "claim": "\"Research since the 2000s\" suggests four chunks.",
+        "verdict": "unverified",
+        "note": "Second source attributes the four-chunk proposal to Cowan 2001 (\"Cowan 2001\" per fetch); first source gives no date. Suggest \"Research since 2001\" or \"Cowan (2001)\"."
+      },
+      {
+        "claim": "Chunking, like grouping digits in a phone number, stretches capacity.",
+        "verdict": "unverified",
+        "note": "Chunking is described (keeping groups of information accessible), but no phone number example in fetched text. Suggest dropping the phone-number example or citing another source."
+      },
+      {
+        "claim": "Probe: adults hold about 4 chunks (estimate).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Working_memory",
+        "quote": "about four chunks in young adults (and fewer in children and old adults)"
+      }
+    ],
+    "overall": "flagged"
   }
 }
