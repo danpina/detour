@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from "react";
 import type { Card, CardImage } from "@detour/content";
 import { imageUrl } from "../lib/content";
+import { track } from "../analytics";
 import { store } from "../lib/db";
 import { Sheet } from "./Sheet";
 
@@ -106,6 +107,7 @@ export function CardShell({ card, index, total, dim, children }: Props) {
                   key={code}
                   onClick={() => {
                     void store.addEvent({ card_id: card.id, event: "report", ms_spent: 0, reason: code });
+                    track("card.reported", { card: card.id, reason: code });
                     setReported(true);
                   }}
                   className="block w-full rounded-xl border border-neutral-200 px-4 py-3 text-left text-sm hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-800"

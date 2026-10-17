@@ -2,3 +2,5 @@ packages:
   - content
   - tools
   - web
+allowBuilds:
+  esbuild: true

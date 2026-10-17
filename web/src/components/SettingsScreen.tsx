@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { INTEREST_INFO } from "../lib/content";
 import type { Interest } from "@detour/content";
 import { backupFileName, buildBackup, parseBackup } from "../lib/backup";
+import { analyticsEnabled, setAnalyticsEnabled } from "../analytics";
 import { store } from "../lib/db";
 
 const box = "rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900";
@@ -15,6 +16,7 @@ const isInstalled = () =>
 export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: Props) {
   const [msg, setMsg] = useState<{ text: string; error?: boolean } | null>(null);
   const file = useRef<HTMLInputElement>(null);
+  const [shareStats, setShareStats] = useState(analyticsEnabled());
 
   const exportProgress = async () => {
     const blob = new Blob([buildBackup(await store.snapshot())], { type: "application/json" });
@@ -73,6 +75,24 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
           <button onClick={erase} className={`${btn} text-rose-600 dark:text-rose-400`}>Erase everything</button>
         </div>
         {msg && <p className={`mt-3 text-sm ${msg.error ? "text-rose-600 dark:text-rose-400" : "text-teal-700 dark:text-teal-300"}`}>{msg.text}</p>}
+      </section>
+
+      <section className={`${box} mt-4`}>
+        <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Anonymous usage numbers</h2>
+        <label className="mt-2 flex items-start gap-3">
+          <input
+            type="checkbox"
+            checked={shareStats}
+            onChange={(e) => {
+              setShareStats(e.target.checked);
+              setAnalyticsEnabled(e.target.checked);
+            }}
+            className="mt-1 h-5 w-5 accent-teal-600"
+          />
+          <span className="text-sm">
+            Help improve Detour by sharing simple counts, like how many cards were viewed and how often people remember them. Never your name, answers or interests.
+          </span>
+        </label>
       </section>
 
       {!isInstalled() && (

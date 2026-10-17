@@ -6,6 +6,7 @@ import { Onboarding } from "./components/Onboarding";
 import { ProgressScreen } from "./components/ProgressScreen";
 import { SessionView } from "./components/SessionView";
 import { SettingsScreen } from "./components/SettingsScreen";
+import { track } from "./analytics";
 import { store } from "./lib/db";
 import type { SessionItem } from "./lib/engine";
 import { EVENT_RETENTION_DAYS } from "./lib/progress";
@@ -40,12 +41,14 @@ export function App() {
   /** Starts a 5-card set; in feed mode the next set follows seamlessly (free scroll = same engine, endless). */
   const startSet = useCallback(async (ints: Interest[], feed: boolean) => {
     const items = await nextSet(ints);
+    track("session.started", { mode: feed ? "feed" : "set", cards: items.length });
     setScreen((s) => ({ name: "session", items, feed, run: (s.name === "session" ? s.run : 0) + 1 }));
   }, []);
 
   const finishOnboarding = async (picked: Interest[]) => {
     setInterests(picked);
     await store.saveSettings({ id: "main", interests: picked, onboarding_done: true });
+    track("onboarding.completed", { interests: picked.length });
     await startSet(picked, false);
   };
 

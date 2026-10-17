@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { TRACKS, generateRound, judge, timesOff, type DrillSpec, type Judgement, type SkillProgress } from "../lib/drills";
 import { formatNumber } from "../lib/scoring";
 import { LEVEL_WINDOW, LEVEL_THRESHOLD } from "../lib/drills";
+import { track as signal } from "../analytics";
 import { recordDrillRound } from "../lib/session";
 
 type Props = {
@@ -35,6 +36,8 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
     const right = results.filter(Boolean).length;
     void recordDrillRound(spec.track, results).then((r) => {
       setDone({ ...r, right });
+      signal("drill.completed", { track: spec.track, level: spec.level, right, total: problems.length });
+      if (r.leveledUp) signal("drill.levelUp", { track: spec.track, level: r.progress.level });
       onComplete({ correct: right >= Math.ceil(problems.length / 2) });
     });
   };

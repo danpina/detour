@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { track } from "../analytics";
 import { store } from "../lib/db";
 import type { SessionItem } from "../lib/engine";
 import { recordActivity, recordCompletion } from "../lib/session";
@@ -35,7 +36,8 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
   useEffect(() => {
     shownAt.current = Date.now();
     void store.addEvent({ card_id: cardId, event: "view", ms_spent: 0 });
-  }, [key, cardId]);
+    track("card.viewed", { card: cardId, type: item.kind === "new" ? item.card.type : item.kind });
+  }, [key, cardId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const markComplete = useCallback(
     (result?: CardResult) => {
@@ -50,6 +52,7 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
       });
       void recordCompletion(item, { correct: result?.correct, ms });
       void recordActivity();
+      if (item.kind === "review") track("recall.answered", { kind: item.probe.kind, correct: result?.correct ?? false });
     },
     [cardId, item, key],
   );
@@ -57,9 +60,17 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
   const finish = useCallback(
     (done: Set<string>) => {
       void store.addSession({ started_at: startedAt.current, source, cards_done: done.size, unlock_granted_min: 0 });
+      const kindOf = (it: SessionItem) => (it.kind === "drill" ? `drill:${it.drill.track}:${it.drill.seed}` : `${it.kind}:${it.card.id}:${it.kind === "review" ? it.probe.id : ""}`);
+      const finished = items.filter((it) => done.has(kindOf(it)));
+      track("session.completed", {
+        completed: finished.length,
+        reviews: finished.filter((it) => it.kind === "review").length,
+        newCards: finished.filter((it) => it.kind === "new").length,
+        drills: finished.filter((it) => it.kind === "drill").length,
+      });
       onFinish(done.size);
     },
-    [onFinish, source],
+    [items, onFinish, source],
   );
 
   const next = useCallback(() => {
