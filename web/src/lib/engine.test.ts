@@ -18,13 +18,13 @@ const card = (id: string, interest: Interest = "science", type: Card["type"] = "
 
 const review = (c: Card, dueOffsetDays: number): ReviewRow => ({ ...newReview(`${c.id}-p1`, c.id, NOW), due_at: NOW + dueOffsetDays * DAY });
 const kinds = (items: SessionItem[]) => items.map((i) => i.kind);
-const ids = (items: SessionItem[]) => items.map((i) => i.card.id);
+const ids = (items: SessionItem[]) => items.map((i) => (i.kind === "drill" ? `drill:${i.drill.track}` : i.card.id));
 
 const pool = [
   card("sci-0001"), card("sci-0002", "science", "estimate"), card("hist-0001", "history", "story"), card("hist-0002", "history", "guess_first"),
   card("money-0001", "money", "story"), card("tech-0001", "tech", "story"), card("num-0001", "numbers", "estimate"), card("mind-0001", "mind"),
 ];
-const drill = { id: "num-0099", interest: "numbers", type: "drill" } as Card;
+const drill = { track: "mental-math", level: 1, seed: 1 } as const;
 const base = { cards: pool, completed: new Set<string>(), interests: ["science", "history", "money"] as Interest[], now: NOW };
 
 describe("session mix", () => {
@@ -43,7 +43,7 @@ describe("session mix", () => {
   it("serves the most overdue reviews first", () => {
     const reviews = [review(pool[0]!, -1), review(pool[1]!, -5), review(pool[2]!, -3)];
     const items = buildSession({ ...base, completed: new Set(["sci-0001", "sci-0002", "hist-0001"]), reviews, makeDrill: () => drill });
-    const rv = items.filter((i) => i.kind === "review").map((i) => i.card.id);
+    const rv = ids(items.filter((i) => i.kind === "review"));
     expect(rv).toEqual(["sci-0002", "hist-0001"]);
   });
 
@@ -118,6 +118,7 @@ describe("backlog and engagement", () => {
     );
     expect(eng).toEqual({ history: 1, science: 0 });
     const items = buildSession({ ...base, reviews: [], engagement: eng, interests: ["science", "history"] });
-    expect(items[0]!.card.interest).toBe("history");
+    const first = items[0]!;
+    expect(first.kind !== "drill" && first.card.interest).toBe("history");
   });
 });

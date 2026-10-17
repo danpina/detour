@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { store } from "../lib/db";
 import type { SessionItem } from "../lib/engine";
 import { recordCompletion } from "../lib/session";
-import { DrillCard } from "./cards/DrillCard";
+import { DrillView } from "./DrillView";
 import { EstimateCard } from "./cards/EstimateCard";
 import { FactWhyCard } from "./cards/FactWhyCard";
 import { GuessFirstCard } from "./cards/GuessFirstCard";
@@ -27,14 +27,15 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
   const completedRef = useRef(completed);
   completedRef.current = completed;
   const item = items[index]!;
-  const card = item.card;
-  const key = `${item.kind}:${card.id}:${item.kind === "review" ? item.probe.id : ""}`;
+  // Drills are rule-generated and have no card; their events use a stable pseudo id.
+  const cardId = item.kind === "drill" ? `drill:${item.drill.track}` : item.card.id;
+  const key = item.kind === "drill" ? `drill:${item.drill.track}:${item.drill.seed}` : `${item.kind}:${item.card.id}:${item.kind === "review" ? item.probe.id : ""}`;
 
   // Record a "view" each time a card appears.
   useEffect(() => {
     shownAt.current = Date.now();
-    void store.addEvent({ card_id: card.id, event: "view", ms_spent: 0 });
-  }, [key, card.id]);
+    void store.addEvent({ card_id: cardId, event: "view", ms_spent: 0 });
+  }, [key, cardId]);
 
   const markComplete = useCallback(
     (result?: CardResult) => {
@@ -42,14 +43,14 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
       const ms = Date.now() - shownAt.current;
       setCompleted((s) => new Set(s).add(key));
       void store.addEvent({
-        card_id: card.id,
+        card_id: cardId,
         event: "complete",
         ms_spent: ms,
         ...(item.kind === "review" ? { probe_id: item.probe.id, correct: result?.correct ?? false } : {}),
       });
       void recordCompletion(item, { correct: result?.correct, ms });
     },
-    [card.id, item, key],
+    [cardId, item, key],
   );
 
   const finish = useCallback(
@@ -62,10 +63,10 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
 
   const next = useCallback(() => {
     const done = completedRef.current;
-    if (!done.has(key)) void store.addEvent({ card_id: card.id, event: "skip", ms_spent: Date.now() - shownAt.current });
+    if (!done.has(key)) void store.addEvent({ card_id: cardId, event: "skip", ms_spent: Date.now() - shownAt.current });
     if (index + 1 >= items.length) return finish(done);
     setIndex(index + 1);
-  }, [card.id, finish, index, items.length, key]);
+  }, [cardId, finish, index, items.length, key]);
 
   const prev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), []);
 
@@ -94,14 +95,16 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
 
   const common = { index, total: items.length, onComplete: markComplete, onNext: next, completed: completed.has(key) };
   const view = (() => {
+    if (item.kind === "drill") return <DrillView key={key} spec={item.drill} {...common} />;
+    const card = item.card;
     if (item.kind === "review") return <RecallCard key={key} card={card} probe={item.probe} {...common} />;
     switch (card.type) {
       case "story": return <StoryCard key={key} card={card} {...common} />;
       case "fact_why": return <FactWhyCard key={key} card={card} {...common} />;
       case "guess_first": return <GuessFirstCard key={key} card={card} {...common} />;
       case "estimate": return <EstimateCard key={key} card={card} {...common} />;
-      case "drill": return <DrillCard key={key} card={card} {...common} />;
-      case "recall": return <DrillCard key={key} card={card as never} {...common} />;
+      case "drill":
+      case "recall": return null; // runtime-only types; the engine never emits them as cards
     }
   })();
 

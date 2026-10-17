@@ -1,5 +1,6 @@
 import Dexie, { type Table } from "dexie";
 import type { Interest } from "@detour/content";
+import type { SkillProgress } from "./drills";
 import type { ReviewRow } from "./fsrs";
 
 export type Settings = {
@@ -34,6 +35,7 @@ class DetourDB extends Dexie {
   events!: Table<DetourEvent, number>;
   sessions!: Table<SessionRow, number>;
   reviews!: Table<ReviewRow, string>;
+  skill_progress!: Table<SkillProgress, string>;
 
   constructor() {
     super("detour");
@@ -44,6 +46,9 @@ class DetourDB extends Dexie {
     });
     this.version(2).stores({
       reviews: "probe_id, card_id, due_at",
+    });
+    this.version(3).stores({
+      skill_progress: "track_id",
     });
   }
 }
@@ -56,7 +61,7 @@ try {
 }
 
 // In-memory fallbacks so the app still works when IndexedDB is blocked (rule 7).
-const mem = { settings: undefined as Settings | undefined, events: [] as DetourEvent[], sessions: [] as SessionRow[], reviews: new Map<string, ReviewRow>() };
+const mem = { settings: undefined as Settings | undefined, events: [] as DetourEvent[], sessions: [] as SessionRow[], reviews: new Map<string, ReviewRow>(), skills: new Map<string, SkillProgress>() };
 
 async function safe<T>(fn: () => Promise<T>, fallback: T): Promise<T> {
   try {
@@ -101,6 +106,16 @@ export const store = {
   async putReview(r: ReviewRow): Promise<void> {
     mem.reviews.set(r.probe_id, r);
     await safe(() => db!.reviews.put(r).then(() => undefined), undefined);
+  },
+  async getSkills(): Promise<SkillProgress[]> {
+    const rows = await safe(() => db!.skill_progress.toArray(), [] as SkillProgress[]);
+    const merged = new Map<string, SkillProgress>(rows.map((r) => [r.track_id, r]));
+    for (const [k, v] of mem.skills) merged.set(k, v);
+    return [...merged.values()];
+  },
+  async putSkill(p: SkillProgress): Promise<void> {
+    mem.skills.set(p.track_id, p);
+    await safe(() => db!.skill_progress.put(p).then(() => undefined), undefined);
   },
   async addSession(s: SessionRow): Promise<void> {
     mem.sessions.push(s);

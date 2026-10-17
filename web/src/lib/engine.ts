@@ -1,11 +1,12 @@
 import type { Card, Interest, Probe } from "@detour/content";
+import type { DrillSpec } from "./drills";
 import { pickSet } from "./pickSet";
 import type { ReviewRow } from "./fsrs";
 
 export type SessionItem =
   | { kind: "review"; card: Card; probe: Probe; review: ReviewRow }
   | { kind: "new"; card: Card }
-  | { kind: "drill"; card: Card };
+  | { kind: "drill"; drill: DrillSpec };
 
 export type EngineInput = {
   cards: Card[];
@@ -17,8 +18,8 @@ export type EngineInput = {
   engagement?: Partial<Record<Interest, number>>;
   now: number;
   setSize?: number;
-  /** Provides the next skill-drill card (Step 8). Without it the drill slot goes to other content. */
-  makeDrill?: () => Card | undefined;
+  /** Provides the next skill drill (track + level). Without it the drill slot goes to other content. */
+  makeDrill?: () => DrillSpec | undefined;
 };
 
 export const DEFAULT_SET_SIZE = 5;
@@ -114,6 +115,6 @@ export function buildSession(input: EngineInput): SessionItem[] {
   }
 
   const items = interleave(reviewItems, newItems);
-  if (drill) items.push({ kind: "drill", card: drill });
+  if (drill) items.push({ kind: "drill", drill });
   return items;
 }

@@ -1,0 +1,110 @@
+import { ESTIMATION_LEVELS, ESTIMATION_MAX_LEVEL, generateEstimation, isCloseEnough, timesOff, estimationVerdict } from "./estimation";
+import { MENTAL_MATH_LEVELS, MENTAL_MATH_MAX_LEVEL, generateMentalMath, type Problem } from "./mentalMath";
+import { makeRng } from "./rng";
+
+export type TrackId = "mental-math" | "estimation";
+export type DrillSpec = { track: TrackId; level: number; seed: number };
+export type { Problem };
+
+export const TRACKS: Record<TrackId, { name: string; blurb: string; levels: readonly string[]; maxLevel: number; problems: number; timeLimitMs?: number }> = {
+  "mental-math": {
+    name: "Mental math",
+    blurb: "Quick sums and shortcuts",
+    levels: MENTAL_MATH_LEVELS,
+    maxLevel: MENTAL_MATH_MAX_LEVEL,
+    problems: 3,
+    timeLimitMs: 45_000,
+  },
+  estimation: {
+    name: "Estimation",
+    blurb: "Fermi-style guesses",
+    levels: ESTIMATION_LEVELS,
+    maxLevel: ESTIMATION_MAX_LEVEL,
+    problems: 2,
+  },
+};
+
+export const TRACK_IDS = Object.keys(TRACKS) as TrackId[];
+
+/** The problems for one drill round. Deterministic for a given spec. */
+export function generateRound(spec: DrillSpec): Problem[] {
+  const rng = makeRng(spec.seed);
+  const gen = spec.track === "mental-math" ? generateMentalMath : generateEstimation;
+  const seen = new Set<string>();
+  const out: Problem[] = [];
+  for (let guard = 0; out.length < TRACKS[spec.track].problems && guard < 50; guard++) {
+    const p = gen(spec.level, rng);
+    if (seen.has(p.prompt)) continue;
+    seen.add(p.prompt);
+    out.push(p);
+  }
+  return out;
+}
+
+// ---------- answers ----------
+
+/** Parses "1,200", "1.5k", "3m", "2e6", "1.2 million". Returns undefined if it is not a number. */
+export function parseNumber(input: string): number | undefined {
+  const s = input.trim().toLowerCase().replace(/,/g, "").replace(/\s+/g, "");
+  const m = /^(-?\d*\.?\d+(?:e[+-]?\d+)?)(k|m|b|thousand|million|billion)?$/.exec(s);
+  if (!m) return undefined;
+  const mult = { k: 1e3, thousand: 1e3, m: 1e6, million: 1e6, b: 1e9, billion: 1e9 }[m[2] ?? ""] ?? 1;
+  const n = Number(m[1]) * mult;
+  return Number.isFinite(n) ? n : undefined;
+}
+
+export type Judgement = { correct: boolean; guess?: number; note: string };
+
+export function judge(track: TrackId, problem: Problem, input: string): Judgement {
+  const guess = parseNumber(input);
+  if (guess === undefined) return { correct: false, note: "That wasn't a number." };
+  if (track === "mental-math") {
+    const ok = Math.abs(guess - problem.answer) < 1e-9;
+    return { correct: ok, guess, note: ok ? "Correct" : "Not quite" };
+  }
+  return { correct: isCloseEnough(guess, problem.answer), guess, note: estimationVerdict(guess, problem.answer) };
+}
+
+export { timesOff };
+
+// ---------- levels ----------
+
+export const LEVEL_WINDOW = 20;
+export const LEVEL_THRESHOLD = 0.8;
+
+export type SkillProgress = {
+  track_id: TrackId;
+  level: number;
+  /** Results at the current level, newest last, at most LEVEL_WINDOW long. */
+  recent_results: boolean[];
+  attempts_total: number;
+  last_at: number;
+};
+
+export const emptyProgress = (track_id: TrackId): SkillProgress => ({ track_id, level: 1, recent_results: [], attempts_total: 0, last_at: 0 });
+
+/** Level up at 80% over the last 20 attempts at this level. */
+export function shouldLevelUp(recent: boolean[]): boolean {
+  if (recent.length < LEVEL_WINDOW) return false;
+  const last = recent.slice(-LEVEL_WINDOW);
+  return last.filter(Boolean).length / LEVEL_WINDOW >= LEVEL_THRESHOLD;
+}
+
+export function applyResults(progress: SkillProgress, results: boolean[], now: number): { progress: SkillProgress; leveledUp: boolean } {
+  const max = TRACKS[progress.track_id].maxLevel;
+  let recent = [...progress.recent_results, ...results].slice(-LEVEL_WINDOW);
+  let level = progress.level;
+  let leveledUp = false;
+  if (level < max && shouldLevelUp(recent)) {
+    level += 1;
+    recent = []; // fresh start on the new level
+    leveledUp = true;
+  }
+  return { progress: { ...progress, level, recent_results: recent, attempts_total: progress.attempts_total + results.length, last_at: now }, leveledUp };
+}
+
+/** Picks the track practised least recently (never-practised tracks first). */
+export function nextTrack(all: SkillProgress[]): TrackId {
+  const byId = new Map(all.map((p) => [p.track_id, p]));
+  return [...TRACK_IDS].sort((a, b) => (byId.get(a)?.last_at ?? 0) - (byId.get(b)?.last_at ?? 0))[0]!;
+}

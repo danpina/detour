@@ -1,12 +1,16 @@
-import type { Card, Interest } from "@detour/content";
+import type { Interest } from "@detour/content";
 import { ALL_CARDS } from "./content";
+import { emptyProgress, applyResults, nextTrack, type DrillSpec, type SkillProgress, type TrackId } from "./drills";
 import { buildSession, engagementFrom, DEFAULT_SET_SIZE, type SessionItem } from "./engine";
 import { applyReview, newReview, ratingFor } from "./fsrs";
 import { store } from "./db";
 
 /** Loads local history and builds the next set. Used for quick sets and for each page of the free-scroll feed. */
-export async function nextSet(interests: Interest[], setSize = DEFAULT_SET_SIZE, makeDrill?: () => Card | undefined): Promise<SessionItem[]> {
-  const [reviews, completed, events] = await Promise.all([store.getReviews(), store.completedCardIds(), store.getEvents()]);
+export async function nextSet(interests: Interest[], setSize = DEFAULT_SET_SIZE): Promise<SessionItem[]> {
+  const [reviews, completed, events, skills] = await Promise.all([store.getReviews(), store.completedCardIds(), store.getEvents(), store.getSkills()]);
+  const track = nextTrack(skills);
+  const level = skills.find((s) => s.track_id === track)?.level ?? 1;
+  const drill: DrillSpec = { track, level, seed: Math.floor(Math.random() * 2 ** 31) };
   return buildSession({
     cards: ALL_CARDS,
     reviews,
@@ -15,8 +19,16 @@ export async function nextSet(interests: Interest[], setSize = DEFAULT_SET_SIZE,
     engagement: engagementFrom(events, ALL_CARDS),
     now: Date.now(),
     setSize,
-    makeDrill,
+    makeDrill: () => drill,
   });
+}
+
+/** Saves a finished drill round: updates the track\u0027s recent results and level. */
+export async function recordDrillRound(track: TrackId, results: boolean[], now = Date.now()): Promise<{ progress: SkillProgress; leveledUp: boolean }> {
+  const current = (await store.getSkills()).find((s) => s.track_id === track) ?? emptyProgress(track);
+  const out = applyResults(current, results, now);
+  await store.putSkill(out.progress);
+  return out;
 }
 
 /**
