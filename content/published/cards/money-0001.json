@@ -1,0 +1,58 @@
+{
+  "id": "money-0001",
+  "interest": "money",
+  "type": "story",
+  "title": "The tulip that broke the market",
+  "body": {
+    "panels": [
+      {
+        "text": "Holland, 1636. Taverns fill with traders signing contracts for tulip bulbs not yet out of the ground. The most coveted flowers are streaked with flame-like colour."
+      },
+      {
+        "text": "The most famous, Semper Augustus, was said to sell for up to 10,000 guilders. A skilled craftsman earned roughly a tenth of that in a year."
+      },
+      {
+        "text": "The twist: those gorgeous streaks were a disease. A virus \"broke\" the petal colour, and it also weakened the bulb, so the prettiest tulips were the hardest to grow."
+      },
+      {
+        "text": "In February 1637 buyers stopped showing up and prices collapsed. Yet historian Anne Goldgar found that few people were actually ruined. The legend of a nation gone mad may be bigger than the bubble."
+      }
+    ]
+  },
+  "image": {
+    "file": "money-0001.webp",
+    "alt": "Watercolour of a white tulip with red flame-like streaks, from the Tulip Book of the Six collection",
+    "kind": "artwork",
+    "credit": "Tulpenboek Six (Six Collection) / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Semper_Augustus_-_Six_Collection.jpg"
+  },
+  "probes": [
+    {
+      "id": "money-0001-p1",
+      "kind": "mcq",
+      "question": "What really caused the famous flame-like streaks on the most prized tulips?",
+      "options": [
+        "A virus",
+        "Special fertiliser",
+        "Selective cross-breeding",
+        "Salt water"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0001-p2",
+      "kind": "tf",
+      "question": "True or false: historian Anne Goldgar found that tulip mania ruined large numbers of ordinary Dutch people.",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tulip mania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tulip_mania"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1
+}

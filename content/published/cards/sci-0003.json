@@ -1,0 +1,43 @@
+{
+  "id": "sci-0003",
+  "interest": "science",
+  "type": "estimate",
+  "title": "How many bones do you have?",
+  "body": {
+    "question": "How many bones are in an adult human skeleton?",
+    "unit": "bones",
+    "min": 50,
+    "max": 400,
+    "scale": "linear",
+    "answer": 206,
+    "reveal": "An adult has about 206 bones. Babies are born with around 270, and many fuse together as they grow."
+  },
+  "image": {
+    "file": "sci-0003.webp",
+    "alt": "Old engraving of a human skeleton leaning on a spade",
+    "kind": "artwork",
+    "credit": "Wellcome Collection",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:A_human_skeleton,_seen_from_the_front,_resting_the_bones_of_Wellcome_V0007798.jpg"
+  },
+  "probes": [
+    {
+      "id": "sci-0003-p1",
+      "kind": "estimate",
+      "question": "How many bones are in an adult human skeleton?",
+      "answer": 206,
+      "unit": "bones",
+      "min": 50,
+      "max": 400,
+      "scale": "linear"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Human skeleton (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Human_skeleton"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1
+}

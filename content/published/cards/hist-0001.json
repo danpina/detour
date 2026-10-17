@@ -1,0 +1,54 @@
+{
+  "id": "hist-0001",
+  "interest": "history",
+  "type": "fact_why",
+  "title": "Oxford is older than the Aztec Empire",
+  "body": {
+    "claim": "Teaching was already happening at Oxford around 1096. The Aztec city of Tenochtitlan was not founded until 1325.",
+    "why": "Oxford grew from a loose gathering of scholars in the 11th and 12th centuries, and teaching there is traced back to about 1096. The Aztecs founded Tenochtitlan on an island in Lake Texcoco in 1325, and their empire formed in 1428. So Oxford was already some 230 years old when Tenochtitlan was founded."
+  },
+  "image": {
+    "file": "hist-0001.webp",
+    "alt": "The round, domed Radcliffe Camera library rising above the old stone buildings of Oxford",
+    "kind": "photo",
+    "credit": "Julian Herzog / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Radcliffe_Camera_Oxford_2018_04.jpg"
+  },
+  "probes": [
+    {
+      "id": "hist-0001-p1",
+      "kind": "tf",
+      "question": "True or false: Oxford University is older than the city of Tenochtitlan, the Aztec capital.",
+      "answer": true
+    },
+    {
+      "id": "hist-0001-p2",
+      "kind": "mcq",
+      "question": "Roughly when did teaching begin at Oxford?",
+      "options": [
+        "Around 1096",
+        "Around 1325",
+        "Around 1492",
+        "Around 1600"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "University of Oxford: Introduction and history",
+      "url": "https://www.ox.ac.uk/about/organisation/history"
+    },
+    {
+      "title": "Tenochtitlan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tenochtitlan"
+    },
+    {
+      "title": "History of the University of Oxford (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/History_of_the_University_of_Oxford"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1
+}

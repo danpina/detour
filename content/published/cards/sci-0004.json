@@ -1,0 +1,43 @@
+{
+  "id": "sci-0004",
+  "interest": "science",
+  "type": "estimate",
+  "title": "How much of Earth is water?",
+  "body": {
+    "question": "What percentage of Earth's surface is covered by water?",
+    "unit": "%",
+    "min": 0,
+    "max": 100,
+    "scale": "linear",
+    "answer": 71,
+    "reveal": "About 71% of the surface is water, and oceans hold about 96.5% of all of it."
+  },
+  "image": {
+    "file": "sci-0004.webp",
+    "alt": "The Blue Marble: Earth photographed from space by the Apollo 17 crew, clouds over blue ocean",
+    "kind": "photo",
+    "credit": "NASA / Apollo 17 crew",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Blue_Marble_(remastered).jpg"
+  },
+  "probes": [
+    {
+      "id": "sci-0004-p1",
+      "kind": "estimate",
+      "question": "What percentage of Earth's surface is covered by water?",
+      "answer": 71,
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "scale": "linear"
+    }
+  ],
+  "sources": [
+    {
+      "title": "USGS: How much water is there on Earth?",
+      "url": "https://www.usgs.gov/water-science-school/science/how-much-water-there-earth"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1
+}

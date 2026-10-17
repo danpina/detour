@@ -1,0 +1,34 @@
+{
+  "id": "sci-0001",
+  "interest": "science",
+  "type": "fact_why",
+  "title": "A day on Venus is longer than its year",
+  "body": {
+    "claim": "Venus takes 243 Earth days to spin once, but only 225 Earth days to circle the Sun.",
+    "why": "Venus rotates extremely slowly, and in the opposite direction to most planets, so one turn on its axis takes longer than one trip around the Sun. Because of that backwards spin, the Sun rises in the west there, and a single sunrise-to-sunrise day lasts about 117 Earth days."
+  },
+  "image": {
+    "file": "sci-0001.webp",
+    "alt": "Computer-generated globe of Venus built from NASA Magellan radar data, in warm orange tones",
+    "kind": "photo",
+    "credit": "NASA/JPL",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Venus_globe.jpg"
+  },
+  "probes": [
+    {
+      "id": "sci-0001-p1",
+      "kind": "tf",
+      "question": "True or false: a year on Venus is shorter than a day on Venus.",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "NASA: Venus facts",
+      "url": "https://science.nasa.gov/venus/venus-facts/"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1
+}

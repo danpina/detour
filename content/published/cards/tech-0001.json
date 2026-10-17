@@ -1,0 +1,55 @@
+{
+  "id": "tech-0001",
+  "interest": "tech",
+  "type": "story",
+  "title": "The first program was written for a machine that never existed",
+  "body": {
+    "panels": [
+      {
+        "text": "London, 1843. Ada Lovelace, daughter of the poet Lord Byron, translates a paper about Charles Babbage's planned Analytical Engine, a mechanical computer."
+      },
+      {
+        "text": "She adds seven long notes of her own. In the last, Note G, she lays out step by step how the machine could calculate a series of Bernoulli numbers."
+      },
+      {
+        "text": "That method is often called the first published computer program. The twist: the Analytical Engine was never finished, so her program was never run."
+      },
+      {
+        "text": "She also imagined more than arithmetic: a machine that could work with any symbols, perhaps even music. That idea took about a century to come true."
+      }
+    ]
+  },
+  "image": {
+    "file": "tech-0001.webp",
+    "alt": "Portrait painting of Ada Lovelace, a young woman in an off-the-shoulder dress",
+    "kind": "artwork",
+    "credit": "Alfred Edward Chalon / Science Museum Group",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ada_Lovelace_portrait.jpg"
+  },
+  "probes": [
+    {
+      "id": "tech-0001-p1",
+      "kind": "cloze",
+      "question": "Ada Lovelace wrote an algorithm for the ____ Engine, a machine that was never completed.",
+      "answer": "Analytical",
+      "accept": [
+        "analytical"
+      ]
+    },
+    {
+      "id": "tech-0001-p2",
+      "kind": "tf",
+      "question": "True or false: Lovelace's program was run on a working machine in her lifetime.",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ada Lovelace (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ada_Lovelace"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1
+}

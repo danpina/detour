@@ -1,0 +1,43 @@
+{
+  "id": "sci-0002",
+  "interest": "science",
+  "type": "guess_first",
+  "title": "Trees vs. stars",
+  "body": {
+    "question": "Which is bigger: the number of trees on Earth, or the number of stars in the Milky Way?",
+    "options": [
+      "Trees on Earth",
+      "Stars in the Milky Way"
+    ],
+    "answer": 0,
+    "reveal": "A global survey estimated about 3.04 trillion trees on Earth. The Milky Way holds roughly 100 to 400 billion stars, so there are around ten times more trees than stars."
+  },
+  "image": {
+    "file": "sci-0002.webp",
+    "alt": "Sunlight falling through tall old-growth Douglas fir trees with young trees below",
+    "kind": "photo",
+    "credit": "U.S. National Archives",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:View_through_an_old_growth_forest_with_young_trees_growing_in_the_sunlight_between_the_hugh_old_Douglas_fir_trees...._-_NARA_-_557627.jpg"
+  },
+  "probes": [
+    {
+      "id": "sci-0002-p1",
+      "kind": "tf",
+      "question": "True or false: there are more trees on Earth than stars in the Milky Way.",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Crowther et al. (2015), Mapping tree density at a global scale, Nature",
+      "url": "https://www.nature.com/articles/nature14967"
+    },
+    {
+      "title": "Milky Way (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Milky_Way"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1
+}

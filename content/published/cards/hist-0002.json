@@ -1,0 +1,47 @@
+{
+  "id": "hist-0002",
+  "interest": "history",
+  "type": "guess_first",
+  "title": "Cleopatra, pyramids and the Moon",
+  "body": {
+    "question": "Cleopatra lived closer in time to...",
+    "options": [
+      "The Moon landing (1969)",
+      "The building of the Great Pyramid (c. 2560 BC)"
+    ],
+    "answer": 0,
+    "reveal": "The Great Pyramid was built about 2,500 years before Cleopatra died in 30 BC. The Moon landing came about 2,000 years after. She lived closer to Apollo 11 than to the pyramids."
+  },
+  "image": {
+    "file": "hist-0002.webp",
+    "alt": "The pyramids of Giza standing above the desert sand under a clear blue sky",
+    "kind": "photo",
+    "credit": "Ricardo Liberato / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg"
+  },
+  "probes": [
+    {
+      "id": "hist-0002-p1",
+      "kind": "mcq",
+      "question": "Which event was Cleopatra closer to in time?",
+      "options": [
+        "The building of the Great Pyramid",
+        "The Moon landing"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cleopatra (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cleopatra"
+    },
+    {
+      "title": "Great Pyramid of Giza (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1
+}

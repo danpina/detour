@@ -35,6 +35,8 @@ Read `SPEC.md` before any task. It is the source of truth. If a request conflict
 
 ## Commands (keep updated)
 - `pnpm install`
+- `pnpm tools validate` — check all published cards, images and the manifest
+- `pnpm tools manifest` — regenerate manifest.json after changing published content
 - `pnpm tools draft --topics topics/history.csv` â€” draft cards
 - `pnpm tools images --pending` â€” find/generate images for drafts
 - `pnpm tools review` â€” open local review UI
