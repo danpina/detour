@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { store } from "../lib/db";
 import type { SessionItem } from "../lib/engine";
-import { recordCompletion } from "../lib/session";
+import { recordActivity, recordCompletion } from "../lib/session";
 import { DrillView } from "./DrillView";
 import { EstimateCard } from "./cards/EstimateCard";
 import { FactWhyCard } from "./cards/FactWhyCard";
@@ -49,6 +49,7 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
         ...(item.kind === "review" ? { probe_id: item.probe.id, correct: result?.correct ?? false } : {}),
       });
       void recordCompletion(item, { correct: result?.correct, ms });
+      void recordActivity();
     },
     [cardId, item, key],
   );

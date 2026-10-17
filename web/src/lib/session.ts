@@ -4,6 +4,8 @@ import { emptyProgress, applyResults, nextTrack, type DrillSpec, type SkillProgr
 import { buildSession, engagementFrom, DEFAULT_SET_SIZE, type SessionItem } from "./engine";
 import { applyReview, newReview, ratingFor } from "./fsrs";
 import { store } from "./db";
+import { ALL_CARDS as CARDS } from "./content";
+import { dayKey, displayStreak, emptyStreak, knowledgeMap, recallStats, recordDay, skillSummary, weeklyRecap } from "./progress";
 
 /** Loads local history and builds the next set. Used for quick sets and for each page of the free-scroll feed. */
 export async function nextSet(interests: Interest[], setSize = DEFAULT_SET_SIZE): Promise<SessionItem[]> {
@@ -48,4 +50,32 @@ export async function recordCompletion(item: SessionItem, result: { correct?: bo
     const rating = ratingFor(item.probe.kind, result.correct ?? false, result.ms);
     await store.putReview(applyReview(current, rating, now));
   }
+}
+
+/** Marks today as active for the streak. Safe to call many times a day. */
+export async function recordActivity(now = Date.now()): Promise<void> {
+  const current = (await store.getStreak()) ?? emptyStreak();
+  const next = recordDay(current, dayKey(now));
+  if (next !== current) await store.putStreak(next);
+}
+
+/** Everything the Progress screen shows, computed from local data. */
+export async function loadProgress(now = Date.now()) {
+  const [events, reviews, completed, skills, streakState] = await Promise.all([
+    store.getEvents(),
+    store.getReviews(),
+    store.completedCardIds(),
+    store.getSkills(),
+    store.getStreak(),
+  ]);
+  const streak = streakState ?? emptyStreak();
+  const shown = displayStreak(streak, dayKey(now));
+  return {
+    streak: { current: shown.current, best: Math.max(streak.best, shown.current), freezesLeft: shown.freezes_left },
+    recall: recallStats(events, now, 30),
+    map: knowledgeMap(CARDS, completed, reviews),
+    skills: skillSummary(skills),
+    recap: weeklyRecap(events, shown.current, now),
+    reviewsScheduled: reviews.length,
+  };
 }

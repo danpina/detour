@@ -2,6 +2,7 @@ import Dexie, { type Table } from "dexie";
 import type { Interest } from "@detour/content";
 import type { SkillProgress } from "./drills";
 import type { ReviewRow } from "./fsrs";
+import type { StreakState } from "./progress";
 
 export type Settings = {
   id: "main";
@@ -30,12 +31,22 @@ export type SessionRow = {
   unlock_granted_min: number;
 };
 
+export type BackupData = {
+  settings?: Settings;
+  events: DetourEvent[];
+  sessions: SessionRow[];
+  reviews: ReviewRow[];
+  skill_progress: SkillProgress[];
+  streak?: StreakState;
+};
+
 class DetourDB extends Dexie {
   settings!: Table<Settings, string>;
   events!: Table<DetourEvent, number>;
   sessions!: Table<SessionRow, number>;
   reviews!: Table<ReviewRow, string>;
   skill_progress!: Table<SkillProgress, string>;
+  streak!: Table<StreakState, string>;
 
   constructor() {
     super("detour");
@@ -50,6 +61,9 @@ class DetourDB extends Dexie {
     this.version(3).stores({
       skill_progress: "track_id",
     });
+    this.version(4).stores({
+      streak: "id",
+    });
   }
 }
 
@@ -61,7 +75,7 @@ try {
 }
 
 // In-memory fallbacks so the app still works when IndexedDB is blocked (rule 7).
-const mem = { settings: undefined as Settings | undefined, events: [] as DetourEvent[], sessions: [] as SessionRow[], reviews: new Map<string, ReviewRow>(), skills: new Map<string, SkillProgress>() };
+const mem = { settings: undefined as Settings | undefined, events: [] as DetourEvent[], sessions: [] as SessionRow[], reviews: new Map<string, ReviewRow>(), skills: new Map<string, SkillProgress>(), streak: undefined as StreakState | undefined };
 
 async function safe<T>(fn: () => Promise<T>, fallback: T): Promise<T> {
   try {
@@ -116,6 +130,64 @@ export const store = {
   async putSkill(p: SkillProgress): Promise<void> {
     mem.skills.set(p.track_id, p);
     await safe(() => db!.skill_progress.put(p).then(() => undefined), undefined);
+  },
+  async getStreak(): Promise<StreakState | undefined> {
+    return (await safe(() => db!.streak.get("main"), undefined)) ?? mem.streak;
+  },
+  async putStreak(s: StreakState): Promise<void> {
+    mem.streak = s;
+    await safe(() => db!.streak.put(s).then(() => undefined), undefined);
+  },
+  async getSessions(): Promise<SessionRow[]> {
+    const rows = await safe(() => db!.sessions.toArray(), [] as SessionRow[]);
+    return rows.length ? rows : [...mem.sessions];
+  },
+  /** Events older than the retention window are dropped (they only feed recent stats). */
+  async pruneEvents(maxAgeMs: number): Promise<void> {
+    const cutoff = Date.now() - maxAgeMs;
+    mem.events = mem.events.filter((e) => e.at >= cutoff);
+    await safe(() => db!.events.where("at").below(cutoff).delete().then(() => undefined), undefined);
+  },
+  async snapshot(): Promise<BackupData> {
+    return {
+      settings: await store.getSettings(),
+      events: await store.getEvents(),
+      sessions: await store.getSessions(),
+      reviews: await store.getReviews(),
+      skill_progress: await store.getSkills(),
+      streak: await store.getStreak(),
+    };
+  },
+  /** Replaces everything on this device (used by import). */
+  async replaceAll(d: BackupData): Promise<void> {
+    await store.clearAll();
+    mem.settings = d.settings;
+    mem.events = d.events.map(({ id: _id, ...e }) => e);
+    mem.sessions = d.sessions.map(({ id: _id, ...s }) => s);
+    d.reviews.forEach((r) => mem.reviews.set(r.probe_id, r));
+    d.skill_progress.forEach((p) => mem.skills.set(p.track_id, p));
+    mem.streak = d.streak;
+    await safe(async () => {
+      await db!.transaction("rw", [db!.settings, db!.events, db!.sessions, db!.reviews, db!.skill_progress, db!.streak], async () => {
+        if (d.settings) await db!.settings.put(d.settings);
+        await db!.events.bulkAdd(mem.events);
+        await db!.sessions.bulkAdd(mem.sessions);
+        await db!.reviews.bulkPut(d.reviews);
+        await db!.skill_progress.bulkPut(d.skill_progress);
+        if (d.streak) await db!.streak.put(d.streak);
+      });
+    }, undefined);
+  },
+  async clearAll(): Promise<void> {
+    mem.settings = undefined;
+    mem.events = [];
+    mem.sessions = [];
+    mem.reviews.clear();
+    mem.skills.clear();
+    mem.streak = undefined;
+    await safe(async () => {
+      await Promise.all([db!.settings.clear(), db!.events.clear(), db!.sessions.clear(), db!.reviews.clear(), db!.skill_progress.clear(), db!.streak.clear()]);
+    }, undefined);
   },
   async addSession(s: SessionRow): Promise<void> {
     mem.sessions.push(s);
