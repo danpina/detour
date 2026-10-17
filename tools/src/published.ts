@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { readFile, readdir, stat } from "node:fs/promises";
+import { readFile, readdir, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { cardSchema, manifestSchema, type Card, type Manifest } from "@detour/content";
 
@@ -47,6 +47,21 @@ export async function buildManifest(cards: Card[], version: number): Promise<Man
     }
   }
   return manifestSchema.parse(manifest);
+}
+
+/** Rebuilds manifest.json from every valid published card and bumps its version. */
+export async function writeManifest(): Promise<Manifest> {
+  const cards = (await loadCards()).flatMap((l) => (l.card ? [l.card] : []));
+  let version = 0;
+  try {
+    const prev = manifestSchema.safeParse(await readJson(MANIFEST_PATH));
+    if (prev.success) version = prev.data.version;
+  } catch {
+    // no manifest yet
+  }
+  const manifest = await buildManifest(cards, version + 1);
+  await writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + "\n");
+  return manifest;
 }
 
 export async function fileSize(file: string): Promise<number | undefined> {

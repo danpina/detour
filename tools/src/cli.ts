@@ -13,9 +13,10 @@ import {
 import path from "node:path";
 import { runDraft } from "./draft.js";
 import { runImages } from "./images.js";
+import { runReview } from "./review.js";
 
 const [command] = process.argv.slice(2);
-const planned = ["review", "publish"];
+const planned = ["publish"];
 
 async function validate(): Promise<number> {
   const loaded = await loadCards();
@@ -96,6 +97,9 @@ switch (command) {
     break;
   case "images":
     process.exitCode = await runImages(process.argv.slice(3));
+    break;
+  case "review":
+    process.exitCode = await runReview(process.argv.slice(3));
     break;
   default:
     if (command && planned.includes(command)) {

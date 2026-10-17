@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Detour review</title>
+<style>
+  :root { --bg:#f6f5f2; --panel:#fff; --ink:#1b1b1f; --mute:#6b6b75; --line:#e2e0da; --accent:#0f766e; --warn:#b45309; --bad:#b91c1c; --ok:#15803d; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111114; --panel:#1b1b20; --ink:#ececf1; --mute:#9a9aa6; --line:#2c2c33; --accent:#2dd4bf; --warn:#f59e0b; --bad:#f87171; --ok:#4ade80; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.45 system-ui, sans-serif; }
+  header { display:flex; gap:16px; align-items:baseline; padding:10px 16px; border-bottom:1px solid var(--line); background:var(--panel); position:sticky; top:0; z-index:5; }
+  header h1 { font-size:16px; margin:0; }
+  header .mute { color:var(--mute); }
+  .layout { display:grid; grid-template-columns:300px 1fr; min-height:calc(100vh - 45px); }
+  aside { border-right:1px solid var(--line); background:var(--panel); overflow:auto; max-height:calc(100vh - 45px); position:sticky; top:45px; }
+  aside button.item { display:block; width:100%; text-align:left; padding:10px 14px; border:0; border-bottom:1px solid var(--line); background:transparent; color:inherit; cursor:pointer; font:inherit; }
+  aside button.item:hover { background:var(--bg); }
+  aside button.item.active { background:var(--bg); box-shadow: inset 3px 0 var(--accent); }
+  .item .id { color:var(--mute); font-size:12px; }
+  main { padding:16px 20px 80px; max-width:980px; }
+  section { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin-bottom:14px; }
+  section h2 { font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--mute); margin:0 0 10px; }
+  .badge { display:inline-block; padding:1px 8px; border-radius:99px; font-size:12px; border:1px solid var(--line); }
+  .pass { color:var(--ok); border-color:var(--ok); } .flagged { color:var(--warn); border-color:var(--warn); } .none { color:var(--mute); }
+  label { display:block; font-size:12px; color:var(--mute); margin:8px 0 2px; }
+  input[type=text], input[type=number], textarea, select { width:100%; padding:6px 8px; border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--ink); font:inherit; }
+  textarea { min-height:60px; resize:vertical; }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .probe { border-top:1px dashed var(--line); margin-top:10px; padding-top:4px; }
+  button { font:inherit; padding:6px 14px; border-radius:6px; border:1px solid var(--line); background:var(--panel); color:var(--ink); cursor:pointer; }
+  button.primary { background:var(--accent); border-color:var(--accent); color:#04201d; font-weight:600; }
+  button.danger { color:var(--bad); border-color:var(--bad); }
+  button:disabled { opacity:.5; cursor:not-allowed; }
+  .claim { padding:6px 0; border-top:1px solid var(--line); }
+  .claim:first-child { border-top:0; }
+  .claim .q { color:var(--mute); font-style:italic; }
+  .claim .note { color:var(--warn); }
+  .v-pass { color:var(--ok); } .v-fail { color:var(--bad); } .v-unverified { color:var(--warn); }
+  .cands { display:grid; grid-template-columns:repeat(auto-fill, minmax(150px,1fr)); gap:10px; }
+  .cand { border:2px solid var(--line); border-radius:8px; padding:6px; cursor:pointer; background:var(--bg); }
+  .cand.sel { border-color:var(--accent); }
+  .cand img { width:100%; height:130px; object-fit:cover; border-radius:4px; display:block; background:#0002; }
+  .cand .t { font-size:12px; margin-top:4px; max-height:3.2em; overflow:hidden; }
+  .cand .m { font-size:11px; color:var(--mute); }
+  .cropbox { display:flex; gap:16px; flex-wrap:wrap; margin-top:12px; }
+  .cropsrc { position:relative; display:inline-block; cursor:crosshair; max-width:100%; }
+  .cropsrc img { display:block; max-width:420px; max-height:420px; }
+  .cropsrc .rect { position:absolute; border:2px solid #14b8a6; box-shadow:0 0 0 9999px rgba(0,0,0,.45); pointer-events:none; }
+  canvas { border:1px solid var(--line); border-radius:6px; background:#000; }
+  .actions { position:fixed; bottom:0; left:300px; right:0; padding:10px 20px; background:var(--panel); border-top:1px solid var(--line); display:flex; gap:10px; align-items:center; z-index:6; }
+  .msg { color:var(--mute); } .msg.err { color:var(--bad); } .msg.ok { color:var(--ok); }
+  .empty { padding:40px; color:var(--mute); }
+  a { color:var(--accent); }
+  @media (max-width: 800px) { .layout { grid-template-columns:1fr; } aside { position:static; max-height:240px; } .actions { left:0; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Detour review</h1>
+  <span id="stats" class="mute"></span>
+</header>
+<div class="layout">
+  <aside id="list"></aside>
+  <main id="main"><div class="empty">Pick a draft on the left.</div></main>
+</div>
+<div class="actions" id="actions" hidden>
+  <button id="save">Save text</button>
+  <button id="reject" class="danger">Reject</button>
+  <label style="margin:0;display:flex;gap:6px;align-items:center" id="ackWrap" hidden><input type="checkbox" id="ack"> I reviewed the flagged claims</label>
+  <span style="flex:1"></span>
+  <span id="msg" class="msg"></span>
+  <button id="approve" class="primary">Approve &amp; publish</button>
+</div>
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const api = async (path, opts) => {
+  const res = await fetch(path, opts && opts.body ? { ...opts, headers: { 'Content-Type': 'application/json' } } : opts);
+  const json = await res.json().catch(() => ({}));
+  if (!res.ok) { const e = new Error(json.error || res.statusText); e.issues = json.issues || []; throw e; }
+  return json;
+};
+
+let cur = null;      // { id, draft, candidates }
+let card = null;     // editable copy
+let sel = null;      // selected candidate id
+let crop = { fx: 0.5, fy: 0.5, zoom: 1 };
+let meta = { alt: '', credit: '', license: '', kind: 'photo' };
+
+function cropRect(W, H, c) {
+  const w0 = Math.min(W, H * 0.8), h0 = w0 / 0.8, z = Math.max(1, c.zoom);
+  const w = w0 / z, h = h0 / z;
+  const x = Math.min(Math.max(c.fx * W - w / 2, 0), W - w);
+  const y = Math.min(Math.max(c.fy * H - h / 2, 0), H - h);
+  return { x, y, w, h };
+}
+
+function setMsg(text, cls = '') { const m = $('#msg'); m.textContent = text; m.className = 'msg ' + cls; }
+
+async function loadList(keep) {
+  const { drafts, stats } = await api('/api/drafts');
+  const by = Object.entries(stats.byInterest).map(([k, v]) => `${k} ${v}`).join(' · ');
+  $('#stats').textContent = `${drafts.length} drafts to review · ${stats.published} published${by ? ' (' + by + ')' : ''} · ${stats.rejected} rejected`;
+  $('#list').innerHTML = drafts.map((d) => `<button class="item" data-id="${esc(d.id)}"><div><span class="badge ${esc(d.check)}">${esc(d.check)}</span> ${esc(d.title)}</div><div class="id">${esc(d.id)} · ${esc(d.type)} · ${d.candidates} images</div></button>`).join('') || '<div class="empty">No drafts left. 🎉</div>';
+  document.querySelectorAll('#list .item').forEach((b) => b.addEventListener('click', () => openDraft(b.dataset.id)));
+  if (keep) { const b = $(`#list .item[data-id="${keep}"]`); if (b) b.classList.add('active'); }
+  return drafts;
+}
+
+async function openDraft(id) {
+  cur = await api('/api/drafts/' + id);
+  card = JSON.parse(JSON.stringify(cur.draft.card));
+  sel = null; crop = { fx: 0.5, fy: 0.5, zoom: 1 };
+  document.querySelectorAll('#list .item').forEach((b) => b.classList.toggle('active', b.dataset.id === id));
+  setMsg('');
+  render();
+}
+
+// ---------- generic editor ----------
+function field(label, el) { const w = document.createElement('div'); const l = document.createElement('label'); l.textContent = label; w.append(l, el); return w; }
+
+function editor(obj, key, container, labelPrefix = '') {
+  const v = obj[key];
+  const label = labelPrefix + key;
+  let el;
+  if (typeof v === 'string') {
+    el = v.length > 60 || v.includes('\n') ? document.createElement('textarea') : Object.assign(document.createElement('input'), { type: 'text' });
+    el.value = v; el.addEventListener('input', () => { obj[key] = el.value; });
+  } else if (typeof v === 'number') {
+    el = Object.assign(document.createElement('input'), { type: 'number', step: 'any' });
+    el.value = v; el.addEventListener('input', () => { obj[key] = Number(el.value); });
+  } else if (typeof v === 'boolean') {
+    el = document.createElement('select'); el.innerHTML = '<option value="true">true</option><option value="false">false</option>';
+    el.value = String(v); el.addEventListener('change', () => { obj[key] = el.value === 'true'; });
+  } else if (Array.isArray(v) && v.every((x) => typeof x === 'string')) {
+    el = document.createElement('textarea'); el.value = v.join('\n'); el.rows = Math.max(2, v.length);
+    el.addEventListener('input', () => { obj[key] = el.value.split('\n').map((s) => s.trim()).filter(Boolean); });
+    container.append(field(label + ' (one per line)', el)); return;
+  } else if (Array.isArray(v) && v.every((x) => x && typeof x === 'object' && !Array.isArray(x))) {
+    v.forEach((item, i) => { for (const k of Object.keys(item)) editor(item, k, container, `${key}[${i + 1}] `); });
+    return;
+  } else {
+    el = document.createElement('textarea'); el.value = JSON.stringify(v, null, 2);
+    el.addEventListener('input', () => { try { obj[key] = JSON.parse(el.value); el.style.outline = ''; } catch { el.style.outline = '2px solid var(--bad)'; } });
+  }
+  container.append(field(label, el));
+}
+
+function renderText(root) {
+  const sec = document.createElement('section'); sec.innerHTML = '<h2>Text</h2>';
+  editor(card, 'title', sec);
+  for (const k of Object.keys(card.body)) editor(card.body, k, sec, 'body.');
+  card.probes.forEach((p, i) => {
+    const box = document.createElement('div'); box.className = 'probe';
+    box.insertAdjacentHTML('beforeend', `<label><b>Probe ${i + 1}</b> (${esc(p.kind)}, ${esc(p.id)})</label>`);
+    for (const k of Object.keys(p)) if (k !== 'id' && k !== 'kind') editor(p, k, box);
+    sec.append(box);
+  });
+  const src = document.createElement('div'); src.className = 'probe'; src.insertAdjacentHTML('beforeend', '<label><b>Sources</b></label>');
+  card.sources.forEach((s) => { editor(s, 'title', src, 'source '); editor(s, 'url', src, 'source '); });
+  sec.append(src);
+  root.append(sec);
+}
+
+function renderCheck(root) {
+  const c = cur.draft.check;
+  const sec = document.createElement('section'); sec.innerHTML = '<h2>Fact check</h2>';
+  if (!c) { sec.insertAdjacentHTML('beforeend', '<div class="msg">No fact-check report for this draft.</div>'); root.append(sec); return; }
+  sec.insertAdjacentHTML('beforeend', `<div>Overall: <span class="badge ${esc(c.overall)}">${esc(c.overall)}</span> <span class="msg">by ${esc(c.model)}, ${esc(c.checked_at)}</span></div>`);
+  sec.insertAdjacentHTML('beforeend', '<div class="msg" style="margin:6px 0">Sources: ' + c.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.url)}</a> ${s.fetched ? '✓' : '✗ ' + esc(s.error || 'not fetched')}`).join(' · ') + '</div>');
+  sec.insertAdjacentHTML('beforeend', '<div class="msg" style="margin:6px 0">The check ran on an earlier wording if the card was edited afterwards.</div>');
+  for (const cl of c.claims) {
+    sec.insertAdjacentHTML('beforeend', `<div class="claim"><span class="v-${esc(cl.verdict)}"><b>${esc(cl.verdict)}</b></span> ${esc(cl.claim)}${cl.quote ? `<div class="q">“${esc(cl.quote)}”</div>` : ''}${cl.note ? `<div class="note">${esc(cl.note)}</div>` : ''}</div>`);
+  }
+  root.append(sec);
+}
+
+// ---------- images ----------
+const needsImage = () => card.type !== 'drill' && card.type !== 'recall';
+const candSrc = (c) => c.file ? `/api/drafts/${cur.id}/preview/${encodeURIComponent(c.file)}` : (c.image_url || '');
+
+function renderImages(root) {
+  const sec = document.createElement('section'); sec.innerHTML = '<h2>Image</h2>';
+  if (!needsImage()) { sec.insertAdjacentHTML('beforeend', '<div class="msg">This card type has no image.</div>'); root.append(sec); return; }
+  const b = cur.draft.image_brief;
+  sec.insertAdjacentHTML('beforeend', `<div class="msg">Brief: ${esc(b.show)} · keywords: ${esc(b.keywords.join(', '))}</div>`);
+  const cands = cur.candidates ? cur.candidates.candidates : [];
+  if (!cands.length) sec.insertAdjacentHTML('beforeend', '<div class="msg err" style="margin-top:8px">No candidates yet. Run: pnpm tools images --id ' + esc(cur.id) + (cur.candidates && cur.candidates.needs_generation ? ' (needs image-generation keys)' : '') + '</div>');
+  const grid = document.createElement('div'); grid.className = 'cands'; grid.style.marginTop = '10px';
+  for (const c of cands) {
+    const d = document.createElement('div'); d.className = 'cand' + (c.id === sel ? ' sel' : ''); d.dataset.id = c.id;
+    d.innerHTML = `<img loading="lazy" src="${esc(candSrc(c))}" alt=""><div class="t">${esc(c.title)}</div><div class="m">${esc(c.source)} · ${esc(c.license)}</div>`;
+    d.addEventListener('click', () => pick(c));
+    grid.append(d);
+  }
+  sec.append(grid);
+  const rej = cur.candidates && cur.candidates.rejected ? cur.candidates.rejected.length : 0;
+  if (rej) sec.insertAdjacentHTML('beforeend', `<div class="msg" style="margin-top:6px">${rej} result(s) were hidden because of their license.</div>`);
+  const detail = document.createElement('div'); detail.id = 'imgdetail'; sec.append(detail);
+  root.append(sec);
+  if (sel) renderPicked();
+}
+
+function pick(c) {
+  sel = c.id; crop = { fx: 0.5, fy: 0.5, zoom: 1 };
+  meta = { alt: c.alt_suggestion || '', credit: c.credit, license: c.license, kind: c.kind };
+  document.querySelectorAll('.cand').forEach((d) => d.classList.toggle('sel', d.dataset.id === c.id));
+  renderPicked();
+}
+
+function renderPicked() {
+  const c = cur.candidates.candidates.find((x) => x.id === sel); if (!c) return;
+  const box = $('#imgdetail');
+  box.innerHTML = `
+    <div class="cropbox">
+      <div>
+        <div class="msg">Click the image to centre the crop. Zoom to tighten it.</div>
+        <div class="cropsrc" id="cropsrc"><img id="srcimg" src="${esc(candSrc(c))}" alt=""><div class="rect" id="rect"></div></div>
+        <label>Zoom <span id="zv"></span></label><input type="range" id="zoom" min="1" max="3" step="0.05" value="${crop.zoom}">
+      </div>
+      <div><div class="msg">What the card will use (4:5)</div><canvas id="cv" width="240" height="300"></canvas></div>
+    </div>
+    <div id="metaf"></div>
+    ${c.source_url ? `<div class="msg" style="margin-top:6px">Source page: <a href="${esc(c.source_url)}" target="_blank" rel="noreferrer">${esc(c.source_url)}</a></div>` : ''}`;
+  const mf = $('#metaf');
+  mf.append(field('Alt text (describe the image for accessibility)', Object.assign(document.createElement('textarea'), { value: meta.alt, oninput(e) { meta.alt = e.target.value; } })));
+  const r = document.createElement('div'); r.className = 'row';
+  r.append(field('Credit', Object.assign(document.createElement('input'), { type: 'text', value: meta.credit, oninput(e) { meta.credit = e.target.value; } })));
+  r.append(field('License (must be allowed)', Object.assign(document.createElement('input'), { type: 'text', value: meta.license, oninput(e) { meta.license = e.target.value; } })));
+  mf.append(r);
+  const kind = document.createElement('select'); kind.innerHTML = '<option>photo</option><option>artwork</option><option>generated</option>'; kind.value = meta.kind; kind.onchange = () => { meta.kind = kind.value; };
+  mf.append(field('Kind', kind));
+  const img = $('#srcimg');
+  const draw = () => {
+    if (!img.naturalWidth) return;
+    const W = img.naturalWidth, H = img.naturalHeight, rr = cropRect(W, H, crop), k = img.clientWidth / W;
+    const rect = $('#rect'); Object.assign(rect.style, { left: rr.x * k + 'px', top: rr.y * k + 'px', width: rr.w * k + 'px', height: rr.h * k + 'px' });
+    const ctx = $('#cv').getContext('2d'); ctx.clearRect(0, 0, 240, 300); ctx.drawImage(img, rr.x, rr.y, rr.w, rr.h, 0, 0, 240, 300);
+    $('#zv').textContent = crop.zoom.toFixed(2) + '×';
+  };
+  img.addEventListener('load', draw); if (img.complete) draw();
+  $('#cropsrc').addEventListener('click', (e) => { const b = img.getBoundingClientRect(); crop.fx = (e.clientX - b.left) / b.width; crop.fy = (e.clientY - b.top) / b.height; draw(); });
+  $('#zoom').addEventListener('input', (e) => { crop.zoom = Number(e.target.value); draw(); });
+}
+
+// ---------- render ----------
+function render() {
+  const main = $('#main'); main.innerHTML = '';
+  const d = cur.draft;
+  const h = document.createElement('section');
+  h.innerHTML = `<div style="font-size:18px;font-weight:600">${esc(card.title)}</div><div class="msg">${esc(cur.id)} · ${esc(card.type)} · ${esc(card.interest)} · difficulty ${esc(card.difficulty)} · topic: ${esc(d.topic.topic)}</div>`;
+  main.append(h);
+  renderText(main); renderCheck(main); renderImages(main);
+  $('#actions').hidden = false;
+  $('#ackWrap').hidden = d.check && d.check.overall === 'pass';
+  $('#ack').checked = false;
+}
+
+async function save(quiet) {
+  try { await api('/api/drafts/' + cur.id, { method: 'PUT', body: JSON.stringify({ card }) }); if (!quiet) setMsg('Saved.', 'ok'); return true; }
+  catch (e) { setMsg(e.message + (e.issues && e.issues.length ? ': ' + e.issues.map((i) => `${i.path} ${i.message}`).join('; ') : ''), 'err'); return false; }
+}
+
+$('#save').addEventListener('click', () => save());
+$('#reject').addEventListener('click', async () => {
+  if (!confirm('Reject this draft? It moves to content/drafts/_rejected.')) return;
+  await api(`/api/drafts/${cur.id}/reject`, { method: 'POST', body: '{}' });
+  $('#actions').hidden = true; $('#main').innerHTML = '<div class="empty">Rejected.</div>'; await loadList();
+});
+$('#approve').addEventListener('click', async () => {
+  const btn = $('#approve'); btn.disabled = true; setMsg('Optimizing and publishing…');
+  try {
+    const body = { card, candidate_id: sel || undefined, crop, alt: meta.alt, credit: meta.credit, license: meta.license, kind: meta.kind, acknowledge_flags: $('#ack').checked };
+    const r = await api(`/api/drafts/${cur.id}/approve`, { method: 'POST', body: JSON.stringify(body) });
+    setMsg(`Published ${r.published} (${r.image_kb} KB image, manifest v${r.manifest_version}).`, 'ok');
+    $('#actions').hidden = true; $('#main').innerHTML = `<div class="empty">Published ${esc(r.published)}. ${r.image_kb ? r.image_kb + ' KB image.' : ''} Run <code>pnpm tools validate</code> any time.</div>`;
+    const left = await loadList();
+    if (left.length) openDraft(left[0].id);
+  } catch (e) { setMsg(e.message + (e.issues && e.issues.length ? ': ' + e.issues.map((i) => `${i.path} ${i.message}`).join('; ') : ''), 'err'); }
+  finally { btn.disabled = false; }
+});
+
+loadList().then((l) => { if (l.length) openDraft(l[0].id); });
+</script>
+</body>
+</html>
