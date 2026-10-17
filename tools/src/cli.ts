@@ -11,9 +11,10 @@ import {
   readJson,
 } from "./published.js";
 import path from "node:path";
+import { runDraft } from "./draft.js";
 
 const [command] = process.argv.slice(2);
-const planned = ["draft", "images", "review", "publish"];
+const planned = ["images", "review", "publish"];
 
 async function validate(): Promise<number> {
   const loaded = await loadCards();
@@ -88,6 +89,9 @@ switch (command) {
     break;
   case "manifest":
     process.exitCode = await manifest();
+    break;
+  case "draft":
+    process.exitCode = await runDraft(process.argv.slice(3));
     break;
   default:
     if (command && planned.includes(command)) {

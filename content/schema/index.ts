@@ -193,3 +193,68 @@ export const manifestSchema = z.object({
   images: z.array(z.object({ file: z.string(), sha256: z.string(), bytes: z.number().int() })),
 });
 export type Manifest = z.infer<typeof manifestSchema>;
+
+// ---------- Drafts (pipeline output, never served to users) ----------
+
+export const DRAFTABLE_TYPES = ["story", "fact_why", "guess_first", "estimate"] as const;
+
+export const imageBriefSchema = z.object({
+  show: z.string().min(5),
+  keywords: z.array(z.string().min(1)).min(1).max(8),
+  real_photo_likely: z.boolean(),
+});
+export type ImageBrief = z.infer<typeof imageBriefSchema>;
+
+export const claimCheckSchema = z.object({
+  claim: z.string(),
+  verdict: z.enum(["pass", "fail", "unverified"]),
+  source_url: z.string().optional(),
+  quote: z.string().optional(),
+  note: z.string().optional(),
+});
+
+export const checkReportSchema = z.object({
+  checked_at: z.string(),
+  model: z.string(),
+  sources: z.array(z.object({ url: z.string(), fetched: z.boolean(), error: z.string().optional() })),
+  claims: z.array(claimCheckSchema),
+  /** pass = every claim passed; flagged = any fail or unverified. Humans decide in review. */
+  overall: z.enum(["pass", "flagged"]),
+});
+export type CheckReport = z.infer<typeof checkReportSchema>;
+
+const PLACEHOLDER_IMAGE = {
+  file: "pending.webp",
+  alt: "Image pending",
+  kind: "photo",
+  credit: "pending",
+  license: "Public domain",
+  source_url: "https://example.com/pending",
+} as const;
+
+/** Drafts have no image yet; validate the rest of the card by attaching a placeholder. */
+export function validateImagelessCard(card: unknown) {
+  const needsImage = typeof card === "object" && card !== null && (DRAFTABLE_TYPES as readonly string[]).includes((card as { type?: string }).type ?? "");
+  return cardSchema.safeParse(needsImage ? { ...(card as object), image: PLACEHOLDER_IMAGE } : card);
+}
+
+export const draftSchema = z
+  .object({
+    status: z.literal("draft"),
+    topic: z.object({ interest: interestSchema, topic: z.string().min(1), angle: z.string() }),
+    created_at: z.string(),
+    model: z.string(),
+    /** The card without its image; the image is chosen later (Step 4/5). */
+    card: z.record(z.string(), z.unknown()),
+    image_brief: imageBriefSchema,
+    check: checkReportSchema.optional(),
+  })
+  .superRefine((d, ctx) => {
+    const r = validateImagelessCard(d.card);
+    if (!r.success) {
+      r.error.issues.forEach((i) =>
+        ctx.addIssue({ code: "custom", path: ["card", ...i.path], message: i.message }),
+      );
+    }
+  });
+export type Draft = z.infer<typeof draftSchema>;
