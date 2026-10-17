@@ -97,6 +97,12 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
         </label>
       </section>
 
+      <p className="mt-6 text-center text-sm text-neutral-500 dark:text-neutral-400">
+        <a className="underline" href={`${import.meta.env.BASE_URL}privacy.html`} target="_blank" rel="noreferrer">
+          Privacy
+        </a>
+      </p>
+
       {!isInstalled() && (
         <section className={`${box} mt-4`}>
           <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Keep your progress safe</h2>

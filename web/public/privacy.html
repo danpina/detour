@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detour privacy</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#fafaf9; --ink:#1c1917; --mute:#57534e; --line:#e7e5e4; --accent:#0f766e; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0b0b0f; --ink:#f5f5f4; --mute:#a8a29e; --line:#292524; --accent:#2dd4bf; } }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width:640px; margin:0 auto; padding:32px 20px 64px; }
+    h1 { font-size:28px; margin:0 0 4px; }
+    h2 { font-size:18px; margin:32px 0 6px; }
+    p, li { color:var(--mute); }
+    li { margin:4px 0; }
+    a { color:var(--accent); }
+    .meta { font-size:14px; }
+    code { background:var(--line); padding:1px 5px; border-radius:4px; font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="./">← Back to Detour</a></p>
+  <h1>Privacy</h1>
+  <p class="meta">Last updated: October 2026</p>
+
+  <p>Detour turns a few spare minutes into things you remember. It is built so we know as little about you as possible.</p>
+
+  <h2>Your progress stays on your device</h2>
+  <p>Your interests, answers, streak and review schedule are saved in your browser's storage on this device. There are no accounts, no sign-in and no server that holds your data. If you clear your browser data, your progress is gone, so use <strong>Settings → Export progress</strong> to keep a backup file.</p>
+
+  <h2>Anonymous usage numbers</h2>
+  <p>Detour can send simple counts to <a href="https://telemetrydeck.com" rel="noreferrer">TelemetryDeck</a>, a privacy-focused analytics service, so we can tell whether the app is working. For example:</p>
+  <ul>
+    <li>that the app was opened, or a set of cards was started or finished;</li>
+    <li>which card was shown (its id, like <code>sci-0001</code>) and its type;</li>
+    <li>whether a recall question was answered correctly, and what kind of question it was;</li>
+    <li>that a card was reported, with a reason chosen from a short fixed list;</li>
+    <li>the result of a skill drill (track, level, how many were right).</li>
+  </ul>
+  <p>These are tied to a random id generated on your device. It is not your name, email or any account, and it is hashed before it is stored. We never send what you type, your interests, or anything that could identify you.</p>
+  <p>You can turn this off at any time in <strong>Settings → Anonymous usage numbers</strong>.</p>
+
+  <h2>What we never collect</h2>
+  <ul>
+    <li>Names, email addresses, phone numbers or locations.</li>
+    <li>Free text. The only text you type is your answers, and they never leave your device.</li>
+    <li>Advertising identifiers. Detour has no ads and no advertising or tracking code.</li>
+  </ul>
+
+  <h2>Images and sources</h2>
+  <p>Every card shows where its facts come from. Images are public domain or openly licensed, or clearly labelled illustrations. Tap the ⓘ on a card to see the credit and license.</p>
+
+  <h2>Questions</h2>
+  <p>Contact: <strong>[add contact email before sharing widely]</strong></p>
+</main>
+</body>
+</html>
