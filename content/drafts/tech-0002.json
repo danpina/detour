@@ -1,0 +1,147 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "The first webcam",
+    "angle": "A coffee pot at Cambridge, so researchers did not walk to an empty pot"
+  },
+  "created_at": "2026-10-17T17:15:43.477Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0002",
+    "interest": "tech",
+    "type": "story",
+    "title": "The first webcam watched a coffee pot",
+    "body": {
+      "panels": [
+        {
+          "text": "Cambridge, 1991. Researchers in the Computer Laboratory share one coffee pot. Walking over only to find it empty is a wasted trip."
+        },
+        {
+          "text": "So they point a camera at the pot and write software that sends a small, grainy picture of it to everyone's screen."
+        },
+        {
+          "text": "In 1993 the picture goes onto the World Wide Web, and people can watch the pot online. It is often called the first webcam."
+        },
+        {
+          "text": "The twist: a Krups coffee machine it watched was later auctioned on eBay for £3,350, as reported by Der Spiegel."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0002-p1",
+        "kind": "mcq",
+        "question": "What did the first webcam famously point at?",
+        "options": [
+          "A coffee pot",
+          "A bird feeder",
+          "A traffic junction",
+          "A clock"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0002-p2",
+        "kind": "tf",
+        "question": "True or false: the Trojan Room coffee pot camera was first set up so researchers could see if the pot was empty.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Trojan Room coffee pot (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot"
+      },
+      {
+        "title": "The Trojan Room coffee pot (University of Cambridge)",
+        "url": "https://www.cl.cam.ac.uk/coffee/coffee.html"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A coffee pot with a glass jug on a warmer, or an early 1990s computer lab; avoid identifiable people",
+    "keywords": [
+      "coffee pot",
+      "Trojan Room",
+      "Cambridge Computer Laboratory",
+      "1990s computer"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:19:44Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+        "fetched": true
+      },
+      {
+        "url": "https://www.cl.cam.ac.uk/coffee/coffee.html",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Cambridge Computer Laboratory, 1991, shared coffee pot, wasted trip if empty",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+        "quote": "the disappointment of finding the coffee machine empty after making the trip to the room."
+      },
+      {
+        "claim": "They pointed a camera at the pot and sent a small picture to screens",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+        "quote": "The 128×128 px greyscale camera",
+        "note": "'Grainy' is interpretive (source: 128x128 greyscale); Cambridge page: video board grabs one frame per second."
+      },
+      {
+        "claim": "In 1993 the picture went on the World Wide Web",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+        "quote": "In 1993, web browsers gained the ability to display images",
+        "note": "Live feed went online that November (per fetched summary)."
+      },
+      {
+        "claim": "Strangers around the world started watching the pot",
+        "verdict": "unverified",
+        "source_url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+        "note": "Not shown in fetched text; suggest softening or sourcing."
+      },
+      {
+        "claim": "It is often called the first webcam",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+        "quote": "the world's first webcam."
+      },
+      {
+        "claim": "The Krups was 'the last coffee machine it watched'",
+        "verdict": "unverified",
+        "source_url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+        "note": "Source says only that 'A Krups machine' was auctioned; 'last' not confirmed. Suggest 'a Krups coffee machine it watched'."
+      },
+      {
+        "claim": "Krups auctioned on eBay for 3,350 pounds, per Der Spiegel",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+        "quote": "was auctioned on eBay for £3,350,"
+      },
+      {
+        "claim": "Probe: first webcam pointed at a coffee pot",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+        "quote": "the world's first webcam."
+      },
+      {
+        "claim": "Probe: camera set up so researchers could see if pot was empty",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+        "quote": "the disappointment of finding the coffee machine empty after making the trip to the room."
+      }
+    ],
+    "overall": "flagged"
+  }
+}

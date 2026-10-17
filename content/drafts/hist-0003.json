@@ -1,0 +1,144 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Great Emu War of 1932",
+    "angle": "Soldiers with machine guns versus 20,000 emus"
+  },
+  "created_at": "2026-10-17T17:15:43.477Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0003",
+    "interest": "history",
+    "type": "story",
+    "title": "The war against the emus",
+    "body": {
+      "panels": [
+        {
+          "text": "Western Australia, late 1932. Soldiers who had become wheat farmers face a new enemy: about 20,000 emus, moving onto their farmland and eating and spoiling the crops."
+        },
+        {
+          "text": "The government answers with soldiers, two Lewis machine guns and thousands of rounds under Major G.P.W. Meredith."
+        },
+        {
+          "text": "The twist: the emus split into small groups and ran off in different directions, which made them hard to hit."
+        },
+        {
+          "text": "The troops pulled out after about a month. Bounties on emus, already in use, kept being claimed: 57,034 in six months of 1934."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0003-p1",
+        "kind": "mcq",
+        "question": "What weapon was supplied to the soldiers in the Great Emu War?",
+        "options": [
+          "Lewis machine guns",
+          "Poison gas",
+          "Cannons",
+          "Nets and traps"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0003-p2",
+        "kind": "tf",
+        "question": "True or false: the emus' tactic of splitting into small groups made them hard to hit.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Emu War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Emu_War"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Emus running across open farmland in Australia",
+    "keywords": [
+      "emu",
+      "Western Australia",
+      "farmland",
+      "emu flock"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:19:44Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Emu_War",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Western Australia, late 1932 setting",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Emu_War",
+        "quote": "The operation took place in the Campion district of Western Australia, from 2 November to 10 December 1932."
+      },
+      {
+        "claim": "The farmers were former soldiers (now farming)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Emu_War",
+        "quote": "discharged veterans who served in the war were given land by the Australian government.",
+        "note": "Wheat: article says settlers were encouraged from 1929 to grow more wheat (per fetched summary)."
+      },
+      {
+        "claim": "About 20,000 emus",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Emu_War",
+        "quote": "approximately 20,000 emus"
+      },
+      {
+        "claim": "Emus drifted inland and trampled the crops",
+        "verdict": "unverified",
+        "note": "Source says emus normally migrate coastward after breeding and 'consumed and spoiled the crops'; 'trampling' and 'inland' not supported. Suggest: 'moving onto farmland and eating and spoiling crops'."
+      },
+      {
+        "claim": "Soldiers with two Lewis machine guns and thousands of rounds under Major Meredith",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Emu_War",
+        "quote": "armed with two Lewis guns and 10,000 rounds of ammunition.",
+        "note": "Meredith: Major Gwynydd Purves Wynne-Aubrey Meredith commanded; initials G.P.W. consistent."
+      },
+      {
+        "claim": "Emus split into small groups and ran in different directions, hard to hit",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Emu_War",
+        "quote": "split into small groups and ran so that they were difficult to target."
+      },
+      {
+        "claim": "The military withdrew within weeks",
+        "verdict": "unverified",
+        "source_url": "https://en.wikipedia.org/wiki/Emu_War",
+        "note": "Pearce withdrew troops 8 Nov 1932 but operations resumed ~13 Nov; Meredith recalled 10 Dec 1932 (about a month after start). Suggest: 'The military pulled out after about a month, having failed to cut numbers decisively.'"
+      },
+      {
+        "claim": "Farmers later got more help from bounties paid to local hunters",
+        "verdict": "unverified",
+        "source_url": "https://en.wikipedia.org/wiki/Emu_War",
+        "note": "Source only says a 1923 bounty system continued and 57,034 bounties were claimed in six months of 1934; does not say paid to local hunters or that farmers got more help after the operation. Suggest rewording to 'the bounty system continued and 57,034 bounties were claimed in six months of 1934'."
+      },
+      {
+        "claim": "Probe: Lewis machine guns supplied",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Emu_War",
+        "quote": "armed with two Lewis guns and 10,000 rounds of ammunition."
+      },
+      {
+        "claim": "Probe: splitting into small groups made them hard to hit",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Emu_War",
+        "quote": "split into small groups and ran so that they were difficult to target."
+      }
+    ],
+    "overall": "flagged"
+  }
+}

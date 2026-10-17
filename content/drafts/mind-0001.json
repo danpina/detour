@@ -1,0 +1,123 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "The forgetting curve",
+    "angle": "Why Detour brings cards back: forgetting is fastest right after learning"
+  },
+  "created_at": "2026-10-17T17:15:43.477Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0001",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "You forget fastest right after learning",
+    "body": {
+      "claim": "In the 1880s Hermann Ebbinghaus showed that memories fade quickly at first, then more slowly.",
+      "why": "He memorised lists of nonsense syllables and tested himself over time. Most of the loss came soon after learning, and the curve flattened later. Each repetition flattens the curve, which is the idea behind spaced repetition."
+    },
+    "probes": [
+      {
+        "id": "mind-0001-p1",
+        "kind": "tf",
+        "question": "True or false: forgetting is fastest soon after you learn something.",
+        "answer": true
+      },
+      {
+        "id": "mind-0001-p2",
+        "kind": "mcq",
+        "question": "What did Ebbinghaus memorise to study forgetting?",
+        "options": [
+          "Nonsense syllables",
+          "Poems",
+          "Phone numbers",
+          "Faces"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hermann Ebbinghaus (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hermann_Ebbinghaus"
+      },
+      {
+        "title": "Forgetting curve (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Forgetting_curve"
+      },
+      {
+        "title": "Spaced repetition (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Spaced_repetition"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A 19th-century style portrait or lab scene of memory research, or an abstract illustration of a fading line graph",
+    "keywords": [
+      "Hermann Ebbinghaus",
+      "memory",
+      "forgetting curve"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:19:44Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hermann_Ebbinghaus",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Forgetting_curve",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Spaced_repetition",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In the 1880s Ebbinghaus showed memories fade quickly at first, then more slowly",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Forgetting_curve",
+        "quote": "From 1880 to 1885, Hermann Ebbinghaus ran a limited, incomplete study on himself.",
+        "note": "Ebbinghaus page: 'The sharpest decline occurs in the first twenty minutes' and curve levels off after about a day (fetched summary)."
+      },
+      {
+        "claim": "He memorised nonsense syllables and tested himself over time",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Forgetting_curve",
+        "quote": "nonsense syllables, such as \"WID\" and \"ZOF\""
+      },
+      {
+        "claim": "Most loss comes soon after learning; the curve flattens later",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hermann_Ebbinghaus",
+        "quote": "The sharpest decline occurs in the first twenty minutes"
+      },
+      {
+        "claim": "Reviewing at growing intervals resets the curve, which is why spaced repetition works",
+        "verdict": "unverified",
+        "source_url": "https://en.wikipedia.org/wiki/Forgetting_curve",
+        "note": "Forgetting curve page says 'the forgetting curve was flattened by every repetition' and presents 'resets' as a consultants' claim; causal 'why it works' not stated. Suggest: 'each repetition flattens the curve, which is the idea behind spaced repetition'."
+      },
+      {
+        "claim": "Probe: forgetting fastest soon after learning",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hermann_Ebbinghaus",
+        "quote": "The sharpest decline occurs in the first twenty minutes"
+      },
+      {
+        "claim": "Probe: Ebbinghaus memorised nonsense syllables",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Forgetting_curve",
+        "quote": "nonsense syllables, such as \"WID\" and \"ZOF\""
+      }
+    ],
+    "overall": "flagged"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "One billion seconds",
+    "angle": "A million seconds is under two weeks; a billion is most of a lifetime stretch"
+  },
+  "created_at": "2026-10-17T17:15:43.477Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0002",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "How long is a billion seconds?",
+    "body": {
+      "question": "How many years is one billion seconds?",
+      "unit": "years",
+      "min": 1,
+      "max": 1000,
+      "scale": "log",
+      "answer": 31.7,
+      "reveal": "About 31.7 years. A million seconds is only about 11.6 days. The gap between 'million' and 'billion' is much bigger than it sounds."
+    },
+    "probes": [
+      {
+        "id": "num-0002-p1",
+        "kind": "estimate",
+        "question": "How many years is one billion seconds?",
+        "answer": 31.7,
+        "unit": "years",
+        "min": 1,
+        "max": 1000,
+        "scale": "log"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Orders of magnitude (time) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An hourglass or a clock face, or a long calendar",
+    "keywords": [
+      "hourglass",
+      "clock",
+      "time passing"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:16:51Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "One billion seconds is about 31.7 years",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)",
+        "quote": "over 31 years and 287 days = 1,000,000,000 s",
+        "note": "Calculation: 1e9/31,557,600 = 31.69 years."
+      },
+      {
+        "claim": "A million seconds is about 11.6 days",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)",
+        "quote": "11 d 13 h 46 min 40 s = 1,000,000 s",
+        "note": "Calculation: 1e6/86400 = 11.57 days."
+      },
+      {
+        "claim": "Probe: answer 31.7 years",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)",
+        "quote": "over 31 years and 287 days",
+        "note": "Calculation confirms 31.69."
+      },
+      {
+        "claim": "Angle: million seconds is under two weeks",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)",
+        "quote": "11 d 13 h 46 min 40 s"
+      }
+    ],
+    "overall": "pass"
+  }
+}

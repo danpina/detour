@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "The invisible gorilla",
+    "angle": "How many people miss a gorilla while counting passes"
+  },
+  "created_at": "2026-10-17T17:15:43.477Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0002",
+    "interest": "mind",
+    "type": "estimate",
+    "title": "The invisible gorilla",
+    "body": {
+      "question": "Viewers counted basketball passes in a video. What percentage failed to notice a person in a gorilla suit walking through?",
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "answer": 50,
+      "reveal": "About half of viewers missed the gorilla. Focusing hard on one task can hide even something obvious. This is called inattentional blindness."
+    },
+    "probes": [
+      {
+        "id": "mind-0002-p1",
+        "kind": "estimate",
+        "question": "About what percentage of viewers missed the gorilla in the famous attention experiment?",
+        "answer": 50,
+        "unit": "%",
+        "min": 0,
+        "max": 100,
+        "scale": "linear"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Inattentional blindness (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Inattentional_blindness"
+      },
+      {
+        "title": "Invisible gorilla test (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Invisible_gorilla_test"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A basketball game or a person in a gorilla costume (illustration is fine); no recognisable real person",
+    "keywords": [
+      "basketball",
+      "gorilla costume",
+      "attention"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:19:44Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Inattentional_blindness",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Invisible_gorilla_test",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Viewers counted basketball passes in a video",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Invisible_gorilla_test",
+        "quote": "count the passes made by one of the teams"
+      },
+      {
+        "claim": "A person in a gorilla suit walks through",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Invisible_gorilla_test",
+        "quote": "wearing a full gorilla suit."
+      },
+      {
+        "claim": "About half (50%) failed to notice the gorilla",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Invisible_gorilla_test",
+        "quote": "In most groups, 50% of the subjects did not report seeing the gorilla.",
+        "note": "'Most groups' - figure varies by group; 'about half' fair."
+      },
+      {
+        "claim": "Focusing on one task can hide something obvious; called inattentional blindness",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Invisible_gorilla_test",
+        "quote": "fails to perceive an unexpected stimulus in plain sight because their attention is focused elsewhere."
+      },
+      {
+        "claim": "Probe: about 50% missed the gorilla",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Invisible_gorilla_test",
+        "quote": "In most groups, 50% of the subjects did not report seeing the gorilla."
+      }
+    ],
+    "overall": "pass"
+  }
+}

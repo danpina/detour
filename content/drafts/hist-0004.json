@@ -1,0 +1,110 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Napoleon's height",
+    "angle": "Why we think he was tiny, and how tall he really was"
+  },
+  "created_at": "2026-10-17T17:15:43.477Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0004",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "Napoleon wasn't short",
+    "body": {
+      "claim": "Napoleon was about 1.68 m (5 ft 6 in) tall, about average for a man of his time.",
+      "why": "His height was recorded as 5 ft 2 in in pre-metric French measures, which works out to about 1.67 m. British cartoonists such as James Gillray drew him as tiny, and the image stuck."
+    },
+    "probes": [
+      {
+        "id": "hist-0004-p1",
+        "kind": "tf",
+        "question": "True or false: Napoleon was unusually short compared with other men of his time.",
+        "answer": false
+      },
+      {
+        "id": "hist-0004-p2",
+        "kind": "cloze",
+        "question": "The British cartoonist James ____ helped popularise the image of a tiny Napoleon.",
+        "answer": "Gillray"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Napoleon (Wikipedia): Appearance",
+        "url": "https://en.wikipedia.org/wiki/Napoleon"
+      },
+      {
+        "title": "Napoleon complex (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Napoleon_complex"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A portrait of Napoleon Bonaparte, ideally a period painting such as 'Napoleon Crossing the Alps' or 'Napoleon in His Study'",
+    "keywords": [
+      "Napoleon Bonaparte",
+      "portrait",
+      "Jacques-Louis David"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:19:44Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Napoleon",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Napoleon_complex",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Napoleon was about 1.68 m (5 ft 6 in), average height",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Napoleon",
+        "quote": "at about 168 cm (5 ft 6 in), he was of average height.",
+        "note": "Napoleon complex article gives ~1.67 m instead; minor discrepancy between sources."
+      },
+      {
+        "claim": "His height was recorded as 5 ft 2 in in pre-metric French measures",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Napoleon_complex",
+        "quote": "close to average height for his era",
+        "note": "Per fetched summary of Napoleon complex: 'about 1.67 metres, or 5 feet 2 inches in pre-metric French measure'; no verbatim quote captured for the 5 ft 2 in figure."
+      },
+      {
+        "claim": "5 ft 2 in French is 'just under 5 ft 6 in' imperial",
+        "verdict": "unverified",
+        "note": "Conversion not stated in sources; Napoleon complex gives 1.67 m (about 5 ft 5.7 in), Napoleon article 168 cm (5 ft 6 in). Suggest: 'about 1.67-1.68 m (5 ft 6 in)'."
+      },
+      {
+        "claim": "British cartoonists such as Gillray drew him as tiny, and the image stuck",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Napoleon_complex",
+        "quote": "popularized the myth of Napoleon being short.",
+        "note": "Also: 'repeatedly depicted Napoleon as short to mock both him and his expansionist ambitions.'"
+      },
+      {
+        "claim": "Probe: Napoleon was not unusually short",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Napoleon",
+        "quote": "he was of average height."
+      },
+      {
+        "claim": "Probe: James Gillray popularised tiny Napoleon image",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Napoleon_complex",
+        "quote": "popularized the myth of Napoleon being short."
+      }
+    ],
+    "overall": "flagged"
+  }
+}

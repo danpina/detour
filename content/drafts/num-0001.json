@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "The birthday problem",
+    "angle": "How few people you need for a shared birthday"
+  },
+  "created_at": "2026-10-17T17:15:43.477Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0001",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "The birthday problem",
+    "body": {
+      "question": "How many people do you need in a room for a better-than-even chance that two share a birthday?",
+      "unit": "people",
+      "min": 2,
+      "max": 100,
+      "scale": "linear",
+      "answer": 23,
+      "reveal": "Only 23. With 23 people there are 253 pairs to compare, which gives about a 51% chance of a match. With 70 people it is above 99.9%."
+    },
+    "probes": [
+      {
+        "id": "num-0001-p1",
+        "kind": "estimate",
+        "question": "How many people are needed for a better-than-even chance that two share a birthday?",
+        "answer": 23,
+        "unit": "people",
+        "min": 2,
+        "max": 100,
+        "scale": "linear"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Birthday problem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Birthday_problem"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Birthday cake with candles, or a crowd of people at a party (illustration or photo, no identifiable faces)",
+    "keywords": [
+      "birthday cake",
+      "birthday candles",
+      "party"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:16:51Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Birthday_problem",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "23 people give a better-than-even chance of a shared birthday",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Birthday_problem",
+        "quote": "In a group of 23 people, the probability that at least two share a birthday is 50.7%."
+      },
+      {
+        "claim": "With 23 people there are 253 pairs",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Birthday_problem",
+        "quote": "there are 23 × 22 2 = 253 pairs to consider",
+        "note": "Also arithmetic: 23*22/2=253."
+      },
+      {
+        "claim": "About a 51% chance of a match with 23",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Birthday_problem",
+        "quote": "50.7%",
+        "note": "50.7297% rounds to 51%."
+      },
+      {
+        "claim": "With 70 people it is above 99.9%",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Birthday_problem",
+        "quote": "99.9%",
+        "note": "Table lists 99.9% for 70; calculation gives 99.916%, so 'above 99.9%' holds."
+      }
+    ],
+    "overall": "pass"
+  }
+}

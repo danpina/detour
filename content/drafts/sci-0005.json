@@ -1,0 +1,116 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Why the sky is blue",
+    "angle": "Rayleigh scattering, and why sunsets are red"
+  },
+  "created_at": "2026-10-17T17:15:43.477Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0005",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Why the sky is blue (and sunsets are red)",
+    "body": {
+      "claim": "Sunlight is all colours mixed, and air scatters blue light much more strongly than red.",
+      "why": "Air molecules scatter short wavelengths (blue) far more than long ones (red), so blue reaches your eyes from every direction. At sunset the light crosses much more air, most of the blue is scattered away, and the reds are what is left."
+    },
+    "probes": [
+      {
+        "id": "sci-0005-p1",
+        "kind": "mcq",
+        "question": "Why does the sky turn red at sunset?",
+        "options": [
+          "Sunlight passes through more air, so blue is scattered away",
+          "The Sun gets hotter and glows red",
+          "Dust turns the Sun red",
+          "The Moon reflects red light"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0005-p2",
+        "kind": "tf",
+        "question": "True or false: air scatters blue light more strongly than red light.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA Space Place: Why is the sky blue?",
+        "url": "https://spaceplace.nasa.gov/blue-sky/en/"
+      },
+      {
+        "title": "Rayleigh scattering (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A clear blue sky fading to orange and red at sunset over a horizon",
+    "keywords": [
+      "sunset",
+      "blue sky",
+      "horizon",
+      "sky gradient"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:19:44Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://spaceplace.nasa.gov/blue-sky/en/",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Rayleigh_scattering",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Sunlight is all colours mixed",
+        "verdict": "pass",
+        "source_url": "https://spaceplace.nasa.gov/blue-sky/en/",
+        "quote": "it is really made up of all the colors of the rainbow."
+      },
+      {
+        "claim": "Air scatters blue light much more strongly than red",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rayleigh_scattering",
+        "quote": "a blue color is scattered much more than a red color as light propagates through air."
+      },
+      {
+        "claim": "Air molecules scatter short wavelengths far more than long; blue reaches eyes from every direction",
+        "verdict": "pass",
+        "source_url": "https://spaceplace.nasa.gov/blue-sky/en/",
+        "quote": "Blue light is scattered in all directions by the tiny molecules of air in Earth's atmosphere."
+      },
+      {
+        "claim": "At sunset light crosses much more air, blue scattered away, reds left",
+        "verdict": "pass",
+        "source_url": "https://spaceplace.nasa.gov/blue-sky/en/",
+        "quote": "allowing the reds and yellows to pass straight through to your eyes.",
+        "note": "Also Rayleigh page: sunlight travels a longer path near sunset."
+      },
+      {
+        "claim": "Probe: sunset red because more air scatters blue away",
+        "verdict": "pass",
+        "source_url": "https://spaceplace.nasa.gov/blue-sky/en/",
+        "quote": "allowing the reds and yellows to pass straight through to your eyes."
+      },
+      {
+        "claim": "Probe: air scatters blue more than red",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rayleigh_scattering",
+        "quote": "a blue color is scattered much more than a red color as light propagates through air."
+      }
+    ],
+    "overall": "pass"
+  }
+}

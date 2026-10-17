@@ -1,0 +1,103 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Lightning vs the Sun",
+    "angle": "A bolt is hotter than the Sun's surface"
+  },
+  "created_at": "2026-10-17T17:15:43.477Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0006",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "Lightning vs. the Sun",
+    "body": {
+      "question": "Which is hotter: a bolt of lightning, or the surface of the Sun?",
+      "options": [
+        "A bolt of lightning",
+        "The surface of the Sun"
+      ],
+      "answer": 0,
+      "reveal": "The air in a lightning channel heats to about 28,000 °C (50,000 °F). The Sun's surface is around 5,500 °C, so lightning is about five times hotter."
+    },
+    "probes": [
+      {
+        "id": "sci-0006-p1",
+        "kind": "tf",
+        "question": "True or false: a lightning bolt is hotter than the surface of the Sun.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "NOAA National Weather Service: Lightning facts",
+        "url": "https://www.weather.gov/safety/lightning-science-overview"
+      },
+      {
+        "title": "NASA: Sun facts",
+        "url": "https://science.nasa.gov/sun/facts/"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A dramatic lightning strike over a landscape at night",
+    "keywords": [
+      "lightning",
+      "thunderstorm",
+      "lightning strike"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-17T17:19:44Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://www.weather.gov/safety/lightning-science-overview",
+        "fetched": true
+      },
+      {
+        "url": "https://science.nasa.gov/sun/facts/",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Lightning heats the air to about 50,000 F",
+        "verdict": "pass",
+        "source_url": "https://www.weather.gov/safety/lightning-science-overview",
+        "quote": "it can heat the air to 50,000 degrees Fahrenheit (about 5 times hotter than the surface of the sun)."
+      },
+      {
+        "claim": "That is about 28,000 C",
+        "verdict": "pass",
+        "source_url": "https://www.weather.gov/safety/lightning-science-overview",
+        "quote": "50,000 degrees Fahrenheit",
+        "note": "Source gives only F; 28,000 C verified by arithmetic: (50,000-32)*5/9 = 27,760 C, rounds to about 28,000."
+      },
+      {
+        "claim": "Sun's surface is around 5,500 C",
+        "verdict": "pass",
+        "source_url": "https://science.nasa.gov/sun/facts/",
+        "quote": "10,000 degrees Fahrenheit (5,500 degrees Celsius)"
+      },
+      {
+        "claim": "Lightning is about five times hotter than Sun's surface",
+        "verdict": "pass",
+        "source_url": "https://www.weather.gov/safety/lightning-science-overview",
+        "quote": "about 5 times hotter than the surface of the sun",
+        "note": "Arithmetic check: 28,000/5,500 = 5.1."
+      },
+      {
+        "claim": "Probe: lightning bolt hotter than Sun's surface",
+        "verdict": "pass",
+        "source_url": "https://www.weather.gov/safety/lightning-science-overview",
+        "quote": "about 5 times hotter than the surface of the sun"
+      }
+    ],
+    "overall": "pass"
+  }
+}
