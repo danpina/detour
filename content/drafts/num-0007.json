@@ -1,0 +1,58 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Folding paper 42 times",
+    "angle": "Doubling reaches the Moon"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0007",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "Fold a sheet of paper 42 times",
+    "body": {
+      "question": "A sheet of paper is 0.1 mm thick. If you could fold it in half 42 times, about how thick would the stack be, in kilometres?",
+      "unit": "km",
+      "min": 1,
+      "max": 1000000000,
+      "scale": "log",
+      "answer": 439805,
+      "reveal": "About 440,000 km, which is farther than the Moon (about 384,400 km away). Each fold doubles the thickness, so 0.1 mm × 2^42 ≈ 440 million metres. In real life you can't fold paper that many times."
+    },
+    "probes": [
+      {
+        "id": "num-0007-p1",
+        "kind": "estimate",
+        "question": "How thick, in km, would a 0.1 mm sheet be after 42 folds in half?",
+        "answer": 439805,
+        "unit": "km",
+        "min": 1,
+        "max": 1000000000,
+        "scale": "log"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Paper folding (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Paper_folding"
+      },
+      {
+        "title": "Moon (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Moon"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A stack of paper sheets, or the Moon",
+    "keywords": [
+      "paper stack",
+      "Moon",
+      "folded paper"
+    ],
+    "real_photo_likely": true
+  }
+}

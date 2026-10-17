@@ -1,0 +1,50 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "The 10 percent brain myth",
+    "angle": "You use virtually all of your brain"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0005",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "How much of your brain do you use?",
+    "body": {
+      "question": "How much of your brain do you use?",
+      "options": [
+        "About 10%",
+        "Virtually all of it, at different times"
+      ],
+      "answer": 1,
+      "reveal": "The idea that we use only 10% of our brains is a myth. Brain imaging shows activity throughout the brain, and damage almost anywhere has some effect."
+    },
+    "probes": [
+      {
+        "id": "mind-0005-p1",
+        "kind": "tf",
+        "question": "True or false: people use only about 10% of their brains.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ten percent of the brain myth (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A human brain illustration or anatomical drawing",
+    "keywords": [
+      "human brain",
+      "brain anatomy",
+      "cerebrum"
+    ],
+    "real_photo_likely": true
+  }
+}

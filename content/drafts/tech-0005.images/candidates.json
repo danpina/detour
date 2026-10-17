@@ -1,0 +1,46 @@
+{
+  "draft_id": "tech-0005",
+  "created_at": "2026-10-17T19:16:21.896Z",
+  "queries": [
+    "IBM 3380 hard disk drive history mainframe storage",
+    "IBM 3380",
+    "IBM 3380 hard disk drive history"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-33732505",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hard Disk IBM 3380 (cutaway) - Città della Scienza - Bagnoli (District of Naples) - Italy - 1 Nov. 2007.jpg",
+      "credit": "Antonio Manfredonio from Napoli, Italia / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hard_Disk_IBM_3380_(cutaway)_-_Citt%C3%A0_della_Scienza_-_Bagnoli_(District_of_Naples)_-_Italy_-_1_Nov._2007.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Hard_Disk_IBM_3380_%28cutaway%29_-_Citt%C3%A0_della_Scienza_-_Bagnoli_%28District_of_Naples%29_-_Italy_-_1_Nov._2007.jpg/960px-Hard_Disk_IBM_3380_%28cutaway%29_-_Citt%C3%A0_della_Scienza_-_Bagnoli_%28District_of_Naples%29_-_Italy_-_1_Nov._2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3872,
+      "height": 2592,
+      "alt_suggestion": "Hard Disk IBM 3380 Direct Access Storage Device (cutaway) - Città della Scienza - Bagnoli (District of Naples)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-774116",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "IBM3380DiskDriveModule.agr.jpg",
+      "credit": "ArnoldReinhold / Wikimedia Commons",
+      "license": "CC BY 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:IBM3380DiskDriveModule.agr.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/IBM3380DiskDriveModule.agr.jpg/960px-IBM3380DiskDriveModule.agr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1435,
+      "height": 1347,
+      "alt_suggestion": "Removable drive module from w:IBM 3380 computer disk drive from early 1980s. I took this picture with permission at the EMC Corp. booth at the Massachusetts State Science Fair held at MIT on May 5, 20",
+      "file": "cand-2.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"IBM 3380 hard disk drive history mainframe storage\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"IBM 3380\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"IBM 3380 hard disk drive history\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

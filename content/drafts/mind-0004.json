@@ -1,0 +1,55 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Anchoring",
+    "angle": "A random number nudges your estimate"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0004",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "A random number can steer your guess",
+    "body": {
+      "claim": "In a classic experiment, people who saw a high random number guessed higher than people who saw a low one.",
+      "why": "Tversky and Kahneman spun a wheel rigged to land on 10 or 65, then asked people to estimate the percentage of African countries in the United Nations. Those who saw 10 guessed lower, on average, than those who saw 65. Our estimates drift toward whatever number we saw first. This is called anchoring."
+    },
+    "probes": [
+      {
+        "id": "mind-0004-p1",
+        "kind": "tf",
+        "question": "True or false: an obviously random number can still shift people's estimates.",
+        "answer": true
+      },
+      {
+        "id": "mind-0004-p2",
+        "kind": "cloze",
+        "question": "The pull of a first number on later estimates is called ____.",
+        "answer": "anchoring",
+        "accept": [
+          "anchor",
+          "the anchoring effect"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Anchoring (cognitive bias) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A ship anchor, or a roulette-style wheel (illustration is fine)",
+    "keywords": [
+      "ship anchor",
+      "anchor",
+      "wheel of fortune"
+    ],
+    "real_photo_likely": true
+  }
+}

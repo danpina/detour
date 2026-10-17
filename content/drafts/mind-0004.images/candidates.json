@@ -1,0 +1,89 @@
+{
+  "draft_id": "mind-0004",
+  "created_at": "2026-10-17T19:15:51.476Z",
+  "queries": [
+    "ship anchor anchor wheel of fortune",
+    "ship anchor",
+    "ship anchor anchor"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-90250064",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "The Present State of a Certain Great Kingdom (BM 1868,0808.3604).jpg",
+      "credit": "https://www.britishmuseum.org/collection/object/P_1868-0808-3604 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Present_State_of_a_Certain_Great_Kingdom_(BM_1868,0808.3604).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/The_Present_State_of_a_Certain_Great_Kingdom_%28BM_1868%2C0808.3604%29.jpg/960px-The_Present_State_of_a_Certain_Great_Kingdom_%28BM_1868%2C0808.3604%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2060,
+      "height": 2500,
+      "alt_suggestion": "Satire on Robert Walpole's government, presenting the Opposition view that trade was depressed by his foreign policy. A well-dressed artist, Caleb d'Anvers (Nicholas Amhurst), stands masked to demonst",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-s06-44-532",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Ships at anchor, Gulf of Oman",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/s06-44-532",
+      "image_url": "https://images-assets.nasa.gov/image/s06-44-532/s06-44-532~medium.jpg",
+      "alt_suggestion": "STS006-44-532 (4-9 April 1983) --- This is one of a series of photographs taken through the “ceiling” windows of the Earth-orbiting space shuttle Challenger by members of the STS-6 crew on its five-da",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-29256",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Ship of Fortune",
+      "credit": "Rembrandt van Rijn Dutch, 1606-1669 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/29256",
+      "image_url": "https://www.artic.edu/iiif/2/3682cf55-142a-28f0-b8a8-d65db20d7240/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-122229857",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ship Anchor NMGL.jpg",
+      "credit": "Mbrickn / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ship_Anchor_NMGL.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Ship_Anchor_NMGL.jpg/960px-Ship_Anchor_NMGL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1536,
+      "alt_suggestion": "Ship Anchor at the entrance of the National Museum of the Great Lakes",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-105698",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "La Bonne Aventure (The Fortune Teller)",
+      "credit": "After Jean Baptiste Joseph Pater (French, 1695–1736) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/105698",
+      "image_url": "https://www.artic.edu/iiif/2/02f89de9-0b05-fb1c-fc15-bc48787debfb/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on panel.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Abraham Lincoln and the battles of the Civil War (1886) (14576230828).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"ship anchor anchor wheel of fortune\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ship anchor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ship anchor anchor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

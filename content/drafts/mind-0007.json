@@ -1,0 +1,58 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Working memory capacity",
+    "angle": "Four chunks, not seven"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0007",
+    "interest": "mind",
+    "type": "estimate",
+    "title": "How much can you hold in mind?",
+    "body": {
+      "question": "About how many separate chunks of information can the average adult hold in working memory at once?",
+      "unit": "chunks",
+      "min": 1,
+      "max": 20,
+      "scale": "linear",
+      "answer": 4,
+      "reveal": "Research since the 2000s suggests about four chunks, not the 'seven plus or minus two' from the famous 1956 paper. Chunking, like grouping digits in a phone number, is how we stretch it."
+    },
+    "probes": [
+      {
+        "id": "mind-0007-p1",
+        "kind": "estimate",
+        "question": "About how many chunks can adults hold in working memory at once?",
+        "answer": 4,
+        "unit": "chunks",
+        "min": 1,
+        "max": 20,
+        "scale": "linear"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Working memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Working_memory"
+      },
+      {
+        "title": "The Magical Number Seven, Plus or Minus Two (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An abstract illustration of memory, or a phone keypad",
+    "keywords": [
+      "working memory",
+      "phone keypad",
+      "memory"
+    ],
+    "real_photo_likely": false
+  }
+}

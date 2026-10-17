@@ -1,0 +1,82 @@
+{
+  "draft_id": "num-0008",
+  "created_at": "2026-10-17T19:16:19.277Z",
+  "queries": [
+    "number line chalkboard mathematics decimal",
+    "number line",
+    "number line chalkboard mathematics"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-122536747",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Periodic cicada number line.png",
+      "credit": "Alduin2000 / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Periodic_cicada_number_line.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Periodic_cicada_number_line.png/960px-Periodic_cicada_number_line.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3782,
+      "height": 1119,
+      "alt_suggestion": "Number line visualising why 13-year periodical cicadas' life cycles are better than non-prime life cycles such as 12-year life cycles. If predators have life cycles of 3 or 4 years, they will quickly ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA11198",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Declining Sunshine for Phoenix Lander",
+      "credit": "NASA/JPL-Caltech/University of Arizona/Lockheed Martin / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA11198",
+      "image_url": "https://images-assets.nasa.gov/image/PIA11198/PIA11198~thumb.jpg",
+      "alt_suggestion": "The yellow line on this graphic indicates the number of hours of sunlight each sol, or Martian day, beginning with the entire Martian day about 24 hours and 40 minutes for the first 90 sols, then decl",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-65821",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Composition (No. 1) Gray-Red",
+      "credit": "Piet Mondrian Dutch, 1872–1944 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/65821",
+      "image_url": "https://www.artic.edu/iiif/2/254c654f-354a-0f4f-28b5-8eb01a02e95c/full/843,/0/default.jpg",
+      "alt_suggestion": "Abstract line composition of black lines at right angles forming quadrants including a gray square at upper left and a gray rectangle and red rectangle at lower right, against a white background.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-67241282",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Line scan photo of nine car BART C1 train in 2017.jpg",
+      "credit": "Dllu / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Line_scan_photo_of_nine_car_BART_C1_train_in_2017.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Line_scan_photo_of_nine_car_BART_C1_train_in_2017.jpg/960px-Line_scan_photo_of_nine_car_BART_C1_train_in_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 65500,
+      "height": 1615,
+      "alt_suggestion": "A nine car train of the Bay Area Rapid Transit in December 2017. This photo was captured with a line scan camera using strip photography. The train was moving from left to right. Unlike the earlier A ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-ARC-2009-ACD09-0224-059",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "ARC-2009-ACD09-0224-059",
+      "credit": "Kyle Cavallaro / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/ARC-2009-ACD09-0224-059",
+      "image_url": "https://images-assets.nasa.gov/image/ARC-2009-ACD09-0224-059/ARC-2009-ACD09-0224-059~medium.jpg",
+      "alt_suggestion": "Ames 70_year picture day on Flight line. David Morse leads the the staff to their places in the line to keep the numbers uniform.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"number line chalkboard mathematics decimal\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"number line\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"number line chalkboard mathematics\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

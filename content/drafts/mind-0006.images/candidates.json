@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0006",
+  "created_at": "2026-10-17T19:15:59.996Z",
+  "queries": [
+    "Phineas Gage tamping iron daguerreotype",
+    "Phineas Gage",
+    "Phineas Gage tamping iron"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-9497382",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Phineas Gage GageMillerPhoto2010-02-17 Unretouched Color.jpg",
+      "credit": "Photoreproduction (ca. 1890) of daguerreotype or similar early-process portrait. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color.jpg/960px-Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2720,
+      "height": 4112,
+      "alt_suggestion": "Cabinet-card portrait of brain-injury survivor Phineas P. Gage (1823–1860), shown holding the tamping iron which injured him. From the Gage family of Texas photo collection. An identical image is in t",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-129",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Articulated Dragon",
+      "credit": "Myochin School Japanese, active late 19th century / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/129",
+      "image_url": "https://www.artic.edu/iiif/2/24f95cb3-6020-6476-806e-dfd00e9c4369/full/843,/0/default.jpg",
+      "alt_suggestion": "Small iron sculpture of a dragon with a serpentine body, legs with talons, and long tail, all made of moveable joints.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-9504933",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Phineas Gage GageMillerPhoto2010-02-17 Unretouched Color Cropped.jpg",
+      "credit": "File:PhineasPGage.jpg / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color_Cropped.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color_Cropped.jpg/960px-Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color_Cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1618,
+      "height": 2750,
+      "alt_suggestion": "Cabinet-card portrait of brain-injury survivor Phineas P. Gage (1823–1860), shown holding the tamping iron which injured him; image cropped to remove much of surrounding card. From the Gage family of ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-118551",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Armor for Field and Tournament",
+      "credit": "Jörg T. Sorg, the Younger, after German, Augsburg, active 1502-1542 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/118551",
+      "image_url": "https://www.artic.edu/iiif/2/ff8959bc-76f1-3eae-7de6-b6bd994a5860/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of steel with gilding, iron, brass, leather, and cord.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-37613376",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Phineas Gage GageMillerPhoto2010-02-17 Unretouched Color Cropped ToneCorrected.jpg",
+      "credit": "File:PhineasPGage.jpg / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color_Cropped_ToneCorrected.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color_Cropped_ToneCorrected.jpg/960px-Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color_Cropped_ToneCorrected.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1618,
+      "height": 2750,
+      "alt_suggestion": "Cabinet-card portrait of brain-injury survivor Phineas P. Gage (1823–1860), shown holding the tamping iron which injured him; image cropped to remove much of surrounding card. From the Gage family of ",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Phineas Gage tamping iron daguerreotype\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Phineas Gage\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Phineas Gage tamping iron\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

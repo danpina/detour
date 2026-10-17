@@ -1,0 +1,51 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Benford's law",
+    "angle": "Leading digits are not evenly spread"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0005",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "Why so many numbers start with 1",
+    "body": {
+      "claim": "In many real-world lists of numbers, about 30% start with the digit 1, and fewer than 5% start with 9.",
+      "why": "This is Benford's law. In data that spans several orders of magnitude, like populations or river lengths, small leading digits are far more common. It is even used to spot fabricated figures in accounts."
+    },
+    "probes": [
+      {
+        "id": "num-0005-p1",
+        "kind": "mcq",
+        "question": "In data that follows Benford's law, about what share of numbers start with 1?",
+        "options": [
+          "About 11%",
+          "About 30%",
+          "About 50%",
+          "About 70%"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Benford's law (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Benford%27s_law"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A page of numbers, a ledger or a tax form",
+    "keywords": [
+      "ledger",
+      "numbers",
+      "accounting"
+    ],
+    "real_photo_likely": true
+  }
+}

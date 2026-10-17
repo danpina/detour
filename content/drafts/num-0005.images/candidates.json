@@ -1,0 +1,121 @@
+{
+  "draft_id": "num-0005",
+  "created_at": "2026-10-17T19:16:07.769Z",
+  "queries": [
+    "ledger numbers accounting",
+    "ledger",
+    "ledger numbers"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-14683972",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "1858 U.S. Coast Survey Chart or Map of San Francisco, Califorina - Geographicus - SanFrancisco-uscs-1859.jpg",
+      "credit": "United States Coast Survey / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1858_U.S._Coast_Survey_Chart_or_Map_of_San_Francisco,_Califorina_-_Geographicus_-_SanFrancisco-uscs-1859.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/1858_U.S._Coast_Survey_Chart_or_Map_of_San_Francisco%2C_Califorina_-_Geographicus_-_SanFrancisco-uscs-1859.jpg/960px-1858_U.S._Coast_Survey_Chart_or_Map_of_San_Francisco%2C_Califorina_-_Geographicus_-_SanFrancisco-uscs-1859.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5000,
+      "height": 3420,
+      "alt_suggestion": "A rare coastal chart of San Francisco by the U. S. Coast Survey, 1859. Oriented to the west, this map depicts the immediate city of San Francisco and surrounding areas as far as the Mission de Dolores",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-49767",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Seaweed Gatherers",
+      "credit": "Jean François Millet French, 1814-1875 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/49767",
+      "image_url": "https://www.artic.edu/iiif/2/abd3bdb1-8cb8-d96a-f3df-7e81968b51f6/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching, drypoint and roulette on ivory laid ledger paper, hand-ruled with reddish-brown ink.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-90202822",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "San Fransisco detail, 1858 U.S. Coast Survey Chart or Map of San Francisco, Califorina - Geographicus - SanFrancisco-uscs-1859 (cropped).jpg",
+      "credit": "United States Coast Survey / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:San_Fransisco_detail,_1858_U.S._Coast_Survey_Chart_or_Map_of_San_Francisco,_Califorina_-_Geographicus_-_SanFrancisco-uscs-1859_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/San_Fransisco_detail%2C_1858_U.S._Coast_Survey_Chart_or_Map_of_San_Francisco%2C_Califorina_-_Geographicus_-_SanFrancisco-uscs-1859_%28cropped%29.jpg/960px-San_Fransisco_detail%2C_1858_U.S._Coast_Survey_Chart_or_Map_of_San_Francisco%2C_Califorina_-_Geographicus_-_SanFrancisco-uscs-1859_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1866,
+      "height": 1493,
+      "alt_suggestion": "A rare coastal chart of San Francisco by the U. S. Coast Survey, 1859. Oriented to the west, this map depicts the immediate city of San Francisco and surrounding areas as far as the Mission de Dolores",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-49764",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Various Sketches",
+      "credit": "Jean François Millet French, 1814-1875 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/49764",
+      "image_url": "https://www.artic.edu/iiif/2/952c0c29-2ff3-c34e-3b23-fccb98de8e90/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching and drypoint on ivory laid ledger paper, hand-ruled in reddish-brown ink.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-195286709",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "(Galveston City Company Accounts- 1867-1883) - DPLA - e5832fceb3931fc1585a0d1ed4a9d7b8 (page 23).jpg",
+      "credit": "Galveston City Company / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:(Galveston_City_Company_Accounts-_1867-1883)_-_DPLA_-_e5832fceb3931fc1585a0d1ed4a9d7b8_(page_23).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/%28Galveston_City_Company_Accounts-_1867-1883%29_-_DPLA_-_e5832fceb3931fc1585a0d1ed4a9d7b8_%28page_23%29.jpg/960px-%28Galveston_City_Company_Accounts-_1867-1883%29_-_DPLA_-_e5832fceb3931fc1585a0d1ed4a9d7b8_%28page_23%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1500,
+      "height": 2112,
+      "alt_suggestion": "Ledger containing financial records relating to the Galveston City Company including the expense account, cash, cancelled stocks, city bonds, and other transactions. A list of dates, names, and lot nu",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Serial Numbers of the Work of No. 6 Topo Section Tanganyika Territory. War Office ledger. Index Listing. (WOMAT-AFR-GEA-12-1verso).jpg",
+      "license": "OGL v1.0",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Serial Numbers of the Work of No. 6 Topo Section Tanganyika Territory. War Office ledger. Index Listing. (WOMAT-AFR-GEA-12-1recto).jpg",
+      "license": "OGL v1.0",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Serial Numbers of the Work of No. 6 Topo Section Tanganyika Territory. War Office ledger. Copies of Index Listing. (WOMAT-AFR-GEA-12-2-1).jpg",
+      "license": "OGL v1.0",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Serial Numbers of the Work of No. 6 Topo Section Tanganyika Territory. War Office ledger. Copies of Index Listing. (WOMAT-AFR-GEA-12-2-4).jpg",
+      "license": "OGL v1.0",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Serial Numbers of the Work of No. 6 Topo Section Tanganyika Territory. War Office ledger. Copies of Index Listing. (WOMAT-AFR-GEA-12-2-3).jpg",
+      "license": "OGL v1.0",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Serial Numbers of the Work of No. 6 Topo Section Tanganyika Territory. War Office ledger. Copies of Index Listing. (WOMAT-AFR-GEA-12-2-2).jpg",
+      "license": "OGL v1.0",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"ledger numbers accounting\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ledger\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ledger numbers\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}
