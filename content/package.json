@@ -1,0 +1,1 @@
+{"name":"@detour/content","version":"0.0.0","private":true,"type":"module","main":"schema/index.ts","exports":{".":"./schema/index.ts"},"scripts":{"typecheck":"tsc -p tsconfig.json"},"devDependencies":{"typescript":"^7.0.2"},"dependencies":{"zod":"^4.6.7"}}

@@ -1,0 +1,1 @@
+{"name":"detour","private":true,"packageManager":"pnpm@12.14.0","scripts":{"tools":"pnpm --filter tools run cli","dev":"pnpm --filter web dev","build":"pnpm --filter web build","test":"pnpm -r --if-present test","typecheck":"pnpm -r --if-present typecheck"}}

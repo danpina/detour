@@ -1,0 +1,1 @@
+{"name":"tools","version":"0.0.0","private":true,"type":"module","scripts":{"cli":"tsx src/cli.ts","typecheck":"tsc -p tsconfig.json"},"dependencies":{"@detour/content":"workspace:*"},"devDependencies":{"@types/node":"^26.6.5","tsx":"^4.23.15","typescript":"^7.0.2"}}
