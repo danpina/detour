@@ -1,0 +1,43 @@
+{
+  "id": "num-0001",
+  "interest": "numbers",
+  "title": "The birthday problem",
+  "probes": [
+    {
+      "id": "num-0001-p1",
+      "question": "How many people are needed for a better-than-even chance that two share a birthday?",
+      "kind": "estimate",
+      "answer": 23,
+      "unit": "people",
+      "min": 2,
+      "max": 100,
+      "scale": "linear"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Birthday problem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Birthday_problem"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "type": "estimate",
+  "image": {
+    "file": "num-0001.webp",
+    "alt": "iss073e0134965 (June 7, 2025) --- NASA astronaut and Expedition 73 Flight Engineer Anne McClain celebrates her 46th birthday with a cake, gifts, and cards aboard the International Space Station's Unit",
+    "kind": "photo",
+    "credit": "JSC / NASA",
+    "license": "Public domain",
+    "source_url": "https://images.nasa.gov/details/iss073e0134965"
+  },
+  "body": {
+    "question": "How many people do you need in a room for a better-than-even chance that two share a birthday?",
+    "unit": "people",
+    "min": 2,
+    "max": 100,
+    "scale": "linear",
+    "answer": 23,
+    "reveal": "Only 23. With 23 people there are 253 pairs to compare, which gives about a 51% chance of a match. With 70 people it is above 99.9%."
+  }
+}

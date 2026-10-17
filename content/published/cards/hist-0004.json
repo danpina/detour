@@ -1,0 +1,45 @@
+{
+  "id": "hist-0004",
+  "interest": "history",
+  "title": "Napoleon wasn't short",
+  "probes": [
+    {
+      "id": "hist-0004-p1",
+      "question": "True or false: Napoleon was unusually short compared with other men of his time.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "hist-0004-p2",
+      "question": "The British cartoonist James ____ helped popularise the image of a tiny Napoleon.",
+      "kind": "cloze",
+      "answer": "Gillray",
+      "accept": []
+    }
+  ],
+  "sources": [
+    {
+      "title": "Napoleon (Wikipedia): Appearance",
+      "url": "https://en.wikipedia.org/wiki/Napoleon"
+    },
+    {
+      "title": "Napoleon complex (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Napoleon_complex"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0004.webp",
+    "alt": "Napoleon at the Great St. Bernard - Jacques-Louis David - Google Cultural Institute.jpg",
+    "kind": "photo",
+    "credit": "Jacques-Louis David / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Napoleon_at_the_Great_St._Bernard_-_Jacques-Louis_David_-_Google_Cultural_Institute.jpg"
+  },
+  "body": {
+    "claim": "Napoleon was about 1.68 m (5 ft 6 in) tall, about average for a man of his time.",
+    "why": "His height was recorded as 5 ft 2 in in pre-metric French measures, which works out to about 1.67 m. British cartoonists such as James Gillray drew him as tiny, and the image stuck."
+  }
+}

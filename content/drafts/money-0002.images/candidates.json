@@ -30,7 +30,8 @@
       "license": "CC0",
       "source_url": "https://www.artic.edu/artworks/1943",
       "image_url": "https://www.artic.edu/iiif/2/e0a1a13a-b34c-6887-9df0-38367ee21356/full/843,/0/default.jpg",
-      "alt_suggestion": "A work made of silk, brocaded plain compound cloth."
+      "alt_suggestion": "A work made of silk, brocaded plain compound cloth.",
+      "file": "cand-2.jpg"
     },
     {
       "id": "artic-794",
@@ -41,7 +42,8 @@
       "license": "CC0",
       "source_url": "https://www.artic.edu/artworks/794",
       "image_url": "https://www.artic.edu/iiif/2/17eb38cf-28b1-0674-9184-ca4d286f54fc/full/843,/0/default.jpg",
-      "alt_suggestion": "A work made of silk and gilt-paper; compound satin weave."
+      "alt_suggestion": "A work made of silk and gilt-paper; compound satin weave.",
+      "file": "cand-3.jpg"
     }
   ],
   "rejected": [],

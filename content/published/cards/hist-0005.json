@@ -1,0 +1,62 @@
+{
+  "id": "hist-0005",
+  "interest": "history",
+  "title": "The year summer never came",
+  "probes": [
+    {
+      "id": "hist-0005-p1",
+      "question": "Which volcano's 1815 eruption helped cause the Year Without a Summer?",
+      "kind": "mcq",
+      "options": [
+        "Tambora",
+        "Vesuvius",
+        "Krakatoa",
+        "Mount St. Helens"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0005-p2",
+      "question": "True or false: Mary Shelley began writing Frankenstein during that cold, gloomy summer of 1816.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Year Without a Summer (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer"
+    },
+    {
+      "title": "1815 eruption of Mount Tambora (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "type": "story",
+  "image": {
+    "file": "hist-0005.webp",
+    "alt": "This detailed astronaut photograph depicts the summit caldera of the volcano. The huge caldera—6 kilometers in diameter and 1,100 meters deep—formed when Tambora’s estimated 4,000-meter-high peak was",
+    "kind": "photo",
+    "credit": "This image was taken by the NASA Expedition 20 crew. / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mount_Tambora_Volcano,_Sumbawa_Island,_Indonesia.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "April 1815. Mount Tambora, on an island in Indonesia, erupts. It is the most powerful eruption in recorded history."
+      },
+      {
+        "text": "Ash and sulfur gases spread through the atmosphere and dim the sunlight. By 1816 Europe and North America are cold all summer."
+      },
+      {
+        "text": "Harvests fail and food prices jump. People call 1816 the Year Without a Summer."
+      },
+      {
+        "text": "The twist: at Villa Diodati in Switzerland, a group of friends is stuck indoors by the gloomy weather. They challenge each other to write ghost stories, and young Mary Shelley begins Frankenstein."
+      }
+    ]
+  }
+}

@@ -13,6 +13,12 @@ const DRAFTS_DIR = path.join(ROOT, "content/drafts");
 const UA = "DetourContentTools/0.1 (https://github.com/danpina/detour)";
 const MAX_CANDIDATES = 5;
 
+/** The Art Institute of Chicago blocks requests without its own identifying header (it returns 403). */
+export const headersFor = (url: string): Record<string, string> => ({
+  "User-Agent": UA,
+  ...(url.includes("artic.edu") ? { "AIC-User-Agent": UA } : {}),
+});
+
 export type Candidate = {
   id: string;
   source: "wikimedia" | "nasa" | "met" | "artic" | "unsplash" | "pexels" | "generated";
@@ -57,7 +63,7 @@ const strip = (s: unknown) =>
     .trim();
 
 async function getJson<T = any>(url: string, headers: Record<string, string> = {}): Promise<T> {
-  const res = await fetch(url, { headers: { "User-Agent": UA, ...headers }, signal: AbortSignal.timeout(25_000) });
+  const res = await fetch(url, { headers: { ...headersFor(url), ...headers }, signal: AbortSignal.timeout(25_000) });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url.slice(0, 80)}`);
   return (await res.json()) as T;
 }
@@ -321,7 +327,7 @@ function queriesFor(draft: Draft): string[] {
 async function downloadPreview(c: Candidate, dir: string, n: number): Promise<void> {
   if (!c.image_url) return;
   try {
-    const res = await fetch(c.image_url, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(30_000) });
+    const res = await fetch(c.image_url, { headers: headersFor(c.image_url), signal: AbortSignal.timeout(30_000) });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const file = `cand-${n}.jpg`;
     await writeFile(path.join(dir, file), Buffer.from(await res.arrayBuffer()));

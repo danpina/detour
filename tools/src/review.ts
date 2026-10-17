@@ -6,7 +6,7 @@ import { mkdir, readFile, readdir, rename, writeFile } from "node:fs/promises";
 import http from "node:http";
 import path from "node:path";
 import { cardSchema, draftSchema, isAllowedLicense, validateImagelessCard } from "@detour/content";
-import type { Candidate, CandidatesFile } from "./images.js";
+import { headersFor, type Candidate, type CandidatesFile } from "./images.js";
 import { optimizeToWebp, type Crop } from "./optimize.js";
 import { CARDS_DIR, IMAGES_DIR, loadCards, writeManifest } from "./published.js";
 
@@ -62,7 +62,7 @@ async function getDraft(id: string) {
 // ---------- image fetching for approval ----------
 
 async function getBuffer(url: string): Promise<Buffer> {
-  const res = await fetch(url, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(60_000) });
+  const res = await fetch(url, { headers: headersFor(url), signal: AbortSignal.timeout(60_000) });
   if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${url.slice(0, 80)}`);
   return Buffer.from(await res.arrayBuffer());
 }

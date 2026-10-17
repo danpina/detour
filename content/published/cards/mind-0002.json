@@ -1,0 +1,47 @@
+{
+  "id": "mind-0002",
+  "interest": "mind",
+  "title": "The invisible gorilla",
+  "probes": [
+    {
+      "id": "mind-0002-p1",
+      "question": "About what percentage of viewers missed the gorilla in the famous attention experiment?",
+      "kind": "estimate",
+      "answer": 50,
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "scale": "linear"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Inattentional blindness (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inattentional_blindness"
+    },
+    {
+      "title": "Invisible gorilla test (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Invisible_gorilla_test"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "estimate",
+  "image": {
+    "file": "mind-0002.webp",
+    "alt": "Basketball, 1. Damen-Basketball-Bundesliga, ChemCats Chemnitz; Abigail Asoro (9)",
+    "kind": "photo",
+    "credit": "Steffen Prößdorf / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Basketball,_1._Damen-Basketball-Bundesliga,_ChemCats_Chemnitz_LR10_by_Stepro_IMG_7684.jpg"
+  },
+  "body": {
+    "question": "Viewers counted basketball passes in a video. What percentage failed to notice a person in a gorilla suit walking through?",
+    "unit": "%",
+    "min": 0,
+    "max": 100,
+    "scale": "linear",
+    "answer": 50,
+    "reveal": "About half of viewers missed the gorilla. Focusing hard on one task can hide even something obvious. This is called inattentional blindness."
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "generated_at": "2026-10-17T16:57:23.615Z",
+  "version": 6,
+  "generated_at": "2026-10-17T19:01:12.941Z",
   "cards": [
     {
       "id": "hist-0001",
@@ -13,9 +13,34 @@
       "sha256": "6a8175544bbda6d64951ce51721923b23e0e5145413c3c0c61208d3a94bc9666"
     },
     {
+      "id": "hist-0003",
+      "file": "cards/hist-0003.json",
+      "sha256": "26bb0a97a9ca3ee0b1c4e6477012c8f845513302f073a2c54def9e622ec10a86"
+    },
+    {
+      "id": "hist-0004",
+      "file": "cards/hist-0004.json",
+      "sha256": "d8bfa78d4d3ec38fd1315927a6c65e205105b81895af7183b9d872aa72defec6"
+    },
+    {
+      "id": "hist-0005",
+      "file": "cards/hist-0005.json",
+      "sha256": "76c3ec74ae2f129229951b06453d000f874b3ee5c68ac84305f6a1a56583773a"
+    },
+    {
+      "id": "mind-0002",
+      "file": "cards/mind-0002.json",
+      "sha256": "5d7f647b2ca0b6828bf6e6a3e27262aa4de07e4412a2122c78a21ff2ca96b7e5"
+    },
+    {
       "id": "money-0001",
       "file": "cards/money-0001.json",
       "sha256": "db28264819c7bc666dd09df8f1c549965eefa0adce80e4a03f768970eda9e345"
+    },
+    {
+      "id": "num-0001",
+      "file": "cards/num-0001.json",
+      "sha256": "e9900e0fc4dd6651e71dc5a11cd9c046d624e56e3dc75ddf467024e0d1cb1d8a"
     },
     {
       "id": "sci-0001",
@@ -55,9 +80,34 @@
       "bytes": 113676
     },
     {
+      "file": "images/hist-0003.webp",
+      "sha256": "55547af1eb95347640ef6f8d400c775c027a29817b75a5cd75dc7bdd302c520e",
+      "bytes": 120294
+    },
+    {
+      "file": "images/hist-0004.webp",
+      "sha256": "26849aa6f5045c61d81001cc38cb7bc6747d24a81871f92a8a65f950968309ea",
+      "bytes": 105562
+    },
+    {
+      "file": "images/hist-0005.webp",
+      "sha256": "262dbbebca960859d459c112218728e601319e330173d0bbf2983821b4c51d9d",
+      "bytes": 118652
+    },
+    {
+      "file": "images/mind-0002.webp",
+      "sha256": "eb7b40b3ffa94331913d6879b75c6505ee9bef5aed83a9abef160ff2b2b99947",
+      "bytes": 92570
+    },
+    {
       "file": "images/money-0001.webp",
       "sha256": "fb7fb34ea94ad8429c7d56041e8ecc49c3ed92523c33d719ebf72ae4933f9c69",
       "bytes": 59116
+    },
+    {
+      "file": "images/num-0001.webp",
+      "sha256": "6dbe810ca4cd4857bbce0e5b7c494ac7389fc9d97df6e7278036817e7e7d71e5",
+      "bytes": 101790
     },
     {
       "file": "images/sci-0001.webp",

@@ -30,7 +30,8 @@
       "license": "CC0",
       "source_url": "https://www.artic.edu/artworks/9",
       "image_url": "https://www.artic.edu/iiif/2/b55d836c-ee20-59f8-1f0c-a95e09905361/full/843,/0/default.jpg",
-      "alt_suggestion": "A work made of oil on canvas."
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
     },
     {
       "id": "wikimedia-15190054",
@@ -55,7 +56,8 @@
       "license": "CC0",
       "source_url": "https://www.artic.edu/artworks/19366",
       "image_url": "https://www.artic.edu/iiif/2/b4eabb38-0040-2db0-31f0-fe0fa0c5e31c/full/843,/0/default.jpg",
-      "alt_suggestion": "A work made of color woodblock print; hosoban, benizuri-e."
+      "alt_suggestion": "A work made of color woodblock print; hosoban, benizuri-e.",
+      "file": "cand-4.jpg"
     },
     {
       "id": "wikimedia-158920016",

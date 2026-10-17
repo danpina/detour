@@ -30,7 +30,8 @@
       "license": "CC0",
       "source_url": "https://www.artic.edu/artworks/88374",
       "image_url": "https://www.artic.edu/iiif/2/60699af7-9aab-5e2b-7309-1266286b0810/full/843,/0/default.jpg",
-      "alt_suggestion": "A work made of oil on canvas."
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
     },
     {
       "id": "wikimedia-90331102",
@@ -55,7 +56,8 @@
       "license": "CC0",
       "source_url": "https://www.artic.edu/artworks/184372",
       "image_url": "https://www.artic.edu/iiif/2/de5574eb-11af-16de-123b-d4d44cea94e9/full/843,/0/default.jpg",
-      "alt_suggestion": "A work made of oil on panel."
+      "alt_suggestion": "A work made of oil on panel.",
+      "file": "cand-4.jpg"
     },
     {
       "id": "wikimedia-90370226",

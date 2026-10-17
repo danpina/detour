@@ -1,0 +1,58 @@
+{
+  "id": "hist-0003",
+  "interest": "history",
+  "title": "The war against the emus",
+  "probes": [
+    {
+      "id": "hist-0003-p1",
+      "question": "What weapon was supplied to the soldiers in the Great Emu War?",
+      "kind": "mcq",
+      "options": [
+        "Lewis machine guns",
+        "Poison gas",
+        "Cannons",
+        "Nets and traps"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0003-p2",
+      "question": "True or false: the emus' tactic of splitting into small groups made them hard to hit.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Emu War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emu_War"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "story",
+  "image": {
+    "file": "hist-0003.webp",
+    "alt": "Farmland in Coomalbidgup at the western boundary of Stokes National Park, just outside the park along Stokes Inlet Road, Western Australia. An abundance of emus and kangaroos were present in the area.",
+    "kind": "photo",
+    "credit": "Calistemon / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Farmland_in_Coomalbidgup_at_the_boundary_of_Stokes_National_Park,_January_2024_06.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Western Australia, late 1932. Soldiers who had become wheat farmers face a new enemy: about 20,000 emus, moving onto their farmland and eating and spoiling the crops."
+      },
+      {
+        "text": "The government answers with soldiers, two Lewis machine guns and thousands of rounds under Major G.P.W. Meredith."
+      },
+      {
+        "text": "The twist: the emus split into small groups and ran off in different directions, which made them hard to hit."
+      },
+      {
+        "text": "The troops pulled out after about a month. Bounties on emus, already in use, kept being claimed: 57,034 in six months of 1934."
+      }
+    ]
+  }
+}
