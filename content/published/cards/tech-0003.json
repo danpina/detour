@@ -1,0 +1,50 @@
+{
+  "id": "tech-0003",
+  "interest": "tech",
+  "title": "A real moth in a computer",
+  "probes": [
+    {
+      "id": "tech-0003-p1",
+      "question": "What was found stuck in the Harvard Mark II's relay in 1947?",
+      "kind": "mcq",
+      "options": [
+        "A moth",
+        "A beetle",
+        "A spider",
+        "A wire"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0003-p2",
+      "question": "True or false: the word 'bug' for a technical glitch was invented in 1947.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Smithsonian National Museum of American History: Log book with computer bug",
+      "url": "https://americanhistory.si.edu/collections/search/object/nmah_334663"
+    },
+    {
+      "title": "Software bug (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Software_bug"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0003.webp",
+    "alt": "The First \"Computer Bug\" Moth found trapped between points at Relay # 70, Panel F, of the Mark II Aiken Relay Calculator while it was being tested at Harvard University, 9 September 1947. The operator",
+    "kind": "photo",
+    "credit": "Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988. / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:First_Computer_Bug,_1947.jpg"
+  },
+  "body": {
+    "claim": "Around 1947, operators of the Harvard Mark II computer found a moth stuck in a relay and taped it into their logbook.",
+    "why": "The note called it the 'first actual case of bug being found'. The joke worked because engineers already used 'bug' for technical glitches: Thomas Edison used the word that way in the 1870s. The moth was just a literal one."
+  }
+}

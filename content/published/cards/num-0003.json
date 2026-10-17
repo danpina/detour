@@ -1,0 +1,44 @@
+{
+  "id": "num-0003",
+  "interest": "numbers",
+  "title": "Your shuffled deck is probably unique",
+  "probes": [
+    {
+      "id": "num-0003-p1",
+      "question": "Roughly how many different orders can a 52-card deck be in?",
+      "kind": "mcq",
+      "options": [
+        "About 8 × 10^67",
+        "About 52 million",
+        "About 2,700",
+        "About 10^12"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Factorial (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Factorial"
+    },
+    {
+      "title": "Shuffling (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Shuffling"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "type": "fact_why",
+  "image": {
+    "file": "num-0003.webp",
+    "alt": "U.S. Air Force civilian Pierre Flatowicz, 55th Force Support Squadron, shuffles a deck of cards inside Building C on Offutt Air Force Base, Neb., Sept. 13. Flatowicz best finish in a national tourname",
+    "kind": "photo",
+    "credit": "U.S. Air Force photo by Charles Haymond / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Card_shuffle.jpg"
+  },
+  "body": {
+    "claim": "Any two properly shuffled decks of 52 cards are almost certain to be in different orders.",
+    "why": "There are 52! ways to order a deck, about 8 × 10^67. With that many possible orders, two properly shuffled decks matching is almost impossible."
+  }
+}

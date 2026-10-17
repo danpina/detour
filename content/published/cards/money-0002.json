@@ -1,0 +1,47 @@
+{
+  "id": "money-0002",
+  "interest": "money",
+  "title": "The rule of 72",
+  "probes": [
+    {
+      "id": "money-0002-p1",
+      "question": "By the rule of 72, about how long does money take to double at 8% a year?",
+      "kind": "mcq",
+      "options": [
+        "6 years",
+        "9 years",
+        "12 years",
+        "15 years"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0002-p2",
+      "question": "To estimate years to double, divide ____ by the yearly growth rate in percent.",
+      "kind": "cloze",
+      "answer": "72",
+      "accept": []
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rule of 72 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rule_of_72"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "fact_why",
+  "image": {
+    "file": "money-0002.webp",
+    "alt": "Exponential growth of compound interest.",
+    "kind": "photo",
+    "credit": "MartienTheRock / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Samengestelde_interest.png"
+  },
+  "body": {
+    "claim": "Divide 72 by a yearly growth rate to estimate how many years it takes money to double.",
+    "why": "At 6% a year, 72 ÷ 6 gives 12 years. At 9% it is 8 years. The shortcut works because of how compound growth behaves, and 72 is easy to divide by many rates. It is closest for rates between about 6% and 10%."
+  }
+}

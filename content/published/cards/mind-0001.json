@@ -1,0 +1,54 @@
+{
+  "id": "mind-0001",
+  "interest": "mind",
+  "title": "You forget fastest right after learning",
+  "probes": [
+    {
+      "id": "mind-0001-p1",
+      "question": "True or false: forgetting is fastest soon after you learn something.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0001-p2",
+      "question": "What did Ebbinghaus memorise to study forgetting?",
+      "kind": "mcq",
+      "options": [
+        "Nonsense syllables",
+        "Poems",
+        "Phone numbers",
+        "Faces"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hermann Ebbinghaus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hermann_Ebbinghaus"
+    },
+    {
+      "title": "Forgetting curve (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Forgetting_curve"
+    },
+    {
+      "title": "Spaced repetition (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spaced_repetition"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0001.webp",
+    "alt": "The forgetting curve is a concept developed by the German psychologist Hermann Ebbinghaus in the late 19th century. According to Ebbinghaus, the forgetting curve represents the decline in memory reten",
+    "kind": "photo",
+    "credit": "Productive.Fish / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Forgetting_curve_and_work_of_Ebbinghaus.png"
+  },
+  "body": {
+    "claim": "In the 1880s Hermann Ebbinghaus showed that memories fade quickly at first, then more slowly.",
+    "why": "He memorised lists of nonsense syllables and tested himself over time. Most of the loss came soon after learning, and the curve flattened later. Each repetition flattens the curve, which is the idea behind spaced repetition."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "mind-0003",
+  "interest": "mind",
+  "title": "The Mozart effect is mostly a myth",
+  "probes": [
+    {
+      "id": "mind-0003-p1",
+      "question": "True or false: studies have shown that listening to Mozart makes babies lastingly smarter.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mozart effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mozart_effect"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0003.webp",
+    "alt": "Music cover sheet for 'Glover's Transcriptions of Classical Gems', arranged for piano by F. S. Glover, with portraits of Joseph Haydn, Ludwig van Beethoven, Wolfgang Amadeus Mozart, George Frederick H",
+    "kind": "artwork",
+    "credit": "Print made by: Michael Watson Published by: Ransford & Son / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Glover%27s_Transcriptions_of_Classical_Gems_(BM_1922,0710.202).jpg"
+  },
+  "body": {
+    "claim": "Listening to Mozart does not make you or your baby lastingly smarter.",
+    "why": "A 1993 study found a brief boost in a spatial reasoning task for adults after listening to Mozart. Later research found little evidence that Mozart specifically makes you smarter, and claims that it boosts babies' development went well beyond the original study."
+  }
+}

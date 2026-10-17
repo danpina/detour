@@ -1,0 +1,62 @@
+{
+  "id": "tech-0002",
+  "interest": "tech",
+  "title": "The first webcam watched a coffee pot",
+  "probes": [
+    {
+      "id": "tech-0002-p1",
+      "question": "What did the first webcam famously point at?",
+      "kind": "mcq",
+      "options": [
+        "A coffee pot",
+        "A bird feeder",
+        "A traffic junction",
+        "A clock"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0002-p2",
+      "question": "True or false: the Trojan Room coffee pot camera was first set up so researchers could see if the pot was empty.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trojan Room coffee pot (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot"
+    },
+    {
+      "title": "The Trojan Room coffee pot (University of Cambridge)",
+      "url": "https://www.cl.cam.ac.uk/coffee/coffee.html"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "story",
+  "image": {
+    "file": "tech-0002.webp",
+    "alt": "Objectgegevens Titel: Krups koffiezetapparaat van Van Nelle, zwart Beschrijving: Krups koffiezetapparaat bestaand uit koffiezetapparaat (A) en glazen kan (B) van Van Nelle, zwart, voor 3-4 of voor 10",
+    "kind": "photo",
+    "credit": "Krups / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Krups_koffiezetapparaat_van_Van_Nelle,_zwart,_objectnr_90899-A-B.JPG"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Cambridge, 1991. Researchers in the Computer Laboratory share one coffee pot. Walking over only to find it empty is a wasted trip."
+      },
+      {
+        "text": "So they point a camera at the pot and write software that sends a small, grainy picture of it to everyone's screen."
+      },
+      {
+        "text": "In 1993 the picture goes onto the World Wide Web, and people can watch the pot online. It is often called the first webcam."
+      },
+      {
+        "text": "The twist: a Krups coffee machine it watched was later auctioned on eBay for £3,350, as reported by Der Spiegel."
+      }
+    ]
+  }
+}

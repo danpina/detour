@@ -1,0 +1,38 @@
+{
+  "id": "money-0003",
+  "interest": "money",
+  "title": "Banks no longer have to keep a reserve",
+  "probes": [
+    {
+      "id": "money-0003-p1",
+      "question": "True or false: US banks are currently required to hold 10% of deposits in reserve.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Federal Reserve Board: press release, 15 March 2020",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315b.htm"
+    },
+    {
+      "title": "Reserve requirement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Reserve_requirement"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "type": "fact_why",
+  "image": {
+    "file": "money-0003.webp",
+    "alt": "Federal Reserve Bank of Chicago as seen from LaSalle Street. The Chicago Board of Trade is partly visible in the background.",
+    "kind": "photo",
+    "credit": "Warren LeMay from Chicago, IL, United States / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Federal-Reserve-Bank-of-Chicago.jpg"
+  },
+  "body": {
+    "claim": "Since March 2020, US banks have not been required to hold any fraction of their customers' deposits in reserve.",
+    "why": "The Federal Reserve cut its reserve requirement ratios to zero percent, effective 26 March 2020. Before that, larger banks had to hold up to 10% of certain deposits in reserve."
+  }
+}

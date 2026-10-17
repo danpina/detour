@@ -1,0 +1,46 @@
+{
+  "id": "sci-0007",
+  "interest": "science",
+  "title": "Honey is built to last",
+  "probes": [
+    {
+      "id": "sci-0007-p1",
+      "question": "What helps honey resist spoiling?",
+      "kind": "mcq",
+      "options": [
+        "High sugar and very little water",
+        "Being stored cold",
+        "Containing salt",
+        "Being full of alcohol"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0007-p2",
+      "question": "True or false: sealed, dry honey can last for centuries.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Honey (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Honey"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0007.webp",
+    "alt": "Honey",
+    "kind": "photo",
+    "credit": "Scott Bauer, USDA ARS / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Runny_hunny.jpg"
+  },
+  "body": {
+    "claim": "Honey is so sugary and low in water that microbes struggle to grow in it, so sealed honey can last for centuries.",
+    "why": "Honey is mostly sugar with very little water, which keeps microbes from growing. It is also acidic and contains an enzyme that makes small amounts of hydrogen peroxide. Kept sealed and dry, it can last for centuries."
+  }
+}

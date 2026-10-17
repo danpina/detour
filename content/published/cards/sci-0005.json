@@ -1,0 +1,50 @@
+{
+  "id": "sci-0005",
+  "interest": "science",
+  "title": "Why the sky is blue (and sunsets are red)",
+  "probes": [
+    {
+      "id": "sci-0005-p1",
+      "question": "Why does the sky turn red at sunset?",
+      "kind": "mcq",
+      "options": [
+        "Sunlight passes through more air, so blue is scattered away",
+        "The Sun gets hotter and glows red",
+        "Dust turns the Sun red",
+        "The Moon reflects red light"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0005-p2",
+      "question": "True or false: air scatters blue light more strongly than red light.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "NASA Space Place: Why is the sky blue?",
+      "url": "https://spaceplace.nasa.gov/blue-sky/en/"
+    },
+    {
+      "title": "Rayleigh scattering (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0005.webp",
+    "alt": "Royal Blue Sky over Twilight Horizon, Landers, California",
+    "kind": "photo",
+    "credit": "Jessie Eastland / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Royal_blue_sky_over_twilight_horizon,_Landers,_California.jpg"
+  },
+  "body": {
+    "claim": "Sunlight is all colours mixed, and air scatters blue light much more strongly than red.",
+    "why": "Air molecules scatter short wavelengths (blue) far more than long ones (red), so blue reaches your eyes from every direction. At sunset the light crosses much more air, most of the blue is scattered away, and the reds are what is left."
+  }
+}

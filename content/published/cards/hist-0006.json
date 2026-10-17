@@ -1,0 +1,43 @@
+{
+  "id": "hist-0006",
+  "interest": "history",
+  "title": "Mammoths and pyramids",
+  "probes": [
+    {
+      "id": "hist-0006-p1",
+      "question": "True or false: woolly mammoths were still alive when the Great Pyramid was built.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Woolly mammoth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Woolly_mammoth"
+    },
+    {
+      "title": "Great Pyramid of Giza (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0006.webp",
+    "alt": "Woolly mammoths (Mammuthus primigenius) in a late Pleistocene landscape in northern Spain. (Information according to the caption of the same image in Alan Turner (2004) National Geographic Prehistoric",
+    "kind": "photo",
+    "credit": "Mauricio Antón / Wikimedia Commons",
+    "license": "CC BY 2.5",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Woolly_mammoth_(Mammuthus_primigenius)_-_Mauricio_Ant%C3%B3n.jpg"
+  },
+  "body": {
+    "question": "When the Great Pyramid of Giza was built, were woolly mammoths still alive?",
+    "options": [
+      "Yes, some still were",
+      "No, they were long extinct"
+    ],
+    "answer": 0,
+    "reveal": "A small population of woolly mammoths survived on Wrangel Island, in the Arctic Ocean, until about 4,000 years ago. The Great Pyramid was built around 2600 BC, about 4,600 years ago."
+  }
+}

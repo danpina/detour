@@ -1,0 +1,62 @@
+{
+  "id": "tech-0004",
+  "interest": "tech",
+  "title": "The alarm that didn't stop the landing",
+  "probes": [
+    {
+      "id": "tech-0004-p1",
+      "question": "What did the Apollo computer do when it became overloaded?",
+      "kind": "mcq",
+      "options": [
+        "Dropped low-priority tasks and kept critical ones running",
+        "Shut itself off for good",
+        "Handed control to the radio",
+        "Ignored all alarms"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0004-p2",
+      "question": "True or false: the 1202 alarm forced Apollo 11 to abort the landing.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apollo Guidance Computer (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer"
+    },
+    {
+      "title": "Apollo 11 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Apollo_11"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "type": "story",
+  "image": {
+    "file": "tech-0004.webp",
+    "alt": "The Apollo 11 lunar landing mission crew, pictured from left to right, Neil A. Armstrong, commander; Michael Collins, command module pilot; and Edwin E. Aldrin Jr., lunar module pilot.",
+    "kind": "photo",
+    "credit": "NASA / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Apollo_11_Crew.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "20 July 1969. Neil Armstrong and Buzz Aldrin are descending toward the Moon in the lunar module Eagle, guided by the Apollo Guidance Computer."
+      },
+      {
+        "text": "Minutes before landing, the computer flashes alarms numbered 1202 and 1201. They are unexpected."
+      },
+      {
+        "text": "In Houston, guidance officer Steve Bales, advised by Jack Garman, has to decide quickly: abort or continue?"
+      },
+      {
+        "text": "The twist: the computer was overloaded, but it had been designed to drop lower-priority tasks and keep the critical ones running. Bales said go, and Eagle landed."
+      }
+    ]
+  }
+}

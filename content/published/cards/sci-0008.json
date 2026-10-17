@@ -1,0 +1,43 @@
+{
+  "id": "sci-0008",
+  "interest": "science",
+  "title": "How big is the Sun?",
+  "probes": [
+    {
+      "id": "sci-0008-p1",
+      "question": "About how many Earths could fit inside the Sun?",
+      "kind": "estimate",
+      "answer": 1300000,
+      "unit": "Earths",
+      "min": 1000,
+      "max": 100000000,
+      "scale": "log"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NASA: Sun facts",
+      "url": "https://science.nasa.gov/sun/facts/"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "estimate",
+  "image": {
+    "file": "sci-0008.webp",
+    "alt": "The sun emitted a mid-level solar flare, an M7.9-class, peaking at 4:16 a.m. EDT on June 25, 2015. NASA’s Solar Dynamics Observatory, which watches the sun constantly, captured an image of the event.",
+    "kind": "photo",
+    "credit": "NASA/SDO / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Solar_Dynamics_Observatory_Sees_M7.9-Class_Solar_Flare.jpg"
+  },
+  "body": {
+    "question": "About how many Earths could fit inside the Sun?",
+    "unit": "Earths",
+    "min": 1000,
+    "max": 100000000,
+    "scale": "log",
+    "answer": 1300000,
+    "reveal": "About 1.3 million Earths would fit inside the Sun by volume."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "num-0002",
+  "interest": "numbers",
+  "title": "How long is a billion seconds?",
+  "probes": [
+    {
+      "id": "num-0002-p1",
+      "question": "How many years is one billion seconds?",
+      "kind": "estimate",
+      "answer": 31.7,
+      "unit": "years",
+      "min": 1,
+      "max": 1000,
+      "scale": "log"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Orders of magnitude (time) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "estimate",
+  "image": {
+    "file": "num-0002.webp",
+    "alt": "Alternative version of image:Wooden hourglass 2.jpg. Wooden hourglass. Total height:25 cm. Wooden disk diameter: 11.5 cm. Running time of the hourglass: 1 hour. Hourglass in other languages: 'timglas'",
+    "kind": "photo",
+    "credit": "User:S Sepp / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wooden_hourglass_3.jpg"
+  },
+  "body": {
+    "question": "How many years is one billion seconds?",
+    "unit": "years",
+    "min": 1,
+    "max": 1000,
+    "scale": "log",
+    "answer": 31.7,
+    "reveal": "About 31.7 years. A million seconds is only about 11.6 days. The gap between 'million' and 'billion' is much bigger than it sounds."
+  }
+}

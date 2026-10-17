@@ -1,0 +1,43 @@
+{
+  "id": "sci-0006",
+  "interest": "science",
+  "title": "Lightning vs. the Sun",
+  "probes": [
+    {
+      "id": "sci-0006-p1",
+      "question": "True or false: a lightning bolt is hotter than the surface of the Sun.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "NOAA National Weather Service: Lightning facts",
+      "url": "https://www.weather.gov/safety/lightning-science-overview"
+    },
+    {
+      "title": "NASA: Sun facts",
+      "url": "https://science.nasa.gov/sun/facts/"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "type": "guess_first",
+  "image": {
+    "file": "sci-0006.webp",
+    "alt": "Lightning strikes a conifer Type of meteorological phenomenon: Lightning Title Lightning Instance of type of meteorological phenomenon Part of thunderstorm",
+    "kind": "photo",
+    "credit": "Friedrich Haag / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:004_2018_05_14_Extremes_Wetter.jpg"
+  },
+  "body": {
+    "question": "Which is hotter: a bolt of lightning, or the surface of the Sun?",
+    "options": [
+      "A bolt of lightning",
+      "The surface of the Sun"
+    ],
+    "answer": 0,
+    "reveal": "The air in a lightning channel heats to about 28,000 °C (50,000 °F). The Sun's surface is around 5,500 °C, so lightning is about five times hotter."
+  }
+}
