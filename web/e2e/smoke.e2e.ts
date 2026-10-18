@@ -7,15 +7,9 @@ async function playSet(page: Page) {
     const text = await page.locator("body").innerText();
 
     if (/Drill/.test(text)) {
-      // Answer both kinds of drill with a plain number, then move on.
-      for (let q = 0; q < 4; q++) {
-        const input = page.getByLabel("Your answer");
-        if (!(await input.isVisible().catch(() => false))) break;
-        await input.fill("1");
-        await page.getByRole("button", { name: "Check" }).click();
-        await page.getByRole("button", { name: /Next question|Finish/ }).click();
-      }
-      await page.getByRole("button", { name: "Next", exact: true }).click();
+      // Drills are timed, so skip them with the keyboard (as a swipe would) to keep the test independent of machine speed.
+      await page.evaluate(() => (document.activeElement as HTMLElement | null)?.blur());
+      await page.keyboard.press("ArrowRight");
     } else if (await page.getByRole("button", { name: "Why?" }).isVisible()) {
       await page.getByRole("button", { name: "Why?" }).click();
       await page.getByRole("button", { name: "Next", exact: true }).click();
