@@ -5,14 +5,12 @@ import { backupFileName, buildBackup, parseBackup } from "../lib/backup";
 import { analyticsEnabled, setAnalyticsEnabled } from "../analytics";
 import { store } from "../lib/db";
 import { setLastBackup } from "../lib/home";
+import { isInstalled } from "../lib/install";
 
 const box = "rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900";
 const btn = "w-full rounded-xl border border-neutral-300 px-4 py-3 text-left font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-800";
 
 type Props = { interests: Interest[]; onChangeInterests: () => void; onDataChanged: () => void };
-
-const isInstalled = () =>
-  window.matchMedia?.("(display-mode: standalone)").matches || (navigator as Navigator & { standalone?: boolean }).standalone === true;
 
 export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: Props) {
   const [msg, setMsg] = useState<{ text: string; error?: boolean } | null>(null);

@@ -17,3 +17,21 @@ describe("backup nudge", () => {
     expect(shouldNudgeBackup(20, now - BACKUP_EVERY_DAYS * DAY, now)).toBe(true);
   });
 });
+
+import { shouldShowRecap } from "./home";
+import { dayKey, weekKey } from "./progress";
+
+describe("weekly recap prompt", () => {
+  const sunday = new Date(2026, 9, 18, 12).getTime(); // Sunday 18 Oct 2026
+  const wednesday = new Date(2026, 9, 21, 12).getTime();
+  it("appears on Sunday and Monday only", () => {
+    expect(shouldShowRecap(sunday, 5, null)).toBe(true);
+    expect(shouldShowRecap(sunday + 86_400_000, 5, null)).toBe(true);
+    expect(shouldShowRecap(wednesday, 5, null)).toBe(false);
+  });
+  it("needs something to show and goes away once seen", () => {
+    expect(shouldShowRecap(sunday, 0, null)).toBe(false);
+    expect(shouldShowRecap(sunday, 5, weekKey(dayKey(sunday)))).toBe(false);
+    expect(shouldShowRecap(sunday, 5, "2026-10-05")).toBe(true);
+  });
+});

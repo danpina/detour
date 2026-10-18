@@ -7,6 +7,7 @@ import { Onboarding } from "./components/Onboarding";
 import { ProgressScreen } from "./components/ProgressScreen";
 import { SessionView } from "./components/SessionView";
 import { SettingsScreen } from "./components/SettingsScreen";
+import { Toaster, toast } from "./components/Toast";
 import { track } from "./analytics";
 import { store } from "./lib/db";
 import type { SessionItem } from "./lib/engine";
@@ -33,6 +34,12 @@ export function App() {
       setInterests([]);
       setScreen({ name: "onboarding" });
     }
+  }, []);
+
+  useEffect(() => {
+    const ready = () => toast("Ready to use offline");
+    window.addEventListener("detour:offline-ready", ready);
+    return () => window.removeEventListener("detour:offline-ready", ready);
   }, []);
 
   useEffect(() => {
@@ -63,7 +70,7 @@ export function App() {
 
         {screen.name === "onboarding" && <Onboarding initial={interests} onDone={finishOnboarding} />}
 
-        {screen.name === "home" && <HomeScreen onStart={(feed) => startSet(interests, feed)} onOpenSettings={() => setScreen({ name: "settings" })} />}
+        {screen.name === "home" && <HomeScreen onStart={(feed) => startSet(interests, feed)} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
 
         {screen.name === "progress" && <ProgressScreen />}
 
@@ -85,6 +92,7 @@ export function App() {
           <EndScreen learned={screen.learned} onAnother={() => startSet(interests, false)} onProgress={() => setScreen({ name: "progress" })} />
         )}
 
+        <Toaster />
         {tab && <BottomNav tab={tab} onChange={(t) => setScreen({ name: t })} />}
       </div>
     </div>

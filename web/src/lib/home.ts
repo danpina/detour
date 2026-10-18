@@ -1,6 +1,7 @@
 import { ALL_CARDS } from "./content";
 import { store } from "./db";
 import { dueReviews } from "./engine";
+import { dayKey, displayStreak, emptyStreak, weekKey, weeklyRecap, type Recap } from "./progress";
 
 const KEY = "detour.lastBackup";
 const DAY = 86_400_000;
@@ -31,12 +32,40 @@ export function shouldNudgeBackup(sessions: number, lastBackup: number | undefin
   return lastBackup === undefined || now - lastBackup >= BACKUP_EVERY_DAYS * DAY;
 }
 
-export type HomeInfo = { dueCount: number; backupNudge: boolean };
+const RECAP_KEY = "detour.recapSeen";
+
+export function markRecapSeen(now = Date.now()): void {
+  try {
+    localStorage.setItem(RECAP_KEY, weekKey(dayKey(now)));
+  } catch {
+    // the prompt may show again; harmless
+  }
+}
+
+/** The recap is offered on Sundays and Mondays once there is something to show, until the user has looked at it that week. */
+export function shouldShowRecap(now: number, cards: number, seenWeek: string | null): boolean {
+  const dow = new Date(now).getDay();
+  if (dow !== 0 && dow !== 1) return false;
+  if (cards < 1) return false;
+  return seenWeek !== weekKey(dayKey(now));
+}
+
+export type HomeInfo = { dueCount: number; backupNudge: boolean; sessions: number; weekRecap: Recap | null };
 
 export async function loadHomeInfo(now = Date.now()): Promise<HomeInfo> {
-  const [reviews, sessions] = await Promise.all([store.getReviews(), store.getSessions()]);
+  const [reviews, sessions, events, streakState] = await Promise.all([store.getReviews(), store.getSessions(), store.getEvents(), store.getStreak()]);
+  const streak = displayStreak(streakState ?? emptyStreak(), dayKey(now)).current;
+  const recap = weeklyRecap(events, streak, now);
+  let seen: string | null = null;
+  try {
+    seen = localStorage.getItem(RECAP_KEY);
+  } catch {
+    // treated as not seen
+  }
   return {
     dueCount: dueReviews(ALL_CARDS, reviews, now).length,
     backupNudge: shouldNudgeBackup(sessions.length, getLastBackup(), now),
+    sessions: sessions.length,
+    weekRecap: shouldShowRecap(now, recap.cards, seen) ? recap : null,
   };
 }

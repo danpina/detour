@@ -3,6 +3,7 @@ import { INTERESTS } from "@detour/content";
 import { INTEREST_INFO } from "../lib/content";
 import { LONG_TERM_DAYS, type CardState } from "../lib/progress";
 import { saveRecapImage } from "../lib/recapImage";
+import { markRecapSeen } from "../lib/home";
 import { loadProgress } from "../lib/session";
 
 type Data = Awaited<ReturnType<typeof loadProgress>>;
@@ -22,6 +23,7 @@ export function ProgressScreen() {
 
   useEffect(() => {
     void loadProgress().then(setData);
+    markRecapSeen();
   }, []);
 
   if (!data) return <div className="flex h-full items-center justify-center text-neutral-400">Loading…</div>;
