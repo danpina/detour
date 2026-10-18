@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { INTEREST_INFO } from "../lib/content";
 import type { Interest } from "@detour/content";
 import { backupFileName, buildBackup, parseBackup } from "../lib/backup";
@@ -6,6 +6,7 @@ import { analyticsEnabled, setAnalyticsEnabled } from "../analytics";
 import { store } from "../lib/db";
 import { setLastBackup } from "../lib/home";
 import { isInstalled } from "../lib/install";
+import { buildReminderIcs, parseTime } from "../lib/reminder";
 
 const box = "rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900";
 const btn = "w-full rounded-xl border border-neutral-300 px-4 py-3 text-left font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-800";
@@ -16,6 +17,12 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
   const [msg, setMsg] = useState<{ text: string; error?: boolean } | null>(null);
   const file = useRef<HTMLInputElement>(null);
   const [shareStats, setShareStats] = useState(analyticsEnabled());
+  const [setSize, setSetSize] = useState(5);
+  const [reminderTime, setReminderTime] = useState("20:00");
+
+  useEffect(() => {
+    void store.getSettings().then((s) => setSetSize(s?.set_size ?? 5));
+  }, []);
 
   const exportProgress = async () => {
     const blob = new Blob([buildBackup(await store.snapshot())], { type: "application/json" });
@@ -53,6 +60,60 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
         <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Your interests</h2>
         <p className="mt-2">{interests.map((i) => `${INTEREST_INFO[i].emoji} ${INTEREST_INFO[i].name}`).join(" · ") || "None yet"}</p>
         <button onClick={onChangeInterests} className={`${btn} mt-3`}>Change interests</button>
+      </section>
+
+      <section className={`${box} mt-4`}>
+        <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Cards per set</h2>
+        <div className="mt-3 grid grid-cols-3 gap-2" role="radiogroup" aria-label="Cards per set">
+          {[3, 5, 8].map((n) => (
+            <button
+              key={n}
+              role="radio"
+              aria-checked={setSize === n}
+              onClick={async () => {
+                setSetSize(n);
+                const s = await store.getSettings();
+                if (s) await store.saveSettings({ ...s, set_size: n });
+              }}
+              className={`rounded-xl border px-3 py-3 font-medium ${setSize === n ? "border-teal-600 bg-teal-50 text-teal-900 dark:border-teal-400 dark:bg-teal-950 dark:text-teal-100" : "border-neutral-300 dark:border-neutral-700"}`}
+            >
+              {n}
+            </button>
+          ))}
+        </div>
+        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">Five is about a minute.</p>
+      </section>
+
+      <section className={`${box} mt-4`}>
+        <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Daily reminder</h2>
+        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
+          Detour can't send notifications on its own, but your calendar can. This adds a repeating event with an alert.
+        </p>
+        <div className="mt-3 flex items-center gap-3">
+          <input
+            type="time"
+            value={reminderTime}
+            onChange={(e) => setReminderTime(e.target.value)}
+            aria-label="Reminder time"
+            className="rounded-xl border border-neutral-300 bg-transparent px-3 py-2 dark:border-neutral-700"
+          />
+          <button
+            onClick={() => {
+              const { hour, minute } = parseTime(reminderTime);
+              const ics = buildReminderIcs({ hour, minute, url: location.origin + import.meta.env.BASE_URL });
+              const url = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+              const a = document.createElement("a");
+              a.href = url;
+              a.download = "detour-reminder.ics";
+              a.click();
+              setTimeout(() => URL.revokeObjectURL(url), 1000);
+              setMsg({ text: "Open the file to add the reminder to your calendar." });
+            }}
+            className="flex-1 rounded-xl border border-neutral-300 px-4 py-2.5 font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-800"
+          >
+            Add to calendar
+          </button>
+        </div>
       </section>
 
       <section className={`${box} mt-4`}>
@@ -96,6 +157,14 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
       </section>
 
       <p className="mt-6 text-center text-sm text-neutral-500 dark:text-neutral-400">
+        {import.meta.env.VITE_FEEDBACK_URL && (
+          <>
+            <a className="underline" href={import.meta.env.VITE_FEEDBACK_URL as string} target="_blank" rel="noreferrer">
+              Send feedback
+            </a>
+            {" · "}
+          </>
+        )}
         <a className="underline" href={`${import.meta.env.BASE_URL}privacy.html`} target="_blank" rel="noreferrer">
           Privacy
         </a>

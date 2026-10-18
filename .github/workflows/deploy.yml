@@ -33,6 +33,8 @@ jobs:
           VITE_BASE: /detour/
           # A public app id, stored as a repository *variable* (not a secret). Empty = analytics off.
           VITE_TELEMETRYDECK_APP_ID: ${{ vars.TELEMETRYDECK_APP_ID }}
+          # Optional link shown as "Send feedback" in Settings (a form, chat or email link). Empty = hidden.
+          VITE_FEEDBACK_URL: ${{ vars.FEEDBACK_URL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web/dist

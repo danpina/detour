@@ -8,7 +8,8 @@ import { ALL_CARDS as CARDS } from "./content";
 import { dayKey, displayStreak, emptyStreak, knowledgeMap, recallStats, recordDay, skillSummary, weeklyRecap } from "./progress";
 
 /** Loads local history and builds the next set. Used for quick sets and for each page of the free-scroll feed. */
-export async function nextSet(interests: Interest[], setSize = DEFAULT_SET_SIZE): Promise<SessionItem[]> {
+export async function nextSet(interests: Interest[], sizeOverride?: number): Promise<SessionItem[]> {
+  const setSize = sizeOverride ?? (await store.getSettings())?.set_size ?? DEFAULT_SET_SIZE;
   const [reviews, completed, events, skills] = await Promise.all([store.getReviews(), store.completedCardIds(), store.getEvents(), store.getSkills()]);
   const track = nextTrack(skills);
   const level = skills.find((s) => s.track_id === track)?.level ?? 1;

@@ -27,3 +27,7 @@ pnpm --filter web preview
 - Testers should Add to Home Screen so Safari doesn't clear their progress after about a week of not using it.
 - Local development sends test-mode signals only, and only if `VITE_TELEMETRYDECK_APP_ID` is set in `.env.local`.
 - If the repo is renamed, change `VITE_BASE` in `.github/workflows/deploy.yml`.
+
+## Optional: feedback link
+
+Add a repository variable `FEEDBACK_URL` (for example a Google Form, a WhatsApp group invite or a mailto: link). Settings then shows a **Send feedback** link. Re-run the deploy after adding it.

@@ -8,6 +8,8 @@ export type Settings = {
   id: "main";
   interests: Interest[];
   onboarding_done: boolean;
+  /** Cards per set (3, 5 or 8). Defaults to 5. */
+  set_size?: number;
 };
 
 export type DetourEvent = {

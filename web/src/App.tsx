@@ -55,7 +55,7 @@ export function App() {
 
   const finishOnboarding = async (picked: Interest[]) => {
     setInterests(picked);
-    await store.saveSettings({ id: "main", interests: picked, onboarding_done: true });
+    await store.saveSettings({ ...(await store.getSettings()), id: "main", interests: picked, onboarding_done: true });
     track("onboarding.completed", { interests: picked.length });
     await startSet(picked, false);
   };
