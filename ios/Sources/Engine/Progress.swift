@@ -55,7 +55,7 @@ enum Days {
     }
 
     static func between(_ a: String, _ b: String) -> Int { number(b) - number(a) }
-    static func add(_ key: String, _ n: Int) -> String { key(fromNumber: number(key) + n) }
+    static func add(_ day: String, _ n: Int) -> String { key(fromNumber: number(day) + n) }
 
     /// Monday of the week containing `day`. Streak freezes refill every Monday.
     static func weekKey(_ day: String) -> String {
