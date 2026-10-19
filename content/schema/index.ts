@@ -252,6 +252,8 @@ export const draftSchema = z
     card: z.record(z.string(), z.unknown()),
     image_brief: imageBriefSchema,
     check: checkReportSchema.optional(),
+    /** Set when a published card was sent back for review; it waits for a human. */
+    sent_back: z.object({ reason: z.string(), note: z.string().optional(), at: z.string() }).optional(),
   })
   .superRefine((d, ctx) => {
     const r = validateImagelessCard(d.card);

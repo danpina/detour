@@ -251,6 +251,10 @@ function render() {
   const h = document.createElement('section');
   h.innerHTML = `<div style="font-size:18px;font-weight:600">${esc(card.title)}</div><div class="msg">${esc(cur.id)} · ${esc(card.type)} · ${esc(card.interest)} · difficulty ${esc(card.difficulty)} · topic: ${esc(d.topic.topic)}</div>`;
   main.append(h);
+  if (d.sent_back) {
+    const b = document.createElement('section'); b.style.borderColor = 'var(--bad)'; b.innerHTML = '<h2 style="color:var(--bad)">Sent back</h2><div>' + esc(d.sent_back.reason) + (d.sent_back.note ? ' · ' + esc(d.sent_back.note) : '') + '</div><div class="msg">Pick a new image or fix the text, then approve again.</div>';
+    main.append(b);
+  }
   renderText(main); renderCheck(main); renderImages(main);
   $('#actions').hidden = false;
   $('#ackWrap').hidden = d.check && d.check.overall === 'pass';

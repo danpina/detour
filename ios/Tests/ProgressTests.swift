@@ -109,12 +109,29 @@ final class AppModelTests: XCTestCase {
     func testOnboardingThenASetOfFiveWithADrill() {
         let (model, url) = makeModel()
         defer { try? FileManager.default.removeItem(at: url) }
-        model.completeOnboarding(interests: [.history, .science, .money])
+        model.completeOnboarding(interests: [.history, .science, .numbers])
         XCTAssertTrue(model.settings.onboardingDone)
         let items = model.makeSet()
         XCTAssertEqual(items.count, 5)
         if case .drill? = items.last {} else { XCTFail("the last item should be the skill drill") }
         XCTAssertEqual(Set(items.map { $0.key }).count, items.count)
+    }
+
+    func testNoDrillsOrOtherTopicsUnlessTheUserAskedForThem() {
+        let (model, url) = makeModel()
+        defer { try? FileManager.default.removeItem(at: url) }
+        model.completeOnboarding(interests: [.history, .science, .money])
+        XCTAssertFalse(model.drillsEnabled)
+        let items = model.makeSet()
+        for item in items {
+            switch item {
+            case .drill: XCTFail("drills should be off without Numbers & Logic")
+            case .new(let c): XCTAssertTrue([Interest.history, .science, .money].contains(c.interest), "\(c.id) is from a topic the user did not pick")
+            case .review: break
+            }
+        }
+        model.updateSettings { $0.drills = true }
+        XCTAssertTrue(model.makeSet().contains { if case .drill = $0 { return true } else { return false } })
     }
 
     func testFinishingANewCardSchedulesItsProbesForTomorrowAndStartsTheStreak() {

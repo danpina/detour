@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { track } from "../analytics";
 import { store } from "../lib/db";
 import type { SessionItem } from "../lib/engine";
+import { markSeenInReview } from "../lib/reviewer";
 import { recordActivity, recordCompletion } from "../lib/session";
 import { DrillView } from "./DrillView";
 import { EstimateCard } from "./cards/EstimateCard";
@@ -18,9 +19,11 @@ type Props = {
   onFinish: (completed: number) => void;
   /** Free-scroll feed: show a way out. */
   onExit?: () => void;
+  /** Reviewer mode: look at cards without recording progress, events or analytics. */
+  dryRun?: boolean;
 };
 
-export function SessionView({ items, source, onFinish, onExit }: Props) {
+export function SessionView({ items, source, onFinish, onExit, dryRun = false }: Props) {
   const [index, setIndex] = useState(0);
   const [completed, setCompleted] = useState<Set<string>>(new Set());
   const shownAt = useRef(Date.now());
@@ -35,6 +38,10 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
   // Record a "view" each time a card appears.
   useEffect(() => {
     shownAt.current = Date.now();
+    if (dryRun) {
+      if (item.kind !== "drill") markSeenInReview(item.card.id);
+      return;
+    }
     void store.addEvent({ card_id: cardId, event: "view", ms_spent: 0 });
     track("card.viewed", { card: cardId, type: item.kind === "new" ? item.card.type : item.kind });
   }, [key, cardId]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -44,6 +51,7 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
       if (completedRef.current.has(key)) return;
       const ms = Date.now() - shownAt.current;
       setCompleted((s) => new Set(s).add(key));
+      if (dryRun) return;
       void store.addEvent({
         card_id: cardId,
         event: "complete",
@@ -54,11 +62,12 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
       void recordActivity();
       if (item.kind === "review") track("recall.answered", { kind: item.probe.kind, correct: result?.correct ?? false });
     },
-    [cardId, item, key],
+    [cardId, dryRun, item, key],
   );
 
   const finish = useCallback(
     (done: Set<string>) => {
+      if (dryRun) return onFinish(done.size);
       void store.addSession({ started_at: startedAt.current, source, cards_done: done.size, unlock_granted_min: 0 });
       const kindOf = (it: SessionItem) => (it.kind === "drill" ? `drill:${it.drill.track}:${it.drill.seed}` : `${it.kind}:${it.card.id}:${it.kind === "review" ? it.probe.id : ""}`);
       const finished = items.filter((it) => done.has(kindOf(it)));
@@ -70,15 +79,15 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
       });
       onFinish(done.size);
     },
-    [items, onFinish, source],
+    [dryRun, items, onFinish, source],
   );
 
   const next = useCallback(() => {
     const done = completedRef.current;
-    if (!done.has(key)) void store.addEvent({ card_id: cardId, event: "skip", ms_spent: Date.now() - shownAt.current });
+    if (!dryRun && !done.has(key)) void store.addEvent({ card_id: cardId, event: "skip", ms_spent: Date.now() - shownAt.current });
     if (index + 1 >= items.length) return finish(done);
     setIndex(index + 1);
-  }, [cardId, finish, index, items.length, key]);
+  }, [cardId, dryRun, finish, index, items.length, key]);
 
   const prev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), []);
 

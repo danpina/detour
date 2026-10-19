@@ -30,6 +30,10 @@ export async function judgeDraft(id: string): Promise<Decision> {
   const title: string = raw?.card?.title ?? id;
   const done = (pick?: Pick): Decision => ({ id, title, ok: reasons.length === 0, reasons, pick });
 
+  if (raw?.sent_back) {
+    reasons.push(`sent back by the reviewer (${raw.sent_back.reason}); needs a human`);
+    return done();
+  }
   const parsed = draftSchema.safeParse(raw);
   if (!parsed.success) {
     reasons.push("draft does not validate");

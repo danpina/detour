@@ -10,6 +10,8 @@ export type Settings = {
   onboarding_done: boolean;
   /** Cards per set (3, 5 or 8). Defaults to 5. */
   set_size?: number;
+  /** Skill drills at the end of a set. Unset means: on only if Numbers & Logic is one of the chosen topics. */
+  drills?: boolean;
 };
 
 export type DetourEvent = {

@@ -44,6 +44,14 @@ struct SettingsView: View {
                     Text("Five is about a minute.").font(.footnote).foregroundStyle(.secondary)
                 }
 
+                Section {
+                    Toggle("Skill drills", isOn: Binding(
+                        get: { model.drillsEnabled },
+                        set: { on in model.updateSettings { $0.drills = on } }
+                    ))
+                    Text("A quick mental-math or estimation round at the end of a set.").font(.footnote).foregroundStyle(.secondary)
+                }
+
                 Section("Daily reminder") {
                     Toggle("Remind me", isOn: Binding(
                         get: { model.settings.reminderEnabled },

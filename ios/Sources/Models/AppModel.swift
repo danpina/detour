@@ -56,6 +56,9 @@ final class AppModel {
     var cards: [Card] { content.cards }
     var settings: UserSettings { data.settings }
 
+    /// Skill drills are numbers-based, so by default they only appear for people who picked Numbers & Logic.
+    var drillsEnabled: Bool { data.settings.drills ?? data.settings.interests.contains(.numbers) }
+
     init(store: DataStore = DataStore(), content: LoadedContent = ContentStore.load(), clock: @escaping () -> Date = { Date() }, calendar: Calendar = .current) {
         self.store = store
         self.content = content
@@ -99,7 +102,7 @@ final class AppModel {
             engagement: SessionEngine.engagement(events: events, cards: cards),
             now: now,
             setSize: data.settings.setSize,
-            drill: drill
+            drill: drillsEnabled ? drill : nil
         )
         return SessionEngine.build(input)
     }

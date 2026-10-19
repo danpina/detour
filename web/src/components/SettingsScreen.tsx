@@ -7,6 +7,7 @@ import { store } from "../lib/db";
 import { setLastBackup } from "../lib/home";
 import { isInstalled } from "../lib/install";
 import { buildReminderIcs, parseTime } from "../lib/reminder";
+import { SEND_BACK_REASONS, clearSendBack, exportSendBack, getSendBack, isReviewer, resetReviewProgress, setReviewer, undoSendBack } from "../lib/reviewer";
 
 const box = "rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900";
 const btn = "w-full rounded-xl border border-neutral-300 px-4 py-3 text-left font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-800";
@@ -17,11 +18,19 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
   const [msg, setMsg] = useState<{ text: string; error?: boolean } | null>(null);
   const file = useRef<HTMLInputElement>(null);
   const [shareStats, setShareStats] = useState(analyticsEnabled());
+  const [, setReviewTick] = useState(0);
+  const reviewer = isReviewer();
+  const sentBack = reviewer ? getSendBack() : [];
+  const refreshReview = () => setReviewTick((t) => t + 1);
   const [setSize, setSetSize] = useState(5);
+  const [drills, setDrills] = useState<boolean | undefined>(undefined);
   const [reminderTime, setReminderTime] = useState("20:00");
 
   useEffect(() => {
-    void store.getSettings().then((s) => setSetSize(s?.set_size ?? 5));
+    void store.getSettings().then((s) => {
+      setSetSize(s?.set_size ?? 5);
+      setDrills(s?.drills ?? s?.interests.includes("numbers") ?? false);
+    });
   }, []);
 
   const exportProgress = async () => {
@@ -56,6 +65,96 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
     <div className="h-full overflow-auto px-5 pb-28 pt-[max(2.5rem,env(safe-area-inset-top))]">
       <h1 className="text-3xl font-semibold tracking-tight">Settings</h1>
 
+      {reviewer && (
+        <section className="mt-5 rounded-2xl border-2 border-rose-500 p-4">
+          <h2 className="text-sm font-semibold text-rose-700 dark:text-rose-300">Reviewer mode</h2>
+          <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
+            {sentBack.length === 0
+              ? "Tap \"Send back\" on any card to put it in this list."
+              : `${sentBack.length} ${sentBack.length === 1 ? "card" : "cards"} to send back. Export the list, then run: pnpm tools sendback <file>`}
+          </p>
+          {sentBack.length > 0 && (
+            <ul className="mt-3 space-y-1 text-sm">
+              {sentBack.map((i) => (
+                <li key={i.card_id} className="flex items-center justify-between gap-2">
+                  <span>
+                    <strong>{i.card_id}</strong> · {SEND_BACK_REASONS.find(([c]) => c === i.reason)?.[1]}
+                    {i.note ? ` · ${i.note}` : ""}
+                  </span>
+                  <button
+                    onClick={() => {
+                      undoSendBack(i.card_id);
+                      refreshReview();
+                    }}
+                    className="text-neutral-500 underline"
+                  >
+                    undo
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+          <div className="mt-3 space-y-2">
+            <button
+              disabled={sentBack.length === 0}
+              onClick={async () => {
+                const text = exportSendBack(sentBack);
+                try {
+                  await navigator.clipboard.writeText(text);
+                  setMsg({ text: "Copied. Paste it into a file called sendback.json." });
+                } catch {
+                  setMsg({ text: "Could not copy. Use Download instead.", error: true });
+                }
+              }}
+              className={`${btn} disabled:opacity-40`}
+            >
+              Copy list
+            </button>
+            <button
+              disabled={sentBack.length === 0}
+              onClick={() => {
+                const url = URL.createObjectURL(new Blob([exportSendBack(sentBack)], { type: "application/json" }));
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = "sendback.json";
+                a.click();
+                setTimeout(() => URL.revokeObjectURL(url), 1000);
+              }}
+              className={`${btn} disabled:opacity-40`}
+            >
+              Download sendback.json
+            </button>
+            <button
+              onClick={() => {
+                if (!confirm("Clear the whole send-back list? Do this after you have run the send-back tool.")) return;
+                clearSendBack();
+                refreshReview();
+              }}
+              className={btn}
+            >
+              Clear list
+            </button>
+            <button
+              onClick={() => {
+                resetReviewProgress();
+                refreshReview();
+              }}
+              className={btn}
+            >
+              Start review mode over (show all cards again)
+            </button>
+            <button
+              onClick={() => {
+                setReviewer(false);
+                refreshReview();
+              }}
+              className={btn}
+            >
+              Turn off reviewer mode
+            </button>
+          </div>
+        </section>
+      )}
       <section className={`${box} mt-5`}>
         <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Your interests</h2>
         <p className="mt-2">{interests.map((i) => `${INTEREST_INFO[i].emoji} ${INTEREST_INFO[i].name}`).join(" · ") || "None yet"}</p>
@@ -84,6 +183,24 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
         <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">Five is about a minute.</p>
       </section>
 
+      <section className={`${box} mt-4`}>
+        <label className="flex items-start gap-3">
+          <input
+            type="checkbox"
+            checked={drills ?? false}
+            onChange={async (e) => {
+              setDrills(e.target.checked);
+              const s = await store.getSettings();
+              if (s) await store.saveSettings({ ...s, drills: e.target.checked });
+            }}
+            className="mt-1 h-5 w-5 accent-teal-600"
+          />
+          <span>
+            <span className="block font-medium">Skill drills</span>
+            <span className="text-sm text-neutral-500 dark:text-neutral-400">A quick mental-math or estimation round at the end of a set.</span>
+          </span>
+        </label>
+      </section>
       <section className={`${box} mt-4`}>
         <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Daily reminder</h2>
         <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">

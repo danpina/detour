@@ -1,0 +1,5 @@
+content/published/** text eol=lf
+content/published/images/* binary
+content/fsrs-test-vectors.json text eol=lf
+content/drill-test-vectors.json text eol=lf
+*.sh text eol=lf

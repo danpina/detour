@@ -3,6 +3,7 @@ import type { Card, CardImage } from "@detour/content";
 import { imageUrl } from "../lib/content";
 import { track } from "../analytics";
 import { store } from "../lib/db";
+import { SEND_BACK_REASONS, getSendBack, isReviewer, sendBack, undoSendBack } from "../lib/reviewer";
 import { Sheet } from "./Sheet";
 
 const REPORT_REASONS = [
@@ -23,8 +24,12 @@ type Props = {
 
 /** Full-screen frame: image background, readable scrims, progress, credit / sources / report actions. */
 export function CardShell({ card, index, total, dim, children }: Props) {
-  const [sheet, setSheet] = useState<null | "credit" | "sources" | "report">(null);
+  const [sheet, setSheet] = useState<null | "credit" | "sources" | "report" | "sendback">(null);
   const [reported, setReported] = useState(false);
+  const [note, setNote] = useState("");
+  const [, setTick] = useState(0);
+  const reviewer = isReviewer();
+  const sentBack = reviewer ? getSendBack().find((i) => i.card_id === card.id) : undefined;
   const image: CardImage | undefined = "image" in card ? card.image : undefined;
   const url = image ? imageUrl(image.file) : undefined;
 
@@ -42,8 +47,20 @@ export function CardShell({ card, index, total, dim, children }: Props) {
           ))}
         </div>
         <div className="mt-3 flex items-center justify-between text-xs text-white/80">
-          <span className="rounded-full bg-black/40 px-2.5 py-1 backdrop-blur">{labelFor(card)}</span>
+          <span className="flex items-center gap-1.5">
+            <span className="rounded-full bg-black/40 px-2.5 py-1 backdrop-blur">{labelFor(card)}</span>
+            {reviewer && (
+              <span className={`rounded-full px-2.5 py-1 backdrop-blur ${card.review?.by === "agent" ? "bg-amber-500/60" : "bg-black/40"}`}>
+                {card.review?.by === "agent" ? "Agent-approved" : "Human-approved"}
+              </span>
+            )}
+          </span>
           <div className="flex gap-2">
+            {reviewer && (
+              <button onClick={() => setSheet("sendback")} className="rounded-full bg-rose-600/80 px-3 py-1 font-medium backdrop-blur hover:bg-rose-600">
+                {sentBack ? "Sent back" : "Send back"}
+              </button>
+            )}
             <button onClick={() => setSheet("sources")} className="rounded-full bg-black/40 px-3 py-1 backdrop-blur hover:bg-black/60">
               Sources
             </button>
@@ -92,6 +109,51 @@ export function CardShell({ card, index, total, dim, children }: Props) {
               </li>
             ))}
           </ul>
+        </Sheet>
+      )}
+
+      {sheet === "sendback" && (
+        <Sheet title="Send this card back for review" onClose={() => setSheet(null)}>
+          {sentBack ? (
+            <div className="space-y-3 text-sm">
+              <p>Sent back ({SEND_BACK_REASONS.find(([c]) => c === sentBack.reason)?.[1]}). It stays in the list on the Settings page until you export it.</p>
+              <button
+                onClick={() => {
+                  undoSendBack(card.id);
+                  setSheet(null);
+                  setTick((t) => t + 1);
+                }}
+                className="rounded-xl border border-neutral-300 px-4 py-2 dark:border-neutral-700"
+              >
+                Undo
+              </button>
+            </div>
+          ) : (
+            <div className="space-y-2">
+              <p className="mb-2 text-sm text-neutral-500 dark:text-neutral-400">
+                Card {card.id}. It leaves the published set when you run the send-back tool, and comes back to your review queue.
+              </p>
+              <input
+                value={note}
+                onChange={(e) => setNote(e.target.value)}
+                placeholder="Optional note for yourself"
+                className="mb-1 w-full rounded-xl border border-neutral-300 bg-transparent px-3 py-2 text-sm dark:border-neutral-700"
+              />
+              {SEND_BACK_REASONS.map(([code, label]) => (
+                <button
+                  key={code}
+                  onClick={() => {
+                    sendBack({ card_id: card.id, reason: code, ...(note.trim() ? { note: note.trim() } : {}), at: Date.now() });
+                    setNote("");
+                    setTick((t) => t + 1);
+                  }}
+                  className="block w-full rounded-xl border border-neutral-200 px-4 py-3 text-left text-sm hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-800"
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
         </Sheet>
       )}
 

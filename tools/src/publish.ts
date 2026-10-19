@@ -1,7 +1,7 @@
 // Shared by the review UI and the automatic approver: reading drafts, saving edits, rejecting, and approving
 // (optimize the image, validate, write the card to content/published and update the manifest).
 import { existsSync } from "node:fs";
-import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { cardSchema, draftSchema, isAllowedLicense, validateImagelessCard } from "@detour/content";
 import { headersFor, type Candidate, type CandidatesFile } from "./images.js";
@@ -30,7 +30,7 @@ async function getBuffer(url: string): Promise<Buffer> {
 
 /** Fetches the best resolution we can for a candidate (the stored preview is only ~800 px). */
 async function fetchBestImage(id: string, c: Candidate): Promise<Buffer> {
-  if (c.source === "generated" && c.file) return readFile(path.join(DRAFTS_DIR, `${id}.images`, c.file));
+  if ((c.source === "generated" || c.source === "previous") && c.file) return readFile(path.join(DRAFTS_DIR, `${id}.images`, c.file));
   let url = c.image_url;
   try {
     if (c.source === "wikimedia") {
@@ -84,9 +84,14 @@ export async function saveCard(id: string, card: unknown) {
 async function moveDraft(id: string, to: "_approved" | "_rejected") {
   const dir = path.join(DRAFTS_DIR, to);
   await mkdir(dir, { recursive: true });
+  await rm(path.join(dir, `${id}.json`), { force: true });
   await rename(path.join(DRAFTS_DIR, `${id}.json`), path.join(dir, `${id}.json`));
   const imgs = path.join(DRAFTS_DIR, `${id}.images`);
-  if (existsSync(imgs)) await rename(imgs, path.join(dir, `${id}.images`));
+  if (existsSync(imgs)) {
+    // A card that was approved, sent back and approved again already has an archive folder; replace it.
+    await rm(path.join(dir, `${id}.images`), { recursive: true, force: true });
+    await rename(imgs, path.join(dir, `${id}.images`));
+  }
 }
 
 export async function reject(id: string) {

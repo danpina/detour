@@ -27,7 +27,7 @@ async function listDrafts() {
         title: d.card?.title,
         type: d.card?.type,
         interest: d.card?.interest,
-        check: d.check?.overall ?? "none",
+        check: d.sent_back ? "sent back" : (d.check?.overall ?? "none"),
         candidates: cand?.candidates.length ?? 0,
         needs_image: d.card?.type !== "drill" && d.card?.type !== "recall",
       });

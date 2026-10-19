@@ -21,7 +21,7 @@ export const headersFor = (url: string): Record<string, string> => ({
 
 export type Candidate = {
   id: string;
-  source: "wikimedia" | "nasa" | "met" | "artic" | "unsplash" | "pexels" | "generated";
+  source: "wikimedia" | "nasa" | "met" | "artic" | "unsplash" | "pexels" | "generated" | "previous";
   kind: "photo" | "artwork" | "generated";
   title: string;
   credit: string;

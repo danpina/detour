@@ -113,8 +113,8 @@ enum SessionEngine {
         return tally.mapValues { Double($0.done) / Double($0.done + $0.skip) }
     }
 
-    /// Picks `n` cards. Prefers unseen cards from the chosen interests (round-robin in the given order, varying card
-    /// types), then unseen cards from other interests, then (unless `allowSeen` is false) already-seen cards.
+    /// Picks `n` cards from the chosen interests only: unseen ones first (round-robin in the given order, varying card
+    /// types), then (unless `allowSeen` is false) already-seen ones. Topics the user did not pick are never added.
     static func pickSet(cards: [Card], interests: [Interest], seen: Set<String>, n: Int, allowSeen: Bool = true, exclude: Set<String> = []) -> [Card] {
         guard n > 0 else { return [] }
         let content = cards.filter { !exclude.contains($0.id) }
@@ -141,12 +141,8 @@ enum SessionEngine {
         func byInterest(_ list: [Card], _ ints: [Interest]) -> [[Card]] { ints.map { i in list.filter { $0.interest == i } } }
 
         let unseen = content.filter { !seen.contains($0.id) }
-        var others: [Interest] = []
-        for c in content where !interests.contains(c.interest) && !others.contains(c.interest) { others.append(c.interest) }
-
         take(byInterest(unseen, interests))
-        take(byInterest(unseen, others))
-        if allowSeen { take(byInterest(content, interests + others)) }
+        if allowSeen { take(byInterest(content, interests)) }
         return chosen
     }
 

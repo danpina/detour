@@ -6,6 +6,8 @@ struct UserSettings: Codable, Hashable {
     var onboardingDone = false
     /// Cards per set (3, 5 or 8).
     var setSize = SessionEngine.defaultSetSize
+    /// Skill drills at the end of a set. nil means: on only if Numbers & Logic is one of the chosen topics.
+    var drills: Bool? = nil
     var reminderEnabled = false
     /// Local time of the daily reminder.
     var reminderHour = 20
