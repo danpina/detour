@@ -1,6 +1,6 @@
 {
-  "version": 20,
-  "generated_at": "2026-10-17T19:06:46.213Z",
+  "version": 30,
+  "generated_at": "2026-10-19T21:17:07.877Z",
   "cards": [
     {
       "id": "hist-0001",
@@ -48,6 +48,26 @@
       "sha256": "c335fbca10a821ca29716c8047d68890119f1fc14989c2454c94b7609b7ce15c"
     },
     {
+      "id": "mind-0004",
+      "file": "cards/mind-0004.json",
+      "sha256": "b909ad7de7b577d852bff2cbc418ceb015ac9322ed5095afec9438ef8d9fb2ad"
+    },
+    {
+      "id": "mind-0005",
+      "file": "cards/mind-0005.json",
+      "sha256": "df54c2850facea90e334c3effd83d9337595fe29739b65028336ffb2bb9247bd"
+    },
+    {
+      "id": "mind-0006",
+      "file": "cards/mind-0006.json",
+      "sha256": "29c6db897e186864d0f25cd8c939847bc3fd26349d5158a8bc848fe971bbf2da"
+    },
+    {
+      "id": "mind-0007",
+      "file": "cards/mind-0007.json",
+      "sha256": "c3bd5a304c553331602aa6fdde42a3e72382c089c6724141b12401c54b499682"
+    },
+    {
       "id": "money-0001",
       "file": "cards/money-0001.json",
       "sha256": "db28264819c7bc666dd09df8f1c549965eefa0adce80e4a03f768970eda9e345"
@@ -63,6 +83,11 @@
       "sha256": "77311d933c8e3c0f04d8ad9bc157c5cbf29ae5726b6a1c78fe1951c0f995161a"
     },
     {
+      "id": "money-0004",
+      "file": "cards/money-0004.json",
+      "sha256": "8ee66b79f237b8e76f19874d33778f17738db52360413b66d74a29e3d0d44f9e"
+    },
+    {
       "id": "num-0001",
       "file": "cards/num-0001.json",
       "sha256": "e9900e0fc4dd6651e71dc5a11cd9c046d624e56e3dc75ddf467024e0d1cb1d8a"
@@ -76,6 +101,26 @@
       "id": "num-0003",
       "file": "cards/num-0003.json",
       "sha256": "3d225c65cf740ffdbf6d1639f52e876e2c19784c3a56ca2851fefe179a7cf7f8"
+    },
+    {
+      "id": "num-0005",
+      "file": "cards/num-0005.json",
+      "sha256": "ce7a37cfc8528c004305fb4604f9de52ddd17f951743d87cc779f57e124d6db7"
+    },
+    {
+      "id": "num-0006",
+      "file": "cards/num-0006.json",
+      "sha256": "82a7b788ee6fcfb5da3a7760156de187558668a10f702a67bdb10743ecb73568"
+    },
+    {
+      "id": "num-0007",
+      "file": "cards/num-0007.json",
+      "sha256": "d718a10b194fad5f831cbc24b5ddc5915f8139cfbc4174eaf13b8932204f212b"
+    },
+    {
+      "id": "num-0008",
+      "file": "cards/num-0008.json",
+      "sha256": "8fadeb780d7a74f7696b7a448cc41314a7bb60b60d1a37c36d7417de3227213c"
     },
     {
       "id": "sci-0001",
@@ -136,6 +181,11 @@
       "id": "tech-0004",
       "file": "cards/tech-0004.json",
       "sha256": "a378464edec02f4f9df52d7565c0f3878e96888b5cb4815337b014dec527f05a"
+    },
+    {
+      "id": "tech-0005",
+      "file": "cards/tech-0005.json",
+      "sha256": "3709a667861f860e3742360e895614dff1168c092541e0e26f2fff3234cd06a9"
     }
   ],
   "images": [
@@ -185,6 +235,26 @@
       "bytes": 121536
     },
     {
+      "file": "images/mind-0004.webp",
+      "sha256": "646b50c2cd815e26d9ddbdf34b09f110bc985e3c03cbdf1645b20a90ec5d73fd",
+      "bytes": 118784
+    },
+    {
+      "file": "images/mind-0005.webp",
+      "sha256": "6c2efc939e66cec800e7d39f66a32589e33b9b40857833ac54ea69d8467cd41f",
+      "bytes": 111006
+    },
+    {
+      "file": "images/mind-0006.webp",
+      "sha256": "8fdcb8e843de2d1ac0eb1adf87baf49f81ec3800e5036b7615bc9a4a0b61b25f",
+      "bytes": 114930
+    },
+    {
+      "file": "images/mind-0007.webp",
+      "sha256": "f7d3616b658c0511fbd008f47f55c038ae541fdc382aafc2ac3b0c22a292afa5",
+      "bytes": 17604
+    },
+    {
       "file": "images/money-0001.webp",
       "sha256": "fb7fb34ea94ad8429c7d56041e8ecc49c3ed92523c33d719ebf72ae4933f9c69",
       "bytes": 59116
@@ -200,6 +270,11 @@
       "bytes": 122250
     },
     {
+      "file": "images/money-0004.webp",
+      "sha256": "24b75d5f175efe3f0cf096686a34b143e9e4ad494a7c765893f33f69e47b0770",
+      "bytes": 8408
+    },
+    {
       "file": "images/num-0001.webp",
       "sha256": "6dbe810ca4cd4857bbce0e5b7c494ac7389fc9d97df6e7278036817e7e7d71e5",
       "bytes": 101790
@@ -213,6 +288,26 @@
       "file": "images/num-0003.webp",
       "sha256": "776e4c24281f792691be1cea42f096e8834c93e8cd58196624cb510d9821e437",
       "bytes": 99948
+    },
+    {
+      "file": "images/num-0005.webp",
+      "sha256": "af9de2900659e73f9e904bb1f571c7c250729ed34710253c8d575755c3283367",
+      "bytes": 96172
+    },
+    {
+      "file": "images/num-0006.webp",
+      "sha256": "254b3950d2a1df0c7087fba391ea7da664bac8e3e2f072184f49b3b73194a8cb",
+      "bytes": 13762
+    },
+    {
+      "file": "images/num-0007.webp",
+      "sha256": "f7626e9e760b017ece80f095db01072c1053d6f1d4f04f87cd1b1d09817b228c",
+      "bytes": 6656
+    },
+    {
+      "file": "images/num-0008.webp",
+      "sha256": "cec247fb3619a1b679e978f0f6e4b63e28660c1b16c468651de5ad712d16a35d",
+      "bytes": 8454
     },
     {
       "file": "images/sci-0001.webp",
@@ -273,6 +368,11 @@
       "file": "images/tech-0004.webp",
       "sha256": "f468078e6062e14cfdc7f84e79643aa247b1ec1d070e0ebac2d1d1edcd124871",
       "bytes": 115668
+    },
+    {
+      "file": "images/tech-0005.webp",
+      "sha256": "1d5e8762b4681956e779e0c65ec9f14e1af12be5a76b8b8a53bd9eba08188406",
+      "bytes": 103776
     }
   ]
 }

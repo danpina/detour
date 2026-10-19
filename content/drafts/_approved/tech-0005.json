@@ -1,0 +1,103 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "The first gigabyte hard drive",
+    "angle": "It weighed about 250 kg"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0005",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "Gigabyte drives date back to 1980",
+    "body": {
+      "claim": "In 1980, hard drives that could store more than a gigabyte already existed. IBM's 3380 held 2.52 GB.",
+      "why": "IBM introduced the 3380 on 11 June 1980. NEC's N7755, also from 1980, held 1.27 GB. Both were early drives in the gigabyte era."
+    },
+    "probes": [
+      {
+        "id": "tech-0005-p1",
+        "kind": "tf",
+        "question": "True or false: hard drives holding more than a gigabyte already existed in 1980.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "History of hard disk drives (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/History_of_hard_disk_drives"
+      },
+      {
+        "title": "History of IBM magnetic disk drives (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/History_of_IBM_magnetic_disk_drives"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A 1980s IBM disk drive or a room of mainframe storage",
+    "keywords": [
+      "IBM 3380",
+      "hard disk drive history",
+      "mainframe storage"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:14:41.306Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/History_of_hard_disk_drives",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/History_of_IBM_magnetic_disk_drives",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1980, hard drives that could store more than a gigabyte already existed.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_hard_disk_drives",
+        "quote": "The NEC N7755 was the first hard disk drive to ship with a capacity exceeding 1 gigabyte (GB) capacity, with 1.27 GB storage"
+      },
+      {
+        "claim": "IBM's 3380 held 2.52 GB.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_IBM_magnetic_disk_drives",
+        "quote": "has a unit capacity of 2.52 gigabytes"
+      },
+      {
+        "claim": "IBM introduced the 3380 on 11 June 1980.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_IBM_magnetic_disk_drives",
+        "quote": "The IBM 3380 Direct Access Storage Device was introduced on June 11, 1980"
+      },
+      {
+        "claim": "NEC's N7755, also from 1980, held 1.27 GB.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_hard_disk_drives",
+        "quote": "The NEC N7755 was the first hard disk drive to ship with a capacity exceeding 1 gigabyte (GB) capacity, with 1.27 GB storage"
+      },
+      {
+        "claim": "Both were early drives in the gigabyte era.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_hard_disk_drives",
+        "quote": "one such drive is the 1980 2.52 GB IBM 3380",
+        "note": "Both are 1980 drives; NEC is credited as the first over 1 GB."
+      },
+      {
+        "claim": "Probe: hard drives holding more than a gigabyte existed in 1980 (true).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_hard_disk_drives",
+        "quote": "The NEC N7755 was the first hard disk drive to ship with a capacity exceeding 1 gigabyte"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "mind-0007",
+  "interest": "mind",
+  "title": "How much can you hold in mind?",
+  "probes": [
+    {
+      "id": "mind-0007-p1",
+      "question": "About how many chunks can young adults hold in working memory at once?",
+      "kind": "estimate",
+      "answer": 4,
+      "unit": "chunks",
+      "min": 1,
+      "max": 20,
+      "scale": "linear"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Working memory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Working_memory"
+    },
+    {
+      "title": "The Magical Number Seven, Plus or Minus Two (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-19T21:17:05.672Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "mind-0007.webp",
+    "alt": "Four small rounded tiles, each holding four coloured dots, arranged in a two-by-two grid inside a large pale circle.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "About how many separate chunks of information can young adults hold in working memory at once?",
+    "unit": "chunks",
+    "min": 1,
+    "max": 20,
+    "scale": "linear",
+    "answer": 4,
+    "reveal": "Research since 2001 suggests about four chunks, not the 'seven plus or minus two' from the famous 1956 paper."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Ten percent a year for 50 years",
+    "angle": "Compound growth, as a number to feel"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0004",
+    "interest": "money",
+    "type": "estimate",
+    "title": "What does 10% a year do over 50 years?",
+    "body": {
+      "question": "If $1 grows by 10% every year for 50 years, about how many dollars does it become?",
+      "unit": "$",
+      "min": 1,
+      "max": 100000,
+      "scale": "log",
+      "answer": 117,
+      "reveal": "About $117. Growth that compounds, 1.10 multiplied by itself 50 times, is far bigger than the $6 you'd have if you added 10 cents of the original dollar each year. This is a maths example, not investment advice."
+    },
+    "probes": [
+      {
+        "id": "money-0004-p1",
+        "kind": "estimate",
+        "question": "$1 grows 10% a year for 50 years. About how many dollars is that?",
+        "answer": 117,
+        "unit": "$",
+        "min": 1,
+        "max": 100000,
+        "scale": "log"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Compound interest (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compound_interest"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A growing plant from coins, a savings jar, or an exponential curve (illustration)",
+    "keywords": [
+      "compound interest",
+      "savings jar",
+      "coins growing"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:13:22.953Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Compound_interest",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "$1 at 10% a year for 50 years becomes about $117",
+        "verdict": "pass",
+        "note": "Verified by calculation: 1.1^50 = 117.39."
+      },
+      {
+        "claim": "Compounding means 1.10 multiplied by itself 50 times",
+        "verdict": "pass",
+        "note": "Verified by calculation: after 50 years of 10% growth the amount is 1 * 1.10^50."
+      },
+      {
+        "claim": "Adding 10 cents of the original dollar each year gives $6",
+        "verdict": "pass",
+        "note": "Verified by calculation: 1 + 50 * 0.10 = $6.00."
+      },
+      {
+        "claim": "Compounding differs from simple interest, which does not add prior interest to principal",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compound_interest",
+        "quote": "Compound interest is contrasted with simple interest"
+      },
+      {
+        "claim": "Probe answer 117",
+        "verdict": "pass",
+        "note": "Verified by calculation: 1.1^50 = 117.39, so about $117."
+      }
+    ],
+    "overall": "pass"
+  }
+}

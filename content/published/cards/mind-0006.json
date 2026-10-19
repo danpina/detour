@@ -1,0 +1,62 @@
+{
+  "id": "mind-0006",
+  "interest": "mind",
+  "title": "The man who survived an iron rod",
+  "probes": [
+    {
+      "id": "mind-0006-p1",
+      "question": "True or false: Phineas Gage died soon after his accident.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "mind-0006-p2",
+      "question": "What passed through Gage's skull?",
+      "kind": "mcq",
+      "options": [
+        "An iron tamping bar",
+        "A bullet",
+        "A railroad spike",
+        "A wooden beam"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Phineas Gage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Phineas_Gage"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-19T21:17:05.534Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0006.webp",
+    "alt": "Sepia 19th-century portrait of Phineas Gage seated and holding the long iron tamping bar that injured him.",
+    "kind": "photo",
+    "credit": "File:PhineasPGage.jpg / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color_Cropped.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Vermont, 13 September 1848. Phineas Gage, a railroad construction foreman, is preparing a blasting hole with an iron tamping bar."
+      },
+      {
+        "text": "The powder explodes. The bar, about 3 feet 7 inches long and weighing around 6 kg, shoots through his left cheek and out of the top of his skull."
+      },
+      {
+        "text": "Gage is awake within minutes and speaks. He survives, and lives for another twelve years."
+      },
+      {
+        "text": "The twist: stories say the accident turned him into a different person. Later research suggests those accounts were exaggerated, and he went back to work, driving horses in Chile."
+      }
+    ]
+  }
+}

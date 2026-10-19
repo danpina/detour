@@ -1,0 +1,43 @@
+{
+  "id": "mind-0005",
+  "interest": "mind",
+  "title": "How much of your brain do you use?",
+  "probes": [
+    {
+      "id": "mind-0005-p1",
+      "question": "True or false: people use only about 10% of their brains.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ten percent of the brain myth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ten_percent_of_the_brain_myth"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-19T21:17:04.450Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0005.webp",
+    "alt": "Antique hand-painted anatomical illustration of a human head cut in half to show the brain, brainstem and skull.",
+    "kind": "artwork",
+    "credit": "https://wellcomeimages.org/indexplus/obf_images/bf/3c/d197c43db871eb3106f2787b791c.jpg Gallery: https://wellcomeimages.org/indexplus/image/L0019328.html / Wikim",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_anatomy_of_the_brain._Wellcome_L0019328.jpg"
+  },
+  "body": {
+    "question": "How much of your brain do you use?",
+    "options": [
+      "About 10%",
+      "Virtually all of it, at different times"
+    ],
+    "answer": 1,
+    "reveal": "The idea that we use only 10% of our brains is a myth. Brain imaging shows activity throughout the brain, and damage almost anywhere has some effect."
+  }
+}

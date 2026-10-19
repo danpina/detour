@@ -1,0 +1,42 @@
+{
+  "id": "tech-0005",
+  "interest": "tech",
+  "title": "Gigabyte drives date back to 1980",
+  "probes": [
+    {
+      "id": "tech-0005-p1",
+      "question": "True or false: hard drives holding more than a gigabyte already existed in 1980.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "History of hard disk drives (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/History_of_hard_disk_drives"
+    },
+    {
+      "title": "History of IBM magnetic disk drives (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/History_of_IBM_magnetic_disk_drives"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-19T21:17:07.860Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0005.webp",
+    "alt": "A removable IBM 3380 disk drive module from the early 1980s on a table, showing the stacked platters and orange handles.",
+    "kind": "photo",
+    "credit": "ArnoldReinhold / Wikimedia Commons",
+    "license": "CC BY 2.5",
+    "source_url": "https://commons.wikimedia.org/wiki/File:IBM3380DiskDriveModule.agr.jpg"
+  },
+  "body": {
+    "claim": "In 1980, hard drives that could store more than a gigabyte already existed. IBM's 3380 held 2.52 GB.",
+    "why": "IBM introduced the 3380 on 11 June 1980. NEC's N7755, also from 1980, held 1.27 GB. Both were early drives in the gigabyte era."
+  }
+}

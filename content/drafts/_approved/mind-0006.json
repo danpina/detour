@@ -1,0 +1,163 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Phineas Gage",
+    "angle": "The railway worker who survived an iron rod through the head"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0006",
+    "interest": "mind",
+    "type": "story",
+    "title": "The man who survived an iron rod",
+    "body": {
+      "panels": [
+        {
+          "text": "Vermont, 13 September 1848. Phineas Gage, a railroad construction foreman, is preparing a blasting hole with an iron tamping bar."
+        },
+        {
+          "text": "The powder explodes. The bar, about 3 feet 7 inches long and weighing around 6 kg, shoots through his left cheek and out of the top of his skull."
+        },
+        {
+          "text": "Gage is awake within minutes and speaks. He survives, and lives for another twelve years."
+        },
+        {
+          "text": "The twist: stories say the accident turned him into a different person. Later research suggests those accounts were exaggerated, and he went back to work, driving horses in Chile."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0006-p1",
+        "kind": "tf",
+        "question": "True or false: Phineas Gage died soon after his accident.",
+        "answer": false
+      },
+      {
+        "id": "mind-0006-p2",
+        "kind": "mcq",
+        "question": "What passed through Gage's skull?",
+        "options": [
+          "An iron tamping bar",
+          "A bullet",
+          "A railroad spike",
+          "A wooden beam"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Phineas Gage (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Phineas_Gage"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The daguerreotype portrait of Phineas Gage holding his tamping iron, or a railroad construction scene",
+    "keywords": [
+      "Phineas Gage",
+      "tamping iron",
+      "daguerreotype"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:14:41.289Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Phineas Gage was a railroad construction foreman.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "was an American railroad construction foreman"
+      },
+      {
+        "claim": "The accident happened on 13 September 1848.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "On September 13, 1848, Gage was",
+        "note": "Inscription on the iron says Sept. 14; article text says the 13th."
+      },
+      {
+        "claim": "The accident was in Vermont.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "Memorial plaque, Cavendish, Vermont"
+      },
+      {
+        "claim": "He was preparing a blasting hole with an iron tamping bar.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "then using the tamping iron to pack",
+        "note": "Setting a blast: boring a hole, adding powder and fuse, then tamping with the iron."
+      },
+      {
+        "claim": "Bar about 3 feet 7 inches long and around 6 kg.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "three feet seven inches (1.1 m) long, and weighing 13 + 1 ⁄ 4 pounds (6.0 kg)"
+      },
+      {
+        "claim": "The bar entered his left cheek.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "The entry damage to Gage's left cheek"
+      },
+      {
+        "claim": "The bar went out of the top of his skull.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "then completely out the top of the skull through the frontal bone"
+      },
+      {
+        "claim": "He was awake and spoke within minutes.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "spoke within a few minutes",
+        "note": "Harlow later found him 'perfectly conscious'."
+      },
+      {
+        "claim": "He survived and lived about twelve more years.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "over the remaining 12 years of his life"
+      },
+      {
+        "claim": "Later research suggests accounts of personality change were exaggerated.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "almost always distort and exaggerate his behavioral changes"
+      },
+      {
+        "claim": "He later worked driving horses (stagecoach) in Chile.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "Gage was invited to Chile to work as a long-distance stagecoach driver there"
+      },
+      {
+        "claim": "Probe: Gage did not die soon after the accident (false).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "over the remaining 12 years of his life"
+      },
+      {
+        "claim": "Probe: an iron tamping bar passed through his skull.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phineas_Gage",
+        "quote": "Rocketed from the hole, the tamping iron"
+      }
+    ],
+    "overall": "pass"
+  }
+}

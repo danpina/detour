@@ -16,6 +16,7 @@ import { runImages } from "./images.js";
 import { runReview } from "./review.js";
 import { runAutoApprove } from "./autoapprove.js";
 import { runSource } from "./sources.js";
+import { runIllustrate } from "./illustrate.js";
 
 const [command] = process.argv.slice(2);
 const planned = ["publish"];
@@ -103,6 +104,9 @@ switch (command) {
   case "autoapprove":
     process.exitCode = await runAutoApprove(process.argv.slice(3));
     break;
+  case "illustrate":
+    process.exitCode = await runIllustrate(process.argv.slice(3));
+    break;
   case "source":
     process.exitCode = await runSource(process.argv.slice(3));
     break;
@@ -113,6 +117,6 @@ switch (command) {
     if (command && planned.includes(command)) {
       console.log(`"${command}" is not implemented yet (see PROMPTS.md).`);
     } else {
-      console.log("Detour tools\nUsage: pnpm tools <validate|manifest|draft|images|review|autoapprove|source|publish>");
+      console.log("Detour tools\nUsage: pnpm tools <validate|manifest|draft|images|review|autoapprove|source|illustrate|publish>");
     }
 }
