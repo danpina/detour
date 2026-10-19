@@ -26,4 +26,8 @@ await png("icons/icon-192.png", 192, true);
 await png("icons/icon-512.png", 512, true);
 await png("icons/maskable-512.png", 512, false, 0.72);
 await png("icons/apple-touch-icon.png", 180, false, 0.9);
-console.log("Icons written to web/public");
+// iOS app icon: 1024x1024, square, and no transparency (App Store requirement).
+const IOS_ICON = path.resolve(import.meta.dirname, "../../ios/Resources/Assets.xcassets/AppIcon.appiconset");
+await mkdir(IOS_ICON, { recursive: true });
+await sharp(Buffer.from(svg(false, 0.9))).resize(1024, 1024).flatten({ background: "#0f766e" }).removeAlpha().png({ compressionLevel: 9 }).toFile(path.join(IOS_ICON, "AppIcon-1024.png"));
+console.log("Icons written to web/public and ios/Resources");

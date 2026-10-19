@@ -1,0 +1,56 @@
+name: iOS Build
+
+# Checks that the iOS app compiles and its unit tests pass, on every change to the app or the bundled content.
+on:
+  push:
+    branches: [main, "ios/**"]
+    paths: ["ios/**", "content/published/**", ".github/workflows/ios-*.yml"]
+  pull_request:
+    paths: ["ios/**", "content/published/**", ".github/workflows/ios-*.yml"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        working-directory: ios
+        run: xcodegen generate
+
+      - name: Select newest available Xcode
+        run: |
+          LATEST=$(ls -d /Applications/Xcode_*.app 2>/dev/null | sort -V | tail -n1)
+          if [ -n "$LATEST" ]; then
+            sudo xcode-select -s "$LATEST/Contents/Developer"
+          fi
+          xcodebuild -version
+
+      - name: Pick an iPhone simulator
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c "
+          import sys, json
+          devices = json.load(sys.stdin)['devices']
+          for runtime in sorted(devices, reverse=True):
+              if 'iOS' not in runtime:
+                  continue
+              for d in devices[runtime]:
+                  if 'iPhone' in d['name']:
+                      print(d['udid']); sys.exit(0)
+          sys.exit(1)
+          ")
+          echo "SIM_UDID=$UDID" >> "$GITHUB_ENV"
+          echo "Using simulator $UDID"
+
+      - name: Build and run unit tests
+        working-directory: ios
+        run: |
+          xcodebuild test \
+            -project Detour.xcodeproj \
+            -scheme Detour \
+            -destination "platform=iOS Simulator,id=$SIM_UDID" \
+            CODE_SIGNING_ALLOWED=NO

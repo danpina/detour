@@ -13,7 +13,7 @@ Read `SPEC.md` before any task. It is the source of truth. If a request conflict
 - `/content/published` â€” approved cards (`cards/*.json`), optimized images (`images/*`), `manifest.json`. The ONLY content the apps read.
 - `/tools` â€” local Node/TS scripts: draft, fact-check, image search, image generation, optimize, publish, review UI
 - `/web` â€” Vite + React + TypeScript + Tailwind PWA
-- `/ios` â€” later (SwiftUI)
+- `/ios` - SwiftUI app (XcodeGen project, built in CI on macOS runners; no local Mac)
 
 ## Stack
 - TypeScript strict everywhere, pnpm workspaces.

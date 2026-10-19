@@ -1,0 +1,63 @@
+name: Detour
+options:
+  bundleIdPrefix: com.danpina
+configs:
+  Debug: debug
+  Release: release
+targets:
+  Detour:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Sources
+      # All card data and images the app serves. Shared with the web app; never edited here.
+      - path: ../content/published
+        type: folder
+        buildPhase: resources
+    resources:
+      - path: Resources/Assets.xcassets
+    info:
+      path: Generated/Info.plist
+      properties:
+        UILaunchScreen: {}
+        CFBundleDisplayName: "Detour"
+        ITSAppUsesNonExemptEncryption: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.danpina.detour
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_STYLE: Automatic
+  DetourTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Tests
+    dependencies:
+      - target: Detour
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.danpina.detour.tests
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  Detour:
+    build:
+      targets:
+        Detour: all
+        DetourTests: [test]
+    test:
+      targets:
+        - DetourTests
+    run:
+      config: Debug
+    archive:
+      config: Release
