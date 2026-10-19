@@ -1,41 +1,57 @@
 import SwiftUI
 
-/// First native screen: proves the bundled content loads and decodes on a real device.
-/// The real experience (onboarding, sessions, recall) is built on top of this in later steps.
+struct SessionRun: Identifiable {
+    let id = UUID()
+    let items: [SessionItem]
+    let feed: Bool
+}
+
+enum MainTab: Hashable {
+    case home, progress, settings
+}
+
 struct RootView: View {
-    private let content = ContentStore.load()
+    @Environment(AppModel.self) private var model
+    @State private var run: SessionRun?
+    @State private var tab: MainTab = .home
 
     var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    Text("\(content.cards.count) cards bundled")
-                        .font(.headline)
-                    ForEach(content.issues, id: \.self) { issue in
-                        Text(issue).font(.footnote).foregroundStyle(.red)
-                    }
+        Group {
+            if !model.settings.onboardingDone {
+                OnboardingView(initial: []) { interests in
+                    model.completeOnboarding(interests: interests)
+                    start(feed: false)
                 }
-                Section("Cards") {
-                    ForEach(content.cards) { card in
-                        HStack(spacing: 12) {
-                            if let image = ContentStore.image(for: card, root: content.root) {
-                                Image(uiImage: image)
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 44, height: 55)
-                                    .clipShape(RoundedRectangle(cornerRadius: 6))
-                            }
-                            VStack(alignment: .leading, spacing: 2) {
-                                Text(card.title).font(.subheadline.weight(.medium))
-                                Text("\(card.interest.displayName) · \(card.type)")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
-                        }
-                    }
+            } else {
+                TabView(selection: $tab) {
+                    HomeView(start: start)
+                        .tabItem { Label("Home", systemImage: "bolt.fill") }
+                        .tag(MainTab.home)
+                    ProgressScreen()
+                        .tabItem { Label("Progress", systemImage: "chart.line.uptrend.xyaxis") }
+                        .tag(MainTab.progress)
+                    SettingsView()
+                        .tabItem { Label("Settings", systemImage: "gearshape") }
+                        .tag(MainTab.settings)
                 }
             }
-            .navigationTitle("Detour")
         }
+        .fullScreenCover(item: $run) { current in
+            SessionView(
+                run: current,
+                onAnother: { start(feed: false) },
+                onProgress: {
+                    tab = .progress
+                    run = nil
+                },
+                onNextFeedSet: { start(feed: true) },
+                onClose: { run = nil }
+            )
+            .environment(model)
+        }
+    }
+
+    private func start(feed: Bool) {
+        run = SessionRun(items: model.makeSet(), feed: feed)
     }
 }
