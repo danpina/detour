@@ -22,8 +22,8 @@ struct StoryCardView: View {
                         Color.clear.contentShape(Rectangle()).frame(width: geo.size.width * 2 / 3).onTapGesture { forward() }
                     }
                 }
-                .padding(.top, 100)
-                .padding(.bottom, 56)
+                .padding(.top, 70)
+                .padding(.bottom, 40)
 
                 VStack(alignment: .leading, spacing: 12) {
                     Spacer()
@@ -44,7 +44,7 @@ struct StoryCardView: View {
                     .padding(.trailing, 44)
                 }
                 .padding(.horizontal, 24)
-                .padding(.bottom, 40)
+                .padding(.bottom, 16)
                 .allowsHitTesting(false)
             }
         }
@@ -83,7 +83,7 @@ struct FactWhyCardView: View {
                 }
             }
             .padding(.horizontal, 24)
-            .padding(.bottom, 40)
+            .padding(.bottom, 16)
         }
     }
 }
@@ -129,7 +129,7 @@ struct GuessFirstCardView: View {
                 }
             }
             .padding(.horizontal, 24)
-            .padding(.bottom, 40)
+            .padding(.bottom, 16)
         }
     }
 
@@ -171,7 +171,7 @@ struct EstimateCardView: View {
                 }
             }
             .padding(.horizontal, 24)
-            .padding(.bottom, 40)
+            .padding(.bottom, 16)
         }
     }
 }
@@ -253,7 +253,7 @@ struct RecallCardView: View {
                 }
             }
             .padding(.horizontal, 24)
-            .padding(.bottom, 40)
+            .padding(.bottom, 16)
         }
     }
 

@@ -36,7 +36,7 @@ struct CardShell<Content: View>: View {
 
     var body: some View {
         ZStack {
-            Color.black
+            Color.black.ignoresSafeArea()
 
             GeometryReader { geo in
                 if let uiImage {
@@ -48,10 +48,11 @@ struct CardShell<Content: View>: View {
                         .accessibilityLabel(card.image?.alt ?? "")
                 }
             }
+            .ignoresSafeArea()
 
-            Color.black.opacity(dim ? 0.55 : 0)
-            LinearGradient(colors: [.black.opacity(0.7), .clear], startPoint: .top, endPoint: .bottom).frame(height: 170).frame(maxHeight: .infinity, alignment: .top)
-            LinearGradient(colors: [.clear, .black.opacity(0.6), .black.opacity(0.9)], startPoint: .top, endPoint: .bottom).frame(height: 480).frame(maxHeight: .infinity, alignment: .bottom)
+            Color.black.opacity(dim ? 0.55 : 0).ignoresSafeArea()
+            LinearGradient(colors: [.black.opacity(0.7), .clear], startPoint: .top, endPoint: .bottom).frame(height: 170).frame(maxHeight: .infinity, alignment: .top).ignoresSafeArea()
+            LinearGradient(colors: [.clear, .black.opacity(0.6), .black.opacity(0.9)], startPoint: .top, endPoint: .bottom).frame(height: 480).frame(maxHeight: .infinity, alignment: .bottom).ignoresSafeArea()
 
             content()
 
@@ -69,7 +70,7 @@ struct CardShell<Content: View>: View {
                 }
             }
             .padding(.horizontal, 16)
-            .padding(.top, 8)
+            .padding(.top, 8) // sits below the status bar and camera area: only the backdrop ignores the safe area
             .frame(maxHeight: .infinity, alignment: .top)
 
             if card.image != nil {
@@ -86,7 +87,6 @@ struct CardShell<Content: View>: View {
             }
         }
         .foregroundStyle(.white)
-        .ignoresSafeArea()
         // Swipe left = next card, right = previous. Children with their own drags (the estimate slider) win.
         .gesture(
             DragGesture(minimumDistance: 40).onEnded { value in
