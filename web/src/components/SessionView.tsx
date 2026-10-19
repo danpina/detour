@@ -85,7 +85,8 @@ export function SessionView({ items, source, onFinish, onExit }: Props) {
   // Swipe left = next card, swipe right = previous. Arrow keys work on desktop.
   const start = useRef<{ x: number; y: number } | null>(null);
   const onPointerDown = (e: React.PointerEvent) => {
-    start.current = { x: e.clientX, y: e.clientY };
+    // A drag that starts on a slider, button or field belongs to that control, not to card navigation.
+    start.current = (e.target as HTMLElement).closest("input, button, textarea, select, a") ? null : { x: e.clientX, y: e.clientY };
   };
   const onPointerUp = (e: React.PointerEvent) => {
     const s = start.current;
