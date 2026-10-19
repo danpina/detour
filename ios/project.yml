@@ -11,12 +11,12 @@ targets:
     deploymentTarget: "17.0"
     sources:
       - path: Sources
+      # Contains Assets.xcassets (app icon, accent colour); XcodeGen compiles it from here.
+      - path: Resources
       # All card data and images the app serves. Shared with the web app; never edited here.
       - path: ../content/published
         type: folder
         buildPhase: resources
-    resources:
-      - path: Resources/Assets.xcassets
     info:
       path: Generated/Info.plist
       properties:
