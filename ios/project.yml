@@ -41,6 +41,9 @@ targets:
     deploymentTarget: "17.0"
     sources:
       - path: Tests
+      # Shared with the web app; the Swift scheduler must reproduce these results.
+      - path: ../content/fsrs-test-vectors.json
+        buildPhase: resources
     dependencies:
       - target: Detour
     settings:
