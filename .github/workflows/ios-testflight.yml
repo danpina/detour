@@ -47,6 +47,9 @@ jobs:
           printf '%s\n' "$ASC_KEY_P8" > "$KEY_PATH"
           echo "ASC_KEY_PATH=$KEY_PATH" >> "$GITHUB_ENV"
 
+      - name: Revoke leftover CI certificates (Apple limits how many an account can have)
+        run: node ios/scripts/revoke-ci-certs.mjs
+
       - name: Archive
         working-directory: ios
         run: |
