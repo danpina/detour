@@ -3,10 +3,13 @@ import SwiftUI
 struct OnboardingView: View {
     @State private var picked: [Interest]
     let onDone: ([Interest]) -> Void
+    /// "Show me a quick one" the first time; "Save" when editing topics from Settings.
+    let confirmLabel: String
     private let minimum = 3
 
-    init(initial: [Interest], onDone: @escaping ([Interest]) -> Void) {
+    init(initial: [Interest], confirmLabel: String = "Show me a quick one", onDone: @escaping ([Interest]) -> Void) {
         _picked = State(initialValue: initial)
+        self.confirmLabel = confirmLabel
         self.onDone = onDone
     }
 
@@ -72,7 +75,7 @@ struct OnboardingView: View {
             Button {
                 onDone(picked)
             } label: {
-                Text(picked.count >= minimum ? "Show me a quick one" : "Pick \(minimum - picked.count) more")
+                Text(picked.count >= minimum ? confirmLabel : "Pick \(minimum - picked.count) more")
                     .font(.headline)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 16)

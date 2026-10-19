@@ -93,7 +93,7 @@ struct SettingsView: View {
                 }
             }
             .sheet(isPresented: $editingInterests) {
-                OnboardingView(initial: model.settings.interests) { picked in
+                OnboardingView(initial: model.settings.interests, confirmLabel: "Save") { picked in
                     model.updateSettings { $0.interests = picked }
                     editingInterests = false
                 }

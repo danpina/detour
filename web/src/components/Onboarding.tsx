@@ -2,11 +2,17 @@ import { useState } from "react";
 import { INTERESTS, type Interest } from "@detour/content";
 import { INTEREST_INFO } from "../lib/content";
 
-type Props = { initial?: Interest[]; onDone: (interests: Interest[]) => void };
+type Props = {
+  initial?: Interest[];
+  onDone: (interests: Interest[]) => void;
+  /** Editing existing topics from Settings: the button says "Save" and there is a way out. */
+  editing?: boolean;
+  onCancel?: () => void;
+};
 
 const MIN = 3;
 
-export function Onboarding({ initial = [], onDone }: Props) {
+export function Onboarding({ initial = [], onDone, editing = false, onCancel }: Props) {
   const [picked, setPicked] = useState<Interest[]>(initial);
   const toggle = (i: Interest) => setPicked((p) => (p.includes(i) ? p.filter((x) => x !== i) : [...p, i]));
   const left = MIN - picked.length;
@@ -45,8 +51,13 @@ export function Onboarding({ initial = [], onDone }: Props) {
         onClick={() => onDone(picked)}
         className="w-full rounded-2xl bg-teal-600 py-4 text-lg font-semibold text-white transition enabled:active:scale-[0.98] disabled:bg-neutral-300 disabled:text-neutral-500 dark:disabled:bg-neutral-800"
       >
-        {left > 0 ? `Pick ${left} more` : "Show me a quick one"}
+        {left > 0 ? `Pick ${left} more` : editing ? "Save" : "Show me a quick one"}
       </button>
+      {editing && onCancel && (
+        <button onClick={onCancel} className="mt-2 w-full rounded-2xl py-3 text-neutral-500 hover:bg-neutral-100 dark:hover:bg-neutral-900">
+          Cancel
+        </button>
+      )}
     </div>
   );
 }

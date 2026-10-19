@@ -19,6 +19,7 @@ import { nextSet } from "./lib/session";
 type Screen =
   | { name: "loading" }
   | { name: "onboarding" }
+  | { name: "interests" }
   | { name: Tab }
   | { name: "session"; items: SessionItem[]; run: number; feed: boolean; dryRun?: boolean }
   | { name: "end"; learned: number };
@@ -65,6 +66,13 @@ export function App() {
     setScreen((s) => ({ name: "session", items, feed: false, dryRun: true, run: (s.name === "session" ? s.run : 0) + 1 }));
   }, []);
 
+  /** Saving topics from Settings: keep everything else and go back to Settings (no new set is started). */
+  const saveInterests = async (picked: Interest[]) => {
+    setInterests(picked);
+    await store.saveSettings({ ...(await store.getSettings()), id: "main", interests: picked, onboarding_done: true });
+    setScreen({ name: "settings" });
+  };
+
   const finishOnboarding = async (picked: Interest[]) => {
     setInterests(picked);
     await store.saveSettings({ ...(await store.getSettings()), id: "main", interests: picked, onboarding_done: true });
@@ -82,12 +90,14 @@ export function App() {
 
         {screen.name === "onboarding" && <Onboarding initial={interests} onDone={finishOnboarding} />}
 
+        {screen.name === "interests" && <Onboarding initial={interests} editing onDone={saveInterests} onCancel={() => setScreen({ name: "settings" })} />}
+
         {screen.name === "home" && <HomeScreen onReview={startReview} onStart={(feed) => startSet(interests, feed)} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
 
         {screen.name === "progress" && <ProgressScreen />}
 
         {screen.name === "settings" && (
-          <SettingsScreen interests={interests} onChangeInterests={() => setScreen({ name: "onboarding" })} onDataChanged={() => void load()} />
+          <SettingsScreen interests={interests} onChangeInterests={() => setScreen({ name: "interests" })} onDataChanged={() => void load()} />
         )}
 
         {screen.name === "session" && (
