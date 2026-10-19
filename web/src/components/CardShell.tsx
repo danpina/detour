@@ -47,20 +47,8 @@ export function CardShell({ card, index, total, dim, children }: Props) {
           ))}
         </div>
         <div className="mt-3 flex items-center justify-between text-xs text-white/80">
-          <span className="flex items-center gap-1.5">
-            <span className="rounded-full bg-black/40 px-2.5 py-1 backdrop-blur">{labelFor(card)}</span>
-            {reviewer && (
-              <span className={`rounded-full px-2.5 py-1 backdrop-blur ${card.review?.by === "agent" ? "bg-amber-500/60" : "bg-black/40"}`}>
-                {card.review?.by === "agent" ? "Agent-approved" : "Human-approved"}
-              </span>
-            )}
-          </span>
+          <span className="whitespace-nowrap rounded-full bg-black/40 px-2.5 py-1 backdrop-blur">{labelFor(card)}</span>
           <div className="flex gap-2">
-            {reviewer && (
-              <button onClick={() => setSheet("sendback")} className="rounded-full bg-rose-600/80 px-3 py-1 font-medium backdrop-blur hover:bg-rose-600">
-                {sentBack ? "Sent back" : "Send back"}
-              </button>
-            )}
             <button onClick={() => setSheet("sources")} className="rounded-full bg-black/40 px-3 py-1 backdrop-blur hover:bg-black/60">
               Sources
             </button>
@@ -69,6 +57,16 @@ export function CardShell({ card, index, total, dim, children }: Props) {
             </button>
           </div>
         </div>
+        {reviewer && (
+          <div className="mt-2 flex items-center justify-between text-xs text-white/90">
+            <span className={`whitespace-nowrap rounded-full px-2.5 py-1 backdrop-blur ${card.review?.by === "agent" ? "bg-amber-500/70" : "bg-black/40"}`}>
+              {card.review?.by === "agent" ? "Agent-approved" : "Human-approved"}
+            </span>
+            <button onClick={() => setSheet("sendback")} className="whitespace-nowrap rounded-full bg-rose-600/85 px-3 py-1 font-medium backdrop-blur hover:bg-rose-600">
+              {sentBack ? "Sent back" : "Send back"}
+            </button>
+          </div>
+        )}
       </div>
 
       {children}
