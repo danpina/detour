@@ -154,3 +154,41 @@ struct Card: Decodable, Hashable, Identifiable {
         }
     }
 }
+
+extension Card {
+    /// Direct initializer, used by tests and SwiftUI previews (decoding from JSON uses `init(from:)`).
+    init(id: String, interest: Interest, type: String, title: String, body: CardBody, image: CardImage? = nil,
+         probes: [Probe], sources: [SourceLink] = [SourceLink(title: "Source", url: "https://example.com")], difficulty: Int = 2, version: Int = 1) {
+        self.id = id
+        self.interest = interest
+        self.type = type
+        self.title = title
+        self.body = body
+        self.image = image
+        self.probes = probes
+        self.sources = sources
+        self.difficulty = difficulty
+        self.version = version
+    }
+}
+
+extension Probe {
+    /// Direct initializer (tests and previews). Decoding from JSON uses `init(from:)`.
+    init(id: String, kind: ProbeKind, question: String, options: [String]? = nil, answer: ProbeAnswer,
+         unit: String? = nil, lo: Double? = nil, hi: Double? = nil, scale: String? = nil, accept: [String]? = nil) {
+        self.id = id
+        self.kind = kind
+        self.question = question
+        self.options = options
+        self.answer = answer
+        self.unit = unit
+        self.lo = lo
+        self.hi = hi
+        self.scale = scale
+        self.accept = accept
+    }
+
+    static func trueFalse(id: String, question: String = "True or false?", answer: Bool = true) -> Probe {
+        Probe(id: id, kind: .tf, question: question, answer: .bool(answer))
+    }
+}

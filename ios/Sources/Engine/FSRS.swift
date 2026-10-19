@@ -4,7 +4,7 @@ import Foundation
 // no minute-level learning steps (enable_short_term = false), no fuzz, request retention 0.9.
 // `content/fsrs-test-vectors.json` is the contract: FSRSTests replays those cases and must match.
 
-enum FSRSState: Int {
+enum FSRSState: Int, Codable, Hashable {
     case new = 0, learning = 1, review = 2, relearning = 3
 }
 
@@ -12,7 +12,7 @@ enum FSRSGrade: Int, CaseIterable {
     case again = 1, hard = 2, good = 3, easy = 4
 }
 
-struct FSRSCard: Equatable {
+struct FSRSCard: Equatable, Hashable, Codable {
     /// Milliseconds since the Unix epoch.
     var dueMs: Int64
     var stability: Double = 0
