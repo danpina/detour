@@ -100,6 +100,8 @@ const cardBase = {
   sources: z.array(sourceSchema).min(1),
   difficulty: z.number().int().min(1).max(5),
   version: z.number().int().min(1),
+  /** Who approved the card for publishing, and when. Added by the review tools. */
+  review: z.object({ by: z.enum(["human", "agent"]), at: z.string() }).optional(),
 };
 
 export const storyCardSchema = z.object({
