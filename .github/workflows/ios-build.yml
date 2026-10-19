@@ -49,8 +49,20 @@ jobs:
       - name: Build and run unit tests
         working-directory: ios
         run: |
+          set -o pipefail
           xcodebuild test \
             -project Detour.xcodeproj \
             -scheme Detour \
             -destination "platform=iOS Simulator,id=$SIM_UDID" \
-            CODE_SIGNING_ALLOWED=NO
+            CODE_SIGNING_ALLOWED=NO 2>&1 | tee "$RUNNER_TEMP/xcodebuild.log"
+
+      # Shows compile errors and failed tests as annotations on the run, so they can be read without downloading logs.
+      - name: Summarize errors
+        if: failure()
+        run: |
+          grep -E "error:|XCTAssert|Test Case .* failed|\*\* TEST FAILED|\*\* BUILD FAILED" "$RUNNER_TEMP/xcodebuild.log" \
+            | sed -e 's#/Users/runner/work/detour/detour/##' | awk '!seen[$0]++' | head -n 40 \
+            | while IFS= read -r line; do
+                line="${line//'%'/'%25'}"
+                echo "::error::${line:0:900}"
+              done
