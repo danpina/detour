@@ -16,7 +16,7 @@ final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         let secondary: String
         switch settings.mode {
         case .gentle: secondary = "Continue"
-        case .earnIt: secondary = store.skipsLeft() > 0 ? "Skip (\(store.skipsLeft()) left today)" : "Not today"
+        case .earnIt: secondary = store.skipsLeft() > 0 ? "Skip this time (\(store.skipsLeft()) left today)" : "Not today"
         }
         let subtitle = settings.mode == .gentle
             ? "A few small cards first? Or carry on, no pressure."
@@ -27,7 +27,7 @@ final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
             icon: nil,
             title: ShieldConfiguration.Label(text: "Quick one?", color: .white),
             subtitle: ShieldConfiguration.Label(text: subtitle, color: UIColor.white.withAlphaComponent(0.8)),
-            primaryButtonLabel: ShieldConfiguration.Label(text: "Start", color: .white),
+            primaryButtonLabel: ShieldConfiguration.Label(text: "Do a quick one", color: .white),
             primaryButtonBackgroundColor: teal,
             secondaryButtonLabel: ShieldConfiguration.Label(text: secondary, color: UIColor.white.withAlphaComponent(0.8))
         )
