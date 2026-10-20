@@ -80,7 +80,7 @@ enum Drills {
         .estimation: TrackInfo(
             name: "Estimation",
             blurb: "Fermi-style guesses",
-            levels: ["Everyday totals", "Rates over time", "Volumes and fitting things in", "Fermi chains"],
+            levels: EstimationTemplates.levels,
             problems: 2,
             timeLimitSeconds: nil
         ),
@@ -202,58 +202,32 @@ enum Drills {
 
     // MARK: Estimation
 
+    private static let templatesByLevel: [[EstimationTemplate]] = (1...EstimationTemplates.levels.count).map { level in
+        EstimationTemplates.all.filter { $0.level == level }
+    }
+
+    /// A template is chosen first, then its numbers, always in the same order, so a round is the same as on the web for a seed.
     private static func estimation(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), 4) {
-        case 1:
-            let t = r.int(0, 2)
-            if t == 0 {
-                let n = r.pick([120, 150, 200, 250, 400])
-                return DrillProblem(prompt: "A bakery bakes \(n) loaves a day. How many loaves is that in a year (365 days)?", answer: Double(n * 365), hint: "\(n) × 365. Try \(n) × 300, then add \(n) × 65.")
+        let list = templatesByLevel[min(max(level, 1), templatesByLevel.count) - 1]
+        let t = list[r.int(0, list.count - 1)]
+        var values: [String: Int] = [:]
+        for p in t.params {
+            switch p {
+            case .pick(let name, let options): values[name] = r.pick(options)
+            case .range(let name, let lo, let hi): values[name] = r.int(lo, hi)
             }
-            if t == 1 {
-                let cups = r.pick([60, 80, 150, 300]), cafes = r.int(3, 9)
-                return DrillProblem(prompt: "A café sells \(cups) cups of coffee a day. A chain has \(cafes) cafés like it. How many cups does the chain sell in a week?", answer: Double(cups * cafes * 7), hint: "\(cups) × \(cafes) cafés × 7 days.")
-            }
-            let seats = r.pick([180, 300, 400]), flights = r.int(3, 12)
-            return DrillProblem(prompt: "A jet seats \(seats) people and flies \(flights) full flights a day. How many passengers is that in a month (30 days)?", answer: Double(seats * flights * 30), hint: "\(seats) × \(flights) flights × 30 days.")
-        case 2:
-            let t = r.int(0, 2)
-            if t == 0 {
-                let bpm = r.pick([60, 70, 80]), days = r.int(2, 9)
-                return DrillProblem(prompt: "A heart beats \(bpm) times a minute. How many beats in \(days) days?", answer: Double(bpm * 60 * 24 * days), hint: "\(bpm) × 60 minutes × 24 hours × \(days).")
-            }
-            if t == 1 {
-                let per = r.pick([2, 3, 5]), weeks = r.int(2, 8)
-                return DrillProblem(prompt: "A tap drips \(per) drops every second. How many drops in \(weeks) weeks?", answer: Double(per * 604800 * weeks), hint: "\(per) × 604,800 seconds per week × \(weeks).")
-            }
-            let kmh = r.pick([4, 5, 6]), hours = r.int(5, 40)
-            return DrillProblem(prompt: "Someone walks \(kmh) km every hour without stopping. How many metres in \(hours) hours?", answer: Double(kmh * 1000 * hours), hint: "\(kmh) km = \(kmh * 1000) m, times \(hours).")
-        case 3:
-            let t = r.int(0, 2)
-            if t == 0 {
-                let s = r.int(2, 9)
-                return DrillProblem(prompt: "A cube is \(s) m on each side. How many 1-litre bottles of water fit in it? (1 m³ = 1,000 litres)", answer: Double(s * s * s * 1000), hint: "\(s)³ = \(s * s * s) cubic metres, times 1,000.")
-            }
-            if t == 1 {
-                let a = r.int(2, 6), b = r.int(2, 8), c = r.int(2, 5)
-                return DrillProblem(prompt: "A room is \(a) m × \(b) m with a \(c) m ceiling. How many 1-litre bottles of air would fill it? (1 m³ = 1,000 litres)", answer: Double(a * b * c * 1000), hint: "\(a) × \(b) × \(c) = \(a * b * c) cubic metres, times 1,000.")
-            }
-            let s = r.int(2, 6)
-            let side = s * 100
-            return DrillProblem(prompt: "How many 1 cm cubes fit inside a cube that is \(s) m on each side? (1 m = 100 cm)", answer: Double(side * side * side), hint: "\(side) cm on each side, cubed.")
-        default:
-            let t = r.int(0, 2)
-            if t == 0 {
-                let millions = r.int(2, 9), litres = r.pick([2, 3])
-                return DrillProblem(prompt: "A city has \(millions) million people and each drinks \(litres) litres of water a day. How many litres does it drink in a year (365 days)?", answer: Double(millions) * 1e6 * Double(litres) * 365, hint: "\(millions)M × \(litres) × 365.")
-            }
-            if t == 1 {
-                let students = r.pick([400, 800, 1200, 2000]), msgs = r.pick([20, 30, 50])
-                return DrillProblem(prompt: "A school has \(students) students. Each sends \(msgs) messages a day, and the school year has 180 days. How many messages in a school year?", answer: Double(students * msgs * 180), hint: "\(students) × \(msgs) × 180.")
-            }
-            let cars = r.int(2, 8), km = r.pick([30, 40, 50])
-            return DrillProblem(prompt: "A town has \(cars) thousand cars. Each drives \(km) km a day. How many km in a 30-day month?", answer: Double(cars * 1000 * km * 30), hint: "\(cars),000 × \(km) × 30.")
         }
+        var terms: [Int] = []
+        for m in t.mult {
+            switch m {
+            case .param(let name): terms.append(values[name] ?? 1)
+            case .constant(let c): terms.append(c)
+            }
+        }
+        let answer = terms.reduce(1, *)
+        var prompt = t.text
+        for (name, value) in values { prompt = prompt.replacingOccurrences(of: "{" + name + "}", with: String(value)) }
+        return DrillProblem(prompt: prompt, answer: Double(answer), hint: terms.map { String($0) }.joined(separator: " × ") + ".")
     }
 
     // MARK: Answers

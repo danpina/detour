@@ -1375,12 +1375,12 @@
       "seed": 1,
       "problems": [
         {
-          "prompt": "A café sells 60 cups of coffee a day. A chain has 6 cafés like it. How many cups does the chain sell in a week?",
-          "answer": 2520
+          "prompt": "A school serves 300 lunches a day, 5 days a week. How many lunches is that in a 40-week school year?",
+          "answer": 60000
         },
         {
-          "prompt": "A jet seats 400 people and flies 5 full flights a day. How many passengers is that in a month (30 days)?",
-          "answer": 60000
+          "prompt": "A roastery packs 900 bags of coffee a day, 5 days a week. How many bags is that in a year (52 weeks)?",
+          "answer": 234000
         }
       ]
     },
@@ -1390,12 +1390,12 @@
       "seed": 2,
       "problems": [
         {
-          "prompt": "A jet seats 180 people and flies 5 full flights a day. How many passengers is that in a month (30 days)?",
-          "answer": 27000
+          "prompt": "A farm's hens lay 500 eggs a day. How many eggs is that in 4 weeks?",
+          "answer": 14000
         },
         {
-          "prompt": "A café sells 300 cups of coffee a day. A chain has 7 cafés like it. How many cups does the chain sell in a week?",
-          "answer": 14700
+          "prompt": "A newspaper prints 50000 copies a day. How many copies is that in 7 years (365 days a year)?",
+          "answer": 127750000
         }
       ]
     },
@@ -1405,8 +1405,8 @@
       "seed": 3,
       "problems": [
         {
-          "prompt": "A jet seats 180 people and flies 7 full flights a day. How many passengers is that in a month (30 days)?",
-          "answer": 37800
+          "prompt": "A farm's hens lay 200 eggs a day. How many eggs is that in 5 weeks?",
+          "answer": 7000
         },
         {
           "prompt": "A bakery bakes 250 loaves a day. How many loaves is that in a year (365 days)?",
@@ -1420,12 +1420,12 @@
       "seed": 42,
       "problems": [
         {
-          "prompt": "A café sells 80 cups of coffee a day. A chain has 8 cafés like it. How many cups does the chain sell in a week?",
-          "answer": 4480
+          "prompt": "A bike shop sells 12 bikes a week. How many bikes is that in 8 years (52 weeks a year)?",
+          "answer": 4992
         },
         {
-          "prompt": "A jet seats 180 people and flies 8 full flights a day. How many passengers is that in a month (30 days)?",
-          "answer": 43200
+          "prompt": "A school serves 300 lunches a day, 5 days a week. How many lunches is that in a 40-week school year?",
+          "answer": 60000
         }
       ]
     },
@@ -1435,12 +1435,12 @@
       "seed": 12345,
       "problems": [
         {
-          "prompt": "A jet seats 180 people and flies 7 full flights a day. How many passengers is that in a month (30 days)?",
-          "answer": 37800
+          "prompt": "A roastery packs 400 bags of coffee a day, 5 days a week. How many bags is that in a year (52 weeks)?",
+          "answer": 104000
         },
         {
-          "prompt": "A jet seats 300 people and flies 6 full flights a day. How many passengers is that in a month (30 days)?",
-          "answer": 54000
+          "prompt": "A stadium holds 40000 fans and hosts 13 games a season. If every seat is filled, how many tickets are sold in 2 seasons?",
+          "answer": 1040000
         }
       ]
     },
@@ -1450,12 +1450,12 @@
       "seed": 987654321,
       "problems": [
         {
-          "prompt": "A jet seats 180 people and flies 3 full flights a day. How many passengers is that in a month (30 days)?",
-          "answer": 16200
+          "prompt": "A roastery packs 250 bags of coffee a day, 5 days a week. How many bags is that in a year (52 weeks)?",
+          "answer": 65000
         },
         {
-          "prompt": "A jet seats 300 people and flies 6 full flights a day. How many passengers is that in a month (30 days)?",
-          "answer": 54000
+          "prompt": "A laundromat runs 120 loads a day. How many loads is that in 5 weeks?",
+          "answer": 4200
         }
       ]
     },
@@ -1465,12 +1465,12 @@
       "seed": 1,
       "problems": [
         {
-          "prompt": "A tap drips 2 drops every second. How many drops in 5 weeks?",
-          "answer": 6048000
+          "prompt": "A factory makes 200 bottles a minute. How many bottles in 6 hours?",
+          "answer": 72000
         },
         {
-          "prompt": "Someone walks 6 km every hour without stopping. How many metres in 15 hours?",
-          "answer": 90000
+          "prompt": "A conveyor belt moves 45 boxes a minute. How many boxes in 4 days of 12 hours each?",
+          "answer": 129600
         }
       ]
     },
@@ -1480,12 +1480,12 @@
       "seed": 2,
       "problems": [
         {
-          "prompt": "Someone walks 4 km every hour without stopping. How many metres in 15 hours?",
-          "answer": 60000
+          "prompt": "A river carries 10 cubic metres of water every second. How many cubic metres in 4 hours?",
+          "answer": 144000
         },
         {
-          "prompt": "A tap drips 5 drops every second. How many drops in 6 weeks?",
-          "answer": 18144000
+          "prompt": "A printer prints 40 pages a minute. How many pages in 7 hours?",
+          "answer": 16800
         }
       ]
     },
@@ -1495,8 +1495,8 @@
       "seed": 3,
       "problems": [
         {
-          "prompt": "Someone walks 4 km every hour without stopping. How many metres in 21 hours?",
-          "answer": 84000
+          "prompt": "A river carries 10 cubic metres of water every second. How many cubic metres in 5 hours?",
+          "answer": 180000
         },
         {
           "prompt": "A heart beats 80 times a minute. How many beats in 5 days?",
@@ -1510,12 +1510,12 @@
       "seed": 42,
       "problems": [
         {
-          "prompt": "A tap drips 3 drops every second. How many drops in 7 weeks?",
-          "answer": 12700800
+          "prompt": "A shower uses 10 litres a minute. A family showers 60 minutes a day in total. How many litres in 23 days?",
+          "answer": 13800
         },
         {
-          "prompt": "Someone walks 4 km every hour without stopping. How many metres in 23 hours?",
-          "answer": 92000
+          "prompt": "Someone walks 5 km every hour without stopping. How many metres in 14 hours?",
+          "answer": 70000
         }
       ]
     },
@@ -1525,12 +1525,12 @@
       "seed": 12345,
       "problems": [
         {
-          "prompt": "Someone walks 4 km every hour without stopping. How many metres in 22 hours?",
-          "answer": 88000
+          "prompt": "A conveyor belt moves 20 boxes a minute. How many boxes in 5 days of 24 hours each?",
+          "answer": 144000
         },
         {
-          "prompt": "Someone walks 5 km every hour without stopping. How many metres in 17 hours?",
-          "answer": 85000
+          "prompt": "A printer prints 20 pages a minute. How many pages in 2 hours?",
+          "answer": 2400
         }
       ]
     },
@@ -1540,12 +1540,12 @@
       "seed": 987654321,
       "problems": [
         {
-          "prompt": "Someone walks 4 km every hour without stopping. How many metres in 5 hours?",
-          "answer": 20000
+          "prompt": "A conveyor belt moves 10 boxes a minute. How many boxes in 2 days of 24 hours each?",
+          "answer": 28800
         },
         {
-          "prompt": "Someone walks 5 km every hour without stopping. How many metres in 18 hours?",
-          "answer": 90000
+          "prompt": "A factory makes 500 bottles a minute. How many bottles in 5 hours?",
+          "answer": 150000
         }
       ]
     },
@@ -1555,12 +1555,12 @@
       "seed": 1,
       "problems": [
         {
-          "prompt": "A room is 2 m × 5 m with a 5 m ceiling. How many 1-litre bottles of air would fill it? (1 m³ = 1,000 litres)",
-          "answer": 50000
+          "prompt": "A tanker holds 20 thousand litres. How many litres do 8 tankers hold?",
+          "answer": 160000
         },
         {
-          "prompt": "How many 1 cm cubes fit inside a cube that is 3 m on each side? (1 m = 100 cm)",
-          "answer": 27000000
+          "prompt": "A warehouse floor is 120 m long and 20 m wide. How many square metres of floor are there in a building with 5 such floors?",
+          "answer": 12000
         }
       ]
     },
@@ -1570,12 +1570,12 @@
       "seed": 2,
       "problems": [
         {
-          "prompt": "How many 1 cm cubes fit inside a cube that is 3 m on each side? (1 m = 100 cm)",
-          "answer": 27000000
+          "prompt": "A classroom has 5 rows of 5 desks. How many desks are there in a school with 26 classrooms?",
+          "answer": 650
         },
         {
-          "prompt": "A cube is 6 m on each side. How many 1-litre bottles of water fit in it? (1 m³ = 1,000 litres)",
-          "answer": 216000
+          "prompt": "A water tank holds 500 cubic metres. How many 1-litre bottles of water is that? (1 m³ = 1,000 litres)",
+          "answer": 500000
         }
       ]
     },
@@ -1585,12 +1585,12 @@
       "seed": 3,
       "problems": [
         {
-          "prompt": "How many 1 cm cubes fit inside a cube that is 2 m on each side? (1 m = 100 cm)",
-          "answer": 8000000
+          "prompt": "A classroom has 4 rows of 6 desks. How many desks are there in a school with 12 classrooms?",
+          "answer": 288
         },
         {
-          "prompt": "A room is 2 m × 7 m with a 3 m ceiling. How many 1-litre bottles of air would fill it? (1 m³ = 1,000 litres)",
-          "answer": 42000
+          "prompt": "A classroom has 6 rows of 6 desks. How many desks are there in a school with 15 classrooms?",
+          "answer": 540
         }
       ]
     },
@@ -1600,12 +1600,12 @@
       "seed": 42,
       "problems": [
         {
-          "prompt": "A room is 4 m × 7 m with a 4 m ceiling. How many 1-litre bottles of air would fill it? (1 m³ = 1,000 litres)",
-          "answer": 112000
+          "prompt": "An egg carton holds 12 eggs. A box holds 20 cartons and a pallet holds 47 boxes. How many eggs fit on one pallet?",
+          "answer": 11280
         },
         {
-          "prompt": "A cube is 6 m on each side. How many 1-litre bottles of water fit in it? (1 m³ = 1,000 litres)",
-          "answer": 216000
+          "prompt": "How many 1 cm cubes fit inside a cube that is 4 m on each side? (1 m = 100 cm)",
+          "answer": 64000000
         }
       ]
     },
@@ -1615,12 +1615,12 @@
       "seed": 12345,
       "problems": [
         {
-          "prompt": "How many 1 cm cubes fit inside a cube that is 3 m on each side? (1 m = 100 cm)",
-          "answer": 27000000
+          "prompt": "A warehouse floor is 50 m long and 30 m wide. How many square metres of floor are there in a building with 6 such floors?",
+          "answer": 9000
         },
         {
-          "prompt": "A room is 6 m × 5 m with a 3 m ceiling. How many 1-litre bottles of air would fill it? (1 m³ = 1,000 litres)",
-          "answer": 90000
+          "prompt": "A parking garage has 5 floors with 50 spaces each. How many cars fit in 8 such garages?",
+          "answer": 2000
         }
       ]
     },
@@ -1630,12 +1630,12 @@
       "seed": 987654321,
       "problems": [
         {
-          "prompt": "How many 1 cm cubes fit inside a cube that is 2 m on each side? (1 m = 100 cm)",
-          "answer": 8000000
+          "prompt": "A warehouse floor is 50 m long and 20 m wide. How many square metres of floor are there in a building with 6 such floors?",
+          "answer": 6000
         },
         {
-          "prompt": "A cube is 9 m on each side. How many 1-litre bottles of water fit in it? (1 m³ = 1,000 litres)",
-          "answer": 729000
+          "prompt": "A tanker holds 30 thousand litres. How many litres do 7 tankers hold?",
+          "answer": 210000
         }
       ]
     },
@@ -1645,12 +1645,12 @@
       "seed": 1,
       "problems": [
         {
-          "prompt": "A school has 400 students. Each sends 30 messages a day, and the school year has 180 days. How many messages in a school year?",
-          "answer": 2160000
+          "prompt": "A video is watched 2 million times a day, for 5 minutes each time. How many minutes of it are watched in a week?",
+          "answer": 70000000
         },
         {
-          "prompt": "A town has 8 thousand cars. Each drives 30 km a day. How many km in a 30-day month?",
-          "answer": 7200000
+          "prompt": "A website gets 60 thousand visits an hour. How many visits in 10 days?",
+          "answer": 14400000
         }
       ]
     },
@@ -1660,12 +1660,12 @@
       "seed": 2,
       "problems": [
         {
-          "prompt": "A town has 4 thousand cars. Each drives 30 km a day. How many km in a 30-day month?",
-          "answer": 3600000
+          "prompt": "A coffee chain serves 4 million cups a day. How many cups in a year (365 days)?",
+          "answer": 1460000000
         },
         {
-          "prompt": "A school has 2000 students. Each sends 30 messages a day, and the school year has 180 days. How many messages in a school year?",
-          "answer": 10800000
+          "prompt": "A country has 24 million households and each throws away 5 kilograms of food a week. How many kilograms in a year (52 weeks)?",
+          "answer": 6240000000
         }
       ]
     },
@@ -1675,12 +1675,12 @@
       "seed": 3,
       "problems": [
         {
-          "prompt": "A town has 2 thousand cars. Each drives 40 km a day. How many km in a 30-day month?",
-          "answer": 2400000
+          "prompt": "A coffee chain serves 2 million cups a day. How many cups in a year (365 days)?",
+          "answer": 730000000
         },
         {
-          "prompt": "A city has 8 million people and each drinks 2 litres of water a day. How many litres does it drink in a year (365 days)?",
-          "answer": 5840000000
+          "prompt": "70 million people unlock their phone 50 times a day. How many unlocks in a year (365 days)?",
+          "answer": 1277500000000
         }
       ]
     },
@@ -1690,12 +1690,12 @@
       "seed": 42,
       "problems": [
         {
-          "prompt": "A school has 800 students. Each sends 50 messages a day, and the school year has 180 days. How many messages in a school year?",
-          "answer": 7200000
+          "prompt": "A supermarket chain has 120 stores. Each sells 500 loaves of bread a day. How many loaves in a year (365 days)?",
+          "answer": 21900000
         },
         {
-          "prompt": "A town has 3 thousand cars. Each drives 40 km a day. How many km in a 30-day month?",
-          "answer": 3600000
+          "prompt": "A video is watched 10 million times a day, for 5 minutes each time. How many minutes of it are watched in a week?",
+          "answer": 350000000
         }
       ]
     },
@@ -1705,12 +1705,12 @@
       "seed": 12345,
       "problems": [
         {
-          "prompt": "A town has 4 thousand cars. Each drives 40 km a day. How many km in a 30-day month?",
-          "answer": 4800000
+          "prompt": "A website gets 5 thousand visits an hour. How many visits in 16 days?",
+          "answer": 1920000
         },
         {
-          "prompt": "A town has 5 thousand cars. Each drives 40 km a day. How many km in a 30-day month?",
-          "answer": 6000000
+          "prompt": "A rail network has 6 million commuters, each making 10 trips a week. How many trips in a year (52 weeks)?",
+          "answer": 3120000000
         }
       ]
     },
@@ -1720,12 +1720,12 @@
       "seed": 987654321,
       "problems": [
         {
-          "prompt": "A town has 2 thousand cars. Each drives 30 km a day. How many km in a 30-day month?",
-          "answer": 1800000
+          "prompt": "A website gets 5 thousand visits an hour. How many visits in 2 days?",
+          "answer": 240000
         },
         {
-          "prompt": "A town has 6 thousand cars. Each drives 40 km a day. How many km in a 30-day month?",
-          "answer": 7200000
+          "prompt": "A power station produces 2000 megawatt-hours a day. How many megawatt-hours in 5 years (365 days a year)?",
+          "answer": 3650000
         }
       ]
     }

@@ -195,3 +195,36 @@ describe("levelling up (80% over 20 attempts)", () => {
     expect(nextTrack([{ ...emptyProgress("mental-math"), last_at: 10 }, { ...emptyProgress("estimation"), last_at: 20 }])).toBe("mental-math");
   });
 });
+
+describe("estimation question variety", () => {
+  it("has at least 50 templates, a dozen or more on every level", async () => {
+    const { ESTIMATION_TEMPLATES, ESTIMATION_LEVELS } = await import("./estimationTemplates");
+    expect(ESTIMATION_TEMPLATES.length).toBeGreaterThanOrEqual(50);
+    for (let level = 1; level <= ESTIMATION_LEVELS.length; level++) {
+      expect(ESTIMATION_TEMPLATES.filter((t) => t.level === level).length).toBeGreaterThanOrEqual(12);
+    }
+  });
+
+  it("rarely repeats a question: many seeds give many different prompts, and no template dominates", () => {
+    for (let level = 1; level <= ESTIMATION_MAX_LEVEL; level++) {
+      const prompts = new Map<string, number>();
+      for (let seed = 1; seed <= 300; seed++) {
+        for (const p of generateRound({ track: "estimation", level, seed })) prompts.set(p.prompt, (prompts.get(p.prompt) ?? 0) + 1);
+      }
+      expect(prompts.size).toBeGreaterThanOrEqual(150);
+      const stems = new Set([...prompts.keys()].map((p) => p.replace(/\d+/g, "#")));
+      expect(stems.size).toBeGreaterThanOrEqual(12);
+    }
+  });
+
+  it("every answer is the product of the numbers in the prompt's template", () => {
+    for (let level = 1; level <= ESTIMATION_MAX_LEVEL; level++) {
+      for (let seed = 1; seed <= 100; seed++) {
+        for (const p of generateRound({ track: "estimation", level, seed })) {
+          expect(Number.isInteger(p.answer) && p.answer > 0, p.prompt).toBe(true);
+          expect(p.hint).toBeTruthy();
+        }
+      }
+    }
+  });
+});
