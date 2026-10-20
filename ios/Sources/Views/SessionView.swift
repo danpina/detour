@@ -23,7 +23,7 @@ struct SessionView: View {
         VStack(spacing: 0) {
             ZStack {
                 if let finishedCount {
-                    EndView(learned: finishedCount, unlockedMinutes: unlockedMinutes, onAnother: onAnother, onProgress: onProgress)
+                    EndView(learned: finishedCount, unlockedMinutes: unlockedMinutes, onAnother: onAnother, onProgress: onProgress, onDone: onClose)
                 } else if items.indices.contains(index) {
                     screen(for: items[index])
                         .id(items[index].key)
@@ -114,6 +114,7 @@ struct EndView: View {
     var unlockedMinutes: Int? = nil
     let onAnother: () -> Void
     let onProgress: () -> Void
+    let onDone: () -> Void
 
     var body: some View {
         VStack(spacing: 12) {
@@ -133,9 +134,20 @@ struct EndView: View {
                     .padding(.top, 8)
             }
             Spacer().frame(height: 24)
-            Button(action: onAnother) { Text("Another quick one").whitePill() }
+            if unlockedMinutes != nil {
+                // Guarded-app flow: finishing is the point, so "Done" is the main button and the loop is optional.
+                Button(action: onDone) { Text("Done").whitePill() }
+                Button(action: onAnother) {
+                    Text("Another quick one").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
+                }
+            } else {
+                Button(action: onAnother) { Text("Another quick one").whitePill() }
+                Button(action: onDone) {
+                    Text("Done for now").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
+                }
+            }
             Button(action: onProgress) {
-                Text("See my progress").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
+                Text("See my progress").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 4)
             }
             Spacer()
         }

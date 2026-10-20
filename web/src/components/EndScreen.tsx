@@ -1,6 +1,6 @@
-type Props = { learned: number; onAnother: () => void; onProgress: () => void };
+type Props = { learned: number; onAnother: () => void; onProgress: () => void; onDone: () => void };
 
-export function EndScreen({ learned, onAnother, onProgress }: Props) {
+export function EndScreen({ learned, onAnother, onProgress, onDone }: Props) {
   return (
     <div className="flex h-full flex-col justify-center px-8 pb-[max(2rem,env(safe-area-inset-bottom))] text-center">
       <div className="text-5xl">✨</div>
@@ -12,6 +12,9 @@ export function EndScreen({ learned, onAnother, onProgress }: Props) {
       <div className="mt-10 space-y-3">
         <button onClick={onAnother} className="w-full rounded-2xl bg-teal-600 py-4 text-lg font-semibold text-white active:scale-[0.98]">
           Another quick one
+        </button>
+        <button onClick={onDone} className="w-full rounded-2xl py-3 text-neutral-500 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-900">
+          Done for now
         </button>
         <button onClick={onProgress} className="w-full rounded-2xl py-3 text-neutral-500 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-900">
           See my progress
