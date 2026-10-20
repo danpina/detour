@@ -4,6 +4,8 @@ import SwiftUI
 struct SessionView: View {
     @Environment(AppModel.self) private var model
     let run: SessionRun
+    /// Called when a set is finished. Returns the minutes the guarded apps were unlocked for, if the guard is on.
+    let onSetFinished: () -> Int?
     let onAnother: () -> Void
     let onProgress: () -> Void
     let onNextFeedSet: () -> Void
@@ -13,13 +15,14 @@ struct SessionView: View {
     @State private var done = Set<String>()
     @State private var shownAt = Date()
     @State private var finishedCount: Int?
+    @State private var unlockedMinutes: Int?
 
     private var items: [SessionItem] { run.items }
 
     var body: some View {
         ZStack {
             if let finishedCount {
-                EndView(learned: finishedCount, onAnother: onAnother, onProgress: onProgress)
+                EndView(learned: finishedCount, unlockedMinutes: unlockedMinutes, onAnother: onAnother, onProgress: onProgress)
             } else if items.indices.contains(index) {
                 screen(for: items[index])
                     .id(items[index].key)
@@ -74,6 +77,7 @@ struct SessionView: View {
         }
         if index + 1 >= items.count {
             model.sessionFinished(cardsDone: done.count, source: "free")
+            unlockedMinutes = onSetFinished()
             if run.feed { onNextFeedSet() } else { finishedCount = done.count }
         } else {
             index += 1
@@ -106,6 +110,7 @@ struct SessionView: View {
 
 struct EndView: View {
     let learned: Int
+    var unlockedMinutes: Int? = nil
     let onAnother: () -> Void
     let onProgress: () -> Void
 
@@ -119,6 +124,13 @@ struct EndView: View {
             Text("We'll check tomorrow if they stuck.")
                 .font(.title3)
                 .foregroundStyle(.white.opacity(0.7))
+            if let unlockedMinutes {
+                Text("Your apps are open for (unlockedMinutes) minutes. Tap one to head back.")
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.7))
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 8)
+            }
             Spacer().frame(height: 24)
             Button(action: onAnother) { Text("Another quick one").whitePill() }
             Button(action: onProgress) {

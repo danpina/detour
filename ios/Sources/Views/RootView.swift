@@ -12,6 +12,8 @@ enum MainTab: Hashable {
 
 struct RootView: View {
     @Environment(AppModel.self) private var model
+    @Environment(GuardManager.self) private var guardManager
+    @Environment(.scenePhase) private var scenePhase
     @State private var run: SessionRun?
     @State private var tab: MainTab = .home
 
@@ -36,9 +38,13 @@ struct RootView: View {
                 }
             }
         }
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active { appBecameActive() }
+        }
         .fullScreenCover(item: $run) { current in
             SessionView(
                 run: current,
+                onSetFinished: { guardManager.unlockAfterSet() },
                 onAnother: { start(feed: false) },
                 onProgress: {
                     tab = .progress
@@ -48,6 +54,14 @@ struct RootView: View {
                 onClose: { run = nil }
             )
             .environment(model)
+        }
+    }
+
+    /// Back in front: put the shield back if its timer never fired, and open a session if the shield's Start button asked for one.
+    private func appBecameActive() {
+        guardManager.refresh()
+        if guardManager.consumePendingSession(), model.settings.onboardingDone, run == nil {
+            start(feed: false)
         }
     }
 

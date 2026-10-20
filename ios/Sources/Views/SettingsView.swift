@@ -52,6 +52,8 @@ struct SettingsView: View {
                     Text("A quick mental-math or estimation round at the end of a set.").font(.footnote).foregroundStyle(.secondary)
                 }
 
+                GuardSettingsSection()
+
                 Section("Daily reminder") {
                     Toggle("Remind me", isOn: Binding(
                         get: { model.settings.reminderEnabled },

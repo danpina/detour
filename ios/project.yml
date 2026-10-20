@@ -13,16 +13,29 @@ targets:
       - path: Sources
       # Contains Assets.xcassets (app icon, accent colour); XcodeGen compiles it from here.
       - path: Resources
+      # Code shared with the three Screen Time extensions (guard settings, shield on/off).
+      - path: Shared
       # All card data and images the app serves. Shared with the web app; never edited here.
       - path: ../content/published
         type: folder
         buildPhase: resources
+    dependencies:
+      - target: DetourShield
+      - target: DetourShieldAction
+      - target: DetourActivityMonitor
+    entitlements:
+      path: Generated/Detour.entitlements
+      properties:
+        com.apple.developer.family-controls: true
+        com.apple.security.application-groups:
+          - group.com.danpina.detour
     info:
       path: Generated/Info.plist
       properties:
         UILaunchScreen: {}
         CFBundleDisplayName: "Detour"
         ITSAppUsesNonExemptEncryption: false
+        NSFamilyControlsUsageDescription: "Detour shows a short learning session before the apps you choose. You pick the apps, and nothing about them leaves your device."
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
     settings:
@@ -30,6 +43,93 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.danpina.detour
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_STYLE: Automatic
+  # The shield screen shown over a guarded app.
+  DetourShield:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Extensions/Shield
+      - path: Shared
+    entitlements:
+      path: Generated/DetourShield.entitlements
+      properties:
+        com.apple.developer.family-controls: true
+        com.apple.security.application-groups:
+          - group.com.danpina.detour
+    info:
+      path: Generated/DetourShield-Info.plist
+      properties:
+        CFBundleDisplayName: "Detour Shield"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.ManagedSettingsUI.shield-configuration-service
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).ShieldConfigurationExtension"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.danpina.detour.shield
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_STYLE: Automatic
+  # What the shield's buttons do.
+  DetourShieldAction:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Extensions/ShieldAction
+      - path: Shared
+    entitlements:
+      path: Generated/DetourShieldAction.entitlements
+      properties:
+        com.apple.developer.family-controls: true
+        com.apple.security.application-groups:
+          - group.com.danpina.detour
+    info:
+      path: Generated/DetourShieldAction-Info.plist
+      properties:
+        CFBundleDisplayName: "Detour Shield Action"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.ManagedSettings.shield-action-service
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).ShieldActionExtension"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.danpina.detour.shieldaction
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_STYLE: Automatic
+  # Puts the shield back when an unlock window ends.
+  DetourActivityMonitor:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Extensions/ActivityMonitor
+      - path: Shared
+    entitlements:
+      path: Generated/DetourActivityMonitor.entitlements
+      properties:
+        com.apple.developer.family-controls: true
+        com.apple.security.application-groups:
+          - group.com.danpina.detour
+    info:
+      path: Generated/DetourActivityMonitor-Info.plist
+      properties:
+        CFBundleDisplayName: "Detour Activity Monitor"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.deviceactivity.monitor-extension
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).ActivityMonitorExtension"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.danpina.detour.activitymonitor
         SWIFT_VERSION: "5.0"
         TARGETED_DEVICE_FAMILY: "1"
         MARKETING_VERSION: "0.1"
