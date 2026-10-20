@@ -8,6 +8,17 @@ struct GuardSettingsSection: View {
     @State private var picking = false
     @State private var working = false
 
+    private var modeExplanation: String {
+        switch guardManager.settings.mode {
+        case .gentle:
+            return "Nudge me: opening a guarded app shows a quick Detour first, and you can always tap Continue to go straight in."
+        case .earnIt:
+            return "Earn it: opening a guarded app shows a quick Detour first. Finish a set to unlock it for a while, or use your one skip a day."
+        case .strict:
+            return "Strict: a last check every time. Take a detour, or tap Open anyway. Open anyway only lasts a few minutes of use, then the check comes back. iOS can't tell when you leave an app, so it can't ask on every single open."
+        }
+    }
+
     var body: some View {
         @Bindable var manager = guardManager
         Section {
@@ -37,12 +48,20 @@ struct GuardSettingsSection: View {
                 )) {
                     Text("Nudge me").tag(GuardMode.gentle)
                     Text("Earn it").tag(GuardMode.earnIt)
+                    Text("Strict").tag(GuardMode.strict)
                 }
-                Text(guardManager.settings.mode == .gentle
-                     ? "Nudge me: opening a guarded app shows a quick Detour first, and you can always tap Continue to go straight in."
-                     : "Earn it: opening a guarded app shows a quick Detour first. Finish a set to unlock it for a while, or use your one skip a day.")
+                Text(modeExplanation)
                     .font(.footnote)
                     .foregroundStyle(.secondary)
+
+                if guardManager.settings.mode == .strict {
+                    Picker("Open anyway allows", selection: Binding(
+                        get: { guardManager.settings.strictUseMinutes },
+                        set: { minutes in guardManager.update { $0.strictMinutes = minutes } }
+                    )) {
+                        ForEach([1, 3, 5, 10], id: \.self) { Text("\($0) min of use").tag($0) }
+                    }
+                }
 
                 if guardManager.settings.mode == .earnIt {
                     Picker("Unlock for", selection: Binding(

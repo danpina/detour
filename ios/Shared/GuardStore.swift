@@ -6,6 +6,8 @@ enum GuardMode: String, Codable, CaseIterable {
     case gentle
     /// A finished set unlocks the apps for a while. One emergency skip a day.
     case earnIt
+    /// A last check every time: take a detour, or open the app anyway. "Open anyway" only lasts a few minutes of use.
+    case strict
 }
 
 struct GuardSettings: Codable, Equatable {
@@ -13,6 +15,10 @@ struct GuardSettings: Codable, Equatable {
     var mode: GuardMode = .earnIt
     var unlockMinutes = 15
     var dailySkips = 1
+    /// Minutes of use that "Open anyway" allows in strict mode. Optional so settings saved before strict mode existed still load.
+    var strictMinutes: Int? = nil
+
+    var strictUseMinutes: Int { strictMinutes ?? 3 }
 }
 
 /// Everything the app and its three Screen Time extensions share, kept in the App Group container.

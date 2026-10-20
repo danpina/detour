@@ -59,6 +59,19 @@ final class GuardStoreTests: XCTestCase {
         XCTAssertFalse(store.isUnlocked(now: now.addingTimeInterval(16 * 60)))
     }
 
+    func testSettingsSavedBeforeStrictModeStillLoad() {
+        let name = "detour.tests.legacy.\(UUID().uuidString)"
+        let defaults = UserDefaults(suiteName: name)!
+        defaults.removePersistentDomain(forName: name)
+        // What an earlier build stored: no strictMinutes key.
+        let legacy = "{\"enabled\":true,\"mode\":\"earnIt\",\"unlockMinutes\":15,\"dailySkips\":1}"
+        defaults.set(Data(legacy.utf8), forKey: "guard.settings")
+        let store = GuardStore(defaults: defaults, calendar: calendar)
+        XCTAssertTrue(store.settings.enabled)
+        XCTAssertEqual(store.settings.mode, .earnIt)
+        XCTAssertEqual(store.settings.strictUseMinutes, 3)
+    }
+
     func testStaleEndedSignalIsIgnoredWhileANewUnlockRuns() {
         let store = makeStore()
         let now = date(2026, 3, 2)

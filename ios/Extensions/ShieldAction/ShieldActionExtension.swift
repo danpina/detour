@@ -27,12 +27,17 @@ final class ShieldActionExtension: ShieldActionDelegate {
             return .close
         case .secondaryButtonPressed:
             let settings = store.settings
+            if settings.mode == .strict {
+                store.log("strict: open anyway for " + String(settings.strictUseMinutes) + " min of use")
+                GuardShield.unlock(minutes: 15, usageMinutes: settings.strictUseMinutes, store: store)
+                return .defer
+            }
             let allowed = settings.mode == .gentle || store.useSkip()
             guard allowed else {
                 store.log("skip refused: none left today")
                 return .close
             }
-            store.log("skip used")
+            store.log(settings.mode == .gentle ? "continue pressed (nudge)" : "skip used")
             GuardShield.unlock(minutes: settings.unlockMinutes, store: store)
             return .defer
         @unknown default:

@@ -7,6 +7,7 @@ import UserNotifications
 /// Puts the shield on the chosen apps and takes it off again. Used by the app and by the extensions.
 enum GuardShield {
     private static let unlockActivity = DeviceActivityName("detour.unlock")
+    private static let usageEvent = DeviceActivityEvent.Name("detour.usage")
 
     static func selection(from store: GuardStore) -> FamilyActivitySelection? {
         guard let data = store.selectionData else { return nil }
@@ -47,7 +48,8 @@ enum GuardShield {
     }
 
     /// Lifts the shield for a while, then asks the monitor extension to put it back.
-    static func unlock(minutes: Int, store: GuardStore = .shared, now: Date = Date()) {
+    /// With `usageMinutes` the shield also comes back once the chosen apps have been used for that long, whichever happens first.
+    static func unlock(minutes: Int, usageMinutes: Int? = nil, store: GuardStore = .shared, now: Date = Date()) {
         // The system only allows schedules of 15 minutes or more.
         let length = max(minutes, 15)
         let managed = ManagedSettingsStore()
@@ -65,11 +67,21 @@ enum GuardShield {
             intervalEnd: calendar.dateComponents(parts, from: until),
             repeats: false
         )
+        var events: [DeviceActivityEvent.Name: DeviceActivityEvent] = [:]
+        if let usageMinutes, let chosen = selection(from: store) {
+            events[usageEvent] = DeviceActivityEvent(
+                applications: chosen.applicationTokens,
+                categories: chosen.categoryTokens,
+                webDomains: chosen.webDomainTokens,
+                threshold: DateComponents(minute: usageMinutes)
+            )
+        }
         let center = DeviceActivityCenter()
         center.stopMonitoring([unlockActivity])
         do {
-            try center.startMonitoring(unlockActivity, during: schedule)
-            store.log("unlocked for \(length) min")
+            try center.startMonitoring(unlockActivity, during: schedule, events: events)
+            let usageNote = usageMinutes.map { ", or \($0) min of use" } ?? ""
+            store.log("unlocked for \(length) min" + usageNote)
         } catch {
             // Without the timer the app re-shields itself the next time it opens, so say so in the log.
             store.log("could not start the unlock timer: \(error.localizedDescription)")

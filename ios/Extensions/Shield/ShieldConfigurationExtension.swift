@@ -17,17 +17,23 @@ final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         switch settings.mode {
         case .gentle: secondary = "Continue"
         case .earnIt: secondary = store.skipsLeft() > 0 ? "Skip this time (\(store.skipsLeft()) left today)" : "Not today"
+        case .strict: secondary = "Open anyway"
         }
-        let subtitle = settings.mode == .gentle
-            ? "A few small cards first? Or carry on, no pressure."
-            : "A few small cards, then this is yours for \(settings.unlockMinutes) minutes."
+        let subtitle: String
+        switch settings.mode {
+        case .gentle: subtitle = "A few small cards first? Or carry on, no pressure."
+        case .earnIt: subtitle = "A few small cards, then this is yours for \(settings.unlockMinutes) minutes."
+        case .strict: subtitle = "A last check. Take a quick detour, or open it for real (\(settings.strictUseMinutes) min)."
+        }
+        let title = settings.mode == .strict ? "Last check" : "Quick one?"
+        let primary = settings.mode == .strict ? "Take a detour" : "Do a quick one"
         return ShieldConfiguration(
             backgroundBlurStyle: .systemUltraThinMaterialDark,
             backgroundColor: UIColor.black.withAlphaComponent(0.55),
             icon: nil,
-            title: ShieldConfiguration.Label(text: "Quick one?", color: .white),
+            title: ShieldConfiguration.Label(text: title, color: .white),
             subtitle: ShieldConfiguration.Label(text: subtitle, color: UIColor.white.withAlphaComponent(0.8)),
-            primaryButtonLabel: ShieldConfiguration.Label(text: "Do a quick one", color: .white),
+            primaryButtonLabel: ShieldConfiguration.Label(text: primary, color: .white),
             primaryButtonBackgroundColor: teal,
             secondaryButtonLabel: ShieldConfiguration.Label(text: secondary, color: UIColor.white.withAlphaComponent(0.8))
         )
