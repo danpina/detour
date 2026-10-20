@@ -1,0 +1,56 @@
+{
+  "id": "mind-0022",
+  "interest": "mind",
+  "title": "Whose hand is that?",
+  "probes": [
+    {
+      "id": "mind-0022-p1",
+      "question": "True or false: when the hands are stroked at different times, people still feel the rubber hand is their own.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "mind-0022-p2",
+      "question": "Asked to point to their hidden left hand, where did subjects most of the time point?",
+      "kind": "mcq",
+      "options": [
+        "Toward the rubber hand",
+        "Toward their real hand",
+        "Toward their right hand",
+        "Straight ahead"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Body transfer illusion (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Body_transfer_illusion"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:04.680Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0022.webp",
+    "alt": "Flat illustration of two hands side by side behind a divider, a hidden dashed one and a visible rubber one, each being stroked by a brush.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "Your real left hand is hidden, and a lifelike rubber left hand sits in view. Both are stroked with a paintbrush. What made people start to feel the rubber hand was their own?",
+    "options": [
+      "Stroking both hands at the same time, in the same direction",
+      "Stroking them in different directions",
+      "Stroking them at different times",
+      "Only stroking the rubber hand"
+    ],
+    "answer": 0,
+    "reveal": "If the two hands were stroked synchronously and in the same direction, subjects began to experience the rubber hand as their own. If they were stroked in different directions or at different times, they did not."
+  }
+}

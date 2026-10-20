@@ -1,0 +1,49 @@
+{
+  "id": "tech-0020",
+  "interest": "tech",
+  "title": "Why email addresses have an @",
+  "probes": [
+    {
+      "id": "tech-0020-p1",
+      "question": "What does the @ sign separate in an email address?",
+      "kind": "mcq",
+      "options": [
+        "The username from the name of the machine",
+        "The subject from the message",
+        "The sender from the date",
+        "The first name from the last name"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0020-p2",
+      "question": "True or false: before Tomlinson's program, mail could be sent only to others who used the same computer.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ray Tomlinson (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ray_Tomlinson"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:22.193Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0020.webp",
+    "alt": "Flat illustration of an at-sign over an envelope, with an arrow pointing from one computer to another below.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "In 1971, Ray Tomlinson created an email program on the ARPANET. It was the first system able to send mail between users on different hosts.",
+    "why": "Previously, mail could be sent only to others who used the same computer. He used the @ sign to separate the username from the name of their machine. The symbol was chosen because it was not used in usernames or in TENEX programming, and it intuitively conveyed the intended meaning."
+  }
+}

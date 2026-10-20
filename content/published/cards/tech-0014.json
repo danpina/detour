@@ -1,0 +1,54 @@
+{
+  "id": "tech-0014",
+  "interest": "tech",
+  "title": "A hard drive that weighed over a ton",
+  "probes": [
+    {
+      "id": "tech-0014-p1",
+      "question": "How many disks did the IBM 350 disk system have?",
+      "kind": "mcq",
+      "options": [
+        "Fifty",
+        "Five",
+        "Five hundred",
+        "Two"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0014-p2",
+      "question": "True or false: the IBM 305 RAMAC weighed over a ton.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "IBM 305 RAMAC (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/IBM_305_RAMAC"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:13.609Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "tech-0014.webp",
+    "alt": "Flat illustration of a stack of disks on a central spindle with an arm reaching in from the side.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "The IBM 350 disk system had fifty 24-inch-diameter disks. About how many characters could it store, in millions?",
+    "unit": "million characters",
+    "min": 0.01,
+    "max": 1000,
+    "scale": "log",
+    "answer": 5,
+    "reveal": "The IBM 350 disk system stored 5 million alphanumeric characters. The IBM 305 RAMAC, which used it, was publicly announced on September 14, 1956, and weighed over a ton."
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Jacquard loom",
+    "angle": "Punched cards before computers"
+  },
+  "created_at": "2026-10-20T19:56:08.775Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0019",
+    "interest": "tech",
+    "type": "story",
+    "title": "A portrait woven from 24,000 cards",
+    "body": {
+      "panels": [
+        {
+          "text": "A Jacquard machine is controlled by a \"chain of cards\": punched cards laced together into a continuous sequence. Joseph Marie Jacquard patented it in 1804."
+        },
+        {
+          "text": "Multiple rows of holes are punched on each card, and one complete card corresponds to one row of the design."
+        },
+        {
+          "text": "A portrait of Jacquard, woven in silk on a Jacquard loom, required 24,000 punched cards."
+        },
+        {
+          "text": "Charles Babbage owned one of these portraits. It inspired him in using perforated cards in his Analytical Engine."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0019-p1",
+        "kind": "mcq",
+        "question": "How many punched cards did the woven silk portrait of Jacquard require?",
+        "options": [
+          "24,000",
+          "240",
+          "2,400",
+          "240,000"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0019-p2",
+        "kind": "tf",
+        "question": "True or false: one complete card corresponded to one row of the design.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Jacquard machine (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Jacquard_machine"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A Jacquard loom with its chain of punched cards, or the woven silk portrait of Jacquard",
+    "keywords": [
+      "Jacquard loom punched cards",
+      "Jacquard portrait woven silk",
+      "Science Museum Jacquard",
+      "Jacquard machine"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T19:59:13.404Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jacquard_machine",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Panel 1: controlled by a \"chain of cards\", punched cards laced together into a continuous sequence",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jacquard_machine",
+        "quote": "The machine was controlled by a \"chain of cards\"; a number of punched cards laced together into a continuous sequence."
+      },
+      {
+        "claim": "Panel 1: Joseph Marie Jacquard patented it in 1804",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jacquard_machine",
+        "quote": "The machine was patented by Joseph Marie Jacquard in 1804"
+      },
+      {
+        "claim": "Panel 2 and probe 2: multiple rows of holes per card; one complete card corresponds to one row of the design",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jacquard_machine",
+        "quote": "Multiple rows of holes were punched on each card, with one complete card corresponding to one row of the design."
+      },
+      {
+        "claim": "Title, panel 3 and probe 1: portrait of Jacquard woven in silk on a Jacquard loom required 24,000 punched cards",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jacquard_machine",
+        "quote": "This portrait of Jacquard was woven in silk on a Jacquard loom and required 24,000 punched cards to create (1839)."
+      },
+      {
+        "claim": "Panel 4: Charles Babbage owned one of these portraits; it inspired him in using perforated cards in his Analytical Engine",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jacquard_machine",
+        "quote": "Charles Babbage owned one of these portraits; it inspired him in using perforated cards in his Analytical Engine ."
+      }
+    ],
+    "overall": "pass"
+  }
+}

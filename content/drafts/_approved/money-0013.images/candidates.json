@@ -1,0 +1,94 @@
+{
+  "draft_id": "money-0013",
+  "created_at": "2026-10-20T19:57:40.729Z",
+  "queries": [
+    "window tax bricked-up windows blocked window",
+    "window tax",
+    "window tax bricked-up windows"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-71623920",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Church of St Mary Swaffham Prior Cambridgeshire (219897318).jpg",
+      "credit": "David from Colorado Springs, United States / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Church_of_St_Mary_Swaffham_Prior_Cambridgeshire_(219897318).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Church_of_St_Mary_Swaffham_Prior_Cambridgeshire_%28219897318%29.jpg/960px-Church_of_St_Mary_Swaffham_Prior_Cambridgeshire_%28219897318%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 960,
+      "alt_suggestion": "Of those Cambridgeshire villages that once had two churches standing within one churchyard to serve separate ecclesiastical parishes, only Swaffham Prior still retains, though mostly rebuilt, both the",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-154235",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Girl by the Window",
+      "credit": "Edvard Munch (Norwegian, 1863–1944) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/154235",
+      "image_url": "https://www.artic.edu/iiif/2/d7df2633-3b40-f570-c906-211503a37cde/full/843,/0/default.jpg",
+      "alt_suggestion": "Loosely painted scene of a brown-haired girl in her nightgown standing in a dark room, gazing out a window into a brighter night, her face unseen and her hand drawing back the pale curtain. Light blues and pink whites dominate the girl and the window, while deep browns, blues, and greens color the darkened portions of her room.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-90020859",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "The free-born Briton or a perspective of taxation (BM 1868,0808.5468).jpg",
+      "credit": "Print made by: William Dent Published by: J Nunn / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_free-born_Briton_or_a_perspective_of_taxation_(BM_1868,0808.5468).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/The_free-born_Briton_or_a_perspective_of_taxation_%28BM_1868%2C0808.5468%29.jpg/960px-The_free-born_Briton_or_a_perspective_of_taxation_%28BM_1868%2C0808.5468%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1139,
+      "alt_suggestion": "John Bull stands full-face, shouting and stamping with rage, on a block of turf inscribed 'Land-Tax 4s in the pound'. Across his shoulders are two yokes, one inscribed 'National - Debt &c', the other ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-109926",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Landscape: Window Overlooking the Woods",
+      "credit": "Édouard Vuillard (French, 1868-1940) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/109926",
+      "image_url": "https://www.artic.edu/iiif/2/a1dc6109-6e0c-7801-ebe8-8c95fec2c4e4/full/843,/0/default.jpg",
+      "alt_suggestion": "Dense and varied landscape with open fields, groves of bushy trees, and a row of thin conifers. A light-blue river tranverses the canvas, and a church steeple emerges from the trees at left of center. At far left is a side view of a white house with open shutters, a woman working inside.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-90020861",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "The free-born Briton or a perspective of taxation (BM 1868,0808.5468 1).jpg",
+      "credit": "Print made by: William Dent Published by: J Nunn / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_free-born_Briton_or_a_perspective_of_taxation_(BM_1868,0808.5468_1).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/The_free-born_Briton_or_a_perspective_of_taxation_%28BM_1868%2C0808.5468_1%29.jpg/960px-The_free-born_Briton_or_a_perspective_of_taxation_%28BM_1868%2C0808.5468_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1127,
+      "alt_suggestion": "John Bull stands full-face, shouting and stamping with rage, on a block of turf inscribed 'Land-Tax 4s in the pound'. Across his shoulders are two yokes, one inscribed 'National - Debt &c', the other ",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-brickwindows",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: brickwindows",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-brickwindows.png",
+      "alt_suggestion": "Illustration of a plain brick house front with a grid of windows, some open and some filled in solid with brick"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"window tax bricked-up windows blocked window\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"window tax\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"window tax bricked-up windows\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

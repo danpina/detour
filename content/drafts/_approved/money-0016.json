@@ -1,0 +1,91 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Zimbabwe hyperinflation",
+    "angle": "How many zeros on the biggest note"
+  },
+  "created_at": "2026-10-20T19:56:41.310Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0016",
+    "interest": "money",
+    "type": "estimate",
+    "title": "The note with fourteen zeros",
+    "body": {
+      "question": "The largest Zimbabwean banknote was Z$100 trillion. How many zeros does it take to write that number in full?",
+      "unit": "zeros",
+      "min": 1,
+      "max": 30,
+      "scale": "linear",
+      "answer": 14,
+      "reveal": "Z$100,000,000,000,000 is 1 x 10^14, so 14 zeros. In mid-November 2008, a $100 trillion banknote could not pay for a simple bus fare."
+    },
+    "probes": [
+      {
+        "id": "money-0016-p1",
+        "kind": "estimate",
+        "question": "How many zeros are in 100 trillion (100,000,000,000,000)?",
+        "answer": 14,
+        "unit": "zeros",
+        "min": 1,
+        "max": 30,
+        "scale": "linear"
+      },
+      {
+        "id": "money-0016-p2",
+        "kind": "tf",
+        "question": "True or false: in mid-November 2008, a $100 trillion Zimbabwean banknote could not pay for a simple bus fare.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hyperinflation in Zimbabwe (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hyperinflation_in_Zimbabwe"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A Zimbabwean 100 trillion dollar banknote",
+    "keywords": [
+      "Zimbabwe 100 trillion dollar note",
+      "Zimbabwe banknote",
+      "hyperinflation"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:01:27.319Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hyperinflation_in_Zimbabwe",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The largest Zimbabwean banknote was Z$100 trillion (Z$100,000,000,000,000)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hyperinflation_in_Zimbabwe",
+        "quote": "The largest denomination of a Zimbabwean banknote ( Z$100,000,000,000,000"
+      },
+      {
+        "claim": "Z$100,000,000,000,000 = 1 x 10^14, so 14 zeros (title, question, answer 14, probe 1)",
+        "verdict": "pass",
+        "note": "Verified by calculation: 100 trillion = 100 x 10^12 = 10^14, which is a 1 followed by 14 zeros."
+      },
+      {
+        "claim": "In mid-November 2008, a $100 trillion banknote could not pay for a simple bus fare (reveal and probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hyperinflation_in_Zimbabwe",
+        "quote": "mid-November 2008. At that time, a $100 trillion banknote could not pay for a simple bus fare.",
+        "note": "'At that time' refers to mid-November 2008 in the preceding clause."
+      }
+    ],
+    "overall": "pass"
+  }
+}

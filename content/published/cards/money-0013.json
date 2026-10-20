@@ -1,0 +1,55 @@
+{
+  "id": "money-0013",
+  "interest": "money",
+  "title": "A tax counted in windows",
+  "probes": [
+    {
+      "id": "money-0013-p1",
+      "question": "What was a window tax based on?",
+      "kind": "mcq",
+      "options": [
+        "The number of windows in a house",
+        "The number of chimneys",
+        "The size of the garden",
+        "The number of doors"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0013-p2",
+      "question": "In which year was the window tax introduced in England and Wales?",
+      "kind": "mcq",
+      "options": [
+        "1596",
+        "1696",
+        "1796",
+        "1896"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Window tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Window_tax"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:05.731Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0013.webp",
+    "alt": "Flat illustration of a brick house front where several of the windows are bricked up.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "In England and Wales, a window tax was introduced in 1696: a property tax based on the number of windows in a house. It was repealed in 1851.",
+    "why": "It was designed to impose tax relative to the prosperity of the taxpayer, but without the controversy that then surrounded the idea of income tax. Windows were also bricked up in Europe from the 1600s to avoid taxes."
+  }
+}

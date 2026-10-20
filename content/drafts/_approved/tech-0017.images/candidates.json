@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0017",
+  "created_at": "2026-10-20T19:58:19.472Z",
+  "queries": [
+    "core rope memory Apollo Guidance Computer rope module Raytheon rope memory",
+    "core rope memory",
+    "core rope memory Apollo Guidance Computer rope module"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-12185109",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Apollo guidiance computer ferrit core memory.jpg",
+      "credit": "Nova13 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Apollo_guidiance_computer_ferrit_core_memory.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Apollo_guidiance_computer_ferrit_core_memory.jpg/960px-Apollo_guidiance_computer_ferrit_core_memory.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2165,
+      "height": 2277,
+      "alt_suggestion": "Ferrite core memory as used in the Apollo Guidance Computer (MIT sample for testing)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-110867",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tight-Rope Walker",
+      "credit": "Jean Louis Forain (French, 1852–1931) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/110867",
+      "image_url": "https://www.artic.edu/iiif/2/f67d49b0-90a6-7aa3-29ab-77e5d1e9fd9c/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-141024890",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "16Kb Rope Core Memory Board from Wagner WAC-40.jpg",
+      "credit": "Richstraka / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:16Kb_Rope_Core_Memory_Board_from_Wagner_WAC-40.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/16Kb_Rope_Core_Memory_Board_from_Wagner_WAC-40.jpg/960px-16Kb_Rope_Core_Memory_Board_from_Wagner_WAC-40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6960,
+      "height": 4640,
+      "alt_suggestion": "This is ostensibly a 16Kb ROM board - Wagner 02 MIS 01 5001 X from a Wagner WAC-40 or WAC-400 computer manufactured in about 1974. The board was on display at the System Source Computer Museum in Mary",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-16365",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Friar Pedro Binds El Maragato with a Rope",
+      "credit": "Francisco José de Goya y Lucientes (Spanish, 1746–1828) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16365",
+      "image_url": "https://www.artic.edu/iiif/2/13e89aac-382a-ae03-aa87-48ed1740c28d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on panel.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-82248546",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Core rope tester at Draper Hack the Moon exhibit.jpg",
+      "credit": "ArnoldReinhold / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Core_rope_tester_at_Draper_Hack_the_Moon_exhibit.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Core_rope_tester_at_Draper_Hack_the_Moon_exhibit.jpg/960px-Core_rope_tester_at_Draper_Hack_the_Moon_exhibit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4032,
+      "height": 3024,
+      "alt_suggestion": "Apollo program related object on display at the Draper Labs 2019 \"Hack the Moon\" exhibit, held in Cambridge, Massachusetts, in honor of the 50th anniversary of the Apollo 11 moon landing.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"core rope memory Apollo Guidance Computer rope module Raytheon rope memory\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"core rope memory\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"core rope memory Apollo Guidance Computer rope module\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

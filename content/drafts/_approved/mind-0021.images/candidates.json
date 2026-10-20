@@ -1,0 +1,82 @@
+{
+  "draft_id": "mind-0021",
+  "created_at": "2026-10-20T19:57:29.384Z",
+  "queries": [
+    "pareidolia Man in the Moon face in cloud",
+    "pareidolia",
+    "pareidolia Man in the Moon"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-157086312",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Camara de Lobos Pareidolia 3.JPG",
+      "credit": "TeWeBs / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Camara_de_Lobos_Pareidolia_3.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Camara_de_Lobos_Pareidolia_3.JPG/960px-Camara_de_Lobos_Pareidolia_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3264,
+      "height": 3264,
+      "alt_suggestion": "Pareidolia: a disused canister as wall decoration in Câmara de Lobos",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA25727",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Just in Time for Halloween, NASA's Juno Mission Spots Eerie \"Face\" on Jupiter",
+      "credit": "Image data: NASA/JPL-Caltech/SwRI/MSSS Image processing by Vladimir Tarasov © CC BY / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA25727",
+      "image_url": "https://images-assets.nasa.gov/image/PIA25727/PIA25727~medium.jpg",
+      "alt_suggestion": "On Sept. 7, 2023, during its 54th close flyby of Jupiter, NASA's Juno mission captured this view of an area in the giant planet's far northern regions called Jet N7. The image shows turbulent clouds a",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-566",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Life Cast of the Hands and Face of Abraham Lincoln",
+      "credit": "Leonard Wells Volk (American, 1828–1895) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/566",
+      "image_url": "https://www.artic.edu/iiif/2/8ad03fff-be28-ab22-689c-8f022b5e181c/full/843,/0/default.jpg",
+      "alt_suggestion": "Three-part bronze sculpture set of two clenched hands and a man's face with closed eyes and mouth, an object in one hand.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-157086279",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Camara de Lobos Pareidolia 2.JPG",
+      "credit": "TeWeBs / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Camara_de_Lobos_Pareidolia_2.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Camara_de_Lobos_Pareidolia_2.JPG/960px-Camara_de_Lobos_Pareidolia_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4352,
+      "height": 3264,
+      "alt_suggestion": "Pareidolia: disused canisters as wall decoration in Câmara de Lobos",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-4328",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Triumph of the Moon",
+      "credit": "Monogrammist P.P. Italian, late 15th-early 16th century / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/4328",
+      "image_url": "https://www.artic.edu/iiif/2/710d7a6c-6705-22cf-f4fe-06767d779271/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving on cream laid paper.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"pareidolia Man in the Moon face in cloud\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"pareidolia\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"pareidolia Man in the Moon\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "tech-0018",
+  "interest": "tech",
+  "title": "The oldest .com",
+  "probes": [
+    {
+      "id": "tech-0018-p1",
+      "question": "symbolics.com was registered in ____.",
+      "kind": "cloze",
+      "answer": "1985",
+      "accept": []
+    },
+    {
+      "id": "tech-0018-p2",
+      "question": "In which year was symbolics.com purchased by XF.com Investments?",
+      "kind": "mcq",
+      "options": [
+        "2009",
+        "1995",
+        "2001",
+        "2016"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Symbolics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Symbolics"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:19.399Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "tech-0018.webp",
+    "alt": "A cream-coloured Symbolics Lisp Machine keyboard with many extra labelled keys such as Hyper, Super and Meta.",
+    "kind": "photo",
+    "credit": "Retro-Computing Society of Rhode Island / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Symbolics-keyboard.jpg"
+  },
+  "body": {
+    "question": "Which of these became the first registered .com domain on 15 March 1985?",
+    "options": [
+      "symbolics.com",
+      "google.com",
+      "amazon.com",
+      "apple.com"
+    ],
+    "answer": 0,
+    "reveal": "symbolics.com became the first (and currently, since it is still registered, the oldest) registered .com domain of the Internet. It was purchased by XF.com Investments in 2009."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Concorde fallacy",
+    "angle": "Sunk costs and a supersonic jet"
+  },
+  "created_at": "2026-10-20T19:56:41.310Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0020",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "The Concorde fallacy",
+    "body": {
+      "claim": "The sunk cost fallacy has also been called the \"Concorde fallacy\".",
+      "why": "The British and French governments continued to fund the joint development of the costly Concorde supersonic airplane even after it became apparent that there was no longer an economic case for the aircraft."
+    },
+    "probes": [
+      {
+        "id": "money-0020-p1",
+        "kind": "mcq",
+        "question": "\"Concorde fallacy\" is another name for which idea?",
+        "options": [
+          "The sunk cost fallacy",
+          "The endowment effect",
+          "Mental accounting",
+          "The dollar auction"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0020-p2",
+        "kind": "tf",
+        "question": "True or false: the term \"Concorde fallacy\" derives from the British and French governments continuing to fund the joint development of Concorde.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sunk cost (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sunk_cost"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A Concorde supersonic airliner",
+    "keywords": [
+      "Concorde",
+      "supersonic airliner",
+      "British Airways Concorde"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:01:27.321Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sunk_cost",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The sunk cost fallacy has also been called the \"Concorde fallacy\" (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sunk_cost",
+        "quote": "The sunk cost fallacy has also been called the \" Concorde fallacy\""
+      },
+      {
+        "claim": "British and French governments continued to fund the joint development of the costly Concorde supersonic airplane even after it became apparent there was no longer an economic case for it (why, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sunk_cost",
+        "quote": "the British and French governments continued to fund the joint development of the costly Concorde supersonic airplane even after it became apparent that there was no longer an economic case for the aircraft"
+      }
+    ],
+    "overall": "pass"
+  }
+}

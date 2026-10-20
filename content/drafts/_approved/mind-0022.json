@@ -1,0 +1,103 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Rubber hand illusion",
+    "angle": "A hidden hand and a paintbrush"
+  },
+  "created_at": "2026-10-20T19:55:39.219Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0022",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "Whose hand is that?",
+    "body": {
+      "question": "Your real left hand is hidden, and a lifelike rubber left hand sits in view. Both are stroked with a paintbrush. What made people start to feel the rubber hand was their own?",
+      "options": [
+        "Stroking both hands at the same time, in the same direction",
+        "Stroking them in different directions",
+        "Stroking them at different times",
+        "Only stroking the rubber hand"
+      ],
+      "answer": 0,
+      "reveal": "If the two hands were stroked synchronously and in the same direction, subjects began to experience the rubber hand as their own. If they were stroked in different directions or at different times, they did not."
+    },
+    "probes": [
+      {
+        "id": "mind-0022-p1",
+        "kind": "tf",
+        "question": "True or false: when the hands are stroked at different times, people still feel the rubber hand is their own.",
+        "answer": false
+      },
+      {
+        "id": "mind-0022-p2",
+        "kind": "mcq",
+        "question": "Asked to point to their hidden left hand, where did subjects most of the time point?",
+        "options": [
+          "Toward the rubber hand",
+          "Toward their real hand",
+          "Toward their right hand",
+          "Straight ahead"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Body transfer illusion (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Body_transfer_illusion"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A rubber hand and a paintbrush, or a diagram of the rubber hand experiment",
+    "keywords": [
+      "rubber hand illusion",
+      "paintbrush",
+      "body ownership",
+      "body transfer illusion"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:00:06.562Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Body_transfer_illusion",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Question: left hand hidden, lifelike rubber left hand in view, both stroked with a paintbrush",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Body_transfer_illusion",
+        "quote": "The experimenters stroked both the subjects hidden left hand and the visible rubber hand with a paintbrush."
+      },
+      {
+        "claim": "Reveal / answer: stroked synchronously and in the same direction, subjects began to experience the rubber hand as their own",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Body_transfer_illusion",
+        "quote": "if the two hands were stroked synchronously and in the same direction, the subjects began to experience the rubber hand as their own."
+      },
+      {
+        "claim": "Reveal / probe 1 (false): stroked in different directions or at different times, they did not experience the rubber hand as their own",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Body_transfer_illusion",
+        "quote": "If the real and rubber hands were stroked in different directions or at different times, the subjects did not experience the rubber hand as their own."
+      },
+      {
+        "claim": "Probe 2: asked to point to their left hand, most of the time they pointed toward the rubber hand",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Body_transfer_illusion",
+        "quote": "When asked to use their right hand to point to their left hand, most of the time they pointed toward the rubber hand.",
+        "note": "Card omits that pointing used the right hand; not contradicted. Distractor 'only stroking the rubber hand' is not addressed by the page but cannot be the answer given the quoted result."
+      }
+    ],
+    "overall": "pass"
+  }
+}

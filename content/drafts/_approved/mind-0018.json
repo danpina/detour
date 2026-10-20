@@ -1,0 +1,96 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Blind spot (vision)",
+    "angle": "The hole in your vision your brain fills in"
+  },
+  "created_at": "2026-10-20T19:55:39.219Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0018",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "The blind spot you never notice",
+    "body": {
+      "claim": "Part of your visual field is invisible, and you don't normally notice.",
+      "why": "There are no cells to detect light on the optic disc of the retina, where the optic nerve passes through, so the corresponding part of the field of vision is invisible. Via processes in the brain, the blind spot is interpolated based on surrounding detail and information from the other eye, so it is not normally perceived."
+    },
+    "probes": [
+      {
+        "id": "mind-0018-p1",
+        "kind": "mcq",
+        "question": "Why does the physiological blind spot exist?",
+        "options": [
+          "There are no light-detecting cells on the optic disc",
+          "The pupil blocks part of the view",
+          "The lens bends light away from that spot",
+          "The eyelid covers part of the eye"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0018-p2",
+        "kind": "tf",
+        "question": "True or false: the blind spot is normally perceived.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Blind spot (vision) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A diagram or illustration of the human eye showing the optic disc",
+    "keywords": [
+      "human eye anatomy",
+      "retina optic disc",
+      "eye diagram",
+      "Mariotte blind spot"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:00:06.559Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Why / probe 1: no cells to detect light on the optic disc, so the corresponding part of the field of vision is invisible",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)",
+        "quote": "Because there are no cells to detect light on the optic disc, the corresponding part of the field of vision is invisible."
+      },
+      {
+        "claim": "Why: the optic disc is on the retina where the optic nerve passes through",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)",
+        "quote": "lack of light-detecting photoreceptor cells on the optic disc of the retina where the optic nerve passes through the optic disc."
+      },
+      {
+        "claim": "Claim/why/probe 2 (false): the blind spot is interpolated from surrounding detail and the other eye, so it is not normally perceived",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)",
+        "quote": "the blind spot is interpolated based on surrounding detail and information from the other eye , so it is not normally perceived."
+      },
+      {
+        "claim": "Probe 1 distractors (pupil, lens, eyelid) are false",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)",
+        "quote": "Because there are no cells to detect light on the optic disc, the corresponding part of the field of vision is invisible.",
+        "note": "Page gives the optic disc as the cause; pupil, lens and eyelid are not mentioned."
+      }
+    ],
+    "overall": "pass"
+  }
+}

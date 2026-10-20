@@ -1,0 +1,61 @@
+{
+  "id": "tech-0015",
+  "interest": "tech",
+  "title": "The first text message",
+  "probes": [
+    {
+      "id": "tech-0015-p1",
+      "question": "What did the first SMS message say?",
+      "kind": "mcq",
+      "options": [
+        "Merry Christmas",
+        "Hello world",
+        "Happy birthday",
+        "Call me"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0015-p2",
+      "question": "True or false: the first SMS was sent from a personal computer to a phone.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "SMS (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/SMS"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:13.744Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0015.webp",
+    "alt": "Flat illustration of a chunky early mobile phone with an antenna, a speech bubble on its screen and radio waves beside it.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "On 3 December 1992, a test engineer named Neil Papworth sends a message to a colleague's phone."
+      },
+      {
+        "text": "He works for Sema Group. The message goes over the Vodafone GSM network in the United Kingdom, from a personal computer to an Orbitel 901 handset."
+      },
+      {
+        "text": "It reaches Richard Jarvis, who works for Vodafone. The text of the message: \"Merry Christmas.\""
+      },
+      {
+        "text": "It is the first SMS message sent. The first commercial short message service center followed in Sweden in 1993."
+      }
+    ]
+  }
+}

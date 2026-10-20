@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "McGurk effect",
+    "angle": "Seeing changes hearing"
+  },
+  "created_at": "2026-10-20T19:55:39.219Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0017",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Your eyes can change what you hear",
+    "body": {
+      "claim": "What you see a mouth doing can change the sound you hear.",
+      "why": "The McGurk effect is a perceptual phenomenon that demonstrates an interaction between hearing and vision in speech perception. When the syllables /ba-ba/ are spoken over the lip movements of /ga-ga/, the perception is of /da-da/. The effect is very robust: knowledge about it seems to have little effect on one's perception of it."
+    },
+    "probes": [
+      {
+        "id": "mind-0017-p1",
+        "kind": "mcq",
+        "question": "The syllables /ba-ba/ are spoken over the lip movements of /ga-ga/. What do people typically perceive?",
+        "options": [
+          "/da-da/",
+          "/ba-ba/",
+          "/ga-ga/",
+          "/ma-ma/"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0017-p2",
+        "kind": "tf",
+        "question": "True or false: once you know about the McGurk effect, it stops working on you.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "McGurk effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/McGurk_effect"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A close-up of a person's mouth mid-speech, or a face with sound waves",
+    "keywords": [
+      "lip reading",
+      "speaking mouth",
+      "face talking",
+      "lips"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:00:06.559Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/McGurk_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title/claim: what you see a mouth doing can change the sound you hear",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/McGurk_effect",
+        "quote": "The illusion occurs when the auditory component of one sound is paired with the visual component of another sound, leading to the perception of a third sound."
+      },
+      {
+        "claim": "Why: the McGurk effect is a perceptual phenomenon demonstrating an interaction between hearing and vision in speech perception",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/McGurk_effect",
+        "quote": "The McGurk effect is a perceptual phenomenon that demonstrates an interaction between hearing and vision in speech perception."
+      },
+      {
+        "claim": "Why / probe 1: /ba-ba/ spoken over lip movements of /ga-ga/ is perceived as /da-da/",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/McGurk_effect",
+        "quote": "the syllables /ba-ba/ are spoken over the lip movements of /ga-ga/, and the perception is of /da-da/."
+      },
+      {
+        "claim": "Why / probe 2 (false): the effect is very robust, knowing about it has little effect",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/McGurk_effect",
+        "quote": "The McGurk effect is very robust; that is, knowledge about it seems to have little effect on one's perception of it."
+      }
+    ],
+    "overall": "pass"
+  }
+}

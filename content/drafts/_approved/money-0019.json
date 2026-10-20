@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Cowrie shell money",
+    "angle": "The character for money"
+  },
+  "created_at": "2026-10-20T19:56:41.310Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0019",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "A shell inside the word for money",
+    "body": {
+      "claim": "The Classical Chinese character for \"money\" (貝) originated as a stylized drawing of a Maldivian cowrie shell.",
+      "why": "Starting more than 3000 years ago, cowrie shells or their copies were used as Chinese currency. Words and characters concerning money, property, or wealth usually have this as a radical."
+    },
+    "probes": [
+      {
+        "id": "money-0019-p1",
+        "kind": "mcq",
+        "question": "What did the Classical Chinese character for \"money\" originate as a drawing of?",
+        "options": [
+          "A Maldivian cowrie shell",
+          "A bronze bell",
+          "A silk cocoon",
+          "A grain of rice"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0019-p2",
+        "kind": "tf",
+        "question": "True or false: the cedi, Ghana's national currency introduced in 1965, was named after cowrie shells.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cowrie (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cowrie"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Money cowrie shells (Monetaria moneta), close up",
+    "keywords": [
+      "Monetaria moneta",
+      "money cowrie",
+      "cowrie shell currency"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:01:27.320Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cowrie",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The Classical Chinese character for \"money\" originated as a stylized drawing of a Maldivian cowrie shell (title, claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cowrie",
+        "quote": "The Classical Chinese character for \"money\" ( 貝 ) originated as a stylized drawing of a Maldivian cowrie shell."
+      },
+      {
+        "claim": "More than 3000 years ago, cowrie shells or their copies were used as Chinese currency",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cowrie",
+        "quote": "Starting more than 3000 years ago, cowrie shells or their copies were used as Chinese currency"
+      },
+      {
+        "claim": "Words and characters concerning money, property, or wealth usually have this as a radical",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cowrie",
+        "quote": "Words and characters concerning money, property, or wealth usually have this as a radical"
+      },
+      {
+        "claim": "The cedi, Ghana's national currency introduced in 1965, was named after cowrie shells (probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cowrie",
+        "quote": "The national currency of Ghana introduced in 1965, the cedi , was named after cowrie shells."
+      }
+    ],
+    "overall": "pass"
+  }
+}

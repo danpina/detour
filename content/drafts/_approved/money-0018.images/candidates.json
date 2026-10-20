@@ -1,0 +1,92 @@
+{
+  "draft_id": "money-0018",
+  "created_at": "2026-10-20T19:57:55.819Z",
+  "queries": [
+    "coffee mug mug ceramic mug",
+    "coffee mug",
+    "coffee mug mug"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-118350403",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Merchandising Coffee mug from band Dead Can Dance with 'DCD' logo.jpeg",
+      "credit": "Pittigrilli / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Merchandising_Coffee_mug_from_band_Dead_Can_Dance_with_%27DCD%27_logo.jpeg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Merchandising_Coffee_mug_from_band_Dead_Can_Dance_with_%27DCD%27_logo.jpeg/960px-Merchandising_Coffee_mug_from_band_Dead_Can_Dance_with_%27DCD%27_logo.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1585,
+      "height": 1676,
+      "alt_suggestion": "Merchandising Coffee mug from band Dead Can Dance with 'DCD' logo",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-NHQ201901010046",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "New Horizons Ultima Thule Flyby",
+      "credit": "NASA/Bill Ingalls / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/NHQ201901010046",
+      "image_url": "https://images-assets.nasa.gov/image/NHQ201901010046/NHQ201901010046~medium.jpg",
+      "alt_suggestion": "A New Horizons Pluto flyby coffee mug is seen as team members wait for a signal from the spacecraft that it is healthy and collected data during the flyby of Ultima Thule, Tuesday, Jan. 1, 2019 at the",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-81548",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Young Peasant Having Her Coffee",
+      "credit": "Camille Pissarro (French, 1830–1903) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/81548",
+      "image_url": "https://www.artic.edu/iiif/2/335a59a4-3f5b-b9db-b8e8-861467d211ef/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-118375454",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Merchandising Coffee mug from band Dead Can Dance with 'DCD' logo - black.jpg",
+      "credit": "Pittigrilli / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Merchandising_Coffee_mug_from_band_Dead_Can_Dance_with_%27DCD%27_logo_-_black.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Merchandising_Coffee_mug_from_band_Dead_Can_Dance_with_%27DCD%27_logo_-_black.jpg/960px-Merchandising_Coffee_mug_from_band_Dead_Can_Dance_with_%27DCD%27_logo_-_black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1458,
+      "height": 1722,
+      "alt_suggestion": "Merchandising Coffee mug from band Dead Can Dance with 'DCD' logo",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-15079",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Teacup, Coffee Cup, and Saucer",
+      "credit": "Worcester Porcelain Factory (Warmstry House Period, 1751–1783) Worcester, England, founded 1751 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/15079",
+      "image_url": "https://www.artic.edu/iiif/2/53d2920d-a144-a210-6b77-11bdd4af5f7e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of soft-paste porcelain with purple enamel and gilding.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-mug",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: mug",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-mug.png",
+      "alt_suggestion": "Illustration of a plain ceramic mug on a table with soft steam rising"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"coffee mug mug ceramic mug\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"coffee mug\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"coffee mug mug\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

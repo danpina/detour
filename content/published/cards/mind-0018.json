@@ -1,0 +1,50 @@
+{
+  "id": "mind-0018",
+  "interest": "mind",
+  "title": "The blind spot you never notice",
+  "probes": [
+    {
+      "id": "mind-0018-p1",
+      "question": "Why does the physiological blind spot exist?",
+      "kind": "mcq",
+      "options": [
+        "There are no light-detecting cells on the optic disc",
+        "The pupil blocks part of the view",
+        "The lens bends light away from that spot",
+        "The eyelid covers part of the eye"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0018-p2",
+      "question": "True or false: the blind spot is normally perceived.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blind spot (vision) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:03.298Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0018.webp",
+    "alt": "Painted anatomical illustration of a human eyeball seated in its bony socket with the surrounding muscles.",
+    "kind": "photo",
+    "credit": "Patrick J. Lynch, medical illustrator / Wikimedia Commons",
+    "license": "CC BY 2.5",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Eye_orbit_anatomy_anterior2.jpg"
+  },
+  "body": {
+    "claim": "Part of your visual field is invisible, and you don't normally notice.",
+    "why": "There are no cells to detect light on the optic disc of the retina, where the optic nerve passes through, so the corresponding part of the field of vision is invisible. Via processes in the brain, the blind spot is interpolated based on surrounding detail and information from the other eye, so it is not normally perceived."
+  }
+}

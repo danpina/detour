@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-12185109",
+  "alt": "A rectangular board of tiny magnetic cores threaded with green wires between red and yellow beads, a core rope memory module used in Apollo-era guidance computers.",
+  "fits": true,
+  "note": "Core rope tester board from MIT Instrumentation Lab, near-square and crops cleanly to 4:5, no people. Alternatives: 5 is the same board on dark background with lots of empty space; 3 is a different (German Wagner) machine.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

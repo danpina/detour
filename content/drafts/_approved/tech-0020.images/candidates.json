@@ -1,0 +1,100 @@
+{
+  "draft_id": "tech-0020",
+  "created_at": "2026-10-20T19:58:29.483Z",
+  "queries": [
+    "Ray Tomlinson at sign @ ARPANET email",
+    "Ray Tomlinson",
+    "Ray Tomlinson at sign @"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-44682459",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ray Tomlinson (1).jpg",
+      "credit": "Roll-Stone / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ray_Tomlinson_(1).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Ray_Tomlinson_%281%29.jpg/960px-Ray_Tomlinson_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2527,
+      "height": 2187,
+      "alt_suggestion": "Hinweis auf Ray Tomlinson, dem Erfinder der E-Mails in Gibraltar von einem Mobilfunkbetreiber",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-75668",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Month of June/The Sign of Cancer, from The Grotesque Months",
+      "credit": "After a design by Claude III Audran (1658–1734), 1708–09 Woven at the Manufacture Royale des Gobelins France, Paris / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/75668",
+      "image_url": "https://www.artic.edu/iiif/2/5cc8166d-4214-3934-d15e-9a47d8a1e602/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of wool and silk, slit and double interlocking tapestry weave."
+    },
+    {
+      "id": "wikimedia-30057743",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "With Ray Tomlinson.jpg",
+      "credit": "Andreu Veà, WiWiW.org / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:With_Ray_Tomlinson.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/With_Ray_Tomlinson.jpg/960px-With_Ray_Tomlinson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1123,
+      "height": 794,
+      "alt_suggestion": "the email creator.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-68106",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Button with Signs of the Zodiac",
+      "credit": "Wedgwood Manufactory England, founded 1759 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/68106",
+      "image_url": "https://www.artic.edu/iiif/2/588ade53-7a42-df44-4c2b-9cbbe6aec627/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of stoneware (jasperware).",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-19210163",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Internet Hall of Fame inductees 2012.JPG",
+      "credit": "Brewster Kahle / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Internet_Hall_of_Fame_inductees_2012.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Internet_Hall_of_Fame_inductees_2012.JPG/960px-Internet_Hall_of_Fame_inductees_2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4288,
+      "height": 3216,
+      "alt_suggestion": "Internet Hall of Fame inductees 2012 Standing FLTR: Craig Newmark (?), Brewster Kahle, Daniel Karrenberg, Randy Bush, Vint Cerf, Patrice Lyons (for Bob Kahn), Philip Zimmermann, and Tan Tin Wee. Seate",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-atmail",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: atmail",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-atmail.png",
+      "alt_suggestion": "Illustration of a bold at-sign over a simple envelope, with an arrow between two simple computer boxes"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Fighters young Americans want to know; heroes of our country's wars (1918) (14773040461).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Ray Tomlinson at sign @ ARPANET email\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Ray Tomlinson\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Ray Tomlinson at sign @\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

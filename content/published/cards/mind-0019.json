@@ -1,0 +1,61 @@
+{
+  "id": "mind-0019",
+  "interest": "mind",
+  "title": "A memory palace",
+  "probes": [
+    {
+      "id": "mind-0019-p1",
+      "question": "In the method of loci, where do you mentally place the things to remember?",
+      "kind": "mcq",
+      "options": [
+        "At specific locations in a familiar environment",
+        "On a list of rhyming words",
+        "In a grid of numbers",
+        "Along an invented alphabet"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0019-p2",
+      "question": "True or false: the method of loci is also called a memory palace.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Method of loci (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Method_of_loci"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:03.454Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0019.webp",
+    "alt": "Flat illustration of four arched doorways shrinking to the right, each holding a different object: a key, a book, a bird and a lamp.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "The method of loci is traditionally associated with the Greek poet Simonides of Ceos."
+      },
+      {
+        "text": "He is said to have used it to recall the seating arrangement at a banquet hall that collapsed, allowing him to identify the crushed victims by remembering where each person had been seated."
+      },
+      {
+        "text": "The technique mentally associates pieces of information with specific locations in a familiar environment, such as rooms in a house or landmarks along a well-known route."
+      },
+      {
+        "text": "Recall is achieved by mentally retracing the path and using the imagined scenes to retrieve the associated information. It is also called the memory palace."
+      }
+    ]
+  }
+}

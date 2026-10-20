@@ -1,0 +1,62 @@
+{
+  "id": "tech-0016",
+  "interest": "tech",
+  "title": "The ARPANET’s first two characters were \"lo\"",
+  "probes": [
+    {
+      "id": "tech-0016-p1",
+      "question": "Which two characters were the first successfully transmitted over the ARPANET?",
+      "kind": "mcq",
+      "options": [
+        "lo",
+        "hi",
+        "ok",
+        "ab"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0016-p2",
+      "question": "True or false: the second login attempt, about an hour later, worked.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "ARPANET (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/ARPANET"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:15.383Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0016.webp",
+    "alt": "A tall pale grey cabinet with rows of toggle switches and a plate reading Interface Message Processor, the kind of computer that carried the first ARPANET messages.",
+    "kind": "photo",
+    "credit": "Steve Jurvetson from Menlo Park, USA / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:ARPANET_first_router.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "29 October 1969, 10:30 pm. UCLA student programmer Charley Kline connects to a computer at the Stanford Research Institute."
+      },
+      {
+        "text": "He types the command \"login\". But after two characters, the computer at the other end crashes."
+      },
+      {
+        "text": "About an hour later, SRI programmer Bill Duvall adjusts parameters on the machine. Kline tries again and logs in."
+      },
+      {
+        "text": "So the first two characters successfully transmitted over the ARPANET were \"lo\"."
+      }
+    ]
+  }
+}

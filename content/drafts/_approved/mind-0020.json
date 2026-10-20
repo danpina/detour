@@ -1,0 +1,96 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Sleep cycles",
+    "angle": "How long one sleep cycle lasts"
+  },
+  "created_at": "2026-10-20T19:55:39.219Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0020",
+    "interest": "mind",
+    "type": "estimate",
+    "title": "How long is one sleep cycle?",
+    "body": {
+      "question": "On average, how long does one cycle of alternating NREM and REM sleep take?",
+      "unit": "minutes",
+      "min": 30,
+      "max": 180,
+      "scale": "linear",
+      "answer": 90,
+      "reveal": "The sleep cycle of alternate NREM and REM sleep takes an average of 90 minutes, occurring 4–6 times in a good night's sleep."
+    },
+    "probes": [
+      {
+        "id": "mind-0020-p1",
+        "kind": "mcq",
+        "question": "How many times does the NREM and REM cycle occur in a good night's sleep?",
+        "options": [
+          "4–6 times",
+          "1–2 times",
+          "9–10 times",
+          "15–20 times"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0020-p2",
+        "kind": "tf",
+        "question": "True or false: a sleep cycle alternates between NREM and REM sleep.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sleep (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sleep"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A person sleeping peacefully in bed, or a sleep-stage hypnogram",
+    "keywords": [
+      "sleeping person",
+      "sleep",
+      "hypnogram",
+      "bed night"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:00:06.560Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sleep",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title/question/answer: the alternating NREM and REM sleep cycle takes an average of 90 minutes",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sleep",
+        "quote": "The sleep cycle of alternate NREM and REM sleep takes an average of 90 minutes, occurring 4-6 times in a good night's sleep.",
+        "note": "Page uses a hyphen in 4-6; card uses an en dash (same range)."
+      },
+      {
+        "claim": "Reveal / probe 1: the cycle occurs 4-6 times in a good night's sleep (1-2, 9-10, 15-20 contradict this)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sleep",
+        "quote": "The sleep cycle of alternate NREM and REM sleep takes an average of 90 minutes, occurring 4-6 times in a good night's sleep.",
+        "note": "Design note only: the MCQ answer is already stated in the reveal."
+      },
+      {
+        "claim": "Probe 2 (true): a sleep cycle alternates between NREM and REM sleep",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sleep",
+        "quote": "The sleep cycle of alternate NREM and REM sleep takes an average of 90 minutes"
+      }
+    ],
+    "overall": "pass"
+  }
+}

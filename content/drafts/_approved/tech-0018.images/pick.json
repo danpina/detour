@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-7334407",
+  "alt": "A cream-coloured Symbolics Lisp Machine keyboard with many extra labelled keys such as Hyper, Super and Meta.",
+  "fits": true,
+  "note": "Historic hardware of the company in the card; brand is the card subject (not modern branding). Landscape 2:1, so needs a tight crop; fits only loosely, acceptable. Alternative 3 (rear port panel) is less recognisable.",
+  "crop": {
+    "fx": 0.35,
+    "fy": 0.45,
+    "zoom": 1.6
+  }
+}

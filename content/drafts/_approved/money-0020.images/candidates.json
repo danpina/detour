@@ -1,0 +1,95 @@
+{
+  "draft_id": "money-0020",
+  "created_at": "2026-10-20T19:58:05.934Z",
+  "queries": [
+    "Concorde supersonic airliner British Airways Concorde",
+    "Concorde",
+    "Concorde supersonic airliner"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-142874183",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Concord, the supersonic airliner landing in Ben Gurion Airport (FL63499538).jpg",
+      "credit": "IPPA photographer / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Concord,_the_supersonic_airliner_landing_in_Ben_Gurion_Airport_(FL63499538).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/The_Concord%2C_the_supersonic_airliner_landing_in_Ben_Gurion_Airport_%28FL63499538%29.jpg/960px-The_Concord%2C_the_supersonic_airliner_landing_in_Ben_Gurion_Airport_%28FL63499538%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3328,
+      "height": 2064,
+      "alt_suggestion": "The Concord, the supersonic airliner landing in Ben Gurion Airport.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-KSC-20180509-PH_SNB01_0001",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Canadian Snowbirds fly over KSC",
+      "credit": "Canadian Snowbirds / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-20180509-PH_SNB01_0001",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-20180509-PH_SNB01_0001/KSC-20180509-PH_SNB01_0001~medium.jpg",
+      "alt_suggestion": "The Canadian Forces Snowbirds fly in Concorde formation over the Kennedy Space Center Visitor Complex. The Snowbirds, Canada’s air demonstration team, carried out a practice flight over NASA’s Kennedy",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-125560",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Fontaine, place de la Concorde, Paris",
+      "credit": "Édouard Baldus French, born Germany, 1813–1889 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/125560",
+      "image_url": "https://www.artic.edu/iiif/2/69b20f57-b024-8e27-9bde-0f0048c2c2d2/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of salted paper print.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-142874000",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Concord, the supersonic airliner landing in Ben Gurion Airport (FL63499145).jpg",
+      "credit": "IPPA photographer / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Concord,_the_supersonic_airliner_landing_in_Ben_Gurion_Airport_(FL63499145).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Concord%2C_the_supersonic_airliner_landing_in_Ben_Gurion_Airport_%28FL63499145%29.jpg/960px-The_Concord%2C_the_supersonic_airliner_landing_in_Ben_Gurion_Airport_%28FL63499145%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3359,
+      "height": 2056,
+      "alt_suggestion": "The Concord, the supersonic airliner landing in Ben Gurion Airport.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-KSC-20180509-PH_SNB01_0002",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Canadian Snowbirds fly over KSC",
+      "credit": "Canadian Snowbirds / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-20180509-PH_SNB01_0002",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-20180509-PH_SNB01_0002/KSC-20180509-PH_SNB01_0002~medium.jpg",
+      "alt_suggestion": "The Canadian Forces Snowbirds fly in Concorde formation over NASA’s Kennedy Space Center in Florida during their performance practice. The Snowbirds, Canada’s air demonstration team, carried out a pra",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Aerospatiale-BAC Concorde 101, Air France AN0702255.jpg",
+      "license": "GFDL 1.2",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Aerospatiale-BAC Concorde 101, Air France AN0680016.jpg",
+      "license": "GFDL 1.2",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Concorde supersonic airliner British Airways Concorde\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Concorde\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Concorde supersonic airliner\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

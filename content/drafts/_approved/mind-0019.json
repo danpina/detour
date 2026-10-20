@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Method of loci",
+    "angle": "A memory palace and its legendary origin"
+  },
+  "created_at": "2026-10-20T19:55:39.219Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0019",
+    "interest": "mind",
+    "type": "story",
+    "title": "A memory palace",
+    "body": {
+      "panels": [
+        {
+          "text": "The method of loci is traditionally associated with the Greek poet Simonides of Ceos."
+        },
+        {
+          "text": "He is said to have used it to recall the seating arrangement at a banquet hall that collapsed, allowing him to identify the crushed victims by remembering where each person had been seated."
+        },
+        {
+          "text": "The technique mentally associates pieces of information with specific locations in a familiar environment, such as rooms in a house or landmarks along a well-known route."
+        },
+        {
+          "text": "Recall is achieved by mentally retracing the path and using the imagined scenes to retrieve the associated information. It is also called the memory palace."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0019-p1",
+        "kind": "mcq",
+        "question": "In the method of loci, where do you mentally place the things to remember?",
+        "options": [
+          "At specific locations in a familiar environment",
+          "On a list of rhyming words",
+          "In a grid of numbers",
+          "Along an invented alphabet"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0019-p2",
+        "kind": "tf",
+        "question": "True or false: the method of loci is also called a memory palace.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Method of loci (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Method_of_loci"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A grand palace interior or ancient banquet hall suggesting a memory palace",
+    "keywords": [
+      "memory palace",
+      "method of loci",
+      "Simonides of Ceos",
+      "Giordano Bruno memory"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:00:06.560Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Method_of_loci",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Panel 1: traditionally associated with the Greek poet Simonides of Ceos",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Method_of_loci",
+        "quote": "The method of loci is traditionally associated with the Greek poet Simonides of Ceos"
+      },
+      {
+        "claim": "Panel 2: said to have used it to recall the seating at a collapsed banquet hall and identify the crushed victims",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Method_of_loci",
+        "quote": "who is said to have used it to recall the seating arrangement at a banquet hall that collapsed, allowing him to identify the crushed victims by remembering where each person had been seated."
+      },
+      {
+        "claim": "Panel 3 / probe 1: associates information with specific locations in a familiar environment such as rooms in a house or landmarks along a well-known route",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Method_of_loci",
+        "quote": "It involves mentally associating pieces of information with specific locations in a familiar environment, such as rooms in a house or landmarks along a well-known route."
+      },
+      {
+        "claim": "Panel 4: recall by mentally retracing the path and using the imagined scenes",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Method_of_loci",
+        "quote": "Recall is achieved by mentally retracing the path and using the imagined scenes to retrieve the associated information."
+      },
+      {
+        "claim": "Panel 4 / probe 2 (true): also called the memory palace",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Method_of_loci",
+        "quote": "This method is also referred as the memory palace"
+      }
+    ],
+    "overall": "pass"
+  }
+}

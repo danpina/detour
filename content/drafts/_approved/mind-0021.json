@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Pareidolia",
+    "angle": "Seeing faces that are not there"
+  },
+  "created_at": "2026-10-20T19:55:39.219Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0021",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Faces in the clouds",
+    "body": {
+      "claim": "Your brain can find a face where there isn't one.",
+      "why": "Pareidolia is the tendency for perception to impose a meaningful interpretation on a nebulous stimulus, usually visual, so that one detects an object, pattern, or meaning where there is none. Common examples include seeing faces in inanimate objects and the Man in the Moon. Face pareidolia has also been demonstrated in rhesus macaques."
+    },
+    "probes": [
+      {
+        "id": "mind-0021-p1",
+        "kind": "mcq",
+        "question": "What is the tendency to see faces in clouds or objects called?",
+        "options": [
+          "Pareidolia",
+          "Synesthesia",
+          "Habituation",
+          "Priming"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0021-p2",
+        "kind": "tf",
+        "question": "True or false: face pareidolia has also been demonstrated in rhesus macaques.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Pareidolia (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pareidolia"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Man in the Moon, or a cloud or object that looks like a face",
+    "keywords": [
+      "pareidolia",
+      "Man in the Moon",
+      "face in cloud",
+      "face in object"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:00:06.561Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pareidolia",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Claim/why/probe 1: pareidolia is the tendency for perception to impose a meaningful interpretation on a nebulous stimulus, usually visual, so that one detects an object, pattern, or meaning where there is none",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pareidolia",
+        "quote": "is the tendency for perception to impose a meaningful interpretation on a nebulous stimulus , usually visual, so that one detects an object, pattern, or meaning where there is none."
+      },
+      {
+        "claim": "Why: common examples include seeing faces in inanimate objects and the Man in the Moon",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pareidolia",
+        "quote": "Common examples include perceived images of animals, faces, or objects in cloud formations; seeing faces in inanimate objects; or lunar pareidolia like the Man in the Moon or the Moon rabbit."
+      },
+      {
+        "claim": "Title (faces in the clouds)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pareidolia",
+        "quote": "Common examples include perceived images of animals, faces, or objects in cloud formations"
+      },
+      {
+        "claim": "Why / probe 2 (true): face pareidolia has also been demonstrated in rhesus macaques",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pareidolia",
+        "quote": "Face pareidolia has also been demonstrated in rhesus macaques"
+      }
+    ],
+    "overall": "pass"
+  }
+}

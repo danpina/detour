@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0016",
+  "created_at": "2026-10-20T19:58:15.412Z",
+  "queries": [
+    "ARPANET Interface Message Processor IMP UCLA 1969",
+    "ARPANET",
+    "ARPANET Interface Message Processor"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-24727049",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The IMP Log The Very First Message Sent on the Internet (6293913865).jpg",
+      "credit": "Andrew \"FastLizard4\" Adams from United States / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_IMP_Log_The_Very_First_Message_Sent_on_the_Internet_(6293913865).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/The_IMP_Log_The_Very_First_Message_Sent_on_the_Internet_%286293913865%29.jpg/960px-The_IMP_Log_The_Very_First_Message_Sent_on_the_Internet_%286293913865%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3872,
+      "height": 2592,
+      "alt_suggestion": "Today, 29 October 2011, is the 42nd birthday of the Internet. This page from the IMP (Interface Message Processor) log from 29 October 1969 records the date and time of the very first message ever sen",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-86249",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Portrait of Mary Message, née Bond",
+      "credit": "Richard Crosse (English, 1742–1810) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/86249",
+      "image_url": "https://www.artic.edu/iiif/2/0d51825b-1932-2e83-c54a-e0c628ea81e1/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of watercolor on ivory.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-22504403",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "ARPANET first router.jpg",
+      "credit": "Steve Jurvetson from Menlo Park, USA / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ARPANET_first_router.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/ARPANET_first_router.jpg/960px-ARPANET_first_router.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3542,
+      "height": 5400,
+      "alt_suggestion": "For the APRANET in 1969, the BBN Interface Message Processor (IMP) did the packet routing. (It's another cool artifact of history in the back room, awaiting installation in the new Computer History Mu",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-46957",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Young Man Bringing a Message to the Queen",
+      "credit": "Henry Stacy Marks English, 1829-1898 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/46957",
+      "image_url": "https://www.artic.edu/iiif/2/a9a0f281-0efe-4a93-7d54-90992e0df363/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of pen and black ink over graphite on cream wove paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-74997504",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Magnetic tapes of the SDS Sigma 7 mainframe computer - UCLA Boelter 3420 laboratory - 2011.jpg",
+      "credit": "Andrew \"FastLizard4\" Adams / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Magnetic_tapes_of_the_SDS_Sigma_7_mainframe_computer_-_UCLA_Boelter_3420_laboratory_-_2011.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Magnetic_tapes_of_the_SDS_Sigma_7_mainframe_computer_-_UCLA_Boelter_3420_laboratory_-_2011.jpg/960px-Magnetic_tapes_of_the_SDS_Sigma_7_mainframe_computer_-_UCLA_Boelter_3420_laboratory_-_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3872,
+      "height": 2592,
+      "alt_suggestion": "These are tapes for the SDS Sigma 7 computer used by the UCLA Boelter 3420 lab, the birthplace of the Internet. The Sigma-7 used the Interface Message Processor to transmit messages (we call them \"pac",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"ARPANET Interface Message Processor IMP UCLA 1969\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ARPANET\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ARPANET Interface Message Processor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "money-0017",
+  "interest": "money",
+  "title": "The dollar only the auctioneer profits from",
+  "probes": [
+    {
+      "id": "money-0017-p1",
+      "question": "True or false: in the dollar auction, the second-highest bidder also loses the amount they bid.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "money-0017-p2",
+      "question": "In the dollar auction, what is the minimum bid for winning the dollar?",
+      "kind": "mcq",
+      "options": [
+        "5 cents",
+        "25 cents",
+        "50 cents",
+        "95 cents"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dollar auction (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dollar_auction"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:11.108Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0017.webp",
+    "alt": "A 19th-century print of an auctioneer raising his hammer above a crowd of bidders in top hats",
+    "kind": "artwork",
+    "credit": "Charles Maurand (French, 1824-1904) after Honoré Victorin Daumier (French, 1808-1879) printed by François Louis Schmied (Swiss, 1873-1941) published by Jules Meynial (French, 20th century) / Art Institute of Chicago",
+    "license": "CC0",
+    "source_url": "https://www.artic.edu/artworks/30449"
+  },
+  "body": {
+    "question": "An auctioneer sells a dollar bill. The bill goes to the winner, but the second-highest bidder also loses the amount they bid. Once the highest bid reaches one dollar, who profits in the end?",
+    "options": [
+      "The winner",
+      "The second-highest bidder",
+      "Only the auctioneer"
+    ],
+    "answer": 2,
+    "reveal": "Only the auctioneer. The winner can get a dollar for a mere 5 cents (the minimum bid), but only if no one else enters into the bidding war. Economist Martin Shubik explored the dollar auction to illustrate how a short-sighted approach to rational choice can lead to decisions that are, in the long-run, irrational."
+  }
+}

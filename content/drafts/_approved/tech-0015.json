@@ -1,0 +1,128 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "First SMS",
+    "angle": "Merry Christmas, 1992"
+  },
+  "created_at": "2026-10-20T19:56:08.773Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0015",
+    "interest": "tech",
+    "type": "story",
+    "title": "The first text message",
+    "body": {
+      "panels": [
+        {
+          "text": "On 3 December 1992, a test engineer named Neil Papworth sends a message to a colleague's phone."
+        },
+        {
+          "text": "He works for Sema Group. The message goes over the Vodafone GSM network in the United Kingdom, from a personal computer to an Orbitel 901 handset."
+        },
+        {
+          "text": "It reaches Richard Jarvis, who works for Vodafone. The text of the message: \"Merry Christmas.\""
+        },
+        {
+          "text": "It is the first SMS message sent. The first commercial short message service center followed in Sweden in 1993."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0015-p1",
+        "kind": "mcq",
+        "question": "What did the first SMS message say?",
+        "options": [
+          "Merry Christmas",
+          "Hello world",
+          "Happy birthday",
+          "Call me"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0015-p2",
+        "kind": "tf",
+        "question": "True or false: the first SMS was sent from a personal computer to a phone.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "SMS (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/SMS"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An Orbitel 901 handset or an early GSM mobile phone",
+    "keywords": [
+      "Orbitel 901",
+      "early GSM mobile phone",
+      "SMS text message",
+      "Nokia 1011"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T19:59:13.404Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/SMS",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title and panel 1: On 3 December 1992 test engineer Neil Papworth sent a message to a colleague (Richard Jarvis)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/SMS",
+        "quote": "The first SMS message was sent on 3 December 1992, when Neil Papworth , a test engineer for Sema Group , sent",
+        "note": "Page text reads \"to the Orbitel 901 phone of colleague Richard Jarvis\"."
+      },
+      {
+        "claim": "Panel 2: He works for Sema Group; sent over the Vodafone GSM network in the UK from a personal computer to an Orbitel 901 handset",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/SMS",
+        "quote": "from Neil Papworth of Sema Group (now Mavenir Systems ) using a personal computer to Richard Jarvis of Vodafone using an Orbitel 901 handset",
+        "note": "Page: sent over the Vodafone GSM network in the United Kingdom. Card says \"works for\"; page says \"of Sema Group\" and \"test engineer for Sema Group\" - acceptable."
+      },
+      {
+        "claim": "Panel 3: it reaches Richard Jarvis, who works for Vodafone; message text \"Merry Christmas.\"",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/SMS",
+        "quote": "to Richard Jarvis of Vodafone using an Orbitel 901 handset. The text of the message was \"Merry Christmas.\"",
+        "note": "\"works for\" paraphrases \"of Vodafone\"; if a reviewer objects, use \"of Vodafone\"."
+      },
+      {
+        "claim": "Panel 4: it is the first SMS message sent",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/SMS",
+        "quote": "The first SMS message was sent on 3 December 1992"
+      },
+      {
+        "claim": "Panel 4: the first commercial short message service center followed in Sweden in 1993",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/SMS",
+        "quote": "The first commercial deployment of a short message service center (SMSC) was by Aldiscon part of Logica (now part of CGI ) with Telia (now TeliaSonera ) in Sweden in 1993"
+      },
+      {
+        "claim": "Probe 1: the first SMS said \"Merry Christmas\"",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/SMS",
+        "quote": "The text of the message was \"Merry Christmas.\""
+      },
+      {
+        "claim": "Probe 2: the first SMS was sent from a personal computer to a phone",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/SMS",
+        "quote": "using a personal computer to Richard Jarvis of Vodafone using an Orbitel 901 handset"
+      }
+    ],
+    "overall": "pass"
+  }
+}

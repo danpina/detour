@@ -1,0 +1,70 @@
+{
+  "draft_id": "tech-0014",
+  "created_at": "2026-10-20T19:58:10.829Z",
+  "queries": [
+    "IBM 305 RAMAC IBM 350 disk storage RAMAC disk stack",
+    "IBM 305 RAMAC",
+    "IBM 305 RAMAC IBM 350 disk storage"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-124744659",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "IBM 305 RAMAC system (1).jpg",
+      "credit": "Norsk Teknisk Museum / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:IBM_305_RAMAC_system_(1).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/IBM_305_RAMAC_system_%281%29.jpg/960px-IBM_305_RAMAC_system_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 857,
+      "alt_suggestion": "IBM 305 RAMAC system: IBM 305 main system (Processing unit, magnetic process drum, magnetic core register, electronic logical and arithmetic circuits) IBM 370 printer IBM 380 console",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-124744711",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "IBM 305 RAMAC system (2).jpg",
+      "credit": "Norsk Teknisk Museum / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:IBM_305_RAMAC_system_(2).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/IBM_305_RAMAC_system_%282%29.jpg/960px-IBM_305_RAMAC_system_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 932,
+      "alt_suggestion": "IBM 305 main system (Processing unit, magnetic process drum, magnetic core register, electronic logical and arithmetic circuits) IBM 370 printer and IBM 323 card punch IBM 380 console",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-17386646",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Control Panel for IBM 305 RAMAC side.tm.jpg",
+      "credit": "tomislav medak / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Control_Panel_for_IBM_305_RAMAC_side.tm.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Control_Panel_for_IBM_305_RAMAC_side.tm.jpg/960px-Control_Panel_for_IBM_305_RAMAC_side.tm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2560,
+      "height": 1920,
+      "alt_suggestion": "Control panel for an w:IBM 305 RAMAC, side view",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "generated-disks",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: disks",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-disks.png",
+      "alt_suggestion": "Illustration of a stack of large flat round disks on a spindle with a thin arm reaching between two of them"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"IBM 305 RAMAC IBM 350 disk storage RAMAC disk stack\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"IBM 305 RAMAC\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"IBM 305 RAMAC IBM 350 disk storage\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

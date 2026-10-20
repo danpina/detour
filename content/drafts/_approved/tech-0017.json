@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Core rope memory",
+    "angle": "Apollo software woven by hand"
+  },
+  "created_at": "2026-10-20T19:56:08.774Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0017",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "Software woven into wire",
+    "body": {
+      "claim": "The software for the Apollo Guidance Computer was woven into core rope memory by female workers in factories.",
+      "why": "In core rope memory, sense wires encode data by either going through a core or bypassing it. In the Apollo Guidance Computer, each core had 192 sense wires passing through it, which could store twelve 16-bit words per core. Some programmers nicknamed the finished product LOL memory, for Little Old Lady memory."
+    },
+    "probes": [
+      {
+        "id": "tech-0017-p1",
+        "kind": "mcq",
+        "question": "In core rope memory, how are bits of data encoded?",
+        "options": [
+          "A sense wire goes through a core or bypasses it",
+          "A hole is punched in a card",
+          "A switch is flipped on a chip",
+          "A spot on a disk is magnetized"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0017-p2",
+        "kind": "mcq",
+        "question": "What did the nickname \"LOL memory\" stand for?",
+        "options": [
+          "Little Old Lady memory",
+          "Lots Of Logic memory",
+          "Low Output Level memory",
+          "Long Loop memory"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Core rope memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Core_rope_memory"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Apollo Guidance Computer core rope memory module, or its woven wires",
+    "keywords": [
+      "core rope memory",
+      "Apollo Guidance Computer rope module",
+      "Raytheon rope memory",
+      "core rope museum"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T19:59:13.404Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Core_rope_memory",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Claim and title: the Apollo Guidance Computer software was woven into core rope memory by female workers in factories",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Core_rope_memory",
+        "quote": "was woven into core rope memory by female workers in factories"
+      },
+      {
+        "claim": "Why: sense wires encode data by going through a core or bypassing it (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Core_rope_memory",
+        "quote": "The sense wires are used to encode the data by either going through a core or bypassing it."
+      },
+      {
+        "claim": "Why: each AGC core had 192 sense wires passing through it, storing twelve 16-bit words per core",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Core_rope_memory",
+        "quote": "each core had 192 sense wires passing through it, which could store twelve 16-bit words per core"
+      },
+      {
+        "claim": "Why and probe 2: some programmers nicknamed the finished product LOL memory, for Little Old Lady memory",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Core_rope_memory",
+        "quote": "Some programmers nicknamed the finished product LOL memory , for Little Old Lady memory."
+      }
+    ],
+    "overall": "pass"
+  }
+}

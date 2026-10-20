@@ -1,0 +1,29 @@
+{
+  "draft_id": "tech-0015",
+  "created_at": "2026-10-20T19:58:13.518Z",
+  "queries": [
+    "Orbitel 901 early GSM mobile phone SMS text message",
+    "Orbitel 901",
+    "Orbitel 901 early GSM mobile phone"
+  ],
+  "candidates": [
+    {
+      "id": "generated-phone",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: phone",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-phone.png",
+      "alt_suggestion": "Illustration of a chunky old mobile phone with a speech bubble on its screen and a radio-wave arc sending a second bubble away"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Orbitel 901 early GSM mobile phone SMS text message\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Orbitel 901\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Orbitel 901 early GSM mobile phone\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "Image generation not configured (IMAGE_GEN_PROVIDER / IMAGE_GEN_API_KEY / IMAGE_GEN_MODEL); skipped."
+  ]
+}

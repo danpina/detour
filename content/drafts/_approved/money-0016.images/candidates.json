@@ -1,0 +1,60 @@
+{
+  "draft_id": "money-0016",
+  "created_at": "2026-10-20T19:57:48.521Z",
+  "queries": [
+    "Zimbabwe 100 trillion dollar note Zimbabwe banknote hyperinflation",
+    "Zimbabwe 100 trillion dollar note",
+    "Zimbabwe 100 trillion dollar note Zimbabwe banknote"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-110132634",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Zimbabwe dollar notes 1 to 100 trillion 2007 08 Front.jpg",
+      "credit": "TCCOVGLAM / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zimbabwe_dollar_notes_1_to_100_trillion_2007_08_Front.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Zimbabwe_dollar_notes_1_to_100_trillion_2007_08_Front.jpg/960px-Zimbabwe_dollar_notes_1_to_100_trillion_2007_08_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1638,
+      "height": 2957,
+      "alt_suggestion": "Selection of 16 original un-circulated Zimbabwe notes ranging in denomination from 1 dollar to 100 trillion dollars. They are all signed by Dr G Gono, the Governor of the Reserve Bank of Zimbabwe, in ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-110132635",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Zimbabwe dollars 1 to 100 trillion 2007 08 Reverse.jpg",
+      "credit": "TCCOVGLAM / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zimbabwe_dollars_1_to_100_trillion_2007_08_Reverse.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Zimbabwe_dollars_1_to_100_trillion_2007_08_Reverse.jpg/960px-Zimbabwe_dollars_1_to_100_trillion_2007_08_Reverse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1708,
+      "height": 3264,
+      "alt_suggestion": "Selection of 16 original un-circulated Zimbabwe notes ranging in denomination from 1 dollar to 100 trillion dollars. They are all signed by Dr G Gono, the Governor of the Reserve Bank of Zimbabwe, in ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-15515090",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Zimbabwe $100 trillion 2009 Obverse.jpg",
+      "credit": "Reserve Bank of Zimbabwe / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zimbabwe_$100_trillion_2009_Obverse.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Zimbabwe_%24100_trillion_2009_Obverse.jpg/960px-Zimbabwe_%24100_trillion_2009_Obverse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1764,
+      "height": 875,
+      "alt_suggestion": "The obverse of the 2009 Zimbabwe $100 trillion banknote.",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Zimbabwe 100 trillion dollar note Zimbabwe banknote hyperinflation\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Zimbabwe 100 trillion dollar note\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Zimbabwe 100 trillion dollar note Zimbabwe banknote\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

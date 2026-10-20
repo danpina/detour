@@ -1,0 +1,120 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Jiaozi",
+    "angle": "Paper money from Song-dynasty Sichuan"
+  },
+  "created_at": "2026-10-20T19:56:41.310Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0014",
+    "interest": "money",
+    "type": "story",
+    "title": "Paper promises in Sichuan",
+    "body": {
+      "panels": [
+        {
+          "text": "Jiaozi was a form of promissory note which appeared around the 11th century in the Sichuan capital of Chengdu, China."
+        },
+        {
+          "text": "It was first used in present-day Sichuan by a private merchant enterprise. The notes were issued to replace the heavy coins that circulated at the time."
+        },
+        {
+          "text": "To combat counterfeiting, jiaozi were stamped with multiple banknote seals. Early notes did not have standard denominations."
+        },
+        {
+          "text": "Numismatists regard jiaozi as the first paper money in history, a development of the Chinese Song Dynasty (960-1279 CE)."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0014-p1",
+        "kind": "mcq",
+        "question": "Early jiaozi notes were issued to replace what?",
+        "options": [
+          "Heavy coins",
+          "Silk bolts",
+          "Cowrie shells",
+          "Grain"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0014-p2",
+        "kind": "tf",
+        "question": "True or false: early jiaozi notes came in standard denominations.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Jiaozi (currency) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Jiaozi_(currency)"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A Song dynasty paper note or woodblock banknote plate",
+    "keywords": [
+      "jiaozi",
+      "Song dynasty banknote",
+      "Chinese paper money",
+      "Northern Song"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:01:27.318Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jiaozi_(currency)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Jiaozi was a form of promissory note which appeared around the 11th century in Chengdu, the Sichuan capital, China",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jiaozi_(currency)",
+        "quote": "was a form of promissory note which appeared around the 11th century in the Sichuan capital of Chengdu"
+      },
+      {
+        "claim": "It was first used in present-day Sichuan by a private merchant enterprise",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jiaozi_(currency)",
+        "quote": "The Jiaozi was first used in present-day Sichuan by a private merchant enterprise."
+      },
+      {
+        "claim": "The notes were issued to replace the heavy coins that circulated at the time (probe 1: heavy coins)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jiaozi_(currency)",
+        "quote": "They were issued to replace the heavy coins"
+      },
+      {
+        "claim": "To combat counterfeiting, jiaozi were stamped with multiple banknote seals",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jiaozi_(currency)",
+        "quote": "To combat counterfeiting, jiaozi were stamped with multiple banknote seals"
+      },
+      {
+        "claim": "Early notes did not have standard denominations (probe 2: false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jiaozi_(currency)",
+        "quote": "Early Jiaozi notes did not have standard denominations"
+      },
+      {
+        "claim": "Numismatists regard jiaozi as the first paper money in history, a development of the Song Dynasty (960-1279 CE)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jiaozi_(currency)",
+        "quote": "Numismatists regard it as the first paper money in history, a development of the Chinese Song Dynasty (960-1279 CE).",
+        "note": "Attributed to numismatists on both page and card."
+      }
+    ],
+    "overall": "pass"
+  }
+}

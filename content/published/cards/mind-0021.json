@@ -1,0 +1,50 @@
+{
+  "id": "mind-0021",
+  "interest": "mind",
+  "title": "Faces in the clouds",
+  "probes": [
+    {
+      "id": "mind-0021-p1",
+      "question": "What is the tendency to see faces in clouds or objects called?",
+      "kind": "mcq",
+      "options": [
+        "Pareidolia",
+        "Synesthesia",
+        "Habituation",
+        "Priming"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0021-p2",
+      "question": "True or false: face pareidolia has also been demonstrated in rhesus macaques.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pareidolia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pareidolia"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:04.537Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0021.webp",
+    "alt": "A yellow plastic jerrycan seen from below whose handle, holes and spout look like a surprised face, among blue and white cans.",
+    "kind": "photo",
+    "credit": "TeWeBs / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Camara_de_Lobos_Pareidolia_3.JPG"
+  },
+  "body": {
+    "claim": "Your brain can find a face where there isn't one.",
+    "why": "Pareidolia is the tendency for perception to impose a meaningful interpretation on a nebulous stimulus, usually visual, so that one detects an object, pattern, or meaning where there is none. Common examples include seeing faces in inanimate objects and the Man in the Moon. Face pareidolia has also been demonstrated in rhesus macaques."
+  }
+}

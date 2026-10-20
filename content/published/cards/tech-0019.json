@@ -1,0 +1,62 @@
+{
+  "id": "tech-0019",
+  "interest": "tech",
+  "title": "A portrait woven from 24,000 cards",
+  "probes": [
+    {
+      "id": "tech-0019-p1",
+      "question": "How many punched cards did the woven silk portrait of Jacquard require?",
+      "kind": "mcq",
+      "options": [
+        "24,000",
+        "240",
+        "2,400",
+        "240,000"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0019-p2",
+      "question": "True or false: one complete card corresponded to one row of the design.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jacquard machine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jacquard_machine"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:22.025Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0019.webp",
+    "alt": "A wooden Jacquard loom with a long chain of hole-punched pasteboard cards hanging down the middle.",
+    "kind": "photo",
+    "credit": "Ad Meskens / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:NMS_Jacquard_loom_2.JPG"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "A Jacquard machine is controlled by a \"chain of cards\": punched cards laced together into a continuous sequence. Joseph Marie Jacquard patented it in 1804."
+      },
+      {
+        "text": "Multiple rows of holes are punched on each card, and one complete card corresponds to one row of the design."
+      },
+      {
+        "text": "A portrait of Jacquard, woven in silk on a Jacquard loom, required 24,000 punched cards."
+      },
+      {
+        "text": "Charles Babbage owned one of these portraits. It inspired him in using perforated cards in his Analytical Engine."
+      }
+    ]
+  }
+}

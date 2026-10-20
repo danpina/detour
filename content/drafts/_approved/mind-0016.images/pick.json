@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-9005792",
+  "alt": "Black-and-white 1907 photograph of the horse Clever Hans standing in a brick courtyard while a group of men in hats look on.",
+  "fits": true,
+  "note": "Real historical photo of Hans' examination; public domain. Landscape, so crop on the horse.",
+  "crop": {
+    "fx": 0.6,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

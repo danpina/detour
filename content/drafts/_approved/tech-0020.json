@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Ray Tomlinson and email",
+    "angle": "The @ sign in 1971"
+  },
+  "created_at": "2026-10-20T19:56:08.775Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0020",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "Why email addresses have an @",
+    "body": {
+      "claim": "In 1971, Ray Tomlinson created an email program on the ARPANET. It was the first system able to send mail between users on different hosts.",
+      "why": "Previously, mail could be sent only to others who used the same computer. He used the @ sign to separate the username from the name of their machine. The symbol was chosen because it was not used in usernames or in TENEX programming, and it intuitively conveyed the intended meaning."
+    },
+    "probes": [
+      {
+        "id": "tech-0020-p1",
+        "kind": "mcq",
+        "question": "What does the @ sign separate in an email address?",
+        "options": [
+          "The username from the name of the machine",
+          "The subject from the message",
+          "The sender from the date",
+          "The first name from the last name"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0020-p2",
+        "kind": "tf",
+        "question": "True or false: before Tomlinson's program, mail could be sent only to others who used the same computer.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ray Tomlinson (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Ray_Tomlinson"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An @ sign, or a portrait of Ray Tomlinson",
+    "keywords": [
+      "Ray Tomlinson",
+      "at sign @",
+      "ARPANET email",
+      "TENEX PDP-10"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T19:59:13.404Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ray_Tomlinson",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Claim: in 1971 Ray Tomlinson created an email program on the ARPANET",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ray_Tomlinson",
+        "quote": "invented the first email program on the ARPANET system, the precursor to the Internet, in 1971"
+      },
+      {
+        "claim": "Claim: it was the first system able to send mail between users on different hosts",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ray_Tomlinson",
+        "quote": "it was the first system able to send mail between users on different hosts connected to ARPANET."
+      },
+      {
+        "claim": "Why and probe 2: previously mail could be sent only to others who used the same computer",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ray_Tomlinson",
+        "quote": "Previously, mail could be sent only to others who used the same computer."
+      },
+      {
+        "claim": "Why and probe 1: he used the @ sign to separate the username from the name of their machine",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ray_Tomlinson",
+        "quote": "he used the @ sign to separate the username from the name of their machine"
+      },
+      {
+        "claim": "Why: the symbol was chosen because it was not used in usernames or in TENEX programming, and it intuitively conveyed the intended meaning",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ray_Tomlinson",
+        "quote": "The symbol was chosen because it was not used in usernames or in TENEX programming, and it intuitively conveyed the intended meaning."
+      },
+      {
+        "claim": "Title: Why email addresses have an @",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ray_Tomlinson",
+        "quote": "he used the @ sign to separate the username from the name of their machine, a scheme which has been used in email addresses ever since"
+      }
+    ],
+    "overall": "pass"
+  }
+}

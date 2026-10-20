@@ -1,0 +1,56 @@
+{
+  "id": "tech-0017",
+  "interest": "tech",
+  "title": "Software woven into wire",
+  "probes": [
+    {
+      "id": "tech-0017-p1",
+      "question": "In core rope memory, how are bits of data encoded?",
+      "kind": "mcq",
+      "options": [
+        "A sense wire goes through a core or bypasses it",
+        "A hole is punched in a card",
+        "A switch is flipped on a chip",
+        "A spot on a disk is magnetized"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0017-p2",
+      "question": "What did the nickname \"LOL memory\" stand for?",
+      "kind": "mcq",
+      "options": [
+        "Little Old Lady memory",
+        "Lots Of Logic memory",
+        "Low Output Level memory",
+        "Long Loop memory"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Core rope memory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Core_rope_memory"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:18.528Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0017.webp",
+    "alt": "A rectangular board of tiny magnetic cores threaded with green wires between red and yellow beads, a core rope memory module used in Apollo-era guidance computers.",
+    "kind": "photo",
+    "credit": "Nova13 / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Apollo_guidiance_computer_ferrit_core_memory.jpg"
+  },
+  "body": {
+    "claim": "The software for the Apollo Guidance Computer was woven into core rope memory by female workers in factories.",
+    "why": "In core rope memory, sense wires encode data by either going through a core or bypassing it. In the Apollo Guidance Computer, each core had 192 sense wires passing through it, which could store twelve 16-bit words per core. Some programmers nicknamed the finished product LOL memory, for Little Old Lady memory."
+  }
+}

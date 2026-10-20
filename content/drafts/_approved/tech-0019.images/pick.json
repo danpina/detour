@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-15857055",
+  "alt": "A wooden Jacquard loom with a long chain of hole-punched pasteboard cards hanging down the middle.",
+  "fits": true,
+  "note": "Portrait photo, punched card chain centred, directly illustrates the subject. Minor blurred passers-by at the edge are not identifiable and are cropped away.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1.15
+  }
+}

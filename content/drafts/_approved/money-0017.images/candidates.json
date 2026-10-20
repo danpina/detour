@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0017",
+  "created_at": "2026-10-20T19:57:52.634Z",
+  "queries": [
+    "dollar bill auction paddle auction",
+    "dollar bill",
+    "dollar bill auction paddle"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-4933115",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Confederate 100 Dollars.jpg",
+      "credit": "Confederate States of America. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Confederate_100_Dollars.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Confederate_100_Dollars.jpg/960px-Confederate_100_Dollars.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4476,
+      "height": 1908,
+      "alt_suggestion": "A One Hundred Dollar Confederate States of America banknote dated December 22, 1862. Issued during the American Civil War (1861–1865). Slave hoeing cotton in the center with John C. Calhoun on the lef",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-30455",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Auction House: The Auctioneer",
+      "credit": "Charles Maurand (French, 1824-1904) after Honoré Victorin Daumier (French, 1808-1879) printed by François Louis Schmied (Swiss, 1873-1941) published by Jules Meynial (French, 20th century) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/30455",
+      "image_url": "https://www.artic.edu/iiif/2/e4d0baec-c698-54f8-7ea3-d4306b420ff6/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of wood engraving on cream japanese paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-57524934",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Half A Dollar Bill lobby card.jpg",
+      "credit": "Metro Pictures / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Half_A_Dollar_Bill_lobby_card.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Half_A_Dollar_Bill_lobby_card.jpg/960px-Half_A_Dollar_Bill_lobby_card.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1233,
+      "height": 971,
+      "alt_suggestion": "Lobby card for the American drama film Half-A-Dollar-Bill (1924). There are no copyright marks on the item. At bottom left is Wyanoak NYC-they printed the card. At bottom right is Country of origin US",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-30449",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Auction House: The Auctioneer",
+      "credit": "Charles Maurand (French, 1824-1904) after Honoré Victorin Daumier (French, 1808-1879) printed by François Louis Schmied (Swiss, 1873-1941) published by Jules Meynial (French, 20th century) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/30449",
+      "image_url": "https://www.artic.edu/iiif/2/21d3e440-05e5-57f8-bcc6-3e098d2b71e7/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of wood engraving on cream japanese paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-94910868",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Half-a-Dollar Bill (1924) - 1.jpg",
+      "credit": "Graf Productions / Metro Pictures / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Half-a-Dollar_Bill_(1924)_-_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Half-a-Dollar_Bill_%281924%29_-_1.jpg/960px-Half-a-Dollar_Bill_%281924%29_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1283,
+      "height": 835,
+      "alt_suggestion": "Advertisement for the American drama film Half-A-Dollar-Bill (1924), from the insert before page 5 of the February 17, 1924 Film Daily.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"dollar bill auction paddle auction\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"dollar bill\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"dollar bill auction paddle\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

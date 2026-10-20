@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0018",
+  "created_at": "2026-10-20T19:57:13.061Z",
+  "queries": [
+    "human eye anatomy retina optic disc eye diagram",
+    "human eye anatomy",
+    "human eye anatomy retina optic disc"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-1485875",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Eye orbit anatomy anterior2.jpg",
+      "credit": "Patrick J. Lynch, medical illustrator / Wikimedia Commons",
+      "license": "CC BY 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eye_orbit_anatomy_anterior2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Eye_orbit_anatomy_anterior2.jpg/960px-Eye_orbit_anatomy_anterior2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2934,
+      "height": 1924,
+      "alt_suggestion": "Normal anatomy of the human eye and orbit, anterior view.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-151086",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Standing Bodhisattva with Human-Figure Necklace",
+      "credit": "Pakistan Ancient region of Gandhara / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/151086",
+      "image_url": "https://www.artic.edu/iiif/2/483decb0-fc13-df85-6c68-1d57b6246fc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of phyllite.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-97174528",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Human eye anatomy.jpg",
+      "credit": "Hatuso1992 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human_eye_anatomy.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Human_eye_anatomy.jpg/960px-Human_eye_anatomy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4320,
+      "height": 4800,
+      "alt_suggestion": "Anatomy of the human eye. This photo shows a man's right eye with brown eye color and its components are labeled for training. Below is a photo of the view inside the eye and its components are labele",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-3070",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Elector Frederick III of Saxony, from Speculum intellectuale felicitatis humane",
+      "credit": "Wolf Traut (German, c.1486-1520) after Lucas Cranach the Elder (German, 1472-1553) published by Hieronymus Höltzel (German, active c. 1502-1525) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/3070",
+      "image_url": "https://www.artic.edu/iiif/2/45944c93-e51d-dd15-7853-4a99717d0e51/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of woodcut in black on ivory laid paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-149843883",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Anatomy of eye.jpg",
+      "credit": "Philip W Augustino / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anatomy_of_eye.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Anatomy_of_eye.jpg/960px-Anatomy_of_eye.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1346,
+      "height": 1009,
+      "alt_suggestion": "THE PARTS OF EYE 1. Iris -Is define as the delicate membrane placed placed in the anterior part of the eyeball. -It perforated in the centre by the pupil. the pupil measure 4mm, regulates the amount o",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"human eye anatomy retina optic disc eye diagram\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"human eye anatomy\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"human eye anatomy retina optic disc\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "mind-0016",
+  "interest": "mind",
+  "title": "The horse that read the room",
+  "probes": [
+    {
+      "id": "mind-0016-p1",
+      "question": "What was Clever Hans actually responding to?",
+      "kind": "mcq",
+      "options": [
+        "Involuntary cues in his trainer's body language",
+        "Whispered answers from the crowd",
+        "A bell rung by a hidden helper",
+        "Numbers chalked on the floor"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0016-p2",
+      "question": "True or false: when Hans could not see the questioner, he still answered most questions correctly.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Clever Hans (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Clever_Hans"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:01.546Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0016.webp",
+    "alt": "Black-and-white 1907 photograph of the horse Clever Hans standing in a brick courtyard while a group of men in hats look on.",
+    "kind": "photo",
+    "credit": "unbekannt, Urheberrecht lag bei Karl Krall / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hans_Pr%C3%BCfung_1907.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Clever Hans was a horse that appeared to perform arithmetic and other intellectual tasks during exhibitions in Germany in the early 20th century."
+      },
+      {
+        "text": "His owner, Wilhelm von Osten, asked the questions. Hans answered by tapping his hoof."
+      },
+      {
+        "text": "In 1907, psychologist Oskar Pfungst demonstrated that the horse was not actually performing these mental tasks, but was watching the reactions of his trainer."
+      },
+      {
+        "text": "When Hans could see the questioner, he got 89 percent (50 out of 56) of the answers correct. When he could not, he got six percent (2 out of 35)."
+      }
+    ]
+  }
+}

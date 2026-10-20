@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-1485875",
+  "alt": "Painted anatomical illustration of a human eyeball seated in its bony socket with the surrounding muscles.",
+  "fits": true,
+  "note": "Clean eye anatomy illustration, CC BY 2.5 (credit needed). Does not show the optic disc specifically but is not misleading; eye centred. Avoided cand-3 (labelled photo of a named model) and cand-5 (text-heavy diagram).",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

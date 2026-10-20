@@ -1,0 +1,60 @@
+{
+  "draft_id": "mind-0016",
+  "created_at": "2026-10-20T19:57:04.620Z",
+  "queries": [
+    "Clever Hans Kluge Hans Wilhelm von Osten",
+    "Clever Hans",
+    "Clever Hans Kluge Hans"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-9005792",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hans Prüfung 1907.jpg",
+      "credit": "unbekannt, Urheberrecht lag bei Karl Krall / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hans_Pr%C3%BCfung_1907.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Hans_Pr%C3%BCfung_1907.jpg/960px-Hans_Pr%C3%BCfung_1907.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2699,
+      "height": 1979,
+      "alt_suggestion": "Der kluge Hans wird geprüft. Im Hintergrund von links nach rechts: Busse, Gehrke, Karl Krall, Wilhelm von Osten",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-9007661",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hans auf dem Hof.jpg",
+      "credit": "Karl Krall / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hans_auf_dem_Hof.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Hans_auf_dem_Hof.jpg/960px-Hans_auf_dem_Hof.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2267,
+      "height": 2211,
+      "alt_suggestion": "der kluge Hans auf dem Hof. Links Frau Piehl, in der Mitte Lottchen und Herr Piehl mit Hund Leo, rechts Wilhelm von Osten. Unbekannte auf der Treppe. Hans soll anzeigen, wieviele Personen auf der Trep",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-9006032",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hans 1910.jpg",
+      "credit": "Karl Krall / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hans_1910.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hans_1910.jpg/960px-Hans_1910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2327,
+      "height": 1743,
+      "alt_suggestion": "Der kluge Hans 1910",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Clever Hans Kluge Hans Wilhelm von Osten\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Clever Hans\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Clever Hans Kluge Hans\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

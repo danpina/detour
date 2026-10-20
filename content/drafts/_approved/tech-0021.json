@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Compact disc capacity myth",
+    "angle": "Beethoven's Ninth and the 120 mm disc"
+  },
+  "created_at": "2026-10-20T19:56:08.776Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0021",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "Did Beethoven size the CD?",
+    "body": {
+      "claim": "The official Philips history says the CD's capacity was specified by Sony executive Norio Ohga so it could contain the entirety of Beethoven's Ninth Symphony.",
+      "why": "Philips chief engineer Kees Immink says this is a myth. The EFM code format had not yet been decided in December 1979, when the 120 mm size was adopted."
+    },
+    "probes": [
+      {
+        "id": "tech-0021-p1",
+        "kind": "mcq",
+        "question": "Which disc diameter was adopted in December 1979?",
+        "options": [
+          "120 mm",
+          "100 mm",
+          "80 mm",
+          "150 mm"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0021-p2",
+        "kind": "tf",
+        "question": "True or false: Kees Immink says the EFM code format was already decided when the 120 mm size was adopted.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Compact disc (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compact_disc"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A compact disc, ideally a close shot of its surface",
+    "keywords": [
+      "compact disc",
+      "CD-ROM disc",
+      "compact disc closeup",
+      "Philips CD player 1982"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T19:59:13.404Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Compact_disc",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Claim: the official Philips history says the capacity was specified by Sony executive Norio Ohga to contain the entirety of Beethoven's Ninth Symphony",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compact_disc",
+        "quote": "The official Philips history says the capacity was specified by Sony executive Norio Ohga to be able to contain the entirety of Beethoven's Ninth Symphony on one disc."
+      },
+      {
+        "claim": "Why: Philips chief engineer Kees Immink says this is a myth",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compact_disc",
+        "quote": "According to Philips chief engineer Kees Immink , this is a myth"
+      },
+      {
+        "claim": "Why and probe 2 (false): the EFM code format had not yet been decided in December 1979",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compact_disc",
+        "quote": "as the EFM code format had not yet been decided in December 1979, when the 120 mm size was adopted."
+      },
+      {
+        "claim": "Probe 1: the 120 mm size was adopted in December 1979 (100/80/150 mm were not the adopted size)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compact_disc",
+        "quote": "when the 120 mm size was adopted"
+      }
+    ],
+    "overall": "pass"
+  }
+}

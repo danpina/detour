@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-22504403",
+  "alt": "A tall pale grey cabinet with rows of toggle switches and a plate reading Interface Message Processor, the kind of computer that carried the first ARPANET messages.",
+  "fits": true,
+  "note": "Upright photo of the actual IMP, key subject in the middle band, portrait-friendly. Other candidates: log sheet (text-heavy, handwriting), magnetic tapes (unrelated mainframe), artic portraits (unrelated).",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "mind-0020",
+  "interest": "mind",
+  "title": "How long is one sleep cycle?",
+  "probes": [
+    {
+      "id": "mind-0020-p1",
+      "question": "How many times does the NREM and REM cycle occur in a good night's sleep?",
+      "kind": "mcq",
+      "options": [
+        "4–6 times",
+        "1–2 times",
+        "9–10 times",
+        "15–20 times"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0020-p2",
+      "question": "True or false: a sleep cycle alternates between NREM and REM sleep.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sleep (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sleep"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:03.586Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "mind-0020.webp",
+    "alt": "Flat illustration of a person asleep in a bed beneath a night window showing a crescent moon and stars.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "On average, how long does one cycle of alternating NREM and REM sleep take?",
+    "unit": "minutes",
+    "min": 30,
+    "max": 180,
+    "scale": "linear",
+    "answer": 90,
+    "reveal": "The sleep cycle of alternate NREM and REM sleep takes an average of 90 minutes, occurring 4–6 times in a good night's sleep."
+  }
+}

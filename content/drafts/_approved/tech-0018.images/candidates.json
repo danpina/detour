@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0018",
+  "created_at": "2026-10-20T19:58:22.317Z",
+  "queries": [
+    "Symbolics 3600 Lisp Machine Symbolics Genera",
+    "Symbolics 3600",
+    "Symbolics 3600 Lisp Machine"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-7334407",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Symbolics-keyboard.jpg",
+      "credit": "Retro-Computing Society of Rhode Island / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Symbolics-keyboard.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Symbolics-keyboard.jpg/960px-Symbolics-keyboard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2804,
+      "height": 1444,
+      "alt_suggestion": "Keyboard for a Symbolics 3600 lisp machine. From the collection of the RCS/RI.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-145377",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tutocanula, or El Capitan, 3600 ft., Yosemite Valley, Mariposa County, Cal., No. 1118 from the series \"Watkins' Pacific Coast\"",
+      "credit": "Carleton E. Watkins American, 1829-1916 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/145377",
+      "image_url": "https://www.artic.edu/iiif/2/fcfc693a-e00e-ef0c-b69d-7df7700b27ca/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of albumen print, stereo.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-4828040",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Symbolics-3600-ports.jpg",
+      "credit": "Retro-Computing Society of Rhode Island / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Symbolics-3600-ports.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Symbolics-3600-ports.jpg/960px-Symbolics-3600-ports.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3008,
+      "height": 2000,
+      "alt_suggestion": "Ports on the back of a Symbolics 3600. This machine was used as a front-end to a Connection Machine supercomputer. From the collection of the RCS/RI.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-145385",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tutocanula, or El Capitan, 3600 ft., from the foot of the Mariposa Trail, Yosemite Valley, Mariposa County, Cal., No. 45 from the series \"Watkins' Pacific Coast\"",
+      "credit": "Carleton E. Watkins American, 1829-1916 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/145385",
+      "image_url": "https://www.artic.edu/iiif/2/f39a111c-642e-698d-7bad-65a0a573a061/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of albumen print, stereo.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-16466187",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Space-cadet.png",
+      "credit": "Retro-Computing Society of Rhode Island / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Space-cadet.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Space-cadet.png/960px-Space-cadet.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1986,
+      "height": 786,
+      "alt_suggestion": "Space-cadet keyboard, rather dusty.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Symbolics 3600 Lisp Machine Symbolics Genera\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Symbolics 3600\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Symbolics 3600 Lisp Machine\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

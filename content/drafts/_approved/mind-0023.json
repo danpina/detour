@@ -1,0 +1,126 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Broca's area",
+    "angle": "Leborgne and the syllable 'tan'"
+  },
+  "created_at": "2026-10-20T19:55:39.219Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0023",
+    "interest": "mind",
+    "type": "story",
+    "title": "The patient who could only repeat “tan”",
+    "body": {
+      "panels": [
+        {
+          "text": "Louis Victor Leborgne was a patient of Pierre Paul Broca's. At 30 years old, he was almost completely unable to produce any words or phrases."
+        },
+        {
+          "text": "When asked a question, he was only able to repetitively produce the syllable “tan”."
+        },
+        {
+          "text": "After his death, a neurosyphilitic lesion was discovered on the surface of his left frontal lobe."
+        },
+        {
+          "text": "These two cases led Broca to believe that speech was localized to this particular area. Since then, the approximate region he identified has become known as Broca’s area."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0023-p1",
+        "kind": "mcq",
+        "question": "Which syllable could Leborgne repetitively produce?",
+        "options": [
+          "tan",
+          "ba",
+          "mo",
+          "la"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0023-p2",
+        "kind": "tf",
+        "question": "True or false: a lesion was discovered on the surface of Leborgne's left frontal lobe.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Broca's area (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Broca%27s_area"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A historical illustration or engraving of Paul Broca, or Broca's brain specimen",
+    "keywords": [
+      "Paul Broca",
+      "Leborgne",
+      "Broca's area",
+      "Tan brain"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:02:11.761Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Broca%27s_area",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Louis Victor Leborgne was a patient of Pierre Paul Broca's (title and panel 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Broca%27s_area",
+        "quote": "Leborgne was a patient of Broca's."
+      },
+      {
+        "claim": "Pierre Paul Broca is the full name of Broca",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Broca%27s_area",
+        "quote": "Language processing has been linked to Broca's area since Pierre Paul Broca reported impairments in two patients."
+      },
+      {
+        "claim": "At 30 years old he was almost completely unable to produce any words or phrases",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Broca%27s_area",
+        "quote": "At 30 years old, he was almost completely unable to produce any words or phrases."
+      },
+      {
+        "claim": "When asked a question he could only repetitively produce the syllable \"tan\" (title, panel 2, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Broca%27s_area",
+        "quote": "When asked a question, he was only able to repetitively produce the syllable \"tan\"."
+      },
+      {
+        "claim": "After his death a neurosyphilitic lesion was discovered on the surface of his left frontal lobe (panel 3, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Broca%27s_area",
+        "quote": "After his death, a neurosyphilitic lesion was discovered on the surface of his left frontal lobe."
+      },
+      {
+        "claim": "Two cases led Broca to believe speech was localized to this area (panel 4)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Broca%27s_area",
+        "quote": "These two cases led Broca to believe that speech was localized to this particular area.",
+        "note": "Panel says 'two cases' while only Leborgne is introduced earlier; the page's second case is Lelong. Claim itself is supported."
+      },
+      {
+        "claim": "The approximate region he identified has since become known as Broca's area (panel 4)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Broca%27s_area",
+        "quote": "Since then, the approximate region he identified has become known as Broca's area"
+      }
+    ],
+    "overall": "pass"
+  }
+}

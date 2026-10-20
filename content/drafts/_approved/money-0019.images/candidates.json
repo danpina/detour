@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0019",
+  "created_at": "2026-10-20T19:57:58.761Z",
+  "queries": [
+    "Monetaria moneta money cowrie cowrie shell currency",
+    "Monetaria moneta",
+    "Monetaria moneta money cowrie"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-40557563",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Monetaria moneta - 2.jpg",
+      "credit": "Philippe Bourjon / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monetaria_moneta_-_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Monetaria_moneta_-_2.jpg/960px-Monetaria_moneta_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 862,
+      "alt_suggestion": "A live money cowry (Monetaria moneta) in Réunion island lagoon.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-151358",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Male Figure (Nkisi Nkondi)",
+      "credit": "Kongo: Vili Republic of the Congo Central Africa / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/151358",
+      "image_url": "https://www.artic.edu/iiif/2/c3f36398-eee0-77a9-17f4-204f3252f6f9/full/843,/0/default.jpg",
+      "alt_suggestion": "A wooden carving of a male figure. The figure has a distinctive face, with oval-shaped eyes and mouth, and wears a cap on his head. His body is covered in various shells, bones, feathers, fabric, and metal nails, and he holds a mirror-sealed resin packet over his stomach.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-20240176",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Monetaria moneta 01.JPG",
+      "credit": "H. Zell / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monetaria_moneta_01.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Monetaria_moneta_01.JPG/960px-Monetaria_moneta_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 4224,
+      "alt_suggestion": "Money Cowry; Length 2.6 cm; Originating from Palou Tello, Batu Islands, Indonesia; Shell of own collection, therefore not geocoded. Dorsal, lateral (right side), ventral, back, and front view.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-148326",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Belt (Yeemy Mambolmashet)",
+      "credit": "Kuba Kasai region, Democratic Republic of the Congo Central Africa / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/148326",
+      "image_url": "https://www.artic.edu/iiif/2/4ae13149-28e2-9161-3551-82cbd10c6ebd/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of jute, raffia, cowrie shells, and beads.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-89822271",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Monetaria moneta (MNHN-IM-2000-3666).jpeg",
+      "credit": "Manuel CABALLER / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monetaria_moneta_(MNHN-IM-2000-3666).jpeg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Monetaria_moneta_%28MNHN-IM-2000-3666%29.jpeg/960px-Monetaria_moneta_%28MNHN-IM-2000-3666%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6791,
+      "height": 4754,
+      "alt_suggestion": "PRESERVED_SPECIMEN; Monetaria vestimenti Rochebrune, 1884; Type status: SYNTYPE; Identified by: N/A; Individual count: 3; Event date: N/A",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Monetaria moneta money cowrie cowrie shell currency\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Monetaria moneta\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Monetaria moneta money cowrie\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

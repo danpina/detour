@@ -1,0 +1,101 @@
+{
+  "draft_id": "mind-0019",
+  "created_at": "2026-10-20T19:57:17.562Z",
+  "queries": [
+    "memory palace method of loci Simonides of Ceos",
+    "memory palace",
+    "memory palace method of loci"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-174880087",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Place of National Memory at 7 Długa Street (Raczyński Palace in Warsaw).jpg",
+      "credit": "Yair-haklai / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Place_of_National_Memory_at_7_D%C5%82uga_Street_(Raczy%C5%84ski_Palace_in_Warsaw).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Place_of_National_Memory_at_7_D%C5%82uga_Street_%28Raczy%C5%84ski_Palace_in_Warsaw%29.jpg/960px-Place_of_National_Memory_at_7_D%C5%82uga_Street_%28Raczy%C5%84ski_Palace_in_Warsaw%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2322,
+      "height": 4128,
+      "alt_suggestion": "Place of National Memory at 7 Długa Street (Raczyński Palace in Warsaw)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-110541",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Crystal Palace",
+      "credit": "Camille Pissarro (French, 1830–1903) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/110541",
+      "image_url": "https://www.artic.edu/iiif/2/4eb368b5-3b66-ae2c-bd4a-2643015e05fc/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-24364374",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Place of National Memory on the wall of Biernacki Palace in Warsaw - 03.jpg",
+      "credit": "Jolanta Dyr / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Place_of_National_Memory_on_the_wall_of_Biernacki_Palace_in_Warsaw_-_03.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Place_of_National_Memory_on_the_wall_of_Biernacki_Palace_in_Warsaw_-_03.jpg/960px-Place_of_National_Memory_on_the_wall_of_Biernacki_Palace_in_Warsaw_-_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3595,
+      "height": 4811,
+      "alt_suggestion": "Place of National Memory on the wall of Biernacki Palace in Warsaw",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-20069",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Westminster Palace, London",
+      "credit": "Félix Hilaire Buhot French, 1847-1898 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/20069",
+      "image_url": "https://www.artic.edu/iiif/2/0a1426fc-e122-9950-6a90-94eae7850f71/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching and drypoint on cream chine.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-24364408",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Place of National Memory on the wall of Biernacki Palace in Warsaw - 01.jpg",
+      "credit": "Jolanta Dyr / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Place_of_National_Memory_on_the_wall_of_Biernacki_Palace_in_Warsaw_-_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Place_of_National_Memory_on_the_wall_of_Biernacki_Palace_in_Warsaw_-_01.jpg/960px-Place_of_National_Memory_on_the_wall_of_Biernacki_Palace_in_Warsaw_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4896,
+      "height": 3672,
+      "alt_suggestion": "Place of National Memory on the wall of Biernacki Palace in Warsaw",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-palace",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: palace",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-palace.png",
+      "alt_suggestion": "Illustration of a row of four arched doorways that shrink into the distance, each holding one simple object in a different colour"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Taj Mahal Sunset.jpg",
+      "license": "GFDL 1.2",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"memory palace method of loci Simonides of Ceos\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"memory palace\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"memory palace method of loci\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

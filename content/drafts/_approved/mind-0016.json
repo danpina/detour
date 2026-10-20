@@ -1,0 +1,132 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Clever Hans",
+    "angle": "A horse that seemed to do arithmetic"
+  },
+  "created_at": "2026-10-20T19:55:39.219Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0016",
+    "interest": "mind",
+    "type": "story",
+    "title": "The horse that read the room",
+    "body": {
+      "panels": [
+        {
+          "text": "Clever Hans was a horse that appeared to perform arithmetic and other intellectual tasks during exhibitions in Germany in the early 20th century."
+        },
+        {
+          "text": "His owner, Wilhelm von Osten, asked the questions. Hans answered by tapping his hoof."
+        },
+        {
+          "text": "In 1907, psychologist Oskar Pfungst demonstrated that the horse was not actually performing these mental tasks, but was watching the reactions of his trainer."
+        },
+        {
+          "text": "When Hans could see the questioner, he got 89 percent (50 out of 56) of the answers correct. When he could not, he got six percent (2 out of 35)."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0016-p1",
+        "kind": "mcq",
+        "question": "What was Clever Hans actually responding to?",
+        "options": [
+          "Involuntary cues in his trainer's body language",
+          "Whispered answers from the crowd",
+          "A bell rung by a hidden helper",
+          "Numbers chalked on the floor"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0016-p2",
+        "kind": "tf",
+        "question": "True or false: when Hans could not see the questioner, he still answered most questions correctly.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Clever Hans (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Clever_Hans"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Clever Hans the horse with his owner, early 1900s photograph",
+    "keywords": [
+      "Clever Hans",
+      "Kluge Hans",
+      "Wilhelm von Osten",
+      "Oskar Pfungst"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:00:06.557Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Clever_Hans",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title/panel 1: Clever Hans was a horse that appeared to perform arithmetic and other intellectual tasks at exhibitions in Germany in the early 20th century",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clever_Hans",
+        "quote": "was a horse that appeared to perform arithmetic and other intellectual tasks during exhibitions in Germany in the early 20th century."
+      },
+      {
+        "claim": "Panel 2: his owner was Wilhelm von Osten",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clever_Hans",
+        "quote": "Hans was a horse owned by Wilhelm von Osten, who was a gymnasium mathematics teacher"
+      },
+      {
+        "claim": "Panel 2: von Osten asked the questions; Hans answered by tapping his hoof",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clever_Hans",
+        "quote": "Hans would answer by tapping his hoof eleven times."
+      },
+      {
+        "claim": "Panel 3: in 1907 psychologist Oskar Pfungst demonstrated the horse was not performing the mental tasks but watching the reactions of his trainer",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clever_Hans",
+        "quote": "In 1907, psychologist Oskar Pfungst demonstrated that the horse was not actually performing these mental tasks, but was watching the reactions of his trainer."
+      },
+      {
+        "claim": "Panel 4: when Hans could see the questioner he got 89 percent (50 of 56) correct",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clever_Hans",
+        "quote": "when Hans could see the questioner, the horse got 89 percent (50 out of 56) of the answers correct"
+      },
+      {
+        "claim": "Panel 4 / probe 2 (false): without seeing the questioner he got six percent (2 of 35), so he did not answer most correctly",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clever_Hans",
+        "quote": "when Hans was not able to see the questioner, the horse answered only six percent (2 out of 35) of the questions correctly."
+      },
+      {
+        "claim": "Probe 1 correct answer: Hans responded to involuntary cues in the trainer's body language",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clever_Hans",
+        "quote": "The horse was responding directly to involuntary cues in the body language of the human trainer"
+      },
+      {
+        "claim": "Probe 1 distractors (whispered answers from the crowd, hidden bell, chalked numbers) are false",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clever_Hans",
+        "quote": "after refuting his initial suspicion of a fraud involving whispering or the like",
+        "note": "Page: whispering fraud refuted and fraud ruled out; bell and chalk are not mentioned and contradict the body-language explanation."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -379,6 +379,148 @@ const scenes: Record<string, Scene> = {
       );
     },
   },
+  lipsound: {
+    alt: "Illustration of a simple face in profile with curved sound-wave arcs coming from the mouth and a second set of arcs reaching the eye",
+    svg: () =>
+      wrap(
+        `<path d="M 330 420 C 330 330 450 300 520 340 C 580 375 600 450 640 520 L 600 560 L 640 600 C 640 640 620 670 590 690 C 600 740 560 780 500 790 C 480 860 480 900 500 980 L 330 980 Z" fill="${TEAL}"/>
+         <circle cx="470" cy="470" r="18" fill="${CREAM}"/><circle cx="470" cy="470" r="8" fill="${CHAR}"/>
+         <path d="M 540 580 L 610 600 L 545 635" fill="none" stroke="${CREAM}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+         ${[0, 1, 2].map((i) => `<path d="M ${690 + i * 70} ${560 - i * 40} q ${40 + i * 10} ${50 + i * 40} 0 ${100 + i * 80}" fill="none" stroke="${ORANGE}" stroke-width="12" stroke-linecap="round"/>`).join("")}
+         <path d="M 520 430 C 640 340 760 330 860 380" fill="none" stroke="${DEEP}" stroke-width="6" stroke-dasharray="4 16" stroke-linecap="round"/>`,
+      ),
+  },
+  palace: {
+    alt: "Illustration of a row of four arched doorways that shrink into the distance, each holding one simple object in a different colour",
+    svg: () => {
+      const doors: { x: number; w: number; h: number; color: string; obj: (cx: number, base: number, s: number) => string }[] = [
+        { x: 90, w: 330, h: 560, color: TEAL, obj: (cx, base, s) => `<circle cx="${cx - 30 * s}" cy="${base - 150 * s}" r="${40 * s}" fill="${ORANGE}"/><rect x="${cx - 4 * s}" y="${base - 150 * s}" width="${150 * s}" height="${18 * s}" fill="${ORANGE}"/><rect x="${cx + 100 * s}" y="${base - 150 * s}" width="${18 * s}" height="${50 * s}" fill="${ORANGE}"/>` },
+        { x: 380, w: 270, h: 470, color: DEEP, obj: (cx, base, s) => `<rect x="${cx - 70 * s}" y="${base - 170 * s}" width="${140 * s}" height="${110 * s}" rx="${8 * s}" fill="${SAND}"/><line x1="${cx}" y1="${base - 170 * s}" x2="${cx}" y2="${base - 60 * s}" stroke="${CHAR}" stroke-width="${6 * s}"/>` },
+        { x: 610, w: 220, h: 390, color: ORANGE, obj: (cx, base, s) => `<ellipse cx="${cx}" cy="${base - 110 * s}" rx="${70 * s}" ry="${48 * s}" fill="${TEAL}"/><circle cx="${cx + 62 * s}" cy="${base - 150 * s}" r="${28 * s}" fill="${TEAL}"/><polygon points="${cx + 88 * s},${base - 150 * s} ${cx + 120 * s},${base - 142 * s} ${cx + 88 * s},${base - 132 * s}" fill="${CHAR}"/>` },
+        { x: 800, w: 170, h: 310, color: TEAL, obj: (cx, base, s) => `<polygon points="${cx - 50 * s},${base - 60 * s} ${cx + 50 * s},${base - 60 * s} ${cx + 20 * s},${base - 150 * s} ${cx - 20 * s},${base - 150 * s}" fill="${SAND}"/><circle cx="${cx}" cy="${base - 170 * s}" r="${22 * s}" fill="${ORANGE}"/>` },
+      ];
+      let out = `<rect y="1000" width="${W}" height="350" fill="${SAND}"/><rect y="990" width="${W}" height="16" fill="${CHAR}" opacity="0.7"/>`;
+      for (const d of doors) {
+        const base = 990;
+        const top = base - d.h;
+        out += `<path d="M ${d.x} ${base} L ${d.x} ${top + d.w / 2} A ${d.w / 2} ${d.w / 2} 0 0 1 ${d.x + d.w} ${top + d.w / 2} L ${d.x + d.w} ${base} Z" fill="${d.color}" opacity="0.9"/>`;
+        out += `<path d="M ${d.x + 22} ${base} L ${d.x + 22} ${top + d.w / 2} A ${d.w / 2 - 22} ${d.w / 2 - 22} 0 0 1 ${d.x + d.w - 22} ${top + d.w / 2} L ${d.x + d.w - 22} ${base} Z" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="5"/>`;
+        out += d.obj(d.x + d.w / 2, base, d.w / 330);
+      }
+      return wrap(out);
+    },
+  },
+  sleepmoon: {
+    alt: "Illustration of a bed with a sleeping figure under a blanket and a crescent moon and stars in the window",
+    svg: () =>
+      wrap(
+        `<rect x="220" y="320" width="640" height="440" rx="30" fill="${DEEP}"/>
+         <path d="M 640 440 a 90 90 0 1 0 60 150 a 70 70 0 1 1 -60 -150 Z" fill="${SAND}"/>
+         <circle cx="330" cy="430" r="6" fill="${CREAM}"/><circle cx="450" cy="520" r="5" fill="${CREAM}"/><circle cx="780" cy="680" r="6" fill="${CREAM}"/><circle cx="390" cy="660" r="4" fill="${CREAM}"/>
+         <rect x="180" y="900" width="720" height="70" rx="20" fill="${CHAR}"/><rect x="180" y="960" width="40" height="140" fill="${CHAR}"/><rect x="860" y="960" width="40" height="140" fill="${CHAR}"/>
+         <rect x="200" y="820" width="680" height="110" rx="40" fill="${TEAL}"/>
+         <circle cx="300" cy="810" r="70" fill="#f1d9b5"/><rect x="230" y="800" width="620" height="140" rx="60" fill="${ORANGE}" opacity="0.9"/>`,
+      ),
+  },
+  rubberhand: {
+    alt: "Illustration of a hidden hand behind a screen and a visible rubber hand, both being stroked by paintbrushes",
+    svg: () =>
+      wrap(
+        `<rect x="120" y="860" width="840" height="40" rx="14" fill="${CHAR}"/>
+         <rect x="470" y="520" width="26" height="340" fill="${DEEP}"/>
+         <g><rect x="200" y="780" width="200" height="80" rx="40" fill="${SAND}" stroke="${CHAR}" stroke-width="5" stroke-dasharray="10 12"/>${[0, 1, 2, 3].map((i) => `<rect x="${380 + i * 0}" y="${790 + i * 18}" width="60" height="16" rx="8" fill="${SAND}" stroke="${CHAR}" stroke-width="4" stroke-dasharray="6 8"/>`).join("")}</g>
+         <g><rect x="620" y="780" width="200" height="80" rx="40" fill="#e8b48a" stroke="${CHAR}" stroke-width="5"/>${[0, 1, 2, 3].map((i) => `<rect x="${800 + i * 0}" y="${790 + i * 18}" width="60" height="16" rx="8" fill="#e8b48a" stroke="${CHAR}" stroke-width="4"/>`).join("")}</g>
+         <g transform="translate(300 690) rotate(-35)"><rect x="-10" y="-150" width="20" height="150" rx="6" fill="${TEAL}"/><rect x="-16" y="0" width="32" height="46" rx="10" fill="${ORANGE}"/></g>
+         <g transform="translate(720 690) rotate(35)"><rect x="-10" y="-150" width="20" height="150" rx="6" fill="${TEAL}"/><rect x="-16" y="0" width="32" height="46" rx="10" fill="${ORANGE}"/></g>`,
+      ),
+  },
+  brickwindows: {
+    alt: "Illustration of a plain brick house front with a grid of windows, some open and some filled in solid with brick",
+    svg: () => {
+      let win = "";
+      for (let r = 0; r < 3; r++)
+        for (let c = 0; c < 3; c++) {
+          const x = 290 + c * 190;
+          const y = 440 + r * 210;
+          const filled = (r + c) % 2 === 1;
+          win += filled
+            ? `<rect x="${x}" y="${y}" width="120" height="150" rx="8" fill="#a65e3f"/><line x1="${x}" y1="${y + 50}" x2="${x + 120}" y2="${y + 50}" stroke="${CREAM}" stroke-width="4" opacity="0.6"/><line x1="${x}" y1="${y + 100}" x2="${x + 120}" y2="${y + 100}" stroke="${CREAM}" stroke-width="4" opacity="0.6"/>`
+            : `<rect x="${x}" y="${y}" width="120" height="150" rx="8" fill="${SAND}" stroke="${CHAR}" stroke-width="6"/><line x1="${x + 60}" y1="${y}" x2="${x + 60}" y2="${y + 150}" stroke="${CHAR}" stroke-width="5"/><line x1="${x}" y1="${y + 75}" x2="${x + 120}" y2="${y + 75}" stroke="${CHAR}" stroke-width="5"/>`;
+        }
+      return wrap(`<rect x="230" y="340" width="620" height="700" rx="18" fill="#c97a56"/><polygon points="200,340 540,180 880,340" fill="${DEEP}"/>${win}<rect y="1040" width="${W}" height="310" fill="${SAND}"/>`);
+    },
+  },
+  paperpromise: {
+    alt: "Illustration of an old paper note with a woodblock-style border and seal, next to strings of round coins with square holes",
+    svg: () => {
+      let coins = "";
+      for (let i = 0; i < 6; i++) coins += `<circle cx="${190 + i * 140}" cy="1010" r="52" fill="#c9a15a" stroke="${CHAR}" stroke-width="6"/><rect x="${190 + i * 140 - 14}" y="996" width="28" height="28" fill="${CREAM}" stroke="${CHAR}" stroke-width="4"/>`;
+      return wrap(
+        `<line x1="140" y1="1010" x2="940" y2="1010" stroke="${CHAR}" stroke-width="6"/>${coins}
+         <rect x="220" y="360" width="640" height="500" rx="22" fill="#f9f1dc" stroke="${CHAR}" stroke-width="8"/>
+         <rect x="260" y="400" width="560" height="420" rx="12" fill="none" stroke="${DEEP}" stroke-width="10" stroke-dasharray="26 10"/>
+         <circle cx="540" cy="610" r="110" fill="${ORANGE}" opacity="0.85"/><rect x="500" y="570" width="80" height="80" fill="${CREAM}" opacity="0.9"/>
+         <path d="M 320 480 L 440 480 M 640 480 L 760 480 M 320 760 L 440 760 M 640 760 L 760 760" stroke="${DEEP}" stroke-width="8" stroke-linecap="round" opacity="0.7"/>`,
+      );
+    },
+  },
+  mug: {
+    alt: "Illustration of a plain ceramic mug on a table with soft steam rising",
+    svg: () =>
+      wrap(
+        `<rect y="960" width="${W}" height="390" fill="${SAND}"/><rect y="950" width="${W}" height="20" fill="${CHAR}" opacity="0.7"/>
+         <path d="M 380 620 L 700 620 L 680 930 Q 540 960 400 930 Z" fill="${TEAL}"/>
+         <ellipse cx="540" cy="620" rx="160" ry="34" fill="${DEEP}"/>
+         <path d="M 698 680 C 800 680 800 820 690 830" fill="none" stroke="${TEAL}" stroke-width="30" stroke-linecap="round"/>
+         <path d="M 470 560 C 440 510 500 480 470 430 M 540 560 C 510 510 570 480 540 430 M 610 560 C 580 510 640 480 610 430" fill="none" stroke="${CHAR}" stroke-width="10" stroke-linecap="round" opacity="0.35"/>`,
+      ),
+  },
+  disks: {
+    alt: "Illustration of a stack of large flat round disks on a spindle with a thin arm reaching between two of them",
+    svg: () => {
+      let stack = "";
+      for (let i = 0; i < 9; i++) stack += `<ellipse cx="540" cy="${900 - i * 62}" rx="300" ry="54" fill="${i % 2 ? TEAL : DEEP}" stroke="${CHAR}" stroke-width="4"/>`;
+      return wrap(
+        `<rect y="960" width="${W}" height="390" fill="${SAND}"/>${stack}<rect x="526" y="340" width="28" height="610" fill="${CHAR}"/>
+         <path d="M 920 590 L 600 590" stroke="${ORANGE}" stroke-width="14" stroke-linecap="round"/><rect x="900" y="560" width="70" height="60" rx="10" fill="${ORANGE}"/>`,
+      );
+    },
+  },
+  phone: {
+    alt: "Illustration of a chunky old mobile phone with a speech bubble on its screen and a radio-wave arc sending a second bubble away",
+    svg: () =>
+      wrap(
+        `<rect x="330" y="360" width="300" height="640" rx="56" fill="${DEEP}"/>
+         <rect x="368" y="430" width="224" height="170" rx="16" fill="${SAND}"/>
+         <path d="M 400 470 h 130 a 14 14 0 0 1 14 14 v 40 a 14 14 0 0 1 -14 14 h -90 l -30 24 v -24 h -10 a 14 14 0 0 1 -14 -14 v -40 a 14 14 0 0 1 14 -14 Z" fill="${TEAL}"/>
+         ${[0, 1, 2, 3, 4, 5, 6, 7, 8].map((i) => `<circle cx="${400 + (i % 3) * 80}" cy="${680 + Math.floor(i / 3) * 90}" r="26" fill="${CREAM}" opacity="0.8"/>`).join("")}
+         <rect x="470" y="300" width="20" height="80" rx="8" fill="${CHAR}"/>
+         ${[0, 1, 2].map((i) => `<path d="M ${690 + i * 60} ${480 - i * 40} q ${40} ${90 + i * 40} 0 ${180 + i * 80}" fill="none" stroke="${ORANGE}" stroke-width="12" stroke-linecap="round" opacity="${1 - i * 0.2}"/>`).join("")}`,
+      ),
+  },
+  atmail: {
+    alt: "Illustration of a bold at-sign over a simple envelope, with an arrow between two simple computer boxes",
+    svg: () =>
+      wrap(
+        `<rect x="260" y="560" width="560" height="380" rx="24" fill="#f9f1dc" stroke="${CHAR}" stroke-width="8"/>
+         <path d="M 260 580 L 540 790 L 820 580" fill="none" stroke="${CHAR}" stroke-width="8" stroke-linejoin="round"/>
+         <circle cx="540" cy="520" r="150" fill="${TEAL}"/>
+         <circle cx="540" cy="520" r="52" fill="none" stroke="${CREAM}" stroke-width="22"/>
+         <path d="M 592 520 v 28 a 34 34 0 0 0 68 0 v -28 a 120 120 0 1 0 -52 98" fill="none" stroke="${CREAM}" stroke-width="22" stroke-linecap="round"/>
+         <rect x="130" y="1060" width="200" height="130" rx="16" fill="${DEEP}"/><rect x="750" y="1060" width="200" height="130" rx="16" fill="${DEEP}"/>
+         <path d="M 360 1125 L 700 1125 M 660 1090 L 700 1125 L 660 1160" fill="none" stroke="${ORANGE}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>`,
+      ),
+  },
+  disc: {
+    alt: "Illustration of a shiny round disc with a central hole and concentric rings, with a thin beam of light touching its surface",
+    svg: () =>
+      wrap(
+        `<circle cx="540" cy="760" r="330" fill="#c8d6dc" stroke="${CHAR}" stroke-width="8"/>
+         ${[290, 250, 210, 170, 130].map((r, i) => `<circle cx="540" cy="760" r="${r}" fill="none" stroke="${i % 2 ? TEAL : ORANGE}" stroke-width="10" opacity="0.45"/>`).join("")}
+         <circle cx="540" cy="760" r="62" fill="${CREAM}" stroke="${CHAR}" stroke-width="8"/><circle cx="540" cy="760" r="100" fill="none" stroke="${CHAR}" stroke-width="6" opacity="0.6"/>
+         <path d="M 880 420 L 640 650" stroke="${ORANGE}" stroke-width="12" stroke-linecap="round"/><circle cx="640" cy="650" r="14" fill="${ORANGE}"/>`,
+      ),
+  },
 };
 
 export async function runIllustrate(argv: string[]): Promise<number> {

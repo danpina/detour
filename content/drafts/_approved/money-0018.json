@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Endowment effect",
+    "angle": "The mug study"
+  },
+  "created_at": "2026-10-20T19:56:41.310Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0018",
+    "interest": "money",
+    "type": "guess_first",
+    "title": "My mug, my price",
+    "body": {
+      "question": "Cornell University undergraduates were given a mug, then offered the chance to sell it. Compared with what participants were willing to pay to acquire the mug, how much did owners require to sell it?",
+      "options": [
+        "About the same",
+        "Approximately twice as much",
+        "Far less"
+      ],
+      "answer": 1,
+      "reveal": "Approximately twice as high. In this study by Daniel Kahneman, Jack Knetsch and Richard Thaler, the amount required once ownership was established (\"willingness to accept\") was approximately twice as high as the amount participants were willing to pay (\"willingness to pay\")."
+    },
+    "probes": [
+      {
+        "id": "money-0018-p1",
+        "kind": "mcq",
+        "question": "The endowment effect is the finding that people are more likely to do what?",
+        "options": [
+          "Retain an object they own than acquire that same object",
+          "Spend a windfall quickly",
+          "Copy what others buy",
+          "Avoid shops with sales"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0018-p2",
+        "kind": "tf",
+        "question": "True or false: in the Cornell mug study, owners required about the same amount to sell the mug as others were willing to pay.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Endowment effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Endowment_effect"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A plain coffee mug on a table",
+    "keywords": [
+      "coffee mug",
+      "mug",
+      "ceramic mug"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T20:01:27.320Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Endowment_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Cornell University undergraduates were given a mug and then offered the chance to sell it, in a study by Daniel Kahneman, Jack Knetsch and Richard Thaler",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Endowment_effect",
+        "quote": "is from a study by Daniel Kahneman , Jack Knetsch & Richard Thaler , in which Cornell University undergraduates were given a mug and then offered the chance to sell it"
+      },
+      {
+        "claim": "Owners required approximately twice as much to sell (willingness to accept) as participants were willing to pay (willingness to pay); probe 2 false",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Endowment_effect",
+        "quote": "was approximately twice as high as the amount they were willing to pay to acquire the mug"
+      },
+      {
+        "claim": "The endowment effect is the finding that people are more likely to retain an object they own than acquire that same object (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Endowment_effect",
+        "quote": "is the finding that people are more likely to retain an object they own than acquire that same object when they do not own it"
+      }
+    ],
+    "overall": "pass"
+  }
+}

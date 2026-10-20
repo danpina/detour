@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-32508617",
+  "alt": "Side view of a 3D brain inside a translucent skull with Broca's area highlighted in red in the left frontal lobe.",
+  "fits": true,
+  "note": "Directly shows Broca's area, CC BY-SA 2.1 (credit needed). White background, crop to brain. Alternative cand-3 portrait of Paul Broca is public domain but an oval cut-out with studio caption, poor as a background.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.35,
+    "zoom": 1.1
+  }
+}

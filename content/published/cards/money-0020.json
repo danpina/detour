@@ -1,0 +1,50 @@
+{
+  "id": "money-0020",
+  "interest": "money",
+  "title": "The Concorde fallacy",
+  "probes": [
+    {
+      "id": "money-0020-p1",
+      "question": "\"Concorde fallacy\" is another name for which idea?",
+      "kind": "mcq",
+      "options": [
+        "The sunk cost fallacy",
+        "The endowment effect",
+        "Mental accounting",
+        "The dollar auction"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0020-p2",
+      "question": "True or false: the term \"Concorde fallacy\" derives from the British and French governments continuing to fund the joint development of Concorde.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sunk cost (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sunk_cost"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T20:03:13.463Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0020.webp",
+    "alt": "A black-and-white photo of a Concorde supersonic airliner flying low over an airport",
+    "kind": "photo",
+    "credit": "IPPA photographer / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Concord,_the_supersonic_airliner_landing_in_Ben_Gurion_Airport_(FL63499538).jpg"
+  },
+  "body": {
+    "claim": "The sunk cost fallacy has also been called the \"Concorde fallacy\".",
+    "why": "The British and French governments continued to fund the joint development of the costly Concorde supersonic airplane even after it became apparent that there was no longer an economic case for the aircraft."
+  }
+}
