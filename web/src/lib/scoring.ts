@@ -1,10 +1,12 @@
 export type Scale = "linear" | "log";
 
-/** 0..1 closeness of a guess to the answer. Log scale compares ratios, linear compares differences. */
+/**
+ * 0..1 closeness of a guess to the answer. Log scale compares ratios (10x too big or too small scores 0, whatever the
+ * slider's range is), linear compares differences against the slider's range.
+ */
 export function closeness(guess: number, answer: number, min: number, max: number, scale: Scale): number {
   if (scale === "log" && guess > 0 && answer > 0 && min > 0) {
-    const span = Math.log(max / min);
-    return clamp01(1 - Math.abs(Math.log(guess / answer)) / span);
+    return clamp01(1 - Math.abs(Math.log10(guess / answer)));
   }
   return clamp01(1 - Math.abs(guess - answer) / (max - min));
 }

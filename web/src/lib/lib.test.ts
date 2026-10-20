@@ -27,6 +27,12 @@ describe("estimate scoring", () => {
     const b = closeness(13_000_000, 1_300_000, 1000, 100_000_000, "log");
     expect(a).toBeCloseTo(b, 5);
   });
+  it("does not call a far-off guess close just because the slider range is wide", () => {
+    // $1 at 10% for 50 years is about $117 on a 1..100,000 slider. 5,000 is ~43x too big.
+    expect(closenessLabel(closeness(5000, 117, 1, 100_000, "log"))).toMatch(/Not quite/);
+    expect(closenessLabel(closeness(100, 117, 1, 100_000, "log"))).toBe("Very close");
+    expect(closenessLabel(closeness(200, 117, 1, 100_000, "log"))).toBe("In the ballpark");
+  });
   it("labels tiers", () => {
     expect(closenessLabel(1)).toBe("Spot on");
     expect(closenessLabel(0.2)).toMatch(/Not quite/);

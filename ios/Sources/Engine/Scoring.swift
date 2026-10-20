@@ -4,11 +4,11 @@ import Foundation
 enum Scoring {
     // MARK: Estimate cards (slider)
 
-    /// 0...1 closeness of a guess to the answer. Log scale compares ratios, linear compares differences.
+    /// 0...1 closeness of a guess to the answer. Log scale compares ratios (10x too big or too small scores 0, whatever the
+    /// slider's range is), linear compares differences against the slider's range.
     static func closeness(guess: Double, answer: Double, lo: Double, hi: Double, scale: String) -> Double {
         if scale == "log", guess > 0, answer > 0, lo > 0 {
-            let span = log(hi / lo)
-            return clamp01(1 - abs(log(guess / answer)) / span)
+            return clamp01(1 - abs(log10(guess / answer)))
         }
         return clamp01(1 - abs(guess - answer) / (hi - lo))
     }

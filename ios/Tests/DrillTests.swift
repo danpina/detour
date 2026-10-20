@@ -93,5 +93,9 @@ final class DrillTests: XCTestCase {
         XCTAssertEqual(Scoring.estimationVerdict(105, 100), "Spot on")
         XCTAssertEqual(Scoring.closeness(guess: 71, answer: 71, lo: 0, hi: 100, scale: "linear"), 1)
         XCTAssertEqual(Scoring.closeness(guess: 0, answer: 100, lo: 0, hi: 100, scale: "linear"), 0)
+        // $1 at 10% for 50 years is about $117 on a 1...100,000 slider; 5,000 is ~43x too big, not "in the ballpark".
+        XCTAssertTrue(Scoring.closenessLabel(Scoring.closeness(guess: 5000, answer: 117, lo: 1, hi: 100_000, scale: "log")).hasPrefix("Not quite"))
+        XCTAssertEqual(Scoring.closenessLabel(Scoring.closeness(guess: 100, answer: 117, lo: 1, hi: 100_000, scale: "log")), "Very close")
+        XCTAssertEqual(Scoring.closenessLabel(Scoring.closeness(guess: 200, answer: 117, lo: 1, hi: 100_000, scale: "log")), "In the ballpark")
     }
 }
