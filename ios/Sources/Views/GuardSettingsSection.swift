@@ -1,5 +1,6 @@
 import FamilyControls
 import SwiftUI
+import UIKit
 
 /// Settings for guarded apps: which apps, how strict, how long an unlock lasts. Everything stays on the device.
 struct GuardSettingsSection: View {
@@ -68,9 +69,11 @@ struct GuardSettingsSection: View {
                     if lines.isEmpty {
                         Text("Nothing yet.").font(.footnote).foregroundStyle(.secondary)
                     } else {
-                        ForEach(Array(lines.suffix(15).enumerated()), id: \.offset) { _, line in
+                        ForEach(Array(lines.suffix(40).enumerated()), id: \.offset) { _, line in
                             Text(line).font(.system(.caption2, design: .monospaced))
                         }
+                        Button("Copy log") { UIPasteboard.general.string = lines.joined(separator: "\n") }
+                        ShareLink(item: lines.joined(separator: "\n"), subject: Text("Detour guard log")) { Text("Share log") }
                         Button("Clear log") { guardManager.clearLog() }
                     }
                 }

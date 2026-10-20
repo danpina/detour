@@ -44,7 +44,7 @@ final class GuardManager {
         _ = try? await UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound])
         change { $0.enabled = true }
         saveSelection()
-        GuardShield.apply(store)
+        GuardShield.apply(store, reason: "guard turned on")
     }
 
     func disable() {
@@ -59,7 +59,7 @@ final class GuardManager {
     /// Call when the picker closes.
     func saveSelection() {
         store.selectionData = GuardShield.encode(selection)
-        if settings.enabled && !store.isUnlocked() { GuardShield.apply(store) }
+        if settings.enabled && !store.isUnlocked() { GuardShield.apply(store, reason: "apps changed") }
     }
 
     // MARK: Sessions
@@ -71,6 +71,7 @@ final class GuardManager {
     @discardableResult
     func unlockAfterSet() -> Int? {
         guard settings.enabled, hasSelection else { return nil }
+        store.log("set finished: unlocking")
         GuardShield.unlock(minutes: settings.unlockMinutes, store: store)
         return max(settings.unlockMinutes, 15)
     }
@@ -78,8 +79,16 @@ final class GuardManager {
     /// Belt and braces: if the timer never fired, the shield goes back the next time Detour is opened.
     func refresh() {
         settings = store.settings
-        guard settings.enabled, hasSelection, !store.isUnlocked() else { return }
-        GuardShield.apply(store)
+        guard settings.enabled, hasSelection else { return }
+        if store.isUnlocked() {
+            store.log("opened: unlocked until " + ISO8601DateFormatter().string(from: store.unlockUntil ?? Date()))
+            return
+        }
+        if GuardShield.isShieldOn() {
+            store.log("opened: shield already on")
+            return
+        }
+        GuardShield.apply(store, reason: "opened with the shield off and no unlock running")
     }
 
     func clearLog() { store.clearLog() }

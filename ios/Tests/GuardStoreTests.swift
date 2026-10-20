@@ -59,6 +59,19 @@ final class GuardStoreTests: XCTestCase {
         XCTAssertFalse(store.isUnlocked(now: now.addingTimeInterval(16 * 60)))
     }
 
+    func testStaleEndedSignalIsIgnoredWhileANewUnlockRuns() {
+        let store = makeStore()
+        let now = date(2026, 3, 2)
+        // No unlock recorded: an "ended" signal is real.
+        XCTAssertTrue(store.windowReallyEnded(now: now))
+        // A new unlock was just requested for 15 minutes: the old timer's "ended" must not re-shield.
+        store.unlockUntil = now.addingTimeInterval(15 * 60)
+        XCTAssertFalse(store.windowReallyEnded(now: now))
+        // The window's own end (within the slack) counts.
+        XCTAssertTrue(store.windowReallyEnded(now: now.addingTimeInterval(15 * 60 - 5)))
+        XCTAssertTrue(store.windowReallyEnded(now: now.addingTimeInterval(16 * 60)))
+    }
+
     func testLogKeepsTheLatestLines() {
         let store = makeStore()
         for i in 0..<80 { store.log("line \(i)") }

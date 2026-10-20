@@ -18,6 +18,7 @@ final class ShieldActionExtension: ShieldActionDelegate {
 
     private func respond(to action: ShieldAction) -> ShieldActionResponse {
         let store = GuardStore.shared
+        store.log("shield button pressed")
         switch action {
         case .primaryButtonPressed:
             store.pendingSession = true

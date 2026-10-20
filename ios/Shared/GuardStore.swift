@@ -85,6 +85,13 @@ final class GuardStore {
         return until > now
     }
 
+    /// True when an "unlock ended" signal really means the window is over. Starting a new unlock stops the old timer, which
+    /// also fires "ended" for the old one; in that case `unlockUntil` already points to the future and the signal is stale.
+    func windowReallyEnded(now: Date = Date(), slack: TimeInterval = 60) -> Bool {
+        guard let until = unlockUntil else { return true }
+        return until <= now.addingTimeInterval(slack)
+    }
+
     // MARK: Emergency skip
 
     private func dayKey(_ date: Date) -> String {

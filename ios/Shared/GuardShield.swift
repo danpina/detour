@@ -18,7 +18,7 @@ enum GuardShield {
     }
 
     /// Shields everything the user chose. Does nothing if no apps are chosen.
-    static func apply(_ store: GuardStore = .shared) {
+    static func apply(_ store: GuardStore = .shared, reason: String = "") {
         guard let selection = selection(from: store) else { return }
         let managed = ManagedSettingsStore()
         if selection.applicationTokens.isEmpty { managed.shield.applications = nil } else { managed.shield.applications = selection.applicationTokens }
@@ -29,7 +29,13 @@ enum GuardShield {
         }
         if selection.webDomainTokens.isEmpty { managed.shield.webDomains = nil } else { managed.shield.webDomains = selection.webDomainTokens }
         store.unlockUntil = nil
-        store.log("shield on")
+        store.log(reason.isEmpty ? "shield on" : "shield on (" + reason + ")")
+    }
+
+    /// Whether the shield is currently on for any chosen app, category or site.
+    static func isShieldOn() -> Bool {
+        let shield = ManagedSettingsStore().shield
+        return shield.applications != nil || shield.applicationCategories != nil || shield.webDomains != nil
     }
 
     /// Removes the shield for good (guard turned off).
@@ -50,6 +56,7 @@ enum GuardShield {
         managed.shield.webDomains = nil
         let until = now.addingTimeInterval(TimeInterval(length * 60))
         store.unlockUntil = until
+        store.log("unlock requested for " + String(length) + " min")
 
         let parts: Set<Calendar.Component> = [.year, .month, .day, .hour, .minute, .second]
         let calendar = Calendar.current
