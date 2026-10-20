@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Müller-Lyer illusion",
+    "angle": "Two equal lines that don't look equal"
+  },
+  "created_at": "2026-10-20T17:08:27.229Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0015",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "Which line is longer?",
+    "body": {
+      "question": "Two lines have arrow fins. One has fins pointing outwards (tails), the other inwards (heads). Both shafts are the same physical length. Which looks longer?",
+      "options": [
+        "The one with fins outwards",
+        "The one with fins inwards",
+        "They look identical",
+        "It depends on the person's age"
+      ],
+      "answer": 0,
+      "reveal": "The line segment forming the shaft of the arrow with two tails is perceived to be longer than that forming the shaft of the arrow with two heads, though all the shafts are the same physical length."
+    },
+    "probes": [
+      {
+        "id": "mind-0015-p1",
+        "kind": "tf",
+        "question": "True or false: in the Müller-Lyer illusion the shafts are all the same physical length.",
+        "answer": true
+      },
+      {
+        "id": "mind-0015-p2",
+        "kind": "mcq",
+        "question": "Who devised the Müller-Lyer illusion, in 1889?",
+        "options": [
+          "Franz Carl Müller-Lyer",
+          "Ivan Pavlov",
+          "John Ridley Stroop",
+          "Brenda Milner"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Müller-Lyer illusion (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Müller-Lyer arrow illusion diagram",
+    "keywords": [
+      "Müller-Lyer illusion",
+      "optical illusion",
+      "arrows"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:12:36.000Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The shaft of the arrow with two tails is perceived longer than the one with two heads; fins outward = tail (answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion",
+        "quote": "The line segment forming the shaft of the arrow with two tails is perceived to be longer than that forming the shaft of the arrow with two heads."
+      },
+      {
+        "claim": "Fins can point inwards to form a head or outwards to form a tail",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion",
+        "quote": "The fins can point inwards to form an arrow \"head\" or outwards to form an arrow \"tail\"."
+      },
+      {
+        "claim": "All shafts are the same physical length (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion",
+        "quote": "All the shafts of the arrows are of the same physical length."
+      },
+      {
+        "claim": "Illusion devised by Franz Carl Müller-Lyer in 1889 (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion",
+        "quote": "The illusion was devised by Franz Carl Müller-Lyer (1857-1916), a German sociologist, in 1889."
+      }
+    ],
+    "overall": "pass"
+  }
+}

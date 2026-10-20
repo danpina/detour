@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0012",
+  "created_at": "2026-10-20T17:12:45.303Z",
+  "queries": [
+    "Douglas Engelbart Engelbart mouse NLS",
+    "Douglas Engelbart",
+    "Douglas Engelbart Engelbart mouse"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-9723532",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Douglas Engelbart in 2008.jpg",
+      "credit": "Alex Handy from Oakland, Nmibia / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Douglas_Engelbart_in_2008.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/960px-Douglas_Engelbart_in_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1212,
+      "height": 1496,
+      "alt_suggestion": "دوغلاس إنجيلبارت",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-21012",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Couple with a Pet Mouse",
+      "credit": "Suzuki Harunobu 鈴木 春信 Japanese, 1725 (?)-1770 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/21012",
+      "image_url": "https://www.artic.edu/iiif/2/e6b26d9d-cba7-5f19-3dfd-e617b66e400e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color woodblock print; chuban.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-8108854",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Douglas Engelbart and Rene Sommer.jpg",
+      "credit": "Erik Charlton / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Douglas_Engelbart_and_Rene_Sommer.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Douglas_Engelbart_and_Rene_Sommer.jpg/960px-Douglas_Engelbart_and_Rene_Sommer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3102,
+      "height": 2460,
+      "alt_suggestion": "Douglas Engelbart and René Sommer",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-61000",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Frederic Sylvester Douglas",
+      "credit": "Jean–Auguste–Dominique Ingres French, 1780–1867 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/61000",
+      "image_url": "https://www.artic.edu/iiif/2/77300803-73bd-8040-d6ab-d5ca65856730/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of lithograph on paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-14277323",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Douglas Engelbart's office.jpg",
+      "credit": "Robert Scoble / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Douglas_Engelbart%27s_office.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Douglas_Engelbart%27s_office.jpg/960px-Douglas_Engelbart%27s_office.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3984,
+      "height": 3744,
+      "alt_suggestion": "Doug Engelbart's old office in SRI International.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Douglas Engelbart Engelbart mouse NLS\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Douglas Engelbart\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Douglas Engelbart Engelbart mouse\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

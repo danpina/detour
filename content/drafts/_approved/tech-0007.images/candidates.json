@@ -1,0 +1,94 @@
+{
+  "draft_id": "tech-0007",
+  "created_at": "2026-10-20T17:12:24.453Z",
+  "queries": [
+    "Ariane 5 Kourou rocket launch",
+    "Ariane 5",
+    "Ariane 5 Kourou"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-113626967",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ariane 5 with James Webb Space Telescope Prelaunch (NHQ202112230012).jpg",
+      "credit": "Bill Ingalls / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ariane_5_with_James_Webb_Space_Telescope_Prelaunch_(NHQ202112230012).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ariane_5_with_James_Webb_Space_Telescope_Prelaunch_%28NHQ202112230012%29.jpg/960px-Ariane_5_with_James_Webb_Space_Telescope_Prelaunch_%28NHQ202112230012%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3968,
+      "height": 5477,
+      "alt_suggestion": "Arianespace's Ariane 5 rocket with NASA’s James Webb Space Telescope onboard, is seen at the launch pad, Thursday, Dec. 23, 2021, at Europe’s Spaceport, the Guiana Space Center in Kourou, French Guian",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss026e027303",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Ariane 5 Rocket",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss026e027303",
+      "image_url": "https://images-assets.nasa.gov/image/iss026e027303/iss026e027303~medium.jpg",
+      "alt_suggestion": "ISS026-E-027303 (16 Feb. 2011) --- The Expedition 26 crew member aboard the International Space Station who snapped this photograph of the Ariane 5 rocket, just after lift off from Europe’s Spaceport ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-113683096",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ariane 5 on Launch Pad with James Webb Space Telescope (December 23, 2021).jpg",
+      "credit": "Bill Ingalls / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ariane_5_on_Launch_Pad_with_James_Webb_Space_Telescope_(December_23,_2021).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Ariane_5_on_Launch_Pad_with_James_Webb_Space_Telescope_%28December_23%2C_2021%29.jpg/960px-Ariane_5_on_Launch_Pad_with_James_Webb_Space_Telescope_%28December_23%2C_2021%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1312,
+      "alt_suggestion": "A photo of the Ariane 5 rocket carrying the James Webb Space Telescope. This photo was taken by NASA in Kourou on December 23, 2021.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-jsc2011e017489",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "ATV2 launch views",
+      "credit": "P BAUDON / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2011e017489",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2011e017489/jsc2011e017489~medium.jpg",
+      "alt_suggestion": "JSC2011-E-017489 (16 Feb. 2011) --- The Ariane 5 rocket is pictured just after lift off from Europe?s Spaceport in Kourou, French Guiana. ESA?s second Automated Transfer Vehicle, Johannes Kepler, was ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-113628037",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ariane 5 with James Webb Space Telescope Prelaunch (NHQ202112230018).jpg",
+      "credit": "Bill Ingalls / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ariane_5_with_James_Webb_Space_Telescope_Prelaunch_(NHQ202112230018).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Ariane_5_with_James_Webb_Space_Telescope_Prelaunch_%28NHQ202112230018%29.jpg/960px-Ariane_5_with_James_Webb_Space_Telescope_Prelaunch_%28NHQ202112230018%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6009,
+      "height": 5175,
+      "alt_suggestion": "Arianespace's Ariane 5 rocket with NASA’s James Webb Space Telescope onboard, is seen at the launch pad, Thursday, Dec. 23, 2021, at Europe’s Spaceport, the Guiana Space Center in Kourou, French Guian",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-rocketpath",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: rocketpath",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-rocketpath.png",
+      "alt_suggestion": "Illustration of a rocket veering away from its dotted straight path into a night sky"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Ariane 5 Kourou rocket launch\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Ariane 5\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Ariane 5 Kourou\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

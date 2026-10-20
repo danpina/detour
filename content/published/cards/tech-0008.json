@@ -1,0 +1,55 @@
+{
+  "id": "tech-0008",
+  "interest": "tech",
+  "title": "The chip that got division wrong",
+  "probes": [
+    {
+      "id": "tech-0008-p1",
+      "question": "Who noticed the Pentium's division errors in 1994?",
+      "kind": "mcq",
+      "options": [
+        "A mathematics professor",
+        "A video game tester",
+        "An Intel salesperson",
+        "A bank auditor"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0008-p2",
+      "question": "What was missing in the Pentium's division unit?",
+      "kind": "mcq",
+      "options": [
+        "Values in a lookup table",
+        "A cooling fan",
+        "A power cable",
+        "A keyboard driver"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pentium FDIV bug (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:51.876Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0008.webp",
+    "alt": "Illustration of a computer chip above a lookup-table grid with one highlighted cell",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "In June 1994, Thomas Nicely, a professor of mathematics at Lynchburg College, noticed inconsistencies in his calculations. The cause was Intel's Pentium processor, which returned incorrect results when dividing certain pairs of high-precision numbers.",
+    "why": "Missing values in a lookup table used by the floating-point division algorithm led to small errors. In December 1994, Intel recalled the defective processors, and in January 1995 it announced a pre-tax charge of $475 million."
+  }
+}

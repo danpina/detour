@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-107662497",
+  "alt": "A white wall panel showing two horizontal lines of equal length, one with inward-pointing arrowheads and one with outward-pointing fins, the Muller-Lyer illusion.",
+  "fits": true,
+  "note": "Shows the Muller-Lyer figure clearly. Image is low-res and wide, so use the crop around the two figures. A and B labels are visible; cand-1 is a messier historic slide box with handwriting.",
+  "crop": {
+    "fx": 0.48,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

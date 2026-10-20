@@ -1,0 +1,49 @@
+{
+  "id": "mind-0008",
+  "interest": "mind",
+  "title": "Your brain can't ignore a word",
+  "probes": [
+    {
+      "id": "mind-0008-p1",
+      "question": "True or false: it takes longer to name the ink color of the word red printed in blue than the ink color of a neutral word.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0008-p2",
+      "question": "The Stroop effect is named after whom?",
+      "kind": "mcq",
+      "options": [
+        "John Ridley Stroop",
+        "Hermann Ebbinghaus",
+        "Ivan Pavlov",
+        "Brenda Milner"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stroop effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stroop_effect"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:09.058Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0008.webp",
+    "alt": "Illustration of four large colour discs, each with a clashing differently coloured disc in its centre",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "Naming the font color of a word is slower and harder when the word spells a different color.",
+    "why": "Say \"blue\" for the word red printed in blue ink and you take longer than for a neutral word. One explanation is the automation of reading: the mind automatically determines the semantic meaning of the word. It's called the Stroop effect, after John Ridley Stroop, who published it in English in 1935."
+  }
+}

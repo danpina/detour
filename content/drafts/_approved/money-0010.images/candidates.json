@@ -1,0 +1,60 @@
+{
+  "draft_id": "money-0010",
+  "created_at": "2026-10-20T17:12:05.865Z",
+  "queries": [
+    "Big Mac hamburger burger",
+    "Big Mac",
+    "Big Mac hamburger"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-17179743",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Big Mac hamburger.jpg",
+      "credit": "Evan-Amos / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Big_Mac_hamburger.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Big_Mac_hamburger.jpg/960px-Big_Mac_hamburger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2640,
+      "height": 2280,
+      "alt_suggestion": "A McDonald's Big Mac hamburger, as bought in the United States.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-35053660",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Big Mac hamburger edit.jpg",
+      "credit": "Evan-Amos / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Big_Mac_hamburger_edit.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Big_Mac_hamburger_edit.jpg/960px-Big_Mac_hamburger_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3300,
+      "height": 2850,
+      "alt_suggestion": "A minor edit of File:Big_Mac_hamburger.jpg",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-61666640",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Big Mac 47.jpg",
+      "credit": "rob_rob2001 / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Big_Mac_47.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Big_Mac_47.jpg/960px-Big_Mac_47.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1426,
+      "height": 1069,
+      "alt_suggestion": "Big Mac",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Big Mac hamburger burger\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Big Mac\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Big Mac hamburger\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "draft_id": "tech-0011",
+  "created_at": "2026-10-20T17:12:42.294Z",
+  "queries": [
+    "Morris worm floppy disk Computer History Museum",
+    "Morris worm",
+    "Morris worm floppy disk"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-16328796",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Senate House Library looking upwards.JPG",
+      "credit": "Tom Morris / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Senate_House_Library_looking_upwards.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Senate_House_Library_looking_upwards.JPG/960px-Senate_House_Library_looking_upwards.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3648,
+      "height": 2736,
+      "alt_suggestion": "In the stairwell in the South Block of Senate House looking up from the fifth floor.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-40388",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Olivia Simes Morris",
+      "credit": "James Peale (American, 1749–1831) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/40388",
+      "image_url": "https://www.artic.edu/iiif/2/b247c76d-5ab2-8d14-9ac6-65bd5b5df90e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-22656",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Morris Dancers",
+      "credit": "Israhel van Meckenem the Younger German, c. 1440/45-1503 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/22656",
+      "image_url": "https://www.artic.edu/iiif/2/ca82a6af-ac8a-9015-503c-40f9d7010d28/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving in black on ivory laid paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "generated-wormtrail",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: wormtrail",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-wormtrail.png",
+      "alt_suggestion": "Illustration of four linked computer screens with a small wiggly worm trail copying itself from one to the next"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "A history of British birds. By the Rev. F.O. Morris (1862) (14751561425).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "A history of British birds. By the Rev. F.O. Morris (1862) (14564883280).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "A history of British birds. By the Rev. F.O. Morris (1862) (14564233728).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "A history of British birds. By the Rev. F.O. Morris (1862) (14564917739).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "A history of British birds. By the Rev. F.O. Morris (1862) (14770823943).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "A history of British birds. By the Rev. F.O. Morris (1862) (14771937253).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Morris worm floppy disk Computer History Museum\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Morris worm\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Morris worm floppy disk\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

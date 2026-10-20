@@ -1,0 +1,61 @@
+{
+  "id": "money-0007",
+  "interest": "money",
+  "title": "Coins by horse and cart",
+  "probes": [
+    {
+      "id": "money-0007-p1",
+      "question": "In which year did Stockholms Banco begin printing banknotes?",
+      "kind": "mcq",
+      "options": [
+        "1561",
+        "1661",
+        "1761",
+        "1861"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0007-p2",
+      "question": "True or false: the bank's notes became popular because they were much easier to carry than large copper daler.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stockholms Banco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stockholms_Banco"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:38.254Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0007.webp",
+    "alt": "Illustration of an old paper banknote with a round seal and handwritten-style lines, next to a small stack of coins",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Sweden, 1650s. Johan Palmstruch founds Stockholms Banco in Stockholm in 1657."
+      },
+      {
+        "text": "Large copper daler coins are heavy. Previously the large coins had to be transported by horse and cart."
+      },
+      {
+        "text": "In 1661 the bank begins to make out credit notes in round denominations, freely transferable and backed by the promise of future payment in metal."
+      },
+      {
+        "text": "The notes become very popular very quickly because they are much easier to carry. But the bank runs into financial difficulties and is liquidated in 1667."
+      }
+    ]
+  }
+}

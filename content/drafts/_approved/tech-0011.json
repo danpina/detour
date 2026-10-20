@@ -1,0 +1,138 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Morris worm",
+    "angle": "A program that copied itself too often"
+  },
+  "created_at": "2026-10-20T17:10:03.157Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0011",
+    "interest": "tech",
+    "type": "story",
+    "title": "The worm that kept copying itself",
+    "body": {
+      "panels": [
+        {
+          "text": "November 2, 1988, 8:30 p.m.: the Morris worm, a self-replicating program, is launched from the Massachusetts Institute of Technology network. Its author, Robert Tappan Morris, is a graduate student at Cornell University."
+        },
+        {
+          "text": "Morris believed some system administrators might counter the worm by telling the computer to report a false positive. So he programmed the worm to copy itself 14% of the time, regardless of whether a computer was already infected."
+        },
+        {
+          "text": "A computer could be infected multiple times, with each additional infection slowing the machine down to unusability."
+        },
+        {
+          "text": "The incident resulted in the first felony conviction in the US under the 1986 Computer Fraud and Abuse Act. Morris was sentenced to three years' probation, 400 hours of community service and a fine."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0011-p1",
+        "kind": "mcq",
+        "question": "How often was the worm programmed to copy itself regardless of infection status?",
+        "options": [
+          "14% of the time",
+          "1% of the time",
+          "50% of the time",
+          "Every time"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0011-p2",
+        "kind": "tf",
+        "question": "True or false: a computer could be infected by the worm multiple times.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Morris worm (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Morris_worm"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A floppy disk with the Morris worm source code at the Computer History Museum, or a VAX-era computer",
+    "keywords": [
+      "Morris worm",
+      "floppy disk",
+      "Computer History Museum",
+      "VAX"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:14:45.721Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Morris_worm",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The Morris worm, a self-replicating program",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Morris_worm",
+        "quote": "was a malicious self-replicating computer program"
+      },
+      {
+        "claim": "Launched 8:30 p.m. November 2, 1988 from the MIT network; author Robert Tappan Morris was a Cornell graduate student",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Morris_worm",
+        "quote": "a graduate student at Cornell University , and launched on 8:30 p.m. November 2, 1988, from the Massachusetts Institute of Technology network"
+      },
+      {
+        "claim": "Morris believed some administrators might counter the infection check by telling the computer to report a false positive",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Morris_worm",
+        "quote": "Morris believed that some system administrators might counter this by instructing the computer to report a false positive",
+        "note": "Card says 'counter the worm'; page says 'counter this' (the worm's initial infection check). Minor looseness, acceptable."
+      },
+      {
+        "claim": "He programmed the worm to copy itself 14% of the time regardless of infection status",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Morris_worm",
+        "quote": "he programmed the worm to copy itself 14% of the time, regardless of the status of infection on the computer"
+      },
+      {
+        "claim": "A computer could be infected multiple times, each infection slowing the machine to unusability",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Morris_worm",
+        "quote": "with each additional infection slowing the machine down to unusability"
+      },
+      {
+        "claim": "First felony conviction in the US under the 1986 Computer Fraud and Abuse Act",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Morris_worm",
+        "quote": "The incident resulted in the first felony conviction in the US under the 1986 Computer Fraud and Abuse Act"
+      },
+      {
+        "claim": "Sentenced to three years' probation, 400 hours of community service and a fine",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Morris_worm",
+        "quote": "he was sentenced to three years' probation, 400 hours of community service, and a fine of US$10,050"
+      },
+      {
+        "claim": "Probe 1 answer: 14% of the time",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Morris_worm",
+        "quote": "he programmed the worm to copy itself 14% of the time"
+      },
+      {
+        "claim": "Probe 2 (true): a computer could be infected multiple times",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Morris_worm",
+        "quote": "This resulted in a computer potentially being infected multiple times"
+      }
+    ],
+    "overall": "pass"
+  }
+}

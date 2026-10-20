@@ -1,0 +1,95 @@
+{
+  "draft_id": "mind-0013",
+  "created_at": "2026-10-20T17:11:35.692Z",
+  "queries": [
+    "crowded party conversation cocktail party",
+    "crowded party",
+    "crowded party conversation"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-3397661",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Crowded Tokyo Street 1905.jpg",
+      "credit": "Underwood & Underwood, publisher. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Crowded_Tokyo_Street_1905.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Crowded_Tokyo_Street_1905.jpg/960px-Crowded_Tokyo_Street_1905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2181,
+      "height": 2665,
+      "alt_suggestion": "Crowded Tokyo Street, Japan by Underwood & Underwood, ca. 1905 (LOC)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-MSFC-201900927",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Dancing in the Street Apollo 11 Celebration",
+      "credit": "Fred Deaton / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/MSFC-201900927",
+      "image_url": "https://images-assets.nasa.gov/image/MSFC-201900927/MSFC-201900927~medium.jpg",
+      "alt_suggestion": "The City of Huntsville hosted a celebration of the Apollo 11 Moon landing with a street party on the downtown square with exhibits from the Marshall Space Flight Center and contributing contractors. T",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-13520",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Afternoon Tea Party",
+      "credit": "Mary Cassatt (American, 1844-1926) printed with Leroy (French, active 1876-1900) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/13520",
+      "image_url": "https://www.artic.edu/iiif/2/22eaf094-2d13-50e4-cf46-0a02c12031af/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color aquatint and drypoint, with additions in brush and gold, on ivory laid paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-178761861",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Getting crowded (2750618295).jpg",
+      "credit": "Patrick Nielsen Hayden from Brooklyn, NY / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Getting_crowded_(2750618295).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Getting_crowded_%282750618295%29.jpg/960px-Getting_crowded_%282750618295%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2786,
+      "height": 2198,
+      "alt_suggestion": "L to R: Allen Baum, Bill Higgins, Jon Singer, Danny Caccavo, Mac Stone's back",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-MSFC-201900926",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Dancing in the Street Apollo 11 Celebration",
+      "credit": "Fred Deaton / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/MSFC-201900926",
+      "image_url": "https://images-assets.nasa.gov/image/MSFC-201900926/MSFC-201900926~medium.jpg",
+      "alt_suggestion": "The City of Huntsville hosted a celebration of the Apollo 11 Moon landing with a street party on the downtown square with exhibits from the Marshall Space Flight Center and contributing contractors. T",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Smiley's cook book and universal household guide; a comprehensive collection of recipes and useful information, pertaining to every department of housekeeping (1895) (14781161764).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The life of General Ulysses S. Grant. Containing a brief but faithful narrative of those military and diplomatic achievements which have entitled him to the confidence and gratitude of his countrymen (14783760292).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"crowded party conversation cocktail party\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"crowded party\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"crowded party conversation\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

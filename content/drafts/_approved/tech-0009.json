@@ -1,0 +1,115 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Year 2038 problem",
+    "angle": "When a 32-bit clock runs out"
+  },
+  "created_at": "2026-10-20T17:10:03.157Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0009",
+    "interest": "tech",
+    "type": "guess_first",
+    "title": "When does the clock run out?",
+    "body": {
+      "question": "Unix time counts seconds since 1 January 1970 and is often stored in a signed 32-bit integer. When does that counter reach its maximum?",
+      "options": [
+        "19 January 2038",
+        "1 January 2000",
+        "31 December 2099",
+        "4 July 2024"
+      ],
+      "answer": 0,
+      "reveal": "A signed 32-bit integer can store at most 2,147,483,647 seconds after the epoch, which is 03:14:07 UTC on 19 January 2038. One more second causes integer overflow, flipping the sign bit to indicate a negative number. One fix is to store time in a signed 64-bit integer."
+    },
+    "probes": [
+      {
+        "id": "tech-0009-p1",
+        "kind": "mcq",
+        "question": "Unix time is the number of seconds elapsed since which moment?",
+        "options": [
+          "00:00:00 UTC on 1 January 1970",
+          "00:00:00 UTC on 1 January 1900",
+          "00:00:00 UTC on 1 January 2000",
+          "The first web page going online"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0009-p2",
+        "kind": "cloze",
+        "question": "A signed 32-bit Unix time can store times up to January ____.",
+        "answer": "2038",
+        "accept": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "Year 2038 problem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Year_2038_problem"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A digital clock or binary digits, suggesting counting seconds",
+    "keywords": [
+      "binary code",
+      "digital clock",
+      "computer clock",
+      "timestamp"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:14:45.720Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Year_2038_problem",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Unix time counts seconds since 1 January 1970 and is stored in a signed 32-bit integer",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Year_2038_problem",
+        "quote": "the number of seconds elapsed since the Unix epoch (00:00:00 UTC on 1 January 1970)"
+      },
+      {
+        "claim": "Maximum is 2,147,483,647 seconds after the epoch, 03:14:07 UTC on 19 January 2038 (answer: 19 January 2038)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Year_2038_problem",
+        "quote": "which is 03:14:07 UTC on 19 January 2038"
+      },
+      {
+        "claim": "One more second causes integer overflow, flipping the sign bit to indicate a negative number",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Year_2038_problem",
+        "quote": "inadvertently flipping the sign bit to indicate a negative number"
+      },
+      {
+        "claim": "One fix is to store time in a signed 64-bit integer",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Year_2038_problem",
+        "quote": "Modern systems and software updates address this problem by using signed 64-bit integers"
+      },
+      {
+        "claim": "Probe 1 answer: Unix time counts from 00:00:00 UTC on 1 January 1970",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Year_2038_problem",
+        "quote": "(00:00:00 UTC on 1 January 1970)"
+      },
+      {
+        "claim": "Probe 2 answer: January 2038 is the limit of a signed 32-bit Unix time",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Year_2038_problem",
+        "quote": "which is 03:14:07 UTC on 19 January 2038"
+      }
+    ],
+    "overall": "pass"
+  }
+}

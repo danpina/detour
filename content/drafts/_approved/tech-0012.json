@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "The Mother of All Demos",
+    "angle": "A 90-minute demo of the future"
+  },
+  "created_at": "2026-10-20T17:10:03.157Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0012",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "A demo that previewed your desktop",
+    "body": {
+      "claim": "On December 9, 1968, Douglas Engelbart gave a 90-minute live demonstration in San Francisco of a system called the oN-Line System, or NLS.",
+      "why": "It demonstrated windows, hypertext, graphics, video conferencing, the computer mouse and more. It was the first to publicly demonstrate all of these elements in a single system. Approximately 1,000 computer professionals were in attendance."
+    },
+    "probes": [
+      {
+        "id": "tech-0012-p1",
+        "kind": "mcq",
+        "question": "Who gave the 1968 live demonstration of the oN-Line System?",
+        "options": [
+          "Douglas Engelbart",
+          "Alan Turing",
+          "Grace Hopper",
+          "Steve Jobs"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0012-p2",
+        "kind": "tf",
+        "question": "True or false: the demonstration showed the computer mouse.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "The Mother of All Demos (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Douglas Engelbart or the early computer mouse prototype from the Stanford Research Institute",
+    "keywords": [
+      "Douglas Engelbart",
+      "Engelbart mouse",
+      "NLS",
+      "Stanford Research Institute"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:14:45.721Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: the demo previewed the desktop (windows, hypertext, graphics, mouse etc.)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos",
+        "quote": "including windows , hypertext , graphics , efficient navigation"
+      },
+      {
+        "claim": "December 9, 1968, Douglas Engelbart, in San Francisco",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos",
+        "quote": "Fall Joint Computer Conference in San Francisco , by Douglas Engelbart , on December 9, 1968."
+      },
+      {
+        "claim": "A 90-minute live demonstration of the oN-Line System, or NLS",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos",
+        "quote": "The 90-minute live demonstration featured the introduction of a complete computer hardware and software system called the oN-Line System"
+      },
+      {
+        "claim": "It demonstrated windows, hypertext, graphics, video conferencing, the computer mouse and more",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos",
+        "quote": "video conferencing , the computer mouse , word processing"
+      },
+      {
+        "claim": "It was the first to publicly demonstrate all of these elements in a single system",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos",
+        "quote": "Engelbart's presentation was the first to publicly demonstrate all of these elements in a single system."
+      },
+      {
+        "claim": "Approximately 1,000 computer professionals were in attendance",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos",
+        "quote": "Approximately 1,000 computer professionals were in attendance"
+      },
+      {
+        "claim": "Probe 1 answer: Douglas Engelbart",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos",
+        "quote": "Fall Joint Computer Conference in San Francisco , by Douglas Engelbart"
+      },
+      {
+        "claim": "Probe 2 (true): the demonstration showed the computer mouse",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos",
+        "quote": "video conferencing , the computer mouse , word processing"
+      }
+    ],
+    "overall": "pass"
+  }
+}

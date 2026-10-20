@@ -1,0 +1,61 @@
+{
+  "id": "tech-0007",
+  "interest": "tech",
+  "title": "37 seconds of software",
+  "probes": [
+    {
+      "id": "tech-0007-p1",
+      "question": "How long after launch did Ariane 5 flight 501 veer off its flight path?",
+      "kind": "mcq",
+      "options": [
+        "37 seconds",
+        "3 minutes",
+        "10 seconds",
+        "12 minutes"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0007-p2",
+      "question": "True or false: the Ariane 5 reused code from the Ariane 4.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ariane flight V88 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ariane_flight_V88"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:51.762Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0007.webp",
+    "alt": "Illustration of a rocket veering away from its dotted straight path into a night sky",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "4 June 1996: the failed maiden flight of the Ariane 5 rocket. It carried the Cluster spacecraft, a constellation of four European Space Agency research satellites."
+      },
+      {
+        "text": "The Ariane 5 reused the code from the inertial reference platform from the Ariane 4, but its early flight path had higher horizontal velocity values."
+      },
+      {
+        "text": "A data conversion from a 64-bit floating point number to a 16-bit signed integer overflowed and caused a hardware exception."
+      },
+      {
+        "text": "The rocket veered off its flight path 37 seconds after launch and began to disintegrate."
+      }
+    ]
+  }
+}

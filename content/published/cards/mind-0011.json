@@ -1,0 +1,49 @@
+{
+  "id": "mind-0011",
+  "interest": "mind",
+  "title": "Big changes can slip right past you",
+  "probes": [
+    {
+      "id": "mind-0011-p1",
+      "question": "True or false: observers often fail to notice major differences in an image while it flickers off and on.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0011-p2",
+      "question": "What is change blindness?",
+      "kind": "mcq",
+      "options": [
+        "Not noticing a change in a visual stimulus",
+        "Being unable to see colors",
+        "Forgetting a name after hearing it",
+        "Hearing a sound that isn't there"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Change blindness (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Change_blindness"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:10.833Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0011.webp",
+    "alt": "Illustration of a row of street lamps along a road, with one lamp missing and only a dotted outline left",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "Observers often fail to notice major differences introduced into an image while it flickers off and on again.",
+    "why": "Change blindness is a perceptual phenomenon that occurs when a change in a visual stimulus is introduced and the observer does not notice it. It has been argued to reflect fundamental limitations of human attention."
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Stroop effect",
+    "angle": "Why naming ink colours is harder when the word says another colour"
+  },
+  "created_at": "2026-10-20T17:08:27.224Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0008",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Your brain can't ignore a word",
+    "body": {
+      "claim": "Naming the font color of a word is slower and harder when the word spells a different color.",
+      "why": "Say \"blue\" for the word red printed in blue ink and you take longer than for a neutral word. One explanation is the automation of reading: the mind automatically determines the semantic meaning of the word. It's called the Stroop effect, after John Ridley Stroop, who published it in English in 1935."
+    },
+    "probes": [
+      {
+        "id": "mind-0008-p1",
+        "kind": "tf",
+        "question": "True or false: it takes longer to name the ink color of the word red printed in blue than the ink color of a neutral word.",
+        "answer": true
+      },
+      {
+        "id": "mind-0008-p2",
+        "kind": "mcq",
+        "question": "The Stroop effect is named after whom?",
+        "options": [
+          "John Ridley Stroop",
+          "Hermann Ebbinghaus",
+          "Ivan Pavlov",
+          "Brenda Milner"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Stroop effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Stroop_effect"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Color words printed in mismatched ink colors, or paint swatches",
+    "keywords": [
+      "Stroop effect",
+      "color words",
+      "paint colors"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:12:36.000Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Stroop_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Naming the font color of a word is slower and harder when the word spells a different color (title + claim + probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stroop_effect",
+        "quote": "Naming the font color of a word is a slower and more difficult task if word and font color are mismatched"
+      },
+      {
+        "claim": "Saying 'blue' for the word red in blue ink takes longer than for a neutral word",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stroop_effect",
+        "quote": "longer to say \"blue\" in response to the word red in a blue font, than in response to a neutral word of the same length in a blue font"
+      },
+      {
+        "claim": "Explanation: automation of reading, the mind automatically determines the semantic meaning of the word",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stroop_effect",
+        "quote": "where the mind automatically determines the semantic meaning of the word"
+      },
+      {
+        "claim": "Named after John Ridley Stroop, who first published it in English in 1935 (probe 2 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stroop_effect",
+        "quote": "The effect is named after John Ridley Stroop , who first published the effect in English in 1935."
+      }
+    ],
+    "overall": "pass"
+  }
+}

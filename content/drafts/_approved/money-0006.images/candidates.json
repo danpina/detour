@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0006",
+  "created_at": "2026-10-20T17:11:49.707Z",
+  "queries": [
+    "Weimar hyperinflation 1923 banknotes German marks",
+    "Weimar hyperinflation",
+    "Weimar hyperinflation 1923 banknotes"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-38167871",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Notgeld fritz quant 10 millionen mark.jpg",
+      "credit": "Issued by the City of Trier, designed by Fritz Quant, reproduced from an original banknote by Palauenc05 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Notgeld_fritz_quant_10_millionen_mark.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Notgeld_fritz_quant_10_millionen_mark.jpg/960px-Notgeld_fritz_quant_10_millionen_mark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4665,
+      "height": 4561,
+      "alt_suggestion": "\"Notgeld\" banknote (emergency money): Ten Million Mark from Trier, Germany (1923), designed by Fritz Quant (signed: F/Q), view of Trier after a copperplate print by Matthäus Merian (1646), size: 19.5 ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-106222",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Hunting Cleaver (Waidpraxe) of Ernst August II Konstantin, Duke of Saxe-Weimar-Eisenach",
+      "credit": "German / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/106222",
+      "image_url": "https://www.artic.edu/iiif/2/36e8893f-25df-1ed6-543e-597423b9e9d3/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of steel, bronze, gilding, horn, wood, leather, and silk.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-42571033",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "GER-110-Reichsbanknote-500 Million Mark (1923).jpg",
+      "credit": "Reichsbankdirektorium Berlin / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GER-110-Reichsbanknote-500_Million_Mark_(1923).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/GER-110-Reichsbanknote-500_Million_Mark_%281923%29.jpg/960px-GER-110-Reichsbanknote-500_Million_Mark_%281923%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5244,
+      "height": 3024,
+      "alt_suggestion": "German Papiermark of the Weimar Republic, post World War I hyperinflation era (1921–24).",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-126337",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Prince Edward of Saxe Weimar, Taken on the Field, Crimea",
+      "credit": "Roger Fenton English, 1819–1869 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/126337",
+      "image_url": "https://www.artic.edu/iiif/2/76b28222-383b-c6d5-7e2b-5633e0597337/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of thinly albumenized print.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-42571372",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "GER-137-Reichsbanknote-10 Trillion Mark (1924).jpg",
+      "credit": "Reichsbankdirektorium Berlin / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GER-137-Reichsbanknote-10_Trillion_Mark_(1924).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/GER-137-Reichsbanknote-10_Trillion_Mark_%281924%29.jpg/960px-GER-137-Reichsbanknote-10_Trillion_Mark_%281924%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4682,
+      "height": 4921,
+      "alt_suggestion": "German Papiermark of the Weimar Republic, post World War I hyperinflation era (1921–24).",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Weimar hyperinflation 1923 banknotes German marks\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Weimar hyperinflation\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Weimar hyperinflation 1923 banknotes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

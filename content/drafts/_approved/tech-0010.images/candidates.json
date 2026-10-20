@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0010",
+  "created_at": "2026-10-20T17:12:38.806Z",
+  "queries": [
+    "Voyager 1 spacecraft NASA",
+    "Voyager 1",
+    "Voyager 1 spacecraft"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-126674",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Voyager spacecraft.jpg",
+      "credit": "NASA/JPL / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Voyager_spacecraft.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Voyager_spacecraft.jpg/960px-Voyager_spacecraft.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3017,
+      "height": 2494,
+      "alt_suggestion": "Artist's concept of Voyager in flight",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA17045",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Voyager Captures Sounds of Interstellar Space",
+      "credit": "NASA/JPL-Caltech/University of Iowa / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA17045",
+      "image_url": "https://images-assets.nasa.gov/image/PIA17045/PIA17045~small.jpg",
+      "alt_suggestion": "This visual represents sounds captured of interstellar space by NASA Voyager 1 spacecraft. Voyager 1 plasma wave instrument detected the vibrations of dense interstellar plasma.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-66602695",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Voyager spacecraft model.png",
+      "credit": "National Aeronautics and Space Administration (NASA) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Voyager_spacecraft_model.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Voyager_spacecraft_model.png/960px-Voyager_spacecraft_model.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1700,
+      "height": 1233,
+      "alt_suggestion": "Artist's rendering, from NASA, of the design employed by the twin Voyager 1 and Voyager 2 spacecraft, in mission configuration. Sent into the outer solar system for the purpose of embarking on the \"gr",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-PIA14111",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Model of Voyager Artist Concept",
+      "credit": "NASA/JPL-Caltech / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA14111",
+      "image_url": "https://images-assets.nasa.gov/image/PIA14111/PIA14111~small.jpg",
+      "alt_suggestion": "This artist rendering shows NASA Voyager spacecraft. Voyager 2 was launched on Aug. 20, 1977. Voyager 1 was launched on Sept. 5, 1977.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-10827965",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Voyager 1 entering heliosheath region CAT.jpg",
+      "credit": "NASA/Walt Feimer / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Voyager_1_entering_heliosheath_region_CAT.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Voyager_1_entering_heliosheath_region_CAT.jpg/960px-Voyager_1_entering_heliosheath_region_CAT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2500,
+      "height": 1687,
+      "alt_suggestion": "Catalan version. This still shows the locations of Voyagers 1 and 2. Voyager 1 is traveling a lot and has crossed into the heliosheath, the region where interstellar gas and solar wind start to mix. S",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Voyager 1 spacecraft NASA\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Voyager 1\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Voyager 1 spacecraft\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

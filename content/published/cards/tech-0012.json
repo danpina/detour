@@ -1,0 +1,50 @@
+{
+  "id": "tech-0012",
+  "interest": "tech",
+  "title": "A demo that previewed your desktop",
+  "probes": [
+    {
+      "id": "tech-0012-p1",
+      "question": "Who gave the 1968 live demonstration of the oN-Line System?",
+      "kind": "mcq",
+      "options": [
+        "Douglas Engelbart",
+        "Alan Turing",
+        "Grace Hopper",
+        "Steve Jobs"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0012-p2",
+      "question": "True or false: the demonstration showed the computer mouse.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Mother of All Demos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:53.957Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0012.webp",
+    "alt": "Smiling portrait of Douglas Engelbart, an elderly man with white hair, wearing a tweed jacket and blue shirt.",
+    "kind": "photo",
+    "credit": "Alex Handy from Oakland, Nmibia / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Douglas_Engelbart_in_2008.jpg"
+  },
+  "body": {
+    "claim": "On December 9, 1968, Douglas Engelbart gave a 90-minute live demonstration in San Francisco of a system called the oN-Line System, or NLS.",
+    "why": "It demonstrated windows, hypertext, graphics, video conferencing, the computer mouse and more. It was the first to publicly demonstrate all of these elements in a single system. Approximately 1,000 computer professionals were in attendance."
+  }
+}

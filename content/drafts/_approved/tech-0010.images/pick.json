@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-126674",
+  "alt": "Artist concept of the Voyager spacecraft with its white dish antenna and long boom against a starry blue-black sky.",
+  "fits": true,
+  "note": "Public-domain NASA/JPL artist concept matching the brief; clearly an illustration, not a real photo. Crop on the dish and body.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.45,
+    "zoom": 1.2
+  }
+}

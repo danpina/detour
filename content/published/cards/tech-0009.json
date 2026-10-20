@@ -1,0 +1,58 @@
+{
+  "id": "tech-0009",
+  "interest": "tech",
+  "title": "When does the clock run out?",
+  "probes": [
+    {
+      "id": "tech-0009-p1",
+      "question": "Unix time is the number of seconds elapsed since which moment?",
+      "kind": "mcq",
+      "options": [
+        "00:00:00 UTC on 1 January 1970",
+        "00:00:00 UTC on 1 January 1900",
+        "00:00:00 UTC on 1 January 2000",
+        "The first web page going online"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0009-p2",
+      "question": "A signed 32-bit Unix time can store times up to January ____.",
+      "kind": "cloze",
+      "answer": "2038",
+      "accept": []
+    }
+  ],
+  "sources": [
+    {
+      "title": "Year 2038 problem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Year_2038_problem"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:52.615Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "tech-0009.webp",
+    "alt": "Rows of green eight-digit binary numbers on a black background.",
+    "kind": "photo",
+    "credit": "Graph+sas / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Binary-code.png"
+  },
+  "body": {
+    "question": "Unix time counts seconds since 1 January 1970 and is often stored in a signed 32-bit integer. When does that counter reach its maximum?",
+    "options": [
+      "19 January 2038",
+      "1 January 2000",
+      "31 December 2099",
+      "4 July 2024"
+    ],
+    "answer": 0,
+    "reveal": "A signed 32-bit integer can store at most 2,147,483,647 seconds after the epoch, which is 03:14:07 UTC on 19 January 2038. One more second causes integer overflow, flipping the sign bit to indicate a negative number. One fix is to store time in a signed 64-bit integer."
+  }
+}

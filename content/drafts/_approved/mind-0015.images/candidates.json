@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0015",
+  "created_at": "2026-10-20T17:11:43.384Z",
+  "queries": [
+    "Müller-Lyer illusion optical illusion arrows",
+    "Müller-Lyer illusion",
+    "Müller-Lyer illusion optical illusion"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-114676760",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Versuchsmaterial zur Untersuchung der Müller-Lyer-Illusion.jpg",
+      "credit": "JohUllrich / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Versuchsmaterial_zur_Untersuchung_der_M%C3%BCller-Lyer-Illusion.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Versuchsmaterial_zur_Untersuchung_der_M%C3%BCller-Lyer-Illusion.jpg/960px-Versuchsmaterial_zur_Untersuchung_der_M%C3%BCller-Lyer-Illusion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 4000,
+      "alt_suggestion": "This is from the Archive of the Department of Psychology, University of Zurich.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-113569",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Bowcase and Quiver of Arrows",
+      "credit": "Pisanello Italian, by 1395-c. 1455 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/113569",
+      "image_url": "https://www.artic.edu/iiif/2/14bf178b-6936-b7a5-318e-9f90c3533a58/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of pen and brown ink on ivory laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-107662497",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Müller-Lyer illusion 2021 (1).jpg",
+      "credit": "Hamaredha / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%BCller-Lyer_illusion_2021_(1).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/M%C3%BCller-Lyer_illusion_2021_%281%29.jpg/960px-M%C3%BCller-Lyer_illusion_2021_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4032,
+      "height": 1960,
+      "alt_suggestion": "Müller-Lyer illusion",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-22118",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Portrait of Bartolomaeus Spranger with an Allegory of the Death of His Wife, Christina Müller",
+      "credit": "Aegidius Sadeler Flemish, c. 1570-1629 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/22118",
+      "image_url": "https://www.artic.edu/iiif/2/28da5896-cadc-1c46-1546-365519fcc22d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving with etching in black on ivory laid paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-40262759",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Müller-Lyer illusion (3037233997).jpg",
+      "credit": "Jessica Spengler This photo was taken with Panasonic Lumix DMC-FX55 / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%BCller-Lyer_illusion_(3037233997).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/M%C3%BCller-Lyer_illusion_%283037233997%29.jpg/960px-M%C3%BCller-Lyer_illusion_%283037233997%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2540,
+      "height": 1905,
+      "alt_suggestion": "ポルノグラフィティ ベストアルバム",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Müller-Lyer illusion optical illusion arrows\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Müller-Lyer illusion\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Müller-Lyer illusion optical illusion\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

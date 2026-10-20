@@ -1,0 +1,64 @@
+{
+  "id": "tech-0013",
+  "interest": "tech",
+  "title": "The barcode shaped like a Go board",
+  "probes": [
+    {
+      "id": "tech-0013-p1",
+      "question": "Which board game influenced the black-and-white design of the QR code?",
+      "kind": "mcq",
+      "options": [
+        "Go",
+        "Chess",
+        "Checkers",
+        "Dominoes"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0013-p2",
+      "question": "What did the QR code first label?",
+      "kind": "mcq",
+      "options": [
+        "Automobile parts",
+        "Library books",
+        "Concert tickets",
+        "Cereal boxes"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "QR code (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/QR_code"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:54.093Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0013.webp",
+    "alt": "Illustration of a Go board with black and white stones forming the three square corner markers of a QR code",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "QR is short for quick-response. A QR code is a type of two-dimensional matrix barcode invented in 1994 by Masahiro Hara of the Japanese company Denso Wave for labelling automobile parts."
+      },
+      {
+        "text": "The alternating-square design was influenced by the black and white stones played on a Go board."
+      },
+      {
+        "text": "The pattern of the position detection markers was determined by finding the least-used sequence of alternating black-white areas on printed matter, which was 1:1:3:1:1."
+      }
+    ]
+  }
+}

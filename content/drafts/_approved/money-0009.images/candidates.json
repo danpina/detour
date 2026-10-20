@@ -1,0 +1,92 @@
+{
+  "draft_id": "money-0009",
+  "created_at": "2026-10-20T17:12:00.566Z",
+  "queries": [
+    "coins hands negotiation",
+    "coins",
+    "coins hands"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-94812434",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Budget negotiations with congressional leadership - DPLA - ca041f8834764b2dd69875b8cb92d1ae.jpg",
+      "credit": "President (1993-2001 : Clinton). White House Photograph Office. 1/20/1993-1/20/2001 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Budget_negotiations_with_congressional_leadership_-_DPLA_-_ca041f8834764b2dd69875b8cb92d1ae.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Budget_negotiations_with_congressional_leadership_-_DPLA_-_ca041f8834764b2dd69875b8cb92d1ae.jpg/960px-Budget_negotiations_with_congressional_leadership_-_DPLA_-_ca041f8834764b2dd69875b8cb92d1ae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 8400,
+      "height": 5583,
+      "alt_suggestion": "President Clinton and Vice President Al Gore shake hands with Speaker of the House of Representatives Newt Gingrich and Senator Bob Dole during a budget negotiation meeting in the Oval Office of the W",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-GRC-2010-C-00310",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "GRC-2010-C-00310",
+      "credit": "GRC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GRC-2010-C-00310",
+      "image_url": "https://images-assets.nasa.gov/image/GRC-2010-C-00310/GRC-2010-C-00310~medium.jpg",
+      "alt_suggestion": "Super Bowl XLIV Game Coin which flew on STS-129",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-566",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Life Cast of the Hands and Face of Abraham Lincoln",
+      "credit": "Leonard Wells Volk (American, 1828–1895) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/566",
+      "image_url": "https://www.artic.edu/iiif/2/8ad03fff-be28-ab22-689c-8f022b5e181c/full/843,/0/default.jpg",
+      "alt_suggestion": "Three-part bronze sculpture set of two clenched hands and a man's face with closed eyes and mouth, an object in one hand.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-197538034",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Negotiations between Alwand and Ismail, followed by the battle of Sharur (1501). Habib al-siyar, end of 16th century. National Palace Museum (cropped).jpg",
+      "credit": "circa 1590-1600 artist / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Negotiations_between_Alwand_and_Ismail,_followed_by_the_battle_of_Sharur_(1501)._Habib_al-siyar,_end_of_16th_century._National_Palace_Museum_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Negotiations_between_Alwand_and_Ismail%2C_followed_by_the_battle_of_Sharur_%281501%29._Habib_al-siyar%2C_end_of_16th_century._National_Palace_Museum_%28cropped%29.jpg/960px-Negotiations_between_Alwand_and_Ismail%2C_followed_by_the_battle_of_Sharur_%281501%29._Habib_al-siyar%2C_end_of_16th_century._National_Palace_Museum_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1956,
+      "height": 3371,
+      "alt_suggestion": "Shah Ismail confronted the Aq Qoyunlu leader Alwand (who was also ruler of Tabriz) before the Battle of Sharur (1501). He said, \"We are both descendants of Uzun Hasan, who was the Ak Koyunlu Sultan; l",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-SSC-20110413-S00497",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "A-3 Test Stand tops out",
+      "credit": "SSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/SSC-20110413-S00497",
+      "image_url": "https://images-assets.nasa.gov/image/SSC-20110413-S00497/SSC-20110413-S00497~medium.jpg",
+      "alt_suggestion": "Stennis Space Center Director Patrick Scheuermann presents center director coins to employees following the 'topping out' of the A-3 Test Stand with placement of test cell dome on April 13. The stand ",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-sharing",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: sharing",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-sharing.png",
+      "alt_suggestion": "Illustration of two simple figures facing each other across a table, with a big pile of coins on one side and a single coin slid across to the other"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"coins hands negotiation\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"coins\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"coins hands\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

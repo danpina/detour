@@ -1,0 +1,118 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Stockholms Banco",
+    "angle": "Banknotes because coins were too heavy"
+  },
+  "created_at": "2026-10-20T17:10:50.074Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0007",
+    "interest": "money",
+    "type": "story",
+    "title": "Coins by horse and cart",
+    "body": {
+      "panels": [
+        {
+          "text": "Sweden, 1650s. Johan Palmstruch founds Stockholms Banco in Stockholm in 1657."
+        },
+        {
+          "text": "Large copper daler coins are heavy. Previously the large coins had to be transported by horse and cart."
+        },
+        {
+          "text": "In 1661 the bank begins to make out credit notes in round denominations, freely transferable and backed by the promise of future payment in metal."
+        },
+        {
+          "text": "The notes become very popular very quickly because they are much easier to carry. But the bank runs into financial difficulties and is liquidated in 1667."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0007-p1",
+        "kind": "mcq",
+        "question": "In which year did Stockholms Banco begin printing banknotes?",
+        "options": [
+          "1561",
+          "1661",
+          "1761",
+          "1861"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0007-p2",
+        "kind": "tf",
+        "question": "True or false: the bank's notes became popular because they were much easier to carry than large copper daler.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Stockholms Banco (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Stockholms_Banco"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A 17th century Swedish banknote of Stockholms Banco",
+    "keywords": [
+      "Stockholms Banco",
+      "Palmstruch banknote",
+      "Swedish daler"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:15:04.507Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Stockholms_Banco",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Johan Palmstruch founded Stockholms Banco in Stockholm in 1657 (panel 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stockholms_Banco",
+        "quote": "It was founded in 1657 by Johan Palmstruch in Stockholm"
+      },
+      {
+        "claim": "Large copper daler coins were heavy (panel 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stockholms_Banco",
+        "quote": "copper daler were large and heavy plate-sized coins"
+      },
+      {
+        "claim": "Previously large coins had to be transported by horse and cart (panel 2; title)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stockholms_Banco",
+        "quote": "previously the large coins had to be transported by horse and cart"
+      },
+      {
+        "claim": "In 1661 the bank began to make out credit notes in round denominations, freely transferable and backed by promise of future payment in metal (panel 3; probe p1 answer 1661)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stockholms_Banco",
+        "quote": "in 1661 he began to make out credit notes ( Kreditivsedlar ) in round denominations which were freely transferable and backed by the promise of future payment in metal"
+      },
+      {
+        "claim": "Notes became very popular very quickly because much easier to carry than large copper daler (panel 4; probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stockholms_Banco",
+        "quote": "These banknotes became very popular very quickly simply because they were much easier to carry than the large copper daler"
+      },
+      {
+        "claim": "Bank ran into financial difficulties and was liquidated in 1667 (panel 4)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stockholms_Banco",
+        "quote": "but ran into financial difficulties and was liquidated in 1667"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "money-0006",
+  "interest": "money",
+  "title": "A loaf of bread, 1923",
+  "probes": [
+    {
+      "id": "money-0006-p1",
+      "question": "By November 1923, one US dollar was worth how many German marks?",
+      "kind": "mcq",
+      "options": [
+        "4.2105 million",
+        "4.2105 billion",
+        "4.2105 trillion",
+        "4.2105 quadrillion"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0006-p2",
+      "question": "True or false: during the final stages of the hyperinflation, cigarettes became widely accepted as a medium of exchange.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hyperinflation in the Weimar Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hyperinflation_in_the_Weimar_Republic"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:38.118Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "money-0006.webp",
+    "alt": "A German Reichsbank note for 500 million marks dated 1 September 1923",
+    "kind": "photo",
+    "credit": "Reichsbankdirektorium Berlin / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:GER-110-Reichsbanknote-500_Million_Mark_(1923).jpg"
+  },
+  "body": {
+    "question": "A loaf of bread in Berlin cost around 160 marks at the end of 1922. What did it cost by late 1923?",
+    "unit": "marks",
+    "min": 1000,
+    "max": 10000000000000,
+    "scale": "log",
+    "answer": 200000000000,
+    "reveal": "A loaf of bread in Berlin that cost around 160 marks at the end of 1922 cost 200 billion marks by late 1923."
+  }
+}

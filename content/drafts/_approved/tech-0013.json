@@ -1,0 +1,116 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "QR code",
+    "angle": "A barcode inspired by a board game"
+  },
+  "created_at": "2026-10-20T17:10:03.157Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0013",
+    "interest": "tech",
+    "type": "story",
+    "title": "The barcode shaped like a Go board",
+    "body": {
+      "panels": [
+        {
+          "text": "QR is short for quick-response. A QR code is a type of two-dimensional matrix barcode invented in 1994 by Masahiro Hara of the Japanese company Denso Wave for labelling automobile parts."
+        },
+        {
+          "text": "The alternating-square design was influenced by the black and white stones played on a Go board."
+        },
+        {
+          "text": "The pattern of the position detection markers was determined by finding the least-used sequence of alternating black-white areas on printed matter, which was 1:1:3:1:1."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0013-p1",
+        "kind": "mcq",
+        "question": "Which board game influenced the black-and-white design of the QR code?",
+        "options": [
+          "Go",
+          "Chess",
+          "Checkers",
+          "Dominoes"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0013-p2",
+        "kind": "mcq",
+        "question": "What did the QR code first label?",
+        "options": [
+          "Automobile parts",
+          "Library books",
+          "Concert tickets",
+          "Cereal boxes"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "QR code (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/QR_code"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A QR code, or a Go board with black and white stones",
+    "keywords": [
+      "QR code",
+      "Go board",
+      "black and white stones",
+      "Denso Wave"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:14:45.721Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/QR_code",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "QR is short for quick-response; a two-dimensional matrix barcode invented in 1994 by Masahiro Hara of Denso Wave for labelling automobile parts",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/QR_code",
+        "quote": "short for quick-response code , is a type of two-dimensional matrix barcode invented in 1994 by Masahiro Hara of the Japanese company Denso Wave for labelling automobile parts"
+      },
+      {
+        "claim": "The alternating-square design was influenced by the black and white stones played on a Go board",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/QR_code",
+        "quote": "was influenced by the black and white stones played on a Go board"
+      },
+      {
+        "claim": "Position detection marker pattern was the least-used sequence of alternating black-white areas on printed matter, 1:1:3:1:1",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/QR_code",
+        "quote": "the pattern of the position detection markers was determined by finding the least-used sequence of alternating black-white areas on printed matter, which was found to be (1:1:3:1:1)"
+      },
+      {
+        "claim": "Probe 1 answer: Go",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/QR_code",
+        "quote": "was influenced by the black and white stones played on a Go board"
+      },
+      {
+        "claim": "Probe 2 answer: automobile parts",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/QR_code",
+        "quote": "for labelling automobile parts"
+      }
+    ],
+    "overall": "pass"
+  }
+}

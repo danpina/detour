@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-9723532",
+  "alt": "Smiling portrait of Douglas Engelbart, an elderly man with white hair, wearing a tweed jacket and blue shirt.",
+  "fits": true,
+  "note": "Weak but acceptable: a 2008 portrait of the card subject (public figure named in the card), not a 1968 demo image. Tight face portrait; humans may prefer a flat illustration of an early mouse and screen. Other candidates rejected (private individuals with name badges, empty office, unrelated artworks). CC BY-SA 2.0, needs credit.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

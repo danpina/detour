@@ -1,0 +1,55 @@
+{
+  "id": "money-0009",
+  "interest": "money",
+  "title": "Free money, refused",
+  "probes": [
+    {
+      "id": "money-0009-p1",
+      "question": "True or false: in the ultimatum game, if the responder rejects the offer, neither player receives anything.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "money-0009-p2",
+      "question": "A review of 37 studies found the first player typically offers about what share of the pie?",
+      "kind": "mcq",
+      "options": [
+        "10%",
+        "25%",
+        "40%",
+        "90%"
+      ],
+      "answer": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ultimatum game (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ultimatum_game"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:46.432Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0009.webp",
+    "alt": "Illustration of two simple figures facing each other across a table, with a big pile of coins on one side and a single coin slid across to the other",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "Two players split a sum. The proposer makes an offer; the responder can accept it, or reject it so that neither gets anything. When the offer is under 30%, what do responders often do?",
+    "options": [
+      "Accept: something beats nothing",
+      "Reject, leaving both with nothing",
+      "Ask for a coin toss"
+    ],
+    "answer": 1,
+    "reveal": "Offers of less than 30% are often rejected, even though rejecting means neither player receives anything. A review of 37 studies found the first player typically offers around 40% of the \"pie\"."
+  }
+}

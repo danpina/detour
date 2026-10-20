@@ -1,0 +1,82 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Neurons in the human brain",
+    "angle": "How many neurons in an adult brain"
+  },
+  "created_at": "2026-10-20T17:08:27.229Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0014",
+    "interest": "mind",
+    "type": "estimate",
+    "title": "How many neurons in a brain?",
+    "body": {
+      "question": "About how many neurons are in an adult human brain?",
+      "unit": "billion neurons",
+      "min": 1,
+      "max": 1000,
+      "scale": "log",
+      "answer": 86,
+      "reveal": "The adult human brain is estimated to contain 86±8 billion neurons, with a roughly equal number (85±10 billion) of non-neuronal cells."
+    },
+    "probes": [
+      {
+        "id": "mind-0014-p1",
+        "kind": "tf",
+        "question": "True or false: the adult human brain is estimated to contain 86±8 billion neurons.",
+        "answer": true
+      },
+      {
+        "id": "mind-0014-p2",
+        "kind": "tf",
+        "question": "True or false: the brain has a roughly equal number of non-neuronal cells.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Human brain (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Human_brain"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Branching neurons, microscope view or stylised illustration of neural networks",
+    "keywords": [
+      "neurons",
+      "neuron",
+      "brain cells",
+      "Golgi"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:12:36.000Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Human_brain",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The adult human brain is estimated to contain 86±8 billion neurons (answer 86, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Human_brain",
+        "quote": "The adult human brain is estimated to contain 86±8 billion neurons, with a roughly equal number (85±10 billion) of non-neuronal cells."
+      },
+      {
+        "claim": "Roughly equal number of non-neuronal cells (85±10 billion) (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Human_brain",
+        "quote": "with a roughly equal number (85±10 billion) of non-neuronal cells"
+      }
+    ],
+    "overall": "pass"
+  }
+}

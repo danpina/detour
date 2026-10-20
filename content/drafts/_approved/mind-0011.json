@@ -1,0 +1,88 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Change blindness",
+    "angle": "We often miss big changes when a scene flickers"
+  },
+  "created_at": "2026-10-20T17:08:27.227Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0011",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Big changes can slip right past you",
+    "body": {
+      "claim": "Observers often fail to notice major differences introduced into an image while it flickers off and on again.",
+      "why": "Change blindness is a perceptual phenomenon that occurs when a change in a visual stimulus is introduced and the observer does not notice it. It has been argued to reflect fundamental limitations of human attention."
+    },
+    "probes": [
+      {
+        "id": "mind-0011-p1",
+        "kind": "tf",
+        "question": "True or false: observers often fail to notice major differences in an image while it flickers off and on.",
+        "answer": true
+      },
+      {
+        "id": "mind-0011-p2",
+        "kind": "mcq",
+        "question": "What is change blindness?",
+        "options": [
+          "Not noticing a change in a visual stimulus",
+          "Being unable to see colors",
+          "Forgetting a name after hearing it",
+          "Hearing a sound that isn't there"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Change blindness (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Change_blindness"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Two near-identical street or landscape scenes, or a spot-the-difference style image",
+    "keywords": [
+      "spot the difference",
+      "change blindness",
+      "crowd scene"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:12:36.000Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Change_blindness",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Observers often fail to notice major differences introduced into an image while it flickers off and on (claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Change_blindness",
+        "quote": "observers often fail to notice major differences introduced into an image while it flickers off and on again"
+      },
+      {
+        "claim": "Change blindness occurs when a change in a visual stimulus is introduced and the observer does not notice it (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Change_blindness",
+        "quote": "Change blindness is a perceptual phenomenon that occurs when a change in a visual stimulus is introduced and the observer does not notice it."
+      },
+      {
+        "claim": "It has been argued to reflect fundamental limitations of human attention",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Change_blindness",
+        "quote": "has been argued to reflect fundamental limitations of human attention"
+      }
+    ],
+    "overall": "pass"
+  }
+}

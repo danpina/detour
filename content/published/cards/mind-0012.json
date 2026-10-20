@@ -1,0 +1,56 @@
+{
+  "id": "mind-0012",
+  "interest": "mind",
+  "title": "Which list item sticks?",
+  "probes": [
+    {
+      "id": "mind-0012-p1",
+      "question": "In a long list, which items are recalled worst?",
+      "kind": "mcq",
+      "options": [
+        "The middle items",
+        "The first items",
+        "The last items",
+        "The first and last items"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0012-p2",
+      "question": "True or false: the term serial-position effect was coined by Hermann Ebbinghaus.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Serial-position effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Serial-position_effect"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:10.953Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0012.webp",
+    "alt": "Illustration of a column of seven word cards where the first and last are bright and the middle ones fade away",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "You study a long list of words and then recall them in any order. Which items do people tend to recall best?",
+    "options": [
+      "The first and last items",
+      "The middle items",
+      "The longest words",
+      "All items equally"
+    ],
+    "answer": 0,
+    "reveal": "People tend to recall the first and last items in a series best, and the middle items worst. That's the serial-position effect; the term was coined by Hermann Ebbinghaus through studies he performed on himself."
+  }
+}

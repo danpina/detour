@@ -1,0 +1,82 @@
+{
+  "draft_id": "mind-0014",
+  "created_at": "2026-10-20T17:11:39.143Z",
+  "queries": [
+    "neurons neuron brain cells",
+    "neurons",
+    "neurons neuron"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-131580232",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Nerve-cell-neuron-brain-neurons.png",
+      "credit": "Yourazidan / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nerve-cell-neuron-brain-neurons.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Nerve-cell-neuron-brain-neurons.png/960px-Nerve-cell-neuron-brain-neurons.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2400,
+      "height": 3904,
+      "alt_suggestion": "Nerve-cell, Neuron, Brain-neurons, Biological Neuron",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-jsc2026e416048",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "jsc2026e416048",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2026e416048",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2026e416048/jsc2026e416048~thumb.jpg",
+      "alt_suggestion": "jsc2026e416048 (September 15, 2026) --- Image of dopaminergic neurons in the microgravity environment taken with the KERMIT microscope aboard the International Space Station. The MINDS investigation b",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-143718",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Interior View of the Main Hall of Prison, East Side, which is 6 Stories High, and Contains 600 Cells, No. 4318 from the series \"Sing Sing Prison Views\"",
+      "credit": "Anthony & Company American, active 1848–1901 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/143718",
+      "image_url": "https://www.artic.edu/iiif/2/b381130c-501f-e1be-66a1-a3816fca5738/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of albumen print, stere.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-46794343",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Neuron - Nerve Cell 03.png",
+      "credit": "Doctor Jana / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Neuron_-_Nerve_Cell_03.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Neuron_-_Nerve_Cell_03.png/960px-Neuron_-_Nerve_Cell_03.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 778,
+      "alt_suggestion": "Neurons are the structural and functional building blocks of the nervous system. This type of cell is specialized for the reception, integration, and transmission of electrical impulses.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-iss058e000975",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Nona Cube",
+      "credit": "David Saint-Jacques / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss058e000975",
+      "image_url": "https://images-assets.nasa.gov/image/iss058e000975/iss058e000975~medium.jpg",
+      "alt_suggestion": "iss058e000975 (12/26/2018) --- A view of the Organs-On-Chips as a Platform for Studying Effects of Microgravity on Human Physiology investigation taken onboard the International Space Station (ISS). O",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"neurons neuron brain cells\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"neurons\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"neurons neuron\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

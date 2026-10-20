@@ -1,0 +1,99 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Weimar hyperinflation",
+    "angle": "What a loaf of bread cost in 1923"
+  },
+  "created_at": "2026-10-20T17:10:50.071Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0006",
+    "interest": "money",
+    "type": "estimate",
+    "title": "A loaf of bread, 1923",
+    "body": {
+      "question": "A loaf of bread in Berlin cost around 160 marks at the end of 1922. What did it cost by late 1923?",
+      "unit": "marks",
+      "min": 1000,
+      "max": 10000000000000,
+      "scale": "log",
+      "answer": 200000000000,
+      "reveal": "A loaf of bread in Berlin that cost around 160 marks at the end of 1922 cost 200 billion marks by late 1923."
+    },
+    "probes": [
+      {
+        "id": "money-0006-p1",
+        "kind": "mcq",
+        "question": "By November 1923, one US dollar was worth how many German marks?",
+        "options": [
+          "4.2105 million",
+          "4.2105 billion",
+          "4.2105 trillion",
+          "4.2105 quadrillion"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "money-0006-p2",
+        "kind": "tf",
+        "question": "True or false: during the final stages of the hyperinflation, cigarettes became widely accepted as a medium of exchange.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hyperinflation in the Weimar Republic (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hyperinflation_in_the_Weimar_Republic"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Stacks of worthless German banknotes from 1923",
+    "keywords": [
+      "Weimar hyperinflation",
+      "1923 banknotes",
+      "German marks"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:15:04.506Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hyperinflation_in_the_Weimar_Republic",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Bread in Berlin cost around 160 marks at end of 1922 (question; reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hyperinflation_in_the_Weimar_Republic",
+        "quote": "A loaf of bread in Berlin that cost around 160 marks at the end of 1922"
+      },
+      {
+        "claim": "That loaf cost 200 billion marks by late 1923 (answer 200000000000; reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hyperinflation_in_the_Weimar_Republic",
+        "quote": "cost 200 billion marks by late 1923"
+      },
+      {
+        "claim": "By November 1923 one US dollar was worth 4.2105 trillion marks (probe p1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hyperinflation_in_the_Weimar_Republic",
+        "quote": "By November 1923, one US dollar was worth 4.2105 trillion German marks."
+      },
+      {
+        "claim": "During the final stages of hyperinflation cigarettes became widely accepted as a medium of exchange (probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hyperinflation_in_the_Weimar_Republic",
+        "quote": "cigarettes became widely accepted as a medium of exchange"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-19270394",
+  "alt": "Black-and-white studio portrait of the elderly physiologist Ivan Pavlov, with a white beard and dark suit.",
+  "fits": true,
+  "note": "Public-domain historical portrait of the subject, tall format suits 4:5. No dog or lab scene available (cand-3 is a surgery scene with several people, not used).",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "tech-0006",
+  "interest": "tech",
+  "title": "One number, two kinds of units",
+  "probes": [
+    {
+      "id": "tech-0006-p1",
+      "question": "What was mixed up between the two software systems?",
+      "kind": "mcq",
+      "options": [
+        "Units of measurement",
+        "Time zones",
+        "Programming languages",
+        "Radio frequencies"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0006-p2",
+      "question": "True or false: Mars Climate Orbiter reached a safe orbit around Mars.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mars Climate Orbiter (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:51.649Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0006.webp",
+    "alt": "Technicians in cleanroom suits work on the Mars Climate Orbiter spacecraft, with its silver-wrapped dish antenna and gold foil, during testing.",
+    "kind": "photo",
+    "credit": "NASA / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mars_Climate_Orbiter_during_tests.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "December 1998: NASA launches Mars Climate Orbiter. On September 23, 1999, communication with the spacecraft is permanently lost as it goes into orbital insertion."
+      },
+      {
+        "text": "Two software systems had to pass numbers to each other. One produced thruster results in pound-force seconds. The other expected those results in newton-seconds."
+      },
+      {
+        "text": "The two units are different by a factor of 4.45, and the trajectory software used the numbers to update the predicted position of the spacecraft."
+      },
+      {
+        "text": "The spacecraft encountered Mars on a trajectory that brought it too close to the planet, and it was destroyed in the atmosphere."
+      }
+    ]
+  }
+}

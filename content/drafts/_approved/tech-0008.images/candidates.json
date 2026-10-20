@@ -1,0 +1,70 @@
+{
+  "draft_id": "tech-0008",
+  "created_at": "2026-10-20T17:12:29.000Z",
+  "queries": [
+    "Intel Pentium processor CPU die",
+    "Intel Pentium",
+    "Intel Pentium processor"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-131453464",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pentium III SL4CB.jpg",
+      "credit": "Mister rf / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pentium_III_SL4CB.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Pentium_III_SL4CB.jpg/960px-Pentium_III_SL4CB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5370,
+      "height": 4634,
+      "alt_suggestion": "Intel Pentium III Processor 866 MHz, 256K Cache, 133 MHz FSB. Package type 370-pin FC-PGA, Socket typeː Socket 370.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-121943059",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Unterseite Intel Pentium G620 20220818 CPU043.png",
+      "credit": "PantheraLeo1359531 / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Unterseite_Intel_Pentium_G620_20220818_CPU043.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Unterseite_Intel_Pentium_G620_20220818_CPU043.png/960px-Unterseite_Intel_Pentium_G620_20220818_CPU043.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 3000,
+      "alt_suggestion": "Bottom side of the Intel Pentium G620.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-19624149",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Intel Pentium III 1100 (RB80526PY005256)-top PNr°0353.jpg",
+      "credit": "D-Kuru / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Intel_Pentium_III_1100_(RB80526PY005256)-top_PNr%C2%B00353.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Intel_Pentium_III_1100_%28RB80526PY005256%29-top_PNr%C2%B00353.jpg/960px-Intel_Pentium_III_1100_%28RB80526PY005256%29-top_PNr%C2%B00353.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2229,
+      "height": 2243,
+      "alt_suggestion": "Top view of an Intel Pentium III 1100 (RB80526PY005256) CPU",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "generated-chipgrid",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: chipgrid",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-chipgrid.png",
+      "alt_suggestion": "Illustration of a computer chip above a lookup-table grid with one highlighted cell"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Intel Pentium processor CPU die\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Intel Pentium\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Intel Pentium processor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

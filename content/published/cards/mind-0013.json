@@ -1,0 +1,50 @@
+{
+  "id": "mind-0013",
+  "interest": "mind",
+  "title": "You hear your name across the room",
+  "probes": [
+    {
+      "id": "mind-0013-p1",
+      "question": "True or false: personal names are among the messages that catch people's attention in a noisy room.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0013-p2",
+      "question": "The cocktail party effect is mostly about which sense?",
+      "kind": "mcq",
+      "options": [
+        "Hearing",
+        "Taste",
+        "Touch",
+        "Smell"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cocktail party effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cocktail_party_effect"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:15.731Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0013.webp",
+    "alt": "Sepia photograph from about 1905 of a dense crowd, trams and rickshaws on a busy Tokyo street.",
+    "kind": "photo",
+    "credit": "Underwood & Underwood, publisher. / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Crowded_Tokyo_Street_1905.jpg"
+  },
+  "body": {
+    "claim": "In a noisy room, your brain can follow one conversation and still notice some messages from elsewhere, like your own name.",
+    "why": "The cocktail party effect is a phenomenon wherein the brain focuses a person's attention on a particular stimulus, usually auditory. Examples of messages that catch people's attention include personal names and taboo words."
+  }
+}

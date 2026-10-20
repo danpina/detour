@@ -1,0 +1,50 @@
+{
+  "id": "money-0012",
+  "interest": "money",
+  "title": "Bad money drives out good",
+  "probes": [
+    {
+      "id": "money-0012-p1",
+      "question": "Under Gresham's law, which coin tends to disappear from circulation?",
+      "kind": "mcq",
+      "options": [
+        "The one with more valuable metal",
+        "The one with less valuable metal",
+        "The newest one",
+        "The heaviest one"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0012-p2",
+      "question": "True or false: after the Coinage Act of 1965, half dollars containing 90% silver were quickly hoarded by the public.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gresham's law (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gresham%27s_law"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:48.315Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0012.webp",
+    "alt": "Two stacks of US half dollars side by side, one silver and one copper-edged clad",
+    "kind": "photo",
+    "credit": "BrayLockBoy / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Two_stacks_of_half_dollars,_one_silver,_one_clad_-_effects_of_the_Coinage_Act_1965.jpg"
+  },
+  "body": {
+    "claim": "Gresham's law is a monetary principle stating that \"bad money drives out good\".",
+    "why": "If two coins with metal of different value are accepted by law as having similar face value, the more valuable coin will gradually disappear from circulation. Walking Liberty half dollars containing 90% silver were quickly hoarded by the public after the Coinage Act of 1965 debased half dollars to contain only 40% silver."
+  }
+}

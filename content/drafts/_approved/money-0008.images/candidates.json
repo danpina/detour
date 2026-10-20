@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0008",
+  "created_at": "2026-10-20T17:11:56.812Z",
+  "queries": [
+    "South Sea Bubble Isaac Newton 1720",
+    "South Sea Bubble",
+    "South Sea Bubble Isaac Newton"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-81237453",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Harga Saham South Sea.png",
+      "credit": "Encik Tekateki / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Harga_Saham_South_Sea.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Harga_Saham_South_Sea.png/960px-Harga_Saham_South_Sea.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2274,
+      "height": 910,
+      "alt_suggestion": "Harga saham South Sea semasa zaman gelembung South Sea dimana harga saham tesebut diapungkan secara manipulasi harga saham pasaran",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-45320",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "A3: Massachusetts Dining Room, 1720",
+      "credit": "Designed by Narcissa Niblack Thorne American, 1882–1966 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/45320",
+      "image_url": "https://www.artic.edu/iiif/2/809ba0d7-86de-e6be-da7b-e92a9a7f5d9c/full/843,/0/default.jpg",
+      "alt_suggestion": "Miniature dining room with yellow painted and white wood-paneled walls, rustic wooden furniture, dark wood floors.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-15442278",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Annuities advance notice printed form by the South Sea Company 30 April 1730.jpg",
+      "credit": "South Sea Company / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Annuities_advance_notice_printed_form_by_the_South_Sea_Company_30_April_1730.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Annuities_advance_notice_printed_form_by_the_South_Sea_Company_30_April_1730.jpg/960px-Annuities_advance_notice_printed_form_by_the_South_Sea_Company_30_April_1730.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1536,
+      "height": 1259,
+      "alt_suggestion": "Annuities advance notice, printed form, addressed to John Bardin, Jr., completed in manuscript, and signed by J. Anderson and W. Dams. Issued by the South Sea Company, London, and dated 30 April 1730.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-117618",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "E20: French Library of the Louis XV Period, c. 1720",
+      "credit": "Designed by Narcissa Niblack Thorne American, 1882–1966 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/117618",
+      "image_url": "https://www.artic.edu/iiif/2/2d6719e1-8c05-5d23-82fd-75297feca652/full/843,/0/default.jpg",
+      "alt_suggestion": "Miniature aristocratic home library with wood-paneled walls, floral carpet, and ornate and upholstered furniture.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-2821680",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "South Sea Bubble Cards-Tree.png",
+      "credit": "Scanned from reprint of 1841/1852 editions of \"Extraordinary Popular Delusions and the Madness of Crowds\" by Charles Mackay, LL. D. ISBN 1-5866-3558-1 / Wikimed",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:South_Sea_Bubble_Cards-Tree.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/South_Sea_Bubble_Cards-Tree.png/960px-South_Sea_Bubble_Cards-Tree.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2328,
+      "height": 3645,
+      "alt_suggestion": "Tree caricature from South Sea Bubble cards",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"South Sea Bubble Isaac Newton 1720\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"South Sea Bubble\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"South Sea Bubble Isaac Newton\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

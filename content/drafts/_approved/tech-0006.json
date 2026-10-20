@@ -1,0 +1,137 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Mars Climate Orbiter",
+    "angle": "A units mix-up that cost a spacecraft"
+  },
+  "created_at": "2026-10-20T17:10:03.156Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0006",
+    "interest": "tech",
+    "type": "story",
+    "title": "One number, two kinds of units",
+    "body": {
+      "panels": [
+        {
+          "text": "December 1998: NASA launches Mars Climate Orbiter. On September 23, 1999, communication with the spacecraft is permanently lost as it goes into orbital insertion."
+        },
+        {
+          "text": "Two software systems had to pass numbers to each other. One produced thruster results in pound-force seconds. The other expected those results in newton-seconds."
+        },
+        {
+          "text": "The two units are different by a factor of 4.45, and the trajectory software used the numbers to update the predicted position of the spacecraft."
+        },
+        {
+          "text": "The spacecraft encountered Mars on a trajectory that brought it too close to the planet, and it was destroyed in the atmosphere."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0006-p1",
+        "kind": "mcq",
+        "question": "What was mixed up between the two software systems?",
+        "options": [
+          "Units of measurement",
+          "Time zones",
+          "Programming languages",
+          "Radio frequencies"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0006-p2",
+        "kind": "tf",
+        "question": "True or false: Mars Climate Orbiter reached a safe orbit around Mars.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mars Climate Orbiter (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Artist rendering or NASA image of the Mars Climate Orbiter spacecraft above Mars",
+    "keywords": [
+      "Mars Climate Orbiter",
+      "NASA",
+      "spacecraft",
+      "Mars"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:14:45.718Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: one number, two kinds of units (pound-force seconds vs newton-seconds)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter",
+        "quote": "(incorrect by a factor of 4.45)"
+      },
+      {
+        "claim": "December 1998: NASA launches Mars Climate Orbiter",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter",
+        "quote": "was a robotic space probe launched by NASA on December 11, 1998"
+      },
+      {
+        "claim": "On September 23, 1999 communication with the spacecraft is permanently lost as it goes into orbital insertion",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter",
+        "quote": "on September 23, 1999, communication with the spacecraft was permanently lost as it went into orbital insertion"
+      },
+      {
+        "claim": "One software system produced thruster results in pound-force seconds",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter",
+        "quote": "software that calculated the total impulse produced by thruster firings produced results in pound-force seconds"
+      },
+      {
+        "claim": "The other system expected those results in newton-seconds; the units differ by a factor of 4.45",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter",
+        "quote": "expected to be in newton-seconds (incorrect by a factor of 4.45)"
+      },
+      {
+        "claim": "The trajectory software used the numbers to update the predicted position of the spacecraft",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter",
+        "quote": "to update the predicted position of the spacecraft"
+      },
+      {
+        "claim": "The spacecraft encountered Mars on a trajectory too close to the planet and was destroyed in the atmosphere",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter",
+        "quote": "The spacecraft encountered Mars on a trajectory that brought it too close to the planet, and it was destroyed in the atmosphere."
+      },
+      {
+        "claim": "Probe 1 answer: units of measurement were mixed up",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter",
+        "quote": "An investigation attributed the failure to a measurement mismatch between two measurement systems"
+      },
+      {
+        "claim": "Probe 2 (false): Mars Climate Orbiter did not reach a safe orbit",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter",
+        "quote": "it was destroyed in the atmosphere"
+      }
+    ],
+    "overall": "pass"
+  }
+}

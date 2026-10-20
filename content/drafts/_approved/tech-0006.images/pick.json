@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-574574",
+  "alt": "Technicians in cleanroom suits work on the Mars Climate Orbiter spacecraft, with its silver-wrapped dish antenna and gold foil, during testing.",
+  "fits": true,
+  "note": "Public-domain NASA photo of the actual spacecraft. Technicians wear masks and suits and are not identifiable. Delta II launch (cand-4) rejected for NASA/Boeing/USAF logos.",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

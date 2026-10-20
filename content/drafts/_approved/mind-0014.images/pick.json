@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-131580232",
+  "alt": "Stylised illustration of a single neuron with branching dendrites, a glowing nucleus, a segmented myelin-covered axon and terminal branches.",
+  "fits": true,
+  "note": "Clear, colourful neuron diagram (CC BY-SA 4.0, attribution and share-alike apply). Tall format on white background; place text scrim accordingly. cand-4 is a similar orange diagram but landscape.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

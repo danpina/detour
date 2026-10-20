@@ -1,0 +1,135 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "South Sea Bubble and Isaac Newton",
+    "angle": "Even Newton lost money in a bubble"
+  },
+  "created_at": "2026-10-20T17:10:50.075Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0008",
+    "interest": "money",
+    "type": "story",
+    "title": "Newton and the South Sea",
+    "body": {
+      "panels": [
+        {
+          "text": "The South Sea Company was founded in 1711 to reduce the size of public debts. In 1720, its stock peaked, then collapsed in what became the South Sea Bubble."
+        },
+        {
+          "text": "Sir Isaac Newton owns nearly £22,000 in South Sea stock, and loses at least £10,000."
+        },
+        {
+          "text": "He is quoted: \"I can calculate the movement of the stars, but not the madness of men\"."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0008-p1",
+        "kind": "mcq",
+        "question": "What was the South Sea Company created in 1711 to do?",
+        "options": [
+          "Reduce the size of public debts",
+          "Mine silver",
+          "Build warships",
+          "Print newspapers"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0008-p2",
+        "kind": "tf",
+        "question": "True or false: Isaac Newton lost at least £10,000 in South Sea stock.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "South Sea Bubble (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/South_Sea_Bubble"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A painting of the 1720 South Sea Bubble, or a portrait of Isaac Newton",
+    "keywords": [
+      "South Sea Bubble",
+      "Isaac Newton",
+      "1720"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:17:55.422Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/South_Sea_Bubble",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: Newton and the South Sea",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/South_Sea_Bubble",
+        "quote": "Newton owned nearly £22,000 in South Sea stock in 1722"
+      },
+      {
+        "claim": "The South Sea Company was founded in 1711 to reduce the size of public debts.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/South_Sea_Bubble",
+        "quote": "The South Sea Company was created in 1711 to reduce the size of public debts",
+        "note": "Page also says 'founded in January 1711'."
+      },
+      {
+        "claim": "In 1720, its stock peaked, then collapsed.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/South_Sea_Bubble",
+        "quote": "Company stock rose greatly in value as it expanded its operations dealing in government debt, and peaked in 1720 before suddenly collapsing to little above its original flotation price."
+      },
+      {
+        "claim": "The collapse became known as the South Sea Bubble.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/South_Sea_Bubble",
+        "quote": "The notorious economic bubble this created, which ruined thousands of investors, became known as the South Sea Bubble"
+      },
+      {
+        "claim": "Sir Isaac Newton owns nearly £22,000 in South Sea stock.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/South_Sea_Bubble",
+        "quote": "Newton owned nearly £22,000 in South Sea stock in 1722",
+        "note": "Page dates this to 1722; card gives no year."
+      },
+      {
+        "claim": "Newton loses at least £10,000.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/South_Sea_Bubble",
+        "quote": "and lost at least £10,000"
+      },
+      {
+        "claim": "Newton is quoted: \"I can calculate the movement of the stars, but not the madness of men\".",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/South_Sea_Bubble",
+        "quote": "He is also quoted, \"I can calculate the movement of the stars, but not the madness of men\""
+      },
+      {
+        "claim": "Probe 1: created in 1711 to reduce the size of public debts (answer: Reduce the size of public debts).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/South_Sea_Bubble",
+        "quote": "The South Sea Company was created in 1711 to reduce the size of public debts"
+      },
+      {
+        "claim": "Probe 2: True - Newton lost at least £10,000 in South Sea stock.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/South_Sea_Bubble",
+        "quote": "and lost at least £10,000"
+      }
+    ],
+    "overall": "pass"
+  }
+}

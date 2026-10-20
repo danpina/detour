@@ -1,0 +1,62 @@
+{
+  "id": "money-0005",
+  "interest": "money",
+  "title": "The money too heavy to move",
+  "probes": [
+    {
+      "id": "money-0005-p1",
+      "question": "How was ownership of a large rai stone established?",
+      "kind": "mcq",
+      "options": [
+        "By where the stone stood",
+        "By its history in oral tradition",
+        "By a written deed",
+        "By a royal stamp"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0005-p2",
+      "question": "True or false: rai stones were quarried mainly on Yap itself.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rai stones (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rai_stones"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:24.035Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0005.webp",
+    "alt": "A large round limestone rai stone with a central hole standing upright among palms and rocks on Yap",
+    "kind": "photo",
+    "credit": "Eric Guinther / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Yap_Stone_Money.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "On the island of Yap, in Micronesia, people used large stone discs called rai stones. They were quarried on several of the Micronesian islands, mainly Palau."
+      },
+      {
+        "text": "The stones were highly valued by the Yapese and used for important ceremonial gifts. The largest extant stone is 3.6 metres (12 ft) in diameter and weighs 4,000 kilograms."
+      },
+      {
+        "text": "Ownership of a large stone, which would be too difficult to move, was established by its history as recorded in oral tradition rather than by its location."
+      },
+      {
+        "text": "Some modern economists have viewed rai stones as a form of money: a demonstration that the value of some forms of money can be assigned purely through a shared belief in said value."
+      }
+    ]
+  }
+}

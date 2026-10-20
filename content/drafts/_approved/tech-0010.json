@@ -1,0 +1,112 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Voyager 1 memory",
+    "angle": "A 1977 spacecraft with a tiny memory"
+  },
+  "created_at": "2026-10-20T17:10:03.157Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0010",
+    "interest": "tech",
+    "type": "estimate",
+    "title": "How much memory does Voyager 1 have?",
+    "body": {
+      "question": "Voyager 1 was launched by NASA in 1977. About how much total memory does it have, in kilobytes?",
+      "unit": "KB",
+      "min": 1,
+      "max": 100000,
+      "scale": "log",
+      "answer": 68,
+      "reveal": "The spacecraft's total memory is only 68 kilobytes. When part of a memory chip was corrupted beyond repair, engineers restored communication by rearranging code away from the defective chip, and they deleted unused code to make room."
+    },
+    "probes": [
+      {
+        "id": "tech-0010-p1",
+        "kind": "mcq",
+        "question": "How did engineers work around Voyager 1's defective memory chip?",
+        "options": [
+          "They rearranged code away from the defective chip",
+          "They replaced the chip on a spacewalk",
+          "They flew the probe home",
+          "They switched to a second Earth-based computer"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0010-p2",
+        "kind": "tf",
+        "question": "True or false: Voyager 1 was launched by NASA in 1977.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Voyager 1 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Voyager_1"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Voyager spacecraft with its large dish antenna",
+    "keywords": [
+      "Voyager 1",
+      "spacecraft",
+      "NASA",
+      "probe"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:14:45.720Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Voyager_1",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Voyager 1 was launched by NASA in 1977",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voyager_1",
+        "quote": "Voyager 1 is a space probe launched by NASA on September 5, 1977"
+      },
+      {
+        "claim": "Total memory is only 68 kilobytes (answer: 68 KB)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voyager_1",
+        "quote": "the spacecraft's total memory is only 68 kilobytes"
+      },
+      {
+        "claim": "Part of a memory chip was corrupted beyond repair; communication was restored by rearranging code away from the defective chip",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voyager_1",
+        "quote": "communication of health and status was restored by rearranging code away from the defective FDS memory chip, three percent of which was corrupted beyond repair"
+      },
+      {
+        "claim": "Engineers deleted unused code to make room",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voyager_1",
+        "quote": "the engineers deleted unused code"
+      },
+      {
+        "claim": "Probe 1 answer: engineers rearranged code away from the defective chip",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voyager_1",
+        "quote": "rearranging code away from the defective FDS memory chip"
+      },
+      {
+        "claim": "Probe 2 (true): launched by NASA in 1977",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voyager_1",
+        "quote": "Voyager 1 is a space probe launched by NASA on September 5, 1977"
+      }
+    ],
+    "overall": "pass"
+  }
+}

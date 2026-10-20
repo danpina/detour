@@ -1,0 +1,57 @@
+{
+  "id": "mind-0015",
+  "interest": "mind",
+  "title": "Which line is longer?",
+  "probes": [
+    {
+      "id": "mind-0015-p1",
+      "question": "True or false: in the Müller-Lyer illusion the shafts are all the same physical length.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0015-p2",
+      "question": "Who devised the Müller-Lyer illusion, in 1889?",
+      "kind": "mcq",
+      "options": [
+        "Franz Carl Müller-Lyer",
+        "Ivan Pavlov",
+        "John Ridley Stroop",
+        "Brenda Milner"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Müller-Lyer illusion (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:23.309Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0015.webp",
+    "alt": "A white wall panel showing two horizontal lines of equal length, one with inward-pointing arrowheads and one with outward-pointing fins, the Muller-Lyer illusion.",
+    "kind": "photo",
+    "credit": "Hamaredha / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%BCller-Lyer_illusion_2021_(1).jpg"
+  },
+  "body": {
+    "question": "Two lines have arrow fins. One has fins pointing outwards (tails), the other inwards (heads). Both shafts are the same physical length. Which looks longer?",
+    "options": [
+      "The one with fins outwards",
+      "The one with fins inwards",
+      "They look identical",
+      "It depends on the person's age"
+    ],
+    "answer": 0,
+    "reveal": "The line segment forming the shaft of the arrow with two tails is perceived to be longer than that forming the shaft of the arrow with two heads, though all the shafts are the same physical length."
+  }
+}

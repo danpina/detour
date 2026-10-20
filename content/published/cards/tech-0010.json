@@ -1,0 +1,55 @@
+{
+  "id": "tech-0010",
+  "interest": "tech",
+  "title": "How much memory does Voyager 1 have?",
+  "probes": [
+    {
+      "id": "tech-0010-p1",
+      "question": "How did engineers work around Voyager 1's defective memory chip?",
+      "kind": "mcq",
+      "options": [
+        "They rearranged code away from the defective chip",
+        "They replaced the chip on a spacewalk",
+        "They flew the probe home",
+        "They switched to a second Earth-based computer"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0010-p2",
+      "question": "True or false: Voyager 1 was launched by NASA in 1977.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Voyager 1 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Voyager_1"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:53.304Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "tech-0010.webp",
+    "alt": "Artist concept of the Voyager spacecraft with its white dish antenna and long boom against a starry blue-black sky.",
+    "kind": "photo",
+    "credit": "NASA/JPL / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Voyager_spacecraft.jpg"
+  },
+  "body": {
+    "question": "Voyager 1 was launched by NASA in 1977. About how much total memory does it have, in kilobytes?",
+    "unit": "KB",
+    "min": 1,
+    "max": 100000,
+    "scale": "log",
+    "answer": 68,
+    "reveal": "The spacecraft's total memory is only 68 kilobytes. When part of a memory chip was corrupted beyond repair, engineers restored communication by rearranging code away from the defective chip, and they deleted unused code to make room."
+  }
+}

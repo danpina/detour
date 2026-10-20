@@ -1,0 +1,92 @@
+{
+  "draft_id": "money-0011",
+  "created_at": "2026-10-20T17:12:09.298Z",
+  "queries": [
+    "coin loss hand",
+    "coin",
+    "coin loss"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-97493164",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Late Saxon coin loss, 4 Aethelred II pennies and fragments (FindID 835499).jpg",
+      "credit": "Norfolk County Council, Garry Crace, 2020-02-18 08:53:12 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Late_Saxon_coin_loss,_4_Aethelred_II_pennies_and_fragments_(FindID_835499).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Late_Saxon_coin_loss%2C_4_Aethelred_II_pennies_and_fragments_%28FindID_835499%29.jpg/960px-Late_Saxon_coin_loss%2C_4_Aethelred_II_pennies_and_fragments_%28FindID_835499%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2498,
+      "height": 5247,
+      "alt_suggestion": "Description: Four silver pennies of Aethelred II, or fragments thereof found scattered over a small area. Date: c. AD 979 - 985. Catalogue: 1) Penny, moneyer Eadgar of Thetford, weight 1.37g 2) Fragme",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-200907310025HQ",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "National Federation of the Blind Braille Coin",
+      "credit": "Paul E. Alers / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/200907310025HQ",
+      "image_url": "https://images-assets.nasa.gov/image/200907310025HQ/200907310025HQ~medium.jpg",
+      "alt_suggestion": "NASA Associate Administrator Chris Scolese, left, and Mark Riccobono, executive director of the Jernigan Institute of the National Federation of the Blind hold up a Braille enscribed award with two Lo",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-566",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Life Cast of the Hands and Face of Abraham Lincoln",
+      "credit": "Leonard Wells Volk (American, 1828–1895) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/566",
+      "image_url": "https://www.artic.edu/iiif/2/8ad03fff-be28-ab22-689c-8f022b5e181c/full/843,/0/default.jpg",
+      "alt_suggestion": "Three-part bronze sculpture set of two clenched hands and a man's face with closed eyes and mouth, an object in one hand.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-97301412",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Early Medieval Coin, Penny of Aethelred II (FindID 918753).jpg",
+      "credit": "North Lincolnshire Museum, Martin Foreman, 2018-09-20 16:40:47 / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Early_Medieval_Coin,_Penny_of_Aethelred_II_(FindID_918753).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Early_Medieval_Coin%2C_Penny_of_Aethelred_II_%28FindID_918753%29.jpg/960px-Early_Medieval_Coin%2C_Penny_of_Aethelred_II_%28FindID_918753%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5476,
+      "height": 2362,
+      "alt_suggestion": "Silver coin fragment. Penny of Aethelred II (978-1016), bent with loss of part of legend, Spink no. 1144, citing BMC IIa, issue of 978-991. Obverse description: Bust draped and diademed right, large e",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA22926",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Small Seismic Sensor on InSight",
+      "credit": "Imperial College London / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA22926",
+      "image_url": "https://images-assets.nasa.gov/image/PIA22926/PIA22926~thumb.jpg",
+      "alt_suggestion": "A copy of one of the sensors on NASA InSight's seismometer, compared to a 2-euro coin (about 1 inch wide). The short-period seismometer has three of these sensors. https://photojournal.jpl.nasa.gov/ca",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-coinfall",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: coinfall",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-coinfall.png",
+      "alt_suggestion": "Illustration of an open hand held flat with one coin resting on it and another coin slipping off the fingertips with a dotted trail"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"coin loss hand\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"coin\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"coin loss\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

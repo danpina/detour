@@ -1,0 +1,49 @@
+{
+  "id": "money-0011",
+  "interest": "money",
+  "title": "Losing hurts about double",
+  "probes": [
+    {
+      "id": "money-0011-p1",
+      "question": "True or false: loss aversion means a loss and an equal gain feel about the same.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "money-0011-p2",
+      "question": "Which psychologist, with Amos Tversky, coined the term loss aversion in 1979?",
+      "kind": "mcq",
+      "options": [
+        "Daniel Kahneman",
+        "John Maynard Keynes",
+        "Milton Friedman",
+        "John Harsanyi"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Loss aversion (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Loss_aversion"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:47.794Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0011.webp",
+    "alt": "Illustration of a flat open hand with a coin resting on it and another coin slipping off the fingertips along a dotted path",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "Empirically, losses tend to be treated as if they were twice as large as an equivalent gain.",
+    "why": "This is called loss aversion. In 1979, Daniel Kahneman and his associate Amos Tversky originally coined the term \"loss aversion\" in their initial proposal of prospect theory."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "mind-0010",
+  "interest": "mind",
+  "title": "He couldn't remember practising, yet he improved",
+  "probes": [
+    {
+      "id": "mind-0010-p1",
+      "question": "True or false: H.M. improved at mirror drawing even though he had no memory of the previous attempts.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0010-p2",
+      "question": "What was the mirror drawing task?",
+      "kind": "mcq",
+      "options": [
+        "Tracing a star while looking at a reflection",
+        "Reciting a list of words",
+        "Matching faces to names",
+        "Solving a maze on paper"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Henry Molaison (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Henry_Molaison"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:10.723Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0010.webp",
+    "alt": "Illustration of a pencil tracing a star between two close outlines, seen as if in a mirror",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Henry Molaison, known as H.M., had parts of his brain removed in 1953 in an attempt to cure his epilepsy."
+      },
+      {
+        "text": "Afterwards he developed severe anterograde amnesia: he lost his ability to remember."
+      },
+      {
+        "text": "In the early 1960s, Brenda Milner asked him to trace a star while only looking at a reflection of his paper and pencil in a mirror. At first he went outside the lines about 30 times."
+      },
+      {
+        "text": "By the tenth trial on the first day he only made about 5-6 errors, even though he had no memory of the previous attempts."
+      }
+    ]
+  }
+}

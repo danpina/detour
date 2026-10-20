@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Cocktail party effect",
+    "angle": "Hearing your own name in a noisy room"
+  },
+  "created_at": "2026-10-20T17:08:27.228Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0013",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "You hear your name across the room",
+    "body": {
+      "claim": "In a noisy room, your brain can follow one conversation and still notice some messages from elsewhere, like your own name.",
+      "why": "The cocktail party effect is a phenomenon wherein the brain focuses a person's attention on a particular stimulus, usually auditory. Examples of messages that catch people's attention include personal names and taboo words."
+    },
+    "probes": [
+      {
+        "id": "mind-0013-p1",
+        "kind": "tf",
+        "question": "True or false: personal names are among the messages that catch people's attention in a noisy room.",
+        "answer": true
+      },
+      {
+        "id": "mind-0013-p2",
+        "kind": "mcq",
+        "question": "The cocktail party effect is mostly about which sense?",
+        "options": [
+          "Hearing",
+          "Taste",
+          "Touch",
+          "Smell"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cocktail party effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cocktail_party_effect"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A crowded, lively party or cafe with many people talking",
+    "keywords": [
+      "crowded party",
+      "conversation",
+      "cocktail party"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:12:36.000Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cocktail_party_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The cocktail party effect: the brain focuses attention on a particular stimulus, usually auditory (probe 2 answer: hearing)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cocktail_party_effect",
+        "quote": "the brain focuses a person's attention on a particular stimulus, usually auditory"
+      },
+      {
+        "claim": "A partygoer can follow a single conversation in a noisy room",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cocktail_party_effect",
+        "quote": "as when a partygoer follows a single conversation in a noisy room"
+      },
+      {
+        "claim": "Messages that catch attention include personal names (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cocktail_party_effect",
+        "quote": "Examples of messages that catch people's attention include personal names and taboo words."
+      },
+      {
+        "claim": "Participants noticed stimuli like their own name in the unattended channel (Cherry experiments), i.e. still notice messages from elsewhere",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cocktail_party_effect",
+        "quote": "Participants were able to notice physical changes, like pitch or change in gender of the speaker, and stimuli, like their own name, in the unattended channel."
+      }
+    ],
+    "overall": "pass"
+  }
+}

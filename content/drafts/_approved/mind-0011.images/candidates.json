@@ -1,0 +1,92 @@
+{
+  "draft_id": "mind-0011",
+  "created_at": "2026-10-20T17:11:27.113Z",
+  "queries": [
+    "spot the difference change blindness crowd scene",
+    "spot the difference",
+    "spot the difference change blindness"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-6967923",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Globe and high court (Spot the difference).jpg",
+      "credit": "Globe_and_high_court.jpg: created by jjron Globe_and_high_court_fix.jpg: created by jjron, edited by Fir0002 derivative work: WikiCantona (talk) / Wikimedia Com",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Globe_and_high_court_(Spot_the_difference).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Globe_and_high_court_%28Spot_the_difference%29.jpg/960px-Globe_and_high_court_%28Spot_the_difference%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3200,
+      "height": 1200,
+      "alt_suggestion": "A spot the difference puzzle, using a modified photo of Captain James Cook Memorial Globe and High Court, Canberra.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA00235",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Jupiter with Satellite Io",
+      "credit": "NASA/JPL / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA00235",
+      "image_url": "https://images-assets.nasa.gov/image/PIA00235/PIA00235~small.jpg",
+      "alt_suggestion": "NASA Voyager 1 took this photo of Jupiter Feb. 1, 1979. Voyager scientists saw that different colors in clouds around the Great Red Spot imply that the clouds swirl around the spot at varying altitude",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-44018",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Croquet Scene",
+      "credit": "Winslow Homer (American, 1836–1910) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/44018",
+      "image_url": "https://www.artic.edu/iiif/2/f7b2db45-f393-653c-07ef-84319b0cdb92/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of four figures in blue, red, brown dresses playing croquet.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-170828826",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Spot the difference (mars-paranal-wesson).jpg",
+      "credit": "R. Wesson/ESO / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Spot_the_difference_(mars-paranal-wesson).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Spot_the_difference_%28mars-paranal-wesson%29.jpg/960px-Spot_the_difference_%28mars-paranal-wesson%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2926,
+      "height": 1089,
+      "alt_suggestion": "On the left of this image is the landscape of Mars and to the right is Cerro Paranal in Chile, home to ESO's Very Large Telescope.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA00838",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "First Near Infrared Mapping Spectrometer NIMS Image of the Great Red Spot",
+      "credit": "NASA/JPL / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA00838",
+      "image_url": "https://images-assets.nasa.gov/image/PIA00838/PIA00838~small.jpg",
+      "alt_suggestion": "This infrared image, taken by NASA Galileo spacecraft in late June, 1996, of Jupiter Great Red Spot has different colors than what you normally see.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-missing",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: missing",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-missing.png",
+      "alt_suggestion": "Illustration of a row of street lamps along a road, with one lamp missing and only a dotted outline left"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"spot the difference change blindness crowd scene\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"spot the difference\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"spot the difference change blindness\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

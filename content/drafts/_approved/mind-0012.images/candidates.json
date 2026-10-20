@@ -1,0 +1,99 @@
+{
+  "draft_id": "mind-0012",
+  "created_at": "2026-10-20T17:11:30.734Z",
+  "queries": [
+    "list notebook memory",
+    "list",
+    "list notebook"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-169560231",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "How the Eagle Landed — the Grumman Construction Log (7610058658).jpg",
+      "credit": "jurvetson / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:How_the_Eagle_Landed_%E2%80%94_the_Grumman_Construction_Log_(7610058658).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/How_the_Eagle_Landed_%E2%80%94_the_Grumman_Construction_Log_%287610058658%29.jpg/960px-How_the_Eagle_Landed_%E2%80%94_the_Grumman_Construction_Log_%287610058658%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3555,
+      "height": 2165,
+      "alt_suggestion": "On July 20, 1969, Eagle landed on the moon. These are the handwritten notes from the Grumman engineers as they pushed to complete Lunar Module LM-5 in 1968. On the last page, they learn than this part",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-sts063-25-017",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Astronaut Janice Voss looks over procedures list on the flight deck",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/sts063-25-017",
+      "image_url": "https://images-assets.nasa.gov/image/sts063-25-017/sts063-25-017~medium.jpg",
+      "alt_suggestion": "STS063-25-017 (3-11 Feb 1995) --- On the Space Shuttle Discovery's flight deck, astronaut Janice E. Voss, mission specialist, looks over a procedures list while operating the Remote Manipulator System",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-2113",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Notebook",
+      "credit": "Germany / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/2113",
+      "image_url": "https://www.artic.edu/iiif/2/5f408d13-19a5-6a0e-4f93-6a99282c6030/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of leather binding; covers of velvet, embroidered with chenille and metal thread.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-128899458",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Computer lab tool kit phase 3 IMG 2136 (1) (26093095008).jpg",
+      "credit": "Bill Abbott / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Computer_lab_tool_kit_phase_3_IMG_2136_(1)_(26093095008).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Computer_lab_tool_kit_phase_3_IMG_2136_%281%29_%2826093095008%29.jpg/960px-Computer_lab_tool_kit_phase_3_IMG_2136_%281%29_%2826093095008%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3264,
+      "height": 2448,
+      "alt_suggestion": "Shopping List: Grounding mat w/ cable and alligator clip Ethernet to USB adapter, drivers Bootable USB stick/(thumb)drive w/ utility sw Additional USB drives/sticks w/ BIOS updates, etc. Large paper-c",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA18003",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Welcome to the Sun Neighborhood",
+      "credit": "NASA/Penn State University / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA18003",
+      "image_url": "https://images-assets.nasa.gov/image/PIA18003/PIA18003~small.jpg",
+      "alt_suggestion": "This diagram illustrates the locations of the star systems closest to the sun. The year when the distance to each system was determined is listed after the system name.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-wordcards",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: wordcards",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-wordcards.png",
+      "alt_suggestion": "Illustration of a column of seven word cards where the first and last are bright and the middle ones fade away"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Muiredach, abbot of Monasterboice, 890-923 A. D; his life and surroundings (1914) (14777372592).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"list notebook memory\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"list\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"list notebook\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

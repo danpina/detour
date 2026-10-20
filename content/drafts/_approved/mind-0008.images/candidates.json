@@ -1,0 +1,94 @@
+{
+  "draft_id": "mind-0008",
+  "created_at": "2026-10-20T17:11:14.904Z",
+  "queries": [
+    "Stroop effect color words paint colors",
+    "Stroop effect",
+    "Stroop effect color words"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-131076842",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Test de Stroop (exprés).png",
+      "credit": "JasonA34 / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Test_de_Stroop_(expr%C3%A9s).png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Test_de_Stroop_%28expr%C3%A9s%29.png/960px-Test_de_Stroop_%28expr%C3%A9s%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1546,
+      "height": 848,
+      "alt_suggestion": "El test se realiza mostrando una serie de palabras escritas en diferentes colores y se pide que se nombre el color de la tinta con la que están escritas las palabras.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-109819",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Lozenge Composition with Yellow, Black, Blue, Red, and Gray",
+      "credit": "Piet Mondrian Dutch, 1872–1944 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/109819",
+      "image_url": "https://www.artic.edu/iiif/2/25f660ee-f1db-d13b-42a5-56df97c98ba7/full/843,/0/default.jpg",
+      "alt_suggestion": "A square white tile, rotated 90 degrees, crossed by black lines intersecting at 90-degree angles. A few of the shapes thus formed—some partial squares, some rectangles—are colored in a single shade of yellow, blue, black, or red.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-128129079",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Stroop effect example.png",
+      "credit": "Belbury / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stroop_effect_example.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Stroop_effect_example.png/960px-Stroop_effect_example.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2103,
+      "height": 1308,
+      "alt_suggestion": "An example of the Stroop effect.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-80607",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Self-Portrait",
+      "credit": "Vincent van Gogh (Dutch, 1853–1890) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/80607",
+      "image_url": "https://www.artic.edu/iiif/2/47c5bcb8-62ef-e5d7-55e7-f5121f409a30/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of a red-haired, bearded man with light skin, painted in short brushstrokes and multicolored dots. The background is likewise a mass of small, closely spaced colored dots, these in green, blue, and red-orange.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-128129196",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Stroop stimuli.png",
+      "credit": "Wikipedia editors / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stroop_stimuli.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Stroop_stimuli.png/960px-Stroop_stimuli.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2169,
+      "height": 1083,
+      "alt_suggestion": "Examples of the three stimuli and colors used for each of the activities of the original Stroop article.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-colorwords",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: colorwords",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-colorwords.png",
+      "alt_suggestion": "Illustration of four big colour discs, each with a small disc of a clashing colour inside it"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Stroop effect color words paint colors\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Stroop effect\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Stroop effect color words\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

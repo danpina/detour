@@ -1,0 +1,82 @@
+{
+  "draft_id": "tech-0006",
+  "created_at": "2026-10-20T17:12:20.641Z",
+  "queries": [
+    "Mars Climate Orbiter NASA spacecraft",
+    "Mars Climate Orbiter",
+    "Mars Climate Orbiter NASA"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-574574",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Mars Climate Orbiter during tests.jpg",
+      "credit": "NASA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mars_Climate_Orbiter_during_tests.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Mars_Climate_Orbiter_during_tests.jpg/960px-Mars_Climate_Orbiter_during_tests.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2446,
+      "height": 3196,
+      "alt_suggestion": "The Mars Surveyor '98 Climate Orbiter is shown here during acoustic tests that simulate launch conditions. The orbiter was to conduct a two year primary mission to profile the Martian atmosphere and m",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA20541",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Colorful Polar Layered Deposits",
+      "credit": "NASA/JPL-Caltech/Univ. of Arizona / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA20541",
+      "image_url": "https://images-assets.nasa.gov/image/PIA20541/PIA20541~medium.jpg",
+      "alt_suggestion": "The North Polar layered deposits provide a record of recent climate changes on Mars as seen by NASA Mars Reconnaissance Orbiter spacecraft. Color variations between layers are due to differences in co",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-102074",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Head of Mars",
+      "credit": "Roman / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/102074",
+      "image_url": "https://www.artic.edu/iiif/2/4d5d1786-225b-477e-f4fb-3aba27fd97d7/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of marble.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-20055803",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Delta II launches with Mars Climate Orbiter.jpg",
+      "credit": "NASA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Delta_II_launches_with_Mars_Climate_Orbiter.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Delta_II_launches_with_Mars_Climate_Orbiter.jpg/960px-Delta_II_launches_with_Mars_Climate_Orbiter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1885,
+      "height": 2617,
+      "alt_suggestion": "A Boeing Delta II expendable launch vehicle lifts off with NASA's Mars Climate Orbiter at 1:45:51 p.m. EST, on Dec. 11, 1998, from Launch Complex 17A, Cape Canaveral Air Station. The launch was delaye",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-KSC-07pd2010",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-07pd2010",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-07pd2010",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-07pd2010/KSC-07pd2010~medium.jpg",
+      "alt_suggestion": "KENNEDY SPACE CENTER, Fla. --In the Payload Hazardous Servicing Facility, the heat shield for the Phoenix Mars Lander spacecraft is moved toward the spacecraft, in the background. Targeted for launch ",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Mars Climate Orbiter NASA spacecraft\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Mars Climate Orbiter\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Mars Climate Orbiter NASA\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

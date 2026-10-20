@@ -1,0 +1,92 @@
+{
+  "draft_id": "mind-0010",
+  "created_at": "2026-10-20T17:11:22.594Z",
+  "queries": [
+    "mirror drawing hippocampus brain",
+    "mirror drawing",
+    "mirror drawing hippocampus"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-99650629",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Etruscan Mirror - Judgement of Paris - drawing.jpg",
+      "credit": "This file was derived from: Bronze mirror. Bloomington, Indiana University Art Museum. After CSE U.S.A. 1.4a. Ca. 325-300 BCE.tif / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Etruscan_Mirror_-_Judgement_of_Paris_-_drawing.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Etruscan_Mirror_-_Judgement_of_Paris_-_drawing.jpg/960px-Etruscan_Mirror_-_Judgement_of_Paris_-_drawing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 8800,
+      "height": 10400,
+      "alt_suggestion": "Bronze mirror with the Judgment of Paris, with figures from left to right: Elcsntre, Menrva, Uni, Turan, Althaia. Thesan with her chariot of the dawn in upper exergue. In lower exergue, Vilae strangli",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-NHQ202002210002",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Kenneth Harris Portrait",
+      "credit": "NASA/Joel Kowsky / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/NHQ202002210002",
+      "image_url": "https://images-assets.nasa.gov/image/NHQ202002210002/NHQ202002210002~medium.jpg",
+      "alt_suggestion": "For me, I picked up an interest for engineering through drawing. When I was young, I was really big into art. Like most science-drawn younger kids, I would draw Pokémon, I would draw Dragon Ball Z, th",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-10522",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Mirror with \"TLV\" Pattern",
+      "credit": "China / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/10522",
+      "image_url": "https://www.artic.edu/iiif/2/7cdaae46-0eab-8df1-7a50-45ae63dbcc1d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of bronze.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-141844201",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Drawing of an ancient mirror from Szechwan.png",
+      "credit": "West China Border Research Society / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Drawing_of_an_ancient_mirror_from_Szechwan.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Drawing_of_an_ancient_mirror_from_Szechwan.png/960px-Drawing_of_an_ancient_mirror_from_Szechwan.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1472,
+      "height": 1388,
+      "alt_suggestion": "This drawing by Mrs. Kitchen of an ancient mirror shows a sacred tree with a figure underneath on each side. Below a dragon is seen. In the centre are two birds flying. Is not the whole representation",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-s73-36910",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Engineer's drawing of Skylab 4 Far Ultraviolet Electronographic camera",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/s73-36910",
+      "image_url": "https://images-assets.nasa.gov/image/s73-36910/s73-36910~medium.jpg",
+      "alt_suggestion": "S73-36910 (November 1973) --- An engineer's drawing of the Skylab 4 Far Ultraviolet Electronographic camera (Experiment S201). Arrows point to various features and components of the camera. As the Com",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-mirrorstar",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: mirrorstar",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-mirrorstar.png",
+      "alt_suggestion": "Illustration of a pencil tracing a star shape between two close outlines, seen as if in a mirror"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"mirror drawing hippocampus brain\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"mirror drawing\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"mirror drawing hippocampus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

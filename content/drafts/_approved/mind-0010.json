@@ -1,0 +1,125 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Henry Molaison (H.M.) and mirror drawing",
+    "angle": "A man who couldn't remember practising but still improved"
+  },
+  "created_at": "2026-10-20T17:08:27.227Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0010",
+    "interest": "mind",
+    "type": "story",
+    "title": "He couldn't remember practising, yet he improved",
+    "body": {
+      "panels": [
+        {
+          "text": "Henry Molaison, known as H.M., had parts of his brain removed in 1953 in an attempt to cure his epilepsy."
+        },
+        {
+          "text": "Afterwards he developed severe anterograde amnesia: he lost his ability to remember."
+        },
+        {
+          "text": "In the early 1960s, Brenda Milner asked him to trace a star while only looking at a reflection of his paper and pencil in a mirror. At first he went outside the lines about 30 times."
+        },
+        {
+          "text": "By the tenth trial on the first day he only made about 5-6 errors, even though he had no memory of the previous attempts."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0010-p1",
+        "kind": "tf",
+        "question": "True or false: H.M. improved at mirror drawing even though he had no memory of the previous attempts.",
+        "answer": true
+      },
+      {
+        "id": "mind-0010-p2",
+        "kind": "mcq",
+        "question": "What was the mirror drawing task?",
+        "options": [
+          "Tracing a star while looking at a reflection",
+          "Reciting a list of words",
+          "Matching faces to names",
+          "Solving a maze on paper"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Henry Molaison (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Henry_Molaison"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A pencil tracing a star-shaped figure in a mirror, or an abstract brain illustration",
+    "keywords": [
+      "mirror drawing",
+      "hippocampus",
+      "brain",
+      "memory"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:12:36.000Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Henry_Molaison",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "H.M. had parts of his brain removed in 1953 to try to cure his epilepsy",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Henry_Molaison",
+        "quote": "in 1953 received a bilateral medial temporal lobectomy to surgically resect parts of his brain"
+      },
+      {
+        "claim": "Afterwards he developed severe anterograde amnesia and lost his ability to remember",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Henry_Molaison",
+        "quote": "Molaison developed severe anterograde amnesia"
+      },
+      {
+        "claim": "In the early 1960s Milner had him trace a star seeing only a mirror reflection of paper and pencil (probe 2 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Henry_Molaison",
+        "quote": "In a study conducted by Milner in the early 1960s"
+      },
+      {
+        "claim": "The task: trace a star while only looking at a reflection in a mirror",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Henry_Molaison",
+        "quote": "trace a third star in the narrow space between two concentric stars while only looking at a reflection of his paper and pencil in a mirror"
+      },
+      {
+        "claim": "At first he went outside the lines about 30 times",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Henry_Molaison",
+        "quote": "he did not do well and went outside the lines about 30 times"
+      },
+      {
+        "claim": "By the tenth trial on day one he made about 5-6 errors",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Henry_Molaison",
+        "quote": "by the tenth trial on the first day he only made about 5-6 errors"
+      },
+      {
+        "claim": "He improved despite no memory of previous attempts (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Henry_Molaison",
+        "quote": "he improved even though he had no memory of the previous attempts"
+      }
+    ],
+    "overall": "pass"
+  }
+}

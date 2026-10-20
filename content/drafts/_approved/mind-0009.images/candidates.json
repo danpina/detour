@@ -1,0 +1,67 @@
+{
+  "draft_id": "mind-0009",
+  "created_at": "2026-10-20T17:11:18.274Z",
+  "queries": [
+    "Ivan Pavlov Pavlov dog experiment classical conditioning",
+    "Ivan Pavlov",
+    "Ivan Pavlov Pavlov dog experiment"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-19270394",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ivan Pavlov NLM3.jpg",
+      "credit": "http://ihm.nlm.nih.gov/images/B21072 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ivan_Pavlov_NLM3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Ivan_Pavlov_NLM3.jpg/960px-Ivan_Pavlov_NLM3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2270,
+      "height": 3314,
+      "alt_suggestion": "Ivan Pavlov",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-103804673",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "IVAN PAVLOV.jpg",
+      "credit": "Vibha C Kashyap / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:IVAN_PAVLOV.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/IVAN_PAVLOV.jpg/960px-IVAN_PAVLOV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 969,
+      "height": 1280,
+      "alt_suggestion": "Ivan pavlov",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-103804494",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ivan Pavlov Laboratory.jpg",
+      "credit": "Vibha C Kashyap / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ivan_Pavlov_Laboratory.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Ivan_Pavlov_Laboratory.jpg/960px-Ivan_Pavlov_Laboratory.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1130,
+      "height": 800,
+      "alt_suggestion": "Ivan Pavlov Laboratory",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Adventures with animals and plants (1948) (17751511050).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Ivan Pavlov Pavlov dog experiment classical conditioning\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Ivan Pavlov\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Ivan Pavlov Pavlov dog experiment\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0012",
+  "created_at": "2026-10-20T17:12:16.256Z",
+  "queries": [
+    "silver half dollar Walking Liberty coins",
+    "silver half dollar",
+    "silver half dollar Walking Liberty"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-79621534",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "2019 American Silver Eagle and 1943 Walking Liberty Half dollar side by side.jpg",
+      "credit": "BrayLockBoy / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2019_American_Silver_Eagle_and_1943_Walking_Liberty_Half_dollar_side_by_side.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2019_American_Silver_Eagle_and_1943_Walking_Liberty_Half_dollar_side_by_side.jpg/960px-2019_American_Silver_Eagle_and_1943_Walking_Liberty_Half_dollar_side_by_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1609,
+      "height": 1548,
+      "alt_suggestion": "A Walking Liberty half dollar from 2019, as well as a 1943 Walking Liberty half dollar side by side, showing that the former uses the obverse design of the latter.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-69541",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "One Dollar Silver Certificate",
+      "credit": "Victor Dubreuil American, born France, 1842–after 1910 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/69541",
+      "image_url": "https://www.artic.edu/iiif/2/4ecbef85-aec1-7455-e329-28540504fe96/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-78769878",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Two stacks of half dollars, one silver, one clad - effects of the Coinage Act 1965.jpg",
+      "credit": "BrayLockBoy / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Two_stacks_of_half_dollars,_one_silver,_one_clad_-_effects_of_the_Coinage_Act_1965.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Two_stacks_of_half_dollars%2C_one_silver%2C_one_clad_-_effects_of_the_Coinage_Act_1965.jpg/960px-Two_stacks_of_half_dollars%2C_one_silver%2C_one_clad_-_effects_of_the_Coinage_Act_1965.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2503,
+      "height": 1697,
+      "alt_suggestion": "Two stacks (unwrapped rolls) of Half dollars, demonstrating the effects of the Coinage Act 1965 in action - the stack of clad post-1971 half dollars can instantly be recognised by the reddish-brown co",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-110561",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "A Silver Morning",
+      "credit": "George Inness (American, 1825–1894) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/110561",
+      "image_url": "https://www.artic.edu/iiif/2/faeeb5d7-0366-f3c4-5251-63cd5fdc9148/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-77894237",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "1922 Grant Memorial Half dollar with star, obverse.jpg",
+      "credit": "United States Mint/Laura Gardin Fraser / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1922_Grant_Memorial_Half_dollar_with_star,_obverse.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/1922_Grant_Memorial_Half_dollar_with_star%2C_obverse.jpg/960px-1922_Grant_Memorial_Half_dollar_with_star%2C_obverse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2000,
+      "height": 2000,
+      "alt_suggestion": "Obverse of a 1922 Grant Memorial commemorative half dollar. This particular coin is the variety with a star in the field (to the right).",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"silver half dollar Walking Liberty coins\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"silver half dollar\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"silver half dollar Walking Liberty\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

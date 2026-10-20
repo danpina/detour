@@ -1,0 +1,70 @@
+{
+  "draft_id": "money-0007",
+  "created_at": "2026-10-20T17:11:53.698Z",
+  "queries": [
+    "Stockholms Banco Palmstruch banknote Swedish daler",
+    "Stockholms Banco",
+    "Stockholms Banco Palmstruch banknote"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-1344910",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "HandelsbankensHuvudkontorNatt20061105.JPG",
+      "credit": "JanM67 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:HandelsbankensHuvudkontorNatt20061105.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/HandelsbankensHuvudkontorNatt20061105.JPG/960px-HandelsbankensHuvudkontorNatt20061105.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2496,
+      "height": 1664,
+      "alt_suggestion": "The headquarters of Svenska Handelsbanken in Kungsträdgården in Stockholm at night",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-20380578",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Handelsbanken kontor.jpg",
+      "credit": "Stastny / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Handelsbanken_kontor.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Handelsbanken_kontor.jpg/960px-Handelsbanken_kontor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 1936,
+      "alt_suggestion": "Handelsbanken kontor i Hagfors",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-85525478",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Gezicht op het Rijksbankgebouw, te Stockholm Sweriges Rijkes Banco Sigill (titel op object), RP-P-2018-1152.jpg",
+      "credit": "Rijksmuseum / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gezicht_op_het_Rijksbankgebouw,_te_Stockholm_Sweriges_Rijkes_Banco_Sigill_(titel_op_object),_RP-P-2018-1152.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Gezicht_op_het_Rijksbankgebouw%2C_te_Stockholm_Sweriges_Rijkes_Banco_Sigill_%28titel_op_object%29%2C_RP-P-2018-1152.jpg/960px-Gezicht_op_het_Rijksbankgebouw%2C_te_Stockholm_Sweriges_Rijkes_Banco_Sigill_%28titel_op_object%29%2C_RP-P-2018-1152.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4740,
+      "height": 3226,
+      "alt_suggestion": "IdentificatieTitel(s): Gezicht op het Rijksbankgebouw, te Stockholm. Sweriges Rijkes Banco Sigill (titel op object)Objecttype: prent Objectnummer: RP-P-2018-1152Opschriften / Merken: verzamelaarsmerk,",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "generated-banknote",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: banknote",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-banknote.png",
+      "alt_suggestion": "Illustration of an old paper banknote with a round seal and handwritten-style lines, next to a small stack of coins"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Stockholms Banco Palmstruch banknote Swedish daler\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Stockholms Banco\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Stockholms Banco Palmstruch banknote\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

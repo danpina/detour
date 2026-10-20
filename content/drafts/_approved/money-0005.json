@@ -1,0 +1,124 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Rai stones of Yap",
+    "angle": "Money whose value rests on shared belief"
+  },
+  "created_at": "2026-10-20T17:10:50.068Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0005",
+    "interest": "money",
+    "type": "story",
+    "title": "The money too heavy to move",
+    "body": {
+      "panels": [
+        {
+          "text": "On the island of Yap, in Micronesia, people used large stone discs called rai stones. They were quarried on several of the Micronesian islands, mainly Palau."
+        },
+        {
+          "text": "The stones were highly valued by the Yapese and used for important ceremonial gifts. The largest extant stone is 3.6 metres (12 ft) in diameter and weighs 4,000 kilograms."
+        },
+        {
+          "text": "Ownership of a large stone, which would be too difficult to move, was established by its history as recorded in oral tradition rather than by its location."
+        },
+        {
+          "text": "Some modern economists have viewed rai stones as a form of money: a demonstration that the value of some forms of money can be assigned purely through a shared belief in said value."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0005-p1",
+        "kind": "mcq",
+        "question": "How was ownership of a large rai stone established?",
+        "options": [
+          "By where the stone stood",
+          "By its history in oral tradition",
+          "By a written deed",
+          "By a royal stamp"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0005-p2",
+        "kind": "tf",
+        "question": "True or false: rai stones were quarried mainly on Yap itself.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rai stones (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Rai_stones"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Large round rai stones with a central hole standing by a path on Yap",
+    "keywords": [
+      "Rai stones",
+      "Yap",
+      "stone money"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:15:04.505Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Rai_stones",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Rai stones were used by the people of Yap, Micronesia (panel 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rai_stones",
+        "quote": "native inhabitants of the Yap islands in Micronesia"
+      },
+      {
+        "claim": "Rai stones were quarried on several Micronesian islands, mainly Palau, i.e. not mainly on Yap (panel 1; probe p2 answer false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rai_stones",
+        "quote": "Rai stones were quarried on several of the Micronesian islands, mainly Palau"
+      },
+      {
+        "claim": "Stones highly valued by the Yapese and used for important ceremonial gifts (panel 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rai_stones",
+        "quote": "The stones were highly valued by the Yapese and used for important ceremonial gifts."
+      },
+      {
+        "claim": "Largest extant stone is 3.6 metres (12 ft) in diameter (panel 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rai_stones",
+        "quote": "it is 3.6 metres (12 ft) in diameter"
+      },
+      {
+        "claim": "Largest extant stone weighs 4,000 kilograms (panel 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rai_stones",
+        "quote": "weighs 4,000 kilograms"
+      },
+      {
+        "claim": "Ownership of a large stone was established by its history in oral tradition rather than location (panel 3; probe p1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rai_stones",
+        "quote": "was established by its history as recorded in oral tradition rather than by its location"
+      },
+      {
+        "claim": "Some modern economists view rai stones as money, showing value can come purely from shared belief (panel 4; title)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rai_stones",
+        "quote": "the value of some forms of money can be assigned purely through a shared belief in said value"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Gresham's law",
+    "angle": "Why the good coins vanish"
+  },
+  "created_at": "2026-10-20T17:10:50.078Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0012",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "Bad money drives out good",
+    "body": {
+      "claim": "Gresham's law is a monetary principle stating that \"bad money drives out good\".",
+      "why": "If two coins with metal of different value are accepted by law as having similar face value, the more valuable coin will gradually disappear from circulation. Walking Liberty half dollars containing 90% silver were quickly hoarded by the public after the Coinage Act of 1965 debased half dollars to contain only 40% silver."
+    },
+    "probes": [
+      {
+        "id": "money-0012-p1",
+        "kind": "mcq",
+        "question": "Under Gresham's law, which coin tends to disappear from circulation?",
+        "options": [
+          "The one with more valuable metal",
+          "The one with less valuable metal",
+          "The newest one",
+          "The heaviest one"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0012-p2",
+        "kind": "tf",
+        "question": "True or false: after the Coinage Act of 1965, half dollars containing 90% silver were quickly hoarded by the public.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Gresham's law (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Gresham%27s_law"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A stack of old silver coins next to modern cupronickel coins",
+    "keywords": [
+      "silver half dollar",
+      "Walking Liberty",
+      "coins"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:15:04.509Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gresham%27s_law",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Gresham's law is a monetary principle stating that bad money drives out good (claim; title)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gresham%27s_law",
+        "quote": "Gresham's law is a monetary principle stating that \"bad money drives out good\"."
+      },
+      {
+        "claim": "If two coins of different metal value are accepted at similar face value, the more valuable coin gradually disappears from circulation (why; probe p1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gresham%27s_law",
+        "quote": "the more valuable coin based on the inherent value of its component metals will gradually disappear from circulation"
+      },
+      {
+        "claim": "Walking Liberty half dollars (90% silver) were quickly hoarded after the Coinage Act of 1965 debased half dollars to 40% silver (why; probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gresham%27s_law",
+        "quote": "these coins were quickly hoarded by the public after the Coinage Act of 1965 debased half dollars to contain only 40% silver",
+        "note": "The page's own image caption ties the Walking Liberty (90% silver) coins to the 1965 hoarding; the card follows the page wording."
+      }
+    ],
+    "overall": "pass"
+  }
+}

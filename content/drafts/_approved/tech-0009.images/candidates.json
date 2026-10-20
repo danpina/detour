@@ -1,0 +1,81 @@
+{
+  "draft_id": "tech-0009",
+  "created_at": "2026-10-20T17:12:35.498Z",
+  "queries": [
+    "binary code digital clock computer clock",
+    "binary code",
+    "binary code digital clock"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-155975010",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wayuu Wikipedia - Main Page (2024-11-29).png",
+      "credit": "Wayuu Wikipedia contributors / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wayuu_Wikipedia_-_Main_Page_(2024-11-29).png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Wayuu_Wikipedia_-_Main_Page_%282024-11-29%29.png/960px-Wayuu_Wikipedia_-_Main_Page_%282024-11-29%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 4350,
+      "alt_suggestion": "Screenshot of the Main Page of the Wayuu Wikipedia as it appeared on 29 November 2024.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA24431",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Mars Decoder Ring",
+      "credit": "NASA/JPL-Caltech / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA24431",
+      "image_url": "https://images-assets.nasa.gov/image/PIA24431/PIA24431~small.jpg",
+      "alt_suggestion": "This annotated image was taken by a parachute-up-look camera aboard the protective back shell of NASA's Perseverance rover during its descent toward Mars' Jezero Crater on February 18, 2021. Using bin",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-57819",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Wall Clock",
+      "credit": "Case by Jean-Pierre Latz (born Cologne [now Germany], active France, 1691–1754) Clockwork by Francis Bayley (active Austrian Netherlands [now Belgium], mid-1700s) Case: Paris; clock: Ghent, Flanders, Austrian Netherlands (now Belgium) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/57819",
+      "image_url": "https://www.artic.edu/iiif/2/ce583554-7fac-705e-2130-ec94c1abb2e2/full/843,/0/default.jpg",
+      "alt_suggestion": "Golden-colored, ornate wall clock adorned with golden flourishes, a bent figure with an arrow at top.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-95568661",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Binary-code.png",
+      "credit": "Graph+sas / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Binary-code.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Binary-code.png/960px-Binary-code.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1500,
+      "height": 855,
+      "alt_suggestion": "código binario matrix",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-109627",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tall-Case Clock",
+      "credit": "Movement by George Stevens Hindon, England / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/109627",
+      "image_url": "https://www.artic.edu/iiif/2/0c2445d0-5d5e-b487-1824-dacb6ec0565f/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of japanned pine."
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"binary code digital clock computer clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"binary code\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"binary code digital clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

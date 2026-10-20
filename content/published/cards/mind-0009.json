@@ -1,0 +1,62 @@
+{
+  "id": "mind-0009",
+  "interest": "mind",
+  "title": "The dogs that drooled early",
+  "probes": [
+    {
+      "id": "mind-0009-p1",
+      "question": "In Pavlov's experiments, which stimulus was paired with the food?",
+      "kind": "mcq",
+      "options": [
+        "The sound of a metronome",
+        "A flash of light",
+        "A bell on the lab door",
+        "A spoken command"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0009-p2",
+      "question": "True or false: after a few repetitions, the dogs started to salivate in response to the stimulus.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Classical conditioning (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Classical_conditioning"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:10.593Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0009.webp",
+    "alt": "Black-and-white studio portrait of the elderly physiologist Ivan Pavlov, with a white beard and dark suit.",
+    "kind": "photo",
+    "credit": "http://ihm.nlm.nih.gov/images/B21072 / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ivan_Pavlov_NLM3.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Ivan Pavlov, a Russian physiologist, is studying digestion in dogs. He notices something odd."
+      },
+      {
+        "text": "His dogs begin to salivate in the presence of the technician who normally feeds them, rather than simply salivating in the presence of food."
+      },
+      {
+        "text": "So he tests it. He presents a stimulus, such as the sound of a metronome, and then gives the dog food."
+      },
+      {
+        "text": "After a few repetitions, the dogs start to salivate in response to the stimulus. A sound became a signal for food."
+      }
+    ]
+  }
+}

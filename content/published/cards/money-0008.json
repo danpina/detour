@@ -1,0 +1,59 @@
+{
+  "id": "money-0008",
+  "interest": "money",
+  "title": "Newton and the South Sea",
+  "probes": [
+    {
+      "id": "money-0008-p1",
+      "question": "What was the South Sea Company created in 1711 to do?",
+      "kind": "mcq",
+      "options": [
+        "Reduce the size of public debts",
+        "Mine silver",
+        "Build warships",
+        "Print newspapers"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0008-p2",
+      "question": "True or false: Isaac Newton lost at least £10,000 in South Sea stock.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "South Sea Bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Sea_Bubble"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T17:18:46.305Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0008.webp",
+    "alt": "An 18th-century satirical print titled Bubble Cards showing speculators climbing a tree and others tumbling into the sea, with a verse about South Sea speculation",
+    "kind": "photo",
+    "credit": "Scanned from reprint of 1841/1852 editions of \"Extraordinary Popular Delusions and the Madness of Crowds\" by Charles Mackay, LL. D. ISBN 1-5866-3558-1 / Wikimed",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:South_Sea_Bubble_Cards-Tree.png"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "The South Sea Company was founded in 1711 to reduce the size of public debts. In 1720, its stock peaked, then collapsed in what became the South Sea Bubble."
+      },
+      {
+        "text": "Sir Isaac Newton owns nearly £22,000 in South Sea stock, and loses at least £10,000."
+      },
+      {
+        "text": "He is quoted: \"I can calculate the movement of the stars, but not the madness of men\"."
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-95568661",
+  "alt": "Rows of green eight-digit binary numbers on a black background.",
+  "fits": true,
+  "note": "Generic binary digits, no logos or people, thematically fits counting seconds in a 32-bit integer. Landscape source; centre crop for 4:5. CC BY-SA 4.0.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

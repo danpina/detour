@@ -1,0 +1,125 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Pentium FDIV bug",
+    "angle": "A maths professor spots a chip error"
+  },
+  "created_at": "2026-10-20T17:10:03.157Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0008",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "The chip that got division wrong",
+    "body": {
+      "claim": "In June 1994, Thomas Nicely, a professor of mathematics at Lynchburg College, noticed inconsistencies in his calculations. The cause was Intel's Pentium processor, which returned incorrect results when dividing certain pairs of high-precision numbers.",
+      "why": "Missing values in a lookup table used by the floating-point division algorithm led to small errors. In December 1994, Intel recalled the defective processors, and in January 1995 it announced a pre-tax charge of $475 million."
+    },
+    "probes": [
+      {
+        "id": "tech-0008-p1",
+        "kind": "mcq",
+        "question": "Who noticed the Pentium's division errors in 1994?",
+        "options": [
+          "A mathematics professor",
+          "A video game tester",
+          "An Intel salesperson",
+          "A bank auditor"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0008-p2",
+        "kind": "mcq",
+        "question": "What was missing in the Pentium's division unit?",
+        "options": [
+          "Values in a lookup table",
+          "A cooling fan",
+          "A power cable",
+          "A keyboard driver"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Pentium FDIV bug (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An Intel Pentium processor chip, close up",
+    "keywords": [
+      "Intel Pentium",
+      "processor",
+      "CPU die",
+      "microprocessor"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:14:45.720Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Pentium returned incorrect results when dividing certain pairs of high-precision numbers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug",
+        "quote": "would return incorrect binary floating point results when dividing certain pairs of high-precision numbers"
+      },
+      {
+        "claim": "Thomas Nicely noticed inconsistencies in his calculations in June 1994",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug",
+        "quote": "Nicely noticed some inconsistencies in the calculations on June 13, 1994"
+      },
+      {
+        "claim": "Nicely was a professor of mathematics at Lynchburg College",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug",
+        "quote": "Thomas Nicely, a professor of mathematics at Lynchburg College"
+      },
+      {
+        "claim": "Missing values in a lookup table used by the FPU division algorithm led to small errors",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug",
+        "quote": "Missing values in a lookup table used by the FPU's floating-point division algorithm led to calculations acquiring small errors."
+      },
+      {
+        "claim": "December 1994: Intel recalled the defective processors",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug",
+        "quote": "In December 1994, Intel recalled the defective processors"
+      },
+      {
+        "claim": "January 1995: Intel announced a pre-tax charge of $475 million",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug",
+        "quote": "On January 17, 1995, Intel announced a pre-tax charge of $475 million against earnings"
+      },
+      {
+        "claim": "Probe 1 answer: a mathematics professor noticed the errors",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug",
+        "quote": "The bug was discovered in 1994 by Thomas R. Nicely, a professor of mathematics at Lynchburg College"
+      },
+      {
+        "claim": "Probe 2 answer: values in a lookup table were missing",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pentium_FDIV_bug",
+        "quote": "Missing values in a lookup table used by the FPU's floating-point division algorithm"
+      }
+    ],
+    "overall": "pass"
+  }
+}

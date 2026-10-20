@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-3397661",
+  "alt": "Sepia photograph from about 1905 of a dense crowd, trams and rickshaws on a busy Tokyo street.",
+  "fits": true,
+  "note": "Public-domain historic crowd scene conveys 'busy, noisy surroundings'; faces are tiny and unidentifiable, no modern brands. Not a party, so the caption should not claim one. Other candidates show identifiable speakers (cand-2), NASA branding, or modern attendees (cand-4).",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

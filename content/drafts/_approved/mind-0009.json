@@ -1,0 +1,112 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Pavlov and classical conditioning",
+    "angle": "Dogs, a metronome and anticipatory salivation"
+  },
+  "created_at": "2026-10-20T17:08:27.227Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0009",
+    "interest": "mind",
+    "type": "story",
+    "title": "The dogs that drooled early",
+    "body": {
+      "panels": [
+        {
+          "text": "Ivan Pavlov, a Russian physiologist, is studying digestion in dogs. He notices something odd."
+        },
+        {
+          "text": "His dogs begin to salivate in the presence of the technician who normally feeds them, rather than simply salivating in the presence of food."
+        },
+        {
+          "text": "So he tests it. He presents a stimulus, such as the sound of a metronome, and then gives the dog food."
+        },
+        {
+          "text": "After a few repetitions, the dogs start to salivate in response to the stimulus. A sound became a signal for food."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0009-p1",
+        "kind": "mcq",
+        "question": "In Pavlov's experiments, which stimulus was paired with the food?",
+        "options": [
+          "The sound of a metronome",
+          "A flash of light",
+          "A bell on the lab door",
+          "A spoken command"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0009-p2",
+        "kind": "tf",
+        "question": "True or false: after a few repetitions, the dogs started to salivate in response to the stimulus.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Classical conditioning (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Classical_conditioning"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Pavlov's laboratory or a portrait of Ivan Pavlov with a dog",
+    "keywords": [
+      "Ivan Pavlov",
+      "Pavlov dog experiment",
+      "classical conditioning"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:12:36.000Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Classical_conditioning",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Ivan Pavlov was a Russian physiologist",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Classical_conditioning",
+        "quote": "Ivan Pavlov , the Russian physiologist , studied classical conditioning with detailed experiments with dogs"
+      },
+      {
+        "claim": "Dogs began to salivate in the presence of the technician who normally fed them, rather than only in the presence of food",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Classical_conditioning",
+        "quote": "Pavlov noticed that his dogs began to salivate in the presence of the technician who normally fed them, rather than simply salivating in the presence of food."
+      },
+      {
+        "claim": "Pavlov presented a stimulus such as a metronome sound then gave food (probe 1 answer: metronome)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Classical_conditioning",
+        "quote": "Pavlov presented a stimulus (e.g. the sound of a metronome ) and then gave the dog food"
+      },
+      {
+        "claim": "After a few repetitions the dogs started to salivate in response to the stimulus (probe 2 answer, panel 4)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Classical_conditioning",
+        "quote": "after a few repetitions, the dogs started to salivate in response to the stimulus"
+      },
+      {
+        "claim": "He was studying digestion in dogs",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Classical_conditioning",
+        "quote": "In the study of digestion , Pavlov observed that the experimental dogs salivated when fed red meat."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "draft_id": "money-0005",
+  "created_at": "2026-10-20T17:11:46.843Z",
+  "queries": [
+    "Rai stones Yap stone money",
+    "Rai stones",
+    "Rai stones Yap"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-161923",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Yap Stone Money.jpg",
+      "credit": "Eric Guinther / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Yap_Stone_Money.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Yap_Stone_Money.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 900,
+      "height": 735,
+      "alt_suggestion": "Yap stone money at the village of Gachpar on Yap.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-as16-112-18234",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "View of rim of South Ray crater on traverse up Stone Mountain during EVA",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/as16-112-18234",
+      "image_url": "https://images-assets.nasa.gov/image/as16-112-18234/as16-112-18234~medium.jpg",
+      "alt_suggestion": "AS16-112-18234 (22 April 1972) --- This view of South Ray Crater was taken during the second Apollo 16 extravehicular activity (EVA) from Station No. 4 -- highest point on the traverse up Stone Mounta",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-21023",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Buddha Shakyamuni Seated in Meditation (Dhyanamudra)",
+      "credit": "India Nagapattinam, Tamil Nadu / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/21023",
+      "image_url": "https://www.artic.edu/iiif/2/0675f9a9-1a7b-c90a-3bb6-7f7be2afb678/full/843,/0/default.jpg",
+      "alt_suggestion": "Dark stone sculpture of Buddha sitting cross-legged, hands in lap, eyes closed.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-755810",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Community house of Yorlap (Yap Islands) with stone money made in Palau NOAA.jpg",
+      "credit": "Dr. James P. McVey, NOAA Sea Grant Program / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Community_house_of_Yorlap_(Yap_Islands)_with_stone_money_made_in_Palau_NOAA.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Community_house_of_Yorlap_%28Yap_Islands%29_with_stone_money_made_in_Palau_NOAA.jpg/960px-Community_house_of_Yorlap_%28Yap_Islands%29_with_stone_money_made_in_Palau_NOAA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1784,
+      "height": 1172,
+      "alt_suggestion": "Native home with Yapese money stones indicating great wealth. Stones were mined on Palau and carried by outrigger canoe 300 miles. Money stones are quarried from Aragonite",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-29149",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Buddhist Votive Stele",
+      "credit": "China / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/29149",
+      "image_url": "https://www.artic.edu/iiif/2/df7eff2d-b2f3-898e-88b4-4bf8d4292871/full/843,/0/default.jpg",
+      "alt_suggestion": "A large stone steele with multiple registers of images from Buddhas life and sacred texts carved on all four sides",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Rai stones Yap stone money\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Rai stones\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Rai stones Yap\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

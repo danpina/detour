@@ -1,0 +1,100 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Big Mac Index",
+    "angle": "A burger as a currency yardstick"
+  },
+  "created_at": "2026-10-20T17:10:50.077Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0010",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "The burger index",
+    "body": {
+      "claim": "The Economist has published the Big Mac Index since 1986, an informal way of measuring the purchasing power parity between two currencies.",
+      "why": "The index was introduced in September 1986 by Pam Woodall as a semi-humorous illustration of PPP. The Economist proposed that a single McDonald's Big Mac could be used instead of a basket of goods, because of the prevalence of the fast food chain worldwide."
+    },
+    "probes": [
+      {
+        "id": "money-0010-p1",
+        "kind": "mcq",
+        "question": "Which publication introduced the Big Mac Index?",
+        "options": [
+          "The Economist",
+          "Forbes",
+          "The Financial Times",
+          "Time"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0010-p2",
+        "kind": "tf",
+        "question": "True or false: the Big Mac Index gave rise to the word \"burgernomics\".",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Big Mac Index (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Big_Mac_Index"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A hamburger on a plain background",
+    "keywords": [
+      "Big Mac",
+      "hamburger",
+      "burger"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T17:15:04.508Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Big_Mac_Index",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The Economist has published the Big Mac Index since 1986, an informal way of measuring PPP between two currencies (claim; probe p1 answer The Economist)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Big_Mac_Index",
+        "quote": "a price index published since 1986 by The Economist as an informal way of measuring the purchasing power parity (PPP) between two currencies"
+      },
+      {
+        "claim": "Introduced in September 1986 by Pam Woodall as a semi-humorous illustration of PPP (why)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Big_Mac_Index",
+        "quote": "introduced in The Economist in September 1986 by Pam Woodall as a semi-humorous illustration of PPP"
+      },
+      {
+        "claim": "The Economist proposed a single Big Mac instead of a basket of goods (why)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Big_Mac_Index",
+        "quote": "The Economist proposed that a single McDonald's Big Mac could be used instead of a basket of goods."
+      },
+      {
+        "claim": "Big Mac chosen because of the chain's worldwide prevalence (why)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Big_Mac_Index",
+        "quote": "A McDonald's Big Mac was chosen because of the prevalence of the fast food chain worldwide"
+      },
+      {
+        "claim": "The index gave rise to the word burgernomics (probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Big_Mac_Index",
+        "quote": "The index also gave rise to the word burgernomics."
+      }
+    ],
+    "overall": "pass"
+  }
+}
