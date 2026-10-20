@@ -29,7 +29,7 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
   useEffect(() => {
     void store.getSettings().then((s) => {
       setSetSize(s?.set_size ?? 5);
-      setDrills(s?.drills ?? s?.interests.includes("numbers") ?? false);
+      setDrills(s?.drills ?? false);
     });
   }, []);
 
@@ -197,7 +197,7 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
           />
           <span>
             <span className="block font-medium">Skill drills</span>
-            <span className="text-sm text-neutral-500 dark:text-neutral-400">A quick mental-math or estimation round at the end of a set.</span>
+            <span className="text-sm text-neutral-500 dark:text-neutral-400">Add a quick math round to the end of each set. You can always practise from Home.</span>
           </span>
         </label>
       </section>

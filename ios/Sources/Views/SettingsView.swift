@@ -49,7 +49,7 @@ struct SettingsView: View {
                         get: { model.drillsEnabled },
                         set: { on in model.updateSettings { $0.drills = on } }
                     ))
-                    Text("A quick mental-math or estimation round at the end of a set.").font(.footnote).foregroundStyle(.secondary)
+                    Text("Add a quick math round to the end of each set. You can always practise from Home.").font(.footnote).foregroundStyle(.secondary)
                 }
 
                 GuardSettingsSection()

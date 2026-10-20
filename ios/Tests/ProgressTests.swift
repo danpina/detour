@@ -111,13 +111,15 @@ final class AppModelTests: XCTestCase {
         defer { try? FileManager.default.removeItem(at: url) }
         model.completeOnboarding(interests: [.history, .science, .numbers])
         XCTAssertTrue(model.settings.onboardingDone)
+        XCTAssertFalse(model.drillsEnabled, "drills are off by default, even with Numbers & Logic")
+        model.updateSettings { $0.drills = true }
         let items = model.makeSet()
         XCTAssertEqual(items.count, 5)
         if case .drill? = items.last {} else { XCTFail("the last item should be the skill drill") }
         XCTAssertEqual(Set(items.map { $0.key }).count, items.count)
     }
 
-    func testNoDrillsOrOtherTopicsUnlessTheUserAskedForThem() {
+    func testNoDrillsInSetsOrOtherTopicsUnlessTheUserAskedForThem() {
         let (model, url) = makeModel()
         defer { try? FileManager.default.removeItem(at: url) }
         model.completeOnboarding(interests: [.history, .science, .money])
@@ -125,7 +127,7 @@ final class AppModelTests: XCTestCase {
         let items = model.makeSet()
         for item in items {
             switch item {
-            case .drill: XCTFail("drills should be off without Numbers & Logic")
+            case .drill: XCTFail("drills should be off unless turned on in Settings")
             case .new(let c): XCTAssertTrue([Interest.history, .science, .money].contains(c.interest), "\(c.id) is from a topic the user did not pick")
             case .review: break
             }

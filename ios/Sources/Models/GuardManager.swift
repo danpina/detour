@@ -80,9 +80,10 @@ final class GuardManager {
     @discardableResult
     func unlockAfterSet() -> Int? {
         guard settings.enabled, hasSelection else { return nil }
-        store.log("set finished: unlocking")
-        GuardShield.unlock(minutes: settings.unlockMinutes, store: store)
-        return max(settings.unlockMinutes, 15)
+        let window = settings.unlockWindow
+        store.log("guarded set finished: unlocking for \(settings.unlockMinutes) min" + (window.usage == nil ? "" : " of use"))
+        GuardShield.unlock(minutes: window.minutes, usageMinutes: window.usage, store: store)
+        return settings.unlockMinutes
     }
 
     /// Belt and braces: if the timer never fired, the shield goes back the next time Detour is opened.

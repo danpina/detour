@@ -56,8 +56,17 @@ final class AppModel {
     var cards: [Card] { content.cards }
     var settings: UserSettings { data.settings }
 
-    /// Skill drills are numbers-based, so by default they only appear for people who picked Numbers & Logic.
-    var drillsEnabled: Bool { data.settings.drills ?? data.settings.interests.contains(.numbers) }
+    /// Skill drills no longer ride along at the end of every set. They live in the Practice section on Home, and only join
+    /// the sets when the user turns that on in Settings.
+    var drillsEnabled: Bool { data.settings.drills ?? false }
+
+    /// A practice round for one skill: just the drill, started from the Practice section.
+    func makeDrillSet(_ track: TrackId) -> [SessionItem] {
+        let level = data.skills.first { $0.track == track }?.level ?? 1
+        let spec = DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)))
+        AppLog.log("practice built: track=\(track.rawValue) level=\(level) seed=\(spec.seed)")
+        return [.drill(spec)]
+    }
 
     init(store: DataStore = DataStore(), content: LoadedContent = ContentStore.load(), clock: @escaping () -> Date = { Date() }, calendar: Calendar = .current) {
         self.store = store

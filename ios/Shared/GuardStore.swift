@@ -19,6 +19,12 @@ struct GuardSettings: Codable, Equatable {
     var strictMinutes: Int? = nil
 
     var strictUseMinutes: Int { strictMinutes ?? 3 }
+
+    /// The system will not schedule a wall-clock window shorter than 15 minutes. A shorter unlock is therefore measured in
+    /// minutes of actual use: the window stays open for 15 minutes at most, and ends sooner once the apps were used that long.
+    var unlockWindow: (minutes: Int, usage: Int?) {
+        unlockMinutes < 15 ? (15, unlockMinutes) : (unlockMinutes, nil)
+    }
 }
 
 /// Everything the app and its three Screen Time extensions share, kept in the App Group container.

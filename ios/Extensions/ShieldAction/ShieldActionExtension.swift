@@ -38,7 +38,8 @@ final class ShieldActionExtension: ShieldActionDelegate {
                 return .close
             }
             store.log(settings.mode == .gentle ? "continue pressed (nudge)" : "skip used")
-            GuardShield.unlock(minutes: settings.unlockMinutes, store: store)
+            let window = settings.unlockWindow
+            GuardShield.unlock(minutes: window.minutes, usageMinutes: window.usage, store: store)
             return .defer
         @unknown default:
             return .close

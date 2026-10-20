@@ -22,7 +22,7 @@ final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         let subtitle: String
         switch settings.mode {
         case .gentle: subtitle = "A few small cards first? Or carry on, no pressure."
-        case .earnIt: subtitle = "A few small cards, then this is yours for \(settings.unlockMinutes) minutes."
+        case .earnIt: subtitle = "A few small cards, then this is yours for \(settings.unlockMinutes) min" + (settings.unlockMinutes < 15 ? " of use." : ".")
         case .strict: subtitle = "A last check. Take a quick detour, or open it for real (\(settings.strictUseMinutes) min)."
         }
         let title = settings.mode == .strict ? "Last check" : "Quick one?"

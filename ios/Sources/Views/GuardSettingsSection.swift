@@ -63,13 +63,16 @@ struct GuardSettingsSection: View {
                     }
                 }
 
-                if guardManager.settings.mode == .earnIt {
+                if guardManager.settings.mode != .strict {
                     Picker("Unlock for", selection: Binding(
                         get: { guardManager.settings.unlockMinutes },
                         set: { minutes in guardManager.update { $0.unlockMinutes = minutes } }
                     )) {
-                        ForEach([15, 30, 60], id: \.self) { Text("\($0) min").tag($0) }
+                        ForEach([1, 3, 5, 10, 15, 30, 60], id: \.self) { Text("\($0) min").tag($0) }
                     }
+                    Text("Under 15 minutes counts minutes of actual use in the guarded apps; the shield then comes back. From 15 minutes up it is plain clock time.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
                 }
             }
 
