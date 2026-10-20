@@ -13,7 +13,7 @@ enum MainTab: Hashable {
 struct RootView: View {
     @Environment(AppModel.self) private var model
     @Environment(GuardManager.self) private var guardManager
-    @Environment(.scenePhase) private var scenePhase
+    @Environment(\.scenePhase) private var scenePhase
     @State private var run: SessionRun?
     @State private var tab: MainTab = .home
 
