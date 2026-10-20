@@ -6,30 +6,28 @@ import type { Problem } from "./mentalMath";
  * nothing relies on outside facts. The learner is scored by log distance (how many times too big or small).
  */
 export const ESTIMATION_LEVELS = [
-  "Time conversions",
+  "Everyday totals",
   "Rates over time",
   "Volumes and fitting things in",
   "Fermi chains",
 ] as const;
 
-const UNIT_SECONDS = { second: 1, minute: 60, hour: 3600, day: 86400, week: 604800 } as const;
-
 type Gen = (r: Rng) => Problem;
 
 const GENERATORS: Gen[] = [
-  // 1: time conversions
+  // 1: everyday totals
   (r) => {
-    const pairs = [
-      ["second", "hour", 2, 12],
-      ["second", "day", 2, 9],
-      ["minute", "day", 2, 9],
-      ["minute", "week", 2, 6],
-      ["hour", "week", 2, 9],
-    ] as const;
-    const [small, big, lo, hi] = r.pick(pairs);
-    const n = r.int(lo, hi);
-    const answer = (n * UNIT_SECONDS[big]) / UNIT_SECONDS[small];
-    return { prompt: `How many ${small}s are in ${n} ${big}${n > 1 ? "s" : ""}?`, answer, hint: `${UNIT_SECONDS[big] / UNIT_SECONDS[small]} ${small}s in a ${big}, times ${n}.` };
+    const t = r.int(0, 2);
+    if (t === 0) {
+      const n = r.pick([120, 150, 200, 250, 400] as const);
+      return { prompt: `A bakery bakes ${n} loaves a day. How many loaves is that in a year (365 days)?`, answer: n * 365, hint: `${n} × 365. Try ${n} × 300, then add ${n} × 65.` };
+    }
+    if (t === 1) {
+      const cups = r.pick([60, 80, 150, 300] as const), cafes = r.int(3, 9);
+      return { prompt: `A café sells ${cups} cups of coffee a day. A chain has ${cafes} cafés like it. How many cups does the chain sell in a week?`, answer: cups * cafes * 7, hint: `${cups} × ${cafes} cafés × 7 days.` };
+    }
+    const seats = r.pick([180, 300, 400] as const), flights = r.int(3, 12);
+    return { prompt: `A jet seats ${seats} people and flies ${flights} full flights a day. How many passengers is that in a month (30 days)?`, answer: seats * flights * 30, hint: `${seats} × ${flights} flights × 30 days.` };
   },
   // 2: rates over time
   (r) => {

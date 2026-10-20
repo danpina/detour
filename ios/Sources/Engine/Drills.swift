@@ -76,7 +76,7 @@ enum Drills {
         .estimation: TrackInfo(
             name: "Estimation",
             blurb: "Fermi-style guesses",
-            levels: ["Time conversions", "Rates over time", "Volumes and fitting things in", "Fermi chains"],
+            levels: ["Everyday totals", "Rates over time", "Volumes and fitting things in", "Fermi chains"],
             problems: 2,
             timeLimitSeconds: nil
         ),
@@ -168,19 +168,20 @@ enum Drills {
 
     // MARK: Estimation
 
-    private static let unitSeconds: [String: Int] = ["second": 1, "minute": 60, "hour": 3600, "day": 86400, "week": 604800]
-
     private static func estimation(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
         switch min(max(level, 1), 4) {
         case 1:
-            let pairs: [(String, String, Int, Int)] = [
-                ("second", "hour", 2, 12), ("second", "day", 2, 9), ("minute", "day", 2, 9), ("minute", "week", 2, 6), ("hour", "week", 2, 9),
-            ]
-            let (small, big, lo, hi) = r.pick(pairs)
-            let n = r.int(lo, hi)
-            let answer = Double(n * unitSeconds[big]!) / Double(unitSeconds[small]!)
-            let per = unitSeconds[big]! / unitSeconds[small]!
-            return DrillProblem(prompt: "How many \(small)s are in \(n) \(big)\(n > 1 ? "s" : "")?", answer: answer, hint: "\(per) \(small)s in a \(big), times \(n).")
+            let t = r.int(0, 2)
+            if t == 0 {
+                let n = r.pick([120, 150, 200, 250, 400])
+                return DrillProblem(prompt: "A bakery bakes (n) loaves a day. How many loaves is that in a year (365 days)?", answer: Double(n * 365), hint: "(n) × 365. Try (n) × 300, then add (n) × 65.")
+            }
+            if t == 1 {
+                let cups = r.pick([60, 80, 150, 300]), cafes = r.int(3, 9)
+                return DrillProblem(prompt: "A café sells (cups) cups of coffee a day. A chain has (cafes) cafés like it. How many cups does the chain sell in a week?", answer: Double(cups * cafes * 7), hint: "(cups) × (cafes) cafés × 7 days.")
+            }
+            let seats = r.pick([180, 300, 400]), flights = r.int(3, 12)
+            return DrillProblem(prompt: "A jet seats (seats) people and flies (flights) full flights a day. How many passengers is that in a month (30 days)?", answer: Double(seats * flights * 30), hint: "(seats) × (flights) flights × 30 days.")
         case 2:
             let t = r.int(0, 2)
             if t == 0 {

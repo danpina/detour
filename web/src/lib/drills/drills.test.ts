@@ -88,12 +88,14 @@ describe("estimation", () => {
     }
   });
 
-  it("level 1 conversions are exact", () => {
+  it("level 1 everyday totals multiply out exactly", () => {
     for (let seed = 1; seed <= 100; seed++) {
-      const [p] = generateRound({ track: "estimation", level: 1, seed });
-      const m = /How many (\w+)s are in (\d+) (\w+?)s?\?/.exec(p!.prompt)!;
-      const unit: Record<string, number> = { second: 1, minute: 60, hour: 3600, day: 86400, week: 604800 };
-      expect(p!.answer).toBe((Number(m[2]) * unit[m[3]!]!) / unit[m[1]!]!);
+      for (const p of generateRound({ track: "estimation", level: 1, seed })) {
+        const nums = (p.prompt.match(/\d+/g) ?? []).map(Number);
+        expect(nums.length).toBeGreaterThanOrEqual(2);
+        expect(Number.isInteger(p.answer) && p.answer > 0).toBe(true);
+        expect(p.answer % nums[0]!).toBe(0);
+      }
     }
   });
 

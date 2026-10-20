@@ -919,12 +919,12 @@
       "seed": 1,
       "problems": [
         {
-          "prompt": "How many minutes are in 2 weeks?",
-          "answer": 20160
+          "prompt": "A café sells 60 cups of coffee a day. A chain has 6 cafés like it. How many cups does the chain sell in a week?",
+          "answer": 2520
         },
         {
-          "prompt": "How many minutes are in 9 days?",
-          "answer": 12960
+          "prompt": "A jet seats 400 people and flies 5 full flights a day. How many passengers is that in a month (30 days)?",
+          "answer": 60000
         }
       ]
     },
@@ -934,12 +934,12 @@
       "seed": 2,
       "problems": [
         {
-          "prompt": "How many minutes are in 3 weeks?",
-          "answer": 30240
+          "prompt": "A jet seats 180 people and flies 5 full flights a day. How many passengers is that in a month (30 days)?",
+          "answer": 27000
         },
         {
-          "prompt": "How many seconds are in 6 days?",
-          "answer": 518400
+          "prompt": "A café sells 300 cups of coffee a day. A chain has 7 cafés like it. How many cups does the chain sell in a week?",
+          "answer": 14700
         }
       ]
     },
@@ -949,12 +949,12 @@
       "seed": 3,
       "problems": [
         {
-          "prompt": "How many minutes are in 2 weeks?",
-          "answer": 20160
+          "prompt": "A jet seats 180 people and flies 7 full flights a day. How many passengers is that in a month (30 days)?",
+          "answer": 37800
         },
         {
-          "prompt": "How many minutes are in 2 days?",
-          "answer": 2880
+          "prompt": "A bakery bakes 250 loaves a day. How many loaves is that in a year (365 days)?",
+          "answer": 91250
         }
       ]
     },
@@ -964,12 +964,12 @@
       "seed": 42,
       "problems": [
         {
-          "prompt": "How many minutes are in 4 weeks?",
-          "answer": 40320
+          "prompt": "A café sells 80 cups of coffee a day. A chain has 8 cafés like it. How many cups does the chain sell in a week?",
+          "answer": 4480
         },
         {
-          "prompt": "How many hours are in 7 weeks?",
-          "answer": 1176
+          "prompt": "A jet seats 180 people and flies 8 full flights a day. How many passengers is that in a month (30 days)?",
+          "answer": 43200
         }
       ]
     },
@@ -979,12 +979,12 @@
       "seed": 12345,
       "problems": [
         {
-          "prompt": "How many hours are in 4 weeks?",
-          "answer": 672
+          "prompt": "A jet seats 180 people and flies 7 full flights a day. How many passengers is that in a month (30 days)?",
+          "answer": 37800
         },
         {
-          "prompt": "How many minutes are in 8 days?",
-          "answer": 11520
+          "prompt": "A jet seats 300 people and flies 6 full flights a day. How many passengers is that in a month (30 days)?",
+          "answer": 54000
         }
       ]
     },
@@ -994,12 +994,12 @@
       "seed": 987654321,
       "problems": [
         {
-          "prompt": "How many hours are in 3 weeks?",
-          "answer": 504
+          "prompt": "A jet seats 180 people and flies 3 full flights a day. How many passengers is that in a month (30 days)?",
+          "answer": 16200
         },
         {
-          "prompt": "How many seconds are in 12 hours?",
-          "answer": 43200
+          "prompt": "A jet seats 300 people and flies 6 full flights a day. How many passengers is that in a month (30 days)?",
+          "answer": 54000
         }
       ]
     },
