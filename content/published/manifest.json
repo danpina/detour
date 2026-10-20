@@ -1,6 +1,6 @@
 {
-  "version": 110,
-  "generated_at": "2026-10-20T20:03:23.623Z",
+  "version": 111,
+  "generated_at": "2026-10-20T20:03:47.817Z",
   "cards": [
     {
       "id": "hist-0001",
@@ -841,8 +841,8 @@
     },
     {
       "file": "images/money-0016.webp",
-      "sha256": "901857b6e9fe5a49e5d7a704165e53fccabb85ec9ed1ead212b50122c4b56105",
-      "bytes": 178042
+      "sha256": "0ea5ebd1319b7ecfd71efb68cd9beb557d6a6950436d9709e867e1ca0dfbfada",
+      "bytes": 95602
     },
     {
       "file": "images/money-0017.webp",
