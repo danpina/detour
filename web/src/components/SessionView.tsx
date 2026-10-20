@@ -132,12 +132,16 @@ export function SessionView({ items, source, onFinish, onExit, dryRun = false }:
 
   return (
     <div className="absolute inset-0 touch-pan-y select-none" onPointerDown={onPointerDown} onPointerUp={onPointerUp}>
-      {view}
+      {/* In free-scroll mode the "Done for now" strip has its own row, so it never covers an answer. */}
+      <div className="absolute inset-x-0 top-0" style={{ bottom: onExit ? "calc(2.25rem + env(safe-area-inset-bottom))" : 0 }}>
+        {view}
+      </div>
       {onExit && (
         <button
           onClick={onExit}
           aria-label="Stop scrolling"
-          className="absolute bottom-[max(0.9rem,env(safe-area-inset-bottom))] left-3 z-30 flex h-8 items-center rounded-full bg-black/50 px-3 text-xs text-white/90 backdrop-blur hover:bg-black/70"
+          className="absolute inset-x-0 bottom-0 z-30 flex items-start justify-center bg-black pt-2 text-xs text-white/80 hover:text-white"
+          style={{ height: "calc(2.25rem + env(safe-area-inset-bottom))" }}
         >
           Done for now
         </button>

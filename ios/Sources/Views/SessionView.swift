@@ -20,24 +20,25 @@ struct SessionView: View {
     private var items: [SessionItem] { run.items }
 
     var body: some View {
-        ZStack {
-            if let finishedCount {
-                EndView(learned: finishedCount, unlockedMinutes: unlockedMinutes, onAnother: onAnother, onProgress: onProgress)
-            } else if items.indices.contains(index) {
-                screen(for: items[index])
-                    .id(items[index].key)
-                    .transition(.opacity)
+        VStack(spacing: 0) {
+            ZStack {
+                if let finishedCount {
+                    EndView(learned: finishedCount, unlockedMinutes: unlockedMinutes, onAnother: onAnother, onProgress: onProgress)
+                } else if items.indices.contains(index) {
+                    screen(for: items[index])
+                        .id(items[index].key)
+                        .transition(.opacity)
+                }
             }
 
+            // Its own strip below the card, so it never covers an answer.
             if run.feed && finishedCount == nil {
                 Button("Done for now", action: onClose)
                     .font(.caption)
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 7)
-                    .background(.black.opacity(0.5), in: Capsule())
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-                    .padding(14)
+                    .foregroundStyle(.white.opacity(0.8))
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 10)
+                    .background(Color.black)
             }
         }
         .background(Color.black.ignoresSafeArea())
