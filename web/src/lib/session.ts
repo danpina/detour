@@ -9,7 +9,10 @@ import { dayKey, displayStreak, emptyStreak, knowledgeMap, recallStats, recordDa
 
 /** Loads local history and builds the next set. Used for quick sets and for each page of the free-scroll feed. */
 export async function nextSet(interests: Interest[], sizeOverride?: number): Promise<SessionItem[]> {
-  const setSize = sizeOverride ?? (await store.getSettings())?.set_size ?? DEFAULT_SET_SIZE;
+  const settings = await store.getSettings();
+  const setSize = sizeOverride ?? settings?.set_size ?? DEFAULT_SET_SIZE;
+  // Skill drills are numbers-based, so they only appear for people who picked Numbers & Logic (or turned them on).
+  const drillsOn = settings?.drills ?? interests.includes("numbers");
   const [reviews, completed, events, skills] = await Promise.all([store.getReviews(), store.completedCardIds(), store.getEvents(), store.getSkills()]);
   const track = nextTrack(skills);
   const level = skills.find((s) => s.track_id === track)?.level ?? 1;
@@ -22,7 +25,7 @@ export async function nextSet(interests: Interest[], sizeOverride?: number): Pro
     engagement: engagementFrom(events, ALL_CARDS),
     now: Date.now(),
     setSize,
-    makeDrill: () => drill,
+    makeDrill: drillsOn ? () => drill : undefined,
   });
 }
 

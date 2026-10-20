@@ -1,0 +1,49 @@
+{
+  "id": "num-0006",
+  "interest": "numbers",
+  "title": "Should you switch doors?",
+  "probes": [
+    {
+      "id": "num-0006-p1",
+      "question": "In the Monty Hall problem, what is the chance of winning if you switch?",
+      "kind": "mcq",
+      "options": [
+        "1 in 3",
+        "1 in 2",
+        "2 in 3",
+        "100%"
+      ],
+      "answer": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Monty Hall problem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Monty_Hall_problem"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-19T21:17:06.836Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0006.webp",
+    "alt": "Three identical closed rounded doors in teal, navy and orange standing in a row on a cream background.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "There are three doors: a car behind one, goats behind two. You pick a door, and the host, who knows where the car is, opens a different door showing a goat. Should you switch?",
+    "options": [
+      "Yes, switching wins more often",
+      "No, staying wins more often",
+      "It makes no difference"
+    ],
+    "answer": 0,
+    "reveal": "Switching wins 2 out of 3 times. Your first pick had a 1 in 3 chance, and that does not change when the host reveals a goat. The other 2 in 3 now sits entirely on the remaining closed door."
+  }
+}

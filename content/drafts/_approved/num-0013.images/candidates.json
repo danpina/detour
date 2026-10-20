@@ -1,0 +1,91 @@
+{
+  "draft_id": "num-0013",
+  "created_at": "2026-10-19T21:34:40.720Z",
+  "queries": [
+    "roulette wheel Monte Carlo Casino roulette",
+    "roulette wheel",
+    "roulette wheel Monte Carlo Casino"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-24907872",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "13-02-27-spielbank-wiesbaden-by-RalfR-093.jpg",
+      "credit": "Ralf Roletschek / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:13-02-27-spielbank-wiesbaden-by-RalfR-093.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/13-02-27-spielbank-wiesbaden-by-RalfR-093.jpg/960px-13-02-27-spielbank-wiesbaden-by-RalfR-093.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4288,
+      "height": 2848,
+      "alt_suggestion": "Wiesbaden, Germany, Spielbank",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-29483",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Doorway",
+      "credit": "James McNeill Whistler American, 1834-1903 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/29483",
+      "image_url": "https://www.artic.edu/iiif/2/daf91b57-b34d-ff37-b72d-b23acdd3c77a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching, drypoint and roulette with foul biting in warm black, with selective wiping of plate tone, on cream laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-131202394",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Mesa-de-ruleta-casino-ciudad-de-mexico25-04-2023.jpg",
+      "credit": "Maximo Betman / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mesa-de-ruleta-casino-ciudad-de-mexico25-04-2023.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Mesa-de-ruleta-casino-ciudad-de-mexico25-04-2023.jpg/960px-Mesa-de-ruleta-casino-ciudad-de-mexico25-04-2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3024,
+      "height": 2875,
+      "alt_suggestion": "En la foto se observa la mesa de con los números, las fichas y las ruleta con las fichas.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-45267",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Monte Pincio, Rome",
+      "credit": "Jean-Baptiste-Camille Corot (French, 1796–1875) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/45267",
+      "image_url": "https://www.artic.edu/iiif/2/0aff6ae5-99ae-d92c-1239-0bc9bb0ad9ae/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-147088145",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Roulette wheel (9544266769).jpg",
+      "credit": "Mark Hillary from Serra Negra, São Paulo, Brazil / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Roulette_wheel_(9544266769).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Roulette_wheel_%289544266769%29.jpg/960px-Roulette_wheel_%289544266769%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 1552,
+      "alt_suggestion": "Águas de São Pedro",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Roulette Wheel (8423486930).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"roulette wheel Monte Carlo Casino roulette\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"roulette wheel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"roulette wheel Monte Carlo Casino\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -3,9 +3,9 @@ import type { Card, Interest } from "@detour/content";
 type Options = { allowSeen?: boolean; exclude?: Set<string> };
 
 /**
- * Picks `n` content cards. Prefers unseen cards from the chosen interests (round-robin in the given order,
- * varying card types), then unseen cards from other interests, then (unless `allowSeen` is false) already-seen
- * cards, so a set is full whenever enough cards exist. `exclude` ids are never returned.
+ * Picks `n` content cards from the chosen interests only. Prefers unseen cards (round-robin in the given order,
+ * varying card types), then (unless `allowSeen` is false) already-seen ones, so a set is as full as the user's own
+ * topics allow. Cards from topics the user did not pick are never added. `exclude` ids are never returned.
  */
 export function pickSet(cards: Card[], interests: Interest[], seen: Set<string>, n = 5, opts: Options = {}): Card[] {
   const { allowSeen = true, exclude = new Set<string>() } = opts;
@@ -32,10 +32,8 @@ export function pickSet(cards: Card[], interests: Interest[], seen: Set<string>,
 
   const byInterest = (list: Card[], ints: Interest[]) => ints.map((i) => list.filter((c) => c.interest === i));
   const unseen = content.filter((c) => !seen.has(c.id));
-  const others = [...new Set(content.map((c) => c.interest))].filter((i) => !interests.includes(i));
 
   take(byInterest(unseen, interests));
-  take(byInterest(unseen, others));
-  if (allowSeen) take(byInterest(content, [...interests, ...others]));
+  if (allowSeen) take(byInterest(content, interests));
   return chosen;
 }

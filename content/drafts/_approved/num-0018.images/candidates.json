@@ -1,0 +1,100 @@
+{
+  "draft_id": "num-0018",
+  "created_at": "2026-10-19T21:34:55.368Z",
+  "queries": [
+    "Sudoku Sudoku puzzle sudoku grid",
+    "Sudoku",
+    "Sudoku Sudoku puzzle"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-28843078",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "16 by 16 Sudoku invented..jpg",
+      "credit": "Hridayeshwar Singh Bhati / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:16_by_16_Sudoku_invented..jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/16_by_16_Sudoku_invented..jpg/960px-16_by_16_Sudoku_invented..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1098,
+      "height": 996,
+      "alt_suggestion": "“Hridayeshwar Singh Bhati” and his elder brother Keshav Singh Bhati(12 years) have invented 16 x 16 Sudoku and applied for patent in India. The original idea struck to “Hridayeshwar Singh Bhati” and i",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-133632",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Central Medallion Quilt with \"Yankee Puzzle\" or \"Hour Glass\" Borders",
+      "credit": "Mary Jones (American, active late 18th/early 19th century) New England or mid-Atlantic, United States / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/133632",
+      "image_url": "https://www.artic.edu/iiif/2/ed37a880-b0b5-6014-21b3-a27cf71879ce/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of center: cotton, plain weave; embroidered with silk, cotton, and wool in buttonhole, chain, cross, single cross, feather, roumanian, satin, single satin, stem, and twined double running stitches. squares: cotton, cotton and linen, and linen, plain weaves; block, copperplate, and roller printed."
+    },
+    {
+      "id": "wikimedia-79310668",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sudoku app.png",
+      "credit": "branium / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sudoku_app.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Sudoku_app.png/960px-Sudoku_app.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1152,
+      "height": 2048,
+      "alt_suggestion": "a sudoku game app",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-216818",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Puzzle Jug",
+      "credit": "Staffordshire, England / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/216818",
+      "image_url": "https://www.artic.edu/iiif/2/ace4b9c8-d2d8-80fa-f662-25ffeb803502/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of salt-glazed stoneware.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-141859951",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sudoku-Domino.jpg",
+      "credit": "Kou07kou / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sudoku-Domino.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Sudoku-Domino.jpg/960px-Sudoku-Domino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1066,
+      "height": 807,
+      "alt_suggestion": "Casse tête avec 15 dominos",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-sudoku",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: sudoku",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-sudoku.png",
+      "alt_suggestion": "Illustration of a nine-by-nine Sudoku grid with a few coloured dots marking the given clues"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "GNOME Sudoku Debian Lenny.png",
+      "license": "GPL",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Sudoku Sudoku puzzle sudoku grid\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Sudoku\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Sudoku Sudoku puzzle\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

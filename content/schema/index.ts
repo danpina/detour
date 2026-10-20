@@ -100,6 +100,8 @@ const cardBase = {
   sources: z.array(sourceSchema).min(1),
   difficulty: z.number().int().min(1).max(5),
   version: z.number().int().min(1),
+  /** Who approved the card for publishing, and when. Added by the review tools. */
+  review: z.object({ by: z.enum(["human", "agent"]), at: z.string() }).optional(),
 };
 
 export const storyCardSchema = z.object({
@@ -250,6 +252,8 @@ export const draftSchema = z
     card: z.record(z.string(), z.unknown()),
     image_brief: imageBriefSchema,
     check: checkReportSchema.optional(),
+    /** Set when a published card was sent back for review; it waits for a human. */
+    sent_back: z.object({ reason: z.string(), note: z.string().optional(), at: z.string() }).optional(),
   })
   .superRefine((d, ctx) => {
     const r = validateImagelessCard(d.card);

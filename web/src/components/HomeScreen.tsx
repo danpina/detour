@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { ALL_CARDS } from "../lib/content";
 import { loadHomeInfo, type HomeInfo } from "../lib/home";
+import { isReviewer, seenInReview } from "../lib/reviewer";
 import { canPromptInstall, dismissInstall, installDismissed, installHint, isInstalled, isIos, promptInstall, type InstallHint } from "../lib/install";
 
-type Props = { onStart: (feed: boolean) => void; onOpenSettings: () => void; onOpenProgress: () => void };
+type Props = { onStart: (feed: boolean) => void; onOpenSettings: () => void; onOpenProgress: () => void; onReview: () => void };
 
-export function HomeScreen({ onStart, onOpenSettings, onOpenProgress }: Props) {
+export function HomeScreen({ onStart, onOpenSettings, onOpenProgress, onReview }: Props) {
   const [info, setInfo] = useState<HomeInfo | null>(null);
   const [hint, setHint] = useState<InstallHint>(null);
 
@@ -22,6 +24,7 @@ export function HomeScreen({ onStart, onOpenSettings, onOpenProgress }: Props) {
   }, [info]);
 
   const due = info?.dueCount ?? 0;
+  const toReview = isReviewer() ? ALL_CARDS.filter((c) => c.review?.by === "agent" && !seenInReview().has(c.id)).length : 0;
   const card = "mt-4 rounded-2xl border border-dashed border-neutral-300 px-4 py-3 text-left text-sm dark:border-neutral-700";
 
   return (
@@ -41,6 +44,12 @@ export function HomeScreen({ onStart, onOpenSettings, onOpenProgress }: Props) {
       <button onClick={() => onStart(true)} className="mt-3 w-full rounded-2xl border border-neutral-300 py-3.5 font-medium hover:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-900">
         Keep scrolling
       </button>
+
+      {isReviewer() && (
+        <button onClick={onReview} disabled={toReview === 0} className="mt-5 rounded-2xl border-2 border-rose-500 px-4 py-3 text-sm font-medium text-rose-700 disabled:opacity-50 dark:text-rose-300">
+          Review mode: {toReview === 0 ? "all agent-approved cards seen" : `${toReview} agent-approved ${toReview === 1 ? "card" : "cards"} to look at`}
+        </button>
+      )}
 
       {info?.weekRecap && (
         <button onClick={onOpenProgress} className={`${card} text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-900`}>

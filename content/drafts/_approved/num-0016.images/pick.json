@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-138555989",
+  "alt": "A glowing purple and orange fractal on a black background, generated from the Collatz iteration extended to the complex plane.",
+  "fits": true,
+  "note": "Dark, striking mathematical image tied to the Collatz map; black background suits text overlays. Wide image so crop to centre. The plain scatter plot (cand-1) is dull and unreadable as a background; portraits are unrelated.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

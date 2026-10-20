@@ -1,0 +1,43 @@
+{
+  "id": "num-0016",
+  "interest": "numbers",
+  "title": "The simplest unsolved problem",
+  "probes": [
+    {
+      "id": "num-0016-p1",
+      "question": "True or false: it has been proven that the halve-or-triple-plus-one rule always reaches 1.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Collatz conjecture (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Collatz_conjecture"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T16:57:44.956Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0016.webp",
+    "alt": "A glowing purple and orange fractal on a black background, generated from the Collatz iteration extended to the complex plane.",
+    "kind": "photo",
+    "credit": "Hugo Spinelli / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Collatz_Fractal.jpg"
+  },
+  "body": {
+    "question": "Pick any positive whole number. If it is even, halve it. If it is odd, triple it and add 1. Repeat. Is it proven that you always end up at 1?",
+    "options": [
+      "Yes, it was proved long ago",
+      "No, nobody has proved it"
+    ],
+    "answer": 1,
+    "reveal": "Nobody knows. This is the Collatz conjecture. Computers have tested a huge range of starting numbers and every one ended at 1, but no proof exists that it always happens."
+  }
+}

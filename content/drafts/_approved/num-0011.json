@@ -1,0 +1,76 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Hilbert's Grand Hotel",
+    "angle": "A full hotel with room for one more"
+  },
+  "created_at": "2026-10-19T21:34:27.413Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0011",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "A full hotel with room for one more",
+    "body": {
+      "claim": "A hotel with infinitely many rooms, all of them full, can still welcome a new guest.",
+      "why": "Ask every guest to move to the next room: the guest in room 1 goes to room 2, room 2 to room 3, and so on forever. Room 1 is now free. This is Hilbert's paradox of the Grand Hotel, a way to show how strange infinity is compared with ordinary counting."
+    },
+    "probes": [
+      {
+        "id": "num-0011-p1",
+        "kind": "tf",
+        "question": "True or false: a hotel with infinitely many full rooms can still fit one more guest.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hilbert's paradox of the Grand Hotel (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hilbert%27s_paradox_of_the_Grand_Hotel"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A long hotel corridor with many identical doors",
+    "keywords": [
+      "hotel corridor",
+      "hotel doors",
+      "grand hotel"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:37:42.009Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hilbert%27s_paradox_of_the_Grand_Hotel",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A fully occupied hotel with infinitely many rooms can still accommodate an additional guest (claim, probe 1 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hilbert%27s_paradox_of_the_Grand_Hotel",
+        "quote": "a fully occupied hotel with infinitely many rooms may still accommodate additional guests"
+      },
+      {
+        "claim": "Shifting each guest to the next room frees room 1 (why)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hilbert%27s_paradox_of_the_Grand_Hotel",
+        "quote": "The guest currently in room 1 moves to room 2, the guest currently in room 2 to room 3, and so on"
+      },
+      {
+        "claim": "It is Hilbert's paradox of the Grand Hotel, illustrating a counterintuitive property of infinity (why)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hilbert%27s_paradox_of_the_Grand_Hotel",
+        "quote": "is a thought experiment which illustrates a counterintuitive property of infinite sets"
+      }
+    ],
+    "overall": "pass"
+  }
+}

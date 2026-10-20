@@ -1,0 +1,87 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "The Collatz conjecture",
+    "angle": "A rule so simple that nobody has proved it"
+  },
+  "created_at": "2026-10-19T21:34:27.413Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0016",
+    "interest": "numbers",
+    "type": "guess_first",
+    "title": "The simplest unsolved problem",
+    "body": {
+      "question": "Pick any positive whole number. If it is even, halve it. If it is odd, triple it and add 1. Repeat. Is it proven that you always end up at 1?",
+      "options": [
+        "Yes, it was proved long ago",
+        "No, nobody has proved it"
+      ],
+      "answer": 1,
+      "reveal": "Nobody knows. This is the Collatz conjecture. Computers have tested a huge range of starting numbers and every one ended at 1, but no proof exists that it always happens."
+    },
+    "probes": [
+      {
+        "id": "num-0016-p1",
+        "kind": "tf",
+        "question": "True or false: it has been proven that the halve-or-triple-plus-one rule always reaches 1.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Collatz conjecture (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Collatz_conjecture"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A graph or diagram of a Collatz sequence tree",
+    "keywords": [
+      "Collatz conjecture",
+      "Collatz graph",
+      "number sequence"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:37:50.498Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Collatz_conjecture",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The Collatz rule: halve even numbers, triple odd numbers and add 1, repeat.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Collatz_conjecture",
+        "quote": "For even numbers, divide by 2; For odd numbers, multiply by 3 and add 1"
+      },
+      {
+        "claim": "It is not proven that you always end up at 1 (no proof exists).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Collatz_conjecture",
+        "quote": "Although the conjecture has not been proven"
+      },
+      {
+        "claim": "It is one of the most famous unsolved problems (nobody knows).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Collatz_conjecture",
+        "quote": "The Collatz conjecture is one of the most famous unsolved problems in mathematics"
+      },
+      {
+        "claim": "Computers have tested a huge range of starting numbers and every one ended at 1.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Collatz_conjecture",
+        "quote": "All values tested so far converge to 1"
+      }
+    ],
+    "overall": "pass"
+  }
+}

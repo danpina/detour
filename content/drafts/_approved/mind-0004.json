@@ -1,0 +1,110 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Anchoring",
+    "angle": "A random number nudges your estimate"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0004",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "A random number can steer your guess",
+    "body": {
+      "claim": "In a classic experiment, people who saw a high random number guessed higher than people who saw a low one.",
+      "why": "People watched a wheel rigged to land on 10 or 65, then estimated the percentage of African countries in the United Nations. Those who saw 10 guessed about 25% on average, and those who saw 65 guessed about 45%. Our estimates drift toward whatever number we saw first. This is called anchoring."
+    },
+    "probes": [
+      {
+        "id": "mind-0004-p1",
+        "kind": "tf",
+        "question": "True or false: an obviously random number can still shift people's estimates.",
+        "answer": true
+      },
+      {
+        "id": "mind-0004-p2",
+        "kind": "cloze",
+        "question": "The pull of a first number on later estimates is called ____.",
+        "answer": "anchoring",
+        "accept": [
+          "anchor",
+          "the anchoring effect"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Anchoring (cognitive bias) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A ship anchor, or a roulette-style wheel (illustration is fine)",
+    "keywords": [
+      "ship anchor",
+      "anchor",
+      "wheel of fortune"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:15:06.925Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In a classic experiment, people who saw a high random number guessed higher than people who saw a low one.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "Participants whose wheel stopped on 10 guessed lower values (25% on average) than participants whose wheel stopped at 65 (45% on average)"
+      },
+      {
+        "claim": "People watched a wheel rigged to land on 10 or 65.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "observed a roulette wheel that was predetermined to stop on either 10 or 65"
+      },
+      {
+        "claim": "Participants estimated the percentage of African countries in the United Nations.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "participants were asked to estimate the percentage of African countries in the United Nations"
+      },
+      {
+        "claim": "Those who saw 10 guessed about 25% on average, those who saw 65 about 45%.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "guessed lower values (25% on average) than participants whose wheel stopped at 65 (45% on average)"
+      },
+      {
+        "claim": "Estimates drift toward a first number seen; this is called anchoring.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "judgments or decisions are influenced by a reference point or \"anchor\""
+      },
+      {
+        "claim": "Probe: an obviously random number can still shift estimates (true).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "Anchoring persists even when the anchor is implausible or clearly irrelevant (e.g., spinning a random wheel)"
+      },
+      {
+        "claim": "Probe: the pull of a first number on later estimates is called anchoring.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)",
+        "quote": "The anchoring effect is a psychological phenomenon in which an individual's judgments or decisions are influenced by a reference point"
+      }
+    ],
+    "overall": "pass"
+  }
+}

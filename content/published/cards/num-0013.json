@@ -1,0 +1,62 @@
+{
+  "id": "num-0013",
+  "interest": "numbers",
+  "title": "The night black came up 26 times",
+  "probes": [
+    {
+      "id": "num-0013-p1",
+      "question": "True or false: after many blacks in a row, red becomes more likely on the next roulette spin.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "num-0013-p2",
+      "question": "What is the belief that a long streak must soon reverse called?",
+      "kind": "mcq",
+      "options": [
+        "The gambler's fallacy",
+        "The sunk-cost effect",
+        "Survivorship bias",
+        "The placebo effect"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gambler's fallacy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T16:57:38.045Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0013.webp",
+    "alt": "Close-up of a casino roulette wheel with red and black numbered pockets and a white ball near the zero",
+    "kind": "photo",
+    "credit": "Ralf Roletschek / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:13-02-27-spielbank-wiesbaden-by-RalfR-093.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Monte Carlo, August 1913. At a casino roulette table, the ball lands on black. Then black again. And again."
+      },
+      {
+        "text": "Gamblers start betting on red: surely a run this long has to end soon."
+      },
+      {
+        "text": "Black keeps coming. The ball lands on black 26 times in a row, and the gamblers lose millions of francs betting against it."
+      },
+      {
+        "text": "The twist: the wheel has no memory. Each spin is independent, so a long run of black does not make red more likely. The mistake is now called the gambler's fallacy."
+      }
+    ]
+  }
+}

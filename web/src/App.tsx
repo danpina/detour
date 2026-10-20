@@ -12,13 +12,16 @@ import { track } from "./analytics";
 import { store } from "./lib/db";
 import type { SessionItem } from "./lib/engine";
 import { EVENT_RETENTION_DAYS } from "./lib/progress";
+import { ALL_CARDS } from "./lib/content";
+import { seenInReview } from "./lib/reviewer";
 import { nextSet } from "./lib/session";
 
 type Screen =
   | { name: "loading" }
   | { name: "onboarding" }
+  | { name: "interests" }
   | { name: Tab }
-  | { name: "session"; items: SessionItem[]; run: number; feed: boolean }
+  | { name: "session"; items: SessionItem[]; run: number; feed: boolean; dryRun?: boolean }
   | { name: "end"; learned: number };
 
 export function App() {
@@ -53,6 +56,23 @@ export function App() {
     setScreen((s) => ({ name: "session", items, feed, run: (s.name === "session" ? s.run : 0) + 1 }));
   }, []);
 
+  /** Reviewer mode: a batch of agent-approved cards not looked at yet. Nothing is recorded as progress. */
+  const startReview = useCallback(() => {
+    const seen = seenInReview();
+    const items: SessionItem[] = ALL_CARDS.filter((c) => c.review?.by === "agent" && !seen.has(c.id))
+      .slice(0, 12)
+      .map((card) => ({ kind: "new", card }));
+    if (!items.length) return;
+    setScreen((s) => ({ name: "session", items, feed: false, dryRun: true, run: (s.name === "session" ? s.run : 0) + 1 }));
+  }, []);
+
+  /** Saving topics from Settings: keep everything else and go back to Settings (no new set is started). */
+  const saveInterests = async (picked: Interest[]) => {
+    setInterests(picked);
+    await store.saveSettings({ ...(await store.getSettings()), id: "main", interests: picked, onboarding_done: true });
+    setScreen({ name: "settings" });
+  };
+
   const finishOnboarding = async (picked: Interest[]) => {
     setInterests(picked);
     await store.saveSettings({ ...(await store.getSettings()), id: "main", interests: picked, onboarding_done: true });
@@ -70,12 +90,14 @@ export function App() {
 
         {screen.name === "onboarding" && <Onboarding initial={interests} onDone={finishOnboarding} />}
 
-        {screen.name === "home" && <HomeScreen onStart={(feed) => startSet(interests, feed)} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
+        {screen.name === "interests" && <Onboarding initial={interests} editing onDone={saveInterests} onCancel={() => setScreen({ name: "settings" })} />}
+
+        {screen.name === "home" && <HomeScreen onReview={startReview} onStart={(feed) => startSet(interests, feed)} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
 
         {screen.name === "progress" && <ProgressScreen />}
 
         {screen.name === "settings" && (
-          <SettingsScreen interests={interests} onChangeInterests={() => setScreen({ name: "onboarding" })} onDataChanged={() => void load()} />
+          <SettingsScreen interests={interests} onChangeInterests={() => setScreen({ name: "interests" })} onDataChanged={() => void load()} />
         )}
 
         {screen.name === "session" && (
@@ -83,7 +105,8 @@ export function App() {
             key={screen.run}
             items={screen.items}
             source="free"
-            onFinish={(n) => (screen.feed ? void startSet(interests, true) : setScreen({ name: "end", learned: n }))}
+            dryRun={screen.dryRun}
+            onFinish={(n) => (screen.dryRun ? setScreen({ name: "home" }) : screen.feed ? void startSet(interests, true) : setScreen({ name: "end", learned: n }))}
             onExit={screen.feed ? () => setScreen({ name: "home" }) : undefined}
           />
         )}

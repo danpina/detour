@@ -1,0 +1,83 @@
+{
+  "draft_id": "num-0012",
+  "created_at": "2026-10-19T21:34:37.594Z",
+  "queries": [
+    "Rubik's Cube scrambled cube puzzle",
+    "Rubik's Cube",
+    "Rubik's Cube scrambled cube"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-31321973",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rubiks Cube scrambled cubemeister com.jpg",
+      "credit": "cubemeister.com / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rubiks_Cube_scrambled_cubemeister_com.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Rubiks_Cube_scrambled_cubemeister_com.jpg/960px-Rubiks_Cube_scrambled_cubemeister_com.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2550,
+      "height": 2924,
+      "alt_suggestion": "This is a photo of a \"Rubiks cube\"-like sequential move puzzle.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-133632",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Central Medallion Quilt with \"Yankee Puzzle\" or \"Hour Glass\" Borders",
+      "credit": "Mary Jones (American, active late 18th/early 19th century) New England or mid-Atlantic, United States / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/133632",
+      "image_url": "https://www.artic.edu/iiif/2/ed37a880-b0b5-6014-21b3-a27cf71879ce/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of center: cotton, plain weave; embroidered with silk, cotton, and wool in buttonhole, chain, cross, single cross, feather, roumanian, satin, single satin, stem, and twined double running stitches. squares: cotton, cotton and linen, and linen, plain weaves; block, copperplate, and roller printed."
+    },
+    {
+      "id": "wikimedia-31321510",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fisher's Cube scrambled cubemeister com.jpg",
+      "credit": "cubemeister.com / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fisher%27s_Cube_scrambled_cubemeister_com.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Fisher%27s_Cube_scrambled_cubemeister_com.jpg/960px-Fisher%27s_Cube_scrambled_cubemeister_com.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2595,
+      "height": 2942,
+      "alt_suggestion": "This is a photo of a \"Rubiks cube\"-like sequential move puzzle.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-216818",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Puzzle Jug",
+      "credit": "Staffordshire, England / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/216818",
+      "image_url": "https://www.artic.edu/iiif/2/ace4b9c8-d2d8-80fa-f662-25ffeb803502/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of salt-glazed stoneware.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-31321891",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rex Cube scrambled cubemeister com.jpg",
+      "credit": "cubemeister.com / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rex_Cube_scrambled_cubemeister_com.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Rex_Cube_scrambled_cubemeister_com.jpg/960px-Rex_Cube_scrambled_cubemeister_com.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2430,
+      "height": 2666,
+      "alt_suggestion": "This is a photo of a \"Rubiks cube\"-like sequential move puzzle.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Rubik's Cube scrambled cube puzzle\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Rubik's Cube\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Rubik's Cube scrambled cube\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

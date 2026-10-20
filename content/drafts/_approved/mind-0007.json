@@ -1,0 +1,100 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Working memory capacity",
+    "angle": "Four chunks, not seven"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0007",
+    "interest": "mind",
+    "type": "estimate",
+    "title": "How much can you hold in mind?",
+    "body": {
+      "question": "About how many separate chunks of information can young adults hold in working memory at once?",
+      "unit": "chunks",
+      "min": 1,
+      "max": 20,
+      "scale": "linear",
+      "answer": 4,
+      "reveal": "Research since 2001 suggests about four chunks, not the 'seven plus or minus two' from the famous 1956 paper."
+    },
+    "probes": [
+      {
+        "id": "mind-0007-p1",
+        "kind": "estimate",
+        "question": "About how many chunks can young adults hold in working memory at once?",
+        "answer": 4,
+        "unit": "chunks",
+        "min": 1,
+        "max": 20,
+        "scale": "linear"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Working memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Working_memory"
+      },
+      {
+        "title": "The Magical Number Seven, Plus or Minus Two (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An abstract illustration of memory, or a phone keypad",
+    "keywords": [
+      "working memory",
+      "phone keypad",
+      "memory"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:14:41.299Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Working_memory",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "About four chunks can be held in working memory by young adults.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Working_memory",
+        "quote": "Cowan proposed that working memory has a capacity of about four chunks in young adults"
+      },
+      {
+        "claim": "The famous 'seven plus or minus two' paper dates from 1956.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two",
+        "quote": "published in 1956 in Psychological Review"
+      },
+      {
+        "claim": "The four-chunk proposal dates from 2001 (Cowan).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two",
+        "quote": "Cowan, Nelson (2001). \"The magical number 4 in short-term memory",
+        "note": "From the article's citation attached to the four-chunk claim."
+      },
+      {
+        "claim": "Probe: young adults hold about 4 chunks (estimate).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Working_memory",
+        "quote": "about four chunks in young adults (and fewer in children and old adults)"
+      }
+    ],
+    "overall": "pass"
+  }
+}

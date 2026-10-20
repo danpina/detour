@@ -1,0 +1,46 @@
+{
+  "id": "money-0004",
+  "interest": "money",
+  "title": "What does 10% a year do over 50 years?",
+  "probes": [
+    {
+      "id": "money-0004-p1",
+      "question": "$1 grows 10% a year for 50 years. About how many dollars is that?",
+      "kind": "estimate",
+      "answer": 117,
+      "unit": "$",
+      "min": 1,
+      "max": 100000,
+      "scale": "log"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-19T21:17:05.763Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "money-0004.webp",
+    "alt": "A wordless curve that starts flat and climbs steeply, with orange coins growing larger along it, drawn in the middle of a cream background.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "If $1 grows by 10% every year for 50 years, about how many dollars does it become?",
+    "unit": "$",
+    "min": 1,
+    "max": 100000,
+    "scale": "log",
+    "answer": 117,
+    "reveal": "About $117. Growth that compounds, 1.10 multiplied by itself 50 times, is far bigger than the $6 you'd have if you added 10 cents of the original dollar each year. This is a maths example, not investment advice."
+  }
+}

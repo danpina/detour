@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-38888120",
+  "alt": "Aerial view from Sather Tower over the University of California, Berkeley campus, with the bay in the distance.",
+  "fits": true,
+  "note": "Portrait-format view from the Berkeley campanile over campus; shows the right place, fits 4:5 well. Generic but not misleading.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-533640",
+  "alt": "Page 61 of the 1670 edition of Diophantus Arithmetica, showing Pierre de Fermat's observation printed beneath problem VIII.",
+  "fits": true,
+  "note": "This is the very page (Book II, Question VIII) with the Observatio Domini Petri de Fermat, i.e. the margin note. Old-book look is attractive; crop to the observation.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.33,
+    "zoom": 1.5
+  }
+}

@@ -54,12 +54,15 @@ describe("pickSet", () => {
   });
   it("prefers unseen cards and falls back to seen ones when short", () => {
     const seen = new Set(["hist-1", "hist-2", "sci-1"]);
-    expect(pickSet(cards, ["history", "science", "money"], seen, 4).every((c) => !seen.has(c.id))).toBe(true);
-    expect(pickSet(cards.slice(0, 3), ["history"], new Set(cards.map((c) => c.id)), 5)).toHaveLength(3);
+    expect(pickSet(cards, ["history", "science", "money"], seen, 3).every((c) => !seen.has(c.id))).toBe(true);
+    expect(pickSet(cards, ["history", "science", "money"], seen, 4)).toHaveLength(4); // the 4th is a repeat of a topic they picked
+    expect(pickSet(cards.slice(0, 3), ["history"], new Set(cards.map((c) => c.id)), 5)).toHaveLength(2); // only the 2 history cards exist
   });
-  it("fills from other interests when the chosen ones run out", () => {
+  it("never adds cards from topics the user did not pick", () => {
     const set = pickSet(cards, ["tech"], new Set(), 5);
-    expect(set).toHaveLength(5);
-    expect(set[0]!.interest).toBe("tech");
+    expect(set.map((c) => c.id)).toEqual(["tech-1"]);
+    expect(set.every((c) => c.interest === "tech")).toBe(true);
+    const chosen = pickSet(cards, ["history", "money"], new Set(["hist-1", "hist-2"]), 5);
+    expect(chosen.every((c) => c.interest === "history" || c.interest === "money")).toBe(true);
   });
 });

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-195286709",
+  "alt": "A page from an 1867 handwritten ledger with a column of dollar amounts beside each entry",
+  "fits": true,
+  "note": "Handwritten historical account ledger with columns of figures; matches the ledger/accounts brief and the fabricated-figures angle. Portrait, public domain. Crop on the columns of numbers.",
+  "crop": {
+    "fx": 0.7,
+    "fy": 0.35,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "draft_id": "num-0017",
+  "created_at": "2026-10-19T21:34:52.236Z",
+  "queries": [
+    "Pierre de Fermat Fermat Arithmetica",
+    "Pierre de Fermat",
+    "Pierre de Fermat Fermat"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-38075220",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Diophantus-VI-24-20-Fermat.png",
+      "credit": "Improved by Leonid 2 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Diophantus-VI-24-20-Fermat.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Diophantus-VI-24-20-Fermat.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 914,
+      "height": 1440,
+      "alt_suggestion": "Work by Diophantus (died in about 280 B.C.), with additions by Pierre de Fermat (died in 1665). This edition of the book was published in 1670. p. 339 contains Diophantus' problem VI.XXIV, with the no",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-108",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Pierre de Montarsis",
+      "credit": "Gérard Edelinck (French, born Flanders, 1640-1707) after Antoine Coypel (French, 1661-1722) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/108",
+      "image_url": "https://www.artic.edu/iiif/2/42332f4e-8f88-9861-5132-940a83fd2eb2/full/843,/0/default.jpg",
+      "alt_suggestion": "Engraved portrait of a light-skinned man with long, curly hair looking left with wide eyes and paging through a book.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-575688",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Diophantus-cover-Fermat.jpg",
+      "credit": "Unknown author / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Diophantus-cover-Fermat.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Diophantus-cover-Fermat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 920,
+      "height": 1450,
+      "alt_suggestion": "Diophantus-cover-Fermat.jpg",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-533640",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Diophantus-II-8-Fermat.jpg",
+      "credit": "Unknown author / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Diophantus-II-8-Fermat.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Diophantus-II-8-Fermat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 914,
+      "height": 1440,
+      "alt_suggestion": "Diophantus-II-8-Fermat.jpg",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Pierre de Fermat Fermat Arithmetica\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Pierre de Fermat\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Pierre de Fermat Fermat\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "The four color theorem",
+    "angle": "Four colours are enough for any map"
+  },
+  "created_at": "2026-10-19T21:34:27.413Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0015",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "Four colours are enough",
+    "body": {
+      "claim": "Any map can be coloured with just four colours so that no two neighbouring regions share a colour.",
+      "why": "Mathematicians have suspected this since 1852, when Francis Guthrie noticed it while colouring a map of English counties. It was finally proved in 1976, and the proof was one of the first major ones to rely on a computer checking over a thousand cases. Some mathematicians were uneasy that no human could check it all by hand."
+    },
+    "probes": [
+      {
+        "id": "num-0015-p1",
+        "kind": "mcq",
+        "question": "How many colours are enough to colour any map so neighbouring regions differ?",
+        "options": [
+          "Three",
+          "Four",
+          "Five",
+          "Six"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Four color theorem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Four_color_theorem"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A coloured map with distinct regions",
+    "keywords": [
+      "map coloring",
+      "four color map",
+      "colored map"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T16:53:41.757Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Four_color_theorem",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title/claim: any map can be coloured with four colours so neighbouring regions never share a colour (probe 1 answer: Four)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Four_color_theorem",
+        "quote": "no more than four colors are required to color the regions of any map so that no two adjacent regions have the same color"
+      },
+      {
+        "claim": "Suspected since 1852",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Four_color_theorem",
+        "quote": "the conjecture was first proposed on October 23, 1852"
+      },
+      {
+        "claim": "Francis Guthrie noticed it while colouring a map of English counties",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Four_color_theorem",
+        "quote": "while trying to color the map of counties of England, noticed that only four different colors were needed"
+      },
+      {
+        "claim": "Finally proved in 1976",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Four_color_theorem",
+        "quote": "the four color theorem resisted until 1976, when it was proven by Kenneth Appel and Wolfgang Haken in a computer-aided proof"
+      },
+      {
+        "claim": "One of the first major proofs to rely on a computer",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Four_color_theorem",
+        "quote": "It was the first major theorem to be proved by use of a computer"
+      },
+      {
+        "claim": "Computer checked over a thousand cases",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Four_color_theorem",
+        "quote": "reduced the infinitude of possible maps to 1,834 reducible configurations (later reduced to 1,482) which had to be checked one by one by computer"
+      },
+      {
+        "claim": "Some mathematicians were uneasy that no human could check it all by hand",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Four_color_theorem",
+        "quote": "this proof was not accepted by all mathematicians because the computer-assisted proof was infeasible for a human to check by hand"
+      }
+    ],
+    "overall": "pass"
+  }
+}

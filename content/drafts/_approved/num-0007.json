@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Folding paper 42 times",
+    "angle": "Doubling reaches the Moon"
+  },
+  "created_at": "2026-10-17T19:15:38.641Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0007",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "Fold a sheet of paper 42 times",
+    "body": {
+      "question": "Assume a sheet of paper is 0.1 mm thick. If you could fold it in half 42 times, about how thick would the stack be, in kilometres?",
+      "unit": "km",
+      "min": 1,
+      "max": 1000000000,
+      "scale": "log",
+      "answer": 439805,
+      "reveal": "About 440,000 km, which is farther than the Moon (roughly 380,000 km away). Each fold doubles the thickness, so 0.1 mm × 2^42 ≈ 440 million metres."
+    },
+    "probes": [
+      {
+        "id": "num-0007-p1",
+        "kind": "estimate",
+        "question": "Assume 0.1 mm paper. How thick, in km, would the stack be after 42 folds in half?",
+        "answer": 439805,
+        "unit": "km",
+        "min": 1,
+        "max": 1000000000,
+        "scale": "log"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Paper folding (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Paper_folding"
+      },
+      {
+        "title": "Moon (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Moon"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A stack of paper sheets, or the Moon",
+    "keywords": [
+      "paper stack",
+      "Moon",
+      "folded paper"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:13:22.952Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Paper_folding",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Moon",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "0.1 mm x 2^42 is about 440 million metres",
+        "verdict": "pass",
+        "note": "Verified by calculation: 0.0001 m * 2^42 = 4,398,046,511,104 * 0.0001 = 439,804,651 m = about 439,805 km."
+      },
+      {
+        "claim": "About 440,000 km after 42 folds, and answer 439805",
+        "verdict": "pass",
+        "note": "Verified by calculation: 2^42 = 4,398,046,511,104; times 0.1 mm = 439,804,651 m = 439,805 km; 440,000 km is its rounding."
+      },
+      {
+        "claim": "440,000 km is farther than the Moon",
+        "verdict": "pass",
+        "note": "Verified by calculation: 440,000 > 378,000 and > 380,000."
+      },
+      {
+        "claim": "The Moon is roughly 380,000 km away",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Moon",
+        "quote": "averaging around 378,000 kilometers",
+        "note": "Page gives an average of about 378,000 km; \"roughly 380,000\" is a fair rounding."
+      },
+      {
+        "claim": "Probe answer 439805 km",
+        "verdict": "pass",
+        "note": "Verified by calculation: same computation as above, 2^42 * 0.1 mm = 439,805 km."
+      }
+    ],
+    "overall": "pass"
+  }
+}

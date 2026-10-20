@@ -1,0 +1,67 @@
+{
+  "draft_id": "num-0010",
+  "created_at": "2026-10-19T21:34:32.567Z",
+  "queries": [
+    "Srinivasa Ramanujan G. H. Hardy Cambridge",
+    "Srinivasa Ramanujan",
+    "Srinivasa Ramanujan G. H. Hardy"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-16904602",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "RamanujanCambridge.jpg",
+      "credit": "Charles F. Wilson / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RamanujanCambridge.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/RamanujanCambridge.jpg/960px-RamanujanCambridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1403,
+      "height": 904,
+      "alt_suggestion": "The Indian mathematician Srinivasa Ramanujan (centre) together with his colleague Godfrey Harold Hardy (extreme right) and other scientists outside the Senate House at the University of Cambridge.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-153767257",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Srinivasa Ramanujan-Add. MS a94 version2 (cropped).jpg",
+      "credit": "https://mss-cat.trin.cam.ac.uk/manuscripts/uv/view.php?n=Add.Ms.a.94.7#?c=0&m=0&s=0&cv=6&xywh=-2849%2C-273%2C9238%2C5258 / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Srinivasa_Ramanujan-Add._MS_a94_version2_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Srinivasa_Ramanujan-Add._MS_a94_version2_%28cropped%29.jpg/960px-Srinivasa_Ramanujan-Add._MS_a94_version2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2583,
+      "height": 3445,
+      "alt_suggestion": "Passport photograph of Ramanujan created in 1913",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-132733936",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Srinivasa Ramanujan- Add. MS a947.jpg",
+      "credit": "https://mss-cat.trin.cam.ac.uk/manuscripts/uv/view.php?n=Add.Ms.a.94.7#?c=0&m=0&s=0&cv=1&xywh=-2607%2C-3%2C8685%2C4700 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Srinivasa_Ramanujan-_Add._MS_a947.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Srinivasa_Ramanujan-_Add._MS_a947.jpg/960px-Srinivasa_Ramanujan-_Add._MS_a947.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3288,
+      "height": 4517,
+      "alt_suggestion": "Copy passport photograph of Srinivasa Ramanujan",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Jitin Prasada and the Vice-Chancellor, University of Delhi, Prof. Dinesh Singh at the unveiling of the Statue of Srinivasa Ramanujan on the occasion of 125th Birth Anniversary of Srinivasa Ramanujan, in New Delhi.jpg",
+      "license": "GODL-India",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Srinivasa Ramanujan G. H. Hardy Cambridge\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Srinivasa Ramanujan\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Srinivasa Ramanujan G. H. Hardy\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

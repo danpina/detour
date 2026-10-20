@@ -1,0 +1,83 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Simpson's paradox",
+    "angle": "A trend that reverses when groups are combined"
+  },
+  "created_at": "2026-10-19T21:34:27.413Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0014",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "When the totals tell the opposite story",
+    "body": {
+      "claim": "A trend can appear in every group of data, then reverse when the groups are combined.",
+      "why": "This is Simpson's paradox. In a famous 1973 case at UC Berkeley, the overall figures seemed to show women being admitted less often than men. Department by department, women were admitted at similar or higher rates. Women had applied more to the departments that admitted fewer applicants overall."
+    },
+    "probes": [
+      {
+        "id": "num-0014-p1",
+        "kind": "tf",
+        "question": "True or false: a trend seen in every separate group can disappear or reverse in the combined data.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Simpson's paradox (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Simpson%27s_paradox"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "University building (UC Berkeley Sather Gate or campanile) or a two-line chart",
+    "keywords": [
+      "UC Berkeley",
+      "Sather Tower",
+      "Sather Gate"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:37:50.498Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Simpson%27s_paradox",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A trend can appear in every group of data, then reverse when the groups are combined.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Simpson%27s_paradox",
+        "quote": "a trend appears in several groups of data but disappears or reverses when the groups are combined"
+      },
+      {
+        "claim": "In 1973 at UC Berkeley the overall figures seemed to show women admitted less often than men.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Simpson%27s_paradox",
+        "quote": "The admission figures for the fall of 1973 showed that men applying were more likely than women to be admitted"
+      },
+      {
+        "claim": "Department by department, women were admitted at similar or higher rates (a small bias in favour of women once corrected).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Simpson%27s_paradox",
+        "quote": "small but statistically significant bias in favor of women",
+        "note": "Page's department table shows women lower in some departments (e.g. C, E) and higher in others; 'similar or higher' is a fair summary."
+      },
+      {
+        "claim": "Women applied more to the departments that admitted fewer applicants overall.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Simpson%27s_paradox",
+        "quote": "women tended to apply to more competitive departments with lower rates of admission"
+      }
+    ],
+    "overall": "pass"
+  }
+}

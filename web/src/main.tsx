@@ -6,6 +6,7 @@ import { App } from "./App";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { track } from "./analytics";
 import { listenForInstallPrompt } from "./lib/install";
+import { applyReviewerParam } from "./lib/reviewer";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -22,5 +23,6 @@ try {
   console.warn("Offline mode unavailable", e);
 }
 
+applyReviewerParam(location.search);
 listenForInstallPrompt();
 track("app.opened");

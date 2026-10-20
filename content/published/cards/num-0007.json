@@ -1,0 +1,50 @@
+{
+  "id": "num-0007",
+  "interest": "numbers",
+  "title": "Fold a sheet of paper 42 times",
+  "probes": [
+    {
+      "id": "num-0007-p1",
+      "question": "Assume 0.1 mm paper. How thick, in km, would the stack be after 42 folds in half?",
+      "kind": "estimate",
+      "answer": 439805,
+      "unit": "km",
+      "min": 1,
+      "max": 1000000000,
+      "scale": "log"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Paper folding (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Paper_folding"
+    },
+    {
+      "title": "Moon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moon"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-19T21:17:06.949Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "num-0007.webp",
+    "alt": "A stack of flat teal and navy layers that grows thicker toward the top, with a dotted arc rising from it to a pale Moon in the upper right.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "Assume a sheet of paper is 0.1 mm thick. If you could fold it in half 42 times, about how thick would the stack be, in kilometres?",
+    "unit": "km",
+    "min": 1,
+    "max": 1000000000,
+    "scale": "log",
+    "answer": 439805,
+    "reveal": "About 440,000 km, which is farther than the Moon (roughly 380,000 km away). Each fold doubles the thickness, so 0.1 mm × 2^42 ≈ 440 million metres."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "num-0005",
+  "interest": "numbers",
+  "title": "Why so many numbers start with 1",
+  "probes": [
+    {
+      "id": "num-0005-p1",
+      "question": "In data that follows Benford's law, about what share of numbers start with 1?",
+      "kind": "mcq",
+      "options": [
+        "About 11%",
+        "About 30%",
+        "About 50%",
+        "About 70%"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Benford's law (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Benford%27s_law"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-19T21:17:06.724Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0005.webp",
+    "alt": "A page from an 1867 handwritten ledger with a column of dollar amounts beside each entry",
+    "kind": "photo",
+    "credit": "Galveston City Company / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:(Galveston_City_Company_Accounts-_1867-1883)_-_DPLA_-_e5832fceb3931fc1585a0d1ed4a9d7b8_(page_23).jpg"
+  },
+  "body": {
+    "claim": "In many real-world lists of numbers, about 30% start with the digit 1, and fewer than 5% start with 9.",
+    "why": "This is Benford's law. In data that spans several orders of magnitude, like populations or river lengths, small leading digits are far more common. It has been applied to fraud detection, for example in checking election data."
+  }
+}

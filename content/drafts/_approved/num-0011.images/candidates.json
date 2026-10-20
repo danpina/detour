@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0011",
+  "created_at": "2026-10-19T21:34:35.114Z",
+  "queries": [
+    "hotel corridor hotel doors grand hotel",
+    "hotel corridor",
+    "hotel corridor hotel doors"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-156488656",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "MC 澳門 Macau Cotai 上蒲京 Grand Lisboa Palace 酒店 hotel corridor n white room door November 2024 R12S 03.jpg",
+      "credit": "JohnLEE Brothers / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_%E9%85%92%E5%BA%97_hotel_corridor_n_white_room_door_November_2024_R12S_03.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_%E9%85%92%E5%BA%97_hotel_corridor_n_white_room_door_November_2024_R12S_03.jpg/960px-MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_%E9%85%92%E5%BA%97_hotel_corridor_n_white_room_door_November_2024_R12S_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "MC 澳門 Macau Cotai 上蒲京 Grand Lisboa Palace 酒店 hotel corridor n white room door in November 2024",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-45494",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Saint Nicholas Hotel: Spandrel Panel",
+      "credit": "Adler & Sullivan, Architects, American, 1883-1895 Designer: Louis H. Sullivan, American, 1856-1924 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/45494",
+      "image_url": "https://www.artic.edu/iiif/2/018ba117-5ba6-2dd2-fa07-b11a13ff81fd/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of terra-cotta.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-156488657",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "MC 澳門 Macau Cotai 上蒲京 Grand Lisboa Palace 酒店 hotel corridor n white room door November 2024 R12S 02.jpg",
+      "credit": "JohnLEE Brothers / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_%E9%85%92%E5%BA%97_hotel_corridor_n_white_room_door_November_2024_R12S_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_%E9%85%92%E5%BA%97_hotel_corridor_n_white_room_door_November_2024_R12S_02.jpg/960px-MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_%E9%85%92%E5%BA%97_hotel_corridor_n_white_room_door_November_2024_R12S_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "MC 澳門 Macau Cotai 上蒲京 Grand Lisboa Palace 酒店 hotel corridor n white room door in November 2024",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-43945",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Auditorium Building: Section of the Hotel Bar",
+      "credit": "Architects: Adler & Sullivan, (American, 1883-1895) Designer: Louis H. Sullivan (American, 1856-1924) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/43945",
+      "image_url": "https://www.artic.edu/iiif/2/9ff14506-b7e2-b783-dc94-d27fdcc2608b/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of carved oak.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-156488659",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "MC 澳門 Macau Cotai 上蒲京 Grand Lisboa Palace 酒店 hotel corridor n white room door November 2024 R12S 01.jpg",
+      "credit": "JohnLEE Brothers / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_%E9%85%92%E5%BA%97_hotel_corridor_n_white_room_door_November_2024_R12S_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_%E9%85%92%E5%BA%97_hotel_corridor_n_white_room_door_November_2024_R12S_01.jpg/960px-MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_%E9%85%92%E5%BA%97_hotel_corridor_n_white_room_door_November_2024_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2448,
+      "height": 3264,
+      "alt_suggestion": "MC 澳門 Macau Cotai 上蒲京 Grand Lisboa Palace 酒店 hotel corridor n white room door in November 2024",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"hotel corridor hotel doors grand hotel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"hotel corridor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"hotel corridor hotel doors\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}
