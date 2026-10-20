@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-3153928",
+  "alt": "The Rosetta Stone, a dark inscribed stele carrying lines of hieroglyphic, Demotic and Greek text, displayed in the British Museum.",
+  "fits": true,
+  "note": "Real photo, black background, portrait-friendly, good scrim contrast. cand-1 is a processed black and white graphic; cand-2/5 are NASA protein models (unrelated). CC BY-SA 4.0.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

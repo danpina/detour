@@ -1,0 +1,52 @@
+{
+  "id": "sci-0018",
+  "interest": "science",
+  "title": "The Siberian blast of 1908",
+  "probes": [
+    {
+      "id": "sci-0018-p1",
+      "question": "About how many square kilometres of forest did the Tunguska event flatten?",
+      "kind": "estimate",
+      "answer": 2150,
+      "unit": "km²",
+      "min": 10,
+      "max": 100000,
+      "scale": "log"
+    },
+    {
+      "id": "sci-0018-p2",
+      "question": "True or false: the Tunguska event happened in Central Siberia.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tunguska event (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tunguska_event"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:56.083Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "sci-0018.webp",
+    "alt": "Flat illustration from above of an orange fireball with rings of short teal and dark green tree trunks lying flat and radiating outward across a green forest.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "On 30 June 1908, an explosion over Siberia flattened forest. About how many square kilometres?",
+    "unit": "km²",
+    "min": 10,
+    "max": 100000,
+    "scale": "log",
+    "answer": 2150,
+    "reveal": "The Tunguska event flattened 2,150 km² of forest, in a remote and sparsely populated region of the taiga."
+  }
+}

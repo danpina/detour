@@ -1,0 +1,55 @@
+{
+  "id": "hist-0009",
+  "interest": "history",
+  "title": "How far did Vasa sail?",
+  "probes": [
+    {
+      "id": "hist-0009-p1",
+      "question": "For how many years did Vasa lie on the seabed before she was salvaged in 1961?",
+      "kind": "mcq",
+      "options": [
+        "33 years",
+        "133 years",
+        "333 years",
+        "633 years"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "hist-0009-p2",
+      "question": "True or false: Vasa sank on her maiden voyage.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vasa (ship) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vasa_(ship)"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:44:40.398Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "hist-0009.webp",
+    "alt": "The preserved wooden hull of the 17th-century warship Vasa with its gun ports, standing in the Vasa Museum in Stockholm.",
+    "kind": "photo",
+    "credit": "Peulle / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Regalskeppet_Vasa_baug_babord_(2).jpg"
+  },
+  "body": {
+    "question": "The Swedish warship Vasa set out on her maiden voyage on 10 August 1628. About how far did she sail before she sank?",
+    "unit": "metres",
+    "min": 10,
+    "max": 100000,
+    "scale": "log",
+    "answer": 1300,
+    "reveal": "Vasa sank after sailing roughly 1,300 m (1,400 yd) into her maiden voyage. She sank only a few minutes after encountering a wind stronger than a breeze. The ship was salvaged with a largely intact hull in 1961 after spending 333 years on the seabed."
+  }
+}

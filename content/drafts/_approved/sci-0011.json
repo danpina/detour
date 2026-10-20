@@ -1,0 +1,126 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Pitch drop experiment",
+    "angle": "A slow liquid"
+  },
+  "created_at": "2026-10-20T18:37:27.361Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0011",
+    "interest": "science",
+    "type": "story",
+    "title": "A very slow drip",
+    "body": {
+      "panels": [
+        {
+          "text": "In 1927, Thomas Parnell of the University of Queensland in Brisbane, Australia, poured a heated sample of pitch into a sealed funnel."
+        },
+        {
+          "text": "His aim was to show students that some substances which appear solid are highly viscous fluids."
+        },
+        {
+          "text": "Pitch is a highly viscous liquid that appears solid. Its viscosity has been estimated at approximately 230 billion times that of water."
+        },
+        {
+          "text": "The first drop fell in December 1938. The ninth drop snapped away from the funnel in April 2014. Slow, but it flows."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0011-p1",
+        "kind": "tf",
+        "question": "True or false: pitch, though it looks solid, is a highly viscous fluid.",
+        "answer": true
+      },
+      {
+        "id": "sci-0011-p2",
+        "kind": "mcq",
+        "question": "The pitch's viscosity is estimated at approximately 230 billion times that of what?",
+        "options": [
+          "Water",
+          "Honey",
+          "Air",
+          "Olive oil"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Pitch drop experiment (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The pitch drop experiment funnel and beaker at the University of Queensland",
+    "keywords": [
+      "pitch drop experiment",
+      "University of Queensland",
+      "pitch drop"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:44:17.676Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1927, Thomas Parnell of the University of Queensland in Brisbane, Australia, started the experiment",
+        "verdict": "pass",
+        "quote": "started in 1927 by Thomas Parnell of the University of Queensland in Brisbane , Australia",
+        "source_url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
+      },
+      {
+        "claim": "His aim was to show students that some substances which appear solid are highly viscous fluids",
+        "verdict": "pass",
+        "quote": "to demonstrate to students that some substances which appear solid are highly viscous fluids",
+        "source_url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
+      },
+      {
+        "claim": "Parnell poured a heated sample of pitch into a sealed funnel",
+        "verdict": "pass",
+        "quote": "Parnell poured a heated sample of the pitch into a sealed funnel",
+        "source_url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
+      },
+      {
+        "claim": "Pitch is a highly viscous liquid that appears solid",
+        "verdict": "pass",
+        "quote": "any of a number of highly viscous liquids which appear solid",
+        "source_url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
+      },
+      {
+        "claim": "Viscosity estimated at approximately 230 billion times that of water (panel 3, probe 2 answer Water)",
+        "verdict": "pass",
+        "quote": "viscosity of approximately 230 billion times that of water",
+        "note": "Stated for the Queensland pitch (eighth drop). The page also gives ~20 billion times water for the separate Trinity College experiment, so the card's figure is correctly the Queensland one.",
+        "source_url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
+      },
+      {
+        "claim": "The first drop fell in December 1938",
+        "verdict": "pass",
+        "quote": "December 1938 1st drop fell",
+        "source_url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
+      },
+      {
+        "claim": "The ninth drop snapped away from the funnel in April 2014",
+        "verdict": "pass",
+        "quote": "the ninth drop snapped away from the funnel",
+        "note": "Page: ninth drop touched the eighth on 12 April 2014; on 24 April the base wobbled and the ninth drop snapped away. Timeline lists April 2014.",
+        "source_url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
+      }
+    ],
+    "overall": "pass"
+  }
+}

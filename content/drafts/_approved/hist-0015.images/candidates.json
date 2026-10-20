@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0015",
+  "created_at": "2026-10-20T18:39:57.784Z",
+  "queries": [
+    "Aksumite coin Endybis coin Kingdom of Axum coin",
+    "Aksumite coin",
+    "Aksumite coin Endybis coin"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-18842732",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ethiopian - Coin Depicting an Anonymous King - Walters 59793 - Reverse.jpg",
+      "credit": "Walters Art Museum: Home page Info about artwork / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ethiopian_-_Coin_Depicting_an_Anonymous_King_-_Walters_59793_-_Reverse.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Ethiopian_-_Coin_Depicting_an_Anonymous_King_-_Walters_59793_-_Reverse.jpg/960px-Ethiopian_-_Coin_Depicting_an_Anonymous_King_-_Walters_59793_-_Reverse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1800,
+      "height": 1800,
+      "alt_suggestion": "The Aksumite Kingdom began to issue coins about AD 270. Silver and bronze coins were issued for local, everyday use, and generally followed the design of Roman coins with a bust portrait of the ruler ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-194522",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tetradrachm (Coin) Portraying Queen Cleopatra VII",
+      "credit": "Roman; minted in Eastern Mediterranean (possibly Antioch, Syria) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/194522",
+      "image_url": "https://www.artic.edu/iiif/2/010469dd-fb00-f67a-3d59-5ff90dea4643/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of silver.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-18842729",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ethiopian - Coin Depicting an Anonymous King - Walters 59793 - Obverse.jpg",
+      "credit": "Walters Art Museum: Home page Info about artwork / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ethiopian_-_Coin_Depicting_an_Anonymous_King_-_Walters_59793_-_Obverse.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Ethiopian_-_Coin_Depicting_an_Anonymous_King_-_Walters_59793_-_Obverse.jpg/960px-Ethiopian_-_Coin_Depicting_an_Anonymous_King_-_Walters_59793_-_Obverse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1800,
+      "height": 1800,
+      "alt_suggestion": "The Aksumite Kingdom began to issue coins about AD 270. Silver and bronze coins were issued for local, everyday use, and generally followed the design of Roman coins with a bust portrait of the ruler ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-9655",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tetradrachm (Coin) Depicting the Goddess Athena",
+      "credit": "Greek / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/9655",
+      "image_url": "https://www.artic.edu/iiif/2/c1691eb7-517e-6d06-987d-dbd9a87d0826/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of silver.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-140067233",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Axumite coinage.jpg",
+      "credit": "www.britishmuseum.org / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Axumite_coinage.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Axumite_coinage.jpg/960px-Axumite_coinage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1500,
+      "height": 708,
+      "alt_suggestion": "Aksumite coin decepting Aphilas",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Aksumite coin Endybis coin Kingdom of Axum coin\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Aksumite coin\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Aksumite coin Endybis coin\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

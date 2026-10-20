@@ -1,0 +1,109 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Rosetta Stone",
+    "angle": "One decree, three scripts"
+  },
+  "created_at": "2026-10-20T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0012",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "One message, three scripts",
+    "body": {
+      "question": "The Rosetta Stone carries three versions of one decree from 196 BC. Which scripts are they written in?",
+      "options": [
+        "Hieroglyphs, Demotic and Ancient Greek",
+        "Hieroglyphs, Latin and Arabic",
+        "Cuneiform, Hieroglyphs and Greek",
+        "Demotic, Sanskrit and Hebrew"
+      ],
+      "answer": 0,
+      "reveal": "The top text is in Ancient Egyptian hieroglyphs, the second in the Egyptian Demotic script, and the third in Ancient Greek. The decree has only minor differences across the three versions, making the stone key to deciphering the Egyptian scripts. It was found in July 1799 by French army officer Pierre-François Bouchard during France's invasion of Egypt."
+    },
+    "probes": [
+      {
+        "id": "hist-0012-p1",
+        "kind": "mcq",
+        "question": "In which museum has the Rosetta Stone been exhibited almost continuously since 1802?",
+        "options": [
+          "The British Museum",
+          "The Louvre",
+          "The Metropolitan Museum of Art",
+          "The Egyptian Museum in Cairo"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0012-p2",
+        "kind": "tf",
+        "question": "True or false: the Rosetta Stone was found in July 1799.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rosetta Stone (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Rosetta Stone, a dark stele with three bands of inscription",
+    "keywords": [
+      "Rosetta Stone",
+      "British Museum",
+      "Rosetta Stone EA24"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:42:40.127Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Rosetta_Stone",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The Rosetta Stone carries three versions of one decree issued in 196 BC",
+        "verdict": "pass",
+        "quote": "inscribed with three versions of a decree issued in 196 BC",
+        "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+      },
+      {
+        "claim": "Scripts: top Ancient Egyptian hieroglyphs, second Egyptian Demotic script, third Ancient Greek (answer option 0; the other options with Latin, Arabic, cuneiform, Sanskrit, Hebrew are wrong)",
+        "verdict": "pass",
+        "quote": "the second in the Egyptian Demotic script, and the third in Ancient Greek .",
+        "note": "\"Egyptian Demotic script\" is verbatim in the page.",
+        "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+      },
+      {
+        "claim": "The decree has only minor differences across the three versions, making the stone key to deciphering the Egyptian scripts",
+        "verdict": "pass",
+        "quote": "The decree has only minor differences across the three versions, making the Rosetta Stone key to deciphering the Egyptian scripts",
+        "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+      },
+      {
+        "claim": "It was found in July 1799 by French army officer Pierre-François Bouchard during France's invasion of Egypt (reveal; probe p2 true)",
+        "verdict": "pass",
+        "quote": "It was found there in July 1799 by French army officer Pierre-François Bouchard during France's invasion of Egypt .",
+        "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+      },
+      {
+        "claim": "Since 1802 it has been exhibited almost continuously in the British Museum (probe p1 answer)",
+        "verdict": "pass",
+        "quote": "Since 1802, it has been on public display at the British Museum almost continuously",
+        "note": "Distractors Louvre, Met, Egyptian Museum Cairo are wrong per the page.",
+        "source_url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+      }
+    ],
+    "overall": "pass"
+  }
+}

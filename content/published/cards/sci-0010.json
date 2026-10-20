@@ -1,0 +1,50 @@
+{
+  "id": "sci-0010",
+  "interest": "science",
+  "title": "The tiny animal that went to space",
+  "probes": [
+    {
+      "id": "sci-0010-p1",
+      "question": "True or false: tardigrades have survived exposure to outer space.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "sci-0010-p2",
+      "question": "About how long is a fully grown tardigrade, usually?",
+      "kind": "mcq",
+      "options": [
+        "0.5 mm",
+        "5 cm",
+        "50 cm",
+        "5 m"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tardigrade (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tardigrade"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:21.142Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0010.webp",
+    "alt": "A grayscale light-microscope image of a tardigrade, a plump microscopic animal with stubby legs ending in claws",
+    "kind": "photo",
+    "credit": "JSC / NASA",
+    "license": "Public domain",
+    "source_url": "https://images.nasa.gov/details/jsc2021e019950"
+  },
+  "body": {
+    "claim": "Tardigrades have survived exposure to outer space.",
+    "why": "In 2007, dehydrated tardigrades were taken on the FOTON-M3 mission and exposed to vacuum, and to solar ultraviolet, for 10 days. Tardigrades are usually about 0.5 mm long when fully grown."
+  }
+}

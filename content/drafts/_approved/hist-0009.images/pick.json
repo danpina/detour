@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-66129389",
+  "alt": "The preserved wooden hull of the 17th-century warship Vasa with its gun ports, standing in the Vasa Museum in Stockholm.",
+  "fits": true,
+  "note": "Real Vasa hull in museum, no people, dark wood good under a scrim. Landscape, cropped to 4:5 on the hull. Other candidates are a Stockholm skyline, an unrelated ship and art.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

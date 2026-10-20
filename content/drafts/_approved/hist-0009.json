@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Vasa",
+    "angle": "A warship that barely left the harbour"
+  },
+  "created_at": "2026-10-20T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0009",
+    "interest": "history",
+    "type": "estimate",
+    "title": "How far did Vasa sail?",
+    "body": {
+      "question": "The Swedish warship Vasa set out on her maiden voyage on 10 August 1628. About how far did she sail before she sank?",
+      "unit": "metres",
+      "min": 10,
+      "max": 100000,
+      "scale": "log",
+      "answer": 1300,
+      "reveal": "Vasa sank after sailing roughly 1,300 m (1,400 yd) into her maiden voyage. She sank only a few minutes after encountering a wind stronger than a breeze. The ship was salvaged with a largely intact hull in 1961 after spending 333 years on the seabed."
+    },
+    "probes": [
+      {
+        "id": "hist-0009-p1",
+        "kind": "mcq",
+        "question": "For how many years did Vasa lie on the seabed before she was salvaged in 1961?",
+        "options": [
+          "33 years",
+          "133 years",
+          "333 years",
+          "633 years"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "hist-0009-p2",
+        "kind": "tf",
+        "question": "True or false: Vasa sank on her maiden voyage.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Vasa (ship) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Vasa_(ship)"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The restored 17th-century warship Vasa on display in the Vasa Museum, Stockholm",
+    "keywords": [
+      "Vasa Museum",
+      "Vasa ship",
+      "Stockholm",
+      "Vasa warship 1628"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:42:40.126Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Vasa_(ship)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Vasa is a Swedish warship; she sank after sailing roughly 1,300 m into her maiden voyage on 10 August 1628 (estimate answer 1300 m, within slider range 10-100000; probe p2 true)",
+        "verdict": "pass",
+        "quote": "The ship sank after sailing roughly 1,300 m (1,400 yd) into her maiden voyage on 10 August 1628.",
+        "source_url": "https://en.wikipedia.org/wiki/Vasa_(ship)"
+      },
+      {
+        "claim": "She sank only a few minutes after encountering a wind stronger than a breeze",
+        "verdict": "pass",
+        "quote": "sank only a few minutes after encountering a wind stronger than a breeze.",
+        "source_url": "https://en.wikipedia.org/wiki/Vasa_(ship)"
+      },
+      {
+        "claim": "The ship was salvaged with a largely intact hull in 1961 after spending 333 years on the seabed (probe p1 answer)",
+        "verdict": "pass",
+        "quote": "The ship was salvaged with a largely intact hull in 1961 after spending 333 years on the seabed.",
+        "note": "Distractors 33, 133, 633 are wrong.",
+        "source_url": "https://en.wikipedia.org/wiki/Vasa_(ship)"
+      },
+      {
+        "claim": "1961 - 1628 = 333 years",
+        "verdict": "pass",
+        "note": "Verified by calculation: 1961 - 1628 = 333.",
+        "source_url": "https://en.wikipedia.org/wiki/Vasa_(ship)"
+      }
+    ],
+    "overall": "pass"
+  }
+}

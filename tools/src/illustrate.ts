@@ -330,6 +330,55 @@ const scenes: Record<string, Scene> = {
       );
     },
   },
+  pillars: {
+    alt: "Illustration of a ring of tall T-shaped stone pillars on a hilltop at sunrise, with simple animal shapes carved on them",
+    svg: () => {
+      const pillar = (x: number, h: number, color: string, mark: string) =>
+        `<g><rect x="${x - 20}" y="${980 - h}" width="40" height="${h}" fill="${color}"/><rect x="${x - 62}" y="${980 - h - 34}" width="124" height="48" rx="12" fill="${color}"/>${mark}</g>`;
+      const mark = (x: number, h: number, kind: number) => {
+        const y = 980 - h + 60;
+        if (kind === 0) return `<circle cx="${x}" cy="${y}" r="9" fill="${CREAM}" opacity="0.7"/><path d="M ${x - 16} ${y + 30} q 16 -26 32 0" fill="none" stroke="${CREAM}" stroke-width="5" opacity="0.7"/>`;
+        if (kind === 1) return `<path d="M ${x - 14} ${y} q 14 -18 28 0 t -28 24 t 28 24" fill="none" stroke="${CREAM}" stroke-width="5" opacity="0.7"/>`;
+        return `<path d="M ${x - 14} ${y + 40} L ${x} ${y} L ${x + 14} ${y + 40} Z" fill="none" stroke="${CREAM}" stroke-width="5" opacity="0.7"/>`;
+      };
+      const spec: [number, number, string, number][] = [
+        [250, 330, DEEP, 0],
+        [410, 400, TEAL, 1],
+        [570, 440, DEEP, 2],
+        [730, 400, TEAL, 0],
+        [890, 330, DEEP, 1],
+      ];
+      return wrap(
+        `<circle cx="540" cy="520" r="190" fill="${ORANGE}" opacity="0.85"/><rect y="980" width="${W}" height="370" fill="${SAND}"/><path d="M 0 980 Q 540 900 1080 980 L 1080 1010 L 0 1010 Z" fill="#d6c59d"/>
+         ${spec.map(([x, h, c, k]) => pillar(x, h, c, mark(x, h, k))).join("")}`,
+      );
+    },
+  },
+  blast: {
+    alt: "Illustration of a forest seen from above with trees lying flat and pointing outward from a central point, under a glowing orange sky",
+    svg: () => {
+      let trees = "";
+      const cx = 540;
+      const cy = 760;
+      for (let ring = 1; ring <= 5; ring++) {
+        const count = ring * 8;
+        for (let i = 0; i < count; i++) {
+          const a = (Math.PI * 2 * i) / count + ring * 0.2;
+          const r = ring * 105 + 40;
+          const x = cx + r * Math.cos(a);
+          const y = cy + r * Math.sin(a) * 0.82;
+          const len = 52;
+          const x2 = x + len * Math.cos(a);
+          const y2 = y + len * Math.sin(a) * 0.82;
+          trees += `<line x1="${x.toFixed(1)}" y1="${y.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${ring % 2 ? DEEP : TEAL}" stroke-width="9" stroke-linecap="round"/>`;
+        }
+      }
+      return wrap(
+        `<rect width="${W}" height="${H}" fill="#1c4a3f"/><circle cx="${cx}" cy="${cy}" r="110" fill="${ORANGE}" opacity="0.9"/><circle cx="${cx}" cy="${cy}" r="60" fill="#f6d28f"/>${trees}`,
+        "#1c4a3f",
+      );
+    },
+  },
 };
 
 export async function runIllustrate(argv: string[]): Promise<number> {

@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0011",
+  "created_at": "2026-10-20T18:40:13.153Z",
+  "queries": [
+    "pitch drop experiment University of Queensland pitch drop",
+    "pitch drop experiment",
+    "pitch drop experiment University of Queensland"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-22579661",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "University of Queensland Pitch drop experiment-white bg.jpg",
+      "credit": "University_of_Queensland_Pitch_drop_experiment.jpg: John Mainstone derivative work: Amada44 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Queensland_Pitch_drop_experiment-white_bg.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/University_of_Queensland_Pitch_drop_experiment-white_bg.jpg/960px-University_of_Queensland_Pitch_drop_experiment-white_bg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1012,
+      "height": 1524,
+      "alt_suggestion": "Picture of the Pitch Drop Experiment at the University of Queensland, with 9-volt battery for size comparison",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-14688",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Last Drop",
+      "credit": "Charles Joseph Hullmandel (English 1789-1850) after Thomas Rowlandson (English, 1756-1827) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/14688",
+      "image_url": "https://www.artic.edu/iiif/2/9942d5ce-3d6e-7820-0c59-472889350fc5/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of lithograph on paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-2154211",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pitch drop experiment with John Mainstone.jpg",
+      "credit": "John Mainstone, University of Queensland / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pitch_drop_experiment_with_John_Mainstone.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Pitch_drop_experiment_with_John_Mainstone.jpg/960px-Pitch_drop_experiment_with_John_Mainstone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2379,
+      "height": 2427,
+      "alt_suggestion": "Picture of the Pitch Drop Experiment from University of Queensland featuring the former custodian, John Mainstone (picture taken in 1990), two years into the life of the 8th drop",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-18874",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Dropping Well at Knar Knarcsborough",
+      "credit": "Francis Nicholson English, 1753-1844 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/18874",
+      "image_url": "https://www.artic.edu/iiif/2/db8be48f-33ec-4dbf-3600-c6d4cd08f9b1/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color aquatint on paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-19882897",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "UQ pitch drop experiment 2012.JPG",
+      "credit": "Jsjsjs1111 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:UQ_pitch_drop_experiment_2012.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/UQ_pitch_drop_experiment_2012.JPG/960px-UQ_pitch_drop_experiment_2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2448,
+      "height": 3264,
+      "alt_suggestion": "the pitch drop experiment in UQ, taken June 2012",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"pitch drop experiment University of Queensland pitch drop\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"pitch drop experiment\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"pitch drop experiment University of Queensland\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

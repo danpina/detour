@@ -1,0 +1,62 @@
+{
+  "id": "sci-0013",
+  "interest": "science",
+  "title": "The doctor who asked for clean hands",
+  "probes": [
+    {
+      "id": "sci-0013-p1",
+      "question": "What did Semmelweis propose in 1847 at Vienna General Hospital?",
+      "kind": "mcq",
+      "options": [
+        "Hand washing with chlorinated lime solutions",
+        "Opening the windows",
+        "Longer hospital stays",
+        "Wearing masks"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0013-p2",
+      "question": "True or false: the germ theory of disease had been accepted in Vienna when Semmelweis started.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ignaz Semmelweis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:36.744Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0013.webp",
+    "alt": "A black-and-white engraved portrait of Ignaz Semmelweis in profile, a bald man with a moustache and bow tie",
+    "kind": "photo",
+    "credit": "After Jenő Doby's engravig / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ignaz_Semmelweis_1860.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Vienna General Hospital, 1840s. Childbed fever was common in the 19th century, and often fatal."
+      },
+      {
+        "text": "Ignaz Semmelweis noticed that doctors' wards had thrice the mortality of midwives' wards."
+      },
+      {
+        "text": "In 1847, he proposed hand washing with chlorinated lime solutions at the First Obstetrical Clinic."
+      },
+      {
+        "text": "The maternal mortality rate dropped from 18% to less than 2%. His ideas were rejected by the medical community at the time."
+      }
+    ]
+  }
+}

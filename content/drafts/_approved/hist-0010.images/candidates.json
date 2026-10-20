@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0010",
+  "created_at": "2026-10-20T18:39:41.359Z",
+  "queries": [
+    "dancing mania Hendrik Hondius Brueghel Molenbeek pilgrimage",
+    "dancing mania",
+    "dancing mania Hendrik Hondius"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-4092062",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "209 Tanzwut.jpg",
+      "credit": "H.-P.Haack / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:209_Tanzwut.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/209_Tanzwut.jpg/960px-209_Tanzwut.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1259,
+      "height": 1083,
+      "alt_suggestion": "Hecker, Justus Friedrich Karl: The dancing mania, a common disease in the Middle Ages. According to the sources for physicians and educated laymen edited by Dr. JFC Hecker. Berlin: Enslin V. 1832, VI ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-185222",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Group Pilgrimage to the Jizo Nun",
+      "credit": "Ike Taiga Japanese, 1723-1776 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/185222",
+      "image_url": "https://www.artic.edu/iiif/2/637a65fa-a6f2-8a9f-a6f4-98fcffe2ec92/full/843,/0/default.jpg",
+      "alt_suggestion": "Long scroll drawing, upper half is script; lower half depicts people in courtyard.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-44446700",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "FamHis072.png",
+      "credit": "Harold Nelson / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:FamHis072.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/FamHis072.png/960px-FamHis072.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2309,
+      "height": 3138,
+      "alt_suggestion": "A historiated initial I featuring two dancing thieves and a decorative frame\"Miles thought now to have some sport with them, which hee had, and therefore plaid lustily on his tabor and pipe: so soone ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-24548",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Shiva as Lord of the Dance (Nataraja)",
+      "credit": "India Tamil Nadu / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/24548",
+      "image_url": "https://www.artic.edu/iiif/2/cf50f037-5fb2-e197-0e56-3ae701edb3e2/full/843,/0/default.jpg",
+      "alt_suggestion": "A bronze sculpture of the Hindu divinity Shiva. Shiva, who has two pairs of arms, is depicted dancing inside of a circular ring. Balancing on one leg, Shiva gestures his arms to the side and front, as his loose locks of hair flow behind him.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-36367564",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The dancing mania Wellcome M0014846.jpg",
+      "credit": "https://wellcomeimages.org/indexplus/obf_images/c3/96/50965017239f35f8c65196f40f99.jpg Gallery: https://wellcomeimages.org/indexplus/image/M0014846.html Wellcom",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_dancing_mania_Wellcome_M0014846.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/The_dancing_mania_Wellcome_M0014846.jpg/960px-The_dancing_mania_Wellcome_M0014846.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2833,
+      "height": 3906,
+      "alt_suggestion": "The dancing mania General Collections Keywords: Psychiatry; Hondius; Pieter Brueghel",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"dancing mania Hendrik Hondius Brueghel Molenbeek pilgrimage\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"dancing mania\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"dancing mania Hendrik Hondius\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

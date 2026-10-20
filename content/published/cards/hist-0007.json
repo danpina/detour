@@ -1,0 +1,49 @@
+{
+  "id": "hist-0007",
+  "interest": "history",
+  "title": "Big pillars, no pottery yet",
+  "probes": [
+    {
+      "id": "hist-0007-p1",
+      "question": "Who recognised the significance of Göbekli Tepe in 1994?",
+      "kind": "mcq",
+      "options": [
+        "Klaus Schmidt",
+        "Howard Carter",
+        "Heinrich Schliemann",
+        "Hiram Bingham"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0007-p2",
+      "question": "True or false: Göbekli Tepe was built around 9500 BCE.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Göbekli Tepe (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:44:30.318Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0007.webp",
+    "alt": "Flat illustration of five T-shaped stone pillars with simple carved symbols standing on a hill in front of a large orange rising sun.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "Göbekli Tepe, in Şanlıurfa Province, Turkey, was built around 9500 BCE, in the Pre-Pottery Neolithic. Its large circular structures contain large stone pillars.",
+    "why": "The site was first used at the dawn of the southwest Asian Neolithic period. German archaeologist Klaus Schmidt recognised its significance in 1994 and began excavations the following year. Before that, attempts had been made to break up some of the pillars, presumably by farmers who mistook them for ordinary large rocks."
+  }
+}

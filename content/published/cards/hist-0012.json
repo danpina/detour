@@ -1,0 +1,57 @@
+{
+  "id": "hist-0012",
+  "interest": "history",
+  "title": "One message, three scripts",
+  "probes": [
+    {
+      "id": "hist-0012-p1",
+      "question": "In which museum has the Rosetta Stone been exhibited almost continuously since 1802?",
+      "kind": "mcq",
+      "options": [
+        "The British Museum",
+        "The Louvre",
+        "The Metropolitan Museum of Art",
+        "The Egyptian Museum in Cairo"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0012-p2",
+      "question": "True or false: the Rosetta Stone was found in July 1799.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rosetta Stone (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:08.781Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0012.webp",
+    "alt": "The Rosetta Stone, a dark inscribed stele carrying lines of hieroglyphic, Demotic and Greek text, displayed in the British Museum.",
+    "kind": "photo",
+    "credit": "Hans Hillewaert / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rosetta_Stone.JPG"
+  },
+  "body": {
+    "question": "The Rosetta Stone carries three versions of one decree from 196 BC. Which scripts are they written in?",
+    "options": [
+      "Hieroglyphs, Demotic and Ancient Greek",
+      "Hieroglyphs, Latin and Arabic",
+      "Cuneiform, Hieroglyphs and Greek",
+      "Demotic, Sanskrit and Hebrew"
+    ],
+    "answer": 0,
+    "reveal": "The top text is in Ancient Egyptian hieroglyphs, the second in the Egyptian Demotic script, and the third in Ancient Greek. The decree has only minor differences across the three versions, making the stone key to deciphering the Egyptian scripts. It was found in July 1799 by French army officer Pierre-François Bouchard during France's invasion of Egypt."
+  }
+}

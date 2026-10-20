@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Octopus anatomy",
+    "angle": "Three hearts"
+  },
+  "created_at": "2026-10-20T18:37:27.359Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0009",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "An octopus has three hearts",
+    "body": {
+      "claim": "Octopuses have three hearts.",
+      "why": "A systemic heart circulates blood around the body, and two branchial, or gill, hearts pump it through the two gills. The systemic heart becomes inactive when the animal is swimming."
+    },
+    "probes": [
+      {
+        "id": "sci-0009-p1",
+        "kind": "tf",
+        "question": "True or false: octopuses have three hearts.",
+        "answer": true
+      },
+      {
+        "id": "sci-0009-p2",
+        "kind": "mcq",
+        "question": "What do an octopus's two gill hearts do?",
+        "options": [
+          "Pump blood through the gills",
+          "Pump ink out of the body",
+          "Control the arms",
+          "Help it change colour"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Octopus (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Octopus"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A common octopus underwater, arms spread over rocks or a reef",
+    "keywords": [
+      "octopus",
+      "Octopus vulgaris",
+      "octopus underwater"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:41:47.503Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Octopus",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Octopuses have three hearts (title, claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Octopus",
+        "quote": "They have three hearts; a systemic or main heart that circulates blood around the body"
+      },
+      {
+        "claim": "A systemic heart circulates blood around the body",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Octopus",
+        "quote": "a systemic or main heart that circulates blood around the body"
+      },
+      {
+        "claim": "Two branchial (gill) hearts pump blood through the two gills (why, probe 2 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Octopus",
+        "quote": "two branchial or gill hearts that pump it through the two gills"
+      },
+      {
+        "claim": "The systemic heart becomes inactive when swimming",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Octopus",
+        "quote": "The systemic heart becomes inactive when the animal is swimming."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "draft_id": "sci-0009",
+  "created_at": "2026-10-20T18:40:04.630Z",
+  "queries": [
+    "octopus Octopus vulgaris octopus underwater",
+    "octopus",
+    "octopus Octopus vulgaris"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-108248263",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pulpo común (Octopus vulgaris), Parque natural de la Arrábida, Portugal, 2020-07-21, DD 33.jpg",
+      "credit": "Diego Delso / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pulpo_com%C3%BAn_(Octopus_vulgaris),_Parque_natural_de_la_Arr%C3%A1bida,_Portugal,_2020-07-21,_DD_33.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Pulpo_com%C3%BAn_%28Octopus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-21%2C_DD_33.jpg/960px-Pulpo_com%C3%BAn_%28Octopus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-21%2C_DD_33.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2694,
+      "height": 2694,
+      "alt_suggestion": "Common octopus (Octopus vulgaris), Arrábida Natural Park, Portugal. This mollusc is the most studied of all octopus species. It is cosmopolitan, that is, a global species, which ranges from the easter",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-185165",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Bottle with Underwater Serpents",
+      "credit": "Mississippian, Nodena red and white Possibly Arkansas, Mississippi County, Lacy site, United States / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/185165",
+      "image_url": "https://www.artic.edu/iiif/2/d1a62af6-0fc8-bceb-c78b-5ea7b5bc3afb/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of earthenware and pigment.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-108248284",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pulpo común (Octopus vulgaris), Parque natural de la Arrábida, Portugal, 2020-07-21, DD 46.jpg",
+      "credit": "Diego Delso / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pulpo_com%C3%BAn_(Octopus_vulgaris),_Parque_natural_de_la_Arr%C3%A1bida,_Portugal,_2020-07-21,_DD_46.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Pulpo_com%C3%BAn_%28Octopus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-21%2C_DD_46.jpg/960px-Pulpo_com%C3%BAn_%28Octopus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-21%2C_DD_46.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4843,
+      "height": 3229,
+      "alt_suggestion": "Common octopus (Octopus vulgaris), Arrábida Natural Park, Portugal. This mollusc is the most studied of all octopus species. It is cosmopolitan, that is, a global species, which ranges from the easter",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-81416",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Octopus and Shell",
+      "credit": "Attributed to Utagawa Kuniyoshi Japanese, 1797-1861 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/81416",
+      "image_url": "https://www.artic.edu/iiif/2/ccba2aae-46bc-796e-4e2c-640c5309c2de/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color woodblock print; shikishiban, surimono."
+    },
+    {
+      "id": "wikimedia-118447006",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pulpo común (Octopus vulgaris), franja marina Teno-Rasca, Tenerife, España, 2022-01-08, DD 53.jpg",
+      "credit": "Diego Delso / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pulpo_com%C3%BAn_(Octopus_vulgaris),_franja_marina_Teno-Rasca,_Tenerife,_Espa%C3%B1a,_2022-01-08,_DD_53.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Pulpo_com%C3%BAn_%28Octopus_vulgaris%29%2C_franja_marina_Teno-Rasca%2C_Tenerife%2C_Espa%C3%B1a%2C_2022-01-08%2C_DD_53.jpg/960px-Pulpo_com%C3%BAn_%28Octopus_vulgaris%29%2C_franja_marina_Teno-Rasca%2C_Tenerife%2C_Espa%C3%B1a%2C_2022-01-08%2C_DD_53.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3549,
+      "height": 3549,
+      "alt_suggestion": "Common octopus (Octopus vulgaris), Teno-Rasca marine strip, Tenerife, Spain. This mollusc is the most studied of all octopus species. It is cosmopolitan, that is, a global species, which ranges from t",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"octopus Octopus vulgaris octopus underwater\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"octopus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"octopus Octopus vulgaris\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

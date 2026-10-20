@@ -1,0 +1,57 @@
+{
+  "id": "hist-0016",
+  "interest": "history",
+  "title": "The statues that walked",
+  "probes": [
+    {
+      "id": "hist-0016-p1",
+      "question": "Which people carved the moai on Easter Island?",
+      "kind": "mcq",
+      "options": [
+        "The Rapa Nui",
+        "The Maya",
+        "The Inca",
+        "The Aztecs"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0016-p2",
+      "question": "True or false: nearly half of the moai are still at Rano Raraku, the main moai quarry.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Moai (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moai"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:16.139Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0016.webp",
+    "alt": "A row of fifteen moai statues on the Ahu Tongariki platform on Easter Island, with a lichen-covered moai head in the foreground and green hills behind.",
+    "kind": "photo",
+    "credit": "Bjørn Christian Tørrissen / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ahu-Tongariki-and-Traveling-Moai.jpg"
+  },
+  "body": {
+    "question": "The Rapa Nui people carved moai statues on Easter Island, and hundreds of them were moved from the quarry to platforms around the island. How does the most recent study suggest they were moved?",
+    "options": [
+      "Rocked side to side with ropes so they \"walked\" upright",
+      "Rolled on logs like barrels",
+      "Floated around the coast on rafts",
+      "Carried by hand on long poles"
+    ],
+    "answer": 0,
+    "reveal": "The most recent study demonstrates that the statues were harnessed with ropes from two sides and made to \"walk\" by tilting them from side to side while pulling forward. Oral histories recount how natives used divine power to command the statues to walk. The moai were carved by the Rapa Nui people between 1250 and 1500."
+  }
+}

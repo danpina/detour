@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Wombat cube-shaped faeces",
+    "angle": "Nature's cubes"
+  },
+  "created_at": "2026-10-20T18:37:27.363Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0017",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "The animal that makes cubes",
+    "body": {
+      "question": "Which animal leaves cube-shaped droppings?",
+      "options": [
+        "The wombat",
+        "The koala",
+        "The kangaroo"
+      ],
+      "answer": 0,
+      "reveal": "Wombats leave distinctive cube-shaped faeces. They arrange these to mark territories and attract mates, and it is believed that the cubic shape makes them more stackable and less likely to roll. In 2019, this was the subject of the Ig Nobel Prize for Physics."
+    },
+    "probes": [
+      {
+        "id": "sci-0017-p1",
+        "kind": "tf",
+        "question": "True or false: wombats leave cube-shaped faeces.",
+        "answer": true
+      },
+      {
+        "id": "sci-0017-p2",
+        "kind": "mcq",
+        "question": "Wombats arrange their droppings to do what?",
+        "options": [
+          "Mark territories and attract mates",
+          "Build nests",
+          "Warn predators",
+          "Feed their young"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wombat (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Wombat"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A wombat in the wild",
+    "keywords": [
+      "wombat",
+      "common wombat",
+      "Vombatus ursinus"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:41:47.503Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wombat",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Wombats leave cube-shaped faeces (title, question, answer, reveal, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wombat",
+        "quote": "Wombats leave distinctive cube-shaped faeces",
+        "note": "Koala and kangaroo are not mentioned on the page; the question reads as 'which of these', and the page supports wombat as the cube-maker."
+      },
+      {
+        "claim": "They arrange them to mark territories and attract mates (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wombat",
+        "quote": "As wombats arrange these feces to mark territories and attract mates"
+      },
+      {
+        "claim": "It is believed the cubic shape makes them more stackable and less likely to roll",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wombat",
+        "quote": "it is believed that the cubic shape makes them more stackable and less likely to roll",
+        "note": "Card keeps the hedge 'it is believed'."
+      },
+      {
+        "claim": "In 2019 this was the subject of the Ig Nobel Prize for Physics",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wombat",
+        "quote": "In 2019, the production of cube-shaped wombat feces was the subject of the Ig Nobel Prize for Physics"
+      }
+    ],
+    "overall": "pass"
+  }
+}

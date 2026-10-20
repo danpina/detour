@@ -1,0 +1,94 @@
+{
+  "draft_id": "hist-0007",
+  "created_at": "2026-10-20T18:39:30.839Z",
+  "queries": [
+    "Göbekli Tepe T-shaped pillars Şanlıurfa",
+    "Göbekli Tepe",
+    "Göbekli Tepe T-shaped pillars"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-87251108",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Urfa museum Totem sept 2019 4807.jpg",
+      "credit": "Dosseman / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Urfa_museum_Totem_sept_2019_4807.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Urfa_museum_Totem_sept_2019_4807.jpg/960px-Urfa_museum_Totem_sept_2019_4807.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5504,
+      "height": 8256,
+      "alt_suggestion": "This object is described in an issue of Actual Archaeology of Summer 2012. It had been set into the north-eastern wall of a rectangular room and was not visible originally due to the wall completely c",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-79507",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Pillars of the Country",
+      "credit": "Yao Shou Chinese, 1423-1495 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/79507",
+      "image_url": "https://www.artic.edu/iiif/2/48450f9e-295e-604b-851e-ad66a30712a5/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of handscroll; ink and color on paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-87251109",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Urfa museum Totem sept 2019 4808.jpg",
+      "credit": "Dosseman / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Urfa_museum_Totem_sept_2019_4808.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Urfa_museum_Totem_sept_2019_4808.jpg/960px-Urfa_museum_Totem_sept_2019_4808.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5504,
+      "height": 8256,
+      "alt_suggestion": "This object is described in an issue of Actual Archaeology of Summer 2012. It had been set into the north-eastern wall of a rectangular room and was not visible originally due to the wall completely c",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-18438",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Melon-Shaped Water Pot",
+      "credit": "China / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/18438",
+      "image_url": "https://www.artic.edu/iiif/2/b8dce7d8-2de9-f915-652e-ba1899dbd081/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of gray opaque glass with ivory lid.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-87251111",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Urfa museum Totem sept 2019 4814.jpg",
+      "credit": "Dosseman / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Urfa_museum_Totem_sept_2019_4814.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Urfa_museum_Totem_sept_2019_4814.jpg/960px-Urfa_museum_Totem_sept_2019_4814.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5364,
+      "height": 8046,
+      "alt_suggestion": "This object is described in an issue of Actual Archaeology of Summer 2012. It had been set into the north-eastern wall of a rectangular room and was not visible originally due to the wall completely c",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-pillars",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: pillars",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-pillars.png",
+      "alt_suggestion": "Illustration of a ring of tall T-shaped stone pillars on a hilltop at sunrise, with simple animal shapes carved on them"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Göbekli Tepe T-shaped pillars Şanlıurfa\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Göbekli Tepe\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Göbekli Tepe T-shaped pillars\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

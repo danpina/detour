@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0015",
+  "created_at": "2026-10-20T18:40:28.876Z",
+  "queries": [
+    "gallium gallium melting hand gallium crystal",
+    "gallium",
+    "gallium gallium melting hand"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-12703",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Gallium crystals.jpg",
+      "credit": "en:user:foobar / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gallium_crystals.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Gallium_crystals.jpg/960px-Gallium_crystals.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 768,
+      "alt_suggestion": "Crystals of 99.999% gallium.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-14460",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Covered Ewer with Lizard-Shaped Handle",
+      "credit": "China / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/14460",
+      "image_url": "https://www.artic.edu/iiif/2/ccb22c0f-2cb4-4e74-63bc-432a524f1df0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of crystal with carved decoration.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-138249874",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Liquid gallium.png",
+      "credit": "AndrewDaGamer / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Liquid_gallium.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Liquid_gallium.png/960px-Liquid_gallium.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1443,
+      "height": 1049,
+      "alt_suggestion": "Liquid gallium in a hand.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-110541",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Crystal Palace",
+      "credit": "Camille Pissarro (French, 1830–1903) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/110541",
+      "image_url": "https://www.artic.edu/iiif/2/4eb368b5-3b66-ae2c-bd4a-2643015e05fc/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-155677532",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Gallium (Element - 31).jpg",
+      "credit": "James St. John / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gallium_(Element_-_31).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Gallium_%28Element_-_31%29.jpg/960px-Gallium_%28Element_-_31%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2874,
+      "height": 2478,
+      "alt_suggestion": "Gallium (Ga) is # 31 on the Periodic Table of Elements. Elemental gallium is a silvery-gray metal. If resting in one's palm, a solid gallium sample will melt as it warms up. Thirty isotopes of gallium",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"gallium gallium melting hand gallium crystal\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"gallium\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"gallium gallium melting hand\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

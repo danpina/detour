@@ -1,0 +1,110 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Moai",
+    "angle": "How giant statues were moved"
+  },
+  "created_at": "2026-10-20T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0016",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "The statues that walked",
+    "body": {
+      "question": "The Rapa Nui people carved moai statues on Easter Island, and hundreds of them were moved from the quarry to platforms around the island. How does the most recent study suggest they were moved?",
+      "options": [
+        "Rocked side to side with ropes so they \"walked\" upright",
+        "Rolled on logs like barrels",
+        "Floated around the coast on rafts",
+        "Carried by hand on long poles"
+      ],
+      "answer": 0,
+      "reveal": "The most recent study demonstrates that the statues were harnessed with ropes from two sides and made to \"walk\" by tilting them from side to side while pulling forward. Oral histories recount how natives used divine power to command the statues to walk. The moai were carved by the Rapa Nui people between 1250 and 1500."
+    },
+    "probes": [
+      {
+        "id": "hist-0016-p1",
+        "kind": "mcq",
+        "question": "Which people carved the moai on Easter Island?",
+        "options": [
+          "The Rapa Nui",
+          "The Maya",
+          "The Inca",
+          "The Aztecs"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0016-p2",
+        "kind": "tf",
+        "question": "True or false: nearly half of the moai are still at Rano Raraku, the main moai quarry.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Moai (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Moai"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Moai statues standing on the slope of Rano Raraku, or a row on an ahu platform",
+    "keywords": [
+      "Moai",
+      "Rano Raraku",
+      "Ahu Tongariki",
+      "Easter Island statues"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:42:40.130Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Moai",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Moai were carved by the Rapa Nui people on Easter Island between 1250 and 1500 (reveal, probe p1 answer; Maya, Inca, Aztecs wrong)",
+        "verdict": "pass",
+        "quote": "carved from stone by the Rapa Nui people , on Rapa Nui (Easter Island) in eastern Polynesia between the years 1250 and 1500.",
+        "source_url": "https://en.wikipedia.org/wiki/Moai"
+      },
+      {
+        "claim": "Hundreds were transported from the quarry and set on platforms (ahu) around the island",
+        "verdict": "pass",
+        "quote": "but hundreds were transported from there and set on stone platforms called ahu around the island's perimeter.",
+        "source_url": "https://en.wikipedia.org/wiki/Moai"
+      },
+      {
+        "claim": "The most recent study demonstrates the statues were harnessed with ropes from two sides and made to \"walk\" by tilting them side to side while pulling forward (answer option 0)",
+        "verdict": "pass",
+        "quote": "The most recent study demonstrates from the evidence in the archaeological record that the statues were harnessed with ropes from two sides and made to \"walk\" by tilting them from side to side while pulling forward",
+        "note": "Page frames the walking method as the most recent study, matching the question wording. Distractors (logs, rafts, hand poles) are not presented as the most recent study.",
+        "source_url": "https://en.wikipedia.org/wiki/Moai"
+      },
+      {
+        "claim": "Oral histories recount how natives used divine power to command the statues to walk",
+        "verdict": "pass",
+        "quote": "Oral histories recount how various natives used divine power to command the statues to walk.",
+        "note": "Card says \"natives\" (drops \"various\"); acceptable.",
+        "source_url": "https://en.wikipedia.org/wiki/Moai"
+      },
+      {
+        "claim": "Nearly half of the moai are still at Rano Raraku, the main moai quarry (probe p2 true)",
+        "verdict": "pass",
+        "quote": "Nearly half are still at Rano Raraku , the main moai quarry",
+        "source_url": "https://en.wikipedia.org/wiki/Moai"
+      }
+    ],
+    "overall": "pass"
+  }
+}

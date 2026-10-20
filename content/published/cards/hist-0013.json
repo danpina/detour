@@ -1,0 +1,55 @@
+{
+  "id": "hist-0013",
+  "interest": "history",
+  "title": "How far did Ibn Battuta travel?",
+  "probes": [
+    {
+      "id": "hist-0013-p1",
+      "question": "What is Ibn Battuta's account of his journeys commonly known as?",
+      "kind": "mcq",
+      "options": [
+        "The Rihla",
+        "The Muqaddimah",
+        "The Canon",
+        "The Book of Roads"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0013-p2",
+      "question": "True or false: Ibn Battuta was born in Tangier.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ibn Battuta (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ibn_Battuta"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:10.812Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "hist-0013.webp",
+    "alt": "Medieval Arab manuscript painting from al-Wasiti's Maqamat of al-Hariri showing a procession of camels, drummers, trumpeters and banners setting off with a pilgrim litter.",
+    "kind": "artwork",
+    "credit": "Yahya ibn Mahmud al-Wasiti / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Yahy%C3%A2_ibn_Mahm%C3%BBd_al-W%C3%A2sit%C3%AE_005.jpg"
+  },
+  "body": {
+    "question": "Ibn Battuta was born in Tangier on 24 February 1304, and near the end of his life he dictated an account of his journeys, the Rihla. About how far did he travel in total?",
+    "unit": "km",
+    "min": 1000,
+    "max": 1000000,
+    "scale": "log",
+    "answer": 117000,
+    "reveal": "Around 117,000 km (73,000 mi), more than Zheng He with about 50,000 km and Marco Polo with 24,000 km."
+  }
+}

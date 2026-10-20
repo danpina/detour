@@ -1,0 +1,60 @@
+{
+  "draft_id": "hist-0016",
+  "created_at": "2026-10-20T18:40:01.658Z",
+  "queries": [
+    "Moai Rano Raraku Ahu Tongariki",
+    "Moai",
+    "Moai Rano Raraku"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-32666345",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ahu-Tongariki-and-Traveling-Moai.jpg",
+      "credit": "Bjørn Christian Tørrissen / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ahu-Tongariki-and-Traveling-Moai.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Ahu-Tongariki-and-Traveling-Moai.jpg/960px-Ahu-Tongariki-and-Traveling-Moai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 3456,
+      "alt_suggestion": "At the Ahu Tongariki you are welcomed by The Traveling Moai (A Vere moai) in the foreground here. It received its name because he has traveled more than most moai. The explorer Thor Heyerdahl used him",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-27881980",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Moáis de Ahu Tongariki en Isla de Pascua (Chile).JPG",
+      "credit": "María Cecilia Piderit B. / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mo%C3%A1is_de_Ahu_Tongariki_en_Isla_de_Pascua_(Chile).JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mo%C3%A1is_de_Ahu_Tongariki_en_Isla_de_Pascua_%28Chile%29.JPG/960px-Mo%C3%A1is_de_Ahu_Tongariki_en_Isla_de_Pascua_%28Chile%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1536,
+      "alt_suggestion": "Quince moáis en Isla de Pascua (Chile), en la plataforma Tongariki, contiguo al volcán Rano Raraku con el mar de fondo.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-28790641",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rano Raraku a lo lejos.JPG",
+      "credit": "Gallardoval / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rano_Raraku_a_lo_lejos.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Rano_Raraku_a_lo_lejos.JPG/960px-Rano_Raraku_a_lo_lejos.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 768,
+      "alt_suggestion": "This is a photo of a national monument in Chile:",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Moai Rano Raraku Ahu Tongariki\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Moai\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Moai Rano Raraku\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

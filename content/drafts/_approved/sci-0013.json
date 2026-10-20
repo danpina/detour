@@ -1,0 +1,118 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Semmelweis and hand washing",
+    "angle": "Chlorinated lime"
+  },
+  "created_at": "2026-10-20T18:37:27.362Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0013",
+    "interest": "science",
+    "type": "story",
+    "title": "The doctor who asked for clean hands",
+    "body": {
+      "panels": [
+        {
+          "text": "Vienna General Hospital, 1840s. Childbed fever was common in the 19th century, and often fatal."
+        },
+        {
+          "text": "Ignaz Semmelweis noticed that doctors' wards had thrice the mortality of midwives' wards."
+        },
+        {
+          "text": "In 1847, he proposed hand washing with chlorinated lime solutions at the First Obstetrical Clinic."
+        },
+        {
+          "text": "The maternal mortality rate dropped from 18% to less than 2%. His ideas were rejected by the medical community at the time."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0013-p1",
+        "kind": "mcq",
+        "question": "What did Semmelweis propose in 1847 at Vienna General Hospital?",
+        "options": [
+          "Hand washing with chlorinated lime solutions",
+          "Opening the windows",
+          "Longer hospital stays",
+          "Wearing masks"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0013-p2",
+        "kind": "tf",
+        "question": "True or false: the germ theory of disease had been accepted in Vienna when Semmelweis started.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ignaz Semmelweis (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A portrait or engraving of Ignaz Semmelweis, or the historic Vienna General Hospital",
+    "keywords": [
+      "Ignaz Semmelweis",
+      "Semmelweis portrait",
+      "Vienna General Hospital"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:41:47.503Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Childbed fever was common in the 19th century and often fatal",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+        "quote": "Postpartum infection , also known as puerperal fever or childbed fever, was common in the 19th century, and often fatal."
+      },
+      {
+        "claim": "In 1847 Semmelweis proposed hand washing with chlorinated lime solutions at the First Obstetrical Clinic of Vienna General Hospital (panels 1 and 3, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+        "quote": "In 1847, he proposed hand washing with chlorinated lime solutions at Vienna General Hospital 's First Obstetrical Clinic"
+      },
+      {
+        "claim": "Doctors' wards had thrice the mortality of midwives' wards",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+        "quote": "where doctors' wards had thrice the mortality of midwives' wards"
+      },
+      {
+        "claim": "Maternal mortality dropped from 18% to less than 2%",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+        "quote": "The maternal mortality rate dropped from 18% to less than 2%"
+      },
+      {
+        "claim": "His ideas were rejected by the medical community at the time",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+        "quote": "his ideas were rejected by the medical community"
+      },
+      {
+        "claim": "Germ theory of disease had not been accepted in Vienna when he started (probe 2, answer false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+        "quote": "The germ theory of disease had not yet been accepted in Vienna."
+      }
+    ],
+    "overall": "pass"
+  }
+}

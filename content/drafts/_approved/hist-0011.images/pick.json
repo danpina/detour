@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-80149000",
+  "alt": "Rows of life-sized Terracotta Army warriors standing in a trench in Pit 1 near Xi'an, China.",
+  "fits": true,
+  "note": "Matches brief. Chosen over cand-1 (portrait but has a blurry foreground blob and crowd at the top). Landscape, crop to the warriors on the left centre; far-off visitors are cropped out/too small to identify. CC BY 2.0.",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

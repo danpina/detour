@@ -1,0 +1,62 @@
+{
+  "id": "sci-0011",
+  "interest": "science",
+  "title": "A very slow drip",
+  "probes": [
+    {
+      "id": "sci-0011-p1",
+      "question": "True or false: pitch, though it looks solid, is a highly viscous fluid.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "sci-0011-p2",
+      "question": "The pitch's viscosity is estimated at approximately 230 billion times that of what?",
+      "kind": "mcq",
+      "options": [
+        "Water",
+        "Honey",
+        "Air",
+        "Olive oil"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pitch drop experiment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:21.832Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0011.webp",
+    "alt": "The University of Queensland pitch drop experiment: a funnel of black pitch under a glass bell jar with a drop forming above a beaker",
+    "kind": "photo",
+    "credit": "University_of_Queensland_Pitch_drop_experiment.jpg: John Mainstone derivative work: Amada44 / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Queensland_Pitch_drop_experiment-white_bg.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In 1927, Thomas Parnell of the University of Queensland in Brisbane, Australia, poured a heated sample of pitch into a sealed funnel."
+      },
+      {
+        "text": "His aim was to show students that some substances which appear solid are highly viscous fluids."
+      },
+      {
+        "text": "Pitch is a highly viscous liquid that appears solid. Its viscosity has been estimated at approximately 230 billion times that of water."
+      },
+      {
+        "text": "The first drop fell in December 1938. The ninth drop snapped away from the funnel in April 2014. Slow, but it flows."
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "hist-0008",
+  "interest": "history",
+  "title": "The king who gave gold away",
+  "probes": [
+    {
+      "id": "hist-0008-p1",
+      "question": "In which city did Mansa Musa spend time on his hajj, where his gift-giving is said to have affected the value of gold?",
+      "kind": "mcq",
+      "options": [
+        "Cairo",
+        "Rome",
+        "Baghdad",
+        "Delhi"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0008-p2",
+      "question": "True or false: Mansa Musa went on the hajj to Mecca in 1324.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mansa Musa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:44:33.130Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0008.webp",
+    "alt": "Medieval Catalan Atlas detail of Mansa Musa, crowned and enthroned, holding up a gold nugget and a sceptre.",
+    "kind": "photo",
+    "credit": "attributed to Abraham Cresques / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Mali, 1324. Mansa Musa sets out on the hajj, the pilgrimage to Mecca, travelling with an enormous entourage and a vast supply of gold."
+      },
+      {
+        "text": "On the way he spends time in Cairo."
+      },
+      {
+        "text": "His lavish gift-giving there is said to have noticeably affected the value of gold in Egypt, and it garnered the attention of the wider Muslim world."
+      },
+      {
+        "text": "Back home, Musa expanded the borders of the Mali Empire, incorporating the cities of Gao and Timbuktu, and helped establish Timbuktu as a center of Islamic learning."
+      }
+    ]
+  }
+}

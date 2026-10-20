@@ -1,0 +1,62 @@
+{
+  "id": "hist-0011",
+  "interest": "history",
+  "title": "A well, and an army underground",
+  "probes": [
+    {
+      "id": "hist-0011-p1",
+      "question": "What were the farmers doing when they discovered the Terracotta Army in 1974?",
+      "kind": "mcq",
+      "options": [
+        "Digging a well",
+        "Ploughing a field",
+        "Building a road",
+        "Planting trees"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0011-p2",
+      "question": "True or false: the faces of the Terracotta Army figures appear to be different for each individual figure.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Terracotta Army (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Terracotta_Army"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:44:56.830Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0011.webp",
+    "alt": "Rows of life-sized Terracotta Army warriors standing in a trench in Pit 1 near Xi'an, China.",
+    "kind": "photo",
+    "credit": "Joe Hart from Southampton, United Kingdom / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Terracotta_Army_-_Pit_1,_Xi%27an,_China_(14148051222).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Lintong County, near Xi'an, China, 29 March 1974. A group of farmers are digging a well."
+      },
+      {
+        "text": "They discover the Terracotta Army: figures dating from approximately the late 200s BCE."
+      },
+      {
+        "text": "It is a form of funerary art buried with the emperor in 210-209 BCE in his mausoleum, with the purpose of protecting him in his afterlife."
+      },
+      {
+        "text": "Estimates from 2007 were that the three pits hold more than 8,000 soldiers, 130 chariots with 520 horses, and 150 cavalry horses. Their faces appear to be different for each individual figure."
+      }
+    ]
+  }
+}

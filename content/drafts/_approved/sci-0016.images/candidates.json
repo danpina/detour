@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0016",
+  "created_at": "2026-10-20T18:40:32.290Z",
+  "queries": [
+    "Marie Curie Marie Curie laboratory Marie Curie portrait",
+    "Marie Curie",
+    "Marie Curie Marie Curie laboratory"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-17428877",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Marie et Pierre Curie.jpg",
+      "credit": "„Welt im Umbruch 1900–1914“, Verlag Das Beste, Stuttgart 1999, ISBN 3870708379 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Marie_et_Pierre_Curie.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Marie_et_Pierre_Curie.jpg/960px-Marie_et_Pierre_Curie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1755,
+      "height": 1934,
+      "alt_suggestion": "Maria Skłodowska-Curie and Pierre Curie in their laboratory in Paris.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA04306",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Marie",
+      "credit": "NASA/JPL/Caltech / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA04306",
+      "image_url": "https://images-assets.nasa.gov/image/PIA04306/PIA04306~thumb.jpg",
+      "alt_suggestion": "Marie Curie rover drives down the rear ramp during Operational Readiness Test ORT 4. NASA Pathfinder, a low-cost Discovery mission, is the first of a new fleet of spacecraft that are planned to explor",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-60656100",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Marie Curie in her laboratory.jpg",
+      "credit": "[1] / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Marie_Curie_in_her_laboratory.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Marie_Curie_in_her_laboratory.jpg/960px-Marie_Curie_in_her_laboratory.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2040,
+      "height": 1423,
+      "alt_suggestion": "The measurement of radioactivity requires great dexterity and inventive spirit. It was made possible with an experimental advice conceived by Pierre Curie, which makes it possible to measure very smal",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-PIA04421",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Rover Family Photo",
+      "credit": "Jet Propulsion Laboratory / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA04421",
+      "image_url": "https://images-assets.nasa.gov/image/PIA04421/PIA04421~medium.jpg",
+      "alt_suggestion": "Members of the Mars Exploration Rovers Assembly, Test and Launch Operations team gather around NASA Rover 2 and its predecessor, a flight spare of the Pathfinder mission Sojourner rover, named Marie C",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-20426111",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pierre and Marie Curie.jpg",
+      "credit": "hp.ujf.cas.cz (uploader=--Kuebi 18:28, 10 April 2007 (UTC)) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pierre_and_Marie_Curie.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Pierre_and_Marie_Curie.jpg/960px-Pierre_and_Marie_Curie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2163,
+      "height": 1740,
+      "alt_suggestion": "Pierre and Maria Skłodowska-Curie in the laboratory, demonstrating the experimental apparatus used to detect the ionsation of air, and hence the radioactivity, of samples of purified ore which enabled",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Marie Curie Marie Curie laboratory Marie Curie portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Marie Curie\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Marie Curie Marie Curie laboratory\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

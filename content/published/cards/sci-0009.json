@@ -1,0 +1,50 @@
+{
+  "id": "sci-0009",
+  "interest": "science",
+  "title": "An octopus has three hearts",
+  "probes": [
+    {
+      "id": "sci-0009-p1",
+      "question": "True or false: octopuses have three hearts.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "sci-0009-p2",
+      "question": "What do an octopus's two gill hearts do?",
+      "kind": "mcq",
+      "options": [
+        "Pump blood through the gills",
+        "Pump ink out of the body",
+        "Control the arms",
+        "Help it change colour"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Octopus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Octopus"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:19.724Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0009.webp",
+    "alt": "A common octopus moving over a rocky reef covered in seaweed, its arms trailing behind its mantle",
+    "kind": "photo",
+    "credit": "Diego Delso / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pulpo_com%C3%BAn_(Octopus_vulgaris),_Parque_natural_de_la_Arr%C3%A1bida,_Portugal,_2020-07-21,_DD_33.jpg"
+  },
+  "body": {
+    "claim": "Octopuses have three hearts.",
+    "why": "A systemic heart circulates blood around the body, and two branchial, or gill, hearts pump it through the two gills. The systemic heart becomes inactive when the animal is swimming."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0017",
+  "created_at": "2026-10-20T18:40:36.095Z",
+  "queries": [
+    "wombat common wombat Vombatus ursinus",
+    "wombat",
+    "wombat common wombat"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-143528237",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Common wombat (Vombatus ursinus tasmaniensis) juvenile Maria Island.jpg",
+      "credit": "Charles J. Sharp / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Common_wombat_(Vombatus_ursinus_tasmaniensis)_juvenile_Maria_Island.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Common_wombat_%28Vombatus_ursinus_tasmaniensis%29_juvenile_Maria_Island.jpg/960px-Common_wombat_%28Vombatus_ursinus_tasmaniensis%29_juvenile_Maria_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4012,
+      "height": 3491,
+      "alt_suggestion": "Common wombat (Vombatus ursinus tasmaniensis) juvenile, Maria Island, TAS, Australia",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-44831",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Boston Common",
+      "credit": "Artist unknown (American, 19th century) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/44831",
+      "image_url": "https://www.artic.edu/iiif/2/fad138a8-80f1-45a3-1dc7-b9ff991b4812/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-143528236",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Common wombat (Vombatus ursinus tasmaniensis) female with juvenile Maria Island.jpg",
+      "credit": "Charles J. Sharp / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Common_wombat_(Vombatus_ursinus_tasmaniensis)_female_with_juvenile_Maria_Island.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Common_wombat_%28Vombatus_ursinus_tasmaniensis%29_female_with_juvenile_Maria_Island.jpg/960px-Common_wombat_%28Vombatus_ursinus_tasmaniensis%29_female_with_juvenile_Maria_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4649,
+      "height": 3099,
+      "alt_suggestion": "Common wombat (Vombatus ursinus tasmaniensis) female with juvenile, Maria Island, TAS, Australia",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-60079",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Portal of Saint Ursinus at Bourges, rue du Vieux Poirier",
+      "credit": "Bisson Frères (Louis-Auguste Bisson, French, 1814–1876 and Auguste-Rosalie Bisson, French, 1826–1900) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/60079",
+      "image_url": "https://www.artic.edu/iiif/2/5e2cd454-b988-40c1-4927-05d5ff946941/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of albumen print.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-8661812",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Vombatus ursinus -Maria Island National Park.jpg",
+      "credit": "JJ Harrison (jjharrison89@facebook.com) / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vombatus_ursinus_-Maria_Island_National_Park.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Vombatus_ursinus_-Maria_Island_National_Park.jpg/960px-Vombatus_ursinus_-Maria_Island_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1700,
+      "height": 1133,
+      "alt_suggestion": "Common Wombat (Vombatus ursinus tasmaniensis) on Maria Island, Tasmania, Australia. The entire island is a national park, Maria Island National Park. The adult is just under a metre in length on avera",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"wombat common wombat Vombatus ursinus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"wombat\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"wombat common wombat\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

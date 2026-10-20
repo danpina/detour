@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-140067233",
+  "alt": "Two sides of a gold Aksumite coin, each showing a crowned royal bust framed by wheat ears and a crescent, with Greek lettering.",
+  "fits": true,
+  "note": "Aksumite gold coinage, CC0. Wide image with two coins; crop to one coin for 4:5. Alternative is the square silver Walters coin (cand-1) with a cross, which is less striking.",
+  "crop": {
+    "fx": 0.25,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

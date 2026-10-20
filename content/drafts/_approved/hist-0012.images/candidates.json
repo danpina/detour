@@ -1,0 +1,89 @@
+{
+  "draft_id": "hist-0012",
+  "created_at": "2026-10-20T18:39:48.716Z",
+  "queries": [
+    "Rosetta Stone British Museum Rosetta Stone EA24",
+    "Rosetta Stone",
+    "Rosetta Stone British Museum"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-2819693",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rosetta Stone BW.jpeg",
+      "credit": "The website of the European Space Agency (ESA) [1] / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rosetta_Stone_BW.jpeg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Rosetta_Stone_BW.jpeg/960px-Rosetta_Stone_BW.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1612,
+      "height": 2066,
+      "alt_suggestion": "A picture of the Rosetta Stone, in a high contrast, readable format",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-ARC-2004-ACD04-0139-012",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "ARC-2004-ACD04-0139-012",
+      "credit": "Dominic Hart / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/ARC-2004-ACD04-0139-012",
+      "image_url": "https://images-assets.nasa.gov/image/ARC-2004-ACD04-0139-012/ARC-2004-ACD04-0139-012~medium.jpg",
+      "alt_suggestion": "Rosetta Stone Protein Model",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-21023",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Buddha Shakyamuni Seated in Meditation (Dhyanamudra)",
+      "credit": "India Nagapattinam, Tamil Nadu / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/21023",
+      "image_url": "https://www.artic.edu/iiif/2/0675f9a9-1a7b-c90a-3bb6-7f7be2afb678/full/843,/0/default.jpg",
+      "alt_suggestion": "Dark stone sculpture of Buddha sitting cross-legged, hands in lap, eyes closed.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-3153928",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rosetta Stone.JPG",
+      "credit": "Hans Hillewaert / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rosetta_Stone.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Rosetta_Stone.JPG/960px-Rosetta_Stone.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3665,
+      "height": 4288,
+      "alt_suggestion": "The Rosetta Stone in the British Museum.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-ARC-2004-ACD04-0139-015",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "ARC-2004-ACD04-0139-015",
+      "credit": "Dominic Hart / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/ARC-2004-ACD04-0139-015",
+      "image_url": "https://images-assets.nasa.gov/image/ARC-2004-ACD04-0139-015/ARC-2004-ACD04-0139-015~medium.jpg",
+      "alt_suggestion": "Rosetta Stone Protein Model",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "2007-08-27 Rosetta Stone London 0309.JPG",
+      "license": "Copyrighted free use",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Rosetta Stone British Museum Rosetta Stone EA24\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Rosetta Stone\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Rosetta Stone British Museum\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

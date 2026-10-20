@@ -1,0 +1,121 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Eratosthenes measuring Earth",
+    "angle": "A shadow and a distance"
+  },
+  "created_at": "2026-10-20T18:37:27.362Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0014",
+    "interest": "science",
+    "type": "story",
+    "title": "Measuring the Earth with a shadow",
+    "body": {
+      "panels": [
+        {
+          "text": "Two Egyptian cities, Alexandria and Syene, now Aswan. The Sun's rays hit them at different angles."
+        },
+        {
+          "text": "In the simplified version told by Cleomedes, the angle of the sun's rays was about 7 degrees, or 1/50th the circumference of a circle."
+        },
+        {
+          "text": "So the Earth's circumference was 50 times the known distance from Alexandria to Syene (5,000 stadia): 250,000 stadia."
+        },
+        {
+          "text": "Eratosthenes estimated 252,000 stadia, with an error on the real value between -2.4% and +0.8%, depending on the length of the stadion."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0014-p1",
+        "kind": "mcq",
+        "question": "In the simplified version, how many times the Alexandria-Syene distance is Earth's circumference?",
+        "options": [
+          "50 times",
+          "7 times",
+          "1,000 times",
+          "250 times"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0014-p2",
+        "kind": "tf",
+        "question": "True or false: the exact value of the stadion remains a subject of debate to this day.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Earth's circumference (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A diagram of the Eratosthenes measurement, or a bust or map relating to Eratosthenes",
+    "keywords": [
+      "Eratosthenes",
+      "Eratosthenes measurement Earth circumference",
+      "Alexandria Syene"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:44:17.676Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Earth%27s_circumference",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Two Egyptian cities, Alexandria and Syene, now Aswan",
+        "verdict": "pass",
+        "quote": "two Egyptian cities, Alexandria and Syene (modern Aswan )",
+        "source_url": "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+      },
+      {
+        "claim": "The Sun's rays hit them at different angles (overhead at Syene, ~7 degrees at Alexandria)",
+        "verdict": "pass",
+        "quote": "the Sun was directly overhead, as the gnomon cast no shadow",
+        "note": "Together with the 7 degree angle at Alexandria (next claim); 'different angles' follows directly.",
+        "source_url": "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+      },
+      {
+        "claim": "In Cleomedes's simplified version the angle was about 7 degrees, or 1/50th the circumference of a circle",
+        "verdict": "pass",
+        "quote": "This angle was about 7°, or 1/50th the circumference of a circle",
+        "source_url": "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+      },
+      {
+        "claim": "So the circumference was 50 times the known Alexandria-Syene distance (5,000 stadia): 250,000 stadia (panel 3, probe 1 answer 50 times)",
+        "verdict": "pass",
+        "quote": "its circumference was 50 times the known distance from Alexandria to Syene (5,000 stadia, a figure that was checked yearly), i.e. 250,000 stadia",
+        "note": "Also verified by calculation: 50 x 5,000 = 250,000.",
+        "source_url": "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+      },
+      {
+        "claim": "Eratosthenes estimated 252,000 stadia, error between -2.4% and +0.8%, depending on the stadion length",
+        "verdict": "pass",
+        "quote": "who estimated that the meridian has a length of 252,000 stadia , with an error on the real value between -2.4% and +0.8%",
+        "note": "Page conditions this on a stadion of 155-160 m.",
+        "source_url": "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+      },
+      {
+        "claim": "The exact value of the stadion remains a subject of debate to this day (probe 2 true)",
+        "verdict": "pass",
+        "quote": "the exact value of the stadion remains a subject of debate to this day",
+        "source_url": "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+      }
+    ],
+    "overall": "pass"
+  }
+}

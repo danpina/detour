@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0008",
+  "created_at": "2026-10-20T18:39:34.820Z",
+  "queries": [
+    "Catalan Atlas Mansa Musa Abraham Cresques",
+    "Catalan Atlas",
+    "Catalan Atlas Mansa Musa"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-107077167",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Catalan Atlas BNF Sheet 6 Mansa Musa (cropped).jpg",
+      "credit": "attributed to Abraham Cresques / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_%28cropped%29.jpg/960px-Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1856,
+      "height": 2118,
+      "alt_suggestion": "Sheet 6 out of 12. Detail showing Mansa Musa sitting on a throne and holding a gold coin",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-566",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Life Cast of the Hands and Face of Abraham Lincoln",
+      "credit": "Leonard Wells Volk (American, 1828–1895) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/566",
+      "image_url": "https://www.artic.edu/iiif/2/8ad03fff-be28-ab22-689c-8f022b5e181c/full/843,/0/default.jpg",
+      "alt_suggestion": "Three-part bronze sculpture set of two clenched hands and a man's face with closed eyes and mouth, an object in one hand.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-43589121",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Catalan Atlas BNF Sheet 6 Mansa Musa.jpg",
+      "credit": "attributed to Abraham Cresques / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg/960px-Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3712,
+      "height": 2647,
+      "alt_suggestion": "Sheet 6 out of 12. Detail showing Mansa Musa sitting on a throne and holding a gold coin",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-111659",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Abraham Lincoln",
+      "credit": "Daniel Chester French (American, 1850–1931) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/111659",
+      "image_url": "https://www.artic.edu/iiif/2/a22d1c57-2ffb-10b0-7d9b-b3d346bf2c6f/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of bronze.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-42871968",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Catalan Atlas BNF, sheet 6.jpg",
+      "credit": "attributed to Abraham Cresques / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF,_sheet_6.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Catalan_Atlas_BNF%2C_sheet_6.jpg/960px-Catalan_Atlas_BNF%2C_sheet_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6451,
+      "height": 15770,
+      "alt_suggestion": "Sheet 6 out of 12",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Catalan Atlas Mansa Musa Abraham Cresques\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Catalan Atlas\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Catalan Atlas Mansa Musa\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

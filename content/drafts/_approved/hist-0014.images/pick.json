@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-150763185",
+  "alt": "Ming dynasty silk painting of a tribute giraffe led by an attendant, brought to the Yongle Emperor in 1414.",
+  "fits": true,
+  "note": "Exact subject from the brief; cropped version has no long inscription, near 4:5, space at the top for text. Public domain.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

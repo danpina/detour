@@ -1,0 +1,98 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Tunguska event",
+    "angle": "Forest flattened"
+  },
+  "created_at": "2026-10-20T18:37:27.363Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0018",
+    "interest": "science",
+    "type": "estimate",
+    "title": "The Siberian blast of 1908",
+    "body": {
+      "question": "On 30 June 1908, an explosion over Siberia flattened forest. About how many square kilometres?",
+      "unit": "km²",
+      "min": 10,
+      "max": 100000,
+      "scale": "log",
+      "answer": 2150,
+      "reveal": "The Tunguska event flattened 2,150 km² of forest, in a remote and sparsely populated region of the taiga."
+    },
+    "probes": [
+      {
+        "id": "sci-0018-p1",
+        "kind": "estimate",
+        "question": "About how many square kilometres of forest did the Tunguska event flatten?",
+        "answer": 2150,
+        "unit": "km²",
+        "min": 10,
+        "max": 100000,
+        "scale": "log"
+      },
+      {
+        "id": "sci-0018-p2",
+        "kind": "tf",
+        "question": "True or false: the Tunguska event happened in Central Siberia.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tunguska event (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Tunguska_event"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Trees knocked down by the Tunguska blast, photographed in 1929",
+    "keywords": [
+      "Tunguska event",
+      "Tunguska Krinov 1929",
+      "Tunguska fallen trees"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:41:47.503Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tunguska_event",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Explosion on 30 June 1908 over Siberia",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tunguska_event",
+        "quote": "The Tunguska event was a large explosion that occurred on the morning of 30 June"
+      },
+      {
+        "claim": "It happened in Central Siberia (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tunguska_event",
+        "quote": "at around 7:14 KRAT (0:14 UT ) in Central Siberia"
+      },
+      {
+        "claim": "It flattened 2,150 km² of forest (question, answer, reveal, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tunguska_event",
+        "quote": "Flattened 2,150 km (830 sq mi) of forest",
+        "note": "Page text lost the superscript but gives 830 sq mi; 830 x 2.59 = 2,149.7 km², so km² is right. Other passages say 'nearly' / 'more than' 2,150, so 'about' in the question is apt."
+      },
+      {
+        "claim": "A remote and sparsely populated region of the taiga",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tunguska_event",
+        "quote": "This cataclysm occurred in a remote and sparsely populated region of the taiga"
+      }
+    ],
+    "overall": "pass"
+  }
+}

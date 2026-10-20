@@ -1,0 +1,115 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Dancing plague of 1518",
+    "angle": "A mystery with no known cause"
+  },
+  "created_at": "2026-10-20T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0010",
+    "interest": "history",
+    "type": "story",
+    "title": "The dance nobody could stop",
+    "body": {
+      "panels": [
+        {
+          "text": "Strasbourg, July 1518. A woman known as Frau Troffea begins to dance fervently and uncontrollably in a street."
+        },
+        {
+          "text": "Others join. Somewhere between 50 and 400 people take to dancing for weeks."
+        },
+        {
+          "text": "Historical documents, including physician notes, cathedral sermons and notes issued by the city council, are clear that the victims danced. It is not known why."
+        },
+        {
+          "text": "The Dancing Plague ultimately ceased in September, when the remaining dancers were led to a mountaintop chapel to pray for absolution."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0010-p1",
+        "kind": "mcq",
+        "question": "In which city did the dancing plague of 1518 begin?",
+        "options": [
+          "Strasbourg",
+          "Vienna",
+          "Lisbon",
+          "Prague"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0010-p2",
+        "kind": "tf",
+        "question": "True or false: it is known why the victims of the 1518 dancing plague danced.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Dancing plague of 1518 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An old engraving of people dancing in a trance, e.g. Hondius after Brueghel",
+    "keywords": [
+      "dancing mania",
+      "Hendrik Hondius",
+      "Brueghel Molenbeek pilgrimage",
+      "dancing plague 1518 engraving"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:42:40.126Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The outbreak began in July 1518 when a woman known as Frau Troffea began to dance fervently and uncontrollably in a street in Strasbourg (title, panel 1, probe p1 answer)",
+        "verdict": "pass",
+        "quote": "The outbreak began in July 1518 when a woman known as Frau Troffea began to dance fervently and uncontrollably in a street in Strasbourg.",
+        "note": "Distractors Vienna, Lisbon, Prague are not mentioned as the origin.",
+        "source_url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+      },
+      {
+        "claim": "Somewhere between 50 and 400 people took to dancing for weeks",
+        "verdict": "pass",
+        "quote": "Somewhere between 50 and 400 people took to dancing for weeks.",
+        "note": "Page itself calls the number uncertain (\"somewhere between 50 and 400\"); card wording matches.",
+        "source_url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+      },
+      {
+        "claim": "Historical documents, including physician notes, cathedral sermons and notes issued by the city council, are clear that the victims danced; it is not known why (probe p2 answer false)",
+        "verdict": "pass",
+        "quote": "are clear that the victims danced; it is not known why.",
+        "source_url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+      },
+      {
+        "claim": "The Dancing Plague ultimately ceased in September, when the remaining dancers were led to a mountaintop chapel to pray for absolution",
+        "verdict": "pass",
+        "quote": "The Dancing Plague ultimately ceased in September, when the remaining dancers were led to a mountaintop chapel to pray for absolution.",
+        "source_url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+      },
+      {
+        "claim": "Physician notes, cathedral sermons and city council notes are among the historical documents",
+        "verdict": "pass",
+        "quote": "\"physician notes, cathedral sermons, local and regional chronicles, and even notes issued by the Strasbourg city council\"",
+        "source_url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+      }
+    ],
+    "overall": "pass"
+  }
+}

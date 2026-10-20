@@ -1,0 +1,82 @@
+{
+  "draft_id": "hist-0014",
+  "created_at": "2026-10-20T18:39:54.939Z",
+  "queries": [
+    "Tribute Giraffe with Attendant Shen Du giraffe 1414 Zheng He",
+    "Tribute Giraffe with Attendant",
+    "Tribute Giraffe with Attendant Shen Du giraffe 1414"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-150763185",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Tribute Giraffe with Attendant cropped.jpg",
+      "credit": "File:Tribute_Giraffe_with_Attendant.jpg Which is in turn from http://www.philamuseum.org/collections/permanent/181783.html (\"Tribute Giraffe with Attendant\"), P",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tribute_Giraffe_with_Attendant_cropped.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tribute_Giraffe_with_Attendant_cropped.jpg/960px-Tribute_Giraffe_with_Attendant_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2063,
+      "height": 2528,
+      "alt_suggestion": "On 20 September 1414, Bengali envoys presented a tribute giraffe in the name of King Saif Al-Din Hamzah Shah of Bengal (r. 1410–12) to the Yongle Emperor of Ming China (r. 1402–24). The Yongle Emperor",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-28997",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Geisha and Attendant on a Rainy Night",
+      "credit": "Kitagawa Utamaro 喜多川 歌麿 Japanese, c.1753-1806 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/28997",
+      "image_url": "https://www.artic.edu/iiif/2/d9a33e91-acff-896a-1f3e-8f4871d4e12a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color woodblock print; oban.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-612463",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Tribute Giraffe with Attendant.jpg",
+      "credit": "\"Tribute Giraffe with Attendant\". Philadelphia Museum of Art. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tribute_Giraffe_with_Attendant.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tribute_Giraffe_with_Attendant.jpg/960px-Tribute_Giraffe_with_Attendant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2063,
+      "height": 4096,
+      "alt_suggestion": "On 20 September 1414, Bengali envoys presented a tribute giraffe in the name of King Saif Al-Din Hamzah Shah of Bengal (r. 1410–12) to the Yongle Emperor of Ming China (r. 1402–24). The Yongle Emperor",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-147004",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Buddha with Attendants on Mythical Animal",
+      "credit": "Thailand, Lopburi province / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/147004",
+      "image_url": "https://www.artic.edu/iiif/2/9f413547-e279-780a-3535-1b11d4230b3f/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of sandstone.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-21292",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Plate with Scholar and Attendant in Garden",
+      "credit": "China / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/21292",
+      "image_url": "https://www.artic.edu/iiif/2/e2539868-0523-0dc2-3644-d261c5a9e61e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of porcelain painted in underglaze blue.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Tribute Giraffe with Attendant Shen Du giraffe 1414 Zheng He\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Tribute Giraffe with Attendant\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Tribute Giraffe with Attendant Shen Du giraffe 1414\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

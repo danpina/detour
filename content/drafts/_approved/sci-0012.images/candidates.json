@@ -1,0 +1,79 @@
+{
+  "draft_id": "sci-0012",
+  "created_at": "2026-10-20T18:40:16.942Z",
+  "queries": [
+    "Krakatoa Krakatau eruption 1883 Anak Krakatau",
+    "Krakatoa",
+    "Krakatoa Krakatau eruption 1883"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-7696837",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Krakatoa eruption lithograph.jpg",
+      "credit": "Lithograph: Parker & Coward, Britain; / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Krakatoa_eruption_lithograph.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Krakatoa_eruption_lithograph.jpg/960px-Krakatoa_eruption_lithograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2726,
+      "height": 3468,
+      "alt_suggestion": "An 1888 lithograph of the 1883 eruption of Krakatoa.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-92201",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Édouard Manet (French painter, 1832-1883)",
+      "credit": "Nadar (Gaspard Félix Tournachon) French, 1820–1910 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/92201",
+      "image_url": "https://www.artic.edu/iiif/2/58b458cd-c653-0bf9-4200-fb62ff2567d6/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of woodburytype, from the periodical “galerie contemporaine littéraire, artistique” (1876), volume 1.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-199704274",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ash plume rises from Anak Krakatau Volcano, Indonesia (P-070474-00-07).jpg",
+      "credit": "Copernicus Sentinel-2 imagery, EK - GD DEFIS, EC - DG DEFIS, SPACETEC PARTNERS, CE - DG DEFIS / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ash_plume_rises_from_Anak_Krakatau_Volcano,_Indonesia_(P-070474-00-07).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Ash_plume_rises_from_Anak_Krakatau_Volcano%2C_Indonesia_%28P-070474-00-07%29.jpg/960px-Ash_plume_rises_from_Anak_Krakatau_Volcano%2C_Indonesia_%28P-070474-00-07%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3508,
+      "height": 4961,
+      "alt_suggestion": "Anak Krakatau Volcano is located in the Sunda Strait between Java and Sumatra. It emerged in 1927 from the underwater caldera left by the 1883 Krakatoa eruption and is one of Indonesia's most active v",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-98866220",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Pele and Krakatoa (4078805612).jpg",
+      "credit": "Lunar and Planetary Institute from Houston, TX, USA / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pele_and_Krakatoa_(4078805612).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Pele_and_Krakatoa_%284078805612%29.jpg/960px-Pele_and_Krakatoa_%284078805612%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2700,
+      "height": 1884,
+      "alt_suggestion": "This illustration compares the eruption heights of Pele on Io and Krakatoa. Prepared for NASA by Stephen Paul Meszaros.",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Ash plume rises from Anak Krakatau Volcano, Indonesia (Copernicus 2026-07-02).webp",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Krakatoa Krakatau eruption 1883 Anak Krakatau\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Krakatoa\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Krakatoa Krakatau eruption 1883\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

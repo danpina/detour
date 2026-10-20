@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Tardigrades",
+    "angle": "Survived outer space"
+  },
+  "created_at": "2026-10-20T18:37:27.361Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0010",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "The tiny animal that went to space",
+    "body": {
+      "claim": "Tardigrades have survived exposure to outer space.",
+      "why": "In 2007, dehydrated tardigrades were taken on the FOTON-M3 mission and exposed to vacuum, and to solar ultraviolet, for 10 days. Tardigrades are usually about 0.5 mm long when fully grown."
+    },
+    "probes": [
+      {
+        "id": "sci-0010-p1",
+        "kind": "tf",
+        "question": "True or false: tardigrades have survived exposure to outer space.",
+        "answer": true
+      },
+      {
+        "id": "sci-0010-p2",
+        "kind": "mcq",
+        "question": "About how long is a fully grown tardigrade, usually?",
+        "options": [
+          "0.5 mm",
+          "5 cm",
+          "50 cm",
+          "5 m"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tardigrade (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Tardigrade"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A microscope image of a tardigrade, or 'water bear'",
+    "keywords": [
+      "tardigrade",
+      "water bear",
+      "tardigrade microscope"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:41:47.503Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tardigrade",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Tardigrades have survived exposure to outer space (title, claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tardigrade",
+        "quote": "Tardigrades have survived exposure to space."
+      },
+      {
+        "claim": "In 2007 dehydrated tardigrades were taken on the FOTON-M3 mission",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tardigrade",
+        "quote": "In 2007, samples of 30 tardigrades and 30 eggs, all dehydrated, were taken on the FOTON-M3 mission"
+      },
+      {
+        "claim": "They were exposed to vacuum and to solar ultraviolet",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tardigrade",
+        "quote": "exposed tardigrades to vacuum, solar ultraviolet, or both",
+        "note": "Samples got vacuum alone, vacuum plus UVA/B, or vacuum plus full solar UV; the card's wording is a fair summary."
+      },
+      {
+        "claim": "Exposure lasted 10 days",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tardigrade",
+        "quote": "or to both vacuum and the full range of solar ultraviolet, for 10 days"
+      },
+      {
+        "claim": "Tardigrades are usually about 0.5 mm long when fully grown (probe 2 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tardigrade",
+        "quote": "Tardigrades are usually about 0.5 mm (0.02 in) long when fully grown."
+      }
+    ],
+    "overall": "pass"
+  }
+}

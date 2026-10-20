@@ -1,0 +1,109 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Göbekli Tepe",
+    "angle": "Pillars raised before pottery"
+  },
+  "created_at": "2026-10-20T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0007",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "Big pillars, no pottery yet",
+    "body": {
+      "claim": "Göbekli Tepe, in Şanlıurfa Province, Turkey, was built around 9500 BCE, in the Pre-Pottery Neolithic. Its large circular structures contain large stone pillars.",
+      "why": "The site was first used at the dawn of the southwest Asian Neolithic period. German archaeologist Klaus Schmidt recognised its significance in 1994 and began excavations the following year. Before that, attempts had been made to break up some of the pillars, presumably by farmers who mistook them for ordinary large rocks."
+    },
+    "probes": [
+      {
+        "id": "hist-0007-p1",
+        "kind": "mcq",
+        "question": "Who recognised the significance of Göbekli Tepe in 1994?",
+        "options": [
+          "Klaus Schmidt",
+          "Howard Carter",
+          "Heinrich Schliemann",
+          "Hiram Bingham"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0007-p2",
+        "kind": "tf",
+        "question": "True or false: Göbekli Tepe was built around 9500 BCE.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Göbekli Tepe (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "T-shaped limestone pillars inside an enclosure at Göbekli Tepe",
+    "keywords": [
+      "Göbekli Tepe",
+      "T-shaped pillars",
+      "Şanlıurfa",
+      "Göbekli Tepe enclosure D"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:42:40.124Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Göbekli Tepe is in Şanlıurfa Province, Turkey",
+        "verdict": "pass",
+        "quote": "Location Şanlıurfa Province , Turkey Region Southeastern Anatolia",
+        "source_url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+      },
+      {
+        "claim": "Göbekli Tepe was built around 9500 BCE, in the Pre-Pottery Neolithic (title, body, probe p2 true)",
+        "verdict": "pass",
+        "quote": "Radiocarbon dating shows that the earliest exposed structures at Göbekli Tepe were built between 9500 and 9000 BCE",
+        "note": "Infobox also gives \"Built c. 9500 BCE\"; the lead says inhabited from around 9500 BCE during the Pre-Pottery Neolithic.",
+        "source_url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+      },
+      {
+        "claim": "Its large circular structures contain large stone pillars",
+        "verdict": "pass",
+        "quote": "It is known for its large circular structures that contain large stone pillars",
+        "source_url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+      },
+      {
+        "claim": "The site was first used at the dawn of the southwest Asian Neolithic period",
+        "verdict": "pass",
+        "quote": "The site was first used at the dawn of the southwest Asian Neolithic period",
+        "source_url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+      },
+      {
+        "claim": "Klaus Schmidt, a German archaeologist, recognised its significance in 1994 and began excavations the following year (probe p1 answer)",
+        "verdict": "pass",
+        "quote": "German archaeologist Klaus Schmidt recognised its significance in 1994 and began excavations there the following year.",
+        "note": "MCQ distractors Howard Carter, Heinrich Schliemann, Hiram Bingham are unrelated to the site, so none can be accidentally correct.",
+        "source_url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+      },
+      {
+        "claim": "Attempts had been made to break up some of the pillars, presumably by farmers who mistook them for ordinary large rocks",
+        "verdict": "pass",
+        "quote": "attempts had been made to break up some of the pillars, presumably by farmers who mistook them for ordinary large rocks",
+        "source_url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+      }
+    ],
+    "overall": "pass"
+  }
+}

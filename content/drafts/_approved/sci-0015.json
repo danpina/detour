@@ -1,0 +1,93 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Gallium",
+    "angle": "A metal that melts in your hand"
+  },
+  "created_at": "2026-10-20T18:37:27.362Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0015",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "The metal that melts in your hand",
+    "body": {
+      "claim": "Gallium will melt in a person's hands.",
+      "why": "Its melting point is 29.7646 °C, below normal human body temperature of 37 °C. It is one of only four metal elements that is liquid at, or near, normal room temperature."
+    },
+    "probes": [
+      {
+        "id": "sci-0015-p1",
+        "kind": "tf",
+        "question": "True or false: gallium will melt in a person's hands at normal human body temperature.",
+        "answer": true
+      },
+      {
+        "id": "sci-0015-p2",
+        "kind": "mcq",
+        "question": "What is gallium's melting point, roughly?",
+        "options": [
+          "About 30 °C",
+          "About 300 °C",
+          "About 3,000 °C",
+          "About -30 °C"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Gallium (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Gallium"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A gallium crystal or a melting gallium droplet in a hand",
+    "keywords": [
+      "gallium",
+      "gallium melting hand",
+      "gallium crystal"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:41:47.503Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gallium",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Gallium will melt in a person's hands at human body temperature of 37 °C (title, claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gallium",
+        "quote": "gallium will melt in a person's hands at normal human body temperature of 37 °C"
+      },
+      {
+        "claim": "Melting point 29.7646 °C (why, probe 2: about 30 °C)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gallium",
+        "quote": "The melting point of gallium, 29.7646 °C (85.5763 °F; 302.9146 K)"
+      },
+      {
+        "claim": "29.7646 °C is below 37 °C, and is about 30 °C (not 300, 3,000 or -30).",
+        "verdict": "pass",
+        "note": "Verified by calculation: 29.7646 < 37; 29.7646 rounds to 30."
+      },
+      {
+        "claim": "One of only four metal elements liquid at or near normal room temperature",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gallium",
+        "quote": "One of only four metal elements that is liquid at, or near, normal room temperature"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "hist-0015",
+  "interest": "history",
+  "title": "Coins from Aksum, found in India",
+  "probes": [
+    {
+      "id": "hist-0015-p1",
+      "question": "Aksum was a major power on the trade route between which two places?",
+      "kind": "mcq",
+      "options": [
+        "Rome and India",
+        "China and Persia",
+        "Egypt and Britain",
+        "Mali and Spain"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0015-p2",
+      "question": "True or false: Aksumite coins have been excavated as far away as southern India.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kingdom of Aksum (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:13.294Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0015.webp",
+    "alt": "Two sides of a gold Aksumite coin, each showing a crowned royal bust framed by wheat ears and a crescent, with Greek lettering.",
+    "kind": "photo",
+    "credit": "www.britishmuseum.org / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Axumite_coinage.jpg"
+  },
+  "body": {
+    "claim": "During the reign of Endybis (270-310), Aksum began minting coins that have been excavated as far away as Caesarea and southern India.",
+    "why": "Aksum became a major power on the trade route between Rome and India. Trade across the Red Sea, spanning from the Roman Empire in the north to India and Ceylon in the east, played a crucial role in Aksum's prosperity."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-36367564",
+  "alt": "Engraving by Hendrik Hondius after Brueghel of afflicted people in the dancing mania, clutching and supporting one another on a country path.",
+  "fits": true,
+  "note": "Exact image named in the brief (Hondius 1642 engraving), portrait, black and white, license CC BY 4.0 (Wellcome). Other candidates are a book title page, an initial and Indian/Japanese art.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.6,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0010",
+  "created_at": "2026-10-20T18:40:09.656Z",
+  "queries": [
+    "tardigrade water bear tardigrade microscope",
+    "tardigrade",
+    "tardigrade water bear"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-51336194",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "TardigradeEggsInShedCuticle.jpg",
+      "credit": "Bob Blaylock / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:TardigradeEggsInShedCuticle.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/TardigradeEggsInShedCuticle.jpg/960px-TardigradeEggsInShedCuticle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 1024,
+      "alt_suggestion": "The shed cuticle of a female Tardigrade or “water bear” containing eggs. This was taken using the 10× objective and 15× eyepiece on my microscope. The numbered scale is built into my 15× eyepiece, and",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-jsc2021e019950",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "jsc2021e019950",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2021e019950",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2021e019950/jsc2021e019950~small.jpg",
+      "alt_suggestion": "jsc2021e019950 (4/25/2014) --- A preflight photo of a marine tardigrade imaged at 40X magnification on a light microscope. The objective of the Using Water Bears to Identify Biological Countermeasures",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-16568",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Water Lilies",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16568",
+      "image_url": "https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of a pond seen up close spotted with thickly painted pink and white water lilies and a shadow across the top third of the picture.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-141928905",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Microscopic animal eating another microscopic animal.jpg",
+      "credit": "Ruby1846 / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Microscopic_animal_eating_another_microscopic_animal.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Microscopic_animal_eating_another_microscopic_animal.jpg/960px-Microscopic_animal_eating_another_microscopic_animal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1125,
+      "height": 2436,
+      "alt_suggestion": "Tardigrade (water bear) eating a dead, unidentified microorganism. They live in a type of moss called Andreaeopsida, which has a lot of living species in it.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-jsc2024e067105",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Preflight Imagery for Nanoracks-NCESSE-Surveyor-SSEP",
+      "credit": "Waxahachie Independent School District / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2024e067105",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2024e067105/jsc2024e067105~thumb.jpg",
+      "alt_suggestion": "jsc2024e067105 (1/29/2024) --- Eddie Finley Junior High School student researchers (Caris Gray and Olivia Jones) adding tardigrade to the experiment tube to begin terrestrial examination of tardigrade",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"tardigrade water bear tardigrade microscope\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"tardigrade\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"tardigrade water bear\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

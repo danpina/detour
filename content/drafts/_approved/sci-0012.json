@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Krakatoa 1883",
+    "angle": "Heard thousands of km away"
+  },
+  "created_at": "2026-10-20T18:37:27.361Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0012",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "The sound that crossed an ocean",
+    "body": {
+      "question": "In 1883, the Krakatoa explosions were heard on an island near Mauritius. About how far away was that?",
+      "options": [
+        "About 480 km",
+        "About 4,800 km",
+        "About 48,000 km"
+      ],
+      "answer": 1,
+      "reveal": "The explosions were so violent that they were heard 3,110 km away in Perth, Western Australia, and on the island of Rodrigues near Mauritius, 4,800 km away."
+    },
+    "probes": [
+      {
+        "id": "sci-0012-p1",
+        "kind": "tf",
+        "question": "True or false: the 1883 Krakatoa explosions were heard in Perth, Western Australia.",
+        "answer": true
+      },
+      {
+        "id": "sci-0012-p2",
+        "kind": "mcq",
+        "question": "Which island near Mauritius heard the Krakatoa explosions?",
+        "options": [
+          "Rodrigues",
+          "Madagascar",
+          "Sri Lanka",
+          "Java"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Krakatoa (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Krakatoa"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The 1883 Krakatoa eruption, or the volcano island today (Anak Krakatau)",
+    "keywords": [
+      "Krakatoa",
+      "Krakatau eruption 1883",
+      "Anak Krakatau"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:41:47.503Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Krakatoa",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The 1883 eruption (date)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Krakatoa",
+        "quote": "The 1883 eruption ejected approximately 25 km (6 cubic miles) of rock."
+      },
+      {
+        "claim": "Explosions heard 3,110 km away in Perth, Western Australia (reveal, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Krakatoa",
+        "quote": "heard 3,110 km (1,930 mi) away in Perth , Western Australia"
+      },
+      {
+        "claim": "Explosions heard on Rodrigues near Mauritius, 4,800 km away (question, answer, reveal, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Krakatoa",
+        "quote": "the island of Rodrigues near Mauritius , 4,800 km (3,000 mi) away",
+        "note": "The same page gives 4,780 km in its intro (Rodrigues near Mauritius, 4,780 km to the west). The page is internally inconsistent by 20 km; 'About 4,800 km' is correct under both, options 480 / 48,000 are clearly wrong, and the reveal's 4,800 is the page's own wording in the Eruption section."
+      }
+    ],
+    "overall": "pass"
+  }
+}

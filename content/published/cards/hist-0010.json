@@ -1,0 +1,62 @@
+{
+  "id": "hist-0010",
+  "interest": "history",
+  "title": "The dance nobody could stop",
+  "probes": [
+    {
+      "id": "hist-0010-p1",
+      "question": "In which city did the dancing plague of 1518 begin?",
+      "kind": "mcq",
+      "options": [
+        "Strasbourg",
+        "Vienna",
+        "Lisbon",
+        "Prague"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0010-p2",
+      "question": "True or false: it is known why the victims of the 1518 dancing plague danced.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dancing plague of 1518 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:44:55.513Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0010.webp",
+    "alt": "Engraving by Hendrik Hondius after Brueghel of afflicted people in the dancing mania, clutching and supporting one another on a country path.",
+    "kind": "photo",
+    "credit": "https://wellcomeimages.org/indexplus/obf_images/c3/96/50965017239f35f8c65196f40f99.jpg Gallery: https://wellcomeimages.org/indexplus/image/M0014846.html Wellcom",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_dancing_mania_Wellcome_M0014846.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Strasbourg, July 1518. A woman known as Frau Troffea begins to dance fervently and uncontrollably in a street."
+      },
+      {
+        "text": "Others join. Somewhere between 50 and 400 people take to dancing for weeks."
+      },
+      {
+        "text": "Historical documents, including physician notes, cathedral sermons and notes issued by the city council, are clear that the victims danced. It is not known why."
+      },
+      {
+        "text": "The Dancing Plague ultimately ceased in September, when the remaining dancers were led to a mountaintop chapel to pray for absolution."
+      }
+    ]
+  }
+}

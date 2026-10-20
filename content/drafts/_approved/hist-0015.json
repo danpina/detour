@@ -1,0 +1,90 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Kingdom of Aksum",
+    "angle": "Coins on the Red Sea trade route"
+  },
+  "created_at": "2026-10-20T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0015",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "Coins from Aksum, found in India",
+    "body": {
+      "claim": "During the reign of Endybis (270-310), Aksum began minting coins that have been excavated as far away as Caesarea and southern India.",
+      "why": "Aksum became a major power on the trade route between Rome and India. Trade across the Red Sea, spanning from the Roman Empire in the north to India and Ceylon in the east, played a crucial role in Aksum's prosperity."
+    },
+    "probes": [
+      {
+        "id": "hist-0015-p1",
+        "kind": "mcq",
+        "question": "Aksum was a major power on the trade route between which two places?",
+        "options": [
+          "Rome and India",
+          "China and Persia",
+          "Egypt and Britain",
+          "Mali and Spain"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0015-p2",
+        "kind": "tf",
+        "question": "True or false: Aksumite coins have been excavated as far away as southern India.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Kingdom of Aksum (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A gold coin of an Aksumite king such as Endybis, or the stelae of Aksum",
+    "keywords": [
+      "Aksumite coin",
+      "Endybis coin",
+      "Kingdom of Axum coin",
+      "Obelisk of Axum"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:42:40.129Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "During the reign of Endybis (270-310), Aksum began minting coins excavated as far away as Caesarea and southern India (claim, probe p2 true)",
+        "verdict": "pass",
+        "quote": "During the reign of Endybis (270-310), Aksum began minting coins that have been excavated as far away as Caesarea and southern India.",
+        "source_url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+      },
+      {
+        "claim": "Aksum became a major power on the trade route between Rome and India (probe p1 answer)",
+        "verdict": "pass",
+        "quote": "the kingdom became a major power on the trade route between Rome and India",
+        "note": "Distractors (China/Persia, Egypt/Britain, Mali/Spain) are not the route named.",
+        "source_url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+      },
+      {
+        "claim": "Trade across the Red Sea, from the Roman Empire in the north to India and Ceylon in the east, played a crucial role in Aksum's prosperity",
+        "verdict": "pass",
+        "quote": "This trade across the Red Sea, spanning from the Roman Empire in the north to India and Ceylon in the east, played a crucial role in Aksum's prosperity.",
+        "source_url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
+      }
+    ],
+    "overall": "pass"
+  }
+}

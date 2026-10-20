@@ -1,0 +1,115 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Mansa Musa",
+    "angle": "The pilgrimage that reached the wider Muslim world"
+  },
+  "created_at": "2026-10-20T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0008",
+    "interest": "history",
+    "type": "story",
+    "title": "The king who gave gold away",
+    "body": {
+      "panels": [
+        {
+          "text": "Mali, 1324. Mansa Musa sets out on the hajj, the pilgrimage to Mecca, travelling with an enormous entourage and a vast supply of gold."
+        },
+        {
+          "text": "On the way he spends time in Cairo."
+        },
+        {
+          "text": "His lavish gift-giving there is said to have noticeably affected the value of gold in Egypt, and it garnered the attention of the wider Muslim world."
+        },
+        {
+          "text": "Back home, Musa expanded the borders of the Mali Empire, incorporating the cities of Gao and Timbuktu, and helped establish Timbuktu as a center of Islamic learning."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0008-p1",
+        "kind": "mcq",
+        "question": "In which city did Mansa Musa spend time on his hajj, where his gift-giving is said to have affected the value of gold?",
+        "options": [
+          "Cairo",
+          "Rome",
+          "Baghdad",
+          "Delhi"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0008-p2",
+        "kind": "tf",
+        "question": "True or false: Mansa Musa went on the hajj to Mecca in 1324.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mansa Musa (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Mansa Musa holding a gold nugget, from the medieval Catalan Atlas",
+    "keywords": [
+      "Catalan Atlas",
+      "Mansa Musa",
+      "Abraham Cresques",
+      "Mali Empire map 1375"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:42:40.125Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mansa_Musa",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Mansa Musa went on the hajj to Mecca in 1324 with an enormous entourage and a vast supply of gold (panel 1, probe p2)",
+        "verdict": "pass",
+        "quote": "Musa went on Hajj to Mecca in 1324, traveling with an enormous entourage and a vast supply of gold.",
+        "note": "Page elsewhere says the pilgrimage spanned 1324-1325; the lead states 1324.",
+        "source_url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+      },
+      {
+        "claim": "On the way he spent time in Cairo (probe p1 answer)",
+        "verdict": "pass",
+        "quote": "En route, he spent time in Cairo",
+        "note": "Distractors Rome, Baghdad, Delhi are not named as stops on the route in the page.",
+        "source_url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+      },
+      {
+        "claim": "His lavish gift-giving there is said to have noticeably affected the value of gold in Egypt and garnered the attention of the wider Muslim world",
+        "verdict": "pass",
+        "quote": "his lavish gift-giving is said to have noticeably affected the value of gold in Egypt and garnered the attention of the wider Muslim world",
+        "source_url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+      },
+      {
+        "claim": "Musa expanded the borders of the Mali Empire, incorporating the cities of Gao and Timbuktu",
+        "verdict": "pass",
+        "quote": "Musa expanded the borders of the Mali Empire, in particular incorporating the cities of Gao and Timbuktu into its territory.",
+        "source_url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+      },
+      {
+        "claim": "He helped establish Timbuktu as a center of Islamic learning",
+        "verdict": "pass",
+        "quote": "helped establish Timbuktu as a center of Islamic learning",
+        "source_url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+      }
+    ],
+    "overall": "pass"
+  }
+}

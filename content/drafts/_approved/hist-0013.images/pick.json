@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-146267",
+  "alt": "Medieval Arab manuscript painting from al-Wasiti's Maqamat of al-Hariri showing a procession of camels, drummers, trumpeters and banners setting off with a pilgrim litter.",
+  "fits": true,
+  "note": "Contemporary-era (13th c.) Islamic manuscript art of a pilgrim caravan; fits the brief generally (not Ibn Battuta himself, so alt describes it neutrally). Public domain. cand-1 is a tents scene with Arabic captions and a less clear hajj link; Canterbury Pilgrims is the wrong culture.",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

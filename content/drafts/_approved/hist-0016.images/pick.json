@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-32666345",
+  "alt": "A row of fifteen moai statues on the Ahu Tongariki platform on Easter Island, with a lichen-covered moai head in the foreground and green hills behind.",
+  "fits": true,
+  "note": "Matches brief (Ahu Tongariki). Landscape, crop to the row of statues. CC BY-SA 3.0. cand-2 is a tiny distant row; cand-3 is a quarry hill with no moai.",
+  "crop": {
+    "fx": 0.65,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

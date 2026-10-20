@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Zheng He",
+    "angle": "Seven voyages and a giraffe"
+  },
+  "created_at": "2026-10-20T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0014",
+    "interest": "history",
+    "type": "story",
+    "title": "A fleet, and a giraffe",
+    "body": {
+      "panels": [
+        {
+          "text": "China, 11 July 1405. Zheng He's first voyage departs from Suzhou: a fleet of 317 ships holding almost 28,000 crewmen."
+        },
+        {
+          "text": "Between 1405 and 1433, Zheng commanded seven treasure voyages across Asia for the Yongle Emperor and then the Xuande Emperor."
+        },
+        {
+          "text": "His fleets visited Brunei, Java, Siam (Thailand), Southeast Asia, India, the Horn of Africa, and Arabia, dispensing and receiving goods along the way."
+        },
+        {
+          "text": "The twist: the giraffe that he brought back from Malindi was considered to be a qilin and taken as proof of the Mandate of Heaven upon the administration."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0014-p1",
+        "kind": "mcq",
+        "question": "How many treasure voyages did Zheng He command between 1405 and 1433?",
+        "options": [
+          "Three",
+          "Five",
+          "Seven",
+          "Twelve"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "hist-0014-p2",
+        "kind": "mcq",
+        "question": "What was the giraffe brought back from Malindi considered to be?",
+        "options": [
+          "A qilin",
+          "A dragon",
+          "A phoenix",
+          "A tiger"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Zheng He (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Zheng_He"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A Ming dynasty painting of a giraffe with an attendant, or a map of Zheng He's voyages",
+    "keywords": [
+      "Tribute Giraffe with Attendant",
+      "Shen Du giraffe 1414",
+      "Zheng He",
+      "Ming treasure voyages"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:42:40.129Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Zheng_He",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "First voyage departed 11 July 1405 from Suzhou with a fleet of 317 ships holding almost 28,000 crewmen",
+        "verdict": "pass",
+        "quote": "Zheng He's first voyage departed 11 July 1405, from Suzhou and consisted of a fleet of 317 ships holding almost 28,000 crewmen.",
+        "source_url": "https://en.wikipedia.org/wiki/Zheng_He"
+      },
+      {
+        "claim": "Between 1405 and 1433 Zheng commanded seven treasure voyages across Asia for the Yongle Emperor and then the Xuande Emperor (probe p1 answer Seven)",
+        "verdict": "pass",
+        "quote": "Between 1405 and 1433, Zheng commanded seven treasure voyages across Asia under the commission of the Yongle Emperor and the succeeding Xuande Emperor",
+        "source_url": "https://en.wikipedia.org/wiki/Zheng_He"
+      },
+      {
+        "claim": "His fleets visited Brunei, Java, Siam (Thailand), Southeast Asia, India, the Horn of Africa and Arabia, dispensing and receiving goods along the way",
+        "verdict": "pass",
+        "quote": "Zheng He's fleets visited Brunei , Java , Siam (Thailand), Southeast Asia , India, the Horn of Africa , and Arabia , dispensing and receiving goods along the way.",
+        "source_url": "https://en.wikipedia.org/wiki/Zheng_He"
+      },
+      {
+        "claim": "The giraffe he brought back from Malindi was considered to be a qilin and taken as proof of the Mandate of Heaven (probe p2 answer; dragon, phoenix, tiger wrong)",
+        "verdict": "pass",
+        "quote": "The giraffe that he brought back from Malindi was considered to be a qilin and taken as proof of the Mandate of Heaven upon the administration.",
+        "source_url": "https://en.wikipedia.org/wiki/Zheng_He"
+      }
+    ],
+    "overall": "pass"
+  }
+}

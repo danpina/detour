@@ -1,0 +1,62 @@
+{
+  "id": "sci-0014",
+  "interest": "science",
+  "title": "Measuring the Earth with a shadow",
+  "probes": [
+    {
+      "id": "sci-0014-p1",
+      "question": "In the simplified version, how many times the Alexandria-Syene distance is Earth's circumference?",
+      "kind": "mcq",
+      "options": [
+        "50 times",
+        "7 times",
+        "1,000 times",
+        "250 times"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0014-p2",
+      "question": "True or false: the exact value of the stadion remains a subject of debate to this day.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Earth's circumference (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:49.495Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0014.webp",
+    "alt": "An old engraved portrait medallion of the ancient Greek scholar Eratosthenes in profile, labelled with his name",
+    "kind": "photo",
+    "credit": "Unknown author / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Eratosthenes.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Two Egyptian cities, Alexandria and Syene, now Aswan. The Sun's rays hit them at different angles."
+      },
+      {
+        "text": "In the simplified version told by Cleomedes, the angle of the sun's rays was about 7 degrees, or 1/50th the circumference of a circle."
+      },
+      {
+        "text": "So the Earth's circumference was 50 times the known distance from Alexandria to Syene (5,000 stadia): 250,000 stadia."
+      },
+      {
+        "text": "Eratosthenes estimated 252,000 stadia, with an error on the real value between -2.4% and +0.8%, depending on the length of the stadion."
+      }
+    ]
+  }
+}

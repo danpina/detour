@@ -1,0 +1,56 @@
+{
+  "id": "sci-0012",
+  "interest": "science",
+  "title": "The sound that crossed an ocean",
+  "probes": [
+    {
+      "id": "sci-0012-p1",
+      "question": "True or false: the 1883 Krakatoa explosions were heard in Perth, Western Australia.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "sci-0012-p2",
+      "question": "Which island near Mauritius heard the Krakatoa explosions?",
+      "kind": "mcq",
+      "options": [
+        "Rodrigues",
+        "Madagascar",
+        "Sri Lanka",
+        "Java"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Krakatoa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Krakatoa"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:34.032Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "sci-0012.webp",
+    "alt": "A nineteenth-century lithograph of the 1883 Krakatoa eruption, a huge dark ash column rising over the island",
+    "kind": "artwork",
+    "credit": "Lithograph: Parker & Coward, Britain; / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Krakatoa_eruption_lithograph.jpg"
+  },
+  "body": {
+    "question": "In 1883, the Krakatoa explosions were heard on an island near Mauritius. About how far away was that?",
+    "options": [
+      "About 480 km",
+      "About 4,800 km",
+      "About 48,000 km"
+    ],
+    "answer": 1,
+    "reveal": "The explosions were so violent that they were heard 3,110 km away in Perth, Western Australia, and on the island of Rodrigues near Mauritius, 4,800 km away."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "hist-0014",
+  "interest": "history",
+  "title": "A fleet, and a giraffe",
+  "probes": [
+    {
+      "id": "hist-0014-p1",
+      "question": "How many treasure voyages did Zheng He command between 1405 and 1433?",
+      "kind": "mcq",
+      "options": [
+        "Three",
+        "Five",
+        "Seven",
+        "Twelve"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "hist-0014-p2",
+      "question": "What was the giraffe brought back from Malindi considered to be?",
+      "kind": "mcq",
+      "options": [
+        "A qilin",
+        "A dragon",
+        "A phoenix",
+        "A tiger"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zheng He (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zheng_He"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:12.277Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0014.webp",
+    "alt": "Ming dynasty silk painting of a tribute giraffe led by an attendant, brought to the Yongle Emperor in 1414.",
+    "kind": "artwork",
+    "credit": "File:Tribute_Giraffe_with_Attendant.jpg Which is in turn from http://www.philamuseum.org/collections/permanent/181783.html (\"Tribute Giraffe with Attendant\"), P",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tribute_Giraffe_with_Attendant_cropped.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "China, 11 July 1405. Zheng He's first voyage departs from Suzhou: a fleet of 317 ships holding almost 28,000 crewmen."
+      },
+      {
+        "text": "Between 1405 and 1433, Zheng commanded seven treasure voyages across Asia for the Yongle Emperor and then the Xuande Emperor."
+      },
+      {
+        "text": "His fleets visited Brunei, Java, Siam (Thailand), Southeast Asia, India, the Horn of Africa, and Arabia, dispensing and receiving goods along the way."
+      },
+      {
+        "text": "The twist: the giraffe that he brought back from Malindi was considered to be a qilin and taken as proof of the Mandate of Heaven upon the administration."
+      }
+    ]
+  }
+}

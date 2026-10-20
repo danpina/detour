@@ -1,0 +1,81 @@
+{
+  "draft_id": "sci-0014",
+  "created_at": "2026-10-20T18:40:25.216Z",
+  "queries": [
+    "Eratosthenes Eratosthenes measurement Earth circumference Alexandria Syene",
+    "Eratosthenes",
+    "Eratosthenes Eratosthenes measurement Earth circumference"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-638508",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Eratosthenes.jpg",
+      "credit": "Unknown author / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eratosthenes.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Eratosthenes.jpg/960px-Eratosthenes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2495,
+      "height": 3614,
+      "alt_suggestion": "Eratosthenes.jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA13530",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Terraces in Eratosthenes Crater",
+      "credit": "NASA/GSFC/Arizona State University / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA13530",
+      "image_url": "https://images-assets.nasa.gov/image/PIA13530/PIA13530~small.jpg",
+      "alt_suggestion": "Terraces in Eratosthenes Crater",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-31599",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Saint Catherine of Alexandria",
+      "credit": "Peter Paul Rubens Flemish, 1577-1640 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/31599",
+      "image_url": "https://www.artic.edu/iiif/2/26a14daa-8dfd-bfe7-84d0-0603c4d4e8fe/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on paper."
+    },
+    {
+      "id": "wikimedia-136087423",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Eratosthenes, Eratosthenis Werlds Karta (FL27971615 2725315).jpg",
+      "credit": "Eratosthenes / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eratosthenes,_Eratosthenis_Werlds_Karta_(FL27971615_2725315).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Eratosthenes%2C_Eratosthenis_Werlds_Karta_%28FL27971615_2725315%29.jpg/960px-Eratosthenes%2C_Eratosthenis_Werlds_Karta_%28FL27971615_2725315%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4349,
+      "height": 2784,
+      "alt_suggestion": "Eratosthenis Werlds Karta.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA13529",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Eratosthenes Crater and the Lunar Timescale",
+      "credit": "NASA/GSFC/Arizona State University / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA13529",
+      "image_url": "https://images-assets.nasa.gov/image/PIA13529/PIA13529~small.jpg",
+      "alt_suggestion": "Eratosthenes Crater and the Lunar Timescale",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Eratosthenes Eratosthenes measurement Earth circumference Alexandria Syene\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Eratosthenes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Eratosthenes Eratosthenes measurement Earth circumference\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

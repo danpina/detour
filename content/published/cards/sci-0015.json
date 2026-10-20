@@ -1,0 +1,50 @@
+{
+  "id": "sci-0015",
+  "interest": "science",
+  "title": "The metal that melts in your hand",
+  "probes": [
+    {
+      "id": "sci-0015-p1",
+      "question": "True or false: gallium will melt in a person's hands at normal human body temperature.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "sci-0015-p2",
+      "question": "What is gallium's melting point, roughly?",
+      "kind": "mcq",
+      "options": [
+        "About 30 °C",
+        "About 300 °C",
+        "About 3,000 °C",
+        "About -30 °C"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gallium (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gallium"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T18:45:50.588Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0015.webp",
+    "alt": "A shiny silver blob of liquid gallium melted in the palm of an open hand",
+    "kind": "photo",
+    "credit": "AndrewDaGamer / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Liquid_gallium.png"
+  },
+  "body": {
+    "claim": "Gallium will melt in a person's hands.",
+    "why": "Its melting point is 29.7646 °C, below normal human body temperature of 37 °C. It is one of only four metal elements that is liquid at, or near, normal room temperature."
+  }
+}

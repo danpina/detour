@@ -1,0 +1,88 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Marie Curie's notebooks",
+    "angle": "Still radioactive"
+  },
+  "created_at": "2026-10-20T18:37:27.363Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0016",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Notebooks that are still radioactive",
+    "body": {
+      "claim": "Marie Curie's notebooks are expected to remain radioactive for well over a thousand years.",
+      "why": "Radium-226 has a half-life of about 1,600 years. Curie's remains and those of Pierre Curie were sealed in a lead lining because of the radioactivity."
+    },
+    "probes": [
+      {
+        "id": "sci-0016-p1",
+        "kind": "tf",
+        "question": "True or false: Marie Curie's notebooks are expected to remain radioactive for well over a thousand years.",
+        "answer": true
+      },
+      {
+        "id": "sci-0016-p2",
+        "kind": "mcq",
+        "question": "Radium-226 has a half-life of about how many years?",
+        "options": [
+          "1,600",
+          "16",
+          "160,000",
+          "16 million"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Marie Curie (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Marie_Curie"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A portrait of Marie Curie in her laboratory",
+    "keywords": [
+      "Marie Curie",
+      "Marie Curie laboratory",
+      "Marie Curie portrait"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T18:41:47.503Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Marie_Curie",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Notebooks expected to remain radioactive for well over a thousand years (title, claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Marie_Curie",
+        "quote": "her notebooks are expected to remain radioactive for well over a thousand years"
+      },
+      {
+        "claim": "Radium-226 has a half-life of about 1,600 years (why, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Marie_Curie",
+        "quote": "Because radium-226 has a half-life of about 1,600 years"
+      },
+      {
+        "claim": "Remains of Marie and Pierre Curie were sealed in a lead lining because of the radioactivity",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Marie_Curie",
+        "quote": "Their remains were sealed in a lead lining because of the radioactivity."
+      }
+    ],
+    "overall": "pass"
+  }
+}
