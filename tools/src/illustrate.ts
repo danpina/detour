@@ -101,6 +101,53 @@ const scenes: Record<string, Scene> = {
       );
     },
   },
+  fourcolor: {
+    alt: "Illustration of an abstract map made of irregular regions in exactly four colours, with no two neighbouring regions sharing a colour",
+    svg: () => {
+      // A 3x3 patchwork on a jittered grid. Colour = (row parity, column parity), so neighbours always differ.
+      const jitter = [
+        [[0, 0], [14, -10], [-12, 8], [0, 0]],
+        [[-10, 12], [18, 16], [-16, -12], [10, 6]],
+        [[8, -14], [-14, 10], [12, -8], [-6, 12]],
+        [[0, 0], [-8, 12], [10, -6], [0, 0]],
+      ];
+      const x0 = 150;
+      const y0 = 420;
+      const step = 260;
+      const pt = (r: number, c: number): [number, number] => [x0 + c * step + jitter[r]![c]![0]!, y0 + r * 190 + jitter[r]![c]![1]!];
+      const colors = [TEAL, ORANGE, DEEP, "#c9a227"];
+      let cells = "";
+      for (let r = 0; r < 3; r++) {
+        for (let c = 0; c < 3; c++) {
+          const pts = [pt(r, c), pt(r, c + 1), pt(r + 1, c + 1), pt(r + 1, c)].map((p) => p.join(",")).join(" ");
+          cells += `<polygon points="${pts}" fill="${colors[(r % 2) * 2 + (c % 2)]}" stroke="${CREAM}" stroke-width="8" stroke-linejoin="round"/>`;
+        }
+      }
+      return wrap(cells);
+    },
+  },
+  sudoku: {
+    alt: "Illustration of a nine-by-nine Sudoku grid with a few coloured dots marking the given clues",
+    svg: () => {
+      const size = 720;
+      const x0 = (W - size) / 2;
+      const y0 = 340;
+      const cell = size / 9;
+      const given: [number, number, string][] = [
+        [0, 2, TEAL], [0, 6, ORANGE], [1, 0, DEEP], [1, 4, TEAL], [2, 7, ORANGE], [3, 1, TEAL], [3, 5, DEEP], [4, 3, ORANGE], [4, 8, TEAL],
+        [5, 2, DEEP], [5, 6, TEAL], [6, 0, ORANGE], [6, 4, DEEP], [7, 3, TEAL], [7, 8, ORANGE], [8, 1, DEEP], [8, 5, TEAL],
+      ];
+      let lines = "";
+      for (let i = 0; i <= 9; i++) {
+        const thick = i % 3 === 0;
+        const w = thick ? 8 : 3;
+        lines += `<line x1="${x0}" y1="${y0 + i * cell}" x2="${x0 + size}" y2="${y0 + i * cell}" stroke="${CHAR}" stroke-width="${w}" stroke-linecap="round"/>`;
+        lines += `<line x1="${x0 + i * cell}" y1="${y0}" x2="${x0 + i * cell}" y2="${y0 + size}" stroke="${CHAR}" stroke-width="${w}" stroke-linecap="round"/>`;
+      }
+      const dots = given.map(([r, c, col]) => `<circle cx="${x0 + c * cell + cell / 2}" cy="${y0 + r * cell + cell / 2}" r="22" fill="${col}"/>`).join("");
+      return wrap(`<rect x="${x0}" y="${y0}" width="${size}" height="${size}" rx="10" fill="#fbf5e6"/>${lines}${dots}`);
+    },
+  },
   chunks: {
     alt: "Illustration of four small groups of dots held inside a rounded outline, suggesting items held in mind",
     svg: () => {

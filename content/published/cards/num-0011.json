@@ -1,0 +1,38 @@
+{
+  "id": "num-0011",
+  "interest": "numbers",
+  "title": "A full hotel with room for one more",
+  "probes": [
+    {
+      "id": "num-0011-p1",
+      "question": "True or false: a hotel with infinitely many full rooms can still fit one more guest.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hilbert's paradox of the Grand Hotel (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hilbert%27s_paradox_of_the_Grand_Hotel"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T16:57:33.242Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0011.webp",
+    "alt": "A long hotel corridor with a blue and cream patterned carpet and white panelled doors",
+    "kind": "photo",
+    "credit": "JohnLEE Brothers / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_%E9%85%92%E5%BA%97_hotel_corridor_n_white_room_door_November_2024_R12S_03.jpg"
+  },
+  "body": {
+    "claim": "A hotel with infinitely many rooms, all of them full, can still welcome a new guest.",
+    "why": "Ask every guest to move to the next room: the guest in room 1 goes to room 2, room 2 to room 3, and so on forever. Room 1 is now free. This is Hilbert's paradox of the Grand Hotel, a way to show how strange infinity is compared with ordinary counting."
+  }
+}

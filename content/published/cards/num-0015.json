@@ -1,0 +1,43 @@
+{
+  "id": "num-0015",
+  "interest": "numbers",
+  "title": "Four colours are enough",
+  "probes": [
+    {
+      "id": "num-0015-p1",
+      "question": "How many colours are enough to colour any map so neighbouring regions differ?",
+      "kind": "mcq",
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "Six"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Four color theorem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Four_color_theorem"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T16:57:41.562Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0015.webp",
+    "alt": "Flat illustration of a map of nine regions filled with four colours (teal, orange, navy and gold), with no two neighbouring regions sharing a colour.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "Any map can be coloured with just four colours so that no two neighbouring regions share a colour.",
+    "why": "Mathematicians have suspected this since 1852, when Francis Guthrie noticed it while colouring a map of English counties. It was finally proved in 1976, and the proof was one of the first major ones to rely on a computer checking over a thousand cases. Some mathematicians were uneasy that no human could check it all by hand."
+  }
+}

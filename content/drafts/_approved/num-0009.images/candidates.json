@@ -1,0 +1,60 @@
+{
+  "draft_id": "num-0009",
+  "created_at": "2026-10-19T21:34:29.273Z",
+  "queries": [
+    "Königsberg Seven Bridges Merian map",
+    "Königsberg",
+    "Königsberg Seven Bridges"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-79412532",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Konigsberg Bridge.png",
+      "credit": "Merian-Erben / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Konigsberg_Bridge.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Konigsberg_Bridge.png/960px-Konigsberg_Bridge.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 713,
+      "alt_suggestion": "Konigsberg Bridge aka ( Konisberg bridge ) that are colourised with blue colour represent the river and brown colour represent the bridge",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-152769871",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Vertriebenen-Gedenkstein in Königsberg in Bayern.jpg",
+      "credit": "Stephan van Helden / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vertriebenen-Gedenkstein_in_K%C3%B6nigsberg_in_Bayern.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Vertriebenen-Gedenkstein_in_K%C3%B6nigsberg_in_Bayern.jpg/960px-Vertriebenen-Gedenkstein_in_K%C3%B6nigsberg_in_Bayern.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3176,
+      "height": 4240,
+      "alt_suggestion": "Vertriebenen-Gedenkstein in Königsberg in Bayern",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-138422753",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Blick von der Regiomontanusstraße zur Kirche, Königsberg in Bayern.jpg",
+      "credit": "Stephan van Helden / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blick_von_der_Regiomontanusstra%C3%9Fe_zur_Kirche,_K%C3%B6nigsberg_in_Bayern.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Blick_von_der_Regiomontanusstra%C3%9Fe_zur_Kirche%2C_K%C3%B6nigsberg_in_Bayern.jpg/960px-Blick_von_der_Regiomontanusstra%C3%9Fe_zur_Kirche%2C_K%C3%B6nigsberg_in_Bayern.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 4000,
+      "alt_suggestion": "Blick von der Regiomontanusstraße zur Kirche, Königsberg in Bayern",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Königsberg Seven Bridges Merian map\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Königsberg\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Königsberg Seven Bridges\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

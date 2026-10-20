@@ -1,0 +1,38 @@
+{
+  "id": "num-0014",
+  "interest": "numbers",
+  "title": "When the totals tell the opposite story",
+  "probes": [
+    {
+      "id": "num-0014-p1",
+      "question": "True or false: a trend seen in every separate group can disappear or reverse in the combined data.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Simpson's paradox (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Simpson%27s_paradox"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T16:57:40.984Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0014.webp",
+    "alt": "Aerial view from Sather Tower over the University of California, Berkeley campus, with the bay in the distance.",
+    "kind": "photo",
+    "credit": "Firstcultural / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:UC-Berkeley-003-Downtown-Berkeley-from-Sather-Tower.jpg"
+  },
+  "body": {
+    "claim": "A trend can appear in every group of data, then reverse when the groups are combined.",
+    "why": "This is Simpson's paradox. In a famous 1973 case at UC Berkeley, the overall figures seemed to show women being admitted less often than men. Department by department, women were admitted at similar or higher rates. Women had applied more to the departments that admitted fewer applicants overall."
+  }
+}

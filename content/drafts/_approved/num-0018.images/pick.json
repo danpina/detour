@@ -1,0 +1,6 @@
+{
+  "candidate_id": "generated-sudoku",
+  "alt": "Flat illustration of a 9 by 9 Sudoku grid with 17 coloured dots standing in for the given clues and the rest of the cells empty.",
+  "fits": true,
+  "note": "Standard 9x9 grid with exactly 17 clue dots, no digits, logos or UI; clean and centred with room for text overlays."
+}

@@ -1,0 +1,160 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Fermat's Last Theorem",
+    "angle": "A margin note that took 358 years to prove"
+  },
+  "created_at": "2026-10-19T21:34:27.413Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0017",
+    "interest": "numbers",
+    "type": "story",
+    "title": "The margin note that took 358 years",
+    "body": {
+      "panels": [
+        {
+          "text": "About 1637, the mathematician Pierre de Fermat scribbles a claim in the margin of a book: no three positive whole numbers satisfy aⁿ + bⁿ = cⁿ when n is larger than 2."
+        },
+        {
+          "text": "He adds that he has a marvellous proof, but the margin is too small to hold it. He never writes it down."
+        },
+        {
+          "text": "For centuries, mathematicians try and fail. It becomes one of the most notable unsolved problems in mathematics."
+        },
+        {
+          "text": "The twist: in 1994, Andrew Wiles finally proves it, using mathematics Fermat could never have known. Many doubt that Fermat ever had a correct proof."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0017-p1",
+        "kind": "mcq",
+        "question": "Who proved Fermat's Last Theorem?",
+        "options": [
+          "Andrew Wiles",
+          "Pierre de Fermat himself",
+          "Leonhard Euler",
+          "Alan Turing"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0017-p2",
+        "kind": "tf",
+        "question": "True or false: Fermat published his proof of the theorem during his lifetime.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Fermat's Last Theorem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A portrait of Pierre de Fermat or an old edition of Diophantus' Arithmetica",
+    "keywords": [
+      "Pierre de Fermat",
+      "Fermat",
+      "Arithmetica"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-20T16:57:07.521Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "About 1637 Fermat wrote a claim in the margin of a book",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "Around 1637, Fermat wrote in the margin of a book that the more general equation"
+      },
+      {
+        "claim": "No solutions in positive integers for n greater than 2",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "is an integer greater than 2"
+      },
+      {
+        "claim": "Pierre de Fermat is a mathematician",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "statements claimed by Fermat without proof were subsequently proven by others and credited as theorems of Fermat"
+      },
+      {
+        "claim": "He says he has a marvellous proof but the margin is too small",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "I have discovered a truly marvelous proof of this, which this margin is too narrow to contain."
+      },
+      {
+        "claim": "He never writes the proof down",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "Fermat left no details of his proof, and none has ever been found"
+      },
+      {
+        "claim": "For centuries, mathematicians try and fail",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "After 358 years of effort by mathematicians, the first successful proof was released in 1994"
+      },
+      {
+        "claim": "It becomes one of the most notable unsolved problems in mathematics",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "The claim eventually became one of the most notable unsolved problems of mathematics."
+      },
+      {
+        "claim": "In 1994 Andrew Wiles finally proves it",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "the first successful proof was released in 1994 by Andrew Wiles"
+      },
+      {
+        "claim": "Title: took 358 years",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "After 358 years of effort by mathematicians, the first successful proof was released in 1994"
+      },
+      {
+        "claim": "Proved using mathematics Fermat could never have known",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "was solved with mathematics Fermat would not have known"
+      },
+      {
+        "claim": "Many doubt Fermat ever had a correct proof",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "leading to doubt that Fermat ever had a correct proof"
+      },
+      {
+        "claim": "Probe 1: Andrew Wiles proved Fermat's Last Theorem",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "the first successful proof was released in 1994 by Andrew Wiles"
+      },
+      {
+        "claim": "Probe 2: Fermat did not publish his proof in his lifetime (false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem",
+        "quote": "His claim was discovered some 30 years later, after his death."
+      }
+    ],
+    "overall": "pass"
+  }
+}

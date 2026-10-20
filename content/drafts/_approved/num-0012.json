@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Rubik's Cube positions",
+    "angle": "A small toy with a huge number of states"
+  },
+  "created_at": "2026-10-19T21:34:27.413Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0012",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "How many ways can a Rubik's Cube be scrambled?",
+    "body": {
+      "question": "About how many different positions can a standard 3×3 Rubik's Cube be in?",
+      "unit": "positions",
+      "min": 1000000,
+      "max": 1e+24,
+      "scale": "log",
+      "answer": 43252000000000000000,
+      "reveal": "About 43 quintillion, or 43,252,003,274,489,856,000. Even so, any position can be solved in 20 moves or fewer."
+    },
+    "probes": [
+      {
+        "id": "num-0012-p1",
+        "kind": "estimate",
+        "question": "About how many positions can a 3×3 Rubik's Cube be in?",
+        "answer": 43252000000000000000,
+        "unit": "positions",
+        "min": 1000000,
+        "max": 1e+24,
+        "scale": "log"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rubik's Cube (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Rubik%27s_Cube"
+      },
+      {
+        "title": "God's algorithm (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/God%27s_algorithm"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A scrambled Rubik's Cube",
+    "keywords": [
+      "Rubik's Cube",
+      "scrambled cube",
+      "puzzle"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:37:42.010Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Rubik%27s_Cube",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/God%27s_algorithm",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A standard 3x3 Rubik's Cube has about 43 quintillion arrangements (question, reveal, probe)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rubik%27s_Cube",
+        "quote": "or about 43 quintillion"
+      },
+      {
+        "claim": "Exact count is 43,252,003,274,489,856,000 (reveal; estimate answer 4.3252e19)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rubik%27s_Cube",
+        "quote": "increases the total number of possible Cube permutations from 43,252,003,274,489,856,000",
+        "note": "Also matches calculation 8!*3^7*(12!/2)*2^11 = 43252003274489856000."
+      },
+      {
+        "claim": "Any position can be solved in 20 moves or fewer (reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/God%27s_algorithm",
+        "quote": "Tom Rokicki proved in 2010 that no configuration requires more than 20 moves"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "draft_id": "num-0015",
+  "created_at": "2026-10-19T21:34:46.043Z",
+  "queries": [
+    "map coloring four color map colored map",
+    "map coloring",
+    "map coloring four color map"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-194493267",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Map of East Brady. Map of Catfish. Rockville. Truittsburg. (IA dr map-of-east-brady-map-of-catfish-rockville-truittsburg-2772091).jpg",
+      "credit": "Caldwell, Joseph A. Cring, Henry Arms Sr., C.T. Longdon F.J. Goodwin, J.W. Howden, J.A. McCloy, T.M.D. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_East_Brady._Map_of_Catfish._Rockville._Truittsburg._(IA_dr_map-of-east-brady-map-of-catfish-rockville-truittsburg-2772091).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Map_of_East_Brady._Map_of_Catfish._Rockville._Truittsburg._%28IA_dr_map-of-east-brady-map-of-catfish-rockville-truittsburg-2772091%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 910,
+      "height": 1536,
+      "alt_suggestion": "Zoomable full resolution image available at davidrumsey.com.This image 2772.091 is a part of image group 2772.000.Remarkable scenes of oil wells in most views. Oil has clearly taken over in this count",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA19417",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Showing Some Chemistry",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA19417",
+      "image_url": "https://images-assets.nasa.gov/image/PIA19417/PIA19417~medium.jpg",
+      "alt_suggestion": "During NASA MESSENGER four-year orbital mission, the spacecraft X-Ray Spectrometer XRS instrument mapped out the chemical composition of Mercury and discovered striking regions of chemical diversity. ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-196347",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Plan of Chicago, Chicago, Illinois, Diagram Showing City Growth",
+      "credit": "Daniel Hudson Burnham (American, 1846-1912) Edward Herbert Bennett (American, born England, 1874-1954) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196347",
+      "image_url": "https://www.artic.edu/iiif/2/8da8a9e1-48f7-9bc1-982a-2206dae4f522/full/843,/0/default.jpg",
+      "alt_suggestion": "A detailed sepia-toned map of Chicago with areas labeled and marked by red stars and boundary lines marked with colored ink and paint.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-194496166",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Map of St. Petersburg. Map of Forest Home. Mongtown. (IA dr map-of-st-petersburg-map-of-forest-home-mongtown-2772113).jpg",
+      "credit": "Caldwell, Joseph A. McCloy, T.M.D. Howden, J.A. Cring, Henry Arms Sr., C.T. Longdon F.J. Goodwin, J.W. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_St._Petersburg._Map_of_Forest_Home._Mongtown._(IA_dr_map-of-st-petersburg-map-of-forest-home-mongtown-2772113).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Map_of_St._Petersburg._Map_of_Forest_Home._Mongtown._%28IA_dr_map-of-st-petersburg-map-of-forest-home-mongtown-2772113%29.jpg/960px-Map_of_St._Petersburg._Map_of_Forest_Home._Mongtown._%28IA_dr_map-of-st-petersburg-map-of-forest-home-mongtown-2772113%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1536,
+      "height": 914,
+      "alt_suggestion": "Zoomable full resolution image available at davidrumsey.com.This image 2772.113 is a part of image group 2772.000.Remarkable scenes of oil wells in most views. Oil has clearly taken over in this count",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA19421",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Orange Is the New Blue",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA19421",
+      "image_url": "https://images-assets.nasa.gov/image/PIA19421/PIA19421~small.jpg",
+      "alt_suggestion": "Measurements from NASA MESSENGER MLA instrument during the spacecraft greater than four-year orbital mission have mapped the topography of Mercury northern hemisphere in great detail. This enhanced co",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-fourcolor",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: fourcolor",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-fourcolor.png",
+      "alt_suggestion": "Illustration of an abstract map made of irregular regions in exactly four colours, with no two neighbouring regions sharing a colour"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"map coloring four color map colored map\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"map coloring\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"map coloring four color map\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "num-0009",
+  "interest": "numbers",
+  "title": "The walk nobody could take",
+  "probes": [
+    {
+      "id": "num-0009-p1",
+      "question": "Who proved that the Königsberg bridge walk is impossible?",
+      "kind": "mcq",
+      "options": [
+        "Leonhard Euler",
+        "Isaac Newton",
+        "Carl Gauss",
+        "Blaise Pascal"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "num-0009-p2",
+      "question": "True or false: you can cross each of Königsberg's seven bridges exactly once.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Seven Bridges of Königsberg (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T16:57:27.694Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0009.webp",
+    "alt": "Seventeenth-century Merian engraving of Königsberg with the river Pregel and its seven bridges highlighted in orange",
+    "kind": "photo",
+    "credit": "Merian-Erben / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Konigsberg_Bridge.png"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Königsberg, 1730s. The city sits on a river with two islands, joined by seven bridges. Locals wonder: can you walk across every bridge exactly once?"
+      },
+      {
+        "text": "The puzzle is to find a walk that crosses each bridge exactly once."
+      },
+      {
+        "text": "Leonhard Euler solves it in 1736. His insight: only how the bridges connect the land areas matters."
+      },
+      {
+        "text": "The twist: such a walk is impossible, and his proof is seen as the start of graph theory, a branch of mathematics used to study networks."
+      }
+    ]
+  }
+}

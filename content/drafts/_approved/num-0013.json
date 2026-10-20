@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "The Monte Carlo fallacy",
+    "angle": "Roulette lands on black 26 times in a row"
+  },
+  "created_at": "2026-10-19T21:34:27.413Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0013",
+    "interest": "numbers",
+    "type": "story",
+    "title": "The night black came up 26 times",
+    "body": {
+      "panels": [
+        {
+          "text": "Monte Carlo, August 1913. At a casino roulette table, the ball lands on black. Then black again. And again."
+        },
+        {
+          "text": "Gamblers start betting on red: surely a run this long has to end soon."
+        },
+        {
+          "text": "Black keeps coming. The ball lands on black 26 times in a row, and the gamblers lose millions of francs betting against it."
+        },
+        {
+          "text": "The twist: the wheel has no memory. Each spin is independent, so a long run of black does not make red more likely. The mistake is now called the gambler's fallacy."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0013-p1",
+        "kind": "tf",
+        "question": "True or false: after many blacks in a row, red becomes more likely on the next roulette spin.",
+        "answer": false
+      },
+      {
+        "id": "num-0013-p2",
+        "kind": "mcq",
+        "question": "What is the belief that a long streak must soon reverse called?",
+        "options": [
+          "The gambler's fallacy",
+          "The sunk-cost effect",
+          "Survivorship bias",
+          "The placebo effect"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Gambler's fallacy (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A roulette wheel or the Monte Carlo Casino building",
+    "keywords": [
+      "roulette wheel",
+      "Monte Carlo Casino",
+      "roulette"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:37:42.011Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Roulette ball landed on black 26 times in a row at Monte Carlo Casino in August 1913 (title, panels 1 and 3)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy",
+        "quote": "at the Monte Carlo Casino on August 18, 1913, when the ball fell in black 26 times in a row"
+      },
+      {
+        "claim": "Gamblers lost millions of francs betting against black (panel 3)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy",
+        "quote": "Gamblers lost millions of francs betting against black"
+      },
+      {
+        "claim": "Gamblers bet on red, believing the streak had to end (panel 2) and that the streak did not change the wheel (panel 4, probe 1 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy",
+        "quote": "reasoning incorrectly that the streak was causing an imbalance in the randomness of the wheel"
+      },
+      {
+        "claim": "The mistaken belief is called the gambler's fallacy, also the Monte Carlo fallacy (panel 4, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy",
+        "quote": "The gambler's fallacy , also known as the Monte Carlo fallacy or the fallacy of the maturity of chances"
+      }
+    ],
+    "overall": "pass"
+  }
+}

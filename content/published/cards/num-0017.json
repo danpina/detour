@@ -1,0 +1,62 @@
+{
+  "id": "num-0017",
+  "interest": "numbers",
+  "title": "The margin note that took 358 years",
+  "probes": [
+    {
+      "id": "num-0017-p1",
+      "question": "Who proved Fermat's Last Theorem?",
+      "kind": "mcq",
+      "options": [
+        "Andrew Wiles",
+        "Pierre de Fermat himself",
+        "Leonhard Euler",
+        "Alan Turing"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "num-0017-p2",
+      "question": "True or false: Fermat published his proof of the theorem during his lifetime.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fermat's Last Theorem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T16:57:46.569Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0017.webp",
+    "alt": "Page 61 of the 1670 edition of Diophantus Arithmetica, showing Pierre de Fermat's observation printed beneath problem VIII.",
+    "kind": "photo",
+    "credit": "Unknown author / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Diophantus-II-8-Fermat.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "About 1637, the mathematician Pierre de Fermat scribbles a claim in the margin of a book: no three positive whole numbers satisfy aⁿ + bⁿ = cⁿ when n is larger than 2."
+      },
+      {
+        "text": "He adds that he has a marvellous proof, but the margin is too small to hold it. He never writes it down."
+      },
+      {
+        "text": "For centuries, mathematicians try and fail. It becomes one of the most notable unsolved problems in mathematics."
+      },
+      {
+        "text": "The twist: in 1994, Andrew Wiles finally proves it, using mathematics Fermat could never have known. Many doubt that Fermat ever had a correct proof."
+      }
+    ]
+  }
+}

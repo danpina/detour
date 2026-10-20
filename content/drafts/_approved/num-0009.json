@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Seven Bridges of Königsberg",
+    "angle": "The puzzle that started graph theory"
+  },
+  "created_at": "2026-10-19T21:34:27.413Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0009",
+    "interest": "numbers",
+    "type": "story",
+    "title": "The walk nobody could take",
+    "body": {
+      "panels": [
+        {
+          "text": "Königsberg, 1730s. The city sits on a river with two islands, joined by seven bridges. Locals wonder: can you walk across every bridge exactly once?"
+        },
+        {
+          "text": "The puzzle is to find a walk that crosses each bridge exactly once."
+        },
+        {
+          "text": "Leonhard Euler solves it in 1736. His insight: only how the bridges connect the land areas matters."
+        },
+        {
+          "text": "The twist: such a walk is impossible, and his proof is seen as the start of graph theory, a branch of mathematics used to study networks."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0009-p1",
+        "kind": "mcq",
+        "question": "Who proved that the Königsberg bridge walk is impossible?",
+        "options": [
+          "Leonhard Euler",
+          "Isaac Newton",
+          "Carl Gauss",
+          "Blaise Pascal"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0009-p2",
+        "kind": "tf",
+        "question": "True or false: you can cross each of Königsberg's seven bridges exactly once.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Seven Bridges of Königsberg (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An old map or engraving of Königsberg and its bridges",
+    "keywords": [
+      "Königsberg",
+      "Seven Bridges",
+      "Merian map"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-19T21:38:25.078Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Königsberg had a river, two islands and seven bridges; the puzzle is to cross each bridge exactly once (panels 1-2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg",
+        "quote": "included two large islands- Kneiphof and Lomse -which were connected to each other, and to the two mainland portions of the city- Altstadt and Vorstadt -by seven bridges."
+      },
+      {
+        "claim": "Euler solved it in 1736 (panel 3, 1730s setting)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg",
+        "quote": "proof of impossibility by Leonhard Euler , in 1736, laid the foundations of graph theory"
+      },
+      {
+        "claim": "Euler's insight: only how bridges connect the land areas matters (panel 3)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg",
+        "quote": "the choice of route inside each land mass is irrelevant and that the only important feature of a route is the sequence of bridges crossed."
+      },
+      {
+        "claim": "Such a walk is impossible (panel 4, probes)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg",
+        "quote": "Euler proved that the problem has no solution."
+      },
+      {
+        "claim": "His proof is seen as the start of graph theory (panel 4)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg",
+        "quote": "considered to be the first theorem of graph theory and the first true proof in network theory",
+        "note": "Graph theory as a tool for studying networks is supported via \"network theory\"; mild paraphrase."
+      }
+    ],
+    "overall": "pass"
+  }
+}

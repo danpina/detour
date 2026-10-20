@@ -1,0 +1,43 @@
+{
+  "id": "num-0018",
+  "interest": "numbers",
+  "title": "How few clues can a Sudoku have?",
+  "probes": [
+    {
+      "id": "num-0018-p1",
+      "question": "What is the smallest number of clues a standard Sudoku can have and still have exactly one solution?",
+      "kind": "mcq",
+      "options": [
+        "12",
+        "17",
+        "22",
+        "25"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mathematics of Sudoku (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mathematics_of_Sudoku"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T16:57:47.127Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0018.webp",
+    "alt": "Flat illustration of a 9 by 9 Sudoku grid with 17 coloured dots standing in for the given clues and the rest of the cells empty.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "A standard Sudoku with only 16 clues can never have a single unique solution. 17 is the minimum.",
+    "why": "Many puzzles with 17 clues and one solution have been found. A 2014 paper proved, through an exhaustive computer search, that 16 clues can never be enough. There are an enormous number of ways to fill a Sudoku grid."
+  }
+}

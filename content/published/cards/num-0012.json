@@ -1,0 +1,51 @@
+{
+  "id": "num-0012",
+  "interest": "numbers",
+  "title": "How many ways can a Rubik's Cube be scrambled?",
+  "probes": [
+    {
+      "id": "num-0012-p1",
+      "question": "About how many positions can a 3×3 Rubik's Cube be in?",
+      "kind": "estimate",
+      "answer": 43252000000000000000,
+      "unit": "positions",
+      "min": 1000000,
+      "max": 1e+24,
+      "scale": "log"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rubik's Cube (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rubik%27s_Cube"
+    },
+    {
+      "title": "God's algorithm (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/God%27s_algorithm"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-20T16:57:35.343Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "num-0012.webp",
+    "alt": "A scrambled Rubik's Cube with mixed red, orange, yellow, green, blue and white squares",
+    "kind": "photo",
+    "credit": "cubemeister.com / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rubiks_Cube_scrambled_cubemeister_com.jpg"
+  },
+  "body": {
+    "question": "About how many different positions can a standard 3×3 Rubik's Cube be in?",
+    "unit": "positions",
+    "min": 1000000,
+    "max": 1e+24,
+    "scale": "log",
+    "answer": 43252000000000000000,
+    "reveal": "About 43 quintillion, or 43,252,003,274,489,856,000. Even so, any position can be solved in 20 moves or fewer."
+  }
+}
