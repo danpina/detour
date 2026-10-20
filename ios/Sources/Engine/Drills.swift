@@ -174,14 +174,14 @@ enum Drills {
             let t = r.int(0, 2)
             if t == 0 {
                 let n = r.pick([120, 150, 200, 250, 400])
-                return DrillProblem(prompt: "A bakery bakes (n) loaves a day. How many loaves is that in a year (365 days)?", answer: Double(n * 365), hint: "(n) × 365. Try (n) × 300, then add (n) × 65.")
+                return DrillProblem(prompt: "A bakery bakes \(n) loaves a day. How many loaves is that in a year (365 days)?", answer: Double(n * 365), hint: "\(n) × 365. Try \(n) × 300, then add \(n) × 65.")
             }
             if t == 1 {
                 let cups = r.pick([60, 80, 150, 300]), cafes = r.int(3, 9)
-                return DrillProblem(prompt: "A café sells (cups) cups of coffee a day. A chain has (cafes) cafés like it. How many cups does the chain sell in a week?", answer: Double(cups * cafes * 7), hint: "(cups) × (cafes) cafés × 7 days.")
+                return DrillProblem(prompt: "A café sells \(cups) cups of coffee a day. A chain has \(cafes) cafés like it. How many cups does the chain sell in a week?", answer: Double(cups * cafes * 7), hint: "\(cups) × \(cafes) cafés × 7 days.")
             }
             let seats = r.pick([180, 300, 400]), flights = r.int(3, 12)
-            return DrillProblem(prompt: "A jet seats (seats) people and flies (flights) full flights a day. How many passengers is that in a month (30 days)?", answer: Double(seats * flights * 30), hint: "(seats) × (flights) flights × 30 days.")
+            return DrillProblem(prompt: "A jet seats \(seats) people and flies \(flights) full flights a day. How many passengers is that in a month (30 days)?", answer: Double(seats * flights * 30), hint: "\(seats) × \(flights) flights × 30 days.")
         case 2:
             let t = r.int(0, 2)
             if t == 0 {
