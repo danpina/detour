@@ -69,6 +69,8 @@ struct EngineInput {
     var setSize: Int = SessionEngine.defaultSetSize
     /// The next skill drill. Without it the drill slot goes to other content.
     var drill: DrillSpec?
+    /// When each card was last shown. Cards shown longest ago (or never) are preferred, so skipping a card does not bring it straight back.
+    var lastShown: [String: Date] = [:]
 }
 
 enum SessionEngine {
@@ -146,6 +148,17 @@ enum SessionEngine {
         return chosen
     }
 
+    /// Cards ordered by how long ago they were last shown (never shown first). Ties keep the original order.
+    static func leastRecentlyShown(_ cards: [Card], lastShown: [String: Date]) -> [Card] {
+        cards.enumerated()
+            .sorted { a, b in
+                let da = lastShown[a.element.id] ?? .distantPast
+                let db = lastShown[b.element.id] ?? .distantPast
+                return da != db ? da < db : a.offset < b.offset
+            }
+            .map { $0.element }
+    }
+
     private static func interleave(_ a: [SessionItem], _ b: [SessionItem]) -> [SessionItem] {
         var out: [SessionItem] = []
         for i in 0..<max(a.count, b.count) {
@@ -178,7 +191,8 @@ enum SessionEngine {
 
         let newNeeded = setSize - chosenReviews.count - drillCount
         let seen = input.completed.union(input.reviews.map { $0.cardId })
-        var news = pickSet(cards: input.cards, interests: ordered, seen: seen, n: newNeeded, allowSeen: false, exclude: used)
+        let rotated = leastRecentlyShown(input.cards, lastShown: input.lastShown)
+        var news = pickSet(cards: rotated, interests: ordered, seen: seen, n: newNeeded, allowSeen: false, exclude: used)
 
         var reviewItems: [SessionItem] = chosenReviews.map { .review(card: $0.card, probe: $0.probe, review: $0.review) }
         var newItems: [SessionItem] = news.map { .new($0) }
@@ -195,7 +209,7 @@ enum SessionEngine {
         // Still short: repeat seen cards rather than showing a tiny set.
         if short > 0 {
             let taken = used.union(news.map { $0.id })
-            news = pickSet(cards: input.cards, interests: ordered, seen: [], n: short, allowSeen: true, exclude: taken)
+            news = pickSet(cards: rotated, interests: ordered, seen: [], n: short, allowSeen: true, exclude: taken)
             newItems += news.map { .new($0) }
         }
 

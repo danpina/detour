@@ -122,7 +122,7 @@ final class GuardStore {
         var lines = logLines
         let stamp = ISO8601DateFormatter().string(from: now)
         lines.append("\(stamp) \(message)")
-        if lines.count > 60 { lines.removeFirst(lines.count - 60) }
+        if lines.count > 400 { lines.removeFirst(lines.count - 400) }
         defaults.set(lines, forKey: Key.log)
     }
 

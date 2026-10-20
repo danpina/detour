@@ -39,6 +39,7 @@ struct RootView: View {
             }
         }
         .onChange(of: scenePhase) { _, phase in
+            AppLog.log("scene: \(String(describing: phase))")
             if phase == .active { appBecameActive() }
         }
         .fullScreenCover(item: $run) { current in
@@ -51,7 +52,10 @@ struct RootView: View {
                     run = nil
                 },
                 onNextFeedSet: { start(feed: true) },
-                onClose: { run = nil }
+                onClose: {
+                    AppLog.log("session closed by the user")
+                    run = nil
+                }
             )
             .environment(model)
         }
@@ -60,12 +64,19 @@ struct RootView: View {
     /// Back in front: put the shield back if its timer never fired, and open a session if the shield's Start button asked for one.
     private func appBecameActive() {
         guardManager.refresh()
-        if guardManager.consumePendingSession(), model.settings.onboardingDone, run == nil {
-            start(feed: false)
+        if guardManager.consumePendingSession() {
+            AppLog.log("opened from the shield's Start button (session open already: \(run != nil))")
+            if model.settings.onboardingDone, run == nil { start(feed: false, why: "shield start") }
         }
     }
 
     private func start(feed: Bool) {
-        run = SessionRun(items: model.makeSet(), feed: feed)
+        start(feed: feed, why: "button")
+    }
+
+    private func start(feed: Bool, why: String) {
+        let items = model.makeSet()
+        AppLog.log("start set: feed=\(feed) why=\(why) items=\(items.count)")
+        run = SessionRun(items: items, feed: feed)
     }
 }

@@ -38,6 +38,11 @@ struct GuardSettingsSection: View {
                     Text("Nudge me").tag(GuardMode.gentle)
                     Text("Earn it").tag(GuardMode.earnIt)
                 }
+                Text(guardManager.settings.mode == .gentle
+                     ? "Nudge me: opening a guarded app shows a quick Detour first, and you can always tap Continue to go straight in."
+                     : "Earn it: opening a guarded app shows a quick Detour first. Finish a set to unlock it for a while, or use your one skip a day.")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
 
                 if guardManager.settings.mode == .earnIt {
                     Picker("Unlock for", selection: Binding(
@@ -61,23 +66,34 @@ struct GuardSettingsSection: View {
         .onChange(of: picking) { _, isOpen in
             if !isOpen { guardManager.saveSelection() }
         }
+    }
+}
 
-        if guardManager.settings.enabled {
-            Section {
-                DisclosureGroup("Guard log") {
-                    let lines = guardManager.logLines
-                    if lines.isEmpty {
-                        Text("Nothing yet.").font(.footnote).foregroundStyle(.secondary)
-                    } else {
-                        ForEach(Array(lines.suffix(40).enumerated()), id: \.offset) { _, line in
-                            Text(line).font(.system(.caption2, design: .monospaced))
-                        }
-                        Button("Copy log") { UIPasteboard.general.string = lines.joined(separator: "\n") }
-                        ShareLink(item: lines.joined(separator: "\n"), subject: Text("Detour guard log")) { Text("Share log") }
-                        Button("Clear log") { guardManager.clearLog() }
+/// The debug log: what the app and the Screen Time extensions did, newest last. Copy or share it to report a problem.
+struct DebugLogSection: View {
+    @Environment(GuardManager.self) private var guardManager
+    @State private var open = false
+
+    var body: some View {
+        Section {
+            DisclosureGroup("Debug log (\(guardManager.logLines.count))", isExpanded: $open) {
+                let lines = guardManager.logLines
+                if lines.isEmpty {
+                    Text("Nothing yet.").font(.footnote).foregroundStyle(.secondary)
+                } else {
+                    ForEach(Array(lines.suffix(80).enumerated()), id: \.offset) { _, line in
+                        Text(line).font(.system(.caption2, design: .monospaced))
                     }
                 }
+                Button("Refresh") { guardManager.reloadLog() }
+                Button("Copy all (\(lines.count) lines)") { UIPasteboard.general.string = lines.joined(separator: "\n") }
+                ShareLink(item: lines.joined(separator: "\n"), subject: Text("Detour debug log")) { Text("Share log") }
+                Button("Clear log", role: .destructive) { guardManager.clearLog() }
             }
+        }
+        .onAppear { guardManager.reloadLog() }
+        .onChange(of: open) { _, isOpen in
+            if isOpen { guardManager.reloadLog() }
         }
     }
 }

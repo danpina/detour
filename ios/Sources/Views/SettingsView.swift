@@ -86,6 +86,8 @@ struct SettingsView: View {
                 Section {
                     Link("Privacy", destination: URL(string: "https://danpina.github.io/detour/privacy.html")!)
                 }
+
+                DebugLogSection()
             }
             .navigationTitle("Settings")
             .confirmationDialog("Erase all progress on this device?", isPresented: $confirmErase, titleVisibility: .visible) {

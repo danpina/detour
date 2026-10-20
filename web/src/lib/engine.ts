@@ -13,6 +13,8 @@ export type EngineInput = {
   reviews: ReviewRow[];
   /** Card ids the user has already completed. */
   completed: Set<string>;
+  /** When each card was last shown (ms). Cards shown longest ago, or never, are preferred. */
+  lastShown?: Map<string, number>;
   interests: Interest[];
   /** 0..1 per interest, from completion vs skip history. Higher = shown first. */
   engagement?: Partial<Record<Interest, number>>;
@@ -23,6 +25,15 @@ export type EngineInput = {
 };
 
 export const DEFAULT_SET_SIZE = 5;
+
+/** Cards ordered by how long ago they were last shown (never shown first). Ties keep the original order. */
+export function leastRecentlyShown(cards: Card[], lastShown?: Map<string, number>): Card[] {
+  if (!lastShown || lastShown.size === 0) return cards;
+  return cards
+    .map((card, i) => ({ card, i, t: lastShown.get(card.id) ?? -Infinity }))
+    .sort((a, b) => (a.t === b.t ? a.i - b.i : a.t < b.t ? -1 : 1))
+    .map((x) => x.card);
+}
 
 /** Base mix is 2 reviews + 2 new + 1 drill; a big backlog nudges reviews toward ~50% of the set. */
 export function reviewTarget(dueCount: number, setSize: number): number {
@@ -93,7 +104,8 @@ export function buildSession(input: EngineInput): SessionItem[] {
 
   const newNeeded = setSize - chosenReviews.length - drillCount;
   const seen = new Set([...completed, ...reviews.map((r) => r.card_id)]);
-  let news = pickSet(cards, ordered, seen, newNeeded, { allowSeen: false, exclude: used });
+  const rotated = leastRecentlyShown(cards, input.lastShown);
+  let news = pickSet(rotated, ordered, seen, newNeeded, { allowSeen: false, exclude: used });
 
   const reviewItems: SessionItem[] = chosenReviews.map((r) => ({ kind: "review", ...r }));
   const newItems: SessionItem[] = news.map((card) => ({ kind: "new", card }));
@@ -110,7 +122,7 @@ export function buildSession(input: EngineInput): SessionItem[] {
   // Still short: repeat seen cards rather than showing a tiny set.
   if (short > 0) {
     const taken = new Set([...used, ...news.map((c) => c.id)]);
-    news = pickSet(cards, ordered, new Set(), short, { allowSeen: true, exclude: taken });
+    news = pickSet(rotated, ordered, new Set(), short, { allowSeen: true, exclude: taken });
     newItems.push(...news.map((card) => ({ kind: "new" as const, card })));
   }
 

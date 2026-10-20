@@ -73,6 +73,8 @@ final class AppModel {
     func updateSettings(_ change: (inout UserSettings) -> Void) {
         change(&data.settings)
         persist()
+        let s = data.settings
+        AppLog.log("settings: interests=\(s.interests.map { $0.rawValue }.joined(separator: ",")) setSize=\(s.setSize) drills=\(String(describing: s.drills)) reminder=\(s.reminderEnabled)")
     }
 
     func completeOnboarding(interests: [Interest]) {
@@ -102,9 +104,23 @@ final class AppModel {
             engagement: SessionEngine.engagement(events: events, cards: cards),
             now: now,
             setSize: data.settings.setSize,
-            drill: drillsEnabled ? drill : nil
+            drill: drillsEnabled ? drill : nil,
+            lastShown: lastShown
         )
-        return SessionEngine.build(input)
+        let items = SessionEngine.build(input)
+        let list = items.map { $0.key }.joined(separator: ", ")
+        AppLog.log("set built: size=\(data.settings.setSize) due=\(dueCount) completedCards=\(completedCardIds.count) reviewRows=\(data.reviews.count) shownBefore=\(lastShown.count) drills=\(drillsEnabled) items=[\(list)]")
+        return items
+    }
+
+    /// When each card was last shown, from the view events. Used so the same card does not keep coming back.
+    var lastShown: [String: Date] {
+        var out: [String: Date] = [:]
+        for e in data.events where e.kind == .view {
+            if let d = out[e.cardId], d >= e.at { continue }
+            out[e.cardId] = e.at
+        }
+        return out
     }
 
     /// Recall checks that are due right now.
@@ -116,10 +132,12 @@ final class AppModel {
 
     func viewed(_ item: SessionItem) {
         append(AppEvent(cardId: item.eventCardId, kind: .view, msSpent: 0, at: clock()))
+        AppLog.log("view \(item.key)")
     }
 
     func skipped(_ item: SessionItem, ms: Int) {
         append(AppEvent(cardId: item.eventCardId, kind: .skip, msSpent: ms, at: clock()))
+        AppLog.log("skip \(item.key) after \(ms) ms")
     }
 
     /// A card was finished (revealed, answered, read to the end).
@@ -146,6 +164,7 @@ final class AppModel {
         data.events.append(event)
         recordActivity(now: now)
         persist()
+        AppLog.log("complete \(item.key) correct=\(String(describing: correct)) ms=\(ms)")
     }
 
     func reported(cardId: String, reason: String) {
@@ -155,6 +174,7 @@ final class AppModel {
     func sessionFinished(cardsDone: Int, source: String = "free") {
         data.sessions.append(SessionRecord(startedAt: clock(), cardsDone: cardsDone, source: source))
         persist()
+        AppLog.log("set finished: cardsDone=\(cardsDone) source=\(source) totalSessions=\(data.sessions.count)")
     }
 
     func recordDrillRound(track: TrackId, results: [Bool]) -> (progress: SkillProgress, leveledUp: Bool) {
@@ -162,6 +182,7 @@ final class AppModel {
         let out = Skills.apply(current, results: results, now: clock())
         if let i = data.skills.firstIndex(where: { $0.track == track }) { data.skills[i] = out.progress } else { data.skills.append(out.progress) }
         persist()
+        AppLog.log("drill round: track=\(track.rawValue) results=\(results.map { $0 ? "1" : "0" }.joined()) level=\(out.progress.level) leveledUp=\(out.leveledUp)")
         return out
     }
 

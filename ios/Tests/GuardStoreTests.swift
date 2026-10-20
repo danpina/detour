@@ -74,9 +74,9 @@ final class GuardStoreTests: XCTestCase {
 
     func testLogKeepsTheLatestLines() {
         let store = makeStore()
-        for i in 0..<80 { store.log("line \(i)") }
-        XCTAssertEqual(store.logLines.count, 60)
-        XCTAssertTrue(store.logLines.last!.hasSuffix("line 79"))
+        for i in 0..<450 { store.log("line \(i)") }
+        XCTAssertEqual(store.logLines.count, 400)
+        XCTAssertTrue(store.logLines.last!.hasSuffix("line 449"))
         store.clearLog()
         XCTAssertTrue(store.logLines.isEmpty)
     }

@@ -2,6 +2,16 @@ import type { Interest } from "@detour/content";
 import { ALL_CARDS } from "./content";
 import { emptyProgress, applyResults, nextTrack, type DrillSpec, type SkillProgress, type TrackId } from "./drills";
 import { buildSession, engagementFrom, DEFAULT_SET_SIZE, type SessionItem } from "./engine";
+
+/** When each card was last shown, from the local view events. */
+export function lastShownFrom(events: { card_id: string; event: string; at: number }[]): Map<string, number> {
+  const out = new Map<string, number>();
+  for (const e of events) {
+    if (e.event !== "view") continue;
+    if ((out.get(e.card_id) ?? 0) < e.at) out.set(e.card_id, e.at);
+  }
+  return out;
+}
 import { applyReview, newReview, ratingFor } from "./fsrs";
 import { store } from "./db";
 import { ALL_CARDS as CARDS } from "./content";
@@ -23,6 +33,7 @@ export async function nextSet(interests: Interest[], sizeOverride?: number): Pro
     completed,
     interests,
     engagement: engagementFrom(events, ALL_CARDS),
+    lastShown: lastShownFrom(events),
     now: Date.now(),
     setSize,
     makeDrill: drillsOn ? () => drill : undefined,

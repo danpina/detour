@@ -122,3 +122,22 @@ describe("backlog and engagement", () => {
     expect(first.kind !== "drill" && first.card.interest).toBe("history");
   });
 });
+
+describe("not showing the same card again", () => {
+  it("prefers cards shown longest ago, so skipping a card does not bring it straight back", () => {
+    const interests: Interest[] = ["science"];
+    const first = buildSession({ ...base, interests, reviews: [], setSize: 2 });
+    expect(ids(first)).toEqual(["sci-0001", "sci-0002"]);
+    // Both were viewed (but not completed): the next set should not start with them again if others exist.
+    const more = [...pool, card("sci-0003"), card("sci-0004", "science", "estimate")];
+    const lastShown = new Map([["sci-0001", NOW - 1000], ["sci-0002", NOW - 500]]);
+    const next = buildSession({ ...base, cards: more, interests, reviews: [], setSize: 2, lastShown });
+    expect(ids(next)).toEqual(["sci-0003", "sci-0004"]);
+  });
+  it("falls back to the least recently shown when everything has been shown", () => {
+    const interests: Interest[] = ["science"];
+    const lastShown = new Map([["sci-0001", NOW - 5000], ["sci-0002", NOW - 1000]]);
+    const next = buildSession({ ...base, interests, reviews: [], setSize: 1, lastShown, completed: new Set(["sci-0001", "sci-0002"]) });
+    expect(ids(next)).toEqual(["sci-0001"]);
+  });
+});

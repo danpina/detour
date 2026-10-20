@@ -19,13 +19,15 @@ final class GuardManager {
         self.settings = store.settings
         self.authorized = AuthorizationCenter.shared.authorizationStatus == .approved
         if let saved = GuardShield.selection(from: store) { self.selection = saved }
+        self.logLines = store.logLines
     }
 
     var hasSelection: Bool {
         !selection.applicationTokens.isEmpty || !selection.categoryTokens.isEmpty || !selection.webDomainTokens.isEmpty
     }
 
-    var logLines: [String] { store.logLines }
+    /// The shared debug log. Kept as a stored property so the screen updates when it is cleared or reloaded.
+    private(set) var logLines: [String] = []
 
     // MARK: Turning it on and off
 
@@ -53,7 +55,14 @@ final class GuardManager {
     }
 
     func update(_ edit: (inout GuardSettings) -> Void) {
+        let before = settings
         change(edit)
+        store.log("guard settings: mode=\(settings.mode.rawValue) unlockMinutes=\(settings.unlockMinutes) (was \(before.mode.rawValue), \(before.unlockMinutes))")
+        // Make sure the shield matches the settings right away (it only goes on if no unlock window is running).
+        if settings.enabled && hasSelection && !store.isUnlocked() && !GuardShield.isShieldOn() {
+            GuardShield.apply(store, reason: "settings changed and the shield was off")
+        }
+        reloadLog()
     }
 
     /// Call when the picker closes.
@@ -78,6 +87,7 @@ final class GuardManager {
 
     /// Belt and braces: if the timer never fired, the shield goes back the next time Detour is opened.
     func refresh() {
+        reloadLog()
         settings = store.settings
         guard settings.enabled, hasSelection else { return }
         if store.isUnlocked() {
@@ -91,7 +101,13 @@ final class GuardManager {
         GuardShield.apply(store, reason: "opened with the shield off and no unlock running")
     }
 
-    func clearLog() { store.clearLog() }
+    func clearLog() {
+        store.clearLog()
+        logLines = []
+    }
+
+    /// Re-reads the log (the extensions write to it while the app is not running).
+    func reloadLog() { logLines = store.logLines }
 
     private func change(_ edit: (inout GuardSettings) -> Void) {
         var next = settings
