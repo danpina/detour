@@ -126,7 +126,7 @@ struct EndView: View {
                 .font(.title3)
                 .foregroundStyle(.white.opacity(0.7))
             if let unlockedMinutes {
-                Text("Your apps are open for (unlockedMinutes) minutes. Tap one to head back.")
+                Text("Your apps are open for \(unlockedMinutes) minutes. Tap one to head back.")
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.7))
                     .multilineTextAlignment(.center)
