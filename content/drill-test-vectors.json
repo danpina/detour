@@ -11,12 +11,12 @@
           "answer": 71
         },
         {
-          "prompt": "52 + 97",
-          "answer": 149
+          "prompt": "88 + 96",
+          "answer": 184
         },
         {
-          "prompt": "87 + 35",
-          "answer": 122
+          "prompt": "59 + 74",
+          "answer": 133
         }
       ]
     },
@@ -30,12 +30,12 @@
           "answer": 108
         },
         {
-          "prompt": "33 + 58",
-          "answer": 91
+          "prompt": "53 + 88",
+          "answer": 141
         },
         {
-          "prompt": "80 + 66",
-          "answer": 146
+          "prompt": "50 + 42",
+          "answer": 92
         }
       ]
     },
@@ -49,12 +49,12 @@
           "answer": 81
         },
         {
-          "prompt": "47 + 17",
-          "answer": 64
+          "prompt": "16 + 78",
+          "answer": 94
         },
         {
-          "prompt": "71 + 53",
-          "answer": 124
+          "prompt": "49 + 25",
+          "answer": 74
         }
       ]
     },
@@ -68,12 +68,12 @@
           "answer": 108
         },
         {
-          "prompt": "78 + 69",
-          "answer": 147
+          "prompt": "63 + 26",
+          "answer": 89
         },
         {
-          "prompt": "24 + 57",
-          "answer": 81
+          "prompt": "32 + 65",
+          "answer": 97
         }
       ]
     },
@@ -87,12 +87,12 @@
           "answer": 125
         },
         {
-          "prompt": "49 + 82",
-          "answer": 131
+          "prompt": "75 + 55",
+          "answer": 130
         },
         {
-          "prompt": "51 + 41",
-          "answer": 92
+          "prompt": "16 + 78",
+          "answer": 94
         }
       ]
     },
@@ -106,12 +106,12 @@
           "answer": 108
         },
         {
-          "prompt": "12 + 91",
-          "answer": 103
+          "prompt": "83 + 66",
+          "answer": 149
         },
         {
-          "prompt": "60 + 44",
-          "answer": 104
+          "prompt": "45 + 45",
+          "answer": 90
         }
       ]
     },
@@ -125,12 +125,12 @@
           "answer": 63
         },
         {
-          "prompt": "67 − 62",
-          "answer": 5
+          "prompt": "98 − 91",
+          "answer": 7
         },
         {
-          "prompt": "97 − 34",
-          "answer": 63
+          "prompt": "59 + 74",
+          "answer": 133
         }
       ]
     },
@@ -144,12 +144,12 @@
           "answer": 49
         },
         {
-          "prompt": "51 − 30",
-          "answer": 21
+          "prompt": "53 + 88",
+          "answer": 141
         },
         {
-          "prompt": "91 − 58",
-          "answer": 33
+          "prompt": "65 − 28",
+          "answer": 37
         }
       ]
     },
@@ -163,12 +163,12 @@
           "answer": 67
         },
         {
-          "prompt": "63 − 14",
-          "answer": 49
+          "prompt": "16 + 78",
+          "answer": 94
         },
         {
-          "prompt": "83 − 43",
-          "answer": 40
+          "prompt": "49 + 25",
+          "answer": 74
         }
       ]
     },
@@ -182,11 +182,11 @@
           "answer": 36
         },
         {
-          "prompt": "89 − 60",
-          "answer": 29
+          "prompt": "77 − 21",
+          "answer": 56
         },
         {
-          "prompt": "43 − 25",
+          "prompt": "50 − 32",
           "answer": 18
         }
       ]
@@ -201,12 +201,12 @@
           "answer": 62
         },
         {
-          "prompt": "64 − 51",
-          "answer": 13
+          "prompt": "75 + 55",
+          "answer": 130
         },
         {
-          "prompt": "66 − 28",
-          "answer": 38
+          "prompt": "16 + 78",
+          "answer": 94
         }
       ]
     },
@@ -220,18 +220,360 @@
           "answer": 75
         },
         {
-          "prompt": "33 − 27",
-          "answer": 6
+          "prompt": "83 + 66",
+          "answer": 149
         },
         {
-          "prompt": "74 − 33",
-          "answer": 41
+          "prompt": "45 + 45",
+          "answer": 90
         }
       ]
     },
     {
       "track": "mental-math",
       "level": 3,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "32 − 19",
+          "answer": 13
+        },
+        {
+          "prompt": "51 − 33",
+          "answer": 18
+        },
+        {
+          "prompt": "89 + 51",
+          "answer": 140
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 3,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "54 − 22",
+          "answer": 32
+        },
+        {
+          "prompt": "91 − 58",
+          "answer": 33
+        },
+        {
+          "prompt": "56 − 43",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 3,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "34 − 19",
+          "answer": 15
+        },
+        {
+          "prompt": "71 + 53",
+          "answer": 124
+        },
+        {
+          "prompt": "43 − 18",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 3,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "62 − 51",
+          "answer": 11
+        },
+        {
+          "prompt": "52 + 35",
+          "answer": 87
+        },
+        {
+          "prompt": "90 − 46",
+          "answer": 44
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 3,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "52 − 28",
+          "answer": 24
+        },
+        {
+          "prompt": "55 − 13",
+          "answer": 42
+        },
+        {
+          "prompt": "88 − 44",
+          "answer": 44
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 3,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "41 − 11",
+          "answer": 30
+        },
+        {
+          "prompt": "57 − 29",
+          "answer": 28
+        },
+        {
+          "prompt": "49 − 30",
+          "answer": 19
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 4,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "7 × 3",
+          "answer": 21
+        },
+        {
+          "prompt": "97 − 34",
+          "answer": 63
+        },
+        {
+          "prompt": "60 − 55",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 4,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "8 × 5",
+          "answer": 40
+        },
+        {
+          "prompt": "68 − 57",
+          "answer": 11
+        },
+        {
+          "prompt": "39 + 79",
+          "answer": 118
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 4,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "8 × 3",
+          "answer": 24
+        },
+        {
+          "prompt": "37 − 27",
+          "answer": 10
+        },
+        {
+          "prompt": "65 − 19",
+          "answer": 46
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 4,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "7 × 6",
+          "answer": 42
+        },
+        {
+          "prompt": "7 × 4",
+          "answer": 28
+        },
+        {
+          "prompt": "60 + 87",
+          "answer": 147
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 4,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "9 × 5",
+          "answer": 45
+        },
+        {
+          "prompt": "87 − 47",
+          "answer": 40
+        },
+        {
+          "prompt": "37 − 27",
+          "answer": 10
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 4,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "9 × 3",
+          "answer": 27
+        },
+        {
+          "prompt": "83 + 66",
+          "answer": 149
+        },
+        {
+          "prompt": "61 − 29",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 5,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "14 ÷ 7",
+          "answer": 2
+        },
+        {
+          "prompt": "9 × 9",
+          "answer": 81
+        },
+        {
+          "prompt": "81 − 39",
+          "answer": 42
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 5,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "28 ÷ 7",
+          "answer": 4
+        },
+        {
+          "prompt": "91 − 58",
+          "answer": 33
+        },
+        {
+          "prompt": "72 + 21",
+          "answer": 93
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 5,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "14 ÷ 7",
+          "answer": 2
+        },
+        {
+          "prompt": "71 + 53",
+          "answer": 124
+        },
+        {
+          "prompt": "31 + 59",
+          "answer": 90
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 5,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "30 ÷ 6",
+          "answer": 5
+        },
+        {
+          "prompt": "21 ÷ 7",
+          "answer": 3
+        },
+        {
+          "prompt": "4 × 7",
+          "answer": 28
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 5,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "36 ÷ 9",
+          "answer": 4
+        },
+        {
+          "prompt": "66 − 28",
+          "answer": 38
+        },
+        {
+          "prompt": "84 − 79",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 5,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "27 ÷ 9",
+          "answer": 3
+        },
+        {
+          "prompt": "94 − 60",
+          "answer": 34
+        },
+        {
+          "prompt": "42 + 33",
+          "answer": 75
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 6,
       "seed": 1,
       "problems": [
         {
@@ -239,18 +581,18 @@
           "answer": 670
         },
         {
-          "prompt": "569 + 97",
-          "answer": 666
+          "prompt": "81 ÷ 9",
+          "answer": 9
         },
         {
-          "prompt": "961 + 36",
-          "answer": 997
+          "prompt": "7 × 8",
+          "answer": 56
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 3,
+      "level": 6,
       "seed": 2,
       "problems": [
         {
@@ -258,18 +600,18 @@
           "answer": 793
         },
         {
-          "prompt": "354 + 58",
-          "answer": 412
+          "prompt": "6 × 9",
+          "answer": 54
         },
         {
-          "prompt": "879 + 66",
-          "answer": 945
+          "prompt": "20 ÷ 5",
+          "answer": 4
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 3,
+      "level": 6,
       "seed": 3,
       "problems": [
         {
@@ -277,18 +619,18 @@
           "answer": 756
         },
         {
-          "prompt": "506 + 18",
-          "answer": 524
+          "prompt": "3 × 8",
+          "answer": 24
         },
         {
-          "prompt": "779 + 53",
-          "answer": 832
+          "prompt": "6 × 4",
+          "answer": 24
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 3,
+      "level": 6,
       "seed": 42,
       "problems": [
         {
@@ -296,18 +638,18 @@
           "answer": 686
         },
         {
-          "prompt": "858 + 70",
-          "answer": 928
+          "prompt": "696 + 27",
+          "answer": 723
         },
         {
-          "prompt": "256 + 57",
-          "answer": 313
+          "prompt": "24 ÷ 4",
+          "answer": 6
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 3,
+      "level": 6,
       "seed": 12345,
       "problems": [
         {
@@ -315,18 +657,18 @@
           "answer": 1009
         },
         {
-          "prompt": "531 + 83",
-          "answer": 614
+          "prompt": "8 × 6",
+          "answer": 48
         },
         {
-          "prompt": "553 + 42",
-          "answer": 595
+          "prompt": "3 × 8",
+          "answer": 24
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 3,
+      "level": 6,
       "seed": 987654321,
       "problems": [
         {
@@ -334,18 +676,18 @@
           "answer": 969
         },
         {
-          "prompt": "114 + 91",
-          "answer": 205
+          "prompt": "74 − 33",
+          "answer": 41
         },
         {
-          "prompt": "660 + 44",
-          "answer": 704
+          "prompt": "5 × 4",
+          "answer": 20
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 4,
+      "level": 7,
       "seed": 1,
       "problems": [
         {
@@ -353,18 +695,18 @@
           "answer": 201
         },
         {
-          "prompt": "58 × 9",
-          "answer": 522
+          "prompt": "973 + 96",
+          "answer": 1069
         },
         {
-          "prompt": "97 × 4",
-          "answer": 388
+          "prompt": "42 ÷ 6",
+          "answer": 7
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 4,
+      "level": 7,
       "seed": 2,
       "problems": [
         {
@@ -372,18 +714,18 @@
           "answer": 380
         },
         {
-          "prompt": "37 × 6",
-          "answer": 222
+          "prompt": "54 ÷ 6",
+          "answer": 9
         },
         {
-          "prompt": "89 × 7",
-          "answer": 623
+          "prompt": "544 + 43",
+          "answer": 587
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 4,
+      "level": 7,
       "seed": 3,
       "problems": [
         {
@@ -391,18 +733,18 @@
           "answer": 225
         },
         {
-          "prompt": "52 × 3",
-          "answer": 156
+          "prompt": "16 ÷ 2",
+          "answer": 8
         },
         {
-          "prompt": "79 × 6",
-          "answer": 474
+          "prompt": "15 ÷ 5",
+          "answer": 3
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 4,
+      "level": 7,
       "seed": 42,
       "problems": [
         {
@@ -410,18 +752,18 @@
           "answer": 384
         },
         {
-          "prompt": "87 × 7",
-          "answer": 609
+          "prompt": "70 × 4",
+          "answer": 280
         },
         {
-          "prompt": "27 × 6",
-          "answer": 162
+          "prompt": "343 + 66",
+          "answer": 409
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 4,
+      "level": 7,
       "seed": 12345,
       "problems": [
         {
@@ -429,18 +771,18 @@
           "answer": 490
         },
         {
-          "prompt": "54 × 8",
-          "answer": 432
+          "prompt": "48 ÷ 8",
+          "answer": 6
         },
         {
-          "prompt": "56 × 5",
-          "answer": 280
+          "prompt": "16 ÷ 2",
+          "answer": 8
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 4,
+      "level": 7,
       "seed": 987654321,
       "problems": [
         {
@@ -448,18 +790,132 @@
           "answer": 285
         },
         {
-          "prompt": "13 × 9",
-          "answer": 117
+          "prompt": "9 × 7",
+          "answer": 63
         },
         {
-          "prompt": "67 × 5",
-          "answer": 335
+          "prompt": "25 ÷ 5",
+          "answer": 5
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 5,
+      "level": 8,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "77 ÷ 7",
+          "answer": 11
+        },
+        {
+          "prompt": "98 × 9",
+          "answer": 882
+        },
+        {
+          "prompt": "645 + 74",
+          "answer": 719
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 8,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "104 ÷ 8",
+          "answer": 13
+        },
+        {
+          "prompt": "579 + 88",
+          "answer": 667
+        },
+        {
+          "prompt": "55 × 5",
+          "answer": 275
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 8,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "88 ÷ 8",
+          "answer": 11
+        },
+        {
+          "prompt": "167 + 78",
+          "answer": 245
+        },
+        {
+          "prompt": "533 + 26",
+          "answer": 559
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 8,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "105 ÷ 7",
+          "answer": 15
+        },
+        {
+          "prompt": "84 ÷ 7",
+          "answer": 12
+        },
+        {
+          "prompt": "36 × 7",
+          "answer": 252
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 8,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "117 ÷ 9",
+          "answer": 13
+        },
+        {
+          "prompt": "828 + 56",
+          "answer": 884
+        },
+        {
+          "prompt": "166 + 78",
+          "answer": 244
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 8,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "108 ÷ 9",
+          "answer": 12
+        },
+        {
+          "prompt": "63 ÷ 9",
+          "answer": 7
+        },
+        {
+          "prompt": "488 + 46",
+          "answer": 534
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 9,
       "seed": 1,
       "problems": [
         {
@@ -467,18 +923,18 @@
           "answer": 132
         },
         {
-          "prompt": "98 × 11",
-          "answer": 1078
+          "prompt": "171 ÷ 9",
+          "answer": 19
         },
         {
-          "prompt": "32 × 25",
-          "answer": 800
+          "prompt": "65 × 8",
+          "answer": 520
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 5,
+      "level": 9,
       "seed": 2,
       "problems": [
         {
@@ -490,14 +946,14 @@
           "answer": 531
         },
         {
-          "prompt": "64 × 25",
-          "answer": 1600
+          "prompt": "84 ÷ 6",
+          "answer": 14
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 5,
+      "level": 9,
       "seed": 3,
       "problems": [
         {
@@ -505,18 +961,18 @@
           "answer": 165
         },
         {
-          "prompt": "18 × 9",
-          "answer": 162
+          "prompt": "18 × 8",
+          "answer": 144
         },
         {
-          "prompt": "52 × 25",
-          "answer": 1300
+          "prompt": "54 × 4",
+          "answer": 216
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 5,
+      "level": 9,
       "seed": 42,
       "problems": [
         {
@@ -524,18 +980,18 @@
           "answer": 561
         },
         {
-          "prompt": "68 × 25",
-          "answer": 1700
+          "prompt": "27 × 11",
+          "answer": 297
         },
         {
-          "prompt": "58 × 5",
-          "answer": 290
+          "prompt": "64 ÷ 4",
+          "answer": 16
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 5,
+      "level": 9,
       "seed": 12345,
       "problems": [
         {
@@ -543,18 +999,18 @@
           "answer": 900
         },
         {
-          "prompt": "83 × 9",
-          "answer": 747
+          "prompt": "83 × 6",
+          "answer": 498
         },
         {
-          "prompt": "42 × 11",
-          "answer": 462
+          "prompt": "18 × 8",
+          "answer": 144
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 5,
+      "level": 9,
       "seed": 987654321,
       "problems": [
         {
@@ -562,18 +1018,18 @@
           "answer": 500
         },
         {
-          "prompt": "92 × 5",
-          "answer": 460
+          "prompt": "913 + 66",
+          "answer": 979
         },
         {
-          "prompt": "45 × 11",
-          "answer": 495
+          "prompt": "50 × 5",
+          "answer": 250
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 6,
+      "level": 10,
       "seed": 1,
       "problems": [
         {
@@ -581,18 +1037,18 @@
           "answer": 20
         },
         {
-          "prompt": "25% of 1600",
-          "answer": 400
+          "prompt": "96 × 25",
+          "answer": 2400
         },
         {
-          "prompt": "50% of 120",
-          "answer": 60
+          "prompt": "119 ÷ 7",
+          "answer": 17
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 6,
+      "level": 10,
       "seed": 2,
       "problems": [
         {
@@ -600,18 +1056,18 @@
           "answer": 70
         },
         {
-          "prompt": "10% of 220",
-          "answer": 22
+          "prompt": "108 ÷ 6",
+          "answer": 18
         },
         {
-          "prompt": "50% of 260",
-          "answer": 130
+          "prompt": "43 × 9",
+          "answer": 387
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 6,
+      "level": 10,
       "seed": 3,
       "problems": [
         {
@@ -619,18 +1075,18 @@
           "answer": 15
         },
         {
-          "prompt": "25% of 160",
-          "answer": 40
+          "prompt": "51 ÷ 3",
+          "answer": 17
         },
         {
-          "prompt": "50% of 200",
-          "answer": 100
+          "prompt": "72 ÷ 6",
+          "answer": 12
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 6,
+      "level": 10,
       "seed": 42,
       "problems": [
         {
@@ -638,18 +1094,18 @@
           "answer": 190
         },
         {
-          "prompt": "50% of 280",
-          "answer": 140
+          "prompt": "50% of 80",
+          "answer": 40
         },
         {
-          "prompt": "10% of 220",
-          "answer": 22
+          "prompt": "66 × 9",
+          "answer": 594
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 6,
+      "level": 10,
       "seed": 12345,
       "problems": [
         {
@@ -657,8 +1113,65 @@
           "answer": 65
         },
         {
-          "prompt": "25% of 1320",
-          "answer": 330
+          "prompt": "120 ÷ 8",
+          "answer": 15
+        },
+        {
+          "prompt": "51 ÷ 3",
+          "answer": 17
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 10,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "50% of 70",
+          "answer": 35
+        },
+        {
+          "prompt": "92 × 7",
+          "answer": 644
+        },
+        {
+          "prompt": "84 ÷ 6",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 11,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "20% of 20",
+          "answer": 4
+        },
+        {
+          "prompt": "50% of 390",
+          "answer": 195
+        },
+        {
+          "prompt": "75 × 11",
+          "answer": 825
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 11,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "20% of 80",
+          "answer": 16
+        },
+        {
+          "prompt": "89 × 11",
+          "answer": 979
         },
         {
           "prompt": "25% of 600",
@@ -668,64 +1181,7 @@
     },
     {
       "track": "mental-math",
-      "level": 6,
-      "seed": 987654321,
-      "problems": [
-        {
-          "prompt": "50% of 70",
-          "answer": 35
-        },
-        {
-          "prompt": "10% of 370",
-          "answer": 37
-        },
-        {
-          "prompt": "25% of 640",
-          "answer": 160
-        }
-      ]
-    },
-    {
-      "track": "mental-math",
-      "level": 7,
-      "seed": 1,
-      "problems": [
-        {
-          "prompt": "20% of 20",
-          "answer": 4
-        },
-        {
-          "prompt": "20% of 240",
-          "answer": 48
-        },
-        {
-          "prompt": "30% of 80",
-          "answer": 24
-        }
-      ]
-    },
-    {
-      "track": "mental-math",
-      "level": 7,
-      "seed": 2,
-      "problems": [
-        {
-          "prompt": "20% of 80",
-          "answer": 16
-        },
-        {
-          "prompt": "15% of 140",
-          "answer": 21
-        },
-        {
-          "prompt": "30% of 160",
-          "answer": 48
-        }
-      ]
-    },
-    {
-      "track": "mental-math",
-      "level": 7,
+      "level": 11,
       "seed": 3,
       "problems": [
         {
@@ -733,18 +1189,18 @@
           "answer": 4
         },
         {
-          "prompt": "15% of 20",
-          "answer": 3
+          "prompt": "79 × 5",
+          "answer": 395
         },
         {
-          "prompt": "30% of 120",
-          "answer": 36
+          "prompt": "26 × 9",
+          "answer": 234
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 7,
+      "level": 11,
       "seed": 42,
       "problems": [
         {
@@ -752,18 +1208,18 @@
           "answer": 24
         },
         {
-          "prompt": "30% of 180",
-          "answer": 54
+          "prompt": "20% of 60",
+          "answer": 12
         },
         {
-          "prompt": "5% of 140",
-          "answer": 7
+          "prompt": "10% of 260",
+          "answer": 26
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 7,
+      "level": 11,
       "seed": 12345,
       "problems": [
         {
@@ -771,18 +1227,18 @@
           "answer": 24
         },
         {
-          "prompt": "15% of 200",
-          "answer": 30
+          "prompt": "52 × 25",
+          "answer": 1300
         },
         {
-          "prompt": "20% of 100",
-          "answer": 20
+          "prompt": "79 × 5",
+          "answer": 395
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 7,
+      "level": 11,
       "seed": 987654321,
       "problems": [
         {
@@ -790,18 +1246,18 @@
           "answer": 12
         },
         {
-          "prompt": "5% of 220",
-          "answer": 11
+          "prompt": "144 ÷ 9",
+          "answer": 16
         },
         {
-          "prompt": "20% of 100",
-          "answer": 20
+          "prompt": "46 × 9",
+          "answer": 414
         }
       ]
     },
     {
       "track": "mental-math",
-      "level": 8,
+      "level": 12,
       "seed": 1,
       "problems": [
         {
@@ -809,8 +1265,84 @@
           "answer": 891
         },
         {
-          "prompt": "88 × 92",
-          "answer": 8096
+          "prompt": "37 × 43",
+          "answer": 1591
+        },
+        {
+          "prompt": "15% of 240",
+          "answer": 36
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 12,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "48 × 52",
+          "answer": 2496
+        },
+        {
+          "prompt": "30% of 160",
+          "answer": 48
+        },
+        {
+          "prompt": "25% of 1280",
+          "answer": 320
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 12,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "28 × 32",
+          "answer": 896
+        },
+        {
+          "prompt": "52 × 25",
+          "answer": 1300
+        },
+        {
+          "prompt": "10% of 120",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 12,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "56 × 64",
+          "answer": 3584
+        },
+        {
+          "prompt": "5% of 140",
+          "answer": 7
+        },
+        {
+          "prompt": "25% of 1400",
+          "answer": 350
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 12,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "48 × 52",
+          "answer": 2496
+        },
+        {
+          "prompt": "49 × 51",
+          "answer": 2499
         },
         {
           "prompt": "78 × 82",
@@ -820,83 +1352,7 @@
     },
     {
       "track": "mental-math",
-      "level": 8,
-      "seed": 2,
-      "problems": [
-        {
-          "prompt": "48 × 52",
-          "answer": 2496
-        },
-        {
-          "prompt": "87 × 93",
-          "answer": 8091
-        },
-        {
-          "prompt": "45²",
-          "answer": 2025
-        }
-      ]
-    },
-    {
-      "track": "mental-math",
-      "level": 8,
-      "seed": 3,
-      "problems": [
-        {
-          "prompt": "28 × 32",
-          "answer": 896
-        },
-        {
-          "prompt": "75²",
-          "answer": 5625
-        },
-        {
-          "prompt": "55²",
-          "answer": 3025
-        }
-      ]
-    },
-    {
-      "track": "mental-math",
-      "level": 8,
-      "seed": 42,
-      "problems": [
-        {
-          "prompt": "56 × 64",
-          "answer": 3584
-        },
-        {
-          "prompt": "37 × 43",
-          "answer": 1591
-        },
-        {
-          "prompt": "65²",
-          "answer": 4225
-        }
-      ]
-    },
-    {
-      "track": "mental-math",
-      "level": 8,
-      "seed": 12345,
-      "problems": [
-        {
-          "prompt": "48 × 52",
-          "answer": 2496
-        },
-        {
-          "prompt": "58 × 62",
-          "answer": 3596
-        },
-        {
-          "prompt": "75²",
-          "answer": 5625
-        }
-      ]
-    },
-    {
-      "track": "mental-math",
-      "level": 8,
+      "level": 12,
       "seed": 987654321,
       "problems": [
         {
@@ -904,12 +1360,12 @@
           "answer": 899
         },
         {
-          "prompt": "68 × 72",
-          "answer": 4896
+          "prompt": "48 × 52",
+          "answer": 2496
         },
         {
-          "prompt": "45²",
-          "answer": 2025
+          "prompt": "10% of 230",
+          "answer": 23
         }
       ]
     },

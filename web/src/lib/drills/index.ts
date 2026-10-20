@@ -1,5 +1,5 @@
 import { ESTIMATION_LEVELS, ESTIMATION_MAX_LEVEL, generateEstimation, isCloseEnough, timesOff, estimationVerdict } from "./estimation";
-import { MENTAL_MATH_LEVELS, MENTAL_MATH_MAX_LEVEL, generateMentalMath, type Problem } from "./mentalMath";
+import { MENTAL_MATH_LEVELS, MENTAL_MATH_MAX_LEVEL, generateMentalMath, mentalMathLevelFor, type Problem } from "./mentalMath";
 import { makeRng } from "./rng";
 
 export type TrackId = "mental-math" | "estimation";
@@ -9,7 +9,7 @@ export type { Problem };
 export const TRACKS: Record<TrackId, { name: string; blurb: string; levels: readonly string[]; maxLevel: number; problems: number; timeLimitMs?: number }> = {
   "mental-math": {
     name: "Mental math",
-    blurb: "Quick sums and shortcuts",
+    blurb: "Sums, differences, times, division and shortcuts",
     levels: MENTAL_MATH_LEVELS,
     maxLevel: MENTAL_MATH_MAX_LEVEL,
     problems: 3,
@@ -29,11 +29,11 @@ export const TRACK_IDS = Object.keys(TRACKS) as TrackId[];
 /** The problems for one drill round. Deterministic for a given spec. */
 export function generateRound(spec: DrillSpec): Problem[] {
   const rng = makeRng(spec.seed);
-  const gen = spec.track === "mental-math" ? generateMentalMath : generateEstimation;
   const seen = new Set<string>();
   const out: Problem[] = [];
   for (let guard = 0; out.length < TRACKS[spec.track].problems && guard < 50; guard++) {
-    const p = gen(spec.level, rng);
+    // Mental-math rounds mix operations: the first problem is at the player's level, the rest from that level and below.
+    const p = spec.track === "mental-math" ? generateMentalMath(mentalMathLevelFor(spec.level, out.length, rng), rng) : generateEstimation(spec.level, rng);
     if (seen.has(p.prompt)) continue;
     seen.add(p.prompt);
     out.push(p);

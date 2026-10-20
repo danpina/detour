@@ -30,38 +30,66 @@ describe("mental math generators", () => {
     }
   });
 
-  it("level 1-3 answers match the prompt arithmetic", () => {
-    for (let seed = 1; seed <= 100; seed++) {
-      const [add] = generateRound({ track: "mental-math", level: 1, seed });
-      const [x, y] = add!.prompt.split(" + ").map(Number);
-      expect(add!.answer).toBe(x! + y!);
-      const [sub] = generateRound({ track: "mental-math", level: 2, seed });
-      const [s1, s2] = sub!.prompt.split(" − ").map(Number);
-      expect(sub!.answer).toBe(s1! - s2!);
-      expect(sub!.answer).toBeGreaterThan(0);
-    }
-  });
+  /** Evaluates a prompt such as "45 + 38", "84 ÷ 7", "15% of 80" or "35²", to check the generator's answer independently. */
+  const evaluate = (prompt: string): number => {
+    let m = /^(\d+) \+ (\d+)$/.exec(prompt);
+    if (m) return Number(m[1]) + Number(m[2]);
+    m = /^(\d+) − (\d+)$/.exec(prompt);
+    if (m) return Number(m[1]) - Number(m[2]);
+    m = /^(\d+) × (\d+)$/.exec(prompt);
+    if (m) return Number(m[1]) * Number(m[2]);
+    m = /^(\d+) ÷ (\d+)$/.exec(prompt);
+    if (m) return Number(m[1]) / Number(m[2]);
+    m = /^(\d+)% of (\d+)$/.exec(prompt);
+    if (m) return (Number(m[1]) * Number(m[2])) / 100;
+    m = /^(\d+)²$/.exec(prompt);
+    if (m) return Number(m[1]) ** 2;
+    throw new Error(`unrecognised prompt: ${prompt}`);
+  };
 
-  it("percent levels compute the percentage of the base", () => {
-    for (let seed = 1; seed <= 100; seed++) {
-      for (const level of [6, 7]) {
+  it("every answer matches the arithmetic in its prompt, at every level", () => {
+    for (let level = 1; level <= MENTAL_MATH_MAX_LEVEL; level++) {
+      for (let seed = 1; seed <= 200; seed++) {
         for (const p of generateRound({ track: "mental-math", level, seed })) {
-          const m = /^(\d+)% of (\d+)$/.exec(p.prompt)!;
-          expect(p.answer).toBeCloseTo((Number(m[1]) * Number(m[2])) / 100, 10);
+          expect(p.answer, p.prompt).toBeCloseTo(evaluate(p.prompt), 10);
         }
       }
     }
   });
 
-  it("level 8 squares and mirror products are right", () => {
+  it("level 1 is sums only and level 2 is differences only (the first problem of a round is at the player's level)", () => {
+    for (let seed = 1; seed <= 100; seed++) {
+      expect(generateRound({ track: "mental-math", level: 1, seed }).every((p) => p.prompt.includes(" + "))).toBe(true);
+      expect(generateRound({ track: "mental-math", level: 2, seed })[0]!.prompt).toContain(" − ");
+    }
+  });
+
+  it("covers sums, differences, multiplication and division across the levels", () => {
+    const ops = new Set<string>();
+    for (let level = 1; level <= MENTAL_MATH_MAX_LEVEL; level++) {
+      for (let seed = 1; seed <= 50; seed++) {
+        for (const p of generateRound({ track: "mental-math", level, seed })) {
+          for (const op of ["+", "−", "×", "÷", "%", "²"]) if (p.prompt.includes(op)) ops.add(op);
+        }
+      }
+    }
+    expect([...ops].sort()).toEqual(["%", "+", "²", "×", "÷", "−"].sort());
+  });
+
+  it("a round at a higher level mixes operations instead of repeating one kind", () => {
+    const kinds = new Set<string>();
+    for (let seed = 1; seed <= 60; seed++) {
+      for (const p of generateRound({ track: "mental-math", level: 8, seed })) kinds.add(p.prompt.replace(/\d+/g, "#"));
+    }
+    // Level 8 draws from levels 5-8: division and 3-digit sums and multiplications all show up.
+    expect(kinds.size).toBeGreaterThanOrEqual(3);
+  });
+
+  it("division problems divide exactly", () => {
     for (let seed = 1; seed <= 200; seed++) {
       for (const p of generateRound({ track: "mental-math", level: 8, seed })) {
-        const sq = /^(\d+)²$/.exec(p.prompt);
-        if (sq) expect(p.answer).toBe(Number(sq[1]) ** 2);
-        else {
-          const [a, b] = p.prompt.split(" × ").map(Number);
-          expect(p.answer).toBe(a! * b!);
-        }
+        const m = /^(\d+) ÷ (\d+)$/.exec(p.prompt);
+        if (m) expect(Number(m[1]) % Number(m[2])).toBe(0);
       }
     }
   });

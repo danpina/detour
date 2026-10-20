@@ -59,12 +59,16 @@ enum Drills {
     static let tracks: [TrackId: TrackInfo] = [
         .mentalMath: TrackInfo(
             name: "Mental math",
-            blurb: "Quick sums and shortcuts",
+            blurb: "Sums, differences, times, division and shortcuts",
             levels: [
                 "Add two 2-digit numbers",
                 "Subtract 2-digit numbers",
+                "Adding and subtracting, mixed",
+                "Times tables up to 9 × 9",
+                "Division: times tables backwards",
                 "Add 3-digit and 2-digit numbers",
                 "Multiply by a single digit",
+                "Divide by a single digit",
                 "Shortcut multipliers: 5, 9, 11, 25",
                 "Easy percentages: 10%, 25%, 50%",
                 "Percentages: 5%, 15%, 20%, 30%",
@@ -93,7 +97,13 @@ enum Drills {
         let wanted = info(spec.track).problems
         while out.count < wanted && guardCount < 50 {
             guardCount += 1
-            let p = spec.track == .mentalMath ? mentalMath(spec.level, &rng) : estimation(spec.level, &rng)
+            let p: DrillProblem
+            if spec.track == .mentalMath {
+                let lv = mentalMathLevel(spec.level, position: out.count, &rng)
+                p = mentalMath(lv, &rng)
+            } else {
+                p = estimation(spec.level, &rng)
+            }
             if seen.contains(p.prompt) { continue }
             seen.insert(p.prompt)
             out.append(p)
@@ -103,8 +113,16 @@ enum Drills {
 
     // MARK: Mental math
 
+    /// The level of the problem at `position` in a round. The first problem is at the player's level; the others are
+    /// drawn from that level and the three below it, so a round mixes sums, differences, times and division.
+    private static func mentalMathLevel(_ level: Int, position: Int, _ r: inout SeededRng) -> Int {
+        let top = min(max(level, 1), 12)
+        if position == 0 { return top }
+        return r.int(max(1, top - 3), top)
+    }
+
     private static func mentalMath(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), 8) {
+        switch min(max(level, 1), 12) {
         case 1:
             let a = r.int(11, 89), b = r.int(11, 98)
             return DrillProblem(prompt: "\(a) + \(b)", answer: Double(a + b), hint: "Add the tens, then the ones.")
@@ -112,12 +130,28 @@ enum Drills {
             let a = r.int(32, 99), b = r.int(11, a - 5)
             return DrillProblem(prompt: "\(a) − \(b)", answer: Double(a - b), hint: "Subtract the tens first, then the ones.")
         case 3:
+            if r.next() < 0.5 {
+                let a = r.int(11, 89), b = r.int(11, 98)
+                return DrillProblem(prompt: "\(a) + \(b)", answer: Double(a + b), hint: "Add the tens, then the ones.")
+            }
+            let a = r.int(32, 99), b = r.int(11, a - 5)
+            return DrillProblem(prompt: "\(a) − \(b)", answer: Double(a - b), hint: "Subtract the tens first, then the ones.")
+        case 4:
+            let a = r.int(3, 9), b = r.int(3, 9)
+            return DrillProblem(prompt: "\(a) × \(b)", answer: Double(a * b), hint: "Think \(a) × \(b - 1) = \(a * (b - 1)), then add one more \(a).")
+        case 5:
+            let b = r.int(2, 9), q = r.int(2, 9)
+            return DrillProblem(prompt: "\(b * q) ÷ \(b)", answer: Double(q), hint: "Ask: \(b) times what makes \(b * q)?")
+        case 6:
             let a = r.int(101, 989), b = r.int(12, 98)
             return DrillProblem(prompt: "\(a) + \(b)", answer: Double(a + b), hint: "Round one number to the next ten, add, then fix the difference.")
-        case 4:
+        case 7:
             let a = r.int(12, 99), b = r.int(3, 9)
             return DrillProblem(prompt: "\(a) × \(b)", answer: Double(a * b), hint: "Split it: \(a / 10 * 10) × \(b) plus \(a % 10) × \(b).")
-        case 5:
+        case 8:
+            let b = r.int(3, 9), q = r.int(11, 19)
+            return DrillProblem(prompt: "\(b * q) ÷ \(b)", answer: Double(q), hint: "Split it: \(b) × 10 = \(b * 10), and what is left is \(b * q - b * 10), which is \(b) × \(q - 10).")
+        case 9:
             let m = r.pick([5, 9, 11, 25])
             let a = m == 25 ? r.int(2, 24) * 4 : r.int(12, 99)
             let hints = [
@@ -127,7 +161,7 @@ enum Drills {
                 25: "× 25 is a quarter of × 100.",
             ]
             return DrillProblem(prompt: "\(a) × \(m)", answer: Double(a * m), hint: hints[m])
-        case 6:
+        case 10:
             let p = r.pick([10, 25, 50])
             let base = p == 25 ? r.int(2, 40) * 4 * 10 : r.int(2, 40) * 10
             let hints = [
@@ -136,7 +170,7 @@ enum Drills {
                 50: "50% is half.",
             ]
             return DrillProblem(prompt: "\(p)% of \(base)", answer: Double(base * p) / 100, hint: hints[p])
-        case 7:
+        case 11:
             let p = r.pick([5, 15, 20, 30])
             let base = r.int(1, 12) * 20
             let hints = [
