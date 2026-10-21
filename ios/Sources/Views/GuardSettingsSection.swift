@@ -16,7 +16,35 @@ struct GuardSettingsSection: View {
             return "Earn it: opening a guarded app shows a quick Detour first. Finish a set to unlock it for a while, or use your one skip a day."
         case .strict:
             return "Strict: a last check every time. Take a detour, or tap Open anyway. Open anyway only lasts a few minutes of use, then the check comes back. iOS can't tell when you leave an app, so it can't ask on every single open."
+        case .hardLock:
+            return "Hard lock: like Earn it, plus a daily allowance of use. Once it's used up, the guarded apps stay shielded until midnight."
         }
+    }
+
+    /// A time-of-day binding for one end of the active hours.
+    private func hoursBinding(start: Bool, current: ActiveHours) -> Binding<Date> {
+        Binding(
+            get: {
+                var c = DateComponents()
+                c.hour = start ? current.startHour : current.endHour
+                c.minute = start ? current.startMinute : current.endMinute
+                return Calendar.current.date(from: c) ?? Date()
+            },
+            set: { date in
+                let c = Calendar.current.dateComponents([.hour, .minute], from: date)
+                guardManager.update {
+                    var hours = $0.activeHours ?? ActiveHours()
+                    if start {
+                        hours.startHour = c.hour ?? 9
+                        hours.startMinute = c.minute ?? 0
+                    } else {
+                        hours.endHour = c.hour ?? 22
+                        hours.endMinute = c.minute ?? 0
+                    }
+                    $0.activeHours = hours
+                }
+            }
+        )
     }
 
     var body: some View {
@@ -49,10 +77,20 @@ struct GuardSettingsSection: View {
                     Text("Nudge me").tag(GuardMode.gentle)
                     Text("Earn it").tag(GuardMode.earnIt)
                     Text("Strict").tag(GuardMode.strict)
+                    Text("Hard lock").tag(GuardMode.hardLock)
                 }
                 Text(modeExplanation)
                     .font(.footnote)
                     .foregroundStyle(.secondary)
+
+                if guardManager.settings.mode == .hardLock {
+                    Picker("Daily allowance", selection: Binding(
+                        get: { guardManager.settings.dailyAllowance },
+                        set: { minutes in guardManager.update { $0.allowanceMinutes = minutes } }
+                    )) {
+                        ForEach([15, 30, 45, 60, 90, 120], id: \.self) { Text("\($0) min a day").tag($0) }
+                    }
+                }
 
                 if guardManager.settings.mode == .strict {
                     Picker("Open anyway allows", selection: Binding(
@@ -85,6 +123,18 @@ struct GuardSettingsSection: View {
                 Text("After a detour, Detour offers to open this app for you. Used when iOS doesn't say which app you came from.")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
+
+                Toggle("Only guard at certain times", isOn: Binding(
+                    get: { guardManager.settings.activeHours != nil },
+                    set: { on in guardManager.update { $0.activeHours = on ? ActiveHours() : nil } }
+                ))
+                if let hours = guardManager.settings.activeHours {
+                    DatePicker("From", selection: hoursBinding(start: true, current: hours), displayedComponents: .hourAndMinute)
+                    DatePicker("Until", selection: hoursBinding(start: false, current: hours), displayedComponents: .hourAndMinute)
+                    Text("Outside these hours your apps open as normal. If \"until\" is earlier than \"from\", the window runs past midnight.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
             }
 
             if let error = guardManager.lastError {
@@ -93,7 +143,7 @@ struct GuardSettingsSection: View {
         } header: {
             Text("Guarded apps")
         } footer: {
-            Text("Pick the apps you scroll too much. Opening one shows a quick Detour first. You choose the apps with Apple's picker, so Detour never learns which ones they are, and you can turn this off any time.")
+            Text("Pick the apps you scroll too much. Opening one shows a quick Detour first. You choose the apps with Apple's picker. Detour only notes, on your device, which app the shield was covering so it can take you back to it, and you can turn this off any time.")
         }
         .familyActivityPicker(isPresented: $picking, selection: $manager.selection)
         .onChange(of: picking) { _, isOpen in

@@ -47,6 +47,7 @@ final class GuardManager {
         change { $0.enabled = true }
         saveSelection()
         GuardShield.apply(store, reason: "guard turned on")
+        GuardShield.syncMonitors(store)
     }
 
     func disable() {
@@ -58,6 +59,10 @@ final class GuardManager {
         let before = settings
         change(edit)
         store.log("guard settings: mode=\(settings.mode.rawValue) unlockMinutes=\(settings.unlockMinutes) (was \(before.mode.rawValue), \(before.unlockMinutes))")
+        GuardShield.syncMonitors(store)
+        if settings.enabled && !store.isWithinActiveHours() && GuardShield.isShieldOn() {
+            GuardShield.removeShield(store, reason: "active hours now exclude this time")
+        }
         // Make sure the shield matches the settings right away (it only goes on if no unlock window is running).
         if settings.enabled && hasSelection && !store.isUnlocked() && !GuardShield.isShieldOn() {
             GuardShield.apply(store, reason: "settings changed and the shield was off")
@@ -68,6 +73,7 @@ final class GuardManager {
     /// Call when the picker closes.
     func saveSelection() {
         store.selectionData = GuardShield.encode(selection)
+        GuardShield.syncMonitors(store)
         if settings.enabled && !store.isUnlocked() { GuardShield.apply(store, reason: "apps changed") }
     }
 
@@ -96,6 +102,10 @@ final class GuardManager {
     @discardableResult
     func unlockAfterSet() -> Int? {
         guard settings.enabled, hasSelection else { return nil }
+        if store.isHardLocked() {
+            store.log("guarded set finished, but today's allowance is used up: no unlock")
+            return nil
+        }
         let window = settings.unlockWindow
         store.log("guarded set finished: unlocking for \(settings.unlockMinutes) min" + (window.usage == nil ? "" : " of use"))
         GuardShield.unlock(minutes: window.minutes, usageMinutes: window.usage, store: store)
@@ -107,6 +117,10 @@ final class GuardManager {
         reloadLog()
         settings = store.settings
         guard settings.enabled, hasSelection else { return }
+        if !store.isWithinActiveHours() {
+            if GuardShield.isShieldOn() { GuardShield.removeShield(store, reason: "opened outside active hours") }
+            return
+        }
         if store.isUnlocked() {
             store.log("opened: unlocked until " + ISO8601DateFormatter().string(from: store.unlockUntil ?? Date()))
             return

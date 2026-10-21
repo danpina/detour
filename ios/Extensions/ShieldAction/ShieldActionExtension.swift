@@ -34,6 +34,10 @@ final class ShieldActionExtension: ShieldActionDelegate {
             return .close
         case .secondaryButtonPressed:
             let settings = store.settings
+            if store.isHardLocked() {
+                store.log("secondary refused: today's allowance is used up")
+                return .close
+            }
             if settings.mode == .strict {
                 store.log("strict: open anyway for " + String(settings.strictUseMinutes) + " min of use")
                 GuardShield.unlock(minutes: 15, usageMinutes: settings.strictUseMinutes, store: store)

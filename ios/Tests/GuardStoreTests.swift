@@ -94,3 +94,77 @@ final class GuardStoreTests: XCTestCase {
         XCTAssertTrue(store.logLines.isEmpty)
     }
 }
+
+final class HardLockAndHoursTests: XCTestCase {
+    private var calendar: Calendar {
+        var c = Calendar(identifier: .gregorian)
+        c.timeZone = TimeZone(identifier: "UTC")!
+        return c
+    }
+
+    private func makeStore() -> GuardStore {
+        let name = "detour.tests.hardlock." + UUID().uuidString
+        let defaults = UserDefaults(suiteName: name)!
+        defaults.removePersistentDomain(forName: name)
+        return GuardStore(defaults: defaults, calendar: calendar)
+    }
+
+    private func date(_ y: Int, _ m: Int, _ d: Int, _ h: Int, _ min: Int = 0) -> Date {
+        calendar.date(from: DateComponents(year: y, month: m, day: d, hour: h, minute: min))!
+    }
+
+    func testDaytimeWindow() {
+        let hours = ActiveHours(startHour: 9, startMinute: 0, endHour: 22, endMinute: 0)
+        XCTAssertTrue(hours.contains(date(2026, 3, 2, 9), calendar: calendar))
+        XCTAssertTrue(hours.contains(date(2026, 3, 2, 21, 59), calendar: calendar))
+        XCTAssertFalse(hours.contains(date(2026, 3, 2, 22), calendar: calendar))
+        XCTAssertFalse(hours.contains(date(2026, 3, 2, 8, 59), calendar: calendar))
+    }
+
+    func testOvernightWindowRunsPastMidnight() {
+        let hours = ActiveHours(startHour: 22, startMinute: 0, endHour: 6, endMinute: 0)
+        XCTAssertTrue(hours.contains(date(2026, 3, 2, 23), calendar: calendar))
+        XCTAssertTrue(hours.contains(date(2026, 3, 3, 2), calendar: calendar))
+        XCTAssertFalse(hours.contains(date(2026, 3, 3, 6), calendar: calendar))
+        XCTAssertFalse(hours.contains(date(2026, 3, 3, 12), calendar: calendar))
+    }
+
+    func testEqualStartAndEndMeansAllDay() {
+        let hours = ActiveHours(startHour: 8, startMinute: 0, endHour: 8, endMinute: 0)
+        XCTAssertTrue(hours.contains(date(2026, 3, 2, 3), calendar: calendar))
+    }
+
+    func testStoreIsAlwaysActiveWithoutHoursAndRespectsThemWhenSet() {
+        let store = makeStore()
+        XCTAssertTrue(store.isWithinActiveHours(now: date(2026, 3, 2, 3)))
+        var settings = store.settings
+        settings.activeHours = ActiveHours(startHour: 9, startMinute: 0, endHour: 22, endMinute: 0)
+        store.settings = settings
+        XCTAssertFalse(store.isWithinActiveHours(now: date(2026, 3, 2, 3)))
+        XCTAssertTrue(store.isWithinActiveHours(now: date(2026, 3, 2, 12)))
+    }
+
+    func testHardLockLastsUntilMidnight() {
+        let store = makeStore()
+        let afternoon = date(2026, 3, 2, 15)
+        XCTAssertFalse(store.isHardLocked(now: afternoon))
+        store.markHardLocked(now: afternoon)
+        XCTAssertTrue(store.isHardLocked(now: date(2026, 3, 2, 23, 59)))
+        XCTAssertFalse(store.isHardLocked(now: date(2026, 3, 3, 0, 1)))
+        store.clearHardLock()
+        XCTAssertFalse(store.isHardLocked(now: afternoon))
+    }
+
+    func testNewSettingsFieldsSurviveARoundTripAndHaveDefaults() {
+        let store = makeStore()
+        XCTAssertEqual(store.settings.dailyAllowance, 30)
+        var settings = store.settings
+        settings.mode = .hardLock
+        settings.allowanceMinutes = 45
+        settings.activeHours = ActiveHours()
+        store.settings = settings
+        XCTAssertEqual(store.settings.mode, .hardLock)
+        XCTAssertEqual(store.settings.dailyAllowance, 45)
+        XCTAssertEqual(store.settings.activeHours, ActiveHours())
+    }
+}

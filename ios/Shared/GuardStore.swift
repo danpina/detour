@@ -1,7 +1,9 @@
 import Foundation
 
-/// How a guarded app behaves when opened. Hard lock (a daily allowance) comes later.
+/// How a guarded app behaves when opened.
 enum GuardMode: String, Codable, CaseIterable {
+    /// Like "earn it", plus a daily allowance of use. When it is used up, the guarded apps stay shielded for the rest of the day.
+    case hardLock
     /// "Continue" is always available on the shield.
     case gentle
     /// A finished set unlocks the apps for a while. One emergency skip a day.
@@ -19,13 +21,37 @@ struct GuardSettings: Codable, Equatable {
     var strictMinutes: Int? = nil
     /// The app to offer "Go back to" when the shield cannot tell which app it covered. Chosen once in Settings.
     var returnBundle: String? = nil
+    /// Guard only during these hours. nil means all day. Optional so older saved settings still load.
+    var activeHours: ActiveHours? = nil
+    /// Minutes of use per day in hard-lock mode. Optional so older saved settings still load.
+    var allowanceMinutes: Int? = nil
 
     var strictUseMinutes: Int { strictMinutes ?? 3 }
+    var dailyAllowance: Int { allowanceMinutes ?? 30 }
 
     /// The system will not schedule a wall-clock window shorter than 15 minutes. A shorter unlock is therefore measured in
     /// minutes of actual use: the window stays open for 15 minutes at most, and ends sooner once the apps were used that long.
     var unlockWindow: (minutes: Int, usage: Int?) {
         unlockMinutes < 15 ? (15, unlockMinutes) : (unlockMinutes, nil)
+    }
+}
+
+/// A daily window in which the guard is on, for example 09:00 to 22:00. The end may be earlier than the start (overnight).
+struct ActiveHours: Codable, Equatable {
+    var startHour = 9
+    var startMinute = 0
+    var endHour = 22
+    var endMinute = 0
+
+    /// Whether `date` falls inside the window. Start and end being equal means all day.
+    func contains(_ date: Date, calendar: Calendar = .current) -> Bool {
+        let c = calendar.dateComponents([.hour, .minute], from: date)
+        let now = (c.hour ?? 0) * 60 + (c.minute ?? 0)
+        let start = startHour * 60 + startMinute
+        let end = endHour * 60 + endMinute
+        if start == end { return true }
+        if start < end { return now >= start && now < end }
+        return now >= start || now < end
     }
 }
 
@@ -52,6 +78,9 @@ final class GuardStore {
         static let skipsDay = "guard.skipsDay"
         static let skipsUsed = "guard.skipsUsed"
         static let log = "guard.log"
+        static let lockedDay = "guard.lockedDay"
+        static let hoursSignature = "guard.hoursSignature"
+        static let allowanceSignature = "guard.allowanceSignature"
         static let shieldedBundle = "guard.shieldedBundle"
         static let shieldedName = "guard.shieldedName"
     }
@@ -124,6 +153,40 @@ final class GuardStore {
     func windowReallyEnded(now: Date = Date(), slack: TimeInterval = 60) -> Bool {
         guard let until = unlockUntil else { return true }
         return until <= now.addingTimeInterval(slack)
+    }
+
+    // MARK: Which daily monitors are running (so they are only restarted when their settings change)
+
+    var hoursSignature: String? {
+        get { defaults.string(forKey: Key.hoursSignature) }
+        set { defaults.set(newValue, forKey: Key.hoursSignature) }
+    }
+
+    var allowanceSignature: String? {
+        get { defaults.string(forKey: Key.allowanceSignature) }
+        set { defaults.set(newValue, forKey: Key.allowanceSignature) }
+    }
+
+    // MARK: Active hours
+
+    func isWithinActiveHours(now: Date = Date()) -> Bool {
+        guard let hours = settings.activeHours else { return true }
+        return hours.contains(now, calendar: calendar)
+    }
+
+    // MARK: Hard lock (daily allowance)
+
+    /// True once today's allowance has been used up. It ends by itself at midnight, because it is tied to the day.
+    func isHardLocked(now: Date = Date()) -> Bool {
+        defaults.string(forKey: Key.lockedDay) == dayKey(now)
+    }
+
+    func markHardLocked(now: Date = Date()) {
+        defaults.set(dayKey(now), forKey: Key.lockedDay)
+    }
+
+    func clearHardLock() {
+        defaults.removeObject(forKey: Key.lockedDay)
     }
 
     // MARK: Emergency skip

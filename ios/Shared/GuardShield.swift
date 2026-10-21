@@ -6,8 +6,12 @@ import UserNotifications
 
 /// Puts the shield on the chosen apps and takes it off again. Used by the app and by the extensions.
 enum GuardShield {
-    private static let unlockActivity = DeviceActivityName("detour.unlock")
+    /// The monitors the app starts. The monitor extension tells them apart by these names.
+    static let unlockActivity = DeviceActivityName("detour.unlock")
+    static let hoursActivity = DeviceActivityName("detour.hours")
+    static let allowanceActivity = DeviceActivityName("detour.allowance")
     private static let usageEvent = DeviceActivityEvent.Name("detour.usage")
+    private static let allowanceEvent = DeviceActivityEvent.Name("detour.allowanceUsed")
 
     static func selection(from store: GuardStore) -> FamilyActivitySelection? {
         guard let data = store.selectionData else { return nil }
@@ -21,6 +25,11 @@ enum GuardShield {
     /// Shields everything the user chose. Does nothing if no apps are chosen.
     static func apply(_ store: GuardStore = .shared, reason: String = "") {
         guard let selection = selection(from: store) else { return }
+        // Outside the chosen active hours the guard is off.
+        guard store.isWithinActiveHours() else {
+            removeShield(store, reason: "outside active hours (" + reason + ")")
+            return
+        }
         let managed = ManagedSettingsStore()
         if selection.applicationTokens.isEmpty { managed.shield.applications = nil } else { managed.shield.applications = selection.applicationTokens }
         if selection.categoryTokens.isEmpty {
@@ -39,17 +48,114 @@ enum GuardShield {
         return shield.applications != nil || shield.applicationCategories != nil || shield.webDomains != nil
     }
 
-    /// Removes the shield for good (guard turned off).
+    /// Takes the shield off without turning the guard off (for example outside active hours).
+    static func removeShield(_ store: GuardStore = .shared, reason: String) {
+        ManagedSettingsStore().clearAllSettings()
+        store.unlockUntil = nil
+        store.log("shield off (" + reason + ")")
+    }
+
+    /// Removes the shield and every monitor (guard turned off).
     static func removeAll(_ store: GuardStore = .shared) {
         ManagedSettingsStore().clearAllSettings()
-        DeviceActivityCenter().stopMonitoring([unlockActivity])
+        DeviceActivityCenter().stopMonitoring([unlockActivity, hoursActivity, allowanceActivity])
         store.unlockUntil = nil
+        store.clearHardLock()
+        store.hoursSignature = nil
+        store.allowanceSignature = nil
         store.log("shield off")
+    }
+
+    /// A small stable hash (Swift's own hashing changes between launches), used to notice when the chosen apps changed.
+    private static func stableHash(_ data: Data?) -> String {
+        guard let data else { return "none" }
+        var h: UInt64 = 1469598103934665603
+        for byte in data { h = (h ^ UInt64(byte)) &* 1099511628211 }
+        return String(h)
+    }
+
+    /// Starts or stops the daily monitors to match the settings: the active hours, and the daily allowance in hard-lock mode.
+    /// A monitor is only restarted when its settings changed. Restarting would reset the day's usage count, which would let
+    /// the allowance be reset by opening Settings.
+    static func syncMonitors(_ store: GuardStore = .shared) {
+        let settings = store.settings
+        let center = DeviceActivityCenter()
+        guard settings.enabled else {
+            center.stopMonitoring([hoursActivity, allowanceActivity])
+            store.hoursSignature = nil
+            store.allowanceSignature = nil
+            return
+        }
+
+        // Active hours
+        var hoursSignature: String?
+        if let hours = settings.activeHours, hours.startHour * 60 + hours.startMinute != hours.endHour * 60 + hours.endMinute {
+            hoursSignature = String(hours.startHour) + ":" + String(hours.startMinute) + "-" + String(hours.endHour) + ":" + String(hours.endMinute)
+        }
+        if hoursSignature != store.hoursSignature {
+            center.stopMonitoring([hoursActivity])
+            if let hours = settings.activeHours, hoursSignature != nil {
+                let schedule = DeviceActivitySchedule(
+                    intervalStart: DateComponents(hour: hours.startHour, minute: hours.startMinute),
+                    intervalEnd: DateComponents(hour: hours.endHour, minute: hours.endMinute),
+                    repeats: true
+                )
+                do {
+                    try center.startMonitoring(hoursActivity, during: schedule)
+                    store.log("active hours monitor started: " + (hoursSignature ?? ""))
+                } catch {
+                    store.log("could not start the active hours monitor: " + error.localizedDescription)
+                    hoursSignature = nil
+                }
+            } else {
+                store.log("active hours monitor stopped")
+            }
+            store.hoursSignature = hoursSignature
+        }
+
+        // Daily allowance (hard lock)
+        var allowanceSignature: String?
+        if settings.mode == .hardLock {
+            allowanceSignature = String(settings.dailyAllowance) + "|" + stableHash(store.selectionData)
+        }
+        if allowanceSignature != store.allowanceSignature {
+            center.stopMonitoring([allowanceActivity])
+            if allowanceSignature != nil, let chosen = selection(from: store) {
+                let allowance = settings.dailyAllowance
+                let schedule = DeviceActivitySchedule(
+                    intervalStart: DateComponents(hour: 0, minute: 0),
+                    intervalEnd: DateComponents(hour: 23, minute: 59),
+                    repeats: true
+                )
+                let event = DeviceActivityEvent(
+                    applications: chosen.applicationTokens,
+                    categories: chosen.categoryTokens,
+                    webDomains: chosen.webDomainTokens,
+                    threshold: DateComponents(hour: allowance / 60, minute: allowance % 60)
+                )
+                do {
+                    try center.startMonitoring(allowanceActivity, during: schedule, events: [allowanceEvent: event])
+                    store.log("daily allowance monitor started: " + String(allowance) + " min")
+                } catch {
+                    store.log("could not start the daily allowance monitor: " + error.localizedDescription)
+                    allowanceSignature = nil
+                }
+            } else {
+                store.log("daily allowance monitor stopped")
+                allowanceSignature = nil
+            }
+            store.allowanceSignature = allowanceSignature
+        }
     }
 
     /// Lifts the shield for a while, then asks the monitor extension to put it back.
     /// With `usageMinutes` the shield also comes back once the chosen apps have been used for that long, whichever happens first.
     static func unlock(minutes: Int, usageMinutes: Int? = nil, store: GuardStore = .shared, now: Date = Date()) {
+        // Hard lock: once today's allowance is used, nothing unlocks until tomorrow.
+        if store.isHardLocked(now: now) {
+            store.log("unlock refused: today's allowance is used up")
+            return
+        }
         // The system only allows schedules of 15 minutes or more.
         let length = max(minutes, 15)
         let managed = ManagedSettingsStore()
