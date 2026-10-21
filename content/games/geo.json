@@ -1,0 +1,986 @@
+{
+ "countries": [
+  {
+   "name": "United States",
+   "capital": "Washington, D.C.",
+   "flag": "🇺🇸",
+   "continent": "North America",
+   "level": 1,
+   "note": "Washington, D.C., not New York."
+  },
+  {
+   "name": "Canada",
+   "capital": "Ottawa",
+   "flag": "🇨🇦",
+   "continent": "North America",
+   "level": 1,
+   "note": "Ottawa, not Toronto."
+  },
+  {
+   "name": "Mexico",
+   "capital": "Mexico City",
+   "flag": "🇲🇽",
+   "continent": "North America",
+   "level": 1
+  },
+  {
+   "name": "Brazil",
+   "capital": "Brasília",
+   "flag": "🇧🇷",
+   "continent": "South America",
+   "level": 1,
+   "note": "Brasília, not Rio de Janeiro."
+  },
+  {
+   "name": "Argentina",
+   "capital": "Buenos Aires",
+   "flag": "🇦🇷",
+   "continent": "South America",
+   "level": 1
+  },
+  {
+   "name": "Chile",
+   "capital": "Santiago",
+   "flag": "🇨🇱",
+   "continent": "South America",
+   "level": 1
+  },
+  {
+   "name": "Peru",
+   "capital": "Lima",
+   "flag": "🇵🇪",
+   "continent": "South America",
+   "level": 1
+  },
+  {
+   "name": "Colombia",
+   "capital": "Bogotá",
+   "flag": "🇨🇴",
+   "continent": "South America",
+   "level": 1
+  },
+  {
+   "name": "Cuba",
+   "capital": "Havana",
+   "flag": "🇨🇺",
+   "continent": "North America",
+   "level": 1
+  },
+  {
+   "name": "United Kingdom",
+   "capital": "London",
+   "flag": "🇬🇧",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "France",
+   "capital": "Paris",
+   "flag": "🇫🇷",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Germany",
+   "capital": "Berlin",
+   "flag": "🇩🇪",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Italy",
+   "capital": "Rome",
+   "flag": "🇮🇹",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Spain",
+   "capital": "Madrid",
+   "flag": "🇪🇸",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Portugal",
+   "capital": "Lisbon",
+   "flag": "🇵🇹",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Ireland",
+   "capital": "Dublin",
+   "flag": "🇮🇪",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Netherlands",
+   "capital": "Amsterdam",
+   "flag": "🇳🇱",
+   "continent": "Europe",
+   "level": 1,
+   "note": "Amsterdam is the capital; the government sits in The Hague."
+  },
+  {
+   "name": "Belgium",
+   "capital": "Brussels",
+   "flag": "🇧🇪",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Switzerland",
+   "capital": "Bern",
+   "flag": "🇨🇭",
+   "continent": "Europe",
+   "level": 1,
+   "note": "Bern, not Zurich or Geneva."
+  },
+  {
+   "name": "Austria",
+   "capital": "Vienna",
+   "flag": "🇦🇹",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Sweden",
+   "capital": "Stockholm",
+   "flag": "🇸🇪",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Norway",
+   "capital": "Oslo",
+   "flag": "🇳🇴",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Denmark",
+   "capital": "Copenhagen",
+   "flag": "🇩🇰",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Finland",
+   "capital": "Helsinki",
+   "flag": "🇫🇮",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Poland",
+   "capital": "Warsaw",
+   "flag": "🇵🇱",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Greece",
+   "capital": "Athens",
+   "flag": "🇬🇷",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Russia",
+   "capital": "Moscow",
+   "flag": "🇷🇺",
+   "continent": "Europe",
+   "level": 1
+  },
+  {
+   "name": "Turkey",
+   "capital": "Ankara",
+   "flag": "🇹🇷",
+   "continent": "Asia",
+   "level": 1,
+   "note": "Ankara, not Istanbul."
+  },
+  {
+   "name": "Egypt",
+   "capital": "Cairo",
+   "flag": "🇪🇬",
+   "continent": "Africa",
+   "level": 1
+  },
+  {
+   "name": "Morocco",
+   "capital": "Rabat",
+   "flag": "🇲🇦",
+   "continent": "Africa",
+   "level": 1,
+   "note": "Rabat, not Casablanca."
+  },
+  {
+   "name": "Nigeria",
+   "capital": "Abuja",
+   "flag": "🇳🇬",
+   "continent": "Africa",
+   "level": 1,
+   "note": "Abuja, not Lagos."
+  },
+  {
+   "name": "Kenya",
+   "capital": "Nairobi",
+   "flag": "🇰🇪",
+   "continent": "Africa",
+   "level": 1
+  },
+  {
+   "name": "China",
+   "capital": "Beijing",
+   "flag": "🇨🇳",
+   "continent": "Asia",
+   "level": 1
+  },
+  {
+   "name": "Japan",
+   "capital": "Tokyo",
+   "flag": "🇯🇵",
+   "continent": "Asia",
+   "level": 1
+  },
+  {
+   "name": "South Korea",
+   "capital": "Seoul",
+   "flag": "🇰🇷",
+   "continent": "Asia",
+   "level": 1
+  },
+  {
+   "name": "India",
+   "capital": "New Delhi",
+   "flag": "🇮🇳",
+   "continent": "Asia",
+   "level": 1,
+   "note": "New Delhi, not Mumbai."
+  },
+  {
+   "name": "Thailand",
+   "capital": "Bangkok",
+   "flag": "🇹🇭",
+   "continent": "Asia",
+   "level": 1
+  },
+  {
+   "name": "Saudi Arabia",
+   "capital": "Riyadh",
+   "flag": "🇸🇦",
+   "continent": "Asia",
+   "level": 1
+  },
+  {
+   "name": "Australia",
+   "capital": "Canberra",
+   "flag": "🇦🇺",
+   "continent": "Oceania",
+   "level": 1,
+   "note": "Canberra, not Sydney."
+  },
+  {
+   "name": "New Zealand",
+   "capital": "Wellington",
+   "flag": "🇳🇿",
+   "continent": "Oceania",
+   "level": 1,
+   "note": "Wellington, not Auckland."
+  },
+  {
+   "name": "Venezuela",
+   "capital": "Caracas",
+   "flag": "🇻🇪",
+   "continent": "South America",
+   "level": 2
+  },
+  {
+   "name": "Ecuador",
+   "capital": "Quito",
+   "flag": "🇪🇨",
+   "continent": "South America",
+   "level": 2
+  },
+  {
+   "name": "Uruguay",
+   "capital": "Montevideo",
+   "flag": "🇺🇾",
+   "continent": "South America",
+   "level": 2
+  },
+  {
+   "name": "Paraguay",
+   "capital": "Asunción",
+   "flag": "🇵🇾",
+   "continent": "South America",
+   "level": 2
+  },
+  {
+   "name": "Jamaica",
+   "capital": "Kingston",
+   "flag": "🇯🇲",
+   "continent": "North America",
+   "level": 2
+  },
+  {
+   "name": "Costa Rica",
+   "capital": "San José",
+   "flag": "🇨🇷",
+   "continent": "North America",
+   "level": 2
+  },
+  {
+   "name": "Panama",
+   "capital": "Panama City",
+   "flag": "🇵🇦",
+   "continent": "North America",
+   "level": 2
+  },
+  {
+   "name": "Czechia",
+   "capital": "Prague",
+   "flag": "🇨🇿",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Hungary",
+   "capital": "Budapest",
+   "flag": "🇭🇺",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Romania",
+   "capital": "Bucharest",
+   "flag": "🇷🇴",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Ukraine",
+   "capital": "Kyiv",
+   "flag": "🇺🇦",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Croatia",
+   "capital": "Zagreb",
+   "flag": "🇭🇷",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Serbia",
+   "capital": "Belgrade",
+   "flag": "🇷🇸",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Bulgaria",
+   "capital": "Sofia",
+   "flag": "🇧🇬",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Iceland",
+   "capital": "Reykjavík",
+   "flag": "🇮🇸",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Slovakia",
+   "capital": "Bratislava",
+   "flag": "🇸🇰",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Slovenia",
+   "capital": "Ljubljana",
+   "flag": "🇸🇮",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Lithuania",
+   "capital": "Vilnius",
+   "flag": "🇱🇹",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Latvia",
+   "capital": "Riga",
+   "flag": "🇱🇻",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Estonia",
+   "capital": "Tallinn",
+   "flag": "🇪🇪",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Belarus",
+   "capital": "Minsk",
+   "flag": "🇧🇾",
+   "continent": "Europe",
+   "level": 2
+  },
+  {
+   "name": "Ethiopia",
+   "capital": "Addis Ababa",
+   "flag": "🇪🇹",
+   "continent": "Africa",
+   "level": 2
+  },
+  {
+   "name": "Ghana",
+   "capital": "Accra",
+   "flag": "🇬🇭",
+   "continent": "Africa",
+   "level": 2
+  },
+  {
+   "name": "Senegal",
+   "capital": "Dakar",
+   "flag": "🇸🇳",
+   "continent": "Africa",
+   "level": 2
+  },
+  {
+   "name": "Algeria",
+   "capital": "Algiers",
+   "flag": "🇩🇿",
+   "continent": "Africa",
+   "level": 2
+  },
+  {
+   "name": "Tunisia",
+   "capital": "Tunis",
+   "flag": "🇹🇳",
+   "continent": "Africa",
+   "level": 2
+  },
+  {
+   "name": "Tanzania",
+   "capital": "Dodoma",
+   "flag": "🇹🇿",
+   "continent": "Africa",
+   "level": 2,
+   "note": "Dodoma, not Dar es Salaam."
+  },
+  {
+   "name": "Uganda",
+   "capital": "Kampala",
+   "flag": "🇺🇬",
+   "continent": "Africa",
+   "level": 2
+  },
+  {
+   "name": "Zimbabwe",
+   "capital": "Harare",
+   "flag": "🇿🇼",
+   "continent": "Africa",
+   "level": 2
+  },
+  {
+   "name": "Angola",
+   "capital": "Luanda",
+   "flag": "🇦🇴",
+   "continent": "Africa",
+   "level": 2
+  },
+  {
+   "name": "DR Congo",
+   "capital": "Kinshasa",
+   "flag": "🇨🇩",
+   "continent": "Africa",
+   "level": 2
+  },
+  {
+   "name": "Zambia",
+   "capital": "Lusaka",
+   "flag": "🇿🇲",
+   "continent": "Africa",
+   "level": 2
+  },
+  {
+   "name": "Vietnam",
+   "capital": "Hanoi",
+   "flag": "🇻🇳",
+   "continent": "Asia",
+   "level": 2,
+   "note": "Hanoi, not Ho Chi Minh City."
+  },
+  {
+   "name": "Philippines",
+   "capital": "Manila",
+   "flag": "🇵🇭",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Malaysia",
+   "capital": "Kuala Lumpur",
+   "flag": "🇲🇾",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Pakistan",
+   "capital": "Islamabad",
+   "flag": "🇵🇰",
+   "continent": "Asia",
+   "level": 2,
+   "note": "Islamabad, not Karachi."
+  },
+  {
+   "name": "Bangladesh",
+   "capital": "Dhaka",
+   "flag": "🇧🇩",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Iran",
+   "capital": "Tehran",
+   "flag": "🇮🇷",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Iraq",
+   "capital": "Baghdad",
+   "flag": "🇮🇶",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Afghanistan",
+   "capital": "Kabul",
+   "flag": "🇦🇫",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Nepal",
+   "capital": "Kathmandu",
+   "flag": "🇳🇵",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Jordan",
+   "capital": "Amman",
+   "flag": "🇯🇴",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Lebanon",
+   "capital": "Beirut",
+   "flag": "🇱🇧",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "United Arab Emirates",
+   "capital": "Abu Dhabi",
+   "flag": "🇦🇪",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Qatar",
+   "capital": "Doha",
+   "flag": "🇶🇦",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Kazakhstan",
+   "capital": "Astana",
+   "flag": "🇰🇿",
+   "continent": "Asia",
+   "level": 2,
+   "note": "Astana, not Almaty."
+  },
+  {
+   "name": "Mongolia",
+   "capital": "Ulaanbaatar",
+   "flag": "🇲🇳",
+   "continent": "Asia",
+   "level": 2
+  },
+  {
+   "name": "Papua New Guinea",
+   "capital": "Port Moresby",
+   "flag": "🇵🇬",
+   "continent": "Oceania",
+   "level": 2
+  },
+  {
+   "name": "Fiji",
+   "capital": "Suva",
+   "flag": "🇫🇯",
+   "continent": "Oceania",
+   "level": 2
+  },
+  {
+   "name": "Guatemala",
+   "capital": "Guatemala City",
+   "flag": "🇬🇹",
+   "continent": "North America",
+   "level": 3
+  },
+  {
+   "name": "Honduras",
+   "capital": "Tegucigalpa",
+   "flag": "🇭🇳",
+   "continent": "North America",
+   "level": 3
+  },
+  {
+   "name": "El Salvador",
+   "capital": "San Salvador",
+   "flag": "🇸🇻",
+   "continent": "North America",
+   "level": 3
+  },
+  {
+   "name": "Nicaragua",
+   "capital": "Managua",
+   "flag": "🇳🇮",
+   "continent": "North America",
+   "level": 3
+  },
+  {
+   "name": "Dominican Republic",
+   "capital": "Santo Domingo",
+   "flag": "🇩🇴",
+   "continent": "North America",
+   "level": 3
+  },
+  {
+   "name": "Haiti",
+   "capital": "Port-au-Prince",
+   "flag": "🇭🇹",
+   "continent": "North America",
+   "level": 3
+  },
+  {
+   "name": "Bahamas",
+   "capital": "Nassau",
+   "flag": "🇧🇸",
+   "continent": "North America",
+   "level": 3
+  },
+  {
+   "name": "Trinidad and Tobago",
+   "capital": "Port of Spain",
+   "flag": "🇹🇹",
+   "continent": "North America",
+   "level": 3
+  },
+  {
+   "name": "Guyana",
+   "capital": "Georgetown",
+   "flag": "🇬🇾",
+   "continent": "South America",
+   "level": 3
+  },
+  {
+   "name": "Suriname",
+   "capital": "Paramaribo",
+   "flag": "🇸🇷",
+   "continent": "South America",
+   "level": 3
+  },
+  {
+   "name": "Albania",
+   "capital": "Tirana",
+   "flag": "🇦🇱",
+   "continent": "Europe",
+   "level": 3
+  },
+  {
+   "name": "North Macedonia",
+   "capital": "Skopje",
+   "flag": "🇲🇰",
+   "continent": "Europe",
+   "level": 3
+  },
+  {
+   "name": "Bosnia and Herzegovina",
+   "capital": "Sarajevo",
+   "flag": "🇧🇦",
+   "continent": "Europe",
+   "level": 3
+  },
+  {
+   "name": "Montenegro",
+   "capital": "Podgorica",
+   "flag": "🇲🇪",
+   "continent": "Europe",
+   "level": 3
+  },
+  {
+   "name": "Moldova",
+   "capital": "Chișinău",
+   "flag": "🇲🇩",
+   "continent": "Europe",
+   "level": 3
+  },
+  {
+   "name": "Malta",
+   "capital": "Valletta",
+   "flag": "🇲🇹",
+   "continent": "Europe",
+   "level": 3
+  },
+  {
+   "name": "Mozambique",
+   "capital": "Maputo",
+   "flag": "🇲🇿",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Malawi",
+   "capital": "Lilongwe",
+   "flag": "🇲🇼",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Namibia",
+   "capital": "Windhoek",
+   "flag": "🇳🇦",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Botswana",
+   "capital": "Gaborone",
+   "flag": "🇧🇼",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Madagascar",
+   "capital": "Antananarivo",
+   "flag": "🇲🇬",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Mali",
+   "capital": "Bamako",
+   "flag": "🇲🇱",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Niger",
+   "capital": "Niamey",
+   "flag": "🇳🇪",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Chad",
+   "capital": "N'Djamena",
+   "flag": "🇹🇩",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Sudan",
+   "capital": "Khartoum",
+   "flag": "🇸🇩",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Libya",
+   "capital": "Tripoli",
+   "flag": "🇱🇾",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Cameroon",
+   "capital": "Yaoundé",
+   "flag": "🇨🇲",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Gabon",
+   "capital": "Libreville",
+   "flag": "🇬🇦",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Rwanda",
+   "capital": "Kigali",
+   "flag": "🇷🇼",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Burkina Faso",
+   "capital": "Ouagadougou",
+   "flag": "🇧🇫",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Somalia",
+   "capital": "Mogadishu",
+   "flag": "🇸🇴",
+   "continent": "Africa",
+   "level": 3
+  },
+  {
+   "name": "Laos",
+   "capital": "Vientiane",
+   "flag": "🇱🇦",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Cambodia",
+   "capital": "Phnom Penh",
+   "flag": "🇰🇭",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Myanmar",
+   "capital": "Naypyidaw",
+   "flag": "🇲🇲",
+   "continent": "Asia",
+   "level": 3,
+   "note": "Naypyidaw, not Yangon."
+  },
+  {
+   "name": "Bhutan",
+   "capital": "Thimphu",
+   "flag": "🇧🇹",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Uzbekistan",
+   "capital": "Tashkent",
+   "flag": "🇺🇿",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Kyrgyzstan",
+   "capital": "Bishkek",
+   "flag": "🇰🇬",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Turkmenistan",
+   "capital": "Ashgabat",
+   "flag": "🇹🇲",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Armenia",
+   "capital": "Yerevan",
+   "flag": "🇦🇲",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Azerbaijan",
+   "capital": "Baku",
+   "flag": "🇦🇿",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Georgia",
+   "capital": "Tbilisi",
+   "flag": "🇬🇪",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Kuwait",
+   "capital": "Kuwait City",
+   "flag": "🇰🇼",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Oman",
+   "capital": "Muscat",
+   "flag": "🇴🇲",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Syria",
+   "capital": "Damascus",
+   "flag": "🇸🇾",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Brunei",
+   "capital": "Bandar Seri Begawan",
+   "flag": "🇧🇳",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Timor-Leste",
+   "capital": "Dili",
+   "flag": "🇹🇱",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Maldives",
+   "capital": "Malé",
+   "flag": "🇲🇻",
+   "continent": "Asia",
+   "level": 3
+  },
+  {
+   "name": "Samoa",
+   "capital": "Apia",
+   "flag": "🇼🇸",
+   "continent": "Oceania",
+   "level": 3
+  },
+  {
+   "name": "Vanuatu",
+   "capital": "Port Vila",
+   "flag": "🇻🇺",
+   "continent": "Oceania",
+   "level": 3
+  }
+ ]
+}

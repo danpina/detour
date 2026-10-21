@@ -1,0 +1,2192 @@
+{
+ "puzzles": [
+  {
+   "id": "w-apple",
+   "scramble": "LEPAP",
+   "answer": "APPLE",
+   "accept": [
+    "APPLE"
+   ],
+   "clue": "Newton's famous falling fruit, if the story is true.",
+   "level": 1
+  },
+  {
+   "id": "w-bread",
+   "scramble": "DBRAE",
+   "answer": "BREAD",
+   "accept": [
+    "BARED",
+    "BEARD",
+    "BREAD"
+   ],
+   "clue": "Baked from flour and yeast. A sandwich needs two slices.",
+   "level": 1
+  },
+  {
+   "id": "w-beard",
+   "scramble": "DRBEA",
+   "answer": "BEARD",
+   "accept": [
+    "BARED",
+    "BEARD",
+    "BREAD"
+   ],
+   "clue": "Hair that grows on a chin.",
+   "level": 1
+  },
+  {
+   "id": "w-bared",
+   "scramble": "BERDA",
+   "answer": "BARED",
+   "accept": [
+    "BARED",
+    "BEARD",
+    "BREAD"
+   ],
+   "clue": "Uncovered, with nothing hiding it.",
+   "level": 1
+  },
+  {
+   "id": "w-chair",
+   "scramble": "ACRIH",
+   "answer": "CHAIR",
+   "accept": [
+    "CHAIR"
+   ],
+   "clue": "You sit on it, and it has a back.",
+   "level": 1
+  },
+  {
+   "id": "w-dream",
+   "scramble": "RDMEA",
+   "answer": "DREAM",
+   "accept": [
+    "ARMED",
+    "DREAM"
+   ],
+   "clue": "What your brain stages while you sleep.",
+   "level": 1
+  },
+  {
+   "id": "w-armed",
+   "scramble": "RMADE",
+   "answer": "ARMED",
+   "accept": [
+    "ARMED",
+    "DREAM"
+   ],
+   "clue": "Carrying a weapon.",
+   "level": 1
+  },
+  {
+   "id": "w-eagle",
+   "scramble": "EGLAE",
+   "answer": "EAGLE",
+   "accept": [
+    "EAGLE"
+   ],
+   "clue": "A bird of prey with famously sharp eyesight.",
+   "level": 1
+  },
+  {
+   "id": "w-flame",
+   "scramble": "LAEFM",
+   "answer": "FLAME",
+   "accept": [
+    "FLAME"
+   ],
+   "clue": "The glowing, dancing part of a fire.",
+   "level": 1
+  },
+  {
+   "id": "w-grape",
+   "scramble": "GRPAE",
+   "answer": "GRAPE",
+   "accept": [
+    "GRAPE",
+    "PAGER"
+   ],
+   "clue": "Dry one in the sun and you get a raisin.",
+   "level": 1
+  },
+  {
+   "id": "w-pager",
+   "scramble": "REAPG",
+   "answer": "PAGER",
+   "accept": [
+    "GRAPE",
+    "PAGER"
+   ],
+   "clue": "A little gadget that beeped before mobile phones.",
+   "level": 1
+  },
+  {
+   "id": "w-heart",
+   "scramble": "THERA",
+   "answer": "HEART",
+   "accept": [
+    "EARTH",
+    "HATER",
+    "HEART"
+   ],
+   "clue": "A muscle that beats about 100,000 times a day.",
+   "level": 1
+  },
+  {
+   "id": "w-earth",
+   "scramble": "HERAT",
+   "answer": "EARTH",
+   "accept": [
+    "EARTH",
+    "HATER",
+    "HEART"
+   ],
+   "clue": "The one planet not named after a god, and our home.",
+   "level": 1
+  },
+  {
+   "id": "w-hater",
+   "scramble": "RHETA",
+   "answer": "HATER",
+   "accept": [
+    "EARTH",
+    "HATER",
+    "HEART"
+   ],
+   "clue": "Someone who really dislikes something.",
+   "level": 1
+  },
+  {
+   "id": "w-juice",
+   "scramble": "CJEUI",
+   "answer": "JUICE",
+   "accept": [
+    "JUICE"
+   ],
+   "clue": "What you squeeze out of an orange.",
+   "level": 1
+  },
+  {
+   "id": "w-knife",
+   "scramble": "NFEIK",
+   "answer": "KNIFE",
+   "accept": [
+    "KNIFE"
+   ],
+   "clue": "Its first letter is silent.",
+   "level": 1
+  },
+  {
+   "id": "w-lemon",
+   "scramble": "EONML",
+   "answer": "LEMON",
+   "accept": [
+    "LEMON",
+    "MELON"
+   ],
+   "clue": "A sour yellow citrus fruit.",
+   "level": 1
+  },
+  {
+   "id": "w-melon",
+   "scramble": "LOENM",
+   "answer": "MELON",
+   "accept": [
+    "LEMON",
+    "MELON"
+   ],
+   "clue": "A big, juicy fruit with a thick rind and many seeds.",
+   "level": 1
+  },
+  {
+   "id": "w-mouse",
+   "scramble": "UEOMS",
+   "answer": "MOUSE",
+   "accept": [
+    "MOUSE"
+   ],
+   "clue": "A small rodent, and also something you click.",
+   "level": 1
+  },
+  {
+   "id": "w-night",
+   "scramble": "GHTNI",
+   "answer": "NIGHT",
+   "accept": [
+    "NIGHT",
+    "THING"
+   ],
+   "clue": "When your side of the Earth faces away from the sun.",
+   "level": 1
+  },
+  {
+   "id": "w-thing",
+   "scramble": "THGIN",
+   "answer": "THING",
+   "accept": [
+    "NIGHT",
+    "THING"
+   ],
+   "clue": "A word for any object you cannot quite name.",
+   "level": 1
+  },
+  {
+   "id": "w-ocean",
+   "scramble": "NAECO",
+   "answer": "OCEAN",
+   "accept": [
+    "CANOE",
+    "OCEAN"
+   ],
+   "clue": "Covers about 71 percent of the Earth's surface.",
+   "level": 1
+  },
+  {
+   "id": "w-canoe",
+   "scramble": "OACNE",
+   "answer": "CANOE",
+   "accept": [
+    "CANOE",
+    "OCEAN"
+   ],
+   "clue": "A narrow boat moved with a paddle.",
+   "level": 1
+  },
+  {
+   "id": "w-piano",
+   "scramble": "POANI",
+   "answer": "PIANO",
+   "accept": [
+    "PIANO"
+   ],
+   "clue": "An instrument with 88 keys.",
+   "level": 1
+  },
+  {
+   "id": "w-queen",
+   "scramble": "QEEUN",
+   "answer": "QUEEN",
+   "accept": [
+    "QUEEN"
+   ],
+   "clue": "The most powerful piece in chess.",
+   "level": 1
+  },
+  {
+   "id": "w-river",
+   "scramble": "RIRVE",
+   "answer": "RIVER",
+   "accept": [
+    "RIVER"
+   ],
+   "clue": "Water that flows toward the sea.",
+   "level": 1
+  },
+  {
+   "id": "w-snake",
+   "scramble": "ENSAK",
+   "answer": "SNAKE",
+   "accept": [
+    "SNAKE",
+    "SNEAK"
+   ],
+   "clue": "A reptile with no legs.",
+   "level": 1
+  },
+  {
+   "id": "w-sneak",
+   "scramble": "ASKNE",
+   "answer": "SNEAK",
+   "accept": [
+    "SNAKE",
+    "SNEAK"
+   ],
+   "clue": "To move quietly so nobody notices.",
+   "level": 1
+  },
+  {
+   "id": "w-tiger",
+   "scramble": "RTGEI",
+   "answer": "TIGER",
+   "accept": [
+    "TIGER"
+   ],
+   "clue": "The largest wild cat, with stripes.",
+   "level": 1
+  },
+  {
+   "id": "w-uncle",
+   "scramble": "ENULC",
+   "answer": "UNCLE",
+   "accept": [
+    "UNCLE"
+   ],
+   "clue": "Your parent's brother.",
+   "level": 1
+  },
+  {
+   "id": "w-voice",
+   "scramble": "EVOCI",
+   "answer": "VOICE",
+   "accept": [
+    "VOICE"
+   ],
+   "clue": "What you speak and sing with.",
+   "level": 1
+  },
+  {
+   "id": "w-whale",
+   "scramble": "LHWEA",
+   "answer": "WHALE",
+   "accept": [
+    "WHALE"
+   ],
+   "clue": "The blue one is the biggest animal ever to live.",
+   "level": 1
+  },
+  {
+   "id": "w-zebra",
+   "scramble": "EBARZ",
+   "answer": "ZEBRA",
+   "accept": [
+    "ZEBRA"
+   ],
+   "clue": "A horse-like animal in black and white stripes.",
+   "level": 1
+  },
+  {
+   "id": "w-beach",
+   "scramble": "HCEBA",
+   "answer": "BEACH",
+   "accept": [
+    "BEACH"
+   ],
+   "clue": "Sand where the land meets the sea.",
+   "level": 1
+  },
+  {
+   "id": "w-candy",
+   "scramble": "YNADC",
+   "answer": "CANDY",
+   "accept": [
+    "CANDY"
+   ],
+   "clue": "A sugary sweet, often wrapped.",
+   "level": 1
+  },
+  {
+   "id": "w-dance",
+   "scramble": "DACNE",
+   "answer": "DANCE",
+   "accept": [
+    "DANCE"
+   ],
+   "clue": "Moving your body to music.",
+   "level": 1
+  },
+  {
+   "id": "w-field",
+   "scramble": "IDFLE",
+   "answer": "FIELD",
+   "accept": [
+    "FIELD"
+   ],
+   "clue": "An open stretch of grass or crops.",
+   "level": 1
+  },
+  {
+   "id": "w-ghost",
+   "scramble": "TSHGO",
+   "answer": "GHOST",
+   "accept": [
+    "GHOST"
+   ],
+   "clue": "A spooky spirit in stories.",
+   "level": 1
+  },
+  {
+   "id": "w-house",
+   "scramble": "HESOU",
+   "answer": "HOUSE",
+   "accept": [
+    "HOUSE"
+   ],
+   "clue": "Where a family might live.",
+   "level": 1
+  },
+  {
+   "id": "w-ivory",
+   "scramble": "RIVOY",
+   "answer": "IVORY",
+   "accept": [
+    "IVORY"
+   ],
+   "clue": "A creamy white colour, and the material of elephant tusks.",
+   "level": 1
+  },
+  {
+   "id": "w-jelly",
+   "scramble": "ELJLY",
+   "answer": "JELLY",
+   "accept": [
+    "JELLY"
+   ],
+   "clue": "A wobbly dessert, or a fruit spread.",
+   "level": 1
+  },
+  {
+   "id": "w-koala",
+   "scramble": "LKOAA",
+   "answer": "KOALA",
+   "accept": [
+    "KOALA"
+   ],
+   "clue": "An Australian marsupial that sleeps up to 20 hours a day.",
+   "level": 1
+  },
+  {
+   "id": "w-light",
+   "scramble": "HGITL",
+   "answer": "LIGHT",
+   "accept": [
+    "LIGHT"
+   ],
+   "clue": "It travels about 300,000 km every second.",
+   "level": 1
+  },
+  {
+   "id": "w-music",
+   "scramble": "MUICS",
+   "answer": "MUSIC",
+   "accept": [
+    "MUSIC"
+   ],
+   "clue": "Its name comes from the Greek Muses.",
+   "level": 1
+  },
+  {
+   "id": "w-nurse",
+   "scramble": "NSREU",
+   "answer": "NURSE",
+   "accept": [
+    "NURSE",
+    "RUNES"
+   ],
+   "clue": "Looks after patients in a hospital.",
+   "level": 1
+  },
+  {
+   "id": "w-runes",
+   "scramble": "ERNSU",
+   "answer": "RUNES",
+   "accept": [
+    "NURSE",
+    "RUNES"
+   ],
+   "clue": "Letters of an ancient Viking alphabet.",
+   "level": 1
+  },
+  {
+   "id": "w-olive",
+   "scramble": "IVOLE",
+   "answer": "OLIVE",
+   "accept": [
+    "OLIVE"
+   ],
+   "clue": "A small fruit that is pressed into oil.",
+   "level": 1
+  },
+  {
+   "id": "w-pearl",
+   "scramble": "RLPAE",
+   "answer": "PEARL",
+   "accept": [
+    "PALER",
+    "PEARL"
+   ],
+   "clue": "A gem that grows inside an oyster.",
+   "level": 1
+  },
+  {
+   "id": "w-paler",
+   "scramble": "ELPAR",
+   "answer": "PALER",
+   "accept": [
+    "PALER",
+    "PEARL"
+   ],
+   "clue": "Lighter in colour.",
+   "level": 1
+  },
+  {
+   "id": "w-quiet",
+   "scramble": "IQETU",
+   "answer": "QUIET",
+   "accept": [
+    "QUIET"
+   ],
+   "clue": "Hushed, the opposite of loud.",
+   "level": 1
+  },
+  {
+   "id": "w-robot",
+   "scramble": "TOBOR",
+   "answer": "ROBOT",
+   "accept": [
+    "ROBOT"
+   ],
+   "clue": "From the Czech word for hard work.",
+   "level": 1
+  },
+  {
+   "id": "w-sugar",
+   "scramble": "AUSRG",
+   "answer": "SUGAR",
+   "accept": [
+    "SUGAR"
+   ],
+   "clue": "Sweet white crystals for your tea.",
+   "level": 1
+  },
+  {
+   "id": "w-table",
+   "scramble": "LTBAE",
+   "answer": "TABLE",
+   "accept": [
+    "BLEAT",
+    "TABLE"
+   ],
+   "clue": "A flat top on legs. You eat dinner at one.",
+   "level": 1
+  },
+  {
+   "id": "w-bleat",
+   "scramble": "BLAET",
+   "answer": "BLEAT",
+   "accept": [
+    "BLEAT",
+    "TABLE"
+   ],
+   "clue": "The sound a sheep makes.",
+   "level": 1
+  },
+  {
+   "id": "w-train",
+   "scramble": "TNAIR",
+   "answer": "TRAIN",
+   "accept": [
+    "TRAIN"
+   ],
+   "clue": "It runs on rails and stops at stations.",
+   "level": 1
+  },
+  {
+   "id": "w-water",
+   "scramble": "RTEWA",
+   "answer": "WATER",
+   "accept": [
+    "WATER"
+   ],
+   "clue": "H2O, and you are mostly made of it.",
+   "level": 1
+  },
+  {
+   "id": "w-yacht",
+   "scramble": "ACHTY",
+   "answer": "YACHT",
+   "accept": [
+    "YACHT"
+   ],
+   "clue": "A sleek boat for sailing just for fun.",
+   "level": 1
+  },
+  {
+   "id": "w-cloud",
+   "scramble": "LUOCD",
+   "answer": "CLOUD",
+   "accept": [
+    "CLOUD"
+   ],
+   "clue": "A fluffy thing in the sky that can bring rain.",
+   "level": 1
+  },
+  {
+   "id": "w-drink",
+   "scramble": "NRDKI",
+   "answer": "DRINK",
+   "accept": [
+    "DRINK"
+   ],
+   "clue": "What you do with a glass of water.",
+   "level": 1
+  },
+  {
+   "id": "w-frost",
+   "scramble": "OTRFS",
+   "answer": "FROST",
+   "accept": [
+    "FROST"
+   ],
+   "clue": "Icy crystals on the grass on a cold morning.",
+   "level": 1
+  },
+  {
+   "id": "w-giant",
+   "scramble": "IANGT",
+   "answer": "GIANT",
+   "accept": [
+    "GIANT"
+   ],
+   "clue": "An enormously tall person in fairy tales.",
+   "level": 1
+  },
+  {
+   "id": "w-honey",
+   "scramble": "YEHNO",
+   "answer": "HONEY",
+   "accept": [
+    "HONEY"
+   ],
+   "clue": "Golden and sweet, made by bees.",
+   "level": 1
+  },
+  {
+   "id": "w-magic",
+   "scramble": "GIACM",
+   "answer": "MAGIC",
+   "accept": [
+    "MAGIC"
+   ],
+   "clue": "Wizards do it with wands, and illusionists with tricks.",
+   "level": 1
+  },
+  {
+   "id": "w-novel",
+   "scramble": "ELVNO",
+   "answer": "NOVEL",
+   "accept": [
+    "NOVEL"
+   ],
+   "clue": "A long book of fiction. It also means brand new.",
+   "level": 1
+  },
+  {
+   "id": "w-plant",
+   "scramble": "LANPT",
+   "answer": "PLANT",
+   "accept": [
+    "PLANT"
+   ],
+   "clue": "It grows from a seed and needs sunlight.",
+   "level": 1
+  },
+  {
+   "id": "w-radio",
+   "scramble": "RDAIO",
+   "answer": "RADIO",
+   "accept": [
+    "RADIO"
+   ],
+   "clue": "Plays songs through the air.",
+   "level": 1
+  },
+  {
+   "id": "w-storm",
+   "scramble": "SRTMO",
+   "answer": "STORM",
+   "accept": [
+    "STORM"
+   ],
+   "clue": "Thunder, lightning and wild wind.",
+   "level": 1
+  },
+  {
+   "id": "w-tooth",
+   "scramble": "OOHTT",
+   "answer": "TOOTH",
+   "accept": [
+    "TOOTH"
+   ],
+   "clue": "Hard, white, and in your mouth.",
+   "level": 1
+  },
+  {
+   "id": "w-wheel",
+   "scramble": "HWELE",
+   "answer": "WHEEL",
+   "accept": [
+    "WHEEL"
+   ],
+   "clue": "Round and turns. One of humanity's oldest inventions.",
+   "level": 1
+  },
+  {
+   "id": "w-angel",
+   "scramble": "ANEGL",
+   "answer": "ANGEL",
+   "accept": [
+    "ANGEL",
+    "ANGLE",
+    "GLEAN"
+   ],
+   "clue": "A winged messenger from heaven.",
+   "level": 1
+  },
+  {
+   "id": "w-angle",
+   "scramble": "AGELN",
+   "answer": "ANGLE",
+   "accept": [
+    "ANGEL",
+    "ANGLE",
+    "GLEAN"
+   ],
+   "clue": "Where two lines meet, measured in degrees.",
+   "level": 1
+  },
+  {
+   "id": "w-glean",
+   "scramble": "ELNGA",
+   "answer": "GLEAN",
+   "accept": [
+    "ANGEL",
+    "ANGLE",
+    "GLEAN"
+   ],
+   "clue": "To gather information or grain bit by bit.",
+   "level": 1
+  },
+  {
+   "id": "w-planet",
+   "scramble": "NELPAT",
+   "answer": "PLANET",
+   "accept": [
+    "PLANET"
+   ],
+   "clue": "Origin of the word: Greek for \"wandering star\".",
+   "level": 2
+  },
+  {
+   "id": "w-window",
+   "scramble": "IWODNW",
+   "answer": "WINDOW",
+   "accept": [
+    "WINDOW"
+   ],
+   "clue": "From Old Norse for \"wind eye\".",
+   "level": 2
+  },
+  {
+   "id": "w-bridge",
+   "scramble": "DBERGI",
+   "answer": "BRIDGE",
+   "accept": [
+    "BRIDGE"
+   ],
+   "clue": "It carries a road over a river.",
+   "level": 2
+  },
+  {
+   "id": "w-dragon",
+   "scramble": "AONDGR",
+   "answer": "DRAGON",
+   "accept": [
+    "DRAGON"
+   ],
+   "clue": "A fire-breathing monster of legend.",
+   "level": 2
+  },
+  {
+   "id": "w-guitar",
+   "scramble": "ATRIGU",
+   "answer": "GUITAR",
+   "accept": [
+    "GUITAR"
+   ],
+   "clue": "A six-string instrument you strum.",
+   "level": 2
+  },
+  {
+   "id": "w-hammer",
+   "scramble": "MRHAEM",
+   "answer": "HAMMER",
+   "accept": [
+    "HAMMER"
+   ],
+   "clue": "A tool for driving in nails.",
+   "level": 2
+  },
+  {
+   "id": "w-island",
+   "scramble": "AIDNSL",
+   "answer": "ISLAND",
+   "accept": [
+    "ISLAND"
+   ],
+   "clue": "Land completely surrounded by water.",
+   "level": 2
+  },
+  {
+   "id": "w-jungle",
+   "scramble": "NULJEG",
+   "answer": "JUNGLE",
+   "accept": [
+    "JUNGLE"
+   ],
+   "clue": "A thick, hot, rainy forest full of vines.",
+   "level": 2
+  },
+  {
+   "id": "w-kitten",
+   "scramble": "ITTKNE",
+   "answer": "KITTEN",
+   "accept": [
+    "KITTEN"
+   ],
+   "clue": "A baby cat.",
+   "level": 2
+  },
+  {
+   "id": "w-ladder",
+   "scramble": "DREADL",
+   "answer": "LADDER",
+   "accept": [
+    "LADDER"
+   ],
+   "clue": "Climb its rungs to reach a high place.",
+   "level": 2
+  },
+  {
+   "id": "w-market",
+   "scramble": "TKRAME",
+   "answer": "MARKET",
+   "accept": [
+    "MARKET"
+   ],
+   "clue": "A place where stalls sell fruit and vegetables.",
+   "level": 2
+  },
+  {
+   "id": "w-number",
+   "scramble": "URMBNE",
+   "answer": "NUMBER",
+   "accept": [
+    "NUMBER"
+   ],
+   "clue": "Seven, twelve and a hundred all are one.",
+   "level": 2
+  },
+  {
+   "id": "w-orange",
+   "scramble": "AROGNE",
+   "answer": "ORANGE",
+   "accept": [
+    "ORANGE"
+   ],
+   "clue": "The fruit came first, then the colour was named after it.",
+   "level": 2
+  },
+  {
+   "id": "w-pencil",
+   "scramble": "CINPLE",
+   "answer": "PENCIL",
+   "accept": [
+    "PENCIL"
+   ],
+   "clue": "Its \"lead\" is really graphite.",
+   "level": 2
+  },
+  {
+   "id": "w-rabbit",
+   "scramble": "IBRBTA",
+   "answer": "RABBIT",
+   "accept": [
+    "RABBIT"
+   ],
+   "clue": "A long-eared animal that hops.",
+   "level": 2
+  },
+  {
+   "id": "w-travel",
+   "scramble": "VARTEL",
+   "answer": "TRAVEL",
+   "accept": [
+    "TRAVEL"
+   ],
+   "clue": "To go from one place to another, often far.",
+   "level": 2
+  },
+  {
+   "id": "w-turtle",
+   "scramble": "RUTTEL",
+   "answer": "TURTLE",
+   "accept": [
+    "TURTLE"
+   ],
+   "clue": "A reptile that carries its home on its back.",
+   "level": 2
+  },
+  {
+   "id": "w-winter",
+   "scramble": "ENRIWT",
+   "answer": "WINTER",
+   "accept": [
+    "WINTER"
+   ],
+   "clue": "The coldest season.",
+   "level": 2
+  },
+  {
+   "id": "w-yellow",
+   "scramble": "YLELOW",
+   "answer": "YELLOW",
+   "accept": [
+    "YELLOW"
+   ],
+   "clue": "The colour of a ripe banana.",
+   "level": 2
+  },
+  {
+   "id": "w-basket",
+   "scramble": "EBTSAK",
+   "answer": "BASKET",
+   "accept": [
+    "BASKET"
+   ],
+   "clue": "Woven container for carrying picnics or laundry.",
+   "level": 2
+  },
+  {
+   "id": "w-button",
+   "scramble": "UTBTNO",
+   "answer": "BUTTON",
+   "accept": [
+    "BUTTON"
+   ],
+   "clue": "Push it to ring a bell, or fasten a shirt with one.",
+   "level": 2
+  },
+  {
+   "id": "w-doctor",
+   "scramble": "COODRT",
+   "answer": "DOCTOR",
+   "accept": [
+    "DOCTOR"
+   ],
+   "clue": "Someone you visit when you feel unwell.",
+   "level": 2
+  },
+  {
+   "id": "w-engine",
+   "scramble": "NIEGEN",
+   "answer": "ENGINE",
+   "accept": [
+    "ENGINE"
+   ],
+   "clue": "The part of a car that makes it go.",
+   "level": 2
+  },
+  {
+   "id": "w-flower",
+   "scramble": "LFEWRO",
+   "answer": "FLOWER",
+   "accept": [
+    "FLOWER"
+   ],
+   "clue": "A blossom that bees visit.",
+   "level": 2
+  },
+  {
+   "id": "w-golden",
+   "scramble": "NELDOG",
+   "answer": "GOLDEN",
+   "accept": [
+    "GOLDEN"
+   ],
+   "clue": "Made of gold, or the colour of it.",
+   "level": 2
+  },
+  {
+   "id": "w-jacket",
+   "scramble": "EAJCTK",
+   "answer": "JACKET",
+   "accept": [
+    "JACKET"
+   ],
+   "clue": "A short coat.",
+   "level": 2
+  },
+  {
+   "id": "w-kettle",
+   "scramble": "KTTLEE",
+   "answer": "KETTLE",
+   "accept": [
+    "KETTLE"
+   ],
+   "clue": "It whistles when the water boils.",
+   "level": 2
+  },
+  {
+   "id": "w-lizard",
+   "scramble": "RAILDZ",
+   "answer": "LIZARD",
+   "accept": [
+    "LIZARD"
+   ],
+   "clue": "A small scaly reptile that can drop its tail.",
+   "level": 2
+  },
+  {
+   "id": "w-mirror",
+   "scramble": "RRMOIR",
+   "answer": "MIRROR",
+   "accept": [
+    "MIRROR"
+   ],
+   "clue": "It shows you your reflection.",
+   "level": 2
+  },
+  {
+   "id": "w-pepper",
+   "scramble": "RPEEPP",
+   "answer": "PEPPER",
+   "accept": [
+    "PEPPER"
+   ],
+   "clue": "Ground black spice for your food.",
+   "level": 2
+  },
+  {
+   "id": "w-rocket",
+   "scramble": "RTECOK",
+   "answer": "ROCKET",
+   "accept": [
+    "ROCKET"
+   ],
+   "clue": "It blasts off into space.",
+   "level": 2
+  },
+  {
+   "id": "w-school",
+   "scramble": "SOLOHC",
+   "answer": "SCHOOL",
+   "accept": [
+    "SCHOOL"
+   ],
+   "clue": "Where children go to learn. Also a group of fish.",
+   "level": 2
+  },
+  {
+   "id": "w-summer",
+   "scramble": "URMMES",
+   "answer": "SUMMER",
+   "accept": [
+    "SUMMER"
+   ],
+   "clue": "The warmest season, with the longest days.",
+   "level": 2
+  },
+  {
+   "id": "w-tunnel",
+   "scramble": "UNETLN",
+   "answer": "TUNNEL",
+   "accept": [
+    "TUNNEL"
+   ],
+   "clue": "A passage dug through a hill or under a river.",
+   "level": 2
+  },
+  {
+   "id": "w-valley",
+   "scramble": "EVYLAL",
+   "answer": "VALLEY",
+   "accept": [
+    "VALLEY"
+   ],
+   "clue": "Low land between two hills or mountains.",
+   "level": 2
+  },
+  {
+   "id": "w-wallet",
+   "scramble": "ELLWTA",
+   "answer": "WALLET",
+   "accept": [
+    "WALLET"
+   ],
+   "clue": "It holds your cash and cards.",
+   "level": 2
+  },
+  {
+   "id": "w-cheese",
+   "scramble": "CEHEES",
+   "answer": "CHEESE",
+   "accept": [
+    "CHEESE"
+   ],
+   "clue": "Made from milk. Mice are famous for loving it.",
+   "level": 2
+  },
+  {
+   "id": "w-butter",
+   "scramble": "ETTUBR",
+   "answer": "BUTTER",
+   "accept": [
+    "BUTTER"
+   ],
+   "clue": "Churned cream that you spread on toast.",
+   "level": 2
+  },
+  {
+   "id": "w-monkey",
+   "scramble": "ENKYOM",
+   "answer": "MONKEY",
+   "accept": [
+    "MONKEY"
+   ],
+   "clue": "A clever, tree-climbing primate with a tail.",
+   "level": 2
+  },
+  {
+   "id": "w-parrot",
+   "scramble": "RTORAP",
+   "answer": "PARROT",
+   "accept": [
+    "PARROT"
+   ],
+   "clue": "A colourful bird that can copy human words.",
+   "level": 2
+  },
+  {
+   "id": "w-potato",
+   "scramble": "OOATPT",
+   "answer": "POTATO",
+   "accept": [
+    "POTATO"
+   ],
+   "clue": "A tuber that becomes chips, mash or crisps.",
+   "level": 2
+  },
+  {
+   "id": "w-shadow",
+   "scramble": "WSDHAO",
+   "answer": "SHADOW",
+   "accept": [
+    "SHADOW"
+   ],
+   "clue": "The dark shape you cast when you block the sun.",
+   "level": 2
+  },
+  {
+   "id": "w-spring",
+   "scramble": "GRNISP",
+   "answer": "SPRING",
+   "accept": [
+    "SPRING"
+   ],
+   "clue": "The season when flowers bloom. Also a coiled piece of metal.",
+   "level": 2
+  },
+  {
+   "id": "w-bottle",
+   "scramble": "TTOLBE",
+   "answer": "BOTTLE",
+   "accept": [
+    "BOTTLE"
+   ],
+   "clue": "A glass or plastic container for drinks.",
+   "level": 2
+  },
+  {
+   "id": "w-camera",
+   "scramble": "MACERA",
+   "answer": "CAMERA",
+   "accept": [
+    "CAMERA"
+   ],
+   "clue": "Take a picture with it. The word means \"room\" in Latin.",
+   "level": 2
+  },
+  {
+   "id": "w-pirate",
+   "scramble": "EIPTAR",
+   "answer": "PIRATE",
+   "accept": [
+    "PIRATE"
+   ],
+   "clue": "A sea robber who flies a skull and crossbones.",
+   "level": 2
+  },
+  {
+   "id": "w-anchor",
+   "scramble": "AOHNRC",
+   "answer": "ANCHOR",
+   "accept": [
+    "ANCHOR"
+   ],
+   "clue": "A heavy hook that keeps a ship from drifting.",
+   "level": 2
+  },
+  {
+   "id": "w-banana",
+   "scramble": "ABANNA",
+   "answer": "BANANA",
+   "accept": [
+    "BANANA"
+   ],
+   "clue": "A yellow fruit that is technically a berry.",
+   "level": 2
+  },
+  {
+   "id": "w-coffee",
+   "scramble": "FFOEEC",
+   "answer": "COFFEE",
+   "accept": [
+    "COFFEE"
+   ],
+   "clue": "A dark, bitter drink made from roasted beans.",
+   "level": 2
+  },
+  {
+   "id": "w-dollar",
+   "scramble": "DLRLOA",
+   "answer": "DOLLAR",
+   "accept": [
+    "DOLLAR"
+   ],
+   "clue": "The money used in the United States.",
+   "level": 2
+  },
+  {
+   "id": "w-effort",
+   "scramble": "ORFTEF",
+   "answer": "EFFORT",
+   "accept": [
+    "EFFORT"
+   ],
+   "clue": "The hard work you put into something.",
+   "level": 2
+  },
+  {
+   "id": "w-galaxy",
+   "scramble": "ALYAGX",
+   "answer": "GALAXY",
+   "accept": [
+    "GALAXY"
+   ],
+   "clue": "A giant swirl of stars. We live in the Milky Way.",
+   "level": 2
+  },
+  {
+   "id": "w-helmet",
+   "scramble": "MEETHL",
+   "answer": "HELMET",
+   "accept": [
+    "HELMET"
+   ],
+   "clue": "Protects your head on a bike.",
+   "level": 2
+  },
+  {
+   "id": "w-magnet",
+   "scramble": "GNEMAT",
+   "answer": "MAGNET",
+   "accept": [
+    "MAGNET"
+   ],
+   "clue": "It sticks to the fridge and pulls on iron.",
+   "level": 2
+  },
+  {
+   "id": "w-napkin",
+   "scramble": "ANNPIK",
+   "answer": "NAPKIN",
+   "accept": [
+    "NAPKIN"
+   ],
+   "clue": "A cloth or paper square for wiping your mouth.",
+   "level": 2
+  },
+  {
+   "id": "w-oyster",
+   "scramble": "RSOYET",
+   "answer": "OYSTER",
+   "accept": [
+    "OYSTER",
+    "STOREY"
+   ],
+   "clue": "A shellfish that can make a pearl.",
+   "level": 2
+  },
+  {
+   "id": "w-storey",
+   "scramble": "RTOSEY",
+   "answer": "STOREY",
+   "accept": [
+    "OYSTER",
+    "STOREY"
+   ],
+   "clue": "One floor of a building.",
+   "level": 2
+  },
+  {
+   "id": "w-purple",
+   "scramble": "PLPEUR",
+   "answer": "PURPLE",
+   "accept": [
+    "PURPLE"
+   ],
+   "clue": "Mix red and blue to get this colour.",
+   "level": 2
+  },
+  {
+   "id": "w-socket",
+   "scramble": "STKOCE",
+   "answer": "SOCKET",
+   "accept": [
+    "SOCKET"
+   ],
+   "clue": "The wall hole where you plug in a charger.",
+   "level": 2
+  },
+  {
+   "id": "w-ticket",
+   "scramble": "EIKCTT",
+   "answer": "TICKET",
+   "accept": [
+    "TICKET"
+   ],
+   "clue": "It gets you into a concert or onto a train.",
+   "level": 2
+  },
+  {
+   "id": "w-violin",
+   "scramble": "INLIOV",
+   "answer": "VIOLIN",
+   "accept": [
+    "VIOLIN"
+   ],
+   "clue": "A small string instrument played with a bow.",
+   "level": 2
+  },
+  {
+   "id": "w-zipper",
+   "scramble": "RPPZIE",
+   "answer": "ZIPPER",
+   "accept": [
+    "ZIPPER"
+   ],
+   "clue": "Its teeth lock together to close a coat or bag.",
+   "level": 2
+  },
+  {
+   "id": "w-bronze",
+   "scramble": "EROZBN",
+   "answer": "BRONZE",
+   "accept": [
+    "BRONZE"
+   ],
+   "clue": "The third-place medal, and a mix of copper and tin.",
+   "level": 2
+  },
+  {
+   "id": "w-cactus",
+   "scramble": "SCAUCT",
+   "answer": "CACTUS",
+   "accept": [
+    "CACTUS"
+   ],
+   "clue": "A prickly plant that stores water in the desert.",
+   "level": 2
+  },
+  {
+   "id": "w-dinner",
+   "scramble": "DINNRE",
+   "answer": "DINNER",
+   "accept": [
+    "DINNER"
+   ],
+   "clue": "The main meal of the evening.",
+   "level": 2
+  },
+  {
+   "id": "w-family",
+   "scramble": "IAYFLM",
+   "answer": "FAMILY",
+   "accept": [
+    "FAMILY"
+   ],
+   "clue": "Parents, children and relatives.",
+   "level": 2
+  },
+  {
+   "id": "w-honest",
+   "scramble": "TNEOHS",
+   "answer": "HONEST",
+   "accept": [
+    "HONEST"
+   ],
+   "clue": "Truthful, not a liar.",
+   "level": 2
+  },
+  {
+   "id": "w-listen",
+   "scramble": "LITSNE",
+   "answer": "LISTEN",
+   "accept": [
+    "ENLIST",
+    "INLETS",
+    "LISTEN",
+    "SILENT",
+    "TINSEL"
+   ],
+   "clue": "To pay attention to a sound.",
+   "level": 2
+  },
+  {
+   "id": "w-silent",
+   "scramble": "NISLET",
+   "answer": "SILENT",
+   "accept": [
+    "ENLIST",
+    "INLETS",
+    "LISTEN",
+    "SILENT",
+    "TINSEL"
+   ],
+   "clue": "Not making any noise at all.",
+   "level": 2
+  },
+  {
+   "id": "w-enlist",
+   "scramble": "STENLI",
+   "answer": "ENLIST",
+   "accept": [
+    "ENLIST",
+    "INLETS",
+    "LISTEN",
+    "SILENT",
+    "TINSEL"
+   ],
+   "clue": "To sign up for the army.",
+   "level": 2
+  },
+  {
+   "id": "w-tinsel",
+   "scramble": "TENISL",
+   "answer": "TINSEL",
+   "accept": [
+    "ENLIST",
+    "INLETS",
+    "LISTEN",
+    "SILENT",
+    "TINSEL"
+   ],
+   "clue": "Shiny strands that decorate a Christmas tree.",
+   "level": 2
+  },
+  {
+   "id": "w-inlets",
+   "scramble": "TNILES",
+   "answer": "INLETS",
+   "accept": [
+    "ENLIST",
+    "INLETS",
+    "LISTEN",
+    "SILENT",
+    "TINSEL"
+   ],
+   "clue": "Narrow bays where the sea reaches into the land.",
+   "level": 2
+  },
+  {
+   "id": "w-balloon",
+   "scramble": "OLNOLBA",
+   "answer": "BALLOON",
+   "accept": [
+    "BALLOON"
+   ],
+   "clue": "Party decoration that floats when filled with helium.",
+   "level": 3
+  },
+  {
+   "id": "w-blanket",
+   "scramble": "BLKTNEA",
+   "answer": "BLANKET",
+   "accept": [
+    "BLANKET"
+   ],
+   "clue": "A warm cover for your bed.",
+   "level": 3
+  },
+  {
+   "id": "w-chicken",
+   "scramble": "CHCNKIE",
+   "answer": "CHICKEN",
+   "accept": [
+    "CHICKEN"
+   ],
+   "clue": "A farm bird that lays eggs.",
+   "level": 3
+  },
+  {
+   "id": "w-dolphin",
+   "scramble": "LDIPOHN",
+   "answer": "DOLPHIN",
+   "accept": [
+    "DOLPHIN"
+   ],
+   "clue": "A clever sea mammal that talks in clicks and whistles.",
+   "level": 3
+  },
+  {
+   "id": "w-fantasy",
+   "scramble": "AFTNASY",
+   "answer": "FANTASY",
+   "accept": [
+    "FANTASY"
+   ],
+   "clue": "A story with magic, dragons and wizards.",
+   "level": 3
+  },
+  {
+   "id": "w-giraffe",
+   "scramble": "AEIFGFR",
+   "answer": "GIRAFFE",
+   "accept": [
+    "GIRAFFE"
+   ],
+   "clue": "The tallest animal in the world.",
+   "level": 3
+  },
+  {
+   "id": "w-harvest",
+   "scramble": "VATESHR",
+   "answer": "HARVEST",
+   "accept": [
+    "HARVEST"
+   ],
+   "clue": "The time to gather ripe crops.",
+   "level": 3
+  },
+  {
+   "id": "w-kitchen",
+   "scramble": "KINCTEH",
+   "answer": "KITCHEN",
+   "accept": [
+    "KITCHEN"
+   ],
+   "clue": "The room where dinner is cooked.",
+   "level": 3
+  },
+  {
+   "id": "w-journey",
+   "scramble": "NOJEYRU",
+   "answer": "JOURNEY",
+   "accept": [
+    "JOURNEY"
+   ],
+   "clue": "A long trip from one place to another.",
+   "level": 3
+  },
+  {
+   "id": "w-lantern",
+   "scramble": "AERLNNT",
+   "answer": "LANTERN",
+   "accept": [
+    "LANTERN"
+   ],
+   "clue": "A portable lamp with a handle, or a paper festival light.",
+   "level": 3
+  },
+  {
+   "id": "w-machine",
+   "scramble": "ACHMENI",
+   "answer": "MACHINE",
+   "accept": [
+    "MACHINE"
+   ],
+   "clue": "A device with moving parts that does work for you.",
+   "level": 3
+  },
+  {
+   "id": "w-mystery",
+   "scramble": "EYRSTYM",
+   "answer": "MYSTERY",
+   "accept": [
+    "MYSTERY"
+   ],
+   "clue": "A puzzle or crime that detectives solve.",
+   "level": 3
+  },
+  {
+   "id": "w-network",
+   "scramble": "OTEWKNR",
+   "answer": "NETWORK",
+   "accept": [
+    "NETWORK"
+   ],
+   "clue": "Computers joined together, or a web of connections.",
+   "level": 3
+  },
+  {
+   "id": "w-octopus",
+   "scramble": "PTOCOUS",
+   "answer": "OCTOPUS",
+   "accept": [
+    "OCTOPUS"
+   ],
+   "clue": "A sea animal with eight arms and three hearts.",
+   "level": 3
+  },
+  {
+   "id": "w-penguin",
+   "scramble": "NNPUIEG",
+   "answer": "PENGUIN",
+   "accept": [
+    "PENGUIN"
+   ],
+   "clue": "A flightless bird that swims and lives in the cold south.",
+   "level": 3
+  },
+  {
+   "id": "w-pumpkin",
+   "scramble": "MPPIUNK",
+   "answer": "PUMPKIN",
+   "accept": [
+    "PUMPKIN"
+   ],
+   "clue": "A big orange vegetable carved at Halloween.",
+   "level": 3
+  },
+  {
+   "id": "w-quarter",
+   "scramble": "UATERQR",
+   "answer": "QUARTER",
+   "accept": [
+    "QUARTER"
+   ],
+   "clue": "One of four equal parts.",
+   "level": 3
+  },
+  {
+   "id": "w-rainbow",
+   "scramble": "ONWBIRA",
+   "answer": "RAINBOW",
+   "accept": [
+    "RAINBOW"
+   ],
+   "clue": "Seven colours that appear when sun meets rain.",
+   "level": 3
+  },
+  {
+   "id": "w-science",
+   "scramble": "CSCINEE",
+   "answer": "SCIENCE",
+   "accept": [
+    "SCIENCE"
+   ],
+   "clue": "Learning about the world with experiments.",
+   "level": 3
+  },
+  {
+   "id": "w-volcano",
+   "scramble": "LONACVO",
+   "answer": "VOLCANO",
+   "accept": [
+    "VOLCANO"
+   ],
+   "clue": "A mountain that erupts with lava. Named for the Roman god Vulcan.",
+   "level": 3
+  },
+  {
+   "id": "w-village",
+   "scramble": "EVLIAGL",
+   "answer": "VILLAGE",
+   "accept": [
+    "VILLAGE"
+   ],
+   "clue": "A small group of houses in the countryside.",
+   "level": 3
+  },
+  {
+   "id": "w-whisper",
+   "scramble": "HRWEPIS",
+   "answer": "WHISPER",
+   "accept": [
+    "WHISPER"
+   ],
+   "clue": "To speak very softly.",
+   "level": 3
+  },
+  {
+   "id": "w-bicycle",
+   "scramble": "LIBYCEC",
+   "answer": "BICYCLE",
+   "accept": [
+    "BICYCLE"
+   ],
+   "clue": "Two wheels, pedals and handlebars.",
+   "level": 3
+  },
+  {
+   "id": "w-cabbage",
+   "scramble": "AEBAGBC",
+   "answer": "CABBAGE",
+   "accept": [
+    "CABBAGE"
+   ],
+   "clue": "A round leafy vegetable, often in coleslaw.",
+   "level": 3
+  },
+  {
+   "id": "w-diamond",
+   "scramble": "DNDMAOI",
+   "answer": "DIAMOND",
+   "accept": [
+    "DIAMOND"
+   ],
+   "clue": "The hardest natural material, a sparkling gem.",
+   "level": 3
+  },
+  {
+   "id": "w-eclipse",
+   "scramble": "ISEEPLC",
+   "answer": "ECLIPSE",
+   "accept": [
+    "ECLIPSE"
+   ],
+   "clue": "When the moon blocks the sun, or Earth's shadow covers the moon.",
+   "level": 3
+  },
+  {
+   "id": "w-factory",
+   "scramble": "FTARCOY",
+   "answer": "FACTORY",
+   "accept": [
+    "FACTORY"
+   ],
+   "clue": "A building where products are made in large numbers.",
+   "level": 3
+  },
+  {
+   "id": "w-gallery",
+   "scramble": "LEGLRAY",
+   "answer": "GALLERY",
+   "accept": [
+    "GALLERY"
+   ],
+   "clue": "A place to see paintings and sculptures.",
+   "level": 3
+  },
+  {
+   "id": "w-holiday",
+   "scramble": "YAHLDIO",
+   "answer": "HOLIDAY",
+   "accept": [
+    "HOLIDAY"
+   ],
+   "clue": "A break from work or school.",
+   "level": 3
+  },
+  {
+   "id": "w-imagine",
+   "scramble": "AINEMIG",
+   "answer": "IMAGINE",
+   "accept": [
+    "IMAGINE"
+   ],
+   "clue": "To picture something in your mind.",
+   "level": 3
+  },
+  {
+   "id": "w-kingdom",
+   "scramble": "GIDKNMO",
+   "answer": "KINGDOM",
+   "accept": [
+    "KINGDOM"
+   ],
+   "clue": "A land ruled by a king or queen.",
+   "level": 3
+  },
+  {
+   "id": "w-library",
+   "scramble": "LRYRIBA",
+   "answer": "LIBRARY",
+   "accept": [
+    "LIBRARY"
+   ],
+   "clue": "A building where you can borrow books for free.",
+   "level": 3
+  },
+  {
+   "id": "w-monster",
+   "scramble": "ORMNETS",
+   "answer": "MONSTER",
+   "accept": [
+    "MONSTER"
+   ],
+   "clue": "A scary creature under the bed.",
+   "level": 3
+  },
+  {
+   "id": "w-orchard",
+   "scramble": "RHDCARO",
+   "answer": "ORCHARD",
+   "accept": [
+    "ORCHARD"
+   ],
+   "clue": "A garden of fruit trees.",
+   "level": 3
+  },
+  {
+   "id": "w-pyramid",
+   "scramble": "PIRDAMY",
+   "answer": "PYRAMID",
+   "accept": [
+    "PYRAMID"
+   ],
+   "clue": "A giant stone tomb in Egypt, or a shape with a pointed top.",
+   "level": 3
+  },
+  {
+   "id": "w-silence",
+   "scramble": "CENSLEI",
+   "answer": "SILENCE",
+   "accept": [
+    "SILENCE"
+   ],
+   "clue": "The complete absence of sound.",
+   "level": 3
+  },
+  {
+   "id": "w-thunder",
+   "scramble": "EDTRNUH",
+   "answer": "THUNDER",
+   "accept": [
+    "THUNDER"
+   ],
+   "clue": "The rumble that follows a flash of lightning.",
+   "level": 3
+  },
+  {
+   "id": "w-trumpet",
+   "scramble": "MUPTRET",
+   "answer": "TRUMPET",
+   "accept": [
+    "TRUMPET"
+   ],
+   "clue": "A shiny brass instrument you blow.",
+   "level": 3
+  },
+  {
+   "id": "w-uniform",
+   "scramble": "ROMNFIU",
+   "answer": "UNIFORM",
+   "accept": [
+    "UNIFORM"
+   ],
+   "clue": "Matching clothes worn by a team or a school.",
+   "level": 3
+  },
+  {
+   "id": "w-vitamin",
+   "scramble": "IAIMNVT",
+   "answer": "VITAMIN",
+   "accept": [
+    "VITAMIN"
+   ],
+   "clue": "A nutrient such as C or D that keeps your body healthy.",
+   "level": 3
+  },
+  {
+   "id": "w-warrior",
+   "scramble": "ARWOIRR",
+   "answer": "WARRIOR",
+   "accept": [
+    "WARRIOR"
+   ],
+   "clue": "A brave fighter of long ago.",
+   "level": 3
+  },
+  {
+   "id": "w-captain",
+   "scramble": "PTICAAN",
+   "answer": "CAPTAIN",
+   "accept": [
+    "CAPTAIN"
+   ],
+   "clue": "The leader of a ship or a sports team.",
+   "level": 3
+  },
+  {
+   "id": "w-chimney",
+   "scramble": "IEHMYCN",
+   "answer": "CHIMNEY",
+   "accept": [
+    "CHIMNEY"
+   ],
+   "clue": "Smoke from the fireplace goes up through it.",
+   "level": 3
+  },
+  {
+   "id": "w-cottage",
+   "scramble": "OCTAEGT",
+   "answer": "COTTAGE",
+   "accept": [
+    "COTTAGE"
+   ],
+   "clue": "A small, cosy house in the countryside.",
+   "level": 3
+  },
+  {
+   "id": "w-glacier",
+   "scramble": "LRGCAEI",
+   "answer": "GLACIER",
+   "accept": [
+    "GLACIER"
+   ],
+   "clue": "A huge, slow river of ice.",
+   "level": 3
+  },
+  {
+   "id": "w-blossom",
+   "scramble": "BOMOSLS",
+   "answer": "BLOSSOM",
+   "accept": [
+    "BLOSSOM"
+   ],
+   "clue": "A flower on a fruit tree in spring.",
+   "level": 3
+  },
+  {
+   "id": "w-sunshine",
+   "scramble": "HIUESSNN",
+   "answer": "SUNSHINE",
+   "accept": [
+    "SUNSHINE"
+   ],
+   "clue": "Bright light and warmth from the sun.",
+   "level": 3
+  },
+  {
+   "id": "w-weekend",
+   "scramble": "WEDENKE",
+   "answer": "WEEKEND",
+   "accept": [
+    "WEEKEND"
+   ],
+   "clue": "Saturday and Sunday.",
+   "level": 3
+  },
+  {
+   "id": "w-skeleton",
+   "scramble": "ONTSLEKE",
+   "answer": "SKELETON",
+   "accept": [
+    "SKELETON"
+   ],
+   "clue": "The 206 bones that hold you up.",
+   "level": 3
+  },
+  {
+   "id": "w-airplane",
+   "scramble": "LAEPRNIA",
+   "answer": "AIRPLANE",
+   "accept": [
+    "AIRPLANE"
+   ],
+   "clue": "A winged vehicle that flies passengers across the world.",
+   "level": 3
+  },
+  {
+   "id": "w-backpack",
+   "scramble": "AACKPBKC",
+   "answer": "BACKPACK",
+   "accept": [
+    "BACKPACK"
+   ],
+   "clue": "A bag you carry on both shoulders.",
+   "level": 3
+  },
+  {
+   "id": "w-birthday",
+   "scramble": "TBRAHIYD",
+   "answer": "BIRTHDAY",
+   "accept": [
+    "BIRTHDAY"
+   ],
+   "clue": "The day you celebrate with cake and candles.",
+   "level": 3
+  },
+  {
+   "id": "w-building",
+   "scramble": "UBDILING",
+   "answer": "BUILDING",
+   "accept": [
+    "BUILDING"
+   ],
+   "clue": "A structure with walls and a roof.",
+   "level": 3
+  },
+  {
+   "id": "w-calendar",
+   "scramble": "ANRLCAED",
+   "answer": "CALENDAR",
+   "accept": [
+    "CALENDAR"
+   ],
+   "clue": "It shows the days, weeks and months of the year.",
+   "level": 3
+  },
+  {
+   "id": "w-dinosaur",
+   "scramble": "IDNOSURA",
+   "answer": "DINOSAUR",
+   "accept": [
+    "DINOSAUR"
+   ],
+   "clue": "A giant reptile from millions of years ago. The name means \"terrible lizard\".",
+   "level": 3
+  },
+  {
+   "id": "w-elephant",
+   "scramble": "TLANEPEH",
+   "answer": "ELEPHANT",
+   "accept": [
+    "ELEPHANT"
+   ],
+   "clue": "The largest animal on land, with a trunk.",
+   "level": 3
+  },
+  {
+   "id": "w-football",
+   "scramble": "BOFTAOLL",
+   "answer": "FOOTBALL",
+   "accept": [
+    "FOOTBALL"
+   ],
+   "clue": "A game of goals, played with a round ball.",
+   "level": 3
+  },
+  {
+   "id": "w-hospital",
+   "scramble": "PAHTOLIS",
+   "answer": "HOSPITAL",
+   "accept": [
+    "HOSPITAL"
+   ],
+   "clue": "Where doctors and nurses care for the sick.",
+   "level": 3
+  },
+  {
+   "id": "w-mountain",
+   "scramble": "TNIMNOAU",
+   "answer": "MOUNTAIN",
+   "accept": [
+    "MOUNTAIN"
+   ],
+   "clue": "A very tall landform with a peak.",
+   "level": 3
+  },
+  {
+   "id": "w-notebook",
+   "scramble": "EOTNKOOB",
+   "answer": "NOTEBOOK",
+   "accept": [
+    "NOTEBOOK"
+   ],
+   "clue": "Pages to write your ideas in.",
+   "level": 3
+  },
+  {
+   "id": "w-umbrella",
+   "scramble": "LBARUMLE",
+   "answer": "UMBRELLA",
+   "accept": [
+    "UMBRELLA"
+   ],
+   "clue": "Keeps you dry when it rains.",
+   "level": 3
+  },
+  {
+   "id": "w-treasure",
+   "scramble": "URRTEESA",
+   "answer": "TREASURE",
+   "accept": [
+    "TREASURE"
+   ],
+   "clue": "Pirates bury it and maps mark the spot.",
+   "level": 3
+  },
+  {
+   "id": "w-universe",
+   "scramble": "EVSNRUIE",
+   "answer": "UNIVERSE",
+   "accept": [
+    "UNIVERSE"
+   ],
+   "clue": "Everything that exists: all of space and time.",
+   "level": 3
+  },
+  {
+   "id": "w-sandwich",
+   "scramble": "HAWICNDS",
+   "answer": "SANDWICH",
+   "accept": [
+    "SANDWICH"
+   ],
+   "clue": "Named after an English earl. Fillings go between bread.",
+   "level": 3
+  },
+  {
+   "id": "w-passport",
+   "scramble": "OPRSAPST",
+   "answer": "PASSPORT",
+   "accept": [
+    "PASSPORT"
+   ],
+   "clue": "A small booklet you show at the border.",
+   "level": 3
+  },
+  {
+   "id": "w-computer",
+   "scramble": "MORTPUCE",
+   "answer": "COMPUTER",
+   "accept": [
+    "COMPUTER"
+   ],
+   "clue": "A machine that follows instructions to process information.",
+   "level": 3
+  },
+  {
+   "id": "w-champion",
+   "scramble": "AIHPNCMO",
+   "answer": "CHAMPION",
+   "accept": [
+    "CHAMPION"
+   ],
+   "clue": "The winner of the whole competition.",
+   "level": 3
+  },
+  {
+   "id": "w-language",
+   "scramble": "GUAGAELN",
+   "answer": "LANGUAGE",
+   "accept": [
+    "LANGUAGE"
+   ],
+   "clue": "English, Spanish and Japanese are all one.",
+   "level": 3
+  },
+  {
+   "id": "w-tropical",
+   "scramble": "CRPAOITL",
+   "answer": "TROPICAL",
+   "accept": [
+    "TROPICAL"
+   ],
+   "clue": "Hot and humid, like places near the equator.",
+   "level": 3
+  }
+ ]
+}

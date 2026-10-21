@@ -1,16 +1,206 @@
 import SwiftUI
 
-/// Placeholder until the game is built.
+/// "What comes next?": ten number sequences, easy to hard. Pick the number that continues the pattern.
 struct PatternsGameView: View {
     let onExit: () -> Void
 
+    @State private var round: [PatternPuzzle] = []
+    @State private var index = 0
+    @State private var picked: Int? = nil
+    @State private var score = 0
+    @State private var finished = false
+    @State private var isBest = false
+    @State private var loadFailed = false
+
     var body: some View {
+        Group {
+            if loadFailed {
+                messageView
+            } else if finished {
+                endView
+            } else if index < round.count {
+                playView(round[index])
+            } else {
+                Color.clear
+            }
+        }
+        .onAppear { startIfNeeded() }
+    }
+
+    // MARK: - Flow
+
+    private func startIfNeeded() {
+        if !round.isEmpty || loadFailed { return }
+        startRound()
+    }
+
+    private func startRound() {
+        let built = PatternsData.buildRound(from: PatternsData.load())
+        if built.isEmpty {
+            loadFailed = true
+            return
+        }
+        round = built
+        index = 0
+        picked = nil
+        score = 0
+        finished = false
+        isBest = false
+    }
+
+    private func choose(_ value: Int, for puzzle: PatternPuzzle) {
+        if picked != nil { return }
+        picked = value
+        if value == puzzle.answer { score += 1 }
+    }
+
+    private func advance() {
+        if index + 1 >= round.count {
+            isBest = GameStats.recordRound(.patterns, score: score)
+            finished = true
+        } else {
+            index += 1
+            picked = nil
+        }
+    }
+
+    private func endLine() -> String {
+        if score == round.count { return "Every one. Lovely." }
+        if score >= 7 { return "Sharp eyes today." }
+        if score >= 4 { return "Nice work. Patterns get easier the more you spot." }
+        return "Good warm-up. A fresh round is always one tap away."
+    }
+
+    // MARK: - Screens
+
+    private var messageView: some View {
         VStack(spacing: 16) {
             Spacer()
             Text("What comes next?").font(.largeTitle.weight(.semibold))
-            Text("Coming soon.").foregroundStyle(.secondary)
+            Text("The puzzles didn't load. Please try again later.").foregroundStyle(.secondary)
             Button("Back", action: onExit).buttonStyle(.borderedProminent)
             Spacer()
         }
+        .padding(24)
+    }
+
+    private var endView: some View {
+        VStack(spacing: 16) {
+            Spacer()
+            Text("\(score)/\(round.count)")
+                .font(.system(size: 64, weight: .semibold))
+            Text(endLine()).font(.title3).multilineTextAlignment(.center)
+            if isBest && score > 0 {
+                Text("New best!").font(.subheadline.weight(.medium)).foregroundStyle(.teal)
+            }
+            Spacer()
+            Button(action: { startRound() }) {
+                Text("Play again").font(.title3.weight(.semibold)).frame(maxWidth: .infinity, minHeight: 52)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.teal)
+            Button(action: onExit) {
+                Text("Back").font(.title3.weight(.semibold)).frame(maxWidth: .infinity, minHeight: 52)
+            }
+            .buttonStyle(.bordered)
+        }
+        .padding(24)
+    }
+
+    private func playView(_ puzzle: PatternPuzzle) -> some View {
+        VStack(spacing: 0) {
+            HStack {
+                Button(action: onExit) { Text("← Back") }
+                    .frame(minHeight: 44)
+                Spacer()
+                Text("\(index + 1) of \(round.count)")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+
+            Text("What comes next?")
+                .font(.title2.weight(.semibold))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.top, 16)
+
+            sequenceRow(puzzle)
+                .padding(.top, 24)
+
+            LazyVGrid(columns: [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)], spacing: 12) {
+                ForEach(puzzle.options, id: \.self) { option in
+                    optionButton(option, puzzle: puzzle)
+                }
+            }
+            .padding(.top, 32)
+
+            if let chosen = picked {
+                VStack(spacing: 4) {
+                    Text(chosen == puzzle.answer ? "Yes, that's it!" : "Close. It was \(puzzle.answer).")
+                        .font(.headline)
+                    Text("\(puzzle.rule).")
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                }
+                .padding(.top, 24)
+            }
+
+            Spacer(minLength: 16)
+
+            if picked != nil {
+                Button(action: { advance() }) {
+                    Text(index + 1 >= round.count ? "See my score" : "Next")
+                        .font(.title3.weight(.semibold))
+                        .frame(maxWidth: .infinity, minHeight: 52)
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.teal)
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 16)
+    }
+
+    private func sequenceRow(_ puzzle: PatternPuzzle) -> some View {
+        let columns = [GridItem(.adaptive(minimum: 52), spacing: 8)]
+        return LazyVGrid(columns: columns, spacing: 8) {
+            ForEach(Array(puzzle.shown.enumerated()), id: \.offset) { _, n in
+                Text("\(n)")
+                    .font(.title3.weight(.semibold).monospacedDigit())
+                    .frame(maxWidth: .infinity, minHeight: 52)
+                    .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
+            }
+            Text(picked == nil ? "?" : "\(puzzle.answer)")
+                .font(.title3.weight(.semibold).monospacedDigit())
+                .foregroundStyle(.teal)
+                .frame(maxWidth: .infinity, minHeight: 52)
+                .background(
+                    RoundedRectangle(cornerRadius: 12)
+                        .strokeBorder(Color.teal, style: StrokeStyle(lineWidth: 2, dash: [5]))
+                )
+        }
+    }
+
+    private func optionButton(_ option: Int, puzzle: PatternPuzzle) -> some View {
+        var fill = Color(.secondarySystemBackground)
+        var opacity = 1.0
+        if let chosen = picked {
+            if option == puzzle.answer {
+                fill = Color.teal.opacity(0.25)
+            } else if option == chosen {
+                fill = Color.orange.opacity(0.25)
+            } else {
+                opacity = 0.5
+            }
+        }
+        return Button(action: { choose(option, for: puzzle) }) {
+            Text("\(option)")
+                .font(.system(size: 30, weight: .semibold).monospacedDigit())
+                .foregroundStyle(.primary)
+                .frame(maxWidth: .infinity, minHeight: 80)
+                .background(RoundedRectangle(cornerRadius: 16).fill(fill))
+                .opacity(opacity)
+        }
+        .buttonStyle(.plain)
+        .disabled(picked != nil)
     }
 }
