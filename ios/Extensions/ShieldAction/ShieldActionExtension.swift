@@ -7,8 +7,11 @@ final class ShieldActionExtension: ShieldActionDelegate {
     override func handle(action: ShieldAction, for application: ApplicationToken, completionHandler: @escaping (ShieldActionResponse) -> Void) {
         // Note which app this is, so the end screen can offer to take the user back to it. Stays on the device.
         let app = Application(token: application)
-        GuardStore.shared.recordShielded(bundle: app.bundleIdentifier, name: app.localizedDisplayName)
-        GuardStore.shared.log("shielded app: " + (app.bundleIdentifier ?? "unknown") + " (" + (app.localizedDisplayName ?? "no name") + ")")
+        // iOS may not tell this button which app it is. Keep what the shield screen recorded unless this knows better.
+        if app.bundleIdentifier != nil || app.localizedDisplayName != nil {
+            GuardStore.shared.recordShielded(bundle: app.bundleIdentifier, name: app.localizedDisplayName)
+        }
+        GuardStore.shared.log("button: app from token = " + (app.bundleIdentifier ?? "unknown") + " (" + (app.localizedDisplayName ?? "no name") + "); remembered from the shield screen = " + (GuardStore.shared.shieldedBundle ?? "nothing"))
         completionHandler(respond(to: action))
     }
 

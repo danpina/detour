@@ -41,9 +41,6 @@ export function HomeScreen({ onStart, onOpenSettings, onOpenProgress, onReview }
       <button onClick={() => onStart(false)} className="mt-8 w-full rounded-2xl bg-teal-600 py-4 text-lg font-semibold text-white active:scale-[0.98]">
         Let's go
       </button>
-      <button onClick={() => onStart(true)} className="mt-3 w-full rounded-2xl border border-neutral-300 py-3.5 font-medium hover:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-900">
-        Keep learning
-      </button>
 
 
       {isReviewer() && (

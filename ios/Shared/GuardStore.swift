@@ -17,6 +17,8 @@ struct GuardSettings: Codable, Equatable {
     var dailySkips = 1
     /// Minutes of use that "Open anyway" allows in strict mode. Optional so settings saved before strict mode existed still load.
     var strictMinutes: Int? = nil
+    /// The app to offer "Go back to" when the shield cannot tell which app it covered. Chosen once in Settings.
+    var returnBundle: String? = nil
 
     var strictUseMinutes: Int { strictMinutes ?? 3 }
 

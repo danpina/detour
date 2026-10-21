@@ -26,7 +26,14 @@ final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
 
     /// Notes which app is being covered, so the end screen can offer to take the user back to it. Stays on the device.
     private func remember(_ application: Application) {
-        GuardStore.shared.recordShielded(bundle: application.bundleIdentifier, name: application.localizedDisplayName)
+        let store = GuardStore.shared
+        let bundle = application.bundleIdentifier
+        let name = application.localizedDisplayName
+        if bundle != store.shieldedBundle || name != store.shieldedName {
+            store.log("shield screen: app = " + (bundle ?? "unknown") + " (" + (name ?? "no name") + ")")
+        }
+        // Keep an earlier answer if this time iOS did not say.
+        if bundle != nil || name != nil { store.recordShielded(bundle: bundle, name: name) }
     }
 
     private func make() -> ShieldConfiguration {

@@ -27,13 +27,6 @@ struct HomeView: View {
             }
             .buttonStyle(.borderedProminent)
             .padding(.top, 16)
-
-            Button {
-                start(true)
-            } label: {
-                Text("Keep learning").frame(maxWidth: .infinity).padding(.vertical, 12)
-            }
-            .buttonStyle(.bordered)
             Spacer()
         }
         .padding(.horizontal, 28)

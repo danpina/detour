@@ -33,6 +33,32 @@ enum ReturnApps {
         "com.google.chrome.ios": "googlechrome://",
     ]
 
+    /// The same apps with their names, for the Settings picker.
+    struct PopularApp: Identifiable {
+        let bundle: String
+        let name: String
+        var id: String { bundle }
+    }
+
+    static let popular: [PopularApp] = [
+        PopularApp(bundle: "com.burbn.instagram", name: "Instagram"),
+        PopularApp(bundle: "com.zhiliaoapp.musically", name: "TikTok"),
+        PopularApp(bundle: "com.google.ios.youtube", name: "YouTube"),
+        PopularApp(bundle: "com.atebits.Tweetie2", name: "X"),
+        PopularApp(bundle: "com.facebook.Facebook", name: "Facebook"),
+        PopularApp(bundle: "com.reddit.Reddit", name: "Reddit"),
+        PopularApp(bundle: "com.toyopagroup.picaboo", name: "Snapchat"),
+        PopularApp(bundle: "com.burbn.barcelona", name: "Threads"),
+        PopularApp(bundle: "com.hammerandchisel.discord", name: "Discord"),
+        PopularApp(bundle: "net.whatsapp.WhatsApp", name: "WhatsApp"),
+        PopularApp(bundle: "com.netflix.Netflix", name: "Netflix"),
+        PopularApp(bundle: "tv.twitch", name: "Twitch"),
+    ]
+
+    static func displayName(for bundleIdentifier: String) -> String? {
+        popular.first { $0.bundle == bundleIdentifier }?.name
+    }
+
     static func url(for bundleIdentifier: String) -> URL? {
         schemes[bundleIdentifier].flatMap { URL(string: $0) }
     }

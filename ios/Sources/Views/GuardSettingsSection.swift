@@ -63,8 +63,8 @@ struct GuardSettingsSection: View {
                     }
                 }
 
-                if guardManager.settings.mode != .strict {
-                    Picker("Unlock for", selection: Binding(
+                Group {
+                    Picker("After a detour, open for", selection: Binding(
                         get: { guardManager.settings.unlockMinutes },
                         set: { minutes in guardManager.update { $0.unlockMinutes = minutes } }
                     )) {
@@ -74,6 +74,17 @@ struct GuardSettingsSection: View {
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }
+
+                Picker("Go back to", selection: Binding(
+                    get: { guardManager.settings.returnBundle ?? "" },
+                    set: { bundle in guardManager.update { $0.returnBundle = bundle.isEmpty ? nil : bundle } }
+                )) {
+                    Text("Nothing").tag("")
+                    ForEach(ReturnApps.popular) { app in Text(app.name).tag(app.bundle) }
+                }
+                Text("After a detour, Detour offers to open this app for you. Used when iOS doesn't say which app you came from.")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
             }
 
             if let error = guardManager.lastError {

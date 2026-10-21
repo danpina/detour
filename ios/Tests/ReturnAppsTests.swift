@@ -35,3 +35,13 @@ final class ReturnAppsTests: XCTestCase {
         XCTAssertNil(store.shieldedBundle)
     }
 }
+
+final class ReturnAppsPickerTests: XCTestCase {
+    func testEveryPopularAppCanBeOpenedAndNamed() {
+        XCTAssertFalse(ReturnApps.popular.isEmpty)
+        for app in ReturnApps.popular {
+            XCTAssertNotNil(ReturnApps.url(for: app.bundle), "\(app.name) has no URL scheme")
+            XCTAssertEqual(ReturnApps.displayName(for: app.bundle), app.name)
+        }
+    }
+}

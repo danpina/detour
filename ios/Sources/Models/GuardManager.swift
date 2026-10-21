@@ -75,8 +75,17 @@ final class GuardManager {
 
     /// The app the shield was covering when the detour was chosen, if iOS told the shield screen and it can be reopened.
     var returnApp: ReturnApp? {
-        let app = ReturnApps.returnApp(bundleIdentifier: store.shieldedBundle, name: store.shieldedName)
-        store.log("return app: bundle=\(store.shieldedBundle ?? "none") name=\(store.shieldedName ?? "none") canOpen=\(app != nil)")
+        // What the shield screen learned wins; otherwise the app chosen once in Settings.
+        var bundle = store.shieldedBundle
+        var name = store.shieldedName
+        var source = "shield"
+        if ReturnApps.url(for: bundle ?? "") == nil, let chosen = settings.returnBundle {
+            bundle = chosen
+            name = ReturnApps.displayName(for: chosen)
+            source = "settings"
+        }
+        let app = ReturnApps.returnApp(bundleIdentifier: bundle, name: name)
+        store.log("return app: source=\(source) bundle=\(bundle ?? "none") name=\(name ?? "none") canOpen=\(app != nil)")
         return app
     }
 
