@@ -73,6 +73,13 @@ final class GuardManager {
 
     // MARK: Sessions
 
+    /// The app the shield was covering when the detour was chosen, if iOS told the shield screen and it can be reopened.
+    var returnApp: ReturnApp? {
+        let app = ReturnApps.returnApp(bundleIdentifier: store.shieldedBundle, name: store.shieldedName)
+        store.log("return app: bundle=\(store.shieldedBundle ?? "none") name=\(store.shieldedName ?? "none") canOpen=\(app != nil)")
+        return app
+    }
+
     /// True once if the shield's Start button asked for a session.
     func consumePendingSession() -> Bool { store.consumePendingSession() }
 

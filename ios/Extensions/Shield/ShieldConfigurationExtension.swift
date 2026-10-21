@@ -4,10 +4,30 @@ import UIKit
 
 /// The screen shown over a guarded app: "Quick one?" with a Start button.
 final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
-    override func configuration(shielding application: Application) -> ShieldConfiguration { make() }
-    override func configuration(shielding application: Application, in category: ActivityCategory) -> ShieldConfiguration { make() }
-    override func configuration(shielding webDomain: WebDomain) -> ShieldConfiguration { make() }
-    override func configuration(shielding webDomain: WebDomain, in category: ActivityCategory) -> ShieldConfiguration { make() }
+    override func configuration(shielding application: Application) -> ShieldConfiguration {
+        remember(application)
+        return make()
+    }
+
+    override func configuration(shielding application: Application, in category: ActivityCategory) -> ShieldConfiguration {
+        remember(application)
+        return make()
+    }
+
+    override func configuration(shielding webDomain: WebDomain) -> ShieldConfiguration {
+        GuardStore.shared.recordShielded(bundle: nil, name: nil)
+        return make()
+    }
+
+    override func configuration(shielding webDomain: WebDomain, in category: ActivityCategory) -> ShieldConfiguration {
+        GuardStore.shared.recordShielded(bundle: nil, name: nil)
+        return make()
+    }
+
+    /// Notes which app is being covered, so the end screen can offer to take the user back to it. Stays on the device.
+    private func remember(_ application: Application) {
+        GuardStore.shared.recordShielded(bundle: application.bundleIdentifier, name: application.localizedDisplayName)
+    }
 
     private func make() -> ShieldConfiguration {
         let store = GuardStore.shared

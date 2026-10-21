@@ -6,6 +6,10 @@ struct SessionView: View {
     let run: SessionRun
     /// Called when a set is finished. Returns the minutes the guarded apps were unlocked for, if the guard is on.
     let onSetFinished: () -> Int?
+    /// The app the shield was covering, asked for once when a guarded set ends.
+    let returnAppProvider: () -> ReturnApp?
+    /// Opens that app. The completion says whether iOS accepted it.
+    let onReturn: (ReturnApp, @escaping (Bool) -> Void) -> Void
     let onAnother: () -> Void
     let onProgress: () -> Void
     let onNextFeedSet: () -> Void
@@ -16,6 +20,8 @@ struct SessionView: View {
     @State private var shownAt = Date()
     @State private var finishedCount: Int?
     @State private var unlockedMinutes: Int?
+    @State private var returnApp: ReturnApp?
+    @State private var returnFailed = false
 
     private var items: [SessionItem] { run.items }
 
@@ -23,7 +29,19 @@ struct SessionView: View {
         VStack(spacing: 0) {
             ZStack {
                 if let finishedCount {
-                    EndView(learned: finishedCount, unlockedMinutes: unlockedMinutes, onAnother: onAnother, onProgress: onProgress, onDone: onClose)
+                    EndView(
+                        learned: finishedCount,
+                        unlockedMinutes: unlockedMinutes,
+                        returnApp: returnApp,
+                        returnFailed: returnFailed,
+                        onReturn: {
+                            guard let app = returnApp else { return }
+                            onReturn(app) { accepted in returnFailed = !accepted }
+                        },
+                        onAnother: onAnother,
+                        onProgress: onProgress,
+                        onDone: onClose
+                    )
                 } else if items.indices.contains(index) {
                     screen(for: items[index])
                         .id(items[index].key)
@@ -79,6 +97,7 @@ struct SessionView: View {
         if index + 1 >= items.count {
             model.sessionFinished(cardsDone: done.count, source: "free")
             unlockedMinutes = onSetFinished()
+            returnApp = unlockedMinutes == nil ? nil : returnAppProvider()
             if run.feed { onNextFeedSet() } else { finishedCount = done.count }
         } else {
             index += 1
@@ -112,6 +131,9 @@ struct SessionView: View {
 struct EndView: View {
     let learned: Int
     var unlockedMinutes: Int? = nil
+    var returnApp: ReturnApp? = nil
+    var returnFailed = false
+    var onReturn: () -> Void = {}
     let onAnother: () -> Void
     let onProgress: () -> Void
     let onDone: () -> Void
@@ -127,18 +149,32 @@ struct EndView: View {
                 .font(.title3)
                 .foregroundStyle(.white.opacity(0.7))
             if let unlockedMinutes {
-                Text("You're through. Your apps are open for \(unlockedMinutes) minutes. Tap Done, then switch back to your app (iOS won't let Detour open it for you).")
+                Text(returnApp == nil
+                     ? "You're through. Your apps are open for \(unlockedMinutes) minutes. Tap Done, then switch back to your app."
+                     : "You're through. Your apps are open for \(unlockedMinutes) minutes.")
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.7))
                     .multilineTextAlignment(.center)
                     .padding(.top, 8)
             }
             Spacer().frame(height: 24)
-            if unlockedMinutes != nil {
-                // Guarded-app flow: finishing is the point, so "Done" is the main button and the loop is optional.
+            if unlockedMinutes != nil, let returnApp {
+                // Guarded flow with a known app: take the user straight back to it, or run another set.
+                Button(action: onReturn) { Text("Go back to \(returnApp.name ?? "your app")").whitePill() }
+                if returnFailed {
+                    Text("iOS didn't open it. Switch back to it by hand.").font(.footnote).foregroundStyle(.white.opacity(0.7))
+                }
+                Button(action: onAnother) {
+                    Text("Another run").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
+                }
+                Button(action: onDone) {
+                    Text("Done").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 4)
+                }
+            } else if unlockedMinutes != nil {
+                // Guarded flow, app unknown: Done is the main button; the user switches back by hand.
                 Button(action: onDone) { Text("Done").whitePill() }
                 Button(action: onAnother) {
-                    Text("Another quick one").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
+                    Text("Another run").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
                 }
             } else {
                 Button(action: onAnother) { Text("Another quick one").whitePill() }
@@ -146,8 +182,10 @@ struct EndView: View {
                     Text("Done for now").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
                 }
             }
+            if returnApp == nil {
             Button(action: onProgress) {
                 Text("See my progress").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 4)
+            }
             }
             Spacer()
         }

@@ -5,6 +5,10 @@ import ManagedSettings
 /// - Secondary: Continue (gentle) or the one emergency skip of the day (earn it). Lifts the shield for a while.
 final class ShieldActionExtension: ShieldActionDelegate {
     override func handle(action: ShieldAction, for application: ApplicationToken, completionHandler: @escaping (ShieldActionResponse) -> Void) {
+        // Note which app this is, so the end screen can offer to take the user back to it. Stays on the device.
+        let app = Application(token: application)
+        GuardStore.shared.recordShielded(bundle: app.bundleIdentifier, name: app.localizedDisplayName)
+        GuardStore.shared.log("shielded app: " + (app.bundleIdentifier ?? "unknown") + " (" + (app.localizedDisplayName ?? "no name") + ")")
         completionHandler(respond(to: action))
     }
 

@@ -46,7 +46,7 @@ Settings: which apps, active hours, unlock length, set size, **one emergency ski
 | Shield buttons | Shield Action extension | "Start session" → notification that opens Detour; "Skip (1 left)" → lifts shield |
 | Activity monitor | DeviceActivity Monitor extension | Re-shields when unlocked time ends; active hours; midnight skip reset; Hard-lock allowance |
 
-All parts share an App Group container (settings, due counts, debug log). Detour only receives anonymous app tokens; it never knows which apps were chosen, so after a session the user taps the app again (no automatic reopen).
+All parts share an App Group container (settings, due counts, debug log). Detour picks apps through Apple’s picker and stores them as anonymous tokens. The shield screen can read the name and bundle ID of the app it is covering; Detour keeps that in the App Group on the device only, so that after a guarded session it can offer “Go back to <app>” (a URL-scheme open). Nothing leaves the device.
 
 **Flow (Earn it):**
 

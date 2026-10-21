@@ -50,6 +50,26 @@ final class GuardStore {
         static let skipsDay = "guard.skipsDay"
         static let skipsUsed = "guard.skipsUsed"
         static let log = "guard.log"
+        static let shieldedBundle = "guard.shieldedBundle"
+        static let shieldedName = "guard.shieldedName"
+    }
+
+    // MARK: The app the shield was covering (so the end screen can take the user back to it)
+
+    var shieldedBundle: String? {
+        get { defaults.string(forKey: Key.shieldedBundle) }
+        set { defaults.set(newValue, forKey: Key.shieldedBundle) }
+    }
+
+    var shieldedName: String? {
+        get { defaults.string(forKey: Key.shieldedName) }
+        set { defaults.set(newValue, forKey: Key.shieldedName) }
+    }
+
+    /// Remembers the app the shield is covering right now. Pass nil when it cannot be told (a category or a website).
+    func recordShielded(bundle: String?, name: String?) {
+        shieldedBundle = bundle
+        shieldedName = name
     }
 
     // MARK: Settings

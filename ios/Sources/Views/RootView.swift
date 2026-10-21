@@ -16,6 +16,7 @@ struct RootView: View {
     @Environment(AppModel.self) private var model
     @Environment(GuardManager.self) private var guardManager
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.openURL) private var openURL
     @State private var run: SessionRun?
     @State private var tab: MainTab = .home
 
@@ -53,6 +54,15 @@ struct RootView: View {
                         return nil
                     }
                     return guardManager.unlockAfterSet()
+                },
+                returnAppProvider: { run?.guarded == true ? guardManager.returnApp : nil },
+                onReturn: { app, completion in
+                    AppLog.log("going back to \(app.name ?? app.bundleIdentifier)")
+                    openURL(app.url) { accepted in
+                        AppLog.log("going back: iOS " + (accepted ? "opened it" : "did not open it"))
+                        completion(accepted)
+                        if accepted { run = nil }
+                    }
                 },
                 onAnother: { start(feed: false) },
                 onProgress: {
