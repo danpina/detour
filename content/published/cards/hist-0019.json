@@ -1,0 +1,57 @@
+{
+  "id": "hist-0019",
+  "interest": "history",
+  "title": "Maps made of sticks and shells",
+  "probes": [
+    {
+      "id": "hist-0019-p1",
+      "question": "On a Marshallese stick chart, what represented island locations?",
+      "kind": "mcq",
+      "options": [
+        "Shells tied to the framework, or lashed junctions of sticks",
+        "Painted dots on a sail",
+        "Carved notches in a paddle",
+        "Coloured stones"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0019-p2",
+      "question": "True or false: Marshallese navigators consulted the stick chart during the trip.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stick chart (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stick_chart"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:13:49.754Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0019.webp",
+    "alt": "A Marshallese stick chart of thin bamboo ribs tied in a lattice with small white cowrie shells marking islands, on a dark blue background",
+    "kind": "photo",
+    "credit": "https://www.loc.gov/item/2010586182/ / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Marshall_Islands_stick_chart,_Rebbelib_type._LOC_2010586182.jpg"
+  },
+  "body": {
+    "question": "Marshallese navigators made charts from coconut-frond midribs, with shells tied on. What did the charts show?",
+    "options": [
+      "Major ocean swell patterns and how islands disrupt them",
+      "Where the best fishing spots were",
+      "Which islands belonged to which families",
+      "The names of every island in the Pacific"
+    ],
+    "answer": 0,
+    "reveal": "The charts represented major ocean swell patterns and the ways the islands disrupted those patterns. Island locations were represented by shells tied to the framework, or by the lashed junction of two or more sticks. The charts were studied and memorized prior to a voyage and were not consulted during a trip."
+  }
+}

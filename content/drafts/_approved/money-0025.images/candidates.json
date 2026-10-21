@@ -1,0 +1,70 @@
+{
+  "draft_id": "money-0025",
+  "created_at": "2026-10-21T17:06:56.485Z",
+  "queries": [
+    "Lloyd's Coffee House Lloyd's of London history coffee house 17th century engraving",
+    "Lloyd's Coffee House",
+    "Lloyd's Coffee House Lloyd's of London history"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-127850750",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Blue plaque marking site of Lloyds coffee house.jpg",
+      "credit": "Back ache / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blue_plaque_marking_site_of_Lloyds_coffee_house.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Blue_plaque_marking_site_of_Lloyds_coffee_house.jpg/960px-Blue_plaque_marking_site_of_Lloyds_coffee_house.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3024,
+      "height": 4032,
+      "alt_suggestion": "Blue plaque marking the historic location that insurance in England began",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-90212491",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "A Picture of Great Britain in the Year 1793 (BM 1868,0808.10342).jpg",
+      "credit": "https://www.britishmuseum.org/collection/object/P_1868-0808-10342 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_Picture_of_Great_Britain_in_the_Year_1793_(BM_1868,0808.10342).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/A_Picture_of_Great_Britain_in_the_Year_1793_%28BM_1868%2C0808.10342%29.jpg/960px-A_Picture_of_Great_Britain_in_the_Year_1793_%28BM_1868%2C0808.10342%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2500,
+      "height": 2274,
+      "alt_suggestion": "The forces of good (left) and evil (right) converge in perspective upon the temple of 'The British Constitution', a dome supported on three pillars, inscribed 'King', 'Lord[s]', 'Common[s]', under whi",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-24732958",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Lloyds Coffee House (3984416269).jpg",
+      "credit": "Simon Harriyott from Uckfield, England / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lloyds_Coffee_House_(3984416269).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Lloyds_Coffee_House_%283984416269%29.jpg/960px-Lloyds_Coffee_House_%283984416269%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 1944,
+      "alt_suggestion": "Lloyds Coffee House",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Lloyd's steamboat directory, and disasters on the western waters (1856) (14760663982).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Lloyd's Coffee House Lloyd's of London history coffee house 17th century engraving\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Lloyd's Coffee House Lloyd's of London history coffee house 17th century engraving\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Lloyd's%20Coffee%20House%20Lloyd'",
+    "met failed for \"Lloyd's Coffee House\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Lloyd's Coffee House\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Lloyd's%20Coffee%20House&query[te",
+    "met failed for \"Lloyd's Coffee House Lloyd's of London history\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Lloyd's Coffee House Lloyd's of London history\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Lloyd's%20Coffee%20House%20Lloyd'"
+  ]
+}

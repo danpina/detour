@@ -1,0 +1,57 @@
+{
+  "id": "hist-0021",
+  "interest": "history",
+  "title": "Walls without mortar",
+  "probes": [
+    {
+      "id": "hist-0021-p1",
+      "question": "Roughly how many sites like Great Zimbabwe, with monumental mortarless walls, have been identified across southern Africa?",
+      "kind": "mcq",
+      "options": [
+        "Fewer than 10",
+        "About 50",
+        "More than 400",
+        "Exactly one"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "hist-0021-p2",
+      "question": "True or false: the Great Enclosure was built during the 13th and 14th centuries.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Great Zimbabwe (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Zimbabwe"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:14:46.375Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0021.webp",
+    "alt": "Dry-stone walls of the Great Enclosure at Great Zimbabwe in warm evening light under a patchy sky, with a tall succulent tree in front",
+    "kind": "photo",
+    "credit": "Andrew Moore from Johannesburg, South Africa / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:East_Wall_Great_Enclosure_(47614139601).jpg"
+  },
+  "body": {
+    "question": "The Great Enclosure at Great Zimbabwe has dry stone walls as high as 11 m (36 ft). What holds the stones together?",
+    "options": [
+      "Nothing: the walls were built without mortar",
+      "Lime mortar",
+      "Clay mortar",
+      "Iron clamps"
+    ],
+    "answer": 0,
+    "reveal": "The Great Enclosure's dry stone walls were constructed without mortar. It was built during the 13th and 14th centuries and likely served as the royal residence. More than 400 such sites with monumental, mortarless walls have been identified across southern Africa."
+  }
+}

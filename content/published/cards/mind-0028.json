@@ -1,0 +1,53 @@
+{
+  "id": "mind-0028",
+  "interest": "mind",
+  "title": "One word, a different speed",
+  "probes": [
+    {
+      "id": "mind-0028-p1",
+      "question": "What was the mean speed estimate (mph) when the question said “smashed each other”?",
+      "kind": "estimate",
+      "answer": 41,
+      "unit": "mph",
+      "min": 20,
+      "max": 60,
+      "scale": "linear"
+    },
+    {
+      "id": "mind-0028-p2",
+      "question": "True or false: the mean estimate was highest when the question said “collided”.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Elizabeth Loftus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Elizabeth_Loftus"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:00.504Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0028.webp",
+    "alt": "Two cartoon cars, one teal and one dark blue, facing each other nose to nose with an orange starburst between them.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "In one of Elizabeth Loftus's experiments, 45 students watched videos of car crashes and estimated the cars' speed. The question used “collided”, “hit each other” or “smashed each other”. Which wording gave the highest mean estimate?",
+    "options": [
+      "collided",
+      "hit each other",
+      "smashed each other"
+    ],
+    "answer": 2,
+    "reveal": "The mean estimates were 32 mph for “collided”, 34 mph for “hit each other” and 41 mph for “smashed each other”. Loftus concluded that these results are consistent with the view that questions asked after an event can cause a reconstruction in one's memory of that event."
+  }
+}

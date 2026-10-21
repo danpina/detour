@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-5621984",
+  "alt": "A large offshore oil platform standing in calm blue sea, flanked by two small tugboats.",
+  "fits": true,
+  "note": "Clear offshore platform, no readable branding of note. cand-3 shows a vessel brand name; NASA oil spill images are unsuitable and misleading. Crop to the platform.",
+  "crop": {
+    "fx": 0.52,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

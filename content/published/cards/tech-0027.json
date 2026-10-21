@@ -1,0 +1,49 @@
+{
+  "id": "tech-0027",
+  "interest": "tech",
+  "title": "The save icon is a floppy disk",
+  "probes": [
+    {
+      "id": "tech-0027-p1",
+      "question": "What do many save icons still look like?",
+      "kind": "mcq",
+      "options": [
+        "A floppy disk",
+        "A cassette tape",
+        "A compact disc",
+        "A filing cabinet"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0027-p2",
+      "question": "True or false: floppy-disk-shaped save icons are described as a form of skeuomorphic design.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Floppy disk (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Floppy_disk"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:57.700Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0027.webp",
+    "alt": "A dark blue 3.5-inch floppy disk with a silver shutter and a cream label with blank lines.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "Floppy disks were so common in late 20th-century culture that many electronic and software programs continue to use save icons that look like floppy disks well into the 21st century.",
+    "why": "That is a form of skeuomorphic design. Floppy disk drives still have some limited uses, especially with legacy industrial computer equipment, but they have been superseded by data storage methods with much greater data storage capacity and data transfer speed."
+  }
+}

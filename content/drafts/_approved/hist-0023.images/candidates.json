@@ -1,0 +1,76 @@
+{
+  "draft_id": "hist-0023",
+  "created_at": "2026-10-21T17:06:19.643Z",
+  "queries": [
+    "Library of Ashurbanipal Nineveh tablet Epic of Gilgamesh tablet XI",
+    "Library of Ashurbanipal",
+    "Library of Ashurbanipal Nineveh tablet"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-62659558",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Tablet XI or the Flood Tablet of the Epic of Gilgamesh, currently housed in the British Museum in London.jpg",
+      "credit": "Osama Shukir Muhammed Amin FRCP(Glasg) / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tablet_XI_or_the_Flood_Tablet_of_the_Epic_of_Gilgamesh,_currently_housed_in_the_British_Museum_in_London.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Tablet_XI_or_the_Flood_Tablet_of_the_Epic_of_Gilgamesh%2C_currently_housed_in_the_British_Museum_in_London.jpg/960px-Tablet_XI_or_the_Flood_Tablet_of_the_Epic_of_Gilgamesh%2C_currently_housed_in_the_British_Museum_in_London.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6016,
+      "height": 4016,
+      "alt_suggestion": "This clay tablet, which was excavated by Hormuzd Rassam, dates back to the Neo-Assyrian Period, 7th century BC. It narrates the so-called the Babylonian Flood Story. Mr. George Smith was the man who t",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-62660288",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Flood Tablet or Tablet XI of the Epic of Gilgamesh, currently housed in the British Museum in London.jpg",
+      "credit": "Osama Shukir Muhammed Amin FRCP(Glasg) / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Flood_Tablet_or_Tablet_XI_of_the_Epic_of_Gilgamesh,_currently_housed_in_the_British_Museum_in_London.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/The_Flood_Tablet_or_Tablet_XI_of_the_Epic_of_Gilgamesh%2C_currently_housed_in_the_British_Museum_in_London.jpg/960px-The_Flood_Tablet_or_Tablet_XI_of_the_Epic_of_Gilgamesh%2C_currently_housed_in_the_British_Museum_in_London.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6016,
+      "height": 4016,
+      "alt_suggestion": "This clay tablet, which was excavated by Hormuzd Rassam, dates back to the Neo-Assyrian Period, 7th century BC. It narrates the so-called the Babylonian Flood Story. Mr. George Smith was the man who t",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-155076416",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Ashurbanipal Library Project, British Museum, 03.jpg",
+      "credit": "GualdimG / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Ashurbanipal_Library_Project,_British_Museum,_03.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/The_Ashurbanipal_Library_Project%2C_British_Museum%2C_03.jpg/960px-The_Ashurbanipal_Library_Project%2C_British_Museum%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1306,
+      "height": 980,
+      "alt_suggestion": "The Ashurbanipal Library Project of the British Museum",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Rassam cylinder of Ashurbanipal.jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Rassam cylinder of Ashurbanipal.jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Library of Ashurbanipal Nineveh tablet Epic of Gilgamesh tablet XI\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Library of Ashurbanipal Nineveh tablet Epic of Gilgamesh tablet XI\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Library%20of%20Ashurbanipal%20Nin",
+    "met failed for \"Library of Ashurbanipal\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Library of Ashurbanipal\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Library%20of%20Ashurbanipal&query",
+    "met failed for \"Library of Ashurbanipal Nineveh tablet\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Library of Ashurbanipal Nineveh tablet\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Library%20of%20Ashurbanipal%20Nin"
+  ]
+}

@@ -521,6 +521,185 @@ const scenes: Record<string, Scene> = {
          <path d="M 880 420 L 640 650" stroke="${ORANGE}" stroke-width="12" stroke-linecap="round"/><circle cx="640" cy="650" r="14" fill="${ORANGE}"/>`,
       ),
   },
+  kikibouba: {
+    alt: "Illustration of a smooth round circle next to a sharp spiky star shape",
+    svg: () => {
+      const spikes = 12;
+      const pts = Array.from({ length: spikes * 2 }, (_, i) => {
+        const a = (Math.PI / spikes) * i - Math.PI / 2;
+        const r = i % 2 ? 95 : 210;
+        return `${(800 + r * Math.cos(a)).toFixed(1)},${(680 + r * Math.sin(a)).toFixed(1)}`;
+      }).join(" ");
+      return wrap(`<circle cx="330" cy="680" r="190" fill="${TEAL}"/><polygon points="${pts}" fill="${ORANGE}"/>`);
+    },
+  },
+  cab: {
+    alt: "Illustration of a boxy black taxi in profile on a street with a winding street-map line behind it",
+    svg: () =>
+      wrap(
+        `<path d="M 100 520 C 260 380 420 600 560 460 C 700 320 820 560 980 420" fill="none" stroke="${TEAL}" stroke-width="10" stroke-dasharray="6 18" stroke-linecap="round" opacity="0.7"/>
+         <path d="M 120 520 C 300 560 500 400 700 520 C 800 580 900 500 980 560" fill="none" stroke="${ORANGE}" stroke-width="8" stroke-dasharray="4 16" stroke-linecap="round" opacity="0.6"/>
+         <rect y="1000" width="${W}" height="350" fill="${SAND}"/><rect y="990" width="${W}" height="16" fill="${CHAR}" opacity="0.7"/>
+         <path d="M 150 940 L 150 800 Q 150 760 190 760 L 300 760 L 360 650 Q 380 620 420 620 L 700 620 Q 740 620 760 650 L 820 760 L 900 760 Q 940 760 940 800 L 940 940 Z" fill="${CHAR}"/>
+         <path d="M 390 690 L 340 760 L 520 760 L 520 690 Z M 560 690 L 560 760 L 770 760 L 725 690 Z" fill="#9fb8c0"/>
+         <rect x="470" y="585" width="150" height="34" rx="10" fill="${ORANGE}"/>
+         <circle cx="320" cy="960" r="64" fill="#101820"/><circle cx="320" cy="960" r="26" fill="${SAND}"/>
+         <circle cx="770" cy="960" r="64" fill="#101820"/><circle cx="770" cy="960" r="26" fill="${SAND}"/>`,
+      ),
+  },
+  carcrash: {
+    alt: "Illustration of two simple cartoon cars meeting nose to nose on a plain road with a starburst at the contact point",
+    svg: () => {
+      const star = Array.from({ length: 16 }, (_, i) => {
+        const a = (Math.PI / 8) * i;
+        const r = i % 2 ? 55 : 115;
+        return `${(540 + r * Math.cos(a)).toFixed(1)},${(770 + r * Math.sin(a)).toFixed(1)}`;
+      }).join(" ");
+      // One car drawn facing right in local coordinates 0..340; the second is the same car mirrored.
+      const car = (color: string) =>
+        `<rect x="0" y="760" width="340" height="110" rx="34" fill="${color}"/><path d="M 60 760 L 100 690 Q 110 672 140 672 L 230 672 Q 260 672 275 700 L 300 760 Z" fill="${color}"/><circle cx="80" cy="880" r="42" fill="${CHAR}"/><circle cx="260" cy="880" r="42" fill="${CHAR}"/><circle cx="80" cy="880" r="16" fill="${SAND}"/><circle cx="260" cy="880" r="16" fill="${SAND}"/>`;
+      return wrap(
+        `<rect y="920" width="${W}" height="430" fill="${SAND}"/><rect y="910" width="${W}" height="14" fill="${CHAR}" opacity="0.7"/>
+         <g transform="translate(160 0)">${car(TEAL)}</g>
+         <g transform="translate(920 0) scale(-1 1)">${car(DEEP)}</g>
+         <polygon points="${star}" fill="${ORANGE}"/>`,
+      );
+    },
+  },
+  wug: {
+    alt: "Illustration of a friendly made-up bird-like creature standing next to a second identical creature",
+    svg: () => {
+      const wug = (cx: number, cy: number, s: number, color: string) =>
+        `<g transform="translate(${cx} ${cy}) scale(${s})"><ellipse cx="0" cy="0" rx="120" ry="140" fill="${color}"/><path d="M -120 20 Q -190 -20 -170 -90 Q -120 -40 -100 -20 Z" fill="${color}"/><path d="M 120 20 Q 190 -20 170 -90 Q 120 -40 100 -20 Z" fill="${color}"/><circle cx="-42" cy="-50" r="26" fill="#fbf5e6"/><circle cx="42" cy="-50" r="26" fill="#fbf5e6"/><circle cx="-38" cy="-46" r="11" fill="${CHAR}"/><circle cx="46" cy="-46" r="11" fill="${CHAR}"/><polygon points="-22,-10 22,-10 0,32" fill="${ORANGE}"/><rect x="-70" y="130" width="22" height="50" fill="${ORANGE}"/><rect x="48" y="130" width="22" height="50" fill="${ORANGE}"/><path d="M -20 -150 q 20 -50 40 0" fill="none" stroke="${color}" stroke-width="12" stroke-linecap="round"/></g>`;
+      return wrap(`<rect y="980" width="${W}" height="370" fill="${SAND}"/>${wug(340, 760, 1.05, TEAL)}${wug(760, 790, 0.85, "#2a9d8f")}`);
+    },
+  },
+  splitbrain: {
+    alt: "Illustration of a brain drawn as two rounded halves in different colours joined by a thin bridge in the middle",
+    svg: () =>
+      wrap(
+        `<path d="M 520 440 C 420 380 250 400 200 540 C 150 660 220 780 330 810 C 400 900 480 880 520 820 Z" fill="${TEAL}"/>
+         <path d="M 560 440 C 660 380 830 400 880 540 C 930 660 860 780 750 810 C 680 900 600 880 560 820 Z" fill="${ORANGE}"/>
+         <rect x="500" y="610" width="80" height="44" rx="14" fill="${CHAR}" opacity="0.85"/>
+         <path d="M 300 520 q 50 -30 100 10 M 270 640 q 70 -30 120 20 M 330 740 q 50 -30 100 10" fill="none" stroke="${CREAM}" stroke-width="8" stroke-linecap="round" opacity="0.55"/>
+         <path d="M 780 520 q -50 -30 -100 10 M 810 640 q -70 -30 -120 20 M 750 740 q -50 -30 -100 10" fill="none" stroke="${CREAM}" stroke-width="8" stroke-linecap="round" opacity="0.55"/>`,
+      ),
+  },
+  brainenergy: {
+    alt: "Illustration of a brain silhouette with a lightning bolt at its centre",
+    svg: () =>
+      wrap(
+        `<path d="M 540 440 C 440 380 250 400 200 540 C 150 660 220 780 330 810 C 400 900 480 880 540 820 C 600 880 680 900 750 810 C 860 780 930 660 880 540 C 830 400 640 380 540 440 Z" fill="${TEAL}"/>
+         <path d="M 300 520 q 50 -30 100 10 M 270 640 q 70 -30 120 20 M 330 740 q 50 -30 100 10 M 780 520 q -50 -30 -100 10 M 810 640 q -70 -30 -120 20 M 750 740 q -50 -30 -100 10" fill="none" stroke="#7fd1c7" stroke-width="9" stroke-linecap="round" opacity="0.7"/>
+         <polygon points="575,470 465,690 545,690 505,850 645,620 560,620 625,470" fill="${ORANGE}" stroke="${CREAM}" stroke-width="9" stroke-linejoin="round"/>`,
+      ),
+  },
+  pascaltri: {
+    alt: "Illustration of a triangle of stacked circles in rows of one, two, three, four, five and six",
+    svg: () => {
+      let out = "";
+      for (let r = 0; r < 6; r++) {
+        for (let c = 0; c <= r; c++) {
+          const x = 540 + (c - r / 2) * 150;
+          const y = 430 + r * 120;
+          out += `<circle cx="${x}" cy="${y}" r="52" fill="${(r + c) % 2 ? TEAL : ORANGE}" opacity="${0.55 + r * 0.08}"/>`;
+        }
+      }
+      return wrap(out);
+    },
+  },
+  zerostone: {
+    alt: "Illustration of a sandstone slab carved with a row of tally marks ending in one small round circle, under a soft sun",
+    svg: () => {
+      let marks = "";
+      for (let i = 0; i < 5; i++) marks += `<rect x="${290 + i * 80}" y="600" width="22" height="170" rx="8" fill="${CHAR}" opacity="0.75"/>`;
+      return wrap(
+        `<circle cx="840" cy="360" r="110" fill="${ORANGE}" opacity="0.85"/>
+         <rect x="200" y="470" width="680" height="470" rx="50" fill="#d9b77e" stroke="${CHAR}" stroke-width="8"/>
+         <path d="M 240 530 L 840 530 M 240 880 L 840 880" stroke="${CHAR}" stroke-width="5" opacity="0.3"/>
+         ${marks}<circle cx="745" cy="685" r="62" fill="none" stroke="${CHAR}" stroke-width="22" opacity="0.85"/>
+         <rect y="980" width="${W}" height="370" fill="${SAND}"/>`,
+      );
+    },
+  },
+  cray: {
+    alt: "Illustration of a computer cabinet made of a row of dark columns in an arc, with a round padded bench around its base",
+    svg: () => {
+      const heights = [380, 430, 465, 485, 485, 465, 430, 380];
+      let cols = "";
+      heights.forEach((h, i) => {
+        const x = 205 + i * 96;
+        cols += `<rect x="${x}" y="${880 - h}" width="76" height="${h}" rx="22" fill="${i % 2 ? DEEP : "#16556a"}"/>`;
+      });
+      return wrap(
+        `<rect y="990" width="${W}" height="360" fill="${SAND}"/>
+         <ellipse cx="540" cy="890" rx="440" ry="110" fill="${ORANGE}"/><ellipse cx="540" cy="870" rx="400" ry="88" fill="#e9a05a"/>
+         ${cols}
+         <path d="M 130 900 Q 540 1010 950 900" fill="none" stroke="${ORANGE}" stroke-width="40" stroke-linecap="round"/>`,
+      );
+    },
+  },
+  floppy: {
+    alt: "Illustration of a dark blue square floppy disk with a silver metal shutter and a plain white label",
+    svg: () =>
+      wrap(
+        `<path d="M 260 380 L 760 380 L 840 460 L 840 960 Q 840 990 810 990 L 290 990 Q 260 990 260 960 Z" fill="${DEEP}"/>
+         <rect x="400" y="380" width="300" height="190" rx="12" fill="#c8d6dc"/><rect x="590" y="410" width="60" height="130" rx="8" fill="${DEEP}"/>
+         <rect x="330" y="680" width="450" height="270" rx="16" fill="#fbf5e6"/>
+         <path d="M 370 740 L 740 740 M 370 800 L 740 800 M 370 860 L 640 860" stroke="${CHAR}" stroke-width="10" stroke-linecap="round" opacity="0.25"/>`,
+      ),
+  },
+  tux: {
+    alt: "Illustration of a friendly black-and-white penguin with a yellow beak and feet on a soft blue background",
+    svg: () =>
+      wrap(
+        `<circle cx="540" cy="720" r="420" fill="#cfe3ea"/>
+         <ellipse cx="540" cy="740" rx="230" ry="320" fill="${CHAR}"/>
+         <ellipse cx="540" cy="800" rx="150" ry="230" fill="#fbf5e6"/>
+         <path d="M 330 700 Q 230 800 270 920 Q 330 840 360 780 Z" fill="${CHAR}"/><path d="M 750 700 Q 850 800 810 920 Q 750 840 720 780 Z" fill="${CHAR}"/>
+         <circle cx="470" cy="560" r="44" fill="#fbf5e6"/><circle cx="610" cy="560" r="44" fill="#fbf5e6"/><circle cx="478" cy="566" r="18" fill="${CHAR}"/><circle cx="602" cy="566" r="18" fill="${CHAR}"/>
+         <polygon points="480,630 600,630 540,700" fill="#f0b429"/>
+         <ellipse cx="450" cy="1000" rx="90" ry="34" fill="#f0b429"/><ellipse cx="630" cy="1000" rx="90" ry="34" fill="#f0b429"/>`,
+      ),
+  },
+  torsion: {
+    alt: "Illustration of a horizontal rod hanging from a thin thread with a small sphere at each end and two larger spheres beside it",
+    svg: () =>
+      wrap(
+        `<line x1="540" y1="300" x2="540" y2="640" stroke="${CREAM}" stroke-width="6" opacity="0.8"/>
+         <rect x="300" y="636" width="480" height="16" rx="8" fill="${SAND}"/>
+         <circle cx="300" cy="644" r="40" fill="${ORANGE}"/><circle cx="780" cy="644" r="40" fill="${ORANGE}"/>
+         <circle cx="180" cy="760" r="120" fill="${TEAL}"/><circle cx="900" cy="528" r="120" fill="${TEAL}"/>
+         <ellipse cx="540" cy="960" rx="360" ry="60" fill="#06222c"/><rect x="520" y="300" width="40" height="40" rx="8" fill="${SAND}"/>
+         <path d="M 220 700 A 330 330 0 0 1 860 700" fill="none" stroke="${CREAM}" stroke-width="5" stroke-dasharray="4 16" stroke-linecap="round" opacity="0.5"/>`,
+        DEEP,
+      ),
+  },
+  petri: {
+    alt: "Illustration of a round petri dish seen from above with a fuzzy mould blob on one side and a clear halo around it where small dots are missing",
+    svg: () => {
+      let dots = "";
+      for (let i = 0; i < 70; i++) {
+        const a = i * 2.399;
+        const r = 60 + ((i * 53) % 300);
+        const x = 540 + r * Math.cos(a);
+        const y = 700 + r * Math.sin(a);
+        const dx = x - 400;
+        const dy = y - 600;
+        if (Math.sqrt(dx * dx + dy * dy) < 210) continue;
+        if (Math.sqrt((x - 540) ** 2 + (y - 700) ** 2) > 340) continue;
+        dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${9 + (i % 3) * 3}" fill="${ORANGE}" opacity="0.8"/>`;
+      }
+      return wrap(
+        `<circle cx="540" cy="700" r="400" fill="#dff0ee" stroke="${CHAR}" stroke-width="10"/>
+         <circle cx="540" cy="700" r="365" fill="#f3d9a0" opacity="0.65"/>
+         <circle cx="400" cy="600" r="200" fill="#fbf0d0" opacity="0.9"/>
+         ${dots}
+         <path d="M 330 600 C 330 520 450 500 470 560 C 530 540 560 620 500 650 C 520 710 420 740 380 690 C 320 700 290 640 330 600 Z" fill="#4c9a8c"/>`,
+        TEAL,
+      );
+    },
+  },
 };
 
 export async function runIllustrate(argv: string[]): Promise<number> {

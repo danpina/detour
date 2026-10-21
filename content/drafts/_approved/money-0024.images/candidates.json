@@ -1,0 +1,94 @@
+{
+  "draft_id": "money-0024",
+  "created_at": "2026-10-21T17:06:53.946Z",
+  "queries": [
+    "offshore oil platform oil rig auction gavel",
+    "offshore oil platform",
+    "offshore oil platform oil rig"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-5621984",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Oil platform P-51 (Brazil).jpg",
+      "credit": "Divulgação Petrobras / ABr / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Oil_platform_P-51_(Brazil).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Oil_platform_P-51_%28Brazil%29.jpg/960px-Oil_platform_P-51_%28Brazil%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2657,
+      "height": 1772,
+      "alt_suggestion": "Brazil - The first 100% Brazilian oil platform, the P-51 will produce about 180 thousand barrels of oil and 6 million cubic meters of gas per day when operating at full load.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA13091",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "ASTER Views the Gulf of Mexico Oil Spill in Infrared May 1",
+      "credit": "NASA/GSFC/METI/ERSDAC/JAROS, and U.S./Japan ASTER Science Team / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA13091",
+      "image_url": "https://images-assets.nasa.gov/image/PIA13091/PIA13091~thumb.jpg",
+      "alt_suggestion": "NASA Terra spacecraft captured this image of the growing oil spill in the Gulf of Mexico on May 1, 2010. On April 20, 2010, an explosion destroyed the Deepwater Horizon oil platform operating offshore",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-144849921",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Oil Platform Crew Transfer.jpg",
+      "credit": "GuavaTrain / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Oil_Platform_Crew_Transfer.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Oil_Platform_Crew_Transfer.jpg/960px-Oil_Platform_Crew_Transfer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "Personnel transfer being conducted between offshore oil platform Holstein and offshore supply vessel HOS Black Rock. A crane fixed to the oil platform transports crew from the oil platform onto the bo",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-PIA13085",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "ASTER Images Gulf of Mexico Oil Spill",
+      "credit": "NASA/GSFC/METI/ERSDAC/JAROS, and U.S./Japan ASTER Science Team / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA13085",
+      "image_url": "https://images-assets.nasa.gov/image/PIA13085/PIA13085~medium.jpg",
+      "alt_suggestion": "This image, from NASA Terra spacecraft, was acquired May 1, 2010. An explosion destroyed the Deepwater Horizon oil platform operating in the offshore in Gulf of Mexico on April 20, 2010.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-116914190",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "00 3783 Oil and gas platform in Norway.jpg",
+      "credit": "W. Bulach / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:00_3783_Oil_and_gas_platform_in_Norway.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/00_3783_Oil_and_gas_platform_in_Norway.jpg/960px-00_3783_Oil_and_gas_platform_in_Norway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3300,
+      "height": 2200,
+      "alt_suggestion": "Drilling platform in a shipyard in Ølensvåg, a place in the municipality of Vindafjord in the province of Rogaland, Norway. The place is located at the southwestern end of the Ølsfjorden.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Offshore oil platform in fire near Changshan Islands.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"offshore oil platform oil rig auction gavel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"offshore oil platform oil rig auction gavel\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=offshore%20oil%20platform%20oil%2",
+    "met failed for \"offshore oil platform\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"offshore oil platform\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=offshore%20oil%20platform&query[t",
+    "met failed for \"offshore oil platform oil rig\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"offshore oil platform oil rig\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=offshore%20oil%20platform%20oil%2"
+  ]
+}

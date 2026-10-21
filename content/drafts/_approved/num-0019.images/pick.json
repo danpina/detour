@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-6886354",
+  "alt": "Oil portrait of an older Carl Friedrich Gauss in a dark cap and robe, painted by Christian Albrecht Jensen in 1840",
+  "fits": true,
+  "note": "Public-domain painted portrait of Gauss, the subject of the card; portrait 4:5 works as full-screen background.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

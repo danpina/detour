@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-106335471",
+  "alt": "Artist's rendering of a tiny, bright neutron star at the centre of a glowing red accretion disk against a dense starfield.",
+  "fits": true,
+  "note": "Native portrait illustration (CC BY-SA 4.0), image-forward and clearly an artist rendering. Alternative: nasa cand-5 (public domain, landscape). Rejected cand-2 (NASA logo/text infographic), cand-3 (panel grid), cand-4 (blurry X-ray blob).",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.6,
+    "zoom": 1
+  }
+}

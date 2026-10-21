@@ -1,0 +1,99 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Brain energy",
+    "angle": "Small organ, big share"
+  },
+  "created_at": "2026-10-21T17:05:01.069Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0031",
+    "interest": "mind",
+    "type": "estimate",
+    "title": "The brain's share of the oxygen",
+    "body": {
+      "question": "The human brain represents only 2% of the body weight. What percentage of total body oxygen consumption does it receive?",
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "answer": 20,
+      "reveal": "It receives 20% of total body oxygen consumption, along with 15% of the cardiac output and 25% of total body glucose utilization."
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "What share of the body weight does the human brain represent?",
+        "options": [
+          "2%",
+          "5%",
+          "10%",
+          "30%"
+        ],
+        "answer": 0,
+        "id": "mind-0031-p1"
+      },
+      {
+        "kind": "mcq",
+        "question": "The brain receives 25% of which of these?",
+        "options": [
+          "Total body glucose utilization",
+          "Cardiac output",
+          "Body weight",
+          "Total body oxygen consumption"
+        ],
+        "answer": 0,
+        "id": "mind-0031-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Human brain (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Human_brain"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A human brain, anatomical photo or illustration",
+    "keywords": [
+      "human brain",
+      "brain anatomy",
+      "brain specimen"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:00.643Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Human_brain",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Brain represents only 2% of body weight (question, probe 1 answer 2%)",
+        "verdict": "pass",
+        "quote": "Although the human brain represents only 2% of the body weight",
+        "source_url": "https://en.wikipedia.org/wiki/Human_brain"
+      },
+      {
+        "claim": "Brain receives 20% of total body oxygen consumption (answer 20, title) and 15% of cardiac output",
+        "verdict": "pass",
+        "quote": "it receives 15% of the cardiac output, 20% of total body oxygen consumption",
+        "source_url": "https://en.wikipedia.org/wiki/Human_brain"
+      },
+      {
+        "claim": "Brain receives 25% of total body glucose utilization (reveal, probe 2 answer; oxygen 20% and cardiac output 15% make the distractors wrong)",
+        "verdict": "pass",
+        "quote": "25% of total body glucose utilization",
+        "source_url": "https://en.wikipedia.org/wiki/Human_brain"
+      }
+    ],
+    "overall": "pass"
+  }
+}

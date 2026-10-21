@@ -1,0 +1,50 @@
+{
+  "id": "hist-0022",
+  "interest": "history",
+  "title": "A city built with baskets",
+  "probes": [
+    {
+      "id": "hist-0022-p1",
+      "question": "How was earth moved to build Cahokia's mounds?",
+      "kind": "mcq",
+      "options": [
+        "In woven baskets",
+        "On wheeled carts",
+        "By pack animals",
+        "Along canals on barges"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0022-p2",
+      "question": "True or false: around 1100 AD, Cahokia had a population of between 15,000 and 20,000 people.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cahokia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cahokia"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:14:48.448Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0022.webp",
+    "alt": "Monks Mound at Cahokia, a huge grass-covered earthen mound with a wooden staircase up its face under a wide blue sky",
+    "kind": "photo",
+    "credit": "User: (WT-shared) Ethajek at wts wikivoyage / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cahokia_Monks_Mound.jpg"
+  },
+  "body": {
+    "claim": "Around 1100 AD, Cahokia covered about 6 square miles (16 km²), included about 120 earthworks, and had a population of between 15,000 and 20,000 people.",
+    "why": "Thousands of workers over decades moved more than an estimated 55 million cubic feet (1,600,000 m³) of earth in woven baskets to create this network of mounds and community plazas. Monks Mound, for example, rises 100 ft (30 m)."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Marshall Islands stick charts",
+    "angle": "Sticks, shells and ocean swells"
+  },
+  "created_at": "2026-10-21T17:04:28.872Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "type": "guess_first",
+    "title": "Maps made of sticks and shells",
+    "body": {
+      "question": "Marshallese navigators made charts from coconut-frond midribs, with shells tied on. What did the charts show?",
+      "options": [
+        "Major ocean swell patterns and how islands disrupt them",
+        "Where the best fishing spots were",
+        "Which islands belonged to which families",
+        "The names of every island in the Pacific"
+      ],
+      "answer": 0,
+      "reveal": "The charts represented major ocean swell patterns and the ways the islands disrupted those patterns. Island locations were represented by shells tied to the framework, or by the lashed junction of two or more sticks. The charts were studied and memorized prior to a voyage and were not consulted during a trip."
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "On a Marshallese stick chart, what represented island locations?",
+        "options": [
+          "Shells tied to the framework, or lashed junctions of sticks",
+          "Painted dots on a sail",
+          "Carved notches in a paddle",
+          "Coloured stones"
+        ],
+        "answer": 0,
+        "id": "hist-0019-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: Marshallese navigators consulted the stick chart during the trip.",
+        "answer": false,
+        "id": "hist-0019-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Stick chart (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Stick_chart"
+      }
+    ],
+    "difficulty": 2,
+    "id": "hist-0019",
+    "interest": "history",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A Marshallese stick chart of wood, fibre and cowrie shells in a museum",
+    "keywords": [
+      "Marshall Islands stick chart",
+      "Marshallese navigation chart",
+      "rebbelib",
+      "stick chart museum"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:42.114Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Stick_chart",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: \"Maps made of sticks and shells\"",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stick_chart",
+        "quote": "Island locations were represented by shells tied to the framework, or by the lashed junction of two or more sticks",
+        "note": "Charts are described as mapping ocean swells (framework of sticks, island locations as shells)."
+      },
+      {
+        "claim": "Question: Marshallese charts made from coconut-frond midribs, with shells tied on",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stick_chart",
+        "quote": "Most stick charts were made from the midribs of coconut fronds that were tied together to form an open framework",
+        "note": "Page says \"Most\" stick charts; card does not claim all. Shells tied on is in the island-locations sentence."
+      },
+      {
+        "claim": "Answer/reveal: the charts represented major ocean swell patterns and how islands disrupted them (distractors fishing spots / families / island names are not what the page says charts show)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stick_chart",
+        "quote": "The charts represented major ocean swell patterns and the ways the islands disrupted those patterns",
+        "note": "Page lists swell patterns and island locations only; fishing spots, family ownership and names do not appear on the page."
+      },
+      {
+        "claim": "Reveal: island locations were shells tied to the framework, or the lashed junction of two or more sticks",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stick_chart",
+        "quote": "Island locations were represented by shells tied to the framework, or by the lashed junction of two or more sticks"
+      },
+      {
+        "claim": "Reveal: charts were studied and memorized prior to a voyage and not consulted during a trip",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stick_chart",
+        "quote": "were studied and memorized prior to a voyage and were not consulted during a trip"
+      },
+      {
+        "claim": "Probe 1 (mcq): island locations were represented by shells tied to the framework or lashed junctions of sticks (distractors painted dots, carved notches, coloured stones not on page)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stick_chart",
+        "quote": "Island locations were represented by shells tied to the framework, or by the lashed junction of two or more sticks"
+      },
+      {
+        "claim": "Probe 2 (tf): navigators did NOT consult the stick chart during the trip (answer false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stick_chart",
+        "quote": "were studied and memorized prior to a voyage and were not consulted during a trip"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "mind-0027",
+  "interest": "mind",
+  "title": "Are A and B the same shade?",
+  "probes": [
+    {
+      "id": "mind-0027-p1",
+      "question": "True or false: in the checker shadow illusion, areas A and B would be printed with identical mixtures of ink.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0027-p2",
+      "question": "In what year was the checker shadow illusion published?",
+      "kind": "mcq",
+      "options": [
+        "1995",
+        "1925",
+        "1965",
+        "2005"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Checker shadow illusion (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Checker_shadow_illusion"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:14:59.868Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0027.webp",
+    "alt": "Adelson checker shadow illusion: a checkerboard with a green cylinder casting a shadow, with squares A and B marked.",
+    "kind": "photo",
+    "credit": "Edward H. Adelson / Wikimedia Commons",
+    "license": "CC BY 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Checkershadow.jpg"
+  },
+  "body": {
+    "question": "A checkerboard with light and dark squares is partly shadowed by another object. Square A looks darker than square B. In the image itself, how do they compare?",
+    "options": [
+      "They are identical in brightness",
+      "A is darker than B",
+      "B is darker than A"
+    ],
+    "answer": 0,
+    "reveal": "Within the context of the two-dimensional image, A and B are of identical brightness: they would be printed with identical mixtures of ink, or displayed on a screen with pixels of identical color. Edward H. Adelson, professor of vision science at MIT, published the illusion in 1995. It demonstrates the context-dependent nature of human color perception."
+  }
+}

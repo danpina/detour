@@ -1,0 +1,124 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "History of zero",
+    "angle": "Early written zeros"
+  },
+  "created_at": "2026-10-21T17:04:24.771Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0025",
+    "type": "story",
+    "title": "A small circle carved in stone",
+    "body": {
+      "panels": [
+        {
+          "text": "The first known use of special glyphs for the decimal digits that includes the indubitable appearance of a symbol for the digit zero, a small circle, is on a stone inscription at the Chaturbhuj Temple, Gwalior, in India."
+        },
+        {
+          "text": "The inscription is dated AD 876."
+        },
+        {
+          "text": "A symbol for zero, a black dot, is used throughout the Bakhshali manuscript, a practical manual on arithmetic for merchants."
+        },
+        {
+          "text": "The Bodleian Library reported radiocarbon dating results for six folios of the manuscript, indicating that they came from different centuries."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0025-p1",
+        "kind": "mcq",
+        "question": "What symbol for zero appears on the Gwalior inscription?",
+        "options": [
+          "A small circle",
+          "A cross",
+          "A square",
+          "A triangle"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0025-p2",
+        "kind": "tf",
+        "question": "True or false: the Bakhshali manuscript is described as a practical manual on arithmetic for merchants.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "0 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/0"
+      }
+    ],
+    "difficulty": 2,
+    "interest": "numbers",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Bakhshali manuscript with its dot for zero, or the Gwalior inscription",
+    "keywords": [
+      "Bakhshali manuscript",
+      "Gwalior inscription zero",
+      "Chaturbhuj Temple"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:07:59.168Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/0",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: A small circle carved in stone (zero as a small circle on a stone inscription)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/0",
+        "quote": "appearance of a symbol for the digit zero, a small circle, appears on a stone inscription found at the Chaturbhuj Temple"
+      },
+      {
+        "claim": "The first known use of special glyphs for the decimal digits that includes the indubitable appearance of a symbol for zero, a small circle, is on a stone inscription at the Chaturbhuj Temple, Gwalior, India.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/0",
+        "quote": "The first known use of special glyphs for the decimal digits that includes the indubitable appearance of a symbol for the digit zero"
+      },
+      {
+        "claim": "The inscription is dated AD 876.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/0",
+        "quote": "Temple, Gwalior , in India, dated AD 876"
+      },
+      {
+        "claim": "A symbol for zero, a black dot, is used throughout the Bakhshali manuscript, a practical manual on arithmetic for merchants.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/0",
+        "quote": "A symbol for zero, a black dot, is used throughout the Bakhshali manuscript , a practical manual on arithmetic for merchants"
+      },
+      {
+        "claim": "The Bodleian Library reported radiocarbon dating results for six folios, indicating different centuries.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/0",
+        "quote": "The Bodleian Library reported radiocarbon dating results for six folio from the manuscript, indicating that they came from different centuries"
+      },
+      {
+        "claim": "Probe 1: the symbol for zero on the Gwalior inscription is a small circle",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/0",
+        "quote": "a symbol for the digit zero, a small circle, appears on a stone inscription"
+      },
+      {
+        "claim": "Probe 2: Bakhshali manuscript described as a practical manual on arithmetic for merchants",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/0",
+        "quote": "a practical manual on arithmetic for merchants"
+      }
+    ],
+    "overall": "pass"
+  }
+}

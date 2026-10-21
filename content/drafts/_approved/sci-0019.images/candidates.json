@@ -1,0 +1,63 @@
+{
+  "draft_id": "sci-0019",
+  "created_at": "2026-10-21T17:07:30.086Z",
+  "queries": [
+    "Challenger Deep Mariana Trench deep sea",
+    "Challenger Deep",
+    "Challenger Deep Mariana Trench"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-120539958",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Challenger Deep Dive 071222 by V Vescovo in DSV Limiting Factor - Southern Wall of Western Pool.jpg",
+      "credit": "Vlvescovo / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Challenger_Deep_Dive_071222_by_V_Vescovo_in_DSV_Limiting_Factor_-_Southern_Wall_of_Western_Pool.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Challenger_Deep_Dive_071222_by_V_Vescovo_in_DSV_Limiting_Factor_-_Southern_Wall_of_Western_Pool.jpg/960px-Challenger_Deep_Dive_071222_by_V_Vescovo_in_DSV_Limiting_Factor_-_Southern_Wall_of_Western_Pool.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3024,
+      "height": 4032,
+      "alt_suggestion": "This is an image of the southern subduction slope and wall as photographed by a Samsung phone on July 12, 2022 in the Western Pool of Challenger Deep. The estimated depth of this photo was 10,800 mete",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-120539957",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dr Dawn Wright and CDR Victor Vescovo Challenger Deep Dive 071222 Western Pool-1.jpg",
+      "credit": "Vlvescovo / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dr_Dawn_Wright_and_CDR_Victor_Vescovo_Challenger_Deep_Dive_071222_Western_Pool-1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Dr_Dawn_Wright_and_CDR_Victor_Vescovo_Challenger_Deep_Dive_071222_Western_Pool-1.jpg/960px-Dr_Dawn_Wright_and_CDR_Victor_Vescovo_Challenger_Deep_Dive_071222_Western_Pool-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1080,
+      "alt_suggestion": "This photo was taken inside the control capsule of the submersible DSV Limiting Factor during a dive to 10,919 meters +/ 6 meters on July 12, 2022 in the Western Pool of Challenger Deep.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-105462507",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "GEBCO 2019 bathymetry Challenger Deep and Sirena Deep.jpg",
+      "credit": "Cassandra Bongiovanni, Heather A. Stewart and Alan J. Jamieson / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GEBCO_2019_bathymetry_Challenger_Deep_and_Sirena_Deep.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/GEBCO_2019_bathymetry_Challenger_Deep_and_Sirena_Deep.jpg/960px-GEBCO_2019_bathymetry_Challenger_Deep_and_Sirena_Deep.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2128,
+      "height": 1552,
+      "alt_suggestion": "GEBCO 2019 bathymetry of the Challenger Deep and the Sirena Deep. (a) Mariana Trench multibeam bathymetry data gridded at 75 m acquired on‐board the DSSV Pressure Drop overtop the GEBCO 2019 source gr",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Challenger Deep Mariana Trench deep sea\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Challenger Deep Mariana Trench deep sea\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Challenger%20Deep%20Mariana%20Tre",
+    "met failed for \"Challenger Deep\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Challenger Deep\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Challenger%20Deep&query[term][is_",
+    "met failed for \"Challenger Deep Mariana Trench\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Challenger Deep Mariana Trench\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Challenger%20Deep%20Mariana%20Tre"
+  ]
+}

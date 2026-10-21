@@ -1,0 +1,130 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Zeno's Achilles paradox",
+    "angle": "An ancient argument about infinite steps"
+  },
+  "created_at": "2026-10-21T17:04:24.772Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0026",
+    "type": "story",
+    "title": "Zeno’s runner who can’t catch the tortoise",
+    "body": {
+      "panels": [
+        {
+          "text": "Zeno's paradoxes are a series of philosophical arguments presented by the ancient Greek philosopher Zeno of Elea (c. 490-430 BC)."
+        },
+        {
+          "text": "In the paradox of Achilles and the tortoise, Achilles is in a footrace with a tortoise. Achilles allows the tortoise a head start of 100 meters, for example."
+        },
+        {
+          "text": "Zeno argues that a swift runner like Achilles cannot overtake a slower moving tortoise with a head start, because the distance between them can be infinitely subdivided."
+        },
+        {
+          "text": "That implies Achilles would require an infinite number of steps to catch the tortoise. Modern solutions leveraging the mathematical framework of calculus have provided a different perspective."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0026-p1",
+        "kind": "mcq",
+        "question": "In Zeno's argument, who is given a head start?",
+        "options": [
+          "The tortoise",
+          "Achilles",
+          "Zeno",
+          "Aristotle"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0026-p2",
+        "kind": "tf",
+        "question": "True or false: Zeno argues that Achilles cannot overtake the tortoise.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Zeno's paradoxes (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes"
+      }
+    ],
+    "difficulty": 2,
+    "interest": "numbers",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Achilles and the tortoise, as an illustration or a Greek vase painting",
+    "keywords": [
+      "Achilles and the tortoise",
+      "Zeno of Elea",
+      "Greek vase Achilles"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:49.242Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: Zeno’s runner who can’t catch the tortoise (Zeno argues Achilles cannot overtake the tortoise)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "quote": "Zeno argues that a swift runner like Achilles cannot overtake a slower moving tortoise with a head start"
+      },
+      {
+        "claim": "Zeno's paradoxes are a series of philosophical arguments presented by the ancient Greek philosopher Zeno of Elea (c. 490-430 BC).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "quote": "Zeno's paradoxes are a series of philosophical arguments presented by the ancient Greek philosopher Zeno of Elea"
+      },
+      {
+        "claim": "In the paradox of Achilles and the tortoise, Achilles is in a footrace with a tortoise and allows it a head start of 100 meters, for example.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "quote": "Achilles allows the tortoise a head start of 100 meters, for example."
+      },
+      {
+        "claim": "Zeno argues a swift runner like Achilles cannot overtake a slower tortoise with a head start, because the distance can be infinitely subdivided.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "quote": "a swift runner like Achilles cannot overtake a slower moving tortoise with a head start, because the distance between them can be infinitely subdivided"
+      },
+      {
+        "claim": "That implies Achilles would require an infinite number of steps to catch the tortoise.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "quote": "implying Achilles would require an infinite number of steps to catch the tortoise"
+      },
+      {
+        "claim": "Modern solutions leveraging the mathematical framework of calculus have provided a different perspective.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "quote": "modern solutions leveraging the mathematical framework of calculus have provided a different perspective"
+      },
+      {
+        "claim": "Probe 1: the tortoise is given a head start",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "quote": "Achilles allows the tortoise a head start of 100 meters"
+      },
+      {
+        "claim": "Probe 2: Zeno argues Achilles cannot overtake the tortoise",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "quote": "Zeno argues that a swift runner like Achilles cannot overtake a slower moving tortoise"
+      }
+    ],
+    "overall": "pass"
+  }
+}

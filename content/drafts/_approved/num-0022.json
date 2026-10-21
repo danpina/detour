@@ -1,0 +1,114 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Pascal's triangle history",
+    "angle": "The pattern was known long before Pascal"
+  },
+  "created_at": "2026-10-21T17:04:24.769Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0022",
+    "type": "guess_first",
+    "title": "Pascal's triangle before Pascal",
+    "body": {
+      "question": "Pascal's triangle is named after Blaise Pascal, but the pattern was known well before his time. Through the work of Jia Xian, in which century was it known in China?",
+      "options": [
+        "11th century",
+        "15th century",
+        "17th century",
+        "19th century"
+      ],
+      "answer": 0,
+      "reveal": "Pascal's triangle was known in China during the 11th century through the work of Jia Xian. In the 13th century Yang Hui defined the triangle, and it is known as Yang Hui's triangle in China."
+    },
+    "probes": [
+      {
+        "id": "num-0022-p1",
+        "kind": "mcq",
+        "question": "What is the triangle called in China?",
+        "options": [
+          "Yang Hui's triangle",
+          "Gersonides's triangle",
+          "Jordanus's triangle",
+          "Halayudha's triangle"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0022-p2",
+        "kind": "tf",
+        "question": "True or false: the pattern of numbers in Pascal's triangle was known well before Pascal's time.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Pascal's triangle (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pascal%27s_triangle"
+      }
+    ],
+    "difficulty": 2,
+    "interest": "numbers",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Yang Hui's triangle in rod numerals, or Pascal's triangle diagram",
+    "keywords": [
+      "Yang Hui triangle",
+      "Pascal's triangle",
+      "Jade Mirror of the Four Unknowns"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:49.242Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pascal%27s_triangle",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: Pascal's triangle before Pascal",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pascal%27s_triangle",
+        "quote": "The pattern of numbers that forms Pascal's triangle was known well before Pascal 's time."
+      },
+      {
+        "claim": "Pascal's triangle is named after Blaise Pascal",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pascal%27s_triangle",
+        "quote": "it is named after the French mathematician Blaise Pascal",
+        "note": "Page qualifies 'In much of the Western world'; card omits that but is not contradicted."
+      },
+      {
+        "claim": "The pattern was known well before Pascal's time (probe 2).",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pascal%27s_triangle",
+        "quote": "The pattern of numbers that forms Pascal's triangle was known well before Pascal 's time."
+      },
+      {
+        "claim": "Question: Through the work of Jia Xian, in which century was it known in China? Answer 11th century; 15th/17th/19th are not tied to Jia Xian by the page (he lived 1010-1070), so they are wrong for this wording",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pascal%27s_triangle",
+        "quote": "Pascal's triangle was known in China during the 11th century through the work of the Chinese mathematician Jia Xian (1010-1070)."
+      },
+      {
+        "claim": "Reveal: In the 13th century Yang Hui defined the triangle, and it is known as Yang Hui's triangle in China.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pascal%27s_triangle",
+        "quote": "During the 13th century, Yang Hui (1238-1298) defined the triangle, and it is known as Yang Hui's triangle"
+      },
+      {
+        "claim": "Probe 1: the triangle is called Yang Hui's triangle in China (other options are not named so in China)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pascal%27s_triangle",
+        "quote": "it is known as Yang Hui's triangle ( 杨辉三角 ; 楊輝三角 ) in China"
+      }
+    ],
+    "overall": "pass"
+  }
+}

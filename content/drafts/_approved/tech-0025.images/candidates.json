@@ -1,0 +1,73 @@
+{
+  "draft_id": "tech-0025",
+  "created_at": "2026-10-21T17:08:00.490Z",
+  "queries": [
+    "Cray-1 Cray-1 supercomputer Cray-1 museum",
+    "Cray-1",
+    "Cray-1 Cray-1 supercomputer"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-14615661",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "CRAY-2 IMG 9154.jpg",
+      "credit": "Rama / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CRAY-2_IMG_9154.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/CRAY-2_IMG_9154.jpg/960px-CRAY-2_IMG_9154.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3726,
+      "height": 3726,
+      "alt_suggestion": "CRAY-2 IMG 9154.jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-14631837",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "CRAY-2 IMG 9140.jpg",
+      "credit": "Rama / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CRAY-2_IMG_9140.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/CRAY-2_IMG_9140.jpg/960px-CRAY-2_IMG_9140.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5616,
+      "height": 3744,
+      "alt_suggestion": "CRAY-2 IMG 9140.jpg",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-14649672",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cray-2 IMG 9142.jpg",
+      "credit": "Rama / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cray-2_IMG_9142.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Cray-2_IMG_9142.jpg/960px-Cray-2_IMG_9142.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5616,
+      "height": 3744,
+      "alt_suggestion": "Cray-2 IMG 9142.jpg",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "generated-cray",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: cray",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-cray.png",
+      "alt_suggestion": "Illustration of a computer cabinet made of a row of dark columns in an arc, with a round padded bench around its base"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Cray-1 Cray-1 supercomputer Cray-1 museum\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Cray-1 Cray-1 supercomputer Cray-1 museum\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Cray-1%20Cray-1%20supercomputer%2",
+    "met failed for \"Cray-1\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Cray-1\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Cray-1&query[term][is_public_doma",
+    "met failed for \"Cray-1 Cray-1 supercomputer\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Cray-1 Cray-1 supercomputer\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Cray-1%20Cray-1%20supercomputer&q"
+  ]
+}

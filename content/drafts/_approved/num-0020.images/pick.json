@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-59366553",
+  "alt": "A colourful disc made of tens of thousands of tiny coloured digits of pi arranged in concentric rings on black",
+  "fits": true,
+  "note": "Visualisation of a very long run of pi digits, matching the long-calculation theme, no text; square, centre crop. Does not show Shanks himself.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

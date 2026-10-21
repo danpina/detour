@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Alexander Fleming",
+    "angle": "The contaminated plate"
+  },
+  "created_at": "2026-10-21T17:04:07.377Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0025",
+    "interest": "science",
+    "type": "story",
+    "title": "\"That's funny\"",
+    "body": {
+      "panels": [
+        {
+          "text": "Before leaving for his holiday, Alexander Fleming inoculated staphylococci on culture plates and left them on a bench in a corner of his laboratory."
+        },
+        {
+          "text": "On his return, he noticed that one culture was contaminated with a fungus. The staphylococci colonies immediately surrounding the fungus had been destroyed, whereas colonies farther away were normal."
+        },
+        {
+          "text": "He famously remarked \"That's funny\". He grew the mould in a pure culture and found that the culture broth contained an antibacterial substance."
+        },
+        {
+          "text": "His discovery in 1928 was of what was later named benzylpenicillin, from the mould Penicillium rubens."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0025-p1",
+        "kind": "mcq",
+        "question": "What was one of Fleming's culture plates contaminated with?",
+        "options": [
+          "A fungus",
+          "Dust from a window",
+          "A virus",
+          "Salt crystals"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0025-p2",
+        "kind": "tf",
+        "question": "True or false: on Fleming's plate, the staphylococci colonies immediately surrounding the fungus had been destroyed.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Alexander Fleming (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Alexander_Fleming"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Fleming's original penicillin mould culture plate, or Penicillium mould on a dish",
+    "keywords": [
+      "Fleming penicillin plate",
+      "Penicillium mould",
+      "penicillin culture plate",
+      "Alexander Fleming laboratory"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:26.654Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Alexander_Fleming",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Panel 1: before leaving for his holiday, Fleming inoculated staphylococci on culture plates and left them on a bench in a corner of his laboratory",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_Fleming",
+        "quote": "Before leaving for his holiday, he inoculated staphylococci on culture plates and left them on a bench in a corner of his laboratory."
+      },
+      {
+        "claim": "Panel 2 and probe p1: on his return he noticed one culture was contaminated with a fungus",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_Fleming",
+        "quote": "Fleming noticed that one culture was contaminated with a fungus"
+      },
+      {
+        "claim": "Panel 2 and probe p2: colonies immediately surrounding the fungus had been destroyed, whereas colonies farther away were normal",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_Fleming",
+        "quote": "the colonies of staphylococci immediately surrounding the fungus had been destroyed, whereas other staphylococci colonies farther away were normal"
+      },
+      {
+        "claim": "Panel 3 and title: he famously remarked \"That's funny\"",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_Fleming",
+        "quote": "famously remarking \"That's funny\""
+      },
+      {
+        "claim": "Panel 3: he grew the mould in a pure culture and found that the culture broth contained an antibacterial substance",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_Fleming",
+        "quote": "Fleming grew the mould in a pure culture and found that the culture broth contained an antibacterial substance."
+      },
+      {
+        "claim": "Panel 4: his discovery in 1928 was of what was later named benzylpenicillin, from the mould Penicillium rubens",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Alexander_Fleming",
+        "quote": "His discovery in 1928 of what was later named benzylpenicillin (or penicillin G) from the mould Penicillium rubens"
+      }
+    ],
+    "overall": "pass"
+  }
+}

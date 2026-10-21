@@ -1,0 +1,96 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Great Oxidation Event",
+    "angle": "Cyanobacteria and the rise of oxygen"
+  },
+  "created_at": "2026-10-21T17:04:07.376Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0024",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "The great rise of oxygen",
+    "body": {
+      "claim": "Earth's atmosphere and shallow seas first experienced a rise in the concentration of free oxygen approximately 2.46-2.426 billion years ago.",
+      "why": "The Great Oxidation Event is inferred to have been caused by cyanobacteria, which evolved chlorophyll-based photosynthesis that releases dioxygen as a byproduct of water photolysis."
+    },
+    "probes": [
+      {
+        "id": "sci-0024-p1",
+        "kind": "mcq",
+        "question": "What is the Great Oxidation Event inferred to have been caused by?",
+        "options": [
+          "Cyanobacteria",
+          "Giant volcanoes",
+          "Falling comets",
+          "Ocean tides"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0024-p2",
+        "kind": "tf",
+        "question": "True or false: the modern atmosphere contains nearly 21% oxygen.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Great Oxidation Event (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Great_Oxidation_Event"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Stromatolites or cyanobacteria, the photosynthesizers behind the rise of oxygen",
+    "keywords": [
+      "stromatolites",
+      "cyanobacteria",
+      "Shark Bay stromatolites",
+      "banded iron formation"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:20.194Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Great_Oxidation_Event",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Claim and title: Earth's atmosphere and shallow seas first experienced a rise in the concentration of free oxygen",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Oxidation_Event",
+        "quote": "the Earth's atmosphere and shallow seas first experienced a rise in the concentration of free oxygen"
+      },
+      {
+        "claim": "Claim: this began approximately 2.46-2.426 billion years ago",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Oxidation_Event",
+        "quote": "This began approximately 2.46-2.426 billion years ago (Ga)",
+        "note": "Page elsewhere notes other published estimates differ (2.7 to 2.3 Ga); the card uses the lead figure with \"approximately\"."
+      },
+      {
+        "claim": "Why and probe p1: the Great Oxidation Event is inferred to have been caused by cyanobacteria, which evolved chlorophyll-based photosynthesis that releases dioxygen as a byproduct of water photolysis",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Oxidation_Event",
+        "quote": "The GOE is inferred to have been caused by cyanobacteria , which evolved chlorophyll -based photosynthesis that releases dioxygen as a byproduct of water photolysis"
+      },
+      {
+        "claim": "Probe p2: the modern atmosphere contains nearly 21% oxygen",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Oxidation_Event",
+        "quote": "The modern atmosphere contains abundant oxygen (nearly 21%)"
+      }
+    ],
+    "overall": "pass"
+  }
+}

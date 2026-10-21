@@ -1,0 +1,104 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Challenger Deep",
+    "angle": "Deepest known seabed"
+  },
+  "created_at": "2026-10-21T17:04:07.367Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0019",
+    "interest": "science",
+    "type": "estimate",
+    "title": "The deepest known point of the seabed",
+    "body": {
+      "question": "The Challenger Deep is the deepest known point of Earth's seabed. About how deep is it below sea level, in metres?",
+      "unit": "m",
+      "min": 100,
+      "max": 20000,
+      "scale": "log",
+      "answer": 10935,
+      "reveal": "The Challenger Deep is located at the southern end of the Mariana Trench, in the western Pacific Ocean. Its maximum depth is 10,935 ± 6 m below sea level."
+    },
+    "probes": [
+      {
+        "id": "sci-0019-p1",
+        "kind": "estimate",
+        "question": "About how deep is the Challenger Deep below sea level?",
+        "answer": 10935,
+        "unit": "m",
+        "min": 100,
+        "max": 20000,
+        "scale": "log"
+      },
+      {
+        "id": "sci-0019-p2",
+        "kind": "mcq",
+        "question": "In which ocean is the Challenger Deep located?",
+        "options": [
+          "Western Pacific Ocean",
+          "Atlantic Ocean",
+          "Indian Ocean",
+          "Arctic Ocean"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Challenger Deep (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Challenger_Deep"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The ocean's depths, or a diagram or illustration of the Mariana Trench and Challenger Deep",
+    "keywords": [
+      "Challenger Deep",
+      "Mariana Trench",
+      "deep sea",
+      "NOAA ocean exploration"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:20.186Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Challenger_Deep",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title/question: the Challenger Deep is the deepest known point of Earth's seabed",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Challenger_Deep",
+        "quote": "The Challenger Deep is the deepest known point of the seabed of Earth"
+      },
+      {
+        "claim": "Depth is about 10,935 m below sea level (answer, reveal, probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Challenger_Deep",
+        "quote": "Max. depth 10,935 ± 6 m (35,876 ± 20 ft) below sea level"
+      },
+      {
+        "claim": "Reveal: located at the southern end of the Mariana Trench, in the western Pacific Ocean",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Challenger_Deep",
+        "quote": "located in the western Pacific Ocean at the southern end of the Mariana Trench"
+      },
+      {
+        "claim": "Probe p2: it is in the western Pacific Ocean (so not Atlantic, Indian or Arctic)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Challenger_Deep",
+        "quote": "located in the western Pacific Ocean at the southern end of the Mariana Trench"
+      }
+    ],
+    "overall": "pass"
+  }
+}

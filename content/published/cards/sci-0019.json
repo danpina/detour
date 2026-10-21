@@ -1,0 +1,59 @@
+{
+  "id": "sci-0019",
+  "interest": "science",
+  "title": "The deepest known point of the seabed",
+  "probes": [
+    {
+      "id": "sci-0019-p1",
+      "question": "About how deep is the Challenger Deep below sea level?",
+      "kind": "estimate",
+      "answer": 10935,
+      "unit": "m",
+      "min": 100,
+      "max": 20000,
+      "scale": "log"
+    },
+    {
+      "id": "sci-0019-p2",
+      "question": "In which ocean is the Challenger Deep located?",
+      "kind": "mcq",
+      "options": [
+        "Western Pacific Ocean",
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Arctic Ocean"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Challenger Deep (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Challenger_Deep"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:16:47.399Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "sci-0019.webp",
+    "alt": "Rocky, boulder-strewn wall of the deep seafloor lit in blue by a submersible at Challenger Deep, seen through the vehicle viewport.",
+    "kind": "photo",
+    "credit": "Vlvescovo / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Challenger_Deep_Dive_071222_by_V_Vescovo_in_DSV_Limiting_Factor_-_Southern_Wall_of_Western_Pool.jpg"
+  },
+  "body": {
+    "question": "The Challenger Deep is the deepest known point of Earth's seabed. About how deep is it below sea level, in metres?",
+    "unit": "m",
+    "min": 100,
+    "max": 20000,
+    "scale": "log",
+    "answer": 10935,
+    "reveal": "The Challenger Deep is located at the southern end of the Mariana Trench, in the western Pacific Ocean. Its maximum depth is 10,935 ± 6 m below sea level."
+  }
+}

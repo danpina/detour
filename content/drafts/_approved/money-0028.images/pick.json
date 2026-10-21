@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-84858552",
+  "alt": "An Indian spectacled cobra rearing up with its hood spread on bare ground among dry leaves.",
+  "fits": true,
+  "note": "Clear hooded Indian cobra, matches the story. Others are tighter head shots without the hood. Landscape: crop on the rearing snake at left.",
+  "crop": {
+    "fx": 0.35,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

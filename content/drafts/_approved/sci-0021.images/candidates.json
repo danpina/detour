@@ -1,0 +1,86 @@
+{
+  "draft_id": "sci-0021",
+  "created_at": "2026-10-21T17:07:35.787Z",
+  "queries": [
+    "Cavendish experiment torsion balance Henry Cavendish",
+    "Cavendish experiment",
+    "Cavendish experiment torsion balance"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-17415884",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cavendish experiment 3.jpg",
+      "credit": "GOKLuLe 盧樂 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cavendish_experiment_3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cavendish_experiment_3.jpg/960px-Cavendish_experiment_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2304,
+      "height": 1728,
+      "alt_suggestion": "Cavendish experiment (torsion balance)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-17415883",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cavendish experiment 2.jpg",
+      "credit": "GOKLuLe 盧樂 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cavendish_experiment_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Cavendish_experiment_2.jpg/960px-Cavendish_experiment_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2304,
+      "height": 1728,
+      "alt_suggestion": "Cavendish experiment (torsion balance)",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-17415880",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cavendish experiment 1.jpg",
+      "credit": "GOKLuLe 盧樂 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cavendish_experiment_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Cavendish_experiment_1.jpg/960px-Cavendish_experiment_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2304,
+      "height": 1728,
+      "alt_suggestion": "Cavendish experiment (torsion balance)",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "generated-torsion",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: torsion",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-torsion.png",
+      "alt_suggestion": "Illustration of a horizontal rod hanging from a thin thread with a small sphere at each end and two larger spheres beside it"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "CD016-Exper Cavendish.png",
+      "license": "GFDL",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "CD016-Exper Cavendish.png",
+      "license": "GFDL",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Cavendish experiment torsion balance Henry Cavendish\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Cavendish experiment torsion balance Henry Cavendish\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Cavendish%20experiment%20torsion%",
+    "met failed for \"Cavendish experiment\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Cavendish experiment\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Cavendish%20experiment&query[term",
+    "met failed for \"Cavendish experiment torsion balance\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Cavendish experiment torsion balance\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Cavendish%20experiment%20torsion%"
+  ]
+}

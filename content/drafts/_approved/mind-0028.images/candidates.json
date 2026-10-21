@@ -1,0 +1,85 @@
+{
+  "draft_id": "mind-0028",
+  "created_at": "2026-10-21T17:06:35.296Z",
+  "queries": [
+    "car crash car collision Elizabeth Loftus",
+    "car crash",
+    "car crash car collision"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-108864268",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Royal Wootton Bassett War Memorial, Wiltshire.jpg",
+      "credit": "Memorialman / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Royal_Wootton_Bassett_War_Memorial,_Wiltshire.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Royal_Wootton_Bassett_War_Memorial%2C_Wiltshire.jpg/960px-Royal_Wootton_Bassett_War_Memorial%2C_Wiltshire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3202,
+      "height": 5418,
+      "alt_suggestion": "War memorial with the names of the fallen",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA25420",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "SHIELD Prototype Attached to Drop Tower",
+      "credit": "NASA/JPL-Caltech / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA25420",
+      "image_url": "https://images-assets.nasa.gov/image/PIA25420/PIA25420~medium.jpg",
+      "alt_suggestion": "This prototype of a collapsible Mars lander base is part of SHIELD (Simplified High Impact Energy Landing Device), a project aimed at developing spacecraft that would intentionally crash land on the R",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-1741799",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Japanese car accident.jpg",
+      "credit": "Shuets Udono / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_car_accident.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Japanese_car_accident.jpg/960px-Japanese_car_accident.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4224,
+      "height": 2376,
+      "alt_suggestion": "A car accident in Tokyo, Japan.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-114103817",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "36th & Aldrich Fatal Car Crash, North Minneapolis.jpg",
+      "credit": "Tony Webster / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:36th_%26_Aldrich_Fatal_Car_Crash,_North_Minneapolis.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/36th_%26_Aldrich_Fatal_Car_Crash%2C_North_Minneapolis.jpg/960px-36th_%26_Aldrich_Fatal_Car_Crash%2C_North_Minneapolis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 7611,
+      "height": 4947,
+      "alt_suggestion": "A car sits in a North Minneapolis yard after a police pursuit fatal car crash at 36th and Aldrich Avenues North in Minneapolis, Minnesota, on May 1, 2019. Trevon McMorris was taken into custody after ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "generated-carcrash",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: carcrash",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-carcrash.png",
+      "alt_suggestion": "Illustration of two simple cartoon cars meeting nose to nose on a plain road with a starburst at the contact point"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"car crash car collision Elizabeth Loftus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"car crash car collision Elizabeth Loftus\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=car%20crash%20car%20collision%20E",
+    "met failed for \"car crash\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"car crash\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=car%20crash&query[term][is_public",
+    "met failed for \"car crash car collision\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"car crash car collision\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=car%20crash%20car%20collision&que"
+  ]
+}

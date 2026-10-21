@@ -1,0 +1,63 @@
+{
+  "draft_id": "num-0021",
+  "created_at": "2026-10-21T17:07:14.969Z",
+  "queries": [
+    "pigeonholes pigeon holes wall pigeons in holes",
+    "pigeonholes",
+    "pigeonholes pigeon holes wall"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-157086695",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Madeira Pigeonhole.JPG",
+      "credit": "TeWeBs / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Madeira_Pigeonhole.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Madeira_Pigeonhole.JPG/960px-Madeira_Pigeonhole.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3264,
+      "height": 4352,
+      "alt_suggestion": "A pigeon in a hole in the wall in the Fort of São Tiago",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-79822763",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pigeonhole (26059832211).jpg",
+      "credit": "Mack Male from Edmonton, AB, Canada / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pigeonhole_(26059832211).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Pigeonhole_%2826059832211%29.jpg/960px-Pigeonhole_%2826059832211%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4615,
+      "height": 3077,
+      "alt_suggestion": "Pigeonhole",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-79822768",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pigeonhole (26059815621).jpg",
+      "credit": "Mack Male from Edmonton, AB, Canada / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pigeonhole_(26059815621).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Pigeonhole_%2826059815621%29.jpg/960px-Pigeonhole_%2826059815621%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4686,
+      "height": 3124,
+      "alt_suggestion": "Pigeonhole",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"pigeonholes pigeon holes wall pigeons in holes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"pigeonholes pigeon holes wall pigeons in holes\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=pigeonholes%20pigeon%20holes%20wa",
+    "met failed for \"pigeonholes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"pigeonholes\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=pigeonholes&query[term][is_public",
+    "met failed for \"pigeonholes pigeon holes wall\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"pigeonholes pigeon holes wall\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=pigeonholes%20pigeon%20holes%20wa"
+  ]
+}

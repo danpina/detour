@@ -1,0 +1,63 @@
+{
+  "draft_id": "hist-0017",
+  "created_at": "2026-10-21T17:06:01.114Z",
+  "queries": [
+    "Meroë pyramids Nubian pyramids Sudan pyramids",
+    "Meroë pyramids",
+    "Meroë pyramids Nubian pyramids"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-137827820",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sudan, Nubian pyramids (31444835441).jpg",
+      "credit": "Nina R from Africa / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sudan,_Nubian_pyramids_(31444835441).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Sudan%2C_Nubian_pyramids_%2831444835441%29.jpg/960px-Sudan%2C_Nubian_pyramids_%2831444835441%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3725,
+      "height": 1878,
+      "alt_suggestion": "Nubian Pyramids, Meroe, Sudan",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-137997737",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sudan, Nubian pyramids (30749874573).jpg",
+      "credit": "Nina R from Africa / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sudan,_Nubian_pyramids_(30749874573).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Sudan%2C_Nubian_pyramids_%2830749874573%29.jpg/960px-Sudan%2C_Nubian_pyramids_%2830749874573%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2160,
+      "height": 3240,
+      "alt_suggestion": "Reliefs of Meroe Pyramids",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-105361156",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sudan, Nubian pyramids (30719292724).jpg",
+      "credit": "Nina R from Africa / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sudan,_Nubian_pyramids_(30719292724).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Sudan%2C_Nubian_pyramids_%2830719292724%29.jpg/960px-Sudan%2C_Nubian_pyramids_%2830719292724%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2121,
+      "height": 1414,
+      "alt_suggestion": "Nubian Pyramids, Meroe, Sudan",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Meroë pyramids Nubian pyramids Sudan pyramids\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Meroë pyramids Nubian pyramids Sudan pyramids\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Mero%C3%AB%20pyramids%20Nubian%20",
+    "met failed for \"Meroë pyramids\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Meroë pyramids\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Mero%C3%AB%20pyramids&query[term]",
+    "met failed for \"Meroë pyramids Nubian pyramids\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Meroë pyramids Nubian pyramids\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Mero%C3%AB%20pyramids%20Nubian%20"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-8531033",
+  "alt": "A cylindrical lithium-ion cell taken apart, showing the green-wrapped jelly roll, its metal can and top cap beside a coin",
+  "fits": true,
+  "note": "Unbranded close-up of a cylindrical Li-ion cell internals; dark background good for scrim. Others show brand labels, an unrelated NASA object/astronaut, or a hazardous explosion.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "money-0023",
+  "interest": "money",
+  "title": "Prices that doubled in hours",
+  "probes": [
+    {
+      "id": "money-0023-p1",
+      "question": "Which currency replaced the pengő in 1946?",
+      "kind": "mcq",
+      "options": [
+        "Forint",
+        "Korona",
+        "Zloty",
+        "Lira"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0023-p2",
+      "question": "How many zeroes did the forint drop from the old currency?",
+      "kind": "mcq",
+      "options": [
+        "9",
+        "15",
+        "29",
+        "40"
+      ],
+      "answer": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hungarian pengő (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hungarian_peng%C5%91"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:21.403Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "money-0023.webp",
+    "alt": "Reverse of a Hungarian one million b-pengo banknote from 1946 showing an engraved landscape of trees by a lake.",
+    "kind": "photo",
+    "credit": "Magyar Nemzeti Bank (Hungarian National Bank) / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:HUP_1MB_1946_reverse.jpg"
+  },
+  "body": {
+    "question": "At one stage of Hungary's pengő hyperinflation, about how many hours did it take for prices to double?",
+    "unit": "hours",
+    "min": 1,
+    "max": 1000,
+    "scale": "log",
+    "answer": 15,
+    "reveal": "About 15 hours. At one stage it took only about 15 hours for prices to double and about four days for the pengő to lose 90% of its prior value. The forint replaced the pengő on 1 August 1946, dropping 29 zeroes."
+  }
+}

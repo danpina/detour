@@ -1,0 +1,87 @@
+{
+  "draft_id": "sci-0020",
+  "created_at": "2026-10-21T17:07:32.760Z",
+  "queries": [
+    "wood frog Lithobates sylvaticus Rana sylvatica",
+    "wood frog",
+    "wood frog Lithobates sylvaticus"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-10003726",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rana sylvatica SC 2.jpg",
+      "credit": "Cephas / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rana_sylvatica_SC_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Rana_sylvatica_SC_2.jpg/960px-Rana_sylvatica_SC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2394,
+      "height": 1596,
+      "alt_suggestion": "Pair of Wood Frogs mating (animals have been pulled out ou water). Saint-Camille, Quebec, Canada",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-KSC-08pd4129",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-08pd4129",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-08pd4129",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-08pd4129/KSC-08pd4129~medium.jpg",
+      "alt_suggestion": "CAPE CANAVERAL, Fla. – Hooded Merganser ducks swim on a pond in the Merritt island National Wildlife Refuge, which borders NASA's Kennedy Space Center in Florida. Their habitat includes wooded ponds, ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-90605181",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Lithobates sylvaticus.jpg",
+      "credit": "The Cosmonaut / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lithobates_sylvaticus.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Lithobates_sylvaticus.jpg/960px-Lithobates_sylvaticus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 2930,
+      "alt_suggestion": "Wood frog (Lithobates sylvaticus).",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-KSC-08pd4128",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-08pd4128",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-08pd4128",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-08pd4128/KSC-08pd4128~medium.jpg",
+      "alt_suggestion": "CAPE CANAVERAL, Fla. – Hooded Merganser ducks swim on a pond in the Merritt island National Wildlife Refuge, which borders NASA's Kennedy Space Center in Florida. Their habitat includes wooded ponds, ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-9935983",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rana sylvatica SC.jpg",
+      "credit": "Cephas / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rana_sylvatica_SC.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Rana_sylvatica_SC.jpg/960px-Rana_sylvatica_SC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3568,
+      "height": 2379,
+      "alt_suggestion": "Pair of Wood Frogs mating (animals have been pulled out ou water). Saint-Camille, Quebec, Canada",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"wood frog Lithobates sylvaticus Rana sylvatica\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"wood frog Lithobates sylvaticus Rana sylvatica\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=wood%20frog%20Lithobates%20sylvat",
+    "met failed for \"wood frog\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"wood frog\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=wood%20frog&query[term][is_public",
+    "met failed for \"wood frog Lithobates sylvaticus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"wood frog Lithobates sylvaticus\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=wood%20frog%20Lithobates%20sylvat"
+  ]
+}

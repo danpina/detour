@@ -1,0 +1,63 @@
+{
+  "draft_id": "money-0023",
+  "created_at": "2026-10-21T17:06:51.713Z",
+  "queries": [
+    "pengő banknote 1946 100 million b.-pengő Hungarian hyperinflation banknote",
+    "pengő banknote 1946",
+    "pengő banknote 1946 100 million b.-pengő"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-131815660",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "10 Milliard Pengő 1946 Back.jpg",
+      "credit": "ByRussia45 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:10_Milliard_Peng%C5%91_1946_Back.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/10_Milliard_Peng%C5%91_1946_Back.jpg/960px-10_Milliard_Peng%C5%91_1946_Back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3699,
+      "height": 1696,
+      "alt_suggestion": "An unissued banknote that was planned to release by the National Bank but became a base for the new 10 forint later.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-131815630",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "10 Milliard Pengo 1946 front.jpg",
+      "credit": "ByRussia45 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:10_Milliard_Pengo_1946_front.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/10_Milliard_Pengo_1946_front.jpg/960px-10_Milliard_Pengo_1946_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3948,
+      "height": 1782,
+      "alt_suggestion": "An unissued banknote that was planned to release by the National Bank but became a base for the new 10 forint later.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-3329641",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "HUP 1MB 1946 reverse.jpg",
+      "credit": "Magyar Nemzeti Bank (Hungarian National Bank) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:HUP_1MB_1946_reverse.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/HUP_1MB_1946_reverse.jpg/960px-HUP_1MB_1946_reverse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1929,
+      "height": 962,
+      "alt_suggestion": "HUP 1.000.000 Bio. - reverse 1946",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"pengő banknote 1946 100 million b.-pengő Hungarian hyperinflation banknote\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"pengő banknote 1946 100 million b.-pengő Hungarian hyperinflation banknote\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=peng%C5%91%20banknote%201946%2010",
+    "met failed for \"pengő banknote 1946\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"pengő banknote 1946\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=peng%C5%91%20banknote%201946&quer",
+    "met failed for \"pengő banknote 1946 100 million b.-pengő\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"pengő banknote 1946 100 million b.-pengő\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=peng%C5%91%20banknote%201946%2010"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "tech-0022",
+  "interest": "tech",
+  "title": "GPS clocks need a relativity fix",
+  "probes": [
+    {
+      "id": "tech-0022-p1",
+      "question": "How much faster per day do GPS satellite clocks run than clocks on Earth, as predicted by relativity?",
+      "kind": "mcq",
+      "options": [
+        "38 microseconds",
+        "38 milliseconds",
+        "38 nanoseconds",
+        "38 seconds"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0022-p2",
+      "question": "True or false: GPS's design corrects for the difference in clock speed that relativity predicts.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Global Positioning System (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Global_Positioning_System"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:36.862Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0022.webp",
+    "alt": "Artist's rendering of a GPS Block IIF satellite with two long solar panels in orbit above Earth",
+    "kind": "photo",
+    "credit": "USAF / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Navstar-2F.jpg"
+  },
+  "body": {
+    "claim": "Special and general relativity predicted that the clocks on GPS satellites, as observed by those on Earth, run 38 microseconds faster per day than those on the Earth.",
+    "why": "The design of GPS corrects for this difference. It makes two corrections to its time signals: one for relative velocity of satellite and receiver, using the special theory of relativity, and one for the difference in gravitational potential, using general relativity."
+  }
+}

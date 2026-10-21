@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-113256037",
+  "alt": "Large printed chip layout plot of the Intel 4004 microprocessor from 1971, a dense maze of traces",
+  "fits": true,
+  "note": "CC0 layout of the 4004 die; not the physical chip but accurate. Contains only the small Intel (c)71 die mark, no modern branding. Other candidates are a labelled PCB or a wall photo with clutter.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

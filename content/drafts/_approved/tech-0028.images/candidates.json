@@ -1,0 +1,87 @@
+{
+  "draft_id": "tech-0028",
+  "created_at": "2026-10-21T17:08:09.964Z",
+  "queries": [
+    "lithium-ion battery 18650 cell Li-ion cell",
+    "lithium-ion battery",
+    "lithium-ion battery 18650 cell"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-22767454",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "18650 Li-ion & Panasonic CR123A 20121116.jpg",
+      "credit": "Mk2010 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:18650_Li-ion_%26_Panasonic_CR123A_20121116.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/18650_Li-ion_%26_Panasonic_CR123A_20121116.jpg/960px-18650_Li-ion_%26_Panasonic_CR123A_20121116.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3298,
+      "height": 2474,
+      "alt_suggestion": "Two 18650 lithium-ion batteries (left) and a Panasonic CR123A battery (right)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-jsc2021e052199",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Space As-Lib Preflight Imagery",
+      "credit": "Â©JAXA, Hitz / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2021e052199",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2021e052199/jsc2021e052199~small.jpg",
+      "alt_suggestion": "jsc2021e052199 (9/7/2021) --- A preflight view of the Space Demonstration for All Solid-state Lithium Ion Battery (Space AS-Lib) demonstration configured for exposure to the space environment. Space A",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-8531033",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Lithium-Ion Cell cylindric.JPG",
+      "credit": "RudolfSimon / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lithium-Ion_Cell_cylindric.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Lithium-Ion_Cell_cylindric.JPG/960px-Lithium-Ion_Cell_cylindric.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2737,
+      "height": 2532,
+      "alt_suggestion": "Cylindric Lithium-Ion Battery Cell (18650) before closing (1 euro cent coin shown in background)",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-iss063e034203",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "iss063e034203",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss063e034203",
+      "image_url": "https://images-assets.nasa.gov/image/iss063e034203/iss063e034203~medium.jpg",
+      "alt_suggestion": "iss063e034203 (July 1, 2020) --- NASA astronaut and Expedition 63 Flight Engineer Bob Behnken works during a six-hour and one-minute spacewalk to swap an aging nickel-hydrogen battery for a new lithiu",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-84914019",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Li-ion battery explosion.jpg",
+      "credit": "Tavo Romann / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Li-ion_battery_explosion.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Li-ion_battery_explosion.jpg/960px-Li-ion_battery_explosion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3480,
+      "height": 1957,
+      "alt_suggestion": "To test safety of Li-ion batteries, a 18650 cell was hammered, yielding to an explosion. Frame from video clip https://www.youtube.com/watch?v=8iJGWsgaUWY",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"lithium-ion battery 18650 cell Li-ion cell\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"lithium-ion battery 18650 cell Li-ion cell\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=lithium-ion%20battery%2018650%20c",
+    "met failed for \"lithium-ion battery\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"lithium-ion battery\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=lithium-ion%20battery&query[term]",
+    "met failed for \"lithium-ion battery 18650 cell\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"lithium-ion battery 18650 cell\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=lithium-ion%20battery%2018650%20c"
+  ]
+}

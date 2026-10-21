@@ -1,0 +1,124 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "The Wug Test",
+    "angle": "Children and nonsense plurals"
+  },
+  "created_at": "2026-10-21T17:05:01.066Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0029",
+    "interest": "mind",
+    "type": "story",
+    "title": "The creature called a wug",
+    "body": {
+      "panels": [
+        {
+          "text": "A child is shown a simple picture of a fanciful creature with a nonsense name: “This is a WUG. Now there is another one. There are two of them. There are two ____.”"
+        },
+        {
+          "text": "Each target word was a made-up but plausible-sounding pseudoword, so the child cannot have heard it before."
+        },
+        {
+          "text": "A child who answers “wugs” has apparently inferred, perhaps unconsciously, the basic rule for forming plurals."
+        },
+        {
+          "text": "Jean Berko Gleason's major finding: even very young children are able to connect suitable endings to nonsense words they have never heard before."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "In the Wug Test, what plural shows a child has inferred the basic rule?",
+        "options": [
+          "wugs",
+          "wug",
+          "wugen",
+          "wuggy"
+        ],
+        "answer": 0,
+        "id": "mind-0029-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: in the Wug Test, the target words are made-up words that the child cannot have heard before.",
+        "answer": true,
+        "id": "mind-0029-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Jean Berko Gleason (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Jean_Berko_Gleason"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A toddler talking or playing with picture books",
+    "keywords": [
+      "toddler talking",
+      "child language",
+      "child reading picture book"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:00.641Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jean_Berko_Gleason",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A child is shown simple pictures of a fanciful creature with a nonsense name",
+        "verdict": "pass",
+        "quote": "A child is shown simple pictures of a fanciful creature or activity, with a nonsense name",
+        "source_url": "https://en.wikipedia.org/wiki/Jean_Berko_Gleason"
+      },
+      {
+        "claim": "Prompt: \"This is a WUG. Now there is another one. There are two of them.\"",
+        "verdict": "pass",
+        "quote": "This is a WUG. Now there is another one. There are two of them.",
+        "source_url": "https://en.wikipedia.org/wiki/Jean_Berko_Gleason"
+      },
+      {
+        "claim": "Target words were made-up but plausible-sounding pseudowords, so the child cannot have heard them before (panel 2, probe 2)",
+        "verdict": "pass",
+        "quote": "Each \"target\" word was a made-up (but plausible-sounding) pseudoword , so that the child cannot have heard it before.",
+        "source_url": "https://en.wikipedia.org/wiki/Jean_Berko_Gleason"
+      },
+      {
+        "claim": "A child answering \"wugs\" has apparently inferred, perhaps unconsciously, the basic rule for forming plurals (panel 3, probe 1)",
+        "verdict": "pass",
+        "quote": "has apparently inferred (perhaps unconsciously) the basic rule for forming plurals",
+        "source_url": "https://en.wikipedia.org/wiki/Jean_Berko_Gleason"
+      },
+      {
+        "claim": "Gleason's major finding: even very young children are able to connect suitable endings",
+        "verdict": "pass",
+        "quote": "Gleason's major finding was that even very young children are able to connect suitable endings",
+        "source_url": "https://en.wikipedia.org/wiki/Jean_Berko_Gleason"
+      },
+      {
+        "claim": "...to nonsense words they have never heard before",
+        "verdict": "pass",
+        "quote": "to nonsense words they have never heard before",
+        "source_url": "https://en.wikipedia.org/wiki/Jean_Berko_Gleason"
+      },
+      {
+        "claim": "Wug Test is by Jean Berko Gleason (title/story)",
+        "verdict": "pass",
+        "quote": "Gleason created the Wug Test , in which a child is shown pictures with nonsense names",
+        "source_url": "https://en.wikipedia.org/wiki/Jean_Berko_Gleason"
+      }
+    ],
+    "overall": "pass"
+  }
+}

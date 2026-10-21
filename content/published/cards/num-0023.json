@@ -1,0 +1,57 @@
+{
+  "id": "num-0023",
+  "interest": "numbers",
+  "title": "Pi, bounded by polygons",
+  "probes": [
+    {
+      "id": "num-0023-p1",
+      "question": "Archimedes began with a regular polygon of how many sides?",
+      "kind": "mcq",
+      "options": [
+        "6",
+        "3",
+        "4",
+        "12"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "num-0023-p2",
+      "question": "True or false: Archimedes drew his polygons both inside and outside a circle.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pi (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pi"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:16:41.804Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0023.webp",
+    "alt": "A hexagon drawn inside and outside a circle, then a 12-sided polygon, hugging the circle ever more closely",
+    "kind": "photo",
+    "credit": "Myon12 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Approximation_circle_polygons.png"
+  },
+  "body": {
+    "question": "Archimedes drew a regular hexagon inside and outside a circle, then kept doubling the number of sides. How many sides did his last polygon have?",
+    "options": [
+      "24",
+      "48",
+      "96",
+      "192"
+    ],
+    "answer": 2,
+    "reveal": "Archimedes computed upper and lower bounds of π by drawing a regular hexagon inside and outside a circle, and successively doubling the number of sides until he reached a 96-sided regular polygon."
+  }
+}

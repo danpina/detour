@@ -1,0 +1,63 @@
+{
+  "draft_id": "tech-0024",
+  "created_at": "2026-10-21T17:07:58.242Z",
+  "queries": [
+    "Intel 4004 4004 microprocessor C4004 die",
+    "Intel 4004",
+    "Intel 4004 4004 microprocessor"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-129992157",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Intel 4004 on Busicom calculator circuit board.jpg",
+      "credit": "MaltaGC / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Intel_4004_on_Busicom_calculator_circuit_board.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Intel_4004_on_Busicom_calculator_circuit_board.jpg/960px-Intel_4004_on_Busicom_calculator_circuit_board.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1636,
+      "height": 1420,
+      "alt_suggestion": "Intel 4004 cpu and associated chips on the circuit board from a Busicom calculator. This also shows the 4001, 256-byte 4-bit ROM; the 4002, DRAM with four 20-nibble registers; the 4003, I/O with a 10-",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-113256037",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Intel 4004 Chip Layout (29983532570).jpg",
+      "credit": "Wolfgang Stief from Tittmoning, Germany / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Intel_4004_Chip_Layout_(29983532570).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Intel_4004_Chip_Layout_%2829983532570%29.jpg/960px-Intel_4004_Chip_Layout_%2829983532570%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4272,
+      "height": 2848,
+      "alt_suggestion": "Intel 4004 Chip Layout",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-147243300",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Chip layout from the development phase of the Intel 4004 from 1971, the first microprocessor of the world (cropped and edited image).jpg",
+      "credit": "Intel 4004 Chip Layout (29983532570).jpg: Wolfgang Stief from Tittmoning, Germany derivative work, the rectangular version above: Pittigrilli / Wikimedia Common",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chip_layout_from_the_development_phase_of_the_Intel_4004_from_1971,_the_first_microprocessor_of_the_world_(cropped_and_edited_image).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Chip_layout_from_the_development_phase_of_the_Intel_4004_from_1971%2C_the_first_microprocessor_of_the_world_%28cropped_and_edited_image%29.jpg/960px-Chip_layout_from_the_development_phase_of_the_Intel_4004_from_1971%2C_the_first_microprocessor_of_the_world_%28cropped_and_edited_image%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2782,
+      "height": 2071,
+      "alt_suggestion": "Chip layout from the development phase of the Intel 4004 from 1971, the first microprocessor of the world. It was photographed during the Vintage Computer Festival in Berlin, Germany, on 2/3 October 2",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Intel 4004 4004 microprocessor C4004 die\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Intel 4004 4004 microprocessor C4004 die\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Intel%204004%204004%20microproces",
+    "met failed for \"Intel 4004\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Intel 4004\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Intel%204004&query[term][is_publi",
+    "met failed for \"Intel 4004 4004 microprocessor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Intel 4004 4004 microprocessor\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Intel%204004%204004%20microproces"
+  ]
+}

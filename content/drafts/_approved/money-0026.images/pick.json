@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-121731762",
+  "alt": "Both sides of a worn silver German coin from the Thirty Years War era, with a coat of arms on one side and an imperial eagle on the other.",
+  "fits": true,
+  "note": "Period debased coin (Brunswick-Wolfenbuettel, Friedrich Ulrich), public domain. cand-3 broadsheet carries antisemitic imagery and text and was rejected; cand-1 is an unrelated Danish news sheet. Wide image: crop to the eagle side.",
+  "crop": {
+    "fx": 0.75,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

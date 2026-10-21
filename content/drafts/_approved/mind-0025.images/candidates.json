@@ -1,0 +1,73 @@
+{
+  "draft_id": "mind-0025",
+  "created_at": "2026-10-21T17:06:27.027Z",
+  "queries": [
+    "London black cab London taxi Hackney carriage",
+    "London black cab",
+    "London black cab London taxi"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-41643060",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hackney Carriage Black Cab Digital Advertising TaxiTop Eyetease.jpg",
+      "credit": "Satsumasan / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hackney_Carriage_Black_Cab_Digital_Advertising_TaxiTop_Eyetease.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Hackney_Carriage_Black_Cab_Digital_Advertising_TaxiTop_Eyetease.jpg/960px-Hackney_Carriage_Black_Cab_Digital_Advertising_TaxiTop_Eyetease.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2297,
+      "height": 1473,
+      "alt_suggestion": "An example of digital advertising on top of a Hackney Carriage black cab (Eyetease iTaxiTop product)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-108527180",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Havana - Hackney coaches.jpg",
+      "credit": "Wilson's, Havana (publisher) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Havana_-_Hackney_coaches.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Havana_-_Hackney_coaches.jpg/960px-Havana_-_Hackney_coaches.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1583,
+      "height": 1007,
+      "alt_suggestion": "Photomechanical print (postcard) Undivided back No. 157",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-25211371",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Public transport share taxi in Maracaibo city, Zulia, Venezuela.jpg",
+      "credit": "Wilfredor / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Public_transport_share_taxi_in_Maracaibo_city,_Zulia,_Venezuela.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Public_transport_share_taxi_in_Maracaibo_city%2C_Zulia%2C_Venezuela.jpg/960px-Public_transport_share_taxi_in_Maracaibo_city%2C_Zulia%2C_Venezuela.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4288,
+      "height": 2848,
+      "alt_suggestion": "Public transport share taxi in Maracaibo city, Zulia, Venezuela",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "generated-cab",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: cab",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-cab.png",
+      "alt_suggestion": "Illustration of a boxy black taxi in profile on a street with a winding street-map line behind it"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"London black cab London taxi Hackney carriage\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"London black cab London taxi Hackney carriage\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=London%20black%20cab%20London%20t",
+    "met failed for \"London black cab\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"London black cab\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=London%20black%20cab&query[term][",
+    "met failed for \"London black cab London taxi\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"London black cab London taxi\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=London%20black%20cab%20London%20t"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-141975413",
+  "alt": "A diagram of a runner's helmet and a small tortoise on a line, with arcs showing the runner repeatedly reaching where the tortoise just was",
+  "fits": true,
+  "note": "Clear Achilles-and-tortoise diagram, simple line art, no text. Square, so centre crop to 4:5. cand-1 is a different paradox with letters; cand-2 is an unrelated blurred ski photo.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

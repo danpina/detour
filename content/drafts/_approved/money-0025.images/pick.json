@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-24732958",
+  "alt": "Blue and green ceramic plaque reading Site of Lloyds Coffee House 1691-1785, set in a stone wall in the City of London.",
+  "fits": true,
+  "note": "Heritage plaque marking the coffee house site; no people. Plain, but the only on-topic image (cand-1 is the same plaque, less clean; cand-2 is an unrelated 1793 satire). Text will need a scrim.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

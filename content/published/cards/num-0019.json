@@ -1,0 +1,62 @@
+{
+  "id": "num-0019",
+  "interest": "numbers",
+  "title": "The story behind 5050",
+  "probes": [
+    {
+      "id": "num-0019-p1",
+      "question": "In the story, into how many pairs of 101 can the numbers 1 to 100 be rearranged?",
+      "kind": "mcq",
+      "options": [
+        "50",
+        "100",
+        "101",
+        "25"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "num-0019-p2",
+      "question": "True or false: 50 × 101 = 5050.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Carl Friedrich Gauss (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:38.760Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0019.webp",
+    "alt": "Oil portrait of an older Carl Friedrich Gauss in a dark cap and robe, painted by Christian Albrecht Jensen in 1840",
+    "kind": "photo",
+    "credit": "Christian Albrecht Jensen / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Carl_Friedrich_Gauss_1840_by_Jensen.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "A popular story says that, as an elementary student, Gauss was asked by his teacher, J.G. Büttner, to sum the numbers from 1 to 100."
+      },
+      {
+        "text": "Much to Büttner's surprise, Gauss replied with the correct answer of 5050 in a vastly faster time than expected."
+      },
+      {
+        "text": "Gauss had presumably realised that the sum could be rearranged as 50 pairs of 101: 1 + 100, 2 + 99, and so on."
+      },
+      {
+        "text": "So he simply multiplied 50 by 101."
+      }
+    ]
+  }
+}

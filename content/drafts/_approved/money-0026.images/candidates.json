@@ -1,0 +1,63 @@
+{
+  "draft_id": "money-0026",
+  "created_at": "2026-10-21T17:06:59.107Z",
+  "queries": [
+    "Kipper und Wipper Kipperzeit Flugblatt Kippermünze 1622",
+    "Kipper und Wipper",
+    "Kipper und Wipper Kipperzeit Flugblatt"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-1475789",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Frey meineid 1628.jpg",
+      "credit": "VD17 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frey_meineid_1628.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Frey_meineid_1628.jpg/960px-Frey_meineid_1628.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1564,
+      "height": 1990,
+      "alt_suggestion": "a perjurer's case",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-121731762",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Braunschweig-Wolfenbüttel- Friedrich Ulrich - Münzkabinett, Berlin - 5560455.jpg",
+      "credit": "Reinhard Saczewski / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Braunschweig-Wolfenb%C3%BCttel-_Friedrich_Ulrich_-_M%C3%BCnzkabinett,_Berlin_-_5560455.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Braunschweig-Wolfenb%C3%BCttel-_Friedrich_Ulrich_-_M%C3%BCnzkabinett%2C_Berlin_-_5560455.jpg/960px-Braunschweig-Wolfenb%C3%BCttel-_Friedrich_Ulrich_-_M%C3%BCnzkabinett%2C_Berlin_-_5560455.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1450,
+      "height": 711,
+      "alt_suggestion": "Braunschweig-Wolfenbüttel: Friedrich Ulrich",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-1054092",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Des guten Geldes Grabschrift C-L 061.jpg",
+      "credit": "Amrtin Wörle / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Des_guten_Geldes_Grabschrift_C-L_061.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Des_guten_Geldes_Grabschrift_C-L_061.jpg/960px-Des_guten_Geldes_Grabschrift_C-L_061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1350,
+      "height": 2058,
+      "alt_suggestion": "Flugschrifft \"Des guten Geldes Grabschrifft\"",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Kipper und Wipper Kipperzeit Flugblatt Kippermünze 1622\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Kipper und Wipper Kipperzeit Flugblatt Kippermünze 1622\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Kipper%20und%20Wipper%20Kipperzei",
+    "met failed for \"Kipper und Wipper\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Kipper und Wipper\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Kipper%20und%20Wipper&query[term]",
+    "met failed for \"Kipper und Wipper Kipperzeit Flugblatt\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Kipper und Wipper Kipperzeit Flugblatt\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Kipper%20und%20Wipper%20Kipperzei"
+  ]
+}

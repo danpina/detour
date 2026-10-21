@@ -1,0 +1,65 @@
+{
+  "id": "money-0025",
+  "interest": "money",
+  "title": "Coffee, ships and insurance",
+  "probes": [
+    {
+      "id": "money-0025-p1",
+      "question": "What did Edward Lloyd have installed in his Lombard Street coffee house to announce shipping news?",
+      "kind": "mcq",
+      "options": [
+        "A pulpit",
+        "A bell tower",
+        "A chalkboard",
+        "A brass horn"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0025-p2",
+      "question": "True or false: Lloyds Bank is named after Lloyd's Coffee House.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lloyd's Coffee House (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lloyd%27s_Coffee_House"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:26.960Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0025.webp",
+    "alt": "Blue and green ceramic plaque reading Site of Lloyds Coffee House 1691-1785, set in a stone wall in the City of London.",
+    "kind": "photo",
+    "credit": "Simon Harriyott from Uckfield, England / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lloyds_Coffee_House_(3984416269).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "1686. Edward Lloyd opens a coffee house on Tower Street, a popular place for sailors, merchants and shipowners. He gives them reliable shipping news."
+      },
+      {
+        "text": "The shipping industry community gathers there to discuss maritime insurance, shipbroking and foreign trade."
+      },
+      {
+        "text": "In December 1691 the coffee house moves to Lombard Street, where Lloyd has a pulpit installed. From it, maritime auction prices and shipping news are announced."
+      },
+      {
+        "text": "The dealings there led to the establishment of the insurance market Lloyd's of London. In 1774 the participating members formed a committee and moved to the Royal Exchange as the Society of Lloyd's."
+      },
+      {
+        "text": "Lloyds Bank, however, is not named after the coffee house. It was founded in Birmingham by Sampson Lloyd."
+      }
+    ]
+  }
+}

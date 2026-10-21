@@ -1,0 +1,123 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Cobra effect",
+    "angle": "A bounty that backfired"
+  },
+  "created_at": "2026-10-21T17:03:52.388Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0028",
+    "interest": "money",
+    "type": "story",
+    "title": "The cobra bounty",
+    "body": {
+      "panels": [
+        {
+          "text": "The story goes that the British government, concerned about the number of venomous cobras in Delhi, offered a bounty for every dead cobra."
+        },
+        {
+          "text": "Initially, this was a successful strategy: large numbers of snakes were killed for the reward."
+        },
+        {
+          "text": "Eventually, however, people began to breed cobras for the income."
+        },
+        {
+          "text": "When the government became aware of this, the reward program was scrapped, and the cobra breeders set their snakes free. The result was an overall increase in the wild cobra population."
+        },
+        {
+          "text": "Economist Horst Siebert coined the name \"cobra effect\" in 2001, based on this anecdote from the British Raj. It describes incentives that make a problem worse."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0028-p1",
+        "kind": "mcq",
+        "question": "In the story, what did people begin to do once dead cobras earned a reward?",
+        "options": [
+          "Breed cobras",
+          "Import cobras",
+          "Train cobras",
+          "Sell cobras abroad"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0028-p2",
+        "kind": "tf",
+        "question": "True or false: in the story, the wild cobra population overall increased after the reward was scrapped.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Perverse incentive (cobra effect) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cobra_effect"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A cobra, or a historic photo or illustration of Delhi under the British Raj",
+    "keywords": [
+      "Indian cobra",
+      "Naja naja",
+      "spectacled cobra",
+      "Delhi 19th century"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:15.486Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cobra_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "According to the story, the British government, concerned about venomous cobras in Delhi, offered a bounty for every dead cobra (card frames it as \"The story goes\")",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cobra_effect",
+        "quote": "According to the story, the British government, concerned about the number of venomous cobras in Delhi , offered a bounty for every dead cobra."
+      },
+      {
+        "claim": "Initially a successful strategy: large numbers of snakes were killed for the reward",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cobra_effect",
+        "quote": "Initially, this was a successful strategy; large numbers of snakes were killed for the reward."
+      },
+      {
+        "claim": "Eventually people began to breed cobras for the income (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cobra_effect",
+        "quote": "Eventually, however, people began to breed cobras for the income."
+      },
+      {
+        "claim": "Reward program scrapped, breeders set snakes free, overall increase in wild cobra population (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cobra_effect",
+        "quote": "the reward program was scrapped, and the cobra breeders set their snakes free, leading to an overall increase in the wild cobra population."
+      },
+      {
+        "claim": "Name coined by economist Horst Siebert in 2001 from an anecdote of the British Raj",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cobra_effect",
+        "quote": "This name was coined by economist Horst Siebert in 2001 based on an anecdote taken from the British Raj .",
+        "note": "Page also notes a 2025 investigation casting doubt on the anecdote; the card hedges with \"The story goes\", \"anecdote\" and \"In the story\"."
+      },
+      {
+        "claim": "Cobra effect: people are incentivized to make a problem worse",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cobra_effect",
+        "quote": "where people are incentivized to make a problem worse."
+      }
+    ],
+    "overall": "pass"
+  }
+}

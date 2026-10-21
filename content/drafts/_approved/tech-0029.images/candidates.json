@@ -1,0 +1,73 @@
+{
+  "draft_id": "tech-0029",
+  "created_at": "2026-10-21T17:08:13.152Z",
+  "queries": [
+    "Tux penguin Linux Linux mascot Intel 80386",
+    "Tux penguin Linux",
+    "Tux penguin Linux Linux mascot"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-82084003",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Tux, the Linux penguin I.jpg",
+      "credit": "Renato.pierri / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tux,_the_Linux_penguin_I.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Tux%2C_the_Linux_penguin_I.jpg/960px-Tux%2C_the_Linux_penguin_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1277,
+      "alt_suggestion": "Tux, the Linux penguin I. It is a gift that was given to IBMers from Brazil. There is a video about its refurbishing process. Search by \"Reformando o Tux da IBM\"",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-82084002",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Tux, the Linux penguin I - Thumbnail.jpg",
+      "credit": "Renato.pierri / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tux,_the_Linux_penguin_I_-_Thumbnail.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Tux%2C_the_Linux_penguin_I_-_Thumbnail.jpg/960px-Tux%2C_the_Linux_penguin_I_-_Thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1046,
+      "height": 1046,
+      "alt_suggestion": "Tux, the Linux penguin I. It is a gift that was given to IBMers from Brazil. There is a video about its refurbishing process: Search by \"Reformando o Tux da IBM\"",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-82084004",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Tux, the Linux penguin I - after and before.jpg",
+      "credit": "Renato.pierri / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tux,_the_Linux_penguin_I_-_after_and_before.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Tux%2C_the_Linux_penguin_I_-_after_and_before.jpg/960px-Tux%2C_the_Linux_penguin_I_-_after_and_before.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1080,
+      "alt_suggestion": "Tux, the Linux penguin I. It is a gift that was given to IBMers from Brazil. There is a video about its refurbishing process: Search by \"Reformando o Tux da IBM\"",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "generated-tux",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: tux",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-tux.png",
+      "alt_suggestion": "Illustration of a friendly black-and-white penguin with a yellow beak and feet on a soft blue background"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Tux penguin Linux Linux mascot Intel 80386\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Tux penguin Linux Linux mascot Intel 80386\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Tux%20penguin%20Linux%20Linux%20m",
+    "met failed for \"Tux penguin Linux\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Tux penguin Linux\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Tux%20penguin%20Linux&query[term]",
+    "met failed for \"Tux penguin Linux Linux mascot\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Tux penguin Linux Linux mascot\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Tux%20penguin%20Linux%20Linux%20m"
+  ]
+}

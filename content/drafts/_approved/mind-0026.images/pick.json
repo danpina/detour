@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-23131866",
+  "alt": "An ornate gilded antique wall clock with a round white face and Arabic numerals against a plain pale wall.",
+  "fits": true,
+  "note": "Analog clock face, no people/logos, nice portrait composition. Has no visible second hand, so only loosely illustrative; acceptable generic clock. Not misleading.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

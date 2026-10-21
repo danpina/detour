@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Chronostasis",
+    "angle": "The stopped-clock illusion"
+  },
+  "created_at": "2026-10-21T17:05:01.062Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0026",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "The stopped-clock illusion",
+    "body": {
+      "claim": "The second hand of an analog clock can appear to stay still for longer than normal when you first look at it.",
+      "why": "After a quick eye movement (a saccade), the new target can seem to have been seen for longer, and this can extend apparent durations by up to half a second. During a saccade, visual information is suppressed, and the gap in perception is “filled in” with information gathered after the saccade."
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "By up to how much can this effect extend apparent durations?",
+        "options": [
+          "Up to half a second",
+          "Up to 5 seconds",
+          "Up to a minute",
+          "Up to two seconds"
+        ],
+        "answer": 0,
+        "id": "mind-0026-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: visual information collected during a saccade is suppressed.",
+        "answer": true,
+        "id": "mind-0026-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Chronostasis (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chronostasis"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An analog wall clock with a visible second hand",
+    "keywords": [
+      "analog clock",
+      "wall clock",
+      "clock face second hand"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:49.857Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chronostasis",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title/claim: second hand of an analog clock can appear to stay still for longer than normal when first looked at (stopped-clock illusion)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Chronostasis",
+        "quote": "the stopped-clock illusion , where the second hand of an analog clock appears to stay still for longer than normal when first looked at"
+      },
+      {
+        "claim": "After a quick eye movement (saccade) the new target is overestimated in duration",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Chronostasis",
+        "quote": "This elicits an overestimation in the temporal duration for which that target stimulus (i.e., postsaccadic stimulus) was perceived."
+      },
+      {
+        "claim": "Effect can extend apparent durations by up to half a second (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Chronostasis",
+        "quote": "This effect can extend apparent durations by up to half a second"
+      },
+      {
+        "claim": "Visual information collected during a saccade is suppressed (probe 2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Chronostasis",
+        "quote": "visual information collected by the eyes during a saccade is suppressed through a process known as saccadic masking"
+      },
+      {
+        "claim": "The gap in perception is \"filled in\" with information gathered after the saccade",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Chronostasis",
+        "quote": "the gap in perception is \"filled in\" with information gathered after the saccade"
+      },
+      {
+        "claim": "Probe 1 distractors \"Up to 5 seconds\", \"Up to a minute\", \"Up to two seconds\" are all wrong",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Chronostasis",
+        "quote": "This effect can extend apparent durations by up to half a second",
+        "note": "Each distractor exceeds the stated maximum of half a second, so none can be true."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "draft_id": "tech-0026",
+  "created_at": "2026-10-21T17:08:03.630Z",
+  "queries": [
+    "Caesar cipher cipher disk Julius Caesar bust",
+    "Caesar cipher",
+    "Caesar cipher cipher disk"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-90938598",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Caesar shift cryptography.png",
+      "credit": "Don't know / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Caesar_shift_cryptography.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Caesar_shift_cryptography.png/960px-Caesar_shift_cryptography.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 810,
+      "alt_suggestion": "Shifting by -3",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-152516316",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dischi per cifratura.jpg",
+      "credit": "Giacomo Alessandroni / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dischi_per_cifratura.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Dischi_per_cifratura.jpg/960px-Dischi_per_cifratura.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 4000,
+      "alt_suggestion": "Dischi per cifrari di Cesare e Vigenère",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-129655788",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cifrario di Cesare 01.jpg",
+      "credit": "Giacomo Alessandroni / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cifrario_di_Cesare_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Cifrario_di_Cesare_01.jpg/960px-Cifrario_di_Cesare_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 4000,
+      "alt_suggestion": "Caesar's cipher",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Caesar cipher cipher disk Julius Caesar bust\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Caesar cipher cipher disk Julius Caesar bust\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Caesar%20cipher%20cipher%20disk%2",
+    "met failed for \"Caesar cipher\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Caesar cipher\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Caesar%20cipher&query[term][is_pu",
+    "met failed for \"Caesar cipher cipher disk\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Caesar cipher cipher disk\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Caesar%20cipher%20cipher%20disk&q"
+  ]
+}

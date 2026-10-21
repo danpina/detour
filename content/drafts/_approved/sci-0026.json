@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Foucault pendulum",
+    "angle": "A pendulum and Earth's rotation"
+  },
+  "created_at": "2026-10-21T17:04:07.377Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0026",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "A pendulum that shows Earth turning",
+    "body": {
+      "claim": "The Foucault pendulum is a simple device conceived as an experiment to demonstrate the Earth's rotation.",
+      "why": "If a long and heavy pendulum is monitored over an extended period of time, its plane of oscillation appears to change spontaneously as the Earth makes its 24-hourly rotation. This effect is greatest at the poles and diminishes with lower latitude until it no longer exists at Earth's equator."
+    },
+    "probes": [
+      {
+        "id": "sci-0026-p1",
+        "kind": "mcq",
+        "question": "In which year did Foucault introduce his pendulum?",
+        "options": [
+          "1751",
+          "1851",
+          "1901",
+          "1951"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0026-p2",
+        "kind": "tf",
+        "question": "True or false: the Foucault pendulum effect no longer exists at Earth's equator.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Foucault pendulum (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Foucault_pendulum"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A Foucault pendulum hanging in a museum or the Panthéon",
+    "keywords": [
+      "Foucault pendulum",
+      "Foucault pendulum Panthéon",
+      "Foucault pendulum museum"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:20.196Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Foucault_pendulum",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Claim and title: the Foucault pendulum is a simple device conceived as an experiment to demonstrate the Earth's rotation",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Foucault_pendulum",
+        "quote": "conceived as an experiment to demonstrate the Earth's rotation"
+      },
+      {
+        "claim": "Why: monitored over an extended period, the plane of oscillation appears to change spontaneously as the Earth makes its 24-hourly rotation",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Foucault_pendulum",
+        "quote": "monitored over an extended period of time, its plane of oscillation appears to change spontaneously as the Earth makes its 24-hourly rotation"
+      },
+      {
+        "claim": "Why and probe p2: the effect is greatest at the poles, diminishes with lower latitude and no longer exists at the equator",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Foucault_pendulum",
+        "quote": "This effect is greatest at the poles and diminishes with lower latitude until it no longer exists at Earth's equator"
+      },
+      {
+        "claim": "Probe p1: Foucault introduced his pendulum in 1851 (not 1751, 1901 or 1951)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Foucault_pendulum",
+        "quote": "Foucault introduced his pendulum in 1851 in the first experiment"
+      }
+    ],
+    "overall": "pass"
+  }
+}

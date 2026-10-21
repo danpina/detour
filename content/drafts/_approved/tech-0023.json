@@ -1,0 +1,137 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Hubble Space Telescope mirror",
+    "angle": "The flawed mirror and its spectacles"
+  },
+  "created_at": "2026-10-21T17:04:04.452Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "type": "story",
+    "title": "Hubble needed spectacles",
+    "difficulty": 2,
+    "body": {
+      "panels": [
+        {
+          "text": "Hubble was launched on STS-31 in 1990, but its main mirror had been ground incorrectly."
+        },
+        {
+          "text": "The mirror was believed to be one of the most precisely figured optical mirrors ever made, smooth to about 10 nanometers. Yet its outer perimeter was too flat by about 2200 nanometers (about 1/450 mm)."
+        },
+        {
+          "text": "The result was spherical aberration: light reflecting off the edge of a mirror focuses on a different point from the light reflecting off its center."
+        },
+        {
+          "text": "The fix was new optical components with exactly the same error in the opposite sense, effectively acting as \"spectacles\". A servicing mission, STS-61, corrected the optics in 1993."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "Which servicing mission corrected Hubble's optics in 1993?",
+        "options": [
+          "STS-61",
+          "STS-31",
+          "STS-1",
+          "STS-135"
+        ],
+        "answer": 0,
+        "id": "tech-0023-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: the flaw in Hubble's main mirror was that its outer perimeter was too flat.",
+        "answer": true,
+        "id": "tech-0023-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hubble Space Telescope (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope"
+      }
+    ],
+    "id": "tech-0023",
+    "interest": "tech",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Hubble Space Telescope in orbit, or its servicing mission",
+    "keywords": [
+      "Hubble Space Telescope",
+      "STS-61 servicing mission",
+      "Hubble primary mirror",
+      "COSTAR"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:51.866Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: Hubble needed spectacles",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+        "quote": "effectively acting as \" spectacles \" to correct the spherical aberration."
+      },
+      {
+        "claim": "Hubble was launched on STS-31 in 1990 but its main mirror had been ground incorrectly",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+        "quote": "Hubble was launched on STS-31 in 1990, but its main mirror had been ground incorrectly"
+      },
+      {
+        "claim": "The mirror was believed to be one of the most precisely figured optical mirrors ever made, smooth to about 10 nanometers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+        "quote": "Although it was believed to be one of the most precisely figured optical mirrors ever made, smooth to about 10 nanometers"
+      },
+      {
+        "claim": "Outer perimeter too flat by about 2200 nanometers (about 1/450 mm)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+        "quote": "the outer perimeter was too flat by about 2200 nanometers"
+      },
+      {
+        "claim": "Spherical aberration: light reflecting off the edge of a mirror focuses on a different point from light off its center",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+        "quote": "a flaw in which light reflecting off the edge of a mirror focuses on a different point from the light reflecting off its center."
+      },
+      {
+        "claim": "Fix: new optical components with exactly the same error in the opposite sense, acting as spectacles",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+        "quote": "new optical components with exactly the same error but in the opposite sense"
+      },
+      {
+        "claim": "Servicing mission STS-61 corrected the optics in 1993",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+        "quote": "The optics were corrected to their intended quality by a servicing mission, STS-61 , in 1993."
+      },
+      {
+        "claim": "Probe 1: STS-61 corrected optics in 1993 (STS-31 is the launch; STS-1, STS-135 not)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+        "quote": "The optics were corrected to their intended quality by a servicing mission, STS-61 , in 1993."
+      },
+      {
+        "claim": "Probe 2: flaw was outer perimeter too flat (true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+        "quote": "the outer perimeter was too flat by about 2200 nanometers"
+      }
+    ],
+    "overall": "pass"
+  }
+}

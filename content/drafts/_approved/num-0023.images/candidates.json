@@ -1,0 +1,49 @@
+{
+  "draft_id": "num-0023",
+  "created_at": "2026-10-21T17:07:20.930Z",
+  "queries": [
+    "Archimedes pi polygons circle inscribed polygon Archimedes",
+    "Archimedes pi polygons",
+    "Archimedes pi polygons circle inscribed polygon"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-40629590",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Archimedes - Annäherung an Kreisfläche -v1.png",
+      "credit": "Myon12 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Archimedes_-_Ann%C3%A4herung_an_Kreisfl%C3%A4che_-v1.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Archimedes_-_Ann%C3%A4herung_an_Kreisfl%C3%A4che_-v1.png/960px-Archimedes_-_Ann%C3%A4herung_an_Kreisfl%C3%A4che_-v1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4257,
+      "height": 1758,
+      "alt_suggestion": "Dieses Bild zeigt die Annäherung an die Kreisfläche und Um- und Einschreiben von 3 · 2n-Ecken. So kann die Kreiszahl π näherungsweise berechnet werden.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-40637068",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Approximation circle polygons.png",
+      "credit": "Myon12 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Approximation_circle_polygons.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Approximation_circle_polygons.png/960px-Approximation_circle_polygons.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3432,
+      "height": 1028,
+      "alt_suggestion": "This image shows the approximation of the area of a circle by 3·2n-gons. With this method π can be estimated.",
+      "file": "cand-2.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Archimedes pi polygons circle inscribed polygon Archimedes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Archimedes pi polygons circle inscribed polygon Archimedes\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Archimedes%20pi%20polygons%20circ",
+    "met failed for \"Archimedes pi polygons\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Archimedes pi polygons\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Archimedes%20pi%20polygons&query[",
+    "met failed for \"Archimedes pi polygons circle inscribed polygon\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Archimedes pi polygons circle inscribed polygon\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Archimedes%20pi%20polygons%20circ"
+  ]
+}

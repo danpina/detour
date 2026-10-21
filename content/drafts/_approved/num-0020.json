@@ -1,0 +1,105 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "William Shanks and pi",
+    "angle": "A long hand calculation with a hidden mistake"
+  },
+  "created_at": "2026-10-21T17:04:24.766Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0020",
+    "type": "estimate",
+    "title": "A pi calculation that went wrong at digit 528",
+    "body": {
+      "question": "In 1873, William Shanks added 100 more digits to an earlier calculation of pi. How many digits had he calculated in total?",
+      "unit": "digits",
+      "min": 100,
+      "max": 2000,
+      "scale": "log",
+      "answer": 707,
+      "reveal": "In 1853, William Shanks calculated π to 607 digits, but made a mistake in the 528th digit, rendering all subsequent digits incorrect. He calculated an additional 100 digits in 1873, bringing the total up to 707."
+    },
+    "probes": [
+      {
+        "id": "num-0020-p1",
+        "kind": "mcq",
+        "question": "Which digit of Shanks's calculation of pi contained the mistake?",
+        "options": [
+          "The 528th",
+          "The 100th",
+          "The 607th",
+          "The 707th"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0020-p2",
+        "kind": "tf",
+        "question": "True or false: the error in Shanks's digits was detected in 1946.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Pi (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pi"
+      }
+    ],
+    "difficulty": 3,
+    "interest": "numbers",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A page or wall of many digits of pi, such as the pi room, or a portrait of William Shanks",
+    "keywords": [
+      "pi digits",
+      "Palais de la Découverte pi room",
+      "William Shanks pi"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:49.242Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pi",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: A pi calculation that went wrong at digit 528",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pi",
+        "quote": "made a mistake in the 528th digit, rendering all subsequent digits incorrect"
+      },
+      {
+        "claim": "In 1873, William Shanks added 100 more digits to an earlier calculation; total 707 digits.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pi",
+        "quote": "Though he calculated an additional 100 digits in 1873, bringing the total up to 707"
+      },
+      {
+        "claim": "Reveal: In 1853 Shanks calculated pi to 607 digits but made a mistake in the 528th digit, rendering all subsequent digits incorrect.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pi",
+        "quote": "William Shanks calculated π to 607 digits, but made a mistake in the 528th digit, rendering all subsequent digits incorrect"
+      },
+      {
+        "claim": "Probe 1: the mistake was in the 528th digit (607th, 100th, 707th are not)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pi",
+        "quote": "made a mistake in the 528th digit"
+      },
+      {
+        "claim": "Probe 2: the error in Shanks's digits was detected in 1946",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pi",
+        "quote": "The error was detected in 1946 and corrected in 1949."
+      }
+    ],
+    "overall": "pass"
+  }
+}

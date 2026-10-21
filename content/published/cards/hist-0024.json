@@ -1,0 +1,62 @@
+{
+  "id": "hist-0024",
+  "interest": "history",
+  "title": "Fatima's mosque in Fez",
+  "probes": [
+    {
+      "id": "hist-0024-p1",
+      "question": "In which city is al-Qarawiyyin?",
+      "kind": "mcq",
+      "options": [
+        "Fez, Morocco",
+        "Cairo, Egypt",
+        "Baghdad, Iraq",
+        "Timbuktu, Mali"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0024-p2",
+      "question": "True or false: al-Qarawiyyin was founded as a mosque.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "University of al-Qarawiyyin (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:14:53.270Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0024.webp",
+    "alt": "The ornate carved-wood and stucco fountain pavilion in the courtyard of the al-Qarawiyyin mosque in Fez, with the minaret lit against the night sky",
+    "kind": "photo",
+    "credit": "RACHID BAYA / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Minaret_of_the_Al-Qarawiyyin_Mosque.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Fez, Morocco, 9th century. In the story of the founding, Fatima al-Fihri and her sister Mariam, both well educated, inherit a large amount of money from their father."
+      },
+      {
+        "text": "Fatima vows to spend her entire inheritance to build a mosque suitable for her community."
+      },
+      {
+        "text": "The al-Qarawiyyin mosque is founded in 857-859. It subsequently becomes one of the leading spiritual and educational centers of the Islamic Golden Age."
+      },
+      {
+        "text": "The twist: UNESCO and Guinness World Records have cited al-Qarawiyyin as the oldest university or oldest continually operating higher learning institution in the world."
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "draft_id": "num-0025",
+  "created_at": "2026-10-21T17:07:25.878Z",
+  "queries": [
+    "Bakhshali manuscript Gwalior inscription zero Chaturbhuj Temple",
+    "Bakhshali manuscript",
+    "Bakhshali manuscript Gwalior inscription zero"
+  ],
+  "candidates": [
+    {
+      "id": "generated-zerostone",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: zerostone",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-zerostone.png",
+      "alt_suggestion": "Illustration of a sandstone slab carved with a row of tally marks ending in one small round circle, under a soft sun"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Bakhshali manuscript Gwalior inscription zero Chaturbhuj Temple\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Bakhshali manuscript Gwalior inscription zero Chaturbhuj Temple\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Bakhshali%20manuscript%20Gwalior%",
+    "met failed for \"Bakhshali manuscript\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Bakhshali manuscript\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Bakhshali%20manuscript&query[term",
+    "met failed for \"Bakhshali manuscript Gwalior inscription zero\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Bakhshali manuscript Gwalior inscription zero\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Bakhshali%20manuscript%20Gwalior%",
+    "Image generation not configured (IMAGE_GEN_PROVIDER / IMAGE_GEN_API_KEY / IMAGE_GEN_MODEL); skipped."
+  ]
+}

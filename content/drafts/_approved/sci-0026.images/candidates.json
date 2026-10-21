@@ -1,0 +1,63 @@
+{
+  "draft_id": "sci-0026",
+  "created_at": "2026-10-21T17:07:49.242Z",
+  "queries": [
+    "Foucault pendulum Foucault pendulum Panthéon Foucault pendulum museum",
+    "Foucault pendulum",
+    "Foucault pendulum Foucault pendulum Panthéon"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-73160628",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Saint Isaac's Cathedral - Foucault pendulum in 1984.jpg",
+      "credit": "This photo is a scanned Reversal film (Slide). / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Isaac%27s_Cathedral_-_Foucault_pendulum_in_1984.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Saint_Isaac%27s_Cathedral_-_Foucault_pendulum_in_1984.jpg/960px-Saint_Isaac%27s_Cathedral_-_Foucault_pendulum_in_1984.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3405,
+      "height": 2264,
+      "alt_suggestion": "The Foucault pendulum inside the Saint Isaac's Cathedral, Leningrad, USSR, nowadays St. Petersburg, Russia. The pendulum was removed in 1985.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-191291173",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Foucault pendulum in NICT.jpg",
+      "credit": "Decogenasim / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Foucault_pendulum_in_NICT.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Foucault_pendulum_in_NICT.jpg/960px-Foucault_pendulum_in_NICT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3600,
+      "height": 2700,
+      "alt_suggestion": "Foucault pendulum in NICT",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-191291175",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Kinfe edge Of Foucault pendulum in NICT, 01.jpg",
+      "credit": "Decogenasim / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kinfe_edge_Of_Foucault_pendulum_in_NICT,_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Kinfe_edge_Of_Foucault_pendulum_in_NICT%2C_01.jpg/960px-Kinfe_edge_Of_Foucault_pendulum_in_NICT%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3600,
+      "height": 2700,
+      "alt_suggestion": "Foucault pendulum in NICT",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Foucault pendulum Foucault pendulum Panthéon Foucault pendulum museum\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Foucault pendulum Foucault pendulum Panthéon Foucault pendulum museum\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Foucault%20pendulum%20Foucault%20",
+    "met failed for \"Foucault pendulum\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Foucault pendulum\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Foucault%20pendulum&query[term][i",
+    "met failed for \"Foucault pendulum Foucault pendulum Panthéon\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Foucault pendulum Foucault pendulum Panthéon\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Foucault%20pendulum%20Foucault%20"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Winner's curse",
+    "angle": "Common value auctions and the most optimistic bidder"
+  },
+  "created_at": "2026-10-21T17:03:52.388Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0024",
+    "interest": "money",
+    "type": "guess_first",
+    "title": "Why the winner overpays",
+    "body": {
+      "question": "Several companies bid on an oil field that is worth about the same to each of them, but none knows its exact value. Who tends to overpay?",
+      "options": [
+        "The highest bidder",
+        "The lowest bidder",
+        "The auctioneer"
+      ],
+      "answer": 0,
+      "reveal": "The winner is the bidder with the most optimistic evaluation, so the winner will tend to overestimate and overpay. This is the winner's curse. Savvy bidders avoid it by bid shading: placing a bid below their estimate of the value."
+    },
+    "probes": [
+      {
+        "id": "money-0024-p1",
+        "kind": "mcq",
+        "question": "What do savvy bidders do to avoid the winner's curse?",
+        "options": [
+          "Bid below their estimate of the value",
+          "Bid above their estimate of the value",
+          "Bid only in the last seconds"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0024-p2",
+        "kind": "tf",
+        "question": "True or false: the more bidders there are, the more severe the winner's curse gets.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Winner's curse (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Winner%27s_curse"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An offshore oil platform or an auction gavel",
+    "keywords": [
+      "offshore oil platform",
+      "oil rig",
+      "auction gavel",
+      "Outer Continental Shelf"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:15.483Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Winner%27s_curse",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In a common value auction the item is of roughly equal value to all bidders but they do not know its value",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Winner%27s_curse",
+        "quote": "In a common value auction, the auctioned item is of roughly equal value to all bidders, but the bidders don't know the item's market value when they bid."
+      },
+      {
+        "claim": "Winner is the bidder with the most optimistic evaluation and tends to overestimate and overpay (winner's curse)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Winner%27s_curse",
+        "quote": "the winner is the bidder with the most optimistic evaluation of the asset and therefore will tend to overestimate and overpay"
+      },
+      {
+        "claim": "The winner is the bidder who submits the highest bid (highest bidder = winner)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Winner%27s_curse",
+        "quote": "The winner of an auction is the bidder who submits the highest bid."
+      },
+      {
+        "claim": "Savvy bidders avoid the curse by bid shading: bidding below their estimate of the value (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Winner%27s_curse",
+        "quote": "Savvy bidders will avoid the winner's curse by bid shading , or placing a bid that is below their ex ante estimation of the value of the item for sale"
+      },
+      {
+        "claim": "Severity of the winner's curse increases with the number of bidders (probe 2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Winner%27s_curse",
+        "quote": "The severity of the winner's curse increases with the number of bidders."
+      }
+    ],
+    "overall": "pass"
+  }
+}

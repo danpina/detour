@@ -1,0 +1,62 @@
+{
+  "id": "money-0021",
+  "interest": "money",
+  "title": "The last survivor's payout",
+  "probes": [
+    {
+      "id": "money-0021-p1",
+      "question": "How much did each initial subscriber put into Louis XIV's 1689 tontine?",
+      "kind": "mcq",
+      "options": [
+        "30 livres",
+        "300 livres",
+        "3,000 livres",
+        "30,000 livres"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0021-p2",
+      "question": "True or false: in a tontine, when an investor dies their share is reallocated among the surviving investors.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tontine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tontine"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:05.783Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0021.webp",
+    "alt": "Full-length portrait of King Louis XIV of France in blue and ermine coronation robes by Hyacinthe Rigaud, 1701.",
+    "kind": "photo",
+    "credit": "Hyacinthe Rigaud / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Louis_XIV_of_France_in_Coronation_Robes_(by_Hyacinthe_Rigaud)_-_Louvre_Museum.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "1689. Louis XIV makes use of tontines to fund military operations when he cannot otherwise raise the money."
+      },
+      {
+        "text": "The initial subscribers each put in 300 livres. Each investor receives annual interest, and as each investor dies, their share is reallocated among the surviving investors."
+      },
+      {
+        "text": "This one was run honestly. The last survivor, a widow named Charlotte Barbier, died in 1726 at the age of 96. Her last payment was 73,000 livres."
+      },
+      {
+        "text": "Later, investors began buying tontine shares for young children, especially girls around the age of 5, since girls lived longer than boys. That created the possibility of significant returns for shareholders, but significant losses for organizers."
+      }
+    ]
+  }
+}

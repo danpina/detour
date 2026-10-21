@@ -1,0 +1,62 @@
+{
+  "id": "hist-0023",
+  "interest": "history",
+  "title": "A library of 30,000 clay tablets",
+  "probes": [
+    {
+      "id": "hist-0023-p1",
+      "question": "Which famous epic was among the holdings of the Library of Ashurbanipal?",
+      "kind": "mcq",
+      "options": [
+        "The Epic of Gilgamesh",
+        "The Iliad",
+        "The Mahabharata",
+        "Beowulf"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0023-p2",
+      "question": "True or false: most of the library's tablets can now be found in the British Museum.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Library of Ashurbanipal (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Library_of_Ashurbanipal"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:14:50.942Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0023.webp",
+    "alt": "The Flood Tablet, Tablet XI of the Epic of Gilgamesh, a clay tablet covered in cuneiform lying on blue cloth in the British Museum",
+    "kind": "photo",
+    "credit": "Osama Shukir Muhammed Amin FRCP(Glasg) / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tablet_XI_or_the_Flood_Tablet_of_the_Epic_of_Gilgamesh,_currently_housed_in_the_British_Museum_in_London.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Nineveh, capital of Assyria, 7th century BCE. The Royal Library of Ashurbanipal is named after Ashurbanipal, the last great king of the Assyrian Empire."
+      },
+      {
+        "text": "It is a collection of more than 30,000 clay tablets and fragments, with texts of all kinds and in various languages. Among its holdings was the famous Epic of Gilgamesh."
+      },
+      {
+        "text": "Late 1849: the first discovery is made in the South-West Palace, the Royal Palace of king Sennacherib. The materials were found at Kouyunjik, in northern Mesopotamia. The discovery is credited to Austen Henry Layard."
+      },
+      {
+        "text": "Most of the tablets were taken to England and can now be found in the British Museum. The site is in modern-day northern Iraq, within the city of Mosul."
+      }
+    ]
+  }
+}

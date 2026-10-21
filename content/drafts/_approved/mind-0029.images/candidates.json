@@ -1,0 +1,86 @@
+{
+  "draft_id": "mind-0029",
+  "created_at": "2026-10-21T17:06:38.434Z",
+  "queries": [
+    "toddler talking child language child reading picture book",
+    "toddler talking",
+    "toddler talking child language"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-29011931",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Euabalong Toddler Plaground.JPG",
+      "credit": "Mattinbgn (talk · contribs) / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Euabalong_Toddler_Plaground.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Euabalong_Toddler_Plaground.JPG/960px-Euabalong_Toddler_Plaground.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6016,
+      "height": 4000,
+      "alt_suggestion": "Playground at Euabalong, New South Wales",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-14619840",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Vocaburlary Spurt around 18 months.JPG",
+      "credit": "TomatenRot.JPG: böhringer friedrich derivative work: Jennfleur (talk) / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vocaburlary_Spurt_around_18_months.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Vocaburlary_Spurt_around_18_months.JPG/960px-Vocaburlary_Spurt_around_18_months.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1195,
+      "height": 801,
+      "alt_suggestion": "Freistellung, einer Tomate in den Händen eines Kleinkindes (16 mon.)",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-49192185",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fossy 001b.jpg",
+      "credit": "SilkTork *YES! / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fossy_001b.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Fossy_001b.jpg/960px-Fossy_001b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2414,
+      "height": 3045,
+      "alt_suggestion": "An 18 month old child in an English garden",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "generated-wug",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: wug",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-wug.png",
+      "alt_suggestion": "Illustration of a friendly made-up bird-like creature standing next to a second identical creature"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "How I kept my baby well (1913) (14586485467).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "First lessons in language (1891) (14801937913).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"toddler talking child language child reading picture book\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"toddler talking child language child reading picture book\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=toddler%20talking%20child%20langu",
+    "met failed for \"toddler talking\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"toddler talking\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=toddler%20talking&query[term][is_",
+    "met failed for \"toddler talking child language\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"toddler talking child language\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=toddler%20talking%20child%20langu"
+  ]
+}

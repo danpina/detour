@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-3329641",
+  "alt": "Reverse of a Hungarian one million b-pengo banknote from 1946 showing an engraved landscape of trees by a lake.",
+  "fits": true,
+  "note": "Genuine issued 1946 b-pengo note, public domain, no people. The 10 milliard candidates are unissued notes (cand-2 shows a person engraving) so were not used. Wide image: crop to the central landscape.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

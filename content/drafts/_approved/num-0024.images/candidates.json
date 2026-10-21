@@ -1,0 +1,63 @@
+{
+  "draft_id": "num-0024",
+  "created_at": "2026-10-21T17:07:23.167Z",
+  "queries": [
+    "Leonhard Euler portrait Euler's identity chalkboard equation",
+    "Leonhard Euler portrait",
+    "Leonhard Euler portrait Euler's identity"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-113056351",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Leonhard Euler - Jakob Emanuel Handmann (Kunstmuseum Basel).jpg",
+      "credit": "Jakob Emanuel Handmann / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leonhard_Euler_-_Jakob_Emanuel_Handmann_(Kunstmuseum_Basel).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Leonhard_Euler_-_Jakob_Emanuel_Handmann_%28Kunstmuseum_Basel%29.jpg/960px-Leonhard_Euler_-_Jakob_Emanuel_Handmann_%28Kunstmuseum_Basel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4672,
+      "height": 6040,
+      "alt_suggestion": "Leonhard Euler - Jakob Emanuel Handmann (Kunstmuseum Basel).jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-893656",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Leonhard Euler.jpg",
+      "credit": "Jakob Emanuel Handmann / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leonhard_Euler.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Leonhard_Euler.jpg/960px-Leonhard_Euler.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4672,
+      "height": 6040,
+      "alt_suggestion": "Leonhard Euler.jpg",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-107958341",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Leonhard Euler 1741-1766 by F B Frey.png",
+      "credit": "F. B. Frey (1716-1806). / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leonhard_Euler_1741-1766_by_F_B_Frey.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Leonhard_Euler_1741-1766_by_F_B_Frey.png/960px-Leonhard_Euler_1741-1766_by_F_B_Frey.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2957,
+      "height": 3434,
+      "alt_suggestion": "Portrait (Berlin, 1741-1766) of Leonhard Euler (1707-1783) by F B Frey (1716-1806)1741-1766",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Leonhard Euler portrait Euler's identity chalkboard equation\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Leonhard Euler portrait Euler's identity chalkboard equation\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Leonhard%20Euler%20portrait%20Eul",
+    "met failed for \"Leonhard Euler portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Leonhard Euler portrait\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Leonhard%20Euler%20portrait&query",
+    "met failed for \"Leonhard Euler portrait Euler's identity\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Leonhard Euler portrait Euler's identity\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Leonhard%20Euler%20portrait%20Eul"
+  ]
+}

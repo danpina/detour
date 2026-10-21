@@ -1,0 +1,55 @@
+{
+  "id": "sci-0023",
+  "interest": "science",
+  "title": "Earth squeezed to neutron-star density",
+  "probes": [
+    {
+      "id": "sci-0023-p1",
+      "question": "One teaspoon of neutron star material would have a mass about how many times that of the Great Pyramid of Giza?",
+      "kind": "mcq",
+      "options": [
+        "About 9 times",
+        "About 90 times",
+        "About 900 times",
+        "About 9,000 times"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "sci-0023-p2",
+      "question": "True or false: the Earth at neutron star density would fit into a sphere about the size of the Arecibo Telescope.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Neutron star (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Neutron_star"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:09.081Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "sci-0023.webp",
+    "alt": "Artist's rendering of a tiny, bright neutron star at the centre of a glowing red accretion disk against a dense starfield.",
+    "kind": "photo",
+    "credit": "Raphael.concorde / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Neutron_Star_simulation.png"
+  },
+  "body": {
+    "question": "If the entire mass of the Earth had neutron star density, it would fit into a sphere how many metres in diameter?",
+    "unit": "m",
+    "min": 1,
+    "max": 100000,
+    "scale": "log",
+    "answer": 305,
+    "reveal": "The entire mass of the Earth at neutron star density would fit into a sphere 305 m in diameter, about the size of the Arecibo Telescope."
+  }
+}

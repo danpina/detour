@@ -1,0 +1,63 @@
+{
+  "draft_id": "hist-0020",
+  "created_at": "2026-10-21T17:06:10.430Z",
+  "queries": [
+    "quipu khipu Inca quipu museum",
+    "quipu",
+    "quipu khipu"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-68639807",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fragmentary quipu (khipu), a main cord with top, subsidiary, & tertiary cords, Inca, Peru, Late Horizon, 1476-1534 AD, cotton, plant & camelid fiber, indigo & red dye - Dallas Museum of Art - DSC04704.jpg",
+      "credit": "Daderot / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fragmentary_quipu_(khipu),_a_main_cord_with_top,_subsidiary,_%26_tertiary_cords,_Inca,_Peru,_Late_Horizon,_1476-1534_AD,_cotton,_plant_%26_camelid_fiber,_indigo_%26_red_dye_-_Dallas_Museum_of_Art_-_DSC04704.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Fragmentary_quipu_%28khipu%29%2C_a_main_cord_with_top%2C_subsidiary%2C_%26_tertiary_cords%2C_Inca%2C_Peru%2C_Late_Horizon%2C_1476-1534_AD%2C_cotton%2C_plant_%26_camelid_fiber%2C_indigo_%26_red_dye_-_Dallas_Museum_of_Art_-_DSC04704.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5015,
+      "height": 3548,
+      "alt_suggestion": "Exhibit in the Dallas Museum of Art, Dallas, Texas, USA.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-68639809",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fragmentary quipu (khipu) composed of two main cords with subsidiary and tertiary cords, Inca, Peru, Late Horizon, 1476-1534 AD, cotton, plant fiber, indigo dye - Dallas Museum of Art - DSC04703.jpg",
+      "credit": "Daderot / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fragmentary_quipu_(khipu)_composed_of_two_main_cords_with_subsidiary_and_tertiary_cords,_Inca,_Peru,_Late_Horizon,_1476-1534_AD,_cotton,_plant_fiber,_indigo_dye_-_Dallas_Museum_of_Art_-_DSC04703.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Fragmentary_quipu_%28khipu%29_composed_of_two_main_cords_with_subsidiary_and_tertiary_cords%2C_Inca%2C_Peru%2C_Late_Horizon%2C_1476-1534_AD%2C_cotton%2C_plant_fiber%2C_indigo_dye_-_Dallas_Museum_of_Art_-_DSC04703.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5072,
+      "height": 3510,
+      "alt_suggestion": "Exhibit in the Dallas Museum of Art, Dallas, Texas, USA.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-162974523",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Altaar van Antwerpen - 'Quipu'. Quipu-kroon (2022), asset y1MZ6YbTDGvWBcPloM7qop9C.jpg",
+      "credit": "Rossi, Joana (kunstenaar) / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Altaar_van_Antwerpen_-_%27Quipu%27._Quipu-kroon_(2022),_asset_y1MZ6YbTDGvWBcPloM7qop9C.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Altaar_van_Antwerpen_-_%27Quipu%27._Quipu-kroon_%282022%29%2C_asset_y1MZ6YbTDGvWBcPloM7qop9C.jpg/960px-Altaar_van_Antwerpen_-_%27Quipu%27._Quipu-kroon_%282022%29%2C_asset_y1MZ6YbTDGvWBcPloM7qop9C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1536,
+      "height": 2048,
+      "alt_suggestion": "Title: Altaar van Antwerpen - 'Quipu'. Quipu-kroon (2022)Creator: Rossi, Joana (kunstenaar)Guichón, Lucila (kunstenaar)Dating: 2022Format original: hoogte 68 cm (geheel)breedte 34 cm (geheel)diepte 30",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"quipu khipu Inca quipu museum\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"quipu khipu Inca quipu museum\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=quipu%20khipu%20Inca%20quipu%20mu",
+    "met failed for \"quipu\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"quipu\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=quipu&query[term][is_public_domai",
+    "met failed for \"quipu khipu\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"quipu khipu\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=quipu%20khipu&query[term][is_publ"
+  ]
+}

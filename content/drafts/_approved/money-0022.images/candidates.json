@@ -1,0 +1,63 @@
+{
+  "draft_id": "money-0022",
+  "created_at": "2026-10-21T17:06:49.448Z",
+  "queries": [
+    "beard token бородовой знак Russian beard tax token 1705",
+    "beard token",
+    "beard token бородовой знак"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-55076158",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Beard tax token badge.jpg",
+      "credit": "Ijon / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Beard_tax_token_badge.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Beard_tax_token_badge.jpg/960px-Beard_tax_token_badge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3264,
+      "height": 2448,
+      "alt_suggestion": "A sew-on badge reproducing the Imperial Russian beard tax token.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-180830073",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Beard tokens - Tver Museum of Everyday Life.jpg",
+      "credit": "Лапоть / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Beard_tokens_-_Tver_Museum_of_Everyday_Life.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Beard_tokens_-_Tver_Museum_of_Everyday_Life.jpg/960px-Beard_tokens_-_Tver_Museum_of_Everyday_Life.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3130,
+      "height": 2920,
+      "alt_suggestion": "Beard tokens. 1705, 1725.Tver Museum of Everyday Life.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-103285367",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Avers und Revers einer Bartsteuermarke aus dem Jahr 1705.png",
+      "credit": "Sockenpuppe123 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Avers_und_Revers_einer_Bartsteuermarke_aus_dem_Jahr_1705.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Avers_und_Revers_einer_Bartsteuermarke_aus_dem_Jahr_1705.png/960px-Avers_und_Revers_einer_Bartsteuermarke_aus_dem_Jahr_1705.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2993,
+      "height": 1475,
+      "alt_suggestion": "Replik einer Bartsteuermarke aus dem Jahr 1705. Avers: Russischer Doppeladler und Prägejahr; Revers: Formel \"das Geld ist erhoben\" sowie stilisierte Frontaldarstellung eines Schnurr- und Kinnbartes.",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"beard token бородовой знак Russian beard tax token 1705\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"beard token бородовой знак Russian beard tax token 1705\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=beard%20token%20%D0%B1%D0%BE%D1%8",
+    "met failed for \"beard token\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"beard token\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=beard%20token&query[term][is_publ",
+    "met failed for \"beard token бородовой знак\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"beard token бородовой знак\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=beard%20token%20%D0%B1%D0%BE%D1%8"
+  ]
+}

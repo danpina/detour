@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-90605181",
+  "alt": "A wood frog with a dark eye mask resting among brown pine needles and leaf litter.",
+  "fits": true,
+  "note": "Single wood frog on leaf litter, matches brief. Landscape, so crop on the frog. cand-1/cand-5 show a mating pair (less suitable), cand-2/4 are ducks.",
+  "crop": {
+    "fx": 0.35,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

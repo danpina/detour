@@ -1,0 +1,114 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Lithium-ion battery",
+    "angle": "Three decades of improvement"
+  },
+  "created_at": "2026-10-21T17:04:04.459Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "type": "guess_first",
+    "title": "Lithium-ion batteries got ten times cheaper",
+    "difficulty": 2,
+    "body": {
+      "question": "Lithium-ion batteries were first sold in 1991. Over the three decades since, what happened to their cost?",
+      "options": [
+        "It dropped tenfold",
+        "It halved",
+        "It stayed about the same",
+        "It doubled"
+      ],
+      "answer": 0,
+      "reveal": "In the three decades since Li-ion batteries were first sold in 1991, their volumetric energy density increased threefold while their cost dropped tenfold. Whittingham, Goodenough, and Yoshino were awarded the 2019 Nobel Prize in Chemistry for their contributions to the development of lithium-ion batteries."
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "In which year were lithium-ion batteries first sold?",
+        "options": [
+          "1991",
+          "1971",
+          "1981",
+          "2001"
+        ],
+        "answer": 0,
+        "id": "tech-0028-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: Whittingham, Goodenough, and Yoshino were awarded the 2019 Nobel Prize in Chemistry for their contributions to lithium-ion batteries.",
+        "answer": true,
+        "id": "tech-0028-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Lithium-ion battery (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Lithium-ion_battery"
+      }
+    ],
+    "id": "tech-0028",
+    "interest": "tech",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A lithium-ion cell or battery pack, close up",
+    "keywords": [
+      "lithium-ion battery",
+      "18650 cell",
+      "Li-ion cell",
+      "battery pack"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:51.868Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: Lithium-ion batteries got ten times cheaper",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
+        "quote": "their cost dropped tenfold"
+      },
+      {
+        "claim": "Lithium-ion batteries were first sold in 1991",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
+        "quote": "In the three decades since Li-ion batteries were first sold in 1991"
+      },
+      {
+        "claim": "Over three decades since 1991, Li-ion cost dropped tenfold (volumetric energy density rose threefold)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
+        "quote": "In the three decades since Li-ion batteries were first sold in 1991, their volumetric energy density increased threefold while their cost dropped tenfold."
+      },
+      {
+        "claim": "Whittingham, Goodenough and Yoshino were awarded the 2019 Nobel Prize in Chemistry for their contributions to the development of lithium-ion batteries",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
+        "quote": "Whittingham, Goodenough, and Yoshino were awarded the 2019 Nobel Prize in Chemistry for their contributions to the development of lithium-ion batteries."
+      },
+      {
+        "claim": "Probe 1: first sold in 1991",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
+        "quote": "In the three decades since Li-ion batteries were first sold in 1991"
+      },
+      {
+        "claim": "Probe 2: Nobel 2019 true",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
+        "quote": "Whittingham, Goodenough, and Yoshino were awarded the 2019 Nobel Prize in Chemistry for their contributions to the development of lithium-ion batteries."
+      }
+    ],
+    "overall": "pass"
+  }
+}

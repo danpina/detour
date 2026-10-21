@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Caesar cipher",
+    "angle": "A shift of three"
+  },
+  "created_at": "2026-10-21T17:04:04.457Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "type": "fact_why",
+    "title": "Caesar's shift of three",
+    "difficulty": 1,
+    "body": {
+      "claim": "The Roman historian Suetonius writes that Julius Caesar used a cipher with a shift of three (A becoming D when encrypting) to protect messages of military significance.",
+      "why": "A Caesar shift of thirteen is also performed in the ROT13 cipher, a simple method of obfuscating text found on Usenet and used to obscure text such as joke punchlines and story spoilers."
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "In the Caesar cipher as described for Julius Caesar, which letter does A become when encrypting?",
+        "options": [
+          "D",
+          "B",
+          "N",
+          "Z"
+        ],
+        "answer": 0,
+        "id": "tech-0026-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: ROT13 is a Caesar shift of thirteen.",
+        "answer": true,
+        "id": "tech-0026-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Caesar cipher (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Caesar_cipher"
+      }
+    ],
+    "id": "tech-0026",
+    "interest": "tech",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A Caesar cipher wheel or decoder ring, or a bust of Julius Caesar",
+    "keywords": [
+      "Caesar cipher",
+      "cipher disk",
+      "Julius Caesar bust",
+      "decoder ring"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:07:39.967Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Caesar_cipher",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: Caesar's shift of three",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Caesar_cipher",
+        "quote": "used it with a shift of three ( A becoming D when encrypting, and vice versa when decrypting) to protect messages of military significance."
+      },
+      {
+        "claim": "Suetonius, a Roman historian, says Julius Caesar used a shift of three (A to D when encrypting) to protect messages of military significance",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Caesar_cipher",
+        "quote": "who, according to the Roman historian Suetonius , used it with a shift of three ( A becoming D when encrypting, and vice versa when decrypting) to protect messages of military significance."
+      },
+      {
+        "claim": "A Caesar shift of thirteen is also performed in ROT13, a simple method of obfuscating text found on Usenet and used to obscure joke punchlines and story spoilers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Caesar_cipher",
+        "quote": "A Caesar shift of thirteen is also performed in the ROT13 cipher, a simple method of obfuscating text widely found on Usenet and used to obscure text (such as joke punchlines and story spoilers )"
+      },
+      {
+        "claim": "Probe 1: A becomes D (distractors B, N, Z are not the Caesar shift)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Caesar_cipher",
+        "quote": "used it with a shift of three ( A becoming D when encrypting"
+      },
+      {
+        "claim": "Probe 2: ROT13 is a Caesar shift of thirteen (true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Caesar_cipher",
+        "quote": "A Caesar shift of thirteen is also performed in the ROT13 cipher"
+      }
+    ],
+    "overall": "pass"
+  }
+}

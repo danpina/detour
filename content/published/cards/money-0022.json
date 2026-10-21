@@ -1,0 +1,50 @@
+{
+  "id": "money-0022",
+  "interest": "money",
+  "title": "Pay to keep your beard",
+  "probes": [
+    {
+      "id": "money-0022-p1",
+      "question": "What were men who paid Russia's beard tax required to carry?",
+      "kind": "mcq",
+      "options": [
+        "A beard token",
+        "A signed permit letter",
+        "A silver spoon",
+        "A red ribbon"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0022-p2",
+      "question": "True or false: from a financial standpoint, Russia's beard tax was unsuccessful.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Beard tax (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Beard_tax"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:11.509Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0022.webp",
+    "alt": "Both sides of a copper Russian beard token from 1705, one with a double-headed eagle, the other showing a nose and beard with the words for money taken.",
+    "kind": "photo",
+    "credit": "Sockenpuppe123 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Avers_und_Revers_einer_Bartsteuermarke_aus_dem_Jahr_1705.png"
+  },
+  "body": {
+    "claim": "In 1698, Tsar Peter I of Russia instituted a beard tax. Men who paid it were required to carry a copper or silver \"beard token\".",
+    "why": "It was part of an effort to bring Russian society in line with Western European models. Resistance was widespread, since many believed a beard was a religious requirement. Financially, the tax was unsuccessful: few people were unwilling to shave, and the state overestimated its ability to administer and collect it."
+  }
+}
