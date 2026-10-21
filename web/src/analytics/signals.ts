@@ -14,8 +14,8 @@ export type SignalPayloads = {
   "app.opened": Record<string, never>;
   /** Onboarding finished. `interests` is only how many were picked. */
   "onboarding.completed": { interests: number };
-  /** A set of cards started. `mode`: "set" (5 cards), "feed" (free scroll) or "practice" (one skill drill). */
-  "session.started": { mode: "set" | "feed" | "practice"; cards: number };
+  /** A set of cards started. `mode`: "set" (5 cards) or "feed" (free scroll). */
+  "session.started": { mode: "set" | "feed"; cards: number };
   /** A set ended. Counts of what was completed. */
   "session.completed": { completed: number; reviews: number; newCards: number; drills: number };
   /** A card was shown. `type` is the card type or "review" / "drill". */

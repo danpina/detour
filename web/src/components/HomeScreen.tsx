@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { ALL_CARDS } from "../lib/content";
-import { TRACKS, TRACK_IDS, type TrackId } from "../lib/drills";
 import { loadHomeInfo, type HomeInfo } from "../lib/home";
 import { isReviewer, seenInReview } from "../lib/reviewer";
 import { canPromptInstall, dismissInstall, installDismissed, installHint, isInstalled, isIos, promptInstall, type InstallHint } from "../lib/install";
 
-type Props = { onStart: (feed: boolean) => void; onPractice: (track: TrackId) => void; onOpenSettings: () => void; onOpenProgress: () => void; onReview: () => void };
+type Props = { onStart: (feed: boolean) => void; onOpenSettings: () => void; onOpenProgress: () => void; onReview: () => void };
 
-export function HomeScreen({ onStart, onPractice, onOpenSettings, onOpenProgress, onReview }: Props) {
+export function HomeScreen({ onStart, onOpenSettings, onOpenProgress, onReview }: Props) {
   const [info, setInfo] = useState<HomeInfo | null>(null);
   const [hint, setHint] = useState<InstallHint>(null);
 
@@ -43,19 +42,9 @@ export function HomeScreen({ onStart, onPractice, onOpenSettings, onOpenProgress
         Let's go
       </button>
       <button onClick={() => onStart(true)} className="mt-3 w-full rounded-2xl border border-neutral-300 py-3.5 font-medium hover:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-900">
-        Keep scrolling
+        Keep learning
       </button>
 
-      <div className="mt-6">
-        <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">Practice</p>
-        <div className="mt-2 grid grid-cols-2 gap-2">
-          {TRACK_IDS.map((t) => (
-            <button key={t} onClick={() => onPractice(t)} className="rounded-2xl border border-neutral-300 py-3 text-sm font-medium hover:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-900">
-              {TRACKS[t].name}
-            </button>
-          ))}
-        </div>
-      </div>
 
       {isReviewer() && (
         <button onClick={onReview} disabled={toReview === 0} className="mt-5 rounded-2xl border-2 border-rose-500 px-4 py-3 text-sm font-medium text-rose-700 disabled:opacity-50 dark:text-rose-300">

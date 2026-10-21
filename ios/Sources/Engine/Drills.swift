@@ -303,8 +303,8 @@ enum Skills {
     }
 
     /// The track practised least recently (never-practised tracks first).
-    static func nextTrack(_ all: [SkillProgress]) -> TrackId {
-        TrackId.allCases.min { a, b in
+    static func nextTrack(_ all: [SkillProgress], among allowed: [TrackId] = TrackId.allCases) -> TrackId {
+        allowed.min { a, b in
             (all.first { $0.track == a }?.lastAt ?? .distantPast) < (all.first { $0.track == b }?.lastAt ?? .distantPast)
         }!
     }

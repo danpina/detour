@@ -14,16 +14,15 @@ import type { SessionItem } from "./lib/engine";
 import { EVENT_RETENTION_DAYS } from "./lib/progress";
 import { ALL_CARDS } from "./lib/content";
 import { seenInReview } from "./lib/reviewer";
-import { nextSet, practiceSet } from "./lib/session";
-import type { TrackId } from "./lib/drills";
+import { nextSet } from "./lib/session";
 
 type Screen =
   | { name: "loading" }
   | { name: "onboarding" }
   | { name: "interests" }
   | { name: Tab }
-  | { name: "session"; items: SessionItem[]; run: number; feed: boolean; dryRun?: boolean; practice?: TrackId }
-  | { name: "end"; learned: number; practice?: TrackId };
+  | { name: "session"; items: SessionItem[]; run: number; feed: boolean; dryRun?: boolean }
+  | { name: "end"; learned: number };
 
 export function App() {
   const [screen, setScreen] = useState<Screen>({ name: "loading" });
@@ -55,13 +54,6 @@ export function App() {
     const items = await nextSet(ints);
     track("session.started", { mode: feed ? "feed" : "set", cards: items.length });
     setScreen((s) => ({ name: "session", items, feed, run: (s.name === "session" ? s.run : 0) + 1 }));
-  }, []);
-
-  /** A practice round for one skill, started from the Practice section on Home. */
-  const startPractice = useCallback(async (skill: TrackId) => {
-    const items = await practiceSet(skill);
-    track("session.started", { mode: "practice", cards: items.length });
-    setScreen((s) => ({ name: "session", items, feed: false, practice: skill, run: (s.name === "session" ? s.run : 0) + 1 }));
   }, []);
 
   /** Reviewer mode: a batch of agent-approved cards not looked at yet. Nothing is recorded as progress. */
@@ -100,7 +92,7 @@ export function App() {
 
         {screen.name === "interests" && <Onboarding initial={interests} editing onDone={saveInterests} onCancel={() => setScreen({ name: "settings" })} />}
 
-        {screen.name === "home" && <HomeScreen onPractice={(t) => void startPractice(t)} onReview={startReview} onStart={(feed) => startSet(interests, feed)} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
+        {screen.name === "home" && <HomeScreen onReview={startReview} onStart={(feed) => startSet(interests, feed)} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
 
         {screen.name === "progress" && <ProgressScreen />}
 
@@ -114,13 +106,13 @@ export function App() {
             items={screen.items}
             source="free"
             dryRun={screen.dryRun}
-            onFinish={(n) => (screen.dryRun ? setScreen({ name: "home" }) : screen.feed ? void startSet(interests, true) : setScreen({ name: "end", learned: n, practice: screen.practice }))}
+            onFinish={(n) => (screen.dryRun ? setScreen({ name: "home" }) : screen.feed ? void startSet(interests, true) : setScreen({ name: "end", learned: n }))}
             onExit={screen.feed ? () => setScreen({ name: "home" }) : undefined}
           />
         )}
 
         {screen.name === "end" && (
-          <EndScreen learned={screen.learned} practice={!!screen.practice} onAnother={() => (screen.practice ? startPractice(screen.practice) : startSet(interests, false))} onProgress={() => setScreen({ name: "progress" })} onDone={() => setScreen({ name: "home" })} />
+          <EndScreen learned={screen.learned} onAnother={() => startSet(interests, false)} onProgress={() => setScreen({ name: "progress" })} onDone={() => setScreen({ name: "home" })} />
         )}
 
         <Toaster />

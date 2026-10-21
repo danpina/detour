@@ -61,7 +61,7 @@ export function ProgressScreen() {
       <section className={`${card} mt-4`}>
         <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Knowledge map</h2>
         <div className="mt-3 space-y-4">
-          {INTERESTS.map((i) => {
+          {INTERESTS.filter((i) => i !== "estimation").map((i) => {
             const cards = map.get(i) ?? [];
             const solid = cards.filter((c) => c.state === "solid").length;
             return (

@@ -11,6 +11,8 @@ export const INTEREST_INFO: Record<Interest, { name: string; blurb: string; emoj
   tech: { name: "Tech", blurb: "How we got here", emoji: "💡" },
   mind: { name: "Human Mind", blurb: "Why we think what we think", emoji: "🧠" },
   numbers: { name: "Numbers & Logic", blurb: "Patterns and puzzles", emoji: "🔢" },
+  // A skill, not a card topic: choosing it adds a quick estimation round to your sets.
+  estimation: { name: "Estimation", blurb: "Guess big numbers", emoji: "⚖️" },
 };
 
 function loadCards(): Card[] {

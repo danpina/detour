@@ -228,3 +228,13 @@ describe("estimation question variety", () => {
     }
   });
 });
+
+describe("choosing the skill round", () => {
+  it("only picks from the allowed tracks and alternates by recency", () => {
+    expect(nextTrack([], ["estimation"])).toBe("estimation");
+    expect(nextTrack([], ["mental-math"])).toBe("mental-math");
+    const practised = [{ ...emptyProgress("mental-math"), last_at: 5000 }];
+    expect(nextTrack(practised, ["mental-math", "estimation"])).toBe("estimation");
+    expect(nextTrack(practised, ["mental-math"])).toBe("mental-math");
+  });
+});

@@ -2,7 +2,7 @@ import { z } from "zod";
 
 export const CONTENT_SCHEMA_VERSION = 1;
 
-export const INTERESTS = ["history", "science", "money", "tech", "mind", "numbers"] as const;
+export const INTERESTS = ["history", "science", "money", "tech", "mind", "numbers", "estimation"] as const;
 export const interestSchema = z.enum(INTERESTS);
 export type Interest = z.infer<typeof interestSchema>;
 

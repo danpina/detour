@@ -3,7 +3,6 @@ import SwiftUI
 struct HomeView: View {
     @Environment(AppModel.self) private var model
     let start: (_ feed: Bool) -> Void
-    let practice: (_ track: TrackId) -> Void
 
     var body: some View {
         VStack(spacing: 12) {
@@ -32,24 +31,9 @@ struct HomeView: View {
             Button {
                 start(true)
             } label: {
-                Text("Keep scrolling").frame(maxWidth: .infinity).padding(.vertical, 12)
+                Text("Keep learning").frame(maxWidth: .infinity).padding(.vertical, 12)
             }
             .buttonStyle(.bordered)
-
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Practice").font(.footnote.weight(.semibold)).foregroundStyle(.secondary)
-                HStack(spacing: 10) {
-                    ForEach(TrackId.allCases, id: \.self) { track in
-                        Button {
-                            practice(track)
-                        } label: {
-                            Text(Drills.info(track).name).frame(maxWidth: .infinity).padding(.vertical, 10)
-                        }
-                        .buttonStyle(.bordered)
-                    }
-                }
-            }
-            .padding(.top, 20)
             Spacer()
         }
         .padding(.horizontal, 28)

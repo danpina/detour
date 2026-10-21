@@ -4,6 +4,8 @@ import Foundation
 
 enum Interest: String, Codable, CaseIterable, Hashable {
     case history, science, money, tech, mind, numbers
+    /// A skill, not a card topic: choosing it adds a quick estimation round to the sets.
+    case estimation
 
     var displayName: String {
         switch self {
@@ -13,6 +15,7 @@ enum Interest: String, Codable, CaseIterable, Hashable {
         case .tech: return "Tech"
         case .mind: return "Human Mind"
         case .numbers: return "Numbers & Logic"
+        case .estimation: return "Estimation"
         }
     }
 }

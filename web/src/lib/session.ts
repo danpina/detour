@@ -21,13 +21,15 @@ import { dayKey, displayStreak, emptyStreak, knowledgeMap, recallStats, recordDa
 export async function nextSet(interests: Interest[], sizeOverride?: number): Promise<SessionItem[]> {
   const settings = await store.getSettings();
   const setSize = sizeOverride ?? settings?.set_size ?? DEFAULT_SET_SIZE;
-  // Skill drills no longer ride along at the end of every set: they live in the Practice section on Home, and only join
-  // the sets when turned on in Settings.
-  const drillsOn = settings?.drills ?? false;
+  // The skill round at the end of a set: mental math when it is turned on in Settings, estimation when it is one of the
+  // chosen interests. With both, they alternate; with neither there is no skill round.
+  const allowed: TrackId[] = [];
+  if (settings?.drills) allowed.push("mental-math");
+  if (interests.includes("estimation")) allowed.push("estimation");
   const [reviews, completed, events, skills] = await Promise.all([store.getReviews(), store.completedCardIds(), store.getEvents(), store.getSkills()]);
-  const track = nextTrack(skills);
+  const track = allowed.length ? nextTrack(skills, allowed) : undefined;
   const level = skills.find((s) => s.track_id === track)?.level ?? 1;
-  const drill: DrillSpec = { track, level, seed: Math.floor(Math.random() * 2 ** 31) };
+  const drill: DrillSpec | undefined = track ? { track, level, seed: Math.floor(Math.random() * 2 ** 31) } : undefined;
   return buildSession({
     cards: ALL_CARDS,
     reviews,
@@ -37,14 +39,8 @@ export async function nextSet(interests: Interest[], sizeOverride?: number): Pro
     lastShown: lastShownFrom(events),
     now: Date.now(),
     setSize,
-    makeDrill: drillsOn ? () => drill : undefined,
+    makeDrill: drill ? () => drill : undefined,
   });
-}
-
-/** A practice round for one skill: just the drill, started from the Practice section on Home. */
-export async function practiceSet(track: TrackId): Promise<SessionItem[]> {
-  const level = (await store.getSkills()).find((s) => s.track_id === track)?.level ?? 1;
-  return [{ kind: "drill", drill: { track, level, seed: Math.floor(Math.random() * 2 ** 31) } }];
 }
 
 /** Saves a finished drill round: updates the track\u0027s recent results and level. */

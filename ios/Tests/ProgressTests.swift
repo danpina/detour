@@ -136,6 +136,22 @@ final class AppModelTests: XCTestCase {
         XCTAssertTrue(model.makeSet().contains { if case .drill = $0 { return true } else { return false } })
     }
 
+    func testEstimationInterestAddsAnEstimationRoundWithoutTheMentalMathSetting() {
+        let (model, url) = makeModel()
+        defer { try? FileManager.default.removeItem(at: url) }
+        model.completeOnboarding(interests: [.history, .science, .estimation])
+        XCTAssertFalse(model.drillsEnabled)
+        XCTAssertEqual(model.allowedTracks, [.estimation])
+        let items = model.makeSet()
+        guard case .drill(let spec)? = items.last else { return XCTFail("expected an estimation round at the end of the set") }
+        XCTAssertEqual(spec.track, .estimation)
+        for item in items {
+            if case .new(let c) = item { XCTAssertNotEqual(c.interest, .estimation, "estimation has no cards of its own") }
+        }
+        model.updateSettings { $0.drills = true }
+        XCTAssertEqual(Set(model.allowedTracks), [.mentalMath, .estimation])
+    }
+
     func testFinishingANewCardSchedulesItsProbesForTomorrowAndStartsTheStreak() {
         let (model, url) = makeModel()
         defer { try? FileManager.default.removeItem(at: url) }

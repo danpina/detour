@@ -43,7 +43,7 @@ struct ProgressScreen: View {
 
                 card {
                     Text("Knowledge map").font(.subheadline).foregroundStyle(.secondary)
-                    ForEach(Interest.allCases, id: \.self) { interest in
+                    ForEach(Interest.allCases.filter { $0 != .estimation }, id: \.self) { interest in
                         let cards = snapshot.map[interest] ?? []
                         let solid = cards.filter { $0.state == .solid }.count
                         VStack(alignment: .leading, spacing: 6) {

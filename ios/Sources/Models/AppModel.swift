@@ -56,16 +56,16 @@ final class AppModel {
     var cards: [Card] { content.cards }
     var settings: UserSettings { data.settings }
 
-    /// Skill drills no longer ride along at the end of every set. They live in the Practice section on Home, and only join
-    /// the sets when the user turns that on in Settings.
+    /// Mental math at the end of each set is a setting (off by default).
     var drillsEnabled: Bool { data.settings.drills ?? false }
 
-    /// A practice round for one skill: just the drill, started from the Practice section.
-    func makeDrillSet(_ track: TrackId) -> [SessionItem] {
-        let level = data.skills.first { $0.track == track }?.level ?? 1
-        let spec = DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)))
-        AppLog.log("practice built: track=\(track.rawValue) level=\(level) seed=\(spec.seed)")
-        return [.drill(spec)]
+    /// The skills that get a round at the end of a set: mental math when it is turned on in Settings, estimation when it is
+    /// one of the chosen interests. With both they alternate; with neither there is no skill round.
+    var allowedTracks: [TrackId] {
+        var out: [TrackId] = []
+        if drillsEnabled { out.append(.mentalMath) }
+        if data.settings.interests.contains(.estimation) { out.append(.estimation) }
+        return out
     }
 
     init(store: DataStore = DataStore(), content: LoadedContent = ContentStore.load(), clock: @escaping () -> Date = { Date() }, calendar: Calendar = .current) {
@@ -101,9 +101,13 @@ final class AppModel {
 
     func makeSet() -> [SessionItem] {
         let now = clock()
-        let track = Skills.nextTrack(data.skills)
-        let level = data.skills.first { $0.track == track }?.level ?? 1
-        let drill = DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)))
+        let tracks = allowedTracks
+        var drill: DrillSpec?
+        if !tracks.isEmpty {
+            let track = Skills.nextTrack(data.skills, among: tracks)
+            let level = data.skills.first { $0.track == track }?.level ?? 1
+            drill = DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)))
+        }
         let events = data.events.map { (cardId: $0.cardId, kind: $0.kind.rawValue) }
         let input = EngineInput(
             cards: cards,
@@ -113,12 +117,12 @@ final class AppModel {
             engagement: SessionEngine.engagement(events: events, cards: cards),
             now: now,
             setSize: data.settings.setSize,
-            drill: drillsEnabled ? drill : nil,
+            drill: drill,
             lastShown: lastShown
         )
         let items = SessionEngine.build(input)
         let list = items.map { $0.key }.joined(separator: ", ")
-        AppLog.log("set built: size=\(data.settings.setSize) due=\(dueCount) completedCards=\(completedCardIds.count) reviewRows=\(data.reviews.count) shownBefore=\(lastShown.count) drills=\(drillsEnabled) items=[\(list)]")
+        AppLog.log("set built: size=\(data.settings.setSize) due=\(dueCount) completedCards=\(completedCardIds.count) reviewRows=\(data.reviews.count) shownBefore=\(lastShown.count) skillRound=\(drill.map { $0.track.rawValue } ?? "none") items=[\(list)]")
         return items
     }
 

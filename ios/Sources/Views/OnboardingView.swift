@@ -23,6 +23,7 @@ struct OnboardingView: View {
         case .tech: return "💡"
         case .mind: return "🧠"
         case .numbers: return "🔢"
+        case .estimation: return "⚖️"
         }
     }
 
@@ -34,6 +35,7 @@ struct OnboardingView: View {
         case .tech: return "How we got here"
         case .mind: return "Why we think what we think"
         case .numbers: return "Patterns and puzzles"
+        case .estimation: return "Guess big numbers"
         }
     }
 

@@ -104,7 +104,7 @@ export function applyResults(progress: SkillProgress, results: boolean[], now: n
 }
 
 /** Picks the track practised least recently (never-practised tracks first). */
-export function nextTrack(all: SkillProgress[]): TrackId {
+export function nextTrack(all: SkillProgress[], allowed: readonly TrackId[] = TRACK_IDS): TrackId {
   const byId = new Map(all.map((p) => [p.track_id, p]));
-  return [...TRACK_IDS].sort((a, b) => (byId.get(a)?.last_at ?? 0) - (byId.get(b)?.last_at ?? 0))[0]!;
+  return [...allowed].sort((a, b) => (byId.get(a)?.last_at ?? 0) - (byId.get(b)?.last_at ?? 0))[0]!;
 }

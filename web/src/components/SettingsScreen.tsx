@@ -196,8 +196,8 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
             className="mt-1 h-5 w-5 accent-teal-600"
           />
           <span>
-            <span className="block font-medium">Skill drills</span>
-            <span className="text-sm text-neutral-500 dark:text-neutral-400">Add a quick math round to the end of each set. You can always practise from Home.</span>
+            <span className="block font-medium">Mental math</span>
+            <span className="text-sm text-neutral-500 dark:text-neutral-400">Add a quick mental-math round to the end of each set. Estimation is a topic you can pick under your interests.</span>
           </span>
         </label>
       </section>

@@ -6,8 +6,6 @@ struct SessionRun: Identifiable {
     let feed: Bool
     /// Started from the shield's Start button: finishing it unlocks the guarded apps. Sets started inside Detour do not.
     var guarded = false
-    /// A practice round for one skill, started from the Practice section.
-    var practice: TrackId?
 }
 
 enum MainTab: Hashable {
@@ -30,7 +28,7 @@ struct RootView: View {
                 }
             } else {
                 TabView(selection: $tab) {
-                    HomeView(start: start, practice: startPractice)
+                    HomeView(start: start)
                         .tabItem { Label("Home", systemImage: "bolt.fill") }
                         .tag(MainTab.home)
                     ProgressScreen()
@@ -56,9 +54,7 @@ struct RootView: View {
                     }
                     return guardManager.unlockAfterSet()
                 },
-                onAnother: {
-                    if let track = run?.practice { startPractice(track) } else { start(feed: false) }
-                },
+                onAnother: { start(feed: false) },
                 onProgress: {
                     tab = .progress
                     run = nil
@@ -69,6 +65,8 @@ struct RootView: View {
                     run = nil
                 }
             )
+            // A new run must start from a clean screen. Without this the old set's progress (including its end screen) was reused.
+            .id(current.id)
             .environment(model)
         }
     }
@@ -78,12 +76,8 @@ struct RootView: View {
         guardManager.refresh()
         if guardManager.consumePendingSession() {
             AppLog.log("opened from the shield's Start button (session open already: \(run != nil))")
-            if model.settings.onboardingDone, run == nil {
-                start(feed: false, why: "shield start")
-            } else if run != nil {
-                run?.guarded = true
-                AppLog.log("the open session now counts as the guarded one")
-            }
+            // A guarded session is always a fresh, plain set (never the endless feed), replacing anything already open.
+            if model.settings.onboardingDone { start(feed: false, why: "shield start") }
         }
     }
 
@@ -97,9 +91,4 @@ struct RootView: View {
         run = SessionRun(items: items, feed: feed, guarded: why == "shield start")
     }
 
-    private func startPractice(_ track: TrackId) {
-        let items = model.makeDrillSet(track)
-        AppLog.log("start practice: track=\(track.rawValue)")
-        run = SessionRun(items: items, feed: false, practice: track)
-    }
 }

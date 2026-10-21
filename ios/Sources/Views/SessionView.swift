@@ -23,7 +23,7 @@ struct SessionView: View {
         VStack(spacing: 0) {
             ZStack {
                 if let finishedCount {
-                    EndView(learned: finishedCount, unlockedMinutes: unlockedMinutes, practice: run.practice != nil, onAnother: onAnother, onProgress: onProgress, onDone: onClose)
+                    EndView(learned: finishedCount, unlockedMinutes: unlockedMinutes, onAnother: onAnother, onProgress: onProgress, onDone: onClose)
                 } else if items.indices.contains(index) {
                     screen(for: items[index])
                         .id(items[index].key)
@@ -112,7 +112,6 @@ struct SessionView: View {
 struct EndView: View {
     let learned: Int
     var unlockedMinutes: Int? = nil
-    var practice = false
     let onAnother: () -> Void
     let onProgress: () -> Void
     let onDone: () -> Void
@@ -121,14 +120,14 @@ struct EndView: View {
         VStack(spacing: 12) {
             Spacer()
             Text("✨").font(.system(size: 56))
-            Text(practice ? "Nice practice." : "You learned \(learned > 0 ? learned : 5) things.")
+            Text("You learned \(learned > 0 ? learned : 5) things.")
                 .font(.largeTitle.weight(.semibold))
                 .multilineTextAlignment(.center)
-            Text(practice ? "Your level moves up as you get more right." : "We'll check tomorrow if they stuck.")
+            Text("We'll check tomorrow if they stuck.")
                 .font(.title3)
                 .foregroundStyle(.white.opacity(0.7))
             if let unlockedMinutes {
-                Text("Your apps are open for \(unlockedMinutes) minutes. Tap one to head back.")
+                Text("You're through. Your apps are open for \(unlockedMinutes) minutes. Tap Done, then switch back to your app (iOS won't let Detour open it for you).")
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.7))
                     .multilineTextAlignment(.center)
@@ -142,7 +141,7 @@ struct EndView: View {
                     Text("Another quick one").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
                 }
             } else {
-                Button(action: onAnother) { Text(practice ? "Another round" : "Another quick one").whitePill() }
+                Button(action: onAnother) { Text("Another quick one").whitePill() }
                 Button(action: onDone) {
                     Text("Done for now").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
                 }

@@ -45,11 +45,11 @@ struct SettingsView: View {
                 }
 
                 Section {
-                    Toggle("Skill drills", isOn: Binding(
+                    Toggle("Mental math", isOn: Binding(
                         get: { model.drillsEnabled },
                         set: { on in model.updateSettings { $0.drills = on } }
                     ))
-                    Text("Add a quick math round to the end of each set. You can always practise from Home.").font(.footnote).foregroundStyle(.secondary)
+                    Text("Add a quick mental-math round to the end of each set. Estimation is a topic you can pick under your interests.").font(.footnote).foregroundStyle(.secondary)
                 }
 
                 GuardSettingsSection()
