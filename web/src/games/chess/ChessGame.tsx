@@ -1,12 +1,190 @@
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { GameProps } from "../registry";
+import { recordRound } from "../stats";
+import { loadChessData } from "./chessData";
+import { acceptMove, buildRound, displayOrder, glyph, isOwnPiece, moveSquares, parseFen, squareName, type Puzzle } from "./chessLogic";
 
-/** Placeholder until the game is built. */
+const ROUND_SIZE = 10;
+const MAX_TRIES = 2;
+
+type Status = "playing" | "correct" | "revealed";
+
+/** Chess tactics: find the checkmate in one. Ten puzzles, easy to hard. */
 export function ChessGame({ onExit }: GameProps) {
+  const data = useMemo(() => loadChessData(), []);
+  const [round, setRound] = useState<Puzzle[]>(() => (data ? buildRound(data.puzzles, Math.random, ROUND_SIZE) : []));
+  const [index, setIndex] = useState(0);
+  const [score, setScore] = useState(0);
+  const [wrong, setWrong] = useState(0);
+  const [status, setStatus] = useState<Status>("playing");
+  const [selected, setSelected] = useState<string | null>(null);
+  const [shake, setShake] = useState(0);
+  const [answer, setAnswer] = useState<string | null>(null);
+  const [done, setDone] = useState(false);
+  const [isBest, setIsBest] = useState(false);
+  const timer = useRef<number | null>(null);
+
+  useEffect(() => () => { if (timer.current) window.clearTimeout(timer.current); }, []);
+
+  if (!data || round.length === 0) {
+    return (
+      <div className="flex h-full flex-col items-center justify-center gap-4 px-8 text-center">
+        <h1 className="text-2xl font-semibold">Chess tactics</h1>
+        <p className="text-neutral-500 dark:text-neutral-400">The puzzles didn't load this time. Try again a little later.</p>
+        <button onClick={onExit} className="rounded-2xl bg-teal-600 px-6 py-3 font-semibold text-white">Back</button>
+      </div>
+    );
+  }
+
+  function finish(finalScore: number) {
+    setIsBest(recordRound("chess", finalScore));
+    setDone(true);
+  }
+
+  function next(finalScore: number) {
+    if (index + 1 >= round.length) {
+      finish(finalScore);
+      return;
+    }
+    setIndex(index + 1);
+    setWrong(0);
+    setStatus("playing");
+    setSelected(null);
+    setAnswer(null);
+  }
+
+  function playAgain() {
+    if (!data) return;
+    setRound(buildRound(data.puzzles, Math.random, ROUND_SIZE));
+    setIndex(0);
+    setScore(0);
+    setWrong(0);
+    setStatus("playing");
+    setSelected(null);
+    setAnswer(null);
+    setDone(false);
+  }
+
+  if (done) {
+    const msg = score >= 9 ? "Sharp eyes." : score >= 6 ? "Nicely done." : score >= 3 ? "Good practice." : "Every board teaches something.";
+    return (
+      <div className="flex h-full flex-col items-center justify-center gap-5 px-8 text-center">
+        <div className="text-5xl">♟️</div>
+        <h1 className="text-3xl font-semibold">{score} of {round.length}</h1>
+        <p className="text-neutral-500 dark:text-neutral-400">
+          solved on the first try. {msg}
+          {isBest && score > 0 ? " That's a new best!" : ""}
+        </p>
+        <div className="flex w-full max-w-xs flex-col gap-3">
+          <button onClick={playAgain} className="rounded-2xl bg-teal-600 px-6 py-4 text-lg font-semibold text-white active:scale-[0.99]">Play again</button>
+          <button onClick={onExit} className="rounded-2xl border border-neutral-300 px-6 py-4 text-lg font-semibold active:scale-[0.99] dark:border-neutral-700">Back</button>
+        </div>
+        <p className="mt-2 text-xs text-neutral-500 dark:text-neutral-400">{data.credit}</p>
+      </div>
+    );
+  }
+
+  const puzzle = round[index];
+  const parsed = puzzle ? parseFen(puzzle.fen) : null;
+  if (!puzzle || !parsed) {
+    // A broken puzzle should never trap the player: skip it.
+    return (
+      <div className="flex h-full flex-col items-center justify-center gap-4 px-8 text-center">
+        <p>That one got lost.</p>
+        <button onClick={() => next(score)} className="rounded-2xl bg-teal-600 px-6 py-3 font-semibold text-white">Next</button>
+      </div>
+    );
+  }
+  const side = puzzle.sideToMove;
+  const order = displayOrder(side);
+  const hint = answer ? moveSquares(answer) : null;
+
+  const tap = (sq: string, piece: string | null) => {
+    if (status !== "playing") return;
+    if (selected === null) {
+      if (isOwnPiece(piece, side)) setSelected(sq);
+      return;
+    }
+    if (sq === selected) {
+      setSelected(null);
+      return;
+    }
+    if (isOwnPiece(piece, side)) {
+      setSelected(sq);
+      return;
+    }
+    const mate = acceptMove(puzzle, selected, sq);
+    if (mate) {
+      const newScore = wrong === 0 ? score + 1 : score;
+      setScore(newScore);
+      setAnswer(mate);
+      setStatus("correct");
+      setSelected(null);
+      timer.current = window.setTimeout(() => next(newScore), 1100);
+      return;
+    }
+    const w = wrong + 1;
+    setWrong(w);
+    setSelected(null);
+    setShake((n) => n + 1);
+    if (w >= MAX_TRIES) {
+      setAnswer(puzzle.mates[0] ?? null);
+      setStatus("revealed");
+    }
+  };
+
+  const sideName = side === "w" ? "White" : "Black";
+  let message = `${sideName} to move. Find checkmate in one.`;
+  if (status === "correct") message = "Checkmate! Lovely.";
+  else if (status === "revealed") message = "Here's the mate. On to the next one.";
+  else if (wrong > 0) message = "Not that one, try again";
+
   return (
-    <div className="flex h-full flex-col items-center justify-center gap-4 px-8 text-center">
-      <h1 className="text-2xl font-semibold">Chess tactics</h1>
-      <p className="text-neutral-500 dark:text-neutral-400">Coming soon.</p>
-      <button onClick={onExit} className="rounded-2xl bg-teal-600 px-6 py-3 font-semibold text-white">Back</button>
+    <div className="flex h-full flex-col px-4 pb-6 pt-[max(1.5rem,env(safe-area-inset-top))]">
+      <style>{`@keyframes detour-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}`}</style>
+      <div className="flex items-center justify-between">
+        <button onClick={onExit} className="min-h-11 rounded-xl px-2 text-sm text-neutral-500 dark:text-neutral-400">Close</button>
+        <span className="text-sm text-neutral-500 dark:text-neutral-400">{index + 1} of {round.length}</span>
+      </div>
+      <p aria-live="polite" className="mt-3 min-h-12 text-center text-lg font-semibold">{message}</p>
+      <div
+        key={shake}
+        className="mx-auto mt-3 grid aspect-square w-full max-w-[390px] grid-cols-8 overflow-hidden rounded-xl border border-neutral-300 dark:border-neutral-700"
+        style={shake > 0 ? { animation: "detour-shake 0.35s" } : undefined}
+      >
+        {order.map((i) => {
+          const sq = squareName(i);
+          const piece = parsed.squares[i] ?? null;
+          const file = i % 8;
+          const rank = Math.floor(i / 8);
+          const light = (file + rank) % 2 === 0;
+          const isSel = selected === sq;
+          const isHint = hint !== null && (hint.from === sq || hint.to === sq);
+          let bg = light ? "bg-amber-100 dark:bg-amber-200/80" : "bg-teal-700 dark:bg-teal-800";
+          if (isHint) bg = "bg-emerald-400";
+          if (isSel) bg = "bg-yellow-300";
+          const white = piece !== null && piece === piece.toUpperCase();
+          return (
+            <button
+              key={sq}
+              onClick={() => tap(sq, piece)}
+              aria-label={sq + (piece ? " " + piece : "")}
+              className={`flex aspect-square items-center justify-center text-[clamp(1.6rem,9vw,2.6rem)] leading-none ${bg}`}
+            >
+              {piece && (
+                <span className={white ? "text-white [text-shadow:0_0_2px_#000,0_0_2px_#000,0_0_2px_#000]" : "text-neutral-900"}>
+                  {glyph(white ? piece.toLowerCase() : piece)}
+                </span>
+              )}
+            </button>
+          );
+        })}
+      </div>
+      <div className="mt-5 flex justify-center">
+        {status === "revealed" && (
+          <button onClick={() => next(score)} className="rounded-2xl bg-teal-600 px-8 py-3 text-lg font-semibold text-white active:scale-[0.99]">Next</button>
+        )}
+      </div>
     </div>
   );
 }

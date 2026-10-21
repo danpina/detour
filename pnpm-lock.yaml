@@ -194,6 +194,9 @@ importers:
       '@types/node':
         specifier: ^26.6.5
         version: 26.6.5
+      chess.js:
+        specifier: ^1.4.0
+        version: 1.4.0
       tsx:
         specifier: ^4.23.15
         version: 4.23.15
@@ -1802,6 +1805,9 @@ packages:
   chai@6.3.0:
     resolution: {integrity: sha512-XWAtwJ6OHO+tj0EKCs0Y2UamnyOxseZWltU4x2U2wh8g4AigdjwvtUjvLP2tqkA/avxHEtzxNaqGq/YGNwckKg==}
     engines: {node: '>=18'}
+
+  chess.js@1.4.0:
+    resolution: {integrity: sha512-BBJgrrtKQOzFLonR0l+k64A98NLemPwNsCskwb+29bRwobUa4iTm51E1kwGPbWXAcfdDa18nad6vpPPKPWarqw==}
 
   commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
@@ -4311,6 +4317,8 @@ snapshots:
   caniuse-lite@1.0.30001816: {}
 
   chai@6.3.0: {}
+
+  chess.js@1.4.0: {}
 
   commander@2.20.3: {}
 
