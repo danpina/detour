@@ -19,6 +19,10 @@ targets:
       - path: ../content/published
         type: folder
         buildPhase: resources
+      # Puzzle data for the Games tab, shared with the web app.
+      - path: ../content/games
+        type: folder
+        buildPhase: resources
     dependencies:
       - target: DetourShield
       - target: DetourShieldAction

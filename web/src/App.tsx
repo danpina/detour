@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { Interest } from "@detour/content";
 import { BottomNav, type Tab } from "./components/BottomNav";
 import { EndScreen } from "./components/EndScreen";
+import { GamesScreen } from "./components/GamesScreen";
 import { HomeScreen } from "./components/HomeScreen";
 import { Onboarding } from "./components/Onboarding";
 import { ProgressScreen } from "./components/ProgressScreen";
@@ -80,7 +81,7 @@ export function App() {
     await startSet(picked, false);
   };
 
-  const tab: Tab | null = screen.name === "home" || screen.name === "progress" || screen.name === "settings" ? screen.name : null;
+  const tab: Tab | null = screen.name === "home" || screen.name === "games" || screen.name === "progress" || screen.name === "settings" ? screen.name : null;
 
   return (
     // Phone-sized column, centred on larger screens.
@@ -93,6 +94,8 @@ export function App() {
         {screen.name === "interests" && <Onboarding initial={interests} editing onDone={saveInterests} onCancel={() => setScreen({ name: "settings" })} />}
 
         {screen.name === "home" && <HomeScreen onReview={startReview} onStart={(feed) => startSet(interests, feed)} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
+
+        {screen.name === "games" && <GamesScreen />}
 
         {screen.name === "progress" && <ProgressScreen />}
 

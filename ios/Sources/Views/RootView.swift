@@ -9,7 +9,7 @@ struct SessionRun: Identifiable {
 }
 
 enum MainTab: Hashable {
-    case home, progress, settings
+    case home, games, progress, settings
 }
 
 struct RootView: View {
@@ -32,6 +32,9 @@ struct RootView: View {
                     HomeView(start: start)
                         .tabItem { Label("Home", systemImage: "bolt.fill") }
                         .tag(MainTab.home)
+                    GamesView()
+                        .tabItem { Label("Games", systemImage: "gamecontroller.fill") }
+                        .tag(MainTab.games)
                     ProgressScreen()
                         .tabItem { Label("Progress", systemImage: "chart.line.uptrend.xyaxis") }
                         .tag(MainTab.progress)
