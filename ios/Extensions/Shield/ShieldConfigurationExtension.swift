@@ -51,7 +51,7 @@ final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         switch settings.mode {
         case .gentle: subtitle = "A few small cards first? Or carry on, no pressure."
         case .earnIt: subtitle = "A few small cards, then this is yours for \(settings.unlockMinutes) min" + (settings.unlockMinutes < 15 ? " of use." : ".")
-        case .strict: subtitle = "A last check. Take a quick detour, or open it for real (\(settings.strictUseMinutes) min)."
+        case .strict: subtitle = "A last check. Take a quick detour, or open it for real (" + usageLabel(settings.strictUseSeconds) + ")."
         case .hardLock: subtitle = "A few small cards, then this is yours. Your allowance today is \(settings.dailyAllowance) min."
         }
         let lockedToday = store.isHardLocked()

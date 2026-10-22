@@ -108,7 +108,7 @@ final class GuardManager {
         }
         let window = settings.unlockWindow
         store.log("guarded set finished: unlocking for \(settings.unlockMinutes) min" + (window.usage == nil ? "" : " of use"))
-        GuardShield.unlock(minutes: window.minutes, usageMinutes: window.usage, store: store)
+        GuardShield.unlock(minutes: window.minutes, usageSeconds: window.usage.map { $0 * 60 }, store: store)
         return settings.unlockMinutes
     }
 

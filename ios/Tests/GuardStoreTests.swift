@@ -69,7 +69,7 @@ final class GuardStoreTests: XCTestCase {
         let store = GuardStore(defaults: defaults, calendar: calendar)
         XCTAssertTrue(store.settings.enabled)
         XCTAssertEqual(store.settings.mode, .earnIt)
-        XCTAssertEqual(store.settings.strictUseMinutes, 3)
+        XCTAssertEqual(store.settings.strictUseSeconds, 180)
     }
 
     func testStaleEndedSignalIsIgnoredWhileANewUnlockRuns() {
@@ -166,5 +166,30 @@ final class HardLockAndHoursTests: XCTestCase {
         XCTAssertEqual(store.settings.mode, .hardLock)
         XCTAssertEqual(store.settings.dailyAllowance, 45)
         XCTAssertEqual(store.settings.activeHours, ActiveHours())
+    }
+}
+
+final class UsageThresholdTests: XCTestCase {
+    func testThresholdSplitsIntoMinutesAndSeconds() {
+        XCTAssertEqual(GuardShield.threshold(seconds: 15).minute, 0)
+        XCTAssertEqual(GuardShield.threshold(seconds: 15).second, 15)
+        XCTAssertEqual(GuardShield.threshold(seconds: 90).minute, 1)
+        XCTAssertEqual(GuardShield.threshold(seconds: 90).second, 30)
+        XCTAssertEqual(GuardShield.threshold(seconds: 180).minute, 3)
+    }
+
+    func testUsageLabels() {
+        XCTAssertEqual(usageLabel(15), "15 s")
+        XCTAssertEqual(usageLabel(60), "1 min")
+        XCTAssertEqual(usageLabel(180), "3 min")
+    }
+
+    func testOlderMinutesSettingStillMapsToSeconds() {
+        var settings = GuardSettings()
+        XCTAssertEqual(settings.strictUseSeconds, 180)
+        settings.strictMinutes = 5
+        XCTAssertEqual(settings.strictUseSeconds, 300)
+        settings.strictSeconds = 30
+        XCTAssertEqual(settings.strictUseSeconds, 30)
     }
 }

@@ -39,8 +39,8 @@ final class ShieldActionExtension: ShieldActionDelegate {
                 return .close
             }
             if settings.mode == .strict {
-                store.log("strict: open anyway for " + String(settings.strictUseMinutes) + " min of use")
-                GuardShield.unlock(minutes: 15, usageMinutes: settings.strictUseMinutes, store: store)
+                store.log("strict: open anyway for " + usageLabel(settings.strictUseSeconds) + " of use")
+                GuardShield.unlock(minutes: 15, usageSeconds: settings.strictUseSeconds, store: store)
                 return .defer
             }
             let allowed = settings.mode == .gentle || store.useSkip()
@@ -50,7 +50,7 @@ final class ShieldActionExtension: ShieldActionDelegate {
             }
             store.log(settings.mode == .gentle ? "continue pressed (nudge)" : "skip used")
             let window = settings.unlockWindow
-            GuardShield.unlock(minutes: window.minutes, usageMinutes: window.usage, store: store)
+            GuardShield.unlock(minutes: window.minutes, usageSeconds: window.usage.map { $0 * 60 }, store: store)
             return .defer
         @unknown default:
             return .close

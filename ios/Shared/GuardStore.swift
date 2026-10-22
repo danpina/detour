@@ -19,6 +19,8 @@ struct GuardSettings: Codable, Equatable {
     var dailySkips = 1
     /// Minutes of use that "Open anyway" allows in strict mode. Optional so settings saved before strict mode existed still load.
     var strictMinutes: Int? = nil
+    /// How long "Open anyway" lasts, in seconds of use. nil falls back to the older minutes setting, then to 3 minutes.
+    var strictSeconds: Int? = nil
     /// The app to offer "Go back to" when the shield cannot tell which app it covered. Chosen once in Settings.
     var returnBundle: String? = nil
     /// Guard only during these hours. nil means all day. Optional so older saved settings still load.
@@ -26,7 +28,7 @@ struct GuardSettings: Codable, Equatable {
     /// Minutes of use per day in hard-lock mode. Optional so older saved settings still load.
     var allowanceMinutes: Int? = nil
 
-    var strictUseMinutes: Int { strictMinutes ?? 3 }
+    var strictUseSeconds: Int { strictSeconds ?? (strictMinutes ?? 3) * 60 }
     var dailyAllowance: Int { allowanceMinutes ?? 30 }
 
     /// The system will not schedule a wall-clock window shorter than 15 minutes. A shorter unlock is therefore measured in
@@ -34,6 +36,11 @@ struct GuardSettings: Codable, Equatable {
     var unlockWindow: (minutes: Int, usage: Int?) {
         unlockMinutes < 15 ? (15, unlockMinutes) : (unlockMinutes, nil)
     }
+}
+
+/// A short label for an amount of use: "15 s" or "3 min".
+func usageLabel(_ seconds: Int) -> String {
+    seconds < 60 ? String(seconds) + " s" : String(seconds / 60) + " min"
 }
 
 /// A daily window in which the guard is on, for example 09:00 to 22:00. The end may be earlier than the start (overnight).

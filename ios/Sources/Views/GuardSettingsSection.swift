@@ -94,11 +94,14 @@ struct GuardSettingsSection: View {
 
                 if guardManager.settings.mode == .strict {
                     Picker("Open anyway allows", selection: Binding(
-                        get: { guardManager.settings.strictUseMinutes },
-                        set: { minutes in guardManager.update { $0.strictMinutes = minutes } }
+                        get: { guardManager.settings.strictUseSeconds },
+                        set: { seconds in guardManager.update { $0.strictSeconds = seconds } }
                     )) {
-                        ForEach([1, 3, 5, 10], id: \.self) { Text("\($0) min of use").tag($0) }
+                        ForEach([15, 30, 60, 180, 300, 600], id: \.self) { Text(usageLabel($0) + " of use").tag($0) }
                     }
+                    Text("The shortest is the strictest: the check comes back after only that much use. If iOS won't accept under a minute, Detour falls back to 1 min and says so in the debug log.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
                 }
 
                 Group {
