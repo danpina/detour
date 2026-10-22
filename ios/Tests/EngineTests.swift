@@ -36,6 +36,7 @@ final class EngineTests: XCTestCase {
             case .review: return "review"
             case .new: return "new"
             case .drill: return "drill"
+            case .game: return "game"
             }
         }
     }
@@ -46,6 +47,7 @@ final class EngineTests: XCTestCase {
             case .review(let c, _, _): return c.id
             case .new(let c): return c.id
             case .drill(let d): return "drill:\(d.track.rawValue)"
+            case .game(let g): return "game:\(g.rawValue)"
             }
         }
     }

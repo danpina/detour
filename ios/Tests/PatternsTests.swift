@@ -21,9 +21,17 @@ final class PatternsTests: XCTestCase {
     }
 
     func testRoundRampsFromEasyToHard() {
-        let round = PatternsData.buildRound(from: PatternsData.load())
-        XCTAssertEqual(round.count, PatternsData.roundSize)
-        XCTAssertEqual(round.map { $0.level }, [1, 1, 1, 2, 2, 2, 2, 3, 3, 3])
-        XCTAssertEqual(Set(round.map { $0.id }).count, round.count)
+        let puzzles = PatternsData.load()
+        let expected: [Int: [Int]] = [
+            2: [1, 2],
+            5: [1, 2, 2, 3, 3],
+            10: [1, 1, 1, 2, 2, 2, 2, 3, 3, 3]
+        ]
+        for size in [2, 5, 10] {
+            let round = PatternsData.buildRound(from: puzzles, size: size)
+            XCTAssertEqual(round.count, size)
+            XCTAssertEqual(round.map { $0.level }, expected[size] ?? [])
+            XCTAssertEqual(Set(round.map { $0.id }).count, round.count)
+        }
     }
 }

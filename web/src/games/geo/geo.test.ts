@@ -81,20 +81,30 @@ describe("geo questions", () => {
 });
 
 describe("geo rounds", () => {
-  it("has 10 questions, no repeated country, and ramps through the levels", () => {
-    for (let seed = 1; seed <= 30; seed++) {
-      const round = buildRound(COUNTRIES, seeded(seed));
-      expect(round).toHaveLength(ROUND_LENGTH);
-      round.forEach((q, i) => expect(q.level).toBe(levelForIndex(i)));
-      const levels = round.map((q) => q.level);
-      expect(levels).toEqual([...levels].sort());
-      const prompts = round.map((q) => q.fact);
-      expect(new Set(prompts).size).toBe(ROUND_LENGTH);
+  for (const size of [2, 5, 10]) {
+    it(`has ${size} questions, no repeated country, and ramps through the levels`, () => {
+      for (let seed = 1; seed <= 30; seed++) {
+        const round = buildRound(COUNTRIES, seeded(seed), size);
+        expect(round).toHaveLength(size);
+        round.forEach((q, i) => expect(q.level).toBe(levelForIndex(i, size)));
+        const levels = round.map((q) => q.level);
+        expect(levels).toEqual([...levels].sort());
+        expect(new Set(round.map((q) => q.fact)).size).toBe(size);
+      }
+    });
+  }
+
+  it("mixes all three question kinds for 5 and 10", () => {
+    for (const size of [5, 10]) {
+      const round = buildRound(COUNTRIES, seeded(5), size);
+      expect(new Set(round.map((q) => q.kind)).size).toBe(3);
     }
   });
 
-  it("mixes all three question kinds", () => {
-    const round = buildRound(COUNTRIES, seeded(5));
-    expect(new Set(round.map((q) => q.kind)).size).toBe(3);
+  it("has one flag and one capital question for 2", () => {
+    for (let seed = 1; seed <= 30; seed++) {
+      const kinds = buildRound(COUNTRIES, seeded(seed), 2).map((q) => q.kind).sort();
+      expect(kinds).toEqual(["capital", "flag"]);
+    }
   });
 });

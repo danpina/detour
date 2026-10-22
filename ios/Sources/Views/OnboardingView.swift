@@ -24,6 +24,7 @@ struct OnboardingView: View {
         case .mind: return "🧠"
         case .numbers: return "🔢"
         case .estimation: return "⚖️"
+        case .games: return "🎮"
         }
     }
 
@@ -36,6 +37,7 @@ struct OnboardingView: View {
         case .mind: return "Why we think what we think"
         case .numbers: return "Patterns and puzzles"
         case .estimation: return "Guess big numbers"
+        case .games: return "A quick game now and then"
         }
     }
 

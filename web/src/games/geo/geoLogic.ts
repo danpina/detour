@@ -30,6 +30,7 @@ export type Question = {
 
 export type Rng = () => number;
 
+/** The longest round (the default length for `levelForIndex`). The real length comes from `getRoundSize()`. */
 export const ROUND_LENGTH = 10;
 
 export function shuffle<T>(items: readonly T[], rng: Rng): T[] {
@@ -43,7 +44,7 @@ export function shuffle<T>(items: readonly T[], rng: Rng): T[] {
   return a;
 }
 
-/** Level for question `index` of a round: the first 4 are easy, then 3 medium, then 3 harder. */
+/** Level for question `index` of a round of `length`: roughly the first 40% are easy, then 30% medium, then harder. */
 export function levelForIndex(index: number, length: number = ROUND_LENGTH): 1 | 2 | 3 {
   const f = index / length;
   if (f < 0.4) return 1;
@@ -98,8 +99,9 @@ export function buildQuestion(all: readonly Country[], answer: Country, kind: Qu
 }
 
 /** A round: easy questions first, a mix of the three kinds, no country twice. */
-export function buildRound(all: readonly Country[], rng: Rng, length: number = ROUND_LENGTH): Question[] {
-  const kinds: QuestionKind[] = ["flag", "capital", "country"];
+export function buildRound(all: readonly Country[], rng: Rng, length: number): Question[] {
+  // A 2-question round is one flag and one capital question; longer rounds mix all three.
+  const kinds: QuestionKind[] = length < 3 ? ["flag", "capital"] : ["flag", "capital", "country"];
   const used = new Set<Country>();
   const kindOrder = shuffle(kinds, rng);
   const questions: Question[] = [];

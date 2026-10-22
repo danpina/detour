@@ -29,6 +29,7 @@ const ID_PREFIX: Record<Interest, string> = {
   numbers: "num",
   // A skill, not a card topic (there are no estimation cards); kept so the map covers every interest.
   estimation: "est",
+  games: "game",
 };
 
 // ---------- small helpers ----------

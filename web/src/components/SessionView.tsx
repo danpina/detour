@@ -5,6 +5,7 @@ import type { SessionItem } from "../lib/engine";
 import { markSeenInReview } from "../lib/reviewer";
 import { recordActivity, recordCompletion } from "../lib/session";
 import { DrillView } from "./DrillView";
+import { GameCard } from "./GameCard";
 import { EstimateCard } from "./cards/EstimateCard";
 import { FactWhyCard } from "./cards/FactWhyCard";
 import { GuessFirstCard } from "./cards/GuessFirstCard";
@@ -23,6 +24,11 @@ type Props = {
   dryRun?: boolean;
 };
 
+// Drills and games have no card; their events use a stable pseudo id.
+const itemCardId = (it: SessionItem) => (it.kind === "drill" ? `drill:${it.drill.track}` : it.kind === "game" ? `game:${it.game}` : it.card.id);
+const itemKey = (it: SessionItem) =>
+  it.kind === "drill" ? `drill:${it.drill.track}:${it.drill.seed}` : it.kind === "game" ? `game:${it.game}` : `${it.kind}:${it.card.id}:${it.kind === "review" ? it.probe.id : ""}`;
+
 export function SessionView({ items, source, onFinish, onExit, dryRun = false }: Props) {
   const [index, setIndex] = useState(0);
   const [completed, setCompleted] = useState<Set<string>>(new Set());
@@ -31,15 +37,14 @@ export function SessionView({ items, source, onFinish, onExit, dryRun = false }:
   const completedRef = useRef(completed);
   completedRef.current = completed;
   const item = items[index]!;
-  // Drills are rule-generated and have no card; their events use a stable pseudo id.
-  const cardId = item.kind === "drill" ? `drill:${item.drill.track}` : item.card.id;
-  const key = item.kind === "drill" ? `drill:${item.drill.track}:${item.drill.seed}` : `${item.kind}:${item.card.id}:${item.kind === "review" ? item.probe.id : ""}`;
+  const cardId = itemCardId(item);
+  const key = itemKey(item);
 
   // Record a "view" each time a card appears.
   useEffect(() => {
     shownAt.current = Date.now();
     if (dryRun) {
-      if (item.kind !== "drill") markSeenInReview(item.card.id);
+      if (item.kind === "new" || item.kind === "review") markSeenInReview(item.card.id);
       return;
     }
     void store.addEvent({ card_id: cardId, event: "view", ms_spent: 0 });
@@ -69,8 +74,7 @@ export function SessionView({ items, source, onFinish, onExit, dryRun = false }:
     (done: Set<string>) => {
       if (dryRun) return onFinish(done.size);
       void store.addSession({ started_at: startedAt.current, source, cards_done: done.size, unlock_granted_min: 0 });
-      const kindOf = (it: SessionItem) => (it.kind === "drill" ? `drill:${it.drill.track}:${it.drill.seed}` : `${it.kind}:${it.card.id}:${it.kind === "review" ? it.probe.id : ""}`);
-      const finished = items.filter((it) => done.has(kindOf(it)));
+      const finished = items.filter((it) => done.has(itemKey(it)));
       track("session.completed", {
         completed: finished.length,
         reviews: finished.filter((it) => it.kind === "review").length,
@@ -118,6 +122,7 @@ export function SessionView({ items, source, onFinish, onExit, dryRun = false }:
   const common = { index, total: items.length, onComplete: markComplete, onNext: next, completed: completed.has(key) };
   const view = (() => {
     if (item.kind === "drill") return <DrillView key={key} spec={item.drill} {...common} />;
+    if (item.kind === "game") return <GameCard key={key} game={item.game} onDone={() => { markComplete(); next(); }} onSkip={next} />;
     const card = item.card;
     if (item.kind === "review") return <RecallCard key={key} card={card} probe={item.probe} {...common} />;
     switch (card.type) {

@@ -8,6 +8,7 @@ extension SessionItem {
         case .review(let card, let probe, _): return "review:\(card.id):\(probe.id)"
         case .new(let card): return "new:\(card.id)"
         case .drill(let spec): return "drill:\(spec.track.rawValue):\(spec.seed)"
+        case .game(let id): return "game:\(id.rawValue)"
         }
     }
 
@@ -17,6 +18,7 @@ extension SessionItem {
         case .review(let card, _, _): return card.id
         case .new(let card): return card.id
         case .drill(let spec): return "drill:\(spec.track.rawValue)"
+        case .game(let id): return "game:\(id.rawValue)"
         }
     }
 }
@@ -68,6 +70,19 @@ final class AppModel {
         return out
     }
 
+    static let defaultExtrasEvery = 3
+
+    /// The extras do not come with every set. A skill round comes every Nth set, and a game the set after it.
+    var extrasEvery: Int { max(1, data.settings.extrasEvery ?? AppModel.defaultExtrasEvery) }
+
+    /// Whether the next set gets a skill round.
+    var skillRoundDue: Bool { data.sessions.count % extrasEvery == 0 }
+
+    /// Whether the next set gets a game (only for people who picked Games as an interest).
+    var gameDue: Bool {
+        data.settings.interests.contains(.games) && data.sessions.count % extrasEvery == (extrasEvery > 1 ? 1 : 0)
+    }
+
     init(store: DataStore = DataStore(), content: LoadedContent = ContentStore.load(), clock: @escaping () -> Date = { Date() }, calendar: Calendar = .current) {
         self.store = store
         self.content = content
@@ -101,7 +116,7 @@ final class AppModel {
 
     func makeSet() -> [SessionItem] {
         let now = clock()
-        let tracks = allowedTracks
+        let tracks = skillRoundDue ? allowedTracks : []
         var drill: DrillSpec?
         if !tracks.isEmpty {
             let track = Skills.nextTrack(data.skills, among: tracks)
@@ -118,11 +133,12 @@ final class AppModel {
             now: now,
             setSize: data.settings.setSize,
             drill: drill,
+            game: gameDue ? GameId.random() : nil,
             lastShown: lastShown
         )
         let items = SessionEngine.build(input)
         let list = items.map { $0.key }.joined(separator: ", ")
-        AppLog.log("set built: size=\(data.settings.setSize) due=\(dueCount) completedCards=\(completedCardIds.count) reviewRows=\(data.reviews.count) shownBefore=\(lastShown.count) skillRound=\(drill.map { $0.track.rawValue } ?? "none") items=[\(list)]")
+        AppLog.log("set built: size=\(data.settings.setSize) due=\(dueCount) completedCards=\(completedCardIds.count) reviewRows=\(data.reviews.count) shownBefore=\(lastShown.count) skillRound=\(drill.map { $0.track.rawValue } ?? "none") game=\(input.game?.rawValue ?? "none") setNumber=\(data.sessions.count) every=\(extrasEvery) items=[\(list)]")
         return items
     }
 
@@ -171,7 +187,7 @@ final class AppModel {
             let current = data.reviews.first { $0.probeId == probe.id } ?? review
             let updated = Reviews.apply(current, grade: rating, now: now)
             if let i = data.reviews.firstIndex(where: { $0.probeId == probe.id }) { data.reviews[i] = updated } else { data.reviews.append(updated) }
-        case .drill:
+        case .drill, .game:
             break
         }
         data.events.append(event)

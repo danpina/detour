@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import type { GameProps } from "../registry";
-import { recordRound } from "../stats";
+import { getRoundSize, recordRound } from "../stats";
 import { buildRound, isCorrect, lettersOf, loadPuzzles, placeTile, removeSlot, wordPoints, type Puzzle } from "./logic";
 
 type Status = "playing" | "wrong" | "correct" | "skipped";
@@ -13,11 +13,12 @@ const STYLE = `
 @media (prefers-reduced-motion: reduce) { .words-shake, .words-pop { animation: none; } }
 `;
 
+/** Reads the round size when a round starts, not at import time. */
 function newRound(): Puzzle[] {
-  return buildRound(loadPuzzles(), Math.random);
+  return buildRound(loadPuzzles(), Math.random, getRoundSize());
 }
 
-export function WordsGame({ onExit }: GameProps) {
+export function WordsGame({ onExit, embedded }: GameProps) {
   const [round, setRound] = useState<Puzzle[]>(newRound);
   const [index, setIndex] = useState(0);
   const [placed, setPlaced] = useState<number[]>([]);
@@ -35,12 +36,26 @@ export function WordsGame({ onExit }: GameProps) {
     return () => clearTimeout(t);
   }, [status, shakeKey]);
 
+  // Embedded: after the last word is solved or skipped, report the score once and hand control back.
+  const lastDone = round.length > 0 && index + 1 >= round.length && (status === "correct" || status === "skipped");
+  useEffect(() => {
+    if (!embedded || !lastDone) return;
+    const t = setTimeout(() => {
+      if (recorded.current) return;
+      recorded.current = true;
+      recordRound("words", score);
+      embedded.onDone(score);
+    }, 1200);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lastDone, embedded ? 1 : 0]);
+
   if (round.length === 0) {
     return (
       <div className="flex h-full flex-col items-center justify-center gap-4 px-8 text-center">
         <h1 className="text-2xl font-semibold">Word scramble</h1>
         <p className="text-neutral-500 dark:text-neutral-400">The words are not available right now.</p>
-        <button onClick={onExit} className="min-h-12 rounded-2xl bg-teal-600 px-6 py-3 font-semibold text-white">Back</button>
+        <button onClick={onExit} className="min-h-12 rounded-2xl bg-teal-600 px-6 py-3 font-semibold text-white">{embedded ? "Skip" : "Back"}</button>
       </div>
     );
   }
@@ -135,11 +150,23 @@ export function WordsGame({ onExit }: GameProps) {
   return (
     <div className="flex h-full flex-col px-5 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-[max(1.5rem,env(safe-area-inset-top))]">
       <style>{STYLE}</style>
-      <div className="flex items-center justify-between">
-        <button onClick={onExit} aria-label="Back" className="flex h-11 w-11 items-center justify-center rounded-full text-xl active:bg-neutral-200 dark:active:bg-neutral-800">←</button>
-        <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Word {index + 1} of {round.length}</p>
-        <p className="min-w-11 text-right text-sm font-semibold tabular-nums">{score} pts</p>
-      </div>
+      {embedded ? (
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="text-base font-semibold">A quick word puzzle</p>
+            <p className="text-xs font-medium text-neutral-500 dark:text-neutral-400">
+              Word {index + 1} of {round.length} · {score} pts
+            </p>
+          </div>
+          <button onClick={onExit} className="min-h-11 rounded-full px-4 text-sm font-semibold text-neutral-500 active:bg-neutral-200 dark:text-neutral-400 dark:active:bg-neutral-800">Skip</button>
+        </div>
+      ) : (
+        <div className="flex items-center justify-between">
+          <button onClick={onExit} aria-label="Back" className="flex h-11 w-11 items-center justify-center rounded-full text-xl active:bg-neutral-200 dark:active:bg-neutral-800">←</button>
+          <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Word {index + 1} of {round.length}</p>
+          <p className="min-w-11 text-right text-sm font-semibold tabular-nums">{score} pts</p>
+        </div>
+      )}
 
       <div className="flex flex-1 flex-col items-center justify-center gap-8">
         <p className="min-h-12 max-w-xs text-center text-base text-neutral-600 dark:text-neutral-300" aria-live="polite">
@@ -194,7 +221,9 @@ export function WordsGame({ onExit }: GameProps) {
       </div>
 
       <div className="flex gap-3">
-        {locked ? (
+        {locked && embedded && index + 1 >= round.length ? (
+          <p className="min-h-12 flex-1 py-3 text-center text-sm font-medium text-neutral-500 dark:text-neutral-400">All done!</p>
+        ) : locked ? (
           <button onClick={next} className="min-h-12 flex-1 rounded-2xl bg-teal-600 px-6 py-3 font-semibold text-white active:scale-[0.98]">
             {index + 1 < round.length ? "Next word" : "See my score"}
           </button>

@@ -60,9 +60,10 @@ enum GeoData {
 }
 
 enum GeoBuilder {
+    /// The longest round. The real length comes from GameStats.roundSize.
     static let roundLength = 10
 
-    /// The first 4 questions are easy, then 3 medium, then 3 harder (scaled for other lengths).
+    /// About the first 40% of questions are easy, then 30% medium, then harder (scaled to the length).
     static func level(forIndex index: Int, length: Int) -> Int {
         let fraction = Double(index) / Double(max(length, 1))
         if fraction < 0.4 { return 1 }
@@ -117,7 +118,8 @@ enum GeoBuilder {
 
     /// A round: easy first, a mix of the three kinds, no country twice.
     static func round<G: RandomNumberGenerator>(all: [GeoCountry], length: Int, using rng: inout G) -> [GeoQuestion] {
-        let kinds: [GeoKind] = [.flag, .capital, .country]
+        // A 2-question round is one flag and one capital question; longer rounds mix all three.
+        let kinds: [GeoKind] = length < 3 ? [.flag, .capital] : [.flag, .capital, .country]
         var used: Set<String> = []
         var order = kinds.shuffled(using: &rng)
         var questions: [GeoQuestion] = []

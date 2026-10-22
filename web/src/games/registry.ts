@@ -1,14 +1,20 @@
 import type { ComponentType } from "react";
+import type { GameId } from "./ids";
 import { ChessGame } from "./chess/ChessGame";
 import { GeoGame } from "./geo/GeoGame";
 import { MemoryGame } from "./memory/MemoryGame";
 import { PatternsGame } from "./patterns/PatternsGame";
 import { WordsGame } from "./words/WordsGame";
 
-/** What every game receives. A game fills the whole screen and calls `onExit` to go back to the Games list. */
-export type GameProps = { onExit: () => void };
+/**
+ * What every game receives. A game fills the whole screen and calls `onExit` to go back to the Games list.
+ *
+ * `embedded` is set when the game is played inside a set of cards: the game plays `getRoundSize()` puzzles, skips its own
+ * end screen and calls `embedded.onDone(score)` when finished. `onExit` then means "skip this game".
+ */
+export type GameProps = { onExit: () => void; embedded?: { onDone: (score: number) => void } };
 
-export type GameId = "chess" | "patterns" | "words" | "geo" | "memory";
+export type { GameId };
 
 export type GameDef = {
   id: GameId;

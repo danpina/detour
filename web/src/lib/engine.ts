@@ -1,12 +1,14 @@
 import type { Card, Interest, Probe } from "@detour/content";
 import type { DrillSpec } from "./drills";
+import type { GameId } from "../games/ids";
 import { pickSet } from "./pickSet";
 import type { ReviewRow } from "./fsrs";
 
 export type SessionItem =
   | { kind: "review"; card: Card; probe: Probe; review: ReviewRow }
   | { kind: "new"; card: Card }
-  | { kind: "drill"; drill: DrillSpec };
+  | { kind: "drill"; drill: DrillSpec }
+  | { kind: "game"; game: GameId };
 
 export type EngineInput = {
   cards: Card[];
@@ -22,6 +24,8 @@ export type EngineInput = {
   setSize?: number;
   /** Provides the next skill drill (track + level). Without it the drill slot goes to other content. */
   makeDrill?: () => DrillSpec | undefined;
+  /** Provides a game for the end of this set (chosen by the caller, which decides how often). */
+  makeGame?: () => GameId | undefined;
 };
 
 export const DEFAULT_SET_SIZE = 5;
@@ -87,12 +91,14 @@ function interleave<T>(a: T[], b: T[]): T[] {
  * Reviews and new cards alternate (a review first), with the drill last.
  */
 export function buildSession(input: EngineInput): SessionItem[] {
-  const { cards, reviews, completed, interests, now, makeDrill } = input;
+  const { cards, reviews, completed, interests, now, makeDrill, makeGame } = input;
   const setSize = input.setSize ?? DEFAULT_SET_SIZE;
 
   const due = dueReviews(cards, reviews, now);
   const drill = makeDrill?.();
   const drillCount = drill ? 1 : 0;
+  const game = makeGame?.();
+  const gameCount = game ? 1 : 0;
 
   const reviewCount = Math.min(reviewTarget(due.length, setSize), due.length);
   const chosenReviews = due.slice(0, reviewCount);
@@ -102,7 +108,7 @@ export function buildSession(input: EngineInput): SessionItem[] {
   const eng = input.engagement ?? {};
   const ordered = [...interests].sort((a, b) => (eng[b] ?? 0.5) - (eng[a] ?? 0.5));
 
-  const newNeeded = setSize - chosenReviews.length - drillCount;
+  const newNeeded = Math.max(0, setSize - chosenReviews.length - drillCount - gameCount);
   const seen = new Set([...completed, ...reviews.map((r) => r.card_id)]);
   const rotated = leastRecentlyShown(cards, input.lastShown);
   let news = pickSet(rotated, ordered, seen, newNeeded, { allowSeen: false, exclude: used });
@@ -128,5 +134,6 @@ export function buildSession(input: EngineInput): SessionItem[] {
 
   const items = interleave(reviewItems, newItems);
   if (drill) items.push({ kind: "drill", drill });
+  if (game) items.push({ kind: "game", game });
   return items;
 }

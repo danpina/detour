@@ -1,8 +1,10 @@
 import SwiftUI
 
-/// Geography quiz: ten questions (flags, capitals, countries by capital), easy first.
+/// Geography quiz: GameStats.roundSize questions (flags, capitals, countries by capital), easy first.
+/// When `embedded` is set the game is played inside a set of cards: no end screen, Skip calls onExit.
 struct GeoGameView: View {
     let onExit: () -> Void
+    var embedded: ((Int) -> Void)? = nil
 
     @State private var countries: [GeoCountry] = []
     @State private var round: [GeoQuestion] = []
@@ -17,7 +19,7 @@ struct GeoGameView: View {
             if round.isEmpty {
                 unavailable
             } else if index >= round.count {
-                finished
+                if embedded == nil { finished }
             } else {
                 questionView(round[index])
             }
@@ -34,7 +36,7 @@ struct GeoGameView: View {
 
     private func startRound() {
         var rng = SystemRandomNumberGenerator()
-        round = GeoBuilder.round(all: countries, length: GeoBuilder.roundLength, using: &rng)
+        round = GeoBuilder.round(all: countries, length: GameStats.roundSize, using: &rng)
         index = 0
         score = 0
         picked = nil
@@ -88,11 +90,19 @@ struct GeoGameView: View {
         let isLast = index == round.count - 1
         return VStack(spacing: 0) {
             HStack {
-                Button("Back", action: onExit).frame(minHeight: 44)
-                Spacer()
-                Text("\(index + 1) / \(round.count)")
-                Spacer()
-                Text("Score \(score)")
+                if embedded != nil {
+                    Text("A quick geography question").fontWeight(.medium).frame(minHeight: 44)
+                    Spacer()
+                    Text("\(index + 1) / \(round.count)")
+                    Spacer()
+                    Button("Skip", action: onExit).frame(minHeight: 44)
+                } else {
+                    Button("Back", action: onExit).frame(minHeight: 44)
+                    Spacer()
+                    Text("\(index + 1) / \(round.count)")
+                    Spacer()
+                    Text("Score \(score)")
+                }
             }
             .font(.subheadline)
             .foregroundStyle(.secondary)
@@ -133,7 +143,7 @@ struct GeoGameView: View {
                     Text(picked == q.answer ? "Yes!" : "Not this time.").font(.headline)
                     Text(q.fact).foregroundStyle(.secondary)
                     Button(action: { next(isLast: isLast) }) {
-                        Text(isLast ? "See my score" : "Next").font(.headline).frame(maxWidth: .infinity, minHeight: 52)
+                        Text(isLast ? (embedded != nil ? "Continue" : "See my score") : "Next").font(.headline).frame(maxWidth: .infinity, minHeight: 52)
                     }
                     .buttonStyle(.borderedProminent)
                     .padding(.top, 6)
@@ -169,6 +179,10 @@ struct GeoGameView: View {
     private func next(isLast: Bool) {
         if isLast {
             isBest = GameStats.recordRound(.geo, score: score)
+            if let done = embedded {
+                done(score)
+                return
+            }
         }
         picked = nil
         index += 1

@@ -14,8 +14,11 @@ export function lastShownFrom(events: { card_id: string; event: string; at: numb
 }
 import { applyReview, newReview, ratingFor } from "./fsrs";
 import { store } from "./db";
+import { randomGameId } from "../games/ids";
 import { ALL_CARDS as CARDS } from "./content";
 import { dayKey, displayStreak, emptyStreak, knowledgeMap, recallStats, recordDay, skillSummary, weeklyRecap } from "./progress";
+
+export const DEFAULT_EXTRAS_EVERY = 3;
 
 /** Loads local history and builds the next set. Used for quick sets and for each page of the free-scroll feed. */
 export async function nextSet(interests: Interest[], sizeOverride?: number): Promise<SessionItem[]> {
@@ -23,9 +26,14 @@ export async function nextSet(interests: Interest[], sizeOverride?: number): Pro
   const setSize = sizeOverride ?? settings?.set_size ?? DEFAULT_SET_SIZE;
   // The skill round at the end of a set: mental math when it is turned on in Settings, estimation when it is one of the
   // chosen interests. With both, they alternate; with neither there is no skill round.
+  // They do not come with every set: every Nth set (N is a setting, 3 by default), and a game on the set after a skill round.
+  const every = settings?.extras_every ?? DEFAULT_EXTRAS_EVERY;
+  const setNumber = (await store.getSessions()).length;
+  const skillDue = setNumber % every === 0;
+  const gameDue = interests.includes("games") && setNumber % every === (every > 1 ? 1 : 0);
   const allowed: TrackId[] = [];
-  if (settings?.drills) allowed.push("mental-math");
-  if (interests.includes("estimation")) allowed.push("estimation");
+  if (skillDue && settings?.drills) allowed.push("mental-math");
+  if (skillDue && interests.includes("estimation")) allowed.push("estimation");
   const [reviews, completed, events, skills] = await Promise.all([store.getReviews(), store.completedCardIds(), store.getEvents(), store.getSkills()]);
   const track = allowed.length ? nextTrack(skills, allowed) : undefined;
   const level = skills.find((s) => s.track_id === track)?.level ?? 1;
@@ -40,6 +48,7 @@ export async function nextSet(interests: Interest[], sizeOverride?: number): Pro
     now: Date.now(),
     setSize,
     makeDrill: drill ? () => drill : undefined,
+    makeGame: gameDue ? () => randomGameId() : undefined,
   });
 }
 

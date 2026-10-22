@@ -1,18 +1,19 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { GameProps } from "../registry";
-import { recordRound } from "../stats";
+import { getRoundSize, recordRound } from "../stats";
 import { loadChessData } from "./chessData";
 import { acceptMove, buildRound, displayOrder, glyph, isOwnPiece, moveSquares, parseFen, squareName, type Puzzle } from "./chessLogic";
 
-const ROUND_SIZE = 10;
 const MAX_TRIES = 2;
+/** How long the last result stays visible before an embedded game hands over. */
+const EMBEDDED_DONE_MS = 1200;
 
 type Status = "playing" | "correct" | "revealed";
 
-/** Chess tactics: find the checkmate in one. Ten puzzles, easy to hard. */
-export function ChessGame({ onExit }: GameProps) {
+/** Chess tactics: find the checkmate in one. A round has `getRoundSize()` puzzles, easy to hard. */
+export function ChessGame({ onExit, embedded }: GameProps) {
   const data = useMemo(() => loadChessData(), []);
-  const [round, setRound] = useState<Puzzle[]>(() => (data ? buildRound(data.puzzles, Math.random, ROUND_SIZE) : []));
+  const [round, setRound] = useState<Puzzle[]>(() => (data ? buildRound(data.puzzles, Math.random, getRoundSize()) : []));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [wrong, setWrong] = useState(0);
@@ -37,7 +38,12 @@ export function ChessGame({ onExit }: GameProps) {
   }
 
   function finish(finalScore: number) {
-    setIsBest(recordRound("chess", finalScore));
+    const best = recordRound("chess", finalScore);
+    if (embedded) {
+      embedded.onDone(finalScore);
+      return;
+    }
+    setIsBest(best);
     setDone(true);
   }
 
@@ -55,7 +61,7 @@ export function ChessGame({ onExit }: GameProps) {
 
   function playAgain() {
     if (!data) return;
-    setRound(buildRound(data.puzzles, Math.random, ROUND_SIZE));
+    setRound(buildRound(data.puzzles, Math.random, getRoundSize()));
     setIndex(0);
     setScore(0);
     setWrong(0);
@@ -66,7 +72,8 @@ export function ChessGame({ onExit }: GameProps) {
   }
 
   if (done) {
-    const msg = score >= 9 ? "Sharp eyes." : score >= 6 ? "Nicely done." : score >= 3 ? "Good practice." : "Every board teaches something.";
+    const share = round.length > 0 ? score / round.length : 0;
+    const msg = share >= 0.9 ? "Sharp eyes." : share >= 0.6 ? "Nicely done." : share >= 0.3 ? "Good practice." : "Every board teaches something.";
     return (
       <div className="flex h-full flex-col items-center justify-center gap-5 px-8 text-center">
         <div className="text-5xl">♟️</div>
@@ -98,6 +105,7 @@ export function ChessGame({ onExit }: GameProps) {
   const side = puzzle.sideToMove;
   const order = displayOrder(side);
   const hint = answer ? moveSquares(answer) : null;
+  const isLast = index + 1 >= round.length;
 
   const tap = (sq: string, piece: string | null) => {
     if (status !== "playing") return;
@@ -120,7 +128,7 @@ export function ChessGame({ onExit }: GameProps) {
       setAnswer(mate);
       setStatus("correct");
       setSelected(null);
-      timer.current = window.setTimeout(() => next(newScore), 1100);
+      timer.current = window.setTimeout(() => next(newScore), isLast && embedded ? EMBEDDED_DONE_MS : 1100);
       return;
     }
     const w = wrong + 1;
@@ -130,6 +138,7 @@ export function ChessGame({ onExit }: GameProps) {
     if (w >= MAX_TRIES) {
       setAnswer(puzzle.mates[0] ?? null);
       setStatus("revealed");
+      if (isLast && embedded) timer.current = window.setTimeout(() => next(score), EMBEDDED_DONE_MS);
     }
   };
 
@@ -143,8 +152,17 @@ export function ChessGame({ onExit }: GameProps) {
     <div className="flex h-full flex-col px-4 pb-6 pt-[max(1.5rem,env(safe-area-inset-top))]">
       <style>{`@keyframes detour-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}`}</style>
       <div className="flex items-center justify-between">
-        <button onClick={onExit} className="min-h-11 rounded-xl px-2 text-sm text-neutral-500 dark:text-neutral-400">Close</button>
-        <span className="text-sm text-neutral-500 dark:text-neutral-400">{index + 1} of {round.length}</span>
+        {embedded ? (
+          <span className="text-sm font-semibold">A quick board puzzle</span>
+        ) : (
+          <button onClick={onExit} className="min-h-11 rounded-xl px-2 text-sm text-neutral-500 dark:text-neutral-400">Close</button>
+        )}
+        <span className="flex items-center gap-3 text-sm text-neutral-500 dark:text-neutral-400">
+          {index + 1} of {round.length}
+          {embedded && (
+            <button onClick={onExit} className="min-h-11 rounded-xl px-2 text-sm text-neutral-500 dark:text-neutral-400">Skip</button>
+          )}
+        </span>
       </div>
       <p aria-live="polite" className="mt-3 min-h-12 text-center text-lg font-semibold">{message}</p>
       <div
@@ -181,7 +199,7 @@ export function ChessGame({ onExit }: GameProps) {
         })}
       </div>
       <div className="mt-5 flex justify-center">
-        {status === "revealed" && (
+        {status === "revealed" && !(embedded && isLast) && (
           <button onClick={() => next(score)} className="rounded-2xl bg-teal-600 px-8 py-3 text-lg font-semibold text-white active:scale-[0.99]">Next</button>
         )}
       </div>

@@ -12,6 +12,8 @@ export type Settings = {
   set_size?: number;
   /** Skill drills at the end of a set. Unset means: on only if Numbers & Logic is one of the chosen topics. */
   drills?: boolean;
+  /** How often the extras (mental math, estimation, games) join a set: every Nth set. Defaults to 3. */
+  extras_every?: number;
 };
 
 export type DetourEvent = {

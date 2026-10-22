@@ -41,9 +41,20 @@ final class WordsTests: XCTestCase {
     func testRoundRampsAndHasNoRepeats() {
         let puzzles = WordsLogic.loadPuzzles()
         var rng = SystemRandomNumberGenerator()
-        let round = WordsLogic.buildRound(puzzles, using: &rng)
-        XCTAssertEqual(round.map { $0.level }, WordsLogic.roundLevels)
-        XCTAssertEqual(Set(round.map { $0.id }).count, round.count)
+        XCTAssertEqual(WordsLogic.levels(forSize: 2), [1, 2])
+        XCTAssertEqual(WordsLogic.levels(forSize: 5), [1, 2, 2, 3, 3])
+        XCTAssertEqual(WordsLogic.levels(forSize: 10), [1, 1, 1, 2, 2, 2, 3, 3, 3, 3])
+        for size in [2, 5, 10] {
+            for _ in 0..<10 {
+                let round = WordsLogic.buildRound(puzzles, size: size, using: &rng)
+                XCTAssertEqual(round.count, size)
+                XCTAssertEqual(round.map { $0.level }, WordsLogic.levels(forSize: size))
+                XCTAssertEqual(Set(round.map { $0.id }).count, round.count)
+                var words: [String] = []
+                for puzzle in round { words.append(contentsOf: puzzle.accept) }
+                XCTAssertEqual(Set(words).count, words.count, "no two words from one anagram family")
+            }
+        }
     }
 
     func testTilePlacement() {

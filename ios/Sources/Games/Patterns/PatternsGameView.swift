@@ -1,8 +1,11 @@
 import SwiftUI
 
-/// "What comes next?": ten number sequences, easy to hard. Pick the number that continues the pattern.
+/// "What comes next?": number sequences, easy to hard (`GameStats.roundSize` of them). Pick the number that continues the pattern.
+/// When `embedded` is set the game is played inside a set of cards: no end screen, `embedded(score)` is called when
+/// the round is done, and `onExit` means "skip".
 struct PatternsGameView: View {
     let onExit: () -> Void
+    var embedded: ((Int) -> Void)? = nil
 
     @State private var round: [PatternPuzzle] = []
     @State private var index = 0
@@ -35,7 +38,7 @@ struct PatternsGameView: View {
     }
 
     private func startRound() {
-        let built = PatternsData.buildRound(from: PatternsData.load())
+        let built = PatternsData.buildRound(from: PatternsData.load(), size: GameStats.roundSize)
         if built.isEmpty {
             loadFailed = true
             return
@@ -57,6 +60,10 @@ struct PatternsGameView: View {
     private func advance() {
         if index + 1 >= round.count {
             isBest = GameStats.recordRound(.patterns, score: score)
+            if let done = embedded {
+                done(score)
+                return
+            }
             finished = true
         } else {
             index += 1
@@ -66,8 +73,8 @@ struct PatternsGameView: View {
 
     private func endLine() -> String {
         if score == round.count { return "Every one. Lovely." }
-        if score >= 7 { return "Sharp eyes today." }
-        if score >= 4 { return "Nice work. Patterns get easier the more you spot." }
+        if score * 10 >= round.count * 7 { return "Sharp eyes today." }
+        if score * 10 >= round.count * 4 { return "Nice work. Patterns get easier the more you spot." }
         return "Good warm-up. A fresh round is always one tap away."
     }
 
@@ -110,16 +117,27 @@ struct PatternsGameView: View {
     private func playView(_ puzzle: PatternPuzzle) -> some View {
         VStack(spacing: 0) {
             HStack {
-                Button(action: onExit) { Text("← Back") }
-                    .frame(minHeight: 44)
+                if embedded != nil {
+                    Text("A quick pattern puzzle")
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(.secondary)
+                        .frame(minHeight: 44)
+                } else {
+                    Button(action: onExit) { Text("← Back") }
+                        .frame(minHeight: 44)
+                }
                 Spacer()
                 Text("\(index + 1) of \(round.count)")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
+                if embedded != nil {
+                    Button(action: onExit) { Text("Skip").font(.subheadline) }
+                        .frame(minWidth: 44, minHeight: 44)
+                }
             }
 
             Text("What comes next?")
-                .font(.title2.weight(.semibold))
+                .font(embedded != nil ? .title3.weight(.semibold) : .title2.weight(.semibold))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.top, 16)
 
@@ -148,7 +166,7 @@ struct PatternsGameView: View {
 
             if picked != nil {
                 Button(action: { advance() }) {
-                    Text(index + 1 >= round.count ? "See my score" : "Next")
+                    Text(index + 1 >= round.count ? (embedded != nil ? "Continue" : "See my score") : "Next")
                         .font(.title3.weight(.semibold))
                         .frame(maxWidth: .infinity, minHeight: 52)
                 }

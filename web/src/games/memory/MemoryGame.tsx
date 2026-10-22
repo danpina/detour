@@ -1,7 +1,20 @@
 import { useEffect, useRef, useState } from "react";
 import type { GameProps } from "../registry";
-import { getStats, recordRound } from "../stats";
-import { GRID_TILES, applyResult, checkAnswer, generateDigits, generateTiles, isPrefix, newRun, type Run } from "./logic";
+import { getRoundSize, getStats, recordRound } from "../stats";
+import {
+  GRID_TILES,
+  applyResult,
+  applyShortResult,
+  checkAnswer,
+  generateDigits,
+  generateTiles,
+  isPrefix,
+  newRun,
+  newShortRound,
+  shortScore,
+  type Run,
+  type ShortRound,
+} from "./logic";
 
 type Mode = "digits" | "grid";
 type Phase = "menu" | "watch" | "turn" | "result" | "over";
@@ -11,14 +24,25 @@ const TILE_MS = 600;
 const GAP_MS = 250;
 const INTRO_MS = 900;
 const RESULT_MS = 1100;
+const EMBEDDED_DONE_MS = 1200;
 
 const MODE_TITLE: Record<Mode, string> = { digits: "Digit span", grid: "Pattern grid" };
 
-export function MemoryGame({ onExit }: GameProps) {
-  const [mode, setMode] = useState<Mode>("digits");
-  const [phase, setPhase] = useState<Phase>("menu");
-  const [run, setRun] = useState<Run>(newRun());
-  const [seq, setSeq] = useState<number[]>([]);
+function embeddedStart(): { mode: Mode; short: ShortRound; seq: number[] } {
+  const mode: Mode = Math.random() < 0.5 ? "digits" : "grid";
+  const short = newShortRound(getRoundSize());
+  const seq = mode === "digits" ? generateDigits(short.run.length) : generateTiles(short.run.length, GRID_TILES);
+  return { mode, short, seq };
+}
+
+export function MemoryGame({ onExit, embedded }: GameProps) {
+  const [init] = useState(() => (embedded ? embeddedStart() : null));
+  const [mode, setMode] = useState<Mode>(init?.mode ?? "digits");
+  const [phase, setPhase] = useState<Phase>(init ? "watch" : "menu");
+  const [run, setRun] = useState<Run>(init?.short.run ?? newRun());
+  const [short, setShort] = useState<ShortRound | null>(init?.short ?? null);
+  const recorded = useRef(false);
+  const [seq, setSeq] = useState<number[]>(init?.seq ?? []);
   const [shown, setShown] = useState<number | null>(null); // digit or tile currently shown
   const [input, setInput] = useState<number[]>([]);
   const [ok, setOk] = useState(true);
@@ -75,6 +99,25 @@ export function MemoryGame({ onExit }: GameProps) {
 
   function finishRound(success: boolean, given: number[]) {
     void given;
+    if (embedded && short) {
+      const ns = applyShortResult(short, success);
+      setShort(ns);
+      setRun(ns.run);
+      setOk(success);
+      setPhase("result");
+      if (ns.done) {
+        later(() => {
+          if (recorded.current) return;
+          recorded.current = true;
+          const score = shortScore(ns);
+          recordRound("memory", score);
+          embedded.onDone(score);
+        }, EMBEDDED_DONE_MS);
+      } else {
+        later(() => startRound(mode, ns.run), RESULT_MS);
+      }
+      return;
+    }
     const next = applyResult(run, success);
     setRun(next);
     setOk(success);
@@ -110,7 +153,26 @@ export function MemoryGame({ onExit }: GameProps) {
     setPhase("menu");
   }
 
-  const header = (
+  function skip() {
+    clearTimers();
+    onExit();
+  }
+
+  const header = embedded ? (
+    <div className="flex items-center justify-between px-4 pt-4">
+      <span className="text-sm font-medium text-neutral-600 dark:text-neutral-300">A quick memory check</span>
+      <div className="flex items-center gap-3">
+        {short && (
+          <span className="text-sm text-neutral-500 dark:text-neutral-400">
+            {Math.min(short.played + 1, short.target)} of {short.target}
+          </span>
+        )}
+        <button onClick={skip} className="h-11 rounded-xl px-3 text-neutral-500 dark:text-neutral-400">
+          Skip
+        </button>
+      </div>
+    </div>
+  ) : (
     <div className="flex items-center justify-between px-4 pt-4">
       <button onClick={phase === "menu" ? onExit : backToModes} aria-label="Back" className="h-11 rounded-xl px-3 text-neutral-600 dark:text-neutral-300">
         ← Back

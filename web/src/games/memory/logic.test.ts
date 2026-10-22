@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { applyResult, checkAnswer, generateDigits, generateTiles, isPrefix, newRun } from "./logic";
+import { applyResult, applyShortResult, checkAnswer, generateDigits, generateTiles, isPrefix, newRun, newShortRound, shortScore } from "./logic";
 
 function seeded(values: number[]): () => number {
   let i = 0;
@@ -56,6 +56,40 @@ describe("memory logic", () => {
     run = applyResult(run, false);
     expect(run.over).toBe(true);
     expect(run.best).toBe(4);
+  });
+
+  it("short round ends after the requested number of successes", () => {
+    let s = newShortRound(2);
+    s = applyShortResult(s, true);
+    expect(s.done).toBe(false);
+    expect(s.run.length).toBe(4);
+    s = applyShortResult(s, true);
+    expect(s.done).toBe(true);
+    expect(s.played).toBe(2);
+    expect(shortScore(s)).toBe(4);
+  });
+
+  it("short round: a miss does not count and repeats the length", () => {
+    let s = newShortRound(2);
+    s = applyShortResult(s, false);
+    expect(s.done).toBe(false);
+    expect(s.played).toBe(0);
+    expect(s.run.length).toBe(3);
+    s = applyShortResult(s, true);
+    s = applyShortResult(s, true);
+    expect(s.done).toBe(true);
+    expect(shortScore(s)).toBe(4);
+  });
+
+  it("short round ends early after two misses in a row", () => {
+    let s = newShortRound(10);
+    s = applyShortResult(s, true);
+    s = applyShortResult(s, false);
+    expect(s.done).toBe(false);
+    s = applyShortResult(s, false);
+    expect(s.done).toBe(true);
+    expect(shortScore(s)).toBe(3);
+    expect(shortScore(applyShortResult(applyShortResult(newShortRound(5), false), false))).toBe(0);
   });
 
   it("scores zero if the first two rounds are missed", () => {

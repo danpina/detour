@@ -16,13 +16,12 @@ private struct PatternsFile: Decodable {
 }
 
 enum PatternsData {
-    /// Puzzles per level in one round, easiest first: three easy, four medium, three hard.
-    static let roundPlan: [(level: Int, count: Int)] = [(1, 3), (2, 4), (3, 3)]
-
-    static var roundSize: Int {
-        var total = 0
-        for step in roundPlan { total += step.count }
-        return total
+    /// Puzzles per level in a round of `size`, easiest first.
+    /// 2: easy, medium. 5: one easy, two medium, two hard. 10: three easy, four medium, three hard.
+    static func roundPlan(size: Int) -> [(level: Int, count: Int)] {
+        if size <= 2 { return [(1, 1), (2, 1)] }
+        if size <= 5 { return [(1, 1), (2, 2), (3, 2)] }
+        return [(1, 3), (2, 4), (3, 3)]
     }
 
     /// Loads the bundled puzzles. Returns an empty list (never crashes) if the file is missing or unreadable.
@@ -42,9 +41,9 @@ enum PatternsData {
     }
 
     /// A round: puzzles ramp from level 1 to 3; within a level the pick and order are random so rounds differ.
-    static func buildRound(from puzzles: [PatternPuzzle]) -> [PatternPuzzle] {
+    static func buildRound(from puzzles: [PatternPuzzle], size: Int) -> [PatternPuzzle] {
         var round: [PatternPuzzle] = []
-        for step in roundPlan {
+        for step in roundPlan(size: size) {
             let atLevel = puzzles.filter { $0.level == step.level }.shuffled()
             round.append(contentsOf: atLevel.prefix(step.count))
         }

@@ -5,6 +5,28 @@ import type { GameId } from "./registry";
  * Every read and write is wrapped, so the games work when storage is empty or blocked.
  */
 const KEY = "detour.games";
+const ROUND_KEY = "detour.games.roundSize";
+
+/** How many puzzles a round has. Short by default; changed on the Games screen. */
+export const ROUND_SIZES = [2, 5, 10] as const;
+export const DEFAULT_ROUND_SIZE = 2;
+
+export function getRoundSize(): number {
+  try {
+    const n = Number(localStorage.getItem(ROUND_KEY));
+    return (ROUND_SIZES as readonly number[]).includes(n) ? n : DEFAULT_ROUND_SIZE;
+  } catch {
+    return DEFAULT_ROUND_SIZE;
+  }
+}
+
+export function setRoundSize(n: number): void {
+  try {
+    localStorage.setItem(ROUND_KEY, String(n));
+  } catch {
+    // Storage unavailable: the choice lasts until the page is closed.
+  }
+}
 
 type Stats = Partial<Record<GameId, { best: number; plays: number }>>;
 

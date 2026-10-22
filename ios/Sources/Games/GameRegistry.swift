@@ -25,6 +25,9 @@ enum GameId: String, CaseIterable, Identifiable {
         }
     }
 
+    /// A random game for a set of cards.
+    static func random() -> GameId { allCases.randomElement() ?? .patterns }
+
     var emoji: String {
         switch self {
         case .chess: return "♟️"
@@ -37,13 +40,15 @@ enum GameId: String, CaseIterable, Identifiable {
 }
 
 /// Builds the screen for a game. A game fills the whole screen and calls `onExit` to go back to the Games list.
+/// With `embedded` set the game is played inside a set of cards: it plays a short round, skips its own end screen and calls
+/// `embedded(score)` when it is done. `onExit` then means "skip".
 @ViewBuilder
-func gameView(for id: GameId, onExit: @escaping () -> Void) -> some View {
+func gameView(for id: GameId, onExit: @escaping () -> Void, embedded: ((Int) -> Void)? = nil) -> some View {
     switch id {
-    case .chess: ChessGameView(onExit: onExit)
-    case .patterns: PatternsGameView(onExit: onExit)
-    case .words: WordsGameView(onExit: onExit)
-    case .geo: GeoGameView(onExit: onExit)
-    case .memory: MemoryGameView(onExit: onExit)
+    case .chess: ChessGameView(onExit: onExit, embedded: embedded)
+    case .patterns: PatternsGameView(onExit: onExit, embedded: embedded)
+    case .words: WordsGameView(onExit: onExit, embedded: embedded)
+    case .geo: GeoGameView(onExit: onExit, embedded: embedded)
+    case .memory: MemoryGameView(onExit: onExit, embedded: embedded)
     }
 }

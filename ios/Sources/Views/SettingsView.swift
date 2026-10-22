@@ -49,7 +49,17 @@ struct SettingsView: View {
                         get: { model.drillsEnabled },
                         set: { on in model.updateSettings { $0.drills = on } }
                     ))
-                    Text("Add a quick mental-math round to the end of each set. Estimation is a topic you can pick under your interests.").font(.footnote).foregroundStyle(.secondary)
+                    Text("Add a quick mental-math round to the end of a set. Estimation and Games are topics you can pick under your interests.").font(.footnote).foregroundStyle(.secondary)
+                    Picker("How often", selection: Binding(
+                        get: { model.extrasEvery },
+                        set: { n in model.updateSettings { $0.extrasEvery = n } }
+                    )) {
+                        Text("Every set").tag(1)
+                        Text("Every 2nd").tag(2)
+                        Text("Every 3rd").tag(3)
+                        Text("Every 5th").tag(5)
+                    }
+                    Text("How often mental math, estimation and a quick game show up in your sets.").font(.footnote).foregroundStyle(.secondary)
                 }
 
                 GuardSettingsSection()

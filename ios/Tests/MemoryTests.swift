@@ -67,6 +67,43 @@ final class MemoryTests: XCTestCase {
         XCTAssertEqual(run.best, 4)
     }
 
+    func testShortRoundEndsAfterTarget() {
+        var round = MemoryLogic.ShortRound(target: 2)
+        round = MemoryLogic.applyShort(round, success: true)
+        XCTAssertFalse(round.done)
+        XCTAssertEqual(round.run.length, 4)
+        round = MemoryLogic.applyShort(round, success: true)
+        XCTAssertTrue(round.done)
+        XCTAssertEqual(round.played, 2)
+        XCTAssertEqual(round.score, 4)
+    }
+
+    func testShortRoundMissDoesNotCount() {
+        var round = MemoryLogic.ShortRound(target: 2)
+        round = MemoryLogic.applyShort(round, success: false)
+        XCTAssertFalse(round.done)
+        XCTAssertEqual(round.played, 0)
+        XCTAssertEqual(round.run.length, 3)
+        round = MemoryLogic.applyShort(round, success: true)
+        round = MemoryLogic.applyShort(round, success: true)
+        XCTAssertTrue(round.done)
+        XCTAssertEqual(round.score, 4)
+    }
+
+    func testShortRoundEndsEarlyAfterTwoMisses() {
+        var round = MemoryLogic.ShortRound(target: 10)
+        round = MemoryLogic.applyShort(round, success: true)
+        round = MemoryLogic.applyShort(round, success: false)
+        XCTAssertFalse(round.done)
+        round = MemoryLogic.applyShort(round, success: false)
+        XCTAssertTrue(round.done)
+        XCTAssertEqual(round.score, 3)
+        var none = MemoryLogic.ShortRound(target: 5)
+        none = MemoryLogic.applyShort(none, success: false)
+        none = MemoryLogic.applyShort(none, success: false)
+        XCTAssertEqual(none.score, 0)
+    }
+
     func testScoreIsZeroWhenFirstTwoMissed() {
         var run = MemoryLogic.apply(MemoryLogic.Run(), success: false)
         run = MemoryLogic.apply(run, success: false)

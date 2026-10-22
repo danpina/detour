@@ -48,11 +48,27 @@ describe("acceptMove", () => {
 });
 
 describe("buildRound", () => {
-  it("returns 10 puzzles, easy to hard", () => {
-    const puzzles: Puzzle[] = Array.from({ length: 100 }, (_, i) => ({ id: String(i), fen: SCHOLAR, sideToMove: "w", mates: ["h5f7"], rating: 500 + i * 10 }));
-    const round = buildRound(puzzles, Math.random, 10);
-    expect(round).toHaveLength(10);
-    for (let i = 1; i < round.length; i++) expect(round[i]!.rating).toBeGreaterThanOrEqual(round[i - 1]!.rating);
+  const puzzles: Puzzle[] = Array.from({ length: 100 }, (_, i) => ({ id: String(i), fen: SCHOLAR, sideToMove: "w", mates: ["h5f7"], rating: 500 + i * 10 }));
+  for (const size of [2, 5, 10]) {
+    it(`returns ${size} puzzles, easy to hard`, () => {
+      const round = buildRound(puzzles, Math.random, size);
+      expect(round).toHaveLength(size);
+      for (let i = 1; i < round.length; i++) expect(round[i]!.rating).toBeGreaterThanOrEqual(round[i - 1]!.rating);
+    });
+  }
+  it("a 2 puzzle round is one easy, one a bit harder, and stays gentle", () => {
+    const round = buildRound(puzzles, () => 0.99, 2);
+    expect(round[0]!.rating).toBeLessThan(round[1]!.rating);
+    expect(round[1]!.rating).toBeLessThanOrEqual(500 + 50 * 10);
+    const easy = buildRound(puzzles, () => 0, 2);
+    expect(easy[0]!.rating).toBe(500);
+  });
+  it("a 10 puzzle round reaches the hardest band", () => {
+    const round = buildRound(puzzles, () => 0.99, 10);
+    expect(round[9]!.rating).toBe(500 + 99 * 10);
+  });
+  it("returns what it has when there are fewer puzzles than the size", () => {
+    expect(buildRound(puzzles.slice(0, 3), Math.random, 5)).toHaveLength(3);
   });
 });
 

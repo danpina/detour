@@ -24,12 +24,14 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
   const refreshReview = () => setReviewTick((t) => t + 1);
   const [setSize, setSetSize] = useState(5);
   const [drills, setDrills] = useState<boolean | undefined>(undefined);
+  const [extrasEvery, setExtrasEvery] = useState(3);
   const [reminderTime, setReminderTime] = useState("20:00");
 
   useEffect(() => {
     void store.getSettings().then((s) => {
       setSetSize(s?.set_size ?? 5);
       setDrills(s?.drills ?? false);
+      setExtrasEvery(s?.extras_every ?? 3);
     });
   }, []);
 
@@ -200,6 +202,27 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
             <span className="text-sm text-neutral-500 dark:text-neutral-400">Add a quick mental-math round to the end of each set. Estimation is a topic you can pick under your interests.</span>
           </span>
         </label>
+      </section>
+      <section className={`${box} mt-4`}>
+        <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">How often extras show up</h2>
+        <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">Mental math, estimation and a quick game are not in every set.</p>
+        <div className="mt-3 grid grid-cols-4 gap-2" role="radiogroup" aria-label="How often extras show up">
+          {[1, 2, 3, 5].map((n) => (
+            <button
+              key={n}
+              role="radio"
+              aria-checked={extrasEvery === n}
+              onClick={async () => {
+                setExtrasEvery(n);
+                const s = await store.getSettings();
+                if (s) await store.saveSettings({ ...s, extras_every: n });
+              }}
+              className={`rounded-xl border px-2 py-3 text-sm font-medium ${extrasEvery === n ? "border-teal-600 bg-teal-50 text-teal-900 dark:border-teal-400 dark:bg-teal-950 dark:text-teal-100" : "border-neutral-300 dark:border-neutral-700"}`}
+            >
+              {n === 1 ? "Every set" : `Every ${n}${n === 2 ? "nd" : n === 3 ? "rd" : "th"}`}
+            </button>
+          ))}
+        </div>
       </section>
       <section className={`${box} mt-4`}>
         <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Daily reminder</h2>

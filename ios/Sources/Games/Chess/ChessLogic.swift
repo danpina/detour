@@ -96,10 +96,19 @@ enum ChessLogic {
         return nil
     }
 
+    /// Share of the (easy to hard) puzzle list a round of this size may reach: short rounds stay gentle.
+    static func rampShare(_ count: Int) -> Double {
+        if count <= 2 { return 0.5 }
+        if count <= 5 { return 0.75 }
+        return 1.0
+    }
+
     /// A round of `count` puzzles, easy to hard: one random pick from each difficulty band.
     static func buildRound(_ puzzles: [ChessPuzzle], count: Int = 10, rand: () -> Double = { Double.random(in: 0..<1) }) -> [ChessPuzzle] {
-        let sorted = puzzles.sorted { $0.rating < $1.rating }
-        if sorted.count <= count { return sorted }
+        let all = puzzles.sorted { $0.rating < $1.rating }
+        if all.count <= count { return all }
+        let usable = max(count, Int((Double(all.count) * rampShare(count)).rounded(.up)))
+        let sorted = Array(all.prefix(usable))
         var round: [ChessPuzzle] = []
         for i in 0..<count {
             let start = (i * sorted.count) / count

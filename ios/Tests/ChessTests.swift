@@ -48,16 +48,40 @@ final class ChessTests: XCTestCase {
         XCTAssertNil(ChessLogic.acceptMove(p, from: "h5", to: "e5"))
     }
 
-    func testBuildRoundIsEasyToHard() {
+    private func manyPuzzles() -> [ChessPuzzle] {
         var all: [ChessPuzzle] = []
         for i in 0..<100 {
             all.append(ChessPuzzle(id: "p\(i)", fen: scholar, sideToMove: "w", mates: ["h5f7"], rating: 500 + i * 10))
         }
-        let round = ChessLogic.buildRound(all, count: 10)
-        XCTAssertEqual(round.count, 10)
-        for i in 1..<round.count {
-            XCTAssertGreaterThanOrEqual(round[i].rating, round[i - 1].rating)
+        return all
+    }
+
+    func testBuildRoundIsEasyToHardForEachSize() {
+        for size in [2, 5, 10] {
+            let round = ChessLogic.buildRound(manyPuzzles(), count: size)
+            XCTAssertEqual(round.count, size)
+            for i in 1..<round.count {
+                XCTAssertGreaterThanOrEqual(round[i].rating, round[i - 1].rating)
+            }
         }
+    }
+
+    func testTwoPuzzleRoundIsEasyThenHarderAndGentle() {
+        let hard = ChessLogic.buildRound(manyPuzzles(), count: 2, rand: { 0.99 })
+        XCTAssertLessThan(hard[0].rating, hard[1].rating)
+        XCTAssertLessThanOrEqual(hard[1].rating, 500 + 50 * 10)
+        let easy = ChessLogic.buildRound(manyPuzzles(), count: 2, rand: { 0.0 })
+        XCTAssertEqual(easy[0].rating, 500)
+    }
+
+    func testTenPuzzleRoundReachesHardestBand() {
+        let round = ChessLogic.buildRound(manyPuzzles(), count: 10, rand: { 0.99 })
+        XCTAssertEqual(round[9].rating, 500 + 99 * 10)
+    }
+
+    func testFewerPuzzlesThanSize() {
+        let round = ChessLogic.buildRound(Array(manyPuzzles().prefix(3)), count: 5)
+        XCTAssertEqual(round.count, 3)
     }
 
     func testBundledDataIfPresent() {

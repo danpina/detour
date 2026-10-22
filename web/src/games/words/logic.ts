@@ -12,9 +12,20 @@ export type Puzzle = {
   level: 1 | 2 | 3;
 };
 
-export const ROUND_LENGTH = 8;
-/** Difficulty ramp for one round of 8 words. */
-export const ROUND_LEVELS: (1 | 2 | 3)[] = [1, 1, 2, 2, 2, 3, 3, 3];
+/**
+ * Difficulty ramp (5 letters, then 6, then 7-8) for a round of `size` words.
+ * 2 words: a 5-letter then a 6-letter. Other sizes: about 25% / 40% / 35%.
+ */
+export function levelsForSize(size: number): (1 | 2 | 3)[] {
+  const n = Math.max(0, Math.floor(size));
+  if (n === 0) return [];
+  if (n === 1) return [1];
+  if (n === 2) return [1, 2];
+  const ones = Math.max(1, Math.round(n * 0.25));
+  const threes = Math.max(1, Math.round(n * 0.35));
+  const twos = Math.max(0, n - ones - threes);
+  return [...Array<1>(ones).fill(1), ...Array<2>(twos).fill(2), ...Array<3>(threes).fill(3)];
+}
 
 export type Rng = () => number;
 
@@ -43,10 +54,11 @@ export function shuffle<T>(items: readonly T[], rng: Rng): T[] {
 }
 
 /**
- * Picks 8 puzzles ramping from level 1 to 3. Two puzzles from the same anagram family (LISTEN/SILENT)
+ * Picks `size` puzzles ramping from level 1 to 3. Two puzzles from the same anagram family (LISTEN/SILENT)
  * never appear in one round. If a level runs short, it borrows from the nearest other level.
  */
-export function buildRound(puzzles: readonly Puzzle[], rng: Rng, levels: readonly (1 | 2 | 3)[] = ROUND_LEVELS): Puzzle[] {
+export function buildRound(puzzles: readonly Puzzle[], rng: Rng, size: number): Puzzle[] {
+  const levels = levelsForSize(size);
   const picked: Puzzle[] = [];
   const usedIds = new Set<string>();
   const usedAnswers = new Set<string>();

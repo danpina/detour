@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ALL_PUZZLES, ROUND_SIZE, buildRound, type PatternPuzzle } from "./logic";
+import { ALL_PUZZLES, buildRound, type PatternPuzzle } from "./logic";
 
 const PRIMES: number[] = [];
 for (let x = 2; PRIMES.length < 60; x++) if (PRIMES.every((p) => x % p !== 0)) PRIMES.push(x);
@@ -63,18 +63,26 @@ describe("patterns data", () => {
 });
 
 describe("buildRound", () => {
-  it("makes 10 puzzles that ramp from level 1 to 3", () => {
-    const round = buildRound();
-    expect(round).toHaveLength(ROUND_SIZE);
-    expect(round.map((p) => p.level)).toEqual([1, 1, 1, 2, 2, 2, 2, 3, 3, 3]);
-    expect(new Set(round.map((p) => p.id)).size).toBe(ROUND_SIZE);
+  it.each([
+    [2, [1, 2]],
+    [5, [1, 2, 2, 3, 3]],
+    [10, [1, 1, 1, 2, 2, 2, 2, 3, 3, 3]],
+  ])("makes %i puzzles that ramp up in level", (size, levels) => {
+    const round = buildRound(ALL_PUZZLES, Math.random, size);
+    expect(round).toHaveLength(size);
+    expect(round.map((p) => p.level)).toEqual(levels);
+    expect(new Set(round.map((p) => p.id)).size).toBe(size);
+  });
+
+  it("reads the round size from settings when none is given", () => {
+    expect(buildRound()).toHaveLength(2);
   });
 
   it("differs between rounds", () => {
     const ids = (seed: number) => {
       let s = seed;
       const rng = () => ((s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296);
-      return buildRound(ALL_PUZZLES, rng).map((p) => p.id).join();
+      return buildRound(ALL_PUZZLES, rng, 10).map((p) => p.id).join();
     };
     expect(ids(1)).not.toBe(ids(2));
   });

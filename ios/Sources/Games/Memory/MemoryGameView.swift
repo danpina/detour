@@ -3,6 +3,8 @@ import SwiftUI
 /// Memory: two small span games, digit span and a 3x3 pattern grid.
 struct MemoryGameView: View {
     let onExit: () -> Void
+    /// Set when played inside a set of cards: a short round that ends by calling this with the score. `onExit` then means skip.
+    var embedded: ((Int) -> Void)? = nil
 
     private enum Mode {
         case digits
@@ -27,7 +29,10 @@ struct MemoryGameView: View {
     @State private var isNewBest = false
     /// Changing this restarts the timed task below; leaving the screen cancels it.
     @State private var token = 0
+    @State private var short: MemoryLogic.ShortRound? = nil
+    @State private var finished = false
 
+    private let embeddedDoneSeconds = 1.2
     private let digitSeconds = 0.8
     private let tileSeconds = 0.6
     private let gapSeconds = 0.25
@@ -41,12 +46,30 @@ struct MemoryGameView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            topBar
+            if embedded != nil {
+                embeddedBar
+            } else {
+                topBar
+            }
             content
         }
         .task(id: token) {
             await runTimeline()
         }
+        .onAppear {
+            if embedded != nil && short == nil {
+                startEmbedded()
+            }
+        }
+    }
+
+    private func startEmbedded() {
+        let newShort = MemoryLogic.ShortRound(target: GameStats.roundSize)
+        short = newShort
+        run = newShort.run
+        mode = Bool.random() ? .digits : .grid
+        isNewBest = false
+        startRound()
     }
 
     // MARK: Timeline
@@ -73,6 +96,19 @@ struct MemoryGameView: View {
             input = []
             phase = .turn
         } else if phase == .result {
+            if let current = short, let finish = embedded {
+                let wait = current.done ? embeddedDoneSeconds : resultSeconds
+                if await pause(wait) == false { return }
+                if current.done {
+                    if finished { return }
+                    finished = true
+                    _ = GameStats.recordRound(.memory, score: current.score)
+                    finish(current.score)
+                } else {
+                    startRound()
+                }
+                return
+            }
             if await pause(resultSeconds) == false { return }
             if run.over {
                 isNewBest = GameStats.recordRound(.memory, score: run.best)
@@ -105,7 +141,13 @@ struct MemoryGameView: View {
     }
 
     private func finishRound(success: Bool) {
-        run = MemoryLogic.apply(run, success: success)
+        if let current = short {
+            let updated = MemoryLogic.applyShort(current, success: success)
+            short = updated
+            run = updated.run
+        } else {
+            run = MemoryLogic.apply(run, success: success)
+        }
         lastWasRight = success
         phase = .result
         token += 1
@@ -160,11 +202,36 @@ struct MemoryGameView: View {
         .padding(.top, 8)
     }
 
+    private var embeddedBar: some View {
+        HStack {
+            Text("A quick memory check")
+                .font(.footnote.weight(.medium))
+                .foregroundStyle(.secondary)
+            Spacer()
+            if let current = short {
+                Text("\(min(current.played + 1, current.target)) of \(current.target)")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            }
+            Button(action: { onExit() }) {
+                Text("Skip")
+                    .foregroundStyle(.secondary)
+                    .frame(minWidth: 44, minHeight: 44)
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.top, 8)
+    }
+
     @ViewBuilder
     private var content: some View {
         switch phase {
         case .menu:
-            menuView
+            if embedded != nil {
+                Spacer()
+            } else {
+                menuView
+            }
         case .over:
             overView
         default:

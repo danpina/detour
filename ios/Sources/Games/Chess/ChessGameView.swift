@@ -1,8 +1,11 @@
 import SwiftUI
 
-/// Chess tactics: find the checkmate in one. Ten puzzles, easy to hard.
+/// Chess tactics: find the checkmate in one. A round has `GameStats.roundSize` puzzles, easy to hard.
+/// When `embedded` is set the game is played inside a set of cards: it skips the end screen and calls
+/// `embedded(score)` when the round is finished; `onExit` then means "skip".
 struct ChessGameView: View {
     let onExit: () -> Void
+    var embedded: ((Int) -> Void)? = nil
 
     private enum Status {
         case playing
@@ -10,7 +13,6 @@ struct ChessGameView: View {
         case revealed
     }
 
-    private let roundSize = 10
     private let maxTries = 2
 
     @State private var data: ChessData?
@@ -25,12 +27,13 @@ struct ChessGameView: View {
     @State private var isBest = false
     @State private var shakeOffset: CGFloat = 0
 
-    init(onExit: @escaping () -> Void) {
+    init(onExit: @escaping () -> Void, embedded: ((Int) -> Void)? = nil) {
         self.onExit = onExit
+        self.embedded = embedded
         let loaded = ChessLogic.load()
         _data = State(initialValue: loaded)
         if let loaded = loaded {
-            _round = State(initialValue: ChessLogic.buildRound(loaded.puzzles, count: 10))
+            _round = State(initialValue: ChessLogic.buildRound(loaded.puzzles, count: GameStats.roundSize))
         } else {
             _round = State(initialValue: [])
         }
@@ -41,7 +44,7 @@ struct ChessGameView: View {
             Color(.systemBackground).ignoresSafeArea()
             if data == nil || round.isEmpty {
                 missingView
-            } else if done {
+            } else if done && embedded == nil {
                 doneView
             } else {
                 playView
@@ -94,10 +97,20 @@ struct ChessGameView: View {
         let parsed = ChessLogic.parseFen(puzzle.fen)
         return VStack(spacing: 12) {
             HStack {
-                Button("Close", action: onExit)
-                    .frame(minHeight: 44)
+                if embedded != nil {
+                    Text("A quick board puzzle").font(.subheadline.weight(.semibold))
+                } else {
+                    Button("Close", action: onExit)
+                        .frame(minHeight: 44)
+                }
                 Spacer()
                 Text("\(index + 1) of \(round.count)").font(.subheadline).foregroundStyle(.secondary)
+                if embedded != nil {
+                    Button("Skip", action: onExit)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .frame(minHeight: 44)
+                }
             }
             Text(messageText(puzzle))
                 .font(.title3.weight(.semibold))
@@ -110,7 +123,7 @@ struct ChessGameView: View {
                 Text("That one got lost.").foregroundStyle(.secondary)
                 Button("Next") { advance(finalScore: score) }.buttonStyle(.borderedProminent)
             }
-            if status == .revealed {
+            if status == .revealed && !(embedded != nil && index + 1 >= round.count) {
                 Button(action: { advance(finalScore: score) }) {
                     Text("Next").font(.headline).frame(maxWidth: 220, minHeight: 50)
                 }
@@ -176,11 +189,12 @@ struct ChessGameView: View {
 
     private func doneMessage() -> String {
         var line = "solved on the first try. "
-        if score >= 9 {
+        let share = round.isEmpty ? 0.0 : Double(score) / Double(round.count)
+        if share >= 0.9 {
             line += "Sharp eyes."
-        } else if score >= 6 {
+        } else if share >= 0.6 {
             line += "Nicely done."
-        } else if score >= 3 {
+        } else if share >= 0.3 {
             line += "Good practice."
         } else {
             line += "Every board teaches something."
@@ -211,8 +225,10 @@ struct ChessGameView: View {
             status = .correct
             selected = nil
             let shownIndex = index
+            let isLastEmbedded = embedded != nil && index + 1 >= round.count
+            let delay: UInt64 = isLastEmbedded ? 1_200_000_000 : 1_100_000_000
             Task { @MainActor in
-                try? await Task.sleep(nanoseconds: 1_100_000_000)
+                try? await Task.sleep(nanoseconds: delay)
                 if index == shownIndex && status == .correct && !done {
                     advance(finalScore: newScore)
                 }
@@ -225,6 +241,16 @@ struct ChessGameView: View {
         if wrong >= maxTries {
             answer = puzzle.mates.first
             status = .revealed
+            if embedded != nil && index + 1 >= round.count {
+                let shownIndex = index
+                let currentScore = score
+                Task { @MainActor in
+                    try? await Task.sleep(nanoseconds: 1_200_000_000)
+                    if index == shownIndex && status == .revealed && !done {
+                        advance(finalScore: currentScore)
+                    }
+                }
+            }
         }
     }
 
@@ -241,6 +267,11 @@ struct ChessGameView: View {
     private func advance(finalScore: Int) {
         if index + 1 >= round.count {
             isBest = GameStats.recordRound(.chess, score: finalScore)
+            if let handler = embedded {
+                done = true
+                handler(finalScore)
+                return
+            }
             done = true
             return
         }
@@ -253,7 +284,7 @@ struct ChessGameView: View {
 
     private func playAgain() {
         guard let data = data else { return }
-        round = ChessLogic.buildRound(data.puzzles, count: roundSize)
+        round = ChessLogic.buildRound(data.puzzles, count: GameStats.roundSize)
         index = 0
         score = 0
         wrong = 0

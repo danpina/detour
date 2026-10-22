@@ -5,7 +5,7 @@ import type { BackupData } from "./db";
 export const BACKUP_VERSION = 1;
 
 const num = z.number().finite();
-const settings = z.object({ id: z.literal("main"), interests: z.array(z.enum(INTERESTS)), onboarding_done: z.boolean(), set_size: z.number().int().min(3).max(10).optional(), drills: z.boolean().optional() });
+const settings = z.object({ id: z.literal("main"), interests: z.array(z.enum(INTERESTS)), onboarding_done: z.boolean(), set_size: z.number().int().min(3).max(10).optional(), drills: z.boolean().optional(), extras_every: z.number().int().min(1).max(10).optional() });
 const event = z.object({
   id: z.number().optional(),
   card_id: z.string(),

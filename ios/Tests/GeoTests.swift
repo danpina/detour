@@ -50,17 +50,35 @@ final class GeoTests: XCTestCase {
 
     func testRoundsRampThroughLevelsWithoutRepeats() throws {
         let countries = try loadCountries()
+        for size in [2, 5, 10] {
+            for seed in 1...20 {
+                var rng = SeededGenerator(state: UInt64(seed))
+                let round = GeoBuilder.round(all: countries, length: size, using: &rng)
+                XCTAssertEqual(round.count, size)
+                var previous = 0
+                for (i, q) in round.enumerated() {
+                    XCTAssertEqual(q.level, GeoBuilder.level(forIndex: i, length: size))
+                    XCTAssertGreaterThanOrEqual(q.level, previous)
+                    previous = q.level
+                }
+                XCTAssertEqual(Set(round.map { $0.fact }).count, round.count)
+            }
+        }
+    }
+
+    func testRoundKindMix() throws {
+        let countries = try loadCountries()
         for seed in 1...20 {
             var rng = SeededGenerator(state: UInt64(seed))
-            let round = GeoBuilder.round(all: countries, length: GeoBuilder.roundLength, using: &rng)
-            XCTAssertEqual(round.count, GeoBuilder.roundLength)
-            var previous = 0
-            for (i, q) in round.enumerated() {
-                XCTAssertEqual(q.level, GeoBuilder.level(forIndex: i, length: GeoBuilder.roundLength))
-                XCTAssertGreaterThanOrEqual(q.level, previous)
-                previous = q.level
+            let two = GeoBuilder.round(all: countries, length: 2, using: &rng)
+            XCTAssertTrue(two.contains { $0.kind == .flag })
+            XCTAssertTrue(two.contains { $0.kind == .capital })
+            for size in [5, 10] {
+                let round = GeoBuilder.round(all: countries, length: size, using: &rng)
+                XCTAssertTrue(round.contains { $0.kind == .flag })
+                XCTAssertTrue(round.contains { $0.kind == .capital })
+                XCTAssertTrue(round.contains { $0.kind == .country })
             }
-            XCTAssertEqual(Set(round.map { $0.fact }).count, round.count)
         }
     }
 }

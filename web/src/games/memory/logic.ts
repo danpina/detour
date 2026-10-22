@@ -50,6 +50,30 @@ export type Run = {
   over: boolean;
 };
 
+/** A short round used when the game is embedded in a set: `target` successful sequences, or stop early after two misses in a row. */
+export type ShortRound = {
+  target: number;
+  /** Sequences recalled correctly (misses do not count). */
+  played: number;
+  run: Run;
+  done: boolean;
+};
+
+export function newShortRound(target: number): ShortRound {
+  return { target, played: 0, run: newRun(), done: target <= 0 };
+}
+
+/** Score of a short round: the longest length recalled, 0 if none. */
+export function shortScore(s: ShortRound): number {
+  return s.run.best;
+}
+
+export function applyShortResult(s: ShortRound, success: boolean): ShortRound {
+  const run = applyResult(s.run, success);
+  const played = success ? s.played + 1 : s.played;
+  return { target: s.target, played, run, done: run.over || played >= s.target };
+}
+
 export function newRun(): Run {
   return { length: START_LENGTH, misses: 0, best: 0, round: 1, over: false };
 }

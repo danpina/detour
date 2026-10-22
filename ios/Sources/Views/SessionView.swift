@@ -111,6 +111,12 @@ struct SessionView: View {
         switch item {
         case .drill(let spec):
             DrillView(spec: spec, index: index, total: total, actions: actions)
+        case .game(let id):
+            // A short game inside the set: it plays a few puzzles, then this set carries on (or ends).
+            gameView(for: id, onExit: { actions.next() }, embedded: { _ in
+                actions.complete(nil)
+                actions.next()
+            })
         case .review(let card, let probe, _):
             RecallCardView(card: card, probe: probe, index: index, total: total, actions: actions)
         case .new(let card):

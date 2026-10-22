@@ -21,6 +21,8 @@ private enum WordStatus {
 
 struct WordsGameView: View {
     let onExit: () -> Void
+    /// Set when played inside a set of cards: called with the score when the round is finished.
+    var embedded: ((Int) -> Void)? = nil
 
     @State private var round: [WordPuzzle] = WordsGameView.makeRound()
     @State private var index = 0
@@ -35,7 +37,7 @@ struct WordsGameView: View {
 
     private static func makeRound() -> [WordPuzzle] {
         var rng = SystemRandomNumberGenerator()
-        return WordsLogic.buildRound(WordsLogic.loadPuzzles(), using: &rng)
+        return WordsLogic.buildRound(WordsLogic.loadPuzzles(), size: GameStats.roundSize, using: &rng)
     }
 
     private var locked: Bool { status == .correct || status == .skipped }
@@ -60,7 +62,7 @@ struct WordsGameView: View {
             Spacer()
             Text("Word scramble").font(.title.weight(.semibold))
             Text("The words are not available right now.").foregroundStyle(.secondary)
-            Button("Back", action: onExit).buttonStyle(.borderedProminent)
+            Button(embedded != nil ? "Skip" : "Back", action: onExit).buttonStyle(.borderedProminent)
             Spacer()
         }
         .padding(24)
@@ -100,24 +102,43 @@ struct WordsGameView: View {
         let scrambleChars = Array(puzzle.scramble)
         let answerChars = Array(puzzle.answer)
         return VStack(spacing: 0) {
-            HStack {
-                Button(action: onExit) {
-                    Image(systemName: "chevron.left")
-                        .font(.title3.weight(.semibold))
-                        .frame(width: 44, height: 44)
+            if embedded != nil {
+                HStack {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("A quick word puzzle")
+                            .font(.headline)
+                        Text("Word \(index + 1) of \(round.count) · \(score) pts")
+                            .font(.caption.weight(.medium))
+                            .foregroundStyle(.secondary)
+                    }
+                    Spacer()
+                    Button(action: onExit) {
+                        Text("Skip")
+                            .font(.subheadline.weight(.semibold))
+                            .frame(minWidth: 44, minHeight: 44)
+                    }
                 }
-                .accessibilityLabel("Back")
-                Spacer()
-                Text("Word \(index + 1) of \(round.count)")
-                    .font(.subheadline.weight(.medium))
-                    .foregroundStyle(.secondary)
-                Spacer()
-                Text("\(score) pts")
-                    .font(.subheadline.weight(.semibold))
-                    .monospacedDigit()
-                    .frame(minWidth: 44, alignment: .trailing)
+                .padding(.horizontal, 20)
+            } else {
+                HStack {
+                    Button(action: onExit) {
+                        Image(systemName: "chevron.left")
+                            .font(.title3.weight(.semibold))
+                            .frame(width: 44, height: 44)
+                    }
+                    .accessibilityLabel("Back")
+                    Spacer()
+                    Text("Word \(index + 1) of \(round.count)")
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(.secondary)
+                    Spacer()
+                    Text("\(score) pts")
+                        .font(.subheadline.weight(.semibold))
+                        .monospacedDigit()
+                        .frame(minWidth: 44, alignment: .trailing)
+                }
+                .padding(.horizontal, 12)
             }
-            .padding(.horizontal, 12)
 
             Spacer()
 
@@ -239,7 +260,12 @@ struct WordsGameView: View {
 
     private var bottomButtons: some View {
         HStack(spacing: 12) {
-            if locked {
+            if locked && embedded != nil && index + 1 >= round.count {
+                Text("All done!")
+                    .font(.subheadline.weight(.medium))
+                    .foregroundStyle(.secondary)
+                    .frame(maxWidth: .infinity, minHeight: 48)
+            } else if locked {
                 Button(action: next) {
                     Text(index + 1 < round.count ? "Next word" : "See my score")
                         .font(.headline)
@@ -278,6 +304,7 @@ struct WordsGameView: View {
             if WordsLogic.isCorrect(puzzle, guess: guess) {
                 score += WordsLogic.wordPoints(solved: true, usedHint: hinted)
                 status = .correct
+                finishIfEmbeddedAndLast()
             } else {
                 status = .wrong
                 withAnimation(.linear(duration: 0.4)) {
@@ -296,6 +323,19 @@ struct WordsGameView: View {
     private func skip() {
         placed = []
         status = .skipped
+        finishIfEmbeddedAndLast()
+    }
+
+    /// Embedded: after the last word, wait a moment, record the round once and report the score.
+    private func finishIfEmbeddedAndLast() {
+        guard let done = embedded else { return }
+        if index + 1 < round.count { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            if recorded { return }
+            recorded = true
+            _ = GameStats.recordRound(.words, score: score)
+            done(score)
+        }
     }
 
     private func next() {

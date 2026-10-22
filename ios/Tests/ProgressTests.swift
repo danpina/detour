@@ -128,12 +128,56 @@ final class AppModelTests: XCTestCase {
         for item in items {
             switch item {
             case .drill: XCTFail("drills should be off unless turned on in Settings")
+            case .game: XCTFail("games only appear when Games is one of the interests")
             case .new(let c): XCTAssertTrue([Interest.history, .science, .money].contains(c.interest), "\(c.id) is from a topic the user did not pick")
             case .review: break
             }
         }
         model.updateSettings { $0.drills = true }
         XCTAssertTrue(model.makeSet().contains { if case .drill = $0 { return true } else { return false } })
+    }
+
+    private func hasGame(_ items: [SessionItem]) -> Bool {
+        items.contains { if case .game = $0 { return true } else { return false } }
+    }
+
+    private func hasDrill(_ items: [SessionItem]) -> Bool {
+        items.contains { if case .drill = $0 { return true } else { return false } }
+    }
+
+    func testSkillRoundsComeEveryThirdSetByDefault() {
+        let (model, url) = makeModel()
+        defer { try? FileManager.default.removeItem(at: url) }
+        model.completeOnboarding(interests: [.history, .science, .estimation])
+        XCTAssertEqual(model.extrasEvery, 3)
+        XCTAssertTrue(hasDrill(model.makeSet()), "the first set (number 0) has one")
+        model.sessionFinished(cardsDone: 3)
+        XCTAssertFalse(hasDrill(model.makeSet()))
+        model.sessionFinished(cardsDone: 3)
+        XCTAssertFalse(hasDrill(model.makeSet()))
+        model.sessionFinished(cardsDone: 3)
+        XCTAssertTrue(hasDrill(model.makeSet()), "and every third set after it")
+    }
+
+    func testGamesInterestAddsAGameOnTheSetAfterASkillRound() {
+        let (model, url) = makeModel()
+        defer { try? FileManager.default.removeItem(at: url) }
+        model.completeOnboarding(interests: [.history, .science, .games])
+        XCTAssertFalse(hasGame(model.makeSet()), "set 0 is not a game set")
+        model.sessionFinished(cardsDone: 3)
+        XCTAssertTrue(hasGame(model.makeSet()), "set 1 is")
+        model.sessionFinished(cardsDone: 3)
+        XCTAssertFalse(hasGame(model.makeSet()))
+    }
+
+    func testEveryNthSettingChangesHowOftenAndNoGamesWithoutTheInterest() {
+        let (model, url) = makeModel()
+        defer { try? FileManager.default.removeItem(at: url) }
+        model.completeOnboarding(interests: [.history, .science, .money])
+        model.updateSettings { $0.extrasEvery = 1 }
+        XCTAssertFalse(hasGame(model.makeSet()), "Games is not one of the interests")
+        model.completeOnboarding(interests: [.history, .science, .games])
+        XCTAssertTrue(hasGame(model.makeSet()), "every set when the setting is 1")
     }
 
     func testEstimationInterestAddsAnEstimationRoundWithoutTheMentalMathSetting() {

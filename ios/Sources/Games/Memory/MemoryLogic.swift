@@ -70,6 +70,35 @@ enum MemoryLogic {
         var over: Bool = false
     }
 
+    /// A short round used when the game is embedded in a set: `target` recalled sequences, or stop early after two misses in a row.
+    struct ShortRound: Equatable {
+        var target: Int
+        /// Sequences recalled correctly (misses do not count).
+        var played: Int = 0
+        var run: Run = Run()
+        var done: Bool = false
+
+        init(target: Int) {
+            self.target = target
+            self.done = target <= 0
+        }
+
+        /// Longest length recalled, 0 if none.
+        var score: Int {
+            return run.best
+        }
+    }
+
+    static func applyShort(_ round: ShortRound, success: Bool) -> ShortRound {
+        var next = round
+        next.run = apply(round.run, success: success)
+        if success {
+            next.played = round.played + 1
+        }
+        next.done = next.run.over || next.played >= next.target
+        return next
+    }
+
     /// Applies the result of one round. A success grows the sequence; two misses in a row end the run.
     static func apply(_ run: Run, success: Bool) -> Run {
         var next = run

@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
 import {
-  ROUND_LEVELS,
   buildRound,
   isCorrect,
   lettersOf,
+  levelsForSize,
   loadPuzzles,
   placeTile,
   removeSlot,
@@ -64,19 +64,26 @@ describe("words.json", () => {
 describe("buildRound", () => {
   const puzzles = loadPuzzles();
 
-  it("returns 8 words ramping level 1 to 3 with no repeats", () => {
+  it("level ramps scale with the round size", () => {
+    expect(levelsForSize(2)).toEqual([1, 2]);
+    expect(levelsForSize(5)).toEqual([1, 2, 2, 3, 3]);
+    expect(levelsForSize(10)).toEqual([1, 1, 1, 2, 2, 2, 3, 3, 3, 3]);
+  });
+
+  it.each([2, 5, 10])("returns %i words ramping up with no repeats", (size) => {
     for (let seed = 1; seed <= 20; seed++) {
-      const round = buildRound(puzzles, seeded(seed));
-      expect(round.map((p) => p.level)).toEqual(ROUND_LEVELS);
-      expect(new Set(round.map((p) => p.id)).size).toBe(8);
+      const round = buildRound(puzzles, seeded(seed), size);
+      expect(round.length).toBe(size);
+      expect(round.map((p) => p.level)).toEqual(levelsForSize(size));
+      expect(new Set(round.map((p) => p.id)).size).toBe(size);
       const words = round.flatMap((p) => p.accept);
       expect(new Set(words).size, "no two words from one anagram family").toBe(words.length);
     }
   });
 
   it("copes with a tiny list", () => {
-    expect(buildRound([], seeded(1))).toEqual([]);
-    expect(buildRound(puzzles.slice(0, 3), seeded(1)).length).toBeLessThanOrEqual(3);
+    expect(buildRound([], seeded(1), 5)).toEqual([]);
+    expect(buildRound(puzzles.slice(0, 3), seeded(1), 10).length).toBeLessThanOrEqual(3);
   });
 });
 

@@ -1,16 +1,16 @@
 import { useState } from "react";
 import type { GameProps } from "../registry";
 import { recordRound } from "../stats";
-import { ROUND_SIZE, buildRound, type PatternPuzzle } from "./logic";
+import { buildRound, type PatternPuzzle } from "./logic";
 
-function endLine(score: number): string {
-  if (score === ROUND_SIZE) return "Every one. Lovely.";
-  if (score >= 7) return "Sharp eyes today.";
-  if (score >= 4) return "Nice work. Patterns get easier the more you spot.";
+function endLine(score: number, total: number): string {
+  if (score === total) return "Every one. Lovely.";
+  if (score * 10 >= total * 7) return "Sharp eyes today.";
+  if (score * 10 >= total * 4) return "Nice work. Patterns get easier the more you spot.";
   return "Good warm-up. A fresh round is always one tap away.";
 }
 
-export function PatternsGame({ onExit }: GameProps) {
+export function PatternsGame({ onExit, embedded }: GameProps) {
   const [round, setRound] = useState<PatternPuzzle[]>(() => buildRound());
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
@@ -28,6 +28,11 @@ export function PatternsGame({ onExit }: GameProps) {
 
   function next() {
     if (index + 1 >= round.length) {
+      if (embedded) {
+        recordRound("patterns", score);
+        embedded.onDone(score);
+        return;
+      }
       setIsBest(recordRound("patterns", score));
       setFinished(true);
     } else {
@@ -48,8 +53,8 @@ export function PatternsGame({ onExit }: GameProps) {
   if (finished || !puzzle) {
     return (
       <div className="flex h-full flex-col items-center justify-center gap-4 px-8 text-center">
-        <p className="text-6xl font-semibold tabular-nums">{score}<span className="text-3xl text-neutral-400">/{ROUND_SIZE}</span></p>
-        <p className="text-lg">{endLine(score)}</p>
+        <p className="text-6xl font-semibold tabular-nums">{score}<span className="text-3xl text-neutral-400">/{round.length}</span></p>
+        <p className="text-lg">{endLine(score, round.length)}</p>
         {isBest && score > 0 && <p className="text-sm font-medium text-teal-600 dark:text-teal-400">New best!</p>}
         <div className="mt-4 flex w-full max-w-xs flex-col gap-3">
           <button onClick={again} className="min-h-14 rounded-2xl bg-teal-600 px-6 py-3 text-lg font-semibold text-white active:scale-[0.98]">Play again</button>
@@ -63,10 +68,17 @@ export function PatternsGame({ onExit }: GameProps) {
   return (
     <div className="flex h-full flex-col px-5 pb-8 pt-[max(1.5rem,env(safe-area-inset-top))]">
       <div className="flex items-center justify-between">
-        <button onClick={onExit} aria-label="Back" className="min-h-11 min-w-11 text-left text-neutral-500 dark:text-neutral-400">← Back</button>
-        <span className="text-sm text-neutral-500 tabular-nums dark:text-neutral-400">{index + 1} of {round.length}</span>
+        {embedded ? (
+          <span className="text-sm font-medium text-neutral-500 dark:text-neutral-400">A quick pattern puzzle</span>
+        ) : (
+          <button onClick={onExit} aria-label="Back" className="min-h-11 min-w-11 text-left text-neutral-500 dark:text-neutral-400">← Back</button>
+        )}
+        <span className="flex items-center gap-3">
+          <span className="text-sm text-neutral-500 tabular-nums dark:text-neutral-400">{index + 1} of {round.length}</span>
+          {embedded && <button onClick={onExit} className="min-h-11 min-w-11 text-sm text-neutral-500 dark:text-neutral-400">Skip</button>}
+        </span>
       </div>
-      <h1 className="mt-4 text-2xl font-semibold tracking-tight">What comes next?</h1>
+      <h1 className={`mt-4 font-semibold tracking-tight ${embedded ? "text-xl" : "text-2xl"}`}>What comes next?</h1>
 
       <div className="mt-6 flex flex-wrap justify-center gap-2" aria-label="The sequence">
         {puzzle.shown.map((n, i) => (
@@ -109,7 +121,7 @@ export function PatternsGame({ onExit }: GameProps) {
 
       {picked !== null && (
         <button onClick={next} className="mt-auto min-h-14 rounded-2xl bg-teal-600 px-6 py-3 text-lg font-semibold text-white active:scale-[0.98]">
-          {index + 1 >= round.length ? "See my score" : "Next"}
+          {index + 1 >= round.length ? (embedded ? "Continue" : "See my score") : "Next"}
         </button>
       )}
     </div>

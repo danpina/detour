@@ -18,8 +18,17 @@ struct WordsFile: Decodable {
 
 /// Pure logic for Word scramble (no SwiftUI), so it can be unit tested.
 enum WordsLogic {
-    /// Difficulty ramp for one round of 8 words.
-    static let roundLevels: [Int] = [1, 1, 2, 2, 2, 3, 3, 3]
+    /// Difficulty ramp (5 letters, then 6, then 7-8) for a round of `size` words.
+    /// 2 words: a 5-letter then a 6-letter. Other sizes: about 25% / 40% / 35%.
+    static func levels(forSize size: Int) -> [Int] {
+        if size <= 0 { return [] }
+        if size == 1 { return [1] }
+        if size == 2 { return [1, 2] }
+        let ones = max(1, Int((Double(size) * 0.25).rounded()))
+        let threes = max(1, Int((Double(size) * 0.35).rounded()))
+        let twos = max(0, size - ones - threes)
+        return Array(repeating: 1, count: ones) + Array(repeating: 2, count: twos) + Array(repeating: 3, count: threes)
+    }
 
     static func decode(_ data: Data) -> [WordPuzzle] {
         do {
@@ -46,13 +55,13 @@ enum WordsLogic {
         return decode(data)
     }
 
-    /// Picks 8 puzzles ramping from level 1 to 3. Two puzzles from the same anagram family never share a round.
+    /// Picks `size` puzzles ramping from level 1 to 3. Two puzzles from the same anagram family never share a round.
     /// If a level runs short it borrows from the nearest other level.
-    static func buildRound<G: RandomNumberGenerator>(_ puzzles: [WordPuzzle], using rng: inout G) -> [WordPuzzle] {
+    static func buildRound<G: RandomNumberGenerator>(_ puzzles: [WordPuzzle], size: Int, using rng: inout G) -> [WordPuzzle] {
         var picked: [WordPuzzle] = []
         var usedIds = Set<String>()
         var usedWords = Set<String>()
-        for level in roundLevels {
+        for level in levels(forSize: size) {
             var order: [Int] = [level]
             let others = [1, 2, 3].filter { $0 != level }.sorted { abs($0 - level) < abs($1 - level) }
             order.append(contentsOf: others)

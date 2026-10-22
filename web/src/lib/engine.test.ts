@@ -18,7 +18,7 @@ const card = (id: string, interest: Interest = "science", type: Card["type"] = "
 
 const review = (c: Card, dueOffsetDays: number): ReviewRow => ({ ...newReview(`${c.id}-p1`, c.id, NOW), due_at: NOW + dueOffsetDays * DAY });
 const kinds = (items: SessionItem[]) => items.map((i) => i.kind);
-const ids = (items: SessionItem[]) => items.map((i) => (i.kind === "drill" ? `drill:${i.drill.track}` : i.card.id));
+const ids = (items: SessionItem[]) => items.map((i) => (i.kind === "drill" ? `drill:${i.drill.track}` : i.kind === "game" ? `game:${i.game}` : i.card.id));
 
 const pool = [
   card("sci-0001"), card("sci-0002", "science", "estimate"), card("hist-0001", "history", "story"), card("hist-0002", "history", "guess_first"),
@@ -119,7 +119,7 @@ describe("backlog and engagement", () => {
     expect(eng).toEqual({ history: 1, science: 0 });
     const items = buildSession({ ...base, reviews: [], engagement: eng, interests: ["science", "history"] });
     const first = items[0]!;
-    expect(first.kind !== "drill" && first.card.interest).toBe("history");
+    expect((first.kind === "new" || first.kind === "review") && first.card.interest).toBe("history");
   });
 });
 
@@ -139,5 +139,27 @@ describe("not showing the same card again", () => {
     const lastShown = new Map([["sci-0001", NOW - 5000], ["sci-0002", NOW - 1000]]);
     const next = buildSession({ ...base, interests, reviews: [], setSize: 1, lastShown, completed: new Set(["sci-0001", "sci-0002"]) });
     expect(ids(next)).toEqual(["sci-0001"]);
+  });
+});
+
+describe("a game at the end of a set", () => {
+  const interests: Interest[] = ["science", "history"];
+
+  it("adds one game after the cards and keeps the set size", () => {
+    const items = buildSession({ ...base, interests, reviews: [], setSize: 3, makeGame: () => "words" });
+    expect(items).toHaveLength(3);
+    expect(items.at(-1)).toEqual({ kind: "game", game: "words" });
+    expect(items.filter((i) => i.kind === "new")).toHaveLength(2);
+  });
+
+  it("has no game when none is provided", () => {
+    const items = buildSession({ ...base, interests, reviews: [], setSize: 3 });
+    expect(items.some((i) => i.kind === "game")).toBe(false);
+  });
+
+  it("puts the skill round before the game when both are due", () => {
+    const items = buildSession({ ...base, interests, reviews: [], setSize: 5, makeDrill: () => drill, makeGame: () => "geo" });
+    expect(items.at(-2)!.kind).toBe("drill");
+    expect(items.at(-1)!.kind).toBe("game");
   });
 });

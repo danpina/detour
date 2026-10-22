@@ -8,6 +8,8 @@ struct UserSettings: Codable, Hashable {
     var setSize = SessionEngine.defaultSetSize
     /// Skill drills at the end of a set. nil means: on only if Numbers & Logic is one of the chosen topics.
     var drills: Bool? = nil
+    /// How often the extras (mental math, estimation, games) join a set: every Nth set. nil means every 3rd.
+    var extrasEvery: Int? = nil
     var reminderEnabled = false
     /// Local time of the daily reminder.
     var reminderHour = 20

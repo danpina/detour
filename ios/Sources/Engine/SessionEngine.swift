@@ -55,6 +55,8 @@ enum SessionItem: Hashable {
     case review(card: Card, probe: Probe, review: ReviewRow)
     case new(Card)
     case drill(DrillSpec)
+    /// A short game at the end of a set. The caller decides how often (see AppModel.makeSet).
+    case game(GameId)
 }
 
 struct EngineInput {
@@ -69,6 +71,8 @@ struct EngineInput {
     var setSize: Int = SessionEngine.defaultSetSize
     /// The next skill drill. Without it the drill slot goes to other content.
     var drill: DrillSpec?
+    /// A game for the end of this set. Chosen by the caller.
+    var game: GameId?
     /// When each card was last shown. Cards shown longest ago (or never) are preferred, so skipping a card does not bring it straight back.
     var lastShown: [String: Date] = [:]
 }
@@ -175,6 +179,7 @@ enum SessionEngine {
         let setSize = input.setSize
         let due = dueReviews(cards: input.cards, reviews: input.reviews, now: input.now)
         let drillCount = input.drill == nil ? 0 : 1
+        let gameCount = input.game == nil ? 0 : 1
 
         let reviewCount = min(reviewTarget(dueCount: due.count, setSize: setSize), due.count)
         let chosenReviews = Array(due.prefix(reviewCount))
@@ -189,7 +194,7 @@ enum SessionEngine {
             }
             .map { $0.element }
 
-        let newNeeded = setSize - chosenReviews.count - drillCount
+        let newNeeded = max(0, setSize - chosenReviews.count - drillCount - gameCount)
         let seen = input.completed.union(input.reviews.map { $0.cardId })
         let rotated = leastRecentlyShown(input.cards, lastShown: input.lastShown)
         var news = pickSet(cards: rotated, interests: ordered, seen: seen, n: newNeeded, allowSeen: false, exclude: used)
@@ -215,6 +220,7 @@ enum SessionEngine {
 
         var items = interleave(reviewItems, newItems)
         if let drill = input.drill { items.append(.drill(drill)) }
+        if let game = input.game { items.append(.game(game)) }
         return items
     }
 }

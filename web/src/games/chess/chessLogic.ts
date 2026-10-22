@@ -84,10 +84,19 @@ export function isOwnPiece(piece: string | null, side: "w" | "b"): boolean {
   return side === "w" ? piece === piece.toUpperCase() : piece === piece.toLowerCase();
 }
 
+/** Share of the (easy to hard) puzzle list a round of this size may reach: short rounds stay gentle. */
+export function rampShare(count: number): number {
+  if (count <= 2) return 0.5;
+  if (count <= 5) return 0.75;
+  return 1;
+}
+
 /** Round of `count` puzzles, easy to hard: one random pick from each difficulty band. */
 export function buildRound(puzzles: Puzzle[], rand: () => number = Math.random, count = 10): Puzzle[] {
-  const sorted = [...puzzles].sort((a, b) => a.rating - b.rating);
-  if (sorted.length <= count) return sorted;
+  const all = [...puzzles].sort((a, b) => a.rating - b.rating);
+  if (all.length <= count) return all;
+  const usable = Math.max(count, Math.ceil(all.length * rampShare(count)));
+  const sorted = all.slice(0, usable);
   const round: Puzzle[] = [];
   for (let i = 0; i < count; i++) {
     const start = Math.floor((i * sorted.length) / count);
