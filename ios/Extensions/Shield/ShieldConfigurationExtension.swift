@@ -25,15 +25,26 @@ final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
     }
 
     /// Notes which app is being covered, so the end screen can offer to take the user back to it. Stays on the device.
+    /// iOS hands over the app's token (and sometimes nothing else). If the user said in Settings what that token is, use that.
     private func remember(_ application: Application) {
         let store = GuardStore.shared
         let bundle = application.bundleIdentifier
         let name = application.localizedDisplayName
-        if bundle != store.shieldedBundle || name != store.shieldedName {
-            store.log("shield screen: app = " + (bundle ?? "unknown") + " (" + (name ?? "no name") + ")")
+        let key = application.token.flatMap { GuardShield.tokenKey(for: $0) }
+        let mapped = key.flatMap { store.returnMap[$0] }
+        // Log what the shield was told, at most every 5 seconds.
+        if store.shieldLogStamp.map({ Date().timeIntervalSince($0) > 5 }) ?? true {
+            store.shieldLogStamp = Date()
+            store.log("shield screen: bundle=" + (bundle ?? "nil") + " name=" + (name ?? "nil") + " token=" + GuardShield.shortKey(key) + " mapped=" + (mapped ?? "nil"))
         }
-        // Keep an earlier answer if this time iOS did not say.
-        if bundle != nil || name != nil { store.recordShielded(bundle: bundle, name: name) }
+        store.shieldedTokenKey = key
+        if let mapped {
+            store.recordShielded(bundle: mapped, name: ReturnApps.displayName(for: mapped))
+        } else if bundle != nil || name != nil {
+            store.recordShielded(bundle: bundle, name: name)
+        } else {
+            store.recordShielded(bundle: nil, name: nil)
+        }
     }
 
     private func make() -> ShieldConfiguration {

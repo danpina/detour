@@ -1,5 +1,6 @@
 import FamilyControls
 import Foundation
+import ManagedSettings
 import Observation
 import UserNotifications
 
@@ -9,6 +10,7 @@ import UserNotifications
 @Observable
 final class GuardManager {
     var selection = FamilyActivitySelection()
+    private(set) var returnMap: [String: String] = [:]
     private(set) var settings: GuardSettings
     private(set) var authorized: Bool
     private(set) var lastError: String?
@@ -20,6 +22,7 @@ final class GuardManager {
         self.authorized = AuthorizationCenter.shared.authorizationStatus == .approved
         if let saved = GuardShield.selection(from: store) { self.selection = saved }
         self.logLines = store.logLines
+        self.returnMap = store.returnMap
     }
 
     var hasSelection: Bool {
@@ -75,6 +78,23 @@ final class GuardManager {
         store.selectionData = GuardShield.encode(selection)
         GuardShield.syncMonitors(store)
         if settings.enabled && !store.isUnlocked() { GuardShield.apply(store, reason: "apps changed") }
+    }
+
+    // MARK: Which guarded app is which
+
+    /// The bundle identifier the user said this guarded app is, or "" if not set.
+    func returnBundle(for token: ApplicationToken) -> String {
+        guard let key = GuardShield.tokenKey(for: token) else { return "" }
+        return returnMap[key] ?? ""
+    }
+
+    func setReturnBundle(_ bundle: String, for token: ApplicationToken) {
+        guard let key = GuardShield.tokenKey(for: token) else { return }
+        var map = returnMap
+        if bundle.isEmpty { map.removeValue(forKey: key) } else { map[key] = bundle }
+        returnMap = map
+        store.returnMap = map
+        store.log("guarded app " + GuardShield.shortKey(key) + " set to " + (bundle.isEmpty ? "nothing" : bundle))
     }
 
     // MARK: Sessions

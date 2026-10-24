@@ -5,7 +5,8 @@ import UIKit
 /// Settings for guarded apps: which apps, how strict, how long an unlock lasts. Everything stays on the device.
 struct GuardSettingsSection: View {
     @Environment(GuardManager.self) private var guardManager
-    @State private var picking = false
+    /// Opens the app picker (a sheet owned by the Settings screen).
+    var chooseApps: () -> Void
     @State private var working = false
 
     private var modeExplanation: String {
@@ -48,7 +49,6 @@ struct GuardSettingsSection: View {
     }
 
     var body: some View {
-        @Bindable var manager = guardManager
         Section {
             Toggle("Guard my apps", isOn: Binding(
                 get: { guardManager.settings.enabled },
@@ -58,7 +58,7 @@ struct GuardSettingsSection: View {
                         Task {
                             await guardManager.enable()
                             working = false
-                            if guardManager.settings.enabled && !guardManager.hasSelection { picking = true }
+                            if guardManager.settings.enabled && !guardManager.hasSelection { chooseApps() }
                         }
                     } else {
                         guardManager.disable()
@@ -68,7 +68,8 @@ struct GuardSettingsSection: View {
             .disabled(working)
 
             if guardManager.settings.enabled {
-                Button(guardManager.hasSelection ? "Change guarded apps" : "Choose apps to guard") { picking = true }
+                Button(guardManager.hasSelection ? "Change guarded apps" : "Choose apps to guard") { chooseApps() }
+                GuardedAppsList()
 
                 Picker("When I open one", selection: Binding(
                     get: { guardManager.settings.mode },
@@ -123,7 +124,7 @@ struct GuardSettingsSection: View {
                     Text("Nothing").tag("")
                     ForEach(ReturnApps.popular) { app in Text(app.name).tag(app.bundle) }
                 }
-                Text("After a detour, Detour offers to open this app for you. Used when iOS doesn't say which app you came from.")
+                Text("After a detour, Detour offers to open this app for you. Used for any guarded app you haven't named above.")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
 
@@ -147,10 +148,6 @@ struct GuardSettingsSection: View {
             Text("Guarded apps")
         } footer: {
             Text("Pick the apps you scroll too much. Opening one shows a quick Detour first. You choose the apps with Apple's picker. Detour only notes, on your device, which app the shield was covering so it can take you back to it, and you can turn this off any time.")
-        }
-        .familyActivityPicker(isPresented: $picking, selection: $manager.selection)
-        .onChange(of: picking) { _, isOpen in
-            if !isOpen { guardManager.saveSelection() }
         }
     }
 }

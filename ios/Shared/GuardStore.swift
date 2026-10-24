@@ -86,6 +86,9 @@ final class GuardStore {
         static let skipsUsed = "guard.skipsUsed"
         static let log = "guard.log"
         static let lockedDay = "guard.lockedDay"
+        static let returnMap = "guard.returnMap"
+        static let shieldedToken = "guard.shieldedToken"
+        static let shieldLogStamp = "guard.shieldLogStamp"
         static let hoursSignature = "guard.hoursSignature"
         static let allowanceSignature = "guard.allowanceSignature"
         static let shieldedBundle = "guard.shieldedBundle"
@@ -160,6 +163,32 @@ final class GuardStore {
     func windowReallyEnded(now: Date = Date(), slack: TimeInterval = 60) -> Bool {
         guard let until = unlockUntil else { return true }
         return until <= now.addingTimeInterval(slack)
+    }
+
+    // MARK: Which guarded app is which (so the end screen can take the user back to it)
+
+    /// iOS never tells the shield which app it is covering, but each guarded app has a stable anonymous token. The user says
+    /// once, in Settings, what each token is; this maps the token (as text) to a bundle identifier. It stays on the device.
+    var returnMap: [String: String] {
+        get {
+            guard let data = defaults.data(forKey: Key.returnMap), let map = try? JSONDecoder().decode([String: String].self, from: data) else { return [:] }
+            return map
+        }
+        set {
+            if let data = try? JSONEncoder().encode(newValue) { defaults.set(data, forKey: Key.returnMap) }
+        }
+    }
+
+    /// The token (as text) of the app the shield was last shown for, if the shield told us.
+    var shieldedTokenKey: String? {
+        get { defaults.string(forKey: Key.shieldedToken) }
+        set { defaults.set(newValue, forKey: Key.shieldedToken) }
+    }
+
+    /// Used to log what the shield screen was told at most once every few seconds.
+    var shieldLogStamp: Date? {
+        get { defaults.object(forKey: Key.shieldLogStamp) as? Date }
+        set { defaults.set(newValue, forKey: Key.shieldLogStamp) }
     }
 
     // MARK: Which daily monitors are running (so they are only restarted when their settings change)

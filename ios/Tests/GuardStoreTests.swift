@@ -193,3 +193,17 @@ final class UsageThresholdTests: XCTestCase {
         XCTAssertEqual(settings.strictUseSeconds, 30)
     }
 }
+
+final class ReturnMapTests: XCTestCase {
+    func testReturnMapRoundTripsAndStartsEmpty() {
+        let name = "detour.tests.returnmap." + UUID().uuidString
+        let defaults = UserDefaults(suiteName: name)!
+        defaults.removePersistentDomain(forName: name)
+        let store = GuardStore(defaults: defaults)
+        XCTAssertTrue(store.returnMap.isEmpty)
+        store.returnMap = ["abc": "com.burbn.instagram"]
+        XCTAssertEqual(store.returnMap["abc"], "com.burbn.instagram")
+        XCTAssertEqual(GuardShield.shortKey("0123456789"), "23456789")
+        XCTAssertEqual(GuardShield.shortKey(nil), "none")
+    }
+}

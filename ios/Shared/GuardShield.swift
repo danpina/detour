@@ -18,6 +18,17 @@ enum GuardShield {
         return try? JSONDecoder().decode(FamilyActivitySelection.self, from: data)
     }
 
+    /// A stable text key for an app token, so it can be stored and compared.
+    static func tokenKey(for token: ApplicationToken) -> String? {
+        (try? JSONEncoder().encode(token))?.base64EncodedString()
+    }
+
+    /// The first characters of a key, for the debug log (the full key is long and meaningless).
+    static func shortKey(_ key: String?) -> String {
+        guard let key else { return "none" }
+        return String(key.suffix(8))
+    }
+
     static func encode(_ selection: FamilyActivitySelection) -> Data? {
         try? JSONEncoder().encode(selection)
     }

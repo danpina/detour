@@ -2,7 +2,12 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(AppModel.self) private var model
-    @State private var editingInterests = false
+    private enum SettingsSheet: String, Identifiable {
+        case interests, apps
+        var id: String { rawValue }
+    }
+
+    @State private var sheet: SettingsSheet?
     @State private var confirmErase = false
     @State private var reminderDenied = false
 
@@ -30,7 +35,7 @@ struct SettingsView: View {
             Form {
                 Section("Your interests") {
                     Text(model.settings.interests.map { $0.displayName }.joined(separator: " · "))
-                    Button("Change interests") { editingInterests = true }
+                    Button("Change interests") { sheet = .interests }
                 }
 
                 Section("Cards per set") {
@@ -62,7 +67,7 @@ struct SettingsView: View {
                     Text("How often mental math, estimation and a quick game show up in your sets.").font(.footnote).foregroundStyle(.secondary)
                 }
 
-                GuardSettingsSection()
+                GuardSettingsSection(chooseApps: { sheet = .apps })
 
                 Section("Daily reminder") {
                     Toggle("Remind me", isOn: Binding(
@@ -106,10 +111,15 @@ struct SettingsView: View {
                     model.eraseEverything()
                 }
             }
-            .sheet(isPresented: $editingInterests) {
-                OnboardingView(initial: model.settings.interests, confirmLabel: "Save") { picked in
-                    model.updateSettings { $0.interests = picked }
-                    editingInterests = false
+            .sheet(item: $sheet) { which in
+                switch which {
+                case .interests:
+                    OnboardingView(initial: model.settings.interests, confirmLabel: "Save") { picked in
+                        model.updateSettings { $0.interests = picked }
+                        sheet = nil
+                    }
+                case .apps:
+                    GuardAppsSheet { sheet = nil }
                 }
             }
         }
