@@ -86,7 +86,7 @@ final class GuardManager {
     /// Works out which app each guarded token is, from whatever iOS tells us (its bundle or name), and remembers it.
     /// Apps it cannot tell stay unnamed until the shield sees them or the user says. Logs what iOS said, for debugging.
     /// Bump when the guard code changes, so a pasted log shows which version of it was running.
-    private static let codeTag = "name-reading-v3"
+    private static let codeTag = "name-reading-v4"
     @ObservationIgnored private static var loggedBuild = false
 
     private func logBuildOnce() {
@@ -111,6 +111,10 @@ final class GuardManager {
         returnMap = store.returnMap
         let named = selection.applicationTokens.filter { token in GuardShield.tokenKey(for: token).flatMap { store.returnMap[$0] } != nil }.count
         store.log("identify: " + String(selection.applicationTokens.count) + " guarded apps, " + String(named) + " named")
+        if named < selection.applicationTokens.count {
+            store.log("read name: queued for " + String(selection.applicationTokens.count - named) + " unnamed app(s)")
+            Task { await identifyByReading() }
+        }
     }
 
     /// The bundle identifier the user said this guarded app is, or "" if not set.
@@ -121,9 +125,13 @@ final class GuardManager {
 
     /// Tokens already tried this launch, so reading is not repeated every time the list appears.
     @ObservationIgnored private var triedReading: Set<String> = []
+    @ObservationIgnored private var isReading = false
 
     /// For guarded apps still unnamed, reads the name off a picture of iOS's own label and remembers the match.
     func identifyByReading() async {
+        guard !isReading else { return }
+        isReading = true
+        defer { isReading = false }
         for token in selection.applicationTokens {
             guard let key = GuardShield.tokenKey(for: token), store.returnMap[key] == nil, !triedReading.contains(key) else { continue }
             triedReading.insert(key)
