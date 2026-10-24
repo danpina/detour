@@ -48,6 +48,7 @@ jobs:
           echo "ASC_KEY_PATH=$KEY_PATH" >> "$GITHUB_ENV"
 
       - name: Clear leftover CI certificates
+        continue-on-error: true
         # Earlier runs leave certificates behind that this machine can never use; Apple caps how many an account may hold.
         run: python3 .github/scripts/revoke_api_certs.py
 
