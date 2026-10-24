@@ -8,6 +8,14 @@ struct SettingsView: View {
     }
 
     @State private var sheet: SettingsSheet?
+
+    /// "Detour 0.1 (build 24)": which build is installed.
+    private var versionLine: String {
+        let info = Bundle.main.infoDictionary
+        let version = info?["CFBundleShortVersionString"] as? String ?? "?"
+        let build = info?["CFBundleVersion"] as? String ?? "?"
+        return "Detour \(version) (build \(build))"
+    }
     @State private var confirmErase = false
     @State private var reminderDenied = false
 
@@ -101,8 +109,7 @@ struct SettingsView: View {
                 Section {
                     Link("Privacy", destination: URL(string: "https://danpina.github.io/detour/privacy.html")!)
                 } footer: {
-                    let info = Bundle.main.infoDictionary
-                    Text("Detour " + ((info?["CFBundleShortVersionString"] as? String) ?? "?") + " (build " + ((info?["CFBundleVersion"] as? String) ?? "?") + ")")
+                    Text(versionLine)
                 }
 
                 DebugLogSection()
