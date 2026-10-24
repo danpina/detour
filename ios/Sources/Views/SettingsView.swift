@@ -100,6 +100,9 @@ struct SettingsView: View {
 
                 Section {
                     Link("Privacy", destination: URL(string: "https://danpina.github.io/detour/privacy.html")!)
+                } footer: {
+                    let info = Bundle.main.infoDictionary
+                    Text("Detour " + ((info?["CFBundleShortVersionString"] as? String) ?? "?") + " (build " + ((info?["CFBundleVersion"] as? String) ?? "?") + ")")
                 }
 
                 DebugLogSection()
