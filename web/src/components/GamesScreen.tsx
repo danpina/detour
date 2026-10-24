@@ -36,25 +36,34 @@ export function GamesScreen() {
           ))}
         </div>
       </div>
-      <div className="mt-6 space-y-3">
-        {GAMES.map((g) => {
-          const s = getStats(g.id);
-          return (
-            <button
-              key={g.id}
-              onClick={() => setPlaying(g)}
-              className="flex w-full items-center gap-4 rounded-2xl border border-neutral-200 bg-white p-4 text-left active:scale-[0.99] dark:border-neutral-800 dark:bg-neutral-900"
-            >
-              <span className="text-3xl">{g.emoji}</span>
-              <span className="flex-1">
-                <span className="block font-semibold">{g.name}</span>
-                <span className="block text-sm text-neutral-500 dark:text-neutral-400">{g.blurb}</span>
-              </span>
-              {s.plays > 0 && <span className="text-xs text-neutral-500 dark:text-neutral-400">Best {s.best}</span>}
-            </button>
-          );
-        })}
-      </div>
+      {[
+        { title: "Learn", games: GAMES.filter((g) => g.learn) },
+        { title: "Just for fun", games: GAMES.filter((g) => !g.learn) },
+      ].map((group) => (
+        <div key={group.title} className="mt-6">
+          <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">{group.title}</h2>
+          <div className="mt-2 space-y-3">
+            {group.games.map((g) => {
+              const s = getStats(g.id);
+              const line = g.progress?.() ?? null;
+              return (
+                <button
+                  key={g.id}
+                  onClick={() => setPlaying(g)}
+                  className="flex w-full items-center gap-4 rounded-2xl border border-neutral-200 bg-white p-4 text-left active:scale-[0.99] dark:border-neutral-800 dark:bg-neutral-900"
+                >
+                  <span className="text-3xl">{g.emoji}</span>
+                  <span className="flex-1">
+                    <span className="block font-semibold">{g.name}</span>
+                    <span className="block text-sm text-neutral-500 dark:text-neutral-400">{line ?? g.blurb}</span>
+                  </span>
+                  {s.plays > 0 && <span className="text-xs text-neutral-500 dark:text-neutral-400">Best {s.best}</span>}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

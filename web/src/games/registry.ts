@@ -6,6 +6,11 @@ import { LogicGame } from "./logic/LogicGame";
 import { MemoryGame } from "./memory/MemoryGame";
 import { PatternsGame } from "./patterns/PatternsGame";
 import { SpanishGame } from "./spanish/SpanishGame";
+import { LOGIC_ITEMS } from "./logic/logicData";
+import { loadLogicProgress } from "./logic/progress";
+import { loadProgress as loadSpanishProgress } from "./spanish/progress";
+import { WORDS } from "./spanish/spanishData";
+import { LEARNED_AT } from "./spanish/spanishLogic";
 import { WordsGame } from "./words/WordsGame";
 
 /**
@@ -24,14 +29,29 @@ export type GameDef = {
   blurb: string;
   emoji: string;
   Component: ComponentType<GameProps>;
+  /** Learning games build real skill over time and show how far you are; the rest are just for fun. */
+  learn?: boolean;
+  /** A short line about how far you are, or null before you start. */
+  progress?: () => string | null;
 };
+
+function spanishProgress(): string | null {
+  const p = loadSpanishProgress();
+  const learned = WORDS.filter((w) => (p.known[w.key] ?? 0) >= LEARNED_AT).length;
+  return learned > 0 ? `${learned} of ${WORDS.length} words learned` : null;
+}
+
+function logicProgress(): string | null {
+  const n = Object.values(loadLogicProgress().solved).filter((v) => v > 0).length;
+  return n > 0 ? `${n} of ${LOGIC_ITEMS.length} puzzles solved` : null;
+}
 
 export const GAMES: GameDef[] = [
   { id: "chess", name: "Chess tactics", blurb: "Find the checkmate in one", emoji: "♟️", Component: ChessGame },
   { id: "patterns", name: "What comes next?", blurb: "Spot the pattern in a sequence", emoji: "🔢", Component: PatternsGame },
   { id: "words", name: "Word scramble", blurb: "Unscramble the word", emoji: "🔤", Component: WordsGame },
-  { id: "geo", name: "Geography", blurb: "Flags, capitals and more", emoji: "🌍", Component: GeoGame },
+  { id: "geo", name: "Geography", blurb: "Flags, capitals and more", emoji: "🌍", Component: GeoGame, learn: true },
   { id: "memory", name: "Memory", blurb: "Remember digits and patterns", emoji: "🧠", Component: MemoryGame },
-  { id: "spanish", name: "Spanish", blurb: "Learn words that stick", emoji: "🇪🇸", Component: SpanishGame },
-  { id: "logic", name: "Logic", blurb: "Reason it out and spot the flaw", emoji: "🧩", Component: LogicGame },
+  { id: "spanish", name: "Spanish", blurb: "Learn words that stick", emoji: "🇪🇸", Component: SpanishGame, learn: true, progress: spanishProgress },
+  { id: "logic", name: "Logic", blurb: "Reason it out and spot the flaw", emoji: "🧩", Component: LogicGame, learn: true, progress: logicProgress },
 ];
