@@ -1,7 +1,7 @@
 import SwiftUI
 
 enum GameId: String, CaseIterable, Identifiable {
-    case chess, patterns, words, geo, memory, spanish
+    case chess, patterns, words, geo, memory, spanish, logic
 
     var id: String { rawValue }
 
@@ -13,6 +13,7 @@ enum GameId: String, CaseIterable, Identifiable {
         case .geo: return "Geography"
         case .memory: return "Memory"
         case .spanish: return "Spanish"
+        case .logic: return "Logic"
         }
     }
 
@@ -24,6 +25,7 @@ enum GameId: String, CaseIterable, Identifiable {
         case .geo: return "Flags, capitals and more"
         case .memory: return "Remember digits and patterns"
         case .spanish: return "Learn words that stick"
+        case .logic: return "Reason it out and spot the flaw"
         }
     }
 
@@ -38,6 +40,7 @@ enum GameId: String, CaseIterable, Identifiable {
         case .geo: return "🌍"
         case .memory: return "🧠"
         case .spanish: return "🇪🇸"
+        case .logic: return "🧩"
         }
     }
 }
@@ -54,5 +57,6 @@ func gameView(for id: GameId, onExit: @escaping () -> Void, embedded: ((Int) -> 
     case .geo: GeoGameView(onExit: onExit, embedded: embedded)
     case .memory: MemoryGameView(onExit: onExit, embedded: embedded)
     case .spanish: SpanishGameView(onExit: onExit, embedded: embedded)
+    case .logic: LogicGameView(onExit: onExit, embedded: embedded)
     }
 }

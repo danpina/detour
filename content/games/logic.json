@@ -1,0 +1,752 @@
+{
+ "fallacies": [
+  "Ad hominem",
+  "Straw man",
+  "False dilemma",
+  "Slippery slope",
+  "Circular reasoning",
+  "Appeal to popularity",
+  "Hasty generalisation",
+  "Post hoc"
+ ],
+ "items": [
+  {
+   "id": "syl-1",
+   "kind": "syllogism",
+   "level": 1,
+   "prompt": "All cats are animals. Tom is a cat.\nSo: Tom is an animal.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "Tom belongs to a group that sits inside \"animals\", so he is one too."
+  },
+  {
+   "id": "syl-2",
+   "kind": "syllogism",
+   "level": 1,
+   "prompt": "All birds have feathers. A robin is a bird.\nSo: A robin has feathers.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "What is true of every bird is true of a robin."
+  },
+  {
+   "id": "syl-3",
+   "kind": "syllogism",
+   "level": 1,
+   "prompt": "All fish live in water. A dolphin lives in water.\nSo: A dolphin is a fish.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "Living in water is not only for fish. A dolphin is a mammal. Sharing a trait doesn't put you in the group."
+  },
+  {
+   "id": "syl-4",
+   "kind": "syllogism",
+   "level": 1,
+   "prompt": "All roses are flowers. Some flowers fade quickly.\nSo: Some roses fade quickly.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "The flowers that fade quickly might not be roses at all."
+  },
+  {
+   "id": "syl-5",
+   "kind": "syllogism",
+   "level": 1,
+   "prompt": "No reptiles are mammals. A snake is a reptile.\nSo: A snake is not a mammal.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "If the two groups never overlap, a member of one can't be in the other."
+  },
+  {
+   "id": "syl-6",
+   "kind": "syllogism",
+   "level": 2,
+   "prompt": "If it rains, the street is wet. It rained.\nSo: The street is wet.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "This is the basic move: the condition happened, so the result follows."
+  },
+  {
+   "id": "syl-7",
+   "kind": "syllogism",
+   "level": 2,
+   "prompt": "If it rains, the street is wet. The street is wet.\nSo: It rained.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "A street can be wet for other reasons: a sprinkler, a burst pipe. The result doesn't prove the cause."
+  },
+  {
+   "id": "syl-8",
+   "kind": "syllogism",
+   "level": 2,
+   "prompt": "If it rains, the street is wet. The street is dry.\nSo: It did not rain.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "If rain always makes it wet, a dry street means no rain. This move is valid."
+  },
+  {
+   "id": "syl-9",
+   "kind": "syllogism",
+   "level": 2,
+   "prompt": "If I study, I pass. I did not study.\nSo: I will not pass.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "You might pass another way. The rule says what studying brings, not that nothing else can."
+  },
+  {
+   "id": "syl-10",
+   "kind": "syllogism",
+   "level": 2,
+   "prompt": "All doctors are graduates. Maria is a graduate.\nSo: Maria is a doctor.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "Many graduates aren't doctors. The rule only runs one way."
+  },
+  {
+   "id": "syl-11",
+   "kind": "syllogism",
+   "level": 2,
+   "prompt": "Every square is a rectangle. Every rectangle has four sides.\nSo: Every square has four sides.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "Chain the groups: squares sit inside rectangles, which sit inside four-sided shapes."
+  },
+  {
+   "id": "syl-12",
+   "kind": "syllogism",
+   "level": 3,
+   "prompt": "Some artists are teachers. All teachers are patient.\nSo: Some artists are patient.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "At least one artist is a teacher, and every teacher is patient, so that artist is patient."
+  },
+  {
+   "id": "syl-13",
+   "kind": "syllogism",
+   "level": 3,
+   "prompt": "Some cars are electric. Some electric things are cheap.\nSo: Some cars are cheap.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "The electric things that are cheap could all be bikes. The two \"some\" groups need not meet."
+  },
+  {
+   "id": "syl-14",
+   "kind": "syllogism",
+   "level": 3,
+   "prompt": "No honest person lies. Some politicians lie.\nSo: Some politicians are not honest.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "A politician who lies can't be honest, because honest people never lie."
+  },
+  {
+   "id": "syl-15",
+   "kind": "syllogism",
+   "level": 3,
+   "prompt": "All members can enter. Sam can enter.\nSo: Sam is a member.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "Guests, staff and others might be able to enter too."
+  },
+  {
+   "id": "syl-16",
+   "kind": "syllogism",
+   "level": 3,
+   "prompt": "If the alarm rings, everyone leaves. Nobody left.\nSo: The alarm did not ring.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "If ringing always empties the building, nobody leaving means it didn't ring."
+  },
+  {
+   "id": "fal-1",
+   "kind": "fallacy",
+   "level": 1,
+   "prompt": "\"Don't listen to her view on diets. She's not even a size 6.\"",
+   "options": [
+    "Ad hominem",
+    "False dilemma",
+    "Post hoc",
+    "Straw man"
+   ],
+   "answer": "Ad hominem",
+   "why": "It attacks the person instead of the argument."
+  },
+  {
+   "id": "fal-2",
+   "kind": "fallacy",
+   "level": 1,
+   "prompt": "\"Everyone is buying this phone, so it must be the best.\"",
+   "options": [
+    "Ad hominem",
+    "Appeal to popularity",
+    "Circular reasoning",
+    "Slippery slope"
+   ],
+   "answer": "Appeal to popularity",
+   "why": "Lots of people doing something doesn't make it good."
+  },
+  {
+   "id": "fal-3",
+   "kind": "fallacy",
+   "level": 1,
+   "prompt": "\"I met two rude tourists, so tourists are rude.\"",
+   "options": [
+    "False dilemma",
+    "Hasty generalisation",
+    "Post hoc",
+    "Straw man"
+   ],
+   "answer": "Hasty generalisation",
+   "why": "Two examples are too few to describe a whole group."
+  },
+  {
+   "id": "fal-4",
+   "kind": "fallacy",
+   "level": 1,
+   "prompt": "\"You're either with us or against us.\"",
+   "options": [
+    "Ad hominem",
+    "Circular reasoning",
+    "False dilemma",
+    "Slippery slope"
+   ],
+   "answer": "False dilemma",
+   "why": "It offers two options when there are more."
+  },
+  {
+   "id": "fal-5",
+   "kind": "fallacy",
+   "level": 2,
+   "prompt": "\"I wore my lucky socks and we won. The socks made us win.\"",
+   "options": [
+    "Appeal to popularity",
+    "Circular reasoning",
+    "Post hoc",
+    "Straw man"
+   ],
+   "answer": "Post hoc",
+   "why": "Coming after something isn't the same as being caused by it."
+  },
+  {
+   "id": "fal-6",
+   "kind": "fallacy",
+   "level": 2,
+   "prompt": "\"If we allow one late homework, soon nobody will hand anything in on time.\"",
+   "options": [
+    "Ad hominem",
+    "False dilemma",
+    "Hasty generalisation",
+    "Slippery slope"
+   ],
+   "answer": "Slippery slope",
+   "why": "It claims a small step leads to disaster without showing the steps in between."
+  },
+  {
+   "id": "fal-7",
+   "kind": "fallacy",
+   "level": 2,
+   "prompt": "\"The book is true because it says so on page one.\"",
+   "options": [
+    "Appeal to popularity",
+    "Circular reasoning",
+    "Post hoc",
+    "Straw man"
+   ],
+   "answer": "Circular reasoning",
+   "why": "The conclusion is used as its own proof."
+  },
+  {
+   "id": "fal-8",
+   "kind": "fallacy",
+   "level": 2,
+   "prompt": "A: \"We should spend more on libraries.\" B: \"So you want to cut money from hospitals?\"",
+   "options": [
+    "Ad hominem",
+    "False dilemma",
+    "Slippery slope",
+    "Straw man"
+   ],
+   "answer": "Straw man",
+   "why": "B swaps A's point for an easier one to attack."
+  },
+  {
+   "id": "fal-9",
+   "kind": "fallacy",
+   "level": 3,
+   "prompt": "\"Crime rose after the new mayor took office, so the mayor caused it.\"",
+   "options": [
+    "Circular reasoning",
+    "Hasty generalisation",
+    "Post hoc",
+    "Slippery slope"
+   ],
+   "answer": "Post hoc",
+   "why": "Other things changed too. Timing alone doesn't show cause."
+  },
+  {
+   "id": "fal-10",
+   "kind": "fallacy",
+   "level": 3,
+   "prompt": "\"Of course the council is right. Councils are never wrong about this.\"",
+   "options": [
+    "Ad hominem",
+    "Appeal to popularity",
+    "Circular reasoning",
+    "Straw man"
+   ],
+   "answer": "Circular reasoning",
+   "why": "\"Right\" is just restated as \"never wrong\"."
+  },
+  {
+   "id": "fal-11",
+   "kind": "fallacy",
+   "level": 3,
+   "prompt": "\"He's a banker, so his idea about climate can't be any good.\"",
+   "options": [
+    "Ad hominem",
+    "False dilemma",
+    "Post hoc",
+    "Straw man"
+   ],
+   "answer": "Ad hominem",
+   "why": "The job is attacked, not the idea."
+  },
+  {
+   "id": "fal-12",
+   "kind": "fallacy",
+   "level": 3,
+   "prompt": "\"Either we ban cars completely or the planet burns.\"",
+   "options": [
+    "False dilemma",
+    "Hasty generalisation",
+    "Slippery slope",
+    "Straw man"
+   ],
+   "answer": "False dilemma",
+   "why": "There is a whole range between banning everything and doing nothing."
+  },
+  {
+   "id": "ord-1",
+   "kind": "order",
+   "level": 1,
+   "prompt": "Kai is heavier than Ivo. Lea is heavier than Kai.\nWho is the heaviest?",
+   "options": [
+    "Kai",
+    "Lea",
+    "Ivo"
+   ],
+   "answer": "Lea",
+   "why": "Lea > Kai, Kai > Ivo. So Lea is the heaviest."
+  },
+  {
+   "id": "ord-2",
+   "kind": "order",
+   "level": 1,
+   "prompt": "Ana is taller than Ben. Ben is taller than Dee.\nWho is the tallest?",
+   "options": [
+    "Ben",
+    "Dee",
+    "Ana"
+   ],
+   "answer": "Ana",
+   "why": "Ana > Ben, Ben > Dee. So Ana is the tallest."
+  },
+  {
+   "id": "ord-3",
+   "kind": "order",
+   "level": 1,
+   "prompt": "Jo is heavier than Cy. Cy is heavier than Hana.\nWho is the heaviest?",
+   "options": [
+    "Cy",
+    "Hana",
+    "Jo"
+   ],
+   "answer": "Jo",
+   "why": "Jo > Cy, Cy > Hana. So Jo is the heaviest."
+  },
+  {
+   "id": "ord-4",
+   "kind": "order",
+   "level": 1,
+   "prompt": "Ben is faster than Kai. Ana is faster than Ben.\nWho is the fastest?",
+   "options": [
+    "Ben",
+    "Ana",
+    "Kai"
+   ],
+   "answer": "Ana",
+   "why": "Ana > Ben, Ben > Kai. So Ana is the fastest."
+  },
+  {
+   "id": "ord-5",
+   "kind": "order",
+   "level": 1,
+   "prompt": "Hana is faster than Lea. Ana is faster than Hana.\nWho is the fastest?",
+   "options": [
+    "Lea",
+    "Ana",
+    "Hana"
+   ],
+   "answer": "Ana",
+   "why": "Ana > Hana, Hana > Lea. So Ana is the fastest."
+  },
+  {
+   "id": "ord-6",
+   "kind": "order",
+   "level": 1,
+   "prompt": "Dee is older than Cy. Cy is older than Eli.\nWho is the oldest?",
+   "options": [
+    "Dee",
+    "Eli",
+    "Cy"
+   ],
+   "answer": "Dee",
+   "why": "Dee > Cy, Cy > Eli. So Dee is the oldest."
+  },
+  {
+   "id": "ord-7",
+   "kind": "order",
+   "level": 1,
+   "prompt": "Ivo is heavier than Eli. Eli is heavier than Jo.\nWho is the heaviest?",
+   "options": [
+    "Jo",
+    "Eli",
+    "Ivo"
+   ],
+   "answer": "Ivo",
+   "why": "Ivo > Eli, Eli > Jo. So Ivo is the heaviest."
+  },
+  {
+   "id": "ord-8",
+   "kind": "order",
+   "level": 1,
+   "prompt": "Kai is faster than Jo. Jo is faster than Ivo.\nWho is the fastest?",
+   "options": [
+    "Jo",
+    "Kai",
+    "Ivo"
+   ],
+   "answer": "Kai",
+   "why": "Kai > Jo, Jo > Ivo. So Kai is the fastest."
+  },
+  {
+   "id": "ord-9",
+   "kind": "order",
+   "level": 2,
+   "prompt": "Gus is taller than Ana. Ana is taller than Cy. Dee is taller than Gus.\nWho is the tallest?",
+   "options": [
+    "Gus",
+    "Cy",
+    "Ana",
+    "Dee"
+   ],
+   "answer": "Dee",
+   "why": "Dee > Gus, Gus > Ana, Ana > Cy. So Dee is the tallest."
+  },
+  {
+   "id": "ord-10",
+   "kind": "order",
+   "level": 2,
+   "prompt": "Cy is heavier than Ana. Ivo is heavier than Eli. Ana is heavier than Ivo.\nWho is the lightest?",
+   "options": [
+    "Cy",
+    "Ivo",
+    "Eli",
+    "Ana"
+   ],
+   "answer": "Eli",
+   "why": "Cy > Ana, Ana > Ivo, Ivo > Eli. So Eli is the lightest."
+  },
+  {
+   "id": "ord-11",
+   "kind": "order",
+   "level": 2,
+   "prompt": "Hana is taller than Eli. Ivo is taller than Hana. Eli is taller than Cy.\nWho is the tallest?",
+   "options": [
+    "Hana",
+    "Eli",
+    "Ivo",
+    "Cy"
+   ],
+   "answer": "Ivo",
+   "why": "Ivo > Hana, Hana > Eli, Eli > Cy. So Ivo is the tallest."
+  },
+  {
+   "id": "ord-12",
+   "kind": "order",
+   "level": 2,
+   "prompt": "Kai is older than Dee. Ben is older than Cy. Cy is older than Kai.\nWho is the youngest?",
+   "options": [
+    "Kai",
+    "Cy",
+    "Dee",
+    "Ben"
+   ],
+   "answer": "Dee",
+   "why": "Ben > Cy, Cy > Kai, Kai > Dee. So Dee is the youngest."
+  },
+  {
+   "id": "ord-13",
+   "kind": "order",
+   "level": 2,
+   "prompt": "Dee is heavier than Jo. Jo is heavier than Cy. Ana is heavier than Dee.\nWho is the heaviest?",
+   "options": [
+    "Jo",
+    "Ana",
+    "Dee",
+    "Cy"
+   ],
+   "answer": "Ana",
+   "why": "Ana > Dee, Dee > Jo, Jo > Cy. So Ana is the heaviest."
+  },
+  {
+   "id": "ord-14",
+   "kind": "order",
+   "level": 2,
+   "prompt": "Gus is faster than Fay. Jo is faster than Gus. Fay is faster than Eli.\nWho is the slowest?",
+   "options": [
+    "Gus",
+    "Jo",
+    "Eli",
+    "Fay"
+   ],
+   "answer": "Eli",
+   "why": "Jo > Gus, Gus > Fay, Fay > Eli. So Eli is the slowest."
+  },
+  {
+   "id": "ord-15",
+   "kind": "order",
+   "level": 2,
+   "prompt": "Cy is taller than Fay. Fay is taller than Gus. Gus is taller than Dee.\nWho is the tallest?",
+   "options": [
+    "Fay",
+    "Gus",
+    "Dee",
+    "Cy"
+   ],
+   "answer": "Cy",
+   "why": "Cy > Fay, Fay > Gus, Gus > Dee. So Cy is the tallest."
+  },
+  {
+   "id": "ord-16",
+   "kind": "order",
+   "level": 3,
+   "prompt": "Fay is heavier than Hana. Jo is heavier than Lea. Lea is heavier than Cy. Hana is heavier than Jo.\nWho is the lightest?",
+   "options": [
+    "Cy",
+    "Lea",
+    "Jo",
+    "Fay"
+   ],
+   "answer": "Cy",
+   "why": "Fay > Hana, Hana > Jo, Jo > Lea, Lea > Cy. So Cy is the lightest."
+  },
+  {
+   "id": "ord-17",
+   "kind": "order",
+   "level": 3,
+   "prompt": "Ben is faster than Ivo. Gus is faster than Ben. Jo is faster than Gus. Eli is faster than Jo.\nWho is the fastest?",
+   "options": [
+    "Ben",
+    "Gus",
+    "Eli",
+    "Jo"
+   ],
+   "answer": "Eli",
+   "why": "Eli > Jo, Jo > Gus, Gus > Ben, Ben > Ivo. So Eli is the fastest."
+  },
+  {
+   "id": "ord-18",
+   "kind": "order",
+   "level": 3,
+   "prompt": "Ben is taller than Gus. Eli is taller than Ben. Gus is taller than Kai. Kai is taller than Ana.\nWho is the shortest?",
+   "options": [
+    "Ana",
+    "Ben",
+    "Kai",
+    "Eli"
+   ],
+   "answer": "Ana",
+   "why": "Eli > Ben, Ben > Gus, Gus > Kai, Kai > Ana. So Ana is the shortest."
+  },
+  {
+   "id": "ord-19",
+   "kind": "order",
+   "level": 3,
+   "prompt": "Ivo is faster than Dee. Dee is faster than Fay. Cy is faster than Ivo. Lea is faster than Cy.\nWho is the fastest?",
+   "options": [
+    "Fay",
+    "Lea",
+    "Dee",
+    "Ivo"
+   ],
+   "answer": "Lea",
+   "why": "Lea > Cy, Cy > Ivo, Ivo > Dee, Dee > Fay. So Lea is the fastest."
+  },
+  {
+   "id": "ord-20",
+   "kind": "order",
+   "level": 3,
+   "prompt": "Eli is older than Ben. Cy is older than Dee. Ben is older than Hana. Dee is older than Eli.\nWho is the youngest?",
+   "options": [
+    "Cy",
+    "Hana",
+    "Dee",
+    "Ben"
+   ],
+   "answer": "Hana",
+   "why": "Cy > Dee, Dee > Eli, Eli > Ben, Ben > Hana. So Hana is the youngest."
+  },
+  {
+   "id": "ord-21",
+   "kind": "order",
+   "level": 3,
+   "prompt": "Hana is older than Dee. Dee is older than Cy. Gus is older than Hana. Cy is older than Fay.\nWho is the oldest?",
+   "options": [
+    "Dee",
+    "Hana",
+    "Gus",
+    "Fay"
+   ],
+   "answer": "Gus",
+   "why": "Gus > Hana, Hana > Dee, Dee > Cy, Cy > Fay. So Gus is the oldest."
+  },
+  {
+   "id": "ord-22",
+   "kind": "order",
+   "level": 3,
+   "prompt": "Gus is faster than Lea. Jo is faster than Eli. Lea is faster than Ana. Eli is faster than Gus.\nWho is the slowest?",
+   "options": [
+    "Jo",
+    "Lea",
+    "Eli",
+    "Ana"
+   ],
+   "answer": "Ana",
+   "why": "Jo > Eli, Eli > Gus, Gus > Lea, Lea > Ana. So Ana is the slowest."
+  },
+  {
+   "id": "puz-1",
+   "kind": "puzzle",
+   "level": 2,
+   "prompt": "Ana says: \"Ben and I both lie.\" Who is telling the truth?",
+   "options": [
+    "Ben only",
+    "Ana only",
+    "Both",
+    "Neither"
+   ],
+   "answer": "Ben only",
+   "why": "If Ana told the truth she would be lying, which is impossible. So Ana lies, which means they do not both lie, so Ben tells the truth."
+  },
+  {
+   "id": "puz-2",
+   "kind": "puzzle",
+   "level": 2,
+   "prompt": "A box holds only red and blue balls. You take out 3 balls and all are red. Which is certain?",
+   "options": [
+    "The box has at least 3 red balls",
+    "The box has more red than blue",
+    "The next ball is red"
+   ],
+   "answer": "The box has at least 3 red balls",
+   "why": "You held three red ones. Nothing else is guaranteed: the box could be mostly blue."
+  },
+  {
+   "id": "puz-3",
+   "kind": "puzzle",
+   "level": 1,
+   "prompt": "Mia is in front of Leo in a queue. Leo is in front of Sam. Who is last?",
+   "options": [
+    "Mia",
+    "Leo",
+    "Sam"
+   ],
+   "answer": "Sam",
+   "why": "Mia, then Leo, then Sam."
+  },
+  {
+   "id": "puz-4",
+   "kind": "puzzle",
+   "level": 3,
+   "prompt": "One of two doors is safe. The sign on door A says: \"A or B is safe.\" The sign on door B says: \"Door A is not safe.\" Exactly one sign is true. Which door is safe?",
+   "options": [
+    "Door A",
+    "Door B"
+   ],
+   "answer": "Door A",
+   "why": "Door A's sign is always true, because one of the doors is safe. Exactly one sign is true, so door B's sign is false, which means door A is safe."
+  },
+  {
+   "id": "puz-5",
+   "kind": "puzzle",
+   "level": 3,
+   "prompt": "Three friends each own a different pet: cat, dog, fish. Ana doesn't own the cat. Ben owns neither the dog nor the cat. Who owns the dog?",
+   "options": [
+    "Ana",
+    "Ben",
+    "Cy"
+   ],
+   "answer": "Ana",
+   "why": "Ben can only have the fish. Ana can't have the cat, so she has the dog. Cy has the cat."
+  },
+  {
+   "id": "puz-6",
+   "kind": "puzzle",
+   "level": 3,
+   "prompt": "A farmer says: \"All my chickens are brown, and some of my animals are chickens.\" Which must be true?",
+   "options": [
+    "Some of his animals are brown",
+    "All his animals are brown",
+    "Some chickens are not brown"
+   ],
+   "answer": "Some of his animals are brown",
+   "why": "At least one animal is a chicken, and every chicken is brown."
+  }
+ ]
+}

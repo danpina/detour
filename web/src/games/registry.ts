@@ -2,6 +2,7 @@ import type { ComponentType } from "react";
 import type { GameId } from "./ids";
 import { ChessGame } from "./chess/ChessGame";
 import { GeoGame } from "./geo/GeoGame";
+import { LogicGame } from "./logic/LogicGame";
 import { MemoryGame } from "./memory/MemoryGame";
 import { PatternsGame } from "./patterns/PatternsGame";
 import { SpanishGame } from "./spanish/SpanishGame";
@@ -32,4 +33,5 @@ export const GAMES: GameDef[] = [
   { id: "geo", name: "Geography", blurb: "Flags, capitals and more", emoji: "🌍", Component: GeoGame },
   { id: "memory", name: "Memory", blurb: "Remember digits and patterns", emoji: "🧠", Component: MemoryGame },
   { id: "spanish", name: "Spanish", blurb: "Learn words that stick", emoji: "🇪🇸", Component: SpanishGame },
+  { id: "logic", name: "Logic", blurb: "Reason it out and spot the flaw", emoji: "🧩", Component: LogicGame },
 ];
