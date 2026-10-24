@@ -4,6 +4,7 @@ import { ChessGame } from "./chess/ChessGame";
 import { GeoGame } from "./geo/GeoGame";
 import { MemoryGame } from "./memory/MemoryGame";
 import { PatternsGame } from "./patterns/PatternsGame";
+import { SpanishGame } from "./spanish/SpanishGame";
 import { WordsGame } from "./words/WordsGame";
 
 /**
@@ -30,4 +31,5 @@ export const GAMES: GameDef[] = [
   { id: "words", name: "Word scramble", blurb: "Unscramble the word", emoji: "🔤", Component: WordsGame },
   { id: "geo", name: "Geography", blurb: "Flags, capitals and more", emoji: "🌍", Component: GeoGame },
   { id: "memory", name: "Memory", blurb: "Remember digits and patterns", emoji: "🧠", Component: MemoryGame },
+  { id: "spanish", name: "Spanish", blurb: "Learn words that stick", emoji: "🇪🇸", Component: SpanishGame },
 ];
