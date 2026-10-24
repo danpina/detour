@@ -179,6 +179,19 @@ final class GuardStore {
         }
     }
 
+    /// Which app a token is: what the user set, else what iOS told us (its bundle or its name), which is then remembered.
+    /// So the user rarely has to say; they only do for apps iOS keeps anonymous. Returns the bundle identifier, or nil.
+    @discardableResult
+    func identify(tokenKey key: String?, bundle: String?, name: String?) -> String? {
+        guard let key else { return ReturnApps.resolve(bundle: bundle, name: name) }
+        var map = returnMap
+        if let known = map[key] { return known }
+        guard let found = ReturnApps.resolve(bundle: bundle, name: name) else { return nil }
+        map[key] = found
+        returnMap = map
+        return found
+    }
+
     /// The token (as text) of the app the shield was last shown for, if the shield told us.
     var shieldedTokenKey: String? {
         get { defaults.string(forKey: Key.shieldedToken) }

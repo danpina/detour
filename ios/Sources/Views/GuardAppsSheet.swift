@@ -29,8 +29,8 @@ struct GuardAppsSheet: View {
     }
 }
 
-/// The apps being guarded, each with a "which app is this?" choice. iOS keeps the shield blind to app names, so the user says
-/// once which app each one is; Detour can then take them back to it after a detour. The choice stays on the device.
+/// The apps being guarded. Detour works out which app each one is from what iOS says; only for an app it cannot recognise does
+/// it ask, and only so it can take the user back to it after a detour. The answer stays on the device.
 struct GuardedAppsList: View {
     @Environment(GuardManager.self) private var guardManager
 
@@ -38,26 +38,37 @@ struct GuardedAppsList: View {
         guardManager.selection.applicationTokens.sorted { (GuardShield.tokenKey(for: $0) ?? "") < (GuardShield.tokenKey(for: $1) ?? "") }
     }
 
+    private var anyUnknown: Bool {
+        tokens.contains { guardManager.returnBundle(for: $0).isEmpty }
+    }
+
     var body: some View {
         if !tokens.isEmpty {
             ForEach(tokens, id: \.self) { token in
+                let bundle = guardManager.returnBundle(for: token)
                 HStack {
                     Label(token)
                         .labelStyle(.titleAndIcon)
                     Spacer()
-                    Picker("Opens in", selection: Binding(
-                        get: { guardManager.returnBundle(for: token) },
-                        set: { guardManager.setReturnBundle($0, for: token) }
-                    )) {
-                        Text("Not set").tag("")
-                        ForEach(ReturnApps.popular) { app in Text(app.name).tag(app.bundle) }
+                    if bundle.isEmpty {
+                        Picker("Which app?", selection: Binding(
+                            get: { guardManager.returnBundle(for: token) },
+                            set: { guardManager.setReturnBundle($0, for: token) }
+                        )) {
+                            Text("Which app?").tag("")
+                            ForEach(ReturnApps.popular) { app in Text(app.name).tag(app.bundle) }
+                        }
+                        .labelsHidden()
+                    } else {
+                        Image(systemName: "checkmark.circle.fill").foregroundStyle(.tint)
                     }
-                    .labelsHidden()
                 }
             }
-            Text("Tell Detour which app each one is, once, and \"Go back to\" will take you to the right one after a detour. iOS doesn't share app names with Detour.")
-                .font(.footnote)
-                .foregroundStyle(.secondary)
+            if anyUnknown {
+                Text("Detour couldn't tell which of these is which. Say once, only if you want \"Go back to\" to take you to the right app after a detour.")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            }
         }
     }
 }

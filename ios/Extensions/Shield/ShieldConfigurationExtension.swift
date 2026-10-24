@@ -31,7 +31,7 @@ final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         let bundle = application.bundleIdentifier
         let name = application.localizedDisplayName
         let key = application.token.flatMap { GuardShield.tokenKey(for: $0) }
-        let mapped = key.flatMap { store.returnMap[$0] }
+        let mapped = store.identify(tokenKey: key, bundle: bundle, name: name)
         // Log what the shield was told, at most every 5 seconds.
         if store.shieldLogStamp.map({ Date().timeIntervalSince($0) > 5 }) ?? true {
             store.shieldLogStamp = Date()

@@ -45,3 +45,31 @@ final class ReturnAppsPickerTests: XCTestCase {
         }
     }
 }
+
+final class IdentifyAppTests: XCTestCase {
+    private func makeStore() -> GuardStore {
+        let name = "detour.tests.identify." + UUID().uuidString
+        let defaults = UserDefaults(suiteName: name)!
+        defaults.removePersistentDomain(forName: name)
+        return GuardStore(defaults: defaults)
+    }
+
+    func testNamesAndBundlesResolveToKnownApps() {
+        XCTAssertEqual(ReturnApps.resolve(bundle: nil, name: "LinkedIn"), "com.linkedin.LinkedIn")
+        XCTAssertEqual(ReturnApps.resolve(bundle: nil, name: "twitter"), "com.atebits.Tweetie2")
+        XCTAssertEqual(ReturnApps.resolve(bundle: "com.burbn.instagram", name: nil), "com.burbn.instagram")
+        XCTAssertNil(ReturnApps.resolve(bundle: "com.example.unknown", name: "Some Game"))
+        XCTAssertNil(ReturnApps.resolve(bundle: nil, name: nil))
+    }
+
+    func testWhatIsLearnedIsRememberedAndTheUsersChoiceWins() {
+        let store = makeStore()
+        XCTAssertNil(store.identify(tokenKey: "k1", bundle: nil, name: nil))
+        XCTAssertEqual(store.identify(tokenKey: "k1", bundle: nil, name: "Instagram"), "com.burbn.instagram")
+        // Remembered: no name needed the next time.
+        XCTAssertEqual(store.identify(tokenKey: "k1", bundle: nil, name: nil), "com.burbn.instagram")
+        // Something already stored is not overwritten.
+        store.returnMap = ["k2": "com.facebook.Facebook"]
+        XCTAssertEqual(store.identify(tokenKey: "k2", bundle: nil, name: "Instagram"), "com.facebook.Facebook")
+    }
+}

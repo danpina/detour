@@ -76,11 +76,27 @@ final class GuardManager {
     /// Call when the picker closes.
     func saveSelection() {
         store.selectionData = GuardShield.encode(selection)
+        identifyApps()
         GuardShield.syncMonitors(store)
         if settings.enabled && !store.isUnlocked() { GuardShield.apply(store, reason: "apps changed") }
     }
 
     // MARK: Which guarded app is which
+
+    /// Works out which app each guarded token is, from whatever iOS tells us (its bundle or name), and remembers it.
+    /// Apps it cannot tell stay unnamed until the shield sees them or the user says. Logs what iOS said, for debugging.
+    func identifyApps() {
+        for token in selection.applicationTokens {
+            let key = GuardShield.tokenKey(for: token)
+            let app = Application(token: token)
+            let before = key.flatMap { store.returnMap[$0] }
+            let found = store.identify(tokenKey: key, bundle: app.bundleIdentifier, name: app.localizedDisplayName)
+            if before == nil {
+                store.log("identify: token=" + GuardShield.shortKey(key) + " bundle=" + (app.bundleIdentifier ?? "nil") + " name=" + (app.localizedDisplayName ?? "nil") + " -> " + (found ?? "unknown"))
+            }
+        }
+        returnMap = store.returnMap
+    }
 
     /// The bundle identifier the user said this guarded app is, or "" if not set.
     func returnBundle(for token: ApplicationToken) -> String {
@@ -135,6 +151,8 @@ final class GuardManager {
     /// Belt and braces: if the timer never fired, the shield goes back the next time Detour is opened.
     func refresh() {
         reloadLog()
+        returnMap = store.returnMap
+        identifyApps()
         settings = store.settings
         guard settings.enabled, hasSelection else { return }
         if !store.isWithinActiveHours() {

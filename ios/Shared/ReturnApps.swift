@@ -53,10 +53,31 @@ enum ReturnApps {
         PopularApp(bundle: "net.whatsapp.WhatsApp", name: "WhatsApp"),
         PopularApp(bundle: "com.netflix.Netflix", name: "Netflix"),
         PopularApp(bundle: "tv.twitch", name: "Twitch"),
+        PopularApp(bundle: "com.linkedin.LinkedIn", name: "LinkedIn"),
+        PopularApp(bundle: "pinterest", name: "Pinterest"),
+        PopularApp(bundle: "com.facebook.Messenger", name: "Messenger"),
+        PopularApp(bundle: "ph.telegra.Telegraph", name: "Telegram"),
+        PopularApp(bundle: "com.spotify.client", name: "Spotify"),
+        PopularApp(bundle: "Alexis.BeReal", name: "BeReal"),
+        PopularApp(bundle: "com.google.chrome.ios", name: "Chrome"),
     ]
 
     static func displayName(for bundleIdentifier: String) -> String? {
         popular.first { $0.bundle == bundleIdentifier }?.name
+    }
+
+    /// The bundle identifier of a known app from the name iOS shows for it (case does not matter; "Twitter" counts as X).
+    static func bundle(forName name: String?) -> String? {
+        guard let name else { return nil }
+        let wanted = name.trimmingCharacters(in: .whitespaces).lowercased()
+        if wanted == "twitter" { return "com.atebits.Tweetie2" }
+        return popular.first { $0.name.lowercased() == wanted }?.bundle
+    }
+
+    /// What iOS told us about an app, turned into a bundle identifier we can open: its bundle if known, else its name.
+    static func resolve(bundle: String?, name: String?) -> String? {
+        if let bundle, url(for: bundle) != nil { return bundle }
+        return self.bundle(forName: name)
     }
 
     static func url(for bundleIdentifier: String) -> URL? {

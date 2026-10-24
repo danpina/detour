@@ -9,7 +9,7 @@ final class ShieldActionExtension: ShieldActionDelegate {
         let store = GuardStore.shared
         let app = Application(token: application)
         let key = GuardShield.tokenKey(for: application)
-        let mapped = key.flatMap { store.returnMap[$0] }
+        let mapped = store.identify(tokenKey: key, bundle: app.bundleIdentifier, name: app.localizedDisplayName)
         store.shieldedTokenKey = key
         if let mapped {
             store.recordShielded(bundle: mapped, name: ReturnApps.displayName(for: mapped))
