@@ -85,6 +85,19 @@ final class GuardManager {
 
     /// Works out which app each guarded token is, from whatever iOS tells us (its bundle or name), and remembers it.
     /// Apps it cannot tell stay unnamed until the shield sees them or the user says. Logs what iOS said, for debugging.
+    /// Bump when the guard code changes, so a pasted log shows which version of it was running.
+    private static let codeTag = "name-reading-v2"
+    @ObservationIgnored private static var loggedBuild = false
+
+    private func logBuildOnce() {
+        guard !Self.loggedBuild else { return }
+        Self.loggedBuild = true
+        let info = Bundle.main.infoDictionary
+        let version = (info?["CFBundleShortVersionString"] as? String) ?? "?"
+        let build = (info?["CFBundleVersion"] as? String) ?? "?"
+        store.log("app: launched, version " + version + " build " + build + ", guard code " + Self.codeTag)
+    }
+
     func identifyApps() {
         for token in selection.applicationTokens {
             let key = GuardShield.tokenKey(for: token)
@@ -96,6 +109,8 @@ final class GuardManager {
             }
         }
         returnMap = store.returnMap
+        let named = selection.applicationTokens.filter { token in GuardShield.tokenKey(for: token).flatMap { store.returnMap[$0] } != nil }.count
+        store.log("identify: " + String(selection.applicationTokens.count) + " guarded apps, " + String(named) + " named")
     }
 
     /// The bundle identifier the user said this guarded app is, or "" if not set.
@@ -112,9 +127,11 @@ final class GuardManager {
         for token in selection.applicationTokens {
             guard let key = GuardShield.tokenKey(for: token), store.returnMap[key] == nil, !triedReading.contains(key) else { continue }
             triedReading.insert(key)
-            let lines = await AppNameReader.read(token)
+            store.log("read name: starting for token " + GuardShield.shortKey(key))
+            let result = await AppNameReader.read(token)
+            let lines = result.lines
             let found = ReturnApps.match(lines: lines)
-            store.log("read name: token=" + GuardShield.shortKey(key) + " text=" + (lines.isEmpty ? "nothing" : lines.joined(separator: " | ")) + " -> " + (found ?? "unknown"))
+            store.log("read name: token=" + GuardShield.shortKey(key) + " " + result.note + " darkPixels=" + String(result.darkPixels) + " text=" + (lines.isEmpty ? "nothing" : lines.joined(separator: " | ")) + " -> " + (found ?? "unknown"))
             if let found {
                 var map = store.returnMap
                 map[key] = found
@@ -171,7 +188,8 @@ final class GuardManager {
 
     /// Belt and braces: if the timer never fired, the shield goes back the next time Detour is opened.
     func refresh() {
-        reloadLog()
+        defer { reloadLog() }
+        logBuildOnce()
         returnMap = store.returnMap
         identifyApps()
         settings = store.settings

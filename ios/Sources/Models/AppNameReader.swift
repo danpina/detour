@@ -9,9 +9,15 @@ import Vision
 /// It is a best effort: if iOS leaves the picture blank, nothing is read and Detour simply asks the user. Nothing leaves the device.
 @MainActor
 enum AppNameReader {
-    /// The lines of text found in the picture of the token's label, or an empty list.
-    static func read(_ token: ApplicationToken) async -> [String] {
-        guard let window = UIApplication.shared.connectedScenes.compactMap({ ($0 as? UIWindowScene)?.keyWindow }).first else { return [] }
+    /// What reading one label produced: the words found, and how many dark pixels the picture had (zero means it came out blank).
+    struct Result {
+        var lines: [String] = []
+        var darkPixels = 0
+        var note = ""
+    }
+
+    static func read(_ token: ApplicationToken) async -> Result {
+        guard let window = UIApplication.shared.connectedScenes.compactMap({ ($0 as? UIWindowScene)?.keyWindow }).first else { return Result(note: "no window") }
         let label = Label(token)
             .labelStyle(.titleOnly)
             .font(.system(size: 34, weight: .semibold))
@@ -38,8 +44,19 @@ enum AppNameReader {
         let image = renderer.image { _ in
             host.view.drawHierarchy(in: host.view.bounds, afterScreenUpdates: true)
         }
-        guard let cgImage = image.cgImage else { return [] }
-        return await recognize(cgImage)
+        guard let cgImage = image.cgImage else { return Result(note: "no image") }
+        let dark = darkPixelCount(cgImage)
+        return Result(lines: await recognize(cgImage), darkPixels: dark, note: "image " + String(cgImage.width) + "x" + String(cgImage.height))
+    }
+
+    /// How many pixels in the picture are dark. Black text on the white background shows up here; a blank picture has none.
+    private static func darkPixelCount(_ image: CGImage) -> Int {
+        let width = image.width
+        let height = image.height
+        var pixels = [UInt8](repeating: 255, count: width * height)
+        guard let context = CGContext(data: &pixels, width: width, height: height, bitsPerComponent: 8, bytesPerRow: width, space: CGColorSpaceCreateDeviceGray(), bitmapInfo: CGImageAlphaInfo.none.rawValue) else { return -1 }
+        context.draw(image, in: CGRect(x: 0, y: 0, width: width, height: height))
+        return pixels.filter { $0 < 100 }.count
     }
 
     private static func recognize(_ image: CGImage) async -> [String] {
