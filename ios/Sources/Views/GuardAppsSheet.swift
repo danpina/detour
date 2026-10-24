@@ -78,13 +78,15 @@ struct GuardAppsSheet: View {
             switch which {
             case .app(let app):
                 AppPickerSheet(title: "Pick " + app.name, initial: guardManager.selection) { draft in
-                    guardManager.commit(draft, as: app.bundle)
-                    target = nil
+                    let problem = guardManager.commit(draft, as: app.bundle)
+                    if problem == nil { target = nil }
+                    return problem
                 } onCancel: { target = nil }
             case .other:
                 AppPickerSheet(title: "Other apps", initial: guardManager.selection) { draft in
-                    guardManager.commit(draft, as: nil)
+                    _ = guardManager.commit(draft, as: nil)
                     target = nil
+                    return nil
                 } onCancel: { target = nil }
             }
         }
@@ -95,9 +97,11 @@ struct GuardAppsSheet: View {
 struct AppPickerSheet: View {
     let title: String
     let initial: FamilyActivitySelection
-    var onDone: (FamilyActivitySelection) -> Void
+    /// Returns a message to show when the pick can't be used.
+    var onDone: (FamilyActivitySelection) -> String?
     var onCancel: () -> Void
     @State private var draft = FamilyActivitySelection()
+    @State private var problem: String?
 
     var body: some View {
         NavigationStack {
@@ -106,7 +110,12 @@ struct AppPickerSheet: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .cancellationAction) { Button("Cancel") { onCancel() } }
-                    ToolbarItem(placement: .confirmationAction) { Button("Done") { onDone(draft) } }
+                    ToolbarItem(placement: .confirmationAction) { Button("Done") { problem = onDone(draft) } }
+                }
+                .alert("One app at a time", isPresented: Binding(get: { problem != nil }, set: { if !$0 { problem = nil } })) {
+                    Button("OK") { problem = nil }
+                } message: {
+                    Text(problem ?? "")
                 }
         }
         .onAppear { draft = initial }

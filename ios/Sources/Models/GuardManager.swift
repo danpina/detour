@@ -66,8 +66,9 @@ final class GuardManager {
         if settings.enabled && !store.isWithinActiveHours() && GuardShield.isShieldOn() {
             GuardShield.removeShield(store, reason: "active hours now exclude this time")
         }
-        // Make sure the shield matches the settings right away (it only goes on if no unlock window is running).
-        if settings.enabled && hasSelection && !store.isUnlocked() && !GuardShield.isShieldOn() {
+        // Changing how strict the guard is ends any unlock window, so the new mode takes effect right away.
+        let modeChanged = before.mode != settings.mode
+        if settings.enabled && hasSelection && (modeChanged || (!store.isUnlocked() && !GuardShield.isShieldOn())) && store.isWithinActiveHours() {
             GuardShield.apply(store, reason: "settings changed and the shield was off")
         }
         reloadLog()
@@ -78,7 +79,8 @@ final class GuardManager {
         store.selectionData = GuardShield.encode(selection)
         identifyApps()
         GuardShield.syncMonitors(store)
-        if settings.enabled && !store.isUnlocked() { GuardShield.apply(store, reason: "apps changed") }
+        // Changing the apps ends any unlock window: the new choice should be guarded right away.
+        if settings.enabled && hasSelection { GuardShield.apply(store, reason: "apps changed") }
     }
 
     // MARK: Which guarded app is which
@@ -86,7 +88,7 @@ final class GuardManager {
     /// Works out which app each guarded token is, from whatever iOS tells us (its bundle or name), and remembers it.
     /// Apps it cannot tell stay unnamed until the shield sees them or the user says. Logs what iOS said, for debugging.
     /// Bump when the guard code changes, so a pasted log shows which version of it was running.
-    private static let codeTag = "guided-pick-v1"
+    private static let codeTag = "guided-pick-v2"
     @ObservationIgnored private static var loggedBuild = false
 
     private func logBuildOnce() {
@@ -133,17 +135,21 @@ final class GuardManager {
     }
 
     /// Keeps what the picker returned. When it was opened for one known app and exactly one new app came back, that app is it.
-    func commit(_ draft: FamilyActivitySelection, as bundle: String?) {
+    /// Returns a message for the user when the pick can't be used (nothing is changed then), or nil when it was kept.
+    func commit(_ draft: FamilyActivitySelection, as bundle: String?) -> String? {
         let added = draft.applicationTokens.subtracting(selection.applicationTokens)
-        selection = draft
         if let bundle {
-            if added.count == 1, let token = added.first {
-                setReturnBundle(bundle, for: token)
-            } else {
-                store.log("guided pick of " + bundle + ": expected 1 new app, got " + String(added.count))
+            guard added.count == 1, let token = added.first else {
+                store.log("guided pick of " + bundle + ": expected 1 new app, got " + String(added.count) + ", ignored")
+                return added.isEmpty ? "Pick the app to guard, then tap Done." : "Pick just one app this time, so Detour knows which one it is."
             }
+            selection = draft
+            setReturnBundle(bundle, for: token)
+        } else {
+            selection = draft
         }
         saveSelection()
+        return nil
     }
 
     func setReturnBundle(_ bundle: String, for token: ApplicationToken) {
