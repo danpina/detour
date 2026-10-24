@@ -65,6 +65,10 @@ struct GuardedAppsList: View {
                 }
             }
             if anyUnknown {
+                Text("Working out which app each one is…")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+                    .task(id: guardManager.selection.applicationTokens.count) { await guardManager.identifyByReading() }
                 Text("Detour couldn't tell which of these is which. Say once, only if you want \"Go back to\" to take you to the right app after a detour.")
                     .font(.footnote)
                     .foregroundStyle(.secondary)

@@ -73,3 +73,14 @@ final class IdentifyAppTests: XCTestCase {
         XCTAssertEqual(store.identify(tokenKey: "k2", bundle: nil, name: "Instagram"), "com.facebook.Facebook")
     }
 }
+
+final class ReadNameMatchTests: XCTestCase {
+    func testTextReadOffTheScreenMatchesKnownApps() {
+        XCTAssertEqual(ReturnApps.match(lines: ["YouTube"]), "com.google.ios.youtube")
+        XCTAssertEqual(ReturnApps.match(lines: ["Linked", "LinkedIn"]), "com.linkedin.LinkedIn")
+        XCTAssertEqual(ReturnApps.match(lines: ["Messenger"]), "com.facebook.Messenger")
+        XCTAssertEqual(ReturnApps.match(lines: ["Twitter"]), "com.atebits.Tweetie2")
+        XCTAssertNil(ReturnApps.match(lines: ["Some Game"]))
+        XCTAssertNil(ReturnApps.match(lines: []))
+    }
+}

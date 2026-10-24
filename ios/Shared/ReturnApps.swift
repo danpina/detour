@@ -74,6 +74,20 @@ enum ReturnApps {
         return popular.first { $0.name.lowercased() == wanted }?.bundle
     }
 
+    /// The known app whose name appears in lines of text read off the screen, or nil. Longer names win ("Messenger" before "Me").
+    static func match(lines: [String]) -> String? {
+        let text = lines.joined(separator: " ").lowercased()
+        if text.isEmpty { return nil }
+        if text.range(of: #"\btwitter\b"#, options: .regularExpression) != nil { return "com.atebits.Tweetie2" }
+        let byLength = popular.sorted { $0.name.count > $1.name.count }
+        for app in byLength {
+            let name = app.name.lowercased()
+            let pattern = "\\b" + NSRegularExpression.escapedPattern(for: name) + "\\b"
+            if text.range(of: pattern, options: .regularExpression) != nil { return app.bundle }
+        }
+        return nil
+    }
+
     /// What iOS told us about an app, turned into a bundle identifier we can open: its bundle if known, else its name.
     static func resolve(bundle: String?, name: String?) -> String? {
         if let bundle, url(for: bundle) != nil { return bundle }

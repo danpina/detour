@@ -104,6 +104,27 @@ final class GuardManager {
         return returnMap[key] ?? ""
     }
 
+    /// Tokens already tried this launch, so reading is not repeated every time the list appears.
+    @ObservationIgnored private var triedReading: Set<String> = []
+
+    /// For guarded apps still unnamed, reads the name off a picture of iOS's own label and remembers the match.
+    func identifyByReading() async {
+        for token in selection.applicationTokens {
+            guard let key = GuardShield.tokenKey(for: token), store.returnMap[key] == nil, !triedReading.contains(key) else { continue }
+            triedReading.insert(key)
+            let lines = await AppNameReader.read(token)
+            let found = ReturnApps.match(lines: lines)
+            store.log("read name: token=" + GuardShield.shortKey(key) + " text=" + (lines.isEmpty ? "nothing" : lines.joined(separator: " | ")) + " -> " + (found ?? "unknown"))
+            if let found {
+                var map = store.returnMap
+                map[key] = found
+                store.returnMap = map
+                returnMap = map
+            }
+        }
+        reloadLog()
+    }
+
     func setReturnBundle(_ bundle: String, for token: ApplicationToken) {
         guard let key = GuardShield.tokenKey(for: token) else { return }
         var map = returnMap
