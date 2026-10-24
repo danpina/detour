@@ -39,6 +39,26 @@ targets:
         UILaunchScreen: {}
         CFBundleDisplayName: "Detour"
         ITSAppUsesNonExemptEncryption: false
+        LSApplicationQueriesSchemes:
+          - instagram
+          - tiktok
+          - youtube
+          - twitter
+          - fb
+          - fb-messenger
+          - reddit
+          - snapchat
+          - discord
+          - tg
+          - whatsapp
+          - linkedin
+          - pinterest
+          - nflx
+          - spotify
+          - twitch
+          - bereal
+          - googlechrome
+          - barcelona
         NSFamilyControlsUsageDescription: "Detour shows a short learning session before the apps you choose. You pick the apps, and nothing about them leaves your device."
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait

@@ -156,7 +156,7 @@ struct EndView: View {
                 .foregroundStyle(.white.opacity(0.7))
             if let unlockedMinutes {
                 Text(returnApp == nil
-                     ? "You're through. Your apps are open for \(unlockedMinutes) minutes. Swipe up from the bottom edge to switch back to your app, or pick \"Go back to\" in Settings for a one-tap return."
+                     ? "You're through. Your apps are open for \(unlockedMinutes) minutes. Swipe up from the bottom edge to switch back to your app."
                      : "You're through. Your apps are open for \(unlockedMinutes) minutes.")
                     .font(.subheadline)
                     .foregroundStyle(.white.opacity(0.7))

@@ -117,17 +117,6 @@ struct GuardSettingsSection: View {
                         .foregroundStyle(.secondary)
                 }
 
-                Picker("Go back to", selection: Binding(
-                    get: { guardManager.settings.returnBundle ?? "" },
-                    set: { bundle in guardManager.update { $0.returnBundle = bundle.isEmpty ? nil : bundle } }
-                )) {
-                    Text("Nothing").tag("")
-                    ForEach(ReturnApps.popular) { app in Text(app.name).tag(app.bundle) }
-                }
-                Text("After a detour, Detour offers to open this app for you. Used for any guarded app you haven't named above.")
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
-
                 Toggle("Only guard at certain times", isOn: Binding(
                     get: { guardManager.settings.activeHours != nil },
                     set: { on in guardManager.update { $0.activeHours = on ? ActiveHours() : nil } }

@@ -1,45 +1,124 @@
 import FamilyControls
 import ManagedSettings
 import SwiftUI
+import UIKit
 
-/// Apple's app picker in its own sheet. Presenting it from inside the Settings form was unreliable (it sometimes would not open),
-/// so Settings shows this sheet instead and the picker is the only thing on it. The choice is kept when Done is tapped.
+extension ReturnApps {
+    /// Whether the app is on this phone, judged by whether its link can be opened. Only works for the schemes listed in the
+    /// app's Info.plist (LSApplicationQueriesSchemes).
+    @MainActor
+    static func isInstalled(_ bundle: String) -> Bool {
+        guard let url = url(for: bundle) else { return false }
+        return UIApplication.shared.canOpenURL(url)
+    }
+}
+
+/// Choosing which apps to guard. iOS never tells Detour which app is which, so the popular apps are picked one at a time:
+/// tap an app, and Apple's picker opens asking for exactly that one. Detour then knows what the new app is, with nothing more to
+/// say later. Other apps are picked in one go, and Detour can't take you back to those.
 struct GuardAppsSheet: View {
     @Environment(GuardManager.self) private var guardManager
-    @State private var draft = FamilyActivitySelection()
     var onClose: () -> Void
+
+    private enum Target: Identifiable {
+        case app(ReturnApps.PopularApp)
+        case other
+
+        var id: String {
+            switch self {
+            case .app(let app): return app.bundle
+            case .other: return "other"
+            }
+        }
+    }
+
+    @State private var target: Target?
+
+    private var installed: [ReturnApps.PopularApp] {
+        ReturnApps.popular.filter { ReturnApps.isInstalled($0.bundle) }
+    }
+
+    var body: some View {
+        NavigationStack {
+            List {
+                Section {
+                    ForEach(installed) { app in
+                        let guarded = guardManager.isGuarded(bundle: app.bundle)
+                        HStack {
+                            Text(app.name)
+                            Spacer()
+                            if guarded {
+                                Button("Stop guarding", role: .destructive) { guardManager.remove(bundle: app.bundle) }
+                                    .buttonStyle(.borderless)
+                            } else {
+                                Button("Guard") { target = .app(app) }
+                                    .buttonStyle(.borderless)
+                            }
+                        }
+                    }
+                } header: {
+                    Text("Apps on this phone")
+                } footer: {
+                    Text("Tap Guard, then pick that app in the list Apple shows. That's how Detour learns which app is which, so it can take you back to it after a detour.")
+                }
+
+                Section {
+                    Button("Other apps…") { target = .other }
+                } footer: {
+                    Text("Any other app. Detour guards them, but can't take you back to them after a detour.")
+                }
+            }
+            .navigationTitle("Guarded apps")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) { Button("Done") { onClose() } }
+            }
+        }
+        .sheet(item: $target) { which in
+            switch which {
+            case .app(let app):
+                AppPickerSheet(title: "Pick " + app.name, initial: guardManager.selection) { draft in
+                    guardManager.commit(draft, as: app.bundle)
+                    target = nil
+                } onCancel: { target = nil }
+            case .other:
+                AppPickerSheet(title: "Other apps", initial: guardManager.selection) { draft in
+                    guardManager.commit(draft, as: nil)
+                    target = nil
+                } onCancel: { target = nil }
+            }
+        }
+    }
+}
+
+/// Apple's app picker on its own, with Cancel and Done.
+struct AppPickerSheet: View {
+    let title: String
+    let initial: FamilyActivitySelection
+    var onDone: (FamilyActivitySelection) -> Void
+    var onCancel: () -> Void
+    @State private var draft = FamilyActivitySelection()
 
     var body: some View {
         NavigationStack {
             FamilyActivityPicker(selection: $draft)
-                .navigationTitle("Guarded apps")
+                .navigationTitle(title)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
-                    ToolbarItem(placement: .cancellationAction) { Button("Cancel") { onClose() } }
-                    ToolbarItem(placement: .confirmationAction) {
-                        Button("Done") {
-                            guardManager.selection = draft
-                            guardManager.saveSelection()
-                            onClose()
-                        }
-                    }
+                    ToolbarItem(placement: .cancellationAction) { Button("Cancel") { onCancel() } }
+                    ToolbarItem(placement: .confirmationAction) { Button("Done") { onDone(draft) } }
                 }
         }
-        .onAppear { draft = guardManager.selection }
+        .onAppear { draft = initial }
     }
 }
 
-/// The apps being guarded. Detour works out which app each one is from what iOS says; only for an app it cannot recognise does
-/// it ask, and only so it can take the user back to it after a detour. The answer stays on the device.
+/// The apps being guarded, with a tick for each one Detour knows. For the rest, the user can say which app it is.
 struct GuardedAppsList: View {
     @Environment(GuardManager.self) private var guardManager
 
     private var tokens: [ApplicationToken] {
         guardManager.selection.applicationTokens.sorted { (GuardShield.tokenKey(for: $0) ?? "") < (GuardShield.tokenKey(for: $1) ?? "") }
-    }
-
-    private var anyUnknown: Bool {
-        tokens.contains { guardManager.returnBundle(for: $0).isEmpty }
     }
 
     var body: some View {
@@ -63,14 +142,6 @@ struct GuardedAppsList: View {
                         Image(systemName: "checkmark.circle.fill").foregroundStyle(.tint)
                     }
                 }
-            }
-            if anyUnknown {
-                Text("Working out which app each one is…")
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
-                Text("Detour couldn't tell which of these is which. Say once, only if you want \"Go back to\" to take you to the right app after a detour.")
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
             }
         }
     }

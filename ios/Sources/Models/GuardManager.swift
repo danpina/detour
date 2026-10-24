@@ -86,7 +86,7 @@ final class GuardManager {
     /// Works out which app each guarded token is, from whatever iOS tells us (its bundle or name), and remembers it.
     /// Apps it cannot tell stay unnamed until the shield sees them or the user says. Logs what iOS said, for debugging.
     /// Bump when the guard code changes, so a pasted log shows which version of it was running.
-    private static let codeTag = "name-reading-v4"
+    private static let codeTag = "guided-pick-v1"
     @ObservationIgnored private static var loggedBuild = false
 
     private func logBuildOnce() {
@@ -111,10 +111,6 @@ final class GuardManager {
         returnMap = store.returnMap
         let named = selection.applicationTokens.filter { token in GuardShield.tokenKey(for: token).flatMap { store.returnMap[$0] } != nil }.count
         store.log("identify: " + String(selection.applicationTokens.count) + " guarded apps, " + String(named) + " named")
-        if named < selection.applicationTokens.count {
-            store.log("read name: queued for " + String(selection.applicationTokens.count - named) + " unnamed app(s)")
-            Task { await identifyByReading() }
-        }
     }
 
     /// The bundle identifier the user said this guarded app is, or "" if not set.
@@ -123,31 +119,31 @@ final class GuardManager {
         return returnMap[key] ?? ""
     }
 
-    /// Tokens already tried this launch, so reading is not repeated every time the list appears.
-    @ObservationIgnored private var triedReading: Set<String> = []
-    @ObservationIgnored private var isReading = false
+    /// Whether one of the guarded apps is the app with this bundle identifier.
+    func isGuarded(bundle: String) -> Bool {
+        selection.applicationTokens.contains { returnBundle(for: $0) == bundle }
+    }
 
-    /// For guarded apps still unnamed, reads the name off a picture of iOS's own label and remembers the match.
-    func identifyByReading() async {
-        guard !isReading else { return }
-        isReading = true
-        defer { isReading = false }
-        for token in selection.applicationTokens {
-            guard let key = GuardShield.tokenKey(for: token), store.returnMap[key] == nil, !triedReading.contains(key) else { continue }
-            triedReading.insert(key)
-            store.log("read name: starting for token " + GuardShield.shortKey(key))
-            let result = await AppNameReader.read(token)
-            let lines = result.lines
-            let found = ReturnApps.match(lines: lines)
-            store.log("read name: token=" + GuardShield.shortKey(key) + " " + result.note + " ink=" + String(result.inkPixels) + " text=" + (lines.isEmpty ? "nothing" : lines.joined(separator: " | ")) + " -> " + (found ?? "unknown"))
-            if let found {
-                var map = store.returnMap
-                map[key] = found
-                store.returnMap = map
-                returnMap = map
+    /// Stops guarding the app with this bundle identifier.
+    func remove(bundle: String) {
+        var next = selection
+        next.applicationTokens = next.applicationTokens.filter { returnBundle(for: $0) != bundle }
+        selection = next
+        saveSelection()
+    }
+
+    /// Keeps what the picker returned. When it was opened for one known app and exactly one new app came back, that app is it.
+    func commit(_ draft: FamilyActivitySelection, as bundle: String?) {
+        let added = draft.applicationTokens.subtracting(selection.applicationTokens)
+        selection = draft
+        if let bundle {
+            if added.count == 1, let token = added.first {
+                setReturnBundle(bundle, for: token)
+            } else {
+                store.log("guided pick of " + bundle + ": expected 1 new app, got " + String(added.count))
             }
         }
-        reloadLog()
+        saveSelection()
     }
 
     func setReturnBundle(_ bundle: String, for token: ApplicationToken) {
@@ -163,17 +159,11 @@ final class GuardManager {
 
     /// The app the shield was covering when the detour was chosen, if iOS told the shield screen and it can be reopened.
     var returnApp: ReturnApp? {
-        // What the shield screen learned wins; otherwise the app chosen once in Settings.
-        var bundle = store.shieldedBundle
-        var name = store.shieldedName
-        var source = "shield"
-        if ReturnApps.url(for: bundle ?? "") == nil, let chosen = settings.returnBundle {
-            bundle = chosen
-            name = ReturnApps.displayName(for: chosen)
-            source = "settings"
-        }
+        // Only what the shield recorded for the app it covered. An app Detour doesn't know gets no button, never a guess.
+        let bundle = store.shieldedBundle
+        let name = store.shieldedName
         let app = ReturnApps.returnApp(bundleIdentifier: bundle, name: name)
-        store.log("return app: source=\(source) bundle=\(bundle ?? "none") name=\(name ?? "none") canOpen=\(app != nil)")
+        store.log("return app: bundle=\(bundle ?? "none") name=\(name ?? "none") canOpen=\(app != nil)")
         return app
     }
 
