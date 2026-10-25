@@ -1,0 +1,37 @@
+le chat | cat | animals | Le chat dort sur le canapé. | The cat sleeps on the sofa. | 
+le chien | dog | animals | Le chien court dans le parc. | The dog runs in the park. | 
+l'oiseau | bird | animals | L'oiseau chante le matin. | The bird sings in the morning. | 
+le poisson | fish | animals | Le poisson nage dans la rivière. | The fish swims in the river. | 
+le pain | bread | food | Je mange du pain au petit déjeuner. | I eat bread for breakfast. | 
+l'eau | water | food | Je bois de l'eau. | I drink water. | 
+le lait | milk | food | Le lait est froid. | The milk is cold. | 
+la pomme | apple | food | Je mange une pomme. | I am eating an apple. | 
+le fromage | cheese | food | J'aime le fromage. | I like cheese. | 
+la maison | house | home | La maison est très belle. | The house is very beautiful. | 
+la porte | door | home | Ferme la porte, s'il te plaît. | Close the door, please. | 
+la table | table | home | Le livre est sur la table. | The book is on the table. | 
+la chaise | chair | home | Assieds-toi sur la chaise. | Sit down on the chair. | 
+la mère | mother | people | Ma mère cuisine très bien. | My mother cooks very well. | 
+le père | father | people | Mon père travaille ici. | My father works here. | 
+le frère | brother | people | Mon frère a dix ans. | My brother is ten years old. | 
+la sœur | sister | people | Ma sœur aime lire. | My sister likes to read. | 
+l'ami | friend | people | Mon ami habite à Lyon. | My friend lives in Lyon. | 
+manger | to eat | verbs | Je veux manger une pomme. | I want to eat an apple. | 
+boire | to drink | verbs | Je veux boire de l'eau. | I want to drink some water. | 
+parler | to speak | verbs | J'aime parler français. | I like to speak French. | 
+vivre | to live | verbs | J'aimerais vivre à la campagne. | I would like to live in the countryside. | 
+grand | big, tall | adjectives | Le chien est grand. | The dog is big. | 
+petit | small | adjectives | Le chat est petit. | The cat is small. | 
+joli | pretty | adjectives | Le jardin est joli. | The garden is pretty. | 
+rapide | fast | adjectives | Le train est rapide. | The train is fast. | 
+lent | slow | adjectives | Le bus est lent. | The bus is slow. | lent
+la ville | city, town | places | La ville est très grande. | The city is very big. | 
+la rue | street | places | La rue est calme. | The street is quiet. | 
+aujourd'hui | today | time | Aujourd'hui il fait beau. | Today the weather is nice. | 
+demain | tomorrow | time | On se voit demain. | See you tomorrow. | 
+hier | yesterday | time | Hier, j'étais à la maison. | Yesterday I was at home. | 
+un | one | numbers | J'ai un frère. | I have one brother. | 
+deux | two | numbers | Il y a deux chats. | There are two cats. | 
+trois | three | numbers | J'ai trois livres. | I have three books. | 
+quatre | four | numbers | Il y a quatre chaises. | There are four chairs. | 
+cinq | five | numbers | Il est cinq heures. | It is five o'clock. | 

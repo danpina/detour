@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { LANGUAGES } from "./languageData";
-import { applyAnswer, blanked, buildRound, kindFor, unlockedLevel, type Progress } from "./languageLogic";
+import { applyAnswer, blanked, buildRound, kindFor, type Progress } from "./languageLogic";
 
 // The rounds are checked on Spanish; the data checks below run for every language.
 const WORDS = LANGUAGES[0]!.words;
@@ -56,10 +56,17 @@ describe("language rounds (Spanish)", () => {
     expect(q.prompt).toContain("____");
   });
 
-  it("opens harder levels as words are learned", () => {
-    expect(unlockedLevel(empty, WORDS)).toBe(1);
-    const known = Object.fromEntries(WORDS.slice(0, 12).map((w) => [w.key, 2]));
-    expect(unlockedLevel({ known, missed: [] }, WORDS)).toBe(2);
+  it("asks only the chosen level, and offers only words of that level as answers", () => {
+    for (const level of [1, 2] as const) {
+      const round = buildRound(WORDS, empty, seeded(), 6, level);
+      const pool = WORDS.filter((w) => w.level === level);
+      const meanings = new Set(pool.flatMap((w) => [w.en, w.word, w.key]));
+      expect(round).toHaveLength(6);
+      for (const q of round) {
+        expect(pool.some((w) => w.key === q.key)).toBe(true);
+        for (const o of q.options) expect(meanings.has(o), o).toBe(true);
+      }
+    }
   });
 
   it("counts right answers up and queues wrong ones", () => {

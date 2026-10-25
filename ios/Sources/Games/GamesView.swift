@@ -5,6 +5,7 @@ struct GamesView: View {
     @State private var playing: GameId?
     @State private var roundSize = GameStats.roundSize
     @State private var language = LanguageInfo.current
+    @State private var level = LanguageInfo.currentLevel
 
     private let learning: [GameId] = [.languages, .logic, .geo]
     private var fun: [GameId] { GameId.allCases.filter { !learning.contains($0) } }
@@ -13,10 +14,10 @@ struct GamesView: View {
     private func progressLine(_ game: GameId) -> String? {
         switch game {
         case .languages:
-            let words = LanguageData.load(language)
+            let words = LanguageData.load(language).filter { $0.level == level }
             let progress = LanguageStore.load(language)
             let learned = words.filter { (progress.known[$0.key] ?? 0) >= LanguageBuilder.learnedAt }.count
-            return learned > 0 ? "\(language.name): \(learned) of \(words.count) words learned" : nil
+            return learned > 0 ? "\(language.name) · \(LanguageBuilder.levelName(level)): \(learned) of \(words.count) learned" : nil
         case .logic:
             let solved = LogicStore.load().solved.values.filter { $0 > 0 }.count
             return solved > 0 ? "\(solved) of \(LogicData.load().count) puzzles solved" : nil
@@ -61,6 +62,22 @@ struct GamesView: View {
         .pickerStyle(.segmented)
     }
 
+    /// Beginner, Medium or Advanced: the words asked come from that level only.
+    private var levelPicker: some View {
+        Picker("Level", selection: Binding(
+            get: { level },
+            set: { n in
+                level = n
+                LanguageInfo.currentLevel = n
+            }
+        )) {
+            ForEach([1, 2, 3], id: \.self) { n in
+                Text(LanguageBuilder.levelName(n)).tag(n)
+            }
+        }
+        .pickerStyle(.segmented)
+    }
+
     var body: some View {
         NavigationStack {
             List {
@@ -92,7 +109,10 @@ struct GamesView: View {
                 Section("Learn") {
                     ForEach(learning) { game in
                         row(game)
-                        if game == .languages { languagePicker }
+                        if game == .languages {
+                            languagePicker
+                            levelPicker
+                        }
                     }
                 }
                 Section("Just for fun") {

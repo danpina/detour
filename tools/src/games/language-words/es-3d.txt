@@ -1,0 +1,98 @@
+# Spanish, advanced: connectors, nuanced nouns, expressions, culture, work, relationships
+no obstante | nevertheless | connectors | Es caro; no obstante, merece la pena. | It is expensive; nevertheless, it is worth it.
+a pesar de | despite | connectors | Salimos a pesar de la lluvia. | We went out despite the rain.
+por consiguiente | therefore | connectors | Hay menos agua; por consiguiente, subirá el precio. | There is less water; therefore the price will go up.
+de lo contrario | otherwise | connectors | Llega puntual; de lo contrario, perderás el tren. | Be on time; otherwise you will miss the train.
+en cambio | on the other hand | connectors | Ella ahorra; él, en cambio, gasta todo. | She saves; he, on the other hand, spends everything.
+ojalá | I hope, if only | connectors | Ojalá llegue a tiempo. | I hope he arrives on time.
+a lo largo de | along, throughout | connectors | Viajó a lo largo de la costa. | He travelled along the coast.
+en cuanto a | as for | connectors | En cuanto a tu pregunta, lo pensaré. | As for your question, I will think about it.
+a fin de cuentas | in the end | connectors | A fin de cuentas, lo importante es estar bien. | In the end, what matters is to be well.
+con tal de que | provided that | connectors | Voy con tal de que me acompañes. | I will go provided that you come with me.
+mientras tanto | meanwhile | connectors | Mientras tanto, preparo la cena. | Meanwhile, I prepare dinner.
+sobre todo | above all | connectors | Me gusta el verano, sobre todo la playa. | I like summer, above all the beach.
+en realidad | actually | connectors | En realidad no es tan difícil. | Actually it is not that hard.
+es decir | that is | connectors | Llego el lunes, es decir, dentro de dos días. | I arrive on Monday, that is, in two days.
+por lo tanto | so, therefore | connectors | Está lloviendo; por lo tanto, nos quedamos. | It is raining; so we are staying.
+cada vez más | more and more | connectors | Cada vez más gente trabaja desde casa. | More and more people work from home.
+la mayoría | majority | words | La mayoría de los alumnos aprobó. | Most of the pupils passed.
+el conjunto | whole, set | words | El conjunto resulta armonioso. | The whole is harmonious.
+el ámbito | field, scope | words | Trabaja en el ámbito de la salud. | She works in the field of health.
+el aspecto | aspect, appearance | words | Hay otro aspecto que considerar. | There is another aspect to consider.
+el ritmo | rhythm, pace | words | El ritmo de vida es acelerado. | The pace of life is fast.
+el entorno | environment, surroundings | words | Trabajo en un entorno agradable. | I work in a pleasant environment.
+el recurso | resource | words | El tiempo es un recurso limitado. | Time is a limited resource.
+la fuente | source | words | Cito la fuente en el texto. | I cite the source in the text.
+la brecha | gap | words | La brecha salarial sigue abierta. | The pay gap is still open.
+el plazo | deadline, term | words | El plazo termina el viernes. | The deadline ends on Friday.
+la meta | goal | words | Mi meta es correr un maratón. | My goal is to run a marathon.
+el logro | achievement | words | Terminar el libro fue un gran logro. | Finishing the book was a great achievement.
+el fracaso | failure | words | El fracaso también enseña. | Failure also teaches.
+el éxito | success | words | El éxito llegó después de años. | Success came after years.
+la dificultad | difficulty | words | La dificultad principal es el idioma. | The main difficulty is the language.
+la oportunidad | opportunity | words | No pierdas esta oportunidad. | Don't miss this opportunity.
+el riesgo | risk | words | Hay un riesgo de lluvia. | There is a risk of rain.
+la amenaza | threat | words | La amenaza fue real. | The threat was real.
+el alivio | relief | feelings | Sentí un gran alivio al terminar. | I felt great relief when I finished.
+la nostalgia | nostalgia | feelings | Siento nostalgia de mi infancia. | I feel nostalgia for my childhood.
+la ilusión | hope, excitement | feelings | Tengo mucha ilusión por el viaje. | I am really looking forward to the trip.
+la decepción | disappointment | feelings | La decepción fue enorme. | The disappointment was huge.
+la envidia | envy | feelings | Sentía envidia de su suerte. | He felt envy of her luck.
+los celos | jealousy | feelings | Los celos arruinan una relación. | Jealousy ruins a relationship.
+la soledad | loneliness | feelings | La soledad pesa en invierno. | Loneliness weighs heavy in winter.
+la ansiedad | anxiety | feelings | La ansiedad no le deja dormir. | Anxiety doesn't let him sleep.
+el agobio | stress, overwhelm | feelings | El agobio del trabajo es constante. | The stress of work is constant.
+la rabia | rage | feelings | Sintió rabia al oír la noticia. | He felt rage on hearing the news.
+el orgullo | pride | feelings | Lo dijo con orgullo. | He said it with pride.
+el cariño | affection | feelings | Le tiene mucho cariño a su abuela. | She has great affection for her grandmother.
+la amistad | friendship | relationships | La amistad se cuida cada día. | Friendship is looked after every day.
+la pareja | partner, couple | relationships | Su pareja trabaja en Londres. | Her partner works in London.
+el matrimonio | marriage | relationships | El matrimonio dura ya treinta años. | The marriage has lasted thirty years.
+el vínculo | bond | relationships | El vínculo entre ellos es fuerte. | The bond between them is strong.
+el conocido | acquaintance | relationships | Es un conocido de mi hermano. | He is an acquaintance of my brother.
+el desconocido | stranger | relationships | Un desconocido me preguntó la hora. | A stranger asked me the time.
+el anfitrión | host | relationships | El anfitrión sirvió la cena. | The host served dinner.
+el invitado | guest | relationships | Cada invitado trajo un regalo. | Every guest brought a present.
+el familiar | relative | relationships | Un familiar vive en el extranjero. | A relative lives abroad.
+la herencia | inheritance | relationships | La herencia dividió a la familia. | The inheritance divided the family.
+la plantilla | staff | work | La plantilla de la empresa crece. | The company's staff is growing.
+el ascenso | promotion | work | Recibió un ascenso este mes. | He received a promotion this month.
+el despido | dismissal | work | El despido fue una sorpresa. | The dismissal was a surprise.
+la jubilación | retirement | work | La jubilación llega a los sesenta y siete. | Retirement comes at sixty-seven.
+la jornada | working day | work | La jornada empieza a las ocho. | The working day starts at eight.
+el horario flexible | flexible hours | work | Prefiero un horario flexible. | I prefer flexible hours.
+el teletrabajo | remote working | work | El teletrabajo ahorra tiempo. | Remote working saves time.
+el puesto | position, job | work | Solicité el puesto de gerente. | I applied for the manager position.
+el currículum | CV | work | Envié mi currículum ayer. | I sent my CV yesterday.
+la reunión de equipo | team meeting | work | La reunión de equipo es los lunes. | The team meeting is on Mondays.
+el beneficio neto | net profit | work | El beneficio neto subió. | Net profit went up.
+el pleito | lawsuit | work | El pleito duró tres años. | The lawsuit lasted three years.
+el obrero | worker | work | El obrero llega antes del amanecer. | The worker arrives before dawn.
+la huella | footprint, trace | environment | Dejamos una huella en el planeta. | We leave a footprint on the planet.
+la cosecha | harvest | environment | La cosecha de este año es buena. | This year's harvest is good.
+el paisaje | landscape | environment | El paisaje es espectacular. | The landscape is spectacular.
+el yacimiento | deposit, site | environment | El yacimiento arqueológico atrae visitantes. | The archaeological site attracts visitors.
+el rascacielos | skyscraper | city | El rascacielos domina el horizonte. | The skyscraper dominates the skyline.
+el atasco | traffic jam | city | Quedamos atrapados en un atasco. | We got stuck in a traffic jam.
+las afueras | outskirts | city | Vive en las afueras de la ciudad. | She lives on the outskirts of the city.
+el casco antiguo | old town | city | El casco antiguo es peatonal. | The old town is pedestrianised.
+el transeúnte | passer-by | city | Un transeúnte avisó a la policía. | A passer-by alerted the police.
+el proverbio | proverb | culture | El proverbio dice mucho con pocas palabras. | The proverb says a lot in few words.
+el refrán | saying | culture | Un refrán dice que más vale tarde que nunca. | A saying goes that better late than never.
+la leyenda | legend | culture | La leyenda cuenta que hubo un tesoro. | The legend says there was a treasure.
+el relato | story, account | culture | El relato me emocionó. | The story moved me.
+la obra | work (of art) | culture | Esa obra se estrenó en Madrid. | That work premiered in Madrid.
+el escritor | writer | culture | El escritor presenta su nueva novela. | The writer presents his new novel.
+la novela | novel | culture | La novela tiene quinientas páginas. | The novel has five hundred pages.
+el poema | poem | culture | El poema habla del mar. | The poem is about the sea.
+el cuadro | painting | culture | El cuadro cuelga en el salón. | The painting hangs in the living room.
+la exposición | exhibition | culture | La exposición cierra el domingo. | The exhibition closes on Sunday.
+el estreno | premiere | culture | El estreno fue un éxito. | The premiere was a success.
+la tradición | tradition | culture | Es una tradición muy antigua. | It is a very old tradition.
+el patrimonio cultural | cultural heritage | culture | El patrimonio cultural se protege. | Cultural heritage is protected.
+el idioma materno | mother tongue | culture | Su idioma materno es el catalán. | Her mother tongue is Catalan.
+el acento | accent | culture | Tiene un acento muy marcado. | He has a very strong accent.
+la traducción | translation | culture | La traducción es excelente. | The translation is excellent.
+el significado | meaning | culture | No entiendo el significado de esa palabra. | I don't understand the meaning of that word.
+el matiz | nuance | culture | Hay un matiz que se pierde en la traducción. | There is a nuance lost in translation.
+la etiqueta | label | culture | La etiqueta indica el precio. | The label shows the price.

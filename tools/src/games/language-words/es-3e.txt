@@ -1,0 +1,29 @@
+# Spanish, advanced: more nuance and register
+la pesadilla | nightmare | abstract | El examen fue una pesadilla. | The exam was a nightmare.
+el entusiasmo | enthusiasm | feelings | Habló con entusiasmo de su proyecto. | He spoke enthusiastically about his project.
+la indiferencia | indifference | feelings | Su indiferencia me sorprendió. | His indifference surprised me.
+la paciencia | patience | feelings | Se necesita mucha paciencia. | A lot of patience is needed.
+la sensatez | good sense | abstract | Actuó con sensatez. | She acted sensibly.
+la lealtad | loyalty | abstract | La lealtad es difícil de encontrar. | Loyalty is hard to find.
+la hipocresía | hypocrisy | abstract | No soporto la hipocresía. | I can't stand hypocrisy.
+el prejuicio | prejudice | society | El prejuicio impide ver la realidad. | Prejudice stops you seeing reality.
+el estereotipo | stereotype | society | Ese estereotipo es injusto. | That stereotype is unfair.
+la discriminación | discrimination | society | La discriminación sigue existiendo. | Discrimination still exists.
+la solidaridad | solidarity | society | La solidaridad salvó a muchos. | Solidarity saved many.
+el voluntario | volunteer | society | Cada voluntario ayuda un poco. | Every volunteer helps a little.
+la donación | donation | society | La donación llegó a tiempo. | The donation arrived in time.
+el albergue | shelter, hostel | society | El albergue acoge a personas sin hogar. | The shelter takes in homeless people.
+la plantación | plantation | economy | La plantación ocupa mil hectáreas. | The plantation covers a thousand hectares.
+la exportación | export | economy | La exportación de vino crece. | Wine exports are growing.
+la materia prima | raw material | economy | La materia prima escasea. | Raw materials are scarce.
+el emprendedor | entrepreneur | economy | El emprendedor abrió su primera tienda. | The entrepreneur opened his first shop.
+la quiebra | bankruptcy | economy | La empresa entró en quiebra. | The company went bankrupt.
+el ahorro | saving | economy | El ahorro familiar bajó. | Household saving fell.
+el alcance | reach, scope | words | Eso queda fuera de mi alcance. | That is out of my reach.
+la trayectoria | career, path | words | Tiene una trayectoria impecable. | She has an impeccable career.
+la envergadura | scale | words | Es un proyecto de gran envergadura. | It is a project of great scale.
+el discurso | speech | words | El discurso duró una hora. | The speech lasted an hour.
+el debate | debate | words | El debate fue muy tenso. | The debate was very tense.
+la polémica | controversy | words | La polémica no se apaga. | The controversy does not die down.
+la cumbre | summit | words | La cumbre reunió a veinte países. | The summit brought together twenty countries.
+el balance | balance, assessment | words | El balance del año es positivo. | The assessment of the year is positive.

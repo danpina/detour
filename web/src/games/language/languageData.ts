@@ -1,7 +1,7 @@
 import es from "../../../../content/games/spanish.json";
 import fr from "../../../../content/games/french.json";
 import de from "../../../../content/games/german.json";
-import type { Word } from "./languageLogic";
+import { LEVEL_NAMES, type Level, type Word } from "./languageLogic";
 
 export type LanguageId = "es" | "fr" | "de";
 
@@ -51,3 +51,25 @@ export function setLanguage(id: LanguageId): void {
     // Storage unavailable: the choice lasts until the page is closed.
   }
 }
+
+const LEVEL_KEY = "detour.games.language.level";
+
+/** The level being practised in every language: Beginner until another is chosen. */
+export function getLevel(): Level {
+  try {
+    const n = Number(localStorage.getItem(LEVEL_KEY));
+    return n === 2 || n === 3 ? n : 1;
+  } catch {
+    return 1;
+  }
+}
+
+export function setLevel(level: Level): void {
+  try {
+    localStorage.setItem(LEVEL_KEY, String(level));
+  } catch {
+    // Storage unavailable: the choice lasts until the page is closed.
+  }
+}
+
+export { LEVEL_NAMES };

@@ -1,0 +1,58 @@
+das Pferd | horse | animals | Das Pferd frisst Gras. | The horse eats grass. | 
+die Kuh | cow | animals | Die Kuh gibt Milch. | The cow gives milk. | 
+das Kaninchen | rabbit | animals | Das Kaninchen springt sehr hoch. | The rabbit jumps very high. | 
+das Ei | egg | food | Das Ei ist hart gekocht. | The egg is hard-boiled. | 
+der Reis | rice | food | Wir essen heute Abend Reis. | We are eating rice tonight. | 
+das Hähnchen | chicken | food | Das Hähnchen schmeckt lecker. | The chicken tastes delicious. | 
+die Orange | orange | food | Ich möchte eine Orange. | I would like an orange. | 
+der Zucker | sugar | food | Ich tue Zucker in den Kaffee. | I put sugar in my coffee. | 
+die Suppe | soup | food | Die Suppe ist heiß. | The soup is hot. | 
+das Fenster | window | home | Mach das Fenster auf, es ist heiß. | Open the window, it is hot. | 
+das Bett | bed | home | Ich gehe um zehn Uhr ins Bett. | I go to bed at ten o'clock. | 
+der Schlüssel | key | home | Wo ist der Schlüssel? | Where is the key? | 
+das Buch | book | home | Dieses Buch ist sehr interessant. | This book is very interesting. | 
+die Küche | kitchen | home | Die Küche riecht gut. | The kitchen smells good. | 
+das Kind | child | people | Das Kind spielt im Garten. | The child plays in the garden. | 
+die Großmutter | grandmother | people | Meine Großmutter backt einen Kuchen. | My grandmother is baking a cake. | 
+schlafen | to sleep | verbs | Ich möchte ein bisschen schlafen. | I would like to sleep a little. | 
+laufen | to run | verbs | Ich gehe gern am Morgen laufen. | I like to go running in the morning. | laufen
+lesen | to read | verbs | Ich möchte am Abend lesen. | I would like to read in the evening. | lesen
+schreiben | to write | verbs | Ich muss einen Brief schreiben. | I have to write a letter. | 
+öffnen | to open | verbs | Kannst du die Tür öffnen? | Can you open the door? | 
+suchen | to look for | verbs | Ich muss meine Schlüssel suchen. | I have to look for my keys. | 
+helfen | to help | verbs | Kann ich dir helfen? | Can I help you? | 
+heiß | hot | adjectives | Der Kaffee ist heiß. | The coffee is hot. | 
+kalt | cold | adjectives | Die Milch ist kalt. | The milk is cold. | 
+neu | new | adjectives | Das Auto ist neu. | The car is new. | 
+alt | old | adjectives | Das Buch ist alt. | The book is old. | 
+müde | tired | adjectives | Ich bin heute Abend müde. | I am tired this evening. | 
+der Strand | beach | places | Wir gehen zum Strand. | We are going to the beach. | 
+die Schule | school | places | Die Schule beginnt um acht Uhr. | School starts at eight o'clock. | 
+der Markt | market | places | Ich gehe auf den Markt. | I am going to the market. | 
+immer | always | time | Er ist immer pünktlich. | He is always on time. | 
+nie | never | time | Ich esse nie Fleisch. | I never eat meat. | 
+jetzt | now | time | Ich gehe jetzt. | I am leaving now. | 
+spät | late | time | Es ist spät. | It is late. | 
+früh | early | time | Ich stehe früh auf. | I get up early. | 
+die Woche | week | time | Diese Woche ist ruhig. | This week is quiet. | 
+das Jahr | year | time | Dieses Jahr reise ich viel. | This year I am travelling a lot. | 
+zehn | ten | numbers | Ich bin zehn Jahre alt. | I am ten years old. | 
+zwanzig | twenty | numbers | Es gibt zwanzig Schüler. | There are twenty pupils. | 
+der Schmetterling | butterfly | animals | Der Schmetterling fliegt über die Blumen. | The butterfly flies over the flowers. | 
+die Schildkröte | turtle | animals | Die Schildkröte ist sehr langsam. | The turtle is very slow. | 
+das Frühstück | breakfast | food | Das Frühstück ist fertig. | Breakfast is ready. | 
+der Spiegel | mirror | home | Der Spiegel hängt an der Wand. | The mirror hangs on the wall. | 
+der Nachbar | neighbour | people | Mein Nachbar ist sehr nett. | My neighbour is very nice. | 
+der Arzt | doctor | people | Der Arzt ist im Krankenhaus. | The doctor is at the hospital. | 
+warten | to wait | verbs | Ich muss auf den Bus warten. | I have to wait for the bus. | 
+lernen | to learn | verbs | Ich möchte Deutsch lernen. | I want to learn German. | lernen
+denken | to think | verbs | Ich muss an etwas anderes denken. | I have to think about something else. | 
+glücklich | happy | adjectives | Ich bin sehr glücklich. | I am very happy. | 
+schwierig | difficult | adjectives | Das Buch ist schwierig. | The book is difficult. | 
+der Bahnhof | train station | places | Der Bahnhof ist in der Nähe. | The station is nearby. | 
+der Flughafen | airport | places | Der Flughafen ist weit weg. | The airport is far away. | 
+die Bibliothek | library | places | Ich lerne in der Bibliothek. | I study in the library. | 
+der Berg | mountain | places | Der Berg ist voller Schnee. | The mountain is full of snow. | 
+der Fluss | river | places | Der Fluss fließt durch die Stadt. | The river flows through the city. | 
+hundert | hundred | numbers | Das kostet hundert Euro. | That costs a hundred euros. | 
+tausend | thousand | numbers | Es sind tausend Menschen da. | There are a thousand people here. | 

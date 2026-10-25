@@ -2,15 +2,15 @@ import { useEffect, useRef, useState } from "react";
 import type { GameProps } from "../registry";
 import { getRoundSize, recordRound } from "../stats";
 import { loadProgress, saveProgress } from "./progress";
-import { getLanguage, type Language } from "./languageData";
-import { applyAnswer, buildRound, LEARNED_AT, type Progress, type Question } from "./languageLogic";
+import { getLanguage, getLevel, LEVEL_NAMES, type Language } from "./languageData";
+import { applyAnswer, buildRound, LEARNED_AT, type Level, type Progress, type Question } from "./languageLogic";
 
-function newRound(lang: Language, progress: Progress): Question[] {
-  return buildRound(lang.words, progress, Math.random, getRoundSize());
+function newRound(lang: Language, level: Level, progress: Progress): Question[] {
+  return buildRound(lang.words, progress, Math.random, getRoundSize(), level);
 }
 
-function learnedCount(lang: Language, p: Progress): number {
-  return lang.words.filter((w) => (p.known[w.key] ?? 0) >= LEARNED_AT).length;
+function learnedCount(lang: Language, level: Level, p: Progress): number {
+  return lang.words.filter((w) => w.level === level && (p.known[w.key] ?? 0) >= LEARNED_AT).length;
 }
 
 function endLine(lang: Language, score: number, total: number): string {
@@ -23,8 +23,9 @@ function endLine(lang: Language, score: number, total: number): string {
 export function LanguageGame({ onExit, embedded }: GameProps) {
   // The language is chosen on the Games screen; it stays fixed for this round.
   const [lang] = useState<Language>(getLanguage);
+  const [level] = useState<Level>(getLevel);
   const [progress, setProgress] = useState<Progress>(() => loadProgress(lang));
-  const [round, setRound] = useState<Question[]>(() => newRound(lang, progress));
+  const [round, setRound] = useState<Question[]>(() => newRound(lang, level, progress));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -60,7 +61,7 @@ export function LanguageGame({ onExit, embedded }: GameProps) {
   const done = index >= round.length;
 
   function restart() {
-    setRound(newRound(lang, progress));
+    setRound(newRound(lang, level, progress));
     setIndex(0);
     setScore(0);
     setPicked(null);
@@ -73,7 +74,7 @@ export function LanguageGame({ onExit, embedded }: GameProps) {
         <div className="text-6xl">{lang.flag}</div>
         <h1 className="text-3xl font-semibold tracking-tight">{score} / {round.length}</h1>
         <p className="text-neutral-500 dark:text-neutral-400">{endLine(lang, score, round.length)}</p>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400">{learnedCount(lang, progress)} of {lang.words.length} words learned</p>
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">{learnedCount(lang, level, progress)} of {lang.words.filter((w) => w.level === level).length} {LEVEL_NAMES[level].toLowerCase()} words learned</p>
         {best && <p className="text-sm font-medium text-teal-600 dark:text-teal-400">New best!</p>}
         <div className="mt-2 flex w-full max-w-xs flex-col gap-3">
           <button onClick={restart} className="min-h-14 rounded-2xl bg-teal-600 px-6 py-3 text-lg font-semibold text-white active:scale-[0.98]">Play again</button>

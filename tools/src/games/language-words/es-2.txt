@@ -1,0 +1,100 @@
+el caballo | horse | animals | El caballo come hierba. | The horse eats grass. | 
+la vaca | cow | animals | La vaca da leche. | The cow gives milk. | 
+el conejo | rabbit | animals | El conejo salta muy alto. | The rabbit jumps very high. | 
+el huevo | egg | food | Desayuno un huevo. | I have an egg for breakfast. | 
+el arroz | rice | food | Comemos arroz con pollo. | We eat rice with chicken. | 
+el pollo | chicken | food | El pollo está muy rico. | The chicken is very tasty. | 
+la naranja | orange | food | Una naranja tiene mucha vitamina C. | An orange has a lot of vitamin C. | 
+el azúcar | sugar | food | No quiero azúcar en el café. | I don't want sugar in my coffee. | 
+la ventana | window | home | Abre la ventana, hace calor. | Open the window, it is hot. | 
+la cama | bed | home | Me voy a la cama temprano. | I go to bed early. | 
+la llave | key | home | No encuentro la llave. | I can't find the key. | 
+la cocina | kitchen | home | Mi madre está en la cocina. | My mother is in the kitchen. | 
+el niño | boy | people | El niño juega con la pelota. | The boy plays with the ball. | 
+la abuela | grandmother | people | Mi abuela hace pasteles. | My grandmother makes cakes. | 
+dormir | to sleep | verbs | Necesito dormir ocho horas. | I need to sleep eight hours. | 
+correr | to run | verbs | Me gusta correr por la mañana. | I like to run in the morning. | 
+leer | to read | verbs | Me gusta leer antes de dormir. | I like to read before sleeping. | leer
+escribir | to write | verbs | Voy a escribir una carta. | I am going to write a letter. | 
+abrir | to open | verbs | Puedes abrir la caja ahora. | You can open the box now. | 
+aprender | to learn | verbs | Quiero aprender mucho. | I want to learn a lot. | 
+rápido | fast | adjectives | El tren es muy rápido. | The train is very fast. | 
+lento | slow | adjectives | El autobús es lento hoy. | The bus is slow today. | lento
+caliente | hot | adjectives | El café está caliente. | The coffee is hot. | 
+frío | cold | adjectives | El invierno es muy frío. | Winter is very cold. | 
+feliz | happy | adjectives | Ella está feliz con su regalo. | She is happy with her gift. | 
+el mercado | market | places | Compro fruta en el mercado. | I buy fruit at the market. | 
+la estación | station | places | El tren sale de la estación. | The train leaves the station. | 
+la montaña | mountain | places | La montaña está cubierta de nieve. | The mountain is covered in snow. | 
+siempre | always | time | Siempre llego a tiempo. | I always arrive on time. | 
+nunca | never | time | Nunca bebo café por la noche. | I never drink coffee at night. | 
+tarde | late | time | Es tarde, vamos a casa. | It is late, let's go home. | 
+temprano | early | time | Me levanto temprano. | I get up early. | 
+la semana | week | time | Una semana tiene siete días. | A week has seven days. | 
+el año | year | time | El año tiene doce meses. | The year has twelve months. | 
+diez | ten | numbers | Tengo diez euros. | I have ten euros. | diez
+veinte | twenty | numbers | Hay veinte alumnos en la clase. | There are twenty students in the class. | 
+el pescado | fish (food) | food | Comemos pescado los viernes. | We eat fish on Fridays. | 
+la ensalada | salad | food | Quiero una ensalada con tomate. | I want a salad with tomato. | 
+la cena | dinner | food | La cena está lista. | Dinner is ready. | 
+el pantalón | trousers | clothes | El pantalón es demasiado largo. | The trousers are too long. | 
+el abrigo | coat | clothes | Lleva el abrigo, hace frío. | Take your coat, it is cold. | 
+la espalda | back (body) | body | Me duele la espalda. | My back hurts. | 
+el corazón | heart | body | Mi corazón late muy rápido. | My heart beats very fast. | 
+la nube | cloud | weather | Hay una nube grande en el cielo. | There is a big cloud in the sky. | 
+la nieve | snow | weather | La nieve cubre la montaña. | The snow covers the mountain. | 
+el viaje | trip | travel | El viaje dura tres horas. | The trip takes three hours. | 
+la maleta | suitcase | travel | Mi maleta es muy pesada. | My suitcase is very heavy. | 
+el billete | ticket | travel | Tengo el billete en el teléfono. | I have the ticket on my phone. | 
+el hotel | hotel | travel | El hotel está cerca de la playa. | The hotel is near the beach. | 
+viajar | to travel | verbs | Me gusta viajar en tren. | I like to travel by train. | 
+comprar | to buy | verbs | Quiero comprar pan. | I want to buy bread. | 
+cantar | to sing | verbs | Me gusta cantar en la ducha. | I like to sing in the shower. | 
+caminar | to walk | verbs | Vamos a caminar por el parque. | Let's walk through the park. | 
+el trabajo | work, job | work | Mi trabajo empieza a las nueve. | My work starts at nine. | 
+la reunión | meeting | work | La reunión es mañana. | The meeting is tomorrow. | 
+el dinero | money | work | No tengo dinero hoy. | I have no money today. | 
+la pregunta | question | words | Tengo una pregunta. | I have a question. | 
+la respuesta | answer | words | La respuesta es fácil. | The answer is easy. | 
+amable | kind | adjectives | Mi vecino es muy amable. | My neighbour is very kind. | 
+peligroso | dangerous | adjectives | El camino es peligroso de noche. | The road is dangerous at night. | 
+barato | cheap | adjectives | El café es barato aquí. | Coffee is cheap here. | 
+caro | expensive | adjectives | El hotel es muy caro. | The hotel is very expensive. | 
+cerca | near | words | La estación está cerca. | The station is near. | 
+lejos | far | words | El aeropuerto está lejos. | The airport is far. | lejos
+la mariposa | butterfly | animals | La mariposa vuela sobre las flores. | The butterfly flies over the flowers. | 
+la tortuga | turtle | animals | La tortuga camina despacio. | The turtle walks slowly. | 
+la sopa | soup | food | La sopa está caliente. | The soup is hot. | 
+el desayuno | breakfast | food | El desayuno es a las ocho. | Breakfast is at eight. | 
+el espejo | mirror | home | Me miro en el espejo. | I look at myself in the mirror. | 
+el vecino | neighbour | people | El vecino toca la guitarra. | The neighbour plays the guitar. | 
+el médico | doctor | people | El médico me ayuda mucho. | The doctor helps me a lot. | 
+buscar | to look for | verbs | Voy a buscar mis gafas. | I am going to look for my glasses. | 
+ayudar | to help | verbs | ¿Puedes ayudar a tu hermano? | Can you help your brother? | 
+esperar | to wait | verbs | Voy a esperar aquí. | I am going to wait here. | 
+pensar | to think | verbs | Necesito pensar un momento. | I need to think for a moment. | 
+cansado | tired | adjectives | Estoy muy cansado hoy. | I am very tired today. | 
+difícil | difficult | adjectives | El examen fue difícil. | The exam was difficult. | 
+el aeropuerto | airport | places | Llegamos al aeropuerto temprano. | We arrived at the airport early. | 
+la biblioteca | library | places | Estudio en la biblioteca. | I study in the library. | 
+el río | river | places | El río pasa por la ciudad. | The river runs through the city. | 
+cien | one hundred | numbers | El libro tiene cien páginas. | The book has one hundred pages. | 
+mil | one thousand | numbers | La entrada cuesta mil pesos. | The ticket costs a thousand pesos. | 
+el equipaje | luggage | travel | Perdí el equipaje en el vuelo. | I lost my luggage on the flight. | 
+el pasaporte | passport | travel | No encuentro mi pasaporte. | I can't find my passport. | 
+la tormenta | storm | weather | La tormenta llega por la noche. | The storm arrives at night. | 
+el hombro | shoulder | body | Me duele el hombro izquierdo. | My left shoulder hurts. | 
+la rodilla | knee | body | Me duele la rodilla al correr. | My knee hurts when running. | 
+los guantes | gloves | clothes | Olvidé los guantes en casa. | I forgot my gloves at home. | 
+la bufanda | scarf | clothes | Mi abuela me hizo una bufanda. | My grandmother made me a scarf. | 
+el empleo | employment, job | work | Busco un empleo nuevo. | I am looking for a new job. | 
+el sueldo | salary | work | El sueldo llega el día uno. | The salary arrives on the first. | 
+el horario | schedule | work | El horario cambia en verano. | The schedule changes in summer. | 
+recordar | to remember | verbs | Quiero recordar tu nombre. | I want to remember your name. | 
+olvidar | to forget | verbs | No quiero olvidar esta palabra. | I don't want to forget this word. | 
+ahorrar | to save (money) | verbs | Tengo que ahorrar este mes. | I have to save this month. | 
+preocuparse | to worry | verbs | No hay que preocuparse por eso. | There is no need to worry about that. | 
+orgulloso | proud | adjectives | Estoy orgulloso de ti. | I am proud of you. | 
+sorprendente | surprising | adjectives | El final fue sorprendente. | The ending was surprising. | 
+aunque | although | words | Voy a salir aunque llueva. | I'll go out even if it rains. | 
+todavía | still, yet | words | Todavía no tengo hambre. | I am not hungry yet. | 

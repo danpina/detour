@@ -20,6 +20,16 @@ struct LanguageInfo: Equatable, Identifiable {
     ]
 
     private static let choiceKey = "detour.games.language"
+    private static let levelKey = "detour.games.language.level"
+
+    /// The level being practised in every language: 1 (Beginner) until another is chosen.
+    static var currentLevel: Int {
+        get {
+            let n = UserDefaults.standard.integer(forKey: levelKey)
+            return (1...3).contains(n) ? n : 1
+        }
+        set { UserDefaults.standard.set(newValue, forKey: levelKey) }
+    }
 
     static func info(for id: String?) -> LanguageInfo { all.first { $0.id == id } ?? all[0] }
 
@@ -106,13 +116,9 @@ enum LanguageBuilder {
     /// Words answered right at least this many times count as learned.
     static let learnedAt = 2
 
-    /// The highest level in play: level 2 opens once 12 words are learned, level 3 once 30 are.
-    static func unlockedLevel(progress: LanguageProgress, words: [LanguageWord]) -> Int {
-        let learned = words.filter { (progress.known[$0.key] ?? 0) >= learnedAt }.count
-        if learned >= 30 { return 3 }
-        if learned >= 12 { return 2 }
-        return 1
-    }
+    static let levelNames = [1: "Beginner", 2: "Medium", 3: "Advanced"]
+
+    static func levelName(_ level: Int) -> String { levelNames[level] ?? "Beginner" }
 
     /// Recognise first, then recall, then use it in a sentence.
     static func kind(forTimesRight times: Int) -> LanguageKind {
@@ -162,9 +168,10 @@ enum LanguageBuilder {
         }
     }
 
-    /// A round: words missed last time come back first (up to half), then words not yet learned within the level, then a refresher.
-    static func round<G: RandomNumberGenerator>(all: [LanguageWord], progress: LanguageProgress, length: Int, using rng: inout G) -> [LanguageQuestion] {
-        let level = unlockedLevel(progress: progress, words: all)
+    /// A round at the chosen level: words missed last time come back first (up to half), then words not yet learned, then a refresher.
+    /// Only words of that level are asked and offered as answers.
+    static func round<G: RandomNumberGenerator>(everything: [LanguageWord], level: Int = 1, progress: LanguageProgress, length: Int, using rng: inout G) -> [LanguageQuestion] {
+        let all = everything.filter { $0.level == level }
         let byKey = Dictionary(all.map { ($0.key, $0) }, uniquingKeysWith: { first, _ in first })
         var chosen: [LanguageWord] = []
         var used: Set<String> = []
@@ -175,8 +182,8 @@ enum LanguageBuilder {
         }
         let missedWords = progress.missed.compactMap { byKey[$0] }.shuffled(using: &rng)
         for word in missedWords.prefix((length + 1) / 2) { add(word) }
-        for word in all.filter({ $0.level <= level && (progress.known[$0.key] ?? 0) < learnedAt }).shuffled(using: &rng) { add(word) }
-        for word in all.filter({ $0.level <= level }).shuffled(using: &rng) { add(word) }
+        for word in all.filter({ (progress.known[$0.key] ?? 0) < learnedAt }).shuffled(using: &rng) { add(word) }
+        for word in all.shuffled(using: &rng) { add(word) }
         return chosen.map { question(all: all, word: $0, kind: kind(forTimesRight: progress.known[$0.key] ?? 0), using: &rng) }
     }
 

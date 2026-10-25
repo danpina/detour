@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GAMES, type GameDef } from "../games/registry";
-import { LANGUAGES, getLanguage, setLanguage, type LanguageId } from "../games/language/languageData";
+import { LANGUAGES, LEVEL_NAMES, getLanguage, getLevel, setLanguage, setLevel, type LanguageId } from "../games/language/languageData";
+import type { Level } from "../games/language/languageLogic";
 import { MAX_ROUND_SIZE, MIN_ROUND_SIZE, bestLabel, getRoundSize, setRoundSize } from "../games/stats";
 
 /** The Games tab: a short list of games. Opening one takes over the screen until it calls onExit. */
@@ -8,6 +9,7 @@ export function GamesScreen() {
   const [playing, setPlaying] = useState<GameDef | null>(null);
   const [roundSize, setRound] = useState(getRoundSize());
   const [languageId, setLanguageId] = useState<LanguageId>(() => getLanguage().id);
+  const [level, setLevelState] = useState<Level>(getLevel);
   if (playing) {
     const Game = playing.Component;
     return (
@@ -76,6 +78,23 @@ export function GamesScreen() {
                         className={`min-h-11 flex-1 rounded-full border px-3 py-1.5 text-sm font-medium ${languageId === l.id ? "border-teal-600 bg-teal-50 text-teal-800 dark:border-teal-400 dark:bg-teal-950 dark:text-teal-200" : "border-neutral-300 dark:border-neutral-700"}`}
                       >
                         {l.flag} {l.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
+                {g.id === "languages" && (
+                  <div className="flex gap-2 px-4 pb-4" role="group" aria-label="Level">
+                    {([1, 2, 3] as const).map((n) => (
+                      <button
+                        key={n}
+                        onClick={() => {
+                          setLevel(n);
+                          setLevelState(n);
+                        }}
+                        aria-pressed={level === n}
+                        className={`min-h-11 flex-1 rounded-full border px-3 py-1.5 text-sm font-medium ${level === n ? "border-teal-600 bg-teal-50 text-teal-800 dark:border-teal-400 dark:bg-teal-950 dark:text-teal-200" : "border-neutral-300 dark:border-neutral-700"}`}
+                      >
+                        {LEVEL_NAMES[n]}
                       </button>
                     ))}
                   </div>

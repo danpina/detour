@@ -1,0 +1,58 @@
+# Spanish, beginner: people, body, food and drink
+el hombre | man | people | El hombre lee el periódico. | The man reads the newspaper.
+la mujer | woman | people | La mujer trabaja en un banco. | The woman works in a bank.
+la niña | girl | people | La niña dibuja una casa. | The girl draws a house.
+el bebé | baby | people | El bebé duerme en la cama. | The baby sleeps in the bed.
+la gente | people | people | La gente espera el autobús. | The people wait for the bus.
+la persona | person | people | Es una persona muy simpática. | She is a very friendly person.
+el abuelo | grandfather | people | Mi abuelo cuenta historias. | My grandfather tells stories.
+el tío | uncle | people | Mi tío vive en Madrid. | My uncle lives in Madrid.
+la tía | aunt | people | Mi tía cocina muy bien. | My aunt cooks very well.
+el primo | cousin | people | Mi primo tiene un perro. | My cousin has a dog.
+el hijo | son | people | Su hijo estudia medicina. | Her son studies medicine.
+la hija | daughter | people | Su hija toca el piano. | His daughter plays the piano.
+el esposo | husband | people | Mi esposo llega a las seis. | My husband arrives at six.
+la esposa | wife | people | Su esposa es profesora. | His wife is a teacher.
+el profesor | teacher | people | El profesor explica la lección. | The teacher explains the lesson.
+el alumno | pupil | people | El alumno hace la tarea. | The pupil does the homework.
+el chico | boy, guy | people | El chico espera en la puerta. | The guy waits at the door.
+la chica | girl, young woman | people | La chica lleva una mochila azul. | The girl carries a blue backpack.
+el cuerpo | body | body | El cuerpo necesita agua. | The body needs water.
+la nariz | nose | body | Tengo la nariz roja por el frío. | My nose is red from the cold.
+la oreja | ear | body | Me duele la oreja. | My ear hurts.
+el brazo | arm | body | Levanta el brazo derecho. | Raise your right arm.
+la pierna | leg | body | Me duele la pierna izquierda. | My left leg hurts.
+el dedo | finger | body | Tengo un dedo roto. | I have a broken finger.
+el pelo | hair | body | Ella tiene el pelo largo. | She has long hair.
+la cara | face | body | Lávate la cara con agua fría. | Wash your face with cold water.
+el diente | tooth | body | Me duele un diente. | One of my teeth hurts.
+la carne | meat | food | No como carne los viernes. | I don't eat meat on Fridays.
+la fruta | fruit | food | La fruta es muy fresca. | The fruit is very fresh.
+la verdura | vegetable | food | Come más verdura, por favor. | Eat more vegetables, please.
+el tomate | tomato | food | El tomate está maduro. | The tomato is ripe.
+la patata | potato | food | La patata está caliente. | The potato is hot.
+la cebolla | onion | food | La cebolla me hace llorar. | The onion makes me cry.
+la zanahoria | carrot | food | El conejo come una zanahoria. | The rabbit eats a carrot.
+el plátano | banana | food | Desayuno un plátano cada día. | I have a banana for breakfast every day.
+la fresa | strawberry | food | La fresa es mi fruta favorita. | The strawberry is my favourite fruit.
+la uva | grape | food | Cada uva es dulce. | Every grape is sweet.
+el limón | lemon | food | Añade un poco de limón. | Add a little lemon.
+el pastel | cake | food | El pastel es para tu cumpleaños. | The cake is for your birthday.
+la galleta | biscuit | food | Quiero una galleta con leche. | I want a biscuit with milk.
+el chocolate | chocolate | food | El chocolate caliente está rico. | The hot chocolate is tasty.
+el helado | ice cream | food | Me encanta el helado de fresa. | I love strawberry ice cream.
+la sal | salt | food | Pásame la sal, por favor. | Pass me the salt, please.
+la pasta | pasta | food | Hoy comemos pasta con tomate. | Today we eat pasta with tomato.
+la comida | food, lunch | food | La comida está sobre la mesa. | The food is on the table.
+el almuerzo | lunch | food | El almuerzo es a las dos. | Lunch is at two o'clock.
+el jugo | juice | drinks | Bebo jugo de naranja por la mañana. | I drink orange juice in the morning.
+el té | tea | drinks | Prefiero el té sin azúcar. | I prefer tea without sugar.
+la cerveza | beer | drinks | Una cerveza fría, por favor. | A cold beer, please.
+el vino | wine | drinks | El vino es de España. | The wine is from Spain.
+la botella | bottle | drinks | Compro una botella de agua. | I buy a bottle of water.
+el vaso | glass | drinks | Dame un vaso de leche. | Give me a glass of milk.
+la taza | cup | drinks | Quiero una taza de café. | I want a cup of coffee.
+el plato | plate, dish | food | El plato está limpio. | The plate is clean.
+la cuchara | spoon | food | Necesito una cuchara para la sopa. | I need a spoon for the soup.
+el tenedor | fork | food | El tenedor está en la mesa. | The fork is on the table.
+el cuchillo | knife | food | El cuchillo corta bien. | The knife cuts well.

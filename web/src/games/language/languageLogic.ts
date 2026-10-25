@@ -37,13 +37,10 @@ export function shuffle<T>(items: readonly T[], rng: Rng): T[] {
 /** Words you've answered right at least this many times count as learned. */
 export const LEARNED_AT = 2;
 
-/** The highest level in play: level 2 opens once 12 words are learned, level 3 once 30 are. */
-export function unlockedLevel(progress: Progress, words: readonly Word[]): 1 | 2 | 3 {
-  const learned = words.filter((w) => (progress.known[w.key] ?? 0) >= LEARNED_AT).length;
-  if (learned >= 30) return 3;
-  if (learned >= 12) return 2;
-  return 1;
-}
+export type Level = 1 | 2 | 3;
+
+/** The three levels the learner picks from. */
+export const LEVEL_NAMES: Record<Level, string> = { 1: "Beginner", 2: "Medium", 3: "Advanced" };
 
 /** The first time a word shows it's recognising the language; then recalling it; then using it in a sentence. */
 export function kindFor(timesRight: number): QuestionKind {
@@ -95,11 +92,11 @@ export function buildQuestion(all: readonly Word[], word: Word, kind: QuestionKi
 }
 
 /**
- * A round: words you missed last time come back first (up to half), then words you haven't learned yet within your level,
- * then a refresher of learned ones. Each word is asked in the form that matches how well you know it.
+ * A round at the chosen level: words you missed last time come back first (up to half), then words you haven't learned yet,
+ * then a refresher of learned ones. Only words of that level are asked and offered as answers. Each word is asked in the form that matches how well you know it.
  */
-export function buildRound(all: readonly Word[], progress: Progress, rng: Rng, length: number): Question[] {
-  const level = unlockedLevel(progress, all);
+export function buildRound(everything: readonly Word[], progress: Progress, rng: Rng, length: number, level: Level = 1): Question[] {
+  const all = everything.filter((w) => w.level === level);
   const byKey = new Map(all.map((w) => [w.key, w] as const));
   const chosen: Word[] = [];
   const used = new Set<string>();
@@ -110,9 +107,9 @@ export function buildRound(all: readonly Word[], progress: Progress, rng: Rng, l
   };
   const missedWords = shuffle(progress.missed.map((k) => byKey.get(k)).filter((w): w is Word => !!w), rng);
   missedWords.slice(0, Math.ceil(length / 2)).forEach(add);
-  const learning = shuffle(all.filter((w) => w.level <= level && (progress.known[w.key] ?? 0) < LEARNED_AT), rng);
+  const learning = shuffle(all.filter((w) => (progress.known[w.key] ?? 0) < LEARNED_AT), rng);
   learning.forEach(add);
-  shuffle(all.filter((w) => w.level <= level), rng).forEach(add);
+  shuffle(all, rng).forEach(add);
   return chosen.map((w) => buildQuestion(all, w, kindFor(progress.known[w.key] ?? 0), rng));
 }
 

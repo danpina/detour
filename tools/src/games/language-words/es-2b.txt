@@ -1,0 +1,65 @@
+# Spanish, medium: health, travel, work, technology, city, shopping
+la salud | health | health | La salud es lo más importante. | Health is the most important thing.
+la medicina | medicine | health | Tomo la medicina dos veces al día. | I take the medicine twice a day.
+el dolor | pain | health | Tengo un dolor de cabeza. | I have a headache.
+la fiebre | fever | health | El niño tiene fiebre. | The child has a fever.
+el resfriado | cold (illness) | health | Tengo un resfriado muy fuerte. | I have a very bad cold.
+la farmacia | pharmacy | health | La farmacia cierra a las diez. | The pharmacy closes at ten.
+la cita | appointment | health | Tengo una cita con el dentista. | I have an appointment with the dentist.
+la receta | recipe, prescription | health | El médico me da una receta. | The doctor gives me a prescription.
+el seguro | insurance | money | El seguro cubre el viaje. | The insurance covers the trip.
+la herida | wound | health | La herida ya no sangra. | The wound no longer bleeds.
+descansar | to rest | verbs | Necesito descansar un poco. | I need to rest a little.
+mejorar | to improve | verbs | Quiero mejorar mi español. | I want to improve my Spanish.
+el pasajero | passenger | travel | El pasajero espera en la puerta. | The passenger waits at the gate.
+el vuelo | flight | travel | El vuelo sale a las siete. | The flight leaves at seven.
+la reserva | reservation | travel | Tengo una reserva para dos. | I have a reservation for two.
+la habitación | room | travel | La habitación tiene vista al mar. | The room has a sea view.
+el mapa | map | travel | Busco la calle en el mapa. | I look for the street on the map.
+la salida | exit, departure | travel | La salida está a la derecha. | The exit is on the right.
+la entrada | entrance, ticket | travel | La entrada cuesta diez euros. | The ticket costs ten euros.
+el turista | tourist | travel | El turista saca muchas fotos. | The tourist takes many photos.
+la frontera | border | travel | La frontera abre por la mañana. | The border opens in the morning.
+el retraso | delay | travel | El tren tiene un retraso de diez minutos. | The train has a ten-minute delay.
+alquilar | to rent | verbs | Queremos alquilar un coche. | We want to rent a car.
+reservar | to book | verbs | Voy a reservar una mesa. | I am going to book a table.
+perderse | to get lost | verbs | Es fácil perderse en esta ciudad. | It is easy to get lost in this city.
+la empresa | company | work | Mi hermana trabaja en una empresa grande. | My sister works in a big company.
+el jefe | boss | work | El jefe llega temprano. | The boss arrives early.
+el compañero | colleague | work | Mi compañero me ayuda mucho. | My colleague helps me a lot.
+la entrevista | interview | work | Mañana tengo una entrevista. | Tomorrow I have an interview.
+el contrato | contract | work | Firmo el contrato hoy. | I sign the contract today.
+las vacaciones | holiday | work | Las vacaciones empiezan el lunes. | The holidays start on Monday.
+cobrar | to earn, to charge | verbs | Voy a cobrar el viernes. | I am going to get paid on Friday.
+la tarea | task, homework | work | La tarea es muy larga. | The task is very long.
+el correo | mail, email | tech | Escribo un correo a mi jefe. | I write an email to my boss.
+la contraseña | password | tech | Olvidé la contraseña. | I forgot the password.
+la pantalla | screen | tech | La pantalla está rota. | The screen is broken.
+el archivo | file | tech | Guardo el archivo en el ordenador. | I save the file on the computer.
+la red | network | tech | No hay red en la montaña. | There is no network in the mountains.
+descargar | to download | verbs | Voy a descargar la aplicación. | I am going to download the app.
+enviar | to send | verbs | Voy a enviar el mensaje. | I am going to send the message.
+el mensaje | message | tech | Recibo un mensaje de mi madre. | I receive a message from my mother.
+cargar | to charge, to load | verbs | Tengo que cargar el móvil. | I have to charge my phone.
+la batería | battery | tech | La batería se acaba rápido. | The battery runs out quickly.
+el edificio | building | city | El edificio tiene diez pisos. | The building has ten floors.
+la plaza | square | city | La plaza está llena de gente. | The square is full of people.
+el puente | bridge | city | El puente cruza el río. | The bridge crosses the river.
+la esquina | corner | city | Nos vemos en la esquina. | We meet at the corner.
+el semáforo | traffic light | city | El semáforo está en rojo. | The traffic light is red.
+el ayuntamiento | town hall | city | El ayuntamiento está en la plaza. | The town hall is in the square.
+el barrio | neighbourhood | city | Mi barrio es muy tranquilo. | My neighbourhood is very quiet.
+el centro | centre | city | Vivo cerca del centro. | I live near the centre.
+la acera | pavement | city | Camino por la acera. | I walk along the pavement.
+el tráfico | traffic | city | Hay mucho tráfico por la tarde. | There is a lot of traffic in the afternoon.
+la tienda de ropa | clothes shop | city | La tienda de ropa tiene rebajas. | The clothes shop has a sale.
+la ropa | clothes | clothes | Lavo la ropa los domingos. | I wash the clothes on Sundays.
+la talla | size | clothes | ¿Qué talla usas? | What size do you wear?
+probarse | to try on | verbs | Es divertido probarse ropa nueva. | It is fun to try on new clothes.
+el precio | price | money | El precio es muy alto. | The price is very high.
+la rebaja | sale, discount | money | Hay una rebaja en esa tienda. | There is a sale in that shop.
+el cambio | change | money | Aquí tiene su cambio. | Here is your change.
+la cuenta | bill, account | money | La cuenta, por favor. | The bill, please.
+la propina | tip | money | Dejo una propina pequeña. | I leave a small tip.
+el recibo | receipt | money | Guarda el recibo, por favor. | Keep the receipt, please.
+gastar | to spend | verbs | No quiero gastar mucho. | I don't want to spend much.

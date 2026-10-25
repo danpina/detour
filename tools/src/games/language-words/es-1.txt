@@ -1,0 +1,54 @@
+el gato | cat | animals | El gato duerme en el sofá. | The cat sleeps on the sofa. | 
+el perro | dog | animals | El perro corre en el parque. | The dog runs in the park. | 
+el pájaro | bird | animals | El pájaro canta por la mañana. | The bird sings in the morning. | 
+el pez | fish | animals | El pez nada en el agua. | The fish swims in the water. | 
+el pan | bread | food | Quiero pan con mantequilla. | I want bread with butter. | 
+el agua | water | food | Bebo agua todos los días. | I drink water every day. | 
+la leche | milk | food | Tomo leche con el cereal. | I have milk with my cereal. | 
+la manzana | apple | food | Ella come una manzana roja. | She eats a red apple. | 
+el queso | cheese | food | Me gusta el queso. | I like cheese. | 
+la casa | house | home | Mi casa es pequeña. | My house is small. | 
+la puerta | door | home | Cierra la puerta, por favor. | Close the door, please. | 
+la mesa | table | home | El libro está sobre la mesa. | The book is on the table. | 
+la silla | chair | home | Siéntate en la silla. | Sit on the chair. | 
+el libro | book | home | Leo un libro interesante. | I am reading an interesting book. | 
+la madre | mother | people | Mi madre trabaja mucho. | My mother works a lot. | 
+el padre | father | people | Mi padre cocina muy bien. | My father cooks very well. | 
+el hermano | brother | people | Mi hermano es mayor que yo. | My brother is older than me. | 
+la hermana | sister | people | Mi hermana estudia medicina. | My sister studies medicine. | 
+el amigo | friend | people | Mi amigo vive en Madrid. | My friend lives in Madrid. | 
+comer | to eat | verbs | Vamos a comer a las dos. | We are going to eat at two. | 
+beber | to drink | verbs | Quiero beber un poco de agua. | I want to drink a little water. | 
+hablar | to speak | verbs | Me gusta hablar español. | I like to speak Spanish. | 
+vivir | to live | verbs | Quiero vivir cerca del mar. | I want to live near the sea. | 
+grande | big | adjectives | Es una ciudad muy grande. | It is a very big city. | 
+pequeño | small | adjectives | Tengo un perro pequeño. | I have a small dog. | 
+bonito | pretty | adjectives | Qué vestido tan bonito. | What a pretty dress. | 
+nuevo | new | adjectives | Tengo un teléfono nuevo. | I have a new phone. | 
+viejo | old | adjectives | Es un coche viejo. | It is an old car. | 
+la ciudad | city | places | Madrid es una ciudad grande. | Madrid is a big city. | 
+la calle | street | places | La calle está tranquila. | The street is quiet. | 
+la playa | beach | places | Vamos a la playa en verano. | We go to the beach in summer. | 
+la escuela | school | places | Los niños van a la escuela. | The children go to school. | 
+hoy | today | time | Hoy hace sol. | Today it is sunny. | 
+mañana | tomorrow | time | Mañana voy al médico. | Tomorrow I am going to the doctor. | 
+ayer | yesterday | time | Ayer llovió todo el día. | Yesterday it rained all day. | 
+ahora | now | time | Ahora estoy en casa. | Now I am at home. | 
+uno | one | numbers | Tengo uno en mi bolsillo. | I have one in my pocket. | 
+dos | two | numbers | Tengo dos hermanos. | I have two brothers. | 
+tres | three | numbers | Hay tres gatos en el jardín. | There are three cats in the garden. | 
+cuatro | four | numbers | La mesa tiene cuatro patas. | The table has four legs. | 
+cinco | five | numbers | Son las cinco de la tarde. | It is five in the afternoon. | 
+la mano | hand | body | Lávate la mano antes de comer. | Wash your hand before eating. | 
+la cabeza | head | body | Me duele la cabeza. | My head hurts. | 
+el ojo | eye | body | Tengo un ojo cerrado. | I have one eye closed. | 
+el pie | foot | body | Me duele el pie derecho. | My right foot hurts. | 
+la boca | mouth | body | Abre la boca, por favor. | Open your mouth, please. | 
+la camisa | shirt | clothes | Mi camisa es azul. | My shirt is blue. | 
+los zapatos | shoes | clothes | Necesito unos zapatos nuevos. | I need some new shoes. | 
+el sombrero | hat | clothes | El sombrero es muy grande. | The hat is very big. | 
+el sol | sun | weather | Hoy hace sol. | It is sunny today. | 
+la lluvia | rain | weather | La lluvia cae sobre la ciudad. | The rain falls on the city. | 
+el viento | wind | weather | Hay mucho viento hoy. | There is a lot of wind today. | 
+el cielo | sky | weather | El cielo está azul. | The sky is blue. | 
+el café | coffee | food | Me gusta el café por la mañana. | I like coffee in the morning. | 

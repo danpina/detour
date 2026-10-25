@@ -1,0 +1,37 @@
+die Katze | cat | animals | Die Katze schläft auf dem Sofa. | The cat sleeps on the sofa. | 
+der Hund | dog | animals | Der Hund läuft im Park. | The dog runs in the park. | 
+der Vogel | bird | animals | Der Vogel singt am Morgen. | The bird sings in the morning. | 
+der Fisch | fish | animals | Der Fisch schwimmt im Fluss. | The fish swims in the river. | 
+das Brot | bread | food | Ich esse Brot zum Frühstück. | I eat bread for breakfast. | 
+das Wasser | water | food | Ich trinke Wasser. | I drink water. | 
+die Milch | milk | food | Die Milch ist kalt. | The milk is cold. | 
+der Apfel | apple | food | Ich esse einen Apfel. | I am eating an apple. | 
+der Käse | cheese | food | Ich mag Käse. | I like cheese. | 
+das Haus | house | home | Das Haus ist sehr schön. | The house is very beautiful. | 
+die Tür | door | home | Mach bitte die Tür zu. | Please close the door. | 
+der Tisch | table | home | Das Buch liegt auf dem Tisch. | The book is lying on the table. | 
+der Stuhl | chair | home | Setz dich auf den Stuhl. | Sit down on the chair. | 
+die Mutter | mother | people | Meine Mutter kocht sehr gut. | My mother cooks very well. | 
+der Vater | father | people | Mein Vater arbeitet hier. | My father works here. | 
+der Bruder | brother | people | Mein Bruder ist zehn Jahre alt. | My brother is ten years old. | 
+die Schwester | sister | people | Meine Schwester liest gern. | My sister likes reading. | 
+der Freund | friend | people | Mein Freund wohnt in Berlin. | My friend lives in Berlin. | 
+essen | to eat | verbs | Ich möchte einen Apfel essen. | I would like to eat an apple. | 
+trinken | to drink | verbs | Ich möchte Wasser trinken. | I would like to drink some water. | 
+sprechen | to speak | verbs | Ich möchte Deutsch sprechen. | I would like to speak German. | 
+leben | to live | verbs | Ich möchte auf dem Land leben. | I would like to live in the countryside. | leben
+groß | big, tall | adjectives | Der Hund ist groß. | The dog is big. | 
+klein | small | adjectives | Die Katze ist klein. | The cat is small. | 
+schön | beautiful | adjectives | Der Garten ist schön. | The garden is beautiful. | 
+schnell | fast | adjectives | Der Zug ist schnell. | The train is fast. | 
+langsam | slow | adjectives | Der Bus ist langsam. | The bus is slow. | langsam
+die Stadt | city, town | places | Die Stadt ist sehr groß. | The city is very big. | 
+die Straße | street | places | Die Straße ist ruhig. | The street is quiet. | 
+heute | today | time | Heute ist das Wetter schön. | Today the weather is nice. | 
+morgen | tomorrow | time | Wir sehen uns morgen. | See you tomorrow. | 
+gestern | yesterday | time | Gestern war ich zu Hause. | Yesterday I was at home. | 
+eins | one | numbers | Eins plus eins ist zwei. | One plus one is two. | 
+zwei | two | numbers | Es gibt zwei Katzen. | There are two cats. | 
+drei | three | numbers | Ich habe drei Bücher. | I have three books. | 
+vier | four | numbers | Es gibt vier Stühle. | There are four chairs. | 
+fünf | five | numbers | Es ist fünf Uhr. | It is five o'clock. | 

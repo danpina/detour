@@ -1,0 +1,62 @@
+# Spanish, beginner: home, transport, nature, colours, time, numbers, greetings
+el sofá | sofa | home | El gato duerme en el sofá. | The cat sleeps on the sofa.
+el baño | bathroom | home | El baño está al fondo. | The bathroom is at the back.
+el jardín | garden | home | El jardín tiene muchas flores. | The garden has many flowers.
+la pared | wall | home | Hay un cuadro en la pared. | There is a picture on the wall.
+el suelo | floor | home | El suelo está limpio. | The floor is clean.
+la lámpara | lamp | home | La lámpara está encendida. | The lamp is on.
+la televisión | television | home | La televisión está en el salón. | The television is in the living room.
+el teléfono | telephone | home | Mi teléfono suena. | My phone is ringing.
+el ordenador | computer | home | El ordenador es nuevo. | The computer is new.
+el coche | car | travel | Mi coche es rojo. | My car is red.
+el autobús | bus | travel | El autobús llega tarde. | The bus arrives late.
+el tren | train | travel | El tren sale a las ocho. | The train leaves at eight.
+la bicicleta | bicycle | travel | Voy al trabajo en bicicleta. | I go to work by bicycle.
+el avión | plane | travel | El avión aterriza en una hora. | The plane lands in an hour.
+el barco | boat | travel | El barco sale del puerto. | The boat leaves the port.
+el taxi | taxi | travel | Necesito un taxi para el aeropuerto. | I need a taxi to the airport.
+el árbol | tree | nature | El árbol es muy alto. | The tree is very tall.
+la flor | flower | nature | Esta flor huele muy bien. | This flower smells very good.
+la hierba | grass | nature | La hierba está mojada. | The grass is wet.
+el mar | sea | nature | El mar está tranquilo hoy. | The sea is calm today.
+el lago | lake | nature | Nadamos en el lago. | We swim in the lake.
+la isla | island | nature | La isla es muy pequeña. | The island is very small.
+el bosque | forest | nature | Caminamos por el bosque. | We walk through the forest.
+la luna | moon | nature | La luna brilla esta noche. | The moon shines tonight.
+la estrella | star | nature | Veo una estrella en el cielo. | I see a star in the sky.
+el fuego | fire | nature | El fuego da calor. | The fire gives heat.
+la piedra | stone | nature | Hay una piedra en el camino. | There is a stone on the path.
+el rojo | red | colors | El rojo es mi color favorito. | Red is my favourite colour.
+el azul | blue | colors | El azul del mar es precioso. | The blue of the sea is beautiful.
+el verde | green | colors | El verde del bosque es intenso. | The green of the forest is intense.
+el amarillo | yellow | colors | El amarillo se ve desde lejos. | Yellow can be seen from afar.
+el negro | black | colors | El negro le queda muy bien. | Black suits him very well.
+el blanco | white | colors | La pared es de color blanco. | The wall is white.
+el gris | grey | colors | El cielo está gris. | The sky is grey.
+el lunes | Monday | time | El lunes empieza la semana. | Monday starts the week.
+el martes | Tuesday | time | El martes tengo clase de inglés. | On Tuesday I have English class.
+el miércoles | Wednesday | time | El miércoles voy al médico. | On Wednesday I go to the doctor.
+el jueves | Thursday | time | El jueves cenamos fuera. | On Thursday we eat out.
+el viernes | Friday | time | El viernes salimos con amigos. | On Friday we go out with friends.
+el sábado | Saturday | time | El sábado limpiamos la casa. | On Saturday we clean the house.
+el domingo | Sunday | time | El domingo descansamos. | On Sunday we rest.
+la primavera | spring | time | En primavera hay muchas flores. | In spring there are many flowers.
+el verano | summer | time | En verano vamos a la playa. | In summer we go to the beach.
+el otoño | autumn | time | En otoño caen las hojas. | In autumn the leaves fall.
+el invierno | winter | time | En invierno hace mucho frío. | In winter it is very cold.
+la noche | night | time | De noche todo está tranquilo. | At night everything is calm.
+el día | day | time | Es un día muy bonito. | It is a very nice day.
+la hora | hour | time | ¿Qué hora es? | What time is it?
+seis | six | numbers | Tengo seis libros. | I have six books.
+siete | seven | numbers | Hay siete días en una semana. | There are seven days in a week.
+ocho | eight | numbers | Son las ocho de la mañana. | It is eight in the morning.
+nueve | nine | numbers | Tengo nueve primos. | I have nine cousins.
+once | eleven | numbers | El equipo tiene once jugadores. | The team has eleven players.
+doce | twelve | numbers | Hay doce meses en un año. | There are twelve months in a year.
+treinta | thirty | numbers | Mi madre tiene treinta años. | My mother is thirty years old.
+hola | hello | words | Hola, ¿cómo estás? | Hello, how are you?
+adiós | goodbye | words | Adiós, hasta mañana. | Goodbye, see you tomorrow.
+gracias | thank you | words | Muchas gracias por todo. | Thank you very much for everything.
+por favor | please | words | Un café, por favor. | A coffee, please.
+perdón | sorry | words | Perdón, ¿dónde está la estación? | Sorry, where is the station?
+buenos días | good morning | words | Buenos días, señora. | Good morning, madam.

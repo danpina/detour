@@ -1,0 +1,35 @@
+# Spanish, beginner: places, clothes, school, everyday things
+la tienda | shop | places | La tienda abre a las nueve. | The shop opens at nine.
+el banco | bank | places | El banco está cerca del parque. | The bank is near the park.
+el parque | park | places | Los niños juegan en el parque. | The children play in the park.
+el cine | cinema | places | Vamos al cine el sábado. | We are going to the cinema on Saturday.
+el restaurante | restaurant | places | El restaurante está lleno. | The restaurant is full.
+la oficina | office | places | Mi oficina está en el centro. | My office is in the centre.
+el hospital | hospital | places | El hospital está al lado de la escuela. | The hospital is next to the school.
+la iglesia | church | places | La iglesia es muy antigua. | The church is very old.
+el país | country | places | Mi país tiene muchas montañas. | My country has many mountains.
+la falda | skirt | clothes | La falda es muy corta. | The skirt is very short.
+el vestido | dress | clothes | El vestido es rojo. | The dress is red.
+la chaqueta | jacket | clothes | La chaqueta está en la silla. | The jacket is on the chair.
+los calcetines | socks | clothes | Los calcetines están en el cajón. | The socks are in the drawer.
+las gafas | glasses | clothes | No encuentro mis gafas. | I can't find my glasses.
+la mochila | backpack | school | La mochila pesa mucho. | The backpack is very heavy.
+el lápiz | pencil | school | Necesito un lápiz para dibujar. | I need a pencil to draw.
+el papel | paper | school | Dame una hoja de papel. | Give me a sheet of paper.
+la clase | class | school | La clase empieza a las nueve. | The class starts at nine.
+la lección | lesson | school | La lección de hoy es fácil. | Today's lesson is easy.
+el nombre | name | words | Mi nombre es Ana. | My name is Ana.
+la palabra | word | words | Esta palabra es nueva para mí. | This word is new to me.
+el idioma | language | words | El español es un idioma bonito. | Spanish is a beautiful language.
+la música | music | words | La música suena muy fuerte. | The music is very loud.
+la película | film | words | La película dura dos horas. | The film lasts two hours.
+la foto | photo | words | Esta foto es de mi familia. | This photo is of my family.
+el regalo | present | words | El regalo está en la caja. | The present is in the box.
+la fiesta | party | words | La fiesta es el viernes. | The party is on Friday.
+el juego | game | words | Este juego es muy divertido. | This game is a lot of fun.
+el hambre | hunger | feelings | Tengo hambre y quiero comer. | I am hungry and want to eat.
+la sed | thirst | feelings | Tengo sed, quiero agua. | I am thirsty, I want water.
+el sueño | sleep, dream | feelings | Tengo sueño después de comer. | I am sleepy after eating.
+el miedo | fear | feelings | El niño tiene miedo de la oscuridad. | The boy is afraid of the dark.
+la risa | laughter | feelings | Su risa me hace feliz. | Her laughter makes me happy.
+la ayuda | help | words | Necesito ayuda con la tarea. | I need help with the homework.

@@ -7,6 +7,7 @@ struct LanguageGameView: View {
     var embedded: ((Int) -> Void)? = nil
 
     @State private var language = LanguageInfo.current
+    @State private var level = LanguageInfo.currentLevel
     @State private var words: [LanguageWord] = []
     @State private var progress = LanguageProgress()
     @State private var round: [LanguageQuestion] = []
@@ -31,6 +32,7 @@ struct LanguageGameView: View {
             if !started {
                 started = true
                 language = LanguageInfo.current
+                level = LanguageInfo.currentLevel
                 words = LanguageData.load(language)
                 progress = LanguageStore.load(language)
                 startRound()
@@ -40,15 +42,17 @@ struct LanguageGameView: View {
 
     private func startRound() {
         var rng = SystemRandomNumberGenerator()
-        round = LanguageBuilder.round(all: words, progress: progress, length: GameStats.roundSize, using: &rng)
+        round = LanguageBuilder.round(everything: words, level: level, progress: progress, length: GameStats.roundSize, using: &rng)
         index = 0
         score = 0
         picked = nil
         isBest = false
     }
 
+    private var levelWords: [LanguageWord] { words.filter { $0.level == level } }
+
     private var learned: Int {
-        words.filter { (progress.known[$0.key] ?? 0) >= LanguageBuilder.learnedAt }.count
+        levelWords.filter { (progress.known[$0.key] ?? 0) >= LanguageBuilder.learnedAt }.count
     }
 
     private var unavailable: some View {
@@ -66,7 +70,7 @@ struct LanguageGameView: View {
             Text(language.flag).font(.system(size: 64))
             Text("\(score) / \(round.count)").font(.largeTitle.weight(.semibold))
             Text(endLine).foregroundStyle(.secondary).multilineTextAlignment(.center)
-            Text("\(learned) of \(words.count) words learned").font(.subheadline).foregroundStyle(.secondary)
+            Text("\(learned) of \(levelWords.count) " + LanguageBuilder.levelName(level).lowercased() + " words learned").font(.subheadline).foregroundStyle(.secondary)
             if isBest {
                 Text("New best!").font(.subheadline.weight(.medium)).foregroundStyle(.tint)
             }

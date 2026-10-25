@@ -1,0 +1,97 @@
+# Spanish, beginner: verbs, adjectives, question words and small everyday words
+ser | to be (what someone is) | verbs | Quiero ser médico. | I want to be a doctor.
+estar | to be (where or how) | verbs | Voy a estar en casa. | I am going to be at home.
+tener | to have | verbs | Quiero tener un perro. | I want to have a dog.
+hacer | to do, to make | verbs | Voy a hacer la cena. | I am going to make dinner.
+ir | to go | verbs | Quiero ir a la playa. | I want to go to the beach.
+venir | to come | verbs | ¿Puedes venir mañana? | Can you come tomorrow?
+ver | to see | verbs | Quiero ver esa película. | I want to see that film.
+oír | to hear | verbs | No puedo oír la música. | I can't hear the music.
+decir | to say, to tell | verbs | Voy a decir la verdad. | I am going to tell the truth.
+dar | to give | verbs | Voy a dar un regalo a mi madre. | I am going to give my mother a present.
+querer | to want, to love | verbs | Es fácil querer a mi familia. | It is easy to love my family.
+poder | to be able to | verbs | Quiero poder hablar con ella. | I want to be able to talk to her.
+saber | to know (a fact) | verbs | Quiero saber la respuesta. | I want to know the answer.
+conocer | to know (a person) | verbs | Quiero conocer a tu hermana. | I want to meet your sister.
+llegar | to arrive | verbs | Vamos a llegar tarde. | We are going to arrive late.
+salir | to go out, to leave | verbs | Quiero salir con mis amigos. | I want to go out with my friends.
+entrar | to enter | verbs | Puedes entrar, la puerta está abierta. | You can come in, the door is open.
+volver | to return | verbs | Voy a volver a casa. | I am going to go back home.
+llamar | to call | verbs | Voy a llamar a mi madre. | I am going to call my mother.
+mirar | to look at | verbs | Me gusta mirar las estrellas. | I like to look at the stars.
+escuchar | to listen | verbs | Me gusta escuchar música. | I like to listen to music.
+trabajar | to work | verbs | Tengo que trabajar mañana. | I have to work tomorrow.
+estudiar | to study | verbs | Necesito estudiar para el examen. | I need to study for the exam.
+jugar | to play | verbs | Los niños quieren jugar en el parque. | The children want to play in the park.
+bailar | to dance | verbs | Me encanta bailar con ella. | I love to dance with her.
+cocinar | to cook | verbs | Voy a cocinar pasta. | I am going to cook pasta.
+lavar | to wash | verbs | Tengo que lavar los platos. | I have to wash the dishes.
+usar | to use | verbs | Puedes usar mi teléfono. | You can use my phone.
+necesitar | to need | verbs | Voy a necesitar ayuda. | I am going to need help.
+gustar | to be pleasing | verbs | Me va a gustar este libro. | I am going to like this book.
+amar | to love | verbs | Quiero amar sin miedo. | I want to love without fear.
+vender | to sell | verbs | Van a vender la casa. | They are going to sell the house.
+pagar | to pay | verbs | Voy a pagar la cuenta. | I am going to pay the bill.
+cerrar | to close | verbs | Voy a cerrar la ventana. | I am going to close the window.
+empezar | to begin | verbs | La clase va a empezar. | The class is about to begin.
+terminar | to finish | verbs | Voy a terminar el trabajo hoy. | I am going to finish the work today.
+ganar | to win | verbs | Queremos ganar el partido. | We want to win the match.
+perder | to lose | verbs | No quiero perder mis llaves. | I don't want to lose my keys.
+subir | to go up | verbs | Vamos a subir la montaña. | We are going to climb the mountain.
+bajar | to go down | verbs | Voy a bajar por las escaleras. | I am going to go down the stairs.
+nadar | to swim | verbs | Me gusta nadar en el mar. | I like to swim in the sea.
+volar | to fly | verbs | Los pájaros pueden volar. | Birds can fly.
+reír | to laugh | verbs | Me gusta reír con mis amigos. | I like to laugh with my friends.
+llorar | to cry | verbs | La película me hace llorar. | The film makes me cry.
+llevar | to carry, to wear | verbs | Voy a llevar un abrigo. | I am going to wear a coat.
+traer | to bring | verbs | Voy a traer el postre. | I am going to bring the dessert.
+poner | to put | verbs | Voy a poner la mesa. | I am going to set the table.
+bueno | good | adjectives | El pan es muy bueno. | The bread is very good.
+malo | bad | adjectives | El tiempo es malo hoy. | The weather is bad today.
+alto | tall | adjectives | Mi hermano es muy alto. | My brother is very tall.
+bajo | short | adjectives | Mi abuelo es bajo. | My grandfather is short.
+joven | young | adjectives | Mi tía es muy joven. | My aunt is very young.
+rico | rich, tasty | adjectives | Este pastel está muy rico. | This cake is very tasty.
+pobre | poor | adjectives | El pobre gato tiene hambre. | The poor cat is hungry.
+limpio | clean | adjectives | El baño está limpio. | The bathroom is clean.
+sucio | dirty | adjectives | El suelo está sucio. | The floor is dirty.
+fuerte | strong | adjectives | El viento es muy fuerte. | The wind is very strong.
+ligero | light | adjectives | El paquete es muy ligero. | The package is very light.
+pesado | heavy | adjectives | El paquete es muy pesado. | The package is very heavy.
+lleno | full | adjectives | El vaso está lleno. | The glass is full.
+vacío | empty | adjectives | El frigorífico está vacío. | The fridge is empty.
+abierto | open | adjectives | El mercado está abierto. | The market is open.
+cerrado | closed | adjectives | El banco está cerrado hoy. | The bank is closed today.
+dulce | sweet | adjectives | La uva es muy dulce. | The grape is very sweet.
+salado | salty | adjectives | El pescado está muy salado. | The fish is very salty.
+duro | hard | adjectives | El pan está duro. | The bread is hard.
+triste | sad | adjectives | Hoy estoy un poco triste. | Today I am a bit sad.
+enfermo | ill | adjectives | Mi hijo está enfermo. | My son is ill.
+simpático | friendly | adjectives | Tu amigo es muy simpático. | Your friend is very friendly.
+listo | clever, ready | adjectives | Mi hermano es muy listo. | My brother is very clever.
+tranquilo | calm | adjectives | El lago está muy tranquilo. | The lake is very calm.
+oscuro | dark | adjectives | El cuarto está oscuro. | The room is dark.
+qué | what | words | ¿Qué quieres comer? | What do you want to eat?
+quién | who | words | ¿Quién es ese chico? | Who is that boy?
+dónde | where | words | ¿Dónde vives? | Where do you live?
+cuándo | when | words | ¿Cuándo llega el tren? | When does the train arrive?
+cómo | how | words | ¿Cómo te llamas? | What is your name?
+por qué | why | words | ¿Por qué estás triste? | Why are you sad?
+cuánto | how much | words | ¿Cuánto cuesta el pan? | How much does the bread cost?
+muy | very | words | La sopa está muy caliente. | The soup is very hot.
+más | more | words | Quiero más agua. | I want more water.
+menos | less | words | Hoy hay menos gente. | Today there are fewer people.
+mucho | a lot | words | Me gusta mucho el chocolate. | I like chocolate a lot.
+poco | a little | words | Quiero un poco de sal. | I want a little salt.
+todo | all, everything | words | Todo está listo. | Everything is ready.
+nada | nothing | words | No tengo nada en la mano. | I have nothing in my hand.
+algo | something | words | Quiero comer algo. | I want to eat something.
+aquí | here | words | Mi casa está aquí. | My house is here.
+allí | there | words | Tu coche está allí. | Your car is over there.
+bien | well | words | Mi madre cocina muy bien. | My mother cooks very well.
+mal | badly | words | Hoy duermo mal. | Today I sleep badly.
+también | also | words | Yo también quiero un café. | I also want a coffee.
+pero | but | words | Quiero ir, pero estoy cansado. | I want to go, but I am tired.
+con | with | words | Voy al cine con mi hermano. | I am going to the cinema with my brother.
+sin | without | words | Prefiero el café sin azúcar. | I prefer coffee without sugar.
+para | for, in order to | words | Este regalo es para ti. | This present is for you.

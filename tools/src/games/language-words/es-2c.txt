@@ -1,0 +1,108 @@
+# Spanish, medium: feelings, daily verbs, hobbies, school, home, nature, adjectives and connectors
+la alegría | joy | feelings | Su visita me da mucha alegría. | Her visit gives me a lot of joy.
+la tristeza | sadness | feelings | Siento tristeza cuando te vas. | I feel sadness when you leave.
+el enfado | anger | feelings | Su enfado dura poco. | His anger doesn't last long.
+la sorpresa | surprise | feelings | Qué sorpresa verte aquí. | What a surprise to see you here.
+la vergüenza | shame, embarrassment | feelings | Me da vergüenza hablar en público. | I feel embarrassed speaking in public.
+los nervios | nerves | feelings | Antes del examen tengo nervios. | Before the exam I feel nervous.
+la esperanza | hope | feelings | Mantengo la esperanza. | I keep hope.
+la confianza | trust | feelings | La confianza es muy importante. | Trust is very important.
+echar de menos | to miss | feelings | Voy a echar de menos a mi familia. | I am going to miss my family.
+enojarse | to get angry | verbs | Es fácil enojarse con el tráfico. | It is easy to get angry in traffic.
+despertarse | to wake up | verbs | Es difícil despertarse sin café. | It is hard to wake up without coffee.
+levantarse | to get up | verbs | Es duro levantarse temprano. | It is hard to get up early.
+ducharse | to shower | verbs | Es agradable ducharse con agua caliente. | It is pleasant to shower with hot water.
+vestirse | to get dressed | verbs | Es fácil vestirse en verano. | It is easy to get dressed in summer.
+acostarse | to go to bed | verbs | Es sano acostarse temprano. | It is healthy to go to bed early.
+quedarse | to stay | verbs | Es mejor quedarse en casa hoy. | It is better to stay at home today.
+sentarse | to sit down | verbs | Es mejor sentarse aquí. | It is better to sit down here.
+decidir | to decide | verbs | Tengo que decidir hoy. | I have to decide today.
+elegir | to choose | verbs | Es difícil elegir un regalo. | It is hard to choose a present.
+preguntar | to ask | verbs | Voy a preguntar el precio. | I am going to ask the price.
+responder | to answer | verbs | Debo responder al correo. | I must answer the email.
+explicar | to explain | verbs | Puedes explicar esta regla. | Can you explain this rule?
+entender | to understand | verbs | No puedo entender esta frase. | I can't understand this sentence.
+compartir | to share | verbs | Me gusta compartir la comida. | I like to share food.
+prestar | to lend | verbs | ¿Puedes prestar tu libro? | Can you lend your book?
+devolver | to give back | verbs | Tengo que devolver el libro. | I have to give the book back.
+cambiar | to change | verbs | Voy a cambiar de trabajo. | I am going to change jobs.
+crecer | to grow | verbs | Me gusta ver crecer las plantas. | I like to watch plants grow.
+morir | to die | verbs | Las flores van a morir sin agua. | The flowers are going to die without water.
+nacer | to be born | verbs | Mi hermana va a nacer en mayo. | My sister is going to be born in May.
+casarse | to get married | verbs | Es bonito casarse en junio. | It is lovely to get married in June.
+cuidar | to look after | verbs | Voy a cuidar al bebé. | I am going to look after the baby.
+la afición | hobby | hobbies | Mi afición es la fotografía. | My hobby is photography.
+el deporte | sport | hobbies | Mi deporte favorito es el tenis. | My favourite sport is tennis.
+el partido | match | hobbies | El partido empieza a las ocho. | The match starts at eight.
+el equipo | team | hobbies | Nuestro equipo ganó ayer. | Our team won yesterday.
+el ejercicio | exercise | hobbies | Hago ejercicio cada mañana. | I exercise every morning.
+la pelota | ball | hobbies | La pelota está en el jardín. | The ball is in the garden.
+la guitarra | guitar | hobbies | Toco la guitarra por las noches. | I play the guitar in the evenings.
+la canción | song | hobbies | Esta canción es muy bonita. | This song is very beautiful.
+la pintura | painting | hobbies | La pintura está en el museo. | The painting is in the museum.
+el museo | museum | places | El museo abre los domingos. | The museum opens on Sundays.
+el teatro | theatre | places | Vamos al teatro esta noche. | We are going to the theatre tonight.
+el examen | exam | school | El examen es la próxima semana. | The exam is next week.
+la nota | grade, note | school | Saqué una buena nota. | I got a good grade.
+la universidad | university | school | Mi hermano va a la universidad. | My brother goes to university.
+el estudiante | student | school | Cada estudiante tiene un libro. | Every student has a book.
+la historia | history, story | school | Me encanta la historia antigua. | I love ancient history.
+la ciencia | science | school | La ciencia explica el mundo. | Science explains the world.
+el cuaderno | notebook | school | Escribo en mi cuaderno. | I write in my notebook.
+la escalera | stairs | home | La escalera es muy estrecha. | The staircase is very narrow.
+el techo | ceiling, roof | home | El techo tiene una gotera. | The ceiling has a leak.
+el armario | wardrobe | home | La ropa está en el armario. | The clothes are in the wardrobe.
+la nevera | fridge | home | La leche está en la nevera. | The milk is in the fridge.
+la lavadora | washing machine | home | La lavadora está rota. | The washing machine is broken.
+la basura | rubbish | home | Saco la basura por la noche. | I take out the rubbish at night.
+el alquiler | rent | home | El alquiler sube cada año. | The rent goes up every year.
+el piso | flat, floor | home | Vivo en un piso pequeño. | I live in a small flat.
+la manta | blanket | home | Necesito una manta, hace frío. | I need a blanket, it is cold.
+la almohada | pillow | home | La almohada es muy cómoda. | The pillow is very comfortable.
+el campo | countryside, field | nature | Mis abuelos viven en el campo. | My grandparents live in the countryside.
+el desierto | desert | nature | El desierto es muy seco. | The desert is very dry.
+la selva | jungle | nature | La selva tiene muchos animales. | The jungle has many animals.
+el volcán | volcano | nature | El volcán está activo. | The volcano is active.
+la ola | wave | nature | La ola es enorme. | The wave is huge.
+la niebla | fog | weather | Hay mucha niebla en la carretera. | There is a lot of fog on the road.
+el hielo | ice | weather | El hielo cubre el lago. | Ice covers the lake.
+el calor | heat | weather | Hace mucho calor en agosto. | It is very hot in August.
+el zorro | fox | animals | El zorro corre por el bosque. | The fox runs through the forest.
+el lobo | wolf | animals | El lobo aúlla de noche. | The wolf howls at night.
+el oso | bear | animals | El oso duerme en invierno. | The bear sleeps in winter.
+la ardilla | squirrel | animals | La ardilla sube al árbol. | The squirrel climbs the tree.
+la abeja | bee | animals | La abeja hace miel. | The bee makes honey.
+la araña | spider | animals | Hay una araña en la pared. | There is a spider on the wall.
+el delfín | dolphin | animals | El delfín salta en el agua. | The dolphin jumps in the water.
+la ballena | whale | animals | La ballena es enorme. | The whale is huge.
+cómodo | comfortable | adjectives | El sofá es muy cómodo. | The sofa is very comfortable.
+tímido | shy | adjectives | Mi primo es muy tímido. | My cousin is very shy.
+divertido | fun | adjectives | El juego es muy divertido. | The game is a lot of fun.
+aburrido | boring | adjectives | El libro es muy aburrido. | The book is very boring.
+útil | useful | adjectives | Este mapa es muy útil. | This map is very useful.
+fácil | easy | adjectives | La lección es fácil. | The lesson is easy.
+extraño | strange | adjectives | Es extraño, nadie contesta. | It is strange, nobody answers.
+famoso | famous | adjectives | Este museo es famoso. | This museum is famous.
+mojado | wet | adjectives | El suelo está mojado. | The floor is wet.
+seco | dry | adjectives | El pan está seco. | The bread is dry.
+ancho | wide | adjectives | El río es muy ancho. | The river is very wide.
+estrecho | narrow | adjectives | El pasillo es estrecho. | The corridor is narrow.
+largo | long | adjectives | El camino es largo. | The road is long.
+corto | short (length) | adjectives | El día es muy corto en invierno. | The day is very short in winter.
+profundo | deep | adjectives | El lago es muy profundo. | The lake is very deep.
+siguiente | next | adjectives | La siguiente parada es la nuestra. | The next stop is ours.
+último | last | adjectives | Es el último autobús. | It is the last bus.
+mientras | while | words | Leo mientras como. | I read while I eat.
+durante | during | words | Durante el viaje duermo. | During the trip I sleep.
+después | after, later | words | Después de comer, descanso. | After eating, I rest.
+antes | before | words | Antes de salir, cierro la puerta. | Before going out, I close the door.
+entonces | then | words | Entonces nos fuimos a casa. | Then we went home.
+porque | because | words | Estudio porque quiero aprender. | I study because I want to learn.
+sin embargo | however | words | Es caro; sin embargo, lo compro. | It is expensive; however, I buy it.
+a menudo | often | words | Voy a la playa a menudo. | I go to the beach often.
+a veces | sometimes | words | A veces camino al trabajo. | Sometimes I walk to work.
+casi | almost | words | Casi no tengo tiempo. | I almost have no time.
+ya | already | words | Ya terminé la tarea. | I already finished the homework.
+quizás | maybe | words | Quizás vaya mañana. | Maybe I will go tomorrow.
+demasiado | too much | words | Hay demasiado ruido. | There is too much noise.
+bastante | quite, enough | words | La película es bastante buena. | The film is quite good.

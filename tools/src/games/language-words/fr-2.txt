@@ -1,0 +1,58 @@
+le cheval | horse | animals | Le cheval mange de l'herbe. | The horse eats grass. | 
+la vache | cow | animals | La vache donne du lait. | The cow gives milk. | 
+le lapin | rabbit | animals | Le lapin saute très haut. | The rabbit jumps very high. | 
+l'œuf | egg | food | Je mange un œuf. | I am eating an egg. | 
+le riz | rice | food | Nous mangeons du riz ce soir. | We are eating rice tonight. | 
+le poulet | chicken | food | Le poulet est délicieux. | The chicken is delicious. | 
+l'orange | orange | food | Je voudrais une orange. | I would like an orange. | 
+le sucre | sugar | food | Je mets du sucre dans le café. | I put sugar in my coffee. | 
+la soupe | soup | food | La soupe est chaude. | The soup is hot. | 
+la fenêtre | window | home | Ouvre la fenêtre, il fait chaud. | Open the window, it is hot. | 
+le lit | bed | home | Je vais au lit à dix heures. | I go to bed at ten o'clock. | 
+la clé | key | home | Où est la clé ? | Where is the key? | 
+le livre | book | home | Ce livre est très intéressant. | This book is very interesting. | 
+la cuisine | kitchen | home | La cuisine sent bon. | The kitchen smells good. | 
+l'enfant | child | people | L'enfant joue dans le jardin. | The child plays in the garden. | 
+la grand-mère | grandmother | people | Ma grand-mère fait un gâteau. | My grandmother is making a cake. | 
+dormir | to sleep | verbs | Je veux dormir un peu. | I want to sleep a little. | 
+courir | to run | verbs | J'aime courir le matin. | I like to run in the morning. | 
+lire | to read | verbs | J'aime lire le soir. | I like to read in the evening. | 
+écrire | to write | verbs | Je dois écrire une lettre. | I have to write a letter. | 
+ouvrir | to open | verbs | Peux-tu ouvrir la porte ? | Can you open the door? | 
+chercher | to look for | verbs | Je dois chercher mes clés. | I have to look for my keys. | 
+aider | to help | verbs | Je peux t'aider ? | Can I help you? | 
+chaud | hot | adjectives | Le café est chaud. | The coffee is hot. | 
+froid | cold | adjectives | Le lait est froid. | The milk is cold. | 
+nouveau | new | adjectives | J'ai un nouveau téléphone. | I have a new phone. | 
+vieux | old | adjectives | C'est un vieux livre. | It is an old book. | 
+fatigué | tired | adjectives | Je suis fatigué ce soir. | I am tired tonight. | 
+la plage | beach | places | Nous allons à la plage. | We are going to the beach. | 
+l'école | school | places | L'école commence à huit heures. | School starts at eight o'clock. | 
+le marché | market | places | Je vais au marché. | I am going to the market. | 
+toujours | always | time | Il est toujours à l'heure. | He is always on time. | 
+jamais | never | time | Je ne mange jamais de viande. | I never eat meat. | 
+maintenant | now | time | Je pars maintenant. | I am leaving now. | 
+tard | late | time | Il est tard. | It is late. | 
+tôt | early | time | Je me lève tôt. | I get up early. | 
+la semaine | week | time | Cette semaine est calme. | This week is quiet. | 
+l'année | year | time | Cette année, je voyage beaucoup. | This year I am travelling a lot. | 
+dix | ten | numbers | J'ai dix ans. | I am ten years old. | 
+vingt | twenty | numbers | Il y a vingt élèves. | There are twenty pupils. | 
+le papillon | butterfly | animals | Le papillon vole sur les fleurs. | The butterfly flies over the flowers. | 
+la tortue | turtle | animals | La tortue avance très lentement. | The turtle moves very slowly. | 
+le petit déjeuner | breakfast | food | Le petit déjeuner est prêt. | Breakfast is ready. | 
+le miroir | mirror | home | Le miroir est sur le mur. | The mirror is on the wall. | 
+le voisin | neighbour | people | Mon voisin est très gentil. | My neighbour is very kind. | 
+le médecin | doctor | people | Le médecin est à l'hôpital. | The doctor is at the hospital. | 
+attendre | to wait | verbs | Je dois attendre le bus. | I have to wait for the bus. | 
+apprendre | to learn | verbs | Je veux apprendre le français. | I want to learn French. | 
+penser | to think | verbs | Je dois penser à autre chose. | I have to think about something else. | 
+content | happy, glad | adjectives | Je suis très content. | I am very happy. | 
+difficile | difficult | adjectives | Ce livre est difficile. | This book is difficult. | 
+la gare | train station | places | La gare est près d'ici. | The station is near here. | 
+l'aéroport | airport | places | L'aéroport est loin. | The airport is far. | 
+la bibliothèque | library | places | J'étudie à la bibliothèque. | I study at the library. | 
+la montagne | mountain | places | La montagne est couverte de neige. | The mountain is covered in snow. | 
+la rivière | river | places | La rivière traverse la ville. | The river runs through the city. | 
+cent | hundred | numbers | Cela coûte cent euros. | It costs a hundred euros. | 
+mille | thousand | numbers | Il y a mille personnes. | There are a thousand people. | 

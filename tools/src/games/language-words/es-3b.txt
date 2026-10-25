@@ -1,0 +1,94 @@
+# Spanish, advanced: society, economy, law, environment, science, media, abstract ideas
+la desigualdad | inequality | society | La desigualdad crece en muchas ciudades. | Inequality is growing in many cities.
+la ciudadanía | citizenship | society | La ciudadanía exige más transparencia. | The citizens demand more transparency.
+el derecho | right, law | society | El derecho a votar es fundamental. | The right to vote is fundamental.
+el deber | duty | society | Votar es un deber cívico. | Voting is a civic duty.
+la sociedad | society | society | La sociedad cambia muy deprisa. | Society changes very quickly.
+el gobierno | government | society | El gobierno anunció nuevas medidas. | The government announced new measures.
+las elecciones | elections | society | Las elecciones son en noviembre. | The elections are in November.
+el partido político | political party | society | Cada partido político presentó su programa. | Every political party presented its programme.
+el parlamento | parliament | society | El parlamento aprobó la ley ayer. | Parliament passed the law yesterday.
+la ley | law | society | La ley entra en vigor en enero. | The law comes into force in January.
+la sentencia | ruling | society | El juez dictó la sentencia. | The judge handed down the ruling.
+el juicio | trial | society | El juicio empieza el lunes. | The trial begins on Monday.
+el delito | crime | society | El delito fue denunciado a la policía. | The crime was reported to the police.
+el testigo | witness | society | El testigo declaró ante el tribunal. | The witness testified before the court.
+la prueba | proof, test | society | No hay ninguna prueba contra él. | There is no proof against him.
+la sospecha | suspicion | society | La sospecha recayó sobre el vecino. | Suspicion fell on the neighbour.
+la huelga | strike | society | La huelga paralizó el transporte. | The strike paralysed transport.
+la manifestación | demonstration | society | La manifestación recorrió el centro. | The demonstration went through the centre.
+el sindicato | trade union | society | El sindicato negoció con la empresa. | The union negotiated with the company.
+la reforma | reform | society | La reforma divide a los políticos. | The reform divides the politicians.
+la inmigración | immigration | society | La inmigración transformó el barrio. | Immigration transformed the neighbourhood.
+el refugiado | refugee | society | El refugiado pidió asilo. | The refugee asked for asylum.
+la economía | economy | economy | La economía creció un dos por ciento. | The economy grew two per cent.
+la inflación | inflation | economy | La inflación reduce el poder adquisitivo. | Inflation reduces purchasing power.
+el desempleo | unemployment | economy | El desempleo bajó este trimestre. | Unemployment fell this quarter.
+la deuda | debt | economy | La deuda pública sigue aumentando. | Public debt keeps rising.
+el impuesto | tax | economy | El impuesto sube el próximo año. | The tax goes up next year.
+el presupuesto | budget | economy | El presupuesto no alcanza para todo. | The budget is not enough for everything.
+la inversión | investment | economy | La inversión en energía renovable crece. | Investment in renewable energy is growing.
+el beneficio | profit, benefit | economy | La empresa obtuvo un gran beneficio. | The company made a large profit.
+la pérdida | loss | economy | La pérdida fue mayor de lo previsto. | The loss was bigger than expected.
+la bolsa | stock market | economy | La bolsa cayó un tres por ciento. | The stock market fell three per cent.
+el mercado laboral | labour market | economy | El mercado laboral está recuperándose. | The labour market is recovering.
+la competencia | competition | economy | La competencia obliga a bajar precios. | Competition forces prices down.
+la hipoteca | mortgage | economy | Pagamos la hipoteca cada mes. | We pay the mortgage every month.
+el patrimonio | heritage, assets | economy | El patrimonio histórico debe protegerse. | Historical heritage must be protected.
+el cambio climático | climate change | environment | El cambio climático afecta a todos. | Climate change affects everyone.
+el calentamiento | warming | environment | El calentamiento del planeta es evidente. | The warming of the planet is obvious.
+la sequía | drought | environment | La sequía arruinó la cosecha. | The drought ruined the harvest.
+la inundación | flood | environment | La inundación dejó muchas casas bajo el agua. | The flood left many houses under water.
+el incendio | fire (blaze) | environment | El incendio destruyó el bosque. | The blaze destroyed the forest.
+la contaminación | pollution | environment | La contaminación del aire es preocupante. | Air pollution is worrying.
+el vertido | spill, dumping | environment | El vertido manchó toda la costa. | The spill stained the whole coast.
+la biodiversidad | biodiversity | environment | La biodiversidad está en peligro. | Biodiversity is in danger.
+la especie | species | environment | Esta especie está en peligro de extinción. | This species is in danger of extinction.
+el reciclaje | recycling | environment | El reciclaje reduce los residuos. | Recycling reduces waste.
+los residuos | waste | environment | Los residuos se separan en casa. | Waste is sorted at home.
+la energía renovable | renewable energy | environment | La energía renovable es el futuro. | Renewable energy is the future.
+el combustible | fuel | environment | El combustible sube de precio. | Fuel is going up in price.
+sostenible | sustainable | environment | Buscamos un modelo más sostenible. | We are looking for a more sustainable model.
+el hallazgo | finding | science | El hallazgo cambió la teoría. | The finding changed the theory.
+la hipótesis | hypothesis | science | La hipótesis no se pudo confirmar. | The hypothesis could not be confirmed.
+el experimento | experiment | science | El experimento tuvo resultados sorprendentes. | The experiment had surprising results.
+el descubrimiento | discovery | science | El descubrimiento fue casual. | The discovery was accidental.
+la investigación | research | science | La investigación tardó diez años. | The research took ten years.
+el avance | advance | science | Es un gran avance para la medicina. | It is a great advance for medicine.
+la vacuna | vaccine | science | La vacuna protege a miles de personas. | The vaccine protects thousands of people.
+el tratamiento | treatment | science | El tratamiento dura seis meses. | The treatment lasts six months.
+el diagnóstico | diagnosis | science | El diagnóstico llegó demasiado tarde. | The diagnosis came too late.
+el síntoma | symptom | science | El síntoma principal es el cansancio. | The main symptom is tiredness.
+el algoritmo | algorithm | science | El algoritmo recomienda vídeos. | The algorithm recommends videos.
+la inteligencia artificial | artificial intelligence | science | La inteligencia artificial cambia el trabajo. | Artificial intelligence changes work.
+la privacidad | privacy | tech | La privacidad en línea preocupa a muchos. | Online privacy worries many.
+la ciberseguridad | cybersecurity | tech | La ciberseguridad es una prioridad. | Cybersecurity is a priority.
+el periodista | journalist | media | El periodista entrevistó al ministro. | The journalist interviewed the minister.
+el titular | headline | media | El titular era engañoso. | The headline was misleading.
+la noticia falsa | fake news | media | Una noticia falsa se difundió rápido. | A piece of fake news spread fast.
+el reportaje | report | media | El reportaje muestra la vida en la frontera. | The report shows life at the border.
+la prensa | press | media | La prensa criticó la decisión. | The press criticised the decision.
+la censura | censorship | media | La censura limita la libertad de expresión. | Censorship limits freedom of expression.
+la libertad | freedom | abstract | La libertad no tiene precio. | Freedom has no price.
+la justicia | justice | abstract | La justicia debe ser igual para todos. | Justice must be the same for everyone.
+la verdad | truth | abstract | La verdad siempre sale a la luz. | The truth always comes out.
+la mentira | lie | abstract | Una mentira lleva a otra. | One lie leads to another.
+el destino | destiny | abstract | Cree que el destino decide todo. | He believes destiny decides everything.
+la esencia | essence | abstract | La esencia del problema es la falta de tiempo. | The essence of the problem is lack of time.
+el desafío | challenge | abstract | El desafío consiste en convencer a todos. | The challenge is convincing everyone.
+la ventaja | advantage | abstract | Su mayor ventaja es la experiencia. | Her greatest advantage is experience.
+el inconveniente | drawback | abstract | El único inconveniente es el precio. | The only drawback is the price.
+el criterio | criterion, judgement | abstract | Elegimos con un criterio claro. | We choose by a clear criterion.
+la consecuencia | consequence | abstract | La consecuencia fue inmediata. | The consequence was immediate.
+el propósito | purpose | abstract | El propósito de la reunión es decidir. | The purpose of the meeting is to decide.
+el rumbo | direction | abstract | La empresa cambió de rumbo. | The company changed course.
+el límite | limit | abstract | Todo tiene un límite. | Everything has a limit.
+la costumbre | custom, habit | abstract | Es una costumbre muy antigua. | It is a very old custom.
+la tendencia | trend | abstract | La tendencia es hacia el trabajo remoto. | The trend is towards remote work.
+el rasgo | trait | abstract | La generosidad es su rasgo principal. | Generosity is her main trait.
+la actitud | attitude | abstract | Su actitud cambió por completo. | His attitude changed completely.
+el compromiso | commitment | abstract | Mantengo mi compromiso con el equipo. | I keep my commitment to the team.
+el malentendido | misunderstanding | abstract | Fue solo un malentendido. | It was just a misunderstanding.
+el acuerdo | agreement | abstract | Llegaron a un acuerdo tras horas de debate. | They reached an agreement after hours of debate.
+el conflicto | conflict | abstract | El conflicto duró varios años. | The conflict lasted several years.
+la paz | peace | abstract | Todos desean la paz. | Everyone wants peace.

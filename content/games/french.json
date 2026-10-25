@@ -1,100 +1,860 @@
 {
-  "language": "french",
-  "words": [
-    {"word":"le chat","en":"cat","level":1,"cat":"animals","ex":"Le chat dort sur le canapé.","exEn":"The cat sleeps on the sofa.","key":"chat"},
-    {"word":"le chien","en":"dog","level":1,"cat":"animals","ex":"Le chien court dans le parc.","exEn":"The dog runs in the park.","key":"chien"},
-    {"word":"l'oiseau","en":"bird","level":1,"cat":"animals","ex":"L'oiseau chante le matin.","exEn":"The bird sings in the morning.","key":"oiseau"},
-    {"word":"le poisson","en":"fish","level":1,"cat":"animals","ex":"Le poisson nage dans la rivière.","exEn":"The fish swims in the river.","key":"poisson"},
-    {"word":"le cheval","en":"horse","level":2,"cat":"animals","ex":"Le cheval mange de l'herbe.","exEn":"The horse eats grass.","key":"cheval"},
-    {"word":"la vache","en":"cow","level":2,"cat":"animals","ex":"La vache donne du lait.","exEn":"The cow gives milk.","key":"vache"},
-    {"word":"le lapin","en":"rabbit","level":2,"cat":"animals","ex":"Le lapin saute très haut.","exEn":"The rabbit jumps very high.","key":"lapin"},
-    {"word":"le papillon","en":"butterfly","level":3,"cat":"animals","ex":"Le papillon vole sur les fleurs.","exEn":"The butterfly flies over the flowers.","key":"papillon"},
-    {"word":"la tortue","en":"turtle","level":3,"cat":"animals","ex":"La tortue avance très lentement.","exEn":"The turtle moves very slowly.","key":"tortue"},
-    {"word":"le pain","en":"bread","level":1,"cat":"food","ex":"Je mange du pain au petit déjeuner.","exEn":"I eat bread for breakfast.","key":"pain"},
-    {"word":"l'eau","en":"water","level":1,"cat":"food","ex":"Je bois de l'eau.","exEn":"I drink water.","key":"eau"},
-    {"word":"le lait","en":"milk","level":1,"cat":"food","ex":"Le lait est froid.","exEn":"The milk is cold.","key":"lait"},
-    {"word":"la pomme","en":"apple","level":1,"cat":"food","ex":"Je mange une pomme.","exEn":"I am eating an apple.","key":"pomme"},
-    {"word":"le fromage","en":"cheese","level":1,"cat":"food","ex":"J'aime le fromage.","exEn":"I like cheese.","key":"fromage"},
-    {"word":"l'œuf","en":"egg","level":2,"cat":"food","ex":"Je mange un œuf.","exEn":"I am eating an egg.","key":"œuf"},
-    {"word":"le riz","en":"rice","level":2,"cat":"food","ex":"Nous mangeons du riz ce soir.","exEn":"We are eating rice tonight.","key":"riz"},
-    {"word":"le poulet","en":"chicken","level":2,"cat":"food","ex":"Le poulet est délicieux.","exEn":"The chicken is delicious.","key":"poulet"},
-    {"word":"l'orange","en":"orange","level":2,"cat":"food","ex":"Je voudrais une orange.","exEn":"I would like an orange.","key":"orange"},
-    {"word":"le sucre","en":"sugar","level":2,"cat":"food","ex":"Je mets du sucre dans le café.","exEn":"I put sugar in my coffee.","key":"sucre"},
-    {"word":"la soupe","en":"soup","level":2,"cat":"food","ex":"La soupe est chaude.","exEn":"The soup is hot.","key":"soupe"},
-    {"word":"le petit déjeuner","en":"breakfast","level":3,"cat":"food","ex":"Le petit déjeuner est prêt.","exEn":"Breakfast is ready.","key":"petit déjeuner"},
-    {"word":"la maison","en":"house","level":1,"cat":"home","ex":"La maison est très belle.","exEn":"The house is very beautiful.","key":"maison"},
-    {"word":"la porte","en":"door","level":1,"cat":"home","ex":"Ferme la porte, s'il te plaît.","exEn":"Close the door, please.","key":"porte"},
-    {"word":"la table","en":"table","level":1,"cat":"home","ex":"Le livre est sur la table.","exEn":"The book is on the table.","key":"table"},
-    {"word":"la chaise","en":"chair","level":1,"cat":"home","ex":"Assieds-toi sur la chaise.","exEn":"Sit down on the chair.","key":"chaise"},
-    {"word":"la fenêtre","en":"window","level":2,"cat":"home","ex":"Ouvre la fenêtre, il fait chaud.","exEn":"Open the window, it is hot.","key":"fenêtre"},
-    {"word":"le lit","en":"bed","level":2,"cat":"home","ex":"Je vais au lit à dix heures.","exEn":"I go to bed at ten o'clock.","key":"lit"},
-    {"word":"la clé","en":"key","level":2,"cat":"home","ex":"Où est la clé ?","exEn":"Where is the key?","key":"clé"},
-    {"word":"le livre","en":"book","level":2,"cat":"home","ex":"Ce livre est très intéressant.","exEn":"This book is very interesting.","key":"livre"},
-    {"word":"la cuisine","en":"kitchen","level":2,"cat":"home","ex":"La cuisine sent bon.","exEn":"The kitchen smells good.","key":"cuisine"},
-    {"word":"le miroir","en":"mirror","level":3,"cat":"home","ex":"Le miroir est sur le mur.","exEn":"The mirror is on the wall.","key":"miroir"},
-    {"word":"la mère","en":"mother","level":1,"cat":"people","ex":"Ma mère cuisine très bien.","exEn":"My mother cooks very well.","key":"mère"},
-    {"word":"le père","en":"father","level":1,"cat":"people","ex":"Mon père travaille ici.","exEn":"My father works here.","key":"père"},
-    {"word":"le frère","en":"brother","level":1,"cat":"people","ex":"Mon frère a dix ans.","exEn":"My brother is ten years old.","key":"frère"},
-    {"word":"la sœur","en":"sister","level":1,"cat":"people","ex":"Ma sœur aime lire.","exEn":"My sister likes to read.","key":"sœur"},
-    {"word":"l'ami","en":"friend","level":1,"cat":"people","ex":"Mon ami habite à Lyon.","exEn":"My friend lives in Lyon.","key":"ami"},
-    {"word":"l'enfant","en":"child","level":2,"cat":"people","ex":"L'enfant joue dans le jardin.","exEn":"The child plays in the garden.","key":"enfant"},
-    {"word":"la grand-mère","en":"grandmother","level":2,"cat":"people","ex":"Ma grand-mère fait un gâteau.","exEn":"My grandmother is making a cake.","key":"grand-mère"},
-    {"word":"le voisin","en":"neighbour","level":3,"cat":"people","ex":"Mon voisin est très gentil.","exEn":"My neighbour is very kind.","key":"voisin"},
-    {"word":"le médecin","en":"doctor","level":3,"cat":"people","ex":"Le médecin est à l'hôpital.","exEn":"The doctor is at the hospital.","key":"médecin"},
-    {"word":"manger","en":"to eat","level":1,"cat":"verbs","ex":"Je veux manger une pomme.","exEn":"I want to eat an apple.","key":"manger"},
-    {"word":"boire","en":"to drink","level":1,"cat":"verbs","ex":"Je veux boire de l'eau.","exEn":"I want to drink some water.","key":"boire"},
-    {"word":"parler","en":"to speak","level":1,"cat":"verbs","ex":"J'aime parler français.","exEn":"I like to speak French.","key":"parler"},
-    {"word":"vivre","en":"to live","level":1,"cat":"verbs","ex":"J'aimerais vivre à la campagne.","exEn":"I would like to live in the countryside.","key":"vivre"},
-    {"word":"dormir","en":"to sleep","level":2,"cat":"verbs","ex":"Je veux dormir un peu.","exEn":"I want to sleep a little.","key":"dormir"},
-    {"word":"courir","en":"to run","level":2,"cat":"verbs","ex":"J'aime courir le matin.","exEn":"I like to run in the morning.","key":"courir"},
-    {"word":"lire","en":"to read","level":2,"cat":"verbs","ex":"J'aime lire le soir.","exEn":"I like to read in the evening.","key":"lire"},
-    {"word":"écrire","en":"to write","level":2,"cat":"verbs","ex":"Je dois écrire une lettre.","exEn":"I have to write a letter.","key":"écrire"},
-    {"word":"ouvrir","en":"to open","level":2,"cat":"verbs","ex":"Peux-tu ouvrir la porte ?","exEn":"Can you open the door?","key":"ouvrir"},
-    {"word":"chercher","en":"to look for","level":2,"cat":"verbs","ex":"Je dois chercher mes clés.","exEn":"I have to look for my keys.","key":"chercher"},
-    {"word":"aider","en":"to help","level":2,"cat":"verbs","ex":"Je peux t'aider ?","exEn":"Can I help you?","key":"aider"},
-    {"word":"attendre","en":"to wait","level":3,"cat":"verbs","ex":"Je dois attendre le bus.","exEn":"I have to wait for the bus.","key":"attendre"},
-    {"word":"apprendre","en":"to learn","level":3,"cat":"verbs","ex":"Je veux apprendre le français.","exEn":"I want to learn French.","key":"apprendre"},
-    {"word":"penser","en":"to think","level":3,"cat":"verbs","ex":"Je dois penser à autre chose.","exEn":"I have to think about something else.","key":"penser"},
-    {"word":"grand","en":"big, tall","level":1,"cat":"adjectives","ex":"Le chien est grand.","exEn":"The dog is big.","key":"grand"},
-    {"word":"petit","en":"small","level":1,"cat":"adjectives","ex":"Le chat est petit.","exEn":"The cat is small.","key":"petit"},
-    {"word":"joli","en":"pretty","level":1,"cat":"adjectives","ex":"Le jardin est joli.","exEn":"The garden is pretty.","key":"joli"},
-    {"word":"rapide","en":"fast","level":1,"cat":"adjectives","ex":"Le train est rapide.","exEn":"The train is fast.","key":"rapide"},
-    {"word":"lent","en":"slow","level":1,"cat":"adjectives","ex":"Le bus est lent.","exEn":"The bus is slow.","key":"lent"},
-    {"word":"chaud","en":"hot","level":2,"cat":"adjectives","ex":"Le café est chaud.","exEn":"The coffee is hot.","key":"chaud"},
-    {"word":"froid","en":"cold","level":2,"cat":"adjectives","ex":"Le lait est froid.","exEn":"The milk is cold.","key":"froid"},
-    {"word":"nouveau","en":"new","level":2,"cat":"adjectives","ex":"J'ai un nouveau téléphone.","exEn":"I have a new phone.","key":"nouveau"},
-    {"word":"vieux","en":"old","level":2,"cat":"adjectives","ex":"C'est un vieux livre.","exEn":"It is an old book.","key":"vieux"},
-    {"word":"fatigué","en":"tired","level":2,"cat":"adjectives","ex":"Je suis fatigué ce soir.","exEn":"I am tired tonight.","key":"fatigué"},
-    {"word":"content","en":"happy, glad","level":3,"cat":"adjectives","ex":"Je suis très content.","exEn":"I am very happy.","key":"content"},
-    {"word":"difficile","en":"difficult","level":3,"cat":"adjectives","ex":"Ce livre est difficile.","exEn":"This book is difficult.","key":"difficile"},
-    {"word":"la ville","en":"city, town","level":1,"cat":"places","ex":"La ville est très grande.","exEn":"The city is very big.","key":"ville"},
-    {"word":"la rue","en":"street","level":1,"cat":"places","ex":"La rue est calme.","exEn":"The street is quiet.","key":"rue"},
-    {"word":"la plage","en":"beach","level":2,"cat":"places","ex":"Nous allons à la plage.","exEn":"We are going to the beach.","key":"plage"},
-    {"word":"l'école","en":"school","level":2,"cat":"places","ex":"L'école commence à huit heures.","exEn":"School starts at eight o'clock.","key":"école"},
-    {"word":"le marché","en":"market","level":2,"cat":"places","ex":"Je vais au marché.","exEn":"I am going to the market.","key":"marché"},
-    {"word":"la gare","en":"train station","level":3,"cat":"places","ex":"La gare est près d'ici.","exEn":"The station is near here.","key":"gare"},
-    {"word":"l'aéroport","en":"airport","level":3,"cat":"places","ex":"L'aéroport est loin.","exEn":"The airport is far.","key":"aéroport"},
-    {"word":"la bibliothèque","en":"library","level":3,"cat":"places","ex":"J'étudie à la bibliothèque.","exEn":"I study at the library.","key":"bibliothèque"},
-    {"word":"la montagne","en":"mountain","level":3,"cat":"places","ex":"La montagne est couverte de neige.","exEn":"The mountain is covered in snow.","key":"montagne"},
-    {"word":"la rivière","en":"river","level":3,"cat":"places","ex":"La rivière traverse la ville.","exEn":"The river runs through the city.","key":"rivière"},
-    {"word":"aujourd'hui","en":"today","level":1,"cat":"time","ex":"Aujourd'hui il fait beau.","exEn":"Today the weather is nice.","key":"aujourd'hui"},
-    {"word":"demain","en":"tomorrow","level":1,"cat":"time","ex":"On se voit demain.","exEn":"See you tomorrow.","key":"demain"},
-    {"word":"hier","en":"yesterday","level":1,"cat":"time","ex":"Hier, j'étais à la maison.","exEn":"Yesterday I was at home.","key":"hier"},
-    {"word":"toujours","en":"always","level":2,"cat":"time","ex":"Il est toujours à l'heure.","exEn":"He is always on time.","key":"toujours"},
-    {"word":"jamais","en":"never","level":2,"cat":"time","ex":"Je ne mange jamais de viande.","exEn":"I never eat meat.","key":"jamais"},
-    {"word":"maintenant","en":"now","level":2,"cat":"time","ex":"Je pars maintenant.","exEn":"I am leaving now.","key":"maintenant"},
-    {"word":"tard","en":"late","level":2,"cat":"time","ex":"Il est tard.","exEn":"It is late.","key":"tard"},
-    {"word":"tôt","en":"early","level":2,"cat":"time","ex":"Je me lève tôt.","exEn":"I get up early.","key":"tôt"},
-    {"word":"la semaine","en":"week","level":2,"cat":"time","ex":"Cette semaine est calme.","exEn":"This week is quiet.","key":"semaine"},
-    {"word":"l'année","en":"year","level":2,"cat":"time","ex":"Cette année, je voyage beaucoup.","exEn":"This year I am travelling a lot.","key":"année"},
-    {"word":"un","en":"one","level":1,"cat":"numbers","ex":"J'ai un frère.","exEn":"I have one brother.","key":"un"},
-    {"word":"deux","en":"two","level":1,"cat":"numbers","ex":"Il y a deux chats.","exEn":"There are two cats.","key":"deux"},
-    {"word":"trois","en":"three","level":1,"cat":"numbers","ex":"J'ai trois livres.","exEn":"I have three books.","key":"trois"},
-    {"word":"quatre","en":"four","level":1,"cat":"numbers","ex":"Il y a quatre chaises.","exEn":"There are four chairs.","key":"quatre"},
-    {"word":"cinq","en":"five","level":1,"cat":"numbers","ex":"Il est cinq heures.","exEn":"It is five o'clock.","key":"cinq"},
-    {"word":"dix","en":"ten","level":2,"cat":"numbers","ex":"J'ai dix ans.","exEn":"I am ten years old.","key":"dix"},
-    {"word":"vingt","en":"twenty","level":2,"cat":"numbers","ex":"Il y a vingt élèves.","exEn":"There are twenty pupils.","key":"vingt"},
-    {"word":"cent","en":"hundred","level":3,"cat":"numbers","ex":"Cela coûte cent euros.","exEn":"It costs a hundred euros.","key":"cent"},
-    {"word":"mille","en":"thousand","level":3,"cat":"numbers","ex":"Il y a mille personnes.","exEn":"There are a thousand people.","key":"mille"}
-  ]
+ "language": "french",
+ "words": [
+  {
+   "word": "le chat",
+   "en": "cat",
+   "level": 1,
+   "cat": "animals",
+   "ex": "Le chat dort sur le canapé.",
+   "exEn": "The cat sleeps on the sofa.",
+   "key": "chat"
+  },
+  {
+   "word": "le chien",
+   "en": "dog",
+   "level": 1,
+   "cat": "animals",
+   "ex": "Le chien court dans le parc.",
+   "exEn": "The dog runs in the park.",
+   "key": "chien"
+  },
+  {
+   "word": "l'oiseau",
+   "en": "bird",
+   "level": 1,
+   "cat": "animals",
+   "ex": "L'oiseau chante le matin.",
+   "exEn": "The bird sings in the morning.",
+   "key": "oiseau"
+  },
+  {
+   "word": "le poisson",
+   "en": "fish",
+   "level": 1,
+   "cat": "animals",
+   "ex": "Le poisson nage dans la rivière.",
+   "exEn": "The fish swims in the river.",
+   "key": "poisson"
+  },
+  {
+   "word": "le pain",
+   "en": "bread",
+   "level": 1,
+   "cat": "food",
+   "ex": "Je mange du pain au petit déjeuner.",
+   "exEn": "I eat bread for breakfast.",
+   "key": "pain"
+  },
+  {
+   "word": "l'eau",
+   "en": "water",
+   "level": 1,
+   "cat": "food",
+   "ex": "Je bois de l'eau.",
+   "exEn": "I drink water.",
+   "key": "eau"
+  },
+  {
+   "word": "le lait",
+   "en": "milk",
+   "level": 1,
+   "cat": "food",
+   "ex": "Le lait est froid.",
+   "exEn": "The milk is cold.",
+   "key": "lait"
+  },
+  {
+   "word": "la pomme",
+   "en": "apple",
+   "level": 1,
+   "cat": "food",
+   "ex": "Je mange une pomme.",
+   "exEn": "I am eating an apple.",
+   "key": "pomme"
+  },
+  {
+   "word": "le fromage",
+   "en": "cheese",
+   "level": 1,
+   "cat": "food",
+   "ex": "J'aime le fromage.",
+   "exEn": "I like cheese.",
+   "key": "fromage"
+  },
+  {
+   "word": "la maison",
+   "en": "house",
+   "level": 1,
+   "cat": "home",
+   "ex": "La maison est très belle.",
+   "exEn": "The house is very beautiful.",
+   "key": "maison"
+  },
+  {
+   "word": "la porte",
+   "en": "door",
+   "level": 1,
+   "cat": "home",
+   "ex": "Ferme la porte, s'il te plaît.",
+   "exEn": "Close the door, please.",
+   "key": "porte"
+  },
+  {
+   "word": "la table",
+   "en": "table",
+   "level": 1,
+   "cat": "home",
+   "ex": "Le livre est sur la table.",
+   "exEn": "The book is on the table.",
+   "key": "table"
+  },
+  {
+   "word": "la chaise",
+   "en": "chair",
+   "level": 1,
+   "cat": "home",
+   "ex": "Assieds-toi sur la chaise.",
+   "exEn": "Sit down on the chair.",
+   "key": "chaise"
+  },
+  {
+   "word": "la mère",
+   "en": "mother",
+   "level": 1,
+   "cat": "people",
+   "ex": "Ma mère cuisine très bien.",
+   "exEn": "My mother cooks very well.",
+   "key": "mère"
+  },
+  {
+   "word": "le père",
+   "en": "father",
+   "level": 1,
+   "cat": "people",
+   "ex": "Mon père travaille ici.",
+   "exEn": "My father works here.",
+   "key": "père"
+  },
+  {
+   "word": "le frère",
+   "en": "brother",
+   "level": 1,
+   "cat": "people",
+   "ex": "Mon frère a dix ans.",
+   "exEn": "My brother is ten years old.",
+   "key": "frère"
+  },
+  {
+   "word": "la sœur",
+   "en": "sister",
+   "level": 1,
+   "cat": "people",
+   "ex": "Ma sœur aime lire.",
+   "exEn": "My sister likes to read.",
+   "key": "sœur"
+  },
+  {
+   "word": "l'ami",
+   "en": "friend",
+   "level": 1,
+   "cat": "people",
+   "ex": "Mon ami habite à Lyon.",
+   "exEn": "My friend lives in Lyon.",
+   "key": "ami"
+  },
+  {
+   "word": "manger",
+   "en": "to eat",
+   "level": 1,
+   "cat": "verbs",
+   "ex": "Je veux manger une pomme.",
+   "exEn": "I want to eat an apple.",
+   "key": "manger"
+  },
+  {
+   "word": "boire",
+   "en": "to drink",
+   "level": 1,
+   "cat": "verbs",
+   "ex": "Je veux boire de l'eau.",
+   "exEn": "I want to drink some water.",
+   "key": "boire"
+  },
+  {
+   "word": "parler",
+   "en": "to speak",
+   "level": 1,
+   "cat": "verbs",
+   "ex": "J'aime parler français.",
+   "exEn": "I like to speak French.",
+   "key": "parler"
+  },
+  {
+   "word": "vivre",
+   "en": "to live",
+   "level": 1,
+   "cat": "verbs",
+   "ex": "J'aimerais vivre à la campagne.",
+   "exEn": "I would like to live in the countryside.",
+   "key": "vivre"
+  },
+  {
+   "word": "grand",
+   "en": "big, tall",
+   "level": 1,
+   "cat": "adjectives",
+   "ex": "Le chien est grand.",
+   "exEn": "The dog is big.",
+   "key": "grand"
+  },
+  {
+   "word": "petit",
+   "en": "small",
+   "level": 1,
+   "cat": "adjectives",
+   "ex": "Le chat est petit.",
+   "exEn": "The cat is small.",
+   "key": "petit"
+  },
+  {
+   "word": "joli",
+   "en": "pretty",
+   "level": 1,
+   "cat": "adjectives",
+   "ex": "Le jardin est joli.",
+   "exEn": "The garden is pretty.",
+   "key": "joli"
+  },
+  {
+   "word": "rapide",
+   "en": "fast",
+   "level": 1,
+   "cat": "adjectives",
+   "ex": "Le train est rapide.",
+   "exEn": "The train is fast.",
+   "key": "rapide"
+  },
+  {
+   "word": "lent",
+   "en": "slow",
+   "level": 1,
+   "cat": "adjectives",
+   "ex": "Le bus est lent.",
+   "exEn": "The bus is slow.",
+   "key": "lent"
+  },
+  {
+   "word": "la ville",
+   "en": "city, town",
+   "level": 1,
+   "cat": "places",
+   "ex": "La ville est très grande.",
+   "exEn": "The city is very big.",
+   "key": "ville"
+  },
+  {
+   "word": "la rue",
+   "en": "street",
+   "level": 1,
+   "cat": "places",
+   "ex": "La rue est calme.",
+   "exEn": "The street is quiet.",
+   "key": "rue"
+  },
+  {
+   "word": "aujourd'hui",
+   "en": "today",
+   "level": 1,
+   "cat": "time",
+   "ex": "Aujourd'hui il fait beau.",
+   "exEn": "Today the weather is nice.",
+   "key": "aujourd'hui"
+  },
+  {
+   "word": "demain",
+   "en": "tomorrow",
+   "level": 1,
+   "cat": "time",
+   "ex": "On se voit demain.",
+   "exEn": "See you tomorrow.",
+   "key": "demain"
+  },
+  {
+   "word": "hier",
+   "en": "yesterday",
+   "level": 1,
+   "cat": "time",
+   "ex": "Hier, j'étais à la maison.",
+   "exEn": "Yesterday I was at home.",
+   "key": "hier"
+  },
+  {
+   "word": "un",
+   "en": "one",
+   "level": 1,
+   "cat": "numbers",
+   "ex": "J'ai un frère.",
+   "exEn": "I have one brother.",
+   "key": "un"
+  },
+  {
+   "word": "deux",
+   "en": "two",
+   "level": 1,
+   "cat": "numbers",
+   "ex": "Il y a deux chats.",
+   "exEn": "There are two cats.",
+   "key": "deux"
+  },
+  {
+   "word": "trois",
+   "en": "three",
+   "level": 1,
+   "cat": "numbers",
+   "ex": "J'ai trois livres.",
+   "exEn": "I have three books.",
+   "key": "trois"
+  },
+  {
+   "word": "quatre",
+   "en": "four",
+   "level": 1,
+   "cat": "numbers",
+   "ex": "Il y a quatre chaises.",
+   "exEn": "There are four chairs.",
+   "key": "quatre"
+  },
+  {
+   "word": "cinq",
+   "en": "five",
+   "level": 1,
+   "cat": "numbers",
+   "ex": "Il est cinq heures.",
+   "exEn": "It is five o'clock.",
+   "key": "cinq"
+  },
+  {
+   "word": "le cheval",
+   "en": "horse",
+   "level": 2,
+   "cat": "animals",
+   "ex": "Le cheval mange de l'herbe.",
+   "exEn": "The horse eats grass.",
+   "key": "cheval"
+  },
+  {
+   "word": "la vache",
+   "en": "cow",
+   "level": 2,
+   "cat": "animals",
+   "ex": "La vache donne du lait.",
+   "exEn": "The cow gives milk.",
+   "key": "vache"
+  },
+  {
+   "word": "le lapin",
+   "en": "rabbit",
+   "level": 2,
+   "cat": "animals",
+   "ex": "Le lapin saute très haut.",
+   "exEn": "The rabbit jumps very high.",
+   "key": "lapin"
+  },
+  {
+   "word": "l'œuf",
+   "en": "egg",
+   "level": 2,
+   "cat": "food",
+   "ex": "Je mange un œuf.",
+   "exEn": "I am eating an egg.",
+   "key": "œuf"
+  },
+  {
+   "word": "le riz",
+   "en": "rice",
+   "level": 2,
+   "cat": "food",
+   "ex": "Nous mangeons du riz ce soir.",
+   "exEn": "We are eating rice tonight.",
+   "key": "riz"
+  },
+  {
+   "word": "le poulet",
+   "en": "chicken",
+   "level": 2,
+   "cat": "food",
+   "ex": "Le poulet est délicieux.",
+   "exEn": "The chicken is delicious.",
+   "key": "poulet"
+  },
+  {
+   "word": "l'orange",
+   "en": "orange",
+   "level": 2,
+   "cat": "food",
+   "ex": "Je voudrais une orange.",
+   "exEn": "I would like an orange.",
+   "key": "orange"
+  },
+  {
+   "word": "le sucre",
+   "en": "sugar",
+   "level": 2,
+   "cat": "food",
+   "ex": "Je mets du sucre dans le café.",
+   "exEn": "I put sugar in my coffee.",
+   "key": "sucre"
+  },
+  {
+   "word": "la soupe",
+   "en": "soup",
+   "level": 2,
+   "cat": "food",
+   "ex": "La soupe est chaude.",
+   "exEn": "The soup is hot.",
+   "key": "soupe"
+  },
+  {
+   "word": "la fenêtre",
+   "en": "window",
+   "level": 2,
+   "cat": "home",
+   "ex": "Ouvre la fenêtre, il fait chaud.",
+   "exEn": "Open the window, it is hot.",
+   "key": "fenêtre"
+  },
+  {
+   "word": "le lit",
+   "en": "bed",
+   "level": 2,
+   "cat": "home",
+   "ex": "Je vais au lit à dix heures.",
+   "exEn": "I go to bed at ten o'clock.",
+   "key": "lit"
+  },
+  {
+   "word": "la clé",
+   "en": "key",
+   "level": 2,
+   "cat": "home",
+   "ex": "Où est la clé ?",
+   "exEn": "Where is the key?",
+   "key": "clé"
+  },
+  {
+   "word": "le livre",
+   "en": "book",
+   "level": 2,
+   "cat": "home",
+   "ex": "Ce livre est très intéressant.",
+   "exEn": "This book is very interesting.",
+   "key": "livre"
+  },
+  {
+   "word": "la cuisine",
+   "en": "kitchen",
+   "level": 2,
+   "cat": "home",
+   "ex": "La cuisine sent bon.",
+   "exEn": "The kitchen smells good.",
+   "key": "cuisine"
+  },
+  {
+   "word": "l'enfant",
+   "en": "child",
+   "level": 2,
+   "cat": "people",
+   "ex": "L'enfant joue dans le jardin.",
+   "exEn": "The child plays in the garden.",
+   "key": "enfant"
+  },
+  {
+   "word": "la grand-mère",
+   "en": "grandmother",
+   "level": 2,
+   "cat": "people",
+   "ex": "Ma grand-mère fait un gâteau.",
+   "exEn": "My grandmother is making a cake.",
+   "key": "grand-mère"
+  },
+  {
+   "word": "dormir",
+   "en": "to sleep",
+   "level": 2,
+   "cat": "verbs",
+   "ex": "Je veux dormir un peu.",
+   "exEn": "I want to sleep a little.",
+   "key": "dormir"
+  },
+  {
+   "word": "courir",
+   "en": "to run",
+   "level": 2,
+   "cat": "verbs",
+   "ex": "J'aime courir le matin.",
+   "exEn": "I like to run in the morning.",
+   "key": "courir"
+  },
+  {
+   "word": "lire",
+   "en": "to read",
+   "level": 2,
+   "cat": "verbs",
+   "ex": "J'aime lire le soir.",
+   "exEn": "I like to read in the evening.",
+   "key": "lire"
+  },
+  {
+   "word": "écrire",
+   "en": "to write",
+   "level": 2,
+   "cat": "verbs",
+   "ex": "Je dois écrire une lettre.",
+   "exEn": "I have to write a letter.",
+   "key": "écrire"
+  },
+  {
+   "word": "ouvrir",
+   "en": "to open",
+   "level": 2,
+   "cat": "verbs",
+   "ex": "Peux-tu ouvrir la porte ?",
+   "exEn": "Can you open the door?",
+   "key": "ouvrir"
+  },
+  {
+   "word": "chercher",
+   "en": "to look for",
+   "level": 2,
+   "cat": "verbs",
+   "ex": "Je dois chercher mes clés.",
+   "exEn": "I have to look for my keys.",
+   "key": "chercher"
+  },
+  {
+   "word": "aider",
+   "en": "to help",
+   "level": 2,
+   "cat": "verbs",
+   "ex": "Je peux t'aider ?",
+   "exEn": "Can I help you?",
+   "key": "aider"
+  },
+  {
+   "word": "chaud",
+   "en": "hot",
+   "level": 2,
+   "cat": "adjectives",
+   "ex": "Le café est chaud.",
+   "exEn": "The coffee is hot.",
+   "key": "chaud"
+  },
+  {
+   "word": "froid",
+   "en": "cold",
+   "level": 2,
+   "cat": "adjectives",
+   "ex": "Le lait est froid.",
+   "exEn": "The milk is cold.",
+   "key": "froid"
+  },
+  {
+   "word": "nouveau",
+   "en": "new",
+   "level": 2,
+   "cat": "adjectives",
+   "ex": "J'ai un nouveau téléphone.",
+   "exEn": "I have a new phone.",
+   "key": "nouveau"
+  },
+  {
+   "word": "vieux",
+   "en": "old",
+   "level": 2,
+   "cat": "adjectives",
+   "ex": "C'est un vieux livre.",
+   "exEn": "It is an old book.",
+   "key": "vieux"
+  },
+  {
+   "word": "fatigué",
+   "en": "tired",
+   "level": 2,
+   "cat": "adjectives",
+   "ex": "Je suis fatigué ce soir.",
+   "exEn": "I am tired tonight.",
+   "key": "fatigué"
+  },
+  {
+   "word": "la plage",
+   "en": "beach",
+   "level": 2,
+   "cat": "places",
+   "ex": "Nous allons à la plage.",
+   "exEn": "We are going to the beach.",
+   "key": "plage"
+  },
+  {
+   "word": "l'école",
+   "en": "school",
+   "level": 2,
+   "cat": "places",
+   "ex": "L'école commence à huit heures.",
+   "exEn": "School starts at eight o'clock.",
+   "key": "école"
+  },
+  {
+   "word": "le marché",
+   "en": "market",
+   "level": 2,
+   "cat": "places",
+   "ex": "Je vais au marché.",
+   "exEn": "I am going to the market.",
+   "key": "marché"
+  },
+  {
+   "word": "toujours",
+   "en": "always",
+   "level": 2,
+   "cat": "time",
+   "ex": "Il est toujours à l'heure.",
+   "exEn": "He is always on time.",
+   "key": "toujours"
+  },
+  {
+   "word": "jamais",
+   "en": "never",
+   "level": 2,
+   "cat": "time",
+   "ex": "Je ne mange jamais de viande.",
+   "exEn": "I never eat meat.",
+   "key": "jamais"
+  },
+  {
+   "word": "maintenant",
+   "en": "now",
+   "level": 2,
+   "cat": "time",
+   "ex": "Je pars maintenant.",
+   "exEn": "I am leaving now.",
+   "key": "maintenant"
+  },
+  {
+   "word": "tard",
+   "en": "late",
+   "level": 2,
+   "cat": "time",
+   "ex": "Il est tard.",
+   "exEn": "It is late.",
+   "key": "tard"
+  },
+  {
+   "word": "tôt",
+   "en": "early",
+   "level": 2,
+   "cat": "time",
+   "ex": "Je me lève tôt.",
+   "exEn": "I get up early.",
+   "key": "tôt"
+  },
+  {
+   "word": "la semaine",
+   "en": "week",
+   "level": 2,
+   "cat": "time",
+   "ex": "Cette semaine est calme.",
+   "exEn": "This week is quiet.",
+   "key": "semaine"
+  },
+  {
+   "word": "l'année",
+   "en": "year",
+   "level": 2,
+   "cat": "time",
+   "ex": "Cette année, je voyage beaucoup.",
+   "exEn": "This year I am travelling a lot.",
+   "key": "année"
+  },
+  {
+   "word": "dix",
+   "en": "ten",
+   "level": 2,
+   "cat": "numbers",
+   "ex": "J'ai dix ans.",
+   "exEn": "I am ten years old.",
+   "key": "dix"
+  },
+  {
+   "word": "vingt",
+   "en": "twenty",
+   "level": 2,
+   "cat": "numbers",
+   "ex": "Il y a vingt élèves.",
+   "exEn": "There are twenty pupils.",
+   "key": "vingt"
+  },
+  {
+   "word": "le papillon",
+   "en": "butterfly",
+   "level": 2,
+   "cat": "animals",
+   "ex": "Le papillon vole sur les fleurs.",
+   "exEn": "The butterfly flies over the flowers.",
+   "key": "papillon"
+  },
+  {
+   "word": "la tortue",
+   "en": "turtle",
+   "level": 2,
+   "cat": "animals",
+   "ex": "La tortue avance très lentement.",
+   "exEn": "The turtle moves very slowly.",
+   "key": "tortue"
+  },
+  {
+   "word": "le petit déjeuner",
+   "en": "breakfast",
+   "level": 2,
+   "cat": "food",
+   "ex": "Le petit déjeuner est prêt.",
+   "exEn": "Breakfast is ready.",
+   "key": "petit déjeuner"
+  },
+  {
+   "word": "le miroir",
+   "en": "mirror",
+   "level": 2,
+   "cat": "home",
+   "ex": "Le miroir est sur le mur.",
+   "exEn": "The mirror is on the wall.",
+   "key": "miroir"
+  },
+  {
+   "word": "le voisin",
+   "en": "neighbour",
+   "level": 2,
+   "cat": "people",
+   "ex": "Mon voisin est très gentil.",
+   "exEn": "My neighbour is very kind.",
+   "key": "voisin"
+  },
+  {
+   "word": "le médecin",
+   "en": "doctor",
+   "level": 2,
+   "cat": "people",
+   "ex": "Le médecin est à l'hôpital.",
+   "exEn": "The doctor is at the hospital.",
+   "key": "médecin"
+  },
+  {
+   "word": "attendre",
+   "en": "to wait",
+   "level": 2,
+   "cat": "verbs",
+   "ex": "Je dois attendre le bus.",
+   "exEn": "I have to wait for the bus.",
+   "key": "attendre"
+  },
+  {
+   "word": "apprendre",
+   "en": "to learn",
+   "level": 2,
+   "cat": "verbs",
+   "ex": "Je veux apprendre le français.",
+   "exEn": "I want to learn French.",
+   "key": "apprendre"
+  },
+  {
+   "word": "penser",
+   "en": "to think",
+   "level": 2,
+   "cat": "verbs",
+   "ex": "Je dois penser à autre chose.",
+   "exEn": "I have to think about something else.",
+   "key": "penser"
+  },
+  {
+   "word": "content",
+   "en": "happy, glad",
+   "level": 2,
+   "cat": "adjectives",
+   "ex": "Je suis très content.",
+   "exEn": "I am very happy.",
+   "key": "content"
+  },
+  {
+   "word": "difficile",
+   "en": "difficult",
+   "level": 2,
+   "cat": "adjectives",
+   "ex": "Ce livre est difficile.",
+   "exEn": "This book is difficult.",
+   "key": "difficile"
+  },
+  {
+   "word": "la gare",
+   "en": "train station",
+   "level": 2,
+   "cat": "places",
+   "ex": "La gare est près d'ici.",
+   "exEn": "The station is near here.",
+   "key": "gare"
+  },
+  {
+   "word": "l'aéroport",
+   "en": "airport",
+   "level": 2,
+   "cat": "places",
+   "ex": "L'aéroport est loin.",
+   "exEn": "The airport is far.",
+   "key": "aéroport"
+  },
+  {
+   "word": "la bibliothèque",
+   "en": "library",
+   "level": 2,
+   "cat": "places",
+   "ex": "J'étudie à la bibliothèque.",
+   "exEn": "I study at the library.",
+   "key": "bibliothèque"
+  },
+  {
+   "word": "la montagne",
+   "en": "mountain",
+   "level": 2,
+   "cat": "places",
+   "ex": "La montagne est couverte de neige.",
+   "exEn": "The mountain is covered in snow.",
+   "key": "montagne"
+  },
+  {
+   "word": "la rivière",
+   "en": "river",
+   "level": 2,
+   "cat": "places",
+   "ex": "La rivière traverse la ville.",
+   "exEn": "The river runs through the city.",
+   "key": "rivière"
+  },
+  {
+   "word": "cent",
+   "en": "hundred",
+   "level": 2,
+   "cat": "numbers",
+   "ex": "Cela coûte cent euros.",
+   "exEn": "It costs a hundred euros.",
+   "key": "cent"
+  },
+  {
+   "word": "mille",
+   "en": "thousand",
+   "level": 2,
+   "cat": "numbers",
+   "ex": "Il y a mille personnes.",
+   "exEn": "There are a thousand people.",
+   "key": "mille"
+  }
+ ]
 }

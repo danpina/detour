@@ -1,0 +1,28 @@
+# Spanish, medium: more everyday words
+el cajón | drawer | home | El cajón está lleno de papeles. | The drawer is full of papers.
+el cepillo | brush | home | Uso un cepillo de dientes nuevo. | I use a new toothbrush.
+el jabón | soap | home | Lávate las manos con jabón. | Wash your hands with soap.
+la toalla | towel | home | La toalla está mojada. | The towel is wet.
+el peine | comb | home | Busco el peine en el baño. | I look for the comb in the bathroom.
+la sartén | frying pan | food | La sartén está muy caliente. | The frying pan is very hot.
+el horno | oven | food | El pollo está en el horno. | The chicken is in the oven.
+el ajo | garlic | food | El ajo huele fuerte. | Garlic smells strong.
+la mantequilla | butter | food | Pon un poco de mantequilla en el pan. | Put a little butter on the bread.
+el aceite | oil | food | Añade aceite de oliva a la ensalada. | Add olive oil to the salad.
+el postre | dessert | food | De postre quiero fruta. | For dessert I want fruit.
+la merienda | afternoon snack | food | La merienda es a las cinco. | The snack is at five.
+el menú | menu | food | El menú del día cuesta diez euros. | The set menu costs ten euros.
+el camarero | waiter | people | El camarero trae la cuenta. | The waiter brings the bill.
+el cocinero | cook | people | El cocinero prepara la sopa. | The cook prepares the soup.
+el cartero | postman | people | El cartero llega por la mañana. | The postman arrives in the morning.
+el bombero | firefighter | people | El bombero salvó al gato. | The firefighter saved the cat.
+el policía | police officer | people | El policía dirige el tráfico. | The police officer directs the traffic.
+el dentista | dentist | people | El dentista me mira los dientes. | The dentist looks at my teeth.
+el ingeniero | engineer | people | Mi padre es ingeniero. | My father is an engineer.
+el abogado | lawyer | people | El abogado lee el contrato. | The lawyer reads the contract.
+el vecino de arriba | upstairs neighbour | people | El vecino de arriba hace ruido. | The upstairs neighbour makes noise.
+el paraguas | umbrella | clothes | Lleva un paraguas, va a llover. | Take an umbrella, it is going to rain.
+la bolsa de mano | handbag | clothes | La bolsa de mano es de cuero. | The handbag is made of leather.
+el cinturón | belt | clothes | El cinturón es demasiado largo. | The belt is too long.
+el reloj | watch, clock | clothes | Mi reloj va adelantado. | My watch is fast.
+el anillo | ring | clothes | El anillo es de oro. | The ring is made of gold.
