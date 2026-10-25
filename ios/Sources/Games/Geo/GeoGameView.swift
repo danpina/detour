@@ -106,6 +106,8 @@ struct GeoGameView: View {
             }
             .font(.subheadline)
             .foregroundStyle(.secondary)
+            GameProgressBar(done: index + (answered ? 1 : 0), total: round.count)
+                .padding(.top, 6)
 
             Spacer(minLength: 8)
             VStack(spacing: 8) {
@@ -135,6 +137,7 @@ struct GeoGameView: View {
                     .buttonStyle(.plain)
                     .foregroundStyle(.primary)
                     .disabled(answered)
+                    .answerPop(answered && option == q.answer)
                 }
             }
 
@@ -154,6 +157,7 @@ struct GeoGameView: View {
         }
         .padding(.horizontal, 24)
         .padding(.bottom, 12)
+        .answerHaptic(picked: picked != nil, correct: picked == q.answer)
     }
 
     private func optionBackground(_ option: String, in q: GeoQuestion) -> Color {

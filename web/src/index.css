@@ -12,3 +12,11 @@ button { font: inherit; cursor: pointer; }
 
 /* Visible keyboard focus everywhere. */
 :focus-visible { outline: 2px solid #2dd4bf; outline-offset: 2px; }
+
+/* Small, quick game feedback: the right answer pops, a wrong pick shakes, the explanation rises in. */
+@keyframes game-pop { 0% { transform: scale(1); } 40% { transform: scale(1.04); } 100% { transform: scale(1); } }
+@keyframes game-shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+@keyframes game-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.game-pop { animation: game-pop 0.32s ease-out; }
+.game-shake { animation: game-shake 0.28s ease-in-out; }
+.game-rise { animation: game-rise 0.25s ease-out; }

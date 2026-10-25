@@ -85,6 +85,20 @@ final class GuardStoreTests: XCTestCase {
         XCTAssertTrue(store.windowReallyEnded(now: now.addingTimeInterval(16 * 60)))
     }
 
+    func testUsageSignalBeforeTheLimitCouldBeUsedIsEarly() {
+        let store = makeStore()
+        let now = date(2026, 3, 2)
+        // No usage-limited unlock: nothing to judge.
+        XCTAssertFalse(store.usageSignalIsTooEarly(now: now))
+        store.unlockUntil = now.addingTimeInterval(15 * 60)
+        store.usageStart = now
+        store.usageSeconds = 60
+        XCTAssertTrue(store.usageSignalIsTooEarly(now: now.addingTimeInterval(2)))
+        XCTAssertTrue(store.usageSignalIsTooEarly(now: now.addingTimeInterval(40)))
+        XCTAssertFalse(store.usageSignalIsTooEarly(now: now.addingTimeInterval(57)))
+        XCTAssertFalse(store.usageSignalIsTooEarly(now: now.addingTimeInterval(69)))
+    }
+
     func testLogKeepsTheLatestLines() {
         let store = makeStore()
         for i in 0..<450 { store.log("line \(i)") }

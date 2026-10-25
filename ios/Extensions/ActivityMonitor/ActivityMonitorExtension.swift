@@ -26,6 +26,11 @@ final class ActivityMonitorExtension: DeviceActivityMonitor {
             if store.settings.enabled { GuardShield.apply(store, reason: "daily allowance used") }
             return
         }
+        if store.usageSignalIsTooEarly() {
+            // The apps can't have been used for longer than the window has been open, so this signal is spurious.
+            store.log("monitor: ignored an early usage signal (limit " + usageLabel(store.usageSeconds) + ", window just opened)")
+            return
+        }
         store.log("monitor: usage limit reached (" + event.rawValue + ")")
         if store.settings.enabled { GuardShield.apply(store, reason: "usage limit reached") }
     }

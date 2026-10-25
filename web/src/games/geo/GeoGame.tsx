@@ -103,8 +103,8 @@ export function GeoGame({ onExit, embedded }: GameProps) {
   function optionClass(option: string): string {
     const base = "min-h-14 w-full rounded-2xl border px-4 py-3 text-left text-lg font-medium transition active:scale-[0.99] ";
     if (!answered) return base + "border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900";
-    if (option === q.answer) return base + "border-emerald-500 bg-emerald-50 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-100";
-    if (option === picked) return base + "border-rose-400 bg-rose-50 text-rose-900 dark:bg-rose-950 dark:text-rose-100";
+    if (option === q.answer) return base + "border-emerald-500 bg-emerald-50 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-100 game-pop";
+    if (option === picked) return base + "border-rose-400 bg-rose-50 text-rose-900 dark:bg-rose-950 dark:text-rose-100 game-shake";
     return base + "border-neutral-200 bg-white opacity-50 dark:border-neutral-800 dark:bg-neutral-900";
   }
 
@@ -140,9 +140,9 @@ export function GeoGame({ onExit, embedded }: GameProps) {
       <div className="mt-4 min-h-24" aria-live="polite">
         {answered && (
           <>
-            <p className="font-semibold">{correct ? "Yes!" : "Not this time."}</p>
+            <p className="game-rise font-semibold">{correct ? "Yes!" : "Not this time."}</p>
             <p className="text-neutral-600 dark:text-neutral-300">{q.fact}</p>
-            <button onClick={next} className="mt-3 min-h-14 w-full rounded-2xl bg-teal-600 px-6 py-3 text-lg font-semibold text-white active:scale-[0.98]">{isLast ? (embedded ? "Continue" : "See my score") : "Next"}</button>
+            <button onClick={next} className="game-rise mt-3 min-h-14 w-full rounded-2xl bg-teal-600 px-6 py-3 text-lg font-semibold text-white active:scale-[0.98]">{isLast ? (embedded ? "Continue" : "See my score") : "Next"}</button>
           </>
         )}
       </div>

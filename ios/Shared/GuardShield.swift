@@ -208,6 +208,8 @@ enum GuardShield {
             }
             do {
                 try center.startMonitoring(unlockActivity, during: schedule, events: events)
+                store.usageStart = now
+                store.usageSeconds = seconds ?? 0
                 let usageNote = seconds.map { ", or " + usageLabel($0) + " of use" } ?? ""
                 store.log("unlocked for " + String(length) + " min" + usageNote)
                 return

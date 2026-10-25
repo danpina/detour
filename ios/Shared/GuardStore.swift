@@ -165,6 +165,24 @@ final class GuardStore {
         return until <= now.addingTimeInterval(slack)
     }
 
+    /// When the current usage-limited unlock started and how many seconds of use it allows. Lets the monitor tell a real
+    /// "limit reached" signal from a spurious early one: use inside a window can never exceed the time since it began.
+    var usageStart: Date? {
+        get { defaults.object(forKey: "guard.usageStart") as? Date }
+        set { defaults.set(newValue, forKey: "guard.usageStart") }
+    }
+
+    var usageSeconds: Int {
+        get { defaults.integer(forKey: "guard.usageSeconds") }
+        set { defaults.set(newValue, forKey: "guard.usageSeconds") }
+    }
+
+    /// True when a "usage limit reached" signal came sooner than the limit could have been used up.
+    func usageSignalIsTooEarly(now: Date = Date(), slack: TimeInterval = 5) -> Bool {
+        guard let start = usageStart, unlockUntil != nil, usageSeconds > 0 else { return false }
+        return now.timeIntervalSince(start) + slack < TimeInterval(usageSeconds)
+    }
+
     // MARK: Which guarded app is which (so the end screen can take the user back to it)
 
     /// iOS never tells the shield which app it is covering, but each guarded app has a stable anonymous token. The user says
