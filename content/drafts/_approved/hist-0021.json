@@ -1,0 +1,115 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Great Zimbabwe",
+    "angle": "Stone walls built without mortar"
+  },
+  "created_at": "2026-10-21T17:04:28.873Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "type": "guess_first",
+    "title": "Walls without mortar",
+    "body": {
+      "question": "The Great Enclosure at Great Zimbabwe has dry stone walls as high as 11 m (36 ft). What holds the stones together?",
+      "options": [
+        "Nothing: the walls were built without mortar",
+        "Lime mortar",
+        "Clay mortar",
+        "Iron clamps"
+      ],
+      "answer": 0,
+      "reveal": "The Great Enclosure's dry stone walls were constructed without mortar. It was built during the 13th and 14th centuries and likely served as the royal residence. More than 400 such sites with monumental, mortarless walls have been identified across southern Africa."
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "Roughly how many sites like Great Zimbabwe, with monumental mortarless walls, have been identified across southern Africa?",
+        "options": [
+          "Fewer than 10",
+          "About 50",
+          "More than 400",
+          "Exactly one"
+        ],
+        "answer": 2,
+        "id": "hist-0021-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: the Great Enclosure was built during the 13th and 14th centuries.",
+        "answer": true,
+        "id": "hist-0021-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Great Zimbabwe (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Great_Zimbabwe"
+      }
+    ],
+    "difficulty": 2,
+    "id": "hist-0021",
+    "interest": "history",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The stone walls and tower of the Great Enclosure at Great Zimbabwe",
+    "keywords": [
+      "Great Zimbabwe",
+      "Great Enclosure",
+      "Great Zimbabwe walls",
+      "Zimbabwe ruins"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:42.115Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Great_Zimbabwe",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: \"Walls without mortar\"",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Zimbabwe",
+        "quote": "The Great Enclosure, with its 11 m (36 ft) high dry stone walls (constructed without mortar"
+      },
+      {
+        "claim": "Question: Great Enclosure has dry stone walls as high as 11 m (36 ft)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Zimbabwe",
+        "quote": "Its most formidable edifice, commonly referred to as the Great Enclosure, has walls as high as 11 m (36 ft)"
+      },
+      {
+        "claim": "Answer (mcq): nothing, the walls were built without mortar (lime mortar, clay mortar, iron clamps are not what the page says)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Zimbabwe",
+        "quote": "The Great Enclosure, with its 11 m (36 ft) high dry stone walls (constructed without mortar"
+      },
+      {
+        "claim": "Reveal: the dry stone walls were constructed without mortar",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Zimbabwe",
+        "quote": "The Great Enclosure, with its 11 m (36 ft) high dry stone walls (constructed without mortar"
+      },
+      {
+        "claim": "Reveal/probe 2: built during the 13th and 14th centuries (true) and likely served as the royal residence",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Zimbabwe",
+        "quote": "was built during the 13th and 14th centuries, and likely served as the royal residence"
+      },
+      {
+        "claim": "Reveal/probe 1: more than 400 such sites with monumental, mortarless walls identified across southern Africa (answer \"More than 400\")",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Zimbabwe",
+        "quote": "More than 400 such sites have been identified across southern Africa, such as Bumbusi in Zimbabwe and Manyikeni in Mozambique, with monumental, mortarless walls",
+        "note": "\"Such sites\" refers to the many smaller ruins known as zimbabwes, so \"sites like Great Zimbabwe\" is supported."
+      }
+    ],
+    "overall": "pass"
+  }
+}

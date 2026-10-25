@@ -1,0 +1,85 @@
+{
+  "draft_id": "tech-0027",
+  "created_at": "2026-10-21T17:08:06.580Z",
+  "queries": [
+    "floppy disk 3.5-inch floppy diskette",
+    "floppy disk",
+    "floppy disk 3.5-inch floppy"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-133932604",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "2023 Dyskietki Verbatim DataLifePlus.jpg",
+      "credit": "Jacek Halicki / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2023_Dyskietki_Verbatim_DataLifePlus.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/2023_Dyskietki_Verbatim_DataLifePlus.jpg/960px-2023_Dyskietki_Verbatim_DataLifePlus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4372,
+      "height": 3252,
+      "alt_suggestion": "Verbatim DataLifePlus floppy disks",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-AFRC2021-0128-77",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "NASA Administrator Visits NASA Armstrong",
+      "credit": "NASA/Joshua Fisher / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/AFRC2021-0128-77",
+      "image_url": "https://images-assets.nasa.gov/image/AFRC2021-0128-77/AFRC2021-0128-77~medium.jpg",
+      "alt_suggestion": "NASA Deputy Administrator Pam Melroy shows NASA Administrator Bill Nelson and NASA Armstrong Flight Research Center Deputy Director Patrick Stolicker a floppy disk, one of the treasures contained in a",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-44082948",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Floppy disk 9135.jpg",
+      "credit": "User:Amada44 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Floppy_disk_9135.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Floppy_disk_9135.jpg/960px-Floppy_disk_9135.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3238,
+      "height": 3486,
+      "alt_suggestion": "3½-inch floppy disk. pack",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-140441643",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Floppy disk R21.jpg",
+      "credit": "Marc Ryckaert / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Floppy_disk_R21.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Floppy_disk_R21.jpg/960px-Floppy_disk_R21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2264,
+      "height": 2332,
+      "alt_suggestion": "3.5 inch floppy disk",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "generated-floppy",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: floppy",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-floppy.png",
+      "alt_suggestion": "Illustration of a dark blue square floppy disk with a silver metal shutter and a plain white label"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"floppy disk 3.5-inch floppy diskette\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"floppy disk 3.5-inch floppy diskette\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=floppy%20disk%203.5-inch%20floppy",
+    "met failed for \"floppy disk\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"floppy disk\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=floppy%20disk&query[term][is_publ",
+    "met failed for \"floppy disk 3.5-inch floppy\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"floppy disk 3.5-inch floppy\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=floppy%20disk%203.5-inch%20floppy"
+  ]
+}

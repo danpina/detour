@@ -1,0 +1,87 @@
+{
+  "draft_id": "sci-0024",
+  "created_at": "2026-10-21T17:07:44.328Z",
+  "queries": [
+    "stromatolites cyanobacteria Shark Bay stromatolites",
+    "stromatolites",
+    "stromatolites cyanobacteria"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-35287361",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Stromatolites, Belt Supergroup, Glacier National Park.jpg",
+      "credit": "James St. John / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stromatolites,_Belt_Supergroup,_Glacier_National_Park.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Stromatolites%2C_Belt_Supergroup%2C_Glacier_National_Park.jpg/960px-Stromatolites%2C_Belt_Supergroup%2C_Glacier_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3008,
+      "height": 2000,
+      "alt_suggestion": "Stromatolites (cut & polished slice) from the Precambrian of Montana (public display, Museum of the Rockies, Bozeman, Montana, USA). Stratigraphy: Snowslip Formation, Belt Supergroup, Mesoproterozoic,",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-GSFC_20171208_Archive_e001530",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Shark Bay, Australia",
+      "credit": "GSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001530",
+      "image_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001530/GSFC_20171208_Archive_e001530~medium.jpg",
+      "alt_suggestion": "Hamelin Pool Marine Nature Reserve is located in the Shark Bay World Heritage Site in Western Australia. It is one of the very few places in the world where living stromatolites can be found. These ar",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-74174757",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Stromatolites in lacustrine limestone (Green River Formation, Eocene; Utah, USA) (30698554727).jpg",
+      "credit": "James St. John / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stromatolites_in_lacustrine_limestone_(Green_River_Formation,_Eocene;_Utah,_USA)_(30698554727).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Stromatolites_in_lacustrine_limestone_%28Green_River_Formation%2C_Eocene%3B_Utah%2C_USA%29_%2830698554727%29.jpg/960px-Stromatolites_in_lacustrine_limestone_%28Green_River_Formation%2C_Eocene%3B_Utah%2C_USA%29_%2830698554727%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3188,
+      "height": 2479,
+      "alt_suggestion": "Stromatolites from the Eocene of Utah, USA. (~5.9 centimeters across at its widest along the base) Stromatolites are layered structures built up by mats of cyanobacteria (= blue-green bacteria, often ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-PIA23779",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Stromatolites in the Nevada Desert",
+      "credit": "NASA/JPL-Caltech / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA23779",
+      "image_url": "https://images-assets.nasa.gov/image/PIA23779/PIA23779~medium.jpg",
+      "alt_suggestion": "Made from fossilized microbes and sediment, these rounded rocks are stromatolites that were found in a dry lakebed during the field exercise. Scientists hope to find something similar in the dry lakeb",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-35288208",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Stromatolites in limestone, Going-to-the-Sun Highway, Glacier NP.jpg",
+      "credit": "James St. John / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stromatolites_in_limestone,_Going-to-the-Sun_Highway,_Glacier_NP.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Stromatolites_in_limestone%2C_Going-to-the-Sun_Highway%2C_Glacier_NP.jpg/960px-Stromatolites_in_limestone%2C_Going-to-the-Sun_Highway%2C_Glacier_NP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3008,
+      "height": 2000,
+      "alt_suggestion": "Stromatolitic limestone - numerous columnar stromatolites in Precambrian limestone at Glacier National Park, Montana, USA. Stratigraphy: Helena Formation (Siyeh Formation), Belt Supergroup, Mesoproter",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"stromatolites cyanobacteria Shark Bay stromatolites\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"stromatolites cyanobacteria Shark Bay stromatolites\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=stromatolites%20cyanobacteria%20S",
+    "met failed for \"stromatolites\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"stromatolites\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=stromatolites&query[term][is_publ",
+    "met failed for \"stromatolites cyanobacteria\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"stromatolites cyanobacteria\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=stromatolites%20cyanobacteria&que"
+  ]
+}

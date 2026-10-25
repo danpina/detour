@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-2278605",
+  "alt": "John Snow's 1854 map of the Soho cholera outbreak in London, with black bars stacked along streets marking cases clustered around the Broad Street pump.",
+  "fits": true,
+  "note": "Public domain original map, the real subject. Pale line-art so it needs a strong dark scrim for text; crop tight on the Broad Street cluster. Rejected cand-1 (pub with branding and passers-by) and cand-3 (modern college with logo).",
+  "crop": {
+    "fx": 0.52,
+    "fy": 0.5,
+    "zoom": 1.5
+  }
+}

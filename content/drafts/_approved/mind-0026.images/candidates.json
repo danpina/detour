@@ -1,0 +1,63 @@
+{
+  "draft_id": "mind-0026",
+  "created_at": "2026-10-21T17:06:29.993Z",
+  "queries": [
+    "analog clock wall clock clock face second hand",
+    "analog clock",
+    "analog clock wall clock"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-23131866",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pendulum clock by Jacob Kock, antique furniture photography, IMG 0931 edit.jpg",
+      "credit": "Christoph Braun / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pendulum_clock_by_Jacob_Kock,_antique_furniture_photography,_IMG_0931_edit.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Pendulum_clock_by_Jacob_Kock%2C_antique_furniture_photography%2C_IMG_0931_edit.jpg/960px-Pendulum_clock_by_Jacob_Kock%2C_antique_furniture_photography%2C_IMG_0931_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3378,
+      "height": 4622,
+      "alt_suggestion": "A gilded Gustavian style pendulum clock by Jacob Kock, Stockholm (Swedish watchmaker, 1737–1805).",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-146235948",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cape Town (ZA), Waterfront, Clock Tower, Detail -- 2024 -- 2911.jpg",
+      "credit": "Dietmar Rabich / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Waterfront,_Clock_Tower,_Detail_--_2024_--_2911.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Cape_Town_%28ZA%29%2C_Waterfront%2C_Clock_Tower%2C_Detail_--_2024_--_2911.jpg/960px-Cape_Town_%28ZA%29%2C_Waterfront%2C_Clock_Tower%2C_Detail_--_2024_--_2911.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6459,
+      "height": 4306,
+      "alt_suggestion": "Detail of the facade of the Clock Tower, Waterfront, Cape Town, Western Cape, South AfricaThe V&A Waterfront in Cape Town was built in the 19th century as a port facility. In 1860, Prince Alfred, son ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-59629380",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "London Big Ben Inner Clock Face 1070925-PSD.jpg",
+      "credit": "Ermell / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg/960px-London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2811,
+      "height": 2720,
+      "alt_suggestion": "The clock-face of Big Ben (Elizabeth Tower) as it looked in 2009 before being renovated and restored.[1] The clock-face framework has since been restored to its original color of Prussian blue, and th",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"analog clock wall clock clock face second hand\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"analog clock wall clock clock face second hand\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=analog%20clock%20wall%20clock%20c",
+    "met failed for \"analog clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"analog clock\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=analog%20clock&query[term][is_pub",
+    "met failed for \"analog clock wall clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"analog clock wall clock\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=analog%20clock%20wall%20clock&que"
+  ]
+}

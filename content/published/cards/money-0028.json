@@ -1,0 +1,65 @@
+{
+  "id": "money-0028",
+  "interest": "money",
+  "title": "The cobra bounty",
+  "probes": [
+    {
+      "id": "money-0028-p1",
+      "question": "In the story, what did people begin to do once dead cobras earned a reward?",
+      "kind": "mcq",
+      "options": [
+        "Breed cobras",
+        "Import cobras",
+        "Train cobras",
+        "Sell cobras abroad"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0028-p2",
+      "question": "True or false: in the story, the wild cobra population overall increased after the reward was scrapped.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Perverse incentive (cobra effect) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cobra_effect"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:37.579Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0028.webp",
+    "alt": "An Indian spectacled cobra rearing up with its hood spread on bare ground among dry leaves.",
+    "kind": "photo",
+    "credit": "Dr. Raju Kasambe / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Indian_Cobra_Naja_naja_by_Dr_Raju_Kasambe_DSCN4991_(17).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "The story goes that the British government, concerned about the number of venomous cobras in Delhi, offered a bounty for every dead cobra."
+      },
+      {
+        "text": "Initially, this was a successful strategy: large numbers of snakes were killed for the reward."
+      },
+      {
+        "text": "Eventually, however, people began to breed cobras for the income."
+      },
+      {
+        "text": "When the government became aware of this, the reward program was scrapped, and the cobra breeders set their snakes free. The result was an overall increase in the wild cobra population."
+      },
+      {
+        "text": "Economist Horst Siebert coined the name \"cobra effect\" in 2001, based on this anecdote from the British Raj. It describes incentives that make a problem worse."
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "hist-0020",
+  "interest": "history",
+  "title": "Records made of knots",
+  "probes": [
+    {
+      "id": "hist-0020-p1",
+      "question": "What does a quipu usually consist of?",
+      "kind": "mcq",
+      "options": [
+        "Cotton or camelid fiber cords",
+        "Clay tablets",
+        "Carved wooden boards",
+        "Painted bark paper"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0020-p2",
+      "question": "True or false: the Inca tied knots in a decimal positional system to store numbers on quipu cords.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Quipu (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Quipu"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:14:13.420Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0020.webp",
+    "alt": "An Inca quipu: a main cord with dozens of hanging knotted cotton and fibre cords in cream and brown, displayed in a museum case",
+    "kind": "photo",
+    "credit": "Daderot / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Fragmentary_quipu_(khipu),_a_main_cord_with_top,_subsidiary,_%26_tertiary_cords,_Inca,_Peru,_Late_Horizon,_1476-1534_AD,_cotton,_plant_%26_camelid_fiber,_indigo_%26_red_dye_-_Dallas_Museum_of_Art_-_DSC04704.jpg"
+  },
+  "body": {
+    "claim": "The Inca used knots tied in a decimal positional system to store numbers and other values on quipu cords.",
+    "why": "A quipu usually consists of cotton or camelid fiber cords, and contains categorized information based on dimensions like color, order, and number. Quipus can have anywhere from a few to several thousand cords. In the early years of the Spanish conquest of Peru, Spanish officials often relied on quipus to settle disputes over local tribute payments or goods production."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "tech-0025",
+  "interest": "tech",
+  "title": "A supercomputer with benches around it",
+  "probes": [
+    {
+      "id": "tech-0025-p1",
+      "question": "True or false: the Cray-1 is perhaps best known for its C-shaped cabinet.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "tech-0025-p2",
+      "question": "What ran in stainless steel pipes to draw heat away from the Cray-1 circuit boards?",
+      "kind": "mcq",
+      "options": [
+        "Liquid Freon",
+        "Water",
+        "Air",
+        "Liquid nitrogen"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cray-1 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cray-1"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:51.322Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "tech-0025.webp",
+    "alt": "A ring of eight dark blue columns of varied height arranged in an arc around a round orange bench.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "The Cray-1 had a ring of benches around the outside of its C-shaped cabinet. What did the benches cover?",
+    "options": [
+      "The power supplies and the cooling system",
+      "The tape drives",
+      "The printers",
+      "The keyboards"
+    ],
+    "answer": 0,
+    "reveal": "The benches covered the power supplies and the cooling system. The Cray-1 is perhaps best known for its unique shape, a relatively small C-shaped cabinet. The initial model, the Cray-1A, weighed 10,500 pounds (4,800 kg) including the Freon refrigeration system."
+  }
+}

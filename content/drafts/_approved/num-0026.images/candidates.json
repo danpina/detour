@@ -1,0 +1,63 @@
+{
+  "draft_id": "num-0026",
+  "created_at": "2026-10-21T17:07:27.722Z",
+  "queries": [
+    "Achilles and the tortoise Zeno of Elea Greek vase Achilles",
+    "Achilles and the tortoise",
+    "Achilles and the tortoise Zeno of Elea"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-39999640",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Zeno Moving Rows Paradox.png",
+      "credit": "Martin Grandjean / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zeno_Moving_Rows_Paradox.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Zeno_Moving_Rows_Paradox.png/960px-Zeno_Moving_Rows_Paradox.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1050,
+      "height": 800,
+      "alt_suggestion": "Zeno's paradoxes are a set of philosophical problems generally thought to have been devised by Greek philosopher Zeno of Elea (ca. 490–430 BC) to support Parmenides's doctrine that contrary to the evi",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-92221323",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Achilles and the tortoise - Flickr - Uqbar is back.jpg",
+      "credit": "Uqbar is back from Milano, Italy / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Achilles_and_the_tortoise_-_Flickr_-_Uqbar_is_back.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Achilles_and_the_tortoise_-_Flickr_-_Uqbar_is_back.jpg/960px-Achilles_and_the_tortoise_-_Flickr_-_Uqbar_is_back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 705,
+      "alt_suggestion": "(more below) This was fun.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-141975413",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "הפרדוקס של אכילס והצב..png",
+      "credit": "ראובן פרוס / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D7%94%D7%A4%D7%A8%D7%93%D7%95%D7%A7%D7%A1_%D7%A9%D7%9C_%D7%90%D7%9B%D7%99%D7%9C%D7%A1_%D7%95%D7%94%D7%A6%D7%91..png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/%D7%94%D7%A4%D7%A8%D7%93%D7%95%D7%A7%D7%A1_%D7%A9%D7%9C_%D7%90%D7%9B%D7%99%D7%9C%D7%A1_%D7%95%D7%94%D7%A6%D7%91..png/960px-%D7%94%D7%A4%D7%A8%D7%93%D7%95%D7%A7%D7%A1_%D7%A9%D7%9C_%D7%90%D7%9B%D7%99%D7%9C%D7%A1_%D7%95%D7%94%D7%A6%D7%91..png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 1024,
+      "alt_suggestion": ".",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Achilles and the tortoise Zeno of Elea Greek vase Achilles\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Achilles and the tortoise Zeno of Elea Greek vase Achilles\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Achilles%20and%20the%20tortoise%2",
+    "met failed for \"Achilles and the tortoise\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Achilles and the tortoise\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Achilles%20and%20the%20tortoise&q",
+    "met failed for \"Achilles and the tortoise Zeno of Elea\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Achilles and the tortoise Zeno of Elea\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Achilles%20and%20the%20tortoise%2"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-40637068",
+  "alt": "A hexagon drawn inside and outside a circle, then a 12-sided polygon, hugging the circle ever more closely",
+  "fits": true,
+  "note": "Directly shows inscribed and circumscribed polygons closing in on a circle; no text. Very wide strip, so crop to the hexagon-and-circle on the left.",
+  "crop": {
+    "fx": 0.17,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

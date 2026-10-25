@@ -1,0 +1,62 @@
+{
+  "id": "sci-0022",
+  "interest": "science",
+  "title": "The Broad Street pump",
+  "probes": [
+    {
+      "id": "sci-0022-p1",
+      "question": "What did John Snow's hypothesis say caused the cholera outbreak?",
+      "kind": "mcq",
+      "options": [
+        "Germ-contaminated water",
+        "Bad air called miasma",
+        "Overcrowded church services",
+        "Spoiled meat"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0022-p2",
+      "question": "True or false: the 1854 Broad Street outbreak killed 420 people.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "1854 Broad Street cholera outbreak (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:06.125Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0022.webp",
+    "alt": "John Snow's 1854 map of the Soho cholera outbreak in London, with black bars stacked along streets marking cases clustered around the Broad Street pump.",
+    "kind": "photo",
+    "credit": "John Snow / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Snow-cholera-map-1.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In 1854, a severe outbreak of cholera occurred near Broad Street in Soho, London. It killed 420 people."
+      },
+      {
+        "text": "The physician John Snow studied its causes. He was sceptical of the prevailing miasma theory, which held that disease came from something in the air."
+      },
+      {
+        "text": "Snow's hypothesis was that germ-contaminated water was the cause. He later used a dot map to illustrate how cases of cholera occurred around the Broad Street pump."
+      },
+      {
+        "text": "This discovery influenced public health and the construction of improved sanitation facilities beginning in the mid-19th century."
+      }
+    ]
+  }
+}

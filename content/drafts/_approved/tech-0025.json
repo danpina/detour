@@ -1,0 +1,120 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Cray-1",
+    "angle": "The C-shaped supercomputer"
+  },
+  "created_at": "2026-10-21T17:04:04.456Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "type": "guess_first",
+    "title": "A supercomputer with benches around it",
+    "difficulty": 2,
+    "body": {
+      "question": "The Cray-1 had a ring of benches around the outside of its C-shaped cabinet. What did the benches cover?",
+      "options": [
+        "The power supplies and the cooling system",
+        "The tape drives",
+        "The printers",
+        "The keyboards"
+      ],
+      "answer": 0,
+      "reveal": "The benches covered the power supplies and the cooling system. The Cray-1 is perhaps best known for its unique shape, a relatively small C-shaped cabinet. The initial model, the Cray-1A, weighed 10,500 pounds (4,800 kg) including the Freon refrigeration system."
+    },
+    "probes": [
+      {
+        "kind": "tf",
+        "question": "True or false: the Cray-1 is perhaps best known for its C-shaped cabinet.",
+        "answer": true,
+        "id": "tech-0025-p1"
+      },
+      {
+        "kind": "mcq",
+        "question": "What ran in stainless steel pipes to draw heat away from the Cray-1 circuit boards?",
+        "options": [
+          "Liquid Freon",
+          "Water",
+          "Air",
+          "Liquid nitrogen"
+        ],
+        "answer": 0,
+        "id": "tech-0025-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cray-1 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cray-1"
+      }
+    ],
+    "id": "tech-0025",
+    "interest": "tech",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A Cray-1 supercomputer showing its C-shaped cabinet and bench ring",
+    "keywords": [
+      "Cray-1",
+      "Cray-1 supercomputer",
+      "Cray-1 museum",
+      "Cray Research"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:07:39.966Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cray-1",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: A supercomputer with benches around it",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cray-1",
+        "quote": "a relatively small C-shaped cabinet with a ring of benches around the outside covering the power supplies and the cooling system."
+      },
+      {
+        "claim": "Cray-1 had a ring of benches around the outside of its C-shaped cabinet",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cray-1",
+        "quote": "a relatively small C-shaped cabinet with a ring of benches around the outside covering the power supplies and the cooling system."
+      },
+      {
+        "claim": "The benches covered the power supplies and the cooling system (answer; other options false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cray-1",
+        "quote": "a ring of benches around the outside covering the power supplies and the cooling system."
+      },
+      {
+        "claim": "The Cray-1 is perhaps best known for its unique shape, a relatively small C-shaped cabinet",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cray-1",
+        "quote": "It is perhaps best known for its unique shape, a relatively small C-shaped cabinet"
+      },
+      {
+        "claim": "Cray-1A weighed 10,500 pounds (4,800 kg) including the Freon refrigeration system",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cray-1",
+        "quote": "The initial model, the Cray-1A , weighed 10,500 pounds (4,800 kg) including the Freon refrigeration system."
+      },
+      {
+        "claim": "Probe 1: Cray-1 perhaps best known for C-shaped cabinet (true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cray-1",
+        "quote": "It is perhaps best known for its unique shape, a relatively small C-shaped cabinet"
+      },
+      {
+        "claim": "Probe 2: liquid Freon ran in stainless steel pipes to draw heat away from the boards",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cray-1",
+        "quote": "where liquid Freon running in stainless steel pipes drew it away to the cooling unit below the machine."
+      }
+    ],
+    "overall": "pass"
+  }
+}

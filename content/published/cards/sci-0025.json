@@ -1,0 +1,61 @@
+{
+  "id": "sci-0025",
+  "interest": "science",
+  "title": "\"That's funny\"",
+  "probes": [
+    {
+      "id": "sci-0025-p1",
+      "question": "What was one of Fleming's culture plates contaminated with?",
+      "kind": "mcq",
+      "options": [
+        "A fungus",
+        "Dust from a window",
+        "A virus",
+        "Salt crystals"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0025-p2",
+      "question": "True or false: on Fleming's plate, the staphylococci colonies immediately surrounding the fungus had been destroyed.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Alexander Fleming (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Alexander_Fleming"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:29.462Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0025.webp",
+    "alt": "A round petri dish seen from above with a teal mould blob in a clear pale halo and orange bacterial colonies scattered across the agar.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Before leaving for his holiday, Alexander Fleming inoculated staphylococci on culture plates and left them on a bench in a corner of his laboratory."
+      },
+      {
+        "text": "On his return, he noticed that one culture was contaminated with a fungus. The staphylococci colonies immediately surrounding the fungus had been destroyed, whereas colonies farther away were normal."
+      },
+      {
+        "text": "He famously remarked \"That's funny\". He grew the mould in a pure culture and found that the culture broth contained an antibacterial substance."
+      },
+      {
+        "text": "His discovery in 1928 was of what was later named benzylpenicillin, from the mould Penicillium rubens."
+      }
+    ]
+  }
+}

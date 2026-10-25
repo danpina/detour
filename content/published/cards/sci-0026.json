@@ -1,0 +1,50 @@
+{
+  "id": "sci-0026",
+  "interest": "science",
+  "title": "A pendulum that shows Earth turning",
+  "probes": [
+    {
+      "id": "sci-0026-p1",
+      "question": "In which year did Foucault introduce his pendulum?",
+      "kind": "mcq",
+      "options": [
+        "1751",
+        "1851",
+        "1901",
+        "1951"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0026-p2",
+      "question": "True or false: the Foucault pendulum effect no longer exists at Earth's equator.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Foucault pendulum (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Foucault_pendulum"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:35.315Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0026.webp",
+    "alt": "A Foucault pendulum bob hanging just above a marked floor scale with a compass rose, in a dimly lit cathedral.",
+    "kind": "photo",
+    "credit": "This photo is a scanned Reversal film (Slide). / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Isaac%27s_Cathedral_-_Foucault_pendulum_in_1984.jpg"
+  },
+  "body": {
+    "claim": "The Foucault pendulum is a simple device conceived as an experiment to demonstrate the Earth's rotation.",
+    "why": "If a long and heavy pendulum is monitored over an extended period of time, its plane of oscillation appears to change spontaneously as the Earth makes its 24-hourly rotation. This effect is greatest at the poles and diminishes with lower latitude until it no longer exists at Earth's equator."
+  }
+}

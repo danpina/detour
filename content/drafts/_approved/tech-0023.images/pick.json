@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-29331212",
+  "alt": "A spacewalking astronaut handling a Hubble Space Telescope instrument during the 1993 STS-61 servicing mission",
+  "fits": true,
+  "note": "NASA photo of the STS-61 repair mission, portrait and dark background; astronaut on official mission is acceptable.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

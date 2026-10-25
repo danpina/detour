@@ -1,0 +1,61 @@
+{
+  "id": "tech-0029",
+  "interest": "tech",
+  "title": "\"Just a hobby\"",
+  "probes": [
+    {
+      "id": "tech-0029-p1",
+      "question": "Where did Torvalds post his message on 25 August 1991?",
+      "kind": "mcq",
+      "options": [
+        "comp.os.minix, a Usenet newsgroup",
+        "A magazine letters page",
+        "A radio show",
+        "A university notice board"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0029-p2",
+      "question": "True or false: version 0.01 of Linux was already executable on its own.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Linux kernel (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Linux_kernel"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:59.818Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0029.webp",
+    "alt": "A friendly flat cartoon penguin with a dark body, cream belly, round eyes, yellow beak and feet, on a pale blue disc.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Linus Torvalds started with a task switcher in Intel 80386 assembly language and a terminal driver."
+      },
+      {
+        "text": "On 25 August 1991, he posted to comp.os.minix, a newsgroup on Usenet: \"I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones.\""
+      },
+      {
+        "text": "On 17 September 1991, he prepared version 0.01 of Linux and put it on an FTP server. It was not even executable, since its code still needed Minix to compile and test it."
+      },
+      {
+        "text": "On 5 October 1991, he announced the first \"official\" version of Linux, version 0.02."
+      }
+    ]
+  }
+}

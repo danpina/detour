@@ -1,0 +1,87 @@
+{
+  "draft_id": "tech-0022",
+  "created_at": "2026-10-21T17:07:52.167Z",
+  "queries": [
+    "GPS satellite GPS Block IIF NAVSTAR",
+    "GPS satellite",
+    "GPS satellite GPS Block IIF"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-978591",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Navstar-2F.jpg",
+      "credit": "USAF / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Navstar-2F.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Navstar-2F.jpg/960px-Navstar-2F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2100,
+      "height": 1644,
+      "alt_suggestion": "Navstar-2F satellite of the Global Positioning System (GPS)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss050e031340",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "J-SSOD-6 Deployment",
+      "credit": "Peggy Whitson / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss050e031340",
+      "image_url": "https://images-assets.nasa.gov/image/iss050e031340/iss050e031340~medium.jpg",
+      "alt_suggestion": "iss050e031340 (1/16/2017) --- Photo documentation of the Japanese-Small Satellite Orbital Deployer-6 (J-SSOD-6) deployment of the ECG Cubesat. The EGG Satellite (re-Entry satellite with Gossamer aeros",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-94194021",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "GPS-IIF-11.jpg",
+      "credit": "Michael Howard/Spaceflight Insider / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GPS-IIF-11.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/GPS-IIF-11.jpg/960px-GPS-IIF-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1280,
+      "alt_suggestion": "A United Launch Alliance Atlas V carrying the Air Force's GPSIIF-11 launches from Space Launch Complex 41 at Cape Canaveral Air Force Station, Fla. The 45th Space Wing supported the U.S. Air Force’s e",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-0400538",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Space Science",
+      "credit": "MSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/0400538",
+      "image_url": "https://images-assets.nasa.gov/image/0400538/0400538~medium.jpg",
+      "alt_suggestion": "In this photo, the Gravity Probe B (GP-B) space vehicle is completed during the solar array installation. The GP-B is the relativity experiment developed at Stanford University to test two extraordina",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-47561884",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Atlas V GPS IIF-4 (8745760232).jpg",
+      "credit": "James McCloskey from Pad 39 A, Land of the free Home of the Brave / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Atlas_V_GPS_IIF-4_(8745760232).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Atlas_V_GPS_IIF-4_%288745760232%29.jpg/960px-Atlas_V_GPS_IIF-4_%288745760232%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2493,
+      "height": 1821,
+      "alt_suggestion": "unidentified black disc to the left of the rocket",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"GPS satellite GPS Block IIF NAVSTAR\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"GPS satellite GPS Block IIF NAVSTAR\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=GPS%20satellite%20GPS%20Block%20I",
+    "met failed for \"GPS satellite\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"GPS satellite\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=GPS%20satellite&query[term][is_pu",
+    "met failed for \"GPS satellite GPS Block IIF\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"GPS satellite GPS Block IIF\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=GPS%20satellite%20GPS%20Block%20I"
+  ]
+}

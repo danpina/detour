@@ -1,0 +1,32 @@
+{
+  "draft_id": "mind-0030",
+  "created_at": "2026-10-21T17:06:41.433Z",
+  "queries": [
+    "corpus callosum split brain brain hemispheres diagram",
+    "corpus callosum",
+    "corpus callosum split brain"
+  ],
+  "candidates": [
+    {
+      "id": "generated-splitbrain",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: splitbrain",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-splitbrain.png",
+      "alt_suggestion": "Illustration of a brain drawn as two rounded halves in different colours joined by a thin bridge in the middle"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"corpus callosum split brain brain hemispheres diagram\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"corpus callosum split brain brain hemispheres diagram\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=corpus%20callosum%20split%20brain",
+    "met failed for \"corpus callosum\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"corpus callosum\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=corpus%20callosum&query[term][is_",
+    "met failed for \"corpus callosum split brain\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"corpus callosum split brain\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=corpus%20callosum%20split%20brain",
+    "Image generation not configured (IMAGE_GEN_PROVIDER / IMAGE_GEN_API_KEY / IMAGE_GEN_MODEL); skipped."
+  ]
+}

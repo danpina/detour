@@ -1,0 +1,70 @@
+{
+  "draft_id": "num-0020",
+  "created_at": "2026-10-21T17:07:10.344Z",
+  "queries": [
+    "pi digits Palais de la Découverte pi room William Shanks pi",
+    "pi digits",
+    "pi digits Palais de la Découverte pi room"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-59366559",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Arranging the digits of Pi in Concentric Circles.png",
+      "credit": "fdecomite / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Arranging_the_digits_of_Pi_in_Concentric_Circles.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Arranging_the_digits_of_Pi_in_Concentric_Circles.png/960px-Arranging_the_digits_of_Pi_in_Concentric_Circles.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6800,
+      "height": 5100,
+      "alt_suggestion": "Arranging the digits of Pi in Concentric Circles",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-59366551",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pi digits by colors and height.png",
+      "credit": "fdecomite / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pi_digits_by_colors_and_height.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Pi_digits_by_colors_and_height.png/960px-Pi_digits_by_colors_and_height.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6800,
+      "height": 5100,
+      "alt_suggestion": "Pi digits by colors and height",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-59366553",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Arlequin digits of Pi.png",
+      "credit": "fdecomite / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Arlequin_digits_of_Pi.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Arlequin_digits_of_Pi.png/960px-Arlequin_digits_of_Pi.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5800,
+      "height": 5800,
+      "alt_suggestion": "Arlequin digits of Pi",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Precise Calculator Pi 20210113.png",
+      "license": "GPLv3",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"pi digits Palais de la Découverte pi room William Shanks pi\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"pi digits Palais de la Découverte pi room William Shanks pi\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=pi%20digits%20Palais%20de%20la%20",
+    "met failed for \"pi digits\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"pi digits\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=pi%20digits&query[term][is_public",
+    "met failed for \"pi digits Palais de la Découverte pi room\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"pi digits Palais de la Découverte pi room\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=pi%20digits%20Palais%20de%20la%20"
+  ]
+}

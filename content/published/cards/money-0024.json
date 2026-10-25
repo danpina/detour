@@ -1,0 +1,55 @@
+{
+  "id": "money-0024",
+  "interest": "money",
+  "title": "Why the winner overpays",
+  "probes": [
+    {
+      "id": "money-0024-p1",
+      "question": "What do savvy bidders do to avoid the winner's curse?",
+      "kind": "mcq",
+      "options": [
+        "Bid below their estimate of the value",
+        "Bid above their estimate of the value",
+        "Bid only in the last seconds"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0024-p2",
+      "question": "True or false: the more bidders there are, the more severe the winner's curse gets.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Winner's curse (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Winner%27s_curse"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:24.657Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0024.webp",
+    "alt": "A large offshore oil platform standing in calm blue sea, flanked by two small tugboats.",
+    "kind": "photo",
+    "credit": "Divulgação Petrobras / ABr / Wikimedia Commons",
+    "license": "CC BY 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Oil_platform_P-51_(Brazil).jpg"
+  },
+  "body": {
+    "question": "Several companies bid on an oil field that is worth about the same to each of them, but none knows its exact value. Who tends to overpay?",
+    "options": [
+      "The highest bidder",
+      "The lowest bidder",
+      "The auctioneer"
+    ],
+    "answer": 0,
+    "reveal": "The winner is the bidder with the most optimistic evaluation, so the winner will tend to overestimate and overpay. This is the winner's curse. Savvy bidders avoid it by bid shading: placing a bid below their estimate of the value."
+  }
+}

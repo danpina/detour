@@ -1,0 +1,55 @@
+{
+  "id": "num-0020",
+  "interest": "numbers",
+  "title": "A pi calculation that went wrong at digit 528",
+  "probes": [
+    {
+      "id": "num-0020-p1",
+      "question": "Which digit of Shanks's calculation of pi contained the mistake?",
+      "kind": "mcq",
+      "options": [
+        "The 528th",
+        "The 100th",
+        "The 607th",
+        "The 707th"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "num-0020-p2",
+      "question": "True or false: the error in Shanks's digits was detected in 1946.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pi (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pi"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:16:29.572Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "num-0020.webp",
+    "alt": "A colourful disc made of tens of thousands of tiny coloured digits of pi arranged in concentric rings on black",
+    "kind": "photo",
+    "credit": "fdecomite / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Arlequin_digits_of_Pi.png"
+  },
+  "body": {
+    "question": "In 1873, William Shanks added 100 more digits to an earlier calculation of pi. How many digits had he calculated in total?",
+    "unit": "digits",
+    "min": 100,
+    "max": 2000,
+    "scale": "log",
+    "answer": 707,
+    "reveal": "In 1853, William Shanks calculated π to 607 digits, but made a mistake in the 528th digit, rendering all subsequent digits incorrect. He calculated an additional 100 digits in 1873, bringing the total up to 707."
+  }
+}

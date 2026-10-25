@@ -1,0 +1,61 @@
+{
+  "id": "mind-0029",
+  "interest": "mind",
+  "title": "The creature called a wug",
+  "probes": [
+    {
+      "id": "mind-0029-p1",
+      "question": "In the Wug Test, what plural shows a child has inferred the basic rule?",
+      "kind": "mcq",
+      "options": [
+        "wugs",
+        "wug",
+        "wugen",
+        "wuggy"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0029-p2",
+      "question": "True or false: in the Wug Test, the target words are made-up words that the child cannot have heard before.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jean Berko Gleason (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jean_Berko_Gleason"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:01.123Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0029.webp",
+    "alt": "Two friendly round teal cartoon creatures with big eyes and a little tuft, one larger and one smaller, standing side by side.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "A child is shown a simple picture of a fanciful creature with a nonsense name: “This is a WUG. Now there is another one. There are two of them. There are two ____.”"
+      },
+      {
+        "text": "Each target word was a made-up but plausible-sounding pseudoword, so the child cannot have heard it before."
+      },
+      {
+        "text": "A child who answers “wugs” has apparently inferred, perhaps unconsciously, the basic rule for forming plurals."
+      },
+      {
+        "text": "Jean Berko Gleason's major finding: even very young children are able to connect suitable endings to nonsense words they have never heard before."
+      }
+    ]
+  }
+}

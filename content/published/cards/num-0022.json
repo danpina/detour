@@ -1,0 +1,56 @@
+{
+  "id": "num-0022",
+  "interest": "numbers",
+  "title": "Pascal's triangle before Pascal",
+  "probes": [
+    {
+      "id": "num-0022-p1",
+      "question": "What is the triangle called in China?",
+      "kind": "mcq",
+      "options": [
+        "Yang Hui's triangle",
+        "Gersonides's triangle",
+        "Jordanus's triangle",
+        "Halayudha's triangle"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "num-0022-p2",
+      "question": "True or false: the pattern of numbers in Pascal's triangle was known well before Pascal's time.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pascal's triangle (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pascal%27s_triangle"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:16:34.610Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0022.webp",
+    "alt": "A triangle of six rows of circles, one to six per row, alternately coloured teal and orange like odd and even numbers.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "Pascal's triangle is named after Blaise Pascal, but the pattern was known well before his time. Through the work of Jia Xian, in which century was it known in China?",
+    "options": [
+      "11th century",
+      "15th century",
+      "17th century",
+      "19th century"
+    ],
+    "answer": 0,
+    "reveal": "Pascal's triangle was known in China during the 11th century through the work of Jia Xian. In the 13th century Yang Hui defined the triangle, and it is known as Yang Hui's triangle in China."
+  }
+}

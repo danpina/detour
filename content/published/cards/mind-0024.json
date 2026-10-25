@@ -1,0 +1,52 @@
+{
+  "id": "mind-0024",
+  "interest": "mind",
+  "title": "Which one is “kiki”?",
+  "probes": [
+    {
+      "id": "mind-0024-p1",
+      "question": "Which kind of shape do people tend to link with the nonsense word “bouba”?",
+      "kind": "mcq",
+      "options": [
+        "A rounded shape",
+        "A jagged shape"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0024-p2",
+      "question": "True or false: 4-month-old infants showed the same sound–shape mapping biases as adults and toddlers.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bouba/kiki effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bouba%2Fkiki_effect"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:14:53.689Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0024.webp",
+    "alt": "A smooth teal circle beside a sharp orange twelve-point star on a cream background.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "Two nonsense words: “bouba” and “kiki”. Two shapes: one rounded, one jagged. Which word do people tend to pick for the jagged shape?",
+    "options": [
+      "kiki",
+      "bouba"
+    ],
+    "answer": 0,
+    "reveal": "People tend to associate “hard” sounds like kiki with a spiky shape and “soft” sounds like bouba with a rounded shape. It has been robustly confirmed across a majority of cultures and languages in which it has been researched. Even 4-month-old infants have the same sound–shape mapping biases as adults and toddlers."
+  }
+}

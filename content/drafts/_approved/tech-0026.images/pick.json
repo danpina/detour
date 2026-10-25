@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-152516316",
+  "alt": "Many paper Caesar cipher wheels with two rings of alphabet letters, lying on a round tray",
+  "fits": true,
+  "note": "Clear pattern of cipher disks, portrait, no people. Slightly busy but readable under a scrim. Other candidates: plain diagram on white, or a photo with a hand and handwriting.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

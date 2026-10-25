@@ -1,0 +1,112 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Hungarian pengő",
+    "angle": "Hyperinflation: prices doubling in about 15 hours"
+  },
+  "created_at": "2026-10-21T17:03:52.388Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0023",
+    "interest": "money",
+    "type": "estimate",
+    "title": "Prices that doubled in hours",
+    "body": {
+      "question": "At one stage of Hungary's pengő hyperinflation, about how many hours did it take for prices to double?",
+      "unit": "hours",
+      "min": 1,
+      "max": 1000,
+      "scale": "log",
+      "answer": 15,
+      "reveal": "About 15 hours. At one stage it took only about 15 hours for prices to double and about four days for the pengő to lose 90% of its prior value. The forint replaced the pengő on 1 August 1946, dropping 29 zeroes."
+    },
+    "probes": [
+      {
+        "id": "money-0023-p1",
+        "kind": "mcq",
+        "question": "Which currency replaced the pengő in 1946?",
+        "options": [
+          "Forint",
+          "Korona",
+          "Zloty",
+          "Lira"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0023-p2",
+        "kind": "mcq",
+        "question": "How many zeroes did the forint drop from the old currency?",
+        "options": [
+          "9",
+          "15",
+          "29",
+          "40"
+        ],
+        "answer": 2
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hungarian pengő (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hungarian_peng%C5%91"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A huge-denomination pengő banknote (b.-pengő or milpengő)",
+    "keywords": [
+      "pengő banknote 1946",
+      "100 million b.-pengő",
+      "Hungarian hyperinflation banknote",
+      "milpengő"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:15.483Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hungarian_peng%C5%91",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "At one stage it took only about 15 hours for prices to double (question, answer 15, reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hungarian_peng%C5%91",
+        "quote": "The hyperinflation was so out of control that at one stage it took only about 15 hours for prices to double"
+      },
+      {
+        "claim": "About four days for the pengő to lose 90% of its prior value",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hungarian_peng%C5%91",
+        "quote": "about four days for the pengő to lose 90% of its prior value"
+      },
+      {
+        "claim": "Forint introduced 1 August 1946",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hungarian_peng%C5%91",
+        "quote": "On 1 August 1946, Hungary reintroduced the forint at a ratio of 400 octillion pengős to 1"
+      },
+      {
+        "claim": "Forint dropped 29 zeroes from the old currency (probe 2 answer 29)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hungarian_peng%C5%91",
+        "quote": "dropping 29 zeroes from the old currency, or 200 000 000 adópengős to 1."
+      },
+      {
+        "claim": "Pengő was replaced by the forint in 1946 (probe 1 answer Forint)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hungarian_peng%C5%91",
+        "quote": "and 31 July 1946 , when it was replaced by the forint"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "mind-0025",
+  "interest": "mind",
+  "title": "Black cab drivers and the hippocampus",
+  "probes": [
+    {
+      "id": "mind-0025-p1",
+      "question": "What is the strict test London's black cab drivers must pass called?",
+      "kind": "mcq",
+      "options": [
+        "The Knowledge",
+        "The Route",
+        "The Map",
+        "The Circuit"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0025-p2",
+      "question": "True or false: in the study, the total volume of the hippocampus was unchanged in these drivers.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hippocampus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hippocampus"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:14:54.201Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0025.webp",
+    "alt": "Flat illustration of a black taxi in profile with an orange roof light, with two dotted winding route lines above it.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "In London's black cab drivers, the posterior part of the hippocampus is larger than in the general public.",
+    "why": "To get a licence, they must pass a strict test known as The Knowledge, which means learning the locations of a large number of places and the fastest routes between them. A study found a positive correlation between time served as a driver and the increase in volume of this part. The total volume of the hippocampus was unchanged, as the increase was made at the expense of the anterior part."
+  }
+}

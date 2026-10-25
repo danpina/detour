@@ -1,0 +1,55 @@
+{
+  "id": "hist-0017",
+  "interest": "history",
+  "title": "More pyramids than Egypt?",
+  "probes": [
+    {
+      "id": "hist-0017-p1",
+      "question": "Compared with the number built in Ancient Egypt, how many pyramids did the Nubians build?",
+      "kind": "mcq",
+      "options": [
+        "More than double",
+        "About the same",
+        "About half",
+        "Far fewer"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0017-p2",
+      "question": "True or false: Nubian pyramids are tall and narrow, rising from fairly small foundation footprints.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nubian pyramids (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nubian_pyramids"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:13:43.150Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "hist-0017.webp",
+    "alt": "Steep-sided Nubian pyramids silhouetted against a glowing sunset behind golden desert dunes in Sudan",
+    "kind": "photo",
+    "credit": "Nina R from Africa / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sudan,_Nubian_pyramids_(31444835441).jpg"
+  },
+  "body": {
+    "question": "Ancient Kushite kingdoms in present-day northern Sudan built pyramids too. About how many pyramids are known to have been built by the Nubians?",
+    "unit": "pyramids",
+    "min": 0,
+    "max": 600,
+    "scale": "linear",
+    "answer": 255,
+    "reveal": "Approximately 255 pyramids are known to have been constructed by the Nubians, more than double the number constructed in Ancient Egypt. They range approximately 6-30 metres (20-98 ft) in height, but rise from fairly small foundation footprints, resulting in tall, narrow structures."
+  }
+}

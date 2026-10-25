@@ -1,0 +1,62 @@
+{
+  "id": "num-0026",
+  "interest": "numbers",
+  "title": "Zeno’s runner who can’t catch the tortoise",
+  "probes": [
+    {
+      "id": "num-0026-p1",
+      "question": "In Zeno's argument, who is given a head start?",
+      "kind": "mcq",
+      "options": [
+        "The tortoise",
+        "Achilles",
+        "Zeno",
+        "Aristotle"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "num-0026-p2",
+      "question": "True or false: Zeno argues that Achilles cannot overtake the tortoise.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zeno's paradoxes (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:16:45.647Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0026.webp",
+    "alt": "A diagram of a runner's helmet and a small tortoise on a line, with arcs showing the runner repeatedly reaching where the tortoise just was",
+    "kind": "photo",
+    "credit": "ראובן פרוס / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%D7%94%D7%A4%D7%A8%D7%93%D7%95%D7%A7%D7%A1_%D7%A9%D7%9C_%D7%90%D7%9B%D7%99%D7%9C%D7%A1_%D7%95%D7%94%D7%A6%D7%91..png"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Zeno's paradoxes are a series of philosophical arguments presented by the ancient Greek philosopher Zeno of Elea (c. 490-430 BC)."
+      },
+      {
+        "text": "In the paradox of Achilles and the tortoise, Achilles is in a footrace with a tortoise. Achilles allows the tortoise a head start of 100 meters, for example."
+      },
+      {
+        "text": "Zeno argues that a swift runner like Achilles cannot overtake a slower moving tortoise with a head start, because the distance between them can be infinitely subdivided."
+      },
+      {
+        "text": "That implies Achilles would require an infinite number of steps to catch the tortoise. Modern solutions leveraging the mathematical framework of calculus have provided a different perspective."
+      }
+    ]
+  }
+}

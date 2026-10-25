@@ -1,0 +1,137 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Cavendish experiment",
+    "angle": "Earth's density from lead balls"
+  },
+  "created_at": "2026-10-21T17:04:07.371Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0021",
+    "interest": "science",
+    "type": "story",
+    "title": "Lead balls and the density of the Earth",
+    "body": {
+      "panels": [
+        {
+          "text": "The Cavendish experiment, performed in 1797-1798 by Henry Cavendish, was the first experiment to measure the force of gravity between masses in the laboratory."
+        },
+        {
+          "text": "The apparatus was a torsion balance: a six-foot wooden rod hung horizontally from a wire, with a lead sphere attached to each end."
+        },
+        {
+          "text": "Two large weights attracted the small weights, causing the beam to rotate slightly."
+        },
+        {
+          "text": "From this, Cavendish found that the Earth's density was 5.448 times that of water. The current accepted value is 5.514 g/cm³."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0021-p1",
+        "kind": "mcq",
+        "question": "What kind of apparatus did the Cavendish experiment use?",
+        "options": [
+          "A torsion balance",
+          "A water clock",
+          "A swinging chandelier",
+          "A steam engine"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0021-p2",
+        "kind": "estimate",
+        "question": "Cavendish found Earth's density to be about how many times that of water?",
+        "answer": 5.448,
+        "unit": "× water",
+        "min": 1,
+        "max": 20,
+        "scale": "linear"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cavendish experiment (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cavendish_experiment"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Cavendish's diagram of his torsion balance",
+    "keywords": [
+      "Cavendish experiment",
+      "torsion balance",
+      "Henry Cavendish",
+      "Cavendish apparatus"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:20.192Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cavendish_experiment",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Panel 1: performed in 1797-1798 by Henry Cavendish",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cavendish_experiment",
+        "quote": "The Cavendish experiment , performed in 1797-1798 by English scientist Henry Cavendish"
+      },
+      {
+        "claim": "Panel 1: first experiment to measure the force of gravity between masses in the laboratory",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cavendish_experiment",
+        "quote": "was the first experiment to measure the force of gravity between masses in the laboratory"
+      },
+      {
+        "claim": "Panel 2 and probe p1: the apparatus was a torsion balance with a six-foot wooden rod hung horizontally from a wire",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cavendish_experiment",
+        "quote": "The apparatus consisted of a torsion balance made of a six-foot (1.8 m) wooden rod horizontally suspended from a wire"
+      },
+      {
+        "claim": "Panel 2 and title: a lead sphere attached to each end of the rod",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cavendish_experiment",
+        "quote": "lead spheres, one attached to each end"
+      },
+      {
+        "claim": "Panel 3: the large weights attract the small weights, causing the beam to rotate slightly",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cavendish_experiment",
+        "quote": "attached to a separate suspension attract the small weights, causing the beam to rotate slightly"
+      },
+      {
+        "claim": "Panel 4, probe p2: Cavendish found Earth's density was 5.448 times that of water (page adds +/- 0.033)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cavendish_experiment",
+        "quote": "Cavendish found that the Earth's density was 5.448 ± 0.033 times that of water",
+        "note": "5.448 is Cavendish's result; the modern value 5.514 is separate on the page and correctly attributed on the card."
+      },
+      {
+        "claim": "Panel 4: the current accepted value is 5.514 g/cm³",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cavendish_experiment",
+        "quote": "The current accepted value is 5.514 g/cm",
+        "note": "Tool text drops the superscript; the page raw HTML reads \"accepted value is 5.514 g/cm<sup>3</sup>\", so the unit g/cm³ is confirmed from the page itself."
+      },
+      {
+        "claim": "Title: lead balls and the density of the Earth (lead spheres on the apparatus; Earth's density measured)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cavendish_experiment",
+        "quote": "Cavendish found that the Earth's density was 5.448 ± 0.033 times that of water"
+      }
+    ],
+    "overall": "pass"
+  }
+}

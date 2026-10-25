@@ -1,0 +1,116 @@
+{
+  "draft_id": "mind-0031",
+  "created_at": "2026-10-21T17:06:43.245Z",
+  "queries": [
+    "human brain brain anatomy brain specimen",
+    "human brain",
+    "human brain brain anatomy"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-36238303",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Specimen jar containing piece of William Burke's brain Wellcome L0065696.jpg",
+      "credit": "https://wellcomeimages.org/indexplus/obf_images/e9/53/20178659ca5f7198c0e9c64c8905.jpg Gallery: https://wellcomeimages.org/indexplus/image/L0065696.html Wellcom",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Specimen_jar_containing_piece_of_William_Burke%27s_brain_Wellcome_L0065696.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Specimen_jar_containing_piece_of_William_Burke%27s_brain_Wellcome_L0065696.jpg/960px-Specimen_jar_containing_piece_of_William_Burke%27s_brain_Wellcome_L0065696.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2832,
+      "height": 4256,
+      "alt_suggestion": "Sealed in this small glass specimen jar is said to be a piece of the brain of William Burke (1792-1829). He was one half of the infamous Edinburgh body snatchers known as Burke and Hare. Burke was exe",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss067e264450",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "iss067e264450",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss067e264450",
+      "image_url": "https://images-assets.nasa.gov/image/iss067e264450/iss067e264450~medium.jpg",
+      "alt_suggestion": "iss067e264450 (8/14/2022) --- A view aboard the International Space Station (ISS) of the Space Tango-Human Brain Organoids (BOARDS3) investigation. The Effect of Microgravity on Human Brain Organoids ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-6733331",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cerveaux hommes rhinocéros et dauphin.JPG",
+      "credit": "Thesupermat / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cerveaux_hommes_rhinoc%C3%A9ros_et_dauphin.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Cerveaux_hommes_rhinoc%C3%A9ros_et_dauphin.JPG/960px-Cerveaux_hommes_rhinoc%C3%A9ros_et_dauphin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 1944,
+      "alt_suggestion": "Trois cerveaux, de gauche à droite, un cerveau d'homme, un de rhinocéros?? et un de dauphin",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-iss060e036685",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "iss060e036685",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss060e036685",
+      "image_url": "https://images-assets.nasa.gov/image/iss060e036685/iss060e036685~medium.jpg",
+      "alt_suggestion": "iss060e036685 (8/9/2019) — A view aboard the International Space Station (ISS) of the TangoLab Mission-13 CubeLabs: Space Tango-Human Brain Organoids and Space Tango-Induced Pluripotent Stem Cells. Sp",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-36297244",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "N2, Leptomeningitis basilaris tuberculosa.Alfred Kast Wellcome L0074360.jpg",
+      "credit": "https://wellcomeimages.org/indexplus/obf_images/40/59/8ad45f9ba048a6504b1170c3a250.jpg Gallery: https://wellcomeimages.org/indexplus/image/L0074360.html Wellcom",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:N2,_Leptomeningitis_basilaris_tuberculosa.Alfred_Kast_Wellcome_L0074360.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/N2%2C_Leptomeningitis_basilaris_tuberculosa.Alfred_Kast_Wellcome_L0074360.jpg/960px-N2%2C_Leptomeningitis_basilaris_tuberculosa.Alfred_Kast_Wellcome_L0074360.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5399,
+      "height": 7422,
+      "alt_suggestion": "N2, Leptomeningitis basilaris tuberculosa. Brain specimen of case of tuberculous meningitis. General Collections Keywords: Anatomy; Pathology",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-brainenergy",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: brainenergy",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-brainenergy.png",
+      "alt_suggestion": "Illustration of a brain silhouette with a lightning bolt at its centre"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "CerebralCytoarchitecture.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Anatomical technology as applied to the domestic cat; an introduction to human, veterinary, and comparative anatomy (1882) (14742238716).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Anatomical technology as applied to the domestic cat; an introduction to human, veterinary, and comparative anatomy (1882) (14742288066).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"human brain brain anatomy brain specimen\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"human brain brain anatomy brain specimen\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=human%20brain%20brain%20anatomy%2",
+    "met failed for \"human brain\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"human brain\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=human%20brain&query[term][is_publ",
+    "met failed for \"human brain brain anatomy\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"human brain brain anatomy\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=human%20brain%20brain%20anatomy&q"
+  ]
+}

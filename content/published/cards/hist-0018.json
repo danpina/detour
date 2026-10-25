@@ -1,0 +1,62 @@
+{
+  "id": "hist-0018",
+  "interest": "history",
+  "title": "Nearly 29 more years of war",
+  "probes": [
+    {
+      "id": "hist-0018-p1",
+      "question": "Who formally relieved Hiroo Onoda of duty?",
+      "kind": "mcq",
+      "options": [
+        "His former commanding officer, Major Yoshimi Taniguchi",
+        "Norio Suzuki",
+        "A Philippine police officer",
+        "His younger brother Shigeo"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0018-p2",
+      "question": "True or false: Onoda and the men with him believed the flyers saying the war was over.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hiroo Onoda (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hiroo_Onoda"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:13:44.084Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0018.webp",
+    "alt": "Black-and-white photo of Hiroo Onoda, in his old army uniform and cap, handing over his sword to President Marcos in 1974 as press photographers look on",
+    "kind": "photo",
+    "credit": "Malacañang Palace / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:President_Marcos_and_Hiroo_Onoda.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "1945: World War II ends. On Lubang Island in the Philippines, Japanese soldier Hiroo Onoda carries on with guerrilla warfare, and keeps going until 1974."
+      },
+      {
+        "text": "He holds out with three other soldiers. The men do not believe flyers and letters from their families saying the war is over. They survive on wild fruits, game and stolen rice."
+      },
+      {
+        "text": "On 20 February 1974, Onoda meets Norio Suzuki, a Japanese adventurer travelling around the world. Onoda still refuses to surrender: he is waiting for orders from his commanding officer."
+      },
+      {
+        "text": "The twist: Major Yoshimi Taniguchi, his former commanding officer, flies from Japan to the island and relieves him of duty. On 10 March 1974, Onoda surrenders."
+      }
+    ]
+  }
+}

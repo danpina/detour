@@ -1,0 +1,93 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Neutron star",
+    "angle": "Earth at neutron star density"
+  },
+  "created_at": "2026-10-21T17:04:07.375Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0023",
+    "interest": "science",
+    "type": "estimate",
+    "title": "Earth squeezed to neutron-star density",
+    "body": {
+      "question": "If the entire mass of the Earth had neutron star density, it would fit into a sphere how many metres in diameter?",
+      "unit": "m",
+      "min": 1,
+      "max": 100000,
+      "scale": "log",
+      "answer": 305,
+      "reveal": "The entire mass of the Earth at neutron star density would fit into a sphere 305 m in diameter, about the size of the Arecibo Telescope."
+    },
+    "probes": [
+      {
+        "id": "sci-0023-p1",
+        "kind": "mcq",
+        "question": "One teaspoon of neutron star material would have a mass about how many times that of the Great Pyramid of Giza?",
+        "options": [
+          "About 9 times",
+          "About 90 times",
+          "About 900 times",
+          "About 9,000 times"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "sci-0023-p2",
+        "kind": "tf",
+        "question": "True or false: the Earth at neutron star density would fit into a sphere about the size of the Arecibo Telescope.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Neutron star (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Neutron_star"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An illustration of a neutron star, or the Arecibo Telescope",
+    "keywords": [
+      "neutron star",
+      "neutron star illustration NASA",
+      "Arecibo Telescope"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:20.194Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Neutron_star",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title/question/answer/reveal: Earth's entire mass at neutron star density would fit into a sphere 305 m in diameter",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neutron_star",
+        "quote": "The entire mass of the Earth at neutron star density would fit into a sphere 305 m in diameter"
+      },
+      {
+        "claim": "Reveal and probe p2: that is about the size of the Arecibo Telescope",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neutron_star",
+        "quote": "305 m in diameter, about the size of the Arecibo Telescope"
+      },
+      {
+        "claim": "Probe p1: a teaspoon of neutron star material has a mass about 900 times that of the Great Pyramid of Giza (not 9, 90 or 9,000)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neutron_star",
+        "quote": "about 900 times the mass of the Great Pyramid of Giza"
+      }
+    ],
+    "overall": "pass"
+  }
+}

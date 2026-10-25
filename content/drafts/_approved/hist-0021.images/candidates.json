@@ -1,0 +1,75 @@
+{
+  "draft_id": "hist-0021",
+  "created_at": "2026-10-21T17:06:13.192Z",
+  "queries": [
+    "Great Zimbabwe Great Enclosure Great Zimbabwe walls",
+    "Great Zimbabwe",
+    "Great Zimbabwe Great Enclosure"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-21024737",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wall of the great enclosure, Great Zimbabwe.JPG",
+      "credit": "Jens Klinzing / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wall_of_the_great_enclosure,_Great_Zimbabwe.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Wall_of_the_great_enclosure%2C_Great_Zimbabwe.JPG/960px-Wall_of_the_great_enclosure%2C_Great_Zimbabwe.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2000,
+      "height": 1500,
+      "alt_suggestion": "Outside view (close) of the wall of the great enclosure of Great Zimbabwe.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss025e005538",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Earth Observations taken by the Expedition 25 crew",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss025e005538",
+      "image_url": "https://images-assets.nasa.gov/image/iss025e005538/iss025e005538~medium.jpg",
+      "alt_suggestion": "ISS025-E-005538 (30 Sept. 2010) --- The Great Dyke of Zimbabwe, Africa is featured in this image photographed by an Expedition 25 crew member on the International Space Station. The Great Dyke of Zimb",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-21024904",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wall of the great enclosure (far), Great Zimbabwe.JPG",
+      "credit": "Jens Klinzing / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wall_of_the_great_enclosure_(far),_Great_Zimbabwe.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Wall_of_the_great_enclosure_%28far%29%2C_Great_Zimbabwe.JPG/960px-Wall_of_the_great_enclosure_%28far%29%2C_Great_Zimbabwe.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1536,
+      "alt_suggestion": "Outside view (far) of the wall of the great enclosure of Great Zimbabwe.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-82748007",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "East Wall Great Enclosure (47614139601).jpg",
+      "credit": "Andrew Moore from Johannesburg, South Africa / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:East_Wall_Great_Enclosure_(47614139601).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/East_Wall_Great_Enclosure_%2847614139601%29.jpg/960px-East_Wall_Great_Enclosure_%2847614139601%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5472,
+      "height": 3648,
+      "alt_suggestion": "East Wall Great Enclosure",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Great Zimbabwe Great Enclosure Great Zimbabwe walls\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Great Zimbabwe Great Enclosure Great Zimbabwe walls\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Great%20Zimbabwe%20Great%20Enclos",
+    "met failed for \"Great Zimbabwe\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Great Zimbabwe\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Great%20Zimbabwe&query[term][is_p",
+    "met failed for \"Great Zimbabwe Great Enclosure\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Great Zimbabwe Great Enclosure\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Great%20Zimbabwe%20Great%20Enclos"
+  ]
+}

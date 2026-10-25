@@ -1,0 +1,55 @@
+{
+  "id": "tech-0024",
+  "interest": "tech",
+  "title": "How many transistors in the 4004?",
+  "probes": [
+    {
+      "id": "tech-0024-p1",
+      "question": "Which kind of product did Busicom commission Intel to design chips for in 1969?",
+      "kind": "mcq",
+      "options": [
+        "Electronic calculators",
+        "Video games",
+        "Wristwatches",
+        "Pianos"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0024-p2",
+      "question": "True or false: the Intel 4004 was released in 1971.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Intel 4004 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Intel_4004"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:50.945Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "tech-0024.webp",
+    "alt": "Large printed chip layout plot of the Intel 4004 microprocessor from 1971, a dense maze of traces",
+    "kind": "photo",
+    "credit": "Wolfgang Stief from Tittmoning, Germany / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Intel_4004_Chip_Layout_(29983532570).jpg"
+  },
+  "body": {
+    "question": "The Intel 4004 was released in 1971. How many transistors did that single chip contain?",
+    "unit": "transistors",
+    "min": 100,
+    "max": 1000000,
+    "scale": "log",
+    "answer": 2300,
+    "reveal": "A single chip contained 2,300 transistors. The project began in 1969, when Busicom Corp. commissioned Intel to design a family of seven chips for electronic calculators."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-15548710",
+  "alt": "A pale blue ceramic money box shaped like a smiling robot, labelled Ernie's Lucky Bond Box.",
+  "fits": true,
+  "note": "Only candidate; a museum money box in the shape of ERNIE the Premium Bonds computer, on topic, no people. Mild branding is the subject itself. Portrait image suits 4:5.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

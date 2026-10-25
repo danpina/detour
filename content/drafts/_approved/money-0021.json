@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Tontine",
+    "angle": "Louis XIV's 1689 tontine and Charlotte Barbier"
+  },
+  "created_at": "2026-10-21T17:03:52.386Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0021",
+    "interest": "money",
+    "type": "story",
+    "title": "The last survivor's payout",
+    "body": {
+      "panels": [
+        {
+          "text": "1689. Louis XIV makes use of tontines to fund military operations when he cannot otherwise raise the money."
+        },
+        {
+          "text": "The initial subscribers each put in 300 livres. Each investor receives annual interest, and as each investor dies, their share is reallocated among the surviving investors."
+        },
+        {
+          "text": "This one was run honestly. The last survivor, a widow named Charlotte Barbier, died in 1726 at the age of 96. Her last payment was 73,000 livres."
+        },
+        {
+          "text": "Later, investors began buying tontine shares for young children, especially girls around the age of 5, since girls lived longer than boys. That created the possibility of significant returns for shareholders, but significant losses for organizers."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0021-p1",
+        "kind": "mcq",
+        "question": "How much did each initial subscriber put into Louis XIV's 1689 tontine?",
+        "options": [
+          "30 livres",
+          "300 livres",
+          "3,000 livres",
+          "30,000 livres"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0021-p2",
+        "kind": "tf",
+        "question": "True or false: in a tontine, when an investor dies their share is reallocated among the surviving investors.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tontine (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Tontine"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A portrait of Louis XIV or an engraving of 17th-century Paris",
+    "keywords": [
+      "Louis XIV",
+      "Rigaud portrait",
+      "Louis XIV 1701",
+      "17th century Paris engraving"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:56.231Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tontine",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1689 Louis XIV used tontines to fund military operations when he could not otherwise raise the money",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tontine",
+        "quote": "Louis XIV first made use of tontines in 1689 to fund military operations when he could not otherwise raise the money."
+      },
+      {
+        "claim": "Initial subscribers each put in 300 livres; this tontine was run honestly (probe 1 answer 300 livres; distractors not on page)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tontine",
+        "quote": "The initial subscribers each put in 300 livres and, unlike many later schemes, this one was run honestly;"
+      },
+      {
+        "claim": "Last survivor was a widow named Charlotte Barbier, died 1726 aged 96, last payment 73,000 livres",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tontine",
+        "quote": "the last survivor, a widow named Charlotte Barbier, who died in 1726 at the age of 96, received 73,000 livres in her last payment."
+      },
+      {
+        "claim": "Investors receive annual interest; as each investor dies their share is reallocated among survivors (body and probe 2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tontine",
+        "quote": "Each investor then receives annual interest on the capital invested. As each investor dies, their share is reallocated among the surviving investors."
+      },
+      {
+        "claim": "Later, investors bought tontine shares for young children, especially girls around age 5, since girls lived longer than boys",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tontine",
+        "quote": "it became increasingly common to buy tontine shares for young children, especially for girls around the age of 5"
+      },
+      {
+        "claim": "That created the possibility of significant returns for shareholders, but significant losses for organizers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tontine",
+        "quote": "This created the possibility of significant returns for the shareholders, but significant losses for the organizers."
+      }
+    ],
+    "overall": "pass"
+  }
+}

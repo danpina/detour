@@ -1,0 +1,65 @@
+{
+  "id": "sci-0021",
+  "interest": "science",
+  "title": "Lead balls and the density of the Earth",
+  "probes": [
+    {
+      "id": "sci-0021-p1",
+      "question": "What kind of apparatus did the Cavendish experiment use?",
+      "kind": "mcq",
+      "options": [
+        "A torsion balance",
+        "A water clock",
+        "A swinging chandelier",
+        "A steam engine"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0021-p2",
+      "question": "Cavendish found Earth's density to be about how many times that of water?",
+      "kind": "estimate",
+      "answer": 5.448,
+      "unit": "× water",
+      "min": 1,
+      "max": 20,
+      "scale": "linear"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cavendish experiment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cavendish_experiment"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:16:59.472Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0021.webp",
+    "alt": "A horizontal rod hanging from a thread with a small orange sphere at each end and two large teal spheres positioned near them, on a dark blue background.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "The Cavendish experiment, performed in 1797-1798 by Henry Cavendish, was the first experiment to measure the force of gravity between masses in the laboratory."
+      },
+      {
+        "text": "The apparatus was a torsion balance: a six-foot wooden rod hung horizontally from a wire, with a lead sphere attached to each end."
+      },
+      {
+        "text": "Two large weights attracted the small weights, causing the beam to rotate slightly."
+      },
+      {
+        "text": "From this, Cavendish found that the Earth's density was 5.448 times that of water. The current accepted value is 5.514 g/cm³."
+      }
+    ]
+  }
+}

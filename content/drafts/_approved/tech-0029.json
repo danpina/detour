@@ -1,0 +1,126 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Linux announcement",
+    "angle": "Just a hobby"
+  },
+  "created_at": "2026-10-21T17:04:04.461Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "type": "story",
+    "title": "\"Just a hobby\"",
+    "difficulty": 2,
+    "body": {
+      "panels": [
+        {
+          "text": "Linus Torvalds started with a task switcher in Intel 80386 assembly language and a terminal driver."
+        },
+        {
+          "text": "On 25 August 1991, he posted to comp.os.minix, a newsgroup on Usenet: \"I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones.\""
+        },
+        {
+          "text": "On 17 September 1991, he prepared version 0.01 of Linux and put it on an FTP server. It was not even executable, since its code still needed Minix to compile and test it."
+        },
+        {
+          "text": "On 5 October 1991, he announced the first \"official\" version of Linux, version 0.02."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "Where did Torvalds post his message on 25 August 1991?",
+        "options": [
+          "comp.os.minix, a Usenet newsgroup",
+          "A magazine letters page",
+          "A radio show",
+          "A university notice board"
+        ],
+        "answer": 0,
+        "id": "tech-0029-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: version 0.01 of Linux was already executable on its own.",
+        "answer": false,
+        "id": "tech-0029-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Linux kernel (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Linux_kernel"
+      }
+    ],
+    "id": "tech-0029",
+    "interest": "tech",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Tux the penguin, or a vintage 386 PC",
+    "keywords": [
+      "Tux penguin Linux",
+      "Linux mascot",
+      "Intel 80386",
+      "386 computer"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:07:39.969Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Linux_kernel",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: \"Just a hobby\"",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Linux_kernel",
+        "quote": "I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones."
+      },
+      {
+        "claim": "Torvalds started with a task switcher in Intel 80386 assembly language and a terminal driver",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Linux_kernel",
+        "quote": "He started with a task switcher in Intel 80386 assembly language and a terminal driver ."
+      },
+      {
+        "claim": "On 25 August 1991 he posted to comp.os.minix, a Usenet newsgroup: 'I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones.'",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Linux_kernel",
+        "quote": "On 25 August 1991, Torvalds posted the following to comp.os.minix , a newsgroup on Usenet"
+      },
+      {
+        "claim": "On 17 September 1991 he prepared version 0.01 of Linux and put it on an FTP server; it was not even executable since its code still needed Minix to compile and test it",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Linux_kernel",
+        "quote": "On 17 September 1991, Torvalds prepared version 0.01 of Linux and put on the \"ftp.funet.fi\" - FTP server of the Finnish University and Research Network ( FUNET ). It was not even executable since its code still needed Minix to compile and test it."
+      },
+      {
+        "claim": "On 5 October 1991 he announced the first 'official' version of Linux, version 0.02",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Linux_kernel",
+        "quote": "On 5 October 1991, Torvalds announced the first \"official\" version of Linux, version 0.02."
+      },
+      {
+        "claim": "Probe 1: posted to comp.os.minix, a Usenet newsgroup (distractors false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Linux_kernel",
+        "quote": "On 25 August 1991, Torvalds posted the following to comp.os.minix , a newsgroup on Usenet"
+      },
+      {
+        "claim": "Probe 2: 0.01 was not executable (answer false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Linux_kernel",
+        "quote": "It was not even executable since its code still needed Minix to compile and test it.",
+        "note": "'on its own' in the probe is a paraphrase of 'not even executable'; acceptable."
+      }
+    ],
+    "overall": "pass"
+  }
+}

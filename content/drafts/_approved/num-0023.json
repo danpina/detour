@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Archimedes and pi",
+    "angle": "Polygons inside and outside a circle"
+  },
+  "created_at": "2026-10-21T17:04:24.770Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0023",
+    "type": "guess_first",
+    "title": "Pi, bounded by polygons",
+    "body": {
+      "question": "Archimedes drew a regular hexagon inside and outside a circle, then kept doubling the number of sides. How many sides did his last polygon have?",
+      "options": [
+        "24",
+        "48",
+        "96",
+        "192"
+      ],
+      "answer": 2,
+      "reveal": "Archimedes computed upper and lower bounds of π by drawing a regular hexagon inside and outside a circle, and successively doubling the number of sides until he reached a 96-sided regular polygon."
+    },
+    "probes": [
+      {
+        "id": "num-0023-p1",
+        "kind": "mcq",
+        "question": "Archimedes began with a regular polygon of how many sides?",
+        "options": [
+          "6",
+          "3",
+          "4",
+          "12"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0023-p2",
+        "kind": "tf",
+        "question": "True or false: Archimedes drew his polygons both inside and outside a circle.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Pi (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pi"
+      }
+    ],
+    "difficulty": 2,
+    "interest": "numbers",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A circle with regular polygons inscribed and circumscribed, or a bust of Archimedes",
+    "keywords": [
+      "Archimedes pi polygons",
+      "circle inscribed polygon",
+      "Archimedes"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:07:59.168Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pi",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: Pi, bounded by polygons (upper and lower bounds of pi from polygons)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pi",
+        "quote": "Archimedes computed upper and lower bounds of π by drawing a regular hexagon inside and outside a circle"
+      },
+      {
+        "claim": "Archimedes drew a regular hexagon inside and outside a circle",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pi",
+        "quote": "drawing a regular hexagon inside and outside a circle"
+      },
+      {
+        "claim": "He kept doubling the number of sides; his last polygon had 96 sides (24, 48, 192 are not the last)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pi",
+        "quote": "successively doubling the number of sides until he reached a 96-sided regular polygon"
+      },
+      {
+        "claim": "Probe 1: Archimedes began with a regular polygon of 6 sides (hexagon)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pi",
+        "quote": "drawing a regular hexagon inside and outside a circle"
+      },
+      {
+        "claim": "Probe 2: polygons drawn both inside and outside a circle",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pi",
+        "quote": "drawing a regular hexagon inside and outside a circle"
+      }
+    ],
+    "overall": "pass"
+  }
+}

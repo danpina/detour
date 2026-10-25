@@ -1,0 +1,57 @@
+{
+  "id": "tech-0028",
+  "interest": "tech",
+  "title": "Lithium-ion batteries got ten times cheaper",
+  "probes": [
+    {
+      "id": "tech-0028-p1",
+      "question": "In which year were lithium-ion batteries first sold?",
+      "kind": "mcq",
+      "options": [
+        "1991",
+        "1971",
+        "1981",
+        "2001"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0028-p2",
+      "question": "True or false: Whittingham, Goodenough, and Yoshino were awarded the 2019 Nobel Prize in Chemistry for their contributions to lithium-ion batteries.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lithium-ion battery (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lithium-ion_battery"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:59.374Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "tech-0028.webp",
+    "alt": "A cylindrical lithium-ion cell taken apart, showing the green-wrapped jelly roll, its metal can and top cap beside a coin",
+    "kind": "photo",
+    "credit": "RudolfSimon / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lithium-Ion_Cell_cylindric.JPG"
+  },
+  "body": {
+    "question": "Lithium-ion batteries were first sold in 1991. Over the three decades since, what happened to their cost?",
+    "options": [
+      "It dropped tenfold",
+      "It halved",
+      "It stayed about the same",
+      "It doubled"
+    ],
+    "answer": 0,
+    "reveal": "In the three decades since Li-ion batteries were first sold in 1991, their volumetric energy density increased threefold while their cost dropped tenfold. Whittingham, Goodenough, and Yoshino were awarded the 2019 Nobel Prize in Chemistry for their contributions to the development of lithium-ion batteries."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "mind-0031",
+  "interest": "mind",
+  "title": "The brain's share of the oxygen",
+  "probes": [
+    {
+      "id": "mind-0031-p1",
+      "question": "What share of the body weight does the human brain represent?",
+      "kind": "mcq",
+      "options": [
+        "2%",
+        "5%",
+        "10%",
+        "30%"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0031-p2",
+      "question": "The brain receives 25% of which of these?",
+      "kind": "mcq",
+      "options": [
+        "Total body glucose utilization",
+        "Cardiac output",
+        "Body weight",
+        "Total body oxygen consumption"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Human brain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Human_brain"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:02.116Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "mind-0031.webp",
+    "alt": "A teal brain made of two joined lobes with lighter fold lines and an orange lightning bolt outlined in cream across its centre.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "The human brain represents only 2% of the body weight. What percentage of total body oxygen consumption does it receive?",
+    "unit": "%",
+    "min": 0,
+    "max": 100,
+    "scale": "linear",
+    "answer": 20,
+    "reveal": "It receives 20% of total body oxygen consumption, along with 15% of the cardiac output and 25% of total body glucose utilization."
+  }
+}

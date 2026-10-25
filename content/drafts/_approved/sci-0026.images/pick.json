@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-73160628",
+  "alt": "A Foucault pendulum bob hanging just above a marked floor scale with a compass rose, in a dimly lit cathedral.",
+  "fits": true,
+  "note": "Real Foucault pendulum with bob and floor scale (CC BY-SA 4.0), moody and legible as a background; only numbers on the scale, no people or brands. Rejected cand-2 (NICT logo and Japanese text), cand-3 (unrelated metal parts).",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

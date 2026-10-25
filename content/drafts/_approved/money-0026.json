@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Kipper und Wipper",
+    "angle": "Debased coins in the Thirty Years' War"
+  },
+  "created_at": "2026-10-21T17:03:52.388Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0026",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "The scales that sorted coins",
+    "body": {
+      "claim": "Around 1620 to 1623, during Kipper und Wipper, states in the Holy Roman Empire heavily debased coins: good coins were melted, mixed with baser metals such as lead, copper or tin, and re-issued.",
+      "why": "The Thirty Years' War was under way and military expenditures rose drastically, so the states debased currency to raise revenue. The name refers to balance scales (Wippen) that quickly tilted (kippen) on good coins. After a time the public caught on, and soldiers and mercenaries refused to fight unless paid in real, non-debased money."
+    },
+    "probes": [
+      {
+        "id": "money-0026-p1",
+        "kind": "mcq",
+        "question": "Why did states debase their coins during Kipper und Wipper?",
+        "options": [
+          "To raise revenue for war costs",
+          "To make coins easier to carry",
+          "To honour a new ruler"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0026-p2",
+        "kind": "tf",
+        "question": "True or false: soldiers and mercenaries refused to fight unless they were paid in non-debased money.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Kipper und Wipper (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Kipper_und_Wipper"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A satirical broadsheet or debased coins from the Kipper und Wipper period",
+    "keywords": [
+      "Kipper und Wipper",
+      "Kipperzeit Flugblatt",
+      "Kippermünze 1622",
+      "Thirty Years' War coin"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:56.341Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kipper_und_Wipper",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Most severe debasing occurred around 1620-1623, at the start of the Thirty Years War",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Kipper_und_Wipper",
+        "quote": "The most severe debasing occurred around 1620-1623."
+      },
+      {
+        "claim": "Military expenditures rose drastically with the war, so states debased currency to raise revenue (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Kipper_und_Wipper",
+        "quote": "with the onset of the war, military expenditures rose drastically and the city-states in the Holy Roman Empire began to heavily debase currency in order to raise revenue."
+      },
+      {
+        "claim": "Coins taken out of circulation, melted, mixed with baser metals such as lead, copper or tin, and re-issued",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Kipper_und_Wipper",
+        "quote": "The not-yet-debased coins were then taken out of circulation, melted, mixed with baser metals such as lead , copper or tin , and re-issued.",
+        "note": "Card says \"good coins\"; page says \"not-yet-debased coins\" (equivalent)."
+      },
+      {
+        "claim": "Name refers to balance scales (Wippen) which quickly tilted (kippen) on good coins (title scales)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Kipper_und_Wipper",
+        "quote": "The name refers to the use of balance scales ( Wippen ) which quickly tilted ( kippen ) on good coins."
+      },
+      {
+        "claim": "After a time the public caught on, and soldiers and mercenaries refused to fight unless paid in real, non-debased money (probe 2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Kipper_und_Wipper",
+        "quote": "after a time, the general public caught on to the manipulation, resulting in pamphlets denouncing the practice, local riots and the refusal of soldiers and mercenaries to fight unless paid in real, non-debased money."
+      }
+    ],
+    "overall": "pass"
+  }
+}

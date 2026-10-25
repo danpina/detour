@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-157086695",
+  "alt": "A grey pigeon standing in a square hole in a peeling yellow wall",
+  "fits": true,
+  "note": "Literal pigeon in a hole; fits the pigeonhole principle. No people or logos. Portrait, good 4:5 background.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

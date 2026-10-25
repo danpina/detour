@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-35287361",
+  "alt": "Close-up of a polished slice of stromatolite rock showing wavy, rust-brown and cream layers.",
+  "fits": true,
+  "note": "Strong layered stromatolite texture (CC BY 2.0). Note: Mesoproterozoic Belt Supergroup example, not Shark Bay; fine as a generic stromatolite. Rejected cand-2 (satellite bay), cand-3 (unclear rock on grey), cand-4 (muddy outcrop, unrecognisable).",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

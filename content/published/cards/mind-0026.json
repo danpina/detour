@@ -1,0 +1,50 @@
+{
+  "id": "mind-0026",
+  "interest": "mind",
+  "title": "The stopped-clock illusion",
+  "probes": [
+    {
+      "id": "mind-0026-p1",
+      "question": "By up to how much can this effect extend apparent durations?",
+      "kind": "mcq",
+      "options": [
+        "Up to half a second",
+        "Up to 5 seconds",
+        "Up to a minute",
+        "Up to two seconds"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0026-p2",
+      "question": "True or false: visual information collected during a saccade is suppressed.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chronostasis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chronostasis"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:14:58.649Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0026.webp",
+    "alt": "An ornate gilded antique wall clock with a round white face and Arabic numerals against a plain pale wall.",
+    "kind": "photo",
+    "credit": "Christoph Braun / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pendulum_clock_by_Jacob_Kock,_antique_furniture_photography,_IMG_0931_edit.jpg"
+  },
+  "body": {
+    "claim": "The second hand of an analog clock can appear to stay still for longer than normal when you first look at it.",
+    "why": "After a quick eye movement (a saccade), the new target can seem to have been seen for longer, and this can extend apparent durations by up to half a second. During a saccade, visual information is suppressed, and the gap in perception is “filled in” with information gathered after the saccade."
+  }
+}

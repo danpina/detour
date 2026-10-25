@@ -1,0 +1,156 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Hiroo Onoda",
+    "angle": "A soldier who kept fighting until 1974"
+  },
+  "created_at": "2026-10-21T17:04:28.871Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "type": "story",
+    "title": "Nearly 29 more years of war",
+    "body": {
+      "panels": [
+        {
+          "text": "1945: World War II ends. On Lubang Island in the Philippines, Japanese soldier Hiroo Onoda carries on with guerrilla warfare, and keeps going until 1974."
+        },
+        {
+          "text": "He holds out with three other soldiers. The men do not believe flyers and letters from their families saying the war is over. They survive on wild fruits, game and stolen rice."
+        },
+        {
+          "text": "On 20 February 1974, Onoda meets Norio Suzuki, a Japanese adventurer travelling around the world. Onoda still refuses to surrender: he is waiting for orders from his commanding officer."
+        },
+        {
+          "text": "The twist: Major Yoshimi Taniguchi, his former commanding officer, flies from Japan to the island and relieves him of duty. On 10 March 1974, Onoda surrenders."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "Who formally relieved Hiroo Onoda of duty?",
+        "options": [
+          "His former commanding officer, Major Yoshimi Taniguchi",
+          "Norio Suzuki",
+          "A Philippine police officer",
+          "His younger brother Shigeo"
+        ],
+        "answer": 0,
+        "id": "hist-0018-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: Onoda and the men with him believed the flyers saying the war was over.",
+        "answer": false,
+        "id": "hist-0018-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hiroo Onoda (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hiroo_Onoda"
+      }
+    ],
+    "difficulty": 2,
+    "id": "hist-0018",
+    "interest": "history",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Hiroo Onoda at his 1974 surrender, or Lubang Island",
+    "keywords": [
+      "Hiroo Onoda",
+      "Onoda surrender 1974",
+      "Lubang Island",
+      "Onoda Marcos sword"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:42.113Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: \"Nearly 29 more years of war\" (Onoda fought nearly 29 years after the war ended)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "Onoda continued fighting for nearly 29 years after the war's end in 1945, carrying out guerrilla warfare on Lubang Island in the Philippines until 1974"
+      },
+      {
+        "claim": "Panel 1: 1945 WWII ends; on Lubang Island in the Philippines Japanese soldier Hiroo Onoda carries on guerrilla warfare until 1974",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "Onoda continued fighting for nearly 29 years after the war's end in 1945, carrying out guerrilla warfare on Lubang Island in the Philippines until 1974"
+      },
+      {
+        "claim": "Panel 1: Onoda is a Japanese soldier",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "was a Japanese soldier who served as a second lieutenant in the Imperial Japanese Army during World War II"
+      },
+      {
+        "claim": "Panel 2: he holds out with three other soldiers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "Onoda initially held out with three other soldiers"
+      },
+      {
+        "claim": "Panel 2: the men do not believe flyers and letters from their families saying the war is over",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "The men did not believe flyers and letters from their families stating that the war was over"
+      },
+      {
+        "claim": "Panel 2: they survive on wild fruits, game and stolen rice",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "They survived on wild fruits, game , and stolen rice"
+      },
+      {
+        "claim": "Panel 3: on 20 February 1974 Onoda meets Norio Suzuki, a Japanese adventurer travelling around the world",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "On 20 February 1974, Onoda encountered Norio Suzuki , a Japanese adventurer who was traveling around the world"
+      },
+      {
+        "claim": "Panel 3: Onoda still refuses to surrender, waiting for orders from his commanding officer",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "Onoda still refused to surrender, telling Suzuki that he was waiting for orders from his commanding officer"
+      },
+      {
+        "claim": "Panel 4: Major Yoshimi Taniguchi, his former commanding officer, flies from Japan to the island and relieves him of duty",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "formally relieved of duty by his former commanding officer, Major Yoshimi Taniguchi, who flew from Japan to the island to issue the order"
+      },
+      {
+        "claim": "Panel 4: on 10 March 1974 Onoda surrenders",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "Onoda surrendered on 10 March 1974"
+      },
+      {
+        "claim": "Probe 1 (mcq): Major Yoshimi Taniguchi formally relieved Onoda (Suzuki, a police officer, brother Shigeo are not named as doing so)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "formally relieved of duty by his former commanding officer, Major Yoshimi Taniguchi, who flew from Japan to the island to issue the order",
+        "note": "Suzuki contacted Onoda but he still refused to surrender until Taniguchi relieved him; the page gives no role in this to a police officer or to brother Shigeo."
+      },
+      {
+        "claim": "Probe 2 (tf): Onoda and the men did NOT believe the flyers (answer false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hiroo_Onoda",
+        "quote": "The men did not believe flyers and letters from their families stating that the war was over"
+      }
+    ],
+    "overall": "pass"
+  }
+}

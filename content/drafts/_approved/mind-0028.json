@@ -1,0 +1,104 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Loftus car crash wording",
+    "angle": "One verb changed the speed guess"
+  },
+  "created_at": "2026-10-21T17:05:01.065Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0028",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "One word, a different speed",
+    "body": {
+      "question": "In one of Elizabeth Loftus's experiments, 45 students watched videos of car crashes and estimated the cars' speed. The question used “collided”, “hit each other” or “smashed each other”. Which wording gave the highest mean estimate?",
+      "options": [
+        "collided",
+        "hit each other",
+        "smashed each other"
+      ],
+      "answer": 2,
+      "reveal": "The mean estimates were 32 mph for “collided”, 34 mph for “hit each other” and 41 mph for “smashed each other”. Loftus concluded that these results are consistent with the view that questions asked after an event can cause a reconstruction in one's memory of that event."
+    },
+    "probes": [
+      {
+        "kind": "estimate",
+        "question": "What was the mean speed estimate (mph) when the question said “smashed each other”?",
+        "answer": 41,
+        "unit": "mph",
+        "min": 20,
+        "max": 60,
+        "scale": "linear",
+        "id": "mind-0028-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: the mean estimate was highest when the question said “collided”.",
+        "answer": false,
+        "id": "mind-0028-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Elizabeth Loftus (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Elizabeth_Loftus"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A car-crash scene or an old car collision photo, or a portrait of the researcher",
+    "keywords": [
+      "car crash",
+      "car collision",
+      "Elizabeth Loftus"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:00.640Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Elizabeth_Loftus",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Loftus experiment: 45 students watched videos of car crashes and estimated the speed",
+        "verdict": "pass",
+        "quote": "involved showing 45 students videos of car crashes and then asking the students to estimate the speed of the car",
+        "source_url": "https://en.wikipedia.org/wiki/Elizabeth_Loftus"
+      },
+      {
+        "claim": "Wordings used: \"collided\", \"hit each other\", \"smashed each other\" (title/question); mean for collided was 32 mph",
+        "verdict": "pass",
+        "quote": "the mean estimates of the speeds were 32 mph when the question was phrased as the speed that the cars \"collided\"",
+        "source_url": "https://en.wikipedia.org/wiki/Elizabeth_Loftus"
+      },
+      {
+        "claim": "Mean 34 mph for \"hit each other\" and 41 mph for \"smashed each other\" (reveal, probe 1 answer 41)",
+        "verdict": "pass",
+        "quote": "34 mph when the question was phrased as \"hit each other\" instead, and 41 mph when the question was phrased as \"smashed each other\"",
+        "source_url": "https://en.wikipedia.org/wiki/Elizabeth_Loftus"
+      },
+      {
+        "claim": "\"smashed each other\" (41 mph) gave the highest mean, above 34 and 32; so \"collided\" (32) was not highest (answer to question and probe 2 false)",
+        "verdict": "pass",
+        "note": "Verified by calculation: 41 > 34 > 32, using the page figures quoted above.",
+        "source_url": "https://en.wikipedia.org/wiki/Elizabeth_Loftus"
+      },
+      {
+        "claim": "Loftus concluded that questions asked after an event can cause a reconstruction in one's memory of that event",
+        "verdict": "pass",
+        "quote": "the questions asked subsequent to an event can cause a reconstruction in one's memory of that event",
+        "source_url": "https://en.wikipedia.org/wiki/Elizabeth_Loftus"
+      }
+    ],
+    "overall": "pass"
+  }
+}

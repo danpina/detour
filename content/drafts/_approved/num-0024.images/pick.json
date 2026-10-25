@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-113056351",
+  "alt": "Pastel portrait of Leonhard Euler in a white cap and blue striped robe, looking to the side",
+  "fits": true,
+  "note": "Public-domain portrait of Euler; portrait 4:5 works as background. Tiny signature top right is harmless.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-103143553",
+  "alt": "Full-length portrait of King Louis XIV of France in blue and ermine coronation robes by Hyacinthe Rigaud, 1701.",
+  "fits": true,
+  "note": "Brief asks for a Louis XIV portrait; Louvre Rigaud original is public domain, high quality and 4:5-friendly.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

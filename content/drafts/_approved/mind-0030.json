@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Split-brain patients",
+    "angle": "The chicken foot and the shovel"
+  },
+  "created_at": "2026-10-21T17:05:01.067Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0030",
+    "interest": "mind",
+    "type": "story",
+    "title": "The shovel and the chicken coop",
+    "body": {
+      "panels": [
+        {
+          "text": "In split-brain, the corpus callosum connecting the two hemispheres of the brain is severed to some degree."
+        },
+        {
+          "text": "A patient with split brain is shown a picture of a chicken foot and a snowy field in separate visual fields, and asked to choose from a list of words the best association with the pictures."
+        },
+        {
+          "text": "The patient would choose a chicken to associate with the chicken foot and a shovel to associate with the snow."
+        },
+        {
+          "text": "But when asked to reason why the patient chose the shovel, the response would relate to the chicken: “the shovel is for cleaning out the chicken coop”."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "Which word would the patient choose to go with the snowy field?",
+        "options": [
+          "A shovel",
+          "A chicken",
+          "A coop",
+          "A feather"
+        ],
+        "answer": 0,
+        "id": "mind-0030-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: asked why they chose the shovel, the patient's response would relate to the chicken.",
+        "answer": true,
+        "id": "mind-0030-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Split-brain (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Split-brain"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A diagram or scan of the human brain showing the corpus callosum between the two hemispheres",
+    "keywords": [
+      "corpus callosum",
+      "split brain",
+      "brain hemispheres diagram"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:00.642Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Split-brain",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Split-brain: corpus callosum connecting the two hemispheres is severed to some degree",
+        "verdict": "pass",
+        "quote": "the corpus callosum connecting the two hemispheres of the brain is severed to some degree",
+        "source_url": "https://en.wikipedia.org/wiki/Split-brain"
+      },
+      {
+        "claim": "Patient shown a chicken foot and a snowy field in separate visual fields",
+        "verdict": "pass",
+        "quote": "a patient with split brain is shown a picture of a chicken foot and a snowy field in separate visual fields",
+        "source_url": "https://en.wikipedia.org/wiki/Split-brain"
+      },
+      {
+        "claim": "Asked to choose from a list of words the best association with the pictures",
+        "verdict": "pass",
+        "quote": "asked to choose from a list of words the best association with the pictures",
+        "source_url": "https://en.wikipedia.org/wiki/Split-brain"
+      },
+      {
+        "claim": "Patient would choose a chicken for the chicken foot and a shovel for the snow (probe 1 answer: shovel)",
+        "verdict": "pass",
+        "quote": "The patient would choose a chicken to associate with the chicken foot and a shovel to associate with the snow",
+        "source_url": "https://en.wikipedia.org/wiki/Split-brain"
+      },
+      {
+        "claim": "Asked why they chose the shovel, the response would relate to the chicken (panel 4, probe 2)",
+        "verdict": "pass",
+        "quote": "when asked to reason why the patient chose the shovel, the response would relate to the chicken",
+        "source_url": "https://en.wikipedia.org/wiki/Split-brain"
+      },
+      {
+        "claim": "Example response: \"the shovel is for cleaning out the chicken coop\" (title)",
+        "verdict": "pass",
+        "quote": "the shovel is for cleaning out the chicken coop",
+        "note": "Page introduces it with \"e.g.\"; card presents it as the example response, consistent.",
+        "source_url": "https://en.wikipedia.org/wiki/Split-brain"
+      }
+    ],
+    "overall": "pass"
+  }
+}

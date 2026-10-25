@@ -1,0 +1,50 @@
+{
+  "id": "sci-0024",
+  "interest": "science",
+  "title": "The great rise of oxygen",
+  "probes": [
+    {
+      "id": "sci-0024-p1",
+      "question": "What is the Great Oxidation Event inferred to have been caused by?",
+      "kind": "mcq",
+      "options": [
+        "Cyanobacteria",
+        "Giant volcanoes",
+        "Falling comets",
+        "Ocean tides"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0024-p2",
+      "question": "True or false: the modern atmosphere contains nearly 21% oxygen.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Great Oxidation Event (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Oxidation_Event"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:17:29.024Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0024.webp",
+    "alt": "Close-up of a polished slice of stromatolite rock showing wavy, rust-brown and cream layers.",
+    "kind": "photo",
+    "credit": "James St. John / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stromatolites,_Belt_Supergroup,_Glacier_National_Park.jpg"
+  },
+  "body": {
+    "claim": "Earth's atmosphere and shallow seas first experienced a rise in the concentration of free oxygen approximately 2.46-2.426 billion years ago.",
+    "why": "The Great Oxidation Event is inferred to have been caused by cyanobacteria, which evolved chlorophyll-based photosynthesis that releases dioxygen as a byproduct of water photolysis."
+  }
+}

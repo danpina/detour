@@ -1,0 +1,63 @@
+{
+  "draft_id": "sci-0022",
+  "created_at": "2026-10-21T17:07:38.686Z",
+  "queries": [
+    "John Snow cholera map Broad Street pump Broadwick Street pump",
+    "John Snow cholera map",
+    "John Snow cholera map Broad Street pump"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-22399100",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "John Snow, Soho, W1 (3696013128).jpg",
+      "credit": "Ewan Munro from London, UK / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:John_Snow,_Soho,_W1_(3696013128).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/John_Snow%2C_Soho%2C_W1_%283696013128%29.jpg/960px-John_Snow%2C_Soho%2C_W1_%283696013128%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3152,
+      "height": 2364,
+      "alt_suggestion": "A Sam Smith's pub on the corner of Lexington and Broadwick Streets. Back in the day of the epidemiologist after which the pub was renamed, these were known as Cambridge and Broad Streets, and outside ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-2278605",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Snow-cholera-map-1.jpg",
+      "credit": "John Snow / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Snow-cholera-map-1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Snow-cholera-map-1.jpg/960px-Snow-cholera-map-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 20124,
+      "height": 18877,
+      "alt_suggestion": "Original map made by John Snow in 1854. Cholera cases are highlighted in black, showing the clusters of cholera cases (indicated by stacked rectangles) in the London epidemic of 1854. The map was crea",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-177235605",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Cholera Pump, John Snow College - geograph.org.uk - 8152554.jpg",
+      "credit": "habiloid / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Cholera_Pump,_John_Snow_College_-_geograph.org.uk_-_8152554.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/The_Cholera_Pump%2C_John_Snow_College_-_geograph.org.uk_-_8152554.jpg/960px-The_Cholera_Pump%2C_John_Snow_College_-_geograph.org.uk_-_8152554.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2975,
+      "height": 3277,
+      "alt_suggestion": "The Cholera Pump, John Snow College",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"John Snow cholera map Broad Street pump Broadwick Street pump\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"John Snow cholera map Broad Street pump Broadwick Street pump\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=John%20Snow%20cholera%20map%20Bro",
+    "met failed for \"John Snow cholera map\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"John Snow cholera map\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=John%20Snow%20cholera%20map&query",
+    "met failed for \"John Snow cholera map Broad Street pump\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"John Snow cholera map Broad Street pump\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=John%20Snow%20cholera%20map%20Bro"
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "University of al-Qarawiyyin",
+    "angle": "Fatima al-Fihri's mosque in Fez"
+  },
+  "created_at": "2026-10-21T17:04:28.875Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "type": "story",
+    "title": "Fatima's mosque in Fez",
+    "body": {
+      "panels": [
+        {
+          "text": "Fez, Morocco, 9th century. In the story of the founding, Fatima al-Fihri and her sister Mariam, both well educated, inherit a large amount of money from their father."
+        },
+        {
+          "text": "Fatima vows to spend her entire inheritance to build a mosque suitable for her community."
+        },
+        {
+          "text": "The al-Qarawiyyin mosque is founded in 857-859. It subsequently becomes one of the leading spiritual and educational centers of the Islamic Golden Age."
+        },
+        {
+          "text": "The twist: UNESCO and Guinness World Records have cited al-Qarawiyyin as the oldest university or oldest continually operating higher learning institution in the world."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "In which city is al-Qarawiyyin?",
+        "options": [
+          "Fez, Morocco",
+          "Cairo, Egypt",
+          "Baghdad, Iraq",
+          "Timbuktu, Mali"
+        ],
+        "answer": 0,
+        "id": "hist-0024-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: al-Qarawiyyin was founded as a mosque.",
+        "answer": true,
+        "id": "hist-0024-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "University of al-Qarawiyyin (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin"
+      }
+    ],
+    "difficulty": 2,
+    "id": "hist-0024",
+    "interest": "history",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The courtyard of the al-Qarawiyyin mosque in Fez",
+    "keywords": [
+      "al-Qarawiyyin",
+      "Qarawiyyin mosque Fez",
+      "Karaouine courtyard",
+      "Fez Morocco mosque"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:42.117Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: \"Fatima's mosque in Fez\" (al-Qarawiyyin founded as a mosque by Fatima al-Fihri in Fez)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+        "quote": "It was founded as a mosque by Fatima al-Fihri in 857-859"
+      },
+      {
+        "claim": "Panel 1: \"In the story of the founding\", Fatima and her sister Mariam, both well educated, inherit a large amount of money from their father",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+        "quote": "Fatima and her sister Mariam, both of whom were well educated, inherited a large amount of money from their father",
+        "note": "Card hedges with \"In the story of the founding\"; page notes the narrative is questioned by some modern historians. Hedge is adequate."
+      },
+      {
+        "claim": "Panel 1: Fez, Morocco, 9th century",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+        "quote": "is a university located in Fez, Morocco",
+        "note": "Founded 857-859 (see next claim) is in the 9th century."
+      },
+      {
+        "claim": "Panel 2: Fatima vows to spend her entire inheritance to build a mosque suitable for her community",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+        "quote": "Fatima vowed to spend her entire inheritance to build a mosque suitable for her community"
+      },
+      {
+        "claim": "Panel 3: the al-Qarawiyyin mosque is founded in 857-859",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+        "quote": "It was founded as a mosque by Fatima al-Fihri in 857-859"
+      },
+      {
+        "claim": "Panel 3: it subsequently became one of the leading spiritual and educational centers of the Islamic Golden Age",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+        "quote": "subsequently became one of the leading spiritual and educational centers of the Islamic Golden Age"
+      },
+      {
+        "claim": "Panel 4: UNESCO and Guinness World Records have cited al-Qarawiyyin as the oldest university or oldest continually operating higher learning institution in the world",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+        "quote": "UNESCO and Guinness World Records have cited al-Qarawiyyin as the oldest university or oldest continually operating higher learning institution in the world",
+        "note": "Stated as a citation by those bodies, not as fact; page elsewhere notes the claim is disputed, which the card does not contradict."
+      },
+      {
+        "claim": "Probe 1 (mcq): al-Qarawiyyin is in Fez, Morocco (Cairo, Baghdad, Timbuktu are not)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+        "quote": "is a university located in Fez, Morocco"
+      },
+      {
+        "claim": "Probe 2 (tf): al-Qarawiyyin was founded as a mosque: true",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+        "quote": "It was founded as a mosque by Fatima al-Fihri in 857-859"
+      }
+    ],
+    "overall": "pass"
+  }
+}

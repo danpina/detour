@@ -1,0 +1,112 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Euler's identity",
+    "angle": "Why mathematicians call it beautiful"
+  },
+  "created_at": "2026-10-21T17:04:24.771Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0024",
+    "type": "fact_why",
+    "title": "Five constants in one short equation",
+    "body": {
+      "claim": "Euler's identity says e^(iπ) + 1 = 0.",
+      "why": "The identity links five fundamental mathematical constants: 0, 1, π, e and i. Three of the basic arithmetic operations occur exactly once each: addition, multiplication, and exponentiation. It is considered an exemplar of mathematical beauty."
+    },
+    "probes": [
+      {
+        "id": "num-0024-p1",
+        "kind": "mcq",
+        "question": "How many fundamental mathematical constants does Euler's identity link?",
+        "options": [
+          "Five",
+          "Three",
+          "Four",
+          "Seven"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0024-p2",
+        "kind": "tf",
+        "question": "True or false: in Euler's identity, exponentiation occurs exactly once.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Euler's identity (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Euler%27s_identity"
+      }
+    ],
+    "difficulty": 2,
+    "interest": "numbers",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Euler's identity written on a chalkboard or a portrait of Leonhard Euler",
+    "keywords": [
+      "Leonhard Euler portrait",
+      "Euler's identity",
+      "chalkboard equation"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:07:59.168Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Euler%27s_identity",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Euler's identity says e^(iπ) + 1 = 0.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euler%27s_identity",
+        "quote": "is the equality e i π + 1 = 0"
+      },
+      {
+        "claim": "Title: Five constants in one short equation",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euler%27s_identity",
+        "quote": "The identity also links five fundamental mathematical constants"
+      },
+      {
+        "claim": "The identity links five fundamental mathematical constants: 0, 1, π, e and i.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euler%27s_identity",
+        "quote": "The identity also links five fundamental mathematical constants"
+      },
+      {
+        "claim": "Three of the basic arithmetic operations occur exactly once each: addition, multiplication, and exponentiation.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euler%27s_identity",
+        "quote": "Three of the basic arithmetic operations occur exactly once each"
+      },
+      {
+        "claim": "It is considered an exemplar of mathematical beauty.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euler%27s_identity",
+        "quote": "Euler's identity is considered an exemplar of mathematical beauty"
+      },
+      {
+        "claim": "Probe 1: it links five fundamental constants (three/four/seven wrong)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euler%27s_identity",
+        "quote": "The identity also links five fundamental mathematical constants"
+      },
+      {
+        "claim": "Probe 2: exponentiation occurs exactly once",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euler%27s_identity",
+        "quote": "Three of the basic arithmetic operations occur exactly once each: addition , multiplication , and exponentiation"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "draft_id": "hist-0019",
+  "created_at": "2026-10-21T17:06:06.947Z",
+  "queries": [
+    "Marshall Islands stick chart Marshallese navigation chart rebbelib",
+    "Marshall Islands stick chart",
+    "Marshall Islands stick chart Marshallese navigation chart"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-69346299",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Marshall Islands stick chart, Rebbelib type. LOC 2010586182.jpg",
+      "credit": "https://www.loc.gov/item/2010586182/ / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Marshall_Islands_stick_chart,_Rebbelib_type._LOC_2010586182.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Marshall_Islands_stick_chart%2C_Rebbelib_type._LOC_2010586182.jpg/960px-Marshall_Islands_stick_chart%2C_Rebbelib_type._LOC_2010586182.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 10966,
+      "height": 10176,
+      "alt_suggestion": "Title and date supplied by cataloger. Available also through the Library of Congress Web site as a raster image. Model housed in a cloth covered box with a clear plastic cover. Square rebbelib used by",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-69622605",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "(Marshall Islands stick chart, Meddo type). LOC 2010586181.jpg",
+      "credit": "https://www.loc.gov/item/2010586181/ / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:(Marshall_Islands_stick_chart,_Meddo_type)._LOC_2010586181.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/%28Marshall_Islands_stick_chart%2C_Meddo_type%29._LOC_2010586181.jpg/960px-%28Marshall_Islands_stick_chart%2C_Meddo_type%29._LOC_2010586181.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 16518,
+      "height": 10364,
+      "alt_suggestion": "Title and date supplied by cataloger. Available also through the Library of Congress Web site as a raster image. Model housed in a cloth covered box with a clear plastic cover. \"This type of stick cha",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-70927456",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "(Marshall Islands stick chart, Mattang type). LOC 2010586180.jpg",
+      "credit": "https://www.loc.gov/item/2010586180/ / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:(Marshall_Islands_stick_chart,_Mattang_type)._LOC_2010586180.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/%28Marshall_Islands_stick_chart%2C_Mattang_type%29._LOC_2010586180.jpg/960px-%28Marshall_Islands_stick_chart%2C_Mattang_type%29._LOC_2010586180.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 14174,
+      "height": 11334,
+      "alt_suggestion": "Title and date supplied by cataloger. Available also through the Library of Congress Web site as a raster image. Model housed in a cloth covered box with a clear plastic cover. \"This class of stick ch",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Marshall Islands stick chart Marshallese navigation chart rebbelib\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Marshall Islands stick chart Marshallese navigation chart rebbelib\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Marshall%20Islands%20stick%20char",
+    "met failed for \"Marshall Islands stick chart\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Marshall Islands stick chart\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Marshall%20Islands%20stick%20char",
+    "met failed for \"Marshall Islands stick chart Marshallese navigation chart\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Marshall Islands stick chart Marshallese navigation chart\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Marshall%20Islands%20stick%20char"
+  ]
+}

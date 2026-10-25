@@ -1,0 +1,63 @@
+{
+  "draft_id": "hist-0022",
+  "created_at": "2026-10-21T17:06:16.310Z",
+  "queries": [
+    "Cahokia Mounds Monks Mound Cahokia",
+    "Cahokia Mounds",
+    "Cahokia Mounds Monks Mound"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-23325377",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cahokia Monks Mound.jpg",
+      "credit": "User: (WT-shared) Ethajek at wts wikivoyage / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cahokia_Monks_Mound.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Cahokia_Monks_Mound.jpg/960px-Cahokia_Monks_Mound.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "Monk's Mound in Cahokia",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-3019271",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Monks Mound in July.JPG",
+      "credit": "Skubasteve834 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monks_Mound_in_July.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Monks_Mound_in_July.JPG/960px-Monks_Mound_in_July.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "alt_suggestion": "Monk's Mound, a Pre-Columbian Mississippian culture earthwork, located at the Cahokia site near Collinsville, Illinois. The concrete staircase is modern, but it is built along the approximate course o",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-150167285",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Monks Mound - Summer 2024.jpg",
+      "credit": "Skubasteve834 / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monks_Mound_-_Summer_2024.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Monks_Mound_-_Summer_2024.jpg/960px-Monks_Mound_-_Summer_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6550,
+      "height": 4367,
+      "alt_suggestion": "Photo taken in May 2024, facing the staircase side of Monks Mound. People and vehicles can be used to judge the size of this ancient structure.",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Cahokia Mounds Monks Mound Cahokia\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Cahokia Mounds Monks Mound Cahokia\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Cahokia%20Mounds%20Monks%20Mound%",
+    "met failed for \"Cahokia Mounds\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Cahokia Mounds\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Cahokia%20Mounds&query[term][is_p",
+    "met failed for \"Cahokia Mounds Monks Mound\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Cahokia Mounds Monks Mound\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Cahokia%20Mounds%20Monks%20Mound&"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Beard tax",
+    "angle": "Peter I's beard tax and the beard token"
+  },
+  "created_at": "2026-10-21T17:03:52.388Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0022",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "Pay to keep your beard",
+    "body": {
+      "claim": "In 1698, Tsar Peter I of Russia instituted a beard tax. Men who paid it were required to carry a copper or silver \"beard token\".",
+      "why": "It was part of an effort to bring Russian society in line with Western European models. Resistance was widespread, since many believed a beard was a religious requirement. Financially, the tax was unsuccessful: few people were unwilling to shave, and the state overestimated its ability to administer and collect it."
+    },
+    "probes": [
+      {
+        "id": "money-0022-p1",
+        "kind": "mcq",
+        "question": "What were men who paid Russia's beard tax required to carry?",
+        "options": [
+          "A beard token",
+          "A signed permit letter",
+          "A silver spoon",
+          "A red ribbon"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0022-p2",
+        "kind": "tf",
+        "question": "True or false: from a financial standpoint, Russia's beard tax was unsuccessful.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Beard tax (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Beard_tax"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A Russian beard token (copper coin-like token with a face and beard)",
+    "keywords": [
+      "beard token",
+      "бородовой знак",
+      "Russian beard tax token 1705",
+      "Peter the Great beard"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:15.482Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Beard_tax",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1698 Tsar Peter I of Russia instituted a beard tax",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Beard_tax",
+        "quote": "In 1698, Tsar Peter I of Russia instituted a beard tax as part of an effort to bring Russian society in line with Western European models"
+      },
+      {
+        "claim": "Those who paid were required to carry a beard token (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Beard_tax",
+        "quote": "Those who paid the tax were required to carry a \"beard token\""
+      },
+      {
+        "claim": "Token was copper or silver",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Beard_tax",
+        "quote": "This was a copper or silver token with a Russian Eagle on the reverse"
+      },
+      {
+        "claim": "Resistance was widespread since many believed a beard was a religious requirement",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Beard_tax",
+        "quote": "Resistance to going clean shaven was widespread with many believing that it was a religious requirement for a man to wear a beard"
+      },
+      {
+        "claim": "Financially the tax was unsuccessful: few people unwilling to shave and state overestimated its ability to administer and collect (probe 2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Beard_tax",
+        "quote": "However, from a financial standpoint, the tax was unsuccessful due both to the relatively low number of people unwilling to shave their beards",
+        "note": "\"few people\" paraphrases \"relatively low number of people\"; the same sentence continues with the overestimation of the state ability to administer and collect the tax."
+      }
+    ],
+    "overall": "pass"
+  }
+}

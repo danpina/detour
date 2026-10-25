@@ -1,0 +1,35 @@
+{
+  "draft_id": "money-0027",
+  "created_at": "2026-10-21T17:07:01.914Z",
+  "queries": [
+    "ERNIE Premium Bonds Electronic Random Number Indicator Equipment Premium Bond certificate",
+    "ERNIE Premium Bonds",
+    "ERNIE Premium Bonds Electronic Random Number Indicator Equipment"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-15548710",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Money box shaped like ERNIE the Computer (Science Museum, London).jpg",
+      "credit": "Geni / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Money_box_shaped_like_ERNIE_the_Computer_(Science_Museum,_London).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Money_box_shaped_like_ERNIE_the_Computer_%28Science_Museum%2C_London%29.jpg/960px-Money_box_shaped_like_ERNIE_the_Computer_%28Science_Museum%2C_London%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1484,
+      "height": 2613,
+      "alt_suggestion": "Photo of a money box in the shape of a personification of ERNIE the computer that draws the UKs Premium Bonds",
+      "file": "cand-1.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"ERNIE Premium Bonds Electronic Random Number Indicator Equipment Premium Bond certificate\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"ERNIE Premium Bonds Electronic Random Number Indicator Equipment Premium Bond certificate\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=ERNIE%20Premium%20Bonds%20Electro",
+    "met failed for \"ERNIE Premium Bonds\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"ERNIE Premium Bonds\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=ERNIE%20Premium%20Bonds&query[ter",
+    "met failed for \"ERNIE Premium Bonds Electronic Random Number Indicator Equipment\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"ERNIE Premium Bonds Electronic Random Number Indicator Equipment\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=ERNIE%20Premium%20Bonds%20Electro"
+  ]
+}

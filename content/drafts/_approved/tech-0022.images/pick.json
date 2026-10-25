@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-978591",
+  "alt": "Artist's rendering of a GPS Block IIF satellite with two long solar panels in orbit above Earth",
+  "fits": true,
+  "note": "Official USAF rendering of a Navstar GPS satellite over Earth; dark space, works as a background. It is an illustration, not a photo.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

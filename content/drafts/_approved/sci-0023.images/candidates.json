@@ -1,0 +1,87 @@
+{
+  "draft_id": "sci-0023",
+  "created_at": "2026-10-21T17:07:41.410Z",
+  "queries": [
+    "neutron star neutron star illustration NASA Arecibo Telescope",
+    "neutron star",
+    "neutron star neutron star illustration NASA"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-106335471",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Neutron Star simulation.png",
+      "credit": "Raphael.concorde / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Neutron_Star_simulation.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Neutron_Star_simulation.png/960px-Neutron_Star_simulation.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1536,
+      "height": 1802,
+      "alt_suggestion": "Computer artist's rendering of a compact neutron star with accretion disk and gravitational lensing, with radiation spewing out the poles.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA23863",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Different Types of Neutron Stars (Illustration)",
+      "credit": "NASA/JPL-Caltech / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA23863",
+      "image_url": "https://images-assets.nasa.gov/image/PIA23863/PIA23863~medium.jpg",
+      "alt_suggestion": "Neutron stars, or cores leftover from exploded stars, are some of the densest objects in the universe. There are several types of neutron stars, including magnetars and pulsars. https://photojournal.j",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-106335632",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Neutron star magnetic fields simulation.jpg",
+      "credit": "NASA Jet propulsion laboratory / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Neutron_star_magnetic_fields_simulation.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Neutron_star_magnetic_fields_simulation.jpg/960px-Neutron_star_magnetic_fields_simulation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6875,
+      "height": 5479,
+      "alt_suggestion": "These four images show an artist's impression of gas accreting onto the neutron star in the binary system MXB 1730-335, also known as the \"Rapid Burster.\" In such a binary system, the gravitational pu",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-astronomers-find-the-first-wind-nebula-around-a-rare-ultra-magnetic-neutron-star_27744663791_o",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Astronomers Find the First 'Wind Nebula' Around a Rare Ultra-Magnetic Neutron Star",
+      "credit": "GSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/astronomers-find-the-first-wind-nebula-around-a-rare-ultra-magnetic-neutron-star_27744663791_o",
+      "image_url": "https://images-assets.nasa.gov/image/astronomers-find-the-first-wind-nebula-around-a-rare-ultra-magnetic-neutron-star_27744663791_o/astronomers-find-the-first-wind-nebula-around-a-rare-ultra-magnetic-neutron-star_27744663791_o~thumb.jpg",
+      "alt_suggestion": "Astronomers have discovered a vast cloud of high-energy particles called a wind nebula around a rare ultra-magnetic neutron star, or magnetar, for the first time. The find offers a unique window into ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-130722447",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Neutron Star X-ray beaming with accretion disk.jpg",
+      "credit": "NASA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Neutron_Star_X-ray_beaming_with_accretion_disk.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Neutron_Star_X-ray_beaming_with_accretion_disk.jpg/960px-Neutron_Star_X-ray_beaming_with_accretion_disk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 1688,
+      "alt_suggestion": "This computer-generated shows a neutron star -- the core of a star that exploded in a massive supernova. This particular neutron star is known as a pulsar because it sends out rotating beams of X-rays",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"neutron star neutron star illustration NASA Arecibo Telescope\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"neutron star neutron star illustration NASA Arecibo Telescope\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=neutron%20star%20neutron%20star%2",
+    "met failed for \"neutron star\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"neutron star\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=neutron%20star&query[term][is_pub",
+    "met failed for \"neutron star neutron star illustration NASA\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"neutron star neutron star illustration NASA\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=neutron%20star%20neutron%20star%2"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Pigeonhole principle",
+    "angle": "A counting argument with a surprising result"
+  },
+  "created_at": "2026-10-21T17:04:24.768Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0021",
+    "type": "fact_why",
+    "title": "Two Londoners share a hair count",
+    "body": {
+      "claim": "If n items are put into m containers, with n > m, then at least one container must contain more than one item.",
+      "why": "For example, a typical human head has an average of around 150,000 hairs, so it is reasonable to assume (as an upper bound) that no one has more than 1,000,000 hairs. There are more than 1,000,000 people in London, so at least two people in London must have the same number of hairs on their heads."
+    },
+    "probes": [
+      {
+        "id": "num-0021-p1",
+        "kind": "mcq",
+        "question": "Ten pigeons are put into nine holes. What does the pigeonhole principle say?",
+        "options": [
+          "At least one hole has more than one pigeon",
+          "Every hole holds exactly one pigeon",
+          "No hole holds more than one pigeon"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0021-p2",
+        "kind": "tf",
+        "question": "True or false: the pigeonhole principle says that, with more items than containers, some container holds more than one item.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Pigeonhole principle (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pigeonhole_principle"
+      }
+    ],
+    "difficulty": 2,
+    "interest": "numbers",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Pigeons in a wall of pigeonholes, or a crowd of people in a city",
+    "keywords": [
+      "pigeonholes",
+      "pigeon holes wall",
+      "pigeons in holes"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:07:59.168Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: Two Londoners share a hair count (at least two people in London have the same number of hairs)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "One can demonstrate there must be at least two people in London with the same number of hairs on their heads"
+      },
+      {
+        "claim": "If n items are put into m containers, with n > m, then at least one container must contain more than one item.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "then at least one container must contain more than one item"
+      },
+      {
+        "claim": "A typical human head has an average of around 150,000 hairs.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "a typical human head has an average of around 150,000 hairs"
+      },
+      {
+        "claim": "It is reasonable to assume (as an upper bound) that no one has more than 1,000,000 hairs.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "it is reasonable to assume (as an upper bound) that no one has more than 1,000,000 hairs on their head"
+      },
+      {
+        "claim": "There are more than 1,000,000 people in London, so at least two Londoners have the same number of hairs.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "There are more than 1,000,000 people in London"
+      },
+      {
+        "claim": "Probe 1 setup: ten pigeons in nine holes",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "Here there are n = 10 pigeons in m = 9 holes"
+      },
+      {
+        "claim": "Probe 1 answer: at least one hole has more than one pigeon (other options contradict this)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "the pigeonhole principle says that at least one hole has more than one pigeon"
+      },
+      {
+        "claim": "Probe 2: with more items than containers, some container holds more than one item",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "then at least one container must contain more than one item"
+      }
+    ],
+    "overall": "pass"
+  }
+}

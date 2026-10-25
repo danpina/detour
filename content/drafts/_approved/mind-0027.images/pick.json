@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-26471242",
+  "alt": "Adelson checker shadow illusion: a checkerboard with a green cylinder casting a shadow, with squares A and B marked.",
+  "fits": true,
+  "note": "The classic illusion itself, as the brief asks; cand-2 version without the author text watermark (cand-1 has a name caption). Crop keeps A, B and the cylinder in a 4:5 frame.",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

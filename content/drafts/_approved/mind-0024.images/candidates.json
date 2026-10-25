@@ -1,0 +1,45 @@
+{
+  "draft_id": "mind-0024",
+  "created_at": "2026-10-21T17:06:24.818Z",
+  "queries": [
+    "bouba kiki bouba-kiki effect takete maluma",
+    "bouba kiki",
+    "bouba kiki bouba-kiki effect"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-201225558",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "KIKI DO YOU LOVE ME ARE YOU RIDING SAY YOU'LL NEVER EVER LEAVE FROM BESIDE ME.png",
+      "credit": "Ewower111111 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:KIKI_DO_YOU_LOVE_ME_ARE_YOU_RIDING_SAY_YOU%27LL_NEVER_EVER_LEAVE_FROM_BESIDE_ME.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/KIKI_DO_YOU_LOVE_ME_ARE_YOU_RIDING_SAY_YOU%27LL_NEVER_EVER_LEAVE_FROM_BESIDE_ME.png/960px-KIKI_DO_YOU_LOVE_ME_ARE_YOU_RIDING_SAY_YOU%27LL_NEVER_EVER_LEAVE_FROM_BESIDE_ME.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4211,
+      "height": 1000,
+      "alt_suggestion": "KIKI DO YOU LOVE ME ARE YOU RIDING SAY YOU'LL NEVER EVER LEAVE FROM BESIDE ME",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "generated-kikibouba",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: kikibouba",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-kikibouba.png",
+      "alt_suggestion": "Illustration of a smooth round circle next to a sharp spiky star shape"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"bouba kiki bouba-kiki effect takete maluma\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"bouba kiki bouba-kiki effect takete maluma\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=bouba%20kiki%20bouba-kiki%20effec",
+    "met failed for \"bouba kiki\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"bouba kiki\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=bouba%20kiki&query[term][is_publi",
+    "met failed for \"bouba kiki bouba-kiki effect\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"bouba kiki bouba-kiki effect\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=bouba%20kiki%20bouba-kiki%20effec"
+  ]
+}

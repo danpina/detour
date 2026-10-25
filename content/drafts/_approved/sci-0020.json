@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Wood frog",
+    "angle": "Freeze tolerance"
+  },
+  "created_at": "2026-10-21T17:04:07.370Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0020",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "The frog that can freeze",
+    "body": {
+      "question": "Which animal can tolerate the freezing of its blood and other tissues?",
+      "options": [
+        "The wood frog",
+        "The goldfish",
+        "The house cat"
+      ],
+      "answer": 0,
+      "reveal": "Wood frogs can tolerate the freezing of their blood and other tissues. When frozen, they have no detectable vital signs: no heartbeat, breathing, blood circulation, muscle movement, or detectable brain activity. Urea and glucose act as cryoprotectants to limit the amount of ice that forms."
+    },
+    "probes": [
+      {
+        "id": "sci-0020-p1",
+        "kind": "mcq",
+        "question": "Which two substances act as cryoprotectants in wood frogs?",
+        "options": [
+          "Urea and glucose",
+          "Salt and fat",
+          "Calcium and iron",
+          "Oxygen and nitrogen"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0020-p2",
+        "kind": "tf",
+        "question": "True or false: a frozen wood frog has no detectable heartbeat.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wood frog (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Wood_frog"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A wood frog on leaf litter or snow",
+    "keywords": [
+      "wood frog",
+      "Lithobates sylvaticus",
+      "Rana sylvatica"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:08:20.191Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wood_frog",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title/question/reveal: wood frogs can tolerate freezing of their blood and other tissues (wood frog is the answer; goldfish and house cat are not freeze-tolerant, not mentioned on the page)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wood_frog",
+        "quote": "wood frogs can tolerate the freezing of their blood and other tissues"
+      },
+      {
+        "claim": "Reveal and probe p2: frozen wood frogs have no detectable vital signs: no heartbeat, breathing, blood circulation, muscle movement, or detectable brain activity",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wood_frog",
+        "quote": "When frozen, wood frogs have no detectable vital signs: no heartbeat, breathing, blood circulation, muscle movement, or detectable brain activity"
+      },
+      {
+        "claim": "Reveal and probe p1: urea and glucose act as cryoprotectants to limit the amount of ice that forms (the other option pairs are not named)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wood_frog",
+        "quote": "Both urea and glucose act as cryoprotectants to limit the amount of ice that forms"
+      }
+    ],
+    "overall": "pass"
+  }
+}

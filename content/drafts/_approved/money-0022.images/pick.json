@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-103285367",
+  "alt": "Both sides of a copper Russian beard token from 1705, one with a double-headed eagle, the other showing a nose and beard with the words for money taken.",
+  "fits": true,
+  "note": "Authentic 1705 token, clear. Very wide image: crop to the beard side (right coin). cand-1 is a modern sew-on patch and was rejected as misleading.",
+  "crop": {
+    "fx": 0.75,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

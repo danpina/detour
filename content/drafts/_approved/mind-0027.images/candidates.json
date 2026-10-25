@@ -1,0 +1,68 @@
+{
+  "draft_id": "mind-0027",
+  "created_at": "2026-10-21T17:06:32.897Z",
+  "queries": [
+    "checker shadow illusion Adelson checkerboard same color illusion",
+    "checker shadow illusion",
+    "checker shadow illusion Adelson checkerboard"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-26471358",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Checkershadow full adelson.jpg",
+      "credit": "Edward H. Adelson / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Checkershadow_full_adelson.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Checkershadow_full_adelson.jpg/960px-Checkershadow_full_adelson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1078,
+      "height": 838,
+      "alt_suggestion": "Checker Shadow Illusion. The square marked A and B are the same shade of gray.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-26471242",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Checkershadow.jpg",
+      "credit": "Edward H. Adelson / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Checkershadow.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Checkershadow.jpg/960px-Checkershadow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1078,
+      "height": 838,
+      "alt_suggestion": "Checker Shadow Illusion. The two square marked A and B are the same shade of gray.",
+      "file": "cand-2.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Grey square optical illusion.PNG",
+      "license": "Copyrighted free use",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Optical greysquares 3D 2.png",
+      "license": "CC SA 1.0",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Optical greysquares 3D.png",
+      "license": "CC SA 1.0",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"checker shadow illusion Adelson checkerboard same color illusion\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"checker shadow illusion Adelson checkerboard same color illusion\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=checker%20shadow%20illusion%20Ade",
+    "met failed for \"checker shadow illusion\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"checker shadow illusion\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=checker%20shadow%20illusion&query",
+    "met failed for \"checker shadow illusion Adelson checkerboard\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"checker shadow illusion Adelson checkerboard\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=checker%20shadow%20illusion%20Ade"
+  ]
+}

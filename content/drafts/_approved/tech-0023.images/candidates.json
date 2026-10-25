@@ -1,0 +1,87 @@
+{
+  "draft_id": "tech-0023",
+  "created_at": "2026-10-21T17:07:54.871Z",
+  "queries": [
+    "Hubble Space Telescope STS-61 servicing mission Hubble primary mirror",
+    "Hubble Space Telescope",
+    "Hubble Space Telescope STS-61 servicing mission"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-29331212",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Astronaut Hoffman held the Hubble Space Telescope WF PC1 during the STS-61 mission 9400368.jpg",
+      "credit": "NASA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Astronaut_Hoffman_held_the_Hubble_Space_Telescope_WF_PC1_during_the_STS-61_mission_9400368.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Astronaut_Hoffman_held_the_Hubble_Space_Telescope_WF_PC1_during_the_STS-61_mission_9400368.jpg/960px-Astronaut_Hoffman_held_the_Hubble_Space_Telescope_WF_PC1_during_the_STS-61_mission_9400368.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1994,
+      "height": 3000,
+      "alt_suggestion": "Astronaut Hoffman held the Hubble Space Telescope (HST) Wide Field/Planetary Camera-1 (WF/PC1) that was replaced by WF/PC2 in the cargo bay of the Space Shuttle orbiter Endeavour during Extravehicular",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-9307455",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Around Marshall",
+      "credit": "MSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/9307455",
+      "image_url": "https://images-assets.nasa.gov/image/9307455/9307455~medium.jpg",
+      "alt_suggestion": "This photograph shows STS-61 crewmemmbers training for the Hubble Space Telescope (HST) servicing mission in the Marshall Space Flight Center's (MSFC's) Neutral Buoyancy Simulator (NBS). Two months af",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-6459870",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hubble Images of M100 Before and After Mirror Repair - GPN-2002-000064.jpg",
+      "credit": "NASA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hubble_Images_of_M100_Before_and_After_Mirror_Repair_-_GPN-2002-000064.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Hubble_Images_of_M100_Before_and_After_Mirror_Repair_-_GPN-2002-000064.jpg/960px-Hubble_Images_of_M100_Before_and_After_Mirror_Repair_-_GPN-2002-000064.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 1605,
+      "alt_suggestion": "This comparison image of the core of the galaxy M100 shows the dramatic improvement in Hubble Space Telescope's view of the universe after the first Hubble Servicing Mission in December 1993. The new ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-9307457",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "History of Hubble Space Telescope (HST)",
+      "credit": "MSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/9307457",
+      "image_url": "https://images-assets.nasa.gov/image/9307457/9307457~medium.jpg",
+      "alt_suggestion": "This photograph shows an STS-61 astronaut training for the Hubble Space Telescope (HST) servicing mission (STS-61) in the Marshall Space Flight Center's (MSFC's) Neutral Buoyancy Simulator (NBS). Two ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-366695",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Improvement in Hubble images after SMM1.jpg",
+      "credit": "NASA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Improvement_in_Hubble_images_after_SMM1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Improvement_in_Hubble_images_after_SMM1.jpg/960px-Improvement_in_Hubble_images_after_SMM1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2941,
+      "height": 1488,
+      "alt_suggestion": "This comparison image of the core of the galaxy M100 shows the dramatic improvement in Hubble Space Telescope's view of the universe after the first Hubble Servicing Mission in December 1993. The new ",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Hubble Space Telescope STS-61 servicing mission Hubble primary mirror\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Hubble Space Telescope STS-61 servicing mission Hubble primary mirror\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Hubble%20Space%20Telescope%20STS-",
+    "met failed for \"Hubble Space Telescope\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Hubble Space Telescope\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Hubble%20Space%20Telescope&query[",
+    "met failed for \"Hubble Space Telescope STS-61 servicing mission\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Hubble Space Telescope STS-61 servicing mission\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Hubble%20Space%20Telescope%20STS-"
+  ]
+}

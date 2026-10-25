@@ -1,0 +1,122 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Gauss and the sum of 1 to 100",
+    "angle": "A popular classroom story"
+  },
+  "created_at": "2026-10-21T17:04:24.760Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0019",
+    "type": "story",
+    "title": "The story behind 5050",
+    "body": {
+      "panels": [
+        {
+          "text": "A popular story says that, as an elementary student, Gauss was asked by his teacher, J.G. Büttner, to sum the numbers from 1 to 100."
+        },
+        {
+          "text": "Much to Büttner's surprise, Gauss replied with the correct answer of 5050 in a vastly faster time than expected."
+        },
+        {
+          "text": "Gauss had presumably realised that the sum could be rearranged as 50 pairs of 101: 1 + 100, 2 + 99, and so on."
+        },
+        {
+          "text": "So he simply multiplied 50 by 101."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0019-p1",
+        "kind": "mcq",
+        "question": "In the story, into how many pairs of 101 can the numbers 1 to 100 be rearranged?",
+        "options": [
+          "50",
+          "100",
+          "101",
+          "25"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0019-p2",
+        "kind": "tf",
+        "question": "True or false: 50 × 101 = 5050.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Carl Friedrich Gauss (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss"
+      }
+    ],
+    "difficulty": 1,
+    "interest": "numbers",
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Portrait of Carl Friedrich Gauss, or an old engraving of a schoolroom",
+    "keywords": [
+      "Carl Friedrich Gauss portrait",
+      "Gauss 1840 painting"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:07:59.168Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: The story behind 5050 (a popular story about the answer 5050)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+        "quote": "Gauss replied with the correct answer of 5050 in a vastly faster time than expected"
+      },
+      {
+        "claim": "A popular story says that, as an elementary student, Gauss was asked by his teacher, J.G. Büttner, to sum the numbers from 1 to 100.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+        "quote": "Gauss and his class were tasked by their teacher, J.G. Büttner, to sum the numbers from 1 to 100"
+      },
+      {
+        "claim": "Much to Büttner's surprise, Gauss replied with the correct answer of 5050 in a vastly faster time than expected.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+        "quote": "Much to Büttner's surprise, Gauss replied with the correct answer of 5050 in a vastly faster time than expected."
+      },
+      {
+        "claim": "Gauss had presumably realised that the sum could be rearranged as 50 pairs of 101: 1 + 100, 2 + 99, and so on.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+        "quote": "Gauss had presumably realised that the sum could be rearranged as 50 pairs of 101"
+      },
+      {
+        "claim": "So he simply multiplied 50 by 101.",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+        "quote": "Thus, he simply multiplied 50 by 101."
+      },
+      {
+        "claim": "Probe 1: the numbers 1 to 100 can be rearranged into 50 pairs of 101 (answer 50; 100, 101, 25 are not stated)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+        "quote": "the sum could be rearranged as 50 pairs of 101"
+      },
+      {
+        "claim": "Probe 2: 50 × 101 = 5050 is true",
+        "verdict": "pass",
+        "note": "Verified by calculation: 50 × 101 = 5050."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Bouba/kiki effect",
+    "angle": "Which name suits the spiky shape?"
+  },
+  "created_at": "2026-10-21T17:05:01.059Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0024",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "Which one is “kiki”?",
+    "body": {
+      "question": "Two nonsense words: “bouba” and “kiki”. Two shapes: one rounded, one jagged. Which word do people tend to pick for the jagged shape?",
+      "options": [
+        "kiki",
+        "bouba"
+      ],
+      "answer": 0,
+      "reveal": "People tend to associate “hard” sounds like kiki with a spiky shape and “soft” sounds like bouba with a rounded shape. It has been robustly confirmed across a majority of cultures and languages in which it has been researched. Even 4-month-old infants have the same sound–shape mapping biases as adults and toddlers."
+    },
+    "probes": [
+      {
+        "kind": "mcq",
+        "question": "Which kind of shape do people tend to link with the nonsense word “bouba”?",
+        "options": [
+          "A rounded shape",
+          "A jagged shape"
+        ],
+        "answer": 0,
+        "id": "mind-0024-p1"
+      },
+      {
+        "kind": "tf",
+        "question": "True or false: 4-month-old infants showed the same sound–shape mapping biases as adults and toddlers.",
+        "answer": true,
+        "id": "mind-0024-p2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bouba/kiki effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bouba%2Fkiki_effect"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A rounded blob shape next to a spiky star shape (the classic bouba/kiki figure), or a similar pair of shapes",
+    "keywords": [
+      "bouba kiki",
+      "bouba-kiki effect",
+      "takete maluma"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-21T17:09:00.632Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bouba%2Fkiki_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title: \"Which one is kiki?\" (people match kiki to the jagged shape)",
+        "verdict": "pass",
+        "quote": "95% of people will select the curvy shape as \"bouba\" and the jagged one as \"kiki\"",
+        "source_url": "https://en.wikipedia.org/wiki/Bouba%2Fkiki_effect"
+      },
+      {
+        "claim": "People tend to pick \"kiki\" for the jagged shape (question and answer)",
+        "verdict": "pass",
+        "quote": "95% of people will select the curvy shape as \"bouba\" and the jagged one as \"kiki\"",
+        "source_url": "https://en.wikipedia.org/wiki/Bouba%2Fkiki_effect"
+      },
+      {
+        "claim": "\"Hard\" sounds like kiki go with a spiky shape and \"soft\" sounds like bouba with a rounded shape",
+        "verdict": "pass",
+        "quote": "tend to associate certain \"soft\" sounds (like bouba and maluma ) with a rounded shape and other \"hard\" sounds (like kiki and takete ) with a spiky shape",
+        "source_url": "https://en.wikipedia.org/wiki/Bouba%2Fkiki_effect"
+      },
+      {
+        "claim": "Robustly confirmed across a majority of cultures and languages researched",
+        "verdict": "pass",
+        "quote": "It has been robustly confirmed across a majority of cultures and languages in which it has been researched.",
+        "source_url": "https://en.wikipedia.org/wiki/Bouba%2Fkiki_effect"
+      },
+      {
+        "claim": "4-month-old infants have the same sound-shape mapping biases as adults and toddlers (reveal and true/false probe)",
+        "verdict": "pass",
+        "quote": "even 4-month-old infants have the same sound-shape mapping biases as adults and toddlers",
+        "source_url": "https://en.wikipedia.org/wiki/Bouba%2Fkiki_effect"
+      },
+      {
+        "claim": "Probe: \"bouba\" is linked with a rounded shape (jagged is wrong)",
+        "verdict": "pass",
+        "quote": "tend to associate certain \"soft\" sounds (like bouba and maluma ) with a rounded shape and other \"hard\" sounds (like kiki and takete ) with a spiky shape",
+        "source_url": "https://en.wikipedia.org/wiki/Bouba%2Fkiki_effect"
+      }
+    ],
+    "overall": "pass"
+  }
+}

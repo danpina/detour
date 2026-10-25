@@ -1,0 +1,49 @@
+{
+  "id": "money-0026",
+  "interest": "money",
+  "title": "The scales that sorted coins",
+  "probes": [
+    {
+      "id": "money-0026-p1",
+      "question": "Why did states debase their coins during Kipper und Wipper?",
+      "kind": "mcq",
+      "options": [
+        "To raise revenue for war costs",
+        "To make coins easier to carry",
+        "To honour a new ruler"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0026-p2",
+      "question": "True or false: soldiers and mercenaries refused to fight unless they were paid in non-debased money.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kipper und Wipper (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kipper_und_Wipper"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-21T17:15:29.933Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0026.webp",
+    "alt": "Both sides of a worn silver German coin from the Thirty Years War era, with a coat of arms on one side and an imperial eagle on the other.",
+    "kind": "photo",
+    "credit": "Reinhard Saczewski / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Braunschweig-Wolfenb%C3%BCttel-_Friedrich_Ulrich_-_M%C3%BCnzkabinett,_Berlin_-_5560455.jpg"
+  },
+  "body": {
+    "claim": "Around 1620 to 1623, during Kipper und Wipper, states in the Holy Roman Empire heavily debased coins: good coins were melted, mixed with baser metals such as lead, copper or tin, and re-issued.",
+    "why": "The Thirty Years' War was under way and military expenditures rose drastically, so the states debased currency to raise revenue. The name refers to balance scales (Wippen) that quickly tilted (kippen) on good coins. After a time the public caught on, and soldiers and mercenaries refused to fight unless paid in real, non-debased money."
+  }
+}

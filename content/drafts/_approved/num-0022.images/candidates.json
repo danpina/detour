@@ -1,0 +1,59 @@
+{
+  "draft_id": "num-0022",
+  "created_at": "2026-10-21T17:07:17.967Z",
+  "queries": [
+    "Yang Hui triangle Pascal's triangle Jade Mirror of the Four Unknowns",
+    "Yang Hui triangle",
+    "Yang Hui triangle Pascal's triangle"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-143843090",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Binary Pascal's Triangle.png",
+      "credit": "Radlrb / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Binary_Pascal%27s_Triangle.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Binary_Pascal%27s_Triangle.png/960px-Binary_Pascal%27s_Triangle.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1904,
+      "height": 2096,
+      "alt_suggestion": "This is an image of the first 32 rows of Pascal's Triangle, in binary representation.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-191737775",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pascal Triangle 14x14.jpg",
+      "credit": "Dixy52 / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pascal_Triangle_14x14.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Pascal_Triangle_14x14.jpg/960px-Pascal_Triangle_14x14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2108,
+      "height": 1548,
+      "alt_suggestion": "Pascal Triangle 14x14",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "generated-pascaltri",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: pascaltri",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-pascaltri.png",
+      "alt_suggestion": "Illustration of a triangle of stacked circles in rows of one, two, three, four, five and six"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Yang Hui triangle Pascal's triangle Jade Mirror of the Four Unknowns\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Yang Hui triangle Pascal's triangle Jade Mirror of the Four Unknowns\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Yang%20Hui%20triangle%20Pascal's%",
+    "met failed for \"Yang Hui triangle\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Yang Hui triangle\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Yang%20Hui%20triangle&query[term]",
+    "met failed for \"Yang Hui triangle Pascal's triangle\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Yang Hui triangle Pascal's triangle\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Yang%20Hui%20triangle%20Pascal's%"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "draft_id": "num-0019",
+  "created_at": "2026-10-21T17:07:08.139Z",
+  "queries": [
+    "Carl Friedrich Gauss portrait Gauss 1840 painting",
+    "Carl Friedrich Gauss portrait"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-6886354",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Carl Friedrich Gauss 1840 by Jensen.jpg",
+      "credit": "Christian Albrecht Jensen / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carl_Friedrich_Gauss_1840_by_Jensen.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Carl_Friedrich_Gauss_1840_by_Jensen.jpg/960px-Carl_Friedrich_Gauss_1840_by_Jensen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1639,
+      "height": 2088,
+      "alt_suggestion": "Portrait of Carl Friedrich Gauß (1777-1855)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-57629",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Carl Friedrich Gauss.jpg",
+      "credit": "Gottlieb Biermann / After Christian Albrecht Jensen / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carl_Friedrich_Gauss.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Carl_Friedrich_Gauss.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 917,
+      "height": 1180,
+      "alt_suggestion": "Portrait of the mathematician and philosopher Carl Friedrich Gauss",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-65180571",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Carl Friedrich Gauß, 013.jpg",
+      "credit": "Rudolf Wimmer / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carl_Friedrich_Gau%C3%9F,_013.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Carl_Friedrich_Gau%C3%9F%2C_013.jpg/960px-Carl_Friedrich_Gau%C3%9F%2C_013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1189,
+      "height": 1816,
+      "alt_suggestion": "Carl Friedrich Gauß, Gemälde von Rudolf Wimmer, vor 1916, Deutsches Museum München, Ehrensaal. (Dunnington gibt als Jahr 1925 an, das Jahr der Eröffnung des neuen Ehrensaals im Deutschen Museum, Rudol",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Carl Friedrich Gauss portrait Gauss 1840 painting\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Carl Friedrich Gauss portrait Gauss 1840 painting\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Carl%20Friedrich%20Gauss%20portra",
+    "met failed for \"Carl Friedrich Gauss portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "artic failed for \"Carl Friedrich Gauss portrait\": HTTP 503 for https://api.artic.edu/api/v1/artworks/search?q=Carl%20Friedrich%20Gauss%20portra"
+  ]
+}
