@@ -34,6 +34,8 @@ struct GuardAppsSheet: View {
 
     @State private var target: Target?
     @State private var confirm: PickedApp?
+    /// The app the user just tapped Guard on; a short hint is shown before Apple's list opens.
+    @State private var hint: ReturnApps.PopularApp?
 
     private struct PickedApp: Identifiable {
         let token: ApplicationToken
@@ -58,7 +60,7 @@ struct GuardAppsSheet: View {
                                 Button("Stop guarding", role: .destructive) { guardManager.remove(bundle: app.bundle) }
                                     .buttonStyle(.borderless)
                             } else {
-                                Button("Guard") { target = .app(app) }
+                                Button("Guard") { hint = app }
                                     .buttonStyle(.borderless)
                             }
                         }
@@ -75,13 +77,22 @@ struct GuardAppsSheet: View {
                     Text("Any other app. Detour guards them, but can't take you back to them after a detour.")
                 }
             }
+            .alert("Guard " + (hint?.name ?? "this app"), isPresented: Binding(get: { hint != nil }, set: { if !$0 { hint = nil } })) {
+                Button("Open Apple's list") {
+                    if let app = hint { target = .app(app) }
+                    hint = nil
+                }
+                Button("Cancel", role: .cancel) { hint = nil }
+            } message: {
+                Text("Next, tick " + (hint?.name ?? "the app") + " in Apple's list, then tap Done. Pick just one.")
+            }
             .sheet(item: $confirm) { picked in
                 VStack(spacing: 20) {
                     Text("Is this " + picked.expected + "?").font(.title2.weight(.semibold))
                     Label(picked.token)
                         .labelStyle(.titleAndIcon)
                         .font(.title3)
-                    Text("Detour uses this to take you back to the right app.")
+                    Text("Detour uses this to take you back to the right app. If it isn't right, no harm: tap No and try again.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                     Button("Yes, it's " + picked.expected) {
@@ -107,7 +118,7 @@ struct GuardAppsSheet: View {
         .sheet(item: $target) { which in
             switch which {
             case .app(let app):
-                AppPickerSheet(title: "Pick " + app.name, initial: guardManager.selection) { draft in
+                AppPickerSheet(title: "Tick " + app.name, note: "Tick just " + app.name + ", then tap Done.", initial: guardManager.selection) { draft in
                     let problem = guardManager.commit(draft, as: app.bundle)
                     if problem == nil {
                         target = nil
@@ -116,7 +127,7 @@ struct GuardAppsSheet: View {
                     return problem
                 } onCancel: { target = nil }
             case .other:
-                AppPickerSheet(title: "Other apps", initial: guardManager.selection) { draft in
+                AppPickerSheet(title: "Other apps", note: nil, initial: guardManager.selection) { draft in
                     _ = guardManager.commit(draft, as: nil)
                     target = nil
                     return nil
@@ -129,6 +140,8 @@ struct GuardAppsSheet: View {
 /// Apple's app picker on its own, with Cancel and Done.
 struct AppPickerSheet: View {
     let title: String
+    /// A one-line reminder kept above the list while the user scrolls.
+    let note: String?
     let initial: FamilyActivitySelection
     /// Returns a message to show when the pick can't be used.
     var onDone: (FamilyActivitySelection) -> String?
@@ -139,6 +152,16 @@ struct AppPickerSheet: View {
     var body: some View {
         NavigationStack {
             FamilyActivityPicker(selection: $draft)
+                .safeAreaInset(edge: .top) {
+                    if let note {
+                        Text(note)
+                            .font(.footnote)
+                            .foregroundStyle(.secondary)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 8)
+                            .background(.bar)
+                    }
+                }
                 .navigationTitle(title)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
