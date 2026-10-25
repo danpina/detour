@@ -20,6 +20,8 @@ const LETTER = /[\p{L}\p{M}]/u;
 
 type Word = { word: string; en: string; level: 1 | 2 | 3; cat: string; ex: string; exEn: string; key: string };
 
+/** How many words each language has at each level, so the apps can show "of N" without loading the lists. */
+const levelCounts: Record<string, Record<number, number>> = {};
 let failed = false;
 const problem = (msg: string) => {
   failed = true;
@@ -64,8 +66,13 @@ for (const lang of LANGUAGES) {
   }
   const counts = [1, 2, 3].map((l) => words.filter((w) => w.level === l).length);
   console.log(`${lang.name}: ${words.length} words (beginner ${counts[0]}, medium ${counts[1]}, advanced ${counts[2]})`);
-  if (!failed) writeFileSync(resolve(import.meta.dirname, `../../../content/games/${lang.file}.json`), JSON.stringify({ language: lang.name, words }, null, 1) + "\n");
+  levelCounts[lang.code] = Object.fromEntries([1, 2, 3].map((l) => [l, words.filter((w) => w.level === l).length]));
+  // One word per line: small files, and a readable diff.
+  const body = words.map((w) => "  " + JSON.stringify(w)).join(",\n");
+  if (!failed) writeFileSync(resolve(import.meta.dirname, `../../../content/games/${lang.file}.json`), `{"language":"${lang.name}","words":[\n${body}\n]}\n`);
 }
+
+if (!failed) writeFileSync(resolve(import.meta.dirname, "../../../content/games/language-counts.json"), JSON.stringify(levelCounts) + "\n");
 
 if (failed) {
   console.error("Nothing written: fix the lines above.");

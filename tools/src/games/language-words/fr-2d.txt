@@ -1,0 +1,54 @@
+# French, medium: more everyday words
+le tiroir | drawer | home | Le tiroir est plein de papiers. | The drawer is full of papers.
+la brosse | brush | home | J'utilise une nouvelle brosse à dents. | I use a new toothbrush.
+le savon | soap | home | Lave-toi les mains avec du savon. | Wash your hands with soap.
+la serviette | towel | home | La serviette est mouillée. | The towel is wet.
+le peigne | comb | home | Je cherche le peigne dans la salle de bains. | I look for the comb in the bathroom.
+la poêle | frying pan | food | La poêle est très chaude. | The frying pan is very hot.
+le four | oven | food | Le poulet est dans le four. | The chicken is in the oven.
+l'ail | garlic | food | L'ail sent fort. | Garlic smells strong.
+le beurre | butter | food | Mets un peu de beurre sur le pain. | Put a little butter on the bread.
+l'huile | oil | food | Ajoute de l'huile d'olive à la salade. | Add olive oil to the salad.
+le dessert | dessert | food | Comme dessert, je veux un fruit. | For dessert I want a piece of fruit.
+le goûter | afternoon snack | food | Le goûter est à cinq heures. | The snack is at five.
+le menu | menu | food | Le menu du jour coûte dix euros. | The set menu costs ten euros.
+la salade | salad | food | Je veux une salade avec des tomates. | I want a salad with tomatoes.
+le serveur | waiter | people | Le serveur apporte l'addition. | The waiter brings the bill.
+le cuisinier | cook | people | Le cuisinier prépare la soupe. | The cook prepares the soup.
+le facteur | postman | people | Le facteur arrive le matin. | The postman arrives in the morning.
+le pompier | firefighter | people | Le pompier a sauvé le chat. | The firefighter saved the cat.
+le policier | police officer | people | Le policier dirige la circulation. | The police officer directs the traffic.
+le dentiste | dentist | people | Le dentiste regarde mes dents. | The dentist looks at my teeth.
+l'ingénieur | engineer | people | Mon père est ingénieur. | My father is an engineer.
+l'avocat | lawyer | people | L'avocat lit le contrat. | The lawyer reads the contract.
+le parapluie | umbrella | clothes | Prends un parapluie, il va pleuvoir. | Take an umbrella, it is going to rain.
+le sac à main | handbag | clothes | Le sac à main est en cuir. | The handbag is made of leather.
+la ceinture | belt | clothes | La ceinture est trop longue. | The belt is too long.
+l'écharpe | scarf | clothes | Mets ton écharpe, il fait froid. | Put on your scarf, it is cold.
+la montre | watch | clothes | Ma montre avance. | My watch is fast.
+la bague | ring | clothes | La bague est en or. | The ring is made of gold.
+le manteau | coat | clothes | Mets ton manteau, il fait froid. | Put on your coat, it is cold.
+le pull | jumper | clothes | Ce pull est très chaud. | This jumper is very warm.
+le pantalon | trousers | clothes | Le pantalon est trop long. | The trousers are too long.
+la boulangerie | bakery | city | La boulangerie ouvre à sept heures. | The bakery opens at seven.
+la poste | post office | city | La poste ferme à midi. | The post office closes at noon.
+le supermarché | supermarket | city | Le supermarché est loin d'ici. | The supermarket is far from here.
+la gare routière | coach station | city | La gare routière est près du pont. | The coach station is near the bridge.
+l'arrêt de bus | bus stop | city | L'arrêt de bus est au coin. | The bus stop is on the corner.
+le métro | underground | city | Je prends le métro chaque matin. | I take the underground every morning.
+le conducteur | driver | city | Le conducteur freine doucement. | The driver brakes gently.
+la route | road | city | La route est fermée. | The road is closed.
+l'autoroute | motorway | city | L'autoroute est très chargée. | The motorway is very busy.
+le carrefour | crossroads | city | Tourne à droite au carrefour. | Turn right at the crossroads.
+l'embouteillage | traffic jam | city | Nous sommes coincés dans un embouteillage. | We are stuck in a traffic jam.
+l'ascenseur | lift | city | L'ascenseur est en panne. | The lift is out of order.
+le rendez-vous d'affaires | business meeting | work | Le rendez-vous d'affaires est à dix heures. | The business meeting is at ten.
+le client | customer | work | Le client attend à l'accueil. | The customer is waiting at reception.
+la facture | invoice | work | Je dois payer la facture. | I have to pay the invoice.
+le budget | budget | work | Le budget est très serré. | The budget is very tight.
+le projet | project | work | Le projet commence en mars. | The project starts in March.
+la réunion | meeting | work | La réunion dure une heure. | The meeting lasts an hour.
+le travail d'équipe | teamwork | work | Le travail d'équipe est essentiel. | Teamwork is essential.
+la formation | training | work | La formation dure deux semaines. | The training lasts two weeks.
+le stage | internship | work | Elle fait un stage dans une banque. | She is doing an internship at a bank.
+le chômage | unemployment | work | Le chômage baisse un peu. | Unemployment is falling a little.

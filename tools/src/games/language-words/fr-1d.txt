@@ -1,0 +1,98 @@
+# French, beginner: verbs, adjectives, question words and small words
+être | to be | verbs | Je veux être médecin. | I want to be a doctor.
+avoir | to have | verbs | Je veux avoir un chien. | I want to have a dog.
+faire | to do, to make | verbs | Je vais faire le dîner. | I am going to make dinner.
+aller | to go | verbs | Je veux aller à la plage. | I want to go to the beach.
+venir | to come | verbs | Tu peux venir demain ? | Can you come tomorrow?
+voir | to see | verbs | Je veux voir ce film. | I want to see that film.
+entendre | to hear | verbs | Je ne peux pas entendre la musique. | I can't hear the music.
+dire | to say, to tell | verbs | Je vais dire la vérité. | I am going to tell the truth.
+donner | to give | verbs | Je vais donner un cadeau à ma mère. | I am going to give my mother a present.
+vouloir | to want | verbs | Il faut vouloir pour réussir. | You have to want it to succeed.
+pouvoir | to be able to | verbs | Je veux pouvoir lui parler. | I want to be able to talk to her.
+savoir | to know (a fact) | verbs | Je veux savoir la réponse. | I want to know the answer.
+connaître | to know (a person) | verbs | Je veux connaître ta sœur. | I want to meet your sister.
+arriver | to arrive | verbs | Nous allons arriver en retard. | We are going to arrive late.
+sortir | to go out | verbs | Je veux sortir avec mes amis. | I want to go out with my friends.
+entrer | to enter | verbs | Tu peux entrer, la porte est ouverte. | You can come in, the door is open.
+rentrer | to go home | verbs | Je vais rentrer à la maison. | I am going to go back home.
+appeler | to call | verbs | Je vais appeler ma mère. | I am going to call my mother.
+regarder | to look at | verbs | J'aime regarder les étoiles. | I like to look at the stars.
+écouter | to listen | verbs | J'aime écouter de la musique. | I like to listen to music.
+travailler | to work | verbs | Je dois travailler demain. | I have to work tomorrow.
+étudier | to study | verbs | Je dois étudier pour l'examen. | I need to study for the exam.
+jouer | to play | verbs | Les enfants veulent jouer dans le parc. | The children want to play in the park.
+danser | to dance | verbs | J'adore danser avec elle. | I love to dance with her.
+cuisiner | to cook | verbs | Je vais cuisiner des pâtes. | I am going to cook pasta.
+laver | to wash | verbs | Je dois laver les assiettes. | I have to wash the dishes.
+utiliser | to use | verbs | Tu peux utiliser mon téléphone. | You can use my phone.
+avoir besoin de | to need | verbs | Je vais avoir besoin de toi. | I am going to need you.
+aimer | to like, to love | verbs | Je vais aimer ce livre. | I am going to like this book.
+vendre | to sell | verbs | Ils vont vendre la maison. | They are going to sell the house.
+payer | to pay | verbs | Je vais payer l'addition. | I am going to pay the bill.
+fermer | to close | verbs | Je vais fermer la fenêtre. | I am going to close the window.
+commencer | to begin | verbs | La classe va commencer. | The class is about to begin.
+finir | to finish | verbs | Je vais finir le travail aujourd'hui. | I am going to finish the work today.
+gagner | to win | verbs | Nous voulons gagner le match. | We want to win the match.
+perdre | to lose | verbs | Je ne veux pas perdre mes clés. | I don't want to lose my keys.
+monter | to go up | verbs | Nous allons monter la montagne. | We are going to climb the mountain.
+descendre | to go down | verbs | Je vais descendre par l'escalier. | I am going to go down the stairs.
+nager | to swim | verbs | J'aime nager dans la mer. | I like to swim in the sea.
+voler | to fly | verbs | Les oiseaux peuvent voler. | Birds can fly.
+rire | to laugh | verbs | J'aime rire avec mes amis. | I like to laugh with my friends.
+pleurer | to cry | verbs | Ce film me fait pleurer. | This film makes me cry.
+porter | to carry, to wear | verbs | Je vais porter un manteau. | I am going to wear a coat.
+apporter | to bring | verbs | Je vais apporter le dessert. | I am going to bring the dessert.
+mettre | to put | verbs | Je vais mettre la table. | I am going to set the table.
+voyager | to travel | verbs | J'aime voyager en train. | I like to travel by train.
+acheter | to buy | verbs | Je veux acheter du pain. | I want to buy bread.
+bon | good | adjectives | Le pain est très bon. | The bread is very good.
+mauvais | bad | adjectives | Le temps est mauvais aujourd'hui. | The weather is bad today.
+haut | tall, high | adjectives | Le mur est très haut. | The wall is very high.
+bas | low | adjectives | Le plafond est bas. | The ceiling is low.
+jeune | young | adjectives | Ma tante est très jeune. | My aunt is very young.
+riche | rich | adjectives | Cet homme est très riche. | That man is very rich.
+pauvre | poor | adjectives | Le pauvre chat a faim. | The poor cat is hungry.
+propre | clean | adjectives | La salle de bains est propre. | The bathroom is clean.
+sale | dirty | adjectives | Le sol est sale. | The floor is dirty.
+fort | strong | adjectives | Le vent est très fort. | The wind is very strong.
+léger | light | adjectives | Le paquet est très léger. | The package is very light.
+lourd | heavy | adjectives | Le paquet est très lourd. | The package is very heavy.
+plein | full | adjectives | Le verre est plein. | The glass is full.
+vide | empty | adjectives | Le frigo est vide. | The fridge is empty.
+ouvert | open | adjectives | Le marché est ouvert. | The market is open.
+fermé | closed | adjectives | Le magasin est fermé. | The shop is closed.
+doux | soft, gentle | adjectives | Ce pull est très doux. | This jumper is very soft.
+salé | salty | adjectives | Le poisson est très salé. | The fish is very salty.
+dur | hard | adjectives | Le pain est dur. | The bread is hard.
+triste | sad | adjectives | Aujourd'hui, je suis un peu triste. | Today I am a bit sad.
+malade | ill | adjectives | Mon fils est malade. | My son is ill.
+sympathique | friendly | adjectives | Ton ami est très sympathique. | Your friend is very friendly.
+intelligent | clever | adjectives | Mon frère est très intelligent. | My brother is very clever.
+calme | calm | adjectives | Le lac est très calme. | The lake is very calm.
+sombre | dark | adjectives | La chambre est sombre. | The room is dark.
+que | what | words | Que veux-tu manger ? | What do you want to eat?
+qui | who | words | Qui est ce garçon ? | Who is that boy?
+où | where | words | Où habites-tu ? | Where do you live?
+quand | when | words | Quand arrive le train ? | When does the train arrive?
+comment | how | words | Comment t'appelles-tu ? | What is your name?
+pourquoi | why | words | Pourquoi es-tu triste ? | Why are you sad?
+combien | how much | words | Combien coûte le pain ? | How much does the bread cost?
+très | very | words | La soupe est très chaude. | The soup is very hot.
+plus | more | words | Je veux plus d'eau. | I want more water.
+moins | less | words | Aujourd'hui, il y a moins de monde. | Today there are fewer people.
+beaucoup | a lot | words | J'aime beaucoup le chocolat. | I like chocolate a lot.
+peu | a little | words | Je veux un peu de sel. | I want a little salt.
+tout | all, everything | words | Tout est prêt. | Everything is ready.
+rien | nothing | words | Je n'ai rien dans la main. | I have nothing in my hand.
+quelque chose | something | words | Je veux manger quelque chose. | I want to eat something.
+ici | here | words | Ma maison est ici. | My house is here.
+là-bas | over there | words | Ta voiture est là-bas. | Your car is over there.
+bien | well | words | Ma mère cuisine très bien. | My mother cooks very well.
+mal | badly | words | Aujourd'hui, je dors mal. | Today I sleep badly.
+aussi | also | words | Moi aussi, je veux un café. | I want a coffee too.
+mais | but | words | Je veux y aller, mais je suis fatigué. | I want to go, but I am tired.
+avec | with | words | Je vais au cinéma avec mon frère. | I am going to the cinema with my brother.
+sans | without | words | Je préfère le café sans sucre. | I prefer coffee without sugar.
+pour | for | words | Ce cadeau est pour toi. | This present is for you.
+sucré | sweet | adjectives | Ce gâteau est trop sucré. | This cake is too sweet.

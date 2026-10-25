@@ -1,0 +1,63 @@
+# French, medium: health, travel, work, technology, city, shopping
+la santé | health | health | La santé est le plus important. | Health is the most important thing.
+le médicament | medicine | health | Je prends le médicament deux fois par jour. | I take the medicine twice a day.
+la douleur | pain | health | J'ai une douleur dans le dos. | I have a pain in my back.
+la fièvre | fever | health | L'enfant a de la fièvre. | The child has a fever.
+le rhume | cold (illness) | health | J'ai un gros rhume. | I have a bad cold.
+la pharmacie | pharmacy | health | La pharmacie ferme à dix heures. | The pharmacy closes at ten.
+le rendez-vous | appointment | health | J'ai un rendez-vous chez le dentiste. | I have an appointment at the dentist's.
+l'ordonnance | prescription | health | Le médecin me donne une ordonnance. | The doctor gives me a prescription.
+la blessure | wound | health | La blessure ne saigne plus. | The wound no longer bleeds.
+se reposer | to rest | verbs | Il est important de se reposer. | It is important to rest.
+s'améliorer | to improve | verbs | Il est possible de s'améliorer vite. | It is possible to improve quickly.
+le passager | passenger | travel | Le passager attend à la porte. | The passenger waits at the gate.
+le vol | flight | travel | Le vol part à sept heures. | The flight leaves at seven.
+la réservation | reservation | travel | J'ai une réservation pour deux. | I have a reservation for two.
+la chambre | room | travel | La chambre a vue sur la mer. | The room has a sea view.
+la carte | map, card | travel | Je cherche la rue sur la carte. | I look for the street on the map.
+la sortie | exit | travel | La sortie est à droite. | The exit is on the right.
+le billet | ticket | travel | Le billet coûte dix euros. | The ticket costs ten euros.
+le touriste | tourist | travel | Le touriste prend beaucoup de photos. | The tourist takes many photos.
+la frontière | border | travel | La frontière ouvre le matin. | The border opens in the morning.
+le retard | delay | travel | Le train a dix minutes de retard. | The train is ten minutes late.
+louer | to rent | verbs | Nous voulons louer une voiture. | We want to rent a car.
+réserver | to book | verbs | Je vais réserver une table. | I am going to book a table.
+se perdre | to get lost | verbs | Il est facile de se perdre dans cette ville. | It is easy to get lost in this city.
+l'entreprise | company | work | Ma sœur travaille dans une grande entreprise. | My sister works in a big company.
+le patron | boss | work | Le patron arrive tôt. | The boss arrives early.
+le collègue | colleague | work | Mon collègue m'aide beaucoup. | My colleague helps me a lot.
+le salaire | salary | work | Le salaire augmente chaque année. | The salary goes up every year.
+l'entretien | interview | work | Demain, j'ai un entretien. | Tomorrow I have an interview.
+le contrat | contract | work | Je signe le contrat aujourd'hui. | I sign the contract today.
+les vacances | holiday | work | Les vacances commencent lundi. | The holidays start on Monday.
+la tâche | task | work | La tâche est très longue. | The task is very long.
+le courriel | email | tech | J'écris un courriel à mon patron. | I write an email to my boss.
+le mot de passe | password | tech | J'ai oublié le mot de passe. | I forgot the password.
+l'écran | screen | tech | L'écran est cassé. | The screen is broken.
+le fichier | file | tech | J'enregistre le fichier sur l'ordinateur. | I save the file on the computer.
+le réseau | network | tech | Il n'y a pas de réseau en montagne. | There is no network in the mountains.
+télécharger | to download | verbs | Je vais télécharger l'application. | I am going to download the app.
+envoyer | to send | verbs | Je vais envoyer le message. | I am going to send the message.
+le message | message | tech | Je reçois un message de ma mère. | I receive a message from my mother.
+recharger | to charge | verbs | Je dois recharger mon téléphone. | I have to charge my phone.
+la batterie | battery | tech | La batterie se vide vite. | The battery runs out quickly.
+l'immeuble | building | city | L'immeuble a dix étages. | The building has ten floors.
+la place | square | city | La place est pleine de monde. | The square is full of people.
+le pont | bridge | city | Le pont traverse la rivière. | The bridge crosses the river.
+le coin | corner | city | On se retrouve au coin de la rue. | We meet at the corner.
+le feu rouge | traffic light | city | Le feu rouge est au bout de la rue. | The traffic light is at the end of the street.
+la mairie | town hall | city | La mairie est sur la place. | The town hall is on the square.
+le quartier | neighbourhood | city | Mon quartier est très calme. | My neighbourhood is very quiet.
+le centre | centre | city | J'habite près du centre. | I live near the centre.
+le trottoir | pavement | city | Je marche sur le trottoir. | I walk on the pavement.
+la circulation | traffic | city | Il y a beaucoup de circulation l'après-midi. | There is a lot of traffic in the afternoon.
+les vêtements | clothes | clothes | Je lave les vêtements le dimanche. | I wash the clothes on Sundays.
+la taille | size | clothes | Quelle taille fais-tu ? | What size are you?
+essayer | to try on, to try | verbs | J'aime essayer des vêtements neufs. | I like to try on new clothes.
+le prix | price | money | Le prix est très élevé. | The price is very high.
+les soldes | sales | money | Il y a des soldes en janvier. | There are sales in January.
+la monnaie | change | money | Voici votre monnaie. | Here is your change.
+l'addition | bill | money | L'addition, s'il vous plaît. | The bill, please.
+le pourboire | tip | money | Je laisse un petit pourboire. | I leave a small tip.
+le reçu | receipt | money | Garde le reçu, s'il te plaît. | Keep the receipt, please.
+dépenser | to spend | verbs | Je ne veux pas dépenser beaucoup. | I don't want to spend much.

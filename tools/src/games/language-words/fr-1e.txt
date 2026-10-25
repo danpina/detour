@@ -1,0 +1,38 @@
+# French, beginner: places, clothes, school, everyday things
+le magasin | shop | places | Le magasin ouvre à neuf heures. | The shop opens at nine.
+la banque | bank | places | La banque est près du parc. | The bank is near the park.
+le parc | park | places | Les enfants jouent dans le parc. | The children play in the park.
+le cinéma | cinema | places | Nous allons au cinéma samedi. | We are going to the cinema on Saturday.
+le restaurant | restaurant | places | Le restaurant est plein. | The restaurant is full.
+le bureau | office, desk | places | Mon bureau est au centre-ville. | My office is downtown.
+l'hôpital | hospital | places | L'hôpital est à côté de l'école. | The hospital is next to the school.
+l'église | church | places | L'église est très ancienne. | The church is very old.
+le pays | country | places | Mon pays a beaucoup de montagnes. | My country has many mountains.
+la jupe | skirt | clothes | La jupe est très courte. | The skirt is very short.
+la robe | dress | clothes | La robe est rouge. | The dress is red.
+la veste | jacket | clothes | La veste est sur la chaise. | The jacket is on the chair.
+les chaussettes | socks | clothes | Les chaussettes sont dans le tiroir. | The socks are in the drawer.
+les lunettes | glasses | clothes | Je ne trouve pas mes lunettes. | I can't find my glasses.
+la chemise | shirt | clothes | Ma chemise est bleue. | My shirt is blue.
+les chaussures | shoes | clothes | J'ai besoin de nouvelles chaussures. | I need new shoes.
+le chapeau | hat | clothes | Le chapeau est très grand. | The hat is very big.
+le sac à dos | backpack | school | Le sac à dos est très lourd. | The backpack is very heavy.
+le crayon | pencil | school | J'ai besoin d'un crayon pour dessiner. | I need a pencil to draw.
+le papier | paper | school | Donne-moi une feuille de papier. | Give me a sheet of paper.
+la classe | class | school | La classe commence à neuf heures. | The class starts at nine.
+la leçon | lesson | school | La leçon d'aujourd'hui est facile. | Today's lesson is easy.
+le nom | name | words | Mon nom est Anne. | My name is Anne.
+le mot | word | words | Ce mot est nouveau pour moi. | This word is new to me.
+la langue | language | words | Le français est une belle langue. | French is a beautiful language.
+la musique | music | words | La musique est très forte. | The music is very loud.
+le film | film | words | Le film dure deux heures. | The film lasts two hours.
+la photo | photo | words | Cette photo est de ma famille. | This photo is of my family.
+le cadeau | present | words | Le cadeau est dans la boîte. | The present is in the box.
+la fête | party | words | La fête est vendredi. | The party is on Friday.
+le jeu | game | words | Ce jeu est très amusant. | This game is a lot of fun.
+la faim | hunger | feelings | J'ai faim et je veux manger. | I am hungry and want to eat.
+la soif | thirst | feelings | J'ai soif, je veux de l'eau. | I am thirsty, I want water.
+le sommeil | sleep | feelings | J'ai sommeil après le repas. | I am sleepy after the meal.
+la peur | fear | feelings | L'enfant a peur du noir. | The child is afraid of the dark.
+l'aide | help | words | J'ai besoin d'aide pour mes devoirs. | I need help with my homework.
+heureux | happy | adjectives | Je suis très heureux aujourd'hui. | I am very happy today.

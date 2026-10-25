@@ -1,0 +1,62 @@
+# German, beginner: people, body, food and drink
+der Mann | man | people | Der Mann liest die Zeitung. | The man reads the newspaper.
+die Frau | woman | people | Die Frau arbeitet in einer Bank. | The woman works in a bank.
+der Junge | boy | people | Der Junge spielt mit einem Ball. | The boy plays with a ball.
+das Mädchen | girl | people | Das Mädchen malt ein Haus. | The girl draws a house.
+das Baby | baby | people | Das Baby schläft im Bett. | The baby sleeps in the bed.
+die Leute | people | people | Die Leute warten auf den Bus. | The people wait for the bus.
+die Person | person | people | Sie ist eine sehr nette Person. | She is a very nice person.
+der Großvater | grandfather | people | Mein Großvater erzählt Geschichten. | My grandfather tells stories.
+der Onkel | uncle | people | Mein Onkel wohnt in Wien. | My uncle lives in Vienna.
+die Tante | aunt | people | Meine Tante kocht sehr gut. | My aunt cooks very well.
+der Cousin | cousin | people | Mein Cousin hat einen Hund. | My cousin has a dog.
+der Sohn | son | people | Ihr Sohn studiert Medizin. | Her son studies medicine.
+die Tochter | daughter | people | Seine Tochter spielt Klavier. | His daughter plays the piano.
+der Ehemann | husband | people | Mein Ehemann kommt um sechs. | My husband arrives at six.
+die Ehefrau | wife | people | Seine Ehefrau ist Lehrerin. | His wife is a teacher.
+der Lehrer | teacher | people | Der Lehrer erklärt die Lektion. | The teacher explains the lesson.
+der Schüler | pupil | people | Der Schüler macht seine Hausaufgaben. | The pupil does his homework.
+der Körper | body | body | Der Körper braucht Wasser. | The body needs water.
+die Hand | hand | body | Wasch dir die Hand vor dem Essen. | Wash your hand before eating.
+der Kopf | head | body | Mir tut der Kopf weh. | My head hurts.
+das Auge | eye | body | Ich habe ein Auge zu. | I have one eye closed.
+der Fuß | foot | body | Mir tut der rechte Fuß weh. | My right foot hurts.
+der Mund | mouth | body | Mach bitte den Mund auf. | Open your mouth, please.
+die Nase | nose | body | Meine Nase ist rot vor Kälte. | My nose is red from the cold.
+das Ohr | ear | body | Mir tut das Ohr weh. | My ear hurts.
+der Arm | arm | body | Heb den rechten Arm. | Raise your right arm.
+das Bein | leg | body | Mir tut das linke Bein weh. | My left leg hurts.
+der Finger | finger | body | Ich habe einen gebrochenen Finger. | I have a broken finger.
+die Haare | hair | body | Sie hat lange Haare. | She has long hair.
+das Gesicht | face | body | Wasch dir das Gesicht mit kaltem Wasser. | Wash your face with cold water.
+der Zahn | tooth | body | Mir tut ein Zahn weh. | One of my teeth hurts.
+das Fleisch | meat | food | Freitags esse ich kein Fleisch. | I don't eat meat on Fridays.
+das Obst | fruit | food | Das Obst ist sehr frisch. | The fruit is very fresh.
+das Gemüse | vegetables | food | Iss mehr Gemüse, bitte. | Eat more vegetables, please.
+die Tomate | tomato | food | Die Tomate ist reif. | The tomato is ripe.
+die Kartoffel | potato | food | Die Kartoffel ist heiß. | The potato is hot.
+die Zwiebel | onion | food | Die Zwiebel bringt mich zum Weinen. | The onion makes me cry.
+die Karotte | carrot | food | Das Kaninchen frisst eine Karotte. | The rabbit eats a carrot.
+die Banane | banana | food | Ich esse jeden Morgen eine Banane. | I eat a banana every morning.
+die Erdbeere | strawberry | food | Die Erdbeere ist meine Lieblingsfrucht. | The strawberry is my favourite fruit.
+die Traube | grape | food | Jede Traube ist süß. | Every grape is sweet.
+die Zitrone | lemon | food | Gib ein bisschen Zitrone dazu. | Add a little lemon.
+der Kuchen | cake | food | Der Kuchen ist für deinen Geburtstag. | The cake is for your birthday.
+der Keks | biscuit | food | Ich möchte einen Keks mit Milch. | I want a biscuit with milk.
+die Schokolade | chocolate | food | Die heiße Schokolade schmeckt gut. | The hot chocolate tastes good.
+das Eis | ice cream | food | Das Eis ist sehr lecker. | The ice cream is very tasty.
+das Salz | salt | food | Gibst du mir bitte das Salz? | Can you pass me the salt, please?
+die Nudeln | pasta | food | Heute essen wir Nudeln. | Today we eat pasta.
+das Mittagessen | lunch | food | Das Mittagessen ist um zwölf. | Lunch is at twelve.
+der Saft | juice | drinks | Der Saft ist frisch gepresst. | The juice is freshly squeezed.
+der Tee | tea | drinks | Ich trinke den Tee ohne Zucker. | I drink my tea without sugar.
+das Bier | beer | drinks | Ein kaltes Bier, bitte. | A cold beer, please.
+der Wein | wine | drinks | Der Wein kommt aus Deutschland. | The wine comes from Germany.
+die Flasche | bottle | drinks | Ich kaufe eine Flasche Wasser. | I buy a bottle of water.
+das Glas | glass | drinks | Gib mir ein Glas Milch. | Give me a glass of milk.
+die Tasse | cup | drinks | Ich möchte eine Tasse Kaffee. | I would like a cup of coffee.
+der Teller | plate | food | Der Teller ist sauber. | The plate is clean.
+der Löffel | spoon | food | Ich brauche einen Löffel für die Suppe. | I need a spoon for the soup.
+die Gabel | fork | food | Die Gabel liegt auf dem Tisch. | The fork is on the table.
+das Messer | knife | food | Das Messer schneidet gut. | The knife cuts well.
+der Kaffee | coffee | drinks | Am Morgen trinke ich gern Kaffee. | I like drinking coffee in the morning.

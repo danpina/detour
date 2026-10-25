@@ -1,0 +1,63 @@
+# German, medium: health, travel, work, technology, city, shopping
+die Gesundheit | health | health | Die Gesundheit ist das Wichtigste. | Health is the most important thing.
+das Medikament | medicine | health | Ich nehme das Medikament zweimal täglich. | I take the medicine twice a day.
+der Schmerz | pain | health | Ich habe einen Schmerz im Rücken. | I have a pain in my back.
+das Fieber | fever | health | Das Kind hat Fieber. | The child has a fever.
+die Erkältung | cold (illness) | health | Ich habe eine starke Erkältung. | I have a bad cold.
+die Apotheke | pharmacy | health | Die Apotheke schließt um zehn Uhr. | The pharmacy closes at ten.
+der Termin | appointment | health | Ich habe einen Termin beim Zahnarzt. | I have an appointment at the dentist's.
+das Rezept | prescription, recipe | health | Der Arzt gibt mir ein Rezept. | The doctor gives me a prescription.
+die Wunde | wound | health | Die Wunde blutet nicht mehr. | The wound no longer bleeds.
+sich ausruhen | to rest | verbs | Ich möchte mich ausruhen. | I would like to rest. | ausruhen
+sich verbessern | to improve | verbs | Ich möchte mich schnell verbessern. | I want to improve quickly. | verbessern
+der Passagier | passenger | travel | Der Passagier wartet am Ausgang. | The passenger waits at the gate.
+der Flug | flight | travel | Der Flug geht um sieben Uhr. | The flight leaves at seven.
+die Reservierung | reservation | travel | Ich habe eine Reservierung für zwei. | I have a reservation for two.
+das Zimmer | room | travel | Das Zimmer hat Meerblick. | The room has a sea view.
+die Karte | map, card | travel | Ich suche die Straße auf der Karte. | I look for the street on the map.
+der Ausgang | exit | travel | Der Ausgang ist rechts. | The exit is on the right.
+die Fahrkarte | ticket | travel | Die Fahrkarte kostet zehn Euro. | The ticket costs ten euros.
+der Tourist | tourist | travel | Der Tourist macht viele Fotos. | The tourist takes many photos.
+die Grenze | border | travel | Die Grenze öffnet am Morgen. | The border opens in the morning.
+die Verspätung | delay | travel | Der Zug hat zehn Minuten Verspätung. | The train is ten minutes late.
+mieten | to rent | verbs | Wir wollen ein Auto mieten. | We want to rent a car.
+buchen | to book | verbs | Ich werde einen Tisch buchen. | I am going to book a table.
+sich verlaufen | to get lost | verbs | Man kann sich in dieser Stadt leicht verlaufen. | It is easy to get lost in this city. | verlaufen
+die Firma | company | work | Meine Schwester arbeitet in einer großen Firma. | My sister works in a big company.
+der Chef | boss | work | Der Chef kommt früh. | The boss arrives early.
+der Kollege | colleague | work | Mein Kollege hilft mir sehr. | My colleague helps me a lot.
+das Gehalt | salary | work | Das Gehalt steigt jedes Jahr. | The salary goes up every year.
+das Vorstellungsgespräch | job interview | work | Morgen habe ich ein Vorstellungsgespräch. | Tomorrow I have a job interview.
+der Vertrag | contract | work | Ich unterschreibe den Vertrag heute. | I sign the contract today.
+der Urlaub | holiday | work | Der Urlaub beginnt am Montag. | The holiday starts on Monday.
+die Aufgabe | task | work | Die Aufgabe ist sehr lang. | The task is very long.
+die E-Mail | email | tech | Ich schreibe meinem Chef eine E-Mail. | I write an email to my boss.
+das Passwort | password | tech | Ich habe das Passwort vergessen. | I forgot the password.
+der Bildschirm | screen | tech | Der Bildschirm ist kaputt. | The screen is broken.
+die Datei | file | tech | Ich speichere die Datei auf dem Computer. | I save the file on the computer.
+das Netz | network | tech | In den Bergen gibt es kein Netz. | There is no network in the mountains.
+herunterladen | to download | verbs | Ich werde die App herunterladen. | I am going to download the app.
+schicken | to send | verbs | Ich werde die Nachricht schicken. | I am going to send the message.
+die Nachricht | message | tech | Ich bekomme eine Nachricht von meiner Mutter. | I receive a message from my mother.
+aufladen | to charge | verbs | Ich muss mein Handy aufladen. | I have to charge my phone.
+der Akku | battery | tech | Der Akku ist schnell leer. | The battery runs out quickly.
+das Gebäude | building | city | Das Gebäude hat zehn Stockwerke. | The building has ten floors.
+der Platz | square | city | Der Platz ist voller Menschen. | The square is full of people.
+die Brücke | bridge | city | Die Brücke führt über den Fluss. | The bridge crosses the river.
+die Ecke | corner | city | Wir treffen uns an der Ecke. | We meet at the corner.
+die Ampel | traffic light | city | Die Ampel ist rot. | The traffic light is red.
+das Rathaus | town hall | city | Das Rathaus steht am Marktplatz. | The town hall is on the market square.
+das Viertel | neighbourhood | city | Mein Viertel ist sehr ruhig. | My neighbourhood is very quiet.
+das Zentrum | centre | city | Ich wohne in der Nähe vom Zentrum. | I live near the centre.
+der Gehweg | pavement | city | Ich gehe auf dem Gehweg. | I walk on the pavement.
+der Verkehr | traffic | city | Nachmittags gibt es viel Verkehr. | There is a lot of traffic in the afternoon.
+die Kleidung | clothes | clothes | Ich wasche die Kleidung am Sonntag. | I wash the clothes on Sundays.
+die Größe | size | clothes | Welche Größe hast du? | What size are you?
+anprobieren | to try on | verbs | Ich möchte die Jacke anprobieren. | I would like to try on the jacket.
+der Preis | price | money | Der Preis ist sehr hoch. | The price is very high.
+der Ausverkauf | sale | money | Im Januar gibt es einen Ausverkauf. | There is a sale in January.
+das Wechselgeld | change | money | Hier ist Ihr Wechselgeld. | Here is your change.
+die Rechnung | bill | money | Die Rechnung, bitte. | The bill, please.
+das Trinkgeld | tip | money | Ich gebe ein kleines Trinkgeld. | I leave a small tip.
+die Quittung | receipt | money | Behalte bitte die Quittung. | Keep the receipt, please.
+ausgeben | to spend | verbs | Ich will nicht viel ausgeben. | I don't want to spend much.

@@ -1,0 +1,90 @@
+# German, advanced: society, economy, law, environment, science, media, abstract ideas
+die Ungleichheit | inequality | society | Die Ungleichheit wächst in vielen Städten. | Inequality is growing in many cities.
+die Staatsbürgerschaft | citizenship | society | Die Staatsbürgerschaft bringt Rechte und Pflichten. | Citizenship brings rights and duties.
+das Recht | right | society | Jeder hat das Recht auf Bildung. | Everyone has the right to education.
+die Pflicht | duty | society | Wählen ist auch eine Pflicht. | Voting is also a duty.
+die Gesellschaft | society | society | Die Gesellschaft verändert sich schnell. | Society changes quickly.
+die Regierung | government | society | Die Regierung hat neue Maßnahmen angekündigt. | The government announced new measures.
+die Wahl | election | society | Die Wahl findet im November statt. | The election takes place in November.
+die Partei | political party | society | Jede Partei hat ihr Programm vorgestellt. | Every party presented its programme.
+das Parlament | parliament | society | Das Parlament hat das Gesetz gestern verabschiedet. | Parliament passed the law yesterday.
+das Gesetz | law | society | Das Gesetz tritt im Januar in Kraft. | The law comes into force in January.
+das Urteil | ruling | society | Der Richter hat das Urteil verkündet. | The judge announced the ruling.
+der Prozess | trial, process | society | Der Prozess beginnt am Montag. | The trial begins on Monday.
+das Verbrechen | crime | society | Das Verbrechen wurde der Polizei gemeldet. | The crime was reported to the police.
+der Zeuge | witness | society | Der Zeuge hat vor Gericht ausgesagt. | The witness testified in court.
+der Beweis | proof | society | Es gibt keinen Beweis gegen ihn. | There is no proof against him.
+der Verdacht | suspicion | society | Der Verdacht fiel auf den Nachbarn. | Suspicion fell on the neighbour.
+der Streik | strike | society | Der Streik legte den Verkehr lahm. | The strike paralysed traffic.
+die Demonstration | demonstration | society | Die Demonstration zog durch das Zentrum. | The demonstration went through the centre.
+die Gewerkschaft | trade union | society | Die Gewerkschaft verhandelte mit der Firma. | The union negotiated with the company.
+die Reform | reform | society | Die Reform spaltet die Politiker. | The reform divides the politicians.
+die Einwanderung | immigration | society | Die Einwanderung hat das Viertel verändert. | Immigration changed the neighbourhood.
+der Flüchtling | refugee | society | Der Flüchtling hat Asyl beantragt. | The refugee applied for asylum.
+die Wirtschaft | economy | economy | Die Wirtschaft ist um zwei Prozent gewachsen. | The economy grew by two per cent.
+die Inflation | inflation | economy | Die Inflation senkt die Kaufkraft. | Inflation reduces purchasing power.
+die Schulden | debt | economy | Die Schulden wachsen jedes Jahr. | The debt grows every year.
+die Steuer | tax | economy | Die Steuer steigt im nächsten Jahr. | The tax goes up next year.
+die Investition | investment | economy | Die Investition in erneuerbare Energie wächst. | Investment in renewable energy is growing.
+der Gewinn | profit | economy | Die Firma hat einen großen Gewinn erzielt. | The company made a large profit.
+der Verlust | loss | economy | Der Verlust ist größer als erwartet. | The loss is bigger than expected.
+die Börse | stock market | economy | Die Börse ist um drei Prozent gefallen. | The stock market fell three per cent.
+der Arbeitsmarkt | labour market | economy | Der Arbeitsmarkt erholt sich. | The labour market is recovering.
+der Wettbewerb | competition | economy | Der Wettbewerb zwingt zu niedrigeren Preisen. | Competition forces prices down.
+der Kredit | loan | economy | Wir zahlen den Kredit jeden Monat ab. | We pay off the loan every month.
+das Erbe | heritage, legacy | economy | Das kulturelle Erbe muss geschützt werden. | Cultural heritage must be protected.
+der Klimawandel | climate change | environment | Der Klimawandel betrifft alle. | Climate change affects everyone.
+die Erwärmung | warming | environment | Die Erwärmung des Planeten ist offensichtlich. | The warming of the planet is obvious.
+die Dürre | drought | environment | Die Dürre hat die Ernte ruiniert. | The drought ruined the harvest.
+die Überschwemmung | flood | environment | Die Überschwemmung setzte viele Häuser unter Wasser. | The flood put many houses under water.
+der Brand | blaze | environment | Der Brand zerstörte den Wald. | The blaze destroyed the forest.
+die Verschmutzung | pollution | environment | Die Verschmutzung der Luft ist besorgniserregend. | Air pollution is worrying.
+die Artenvielfalt | biodiversity | environment | Die Artenvielfalt ist in Gefahr. | Biodiversity is in danger.
+die Art | species, kind | environment | Diese Art ist vom Aussterben bedroht. | This species is threatened with extinction.
+das Recycling | recycling | environment | Das Recycling verringert den Abfall. | Recycling reduces waste.
+der Abfall | waste | environment | Der Abfall wird zu Hause getrennt. | Waste is separated at home.
+die erneuerbare Energie | renewable energy | environment | Die erneuerbare Energie ist die Zukunft. | Renewable energy is the future.
+der Treibstoff | fuel | environment | Der Treibstoff wird teurer. | Fuel is getting more expensive.
+nachhaltig | sustainable | environment | Wir wollen nachhaltig leben. | We want to live sustainably.
+die Entdeckung | discovery | science | Die Entdeckung war ein Zufall. | The discovery was a coincidence.
+die Hypothese | hypothesis | science | Die Hypothese konnte nicht bestätigt werden. | The hypothesis could not be confirmed.
+das Experiment | experiment | science | Das Experiment hatte überraschende Ergebnisse. | The experiment had surprising results.
+die Forschung | research | science | Die Forschung dauerte zehn Jahre. | The research took ten years.
+der Fortschritt | progress | science | Das ist ein großer Fortschritt für die Medizin. | That is great progress for medicine.
+der Impfstoff | vaccine | science | Der Impfstoff schützt Tausende Menschen. | The vaccine protects thousands of people.
+die Behandlung | treatment | science | Die Behandlung dauert sechs Monate. | The treatment lasts six months.
+die Diagnose | diagnosis | science | Die Diagnose kam zu spät. | The diagnosis came too late.
+das Symptom | symptom | science | Das wichtigste Symptom ist Müdigkeit. | The main symptom is tiredness.
+der Algorithmus | algorithm | science | Der Algorithmus empfiehlt Videos. | The algorithm recommends videos.
+die künstliche Intelligenz | artificial intelligence | science | Die künstliche Intelligenz verändert die Arbeit. | Artificial intelligence changes work.
+der Datenschutz | data protection | tech | Der Datenschutz beschäftigt viele Menschen. | Data protection concerns many people.
+die Cybersicherheit | cybersecurity | tech | Die Cybersicherheit hat Priorität. | Cybersecurity is a priority.
+der Journalist | journalist | media | Der Journalist hat den Minister interviewt. | The journalist interviewed the minister.
+die Schlagzeile | headline | media | Die Schlagzeile war irreführend. | The headline was misleading.
+die Falschmeldung | fake news | media | Eine Falschmeldung verbreitete sich schnell. | A piece of fake news spread fast.
+die Reportage | report | media | Die Reportage zeigt das Leben an der Grenze. | The report shows life at the border.
+die Presse | press | media | Die Presse kritisierte die Entscheidung. | The press criticised the decision.
+die Zensur | censorship | media | Die Zensur schränkt die Meinungsfreiheit ein. | Censorship limits freedom of expression.
+die Freiheit | freedom | abstract | Freiheit hat keinen Preis. | Freedom has no price.
+die Gerechtigkeit | justice | abstract | Gerechtigkeit muss für alle gleich sein. | Justice must be the same for everyone.
+die Wahrheit | truth | abstract | Die Wahrheit kommt immer ans Licht. | The truth always comes out.
+die Lüge | lie | abstract | Eine Lüge zieht die nächste nach sich. | One lie leads to another.
+das Schicksal | fate | abstract | Er glaubt, dass das Schicksal alles entscheidet. | He believes fate decides everything.
+das Wesen | essence | abstract | Das Wesen des Problems ist der Zeitmangel. | The essence of the problem is lack of time.
+die Herausforderung | challenge | abstract | Die Herausforderung besteht darin, alle zu überzeugen. | The challenge is convincing everyone.
+der Vorteil | advantage | abstract | Ihr größter Vorteil ist die Erfahrung. | Her greatest advantage is experience.
+der Nachteil | drawback | abstract | Der einzige Nachteil ist der Preis. | The only drawback is the price.
+das Kriterium | criterion | abstract | Wir wählen nach einem klaren Kriterium. | We choose by a clear criterion.
+die Folge | consequence | abstract | Die Folge war sofort spürbar. | The consequence was immediately noticeable.
+der Zweck | purpose | abstract | Der Zweck des Treffens ist die Entscheidung. | The purpose of the meeting is the decision.
+die Richtung | direction | abstract | Die Firma hat die Richtung geändert. | The company changed direction.
+die Grenze des Möglichen | limit of the possible | abstract | Wir erreichen die Grenze des Möglichen. | We are reaching the limit of the possible.
+der Brauch | custom | abstract | Das ist ein sehr alter Brauch. | It is a very old custom.
+der Trend | trend | abstract | Der Trend geht zur Arbeit von zu Hause. | The trend is towards working from home.
+die Eigenschaft | trait | abstract | Großzügigkeit ist ihre wichtigste Eigenschaft. | Generosity is her most important trait.
+die Haltung | attitude | abstract | Seine Haltung hat sich völlig verändert. | His attitude changed completely.
+die Verpflichtung | commitment | abstract | Ich halte meine Verpflichtung dem Team gegenüber. | I keep my commitment to the team.
+das Missverständnis | misunderstanding | abstract | Es war nur ein Missverständnis. | It was just a misunderstanding.
+die Vereinbarung | agreement | abstract | Nach Stunden der Debatte kam eine Vereinbarung zustande. | After hours of debate an agreement was reached.
+der Konflikt | conflict | abstract | Der Konflikt dauerte mehrere Jahre. | The conflict lasted several years.
+der Frieden | peace | abstract | Alle wünschen sich Frieden. | Everyone wants peace.

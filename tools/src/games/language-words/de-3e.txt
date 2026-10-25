@@ -1,0 +1,55 @@
+# German, advanced: more nuance and register
+die Verantwortung | responsibility | abstract | Sie übernimmt die Verantwortung für das Team. | She takes responsibility for the team.
+die Absicht | intention | abstract | Es war nicht meine Absicht. | It was not my intention.
+der Zusammenhang | connection | abstract | Es gibt keinen Zusammenhang. | There is no connection.
+der Widerspruch | contradiction | abstract | Das ist ein klarer Widerspruch. | That is a clear contradiction.
+die Voraussetzung | prerequisite | abstract | Geduld ist eine Voraussetzung. | Patience is a prerequisite.
+die Ausnahme | exception | abstract | Jede Regel hat eine Ausnahme. | Every rule has an exception.
+der Eindruck | impression | abstract | Er machte einen guten Eindruck. | He made a good impression.
+die Erwartung | expectation | abstract | Die Erwartung war hoch. | The expectation was high.
+die Entscheidung | decision | abstract | Die Entscheidung fiel schwer. | The decision was hard to make.
+die Wahrnehmung | perception | abstract | Die Wahrnehmung kann täuschen. | Perception can deceive.
+das Gleichgewicht | balance | abstract | Das Gleichgewicht ist wichtig. | Balance is important.
+der Zufall | coincidence | abstract | Es war reiner Zufall. | It was pure coincidence.
+die Gewohnheit | habit | abstract | Das ist eine alte Gewohnheit. | That is an old habit.
+die Zukunft | future | abstract | Die Zukunft ist ungewiss. | The future is uncertain.
+die Vergangenheit | past | abstract | Die Vergangenheit lässt sich nicht ändern. | The past cannot be changed.
+das Wachstum | growth | economy | Das Wachstum bleibt schwach. | Growth remains weak.
+die Rezession | recession | economy | Das Land ist in eine Rezession gerutscht. | The country slipped into a recession.
+die Kaufkraft | purchasing power | economy | Die Kaufkraft ist gesunken. | Purchasing power has fallen.
+der Aktionär | shareholder | economy | Der Aktionär hat gegen die Fusion gestimmt. | The shareholder voted against the merger.
+die Fusion | merger | economy | Die Fusion wurde gestern angekündigt. | The merger was announced yesterday.
+die Förderung | funding | economy | Die Förderung deckt die Hälfte der Kosten. | The funding covers half of the costs.
+der Mangel | shortage | economy | Der Mangel an Wohnraum verschärft sich. | The shortage of housing is getting worse.
+der Bürger | citizen | society | Jeder Bürger hat Rechte. | Every citizen has rights.
+der Wähler | voter | society | Der Wähler hat das letzte Wort. | The voter has the last word.
+der Kandidat | candidate | society | Der Kandidat hat Veränderungen versprochen. | The candidate promised changes.
+der Wahlkampf | election campaign | society | Der Wahlkampf beginnt im September. | The election campaign starts in September.
+das Gericht | court | society | Das Gericht entscheidet morgen. | The court decides tomorrow.
+der Angeklagte | defendant | society | Der Angeklagte bestritt die Vorwürfe. | The defendant denied the accusations.
+die Strafe | punishment | society | Die Strafe wurde gemildert. | The punishment was reduced.
+die Toleranz | tolerance | society | Toleranz beginnt mit Zuhören. | Tolerance begins with listening.
+die Bescheidenheit | humility | abstract | Bescheidenheit ist eine große Tugend. | Humility is a great virtue.
+die Vorsicht | caution | abstract | Vorsicht ist geboten. | Caution is called for.
+der Mut | courage | abstract | Es brauchte Mut zu sprechen. | It took courage to speak.
+die Sorgfalt | care | abstract | Sorgfalt ist in der Wissenschaft wichtig. | Care is important in science.
+die Klarheit | clarity | abstract | Sie analysierte die Lage mit Klarheit. | She analysed the situation with clarity.
+das Vorurteil | prejudice | society | Das Vorurteil verhindert den Blick auf die Realität. | Prejudice stops you seeing reality.
+das Klischee | stereotype | society | Dieses Klischee ist ungerecht. | That stereotype is unfair.
+die Diskriminierung | discrimination | society | Die Diskriminierung gibt es noch. | Discrimination still exists.
+die Solidarität | solidarity | society | Solidarität hat viele gerettet. | Solidarity saved many.
+der Freiwillige | volunteer | society | Jeder Freiwillige hilft ein bisschen. | Every volunteer helps a little.
+die Spende | donation | society | Die Spende kam rechtzeitig an. | The donation arrived in time.
+der Export | export | economy | Der Export von Wein wächst. | Wine exports are growing.
+der Rohstoff | raw material | economy | Der Rohstoff wird knapp. | The raw material is becoming scarce.
+der Unternehmer | entrepreneur | economy | Der Unternehmer hat sein erstes Geschäft eröffnet. | The entrepreneur opened his first shop.
+die Pleite | bankruptcy | economy | Die Firma ging in die Pleite. | The company went bankrupt.
+das Sparen | saving | economy | Das Sparen der Haushalte ist gesunken. | Household saving has fallen.
+die Reichweite | reach | words | Das liegt außerhalb meiner Reichweite. | That is out of my reach.
+der Werdegang | career path | words | Sie hat einen tadellosen Werdegang. | She has an impeccable career path.
+das Ausmaß | scale | words | Das Projekt hat ein enormes Ausmaß. | The project has an enormous scale.
+die Rede | speech | words | Die Rede dauerte eine Stunde. | The speech lasted an hour.
+die Debatte | debate | words | Die Debatte war sehr angespannt. | The debate was very tense.
+der Streit | dispute | words | Der Streit hört nicht auf. | The dispute does not stop.
+der Gipfel | summit | words | Der Gipfel brachte zwanzig Länder zusammen. | The summit brought twenty countries together.
+die Bilanz | assessment | words | Die Bilanz des Jahres ist positiv. | The assessment of the year is positive.

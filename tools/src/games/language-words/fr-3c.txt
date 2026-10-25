@@ -1,0 +1,73 @@
+# French, advanced: verbs and adjectives
+profiter de | to make the most of | verbs | Il faut profiter de chaque occasion. | You have to make the most of every opportunity.
+réussir | to succeed | verbs | Nous voulons réussir ce projet. | We want to succeed with this project.
+atteindre | to reach | verbs | Ils espèrent atteindre l'objectif cette année. | They hope to reach the goal this year.
+affronter | to face | verbs | Nous devons affronter la réalité. | We have to face reality.
+surmonter | to overcome | verbs | Elle a réussi à surmonter sa peur de voler. | She managed to overcome her fear of flying.
+soulever | to raise | verbs | Je vais soulever le problème pendant la réunion. | I am going to raise the problem at the meeting.
+aborder | to tackle | verbs | Il est temps d'aborder le sujet sérieusement. | It is time to tackle the subject seriously.
+soutenir | to support | verbs | Plusieurs pays ont décidé de soutenir la proposition. | Several countries decided to back the proposal.
+encourager | to encourage | verbs | Il faut encourager la lecture chez les jeunes. | Reading among young people must be encouraged.
+respecter | to respect, to keep | verbs | Il est important de respecter ses promesses. | It is important to keep your promises.
+refuser | to refuse | verbs | Le comité a décidé de refuser l'offre. | The committee decided to reject the offer.
+avertir | to warn | verbs | Les experts veulent avertir du risque. | The experts want to warn about the risk.
+reconnaître | to recognise, to admit | verbs | Il faut reconnaître ses propres erreurs. | You have to admit your own mistakes.
+supposer | to suppose | verbs | Je ne veux rien supposer sans preuve. | I don't want to assume anything without proof.
+assumer | to take on | verbs | Tu dois assumer ta responsabilité. | You must take on your responsibility.
+maintenir | to maintain | verbs | Il est difficile de maintenir le calme. | It is hard to keep calm.
+éviter | to avoid | verbs | J'essaie d'éviter les conflits. | I try to avoid conflicts.
+provoquer | to cause | verbs | La sécheresse peut provoquer une crise. | The drought can cause a crisis.
+développer | to develop | verbs | Ils veulent développer un nouveau produit. | They want to develop a new product.
+souligner | to stress | verbs | Nous allons souligner les points clés. | We are going to highlight the key points.
+négocier | to negotiate | verbs | Ils ont décidé de négocier avec le syndicat. | They decided to negotiate with the union.
+réclamer | to demand | verbs | Il a le droit de réclamer une indemnité. | He has the right to claim compensation.
+dénoncer | to denounce | verbs | Elle a décidé de dénoncer le vol. | She decided to report the theft.
+enquêter | to investigate | verbs | La police va enquêter sur l'affaire. | The police are going to investigate the case.
+démontrer | to prove | verbs | Les données permettent de démontrer la théorie. | The data make it possible to prove the theory.
+vérifier | to check | verbs | Je vais vérifier les données encore une fois. | I am going to check the data again.
+confirmer | to confirm | verbs | Je dois confirmer la réservation. | I need to confirm the booking.
+préciser | to clarify | verbs | Permettez-moi de préciser un détail. | Allow me to clarify one detail.
+résumer | to summarise | verbs | J'essaie de résumer le texte en quelques lignes. | I try to summarise the text in a few lines.
+évaluer | to assess | verbs | Il faut évaluer le pour et le contre. | You have to weigh the pros and cons.
+comparer | to compare | verbs | Je vais comparer les prix. | I am going to compare prices.
+critiquer | to criticise | verbs | Il est facile de critiquer et difficile de proposer. | It is easy to criticise and hard to propose.
+défendre | to defend | verbs | Je vais défendre mon point de vue. | I am going to defend my point of view.
+convaincre | to convince | verbs | Je veux convaincre mes associés. | I want to convince my partners.
+décevoir | to disappoint | verbs | Je ne veux pas décevoir mon équipe. | I don't want to disappoint my team.
+remercier | to thank | verbs | Je tiens à remercier votre patience. | I want to thank you for your patience.
+s'excuser | to apologise | verbs | Il est important de s'excuser à temps. | It is important to apologise in time.
+regretter | to regret | verbs | Je ne veux pas regretter cette décision. | I don't want to regret this decision.
+abandonner | to give up | verbs | Il est trop tôt pour abandonner. | It is too early to give up.
+s'efforcer | to strive | verbs | Il faut s'efforcer d'apprendre. | You have to strive to learn.
+s'adapter | to adapt | verbs | Il est nécessaire de s'adapter au changement. | It is necessary to adapt to change.
+s'habituer | to get used to | verbs | Il est difficile de s'habituer à la ville. | It is hard to get used to the city.
+se rendre compte | to realise | verbs | Tôt ou tard, il va se rendre compte de son erreur. | Sooner or later he is going to realise his mistake.
+se plaindre | to complain | verbs | Il est inutile de se plaindre du temps. | It is pointless to complain about the weather.
+oser | to dare | verbs | Il faut oser dire la vérité. | You have to dare to tell the truth.
+s'opposer | to oppose | verbs | Les voisins vont s'opposer au projet. | The neighbours are going to oppose the project.
+indispensable | essential | adjectives | Il est indispensable d'arriver à l'heure. | It is essential to arrive on time.
+inévitable | unavoidable | adjectives | Le changement est inévitable. | Change is unavoidable.
+fiable | reliable | adjectives | C'est une source fiable. | It is a reliable source.
+rigoureux | rigorous | adjectives | C'est un travail rigoureux. | It is rigorous work.
+efficace | effective | adjectives | C'est une méthode efficace. | It is an effective method.
+rentable | profitable | adjectives | L'affaire est très rentable. | The business is very profitable.
+imprévu | unforeseen | adjectives | C'était un contretemps imprévu. | It was an unforeseen setback.
+surprenant | surprising | adjectives | Le résultat est surprenant. | The result is surprising.
+alarmant | alarming | adjectives | Ce chiffre est alarmant. | This figure is alarming.
+rare | scarce | adjectives | L'eau est une ressource rare. | Water is a scarce resource.
+abondant | abundant | adjectives | Le repas est abondant. | The meal is abundant.
+subtil | subtle | adjectives | C'est un jeu très subtil. | It is a very subtle game.
+évident | obvious | adjectives | Il est évident qu'il y a une erreur. | It is obvious that there is a mistake.
+douteux | doubtful | adjectives | Le résultat est douteux. | The result is doubtful.
+raisonnable | reasonable | adjectives | Sa proposition est raisonnable. | His proposal is reasonable.
+exigeant | demanding | adjectives | Mon patron est très exigeant. | My boss is very demanding.
+patient | patient | adjectives | C'est un professeur très patient. | He is a very patient teacher.
+têtu | stubborn | adjectives | Mon frère est têtu. | My brother is stubborn.
+sincère | sincere | adjectives | Je veux être sincère avec toi. | I want to be honest with you.
+honnête | honest | adjectives | C'est un homme honnête. | He is an honest man.
+généreux | generous | adjectives | Il est très généreux de son temps. | He is very generous with his time.
+ingénieux | ingenious | adjectives | C'est un plan ingénieux. | It is an ingenious plan.
+quotidien | everyday | adjectives | C'est un problème quotidien. | It is an everyday problem.
+habituel | usual | adjectives | C'est mon trajet habituel. | It is my usual route.
+en vigueur | in force | adjectives | La règle est toujours en vigueur. | The rule is still in force.
+précaire | precarious | adjectives | Il a un emploi précaire. | He has a precarious job.

@@ -1,0 +1,67 @@
+# French, beginner: home, transport, nature, colours, time, numbers, greetings
+le canapé | sofa | home | Le chat dort sur le canapé. | The cat sleeps on the sofa.
+la salle de bains | bathroom | home | La salle de bains est au fond. | The bathroom is at the back.
+le jardin | garden | home | Le jardin a beaucoup de fleurs. | The garden has many flowers.
+le mur | wall | home | Il y a un tableau sur le mur. | There is a picture on the wall.
+le sol | floor | home | Le sol est propre. | The floor is clean.
+la lampe | lamp | home | La lampe est allumée. | The lamp is on.
+la télévision | television | home | La télévision est dans le salon. | The television is in the living room.
+le téléphone | telephone | home | Mon téléphone sonne. | My phone is ringing.
+l'ordinateur | computer | home | L'ordinateur est neuf. | The computer is new.
+la voiture | car | travel | Ma voiture est rouge. | My car is red.
+l'autobus | bus | travel | L'autobus arrive en retard. | The bus arrives late.
+le train | train | travel | Le train part à huit heures. | The train leaves at eight.
+le vélo | bicycle | travel | Je vais au travail à vélo. | I go to work by bike.
+l'avion | plane | travel | L'avion atterrit dans une heure. | The plane lands in an hour.
+le bateau | boat | travel | Le bateau quitte le port. | The boat leaves the port.
+le taxi | taxi | travel | J'ai besoin d'un taxi pour l'aéroport. | I need a taxi to the airport.
+l'arbre | tree | nature | L'arbre est très grand. | The tree is very tall.
+la fleur | flower | nature | Cette fleur sent très bon. | This flower smells very good.
+l'herbe | grass | nature | L'herbe est mouillée. | The grass is wet.
+la mer | sea | nature | La mer est calme aujourd'hui. | The sea is calm today.
+le lac | lake | nature | Nous nageons dans le lac. | We swim in the lake.
+l'île | island | nature | L'île est très petite. | The island is very small.
+la forêt | forest | nature | Nous marchons dans la forêt. | We walk through the forest.
+la lune | moon | nature | La lune brille ce soir. | The moon shines tonight.
+l'étoile | star | nature | Je vois une étoile dans le ciel. | I see a star in the sky.
+le feu | fire | nature | Le feu donne de la chaleur. | The fire gives heat.
+la pierre | stone | nature | Il y a une pierre sur le chemin. | There is a stone on the path.
+le ciel | sky | nature | Le ciel est bleu. | The sky is blue.
+le soleil | sun | nature | Le soleil brille aujourd'hui. | The sun is shining today.
+la pluie | rain | nature | La pluie tombe sur la ville. | The rain falls on the city.
+le vent | wind | nature | Il y a beaucoup de vent aujourd'hui. | There is a lot of wind today.
+rouge | red | colors | Le rouge est ma couleur préférée. | Red is my favourite colour.
+bleu | blue | colors | Le bleu de la mer est magnifique. | The blue of the sea is magnificent.
+vert | green | colors | Le vert de la forêt est intense. | The green of the forest is intense.
+jaune | yellow | colors | Le jaune se voit de loin. | Yellow can be seen from afar.
+noir | black | colors | Le noir lui va très bien. | Black suits him very well.
+blanc | white | colors | Le mur est blanc. | The wall is white.
+gris | grey | colors | Le ciel est gris. | The sky is grey.
+lundi | Monday | time | Lundi, la semaine commence. | On Monday the week begins.
+mardi | Tuesday | time | Mardi, j'ai cours d'anglais. | On Tuesday I have English class.
+mercredi | Wednesday | time | Mercredi, je vais chez le médecin. | On Wednesday I go to the doctor's.
+jeudi | Thursday | time | Jeudi, nous dînons dehors. | On Thursday we eat out.
+vendredi | Friday | time | Vendredi, nous sortons avec des amis. | On Friday we go out with friends.
+samedi | Saturday | time | Samedi, nous nettoyons la maison. | On Saturday we clean the house.
+dimanche | Sunday | time | Dimanche, nous nous reposons. | On Sunday we rest.
+le printemps | spring | time | Au printemps, il y a beaucoup de fleurs. | In spring there are many flowers.
+l'été | summer | time | En été, nous allons à la plage. | In summer we go to the beach.
+l'automne | autumn | time | En automne, les feuilles tombent. | In autumn the leaves fall.
+l'hiver | winter | time | En hiver, il fait très froid. | In winter it is very cold.
+le matin | morning | time | Le matin, je prends un café. | In the morning I have coffee.
+la nuit | night | time | La nuit, tout est calme. | At night everything is calm.
+le jour | day | time | C'est un très beau jour. | It is a very nice day.
+l'heure | hour, time | time | Quelle heure est-il ? | What time is it?
+six | six | numbers | J'ai six livres. | I have six books.
+sept | seven | numbers | Il y a sept jours dans une semaine. | There are seven days in a week.
+huit | eight | numbers | Il est huit heures du matin. | It is eight in the morning.
+neuf | nine | numbers | J'ai neuf cousins. | I have nine cousins.
+onze | eleven | numbers | L'équipe compte onze joueurs. | The team has eleven players.
+douze | twelve | numbers | Il y a douze mois dans une année. | There are twelve months in a year.
+trente | thirty | numbers | Ma mère a trente ans. | My mother is thirty years old.
+bonjour | hello | words | Bonjour, comment allez-vous ? | Hello, how are you?
+au revoir | goodbye | words | Au revoir, à demain. | Goodbye, see you tomorrow.
+merci | thank you | words | Merci beaucoup pour tout. | Thank you very much for everything.
+s'il vous plaît | please | words | Un café, s'il vous plaît. | A coffee, please.
+pardon | sorry | words | Pardon, où est la gare ? | Sorry, where is the station?
+bonsoir | good evening | words | Bonsoir, madame. | Good evening, madam.

@@ -1,0 +1,89 @@
+# German, advanced: connectors, nuanced nouns, expressions, feelings, relationships, work, culture
+dennoch | nevertheless | connectors | Es ist teuer; dennoch lohnt es sich. | It is expensive; nevertheless it is worth it.
+trotz | despite | connectors | Wir gingen trotz des Regens hinaus. | We went out despite the rain.
+folglich | consequently | connectors | Es gibt weniger Wasser; folglich steigt der Preis. | There is less water; consequently the price rises.
+andernfalls | otherwise | connectors | Sei pünktlich; andernfalls verpasst du den Zug. | Be on time; otherwise you will miss the train.
+hingegen | on the other hand | connectors | Sie spart; er hingegen gibt alles aus. | She saves; he, on the other hand, spends everything.
+jedoch | however | connectors | Er hat viel gelernt; jedoch ist er durchgefallen. | He studied a lot; however, he failed.
+sofern | provided that | connectors | Ich komme, sofern du mitkommst. | I will come provided that you come too.
+im Laufe | in the course of | connectors | Im Laufe des Tages regnete es wenig. | In the course of the day it rained little.
+was ... betrifft | as for | connectors | Was deine Frage betrifft, ich denke darüber nach. | As for your question, I will think about it. | betrifft
+letztendlich | ultimately | connectors | Letztendlich zählt nur, dass es dir gut geht. | Ultimately, all that matters is that you are well.
+übrigens | by the way | connectors | Übrigens, niemand hat ihn gesehen. | By the way, nobody saw him.
+tatsächlich | indeed, actually | connectors | Die Lage hat sich tatsächlich verbessert. | The situation has indeed improved.
+beziehungsweise | or rather | connectors | Ich komme am Montag, beziehungsweise in zwei Tagen. | I am coming on Monday, or rather, in two days.
+immer mehr | more and more | connectors | Immer mehr Menschen arbeiten von zu Hause. | More and more people work from home.
+die Mehrheit | majority | words | Die Mehrheit der Schüler hat bestanden. | The majority of the pupils passed.
+das Ganze | the whole | words | Das Ganze wirkt sehr harmonisch. | The whole thing seems very harmonious.
+der Bereich | field | words | Sie arbeitet im Bereich Gesundheit. | She works in the field of health.
+der Aspekt | aspect | words | Es gibt noch einen anderen Aspekt. | There is another aspect.
+die Rolle | role | words | Die Rolle der Familie ist wichtig. | The role of the family is important.
+das Tempo | pace | words | Das Tempo des Lebens ist hoch. | The pace of life is fast.
+das Umfeld | environment | words | Ich arbeite in einem angenehmen Umfeld. | I work in a pleasant environment.
+die Ressource | resource | words | Zeit ist eine begrenzte Ressource. | Time is a limited resource.
+die Quelle | source | words | Ich nenne die Quelle im Text. | I cite the source in the text.
+die Lücke | gap | words | Die Lücke bei den Gehältern bleibt groß. | The pay gap remains large.
+die Frist | deadline | words | Die Frist endet am Freitag. | The deadline ends on Friday.
+das Ziel | goal | words | Mein Ziel ist es, einen Marathon zu laufen. | My goal is to run a marathon.
+der Erfolg | success | words | Der Erfolg kam nach Jahren. | Success came after years.
+das Scheitern | failure | words | Das Scheitern lehrt auch etwas. | Failure also teaches something.
+die Schwierigkeit | difficulty | words | Die größte Schwierigkeit ist die Sprache. | The biggest difficulty is the language.
+die Gelegenheit | opportunity | words | Verpasse diese Gelegenheit nicht. | Don't miss this opportunity.
+das Risiko | risk | words | Es besteht das Risiko von Regen. | There is a risk of rain.
+die Bedrohung | threat | words | Die Bedrohung war real. | The threat was real.
+die Erleichterung | relief | feelings | Ich spürte große Erleichterung. | I felt great relief.
+die Sehnsucht | longing | feelings | Ich habe Sehnsucht nach meiner Kindheit. | I long for my childhood.
+die Begeisterung | enthusiasm | feelings | Er sprach mit Begeisterung von seinem Projekt. | He spoke enthusiastically about his project.
+die Enttäuschung | disappointment | feelings | Die Enttäuschung war riesig. | The disappointment was huge.
+der Neid | envy | feelings | Er sah ihr Glück mit Neid. | He looked at her luck with envy.
+die Eifersucht | jealousy | feelings | Eifersucht zerstört eine Beziehung. | Jealousy destroys a relationship.
+die Einsamkeit | loneliness | feelings | Die Einsamkeit wiegt im Winter schwer. | Loneliness weighs heavy in winter.
+der Stolz | pride | feelings | Er sagte es mit Stolz. | He said it with pride.
+die Zuneigung | affection | feelings | Sie hat große Zuneigung für ihre Großmutter. | She has great affection for her grandmother.
+die Gleichgültigkeit | indifference | feelings | Seine Gleichgültigkeit hat mich überrascht. | His indifference surprised me.
+die Geduld | patience | feelings | Man braucht viel Geduld. | A lot of patience is needed.
+die Freundschaft | friendship | relationships | Freundschaft pflegt man jeden Tag. | Friendship is nurtured every day.
+das Paar | couple | relationships | Das Paar wohnt in London. | The couple lives in London.
+die Ehe | marriage | relationships | Die Ehe dauert schon dreißig Jahre. | The marriage has lasted thirty years.
+die Bindung | bond | relationships | Die Bindung zwischen ihnen ist stark. | The bond between them is strong.
+der Bekannte | acquaintance | relationships | Der Bekannte kommt morgen vorbei. | The acquaintance is dropping by tomorrow.
+der Fremde | stranger | relationships | Der Fremde fragte mich nach der Uhrzeit. | The stranger asked me the time.
+der Gastgeber | host | relationships | Der Gastgeber servierte das Abendessen. | The host served dinner.
+der Gast | guest | relationships | Jeder Gast brachte ein Geschenk mit. | Every guest brought a present.
+der Verwandte | relative | relationships | Der Verwandte lebt im Ausland. | The relative lives abroad.
+die Erbschaft | inheritance | relationships | Die Erbschaft hat die Familie gespalten. | The inheritance divided the family.
+die Belegschaft | staff | work | Die Belegschaft der Firma wächst. | The company's staff is growing.
+die Beförderung | promotion | work | Er hat diesen Monat eine Beförderung bekommen. | He received a promotion this month.
+die Kündigung | dismissal | work | Die Kündigung war eine Überraschung. | The dismissal was a surprise.
+der Ruhestand | retirement | work | Der Ruhestand beginnt mit siebenundsechzig. | Retirement begins at sixty-seven.
+der Arbeitstag | working day | work | Der Arbeitstag beginnt um acht Uhr. | The working day starts at eight.
+die Gleitzeit | flexible hours | work | Ich bevorzuge Gleitzeit. | I prefer flexible hours.
+das Homeoffice | remote working | work | Das Homeoffice spart Zeit. | Working from home saves time.
+die Stelle | position | work | Ich habe mich auf die Stelle als Leiter beworben. | I applied for the manager position.
+der Lebenslauf | CV | work | Ich habe meinen Lebenslauf gestern geschickt. | I sent my CV yesterday.
+der Arbeiter | worker | work | Der Arbeiter kommt vor Sonnenaufgang. | The worker arrives before sunrise.
+der Fußabdruck | footprint | environment | Wir hinterlassen einen Fußabdruck auf dem Planeten. | We leave a footprint on the planet.
+die Ernte | harvest | environment | Die Ernte dieses Jahres ist gut. | This year's harvest is good.
+die Landschaft | landscape | environment | Die Landschaft ist spektakulär. | The landscape is spectacular.
+das Hochhaus | skyscraper | city | Das Hochhaus überragt die Skyline. | The skyscraper towers over the skyline.
+der Vorort | suburb | city | Sie wohnt in einem Vorort. | She lives in a suburb.
+die Altstadt | old town | city | Die Altstadt ist autofrei. | The old town is car-free.
+der Passant | passer-by | city | Ein Passant hat die Polizei gerufen. | A passer-by called the police.
+das Sprichwort | proverb | culture | Das Sprichwort sagt viel mit wenigen Worten. | The proverb says a lot in few words.
+die Redensart | saying | culture | Eine Redensart sagt, besser spät als nie. | A saying goes, better late than never.
+die Legende | legend | culture | Die Legende erzählt von einem Schatz. | The legend tells of a treasure.
+die Erzählung | story | culture | Die Erzählung hat mich bewegt. | The story moved me.
+das Werk | work | culture | Das Werk wurde in Berlin uraufgeführt. | The work premiered in Berlin.
+der Schriftsteller | writer | culture | Der Schriftsteller stellt seinen neuen Roman vor. | The writer presents his new novel.
+der Roman | novel | culture | Der Roman hat fünfhundert Seiten. | The novel has five hundred pages.
+das Gedicht | poem | culture | Das Gedicht handelt vom Meer. | The poem is about the sea.
+das Gemälde | painting | culture | Das Gemälde hängt im Wohnzimmer. | The painting hangs in the living room.
+die Ausstellung | exhibition | culture | Die Ausstellung schließt am Sonntag. | The exhibition closes on Sunday.
+die Premiere | premiere | culture | Die Premiere war ein Erfolg. | The premiere was a success.
+die Tradition | tradition | culture | Das ist eine sehr alte Tradition. | It is a very old tradition.
+die Muttersprache | mother tongue | culture | Ihre Muttersprache ist Katalanisch. | Her mother tongue is Catalan.
+der Akzent | accent | culture | Er hat einen starken Akzent. | He has a strong accent.
+die Übersetzung | translation | culture | Die Übersetzung ist ausgezeichnet. | The translation is excellent.
+die Bedeutung | meaning | culture | Ich verstehe die Bedeutung dieses Wortes nicht. | I don't understand the meaning of this word.
+die Nuance | nuance | culture | Eine Nuance geht in der Übersetzung verloren. | A nuance is lost in translation.
+das Etikett | label | culture | Das Etikett zeigt den Preis. | The label shows the price.

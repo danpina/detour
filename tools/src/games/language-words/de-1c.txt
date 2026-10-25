@@ -1,0 +1,67 @@
+# German, beginner: home, transport, nature, colours, time, numbers, greetings
+das Sofa | sofa | home | Die Katze schläft auf dem Sofa. | The cat sleeps on the sofa.
+das Badezimmer | bathroom | home | Das Badezimmer ist hinten. | The bathroom is at the back.
+der Garten | garden | home | Der Garten hat viele Blumen. | The garden has many flowers.
+die Wand | wall | home | An der Wand hängt ein Bild. | There is a picture on the wall.
+der Boden | floor | home | Der Boden ist sauber. | The floor is clean.
+die Lampe | lamp | home | Die Lampe ist an. | The lamp is on.
+der Fernseher | television | home | Der Fernseher steht im Wohnzimmer. | The television is in the living room.
+das Telefon | telephone | home | Mein Telefon klingelt. | My phone is ringing.
+der Computer | computer | home | Der Computer ist neu. | The computer is new.
+das Auto | car | travel | Mein Auto ist rot. | My car is red.
+der Bus | bus | travel | Der Bus kommt zu spät. | The bus arrives late.
+der Zug | train | travel | Der Zug fährt um acht ab. | The train leaves at eight.
+das Fahrrad | bicycle | travel | Ich fahre mit dem Fahrrad zur Arbeit. | I go to work by bike.
+das Flugzeug | plane | travel | Das Flugzeug landet in einer Stunde. | The plane lands in an hour.
+das Schiff | ship | travel | Das Schiff verlässt den Hafen. | The ship leaves the port.
+das Taxi | taxi | travel | Ich brauche ein Taxi zum Flughafen. | I need a taxi to the airport.
+der Baum | tree | nature | Der Baum ist sehr hoch. | The tree is very tall.
+die Blume | flower | nature | Diese Blume riecht sehr gut. | This flower smells very good.
+das Gras | grass | nature | Das Gras ist nass. | The grass is wet.
+das Meer | sea | nature | Das Meer ist heute ruhig. | The sea is calm today.
+der See | lake | nature | Wir schwimmen im See. | We swim in the lake.
+die Insel | island | nature | Die Insel ist sehr klein. | The island is very small.
+der Wald | forest | nature | Wir gehen durch den Wald. | We walk through the forest.
+der Mond | moon | nature | Der Mond scheint heute Nacht. | The moon shines tonight.
+der Stern | star | nature | Ich sehe einen Stern am Himmel. | I see a star in the sky.
+das Feuer | fire | nature | Das Feuer gibt Wärme. | The fire gives warmth.
+der Stein | stone | nature | Ein Stein liegt auf dem Weg. | There is a stone on the path.
+der Himmel | sky | nature | Der Himmel ist blau. | The sky is blue.
+die Sonne | sun | nature | Die Sonne scheint heute. | The sun is shining today.
+der Regen | rain | nature | Der Regen fällt auf die Stadt. | The rain falls on the city.
+der Wind | wind | nature | Heute weht viel Wind. | There is a lot of wind today.
+rot | red | colors | Rot ist meine Lieblingsfarbe. | Red is my favourite colour.
+blau | blue | colors | Das Blau des Meeres ist wunderschön. | The blue of the sea is beautiful.
+grün | green | colors | Das Grün des Waldes ist intensiv. | The green of the forest is intense.
+gelb | yellow | colors | Gelb sieht man von weitem. | Yellow can be seen from afar.
+schwarz | black | colors | Schwarz steht ihm sehr gut. | Black suits him very well.
+weiß | white | colors | Die Wand ist weiß. | The wall is white.
+grau | grey | colors | Der Himmel ist grau. | The sky is grey.
+der Montag | Monday | time | Am Montag beginnt die Woche. | The week begins on Monday.
+der Dienstag | Tuesday | time | Am Dienstag habe ich Englischunterricht. | On Tuesday I have English class.
+der Mittwoch | Wednesday | time | Am Mittwoch gehe ich zum Arzt. | On Wednesday I go to the doctor.
+der Donnerstag | Thursday | time | Am Donnerstag essen wir auswärts. | On Thursday we eat out.
+der Freitag | Friday | time | Am Freitag gehen wir mit Freunden aus. | On Friday we go out with friends.
+der Samstag | Saturday | time | Am Samstag putzen wir das Haus. | On Saturday we clean the house.
+der Sonntag | Sunday | time | Am Sonntag ruhen wir uns aus. | On Sunday we rest.
+der Frühling | spring | time | Im Frühling gibt es viele Blumen. | In spring there are many flowers.
+der Sommer | summer | time | Im Sommer fahren wir an den Strand. | In summer we go to the beach.
+der Herbst | autumn | time | Im Herbst fallen die Blätter. | In autumn the leaves fall.
+der Winter | winter | time | Im Winter ist es sehr kalt. | In winter it is very cold.
+der Morgen | morning | time | Am Morgen trinke ich Kaffee. | In the morning I drink coffee.
+die Nacht | night | time | In der Nacht ist alles ruhig. | At night everything is calm.
+der Tag | day | time | Es ist ein sehr schöner Tag. | It is a very nice day.
+die Stunde | hour | time | Eine Stunde hat sechzig Minuten. | An hour has sixty minutes.
+sechs | six | numbers | Ich habe sechs Bücher. | I have six books.
+sieben | seven | numbers | Eine Woche hat sieben Tage. | A week has seven days.
+acht | eight | numbers | Es ist acht Uhr morgens. | It is eight in the morning.
+neun | nine | numbers | Ich habe neun Cousins. | I have nine cousins.
+elf | eleven | numbers | Die Mannschaft hat elf Spieler. | The team has eleven players.
+zwölf | twelve | numbers | Ein Jahr hat zwölf Monate. | A year has twelve months.
+dreißig | thirty | numbers | Meine Mutter ist dreißig Jahre alt. | My mother is thirty years old.
+hallo | hello | words | Hallo, wie geht es dir? | Hello, how are you?
+tschüss | bye | words | Tschüss, bis morgen. | Bye, see you tomorrow.
+danke | thank you | words | Vielen Dank für alles; danke dir! | Thank you very much for everything.
+bitte | please | words | Einen Kaffee, bitte. | A coffee, please.
+Entschuldigung | sorry, excuse me | words | Entschuldigung, wo ist der Bahnhof? | Excuse me, where is the station?
+guten Morgen | good morning | words | Guten Morgen, meine Damen und Herren. | Good morning, ladies and gentlemen.

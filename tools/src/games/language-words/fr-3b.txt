@@ -1,0 +1,90 @@
+# French, advanced: society, economy, law, environment, science, media, abstract ideas
+l'inégalité | inequality | society | L'inégalité augmente dans beaucoup de villes. | Inequality is growing in many cities.
+la citoyenneté | citizenship | society | La citoyenneté s'apprend dès l'école. | Citizenship is learned from school.
+le droit | right, law | society | Le droit de vote est fondamental. | The right to vote is fundamental.
+le devoir | duty | society | Voter est un devoir civique. | Voting is a civic duty.
+la société | society | society | La société change très vite. | Society changes very quickly.
+le gouvernement | government | society | Le gouvernement a annoncé de nouvelles mesures. | The government announced new measures.
+les élections | elections | society | Les élections ont lieu en novembre. | The elections take place in November.
+le parti politique | political party | society | Chaque parti politique a présenté son programme. | Every political party presented its programme.
+le parlement | parliament | society | Le parlement a voté la loi hier. | Parliament passed the law yesterday.
+la loi | law | society | La loi entre en vigueur en janvier. | The law comes into force in January.
+le jugement | ruling | society | Le juge a rendu son jugement. | The judge handed down his ruling.
+le procès | trial | society | Le procès commence lundi. | The trial begins on Monday.
+le délit | offence | society | Le délit a été signalé à la police. | The offence was reported to the police.
+le témoin | witness | society | Le témoin a déposé devant le tribunal. | The witness testified before the court.
+la preuve | proof | society | Il n'y a aucune preuve contre lui. | There is no proof against him.
+le soupçon | suspicion | society | Le soupçon est tombé sur le voisin. | Suspicion fell on the neighbour.
+la grève | strike | society | La grève a paralysé les transports. | The strike paralysed transport.
+la manifestation | demonstration | society | La manifestation a traversé le centre. | The demonstration went through the centre.
+le syndicat | trade union | society | Le syndicat a négocié avec l'entreprise. | The union negotiated with the company.
+la réforme | reform | society | La réforme divise les politiciens. | The reform divides the politicians.
+l'immigration | immigration | society | L'immigration a transformé le quartier. | Immigration transformed the neighbourhood.
+le réfugié | refugee | society | Le réfugié a demandé l'asile. | The refugee asked for asylum.
+l'économie | economy | economy | L'économie a progressé de deux pour cent. | The economy grew two per cent.
+l'inflation | inflation | economy | L'inflation réduit le pouvoir d'achat. | Inflation reduces purchasing power.
+la dette | debt | economy | La dette publique continue d'augmenter. | Public debt keeps rising.
+l'impôt | tax | economy | L'impôt augmente l'année prochaine. | The tax goes up next year.
+l'investissement | investment | economy | L'investissement dans l'énergie renouvelable progresse. | Investment in renewable energy is growing.
+le bénéfice | profit | economy | L'entreprise a réalisé un gros bénéfice. | The company made a large profit.
+la perte | loss | economy | La perte est plus grande que prévu. | The loss is bigger than expected.
+la bourse | stock market | economy | La bourse a chuté de trois pour cent. | The stock market fell three per cent.
+le marché du travail | labour market | economy | Le marché du travail se redresse. | The labour market is recovering.
+la concurrence | competition | economy | La concurrence oblige à baisser les prix. | Competition forces prices down.
+le prêt immobilier | mortgage | economy | Nous remboursons le prêt immobilier chaque mois. | We pay the mortgage every month.
+le patrimoine | heritage | economy | Le patrimoine historique doit être protégé. | Historical heritage must be protected.
+le changement climatique | climate change | environment | Le changement climatique touche tout le monde. | Climate change affects everyone.
+le réchauffement | warming | environment | Le réchauffement de la planète est évident. | The warming of the planet is obvious.
+la sécheresse | drought | environment | La sécheresse a ruiné la récolte. | The drought ruined the harvest.
+l'inondation | flood | environment | L'inondation a laissé beaucoup de maisons sous l'eau. | The flood left many houses under water.
+l'incendie | blaze | environment | L'incendie a détruit la forêt. | The blaze destroyed the forest.
+la pollution | pollution | environment | La pollution de l'air est inquiétante. | Air pollution is worrying.
+la biodiversité | biodiversity | environment | La biodiversité est en danger. | Biodiversity is in danger.
+l'espèce | species | environment | Cette espèce est en voie de disparition. | This species is endangered.
+le recyclage | recycling | environment | Le recyclage réduit les déchets. | Recycling reduces waste.
+les déchets | waste | environment | Les déchets se trient à la maison. | Waste is sorted at home.
+l'énergie renouvelable | renewable energy | environment | L'énergie renouvelable est l'avenir. | Renewable energy is the future.
+le carburant | fuel | environment | Le carburant augmente. | Fuel is going up in price.
+durable | sustainable | environment | Nous cherchons un modèle plus durable. | We are looking for a more sustainable model.
+la découverte | discovery | science | La découverte était accidentelle. | The discovery was accidental.
+l'hypothèse | hypothesis | science | L'hypothèse n'a pas pu être confirmée. | The hypothesis could not be confirmed.
+l'expérience | experiment, experience | science | L'expérience a donné des résultats surprenants. | The experiment gave surprising results.
+la recherche | research | science | La recherche a duré dix ans. | The research lasted ten years.
+l'avancée | advance | science | C'est une grande avancée pour la médecine. | It is a great advance for medicine.
+le vaccin | vaccine | science | Le vaccin protège des milliers de personnes. | The vaccine protects thousands of people.
+le traitement | treatment | science | Le traitement dure six mois. | The treatment lasts six months.
+le diagnostic | diagnosis | science | Le diagnostic est arrivé trop tard. | The diagnosis came too late.
+le symptôme | symptom | science | Le principal symptôme est la fatigue. | The main symptom is tiredness.
+l'algorithme | algorithm | science | L'algorithme recommande des vidéos. | The algorithm recommends videos.
+l'intelligence artificielle | artificial intelligence | science | L'intelligence artificielle transforme le travail. | Artificial intelligence transforms work.
+la vie privée | privacy | tech | La vie privée en ligne inquiète beaucoup de gens. | Online privacy worries many people.
+la cybersécurité | cybersecurity | tech | La cybersécurité est une priorité. | Cybersecurity is a priority.
+le journaliste | journalist | media | Le journaliste a interviewé le ministre. | The journalist interviewed the minister.
+le gros titre | headline | media | Le gros titre était trompeur. | The headline was misleading.
+la fausse information | fake news | media | Une fausse information s'est diffusée vite. | A piece of fake news spread fast.
+le reportage | report | media | Le reportage montre la vie à la frontière. | The report shows life at the border.
+la presse | press | media | La presse a critiqué la décision. | The press criticised the decision.
+la censure | censorship | media | La censure limite la liberté d'expression. | Censorship limits freedom of expression.
+la liberté | freedom | abstract | La liberté n'a pas de prix. | Freedom has no price.
+la justice | justice | abstract | La justice doit être la même pour tous. | Justice must be the same for everyone.
+la vérité | truth | abstract | La vérité finit toujours par éclater. | The truth always comes out in the end.
+le mensonge | lie | abstract | Un mensonge en entraîne un autre. | One lie leads to another.
+le destin | destiny | abstract | Il croit que le destin décide de tout. | He believes destiny decides everything.
+l'essence | essence | abstract | L'essence du problème est le manque de temps. | The essence of the problem is lack of time.
+le défi | challenge | abstract | Le défi consiste à convaincre tout le monde. | The challenge is convincing everyone.
+l'avantage | advantage | abstract | Son plus grand avantage est l'expérience. | Her greatest advantage is experience.
+l'inconvénient | drawback | abstract | Le seul inconvénient est le prix. | The only drawback is the price.
+le critère | criterion | abstract | Nous choisissons selon un critère clair. | We choose by a clear criterion.
+la conséquence | consequence | abstract | La conséquence a été immédiate. | The consequence was immediate.
+le but | purpose, goal | abstract | Le but de la réunion est de décider. | The purpose of the meeting is to decide.
+la direction | direction | abstract | L'entreprise a changé de direction. | The company changed direction.
+la limite | limit | abstract | Tout a une limite. | Everything has a limit.
+la coutume | custom | abstract | C'est une coutume très ancienne. | It is a very old custom.
+la tendance | trend | abstract | La tendance va vers le télétravail. | The trend is towards remote work.
+le trait | trait | abstract | La générosité est son principal trait. | Generosity is her main trait.
+l'attitude | attitude | abstract | Son attitude a complètement changé. | His attitude changed completely.
+l'engagement | commitment | abstract | Je tiens mon engagement envers l'équipe. | I keep my commitment to the team.
+le malentendu | misunderstanding | abstract | Ce n'était qu'un malentendu. | It was just a misunderstanding.
+l'accord | agreement | abstract | Ils sont parvenus à un accord après des heures de débat. | They reached an agreement after hours of debate.
+le conflit | conflict | abstract | Le conflit a duré plusieurs années. | The conflict lasted several years.
+la paix | peace | abstract | Tout le monde veut la paix. | Everyone wants peace.

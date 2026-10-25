@@ -1,0 +1,41 @@
+# German, beginner: places, clothes, school, everyday things
+das Geschäft | shop | places | Das Geschäft öffnet um neun Uhr. | The shop opens at nine.
+die Bank | bank | places | Die Bank ist neben dem Park. | The bank is next to the park.
+der Park | park | places | Die Kinder spielen im Park. | The children play in the park.
+das Kino | cinema | places | Wir gehen am Samstag ins Kino. | We are going to the cinema on Saturday.
+das Restaurant | restaurant | places | Das Restaurant ist voll. | The restaurant is full.
+das Büro | office | places | Mein Büro liegt im Zentrum. | My office is in the centre.
+das Krankenhaus | hospital | places | Das Krankenhaus ist neben der Schule. | The hospital is next to the school.
+die Kirche | church | places | Die Kirche ist sehr alt. | The church is very old.
+das Land | country | places | Mein Land hat viele Berge. | My country has many mountains.
+der Rock | skirt | clothes | Der Rock ist sehr kurz. | The skirt is very short.
+das Kleid | dress | clothes | Das Kleid ist rot. | The dress is red.
+die Jacke | jacket | clothes | Die Jacke liegt auf dem Stuhl. | The jacket is on the chair.
+die Socken | socks | clothes | Die Socken sind in der Schublade. | The socks are in the drawer.
+die Brille | glasses | clothes | Ich finde meine Brille nicht. | I can't find my glasses.
+das Hemd | shirt | clothes | Mein Hemd ist blau. | My shirt is blue.
+die Schuhe | shoes | clothes | Ich brauche neue Schuhe. | I need new shoes.
+der Hut | hat | clothes | Der Hut ist sehr groß. | The hat is very big.
+der Rucksack | backpack | school | Der Rucksack ist sehr schwer. | The backpack is very heavy.
+der Bleistift | pencil | school | Ich brauche einen Bleistift zum Zeichnen. | I need a pencil to draw.
+das Papier | paper | school | Gib mir ein Blatt Papier. | Give me a sheet of paper.
+die Klasse | class | school | Die Klasse beginnt um neun Uhr. | The class starts at nine.
+die Lektion | lesson | school | Die heutige Lektion ist leicht. | Today's lesson is easy.
+der Name | name | words | Mein Name ist Anna. | My name is Anna.
+das Wort | word | words | Dieses Wort ist neu für mich. | This word is new to me.
+die Sprache | language | words | Deutsch ist eine schöne Sprache. | German is a beautiful language.
+die Musik | music | words | Die Musik ist sehr laut. | The music is very loud.
+der Film | film | words | Der Film dauert zwei Stunden. | The film lasts two hours.
+das Foto | photo | words | Dieses Foto zeigt meine Familie. | This photo shows my family.
+das Geschenk | present | words | Das Geschenk liegt in der Schachtel. | The present is in the box.
+die Party | party | words | Die Party ist am Freitag. | The party is on Friday.
+das Spiel | game | words | Dieses Spiel macht viel Spaß. | This game is a lot of fun.
+der Hunger | hunger | feelings | Ich habe Hunger und will essen. | I am hungry and want to eat.
+der Durst | thirst | feelings | Ich habe Durst, ich will Wasser. | I am thirsty, I want water.
+die Angst | fear | feelings | Das Kind hat Angst im Dunkeln. | The child is afraid of the dark.
+die Hilfe | help | words | Ich brauche Hilfe bei den Hausaufgaben. | I need help with the homework.
+die Uhr | clock, o'clock | time | Die Uhr an der Wand geht falsch. | The clock on the wall is wrong.
+der Brief | letter | words | Ich schreibe einen Brief an meine Oma. | I write a letter to my gran.
+das Bild | picture | home | Das Bild hängt über dem Sofa. | The picture hangs above the sofa.
+der Schrank | cupboard | home | Die Kleider hängen im Schrank. | The clothes hang in the cupboard.
+die Treppe | stairs | home | Die Treppe ist sehr steil. | The stairs are very steep.

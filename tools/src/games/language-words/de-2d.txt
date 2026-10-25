@@ -1,0 +1,49 @@
+# German, medium: more everyday words
+die Schublade | drawer | home | Die Schublade ist voller Papiere. | The drawer is full of papers.
+die Bürste | brush | home | Die Bürste liegt im Badezimmer. | The brush is in the bathroom.
+die Seife | soap | home | Wasch dir die Hände mit Seife. | Wash your hands with soap.
+das Handtuch | towel | home | Das Handtuch ist nass. | The towel is wet.
+der Kamm | comb | home | Ich suche den Kamm im Badezimmer. | I look for the comb in the bathroom.
+die Pfanne | frying pan | food | Die Pfanne ist sehr heiß. | The frying pan is very hot.
+der Ofen | oven | food | Das Hähnchen ist im Ofen. | The chicken is in the oven.
+der Knoblauch | garlic | food | Der Knoblauch riecht stark. | Garlic smells strong.
+die Butter | butter | food | Streich etwas Butter aufs Brot. | Spread a little butter on the bread.
+das Öl | oil | food | Das Öl ist in der Flasche. | The oil is in the bottle.
+der Nachtisch | dessert | food | Als Nachtisch möchte ich Obst. | For dessert I would like fruit.
+die Vorspeise | starter | food | Als Vorspeise nehme ich eine Suppe. | As a starter I'll have a soup.
+die Speisekarte | menu | food | Die Speisekarte ist sehr lang. | The menu is very long.
+der Salat | salad | food | Ich möchte einen Salat mit Tomaten. | I would like a salad with tomatoes.
+der Kellner | waiter | people | Der Kellner bringt die Rechnung. | The waiter brings the bill.
+der Koch | cook | people | Der Koch bereitet die Suppe zu. | The cook prepares the soup.
+der Briefträger | postman | people | Der Briefträger kommt am Morgen. | The postman comes in the morning.
+der Feuerwehrmann | firefighter | people | Der Feuerwehrmann hat die Katze gerettet. | The firefighter saved the cat.
+der Polizist | police officer | people | Der Polizist regelt den Verkehr. | The police officer directs the traffic.
+der Zahnarzt | dentist | people | Der Zahnarzt sieht sich meine Zähne an. | The dentist looks at my teeth.
+der Ingenieur | engineer | people | Mein Vater ist Ingenieur. | My father is an engineer.
+der Anwalt | lawyer | people | Der Anwalt liest den Vertrag. | The lawyer reads the contract.
+der Regenschirm | umbrella | clothes | Nimm einen Regenschirm, es wird regnen. | Take an umbrella, it is going to rain.
+die Handtasche | handbag | clothes | Die Handtasche ist aus Leder. | The handbag is made of leather.
+der Gürtel | belt | clothes | Der Gürtel ist zu lang. | The belt is too long.
+der Schal | scarf | clothes | Zieh deinen Schal an, es ist kalt. | Put on your scarf, it is cold.
+die Armbanduhr | watch | clothes | Meine Armbanduhr geht vor. | My watch is fast.
+der Ring | ring | clothes | Der Ring ist aus Gold. | The ring is made of gold.
+der Mantel | coat | clothes | Zieh deinen Mantel an, es ist kalt. | Put on your coat, it is cold.
+der Pullover | jumper | clothes | Dieser Pullover ist sehr warm. | This jumper is very warm.
+die Hose | trousers | clothes | Die Hose ist zu lang. | The trousers are too long.
+die Bäckerei | bakery | city | Die Bäckerei öffnet um sieben Uhr. | The bakery opens at seven.
+die Post | post office | city | Die Post schließt um zwölf Uhr. | The post office closes at twelve.
+der Supermarkt | supermarket | city | Der Supermarkt ist weit von hier. | The supermarket is far from here.
+die Haltestelle | stop | city | Die Haltestelle ist an der Ecke. | The stop is on the corner.
+die U-Bahn | underground | city | Jeden Morgen nehme ich die U-Bahn. | Every morning I take the underground.
+der Fahrer | driver | city | Der Fahrer bremst sanft. | The driver brakes gently.
+die Autobahn | motorway | city | Die Autobahn ist sehr voll. | The motorway is very busy.
+die Kreuzung | crossroads | city | Biege an der Kreuzung rechts ab. | Turn right at the crossroads.
+der Stau | traffic jam | city | Wir stehen im Stau. | We are stuck in a traffic jam.
+der Aufzug | lift | city | Der Aufzug ist kaputt. | The lift is out of order.
+der Kunde | customer | work | Der Kunde wartet am Empfang. | The customer is waiting at reception.
+das Budget | budget | work | Das Budget ist sehr knapp. | The budget is very tight.
+das Projekt | project | work | Das Projekt beginnt im März. | The project starts in March.
+die Besprechung | meeting | work | Die Besprechung dauert eine Stunde. | The meeting lasts an hour.
+die Ausbildung | training | work | Die Ausbildung dauert drei Jahre. | The training lasts three years.
+das Praktikum | internship | work | Sie macht ein Praktikum bei einer Bank. | She is doing an internship at a bank.
+die Arbeitslosigkeit | unemployment | work | Die Arbeitslosigkeit sinkt leicht. | Unemployment is falling slightly.

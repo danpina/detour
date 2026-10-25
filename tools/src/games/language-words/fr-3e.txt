@@ -1,0 +1,31 @@
+# French, advanced: more nuance and register
+le poste de direction | management position | work | J'ai postulé à un poste de direction. | I applied for a management position.
+l'enjeu | stake | abstract | L'enjeu est considérable. | The stake is considerable.
+la mise en œuvre | implementation | abstract | La mise en œuvre prendra deux ans. | The implementation will take two years.
+l'impact | impact | abstract | L'impact de la mesure est limité. | The impact of the measure is limited.
+le dispositif | scheme, system | abstract | Le dispositif est en place depuis juin. | The scheme has been in place since June.
+la mesure | measure | abstract | Le gouvernement prend une nouvelle mesure. | The government takes a new measure.
+le seuil | threshold | abstract | Le seuil de pauvreté a été relevé. | The poverty line was raised.
+la marge | margin | abstract | Il y a une marge d'erreur. | There is a margin of error.
+la pénurie | shortage | economy | La pénurie de logements s'aggrave. | The housing shortage is getting worse.
+la croissance | growth | economy | La croissance reste faible. | Growth remains weak.
+la récession | recession | economy | Le pays est entré en récession. | The country entered a recession.
+le pouvoir d'achat | purchasing power | economy | Le pouvoir d'achat a baissé. | Purchasing power has fallen.
+l'actionnaire | shareholder | economy | L'actionnaire a voté contre la fusion. | The shareholder voted against the merger.
+la fusion | merger | economy | La fusion a été annoncée hier. | The merger was announced yesterday.
+la subvention | grant | economy | La subvention couvre la moitié des frais. | The grant covers half of the costs.
+le citoyen | citizen | society | Chaque citoyen a des droits. | Every citizen has rights.
+l'électeur | voter | society | L'électeur a le dernier mot. | The voter has the last word.
+le candidat | candidate | society | Le candidat a promis des changements. | The candidate promised changes.
+la campagne électorale | election campaign | society | La campagne électorale commence en septembre. | The election campaign starts in September.
+le scrutin | ballot | society | Le scrutin a lieu dimanche. | The vote takes place on Sunday.
+le tribunal | court | society | Le tribunal rendra sa décision demain. | The court will give its decision tomorrow.
+l'accusé | defendant | society | L'accusé a nié les faits. | The defendant denied the facts.
+la peine | sentence | society | La peine a été réduite. | The sentence was reduced.
+la preuve irréfutable | irrefutable proof | society | Ils ont une preuve irréfutable. | They have irrefutable proof.
+la tolérance | tolerance | society | La tolérance commence par l'écoute. | Tolerance begins with listening.
+l'humilité | humility | abstract | L'humilité est une grande qualité. | Humility is a great quality.
+la prudence | caution | abstract | La prudence est de mise. | Caution is called for.
+le courage | courage | abstract | Il a fallu du courage pour parler. | It took courage to speak.
+la rigueur | rigour | abstract | La rigueur est essentielle en science. | Rigour is essential in science.
+la lucidité | clear-sightedness | abstract | Elle a analysé la situation avec lucidité. | She analysed the situation clear-sightedly.

@@ -1,0 +1,62 @@
+# French, beginner: people, body, food and drink
+l'homme | man | people | L'homme lit le journal. | The man reads the newspaper.
+la femme | woman | people | La femme travaille dans une banque. | The woman works in a bank.
+le garçon | boy | people | Le garçon joue avec un ballon. | The boy plays with a ball.
+la fille | girl | people | La fille dessine une maison. | The girl draws a house.
+le bébé | baby | people | Le bébé dort dans le lit. | The baby sleeps in the bed.
+les gens | people | people | Les gens attendent le bus. | The people wait for the bus.
+la personne | person | people | C'est une personne très sympathique. | She is a very friendly person.
+le grand-père | grandfather | people | Mon grand-père raconte des histoires. | My grandfather tells stories.
+l'oncle | uncle | people | Mon oncle habite à Paris. | My uncle lives in Paris.
+la tante | aunt | people | Ma tante cuisine très bien. | My aunt cooks very well.
+le cousin | cousin | people | Mon cousin a un chien. | My cousin has a dog.
+le fils | son | people | Son fils étudie la médecine. | Her son studies medicine.
+le mari | husband | people | Mon mari arrive à six heures. | My husband arrives at six.
+l'épouse | wife | people | Son épouse est professeure. | His wife is a teacher.
+le professeur | teacher | people | Le professeur explique la leçon. | The teacher explains the lesson.
+l'élève | pupil | people | L'élève fait ses devoirs. | The pupil does his homework.
+le corps | body | body | Le corps a besoin d'eau. | The body needs water.
+la main | hand | body | Lave-toi la main avant de manger. | Wash your hand before eating.
+la tête | head | body | J'ai mal à la tête. | I have a headache.
+l'œil | eye | body | J'ai un œil fermé. | I have one eye closed.
+le pied | foot | body | J'ai mal au pied droit. | My right foot hurts.
+la bouche | mouth | body | Ouvre la bouche, s'il te plaît. | Open your mouth, please.
+le nez | nose | body | J'ai le nez rouge à cause du froid. | My nose is red from the cold.
+l'oreille | ear | body | J'ai mal à l'oreille. | My ear hurts.
+le bras | arm | body | Lève le bras droit. | Raise your right arm.
+la jambe | leg | body | J'ai mal à la jambe gauche. | My left leg hurts.
+le doigt | finger | body | J'ai un doigt cassé. | I have a broken finger.
+les cheveux | hair | body | Elle a les cheveux longs. | She has long hair.
+le visage | face | body | Lave-toi le visage à l'eau froide. | Wash your face with cold water.
+la dent | tooth | body | J'ai mal à une dent. | One of my teeth hurts.
+la viande | meat | food | Je ne mange pas de viande le vendredi. | I don't eat meat on Fridays.
+le fruit | fruit | food | Le fruit est très frais. | The fruit is very fresh.
+le légume | vegetable | food | Ce légume est très frais. | This vegetable is very fresh.
+la tomate | tomato | food | La tomate est mûre. | The tomato is ripe.
+la pomme de terre | potato | food | La pomme de terre est chaude. | The potato is hot.
+l'oignon | onion | food | L'oignon me fait pleurer. | The onion makes me cry.
+la carotte | carrot | food | Le lapin mange une carotte. | The rabbit eats a carrot.
+la banane | banana | food | Je mange une banane chaque matin. | I eat a banana every morning.
+la fraise | strawberry | food | La fraise est mon fruit préféré. | The strawberry is my favourite fruit.
+le raisin | grape | food | Ce raisin est très sucré. | These grapes are very sweet.
+le citron | lemon | food | Ajoute un peu de citron. | Add a little lemon.
+le gâteau | cake | food | Le gâteau est pour ton anniversaire. | The cake is for your birthday.
+le biscuit | biscuit | food | Je veux un biscuit avec du lait. | I want a biscuit with milk.
+le chocolat | chocolate | food | Le chocolat chaud est délicieux. | The hot chocolate is delicious.
+la glace | ice cream | food | J'adore la glace à la fraise. | I love strawberry ice cream.
+le sel | salt | food | Passe-moi le sel, s'il te plaît. | Pass me the salt, please.
+les pâtes | pasta | food | Aujourd'hui, nous mangeons des pâtes. | Today we eat pasta.
+le repas | meal | food | Le repas est sur la table. | The meal is on the table.
+le déjeuner | lunch | food | Le déjeuner est à midi. | Lunch is at noon.
+le jus | juice | drinks | Je bois du jus d'orange le matin. | I drink orange juice in the morning.
+le thé | tea | drinks | Je préfère le thé sans sucre. | I prefer tea without sugar.
+la bière | beer | drinks | Une bière fraîche, s'il vous plaît. | A cold beer, please.
+le vin | wine | drinks | Le vin vient de France. | The wine comes from France.
+la bouteille | bottle | drinks | J'achète une bouteille d'eau. | I buy a bottle of water.
+le verre | glass | drinks | Donne-moi un verre de lait. | Give me a glass of milk.
+la tasse | cup | drinks | Je veux une tasse de café. | I want a cup of coffee.
+l'assiette | plate | food | L'assiette est propre. | The plate is clean.
+la cuillère | spoon | food | Il me faut une cuillère pour la soupe. | I need a spoon for the soup.
+la fourchette | fork | food | La fourchette est sur la table. | The fork is on the table.
+le couteau | knife | food | Le couteau coupe bien. | The knife cuts well.
+le café | coffee | drinks | J'aime le café le matin. | I like coffee in the morning.

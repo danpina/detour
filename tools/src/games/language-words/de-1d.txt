@@ -1,0 +1,93 @@
+# German, beginner: verbs, adjectives, question words and small words
+sein | to be | verbs | Ich möchte Arzt sein. | I want to be a doctor.
+haben | to have | verbs | Ich möchte einen Hund haben. | I would like to have a dog.
+machen | to do, to make | verbs | Ich werde das Abendessen machen. | I am going to make dinner.
+gehen | to go | verbs | Ich möchte an den Strand gehen. | I want to go to the beach.
+kommen | to come | verbs | Kannst du morgen kommen? | Can you come tomorrow?
+sehen | to see | verbs | Ich möchte diesen Film sehen. | I want to see that film.
+hören | to hear | verbs | Ich kann die Musik nicht hören. | I can't hear the music.
+sagen | to say | verbs | Ich werde die Wahrheit sagen. | I am going to tell the truth.
+geben | to give | verbs | Ich werde meiner Mutter ein Geschenk geben. | I am going to give my mother a present.
+wollen | to want | verbs | Man muss etwas wollen, um es zu erreichen. | You have to want something to achieve it.
+können | to be able to | verbs | Ich möchte mit ihr sprechen können. | I want to be able to talk to her.
+wissen | to know (a fact) | verbs | Ich möchte die Antwort wissen. | I want to know the answer.
+kennen | to know (a person) | verbs | Ich will ihn besser kennen. | I want to know him better.
+ankommen | to arrive | verbs | Wir werden zu spät ankommen. | We are going to arrive late.
+ausgehen | to go out | verbs | Ich möchte mit meinen Freunden ausgehen. | I want to go out with my friends.
+eintreten | to enter | verbs | Du kannst eintreten, die Tür ist offen. | You can come in, the door is open.
+zurückkehren | to return | verbs | Ich werde nach Hause zurückkehren. | I am going to go back home.
+anrufen | to call | verbs | Ich werde meine Mutter anrufen. | I am going to call my mother.
+ansehen | to look at | verbs | Ich möchte mir diesen Film ansehen. | I want to watch this film.
+zuhören | to listen | verbs | Ich möchte dir zuhören. | I would like to listen to you.
+arbeiten | to work | verbs | Ich muss morgen arbeiten. | I have to work tomorrow.
+spielen | to play | verbs | Die Kinder wollen im Park spielen. | The children want to play in the park.
+tanzen | to dance | verbs | Ich liebe es, mit ihr zu tanzen. | I love dancing with her.
+kochen | to cook | verbs | Ich werde Nudeln kochen. | I am going to cook pasta.
+waschen | to wash | verbs | Ich muss das Geschirr waschen. | I have to wash the dishes.
+benutzen | to use | verbs | Du kannst mein Telefon benutzen. | You can use my phone.
+brauchen | to need | verbs | Ich werde Hilfe brauchen. | I am going to need help.
+lieben | to love | verbs | Ich möchte ohne Angst lieben. | I want to love without fear.
+verkaufen | to sell | verbs | Sie wollen das Haus verkaufen. | They want to sell the house.
+bezahlen | to pay | verbs | Ich werde die Rechnung bezahlen. | I am going to pay the bill.
+schließen | to close | verbs | Ich werde das Fenster schließen. | I am going to close the window.
+beginnen | to begin | verbs | Der Unterricht wird gleich beginnen. | The class is about to begin.
+beenden | to finish | verbs | Ich werde die Arbeit heute beenden. | I am going to finish the work today.
+gewinnen | to win | verbs | Wir wollen das Spiel gewinnen. | We want to win the game.
+verlieren | to lose | verbs | Ich will meine Schlüssel nicht verlieren. | I don't want to lose my keys.
+steigen | to climb | verbs | Wir wollen auf den Berg steigen. | We want to climb the mountain.
+schwimmen | to swim | verbs | Ich gehe gern schwimmen. | I like going swimming.
+fliegen | to fly | verbs | Vögel können fliegen. | Birds can fly.
+lachen | to laugh | verbs | Ich möchte mit Freunden lachen. | I want to laugh with friends.
+weinen | to cry | verbs | Ich muss weinen, wenn ich Zwiebeln schneide. | I cry when I cut onions.
+tragen | to carry, to wear | verbs | Ich werde einen Mantel tragen. | I am going to wear a coat.
+mitbringen | to bring | verbs | Ich werde den Nachtisch mitbringen. | I am going to bring the dessert.
+legen | to put | verbs | Ich werde das Buch auf den Tisch legen. | I am going to put the book on the table.
+reisen | to travel | verbs | Ich möchte viel reisen. | I would like to travel a lot.
+kaufen | to buy | verbs | Ich möchte Brot kaufen. | I want to buy bread.
+gut | good | adjectives | Das Brot ist sehr gut. | The bread is very good.
+schlecht | bad | adjectives | Das Wetter ist heute schlecht. | The weather is bad today.
+hoch | high | adjectives | Die Mauer ist sehr hoch. | The wall is very high.
+niedrig | low | adjectives | Die Decke ist niedrig. | The ceiling is low.
+jung | young | adjectives | Meine Tante ist sehr jung. | My aunt is very young.
+reich | rich | adjectives | Dieser Mann ist sehr reich. | This man is very rich.
+sauber | clean | adjectives | Das Badezimmer ist sauber. | The bathroom is clean.
+schmutzig | dirty | adjectives | Der Boden ist schmutzig. | The floor is dirty.
+stark | strong | adjectives | Der Wind ist sehr stark. | The wind is very strong.
+leicht | light, easy | adjectives | Das Paket ist sehr leicht. | The package is very light.
+schwer | heavy | adjectives | Das Paket ist sehr schwer. | The package is very heavy.
+voll | full | adjectives | Das Glas ist voll. | The glass is full.
+leer | empty | adjectives | Der Kühlschrank ist leer. | The fridge is empty.
+offen | open | adjectives | Der Markt ist offen. | The market is open.
+geschlossen | closed | adjectives | Das Geschäft ist geschlossen. | The shop is closed.
+süß | sweet | adjectives | Diese Traube ist sehr süß. | This grape is very sweet.
+salzig | salty | adjectives | Der Fisch ist sehr salzig. | The fish is very salty.
+hart | hard | adjectives | Das Brot ist hart. | The bread is hard.
+traurig | sad | adjectives | Heute bin ich ein bisschen traurig. | Today I am a bit sad.
+krank | ill | adjectives | Mein Sohn ist krank. | My son is ill.
+nett | nice | adjectives | Dein Freund ist sehr nett. | Your friend is very nice.
+klug | clever | adjectives | Mein Bruder ist sehr klug. | My brother is very clever.
+ruhig | calm | adjectives | Der See ist sehr ruhig. | The lake is very calm.
+dunkel | dark | adjectives | Das Zimmer ist dunkel. | The room is dark.
+was | what | words | Was möchtest du essen? | What do you want to eat?
+wer | who | words | Wer ist dieser Junge? | Who is that boy?
+wo | where | words | Wo wohnst du? | Where do you live?
+wann | when | words | Wann kommt der Zug? | When does the train arrive?
+wie | how | words | Wie heißt du? | What is your name?
+warum | why | words | Warum bist du traurig? | Why are you sad?
+wie viel | how much | words | Wie viel kostet das Brot? | How much does the bread cost?
+sehr | very | words | Die Suppe ist sehr heiß. | The soup is very hot.
+mehr | more | words | Ich möchte mehr Wasser. | I want more water.
+weniger | less | words | Heute sind weniger Leute da. | Today there are fewer people.
+viel | a lot | words | Ich mag Schokolade sehr viel. | I like chocolate a lot.
+wenig | a little | words | Ich möchte ein wenig Salz. | I want a little salt.
+alles | everything | words | Alles ist bereit. | Everything is ready.
+nichts | nothing | words | Ich habe nichts in der Hand. | I have nothing in my hand.
+etwas | something | words | Ich möchte etwas essen. | I want to eat something.
+hier | here | words | Mein Haus ist hier. | My house is here.
+dort | there | words | Dein Auto steht dort. | Your car is over there.
+gern | gladly | words | Meine Mutter kocht sehr gern. | My mother loves cooking.
+auch | also | words | Ich möchte auch einen Kaffee. | I also want a coffee.
+aber | but | words | Ich will gehen, aber ich bin müde. | I want to go, but I am tired.
+mit | with | words | Ich gehe mit meinem Bruder ins Kino. | I am going to the cinema with my brother.
+ohne | without | words | Ich trinke Kaffee ohne Zucker. | I drink coffee without sugar.
+für | for | words | Dieses Geschenk ist für dich. | This present is for you.

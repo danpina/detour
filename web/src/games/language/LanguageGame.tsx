@@ -3,14 +3,14 @@ import type { GameProps } from "../registry";
 import { getRoundSize, recordRound } from "../stats";
 import { loadProgress, saveProgress } from "./progress";
 import { getLanguage, getLevel, LEVEL_NAMES, type Language } from "./languageData";
-import { applyAnswer, buildRound, LEARNED_AT, type Level, type Progress, type Question } from "./languageLogic";
+import { applyAnswer, buildRound, LEARNED_AT, type Level, type Progress, type Question, type Word } from "./languageLogic";
 
-function newRound(lang: Language, level: Level, progress: Progress): Question[] {
-  return buildRound(lang.words, progress, Math.random, getRoundSize(), level);
+function newRound(words: Word[], level: Level, progress: Progress): Question[] {
+  return buildRound(words, progress, Math.random, getRoundSize(), level);
 }
 
-function learnedCount(lang: Language, level: Level, p: Progress): number {
-  return lang.words.filter((w) => w.level === level && (p.known[w.key] ?? 0) >= LEARNED_AT).length;
+function learnedCount(words: Word[], level: Level, p: Progress): number {
+  return words.filter((w) => w.level === level && (p.known[w.key] ?? 0) >= LEARNED_AT).length;
 }
 
 function endLine(lang: Language, score: number, total: number): string {
@@ -20,12 +20,9 @@ function endLine(lang: Language, score: number, total: number): string {
   return "Every word you miss comes back until it sticks. Go again?";
 }
 
-export function LanguageGame({ onExit, embedded }: GameProps) {
-  // The language is chosen on the Games screen; it stays fixed for this round.
-  const [lang] = useState<Language>(getLanguage);
-  const [level] = useState<Level>(getLevel);
+function LanguageRound({ words, lang, level, onExit, embedded }: GameProps & { words: Word[]; lang: Language; level: Level }) {
   const [progress, setProgress] = useState<Progress>(() => loadProgress(lang));
-  const [round, setRound] = useState<Question[]>(() => newRound(lang, level, progress));
+  const [round, setRound] = useState<Question[]>(() => newRound(words, level, progress));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -61,7 +58,7 @@ export function LanguageGame({ onExit, embedded }: GameProps) {
   const done = index >= round.length;
 
   function restart() {
-    setRound(newRound(lang, level, progress));
+    setRound(newRound(words, level, progress));
     setIndex(0);
     setScore(0);
     setPicked(null);
@@ -74,7 +71,7 @@ export function LanguageGame({ onExit, embedded }: GameProps) {
         <div className="text-6xl">{lang.flag}</div>
         <h1 className="text-3xl font-semibold tracking-tight">{score} / {round.length}</h1>
         <p className="text-neutral-500 dark:text-neutral-400">{endLine(lang, score, round.length)}</p>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400">{learnedCount(lang, level, progress)} of {lang.words.filter((w) => w.level === level).length} {LEVEL_NAMES[level].toLowerCase()} words learned</p>
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">{learnedCount(words, level, progress)} of {words.filter((w) => w.level === level).length} {LEVEL_NAMES[level].toLowerCase()} words learned</p>
         {best && <p className="text-sm font-medium text-teal-600 dark:text-teal-400">New best!</p>}
         <div className="mt-2 flex w-full max-w-xs flex-col gap-3">
           <button onClick={restart} className="min-h-14 rounded-2xl bg-teal-600 px-6 py-3 text-lg font-semibold text-white active:scale-[0.98]">Play again</button>
@@ -163,4 +160,34 @@ export function LanguageGame({ onExit, embedded }: GameProps) {
       </div>
     </div>
   );
+}
+
+/** The language and level are chosen on the Games screen. The word list loads when the game opens, then the round plays. */
+export function LanguageGame(props: GameProps) {
+  const [lang] = useState<Language>(getLanguage);
+  const [level] = useState<Level>(getLevel);
+  const [words, setWords] = useState<Word[] | null>(null);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    let live = true;
+    lang.load().then(
+      (list) => live && setWords(list),
+      () => live && setFailed(true),
+    );
+    return () => {
+      live = false;
+    };
+  }, [lang]);
+
+  if (failed) {
+    return (
+      <div className="flex h-full flex-col items-center justify-center gap-4 px-8 text-center">
+        <p className="text-neutral-500 dark:text-neutral-400">{lang.name} is not available right now.</p>
+        <button onClick={props.onExit} className="rounded-2xl bg-teal-600 px-6 py-3 font-semibold text-white">{props.embedded ? "Skip" : "Back"}</button>
+      </div>
+    );
+  }
+  if (!words) return <div className="flex h-full items-center justify-center text-neutral-500 dark:text-neutral-400" aria-busy="true">Loading…</div>;
+  return <LanguageRound {...props} words={words} lang={lang} level={level} />;
 }

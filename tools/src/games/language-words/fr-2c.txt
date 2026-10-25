@@ -1,0 +1,113 @@
+# French, medium: feelings, daily verbs, hobbies, school, home, nature, animals, adjectives, connectors
+la joie | joy | feelings | Sa visite me donne beaucoup de joie. | Her visit gives me a lot of joy.
+la tristesse | sadness | feelings | Je ressens de la tristesse quand tu pars. | I feel sadness when you leave.
+la colère | anger | feelings | Sa colère dure peu. | His anger doesn't last long.
+la surprise | surprise | feelings | Quelle surprise de te voir ici. | What a surprise to see you here.
+la honte | shame | feelings | J'ai honte de parler en public. | I am ashamed to speak in public.
+le stress | stress | feelings | Avant l'examen, j'ai du stress. | Before the exam I feel stressed.
+l'espoir | hope | feelings | Je garde l'espoir. | I keep hope.
+la confiance | trust | feelings | La confiance est très importante. | Trust is very important.
+manquer | to miss | feelings | Ma famille va me manquer. | I am going to miss my family.
+se réveiller | to wake up | verbs | Il est difficile de se réveiller sans café. | It is hard to wake up without coffee.
+se lever | to get up | verbs | Il est dur de se lever tôt. | It is hard to get up early.
+se doucher | to shower | verbs | Il est agréable de se doucher à l'eau chaude. | It is pleasant to shower with hot water.
+s'habiller | to get dressed | verbs | Il est facile de s'habiller en été. | It is easy to get dressed in summer.
+se coucher | to go to bed | verbs | Il est sain de se coucher tôt. | It is healthy to go to bed early.
+rester | to stay | verbs | Il vaut mieux rester à la maison aujourd'hui. | It is better to stay at home today.
+s'asseoir | to sit down | verbs | Il vaut mieux s'asseoir ici. | It is better to sit down here.
+oublier | to forget | verbs | Je ne veux pas oublier ton nom. | I don't want to forget your name.
+se souvenir | to remember | verbs | Il est doux de se souvenir de son enfance. | It is sweet to remember one's childhood.
+décider | to decide | verbs | Je dois décider aujourd'hui. | I have to decide today.
+choisir | to choose | verbs | Il est difficile de choisir un cadeau. | It is hard to choose a present.
+demander | to ask | verbs | Je vais demander le prix. | I am going to ask the price.
+répondre | to answer | verbs | Je dois répondre au courriel. | I must answer the email.
+expliquer | to explain | verbs | Peux-tu expliquer cette règle ? | Can you explain this rule?
+comprendre | to understand | verbs | Je ne peux pas comprendre cette phrase. | I can't understand this sentence.
+partager | to share | verbs | J'aime partager la nourriture. | I like to share food.
+prêter | to lend | verbs | Peux-tu prêter ton livre ? | Can you lend your book?
+rendre | to give back | verbs | Je dois rendre le livre. | I have to give the book back.
+économiser | to save | verbs | Nous voulons économiser pour le voyage. | We want to save for the trip.
+changer | to change | verbs | Je vais changer de travail. | I am going to change jobs.
+grandir | to grow | verbs | Les enfants vont grandir vite. | The children are going to grow up fast.
+mourir | to die | verbs | Ces fleurs vont mourir sans eau. | These flowers are going to die without water.
+naître | to be born | verbs | Mon neveu va naître en mai. | My nephew is going to be born in May.
+se marier | to get married | verbs | Il est beau de se marier en juin. | It is lovely to get married in June.
+s'occuper de | to look after | verbs | Il faut s'occuper de ses enfants. | You have to look after your children.
+le loisir | leisure activity | hobbies | Mon loisir préféré est la photographie. | My favourite pastime is photography.
+le sport | sport | hobbies | Mon sport préféré est le tennis. | My favourite sport is tennis.
+le match | match | hobbies | Le match commence à huit heures. | The match starts at eight.
+l'équipe | team | hobbies | Notre équipe a gagné hier. | Our team won yesterday.
+l'exercice | exercise | hobbies | Je fais de l'exercice chaque matin. | I exercise every morning.
+le ballon | ball | hobbies | Le ballon est dans le jardin. | The ball is in the garden.
+la guitare | guitar | hobbies | Je joue de la guitare le soir. | I play the guitar in the evening.
+la chanson | song | hobbies | Cette chanson est très belle. | This song is very beautiful.
+le musée | museum | places | Le musée ouvre le dimanche. | The museum opens on Sundays.
+le théâtre | theatre | places | Nous allons au théâtre ce soir. | We are going to the theatre tonight.
+l'examen | exam | school | L'examen est la semaine prochaine. | The exam is next week.
+la note | grade | school | J'ai eu une bonne note. | I got a good grade.
+l'université | university | school | Mon frère va à l'université. | My brother goes to university.
+l'étudiant | student | school | Chaque étudiant a un livre. | Every student has a book.
+l'histoire | history, story | school | J'adore l'histoire ancienne. | I love ancient history.
+la science | science | school | La science explique le monde. | Science explains the world.
+le cahier | notebook | school | J'écris dans mon cahier. | I write in my notebook.
+l'escalier | stairs | home | L'escalier est très étroit. | The staircase is very narrow.
+le plafond | ceiling | home | Le plafond a une fuite. | The ceiling has a leak.
+l'armoire | wardrobe | home | Les vêtements sont dans l'armoire. | The clothes are in the wardrobe.
+le frigo | fridge | home | Le lait est dans le frigo. | The milk is in the fridge.
+la machine à laver | washing machine | home | La machine à laver est cassée. | The washing machine is broken.
+les ordures | rubbish | home | Je sors les ordures le soir. | I take out the rubbish in the evening.
+le loyer | rent | home | Le loyer augmente chaque année. | The rent goes up every year.
+l'appartement | flat | home | J'habite dans un petit appartement. | I live in a small flat.
+la couverture | blanket | home | J'ai besoin d'une couverture, il fait froid. | I need a blanket, it is cold.
+l'oreiller | pillow | home | L'oreiller est très confortable. | The pillow is very comfortable.
+la campagne | countryside | nature | Mes grands-parents vivent à la campagne. | My grandparents live in the countryside.
+le désert | desert | nature | Le désert est très sec. | The desert is very dry.
+la jungle | jungle | nature | La jungle abrite beaucoup d'animaux. | The jungle is home to many animals.
+le volcan | volcano | nature | Le volcan est actif. | The volcano is active.
+la vague | wave | nature | La vague est énorme. | The wave is huge.
+l'orage | storm | weather | L'orage commence ce soir. | The storm starts tonight.
+le brouillard | fog | weather | Il y a beaucoup de brouillard sur la route. | There is a lot of fog on the road.
+la chaleur | heat | weather | Il y a beaucoup de chaleur en août. | It is very hot in August.
+le renard | fox | animals | Le renard court dans la forêt. | The fox runs through the forest.
+le loup | wolf | animals | Le loup hurle la nuit. | The wolf howls at night.
+l'ours | bear | animals | L'ours dort en hiver. | The bear sleeps in winter.
+l'écureuil | squirrel | animals | L'écureuil monte dans l'arbre. | The squirrel climbs the tree.
+l'abeille | bee | animals | L'abeille fait du miel. | The bee makes honey.
+l'araignée | spider | animals | Il y a une araignée sur le mur. | There is a spider on the wall.
+le dauphin | dolphin | animals | Le dauphin saute dans l'eau. | The dolphin jumps in the water.
+la baleine | whale | animals | La baleine est énorme. | The whale is huge.
+confortable | comfortable | adjectives | Le canapé est très confortable. | The sofa is very comfortable.
+fier | proud | adjectives | Je suis fier de mon fils. | I am proud of my son.
+gentil | kind | adjectives | Mon voisin est très gentil. | My neighbour is very kind.
+timide | shy | adjectives | Mon cousin est très timide. | My cousin is very shy.
+amusant | fun | adjectives | Ce jeu est très amusant. | This game is a lot of fun.
+ennuyeux | boring | adjectives | Ce livre est très ennuyeux. | This book is very boring.
+sûr | safe, sure | adjectives | Ce quartier est sûr. | This neighbourhood is safe.
+dangereux | dangerous | adjectives | Le chemin est dangereux. | The path is dangerous.
+utile | useful | adjectives | Cette carte est très utile. | This map is very useful.
+facile | easy | adjectives | La leçon est facile. | The lesson is easy.
+étrange | strange | adjectives | C'est étrange, personne ne répond. | It is strange, nobody answers.
+célèbre | famous | adjectives | Ce musée est célèbre. | This museum is famous.
+mouillé | wet | adjectives | Le sol est mouillé. | The floor is wet.
+sec | dry | adjectives | Le pain est sec. | The bread is dry.
+large | wide | adjectives | Le fleuve est très large. | The river is very wide.
+étroit | narrow | adjectives | Le couloir est étroit. | The corridor is narrow.
+long | long | adjectives | Le chemin est long. | The road is long.
+court | short | adjectives | Le jour est très court en hiver. | The day is very short in winter.
+profond | deep | adjectives | Le lac est très profond. | The lake is very deep.
+prochain | next | adjectives | Le prochain arrêt est le nôtre. | The next stop is ours.
+dernier | last | adjectives | C'est le dernier bus. | It is the last bus.
+pendant | during | words | Pendant le voyage, je dors. | During the trip I sleep.
+après | after | words | Après le repas, je me repose. | After the meal, I rest.
+avant | before | words | Avant de sortir, je ferme la porte. | Before going out, I close the door.
+alors | then, so | words | Alors nous sommes rentrés. | So we went home.
+parce que | because | words | J'étudie parce que je veux apprendre. | I study because I want to learn.
+pourtant | yet, however | words | C'est cher, pourtant je l'achète. | It is expensive, yet I buy it.
+souvent | often | words | Je vais souvent à la plage. | I often go to the beach.
+parfois | sometimes | words | Parfois, je marche jusqu'au travail. | Sometimes I walk to work.
+presque | almost | words | Je n'ai presque pas de temps. | I have almost no time.
+encore | still, again | words | Il n'est pas encore cinq heures. | It is not five o'clock yet.
+déjà | already | words | J'ai déjà fini mes devoirs. | I have already finished my homework.
+peut-être | maybe | words | Peut-être que j'irai demain. | Maybe I will go tomorrow.
+trop | too much | words | Il y a trop de bruit. | There is too much noise.
+assez | quite, enough | words | Le film est assez bon. | The film is quite good.

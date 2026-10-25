@@ -8,7 +8,7 @@ import { PatternsGame } from "./patterns/PatternsGame";
 import { LanguageGame } from "./language/LanguageGame";
 import { LOGIC_ITEMS } from "./logic/logicData";
 import { loadLogicProgress } from "./logic/progress";
-import { getLanguage, getLevel, LEVEL_NAMES } from "./language/languageData";
+import { getLanguage, getLevel, LEVEL_NAMES, wordCount } from "./language/languageData";
 import { LEARNED_AT } from "./language/languageLogic";
 import { loadProgress as loadLanguageProgress } from "./language/progress";
 import { WordsGame } from "./words/WordsGame";
@@ -37,11 +37,11 @@ export type GameDef = {
 
 function languageProgress(): string | null {
   const lang = getLanguage();
-  const p = loadLanguageProgress(lang);
   const level = getLevel();
-  const inLevel = lang.words.filter((w) => w.level === level);
-  const learned = inLevel.filter((w) => (p.known[w.key] ?? 0) >= LEARNED_AT).length;
-  return learned > 0 ? lang.name + " · " + LEVEL_NAMES[level] + ": " + learned + " of " + inLevel.length + " learned" : null;
+  const total = wordCount(lang, level);
+  // Words learned across the whole language: the list itself is only loaded when the game opens.
+  const learned = Object.values(loadLanguageProgress(lang).known).filter((n) => n >= LEARNED_AT).length;
+  return learned > 0 ? lang.name + " · " + LEVEL_NAMES[level] + ": " + learned + " learned" + (total > 0 ? " (" + total + " words at this level)" : "") : null;
 }
 
 function logicProgress(): string | null {

@@ -18,7 +18,7 @@ final class LanguageTests: XCTestCase {
             XCTAssertGreaterThan(list.count, 80, language.name)
             XCTAssertEqual(Set(list.map { $0.key }).count, list.count, language.name)
             for word in list { XCTAssertNotNil(LanguageBuilder.blanked(word), language.name + ": " + word.key) }
-            for level in 1...3 { XCTAssertGreaterThanOrEqual(list.filter { $0.level == level }.count, 12, language.name) }
+            for level in 1...3 { XCTAssertGreaterThanOrEqual(list.filter { $0.level == level }.count, 250, language.name) }
             var rng = SystemRandomNumberGenerator()
             let round = LanguageBuilder.round(everything: list, progress: LanguageProgress(), length: 8, using: &rng)
             XCTAssertEqual(round.count, 8, language.name)

@@ -1,0 +1,108 @@
+# German, medium: feelings, daily verbs, hobbies, school, home, nature, animals, adjectives, connectors
+die Freude | joy | feelings | Ihr Besuch macht mir große Freude. | Her visit gives me great joy.
+die Traurigkeit | sadness | feelings | Ich spüre Traurigkeit, wenn du gehst. | I feel sadness when you leave.
+die Wut | anger | feelings | Seine Wut dauert nicht lange. | His anger doesn't last long.
+die Überraschung | surprise | feelings | Was für eine Überraschung, dich hier zu sehen. | What a surprise to see you here.
+die Scham | shame | feelings | Ich empfinde Scham, wenn ich öffentlich spreche. | I feel shame when I speak in public.
+der Stress | stress | feelings | Vor der Prüfung habe ich Stress. | Before the exam I feel stressed.
+die Hoffnung | hope | feelings | Ich behalte die Hoffnung. | I keep hope.
+das Vertrauen | trust | feelings | Vertrauen ist sehr wichtig. | Trust is very important.
+vermissen | to miss | feelings | Ich werde meine Familie vermissen. | I am going to miss my family.
+aufwachen | to wake up | verbs | Ich will morgen früh aufwachen. | I want to wake up early tomorrow.
+aufstehen | to get up | verbs | Ich muss morgen früh aufstehen. | I have to get up early tomorrow.
+duschen | to shower | verbs | Ich gehe jeden Morgen duschen. | I go and shower every morning.
+sich anziehen | to get dressed | verbs | Im Sommer will ich mich schnell anziehen. | In summer I want to get dressed quickly. | anziehen
+ins Bett gehen | to go to bed | verbs | Ich will heute früh ins Bett gehen. | I want to go to bed early today.
+bleiben | to stay | verbs | Heute möchte ich zu Hause bleiben. | Today I would like to stay at home.
+sich setzen | to sit down | verbs | Du kannst dich hier setzen. | You can sit down here. | setzen
+vergessen | to forget | verbs | Ich will deinen Namen nicht vergessen. | I don't want to forget your name.
+sich erinnern | to remember | verbs | Ich möchte mich an meine Kindheit erinnern. | I like to remember my childhood. | erinnern
+entscheiden | to decide | verbs | Ich muss heute entscheiden. | I have to decide today.
+wählen | to choose | verbs | Es ist schwer, ein Geschenk zu wählen. | It is hard to choose a present.
+fragen | to ask | verbs | Ich werde nach dem Preis fragen. | I am going to ask the price.
+antworten | to answer | verbs | Ich muss auf die E-Mail antworten. | I must answer the email.
+erklären | to explain | verbs | Kannst du diese Regel erklären? | Can you explain this rule?
+verstehen | to understand | verbs | Ich kann diesen Satz nicht verstehen. | I can't understand this sentence.
+teilen | to share | verbs | Ich mag es, das Essen zu teilen. | I like to share food.
+leihen | to lend | verbs | Kannst du mir dein Buch leihen? | Can you lend me your book?
+zurückgeben | to give back | verbs | Ich muss das Buch zurückgeben. | I have to give the book back.
+sparen | to save | verbs | Wir wollen für die Reise sparen. | We want to save for the trip.
+ändern | to change | verbs | Ich werde meine Arbeit ändern. | I am going to change my job.
+wachsen | to grow | verbs | Kinder wachsen sehr schnell. | Children grow very fast.
+sterben | to die | verbs | Die Blumen werden ohne Wasser sterben. | The flowers are going to die without water.
+heiraten | to get married | verbs | Meine Cousine wird im Juni heiraten. | My cousin is going to get married in June.
+sich kümmern | to look after | verbs | Ich werde mich um das Baby kümmern. | I am going to look after the baby. | kümmern
+das Hobby | hobby | hobbies | Mein Hobby ist die Fotografie. | My hobby is photography.
+der Sport | sport | hobbies | Der Sport macht mir Spaß. | Sport is fun for me.
+die Mannschaft | team | hobbies | Unsere Mannschaft hat gestern gewonnen. | Our team won yesterday.
+die Übung | exercise | hobbies | Ich mache jeden Morgen eine Übung. | I do an exercise every morning.
+der Ball | ball | hobbies | Der Ball liegt im Garten. | The ball is in the garden.
+die Gitarre | guitar | hobbies | Abends spiele ich Gitarre. | In the evening I play the guitar.
+das Lied | song | hobbies | Dieses Lied ist sehr schön. | This song is very beautiful.
+das Museum | museum | places | Das Museum öffnet sonntags. | The museum opens on Sundays.
+das Theater | theatre | places | Wir gehen heute Abend ins Theater. | We are going to the theatre tonight.
+die Prüfung | exam | school | Die Prüfung ist nächste Woche. | The exam is next week.
+die Note | grade | school | Ich habe eine gute Note bekommen. | I got a good grade.
+die Universität | university | school | Mein Bruder geht an die Universität. | My brother goes to university.
+der Student | student | school | Jeder Student hat ein Buch. | Every student has a book.
+die Geschichte | history, story | school | Ich liebe die alte Geschichte. | I love ancient history.
+die Wissenschaft | science | school | Die Wissenschaft erklärt die Welt. | Science explains the world.
+das Heft | notebook | school | Ich schreibe in mein Heft. | I write in my notebook.
+das Dach | roof | home | Das Dach hat ein Loch. | The roof has a hole.
+die Decke | ceiling, blanket | home | Die Decke ist sehr hoch. | The ceiling is very high.
+der Kühlschrank | fridge | home | Die Milch steht im Kühlschrank. | The milk is in the fridge.
+die Waschmaschine | washing machine | home | Die Waschmaschine ist kaputt. | The washing machine is broken.
+der Müll | rubbish | home | Abends bringe ich den Müll raus. | In the evening I take out the rubbish.
+die Miete | rent | home | Die Miete steigt jedes Jahr. | The rent goes up every year.
+die Wohnung | flat | home | Ich wohne in einer kleinen Wohnung. | I live in a small flat.
+das Kissen | pillow | home | Das Kissen ist sehr bequem. | The pillow is very comfortable.
+die Wüste | desert | nature | Die Wüste ist sehr trocken. | The desert is very dry.
+der Dschungel | jungle | nature | Im Dschungel leben viele Tiere. | Many animals live in the jungle.
+der Vulkan | volcano | nature | Der Vulkan ist aktiv. | The volcano is active.
+die Welle | wave | nature | Die Welle ist riesig. | The wave is huge.
+das Gewitter | thunderstorm | weather | Das Gewitter beginnt heute Nacht. | The thunderstorm starts tonight.
+der Nebel | fog | weather | Auf der Straße ist dichter Nebel. | There is thick fog on the road.
+die Hitze | heat | weather | Im August ist die Hitze groß. | In August the heat is intense.
+der Fuchs | fox | animals | Der Fuchs läuft durch den Wald. | The fox runs through the forest.
+der Wolf | wolf | animals | Der Wolf heult in der Nacht. | The wolf howls at night.
+der Bär | bear | animals | Der Bär schläft im Winter. | The bear sleeps in winter.
+das Eichhörnchen | squirrel | animals | Das Eichhörnchen klettert auf den Baum. | The squirrel climbs the tree.
+die Biene | bee | animals | Die Biene macht Honig. | The bee makes honey.
+die Spinne | spider | animals | An der Wand sitzt eine Spinne. | There is a spider on the wall.
+der Delfin | dolphin | animals | Der Delfin springt aus dem Wasser. | The dolphin jumps out of the water.
+der Wal | whale | animals | Der Wal ist riesig. | The whale is huge.
+bequem | comfortable | adjectives | Das Sofa ist sehr bequem. | The sofa is very comfortable.
+stolz | proud | adjectives | Ich bin stolz auf meinen Sohn. | I am proud of my son.
+freundlich | kind | adjectives | Mein Nachbar ist sehr freundlich. | My neighbour is very kind.
+schüchtern | shy | adjectives | Mein Cousin ist sehr schüchtern. | My cousin is very shy.
+lustig | fun, funny | adjectives | Dieses Spiel ist sehr lustig. | This game is very funny.
+langweilig | boring | adjectives | Das Buch ist sehr langweilig. | The book is very boring.
+sicher | safe, sure | adjectives | Dieses Viertel ist sicher. | This neighbourhood is safe.
+gefährlich | dangerous | adjectives | Der Weg ist gefährlich. | The path is dangerous.
+nützlich | useful | adjectives | Diese Karte ist sehr nützlich. | This map is very useful.
+einfach | simple, easy | adjectives | Die Lektion ist einfach. | The lesson is simple.
+seltsam | strange | adjectives | Es ist seltsam, niemand antwortet. | It is strange, nobody answers.
+berühmt | famous | adjectives | Dieses Museum ist berühmt. | This museum is famous.
+nass | wet | adjectives | Der Boden ist nass. | The floor is wet.
+trocken | dry | adjectives | Das Brot ist trocken. | The bread is dry.
+breit | wide | adjectives | Der Fluss ist sehr breit. | The river is very wide.
+eng | narrow | adjectives | Der Flur ist eng. | The corridor is narrow.
+lang | long | adjectives | Der Weg ist lang. | The road is long.
+kurz | short | adjectives | Im Winter ist der Tag sehr kurz. | In winter the day is very short.
+tief | deep | adjectives | Der See ist sehr tief. | The lake is very deep.
+nächste | next | adjectives | Die nächste Haltestelle ist unsere. | The next stop is ours.
+letzte | last | adjectives | Das ist der letzte Bus. | That is the last bus.
+während | during | words | Während der Reise schlafe ich. | During the trip I sleep.
+nach | after | words | Nach dem Essen ruhe ich mich aus. | After the meal I rest.
+vor | before | words | Vor dem Gehen schließe ich die Tür. | Before leaving I close the door.
+dann | then | words | Dann sind wir nach Hause gegangen. | Then we went home.
+weil | because | words | Ich lerne, weil ich etwas lernen will. | I study because I want to learn.
+trotzdem | nevertheless | words | Es ist teuer, trotzdem kaufe ich es. | It is expensive, nevertheless I buy it.
+oft | often | words | Ich gehe oft an den Strand. | I often go to the beach.
+manchmal | sometimes | words | Manchmal gehe ich zu Fuß zur Arbeit. | Sometimes I walk to work.
+fast | almost | words | Ich habe fast keine Zeit. | I have almost no time.
+noch | still, yet | words | Es ist noch nicht fünf Uhr. | It is not five o'clock yet.
+schon | already | words | Ich habe schon meine Hausaufgaben gemacht. | I have already done my homework.
+vielleicht | maybe | words | Vielleicht gehe ich morgen. | Maybe I will go tomorrow.
+zu viel | too much | words | Es gibt zu viel Lärm. | There is too much noise.
+ziemlich | quite | words | Der Film ist ziemlich gut. | The film is quite good.

@@ -1,0 +1,114 @@
+# French, advanced: connectors, nuanced nouns, expressions, culture, work, relationships
+néanmoins | nevertheless | connectors | C'est cher; néanmoins, cela en vaut la peine. | It is expensive; nevertheless, it is worth it.
+malgré | despite | connectors | Nous sommes sortis malgré la pluie. | We went out despite the rain.
+par conséquent | therefore | connectors | Il y a moins d'eau; par conséquent, le prix va monter. | There is less water; therefore the price will go up.
+sinon | otherwise | connectors | Arrive à l'heure; sinon, tu rateras le train. | Be on time; otherwise you will miss the train.
+en revanche | on the other hand | connectors | Elle économise; lui, en revanche, dépense tout. | She saves; he, on the other hand, spends everything.
+cependant | however | connectors | Il a beaucoup étudié; cependant, il a échoué. | He studied a lot; however, he failed.
+pourvu que | provided that | connectors | J'irai pourvu que tu m'accompagnes. | I will go provided that you come with me.
+au cours de | during | connectors | Au cours de la journée, il a peu plu. | During the day it rained little.
+quant à | as for | connectors | Quant à ta question, j'y réfléchirai. | As for your question, I will think about it.
+en fin de compte | in the end | connectors | En fin de compte, l'important est d'être bien. | In the end, what matters is to be well.
+d'ailleurs | besides | connectors | Il est parti tôt; d'ailleurs, personne ne l'a vu. | He left early; besides, nobody saw him.
+en effet | indeed | connectors | En effet, la situation s'est améliorée. | Indeed, the situation has improved.
+autrement dit | in other words | connectors | Je viens lundi, autrement dit, dans deux jours. | I am coming on Monday, in other words, in two days.
+de plus en plus | more and more | connectors | De plus en plus de gens travaillent de chez eux. | More and more people work from home.
+la plupart | most | words | La plupart des élèves ont réussi. | Most of the pupils passed.
+l'ensemble | whole | words | L'ensemble est très harmonieux. | The whole is very harmonious.
+le domaine | field | words | Elle travaille dans le domaine de la santé. | She works in the field of health.
+l'aspect | aspect | words | Il y a un autre aspect à considérer. | There is another aspect to consider.
+le rôle | role | words | Le rôle de la famille est essentiel. | The role of the family is essential.
+le rythme | rhythm, pace | words | Le rythme de vie est rapide. | The pace of life is fast.
+le cadre | setting, framework | words | Je travaille dans un cadre agréable. | I work in a pleasant setting.
+la ressource | resource | words | Le temps est une ressource limitée. | Time is a limited resource.
+la source | source | words | Je cite la source dans le texte. | I cite the source in the text.
+l'écart | gap | words | L'écart salarial reste important. | The pay gap remains large.
+le délai | deadline | words | Le délai se termine vendredi. | The deadline ends on Friday.
+l'objectif | goal | words | Mon objectif est de courir un marathon. | My goal is to run a marathon.
+la réussite | achievement | words | Finir le livre a été une belle réussite. | Finishing the book was a great achievement.
+l'échec | failure | words | L'échec aussi enseigne. | Failure also teaches.
+le succès | success | words | Le succès est venu après des années. | Success came after years.
+la difficulté | difficulty | words | La principale difficulté est la langue. | The main difficulty is the language.
+l'occasion | opportunity | words | Ne manque pas cette occasion. | Don't miss this opportunity.
+le risque | risk | words | Il y a un risque de pluie. | There is a risk of rain.
+la menace | threat | words | La menace était réelle. | The threat was real.
+le soulagement | relief | feelings | J'ai ressenti un grand soulagement à la fin. | I felt great relief at the end.
+la nostalgie | nostalgia | feelings | J'ai de la nostalgie pour mon enfance. | I feel nostalgia for my childhood.
+l'enthousiasme | enthusiasm | feelings | Il a parlé de son projet avec enthousiasme. | He spoke enthusiastically about his project.
+la déception | disappointment | feelings | La déception a été énorme. | The disappointment was huge.
+l'envie | envy, desire | feelings | Elle regardait son succès avec envie. | She looked at his success with envy.
+la jalousie | jealousy | feelings | La jalousie détruit une relation. | Jealousy destroys a relationship.
+la solitude | loneliness | feelings | La solitude pèse en hiver. | Loneliness weighs heavy in winter.
+l'anxiété | anxiety | feelings | L'anxiété l'empêche de dormir. | Anxiety stops him sleeping.
+la rage | rage | feelings | Il a ressenti de la rage en entendant la nouvelle. | He felt rage on hearing the news.
+la fierté | pride | feelings | Il l'a dit avec fierté. | He said it with pride.
+la tendresse | tenderness | feelings | Elle parle avec tendresse de sa grand-mère. | She speaks tenderly of her grandmother.
+l'indifférence | indifference | feelings | Son indifférence m'a surpris. | His indifference surprised me.
+la patience | patience | feelings | Il faut beaucoup de patience. | A lot of patience is needed.
+l'amitié | friendship | relationships | L'amitié se cultive chaque jour. | Friendship is nurtured every day.
+le couple | couple | relationships | Le couple habite à Londres. | The couple lives in London.
+le mariage | marriage, wedding | relationships | Le mariage dure depuis trente ans. | The marriage has lasted thirty years.
+le lien | bond | relationships | Le lien entre eux est fort. | The bond between them is strong.
+la connaissance | acquaintance | relationships | C'est une connaissance de mon frère. | He is an acquaintance of my brother.
+l'inconnu | stranger | relationships | Un inconnu m'a demandé l'heure. | A stranger asked me the time.
+l'hôte | host | relationships | L'hôte a servi le dîner. | The host served dinner.
+l'invité | guest | relationships | Chaque invité a apporté un cadeau. | Every guest brought a present.
+le parent | relative | relationships | Un parent vit à l'étranger. | A relative lives abroad.
+l'héritage | inheritance | relationships | L'héritage a divisé la famille. | The inheritance divided the family.
+le personnel | staff | work | Le personnel de l'entreprise augmente. | The company's staff is growing.
+la promotion | promotion | work | Il a reçu une promotion ce mois-ci. | He received a promotion this month.
+le licenciement | dismissal | work | Le licenciement a été une surprise. | The dismissal was a surprise.
+la retraite | retirement | work | La retraite arrive à soixante-sept ans. | Retirement comes at sixty-seven.
+la journée de travail | working day | work | La journée de travail commence à huit heures. | The working day starts at eight.
+les horaires flexibles | flexible hours | work | Je préfère les horaires flexibles. | I prefer flexible hours.
+le télétravail | remote working | work | Le télétravail fait gagner du temps. | Remote working saves time.
+le curriculum | CV | work | J'ai envoyé mon curriculum hier. | I sent my CV yesterday.
+l'ouvrier | worker | work | L'ouvrier arrive avant l'aube. | The worker arrives before dawn.
+l'empreinte | footprint | environment | Nous laissons une empreinte sur la planète. | We leave a footprint on the planet.
+la récolte | harvest | environment | La récolte de cette année est bonne. | This year's harvest is good.
+le paysage | landscape | environment | Le paysage est spectaculaire. | The landscape is spectacular.
+le gratte-ciel | skyscraper | city | Le gratte-ciel domine l'horizon. | The skyscraper dominates the skyline.
+la banlieue | suburbs | city | Elle habite en banlieue. | She lives in the suburbs.
+le centre historique | historic centre | city | Le centre historique est piéton. | The historic centre is pedestrianised.
+le passant | passer-by | city | Un passant a prévenu la police. | A passer-by alerted the police.
+le proverbe | proverb | culture | Le proverbe en dit long en peu de mots. | The proverb says a lot in few words.
+le dicton | saying | culture | Un dicton dit que mieux vaut tard que jamais. | A saying goes that better late than never.
+la légende | legend | culture | La légende raconte qu'il y avait un trésor. | The legend says there was a treasure.
+le récit | story | culture | Le récit m'a ému. | The story moved me.
+l'œuvre | work (of art) | culture | Cette œuvre a été créée à Paris. | That work premiered in Paris.
+l'écrivain | writer | culture | L'écrivain présente son nouveau roman. | The writer presents his new novel.
+le roman | novel | culture | Le roman compte cinq cents pages. | The novel has five hundred pages.
+le poème | poem | culture | Le poème parle de la mer. | The poem is about the sea.
+le tableau | painting | culture | Le tableau est accroché dans le salon. | The painting hangs in the living room.
+l'exposition | exhibition | culture | L'exposition ferme dimanche. | The exhibition closes on Sunday.
+la première | premiere | culture | La première a été un succès. | The premiere was a success.
+la tradition | tradition | culture | C'est une tradition très ancienne. | It is a very old tradition.
+la langue maternelle | mother tongue | culture | Sa langue maternelle est le catalan. | Her mother tongue is Catalan.
+l'accent | accent | culture | Il a un accent très marqué. | He has a very strong accent.
+la traduction | translation | culture | La traduction est excellente. | The translation is excellent.
+le sens | meaning | culture | Je ne comprends pas le sens de ce mot. | I don't understand the meaning of that word.
+la nuance | nuance | culture | Il y a une nuance qui se perd dans la traduction. | There is a nuance lost in translation.
+l'étiquette | label | culture | L'étiquette indique le prix. | The label shows the price.
+le cauchemar | nightmare | abstract | L'examen a été un cauchemar. | The exam was a nightmare.
+le bon sens | common sense | abstract | Elle a agi avec bon sens. | She acted sensibly.
+la loyauté | loyalty | abstract | La loyauté est difficile à trouver. | Loyalty is hard to find.
+l'hypocrisie | hypocrisy | abstract | Je ne supporte pas l'hypocrisie. | I can't stand hypocrisy.
+le préjugé | prejudice | society | Le préjugé empêche de voir la réalité. | Prejudice stops you seeing reality.
+le stéréotype | stereotype | society | Ce stéréotype est injuste. | That stereotype is unfair.
+la discrimination | discrimination | society | La discrimination existe encore. | Discrimination still exists.
+la solidarité | solidarity | society | La solidarité en a sauvé beaucoup. | Solidarity saved many.
+le bénévole | volunteer | society | Chaque bénévole aide un peu. | Every volunteer helps a little.
+le don | donation | society | Le don est arrivé à temps. | The donation arrived in time.
+l'exportation | export | economy | L'exportation de vin progresse. | Wine exports are growing.
+la matière première | raw material | economy | La matière première se fait rare. | Raw materials are becoming scarce.
+l'entrepreneur | entrepreneur | economy | L'entrepreneur a ouvert son premier magasin. | The entrepreneur opened his first shop.
+la faillite | bankruptcy | economy | L'entreprise a fait faillite. | The company went bankrupt.
+l'épargne | saving | economy | L'épargne des ménages a baissé. | Household saving fell.
+la portée | reach, scope | words | Cela dépasse ma portée. | That is beyond my reach.
+le parcours | career, path | words | Elle a un parcours impeccable. | She has an impeccable career.
+l'ampleur | scale | words | C'est un projet de grande ampleur. | It is a project of great scale.
+le discours | speech | words | Le discours a duré une heure. | The speech lasted an hour.
+le débat | debate | words | Le débat a été très tendu. | The debate was very tense.
+la polémique | controversy | words | La polémique ne s'éteint pas. | The controversy does not die down.
+le sommet | summit | words | Le sommet a réuni vingt pays. | The summit brought together twenty countries.
+le bilan | assessment | words | Le bilan de l'année est positif. | The assessment of the year is positive.
