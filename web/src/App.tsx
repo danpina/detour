@@ -4,6 +4,7 @@ import { BottomNav, type Tab } from "./components/BottomNav";
 import { EndScreen } from "./components/EndScreen";
 import { GamesScreen } from "./components/GamesScreen";
 import { HomeScreen } from "./components/HomeScreen";
+import { FirstRun } from "./components/FirstRun";
 import { Onboarding } from "./components/Onboarding";
 import { ProgressScreen } from "./components/ProgressScreen";
 import { SessionView } from "./components/SessionView";
@@ -89,7 +90,7 @@ export function App() {
       <div className="relative h-dvh w-full max-w-[430px] overflow-hidden bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50 md:shadow-2xl">
         {screen.name === "loading" && <div className="flex h-full items-center justify-center text-neutral-400">Loading…</div>}
 
-        {screen.name === "onboarding" && <Onboarding initial={interests} onDone={finishOnboarding} />}
+        {screen.name === "onboarding" && <FirstRun initial={interests} onDone={finishOnboarding} />}
 
         {screen.name === "interests" && <Onboarding initial={interests} editing onDone={saveInterests} onCancel={() => setScreen({ name: "settings" })} />}
 

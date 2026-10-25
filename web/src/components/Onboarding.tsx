@@ -8,18 +8,22 @@ type Props = {
   /** Editing existing topics from Settings: the button says "Save" and there is a way out. */
   editing?: boolean;
   onCancel?: () => void;
+  /** The small line above the title: "Detour", or "Step 2 of 2" during the first run. */
+  eyebrow?: string;
+  /** The label of the way out: "Cancel" when editing, "Back" during the first run. */
+  cancelLabel?: string;
 };
 
 const MIN = 3;
 
-export function Onboarding({ initial = [], onDone, editing = false, onCancel }: Props) {
+export function Onboarding({ initial = [], onDone, editing = false, onCancel, eyebrow = "Detour", cancelLabel = "Cancel" }: Props) {
   const [picked, setPicked] = useState<Interest[]>(initial);
   const toggle = (i: Interest) => setPicked((p) => (p.includes(i) ? p.filter((x) => x !== i) : [...p, i]));
   const left = MIN - picked.length;
 
   return (
     <div className="flex h-full flex-col px-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-[max(3rem,env(safe-area-inset-top))]">
-      <p className="text-sm font-medium text-teal-700 dark:text-teal-300">Detour</p>
+      <p className="text-sm font-medium text-teal-700 dark:text-teal-300">{eyebrow}</p>
       <h1 className="mt-2 text-3xl font-semibold leading-tight tracking-tight">What are you curious about?</h1>
       <p className="mt-2 text-neutral-500 dark:text-neutral-400">Pick at least {MIN}. You can change this any time.</p>
 
@@ -53,9 +57,9 @@ export function Onboarding({ initial = [], onDone, editing = false, onCancel }: 
       >
         {left > 0 ? `Pick ${left} more` : editing ? "Save" : "Show me a quick one"}
       </button>
-      {editing && onCancel && (
+      {onCancel && (
         <button onClick={onCancel} className="mt-2 w-full rounded-2xl py-3 text-neutral-500 hover:bg-neutral-100 dark:hover:bg-neutral-900">
-          Cancel
+          {cancelLabel}
         </button>
       )}
     </div>

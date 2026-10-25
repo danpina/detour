@@ -37,6 +37,8 @@ async function playSet(page: Page) {
 
 test("first run: pick interests, finish a set, see the end screen", async ({ page }) => {
   await page.goto("/");
+  await expect(page.getByRole("heading", { name: /Want to pick up a language/ })).toBeVisible();
+  await page.getByRole("button", { name: "Not now" }).click();
   await expect(page.getByRole("heading", { name: /What are you curious about/ })).toBeVisible();
 
   const go = page.getByRole("button", { name: /Pick 3 more/ });
@@ -50,6 +52,7 @@ test("first run: pick interests, finish a set, see the end screen", async ({ pag
 
 test("progress and settings work after a set", async ({ page }) => {
   await page.goto("/");
+  await page.getByRole("button", { name: "Not now" }).click();
   for (const name of ["History", "Science", "Tech"]) await page.getByRole("button", { name }).first().click();
   await page.getByRole("button", { name: "Show me a quick one" }).click();
   await playSet(page);

@@ -5,11 +5,17 @@ struct OnboardingView: View {
     let onDone: ([Interest]) -> Void
     /// "Show me a quick one" the first time; "Save" when editing topics from Settings.
     let confirmLabel: String
+    /// The small line above the title: "Detour", or "Step 2 of 3" during the first run.
+    let eyebrow: String
+    /// During the first run: a way back to the previous step.
+    let onBack: (() -> Void)?
     private let minimum = 3
 
-    init(initial: [Interest], confirmLabel: String = "Show me a quick one", onDone: @escaping ([Interest]) -> Void) {
+    init(initial: [Interest], confirmLabel: String = "Show me a quick one", eyebrow: String = "Detour", onBack: (() -> Void)? = nil, onDone: @escaping ([Interest]) -> Void) {
         _picked = State(initialValue: initial)
         self.confirmLabel = confirmLabel
+        self.eyebrow = eyebrow
+        self.onBack = onBack
         self.onDone = onDone
     }
 
@@ -43,7 +49,7 @@ struct OnboardingView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text("Detour").font(.subheadline.weight(.medium)).foregroundStyle(.tint)
+            Text(eyebrow).font(.subheadline.weight(.medium)).foregroundStyle(.tint)
             Text("What are you curious about?")
                 .font(.largeTitle.weight(.semibold))
                 .padding(.top, 8)
@@ -86,6 +92,12 @@ struct OnboardingView: View {
             }
             .buttonStyle(.borderedProminent)
             .disabled(picked.count < minimum)
+
+            if let onBack {
+                Button("Back", action: onBack)
+                    .frame(maxWidth: .infinity)
+                    .padding(.top, 10)
+            }
         }
         .padding(24)
     }

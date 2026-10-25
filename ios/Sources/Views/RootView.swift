@@ -23,7 +23,7 @@ struct RootView: View {
     var body: some View {
         Group {
             if !model.settings.onboardingDone {
-                OnboardingView(initial: []) { interests in
+                FirstRunView { interests in
                     model.completeOnboarding(interests: interests)
                     start(feed: false)
                 }
