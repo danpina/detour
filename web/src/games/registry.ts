@@ -5,12 +5,12 @@ import { GeoGame } from "./geo/GeoGame";
 import { LogicGame } from "./logic/LogicGame";
 import { MemoryGame } from "./memory/MemoryGame";
 import { PatternsGame } from "./patterns/PatternsGame";
-import { SpanishGame } from "./spanish/SpanishGame";
+import { LanguageGame } from "./language/LanguageGame";
 import { LOGIC_ITEMS } from "./logic/logicData";
 import { loadLogicProgress } from "./logic/progress";
-import { loadProgress as loadSpanishProgress } from "./spanish/progress";
-import { WORDS } from "./spanish/spanishData";
-import { LEARNED_AT } from "./spanish/spanishLogic";
+import { getLanguage } from "./language/languageData";
+import { LEARNED_AT } from "./language/languageLogic";
+import { loadProgress as loadLanguageProgress } from "./language/progress";
 import { WordsGame } from "./words/WordsGame";
 
 /**
@@ -35,10 +35,11 @@ export type GameDef = {
   progress?: () => string | null;
 };
 
-function spanishProgress(): string | null {
-  const p = loadSpanishProgress();
-  const learned = WORDS.filter((w) => (p.known[w.key] ?? 0) >= LEARNED_AT).length;
-  return learned > 0 ? `${learned} of ${WORDS.length} words learned` : null;
+function languageProgress(): string | null {
+  const lang = getLanguage();
+  const p = loadLanguageProgress(lang);
+  const learned = lang.words.filter((w) => (p.known[w.key] ?? 0) >= LEARNED_AT).length;
+  return learned > 0 ? `${lang.name}: ${learned} of ${lang.words.length} words learned` : null;
 }
 
 function logicProgress(): string | null {
@@ -52,6 +53,6 @@ export const GAMES: GameDef[] = [
   { id: "words", name: "Word scramble", blurb: "Unscramble the word", emoji: "🔤", Component: WordsGame },
   { id: "geo", name: "Geography", blurb: "Flags, capitals and more", emoji: "🌍", Component: GeoGame, learn: true },
   { id: "memory", name: "Memory", blurb: "Remember digits and patterns", emoji: "🧠", Component: MemoryGame },
-  { id: "spanish", name: "Spanish", blurb: "Learn words that stick", emoji: "🇪🇸", Component: SpanishGame, learn: true, progress: spanishProgress },
+  { id: "languages", name: "Languages", blurb: "Spanish, French or German, words that stick", emoji: "🗣️", Component: LanguageGame, learn: true, progress: languageProgress },
   { id: "logic", name: "Logic", blurb: "Reason it out and spot the flaw", emoji: "🧩", Component: LogicGame, learn: true, progress: logicProgress },
 ];

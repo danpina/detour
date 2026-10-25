@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { GAMES, type GameDef } from "../games/registry";
-import { ROUND_SIZES, getRoundSize, getStats, setRoundSize } from "../games/stats";
+import { LANGUAGES, getLanguage, setLanguage, type LanguageId } from "../games/language/languageData";
+import { MAX_ROUND_SIZE, MIN_ROUND_SIZE, bestLabel, getRoundSize, setRoundSize } from "../games/stats";
 
 /** The Games tab: a short list of games. Opening one takes over the screen until it calls onExit. */
 export function GamesScreen() {
   const [playing, setPlaying] = useState<GameDef | null>(null);
   const [roundSize, setRound] = useState(getRoundSize());
+  const [languageId, setLanguageId] = useState<LanguageId>(() => getLanguage().id);
   if (playing) {
     const Game = playing.Component;
     return (
@@ -19,22 +21,24 @@ export function GamesScreen() {
       <h1 className="text-3xl font-semibold tracking-tight">Games</h1>
       <p className="mt-2 text-neutral-500 dark:text-neutral-400">Short rounds that still teach you something.</p>
       <div className="mt-5">
-        <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Puzzles per round</p>
-        <div className="mt-2 flex gap-2" role="group" aria-label="Puzzles per round">
-          {ROUND_SIZES.map((n) => (
-            <button
-              key={n}
-              onClick={() => {
-                setRoundSize(n);
-                setRound(n);
-              }}
-              aria-pressed={roundSize === n}
-              className={`rounded-full border px-4 py-1.5 text-sm font-medium ${roundSize === n ? "border-teal-600 bg-teal-50 text-teal-800 dark:border-teal-400 dark:bg-teal-950 dark:text-teal-200" : "border-neutral-300 dark:border-neutral-700"}`}
-            >
-              {n}
-            </button>
-          ))}
-        </div>
+        <label htmlFor="round-size" className="flex items-baseline justify-between text-sm font-medium text-neutral-500 dark:text-neutral-400">
+          <span>Puzzles per round</span>
+          <span className="text-base font-semibold tabular-nums text-neutral-900 dark:text-neutral-50">{roundSize}</span>
+        </label>
+        <input
+          id="round-size"
+          type="range"
+          min={MIN_ROUND_SIZE}
+          max={MAX_ROUND_SIZE}
+          step={1}
+          value={roundSize}
+          onChange={(e) => {
+            const n = Number(e.target.value);
+            setRoundSize(n);
+            setRound(n);
+          }}
+          className="mt-2 h-8 w-full accent-teal-600"
+        />
       </div>
       {[
         { title: "Learn", games: GAMES.filter((g) => g.learn) },
@@ -44,21 +48,39 @@ export function GamesScreen() {
           <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">{group.title}</h2>
           <div className="mt-2 space-y-3">
             {group.games.map((g) => {
-              const s = getStats(g.id);
+              const best = bestLabel(g.id);
               const line = g.progress?.() ?? null;
               return (
+                <div key={g.id} className="rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
                 <button
-                  key={g.id}
                   onClick={() => setPlaying(g)}
-                  className="flex w-full items-center gap-4 rounded-2xl border border-neutral-200 bg-white p-4 text-left active:scale-[0.99] dark:border-neutral-800 dark:bg-neutral-900"
+                  className="flex w-full items-center gap-4 rounded-2xl p-4 text-left active:scale-[0.99]"
                 >
                   <span className="text-3xl">{g.emoji}</span>
                   <span className="flex-1">
                     <span className="block font-semibold">{g.name}</span>
                     <span className="block text-sm text-neutral-500 dark:text-neutral-400">{line ?? g.blurb}</span>
                   </span>
-                  {s.plays > 0 && <span className="text-xs text-neutral-500 dark:text-neutral-400">Best {s.best}</span>}
+                  {best && <span className="text-xs text-neutral-500 dark:text-neutral-400">Best {best}</span>}
                 </button>
+                {g.id === "languages" && (
+                  <div className="flex gap-2 px-4 pb-4" role="group" aria-label="Language">
+                    {LANGUAGES.map((l) => (
+                      <button
+                        key={l.id}
+                        onClick={() => {
+                          setLanguage(l.id);
+                          setLanguageId(l.id);
+                        }}
+                        aria-pressed={languageId === l.id}
+                        className={`min-h-11 flex-1 rounded-full border px-3 py-1.5 text-sm font-medium ${languageId === l.id ? "border-teal-600 bg-teal-50 text-teal-800 dark:border-teal-400 dark:bg-teal-950 dark:text-teal-200" : "border-neutral-300 dark:border-neutral-700"}`}
+                      >
+                        {l.flag} {l.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
+                </div>
               );
             })}
           </div>

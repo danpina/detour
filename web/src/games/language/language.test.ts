@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { WORDS } from "./spanishData";
-import { applyAnswer, blanked, buildRound, kindFor, unlockedLevel, type Progress } from "./spanishLogic";
+import { LANGUAGES } from "./languageData";
+import { applyAnswer, blanked, buildRound, kindFor, unlockedLevel, type Progress } from "./languageLogic";
+
+// The rounds are checked on Spanish; the data checks below run for every language.
+const WORDS = LANGUAGES[0]!.words;
 
 const seeded = (seed = 1) => () => {
   seed = (seed * 16807) % 2147483647;
@@ -8,14 +11,26 @@ const seeded = (seed = 1) => () => {
 };
 const empty: Progress = { known: {}, missed: [] };
 
-describe("spanish data", () => {
-  it("has unique keys and every example contains its word", () => {
-    expect(new Set(WORDS.map((w) => w.key)).size).toBe(WORDS.length);
-    for (const w of WORDS) expect(blanked(w), w.key).not.toBeNull();
-  });
+describe("language data", () => {
+  for (const lang of LANGUAGES) {
+    it(lang.name + ": unique keys, every example contains its word, enough words to open each level", () => {
+      expect(new Set(lang.words.map((w) => w.key)).size).toBe(lang.words.length);
+      for (const w of lang.words) {
+        expect(blanked(w), w.key).not.toBeNull();
+        expect(w.word && w.en && w.ex && w.exEn, w.key).toBeTruthy();
+      }
+      for (const level of [1, 2, 3]) expect(lang.words.filter((w) => w.level === level).length, "level " + level).toBeGreaterThanOrEqual(12);
+    });
+
+    it(lang.name + ": a round can be built and every answer is among the options", () => {
+      const round = buildRound(lang.words, empty, seeded(), 8);
+      expect(round).toHaveLength(8);
+      for (const q of round) expect(q.options).toContain(q.answer);
+    });
+  }
 });
 
-describe("spanish rounds", () => {
+describe("language rounds (Spanish)", () => {
   it("starts with recognition at level 1 and never repeats a word", () => {
     const round = buildRound(WORDS, empty, seeded(), 5);
     expect(round).toHaveLength(5);
@@ -34,7 +49,7 @@ describe("spanish rounds", () => {
   });
 
   it("moves from recognising to recalling to using in a sentence", () => {
-    expect([kindFor(0), kindFor(1), kindFor(2)]).toEqual(["toEn", "toEs", "cloze"]);
+    expect([kindFor(0), kindFor(1), kindFor(2)]).toEqual(["toEn", "toWord", "cloze"]);
     const known: Record<string, number> = { gato: 2 };
     const q = buildRound(WORDS, { known, missed: ["gato"] }, seeded(), 1)[0]!;
     expect(q.kind).toBe("cloze");

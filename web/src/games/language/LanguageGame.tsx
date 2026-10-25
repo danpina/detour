@@ -2,27 +2,29 @@ import { useEffect, useRef, useState } from "react";
 import type { GameProps } from "../registry";
 import { getRoundSize, recordRound } from "../stats";
 import { loadProgress, saveProgress } from "./progress";
-import { WORDS } from "./spanishData";
-import { applyAnswer, buildRound, LEARNED_AT, type Progress, type Question } from "./spanishLogic";
+import { getLanguage, type Language } from "./languageData";
+import { applyAnswer, buildRound, LEARNED_AT, type Progress, type Question } from "./languageLogic";
 
-function newRound(progress: Progress): Question[] {
-  return buildRound(WORDS, progress, Math.random, getRoundSize());
+function newRound(lang: Language, progress: Progress): Question[] {
+  return buildRound(lang.words, progress, Math.random, getRoundSize());
 }
 
-function learnedCount(p: Progress): number {
-  return WORDS.filter((w) => (p.known[w.key] ?? 0) >= LEARNED_AT).length;
+function learnedCount(lang: Language, p: Progress): number {
+  return lang.words.filter((w) => (p.known[w.key] ?? 0) >= LEARNED_AT).length;
 }
 
-function endLine(score: number, total: number): string {
-  if (score === total) return "¡Perfecto! Not one slip.";
-  if (score >= total * 0.7) return "¡Muy bien! Those words are sticking.";
+function endLine(lang: Language, score: number, total: number): string {
+  if (score === total) return lang.perfect + " Not one slip.";
+  if (score >= total * 0.7) return lang.great + " Those words are sticking.";
   if (score >= total * 0.4) return "Good run. The tricky ones will come back to help.";
   return "Every word you miss comes back until it sticks. Go again?";
 }
 
-export function SpanishGame({ onExit, embedded }: GameProps) {
-  const [progress, setProgress] = useState<Progress>(loadProgress);
-  const [round, setRound] = useState<Question[]>(() => newRound(progress));
+export function LanguageGame({ onExit, embedded }: GameProps) {
+  // The language is chosen on the Games screen; it stays fixed for this round.
+  const [lang] = useState<Language>(getLanguage);
+  const [progress, setProgress] = useState<Progress>(() => loadProgress(lang));
+  const [round, setRound] = useState<Question[]>(() => newRound(lang, progress));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -35,7 +37,7 @@ export function SpanishGame({ onExit, embedded }: GameProps) {
   function finishEmbedded() {
     if (finishedRef.current || !embedded) return;
     finishedRef.current = true;
-    recordRound("spanish", score);
+    recordRound("languages", score);
     embedded.onDone(score);
   }
 
@@ -49,7 +51,7 @@ export function SpanishGame({ onExit, embedded }: GameProps) {
   if (round.length === 0) {
     return (
       <div className="flex h-full flex-col items-center justify-center gap-4 px-8 text-center">
-        <p className="text-neutral-500 dark:text-neutral-400">Spanish is not available right now.</p>
+        <p className="text-neutral-500 dark:text-neutral-400">{lang.name} is not available right now.</p>
         <button onClick={onExit} className="rounded-2xl bg-teal-600 px-6 py-3 font-semibold text-white">{embedded ? "Skip" : "Back"}</button>
       </div>
     );
@@ -58,7 +60,7 @@ export function SpanishGame({ onExit, embedded }: GameProps) {
   const done = index >= round.length;
 
   function restart() {
-    setRound(newRound(progress));
+    setRound(newRound(lang, progress));
     setIndex(0);
     setScore(0);
     setPicked(null);
@@ -68,10 +70,10 @@ export function SpanishGame({ onExit, embedded }: GameProps) {
   if (done && !embedded) {
     return (
       <div className="flex h-full flex-col items-center justify-center gap-5 px-8 pb-[env(safe-area-inset-bottom)] text-center">
-        <div className="text-6xl">🇪🇸</div>
+        <div className="text-6xl">{lang.flag}</div>
         <h1 className="text-3xl font-semibold tracking-tight">{score} / {round.length}</h1>
-        <p className="text-neutral-500 dark:text-neutral-400">{endLine(score, round.length)}</p>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400">{learnedCount(progress)} of {WORDS.length} words learned</p>
+        <p className="text-neutral-500 dark:text-neutral-400">{endLine(lang, score, round.length)}</p>
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">{learnedCount(lang, progress)} of {lang.words.length} words learned</p>
         {best && <p className="text-sm font-medium text-teal-600 dark:text-teal-400">New best!</p>}
         <div className="mt-2 flex w-full max-w-xs flex-col gap-3">
           <button onClick={restart} className="min-h-14 rounded-2xl bg-teal-600 px-6 py-3 text-lg font-semibold text-white active:scale-[0.98]">Play again</button>
@@ -94,7 +96,7 @@ export function SpanishGame({ onExit, embedded }: GameProps) {
     if (right) setScore((s) => s + 1);
     const next = applyAnswer(progress, q.key, right);
     setProgress(next);
-    saveProgress(next);
+    saveProgress(lang, next);
   }
 
   function next() {
@@ -103,7 +105,7 @@ export function SpanishGame({ onExit, embedded }: GameProps) {
         finishEmbedded();
         return;
       }
-      setBest(recordRound("spanish", score));
+      setBest(recordRound("languages", score));
     }
     setPicked(null);
     setIndex((i) => i + 1);
@@ -123,7 +125,7 @@ export function SpanishGame({ onExit, embedded }: GameProps) {
     <div className="flex h-full flex-col px-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-[max(1.5rem,env(safe-area-inset-top))]">
       {embedded ? (
         <div className="flex items-center justify-between text-sm text-neutral-500 dark:text-neutral-400">
-          <span className="font-medium">A little Spanish</span>
+          <span className="font-medium">A little {lang.name}</span>
           <span>{index + 1} / {round.length}</span>
           <button onClick={onExit} className="-mr-2 min-h-11 px-2" aria-label="Skip">Skip</button>
         </div>
@@ -135,9 +137,11 @@ export function SpanishGame({ onExit, embedded }: GameProps) {
         </div>
       )}
 
+      <div className="mt-1 h-1 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800" aria-hidden="true"><div className="h-full rounded-full bg-teal-500 transition-all duration-300" style={{ width: `${(Math.min(index + (picked !== null ? 1 : 0), round.length) / round.length) * 100}%` }} /></div>
+
       <div className="flex flex-1 flex-col items-center justify-center text-center">
         <p className="text-neutral-500 dark:text-neutral-400">{q.title}</p>
-        <p className={q.kind === "cloze" ? "mt-2 text-2xl font-semibold leading-snug tracking-tight" : "mt-2 text-4xl font-semibold tracking-tight"}>{q.prompt}{q.kind === "toEs" ? "?" : ""}</p>
+        <p className={q.kind === "cloze" ? "mt-2 text-2xl font-semibold leading-snug tracking-tight" : "mt-2 text-4xl font-semibold tracking-tight"}>{q.prompt}{q.kind === "toWord" ? "?" : ""}</p>
         {q.hint && <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">{q.hint}</p>}
       </div>
 
@@ -150,7 +154,7 @@ export function SpanishGame({ onExit, embedded }: GameProps) {
       <div className="mt-4 min-h-24" aria-live="polite">
         {answered && (
           <>
-            <p className="game-rise font-semibold">{correct ? "¡Sí!" : "Not this time."}</p>
+            <p className="game-rise font-semibold">{correct ? lang.yes : "Not this time."}</p>
             <p className="text-neutral-600 dark:text-neutral-300">{q.fact}</p>
             <button onClick={next} className="game-rise mt-3 min-h-14 w-full rounded-2xl bg-teal-600 px-6 py-3 text-lg font-semibold text-white active:scale-[0.98]">{isLast ? (embedded ? "Continue" : "See my score") : "Next"}</button>
           </>

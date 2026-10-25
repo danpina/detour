@@ -110,7 +110,6 @@ export function MemoryGame({ onExit, embedded }: GameProps) {
           if (recorded.current) return;
           recorded.current = true;
           const score = shortScore(ns);
-          recordRound("memory", score);
           embedded.onDone(score);
         }, EMBEDDED_DONE_MS);
       } else {
@@ -124,7 +123,7 @@ export function MemoryGame({ onExit, embedded }: GameProps) {
     setPhase("result");
     later(() => {
       if (next.over) {
-        setIsBest(recordRound("memory", next.best));
+        setIsBest(recordRound("memory", next.best, 0));
         setPhase("over");
       } else {
         startRound(mode, next);

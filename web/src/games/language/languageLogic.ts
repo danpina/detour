@@ -1,13 +1,13 @@
-/** Pure logic for the Spanish game: what to ask, in what form, and what comes back. No React, no storage. */
+/** Pure logic for the language game: what to ask, in what form, and what comes back. No React, no storage. */
 
-export type Word = { es: string; en: string; level: 1 | 2 | 3; cat: string; ex: string; exEn: string; key: string };
+export type Word = { word: string; en: string; level: 1 | 2 | 3; cat: string; ex: string; exEn: string; key: string };
 
 export type Rng = () => number;
 
 /** How many times each word (by key) was answered right, and which ones were missed last time. */
 export type Progress = { known: Record<string, number>; missed: string[] };
 
-export type QuestionKind = "toEn" | "toEs" | "cloze";
+export type QuestionKind = "toEn" | "toWord" | "cloze";
 
 export type Question = {
   kind: QuestionKind;
@@ -45,10 +45,10 @@ export function unlockedLevel(progress: Progress, words: readonly Word[]): 1 | 2
   return 1;
 }
 
-/** The first time a word shows it's recognising Spanish; then recalling it; then using it in a sentence. */
+/** The first time a word shows it's recognising the language; then recalling it; then using it in a sentence. */
 export function kindFor(timesRight: number): QuestionKind {
   if (timesRight <= 0) return "toEn";
-  if (timesRight === 1) return "toEs";
+  if (timesRight === 1) return "toWord";
   return "cloze";
 }
 
@@ -77,21 +77,21 @@ function distractors(all: readonly Word[], answer: Word, text: (w: Word) => stri
 }
 
 export function buildQuestion(all: readonly Word[], word: Word, kind: QuestionKind, rng: Rng): Question {
-  const fact = `${word.es} = ${word.en}. "${word.ex}" ${word.exEn}`;
+  const fact = `${word.word} = ${word.en}. "${word.ex}" ${word.exEn}`;
   if (kind === "cloze") {
     const sentence = blanked(word);
     if (sentence) {
       const options = shuffle([word.key, ...distractors(all, word, (w) => w.key, rng)], rng);
       return { kind, key: word.key, title: "Fill the gap", prompt: sentence, hint: word.exEn, options, answer: word.key, fact };
     }
-    return buildQuestion(all, word, "toEs", rng);
+    return buildQuestion(all, word, "toWord", rng);
   }
-  if (kind === "toEs") {
-    const options = shuffle([word.es, ...distractors(all, word, (w) => w.es, rng)], rng);
-    return { kind, key: word.key, title: "How do you say", prompt: word.en, options, answer: word.es, fact };
+  if (kind === "toWord") {
+    const options = shuffle([word.word, ...distractors(all, word, (w) => w.word, rng)], rng);
+    return { kind, key: word.key, title: "How do you say", prompt: word.en, options, answer: word.word, fact };
   }
   const options = shuffle([word.en, ...distractors(all, word, (w) => w.en, rng)], rng);
-  return { kind, key: word.key, title: "What does this mean?", prompt: word.es, options, answer: word.en, fact };
+  return { kind, key: word.key, title: "What does this mean?", prompt: word.word, options, answer: word.en, fact };
 }
 
 /**
