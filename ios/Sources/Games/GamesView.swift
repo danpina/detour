@@ -7,7 +7,7 @@ struct GamesView: View {
     @State private var language = LanguageInfo.current
     @State private var level = LanguageInfo.currentLevel
 
-    private let learning: [GameId] = [.languages, .logic, .geo]
+    private let learning: [GameId] = [.languages, .logic, .geo, .map]
     private var fun: [GameId] { GameId.allCases.filter { !learning.contains($0) } }
 
     /// How far along you are in a learning game, or nil before you start.
