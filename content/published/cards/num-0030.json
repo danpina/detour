@@ -1,0 +1,52 @@
+{
+  "id": "num-0030",
+  "interest": "numbers",
+  "title": "Why 360 degrees?",
+  "probes": [
+    {
+      "id": "num-0030-p1",
+      "question": "How many whole numbers divide 360 evenly?",
+      "kind": "estimate",
+      "answer": 24,
+      "unit": "divisors",
+      "min": 2,
+      "max": 100,
+      "scale": "linear"
+    },
+    {
+      "id": "num-0030-p2",
+      "question": "True or false: 360 is divisible by every number from 1 to 10 except 7.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Degree (angle) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Degree_(angle)"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:00.216Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "num-0030.webp",
+    "alt": "Flat illustration of a circle divided into equal teal and orange slices with tick marks like a clock face.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "A full turn is 360 degrees, maybe thanks to Babylonian base-60 counting. How many whole numbers divide 360 evenly (counting 1 and 360)?",
+    "unit": "divisors",
+    "min": 2,
+    "max": 100,
+    "scale": "linear",
+    "answer": 24,
+    "reveal": "24. The divisors are 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 18, 20, 24, 30, 36, 40, 45, 60, 72, 90, 120, 180 and 360. It is divisible by every number from 1 to 10 except 7, which makes it handy for splitting a circle. The original reason for choosing 360 is unknown; one theory points to Babylonian base-60 counting."
+  }
+}

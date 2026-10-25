@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Rosetta of the sea: the Phoenician alphabet",
+    "angle": "Where our letters trace back to a trading people and a few dozen signs"
+  },
+  "created_at": "2026-10-25T17:35:51.375Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0032",
+    "interest": "history",
+    "type": "estimate",
+    "title": "The alphabet of the sea traders",
+    "body": {
+      "question": "The Phoenician script was one of the first alphabets, used across the Mediterranean for most of the 1st millennium BC. How many letters did it have?",
+      "unit": "letters",
+      "min": 1,
+      "max": 1000,
+      "scale": "log",
+      "answer": 22,
+      "reveal": "Just 22 letters, all of them consonants: it was an abjad that left vowels implicit. Its descendants include the Aramaic script and the Archaic Greek alphabets, which repurposed some letters to write vowels."
+    },
+    "probes": [
+      {
+        "id": "hist-0032-p1",
+        "kind": "tf",
+        "question": "True or false: the Archaic Greek alphabets are direct descendants of the Phoenician script.",
+        "answer": true
+      },
+      {
+        "id": "hist-0032-p2",
+        "kind": "mcq",
+        "question": "What type of writing system is the Phoenician script?",
+        "options": [
+          "Abjad",
+          "Syllabary",
+          "Pictograph",
+          "Logographic"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Phoenician alphabet (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Phoenician_alphabet"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Ahiram sarcophagus inscription from Byblos or another Phoenician inscription, such as the Nora Stone",
+    "keywords": [
+      "Phoenician alphabet",
+      "Ahiram sarcophagus",
+      "Nora Stone",
+      "Phoenician inscription"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:25.119Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Phoenician_alphabet",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Question: one of the first alphabets, used across the Mediterranean for most of the 1st millennium BC",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phoenician_alphabet",
+        "quote": "was used across the Mediterranean civilization of Phoenicia for most of the 1st millennium BC. It was one of the first alphabets"
+      },
+      {
+        "claim": "Answer/reveal: 22 letters, all consonants",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phoenician_alphabet",
+        "quote": "The Phoenician script proper uses 22 consonant letters"
+      },
+      {
+        "claim": "Reveal/probe 2: an abjad that leaves vowels implicit",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phoenician_alphabet",
+        "quote": "as an abjad used to write a Semitic language, it leaves vowel sounds implicit"
+      },
+      {
+        "claim": "Reveal/probe 1: descendants include Aramaic and Archaic Greek alphabets",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phoenician_alphabet",
+        "quote": "Its direct descendant scripts include the Aramaic and Samaritan alphabets, several Alphabets of Asia Minor , and the Archaic Greek alphabets"
+      },
+      {
+        "claim": "Reveal: Greeks repurposed some letters to write vowels",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phoenician_alphabet",
+        "quote": "the Greeks repurposed the Phoenician letters of consonant sounds not present in Greek"
+      }
+    ],
+    "overall": "pass"
+  }
+}

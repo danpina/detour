@@ -1,0 +1,131 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Terracotta Army",
+    "angle": "Thousands of clay soldiers buried with China's first emperor"
+  },
+  "created_at": "2026-10-25T17:35:51.374Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0029",
+    "interest": "history",
+    "type": "story",
+    "title": "The clay army",
+    "body": {
+      "panels": [
+        {
+          "text": "On 29 March 1974, farmers digging a well near Xi'an in China strike something strange: clay figures buried underground."
+        },
+        {
+          "text": "They have found the Terracotta Army, buried with Qin Shi Huang, China's first emperor, around 210 BCE to protect him in the afterlife."
+        },
+        {
+          "text": "Estimates from 2007 say the three pits hold more than 8,000 soldiers, plus chariots and horses. Their faces appear to be different for each individual figure."
+        },
+        {
+          "text": "The twist: they were once painted in colour. In Xi'an's dry air, much of the paint began to flake within minutes of being uncovered."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0029-p1",
+        "kind": "mcq",
+        "question": "Who found the Terracotta Army in 1974?",
+        "options": [
+          "Local farmers digging a well",
+          "A team of archaeologists",
+          "Soldiers on a march",
+          "Workers building a railway"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0029-p2",
+        "kind": "tf",
+        "question": "True or false: the Terracotta Army figures were originally painted in colour.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Terracotta Army (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Terracotta_Army"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Rows of terracotta warriors standing in Pit 1 at the Mausoleum of the First Qin Emperor, Xi'an",
+    "keywords": [
+      "Terracotta Army",
+      "Pit 1",
+      "Xi'an",
+      "terracotta warriors"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:52.455Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Panel 1/probe 1: discovered 29 March 1974 by farmers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+        "quote": "The Terracotta Army was discovered on 29 March 1974 by a group of farmers"
+      },
+      {
+        "claim": "Panel 1: farmers were digging a well",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+        "quote": "who were digging a well approximately 1.5 km (0.93 mi) east of the Qin Emperor's tomb mound at Mount Li"
+      },
+      {
+        "claim": "Panel 2: buried with Qin Shi Huang, first emperor, 210-209 BCE to protect him in the afterlife",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+        "quote": "buried with the emperor in 210-209 BCE in his mausoleum with the purpose of protecting him in his afterlife"
+      },
+      {
+        "claim": "Panel 3: 2007 estimates, three pits hold more than 8,000 soldiers plus chariots and horses",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+        "quote": "Estimates from 2007 were that the three pits containing the Terracotta Army hold more than 8,000 soldiers, 130 chariots with 520 horses"
+      },
+      {
+        "claim": "Panel 3: faces appear different for each figure",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+        "quote": "Their faces appear to be different for each individual figure"
+      },
+      {
+        "claim": "Panel 4: much of the paint flaked within minutes of being uncovered in the dry air",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+        "quote": "much of the color coating would flake off in less than four minutes after removing the mud surrounding the army"
+      },
+      {
+        "claim": "Probe 2: figures were originally painted",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+        "quote": "Originally, the figures were painted with ground precious stones"
+      },
+      {
+        "claim": "Panel 4: the figures were once painted in colour",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+        "quote": "Originally, the figures were painted with ground precious stones"
+      }
+    ],
+    "overall": "pass"
+  }
+}

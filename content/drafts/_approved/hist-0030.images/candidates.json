@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0030",
+  "created_at": "2026-10-25T17:36:42.070Z",
+  "queries": [
+    "Ötzi Iceman South Tyrol Museum of Archaeology",
+    "Ötzi",
+    "Ötzi Iceman"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-7794513",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "BozenArchMuseum.jpg",
+      "credit": "Hubert Berberich (HubiB) / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:BozenArchMuseum.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/BozenArchMuseum.jpg/960px-BozenArchMuseum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4288,
+      "height": 2848,
+      "alt_suggestion": "Archeological museum of South Tyrol, Bozen (it: Bolzano), home of the famous iceman",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-14794",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Woodsheds, Tyrol",
+      "credit": "John Singer Sargent American, 1856-1925 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/14794",
+      "image_url": "https://www.artic.edu/iiif/2/6bcff102-062f-1d3d-dbfe-25a240a2951a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of watercolor with scraping and wax resist over graphite on ivory wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-124037015",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ricostruzione di Ötzi - Particolare del volto.jpg",
+      "credit": "Mannivu / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ricostruzione_di_%C3%96tzi_-_Particolare_del_volto.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Ricostruzione_di_%C3%96tzi_-_Particolare_del_volto.jpg/960px-Ricostruzione_di_%C3%96tzi_-_Particolare_del_volto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 4000,
+      "alt_suggestion": "Ricostruzione di come doveva essere l'aspetto di Ötzi",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-66286",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "A Street in Sterzing, The Tyrol",
+      "credit": "Alfred Stieglitz American, 1864–1946 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/66286",
+      "image_url": "https://www.artic.edu/iiif/2/3cd2a588-d197-e4b1-603a-05f367e5ebb0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of platinum print.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-25470401",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Archeoparc - Museum Ötzi Kleidung.jpg",
+      "credit": "Wolfgang Sauber / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Archeoparc_-_Museum_%C3%96tzi_Kleidung.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Archeoparc_-_Museum_%C3%96tzi_Kleidung.jpg/960px-Archeoparc_-_Museum_%C3%96tzi_Kleidung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1140,
+      "height": 2280,
+      "alt_suggestion": "Archeoparc (Schnals valley / South Tyrol). Museum: Reconstruction of the neolithic clothes worn by Ötzi.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Ötzi Iceman South Tyrol Museum of Archaeology\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Ötzi\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Ötzi Iceman\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

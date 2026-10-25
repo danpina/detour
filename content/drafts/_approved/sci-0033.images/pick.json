@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-77181280",
+  "alt": "Pen annotations on a green chart-recorder paper strip showing the radio signal of the first identified pulsar, displayed behind glass.",
+  "fits": true,
+  "note": "Real artefact of the discovery, CC BY-SA 4.0, portrait; chosen over portrait photo of Bell Burnell.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

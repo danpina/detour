@@ -1,0 +1,92 @@
+{
+  "draft_id": "num-0032",
+  "created_at": "2026-10-25T17:37:53.894Z",
+  "queries": [
+    "volunteer computing network computers",
+    "volunteer computing",
+    "volunteer computing network"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-147946735",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "BOINC Arhitektuur.webp",
+      "credit": "SadProcessor / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:BOINC_Arhitektuur.webp",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/BOINC_Arhitektuur.webp/960px-BOINC_Arhitektuur.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1123,
+      "height": 794,
+      "alt_suggestion": "Vabatahtliku arvutusteenuse ülesehitus BOINC arhitektuuri näitel",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-KSC-20190612-PH_CSH01_0058",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Swarmathon 2019",
+      "credit": "NASA/Cory Huston / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-20190612-PH_CSH01_0058",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-20190612-PH_CSH01_0058/KSC-20190612-PH_CSH01_0058~medium.jpg",
+      "alt_suggestion": "During an awards ceremony on June 12, 2019 at the Kennedy Space Center Visitor Complex in Florida, mentors and volunteers from Kennedy received certificates of recognition for the NASA Swarmathon 2019",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-18477",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Irish Volunteers (Furnishing Fabric)",
+      "credit": "Probably designed by Gabriel Beranger (Irish, 1729–1817) Printed by Thomas Harpur (Irish, active c. 1782) Ireland, County Kildare, Leixlip / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/18477",
+      "image_url": "https://www.artic.edu/iiif/2/0c2ae3f3-b8a8-3140-2281-796d6e861b47/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of linen and cotton, plain weave; copperplate printed; painted.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-37132672",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Gigapixel mosaic of galaxy image results from theSkyNet distributed computer.png",
+      "credit": "Raspberryastro / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gigapixel_mosaic_of_galaxy_image_results_from_theSkyNet_distributed_computer.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Gigapixel_mosaic_of_galaxy_image_results_from_theSkyNet_distributed_computer.png/960px-Gigapixel_mosaic_of_galaxy_image_results_from_theSkyNet_distributed_computer.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4134,
+      "height": 4134,
+      "alt_suggestion": "A mosaic of results from theSkyNet, a distributed computer made up of volunteer computers that anyone can join. The main image shows how fast stars are forming in ‘nearby’ galaxy Messier 100 (M100), w",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-158307",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The War—Making Havelocks for the Volunteers",
+      "credit": "Winslow Homer (American, 1836-1910) published by Harper's Weekly (American, 1857-1916) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/158307",
+      "image_url": "https://www.artic.edu/iiif/2/e0a36fa8-9922-c58c-bf5c-92a6531e5581/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of wood engraving on paper.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-bigprime",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: bigprime",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-bigprime.png",
+      "alt_suggestion": "Illustration of a grid of small dots fading into the distance with one bright orange dot among them"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"volunteer computing network computers\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"volunteer computing\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"volunteer computing network\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

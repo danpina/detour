@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-124037015",
+  "alt": "Museum reconstruction of the Iceman Otzi's face and upper body, a bearded figure holding a wooden staff.",
+  "fits": true,
+  "note": "Reconstruction model (not a real person), CC BY-SA 4.0, portrait and good for text overlay at the edges.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

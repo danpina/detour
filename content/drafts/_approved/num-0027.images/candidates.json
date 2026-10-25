@@ -1,0 +1,94 @@
+{
+  "draft_id": "num-0027",
+  "created_at": "2026-10-25T17:37:33.628Z",
+  "queries": [
+    "chessboard wheat grains",
+    "chessboard",
+    "chessboard wheat"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-48783038",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wheat and chessboard problem.jpg",
+      "credit": "McGeddon / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wheat_and_chessboard_problem.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Wheat_and_chessboard_problem.jpg/960px-Wheat_and_chessboard_problem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1744,
+      "height": 1296,
+      "alt_suggestion": "A depiction of the wheat and chessboard (or rice and chessboard) problem.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-111318",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Stack of Wheat",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/111318",
+      "image_url": "https://www.artic.edu/iiif/2/27c1d720-8ca5-79a4-5e51-530bf75c1591/full/843,/0/default.jpg",
+      "alt_suggestion": "A snowy landscape in cool tones featuring a prominent, snow-dusted haystack in reddish brown in front of a row of red-brown trees and low, blue mountains, all beheath a pink-gray strip of sky.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-21886504",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Chessboard-with-rice-top.jpg",
+      "credit": "MartinThoma / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chessboard-with-rice-top.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Chessboard-with-rice-top.jpg/960px-Chessboard-with-rice-top.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3872,
+      "height": 2592,
+      "alt_suggestion": "Photo of a chessboard with grains of rice showing exponential growth.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-64818",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Stacks of Wheat (End of Summer)",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/64818",
+      "image_url": "https://www.artic.edu/iiif/2/a38e2828-ec6f-ece1-a30f-70243449197b/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting composed of short, dense brushstrokes depicts two domed stacks of wheat that cast long shadows on a field. The angled light indicates either a rising or setting sun.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-21886410",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Chessboard-with-rice.jpg",
+      "credit": "MartinThoma / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chessboard-with-rice.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Chessboard-with-rice.jpg/960px-Chessboard-with-rice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3872,
+      "height": 2592,
+      "alt_suggestion": "Photo of a chessboard with grains of rice showing exponential growth.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-chessboard",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: chessboard",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-chessboard.png",
+      "alt_suggestion": "Illustration of a chessboard whose squares hold piles of grains that grow larger from one square to the next"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"chessboard wheat grains\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"chessboard\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"chessboard wheat\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

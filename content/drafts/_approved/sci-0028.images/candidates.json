@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0028",
+  "created_at": "2026-10-25T17:38:07.987Z",
+  "queries": [
+    "shark shark underwater reef shark",
+    "shark",
+    "shark shark underwater"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-155817557",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Blacktip reef shark (Carcharhinus melanopterus) Moorea.jpg",
+      "credit": "Charles J. Sharp / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blacktip_reef_shark_(Carcharhinus_melanopterus)_Moorea.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Blacktip_reef_shark_%28Carcharhinus_melanopterus%29_Moorea.jpg/960px-Blacktip_reef_shark_%28Carcharhinus_melanopterus%29_Moorea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4775,
+      "height": 3183,
+      "alt_suggestion": "Blacktip reef shark (Carcharhinus melanopterus), Moorea, French Polynesia",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA05572",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Opportunity Studies Bait in Shark Cage",
+      "credit": "NASA/JPL / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA05572",
+      "image_url": "https://images-assets.nasa.gov/image/PIA05572/PIA05572~medium.jpg",
+      "alt_suggestion": "Opportunity Studies Bait in Shark Cage",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-4715",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Rounded Jar Depicting Abstract Fish or Sharks",
+      "credit": "Nazca South coast, Peru / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/4715",
+      "image_url": "https://www.artic.edu/iiif/2/0c948be5-3ea6-2f46-e30a-de864d3c1cc5/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of ceramic and pigment.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-155817556",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Blacktip reef shark (Carcharhinus melanopterus) Moorea 5.jpg",
+      "credit": "Charles J. Sharp / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blacktip_reef_shark_(Carcharhinus_melanopterus)_Moorea_5.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Blacktip_reef_shark_%28Carcharhinus_melanopterus%29_Moorea_5.jpg/960px-Blacktip_reef_shark_%28Carcharhinus_melanopterus%29_Moorea_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 7437,
+      "height": 4960,
+      "alt_suggestion": "Blacktip reef shark (Carcharhinus melanopterus), Moorea, French Polynesia",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA00986",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "\"Shark\"",
+      "credit": "NASA/JPL/USGS / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA00986",
+      "image_url": "https://images-assets.nasa.gov/image/PIA00986/PIA00986~thumb.jpg",
+      "alt_suggestion": "This false color composite image from the Pathfinder lander shows the rock \"Shark\" at upper right (Shark is about 0.69 m wide, 0.40 m high, and 6.4 m from the lander). The rock looks like a conglomera",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"shark shark underwater reef shark\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"shark\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"shark shark underwater\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Crows remember human faces",
+    "angle": "Research showing wild crows recognise and hold grudges against faces"
+  },
+  "created_at": "2026-10-25T17:36:54.758Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0034",
+    "interest": "science",
+    "type": "estimate",
+    "title": "Crows and long memories",
+    "body": {
+      "question": "Crows can recognise individual people. What is the longest an American crow is known to have lived in captivity?",
+      "unit": "years",
+      "min": 1,
+      "max": 100,
+      "scale": "log",
+      "answer": 30,
+      "reveal": "Captive American crows are known to have lived up to 30 years, while the average in the wild is 7 to 8. Plenty of time to remember a face: studies indicate crows remember dangerous human faces and can pass that on to other crows."
+    },
+    "probes": [
+      {
+        "id": "sci-0034-p1",
+        "kind": "estimate",
+        "question": "What is the longest an American crow is known to have lived in captivity?",
+        "answer": 30,
+        "unit": "years",
+        "min": 1,
+        "max": 100,
+        "scale": "log"
+      },
+      {
+        "id": "sci-0034-p2",
+        "kind": "tf",
+        "question": "True or false: crows can recognise individual human faces.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "American crow (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/American_crow"
+      },
+      {
+        "title": "Corvus (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Corvus"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A crow perched, looking at the camera",
+    "keywords": [
+      "American crow",
+      "crow",
+      "Corvus brachyrhynchos"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:42.485Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/American_crow",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Corvus",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Captive American crows are known to have lived up to 30 years (question, answer 30, reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/American_crow",
+        "quote": "Captive birds are known to have lived up to 30 years."
+      },
+      {
+        "claim": "The average lifespan of the American crow in the wild is 7 to 8 years",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/American_crow",
+        "quote": "The average lifespan of the American crow in the wild is 7-8 years."
+      },
+      {
+        "claim": "Crows can recognise individual people / human faces (question, probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Corvus",
+        "quote": "A neuroimaging study demonstrated that crows recognize individual human faces"
+      },
+      {
+        "claim": "Studies indicate crows remember dangerous human faces and can pass that on to other crows",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Corvus",
+        "quote": "Studies indicate that crows remember dangerous human faces and can socially transmit this information to other crows within their group."
+      }
+    ],
+    "overall": "pass"
+  }
+}

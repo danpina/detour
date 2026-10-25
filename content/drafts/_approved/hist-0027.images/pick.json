@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-164647291",
+  "alt": "Corroded green-black bronze gear fragment of the Antikythera mechanism on display in a museum case.",
+  "fits": true,
+  "note": "Close photo of Fragment A front, CC BY 4.0; portrait-friendly.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

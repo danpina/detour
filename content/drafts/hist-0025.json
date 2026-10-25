@@ -1,0 +1,139 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Anglo-Zanzibar War of 1896",
+    "angle": "The shortest war on record: how it lasted less than an hour"
+  },
+  "created_at": "2026-10-25T17:35:51.370Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0025",
+    "interest": "history",
+    "type": "story",
+    "title": "The 38-minute war",
+    "body": {
+      "panels": [
+        {
+          "text": "Zanzibar, August 1896. The pro-British sultan dies suddenly, and Khalid bin Barghash takes the throne without British permission."
+        },
+        {
+          "text": "Britain sends an ultimatum: leave the palace by 9:00 on 27 August. Khalid barricades himself inside instead."
+        },
+        {
+          "text": "The deadline expires at 9:00, and British ships open fire on the palace at 9:02. The flag is shot down and the firing stops, with 38 minutes being the most quoted length."
+        },
+        {
+          "text": "The twist: this is recorded as the shortest war in history. Around 500 of the sultan's side were killed or wounded, while just one British sailor was hurt."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0025-p1",
+        "kind": "mcq",
+        "question": "About how long is the Anglo-Zanzibar War most often said to have lasted?",
+        "options": [
+          "38 minutes",
+          "3 hours",
+          "3 days",
+          "3 weeks"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0025-p2",
+        "kind": "tf",
+        "question": "True or false: the Anglo-Zanzibar War is recorded as the shortest war in history.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Anglo-Zanzibar War (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Sultan's palace in Zanzibar after the 1896 bombardment, or a period photo of the palace and harbour",
+    "keywords": [
+      "Anglo-Zanzibar War",
+      "Zanzibar palace 1896",
+      "Beit al-Hukm",
+      "HMS St George Zanzibar"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:25.114Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title/probe 1: the war is most often said to have lasted 38 minutes",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+        "quote": "but the 38-minute duration is the most often quoted"
+      },
+      {
+        "claim": "Panel 1: the pro-British sultan died in August 1896 and Khalid bin Barghash succeeded",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+        "quote": "the suspicious death of the pro-British Sultan Hamad bin Thuwaini on 25 August 1896 and the subsequent succession of Sultan Khalid bin Barghash",
+        "note": "Page says \"suspicious death\"; card says \"dies suddenly\", acceptable."
+      },
+      {
+        "claim": "Panel 1: Khalid took the throne without British permission",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+        "quote": "a candidate for accession to the sultanate should obtain the permission of the British consul; Khalid had not fulfilled this requirement"
+      },
+      {
+        "claim": "Panel 2: Britain sent an ultimatum to leave the palace",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+        "quote": "sent an ultimatum to Khalid demanding that he order his forces to stand down and leave the palace"
+      },
+      {
+        "claim": "Panel 2/3: Khalid barricaded himself inside; deadline was 9:00 on 27 August",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+        "quote": "Khalid called up his palace guard and barricaded himself inside the palace. The ultimatum expired at 09:00 local time on 27 August"
+      },
+      {
+        "claim": "Panel 3: British ships opened fire on the palace at 9:02",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+        "quote": "A bombardment, opened at 09:02, set the palace on fire and disabled the defending artillery"
+      },
+      {
+        "claim": "Panel 3: the flag was shot down and firing stopped",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+        "quote": "The flag at the palace was shot down and fire ceased at 09:46",
+        "note": "Page gives 09:46 here and 09:02-09:40 in the infobox; the card only calls 38 minutes the most quoted length, which the page says too."
+      },
+      {
+        "claim": "Panel 4 / probe 2: recorded as the shortest war in history",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+        "quote": "marking it as the shortest recorded war in history"
+      },
+      {
+        "claim": "Panel 4: around 500 of the sultan's side killed or wounded, one British sailor hurt",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+        "quote": "The sultan's forces sustained roughly 500 casualties, while only one British sailor was injured"
+      }
+    ],
+    "overall": "pass"
+  }
+}

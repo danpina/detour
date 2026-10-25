@@ -1,0 +1,133 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "The dot that became zero",
+    "angle": "The Bakhshali manuscript and an early zero symbol"
+  },
+  "created_at": "2026-10-25T17:37:15.415Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0031",
+    "interest": "numbers",
+    "type": "story",
+    "title": "The dot that became zero",
+    "body": {
+      "panels": [
+        {
+          "text": "In 1881, a peasant dug up an old manuscript in a field near the village of Bakhshali, in present-day Pakistan."
+        },
+        {
+          "text": "It is written on birch bark: seventy fragile leaves of arithmetic problems in Sanskrit."
+        },
+        {
+          "text": "The numbers use place value, and where we would write a zero, it uses a simple dot as a placeholder. That dot was called the shunya-bindu: literally, the dot of the empty place."
+        },
+        {
+          "text": "Until 2024 it was regarded as the earliest known Indian use of a zero symbol. New carbon dating by Oxford places the manuscript between 799 and 1102 CE, so the story keeps being rewritten."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0031-p1",
+        "kind": "cloze",
+        "question": "In the Bakhshali manuscript, zero is shown as a ____ used as a placeholder.",
+        "answer": "dot",
+        "accept": [
+          "a dot"
+        ]
+      },
+      {
+        "id": "num-0031-p2",
+        "kind": "mcq",
+        "question": "What does shunya-bindu literally mean?",
+        "options": [
+          "The dot of the empty place",
+          "The first number",
+          "The circle of the sun"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bakhshali manuscript (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Bakhshali manuscript, a page of birch bark with Sharada script and dot placeholders",
+    "keywords": [
+      "Bakhshali manuscript",
+      "birch bark",
+      "zero",
+      "Sharada script"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:42:02.489Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1881 a peasant dug up the manuscript in a field in the village of Bakhshali",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript",
+        "quote": "The manuscript was unearthed in a field in 1881"
+      },
+      {
+        "claim": "It was unearthed by a peasant in the village of Bakhshali, in present-day Pakistan",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript",
+        "quote": "It was unearthed by a peasant in the village of Bakhshali"
+      },
+      {
+        "claim": "Written on birch bark, seventy leaves",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript",
+        "quote": "Material Birch bark Format Seventy leaves"
+      },
+      {
+        "claim": "Arithmetic problems in Sanskrit",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript",
+        "quote": "It is written in a form of literary Sanskrit influenced by contemporary dialects"
+      },
+      {
+        "claim": "Uses place value with a dot as placeholder for zero (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript",
+        "quote": "The Bakhshali manuscript uses numerals with a place-value system, using a dot as a place holder for zero"
+      },
+      {
+        "claim": "The dot was called shunya-bindu, literally the dot of the empty place (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript",
+        "quote": "The dot symbol came to be called the shunya-bindu (literally, the dot of the empty place)"
+      },
+      {
+        "claim": "Until 2024 it was regarded as the earliest known Indian use of a zero symbol",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript",
+        "quote": "Up until September 2024 the manuscript was regarded as the earliest known Indian use of a zero symbol"
+      },
+      {
+        "claim": "Oxford carbon dating places the manuscript between 799 and 1102 CE",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript",
+        "quote": "In October 2024, Oxford University revised their earlier dating to 799-1102 CE"
+      }
+    ],
+    "overall": "pass"
+  }
+}

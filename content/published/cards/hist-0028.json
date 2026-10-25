@@ -1,0 +1,55 @@
+{
+  "id": "hist-0028",
+  "interest": "history",
+  "title": "The night the guns went quiet",
+  "probes": [
+    {
+      "id": "hist-0028-p1",
+      "question": "True or false: in the Christmas truce, soldiers from both sides exchanged small gifts in no man's land.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "hist-0028-p2",
+      "question": "How long after the war began did the truce happen?",
+      "kind": "mcq",
+      "options": [
+        "Five days",
+        "Five weeks",
+        "Five months",
+        "Five years"
+      ],
+      "answer": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Christmas truce (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Christmas_truce"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:43:19.723Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "hist-0028.webp",
+    "alt": "Black-and-white 1914 photograph of British and German soldiers standing together in a muddy field during the Christmas Truce.",
+    "kind": "photo",
+    "credit": "Harold Burge Robson / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Christmas_Truce_1914_IWM_Q_50719.jpg"
+  },
+  "body": {
+    "question": "In December 1914, unofficial ceasefires broke out along the Western Front around Christmas. Roughly how many British and German troops were involved?",
+    "unit": "troops",
+    "min": 100,
+    "max": 10000000,
+    "scale": "log",
+    "answer": 100000,
+    "reveal": "Roughly 100,000 British and German troops took part. They sang carols, met in no man's land, swapped small gifts like food and tobacco, and held joint burial ceremonies. Some played football too."
+  }
+}

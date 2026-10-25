@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-83042332",
+  "alt": "A black crow standing on a white ledge, looking to the left.",
+  "fits": true,
+  "note": "CC BY-SA 4.0 clear photo of a crow (species fits the card).",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

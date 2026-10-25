@@ -1,0 +1,60 @@
+{
+  "draft_id": "hist-0025",
+  "created_at": "2026-10-25T17:36:26.119Z",
+  "queries": [
+    "Anglo-Zanzibar War Zanzibar palace 1896 Beit al-Hukm",
+    "Anglo-Zanzibar War",
+    "Anglo-Zanzibar War Zanzibar palace 1896"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-7521728",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Anglo-Zanzibar War without gunfire-pt.PNG",
+      "credit": "Melancolicsphere (talk) 23:07, 9 August 2009 (UTC) / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anglo-Zanzibar_War_without_gunfire-pt.PNG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Anglo-Zanzibar_War_without_gunfire-pt.PNG/960px-Anglo-Zanzibar_War_without_gunfire-pt.PNG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1056,
+      "height": 771,
+      "alt_suggestion": "Portuguese version of the map showing disposition of naval forces on the outbreak of the Anglo-Zanzibar War. At 9.00am 27 August 1896. Based on p.10 Zanzibar and the Shortest War in History by Kevin P",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-7521715",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Anglo-Zanzibar War without gunfire-blank.png",
+      "credit": "Melancolicsphere (talk) 23:04, 9 August 2009 (UTC) / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anglo-Zanzibar_War_without_gunfire-blank.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Anglo-Zanzibar_War_without_gunfire-blank.png/960px-Anglo-Zanzibar_War_without_gunfire-blank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1056,
+      "height": 771,
+      "alt_suggestion": "Blank version of the map showing disposition of naval forces on the outbreak of the Anglo-Zanzibar War. At 9.00am 27 August 1896. Based on p.10 Zanzibar and the Shortest War in History by Kevin Patien",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-26081929",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Anglo-Zanzibar War without gunfire-pt.tra.png",
+      "credit": "Melancolicsphere (talk) 23:07, 9 August 2009 (UTC) / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anglo-Zanzibar_War_without_gunfire-pt.tra.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Anglo-Zanzibar_War_without_gunfire-pt.tra.png/960px-Anglo-Zanzibar_War_without_gunfire-pt.tra.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1056,
+      "height": 771,
+      "alt_suggestion": "Versão em português do mapa mostrando a disposição das forças navais na Guerra Anglo-Zanzibari. Às 9:00 da manhã em 27 de agosto de 1896. Baseado na p.10 Zanzibar and the Shortest War in History por K",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Anglo-Zanzibar War Zanzibar palace 1896 Beit al-Hukm\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Anglo-Zanzibar War\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Anglo-Zanzibar War Zanzibar palace 1896\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

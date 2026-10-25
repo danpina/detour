@@ -1,0 +1,97 @@
+{
+  "draft_id": "sci-0033",
+  "created_at": "2026-10-25T17:38:23.236Z",
+  "queries": [
+    "Jocelyn Bell Burnell pulsar radio telescope",
+    "Jocelyn Bell Burnell",
+    "Jocelyn Bell Burnell pulsar"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-77181280",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Chart Showing Radio Signal of First Identified Pulsar.jpg",
+      "credit": "Billthom / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chart_Showing_Radio_Signal_of_First_Identified_Pulsar.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Chart_Showing_Radio_Signal_of_First_Identified_Pulsar.jpg/960px-Chart_Showing_Radio_Signal_of_First_Identified_Pulsar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3024,
+      "height": 4032,
+      "alt_suggestion": "The chart examined by Jocelyn Bell Burnell in August 1967 with data from the 4 Acre Array radio telescope, showing the trace of the first identified pulsar, subsequently designated PSR B1919+21",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-196470",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Bell",
+      "credit": "Greek; Thessaly / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196470",
+      "image_url": "https://www.artic.edu/iiif/2/d2b2ee01-ea58-d5fd-726c-5628e77c2140/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of bronze.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-88526630",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Chart Showing Radio Signal of First Identified Pulsar, crop & rotate.jpg",
+      "credit": "Billthom / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chart_Showing_Radio_Signal_of_First_Identified_Pulsar,_crop_%26_rotate.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Chart_Showing_Radio_Signal_of_First_Identified_Pulsar%2C_crop_%26_rotate.jpg/960px-Chart_Showing_Radio_Signal_of_First_Identified_Pulsar%2C_crop_%26_rotate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3535,
+      "height": 2469,
+      "alt_suggestion": "The chart examined by Jocelyn Burnell in August 1967 with data from the 4 Acre Array radio telescope, showing the trace of the first identified pulsar, subsequently designated PSR B1919+21",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-12086",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Bell (nao)",
+      "credit": "China, probably Hunan province / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12086",
+      "image_url": "https://www.artic.edu/iiif/2/7942dae0-6fdd-e6a1-9a23-b64d5c08e8fc/full/843,/0/default.jpg",
+      "alt_suggestion": "A bell with two convex sides of nearly rectangular shape and an opening at top rests on a slim cylindrical base. It boasts a green patina and is decorated with a geometric pattern and spikes. A small portion is missing at upper right.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-37003823",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Susan Jocelyn Bell (Burnell), 1967.jpg",
+      "credit": "Roger W Haworth / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Susan_Jocelyn_Bell_(Burnell),_1967.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Susan_Jocelyn_Bell_%28Burnell%29%2C_1967.jpg/960px-Susan_Jocelyn_Bell_%28Burnell%29%2C_1967.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1644,
+      "height": 2584,
+      "alt_suggestion": "Susan Jocelyn Bell (Burnell), June 15, 1967",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Jocelyn Bell Burnell-1.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Jocelyn Bell Burnell-1.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Jocelyn Bell Burnell pulsar radio telescope\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Jocelyn Bell Burnell\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Jocelyn Bell Burnell pulsar\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

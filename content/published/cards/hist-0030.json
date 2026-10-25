@@ -1,0 +1,54 @@
+{
+  "id": "hist-0030",
+  "interest": "history",
+  "title": "The man in the ice",
+  "probes": [
+    {
+      "id": "hist-0030-p1",
+      "question": "What was Ötzi's axe head made of?",
+      "kind": "mcq",
+      "options": [
+        "Almost pure copper",
+        "Flint",
+        "Iron",
+        "Bronze"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0030-p2",
+      "question": "Ötzi was found in the ____ Alps, on the Austria-Italy border.",
+      "kind": "cloze",
+      "answer": "Ötztal",
+      "accept": [
+        "Oetztal",
+        "Otztal"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ötzi (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/%C3%96tzi"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:43:24.521Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0030.webp",
+    "alt": "Museum reconstruction of the Iceman Otzi's face and upper body, a bearded figure holding a wooden staff.",
+    "kind": "photo",
+    "credit": "Mannivu / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ricostruzione_di_%C3%96tzi_-_Particolare_del_volto.jpg"
+  },
+  "body": {
+    "claim": "Ötzi, a man who lived in the 4th millennium BC, was found in 1991 with a copper axe, a quiver of 14 arrows and a dried tinder fungus.",
+    "why": "He had been naturally preserved in glacier ice, so his body and belongings survived in the Ötztal Alps. He is Europe's oldest known natural human mummy, and his gear gives a rare view of Copper Age life."
+  }
+}

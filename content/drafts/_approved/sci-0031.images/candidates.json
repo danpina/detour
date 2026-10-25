@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0031",
+  "created_at": "2026-10-25T17:38:16.645Z",
+  "queries": [
+    "Pluto New Horizons Pluto Charon",
+    "Pluto",
+    "Pluto New Horizons"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-71082405",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Charon in True Color - High-Res.jpg",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Alex Parker / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charon_in_True_Color_-_High-Res.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Charon_in_True_Color_-_High-Res.jpg/960px-Charon_in_True_Color_-_High-Res.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2000,
+      "height": 2000,
+      "alt_suggestion": "Three years after NASA's New Horizons spacecraft gave humankind our first close-up views of Pluto and its largest moon, Charon, scientists are still revealing the wonders of these incredible worlds in",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA11708",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Charon in Plutoshine",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA11708",
+      "image_url": "https://images-assets.nasa.gov/image/PIA11708/PIA11708~small.jpg",
+      "alt_suggestion": "This beautiful image obtained with the Ralph/Multispectral Visible Imaging Camera aboard NASA's New Horizons spacecraft shows the night side of Pluto's large, Texas-sized moon Charon, against a star f",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-135326",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Pluto and Proserpina with Falconry",
+      "credit": "After an engraving by Adriaen Collaert (c. 1560–1618) after Hans Bol (1534–1593), Falconry Woven at the workshop of Erasmus I de Pannemaker (c. 1565–1620 or later) Brussels / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/135326",
+      "image_url": "https://www.artic.edu/iiif/2/ddc9d7aa-ae31-d673-18d4-e8494199a668/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of wool and silk, slit and double interlocking tapestry weave warp: count: 6 warps per cm; wool: s-ply of three z-spun elements; diameters: 0.7–0.9 mm weft; count: varies from 19 to 60 wefts per cm; wool: s-ply of two z-spun elements; diameters: 0.4–1.5 mm; silk; s-ply of two elements with no appreciable twist; paired elements with no appreciable twist; diameters: 0.3–1.0 mm.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-44378681",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pluto-Charon-v2-10-1-15.jpg",
+      "credit": "NASA / Johns Hopkins University Applied Physics Laboratory / Southwest Research Institute / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pluto-Charon-v2-10-1-15.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Pluto-Charon-v2-10-1-15.jpg/960px-Pluto-Charon-v2-10-1-15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 3000,
+      "alt_suggestion": "Charon and Pluto: Strikingly Different Worlds A composite of enhanced color images of Pluto (lower right) and Charon (upper left), taken by NASA's New Horizons spacecraft as it passed through the Plut",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA19856",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "A Binary Planet in Color",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA19856",
+      "image_url": "https://images-assets.nasa.gov/image/PIA19856/PIA19856~thumb.jpg",
+      "alt_suggestion": "This image from NASA New Horizons highlights the contrasting appearance of the two worlds: Charon is mostly gray, with a dark reddish polar cap, while Pluto shows a wide variety of subtle color variat",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Pluto New Horizons Pluto Charon\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Pluto\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Pluto New Horizons\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

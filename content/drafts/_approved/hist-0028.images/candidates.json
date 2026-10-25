@@ -1,0 +1,72 @@
+{
+  "draft_id": "hist-0028",
+  "created_at": "2026-10-25T17:36:35.880Z",
+  "queries": [
+    "Christmas truce 1914 no man's land Northumberland Hussars",
+    "Christmas truce 1914",
+    "Christmas truce 1914 no man's land"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-182676439",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Christmas Truce 1914 IWM Q 50719.jpg",
+      "credit": "Harold Burge Robson / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Christmas_Truce_1914_IWM_Q_50719.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Christmas_Truce_1914_IWM_Q_50719.jpg/960px-Christmas_Truce_1914_IWM_Q_50719.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5800,
+      "height": 3622,
+      "alt_suggestion": "British and German troops meeting in No-Mans's Land during the unofficial truce. (British troops from the Northumberland Hussars, 7th Division, Bridoux-Rouge Banc Sector).",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-59333",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Lourdes, 1914, 25th International Eucharistic Congress",
+      "credit": "Jean Louis Forain (French, 1852-1931) printed by Eugene Verneau and Henri Chachoin / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/59333",
+      "image_url": "https://www.artic.edu/iiif/2/17e1fe5a-9e29-9f1d-8923-995fb17ebac5/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of lithograph on cream wove paperl laid down on linen.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-39780945",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Christmas Truce on the Western Front, 1914 Q50720.jpg",
+      "credit": "http://media.iwm.org.uk/iwm/mediaLib//11/media-11160/large.jpg This photograph Q 50720 comes from the collections of the Imperial War Museums. / Wikimedia Commo",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Christmas_Truce_on_the_Western_Front,_1914_Q50720.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/The_Christmas_Truce_on_the_Western_Front%2C_1914_Q50720.jpg/960px-The_Christmas_Truce_on_the_Western_Front%2C_1914_Q50720.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1300,
+      "height": 811,
+      "alt_suggestion": "The Christmas Truce on the Western Front, 1914 British and German troops meeting in No-Man's Land during the unofficial truce. (British troops from the Northumberland Hussars, 7th Division, Bridoux-Ro",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-97710550",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "German and British troops during the Christmas Truce of 1914 (27518523839).jpg",
+      "credit": "Cassowary Colorizations / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:German_and_British_troops_during_the_Christmas_Truce_of_1914_(27518523839).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/German_and_British_troops_during_the_Christmas_Truce_of_1914_%2827518523839%29.jpg/960px-German_and_British_troops_during_the_Christmas_Truce_of_1914_%2827518523839%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3508,
+      "height": 2191,
+      "alt_suggestion": "British troops from the Northumberland Hussars, 7th Division, Bridoux-Rouge Banc Sector and German soldiers and medical personnelmeeting in No-Mans's Land during the Christmas truce, 25th December 191",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Christmas truce 1914 no man's land Northumberland Hussars\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Christmas truce 1914\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Christmas truce 1914 no man's land\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

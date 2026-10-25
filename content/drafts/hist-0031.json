@@ -1,0 +1,111 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Roman concrete",
+    "angle": "Why some Roman harbours and buildings are still standing after two thousand years"
+  },
+  "created_at": "2026-10-25T17:35:51.374Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0031",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "Concrete that heals",
+    "body": {
+      "question": "Roman harbour concrete has outlasted much modern concrete. What helps it survive seawater?",
+      "options": [
+        "Seawater reacts with its volcanic ash and lime to form rare crystals",
+        "It is coated in tar",
+        "It is made with iron bars",
+        "The Romans sealed it with wax"
+      ],
+      "answer": 0,
+      "reveal": "The strength and longevity of Roman marine concrete is understood to benefit from a reaction of seawater with volcanic ash and quicklime. It creates a rare crystal called tobermorite, which may resist fracturing. Research in 2023 also found that lime clasts could help the concrete self-repair cracks."
+    },
+    "probes": [
+      {
+        "id": "hist-0031-p1",
+        "kind": "tf",
+        "question": "True or false: the Pantheon dome is the world's largest and oldest unreinforced concrete dome.",
+        "answer": true
+      },
+      {
+        "id": "hist-0031-p2",
+        "kind": "cloze",
+        "question": "Roman concrete was often made with volcanic dust called ____.",
+        "answer": "pozzolana",
+        "accept": [
+          "pozzolan"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Roman concrete (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Roman_concrete"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Pantheon in Rome, or the remains of the Roman concrete harbour at Caesarea",
+    "keywords": [
+      "Pantheon dome",
+      "Roman concrete",
+      "Caesarea harbour",
+      "opus caementicium"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:25.118Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Roman_concrete",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Question/answer: seawater reacts with volcanic ash and quicklime to create a rare crystal (tobermorite)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_concrete",
+        "quote": "a reaction of seawater with a mixture of volcanic ash and quicklime to create a rare crystal called tobermorite"
+      },
+      {
+        "claim": "Reveal: tobermorite may resist fracturing",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_concrete",
+        "quote": "to create a rare crystal called tobermorite , which may resist fracturing"
+      },
+      {
+        "claim": "Question: Roman marine concrete has outlasted modern concrete",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_concrete",
+        "quote": "In contrast, modern concrete exposed to saltwater deteriorates within decades"
+      },
+      {
+        "claim": "Reveal: 2023 research found lime clasts could help the concrete self-repair cracks",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_concrete",
+        "quote": "Research in 2023 found that lime clasts, previously considered a sign of poor aggregation technique, react with water seeping into any cracks"
+      },
+      {
+        "claim": "Probe 1: Pantheon dome is the world's largest and oldest unreinforced concrete dome",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_concrete",
+        "quote": "The most prominent example of these is the Pantheon dome, the world's largest and oldest unreinforced concrete dome"
+      },
+      {
+        "claim": "Probe 2: volcanic dust called pozzolana",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_concrete",
+        "quote": "Volcanic dusts, called pozzolana or \"pit sand\", were favoured where they could be obtained"
+      }
+    ],
+    "overall": "pass"
+  }
+}

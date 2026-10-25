@@ -1,0 +1,115 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Voyager 1 and the light-day",
+    "angle": "How far the farthest spacecraft is measured in light-time"
+  },
+  "created_at": "2026-10-25T17:36:54.758Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0032",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Voyager 1 is nearly a light-day away",
+    "body": {
+      "claim": "Voyager 1 is about to be one light-day from Earth, farther than any other human-made object.",
+      "why": "A light-day is the distance light travels in 24 hours. Launched in 1977, Voyager 1 entered interstellar space in August 2012 and is expected to reach one light-day away in November 2026."
+    },
+    "probes": [
+      {
+        "id": "sci-0032-p1",
+        "kind": "mcq",
+        "question": "How many hours of light travel make one light-day?",
+        "options": [
+          "12",
+          "24",
+          "48",
+          "100"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0032-p2",
+        "kind": "tf",
+        "question": "True or false: Voyager 1 launched in 1977.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Voyager 1: The Farthest Spacecraft (NASA)",
+        "url": "https://science.nasa.gov/mission/voyager/voyager-1/"
+      },
+      {
+        "title": "Light-second (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Light-second"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An artist's concept or NASA image of the Voyager spacecraft",
+    "keywords": [
+      "Voyager 1",
+      "Voyager spacecraft",
+      "NASA Voyager"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:42.484Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://science.nasa.gov/mission/voyager/voyager-1/",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Light-second",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Voyager 1 is on the brink of reaching one light-day from Earth (title \"nearly\", claim \"about to be\")",
+        "verdict": "pass",
+        "source_url": "https://science.nasa.gov/mission/voyager/voyager-1/",
+        "quote": "Voyager 1 is on the brink of another unprecedented milestone - reaching a distance one light-day away from Earth.",
+        "note": "Time-sensitive. NASA page (last updated 2026-10-15) shows a countdown to NOV 18, 2026 and says \"on the brink\", so \"nearly/about to be\" is correct as of 2026-10-25 (about 24 days before). After 2026-11-18 the wording becomes stale and should be changed to past tense."
+      },
+      {
+        "claim": "Voyager 1 is expected to reach one light-day away in November 2026",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Light-second",
+        "quote": "is expected to reach a distance of one light-day around November 2026"
+      },
+      {
+        "claim": "Voyager 1 is farther than any other human-made object",
+        "verdict": "pass",
+        "source_url": "https://science.nasa.gov/mission/voyager/voyager-1/",
+        "quote": "No spacecraft has gone farther than NASA's Voyager 1."
+      },
+      {
+        "claim": "Launched in 1977, Voyager 1 entered interstellar space in August 2012",
+        "verdict": "pass",
+        "source_url": "https://science.nasa.gov/mission/voyager/voyager-1/",
+        "quote": "Launched in 1977 to fly by Jupiter and Saturn, Voyager 1 crossed into interstellar space in August 2012"
+      },
+      {
+        "claim": "A light-day is the distance light travels in 24 hours; one light-day = 24 hours of light travel (probe p1 answer 24)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Light-second",
+        "quote": "light-day 24 light-hours = 86 400 light-seconds"
+      },
+      {
+        "claim": "Probe p2: Voyager 1 launched in 1977 (true)",
+        "verdict": "pass",
+        "source_url": "https://science.nasa.gov/mission/voyager/voyager-1/",
+        "quote": "Launched in 1977 to fly by Jupiter and Saturn, Voyager 1 crossed into interstellar space in August 2012"
+      }
+    ],
+    "overall": "pass"
+  }
+}

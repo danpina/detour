@@ -1,0 +1,57 @@
+{
+  "id": "hist-0027",
+  "interest": "history",
+  "title": "The gears that came too early",
+  "probes": [
+    {
+      "id": "hist-0027-p1",
+      "question": "True or false: the Antikythera mechanism could also track the four-year cycle of athletic games like the ancient Olympics.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "hist-0027-p2",
+      "question": "In which year was the Antikythera mechanism discovered?",
+      "kind": "mcq",
+      "options": [
+        "1801",
+        "1901",
+        "1951",
+        "2001"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Antikythera mechanism (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Antikythera_mechanism"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:43:13.395Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0027.webp",
+    "alt": "Corroded green-black bronze gear fragment of the Antikythera mechanism on display in a museum case.",
+    "kind": "photo",
+    "credit": "Logg Tandy / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Antikythera_Fragment_A_(Front).webp"
+  },
+  "body": {
+    "question": "The Antikythera mechanism, a geared sky-tracker from the 2nd century BC, was a wonder. How long before machines of similar complexity appeared again?",
+    "options": [
+      "About 150 years",
+      "About 500 years",
+      "About 1,500 years",
+      "About 5,000 years"
+    ],
+    "answer": 2,
+    "reveal": "Machines of similar complexity did not appear again for around 1,500 years, with early examples being 14th-century astronomical clocks. The Antikythera mechanism was hand-powered and could predict astronomical positions and eclipses decades in advance. It came from a shipwreck off the Greek island of Antikythera, retrieved in 1901."
+  }
+}

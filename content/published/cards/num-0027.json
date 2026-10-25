@@ -1,0 +1,61 @@
+{
+  "id": "num-0027",
+  "interest": "numbers",
+  "title": "The chessboard and the wheat",
+  "probes": [
+    {
+      "id": "num-0027-p1",
+      "question": "Doubling the grains on each of 64 squares, starting from 1, adds up to roughly...",
+      "kind": "mcq",
+      "options": [
+        "About 64,000 grains",
+        "About a billion grains",
+        "About 18 quintillion grains",
+        "About a trillion grains"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "num-0027-p2",
+      "question": "True or false: the 64th square alone would hold more grains than the first 32 squares combined.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wheat and chessboard problem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:46:59.682Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0027.webp",
+    "alt": "Flat illustration of a chessboard with dots growing from tiny to large across the squares.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In one old tale, the inventor of chess is offered a reward by his ruler. His request sounds modest: one grain of wheat on the first square, two on the second, four on the third, and so on, doubling each time."
+      },
+      {
+        "text": "The ruler laughs it off as a meager prize for a brilliant invention. The story is first known to have been recorded in 1256 by Ibn Khallikan."
+      },
+      {
+        "text": "But doubling is sneaky. By the fifth square the board holds just 31 grains. The 64th square alone would need 9,223,372,036,854,775,808 grains."
+      },
+      {
+        "text": "All 64 squares together: 18,446,744,073,709,551,615 grains, about 1,199,000,000,000 metric tons of wheat. That is over 1,400 times the world's yearly wheat harvest."
+      }
+    ]
+  }
+}

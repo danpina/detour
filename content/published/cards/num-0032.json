@@ -1,0 +1,53 @@
+{
+  "id": "num-0032",
+  "interest": "numbers",
+  "title": "A prime with 41 million digits",
+  "probes": [
+    {
+      "id": "num-0032-p1",
+      "question": "Roughly how many digits does the largest known prime have?",
+      "kind": "mcq",
+      "options": [
+        "About 41 thousand",
+        "About 41 million",
+        "About 41 billion"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0032-p2",
+      "question": "The prime was found by the Great Internet ____ Prime Search (GIMPS).",
+      "kind": "cloze",
+      "answer": "Mersenne",
+      "accept": []
+    }
+  ],
+  "sources": [
+    {
+      "title": "Largest known prime number (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Largest_known_prime_number"
+    },
+    {
+      "title": "Great Internet Mersenne Prime Search (GIMPS)",
+      "url": "https://www.mersenne.org/"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:00.581Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0032.webp",
+    "alt": "Flat illustration of a grid of teal dots with a single orange dot standing out.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "As of October 2026, the largest known prime number is 2^136,279,841 − 1, which has 41,024,320 digits.",
+    "why": "It is a Mersenne prime (one less than a power of two), found on 12 October 2024 on a cloud computer volunteered by Luke Durant to GIMPS, a project of volunteers who search for these primes. Mersenne numbers have a fast special test, the Lucas-Lehmer test, which makes giant ones checkable."
+  }
+}

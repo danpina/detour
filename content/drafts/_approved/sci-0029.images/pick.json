@@ -1,0 +1,11 @@
+{
+  "candidate_id": "nasa-jsc2021e019950",
+  "alt": "Grey microscope image of a tardigrade (water bear) with its stubby legs and claws visible.",
+  "fits": true,
+  "note": "NASA, public domain; clearly a tardigrade. cand-1 shows eggs in a shed cuticle, less clear.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

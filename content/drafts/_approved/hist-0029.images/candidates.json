@@ -1,0 +1,82 @@
+{
+  "draft_id": "hist-0029",
+  "created_at": "2026-10-25T17:36:39.212Z",
+  "queries": [
+    "Terracotta Army Pit 1 Xi'an",
+    "Terracotta Army",
+    "Terracotta Army Pit 1"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-80148999",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Terracotta Army - Pit 1, Xi'an, China (14148051282).jpg",
+      "credit": "Joe Hart from Southampton, United Kingdom / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Terracotta_Army_-_Pit_1,_Xi%27an,_China_(14148051282).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Terracotta_Army_-_Pit_1%2C_Xi%27an%2C_China_%2814148051282%29.jpg/960px-Terracotta_Army_-_Pit_1%2C_Xi%27an%2C_China_%2814148051282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1880,
+      "height": 2816,
+      "alt_suggestion": "China",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA26394",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Terra Cotta Army, China",
+      "credit": "NASA/METI/AIST/Japan Space Systems, and U.S./Japan ASTER Science Team / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA26394",
+      "image_url": "https://images-assets.nasa.gov/image/PIA26394/PIA26394~thumb.jpg",
+      "alt_suggestion": "The terracotta army, was buried near the mausoleum of Qin Shi Huang, the first emperor of China, in about 220 BCE. The 8,000 figures, chariots and horses were discovered by farmers in 1974 outside of ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-246",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Oinochoe (Pitcher)",
+      "credit": "Attributed to the Mattinata Painter Greek; Apulia, Italy / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/246",
+      "image_url": "https://www.artic.edu/iiif/2/44abac03-4d36-aac6-f44e-ffe1d57dfb03/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of terracotta, red-figure.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-80149000",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Terracotta Army - Pit 1, Xi'an, China (14148051222).jpg",
+      "credit": "Joe Hart from Southampton, United Kingdom / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Terracotta_Army_-_Pit_1,_Xi%27an,_China_(14148051222).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Terracotta_Army_-_Pit_1%2C_Xi%27an%2C_China_%2814148051222%29.jpg/960px-Terracotta_Army_-_Pit_1%2C_Xi%27an%2C_China_%2814148051222%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2816,
+      "height": 1880,
+      "alt_suggestion": "China",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-11143",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Fear of Love",
+      "credit": "Jean Louis Lemoyne (French, 1665–1755) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/11143",
+      "image_url": "https://www.artic.edu/iiif/2/70f69d6a-2cac-0e55-9913-7027ca19f5cb/full/843,/0/default.jpg",
+      "alt_suggestion": "Terracotta sculpture of a standing woman. Her right arm clutches fabric as a Cupid on her right pulls the fabric at her waist.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Terracotta Army Pit 1 Xi'an\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Terracotta Army\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Terracotta Army Pit 1\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}
