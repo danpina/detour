@@ -747,6 +747,316 @@
    ],
    "answer": "Some of his animals are brown",
    "why": "At least one animal is a chicken, and every chicken is brown."
+  },
+  {
+   "id": "syl-17",
+   "kind": "syllogism",
+   "level": 1,
+   "prompt": "All squares have four sides. This shape is a square.\nSo: This shape has four sides.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "Being a square comes with four sides, so this shape has them."
+  },
+  {
+   "id": "syl-18",
+   "kind": "syllogism",
+   "level": 1,
+   "prompt": "No dogs can fly. Rex is a dog.\nSo: Rex can't fly.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "If no dog flies, Rex, being a dog, doesn't either."
+  },
+  {
+   "id": "syl-19",
+   "kind": "syllogism",
+   "level": 1,
+   "prompt": "All teachers read a lot. Lena reads a lot.\nSo: Lena is a teacher.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "Many people who aren't teachers read a lot too. The rule only runs one way."
+  },
+  {
+   "id": "syl-20",
+   "kind": "syllogism",
+   "level": 2,
+   "prompt": "All apples are fruit. All fruit grows on plants.\nSo: All apples grow on plants.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "Apples sit inside fruit, and fruit sits inside things that grow on plants."
+  },
+  {
+   "id": "syl-21",
+   "kind": "syllogism",
+   "level": 2,
+   "prompt": "If you press the bell, it rings. The bell rang.\nSo: Someone pressed it.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "A bell can ring for other reasons: wind, a fault, a timer. The result doesn't prove the cause."
+  },
+  {
+   "id": "syl-22",
+   "kind": "syllogism",
+   "level": 2,
+   "prompt": "If a number is divisible by 4, it is even. 12 is divisible by 4.\nSo: 12 is even.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "The condition holds, so the result follows."
+  },
+  {
+   "id": "syl-23",
+   "kind": "syllogism",
+   "level": 2,
+   "prompt": "If the shop is open, the lights are on. The lights are off.\nSo: The shop is not open.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "If open always means lights on, lights off means not open."
+  },
+  {
+   "id": "syl-24",
+   "kind": "syllogism",
+   "level": 3,
+   "prompt": "Some birds can't fly. All penguins are birds.\nSo: Some penguins can't fly.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "The birds that can't fly might be ostriches and kiwis, not penguins. Nothing here links the two groups."
+  },
+  {
+   "id": "syl-25",
+   "kind": "syllogism",
+   "level": 3,
+   "prompt": "No cats bark. Some pets are cats.\nSo: Some pets don't bark.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Follows",
+   "why": "At least one pet is a cat, and no cat barks, so that pet doesn't bark."
+  },
+  {
+   "id": "syl-26",
+   "kind": "syllogism",
+   "level": 3,
+   "prompt": "Everyone who finishes the race gets a medal. Some runners got a medal.\nSo: Some runners finished the race.",
+   "options": [
+    "Follows",
+    "Doesn't follow"
+   ],
+   "answer": "Doesn't follow",
+   "why": "Medals might also go to other people, such as the oldest runner or a volunteer. The rule says what finishing brings, not that only finishing brings it."
+  },
+  {
+   "id": "fal-13",
+   "kind": "fallacy",
+   "level": 1,
+   "prompt": "\"You can't trust his sums. He dropped out of school.\"",
+   "options": [
+    "Ad hominem",
+    "False dilemma",
+    "Post hoc",
+    "Straw man"
+   ],
+   "answer": "Ad hominem",
+   "why": "It attacks the person instead of checking the sums."
+  },
+  {
+   "id": "fal-14",
+   "kind": "fallacy",
+   "level": 1,
+   "prompt": "\"It's the best film ever. Everyone I know has seen it.\"",
+   "options": [
+    "Ad hominem",
+    "Appeal to popularity",
+    "Circular reasoning",
+    "Slippery slope"
+   ],
+   "answer": "Appeal to popularity",
+   "why": "How many people watched it doesn't show how good it is."
+  },
+  {
+   "id": "fal-15",
+   "kind": "fallacy",
+   "level": 1,
+   "prompt": "\"My cousin lost weight on this tea, so it works for everyone.\"",
+   "options": [
+    "Circular reasoning",
+    "False dilemma",
+    "Hasty generalisation",
+    "Straw man"
+   ],
+   "answer": "Hasty generalisation",
+   "why": "One person's result can't tell you what happens for everyone."
+  },
+  {
+   "id": "fal-16",
+   "kind": "fallacy",
+   "level": 2,
+   "prompt": "A: \"We should have slightly shorter school days.\" B: \"So you think children shouldn't learn anything?\"",
+   "options": [
+    "Ad hominem",
+    "False dilemma",
+    "Post hoc",
+    "Straw man"
+   ],
+   "answer": "Straw man",
+   "why": "B swaps A's modest point for an extreme one that is easy to attack."
+  },
+  {
+   "id": "fal-17",
+   "kind": "fallacy",
+   "level": 2,
+   "prompt": "\"If we let them build one tower, soon the whole skyline will be ruined.\"",
+   "options": [
+    "Circular reasoning",
+    "Hasty generalisation",
+    "Slippery slope",
+    "Straw man"
+   ],
+   "answer": "Slippery slope",
+   "why": "It jumps from one small step to a disaster with no steps shown in between."
+  },
+  {
+   "id": "fal-18",
+   "kind": "fallacy",
+   "level": 2,
+   "prompt": "\"This medicine is safe because it isn't dangerous.\"",
+   "options": [
+    "Ad hominem",
+    "Appeal to popularity",
+    "Circular reasoning",
+    "Post hoc"
+   ],
+   "answer": "Circular reasoning",
+   "why": "\"Safe\" and \"not dangerous\" say the same thing, so nothing has been shown."
+  },
+  {
+   "id": "fal-19",
+   "kind": "fallacy",
+   "level": 3,
+   "prompt": "\"Every morning the rooster crows and then the sun rises. The rooster makes the sun rise.\"",
+   "options": [
+    "Circular reasoning",
+    "Hasty generalisation",
+    "Post hoc",
+    "Straw man"
+   ],
+   "answer": "Post hoc",
+   "why": "Happening first doesn't make it the cause. Both follow the dawn's own timing."
+  },
+  {
+   "id": "fal-20",
+   "kind": "fallacy",
+   "level": 3,
+   "prompt": "A: \"Let's check the data before we decide.\" B: \"So you want to delay the project forever?\"",
+   "options": [
+    "Ad hominem",
+    "Appeal to popularity",
+    "Circular reasoning",
+    "Straw man"
+   ],
+   "answer": "Straw man",
+   "why": "A asked for one check. B answers an exaggerated version of the point."
+  },
+  {
+   "id": "puz-7",
+   "kind": "puzzle",
+   "level": 1,
+   "prompt": "Tom is taller than Ria. Ria is taller than Ed. Who is in the middle?",
+   "options": [
+    "Tom",
+    "Ria",
+    "Ed"
+   ],
+   "answer": "Ria",
+   "why": "Tom, then Ria, then Ed. Ria sits between them."
+  },
+  {
+   "id": "puz-8",
+   "kind": "puzzle",
+   "level": 1,
+   "prompt": "One of three boxes holds a prize. Box 1 is empty. Box 2 is empty. Where is the prize?",
+   "options": [
+    "Box 1",
+    "Box 2",
+    "Box 3"
+   ],
+   "answer": "Box 3",
+   "why": "Rule out the empty ones and one box is left."
+  },
+  {
+   "id": "puz-9",
+   "kind": "puzzle",
+   "level": 2,
+   "prompt": "A is older than B. C is younger than B. D is older than A. Who is the youngest?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "answer": "C",
+   "why": "From oldest: D, A, B, C. So C is the youngest."
+  },
+  {
+   "id": "puz-10",
+   "kind": "puzzle",
+   "level": 2,
+   "prompt": "If today is Monday, the library is closed. The library is open today. What do you know?",
+   "options": [
+    "Today is not Monday",
+    "Today is Monday",
+    "Today is Sunday"
+   ],
+   "answer": "Today is not Monday",
+   "why": "If Monday always means closed, then open means it can't be Monday. It doesn't say which day it is."
+  },
+  {
+   "id": "puz-11",
+   "kind": "puzzle",
+   "level": 3,
+   "prompt": "Two doors: one is safe. Two guards, one always lies and one always tells the truth. You ask one guard: \"What would the other guard say is the safe door?\" He points to door A. Which door is safe?",
+   "options": [
+    "Door A",
+    "Door B"
+   ],
+   "answer": "Door B",
+   "why": "The truth-teller reports the liar's lie, and the liar lies about the truth-teller's answer. Either way you hear the wrong door, so take the other one."
+  },
+  {
+   "id": "puz-12",
+   "kind": "puzzle",
+   "level": 3,
+   "prompt": "A shirt and a tie cost $11 together. The shirt costs $10 more than the tie. How much does the tie cost?",
+   "options": [
+    "$0.50",
+    "$1",
+    "$0.10"
+   ],
+   "answer": "$0.50",
+   "why": "Shirt $10.50 plus tie $0.50 makes $11, and the difference is $10. The quick answer, $1, would make the total $12."
   }
  ]
 }

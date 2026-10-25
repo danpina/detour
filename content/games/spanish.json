@@ -1,100 +1,1391 @@
 {
- "language": "Spanish",
- "words": [
-  { "es": "el gato", "en": "cat", "level": 1, "cat": "animals", "ex": "El gato duerme en el sofá.", "exEn": "The cat sleeps on the sofa.", "key": "gato" },
-  { "es": "el perro", "en": "dog", "level": 1, "cat": "animals", "ex": "El perro corre en el parque.", "exEn": "The dog runs in the park.", "key": "perro" },
-  { "es": "el pájaro", "en": "bird", "level": 1, "cat": "animals", "ex": "El pájaro canta por la mañana.", "exEn": "The bird sings in the morning.", "key": "pájaro" },
-  { "es": "el pez", "en": "fish", "level": 1, "cat": "animals", "ex": "El pez nada en el agua.", "exEn": "The fish swims in the water.", "key": "pez" },
-  { "es": "el caballo", "en": "horse", "level": 2, "cat": "animals", "ex": "El caballo come hierba.", "exEn": "The horse eats grass.", "key": "caballo" },
-  { "es": "la vaca", "en": "cow", "level": 2, "cat": "animals", "ex": "La vaca da leche.", "exEn": "The cow gives milk.", "key": "vaca" },
-  { "es": "el conejo", "en": "rabbit", "level": 2, "cat": "animals", "ex": "El conejo salta muy alto.", "exEn": "The rabbit jumps very high.", "key": "conejo" },
-  { "es": "la mariposa", "en": "butterfly", "level": 3, "cat": "animals", "ex": "La mariposa vuela sobre las flores.", "exEn": "The butterfly flies over the flowers.", "key": "mariposa" },
-  { "es": "la tortuga", "en": "turtle", "level": 3, "cat": "animals", "ex": "La tortuga camina despacio.", "exEn": "The turtle walks slowly.", "key": "tortuga" },
-  { "es": "el pan", "en": "bread", "level": 1, "cat": "food", "ex": "Quiero pan con mantequilla.", "exEn": "I want bread with butter.", "key": "pan" },
-  { "es": "el agua", "en": "water", "level": 1, "cat": "food", "ex": "Bebo agua todos los días.", "exEn": "I drink water every day.", "key": "agua" },
-  { "es": "la leche", "en": "milk", "level": 1, "cat": "food", "ex": "Tomo leche con el cereal.", "exEn": "I have milk with my cereal.", "key": "leche" },
-  { "es": "la manzana", "en": "apple", "level": 1, "cat": "food", "ex": "Ella come una manzana roja.", "exEn": "She eats a red apple.", "key": "manzana" },
-  { "es": "el queso", "en": "cheese", "level": 1, "cat": "food", "ex": "Me gusta el queso.", "exEn": "I like cheese.", "key": "queso" },
-  { "es": "el huevo", "en": "egg", "level": 2, "cat": "food", "ex": "Desayuno un huevo.", "exEn": "I have an egg for breakfast.", "key": "huevo" },
-  { "es": "el arroz", "en": "rice", "level": 2, "cat": "food", "ex": "Comemos arroz con pollo.", "exEn": "We eat rice with chicken.", "key": "arroz" },
-  { "es": "el pollo", "en": "chicken", "level": 2, "cat": "food", "ex": "El pollo está muy rico.", "exEn": "The chicken is very tasty.", "key": "pollo" },
-  { "es": "la naranja", "en": "orange", "level": 2, "cat": "food", "ex": "Una naranja tiene mucha vitamina C.", "exEn": "An orange has a lot of vitamin C.", "key": "naranja" },
-  { "es": "el azúcar", "en": "sugar", "level": 2, "cat": "food", "ex": "No quiero azúcar en el café.", "exEn": "I don't want sugar in my coffee.", "key": "azúcar" },
-  { "es": "la sopa", "en": "soup", "level": 3, "cat": "food", "ex": "La sopa está caliente.", "exEn": "The soup is hot.", "key": "sopa" },
-  { "es": "el desayuno", "en": "breakfast", "level": 3, "cat": "food", "ex": "El desayuno es a las ocho.", "exEn": "Breakfast is at eight.", "key": "desayuno" },
-  { "es": "la casa", "en": "house", "level": 1, "cat": "home", "ex": "Mi casa es pequeña.", "exEn": "My house is small.", "key": "casa" },
-  { "es": "la puerta", "en": "door", "level": 1, "cat": "home", "ex": "Cierra la puerta, por favor.", "exEn": "Close the door, please.", "key": "puerta" },
-  { "es": "la mesa", "en": "table", "level": 1, "cat": "home", "ex": "El libro está sobre la mesa.", "exEn": "The book is on the table.", "key": "mesa" },
-  { "es": "la silla", "en": "chair", "level": 1, "cat": "home", "ex": "Siéntate en la silla.", "exEn": "Sit on the chair.", "key": "silla" },
-  { "es": "la ventana", "en": "window", "level": 2, "cat": "home", "ex": "Abre la ventana, hace calor.", "exEn": "Open the window, it is hot.", "key": "ventana" },
-  { "es": "la cama", "en": "bed", "level": 2, "cat": "home", "ex": "Me voy a la cama temprano.", "exEn": "I go to bed early.", "key": "cama" },
-  { "es": "la llave", "en": "key", "level": 2, "cat": "home", "ex": "No encuentro la llave.", "exEn": "I can't find the key.", "key": "llave" },
-  { "es": "el libro", "en": "book", "level": 1, "cat": "home", "ex": "Leo un libro interesante.", "exEn": "I am reading an interesting book.", "key": "libro" },
-  { "es": "la cocina", "en": "kitchen", "level": 2, "cat": "home", "ex": "Mi madre está en la cocina.", "exEn": "My mother is in the kitchen.", "key": "cocina" },
-  { "es": "el espejo", "en": "mirror", "level": 3, "cat": "home", "ex": "Me miro en el espejo.", "exEn": "I look at myself in the mirror.", "key": "espejo" },
-  { "es": "la madre", "en": "mother", "level": 1, "cat": "people", "ex": "Mi madre trabaja mucho.", "exEn": "My mother works a lot.", "key": "madre" },
-  { "es": "el padre", "en": "father", "level": 1, "cat": "people", "ex": "Mi padre cocina muy bien.", "exEn": "My father cooks very well.", "key": "padre" },
-  { "es": "el hermano", "en": "brother", "level": 1, "cat": "people", "ex": "Mi hermano es mayor que yo.", "exEn": "My brother is older than me.", "key": "hermano" },
-  { "es": "la hermana", "en": "sister", "level": 1, "cat": "people", "ex": "Mi hermana estudia medicina.", "exEn": "My sister studies medicine.", "key": "hermana" },
-  { "es": "el amigo", "en": "friend", "level": 1, "cat": "people", "ex": "Mi amigo vive en Madrid.", "exEn": "My friend lives in Madrid.", "key": "amigo" },
-  { "es": "el niño", "en": "boy", "level": 2, "cat": "people", "ex": "El niño juega con la pelota.", "exEn": "The boy plays with the ball.", "key": "niño" },
-  { "es": "la abuela", "en": "grandmother", "level": 2, "cat": "people", "ex": "Mi abuela hace pasteles.", "exEn": "My grandmother makes cakes.", "key": "abuela" },
-  { "es": "el vecino", "en": "neighbour", "level": 3, "cat": "people", "ex": "El vecino toca la guitarra.", "exEn": "The neighbour plays the guitar.", "key": "vecino" },
-  { "es": "el médico", "en": "doctor", "level": 3, "cat": "people", "ex": "El médico me ayuda mucho.", "exEn": "The doctor helps me a lot.", "key": "médico" },
-  { "es": "comer", "en": "to eat", "level": 1, "cat": "verbs", "ex": "Vamos a comer a las dos.", "exEn": "We are going to eat at two.", "key": "comer" },
-  { "es": "beber", "en": "to drink", "level": 1, "cat": "verbs", "ex": "Quiero beber un poco de agua.", "exEn": "I want to drink a little water.", "key": "beber" },
-  { "es": "hablar", "en": "to speak", "level": 1, "cat": "verbs", "ex": "Me gusta hablar español.", "exEn": "I like to speak Spanish.", "key": "hablar" },
-  { "es": "vivir", "en": "to live", "level": 1, "cat": "verbs", "ex": "Quiero vivir cerca del mar.", "exEn": "I want to live near the sea.", "key": "vivir" },
-  { "es": "dormir", "en": "to sleep", "level": 2, "cat": "verbs", "ex": "Necesito dormir ocho horas.", "exEn": "I need to sleep eight hours.", "key": "dormir" },
-  { "es": "correr", "en": "to run", "level": 2, "cat": "verbs", "ex": "Me gusta correr por la mañana.", "exEn": "I like to run in the morning.", "key": "correr" },
-  { "es": "leer", "en": "to read", "level": 2, "cat": "verbs", "ex": "Me gusta leer antes de dormir.", "exEn": "I like to read before sleeping.", "key": "leer" },
-  { "es": "escribir", "en": "to write", "level": 2, "cat": "verbs", "ex": "Voy a escribir una carta.", "exEn": "I am going to write a letter.", "key": "escribir" },
-  { "es": "abrir", "en": "to open", "level": 2, "cat": "verbs", "ex": "Puedes abrir la caja ahora.", "exEn": "You can open the box now.", "key": "abrir" },
-  { "es": "buscar", "en": "to look for", "level": 3, "cat": "verbs", "ex": "Voy a buscar mis gafas.", "exEn": "I am going to look for my glasses.", "key": "buscar" },
-  { "es": "ayudar", "en": "to help", "level": 3, "cat": "verbs", "ex": "¿Puedes ayudar a tu hermano?", "exEn": "Can you help your brother?", "key": "ayudar" },
-  { "es": "esperar", "en": "to wait", "level": 3, "cat": "verbs", "ex": "Voy a esperar aquí.", "exEn": "I am going to wait here.", "key": "esperar" },
-  { "es": "aprender", "en": "to learn", "level": 2, "cat": "verbs", "ex": "Quiero aprender mucho.", "exEn": "I want to learn a lot.", "key": "aprender" },
-  { "es": "pensar", "en": "to think", "level": 3, "cat": "verbs", "ex": "Necesito pensar un momento.", "exEn": "I need to think for a moment.", "key": "pensar" },
-  { "es": "grande", "en": "big", "level": 1, "cat": "adjectives", "ex": "Es una ciudad muy grande.", "exEn": "It is a very big city.", "key": "grande" },
-  { "es": "pequeño", "en": "small", "level": 1, "cat": "adjectives", "ex": "Tengo un perro pequeño.", "exEn": "I have a small dog.", "key": "pequeño" },
-  { "es": "bonito", "en": "pretty", "level": 1, "cat": "adjectives", "ex": "Qué vestido tan bonito.", "exEn": "What a pretty dress.", "key": "bonito" },
-  { "es": "rápido", "en": "fast", "level": 2, "cat": "adjectives", "ex": "El tren es muy rápido.", "exEn": "The train is very fast.", "key": "rápido" },
-  { "es": "lento", "en": "slow", "level": 2, "cat": "adjectives", "ex": "El autobús es lento hoy.", "exEn": "The bus is slow today.", "key": "lento" },
-  { "es": "caliente", "en": "hot", "level": 2, "cat": "adjectives", "ex": "El café está caliente.", "exEn": "The coffee is hot.", "key": "caliente" },
-  { "es": "frío", "en": "cold", "level": 2, "cat": "adjectives", "ex": "El invierno es muy frío.", "exEn": "Winter is very cold.", "key": "frío" },
-  { "es": "nuevo", "en": "new", "level": 1, "cat": "adjectives", "ex": "Tengo un teléfono nuevo.", "exEn": "I have a new phone.", "key": "nuevo" },
-  { "es": "viejo", "en": "old", "level": 1, "cat": "adjectives", "ex": "Es un coche viejo.", "exEn": "It is an old car.", "key": "viejo" },
-  { "es": "cansado", "en": "tired", "level": 3, "cat": "adjectives", "ex": "Estoy muy cansado hoy.", "exEn": "I am very tired today.", "key": "cansado" },
-  { "es": "feliz", "en": "happy", "level": 2, "cat": "adjectives", "ex": "Ella está feliz con su regalo.", "exEn": "She is happy with her gift.", "key": "feliz" },
-  { "es": "difícil", "en": "difficult", "level": 3, "cat": "adjectives", "ex": "El examen fue difícil.", "exEn": "The exam was difficult.", "key": "difícil" },
-  { "es": "la ciudad", "en": "city", "level": 1, "cat": "places", "ex": "Madrid es una ciudad grande.", "exEn": "Madrid is a big city.", "key": "ciudad" },
-  { "es": "la calle", "en": "street", "level": 1, "cat": "places", "ex": "La calle está tranquila.", "exEn": "The street is quiet.", "key": "calle" },
-  { "es": "la playa", "en": "beach", "level": 1, "cat": "places", "ex": "Vamos a la playa en verano.", "exEn": "We go to the beach in summer.", "key": "playa" },
-  { "es": "la escuela", "en": "school", "level": 1, "cat": "places", "ex": "Los niños van a la escuela.", "exEn": "The children go to school.", "key": "escuela" },
-  { "es": "el mercado", "en": "market", "level": 2, "cat": "places", "ex": "Compro fruta en el mercado.", "exEn": "I buy fruit at the market.", "key": "mercado" },
-  { "es": "la estación", "en": "station", "level": 2, "cat": "places", "ex": "El tren sale de la estación.", "exEn": "The train leaves the station.", "key": "estación" },
-  { "es": "el aeropuerto", "en": "airport", "level": 3, "cat": "places", "ex": "Llegamos al aeropuerto temprano.", "exEn": "We arrived at the airport early.", "key": "aeropuerto" },
-  { "es": "la biblioteca", "en": "library", "level": 3, "cat": "places", "ex": "Estudio en la biblioteca.", "exEn": "I study in the library.", "key": "biblioteca" },
-  { "es": "la montaña", "en": "mountain", "level": 2, "cat": "places", "ex": "La montaña está cubierta de nieve.", "exEn": "The mountain is covered in snow.", "key": "montaña" },
-  { "es": "el río", "en": "river", "level": 3, "cat": "places", "ex": "El río pasa por la ciudad.", "exEn": "The river runs through the city.", "key": "río" },
-  { "es": "hoy", "en": "today", "level": 1, "cat": "time", "ex": "Hoy hace sol.", "exEn": "Today it is sunny.", "key": "hoy" },
-  { "es": "mañana", "en": "tomorrow", "level": 1, "cat": "time", "ex": "Mañana voy al médico.", "exEn": "Tomorrow I am going to the doctor.", "key": "mañana" },
-  { "es": "ayer", "en": "yesterday", "level": 1, "cat": "time", "ex": "Ayer llovió todo el día.", "exEn": "Yesterday it rained all day.", "key": "ayer" },
-  { "es": "siempre", "en": "always", "level": 2, "cat": "time", "ex": "Siempre llego a tiempo.", "exEn": "I always arrive on time.", "key": "siempre" },
-  { "es": "nunca", "en": "never", "level": 2, "cat": "time", "ex": "Nunca bebo café por la noche.", "exEn": "I never drink coffee at night.", "key": "nunca" },
-  { "es": "ahora", "en": "now", "level": 1, "cat": "time", "ex": "Ahora estoy en casa.", "exEn": "Now I am at home.", "key": "ahora" },
-  { "es": "tarde", "en": "late", "level": 2, "cat": "time", "ex": "Es tarde, vamos a casa.", "exEn": "It is late, let's go home.", "key": "tarde" },
-  { "es": "temprano", "en": "early", "level": 2, "cat": "time", "ex": "Me levanto temprano.", "exEn": "I get up early.", "key": "temprano" },
-  { "es": "la semana", "en": "week", "level": 2, "cat": "time", "ex": "Una semana tiene siete días.", "exEn": "A week has seven days.", "key": "semana" },
-  { "es": "el año", "en": "year", "level": 2, "cat": "time", "ex": "El año tiene doce meses.", "exEn": "The year has twelve months.", "key": "año" },
-  { "es": "uno", "en": "one", "level": 1, "cat": "numbers", "ex": "Tengo uno en mi bolsillo.", "exEn": "I have one in my pocket.", "key": "uno" },
-  { "es": "dos", "en": "two", "level": 1, "cat": "numbers", "ex": "Tengo dos hermanos.", "exEn": "I have two brothers.", "key": "dos" },
-  { "es": "tres", "en": "three", "level": 1, "cat": "numbers", "ex": "Hay tres gatos en el jardín.", "exEn": "There are three cats in the garden.", "key": "tres" },
-  { "es": "cuatro", "en": "four", "level": 1, "cat": "numbers", "ex": "La mesa tiene cuatro patas.", "exEn": "The table has four legs.", "key": "cuatro" },
-  { "es": "cinco", "en": "five", "level": 1, "cat": "numbers", "ex": "Son las cinco de la tarde.", "exEn": "It is five in the afternoon.", "key": "cinco" },
-  { "es": "diez", "en": "ten", "level": 2, "cat": "numbers", "ex": "Tengo diez euros.", "exEn": "I have ten euros.", "key": "diez" },
-  { "es": "veinte", "en": "twenty", "level": 2, "cat": "numbers", "ex": "Hay veinte alumnos en la clase.", "exEn": "There are twenty students in the class.", "key": "veinte" },
-  { "es": "cien", "en": "one hundred", "level": 3, "cat": "numbers", "ex": "El libro tiene cien páginas.", "exEn": "The book has one hundred pages.", "key": "cien" },
-  { "es": "mil", "en": "one thousand", "level": 3, "cat": "numbers", "ex": "La entrada cuesta mil pesos.", "exEn": "The ticket costs a thousand pesos.", "key": "mil" }
- ]
+  "language": "Spanish",
+  "words": [
+    {
+      "es": "el gato",
+      "en": "cat",
+      "level": 1,
+      "cat": "animals",
+      "ex": "El gato duerme en el sofá.",
+      "exEn": "The cat sleeps on the sofa.",
+      "key": "gato"
+    },
+    {
+      "es": "el perro",
+      "en": "dog",
+      "level": 1,
+      "cat": "animals",
+      "ex": "El perro corre en el parque.",
+      "exEn": "The dog runs in the park.",
+      "key": "perro"
+    },
+    {
+      "es": "el pájaro",
+      "en": "bird",
+      "level": 1,
+      "cat": "animals",
+      "ex": "El pájaro canta por la mañana.",
+      "exEn": "The bird sings in the morning.",
+      "key": "pájaro"
+    },
+    {
+      "es": "el pez",
+      "en": "fish",
+      "level": 1,
+      "cat": "animals",
+      "ex": "El pez nada en el agua.",
+      "exEn": "The fish swims in the water.",
+      "key": "pez"
+    },
+    {
+      "es": "el caballo",
+      "en": "horse",
+      "level": 2,
+      "cat": "animals",
+      "ex": "El caballo come hierba.",
+      "exEn": "The horse eats grass.",
+      "key": "caballo"
+    },
+    {
+      "es": "la vaca",
+      "en": "cow",
+      "level": 2,
+      "cat": "animals",
+      "ex": "La vaca da leche.",
+      "exEn": "The cow gives milk.",
+      "key": "vaca"
+    },
+    {
+      "es": "el conejo",
+      "en": "rabbit",
+      "level": 2,
+      "cat": "animals",
+      "ex": "El conejo salta muy alto.",
+      "exEn": "The rabbit jumps very high.",
+      "key": "conejo"
+    },
+    {
+      "es": "la mariposa",
+      "en": "butterfly",
+      "level": 3,
+      "cat": "animals",
+      "ex": "La mariposa vuela sobre las flores.",
+      "exEn": "The butterfly flies over the flowers.",
+      "key": "mariposa"
+    },
+    {
+      "es": "la tortuga",
+      "en": "turtle",
+      "level": 3,
+      "cat": "animals",
+      "ex": "La tortuga camina despacio.",
+      "exEn": "The turtle walks slowly.",
+      "key": "tortuga"
+    },
+    {
+      "es": "el pan",
+      "en": "bread",
+      "level": 1,
+      "cat": "food",
+      "ex": "Quiero pan con mantequilla.",
+      "exEn": "I want bread with butter.",
+      "key": "pan"
+    },
+    {
+      "es": "el agua",
+      "en": "water",
+      "level": 1,
+      "cat": "food",
+      "ex": "Bebo agua todos los días.",
+      "exEn": "I drink water every day.",
+      "key": "agua"
+    },
+    {
+      "es": "la leche",
+      "en": "milk",
+      "level": 1,
+      "cat": "food",
+      "ex": "Tomo leche con el cereal.",
+      "exEn": "I have milk with my cereal.",
+      "key": "leche"
+    },
+    {
+      "es": "la manzana",
+      "en": "apple",
+      "level": 1,
+      "cat": "food",
+      "ex": "Ella come una manzana roja.",
+      "exEn": "She eats a red apple.",
+      "key": "manzana"
+    },
+    {
+      "es": "el queso",
+      "en": "cheese",
+      "level": 1,
+      "cat": "food",
+      "ex": "Me gusta el queso.",
+      "exEn": "I like cheese.",
+      "key": "queso"
+    },
+    {
+      "es": "el huevo",
+      "en": "egg",
+      "level": 2,
+      "cat": "food",
+      "ex": "Desayuno un huevo.",
+      "exEn": "I have an egg for breakfast.",
+      "key": "huevo"
+    },
+    {
+      "es": "el arroz",
+      "en": "rice",
+      "level": 2,
+      "cat": "food",
+      "ex": "Comemos arroz con pollo.",
+      "exEn": "We eat rice with chicken.",
+      "key": "arroz"
+    },
+    {
+      "es": "el pollo",
+      "en": "chicken",
+      "level": 2,
+      "cat": "food",
+      "ex": "El pollo está muy rico.",
+      "exEn": "The chicken is very tasty.",
+      "key": "pollo"
+    },
+    {
+      "es": "la naranja",
+      "en": "orange",
+      "level": 2,
+      "cat": "food",
+      "ex": "Una naranja tiene mucha vitamina C.",
+      "exEn": "An orange has a lot of vitamin C.",
+      "key": "naranja"
+    },
+    {
+      "es": "el azúcar",
+      "en": "sugar",
+      "level": 2,
+      "cat": "food",
+      "ex": "No quiero azúcar en el café.",
+      "exEn": "I don't want sugar in my coffee.",
+      "key": "azúcar"
+    },
+    {
+      "es": "la sopa",
+      "en": "soup",
+      "level": 3,
+      "cat": "food",
+      "ex": "La sopa está caliente.",
+      "exEn": "The soup is hot.",
+      "key": "sopa"
+    },
+    {
+      "es": "el desayuno",
+      "en": "breakfast",
+      "level": 3,
+      "cat": "food",
+      "ex": "El desayuno es a las ocho.",
+      "exEn": "Breakfast is at eight.",
+      "key": "desayuno"
+    },
+    {
+      "es": "la casa",
+      "en": "house",
+      "level": 1,
+      "cat": "home",
+      "ex": "Mi casa es pequeña.",
+      "exEn": "My house is small.",
+      "key": "casa"
+    },
+    {
+      "es": "la puerta",
+      "en": "door",
+      "level": 1,
+      "cat": "home",
+      "ex": "Cierra la puerta, por favor.",
+      "exEn": "Close the door, please.",
+      "key": "puerta"
+    },
+    {
+      "es": "la mesa",
+      "en": "table",
+      "level": 1,
+      "cat": "home",
+      "ex": "El libro está sobre la mesa.",
+      "exEn": "The book is on the table.",
+      "key": "mesa"
+    },
+    {
+      "es": "la silla",
+      "en": "chair",
+      "level": 1,
+      "cat": "home",
+      "ex": "Siéntate en la silla.",
+      "exEn": "Sit on the chair.",
+      "key": "silla"
+    },
+    {
+      "es": "la ventana",
+      "en": "window",
+      "level": 2,
+      "cat": "home",
+      "ex": "Abre la ventana, hace calor.",
+      "exEn": "Open the window, it is hot.",
+      "key": "ventana"
+    },
+    {
+      "es": "la cama",
+      "en": "bed",
+      "level": 2,
+      "cat": "home",
+      "ex": "Me voy a la cama temprano.",
+      "exEn": "I go to bed early.",
+      "key": "cama"
+    },
+    {
+      "es": "la llave",
+      "en": "key",
+      "level": 2,
+      "cat": "home",
+      "ex": "No encuentro la llave.",
+      "exEn": "I can't find the key.",
+      "key": "llave"
+    },
+    {
+      "es": "el libro",
+      "en": "book",
+      "level": 1,
+      "cat": "home",
+      "ex": "Leo un libro interesante.",
+      "exEn": "I am reading an interesting book.",
+      "key": "libro"
+    },
+    {
+      "es": "la cocina",
+      "en": "kitchen",
+      "level": 2,
+      "cat": "home",
+      "ex": "Mi madre está en la cocina.",
+      "exEn": "My mother is in the kitchen.",
+      "key": "cocina"
+    },
+    {
+      "es": "el espejo",
+      "en": "mirror",
+      "level": 3,
+      "cat": "home",
+      "ex": "Me miro en el espejo.",
+      "exEn": "I look at myself in the mirror.",
+      "key": "espejo"
+    },
+    {
+      "es": "la madre",
+      "en": "mother",
+      "level": 1,
+      "cat": "people",
+      "ex": "Mi madre trabaja mucho.",
+      "exEn": "My mother works a lot.",
+      "key": "madre"
+    },
+    {
+      "es": "el padre",
+      "en": "father",
+      "level": 1,
+      "cat": "people",
+      "ex": "Mi padre cocina muy bien.",
+      "exEn": "My father cooks very well.",
+      "key": "padre"
+    },
+    {
+      "es": "el hermano",
+      "en": "brother",
+      "level": 1,
+      "cat": "people",
+      "ex": "Mi hermano es mayor que yo.",
+      "exEn": "My brother is older than me.",
+      "key": "hermano"
+    },
+    {
+      "es": "la hermana",
+      "en": "sister",
+      "level": 1,
+      "cat": "people",
+      "ex": "Mi hermana estudia medicina.",
+      "exEn": "My sister studies medicine.",
+      "key": "hermana"
+    },
+    {
+      "es": "el amigo",
+      "en": "friend",
+      "level": 1,
+      "cat": "people",
+      "ex": "Mi amigo vive en Madrid.",
+      "exEn": "My friend lives in Madrid.",
+      "key": "amigo"
+    },
+    {
+      "es": "el niño",
+      "en": "boy",
+      "level": 2,
+      "cat": "people",
+      "ex": "El niño juega con la pelota.",
+      "exEn": "The boy plays with the ball.",
+      "key": "niño"
+    },
+    {
+      "es": "la abuela",
+      "en": "grandmother",
+      "level": 2,
+      "cat": "people",
+      "ex": "Mi abuela hace pasteles.",
+      "exEn": "My grandmother makes cakes.",
+      "key": "abuela"
+    },
+    {
+      "es": "el vecino",
+      "en": "neighbour",
+      "level": 3,
+      "cat": "people",
+      "ex": "El vecino toca la guitarra.",
+      "exEn": "The neighbour plays the guitar.",
+      "key": "vecino"
+    },
+    {
+      "es": "el médico",
+      "en": "doctor",
+      "level": 3,
+      "cat": "people",
+      "ex": "El médico me ayuda mucho.",
+      "exEn": "The doctor helps me a lot.",
+      "key": "médico"
+    },
+    {
+      "es": "comer",
+      "en": "to eat",
+      "level": 1,
+      "cat": "verbs",
+      "ex": "Vamos a comer a las dos.",
+      "exEn": "We are going to eat at two.",
+      "key": "comer"
+    },
+    {
+      "es": "beber",
+      "en": "to drink",
+      "level": 1,
+      "cat": "verbs",
+      "ex": "Quiero beber un poco de agua.",
+      "exEn": "I want to drink a little water.",
+      "key": "beber"
+    },
+    {
+      "es": "hablar",
+      "en": "to speak",
+      "level": 1,
+      "cat": "verbs",
+      "ex": "Me gusta hablar español.",
+      "exEn": "I like to speak Spanish.",
+      "key": "hablar"
+    },
+    {
+      "es": "vivir",
+      "en": "to live",
+      "level": 1,
+      "cat": "verbs",
+      "ex": "Quiero vivir cerca del mar.",
+      "exEn": "I want to live near the sea.",
+      "key": "vivir"
+    },
+    {
+      "es": "dormir",
+      "en": "to sleep",
+      "level": 2,
+      "cat": "verbs",
+      "ex": "Necesito dormir ocho horas.",
+      "exEn": "I need to sleep eight hours.",
+      "key": "dormir"
+    },
+    {
+      "es": "correr",
+      "en": "to run",
+      "level": 2,
+      "cat": "verbs",
+      "ex": "Me gusta correr por la mañana.",
+      "exEn": "I like to run in the morning.",
+      "key": "correr"
+    },
+    {
+      "es": "leer",
+      "en": "to read",
+      "level": 2,
+      "cat": "verbs",
+      "ex": "Me gusta leer antes de dormir.",
+      "exEn": "I like to read before sleeping.",
+      "key": "leer"
+    },
+    {
+      "es": "escribir",
+      "en": "to write",
+      "level": 2,
+      "cat": "verbs",
+      "ex": "Voy a escribir una carta.",
+      "exEn": "I am going to write a letter.",
+      "key": "escribir"
+    },
+    {
+      "es": "abrir",
+      "en": "to open",
+      "level": 2,
+      "cat": "verbs",
+      "ex": "Puedes abrir la caja ahora.",
+      "exEn": "You can open the box now.",
+      "key": "abrir"
+    },
+    {
+      "es": "buscar",
+      "en": "to look for",
+      "level": 3,
+      "cat": "verbs",
+      "ex": "Voy a buscar mis gafas.",
+      "exEn": "I am going to look for my glasses.",
+      "key": "buscar"
+    },
+    {
+      "es": "ayudar",
+      "en": "to help",
+      "level": 3,
+      "cat": "verbs",
+      "ex": "¿Puedes ayudar a tu hermano?",
+      "exEn": "Can you help your brother?",
+      "key": "ayudar"
+    },
+    {
+      "es": "esperar",
+      "en": "to wait",
+      "level": 3,
+      "cat": "verbs",
+      "ex": "Voy a esperar aquí.",
+      "exEn": "I am going to wait here.",
+      "key": "esperar"
+    },
+    {
+      "es": "aprender",
+      "en": "to learn",
+      "level": 2,
+      "cat": "verbs",
+      "ex": "Quiero aprender mucho.",
+      "exEn": "I want to learn a lot.",
+      "key": "aprender"
+    },
+    {
+      "es": "pensar",
+      "en": "to think",
+      "level": 3,
+      "cat": "verbs",
+      "ex": "Necesito pensar un momento.",
+      "exEn": "I need to think for a moment.",
+      "key": "pensar"
+    },
+    {
+      "es": "grande",
+      "en": "big",
+      "level": 1,
+      "cat": "adjectives",
+      "ex": "Es una ciudad muy grande.",
+      "exEn": "It is a very big city.",
+      "key": "grande"
+    },
+    {
+      "es": "pequeño",
+      "en": "small",
+      "level": 1,
+      "cat": "adjectives",
+      "ex": "Tengo un perro pequeño.",
+      "exEn": "I have a small dog.",
+      "key": "pequeño"
+    },
+    {
+      "es": "bonito",
+      "en": "pretty",
+      "level": 1,
+      "cat": "adjectives",
+      "ex": "Qué vestido tan bonito.",
+      "exEn": "What a pretty dress.",
+      "key": "bonito"
+    },
+    {
+      "es": "rápido",
+      "en": "fast",
+      "level": 2,
+      "cat": "adjectives",
+      "ex": "El tren es muy rápido.",
+      "exEn": "The train is very fast.",
+      "key": "rápido"
+    },
+    {
+      "es": "lento",
+      "en": "slow",
+      "level": 2,
+      "cat": "adjectives",
+      "ex": "El autobús es lento hoy.",
+      "exEn": "The bus is slow today.",
+      "key": "lento"
+    },
+    {
+      "es": "caliente",
+      "en": "hot",
+      "level": 2,
+      "cat": "adjectives",
+      "ex": "El café está caliente.",
+      "exEn": "The coffee is hot.",
+      "key": "caliente"
+    },
+    {
+      "es": "frío",
+      "en": "cold",
+      "level": 2,
+      "cat": "adjectives",
+      "ex": "El invierno es muy frío.",
+      "exEn": "Winter is very cold.",
+      "key": "frío"
+    },
+    {
+      "es": "nuevo",
+      "en": "new",
+      "level": 1,
+      "cat": "adjectives",
+      "ex": "Tengo un teléfono nuevo.",
+      "exEn": "I have a new phone.",
+      "key": "nuevo"
+    },
+    {
+      "es": "viejo",
+      "en": "old",
+      "level": 1,
+      "cat": "adjectives",
+      "ex": "Es un coche viejo.",
+      "exEn": "It is an old car.",
+      "key": "viejo"
+    },
+    {
+      "es": "cansado",
+      "en": "tired",
+      "level": 3,
+      "cat": "adjectives",
+      "ex": "Estoy muy cansado hoy.",
+      "exEn": "I am very tired today.",
+      "key": "cansado"
+    },
+    {
+      "es": "feliz",
+      "en": "happy",
+      "level": 2,
+      "cat": "adjectives",
+      "ex": "Ella está feliz con su regalo.",
+      "exEn": "She is happy with her gift.",
+      "key": "feliz"
+    },
+    {
+      "es": "difícil",
+      "en": "difficult",
+      "level": 3,
+      "cat": "adjectives",
+      "ex": "El examen fue difícil.",
+      "exEn": "The exam was difficult.",
+      "key": "difícil"
+    },
+    {
+      "es": "la ciudad",
+      "en": "city",
+      "level": 1,
+      "cat": "places",
+      "ex": "Madrid es una ciudad grande.",
+      "exEn": "Madrid is a big city.",
+      "key": "ciudad"
+    },
+    {
+      "es": "la calle",
+      "en": "street",
+      "level": 1,
+      "cat": "places",
+      "ex": "La calle está tranquila.",
+      "exEn": "The street is quiet.",
+      "key": "calle"
+    },
+    {
+      "es": "la playa",
+      "en": "beach",
+      "level": 1,
+      "cat": "places",
+      "ex": "Vamos a la playa en verano.",
+      "exEn": "We go to the beach in summer.",
+      "key": "playa"
+    },
+    {
+      "es": "la escuela",
+      "en": "school",
+      "level": 1,
+      "cat": "places",
+      "ex": "Los niños van a la escuela.",
+      "exEn": "The children go to school.",
+      "key": "escuela"
+    },
+    {
+      "es": "el mercado",
+      "en": "market",
+      "level": 2,
+      "cat": "places",
+      "ex": "Compro fruta en el mercado.",
+      "exEn": "I buy fruit at the market.",
+      "key": "mercado"
+    },
+    {
+      "es": "la estación",
+      "en": "station",
+      "level": 2,
+      "cat": "places",
+      "ex": "El tren sale de la estación.",
+      "exEn": "The train leaves the station.",
+      "key": "estación"
+    },
+    {
+      "es": "el aeropuerto",
+      "en": "airport",
+      "level": 3,
+      "cat": "places",
+      "ex": "Llegamos al aeropuerto temprano.",
+      "exEn": "We arrived at the airport early.",
+      "key": "aeropuerto"
+    },
+    {
+      "es": "la biblioteca",
+      "en": "library",
+      "level": 3,
+      "cat": "places",
+      "ex": "Estudio en la biblioteca.",
+      "exEn": "I study in the library.",
+      "key": "biblioteca"
+    },
+    {
+      "es": "la montaña",
+      "en": "mountain",
+      "level": 2,
+      "cat": "places",
+      "ex": "La montaña está cubierta de nieve.",
+      "exEn": "The mountain is covered in snow.",
+      "key": "montaña"
+    },
+    {
+      "es": "el río",
+      "en": "river",
+      "level": 3,
+      "cat": "places",
+      "ex": "El río pasa por la ciudad.",
+      "exEn": "The river runs through the city.",
+      "key": "río"
+    },
+    {
+      "es": "hoy",
+      "en": "today",
+      "level": 1,
+      "cat": "time",
+      "ex": "Hoy hace sol.",
+      "exEn": "Today it is sunny.",
+      "key": "hoy"
+    },
+    {
+      "es": "mañana",
+      "en": "tomorrow",
+      "level": 1,
+      "cat": "time",
+      "ex": "Mañana voy al médico.",
+      "exEn": "Tomorrow I am going to the doctor.",
+      "key": "mañana"
+    },
+    {
+      "es": "ayer",
+      "en": "yesterday",
+      "level": 1,
+      "cat": "time",
+      "ex": "Ayer llovió todo el día.",
+      "exEn": "Yesterday it rained all day.",
+      "key": "ayer"
+    },
+    {
+      "es": "siempre",
+      "en": "always",
+      "level": 2,
+      "cat": "time",
+      "ex": "Siempre llego a tiempo.",
+      "exEn": "I always arrive on time.",
+      "key": "siempre"
+    },
+    {
+      "es": "nunca",
+      "en": "never",
+      "level": 2,
+      "cat": "time",
+      "ex": "Nunca bebo café por la noche.",
+      "exEn": "I never drink coffee at night.",
+      "key": "nunca"
+    },
+    {
+      "es": "ahora",
+      "en": "now",
+      "level": 1,
+      "cat": "time",
+      "ex": "Ahora estoy en casa.",
+      "exEn": "Now I am at home.",
+      "key": "ahora"
+    },
+    {
+      "es": "tarde",
+      "en": "late",
+      "level": 2,
+      "cat": "time",
+      "ex": "Es tarde, vamos a casa.",
+      "exEn": "It is late, let's go home.",
+      "key": "tarde"
+    },
+    {
+      "es": "temprano",
+      "en": "early",
+      "level": 2,
+      "cat": "time",
+      "ex": "Me levanto temprano.",
+      "exEn": "I get up early.",
+      "key": "temprano"
+    },
+    {
+      "es": "la semana",
+      "en": "week",
+      "level": 2,
+      "cat": "time",
+      "ex": "Una semana tiene siete días.",
+      "exEn": "A week has seven days.",
+      "key": "semana"
+    },
+    {
+      "es": "el año",
+      "en": "year",
+      "level": 2,
+      "cat": "time",
+      "ex": "El año tiene doce meses.",
+      "exEn": "The year has twelve months.",
+      "key": "año"
+    },
+    {
+      "es": "uno",
+      "en": "one",
+      "level": 1,
+      "cat": "numbers",
+      "ex": "Tengo uno en mi bolsillo.",
+      "exEn": "I have one in my pocket.",
+      "key": "uno"
+    },
+    {
+      "es": "dos",
+      "en": "two",
+      "level": 1,
+      "cat": "numbers",
+      "ex": "Tengo dos hermanos.",
+      "exEn": "I have two brothers.",
+      "key": "dos"
+    },
+    {
+      "es": "tres",
+      "en": "three",
+      "level": 1,
+      "cat": "numbers",
+      "ex": "Hay tres gatos en el jardín.",
+      "exEn": "There are three cats in the garden.",
+      "key": "tres"
+    },
+    {
+      "es": "cuatro",
+      "en": "four",
+      "level": 1,
+      "cat": "numbers",
+      "ex": "La mesa tiene cuatro patas.",
+      "exEn": "The table has four legs.",
+      "key": "cuatro"
+    },
+    {
+      "es": "cinco",
+      "en": "five",
+      "level": 1,
+      "cat": "numbers",
+      "ex": "Son las cinco de la tarde.",
+      "exEn": "It is five in the afternoon.",
+      "key": "cinco"
+    },
+    {
+      "es": "diez",
+      "en": "ten",
+      "level": 2,
+      "cat": "numbers",
+      "ex": "Tengo diez euros.",
+      "exEn": "I have ten euros.",
+      "key": "diez"
+    },
+    {
+      "es": "veinte",
+      "en": "twenty",
+      "level": 2,
+      "cat": "numbers",
+      "ex": "Hay veinte alumnos en la clase.",
+      "exEn": "There are twenty students in the class.",
+      "key": "veinte"
+    },
+    {
+      "es": "cien",
+      "en": "one hundred",
+      "level": 3,
+      "cat": "numbers",
+      "ex": "El libro tiene cien páginas.",
+      "exEn": "The book has one hundred pages.",
+      "key": "cien"
+    },
+    {
+      "es": "mil",
+      "en": "one thousand",
+      "level": 3,
+      "cat": "numbers",
+      "ex": "La entrada cuesta mil pesos.",
+      "exEn": "The ticket costs a thousand pesos.",
+      "key": "mil"
+    },
+    {
+      "es": "la mano",
+      "en": "hand",
+      "level": 1,
+      "cat": "body",
+      "ex": "Lávate la mano antes de comer.",
+      "exEn": "Wash your hand before eating.",
+      "key": "mano"
+    },
+    {
+      "es": "la cabeza",
+      "en": "head",
+      "level": 1,
+      "cat": "body",
+      "ex": "Me duele la cabeza.",
+      "exEn": "My head hurts.",
+      "key": "cabeza"
+    },
+    {
+      "es": "el ojo",
+      "en": "eye",
+      "level": 1,
+      "cat": "body",
+      "ex": "Tengo un ojo cerrado.",
+      "exEn": "I have one eye closed.",
+      "key": "ojo"
+    },
+    {
+      "es": "el pie",
+      "en": "foot",
+      "level": 1,
+      "cat": "body",
+      "ex": "Me duele el pie derecho.",
+      "exEn": "My right foot hurts.",
+      "key": "pie"
+    },
+    {
+      "es": "la boca",
+      "en": "mouth",
+      "level": 1,
+      "cat": "body",
+      "ex": "Abre la boca, por favor.",
+      "exEn": "Open your mouth, please.",
+      "key": "boca"
+    },
+    {
+      "es": "la camisa",
+      "en": "shirt",
+      "level": 1,
+      "cat": "clothes",
+      "ex": "Mi camisa es azul.",
+      "exEn": "My shirt is blue.",
+      "key": "camisa"
+    },
+    {
+      "es": "los zapatos",
+      "en": "shoes",
+      "level": 1,
+      "cat": "clothes",
+      "ex": "Necesito unos zapatos nuevos.",
+      "exEn": "I need some new shoes.",
+      "key": "zapatos"
+    },
+    {
+      "es": "el sombrero",
+      "en": "hat",
+      "level": 1,
+      "cat": "clothes",
+      "ex": "El sombrero es muy grande.",
+      "exEn": "The hat is very big.",
+      "key": "sombrero"
+    },
+    {
+      "es": "el sol",
+      "en": "sun",
+      "level": 1,
+      "cat": "weather",
+      "ex": "Hoy hace sol.",
+      "exEn": "It is sunny today.",
+      "key": "sol"
+    },
+    {
+      "es": "la lluvia",
+      "en": "rain",
+      "level": 1,
+      "cat": "weather",
+      "ex": "La lluvia cae sobre la ciudad.",
+      "exEn": "The rain falls on the city.",
+      "key": "lluvia"
+    },
+    {
+      "es": "el viento",
+      "en": "wind",
+      "level": 1,
+      "cat": "weather",
+      "ex": "Hay mucho viento hoy.",
+      "exEn": "There is a lot of wind today.",
+      "key": "viento"
+    },
+    {
+      "es": "el cielo",
+      "en": "sky",
+      "level": 1,
+      "cat": "weather",
+      "ex": "El cielo está azul.",
+      "exEn": "The sky is blue.",
+      "key": "cielo"
+    },
+    {
+      "es": "el café",
+      "en": "coffee",
+      "level": 1,
+      "cat": "food",
+      "ex": "Me gusta el café por la mañana.",
+      "exEn": "I like coffee in the morning.",
+      "key": "café"
+    },
+    {
+      "es": "el pescado",
+      "en": "fish (food)",
+      "level": 2,
+      "cat": "food",
+      "ex": "Comemos pescado los viernes.",
+      "exEn": "We eat fish on Fridays.",
+      "key": "pescado"
+    },
+    {
+      "es": "la ensalada",
+      "en": "salad",
+      "level": 2,
+      "cat": "food",
+      "ex": "Quiero una ensalada con tomate.",
+      "exEn": "I want a salad with tomato.",
+      "key": "ensalada"
+    },
+    {
+      "es": "la cena",
+      "en": "dinner",
+      "level": 2,
+      "cat": "food",
+      "ex": "La cena está lista.",
+      "exEn": "Dinner is ready.",
+      "key": "cena"
+    },
+    {
+      "es": "el pantalón",
+      "en": "trousers",
+      "level": 2,
+      "cat": "clothes",
+      "ex": "El pantalón es demasiado largo.",
+      "exEn": "The trousers are too long.",
+      "key": "pantalón"
+    },
+    {
+      "es": "el abrigo",
+      "en": "coat",
+      "level": 2,
+      "cat": "clothes",
+      "ex": "Lleva el abrigo, hace frío.",
+      "exEn": "Take your coat, it is cold.",
+      "key": "abrigo"
+    },
+    {
+      "es": "la espalda",
+      "en": "back (body)",
+      "level": 2,
+      "cat": "body",
+      "ex": "Me duele la espalda.",
+      "exEn": "My back hurts.",
+      "key": "espalda"
+    },
+    {
+      "es": "el corazón",
+      "en": "heart",
+      "level": 2,
+      "cat": "body",
+      "ex": "Mi corazón late muy rápido.",
+      "exEn": "My heart beats very fast.",
+      "key": "corazón"
+    },
+    {
+      "es": "la nube",
+      "en": "cloud",
+      "level": 2,
+      "cat": "weather",
+      "ex": "Hay una nube grande en el cielo.",
+      "exEn": "There is a big cloud in the sky.",
+      "key": "nube"
+    },
+    {
+      "es": "la nieve",
+      "en": "snow",
+      "level": 2,
+      "cat": "weather",
+      "ex": "La nieve cubre la montaña.",
+      "exEn": "The snow covers the mountain.",
+      "key": "nieve"
+    },
+    {
+      "es": "el viaje",
+      "en": "trip",
+      "level": 2,
+      "cat": "travel",
+      "ex": "El viaje dura tres horas.",
+      "exEn": "The trip takes three hours.",
+      "key": "viaje"
+    },
+    {
+      "es": "la maleta",
+      "en": "suitcase",
+      "level": 2,
+      "cat": "travel",
+      "ex": "Mi maleta es muy pesada.",
+      "exEn": "My suitcase is very heavy.",
+      "key": "maleta"
+    },
+    {
+      "es": "el billete",
+      "en": "ticket",
+      "level": 2,
+      "cat": "travel",
+      "ex": "Tengo el billete en el teléfono.",
+      "exEn": "I have the ticket on my phone.",
+      "key": "billete"
+    },
+    {
+      "es": "el hotel",
+      "en": "hotel",
+      "level": 2,
+      "cat": "travel",
+      "ex": "El hotel está cerca de la playa.",
+      "exEn": "The hotel is near the beach.",
+      "key": "hotel"
+    },
+    {
+      "es": "viajar",
+      "en": "to travel",
+      "level": 2,
+      "cat": "verbs",
+      "ex": "Me gusta viajar en tren.",
+      "exEn": "I like to travel by train.",
+      "key": "viajar"
+    },
+    {
+      "es": "comprar",
+      "en": "to buy",
+      "level": 2,
+      "cat": "verbs",
+      "ex": "Quiero comprar pan.",
+      "exEn": "I want to buy bread.",
+      "key": "comprar"
+    },
+    {
+      "es": "cantar",
+      "en": "to sing",
+      "level": 2,
+      "cat": "verbs",
+      "ex": "Me gusta cantar en la ducha.",
+      "exEn": "I like to sing in the shower.",
+      "key": "cantar"
+    },
+    {
+      "es": "caminar",
+      "en": "to walk",
+      "level": 2,
+      "cat": "verbs",
+      "ex": "Vamos a caminar por el parque.",
+      "exEn": "Let's walk through the park.",
+      "key": "caminar"
+    },
+    {
+      "es": "el trabajo",
+      "en": "work, job",
+      "level": 2,
+      "cat": "work",
+      "ex": "Mi trabajo empieza a las nueve.",
+      "exEn": "My work starts at nine.",
+      "key": "trabajo"
+    },
+    {
+      "es": "la reunión",
+      "en": "meeting",
+      "level": 2,
+      "cat": "work",
+      "ex": "La reunión es mañana.",
+      "exEn": "The meeting is tomorrow.",
+      "key": "reunión"
+    },
+    {
+      "es": "el dinero",
+      "en": "money",
+      "level": 2,
+      "cat": "work",
+      "ex": "No tengo dinero hoy.",
+      "exEn": "I have no money today.",
+      "key": "dinero"
+    },
+    {
+      "es": "la pregunta",
+      "en": "question",
+      "level": 2,
+      "cat": "words",
+      "ex": "Tengo una pregunta.",
+      "exEn": "I have a question.",
+      "key": "pregunta"
+    },
+    {
+      "es": "la respuesta",
+      "en": "answer",
+      "level": 2,
+      "cat": "words",
+      "ex": "La respuesta es fácil.",
+      "exEn": "The answer is easy.",
+      "key": "respuesta"
+    },
+    {
+      "es": "amable",
+      "en": "kind",
+      "level": 2,
+      "cat": "adjectives",
+      "ex": "Mi vecino es muy amable.",
+      "exEn": "My neighbour is very kind.",
+      "key": "amable"
+    },
+    {
+      "es": "peligroso",
+      "en": "dangerous",
+      "level": 2,
+      "cat": "adjectives",
+      "ex": "El camino es peligroso de noche.",
+      "exEn": "The road is dangerous at night.",
+      "key": "peligroso"
+    },
+    {
+      "es": "barato",
+      "en": "cheap",
+      "level": 2,
+      "cat": "adjectives",
+      "ex": "El café es barato aquí.",
+      "exEn": "Coffee is cheap here.",
+      "key": "barato"
+    },
+    {
+      "es": "caro",
+      "en": "expensive",
+      "level": 2,
+      "cat": "adjectives",
+      "ex": "El hotel es muy caro.",
+      "exEn": "The hotel is very expensive.",
+      "key": "caro"
+    },
+    {
+      "es": "cerca",
+      "en": "near",
+      "level": 2,
+      "cat": "words",
+      "ex": "La estación está cerca.",
+      "exEn": "The station is near.",
+      "key": "cerca"
+    },
+    {
+      "es": "lejos",
+      "en": "far",
+      "level": 2,
+      "cat": "words",
+      "ex": "El aeropuerto está lejos.",
+      "exEn": "The airport is far.",
+      "key": "lejos"
+    },
+    {
+      "es": "el equipaje",
+      "en": "luggage",
+      "level": 3,
+      "cat": "travel",
+      "ex": "Perdí el equipaje en el vuelo.",
+      "exEn": "I lost my luggage on the flight.",
+      "key": "equipaje"
+    },
+    {
+      "es": "el pasaporte",
+      "en": "passport",
+      "level": 3,
+      "cat": "travel",
+      "ex": "No encuentro mi pasaporte.",
+      "exEn": "I can't find my passport.",
+      "key": "pasaporte"
+    },
+    {
+      "es": "la tormenta",
+      "en": "storm",
+      "level": 3,
+      "cat": "weather",
+      "ex": "La tormenta llega por la noche.",
+      "exEn": "The storm arrives at night.",
+      "key": "tormenta"
+    },
+    {
+      "es": "el hombro",
+      "en": "shoulder",
+      "level": 3,
+      "cat": "body",
+      "ex": "Me duele el hombro izquierdo.",
+      "exEn": "My left shoulder hurts.",
+      "key": "hombro"
+    },
+    {
+      "es": "la rodilla",
+      "en": "knee",
+      "level": 3,
+      "cat": "body",
+      "ex": "Me duele la rodilla al correr.",
+      "exEn": "My knee hurts when running.",
+      "key": "rodilla"
+    },
+    {
+      "es": "los guantes",
+      "en": "gloves",
+      "level": 3,
+      "cat": "clothes",
+      "ex": "Olvidé los guantes en casa.",
+      "exEn": "I forgot my gloves at home.",
+      "key": "guantes"
+    },
+    {
+      "es": "la bufanda",
+      "en": "scarf",
+      "level": 3,
+      "cat": "clothes",
+      "ex": "Mi abuela me hizo una bufanda.",
+      "exEn": "My grandmother made me a scarf.",
+      "key": "bufanda"
+    },
+    {
+      "es": "el empleo",
+      "en": "employment, job",
+      "level": 3,
+      "cat": "work",
+      "ex": "Busco un empleo nuevo.",
+      "exEn": "I am looking for a new job.",
+      "key": "empleo"
+    },
+    {
+      "es": "el sueldo",
+      "en": "salary",
+      "level": 3,
+      "cat": "work",
+      "ex": "El sueldo llega el día uno.",
+      "exEn": "The salary arrives on the first.",
+      "key": "sueldo"
+    },
+    {
+      "es": "el horario",
+      "en": "schedule",
+      "level": 3,
+      "cat": "work",
+      "ex": "El horario cambia en verano.",
+      "exEn": "The schedule changes in summer.",
+      "key": "horario"
+    },
+    {
+      "es": "recordar",
+      "en": "to remember",
+      "level": 3,
+      "cat": "verbs",
+      "ex": "Quiero recordar tu nombre.",
+      "exEn": "I want to remember your name.",
+      "key": "recordar"
+    },
+    {
+      "es": "olvidar",
+      "en": "to forget",
+      "level": 3,
+      "cat": "verbs",
+      "ex": "No quiero olvidar esta palabra.",
+      "exEn": "I don't want to forget this word.",
+      "key": "olvidar"
+    },
+    {
+      "es": "ahorrar",
+      "en": "to save (money)",
+      "level": 3,
+      "cat": "verbs",
+      "ex": "Tengo que ahorrar este mes.",
+      "exEn": "I have to save this month.",
+      "key": "ahorrar"
+    },
+    {
+      "es": "preocuparse",
+      "en": "to worry",
+      "level": 3,
+      "cat": "verbs",
+      "ex": "No hay que preocuparse por eso.",
+      "exEn": "There is no need to worry about that.",
+      "key": "preocuparse"
+    },
+    {
+      "es": "orgulloso",
+      "en": "proud",
+      "level": 3,
+      "cat": "adjectives",
+      "ex": "Estoy orgulloso de ti.",
+      "exEn": "I am proud of you.",
+      "key": "orgulloso"
+    },
+    {
+      "es": "sorprendente",
+      "en": "surprising",
+      "level": 3,
+      "cat": "adjectives",
+      "ex": "El final fue sorprendente.",
+      "exEn": "The ending was surprising.",
+      "key": "sorprendente"
+    },
+    {
+      "es": "aunque",
+      "en": "although",
+      "level": 3,
+      "cat": "words",
+      "ex": "Voy a salir aunque llueva.",
+      "exEn": "I'll go out even if it rains.",
+      "key": "aunque"
+    },
+    {
+      "es": "todavía",
+      "en": "still, yet",
+      "level": 3,
+      "cat": "words",
+      "ex": "Todavía no tengo hambre.",
+      "exEn": "I am not hungry yet.",
+      "key": "todavía"
+    }
+  ]
 }
