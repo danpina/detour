@@ -88,19 +88,19 @@ struct GuardAppsSheet: View {
             }
             .sheet(item: $confirm) { picked in
                 VStack(spacing: 20) {
-                    Text("Is this " + picked.expected + "?").font(.title2.weight(.semibold))
+                    Text("You picked this app").font(.title2.weight(.semibold))
                     Label(picked.token)
                         .labelStyle(.titleAndIcon)
                         .font(.title3)
-                    Text("Detour uses this to take you back to the right app. If it isn't right, no harm: tap No and try again.")
+                    Text("Detour can't read it, so please check: is this " + picked.expected + "? If it isn't, no harm: tap No and try again.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
-                    Button("Yes, it's " + picked.expected) {
+                    Button("Yes, that's " + picked.expected) {
                         guardManager.confirmJustAdded()
                         confirm = nil
                     }
                     .buttonStyle(.borderedProminent)
-                    Button("No, I picked another app", role: .destructive) {
+                    Button("No, that's a different app", role: .destructive) {
                         guardManager.undo(picked.token)
                         confirm = nil
                     }
