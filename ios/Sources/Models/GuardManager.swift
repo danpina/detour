@@ -88,7 +88,7 @@ final class GuardManager {
     /// Works out which app each guarded token is, from whatever iOS tells us (its bundle or name), and remembers it.
     /// Apps it cannot tell stay unnamed until the shield sees them or the user says. Logs what iOS said, for debugging.
     /// Bump when the guard code changes, so a pasted log shows which version of it was running.
-    private static let codeTag = "guided-pick-v2"
+    private static let codeTag = "guided-pick-v3"
     @ObservationIgnored private static var loggedBuild = false
 
     private func logBuildOnce() {
@@ -145,12 +145,34 @@ final class GuardManager {
             }
             selection = draft
             setReturnBundle(bundle, for: token)
+            justAdded = token
         } else {
             selection = draft
         }
         saveSelection()
         return nil
     }
+
+    /// The app the last guided pick added, so the screen can ask "is this the app you meant?".
+    private(set) var justAdded: ApplicationToken?
+
+    /// The user said the picked app was not the one they meant: take it back out.
+    func undo(_ token: ApplicationToken) {
+        var next = selection
+        next.applicationTokens.remove(token)
+        selection = next
+        if let key = GuardShield.tokenKey(for: token) {
+            var map = returnMap
+            map.removeValue(forKey: key)
+            returnMap = map
+            store.returnMap = map
+            store.log("guarded app " + GuardShield.shortKey(key) + " pick undone by the user")
+        }
+        justAdded = nil
+        saveSelection()
+    }
+
+    func confirmJustAdded() { justAdded = nil }
 
     func setReturnBundle(_ bundle: String, for token: ApplicationToken) {
         guard let key = GuardShield.tokenKey(for: token) else { return }

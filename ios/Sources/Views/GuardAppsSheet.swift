@@ -33,6 +33,13 @@ struct GuardAppsSheet: View {
     }
 
     @State private var target: Target?
+    @State private var confirm: PickedApp?
+
+    private struct PickedApp: Identifiable {
+        let token: ApplicationToken
+        let expected: String
+        var id: String { GuardShield.tokenKey(for: token) ?? expected }
+    }
 
     private var installed: [ReturnApps.PopularApp] {
         ReturnApps.popular.filter { ReturnApps.isInstalled($0.bundle) }
@@ -68,6 +75,29 @@ struct GuardAppsSheet: View {
                     Text("Any other app. Detour guards them, but can't take you back to them after a detour.")
                 }
             }
+            .sheet(item: $confirm) { picked in
+                VStack(spacing: 20) {
+                    Text("Is this " + picked.expected + "?").font(.title2.weight(.semibold))
+                    Label(picked.token)
+                        .labelStyle(.titleAndIcon)
+                        .font(.title3)
+                    Text("Detour uses this to take you back to the right app.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                    Button("Yes, it's " + picked.expected) {
+                        guardManager.confirmJustAdded()
+                        confirm = nil
+                    }
+                    .buttonStyle(.borderedProminent)
+                    Button("No, I picked another app", role: .destructive) {
+                        guardManager.undo(picked.token)
+                        confirm = nil
+                    }
+                }
+                .padding(32)
+                .presentationDetents([.medium])
+                .interactiveDismissDisabled()
+            }
             .navigationTitle("Guarded apps")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -79,7 +109,10 @@ struct GuardAppsSheet: View {
             case .app(let app):
                 AppPickerSheet(title: "Pick " + app.name, initial: guardManager.selection) { draft in
                     let problem = guardManager.commit(draft, as: app.bundle)
-                    if problem == nil { target = nil }
+                    if problem == nil {
+                        target = nil
+                        if let token = guardManager.justAdded { confirm = PickedApp(token: token, expected: app.name) }
+                    }
                     return problem
                 } onCancel: { target = nil }
             case .other:
