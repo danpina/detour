@@ -78,6 +78,7 @@ export function PatternsGame({ onExit, embedded }: GameProps) {
           {embedded && <button onClick={onExit} className="min-h-11 min-w-11 text-sm text-neutral-500 dark:text-neutral-400">Skip</button>}
         </span>
       </div>
+      <div className="mt-3 h-1 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800" aria-hidden="true"><div className="h-full rounded-full bg-teal-500 transition-all duration-300" style={{ width: `${(Math.min(index + (picked !== null ? 1 : 0), round.length) / round.length) * 100}%` }} /></div>
       <h1 className={`mt-4 font-semibold tracking-tight ${embedded ? "text-xl" : "text-2xl"}`}>What comes next?</h1>
 
       <div className="mt-6 flex flex-wrap justify-center gap-2" aria-label="The sequence">
@@ -93,8 +94,8 @@ export function PatternsGame({ onExit, embedded }: GameProps) {
         {puzzle.options.map((o) => {
           let style = "border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900";
           if (picked !== null) {
-            if (o === puzzle.answer) style = "border-teal-500 bg-teal-50 dark:bg-teal-950";
-            else if (o === picked) style = "border-amber-500 bg-amber-50 dark:bg-amber-950";
+            if (o === puzzle.answer) style = "border-teal-500 bg-teal-50 dark:bg-teal-950 game-pop";
+            else if (o === picked) style = "border-amber-500 bg-amber-50 dark:bg-amber-950 game-shake";
             else style = "border-neutral-200 bg-white opacity-50 dark:border-neutral-800 dark:bg-neutral-900";
           }
           return (
@@ -112,7 +113,7 @@ export function PatternsGame({ onExit, embedded }: GameProps) {
 
       <div className="mt-6 min-h-24" aria-live="polite">
         {picked !== null && (
-          <div className="text-center">
+          <div className="game-rise text-center">
             <p className="text-lg font-semibold">{correct ? "Yes, that's it!" : `Close. It was ${puzzle.answer}.`}</p>
             <p className="mt-1 text-neutral-600 dark:text-neutral-300">{puzzle.rule}.</p>
           </div>

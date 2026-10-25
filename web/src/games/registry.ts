@@ -3,6 +3,7 @@ import type { GameId } from "./ids";
 import { ChessGame } from "./chess/ChessGame";
 import { GeoGame } from "./geo/GeoGame";
 import { LogicGame } from "./logic/LogicGame";
+import { MapGame } from "./map/MapGame";
 import { MemoryGame } from "./memory/MemoryGame";
 import { PatternsGame } from "./patterns/PatternsGame";
 import { LanguageGame } from "./language/LanguageGame";
@@ -56,5 +57,6 @@ export const GAMES: GameDef[] = [
   { id: "geo", name: "Geography", blurb: "Flags, capitals and more", emoji: "🌍", Component: GeoGame, learn: true },
   { id: "memory", name: "Memory", blurb: "Remember digits and patterns", emoji: "🧠", Component: MemoryGame },
   { id: "languages", name: "Languages", blurb: "Spanish, French or German, words that stick", emoji: "🗣️", Component: LanguageGame, learn: true, progress: languageProgress },
+  { id: "map", name: "Map", blurb: "Find countries, rivers and mountains", emoji: "🗺️", Component: MapGame, learn: true },
   { id: "logic", name: "Logic", blurb: "Reason it out and spot the flaw", emoji: "🧩", Component: LogicGame, learn: true, progress: logicProgress },
 ];

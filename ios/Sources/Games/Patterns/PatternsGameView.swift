@@ -136,6 +136,9 @@ struct PatternsGameView: View {
                 }
             }
 
+            GameProgressBar(done: index + (picked != nil ? 1 : 0), total: round.count)
+                .padding(.top, 6)
+
             Text("What comes next?")
                 .font(embedded != nil ? .title3.weight(.semibold) : .title2.weight(.semibold))
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -176,6 +179,7 @@ struct PatternsGameView: View {
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 16)
+        .answerHaptic(picked: picked != nil, correct: picked == puzzle.answer)
     }
 
     private func sequenceRow(_ puzzle: PatternPuzzle) -> some View {
@@ -220,5 +224,6 @@ struct PatternsGameView: View {
         }
         .buttonStyle(.plain)
         .disabled(picked != nil)
+        .answerPop(picked != nil && option == puzzle.answer)
     }
 }

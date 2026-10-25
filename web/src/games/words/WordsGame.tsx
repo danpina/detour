@@ -168,6 +168,8 @@ export function WordsGame({ onExit, embedded }: GameProps) {
         </div>
       )}
 
+      <div className="mt-3 h-1 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800" aria-hidden="true"><div className="h-full rounded-full bg-teal-500 transition-all duration-300" style={{ width: `${((index + (locked ? 1 : 0)) / round.length) * 100}%` }} /></div>
+
       <div className="flex flex-1 flex-col items-center justify-center gap-8">
         <p className="min-h-12 max-w-xs text-center text-base text-neutral-600 dark:text-neutral-300" aria-live="polite">
           {shownClue ? puzzle.clue : "Tap the letters in order to spell the word."}
