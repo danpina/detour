@@ -102,7 +102,7 @@ struct MemoryGameView: View {
                 if current.done {
                     if finished { return }
                     finished = true
-                    _ = GameStats.recordRound(.memory, score: current.score)
+                    // A short round inside a set of cards is not a run, so it is not saved as a best.
                     finish(current.score)
                 } else {
                     startRound()
@@ -111,7 +111,7 @@ struct MemoryGameView: View {
             }
             if await pause(resultSeconds) == false { return }
             if run.over {
-                isNewBest = GameStats.recordRound(.memory, score: run.best)
+                isNewBest = GameStats.recordRound(.memory, score: run.best, of: 0)
                 phase = .over
             } else {
                 startRound()

@@ -1,14 +1,15 @@
 import SwiftUI
 
-/// Spanish vocabulary: words you miss come back until they stick, and each word moves from recognising to recalling to using it.
+/// Language vocabulary (Spanish, French or German, chosen on the Games screen): words you miss come back until they stick, and each word moves from recognising to recalling to using it.
 /// When `embedded` is set the game is played inside a set of cards: no end screen, Skip calls onExit.
-struct SpanishGameView: View {
+struct LanguageGameView: View {
     let onExit: () -> Void
     var embedded: ((Int) -> Void)? = nil
 
-    @State private var words: [SpanishWord] = []
-    @State private var progress = SpanishProgress()
-    @State private var round: [SpanishQuestion] = []
+    @State private var language = LanguageInfo.current
+    @State private var words: [LanguageWord] = []
+    @State private var progress = LanguageProgress()
+    @State private var round: [LanguageQuestion] = []
     @State private var index = 0
     @State private var score = 0
     @State private var picked: String? = nil
@@ -29,8 +30,9 @@ struct SpanishGameView: View {
         .onAppear {
             if !started {
                 started = true
-                words = SpanishData.load()
-                progress = SpanishStore.load()
+                language = LanguageInfo.current
+                words = LanguageData.load(language)
+                progress = LanguageStore.load(language)
                 startRound()
             }
         }
@@ -38,7 +40,7 @@ struct SpanishGameView: View {
 
     private func startRound() {
         var rng = SystemRandomNumberGenerator()
-        round = SpanishBuilder.round(all: words, progress: progress, length: GameStats.roundSize, using: &rng)
+        round = LanguageBuilder.round(all: words, progress: progress, length: GameStats.roundSize, using: &rng)
         index = 0
         score = 0
         picked = nil
@@ -46,13 +48,13 @@ struct SpanishGameView: View {
     }
 
     private var learned: Int {
-        words.filter { (progress.known[$0.key] ?? 0) >= SpanishBuilder.learnedAt }.count
+        words.filter { (progress.known[$0.key] ?? 0) >= LanguageBuilder.learnedAt }.count
     }
 
     private var unavailable: some View {
         VStack(spacing: 16) {
             Spacer()
-            Text("Spanish is not available right now.").foregroundStyle(.secondary)
+            Text(language.name + " is not available right now.").foregroundStyle(.secondary)
             Button("Back", action: onExit).buttonStyle(.borderedProminent)
             Spacer()
         }
@@ -61,7 +63,7 @@ struct SpanishGameView: View {
     private var finished: some View {
         VStack(spacing: 18) {
             Spacer()
-            Text("🇪🇸").font(.system(size: 64))
+            Text(language.flag).font(.system(size: 64))
             Text("\(score) / \(round.count)").font(.largeTitle.weight(.semibold))
             Text(endLine).foregroundStyle(.secondary).multilineTextAlignment(.center)
             Text("\(learned) of \(words.count) words learned").font(.subheadline).foregroundStyle(.secondary)
@@ -86,19 +88,19 @@ struct SpanishGameView: View {
 
     private var endLine: String {
         let total = round.count
-        if score == total { return "¡Perfecto! Not one slip." }
-        if Double(score) >= Double(total) * 0.7 { return "¡Muy bien! Those words are sticking." }
+        if score == total { return language.perfect + " Not one slip." }
+        if Double(score) >= Double(total) * 0.7 { return language.great + " Those words are sticking." }
         if Double(score) >= Double(total) * 0.4 { return "Good run. The tricky ones will come back to help." }
         return "Every word you miss comes back until it sticks. Go again?"
     }
 
-    private func questionView(_ q: SpanishQuestion) -> some View {
+    private func questionView(_ q: LanguageQuestion) -> some View {
         let answered = picked != nil
         let isLast = index == round.count - 1
         return VStack(spacing: 0) {
             HStack {
                 if embedded != nil {
-                    Text("A little Spanish").fontWeight(.medium).frame(minHeight: 44)
+                    Text("A little " + language.name).fontWeight(.medium).frame(minHeight: 44)
                     Spacer()
                     Text("\(index + 1) / \(round.count)")
                     Spacer()
@@ -119,7 +121,7 @@ struct SpanishGameView: View {
             Spacer(minLength: 8)
             VStack(spacing: 8) {
                 Text(q.title).foregroundStyle(.secondary)
-                Text(q.kind == .toEs ? q.prompt + "?" : q.prompt)
+                Text(q.kind == .toWord ? q.prompt + "?" : q.prompt)
                     .font(.system(size: q.kind == .cloze ? 26 : 34, weight: .semibold))
                     .multilineTextAlignment(.center)
                     .minimumScaleFactor(0.6)
@@ -149,7 +151,7 @@ struct SpanishGameView: View {
 
             VStack(alignment: .leading, spacing: 6) {
                 if answered {
-                    Text(picked == q.answer ? "¡Sí!" : "Not this time.").font(.headline)
+                    Text(picked == q.answer ? language.yes : "Not this time.").font(.headline)
                     Text(q.fact).foregroundStyle(.secondary)
                     Button(action: { next(isLast: isLast) }) {
                         Text(isLast ? (embedded != nil ? "Continue" : "See my score") : "Next").font(.headline).frame(maxWidth: .infinity, minHeight: 52)
@@ -166,32 +168,32 @@ struct SpanishGameView: View {
         .answerHaptic(picked: picked != nil, correct: picked == q.answer)
     }
 
-    private func optionBackground(_ option: String, in q: SpanishQuestion) -> Color {
+    private func optionBackground(_ option: String, in q: LanguageQuestion) -> Color {
         guard picked != nil else { return Color(.secondarySystemBackground) }
         if option == q.answer { return Color.green.opacity(0.25) }
         if option == picked { return Color.red.opacity(0.22) }
         return Color(.secondarySystemBackground).opacity(0.5)
     }
 
-    private func optionBorder(_ option: String, in q: SpanishQuestion) -> Color {
+    private func optionBorder(_ option: String, in q: LanguageQuestion) -> Color {
         guard picked != nil else { return Color.clear }
         if option == q.answer { return Color.green }
         if option == picked { return Color.red }
         return Color.clear
     }
 
-    private func choose(_ option: String, in q: SpanishQuestion) {
+    private func choose(_ option: String, in q: LanguageQuestion) {
         if picked != nil { return }
         picked = option
         let right = option == q.answer
         if right { score += 1 }
-        progress = SpanishBuilder.apply(progress, key: q.key, right: right)
-        SpanishStore.save(progress)
+        progress = LanguageBuilder.apply(progress, key: q.key, right: right)
+        LanguageStore.save(progress, language: language)
     }
 
     private func next(isLast: Bool) {
         if isLast {
-            isBest = GameStats.recordRound(.spanish, score: score)
+            isBest = GameStats.recordRound(.languages, score: score)
             if let done = embedded {
                 done(score)
                 return

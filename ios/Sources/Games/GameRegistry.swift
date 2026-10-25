@@ -1,7 +1,7 @@
 import SwiftUI
 
 enum GameId: String, CaseIterable, Identifiable {
-    case chess, patterns, words, geo, memory, spanish, logic
+    case chess, patterns, words, geo, memory, languages, logic
 
     var id: String { rawValue }
 
@@ -12,7 +12,7 @@ enum GameId: String, CaseIterable, Identifiable {
         case .words: return "Word scramble"
         case .geo: return "Geography"
         case .memory: return "Memory"
-        case .spanish: return "Spanish"
+        case .languages: return "Languages"
         case .logic: return "Logic"
         }
     }
@@ -24,7 +24,7 @@ enum GameId: String, CaseIterable, Identifiable {
         case .words: return "Unscramble the word"
         case .geo: return "Flags, capitals and more"
         case .memory: return "Remember digits and patterns"
-        case .spanish: return "Learn words that stick"
+        case .languages: return "Spanish, French or German, words that stick"
         case .logic: return "Reason it out and spot the flaw"
         }
     }
@@ -39,7 +39,7 @@ enum GameId: String, CaseIterable, Identifiable {
         case .words: return "🔤"
         case .geo: return "🌍"
         case .memory: return "🧠"
-        case .spanish: return "🇪🇸"
+        case .languages: return "🗣️"
         case .logic: return "🧩"
         }
     }
@@ -56,7 +56,7 @@ func gameView(for id: GameId, onExit: @escaping () -> Void, embedded: ((Int) -> 
     case .words: WordsGameView(onExit: onExit, embedded: embedded)
     case .geo: GeoGameView(onExit: onExit, embedded: embedded)
     case .memory: MemoryGameView(onExit: onExit, embedded: embedded)
-    case .spanish: SpanishGameView(onExit: onExit, embedded: embedded)
+    case .languages: LanguageGameView(onExit: onExit, embedded: embedded)
     case .logic: LogicGameView(onExit: onExit, embedded: embedded)
     }
 }
