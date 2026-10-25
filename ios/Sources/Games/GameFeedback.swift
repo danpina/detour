@@ -1,4 +1,5 @@
 import SwiftUI
+n// Small shared pieces for the multiple-choice games (progress bar, haptics, pop).
 
 /// A thin bar showing how far through the round the player is.
 struct GameProgressBar: View {
