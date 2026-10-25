@@ -187,10 +187,10 @@ export function ChessGame({ onExit, embedded }: GameProps) {
               key={sq}
               onClick={() => tap(sq, piece)}
               aria-label={sq + (piece ? " " + piece : "")}
-              className={`flex aspect-square items-center justify-center text-[clamp(1.6rem,9vw,2.6rem)] leading-none ${bg}`}
+              className={`flex aspect-square items-center justify-center text-[clamp(1.6rem,9vw,2.6rem)] leading-none ${bg} ${isSel ? "ring-4 ring-inset ring-rose-600" : ""}`}
             >
               {piece && (
-                <span className={white ? "text-white [text-shadow:0_0_2px_#000,0_0_2px_#000,0_0_2px_#000]" : "text-neutral-900"}>
+                <span className={`transition-transform duration-150 ${isSel ? "scale-125" : ""} ` + (white ? "text-white [text-shadow:0_0_2px_#000,0_0_2px_#000,0_0_2px_#000]" : "text-neutral-900")}>
                   {glyph(white ? piece.toLowerCase() : piece)}
                 </span>
               )}

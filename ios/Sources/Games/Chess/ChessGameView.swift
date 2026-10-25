@@ -164,11 +164,17 @@ struct ChessGameView: View {
         return Button(action: { tap(name, piece, puzzle) }) {
             ZStack {
                 fill
+                // A thick ring and a lifted piece, so the chosen piece is clear on light and dark squares alike.
+                if selected == name {
+                    Rectangle().strokeBorder(Color.red, lineWidth: 4)
+                }
                 if let piece = piece {
                     Text(ChessLogic.glyph(piece))
                         .font(.system(size: 34))
                         .foregroundColor(ChessLogic.isWhite(piece) ? Color.white : Color.black)
                         .shadow(color: ChessLogic.isWhite(piece) ? Color.black : Color.clear, radius: 1)
+                        .scaleEffect(selected == name ? 1.25 : 1)
+                        .animation(.spring(duration: 0.2), value: selected)
                 }
             }
             .aspectRatio(1, contentMode: .fit)
