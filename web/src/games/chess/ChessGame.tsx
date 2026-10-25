@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { GameProps } from "../registry";
 import { getRoundSize, recordRound } from "../stats";
-import { loadChessData } from "./chessData";
-import { acceptMove, buildRound, displayOrder, glyph, isOwnPiece, moveSquares, parseFen, squareName, type Puzzle } from "./chessLogic";
+import { getChessLevel, loadChessData } from "./chessData";
+import { acceptMove, buildRound, displayOrder, glyph, isOwnPiece, moveSquares, parseFen, puzzlesFor, squareName, type Puzzle } from "./chessLogic";
 
 const MAX_TRIES = 2;
 /** How long the last result stays visible before an embedded game hands over. */
@@ -13,7 +13,7 @@ type Status = "playing" | "correct" | "revealed";
 /** Chess tactics: find the checkmate in one. A round has `getRoundSize()` puzzles, easy to hard. */
 export function ChessGame({ onExit, embedded }: GameProps) {
   const data = useMemo(() => loadChessData(), []);
-  const [round, setRound] = useState<Puzzle[]>(() => (data ? buildRound(data.puzzles, Math.random, getRoundSize()) : []));
+  const [round, setRound] = useState<Puzzle[]>(() => (data ? buildRound(puzzlesFor(data, getChessLevel()), Math.random, getRoundSize()) : []));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [wrong, setWrong] = useState(0);
@@ -61,7 +61,7 @@ export function ChessGame({ onExit, embedded }: GameProps) {
 
   function playAgain() {
     if (!data) return;
-    setRound(buildRound(data.puzzles, Math.random, getRoundSize()));
+    setRound(buildRound(puzzlesFor(data, getChessLevel()), Math.random, getRoundSize()));
     setIndex(0);
     setScore(0);
     setWrong(0);

@@ -101,7 +101,7 @@ const countries = read("ne_50m_admin_0_countries.geojson")
       id: String(p.ADM0_A3),
       name,
       continent: String(p.CONTINENT),
-      pop: Number(p.POP_EST),
+      pop: Math.round(Number(p.POP_EST)),
       area: Math.round(biggest),
       label,
       rings: kept.map(flat),

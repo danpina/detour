@@ -9,7 +9,15 @@ export type Puzzle = {
   rating: number;
 };
 
-export type ChessData = { credit: string; puzzles: Puzzle[] };
+/** `puzzles` are the easy ones; `hard` is a separate set of busier boards with a single, quiet mating move. */
+export type ChessData = { credit: string; puzzles: Puzzle[]; hard?: Puzzle[] };
+
+export type ChessLevel = "easy" | "hard";
+
+/** The puzzles for a level. Falls back to the easy set when there is no hard one. */
+export function puzzlesFor(data: ChessData, level: ChessLevel): Puzzle[] {
+  return level === "hard" && data.hard && data.hard.length > 0 ? data.hard : data.puzzles;
+}
 
 export type ParsedFen = {
   /** 64 entries, index 0 = a8, 7 = h8, 8 = a7 ... 63 = h1. A letter for a piece (uppercase = white), or null. */

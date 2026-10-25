@@ -163,7 +163,7 @@ private struct MapRoundView: View {
     private func start() {
         guard !started else { return }
         shapes = data.countries.map { MapShape(id: $0.id, name: $0.name, path: Self.path(rings: $0.rings, closed: true)) }
-        riverPaths = Dictionary(uniqueKeysWithValues: data.rivers.map { river in
+        riverPaths = Dictionary(uniqueKeysWithValues: data.rivers.map { river -> (String, Path) in
             var p = Path()
             for line in river.lines { p.addPath(Self.path(rings: [line], closed: false)) }
             return (river.name, p)
@@ -409,6 +409,16 @@ private struct MapRoundView: View {
         .accessibilityLabel(label)
     }
 
+    private func isRiver(_ target: MapTarget, _ name: String) -> Bool {
+        if case .river(let r) = target { return r.name == name }
+        return false
+    }
+
+    private func isMountain(_ target: MapTarget, _ name: String) -> Bool {
+        if case .mountain(let m) = target { return m.name == name }
+        return false
+    }
+
     private func draw(_ context: GraphicsContext, _ size: CGSize, _ target: MapTarget) {
         let f = fit(size)
         var c = context
@@ -430,7 +440,7 @@ private struct MapRoundView: View {
 
         if showRivers {
             for river in data.rivers {
-                let hot = answered && { if case .river(let r) = target { return r.name == river.name } else { return false } }()
+                let hot = answered && isRiver(target, river.name)
                 let wasTapped = answered && verdict?.correct == false && verdict?.tapped == river.name
                 let colour = hot ? green : (wasTapped ? red : Color.blue.opacity(0.55))
                 if let path = riverPaths[river.name] {
@@ -441,7 +451,7 @@ private struct MapRoundView: View {
 
         if showMountains {
             for mountain in data.mountains {
-                let hot = answered && { if case .mountain(let m) = target { return m.name == mountain.name } else { return false } }()
+                let hot = answered && isMountain(target, mountain.name)
                 let wasTapped = answered && verdict?.correct == false && verdict?.tapped == mountain.name
                 let colour = hot ? green : (wasTapped ? red : Color.brown.opacity(0.85))
                 let r = (mountain.isRange ? 7.0 : 5.0) * pt

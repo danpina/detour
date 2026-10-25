@@ -11,7 +11,7 @@
  *
  * Either way `mates` lists the UCI of EVERY legal move that checkmates, computed with chess.js.
  */
-import { createReadStream, writeFileSync, mkdirSync } from "node:fs";
+import { createReadStream, existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { createInterface } from "node:readline";
 import { createZstdDecompress } from "node:zlib";
 import { dirname, resolve } from "node:path";
@@ -139,12 +139,67 @@ function generated(): Puzzle[] {
   return picked.map((p, i) => ({ ...p, id: "g" + String(i + 1).padStart(3, "0") }));
 }
 
+/**
+ * Harder "mate in one": busy boards, few mating moves, and a quiet mating move (no capture) that is easy to overlook.
+ * Same positions every run (own seed). The easy set above is untouched.
+ */
+function hardRating(fen: string, mates: string[]): number {
+  const c = new Chess(fen);
+  const pieces = (fen.split(" ")[0] ?? "").replace(/[^a-zA-Z]/g, "").length;
+  const legal = c.moves().length;
+  const mover = c.moves({ verbose: true }).find((m) => mates.includes(uci(m)))!;
+  const oddPiece = mover.piece === "n" || mover.piece === "p" || mover.promotion ? 1 : 0;
+  const raw = 1000 + pieces * 14 + legal * 4 + (mates.length === 1 ? 140 : 0) + oddPiece * 90 + (mover.flags.includes("k") || mover.flags.includes("q") ? 120 : 0);
+  return Math.max(1000, Math.min(1900, Math.round(raw / 10) * 10));
+}
+
+function generatedHard(): Puzzle[] {
+  const rand = rng(20261025);
+  const seen = new Set<string>();
+  const found: Puzzle[] = [];
+  let games = 0;
+  const started = Date.now();
+  while (found.length < 260 && games < 60000 && Date.now() - started < 8 * 60 * 1000) {
+    games++;
+    if (games % 500 === 0) console.log(`  hard: ${games} playouts, ${found.length} found`);
+    const c = new Chess();
+    for (let ply = 0; ply < 70 && !c.isGameOver(); ply++) {
+      const moves = c.moves({ verbose: true });
+      // Prefer quiet developing play so the board stays full of pieces.
+      const quiet = moves.filter((m) => !m.captured);
+      const pool = quiet.length > 0 && rand() < 0.8 ? quiet : moves;
+      c.move(pool[Math.floor(rand() * pool.length)]!);
+      // Look at every second position only, and only boards that are still busy: it keeps the search fast.
+      if (ply < 14 || ply % 2 === 1) continue;
+      const fen = c.fen();
+      const pieces = (fen.split(" ")[0] ?? "").replace(/[^a-zA-Z]/g, "").length;
+      if (pieces < 12) break;
+      const key = fen.split(" ").slice(0, 2).join(" ");
+      if (seen.has(key) || c.isGameOver()) continue;
+      if (c.moves().length < 20) continue;
+      const mates = matesFor(fen);
+      if (mates.length === 0 || mates.length > 2) continue;
+      // The mating move must be quiet: not a capture, so it is not the first thing the eye goes to.
+      const mating = c.moves({ verbose: true }).filter((m) => mates.includes(uci(m)));
+      if (mating.some((m) => m.captured)) continue;
+      seen.add(key);
+      found.push({ id: "h" + String(found.length + 1).padStart(4, "0"), fen, sideToMove: fen.split(" ")[1] === "b" ? "b" : "w", mates, rating: hardRating(fen, mates) });
+      break;
+    }
+  }
+  console.log(`Hard: ${found.length} candidates from ${games} playouts`);
+  return spread(found, 120).map((p, i) => ({ ...p, id: "h" + String(i + 1).padStart(3, "0") }));
+}
+
 async function main() {
   const file = process.argv[2];
-  const puzzles = file ? await fromLichess(file) : generated();
+  // Without a Lichess file the easy set is kept as it is (it is already in chess.json), so only the hard set is searched for.
+  const existing = existsSync(OUT) ? (JSON.parse(readFileSync(OUT, "utf8")) as { puzzles?: Puzzle[] }).puzzles : undefined;
+  const puzzles = file ? await fromLichess(file) : existing && existing.length > 0 ? existing : generated();
+  const hard = generatedHard();
   const credit = file ? "Puzzles from the Lichess puzzle database (CC0)" : "Positions generated for Detour";
   // Final self-check: every stored mate really is checkmate.
-  for (const p of puzzles) {
+  for (const p of [...puzzles, ...hard]) {
     for (const m of p.mates) {
       const t = new Chess(p.fen);
       t.move({ from: m.slice(0, 2), to: m.slice(2, 4), promotion: m.slice(4) || undefined });
@@ -152,8 +207,8 @@ async function main() {
     }
   }
   mkdirSync(dirname(OUT), { recursive: true });
-  writeFileSync(OUT, JSON.stringify({ credit, puzzles }) + "\n");
-  console.log(`Wrote ${puzzles.length} puzzles to ${OUT}`);
+  writeFileSync(OUT, JSON.stringify({ credit, puzzles, hard }) + "\n");
+  console.log(`Wrote ${puzzles.length} easy and ${hard.length} hard puzzles to ${OUT}`);
 }
 
 main();

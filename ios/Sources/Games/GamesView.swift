@@ -6,6 +6,7 @@ struct GamesView: View {
     @State private var roundSize = GameStats.roundSize
     @State private var language = LanguageInfo.current
     @State private var level = LanguageInfo.currentLevel
+    @State private var chessLevel = ChessData.currentLevel
 
     private let learning: [GameId] = [.languages, .logic, .geo, .map]
     private var fun: [GameId] { GameId.allCases.filter { !learning.contains($0) } }
@@ -78,6 +79,21 @@ struct GamesView: View {
         .pickerStyle(.segmented)
     }
 
+    /// Easy or hard mate-in-one puzzles.
+    private var chessLevelPicker: some View {
+        Picker("Chess level", selection: Binding(
+            get: { chessLevel },
+            set: { value in
+                chessLevel = value
+                ChessData.currentLevel = value
+            }
+        )) {
+            Text("Easy").tag("easy")
+            Text("Hard").tag("hard")
+        }
+        .pickerStyle(.segmented)
+    }
+
     var body: some View {
         NavigationStack {
             List {
@@ -116,7 +132,10 @@ struct GamesView: View {
                     }
                 }
                 Section("Just for fun") {
-                    ForEach(fun) { row($0) }
+                    ForEach(fun) { game in
+                        row(game)
+                        if game == .chess { chessLevelPicker }
+                    }
                 }
             }
             .navigationTitle("Games")

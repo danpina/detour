@@ -7,7 +7,7 @@ struct MapCountry: Codable, Equatable {
     let id: String
     let name: String
     let continent: String
-    let pop: Int
+    let pop: Double
     let area: Int
     let label: [Int]
     /// Each shape is a flat list: x, y, x, y, ...

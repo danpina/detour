@@ -12,6 +12,22 @@ struct ChessPuzzle: Codable, Identifiable {
 struct ChessData: Codable {
     let credit: String
     let puzzles: [ChessPuzzle]
+    /// A separate set of busier boards with a single, quiet mating move. Older files have none.
+    let hard: [ChessPuzzle]?
+
+    /// The puzzles for a level ("easy" or "hard"). Falls back to the easy set when there is no hard one.
+    func puzzles(forLevel level: String) -> [ChessPuzzle] {
+        if level == "hard", let hard, !hard.isEmpty { return hard }
+        return puzzles
+    }
+
+    private static let levelKey = "detour.games.chess.level"
+
+    /// Easy until the player picks hard on the Games screen.
+    static var currentLevel: String {
+        get { UserDefaults.standard.string(forKey: levelKey) == "hard" ? "hard" : "easy" }
+        set { UserDefaults.standard.set(newValue, forKey: levelKey) }
+    }
 }
 
 struct ParsedFen {

@@ -15,6 +15,10 @@ describe("map data", () => {
     expect(data.rivers.length).toBeGreaterThan(25);
     expect(data.mountains.length).toBeGreaterThan(20);
     expect(new Set(data.countries.map((c) => c.id)).size).toBe(data.countries.length);
+    // The iOS app decodes these as whole numbers, so a decimal here would stop the map loading there.
+    for (const c of data.countries) {
+      for (const n of [c.pop, c.area, ...c.label]) expect(Number.isInteger(n), c.name).toBe(true);
+    }
     for (const c of data.countries) {
       expect(c.rings.length, c.name).toBeGreaterThan(0);
       for (const r of c.rings) {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { acceptMove, buildRound, displayOrder, parseFen, squareName, type Puzzle } from "./chessLogic";
+import { acceptMove, buildRound, displayOrder, parseFen, puzzlesFor, squareName, type Puzzle } from "./chessLogic";
 import { loadChessData } from "./chessData";
 
 const SCHOLAR = "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4";
@@ -100,5 +100,27 @@ describe("chess.json", () => {
   it("is sorted easy to hard", () => {
     const r = data!.puzzles.map((p) => p.rating);
     expect([...r].sort((a, b) => a - b)).toEqual(r);
+  });
+});
+
+describe("easy and hard", () => {
+  const data = loadChessData()!;
+
+  it("has a hard set that is clearly harder than the easy one, with every move a legal mating UCI", () => {
+    expect(data.puzzles.length).toBeGreaterThanOrEqual(100);
+    expect(data.hard!.length).toBeGreaterThanOrEqual(60);
+    expect(Math.min(...data.hard!.map((p) => p.rating))).toBeGreaterThan(Math.max(...data.puzzles.map((p) => p.rating)));
+    expect(new Set(data.hard!.map((p) => p.id)).size).toBe(data.hard!.length);
+    for (const p of data.hard!) {
+      expect(parseFen(p.fen), p.id).not.toBeNull();
+      expect(p.mates.length, p.id).toBeGreaterThan(0);
+      for (const m of p.mates) expect(/^[a-h][1-8][a-h][1-8][qrbn]?$/.test(m), p.id + " " + m).toBe(true);
+    }
+  });
+
+  it("picks the set for the level, and falls back to easy when there is no hard set", () => {
+    expect(puzzlesFor(data, "easy")).toBe(data.puzzles);
+    expect(puzzlesFor(data, "hard")).toBe(data.hard);
+    expect(puzzlesFor({ credit: "", puzzles: data.puzzles }, "hard")).toBe(data.puzzles);
   });
 });

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { GAMES, type GameDef } from "../games/registry";
+import { getChessLevel, setChessLevel } from "../games/chess/chessData";
+import type { ChessLevel } from "../games/chess/chessLogic";
 import { LANGUAGES, LEVEL_NAMES, getLanguage, getLevel, setLanguage, setLevel, type LanguageId } from "../games/language/languageData";
 import type { Level } from "../games/language/languageLogic";
 import { MAX_ROUND_SIZE, MIN_ROUND_SIZE, bestLabel, getRoundSize, setRoundSize } from "../games/stats";
@@ -10,6 +12,7 @@ export function GamesScreen() {
   const [roundSize, setRound] = useState(getRoundSize());
   const [languageId, setLanguageId] = useState<LanguageId>(() => getLanguage().id);
   const [level, setLevelState] = useState<Level>(getLevel);
+  const [chessLevel, setChessLevelState] = useState<ChessLevel>(getChessLevel);
   if (playing) {
     const Game = playing.Component;
     return (
@@ -78,6 +81,23 @@ export function GamesScreen() {
                         className={`min-h-11 flex-1 rounded-full border px-3 py-1.5 text-sm font-medium ${languageId === l.id ? "border-teal-600 bg-teal-50 text-teal-800 dark:border-teal-400 dark:bg-teal-950 dark:text-teal-200" : "border-neutral-300 dark:border-neutral-700"}`}
                       >
                         {l.flag} {l.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
+                {g.id === "chess" && (
+                  <div className="flex gap-2 px-4 pb-4" role="group" aria-label="Chess level">
+                    {(["easy", "hard"] as const).map((n) => (
+                      <button
+                        key={n}
+                        onClick={() => {
+                          setChessLevel(n);
+                          setChessLevelState(n);
+                        }}
+                        aria-pressed={chessLevel === n}
+                        className={`min-h-11 flex-1 rounded-full border px-3 py-1.5 text-sm font-medium ${chessLevel === n ? "border-teal-600 bg-teal-50 text-teal-800 dark:border-teal-400 dark:bg-teal-950 dark:text-teal-200" : "border-neutral-300 dark:border-neutral-700"}`}
+                      >
+                        {n === "easy" ? "Easy" : "Hard"}
                       </button>
                     ))}
                   </div>
