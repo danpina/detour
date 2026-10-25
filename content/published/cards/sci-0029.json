@@ -1,0 +1,59 @@
+{
+  "id": "sci-0029",
+  "interest": "science",
+  "title": "Water bears in space",
+  "probes": [
+    {
+      "id": "sci-0029-p1",
+      "question": "True or false: tardigrades exposed to space vacuum in 2007 were revived by rehydration back on Earth.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "sci-0029-p2",
+      "question": "The 2007 tardigrade experiment flew on the ____ mission.",
+      "kind": "cloze",
+      "answer": "FOTON-M3",
+      "accept": [
+        "Foton-M3",
+        "FOTON M3"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tardigrades in space (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tardigrades_in_space"
+    },
+    {
+      "title": "Tardigrade (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tardigrade"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:16.119Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "sci-0029.webp",
+    "alt": "Grey microscope image of a tardigrade (water bear) with its stubby legs and claws visible.",
+    "kind": "photo",
+    "credit": "JSC / NASA",
+    "license": "Public domain",
+    "source_url": "https://images.nasa.gov/details/jsc2021e019950"
+  },
+  "body": {
+    "question": "In 2007, tardigrades were taken into orbit and exposed to the vacuum of space. For how long?",
+    "options": [
+      "10 minutes",
+      "10 hours",
+      "10 days",
+      "10 weeks"
+    ],
+    "answer": 2,
+    "reveal": "For 10 days, on the 2007 FOTON-M3 mission. Back on Earth, the dehydrated tardigrades were revived just by adding water. The space vacuum did not much affect their egg-laying."
+  }
+}

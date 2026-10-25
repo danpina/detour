@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Sharks are older than trees",
+    "angle": "Sharks predate the first forests"
+  },
+  "created_at": "2026-10-25T17:36:54.758Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0028",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Sharks are older than trees",
+    "body": {
+      "claim": "Sharks' ancestors were swimming before there were any trees.",
+      "why": "The oldest shark relatives, known as spiny sharks, appeared around 439 million years ago. The earliest known trees, such as Wattieza, grew about 385 million years ago."
+    },
+    "probes": [
+      {
+        "id": "sci-0028-p1",
+        "kind": "mcq",
+        "question": "Which appeared first: the oldest shark relatives (about 439 million years ago) or the earliest known trees (about 385 million years ago)?",
+        "options": [
+          "Shark relatives",
+          "Trees"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0028-p2",
+        "kind": "tf",
+        "question": "True or false: the earliest known trees lived about 385 million years ago.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Shark (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Shark"
+      },
+      {
+        "title": "Wattieza (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Wattieza"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A shark swimming in open water",
+    "keywords": [
+      "shark",
+      "shark underwater",
+      "reef shark"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:42.482Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Shark",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Wattieza",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The oldest shark relatives, known as spiny sharks, appeared around 439 million years ago",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Shark",
+        "quote": "The oldest total-group chondrichthyans, known as acanthodians or \"spiny sharks\", appeared during the Early Silurian , around 439 million years ago."
+      },
+      {
+        "claim": "The earliest known trees, such as Wattieza, grew about 385 million years ago",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wattieza",
+        "quote": "of fossils from the Middle Devonian about 385 million years ago united the crown of Wattieza to a root and trunk known since 1870"
+      },
+      {
+        "claim": "The Gilboa fossils (Wattieza) are described as the earliest known trees",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wattieza",
+        "quote": "These fossils have been described as the earliest known trees"
+      },
+      {
+        "claim": "Sharks' ancestors swam before there were trees; shark relatives appeared first (title, claim, probe p1 answer \"Shark relatives\")",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Shark",
+        "note": "Verified by calculation: 439 million years ago is earlier than 385 million years ago (439 - 385 = 54 million years earlier)."
+      },
+      {
+        "claim": "Probe p2: the earliest known trees lived about 385 million years ago (true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wattieza",
+        "quote": "of fossils from the Middle Devonian about 385 million years ago united the crown of Wattieza to a root and trunk known since 1870"
+      }
+    ],
+    "overall": "pass"
+  }
+}

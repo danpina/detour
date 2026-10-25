@@ -1,0 +1,132 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Fibonacci's rabbits",
+    "angle": "The growth puzzle from Liber Abaci that gave us a famous sequence"
+  },
+  "created_at": "2026-10-25T17:37:15.415Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0034",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "Fibonacci's rabbits",
+    "body": {
+      "question": "One newborn pair of rabbits. A pair can mate at one month old, and from the end of its second month a pair produces one new pair every month. The rabbits never die. How many pairs after one year?",
+      "unit": "pairs",
+      "min": 10,
+      "max": 5000,
+      "scale": "log",
+      "answer": 233,
+      "reveal": "233 pairs. Month by month the pair counts go 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233: each total is the sum of the previous two. This puzzle from Fibonacci's 1202 book Liber Abaci is why the sequence carries his name."
+    },
+    "probes": [
+      {
+        "id": "num-0034-p1",
+        "kind": "estimate",
+        "question": "Following the rules of Fibonacci's rabbit puzzle, how many pairs are there after 12 months?",
+        "answer": 233,
+        "unit": "pairs",
+        "min": 10,
+        "max": 5000,
+        "scale": "log"
+      },
+      {
+        "id": "num-0034-p2",
+        "kind": "cloze",
+        "question": "Fibonacci's rabbit puzzle appeared in his 1202 book Liber ____.",
+        "answer": "Abaci",
+        "accept": [
+          "Abbaci"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Fibonacci's Rabbits (Ron Knott, University of Surrey)",
+        "url": "https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html"
+      },
+      {
+        "title": "Liber Abaci (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Liber_Abaci"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A simple flat illustration of a meadow with a few rabbits, more and more of them hopping in rows, no text",
+    "keywords": [
+      "rabbits",
+      "meadow",
+      "Fibonacci",
+      "population growth"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:42:02.489Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Liber_Abaci",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Rules: newborn pair; mate at one month; from the end of the second month one new pair per month",
+        "verdict": "pass",
+        "source_url": "https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html",
+        "quote": "Rabbits are able to mate at the age of one month so that at the end of its second month a female can produce another pair of rabbits"
+      },
+      {
+        "claim": "Rabbits never die and each pair produces one new pair every month",
+        "verdict": "pass",
+        "source_url": "https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html",
+        "quote": "Suppose that our rabbits never die and that the female always produces one new pair"
+      },
+      {
+        "claim": "Question: how many pairs after one year",
+        "verdict": "pass",
+        "source_url": "https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html",
+        "quote": "How many pairs will there be in one year"
+      },
+      {
+        "claim": "Early counts: 2 pairs at end of month 2, 3 at month 3, 5 at month 4",
+        "verdict": "pass",
+        "source_url": "https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html",
+        "quote": "At the end of the fourth month, the original female has produced yet another new pair"
+      },
+      {
+        "claim": "Month-by-month counts 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233; answer 233 after 12 months; each total is the sum of the previous two",
+        "verdict": "pass",
+        "note": "Verified by calculation: simulated the card's rules (P(0)=1, P(1)=1, P(n)=P(n-1)+P(n-2)) in node: end of months 1..12 = 1,2,3,5,8,13,21,34,55,89,144,233. Matches the page's rules and its start-of-month sequence 1,1,2,3,5,8,... shifted by one."
+      },
+      {
+        "claim": "The rabbit puzzle is why the sequence carries Fibonacci's name",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Liber_Abaci",
+        "quote": "its inclusion in his book is why the sequence is named after him today"
+      },
+      {
+        "claim": "Liber Abaci is a 1202 work (probe 2, spelling Abaci/Abbaci)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Liber_Abaci",
+        "quote": "The Liber Abaci or Liber Abbaci ( Latin for \"The Book of Calculation\") was a 1202 Latin work on arithmetic"
+      },
+      {
+        "claim": "The original rabbit problem Fibonacci investigated dates to 1202",
+        "verdict": "pass",
+        "source_url": "https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html",
+        "quote": "The original problem that Fibonacci investigated (in the year 1202) was about how fast rabbits could breed"
+      }
+    ],
+    "overall": "pass"
+  }
+}

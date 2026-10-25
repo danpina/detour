@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0034",
+  "created_at": "2026-10-25T17:38:26.450Z",
+  "queries": [
+    "American crow crow Corvus brachyrhynchos",
+    "American crow",
+    "American crow crow"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-83042332",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "2014-04-29 01 Northwestern crow (Corvus brachyrhynchos caurinus).jpg",
+      "credit": "Gordon Leggett / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2014-04-29_01_Northwestern_crow_(Corvus_brachyrhynchos_caurinus).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/2014-04-29_01_Northwestern_crow_%28Corvus_brachyrhynchos_caurinus%29.jpg/960px-2014-04-29_01_Northwestern_crow_%28Corvus_brachyrhynchos_caurinus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5192,
+      "height": 3461,
+      "alt_suggestion": "Northwestern crow (Corvus brachyrhynchos caurinus - hybrid intergrades between Corvus brachyrhynchos and Corvus caurinus species of the American crow), adult, at Steveston Harbor, British Columbia, Ca",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-KSC-06pd0995",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-06pd0995",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-06pd0995",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-06pd0995/KSC-06pd0995~medium.jpg",
+      "alt_suggestion": "KENNEDY SPACE CENTER, FLA. - This black bird photographed at the Press Site at NASA's Kennedy Space Center is likely a fish crow, somewhat smaller than the American Crow. Fish crows inhabit low coasta",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-43405",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Crows in a Tree",
+      "credit": "Charles François Daubigny French, 1817-1878 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/43405",
+      "image_url": "https://www.artic.edu/iiif/2/e7380fde-eede-c459-ea86-309413eb4b9f/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-199054026",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "American crow (Corvus brachyrhynchos caurinus) in flight Quatsino.jpg",
+      "credit": "Charles J. Sharp / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:American_crow_(Corvus_brachyrhynchos_caurinus)_in_flight_Quatsino.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/American_crow_%28Corvus_brachyrhynchos_caurinus%29_in_flight_Quatsino.jpg/960px-American_crow_%28Corvus_brachyrhynchos_caurinus%29_in_flight_Quatsino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2825,
+      "height": 1883,
+      "alt_suggestion": "American crow (Corvus brachyrhynchos caurinus), Quatsino Sound, Vancouver Island, BC, Canada",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-43338",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Dawn (The Cock's Crow)",
+      "credit": "Charles François Daubigny French, 1817-1878 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/43338",
+      "image_url": "https://www.artic.edu/iiif/2/238a3eee-e7d3-285a-f3f9-c8c0b41968fd/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching and drypoint on ivory laid paper.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"American crow crow Corvus brachyrhynchos\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"American crow\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"American crow crow\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "The mantis shrimp punch",
+    "angle": "A tiny animal that strikes so fast the water boils at the edge"
+  },
+  "created_at": "2026-10-25T17:36:54.758Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0030",
+    "interest": "science",
+    "type": "estimate",
+    "title": "The mantis shrimp's punch",
+    "body": {
+      "question": "How fast can a mantis shrimp's club move from a standing start?",
+      "unit": "km/h",
+      "min": 5,
+      "max": 500,
+      "scale": "log",
+      "answer": 83,
+      "reveal": "Odontodactylus scyllarus strikes at 23 m/s, about 83 km/h, from a standing start. That is fast enough to create cavitation bubbles in the water, so the prey gets hit twice: by the claw, then by the collapsing bubbles."
+    },
+    "probes": [
+      {
+        "id": "sci-0030-p1",
+        "kind": "estimate",
+        "question": "How fast can a mantis shrimp's club move from a standing start?",
+        "answer": 83,
+        "unit": "km/h",
+        "min": 5,
+        "max": 500,
+        "scale": "log"
+      },
+      {
+        "id": "sci-0030-p2",
+        "kind": "tf",
+        "question": "True or false: a mantis shrimp strike is fast enough to create cavitation bubbles in the water.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mantis shrimp (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Mantis_shrimp"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A colourful peacock mantis shrimp (Odontodactylus scyllarus)",
+    "keywords": [
+      "mantis shrimp",
+      "Odontodactylus scyllarus",
+      "peacock mantis shrimp"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:42.483Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mantis_shrimp",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Odontodactylus scyllarus strikes at 23 m/s, about 83 km/h, from a standing start (reveal, estimate answer 83)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mantis_shrimp",
+        "quote": "speeds of 23 m/s (83 km/h ; 51 mph ) from a standing start"
+      },
+      {
+        "claim": "The strike creates cavitation bubbles in the water (reveal, probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mantis_shrimp",
+        "quote": "Because they strike so rapidly, they generate vapor-filled bubbles in the water between the appendage and the striking surface-known as cavitation bubbles."
+      },
+      {
+        "claim": "The prey is hit twice: by the claw, then by the collapsing bubbles",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mantis_shrimp",
+        "quote": "which means that the prey is hit twice by a single strike; first by the claw and then by the collapsing cavitation bubbles that immediately follow"
+      },
+      {
+        "claim": "Smasher mantis shrimp have a club that strikes (question wording \"club\")",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mantis_shrimp",
+        "quote": "smash prey with a powerful blow from a heavily mineralised club-like appendage"
+      },
+      {
+        "claim": "23 m/s = 23 x 3.6 = 82.8 km/h, about 83 km/h; estimate range 5 to 500 contains 83",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mantis_shrimp",
+        "note": "Verified by calculation: 23 x 3.6 = 82.8, rounds to 83."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "num-0031",
+  "interest": "numbers",
+  "title": "The dot that became zero",
+  "probes": [
+    {
+      "id": "num-0031-p1",
+      "question": "In the Bakhshali manuscript, zero is shown as a ____ used as a placeholder.",
+      "kind": "cloze",
+      "answer": "dot",
+      "accept": [
+        "a dot"
+      ]
+    },
+    {
+      "id": "num-0031-p2",
+      "question": "What does shunya-bindu literally mean?",
+      "kind": "mcq",
+      "options": [
+        "The dot of the empty place",
+        "The first number",
+        "The circle of the sun"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bakhshali manuscript (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bakhshali_manuscript"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:00.396Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0031.webp",
+    "alt": "Flat illustration of a sandstone slab carved with a row of five tally marks ending in one small round circle, under a warm sun.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In 1881, a peasant dug up an old manuscript in a field near the village of Bakhshali, in present-day Pakistan."
+      },
+      {
+        "text": "It is written on birch bark: seventy fragile leaves of arithmetic problems in Sanskrit."
+      },
+      {
+        "text": "The numbers use place value, and where we would write a zero, it uses a simple dot as a placeholder. That dot was called the shunya-bindu: literally, the dot of the empty place."
+      },
+      {
+        "text": "Until 2024 it was regarded as the earliest known Indian use of a zero symbol. New carbon dating by Oxford places the manuscript between 799 and 1102 CE, so the story keeps being rewritten."
+      }
+    ]
+  }
+}

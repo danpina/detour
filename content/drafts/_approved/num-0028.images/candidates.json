@@ -1,0 +1,119 @@
+{
+  "draft_id": "num-0028",
+  "created_at": "2026-10-25T17:37:36.893Z",
+  "queries": [
+    "googol large number chalkboard",
+    "googol",
+    "googol large number"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-110917872",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Afgevallen kastanje van een paardenkastanje (Aesculus) 10-10-2021 (d.j.b.) 02.jpg",
+      "credit": "Dominicus Johannes Bergsma / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Afgevallen_kastanje_van_een_paardenkastanje_(Aesculus)_10-10-2021_(d.j.b.)_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Afgevallen_kastanje_van_een_paardenkastanje_%28Aesculus%29_10-10-2021_%28d.j.b.%29_02.jpg/960px-Afgevallen_kastanje_van_een_paardenkastanje_%28Aesculus%29_10-10-2021_%28d.j.b.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3581,
+      "height": 2865,
+      "alt_suggestion": "Fallen conker from a Horse-chestnut Aesculus hippocastanum. Focus stack of 12 photos.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-12016",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Drypoint Number Five: Portrait",
+      "credit": "Donald Shaw MacLaughlan American, born Canada, 1876-1938 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12016",
+      "image_url": "https://www.artic.edu/iiif/2/5341d222-b155-f949-f242-d653bdff6938/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of drypoint in black on cream laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-3578367",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "WTC-Fireman requests 10 more colleagues.jpg",
+      "credit": "U.S. Navy Photo by Journalist 1st Class Preston Keres / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:WTC-Fireman_requests_10_more_colleagues.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/WTC-Fireman_requests_10_more_colleagues.jpg/960px-WTC-Fireman_requests_10_more_colleagues.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2760,
+      "height": 1960,
+      "alt_suggestion": "A New York City fireman calls for 10 more rescue workers to make their way into the rubble of the World Trade Center (Text by U.S. Navy)",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-10507",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Large Plate",
+      "credit": "Talavera poblana Puebla, Mexico / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/10507",
+      "image_url": "https://www.artic.edu/iiif/2/29db29df-a344-aec4-eb71-45b3448cb37b/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of tin-glazed earthenware.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-38552070",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Croatia Opatija Maiden with the Seagull BW 2014-10-10 10-35-13.jpg",
+      "credit": "Berthold Werner / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Croatia_Opatija_Maiden_with_the_Seagull_BW_2014-10-10_10-35-13.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Croatia_Opatija_Maiden_with_the_Seagull_BW_2014-10-10_10-35-13.jpg/960px-Croatia_Opatija_Maiden_with_the_Seagull_BW_2014-10-10_10-35-13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3672,
+      "height": 2331,
+      "alt_suggestion": "Croatia, Opatija, Woman with seagull",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-googol",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: googol",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-googol.png",
+      "alt_suggestion": "Illustration of one tall bar followed by rows of small empty rings stretching off to the right"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "A-10 Thunderbolt 9875.JPG",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Quedlinburg asv2018-10 img48 Castle.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "A-10 Thunderbolt 9875.JPG",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Quedlinburg asv2018-10 img48 Castle.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"googol large number chalkboard\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"googol\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"googol large number\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

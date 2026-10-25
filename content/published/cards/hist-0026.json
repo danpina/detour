@@ -1,0 +1,45 @@
+{
+  "id": "hist-0026",
+  "interest": "history",
+  "title": "The summer London held its nose",
+  "probes": [
+    {
+      "id": "hist-0026-p1",
+      "question": "True or false: in 1858 curtains in Parliament were soaked in lime chloride to try to hide the smell of the Thames.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "hist-0026-p2",
+      "question": "The engineer Joseph ____ designed the sewer system that fixed London's river.",
+      "kind": "cloze",
+      "answer": "Bazalgette",
+      "accept": []
+    }
+  ],
+  "sources": [
+    {
+      "title": "Great Stink (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Stink"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:42:36.780Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0026.webp",
+    "alt": "Black-and-white 1858 Punch cartoon of a skeleton figure of Death rowing a boat on the polluted Thames, with London bridges and a dome behind.",
+    "kind": "photo",
+    "credit": "Punch Magazine / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_silent_highwayman.jpg"
+  },
+  "body": {
+    "claim": "In the hot summer of 1858 the Thames smelled so bad that curtains in Parliament were soaked in lime chloride to mask the odour.",
+    "why": "London's old sewers emptied untreated waste straight into the river, and the hot weather made the smell far worse. The Great Stink pushed Parliament to back Joseph Bazalgette's plan of big interconnecting sewers, built from 1859 to 1875. They ended the cholera outbreaks and still work today."
+  }
+}

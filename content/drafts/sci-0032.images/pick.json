@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-126674",
+  "alt": "Artist's concept of the Voyager spacecraft with its white dish antenna and long boom against a starry blue nebula.",
+  "fits": true,
+  "note": "Public domain artist concept; portrait-friendly.",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

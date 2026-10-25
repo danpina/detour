@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Great Stink of London 1858",
+    "angle": "The summer the Thames smelled so bad Parliament had to act and what it led to"
+  },
+  "created_at": "2026-10-25T17:35:51.371Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0026",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "The summer London held its nose",
+    "body": {
+      "claim": "In the hot summer of 1858 the Thames smelled so bad that curtains in Parliament were soaked in lime chloride to mask the odour.",
+      "why": "London's old sewers emptied untreated waste straight into the river, and the hot weather made the smell far worse. The Great Stink pushed Parliament to back Joseph Bazalgette's plan of big interconnecting sewers, built from 1859 to 1875. They ended the cholera outbreaks and still work today."
+    },
+    "probes": [
+      {
+        "id": "hist-0026-p1",
+        "kind": "tf",
+        "question": "True or false: in 1858 curtains in Parliament were soaked in lime chloride to try to hide the smell of the Thames.",
+        "answer": true
+      },
+      {
+        "id": "hist-0026-p2",
+        "kind": "cloze",
+        "question": "The engineer Joseph ____ designed the sewer system that fixed London's river.",
+        "answer": "Bazalgette"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Great Stink (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Great_Stink"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Punch cartoon 'The Silent Highwayman' (1858) or Crossness Pumping Station built for Bazalgette's sewers",
+    "keywords": [
+      "Great Stink",
+      "Punch 1858 Thames",
+      "Bazalgette",
+      "Crossness Pumping Station"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:25.116Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Great_Stink",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Claim/probe 1: in 1858 curtains in Parliament were soaked in lime chloride to mask the smell",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Stink",
+        "quote": "the curtains on the river side of the building were soaked in lime chloride to overcome the smell"
+      },
+      {
+        "claim": "Claim: hot summer of 1858, the Thames smelled so bad",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Stink",
+        "quote": "the hot weather exacerbated the smell of untreated human waste and industrial effluent that was present on the banks of the River Thames"
+      },
+      {
+        "claim": "Why: old sewers emptied untreated waste straight into the river",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Stink",
+        "quote": "an ageing and inadequate sewer system that emptied directly into the Thames"
+      },
+      {
+        "claim": "Why: the Great Stink pushed Parliament to back Bazalgette's interconnecting sewers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Stink",
+        "quote": "The authorities accepted a proposal from the civil engineer Joseph Bazalgette to move the effluent eastwards along a series of interconnecting sewers"
+      },
+      {
+        "claim": "Why: sewers built from 1859 to 1875",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Stink",
+        "quote": "started at the beginning of 1859 and lasted until 1875"
+      },
+      {
+        "claim": "Why: they ended the cholera outbreaks",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Stink",
+        "quote": "Bazalgette's work ensured that sewage was no longer dumped onto the shores of the Thames and brought an end to the cholera outbreaks"
+      },
+      {
+        "claim": "Why: the system still works today",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Stink",
+        "quote": "His sewer system operates into the 21st century"
+      },
+      {
+        "claim": "Probe 2: engineer Joseph Bazalgette designed the sewer system",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Stink",
+        "quote": "a proposal from the civil engineer Joseph Bazalgette"
+      }
+    ],
+    "overall": "pass"
+  }
+}

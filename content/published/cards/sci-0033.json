@@ -1,0 +1,60 @@
+{
+  "id": "sci-0033",
+  "interest": "science",
+  "title": "A bit of scruff",
+  "probes": [
+    {
+      "id": "sci-0033-p1",
+      "question": "What does LGM-1 stand for?",
+      "kind": "mcq",
+      "options": [
+        "Little Green Man 1",
+        "Large Galaxy Map 1",
+        "Long Gamma Measurement 1"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0033-p2",
+      "question": "True or false: Jocelyn Bell was among the recipients of the 1974 Nobel Prize in Physics.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jocelyn Bell Burnell (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell"
+    },
+    {
+      "title": "Pulsar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pulsar"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:25.867Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "sci-0033.webp",
+    "alt": "Pen annotations on a green chart-recorder paper strip showing the radio signal of the first identified pulsar, displayed behind glass.",
+    "kind": "photo",
+    "credit": "Billthom / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chart_Showing_Radio_Signal_of_First_Identified_Pulsar.jpg"
+  },
+  "body": {
+    "question": "In 1967, grad student Jocelyn Bell spotted a \"bit of scruff\" on her chart recordings. The signal was pulsing. How often?",
+    "options": [
+      "Every 1.3 seconds",
+      "Every 13 seconds",
+      "Every 1.3 minutes",
+      "Every 13 minutes"
+    ],
+    "answer": 0,
+    "reveal": "About one pulse every one and a third seconds. It was temporarily nicknamed \"Little Green Man 1\" (LGM-1), then identified as a rapidly rotating neutron star."
+  }
+}

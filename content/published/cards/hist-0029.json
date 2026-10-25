@@ -1,0 +1,62 @@
+{
+  "id": "hist-0029",
+  "interest": "history",
+  "title": "The clay army",
+  "probes": [
+    {
+      "id": "hist-0029-p1",
+      "question": "Who found the Terracotta Army in 1974?",
+      "kind": "mcq",
+      "options": [
+        "Local farmers digging a well",
+        "A team of archaeologists",
+        "Soldiers on a march",
+        "Workers building a railway"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0029-p2",
+      "question": "True or false: the Terracotta Army figures were originally painted in colour.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Terracotta Army (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Terracotta_Army"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:43:22.950Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0029.webp",
+    "alt": "Long rows of terracotta warriors standing in an excavated trench in Pit 1 of the Terracotta Army near Xi'an.",
+    "kind": "photo",
+    "credit": "Joe Hart from Southampton, United Kingdom / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Terracotta_Army_-_Pit_1,_Xi%27an,_China_(14148051222).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "On 29 March 1974, farmers digging a well near Xi'an in China strike something strange: clay figures buried underground."
+      },
+      {
+        "text": "They have found the Terracotta Army, buried with Qin Shi Huang, China's first emperor, around 210 BCE to protect him in the afterlife."
+      },
+      {
+        "text": "Estimates from 2007 say the three pits hold more than 8,000 soldiers, plus chariots and horses. Their faces appear to be different for each individual figure."
+      },
+      {
+        "text": "The twist: they were once painted in colour. In Xi'an's dry air, much of the paint began to flake within minutes of being uncovered."
+      }
+    ]
+  }
+}

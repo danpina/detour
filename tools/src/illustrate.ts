@@ -700,6 +700,103 @@ const scenes: Record<string, Scene> = {
       );
     },
   },
+  chessboard: {
+    alt: "Illustration of a chessboard whose squares hold piles of grains that grow larger from one square to the next",
+    svg: () => {
+      let out = "";
+      for (let r = 0; r < 8; r++) {
+        for (let c = 0; c < 8; c++) {
+          const i = r * 8 + c;
+          const x = 220 + c * 80;
+          const y = 520 + r * 80;
+          out += `<rect x="${x}" y="${y}" width="80" height="80" fill="${(r + c) % 2 ? DEEP : SAND}"/><circle cx="${x + 40}" cy="${y + 40}" r="${(3 + (i / 63) ** 2.2 * 34).toFixed(1)}" fill="${ORANGE}"/>`;
+        }
+      }
+      return wrap(`${out}<rect x="212" y="512" width="656" height="656" fill="none" stroke="${CHAR}" stroke-width="16" rx="6"/>`);
+    },
+  },
+  googol: {
+    alt: "Illustration of one tall bar followed by rows of small empty rings stretching off to the right",
+    svg: () => {
+      let rings = "";
+      for (let r = 0; r < 4; r++) {
+        for (let c = 0; c < 9; c++) {
+          const x = 330 + c * 85;
+          const y = 540 + r * 120;
+          rings += `<circle cx="${x}" cy="${y}" r="30" fill="none" stroke="${r % 2 ? ORANGE : TEAL}" stroke-width="14" opacity="${(1 - c * 0.08).toFixed(2)}"/>`;
+        }
+      }
+      return wrap(`<rect x="150" y="480" width="70" height="420" rx="30" fill="${CHAR}"/>${rings}`);
+    },
+  },
+  perfect: {
+    alt: "Illustration of three short bars of length one, two and three that together make a single bar of length six",
+    svg: () => {
+      const u = 120;
+      const bar = (x: number, y: number, n: number, color: string) => `<rect x="${x}" y="${y}" width="${n * u - 10}" height="90" rx="20" fill="${color}"/>`;
+      return wrap(
+        `${bar(180, 520, 1, TEAL)}${bar(180, 650, 2, ORANGE)}${bar(180, 780, 3, DEEP)}
+         ${bar(180, 960, 1, TEAL)}${bar(180 + u, 960, 2, ORANGE)}${bar(180 + 3 * u, 960, 3, DEEP)}`,
+      );
+    },
+  },
+  degrees: {
+    alt: "Illustration of a circle divided into twelve equal wedges in alternating colours, with small tick marks around the rim",
+    svg: () => {
+      let wedges = "";
+      let ticks = "";
+      const cx = 540;
+      const cy = 740;
+      const R = 330;
+      for (let i = 0; i < 12; i++) {
+        const a0 = (i * 30 - 90) * (Math.PI / 180);
+        const a1 = ((i + 1) * 30 - 90) * (Math.PI / 180);
+        wedges += `<path d="M ${cx} ${cy} L ${(cx + R * Math.cos(a0)).toFixed(1)} ${(cy + R * Math.sin(a0)).toFixed(1)} A ${R} ${R} 0 0 1 ${(cx + R * Math.cos(a1)).toFixed(1)} ${(cy + R * Math.sin(a1)).toFixed(1)} Z" fill="${i % 2 ? TEAL : ORANGE}" opacity="0.88"/>`;
+      }
+      for (let i = 0; i < 72; i++) {
+        const a = (i * 5 - 90) * (Math.PI / 180);
+        const r1 = i % 6 ? R + 18 : R + 36;
+        ticks += `<line x1="${(cx + (R + 6) * Math.cos(a)).toFixed(1)}" y1="${(cy + (R + 6) * Math.sin(a)).toFixed(1)}" x2="${(cx + r1 * Math.cos(a)).toFixed(1)}" y2="${(cy + r1 * Math.sin(a)).toFixed(1)}" stroke="${CHAR}" stroke-width="5" stroke-linecap="round"/>`;
+      }
+      return wrap(`${wedges}<circle cx="${cx}" cy="${cy}" r="26" fill="${CHAR}"/>${ticks}`);
+    },
+  },
+  bigprime: {
+    alt: "Illustration of a grid of small dots fading into the distance with one bright orange dot among them",
+    svg: () => {
+      let dots = "";
+      for (let r = 0; r < 12; r++) {
+        for (let c = 0; c < 10; c++) {
+          const x = 180 + c * 80;
+          const y = 440 + r * 66;
+          const hit = r === 7 && c === 6;
+          dots += `<circle cx="${x}" cy="${y}" r="${hit ? 30 : 13}" fill="${hit ? ORANGE : TEAL}" opacity="${hit ? 1 : (0.9 - r * 0.055).toFixed(2)}"/>`;
+        }
+      }
+      return wrap(dots);
+    },
+  },
+  fibsquares: {
+    alt: "Illustration of squares of growing sizes fitted together into a rectangle, each square a little bigger than the one before",
+    svg: () => {
+      const u = 62;
+      const sq: [number, number, number, string][] = [
+        [0, 0, 1, ORANGE],
+        [1, 0, 1, TEAL],
+        [0, 1, 2, DEEP],
+        [2, 0, 3, ORANGE],
+        [0, 3, 5, TEAL],
+        [5, 0, 8, DEEP],
+      ];
+      const x0 = (W - 13 * u) / 2;
+      const y0 = 470;
+      return wrap(
+        sq
+          .map(([x, y, s, color]) => `<rect x="${x0 + x * u + 4}" y="${y0 + y * u + 4}" width="${s * u - 8}" height="${s * u - 8}" rx="10" fill="${color}" opacity="0.9"/>`)
+          .join(""),
+      );
+    },
+  },
 };
 
 export async function runIllustrate(argv: string[]): Promise<number> {

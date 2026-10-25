@@ -1,0 +1,65 @@
+{
+  "id": "sci-0027",
+  "interest": "science",
+  "title": "T. rex is closer to you than to Stegosaurus",
+  "probes": [
+    {
+      "id": "sci-0027-p1",
+      "question": "T. rex lived closer in time to which one?",
+      "kind": "mcq",
+      "options": [
+        "Stegosaurus",
+        "Us"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0027-p2",
+      "question": "Stegosaurus fossils date to between 155 and 145 ____ years ago.",
+      "kind": "cloze",
+      "answer": "million",
+      "accept": []
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stegosaurus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stegosaurus"
+    },
+    {
+      "title": "Tyrannosaurus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tyrannosaurus"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:12.413Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0027.webp",
+    "alt": "Life-size models of a theropod dinosaur and a Stegosaurus standing together among plants in a park.",
+    "kind": "photo",
+    "credit": "FabSubeject / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Dinosaurs_Park.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Stegosaurus and Tyrannosaurus feel like they belong in the same picture. They don't."
+      },
+      {
+        "text": "Stegosaurus fossils date to between 155 and 145 million years ago."
+      },
+      {
+        "text": "Tyrannosaurus fossils are dated to 69 to 66 million years ago, in the late Cretaceous."
+      },
+      {
+        "text": "That leaves at least 76 million years between them. T. rex's own distance to today is 69 million years at most. So T. rex lived closer to us than to Stegosaurus."
+      }
+    ]
+  }
+}

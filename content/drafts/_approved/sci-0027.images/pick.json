@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-24631715",
+  "alt": "Life-size models of a theropod dinosaur and a Stegosaurus standing together among plants in a park.",
+  "fits": true,
+  "note": "Shows the two dinosaurs \"in the same picture\", matching the card hook; they are park models not museum skeletons and the theropod is not clearly T. rex. Fallback: cand-1 collage of skeleton mounts.",
+  "crop": {
+    "fx": 0.6,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

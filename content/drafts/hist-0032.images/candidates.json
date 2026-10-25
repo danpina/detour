@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0032",
+  "created_at": "2026-10-25T17:36:47.896Z",
+  "queries": [
+    "Phoenician alphabet Ahiram sarcophagus Nora Stone",
+    "Phoenician alphabet",
+    "Phoenician alphabet Ahiram sarcophagus"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-79228680",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Phoenician alphabet as was discovered in Byblos.png",
+      "credit": "Taken from a book entitled Tarikh Lubnan al-'am (General history of Lebanon), 2nd edition, published in Lebanon in 1949. Check AUB Records / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Phoenician_alphabet_as_was_discovered_in_Byblos.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Phoenician_alphabet_as_was_discovered_in_Byblos.png/960px-Phoenician_alphabet_as_was_discovered_in_Byblos.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1776,
+      "height": 1512,
+      "alt_suggestion": "Phoenician alphabet as was discovered in Byblos.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-21023",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Buddha Shakyamuni Seated in Meditation (Dhyanamudra)",
+      "credit": "India Nagapattinam, Tamil Nadu / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/21023",
+      "image_url": "https://www.artic.edu/iiif/2/0675f9a9-1a7b-c90a-3bb6-7f7be2afb678/full/843,/0/default.jpg",
+      "alt_suggestion": "Dark stone sculpture of Buddha sitting cross-legged, hands in lap, eyes closed.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-93603174",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Phoenicians' alphabet.jpg",
+      "credit": "रोहित साव27 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Phoenicians%27_alphabet.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Phoenicians%27_alphabet.jpg/960px-Phoenicians%27_alphabet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2752,
+      "height": 2340,
+      "alt_suggestion": "{| class=\"licensetpl\" style=\"display:none\" |Public domainPublic domainfalsefalse |} This work is in the public domain in its country of origin and other countries and areas where the copyright term is",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-31892",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Alphabet",
+      "credit": "Lucas Kilian German, 1579-1637 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/31892",
+      "image_url": "https://www.artic.edu/iiif/2/bbce6294-5b62-1fa1-2be1-31f4ad5831d5/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of book with 24 etchings, bound in crimson levant with marbled endpapers, outer slip case.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-39490344",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Comparison of Phoenician alphabets, Mark Lidzbarski, 1898.jpg",
+      "credit": "de:Mark Lidzbarski, 1898 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Comparison_of_Phoenician_alphabets,_Mark_Lidzbarski,_1898.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Comparison_of_Phoenician_alphabets%2C_Mark_Lidzbarski%2C_1898.jpg/960px-Comparison_of_Phoenician_alphabets%2C_Mark_Lidzbarski%2C_1898.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3600,
+      "height": 2684,
+      "alt_suggestion": "Comparison of Phoenician alphabets, Mark Lidzbarski, 1898",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Phoenician alphabet Ahiram sarcophagus Nora Stone\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Phoenician alphabet\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Phoenician alphabet Ahiram sarcophagus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

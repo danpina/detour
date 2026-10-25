@@ -1,0 +1,55 @@
+{
+  "id": "num-0029",
+  "interest": "numbers",
+  "title": "The perfect number after 28",
+  "probes": [
+    {
+      "id": "num-0029-p1",
+      "question": "True or false: the divisors of 28 other than 28 itself add up to 28.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "num-0029-p2",
+      "question": "Which ancient work contains a rule for building perfect numbers?",
+      "kind": "mcq",
+      "options": [
+        "Euclid's Elements",
+        "Liber Abaci",
+        "The Rhind Papyrus"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Perfect number (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Perfect_number"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:00.042Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0029.webp",
+    "alt": "Abstract flat illustration of coloured blocks of different lengths stacked in rows, suggesting divisors adding up.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "6 is perfect: its divisors 1, 2 and 3 add up to 6. The next one is 28 (1 + 2 + 4 + 7 + 14). What do you think the next perfect number is?",
+    "options": [
+      "56",
+      "96",
+      "496",
+      "128"
+    ],
+    "answer": 2,
+    "reveal": "496. Its divisors 1, 2, 4, 8, 16, 31, 62, 124 and 248 add up to exactly 496. The perfect numbers then jump: 6, 28, 496, 8128, 33550336... Euclid already proved a rule for building them in his Elements."
+  }
+}

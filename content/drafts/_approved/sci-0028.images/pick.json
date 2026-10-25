@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-155817557",
+  "alt": "A blacktip reef shark swimming just below the surface in clear blue water.",
+  "fits": true,
+  "note": "Clean subject on blue; space for text.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.6,
+    "zoom": 1
+  }
+}

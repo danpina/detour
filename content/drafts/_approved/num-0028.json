@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Where the word googol comes from",
+    "angle": "Named by a nine-year-old in the 1930s"
+  },
+  "created_at": "2026-10-25T17:37:15.415Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0028",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "A nine-year-old named the googol",
+    "body": {
+      "claim": "The word \"googol\", the number 1 followed by 100 zeros, was coined in 1920 by nine-year-old Milton Sirotta, nephew of the mathematician Edward Kasner.",
+      "why": "Kasner popularised the word in his 1940 book Mathematics and the Imagination, using it to show the difference between an unimaginably large number and infinity. The search engine name Google is an intentional misspelling of it."
+    },
+    "probes": [
+      {
+        "id": "num-0028-p1",
+        "kind": "cloze",
+        "question": "The word googol was coined by nine-year-old Milton ____.",
+        "answer": "Sirotta"
+      },
+      {
+        "id": "num-0028-p2",
+        "kind": "tf",
+        "question": "True or false: a googol is the digit 1 followed by one hundred zeros.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Googol (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Googol"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A child's hand writing a very long row of zeros on a chalkboard, flat simple illustration, no text",
+    "keywords": [
+      "googol",
+      "large number",
+      "chalkboard",
+      "zeros"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:42:02.489Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Googol",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The word googol was coined in 1920 by nine-year-old Milton Sirotta, nephew of mathematician Edward Kasner (title + probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Googol",
+        "quote": "The term was coined in 1920 by nine-year-old Milton Sirotta (1911-1981), nephew of American mathematician Edward Kasner"
+      },
+      {
+        "claim": "A googol is the digit 1 followed by one hundred zeros (claim + probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Googol",
+        "quote": "it is written as the digit 1 followed by one hundred zeros"
+      },
+      {
+        "claim": "Kasner popularised the word in his 1940 book Mathematics and the Imagination",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Googol",
+        "quote": "Kasner popularized the concept in his 1940 book Mathematics and the Imagination"
+      },
+      {
+        "claim": "Kasner used it to show the difference between an unimaginably large number and infinity",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Googol",
+        "quote": "Kasner used it to illustrate the difference between an unimaginably large number and infinity"
+      },
+      {
+        "claim": "Google is an intentional misspelling of googol",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Googol",
+        "quote": "an intentional misspelling of \"googol\" by the company's founders"
+      }
+    ],
+    "overall": "pass"
+  }
+}

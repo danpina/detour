@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-79228680",
+  "alt": "White Phoenician letters traced on a black background, showing an inscription discovered at Byblos.",
+  "fits": true,
+  "note": "Public domain, dark ground suits text overlay; alphabet is the topic. Less photographic but on subject.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

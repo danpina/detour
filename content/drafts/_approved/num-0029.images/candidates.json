@@ -1,0 +1,92 @@
+{
+  "draft_id": "num-0029",
+  "created_at": "2026-10-25T17:37:42.691Z",
+  "queries": [
+    "perfect number divisors blocks",
+    "perfect number",
+    "perfect number divisors"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-141138165",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "\"Untitled\" (Perfect Lovers), GF1991-007, Felix Gonzalez-Torres, MoMA.png",
+      "credit": "Peoplelikeyoulikeme / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%22Untitled%22_(Perfect_Lovers),_GF1991-007,_Felix_Gonzalez-Torres,_MoMA.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/%22Untitled%22_%28Perfect_Lovers%29%2C_GF1991-007%2C_Felix_Gonzalez-Torres%2C_MoMA.png/960px-%22Untitled%22_%28Perfect_Lovers%29%2C_GF1991-007%2C_Felix_Gonzalez-Torres%2C_MoMA.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1622,
+      "height": 1184,
+      "alt_suggestion": "\"Untitled\" (Perfect Lovers), 1991",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss057e114747",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "iss057e114747",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss057e114747",
+      "image_url": "https://images-assets.nasa.gov/image/iss057e114747/iss057e114747~medium.jpg",
+      "alt_suggestion": "iss057e114747 (12/9/2018) --- European Space Agency (ESA) astronaut Alex Gerst is photographed with the Perfect Crystals investigation. Perfect Crystals studies human manganese superoxide dismutase (M",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-12016",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Drypoint Number Five: Portrait",
+      "credit": "Donald Shaw MacLaughlan American, born Canada, 1876-1938 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12016",
+      "image_url": "https://www.artic.edu/iiif/2/5341d222-b155-f949-f242-d653bdff6938/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of drypoint in black on cream laid paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-65365085",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Perfect Season Parade 2.0 (38849175264).jpg",
+      "credit": "Erik Drost / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Perfect_Season_Parade_2.0_(38849175264).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Perfect_Season_Parade_2.0_%2838849175264%29.jpg/960px-Perfect_Season_Parade_2.0_%2838849175264%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 4000,
+      "alt_suggestion": "Perfect Season Parade 2.0",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-9262853",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Space Shuttle Project",
+      "credit": "MSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/9262853",
+      "image_url": "https://images-assets.nasa.gov/image/9262853/9262853~medium.jpg",
+      "alt_suggestion": "A smooth countdown culminated in a picture-perfect launch as the Space Shuttle Endeavour (STS-47) climbed skyward atop a ladder of billowing smoke. Primary payload for the plarned seven-day flight was",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-perfect",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: perfect",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-perfect.png",
+      "alt_suggestion": "Illustration of three short bars of length one, two and three that together make a single bar of length six"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"perfect number divisors blocks\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"perfect number\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"perfect number divisors\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

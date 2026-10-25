@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0026",
+  "created_at": "2026-10-25T17:36:28.745Z",
+  "queries": [
+    "Great Stink Punch 1858 Thames Bazalgette",
+    "Great Stink",
+    "Great Stink Punch 1858 Thames"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-4465060",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The silent highwayman.jpg",
+      "credit": "Punch Magazine / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_silent_highwayman.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/The_silent_highwayman.jpg/960px-The_silent_highwayman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 975,
+      "height": 745,
+      "alt_suggestion": "The silent highwayman : Death rows on the Thames, claiming the lives of victims who have not paid to have the river cleaned up, during the Great Stink.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-4371",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Hamamatsu, from the series \"Fifty-three Stations of the Tokaido (Tokaido gojusan tsugi),\" also known as the Tokaido with Poem (Kyoka iri Tokaido)",
+      "credit": "Utagawa Hiroshige 歌川 広重 Japanese, 1797-1858 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/4371",
+      "image_url": "https://www.artic.edu/iiif/2/cef4e5df-a749-090b-b897-7d5f40654685/full/843,/0/default.jpg",
+      "alt_suggestion": "Color print of travelers of foot and horseback following a grassy route flanked by Japanese bungalows and groves of trees.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-3096711",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "FaradayFatherThames.jpg",
+      "credit": "John Leech / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:FaradayFatherThames.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/FaradayFatherThames.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 956,
+      "height": 1296,
+      "alt_suggestion": "Caricature published in Punch on 21 July 1855 (page 27) in response to Michael Faraday's letter \"Observations on the Filth of the Thames\", published on 7 July in The Times and commenting on the deplor",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-5764",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tetradrachm (Coin) Portraying Alexander the Great",
+      "credit": "Greek; minted in Ephesus, Asia Minor (modern Turkey) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/5764",
+      "image_url": "https://www.artic.edu/iiif/2/eed63520-b035-7587-0d5e-07af9216a627/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of silver.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-40738132",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Small Stink Bug (Pentatomidae) attracted to light in great numbers (12883200665).jpg",
+      "credit": "Bernard DUPONT from FRANCE / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Small_Stink_Bug_(Pentatomidae)_attracted_to_light_in_great_numbers_(12883200665).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Small_Stink_Bug_%28Pentatomidae%29_attracted_to_light_in_great_numbers_%2812883200665%29.jpg/960px-Small_Stink_Bug_%28Pentatomidae%29_attracted_to_light_in_great_numbers_%2812883200665%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "Safari Tent N°7, Lower Sabie Camp, Kruger NP, SOUTH AFRICA",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Great Stink Punch 1858 Thames Bazalgette\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Great Stink\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Great Stink Punch 1858 Thames\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

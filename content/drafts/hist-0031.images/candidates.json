@@ -1,0 +1,91 @@
+{
+  "draft_id": "hist-0031",
+  "created_at": "2026-10-25T17:36:44.884Z",
+  "queries": [
+    "Pantheon dome Roman concrete Caesarea harbour",
+    "Pantheon dome",
+    "Pantheon dome Roman concrete"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-123424462",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Panthéon de Paris (Dome).jpg",
+      "credit": "Maksim Sokolov (maxergon.com) / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Panth%C3%A9on_de_Paris_(Dome).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Panth%C3%A9on_de_Paris_%28Dome%29.jpg/960px-Panth%C3%A9on_de_Paris_%28Dome%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3756,
+      "height": 5671,
+      "alt_suggestion": "Panthéon de Paris (dome)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-196375",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Plate 131 from The Plan of Chicago, 1909: Chicago. Elevation Showing the Group of Buildings Constituting the Proposed Civic Center.",
+      "credit": "Daniel Hudson Burnham, American, 1846-1912 Edward Herbert Bennett, American, born England, 1874-1954 Fernand Janin, delineator, French, 1880-1912 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196375",
+      "image_url": "https://www.artic.edu/iiif/2/76ed56d7-2772-19c9-db1e-e23252b4c20e/full/843,/0/default.jpg",
+      "alt_suggestion": "An elevation drawing of an ornate, large central building with a tall dome flanked by two shorter flat-roofed buildings and hazy flat-roofed buildings in the background.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-123424467",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Panthéon de Paris (dome) 02.jpg",
+      "credit": "Maksim Sokolov (maxergon.com) / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Panth%C3%A9on_de_Paris_(dome)_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Panth%C3%A9on_de_Paris_%28dome%29_02.jpg/960px-Panth%C3%A9on_de_Paris_%28dome%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 9504,
+      "height": 6336,
+      "alt_suggestion": "Panthéon de Paris (dome)",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-10607",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Basin Depicting a Cistern, Tower and Domed Building",
+      "credit": "Talavera poblana Puebla, Mexico / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/10607",
+      "image_url": "https://www.artic.edu/iiif/2/1883af6d-fd95-c855-ee7e-20933487743e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of tin-glazed earthenware.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-19675479",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dome of Panthéon de Paris - 2012-05-28.jpg",
+      "credit": "PierreSelim / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dome_of_Panth%C3%A9on_de_Paris_-_2012-05-28.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Dome_of_Panth%C3%A9on_de_Paris_-_2012-05-28.jpg/960px-Dome_of_Panth%C3%A9on_de_Paris_-_2012-05-28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3030,
+      "height": 4206,
+      "alt_suggestion": "View of Dome of Panthéon de Paris from the rue Soufflot.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Annual report of the Board of Regents of the Smithsonian Institution (1909) (14776340161).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Pantheon dome Roman concrete Caesarea harbour\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Pantheon dome\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Pantheon dome Roman concrete\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

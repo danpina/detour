@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-4465060",
+  "alt": "Black-and-white 1858 Punch cartoon of a skeleton figure of Death rowing a boat on the polluted Thames, with London bridges and a dome behind.",
+  "fits": true,
+  "note": "Punch \"The Silent Highwayman\", public domain; directly about the Great Stink.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

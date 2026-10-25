@@ -1,0 +1,114 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Antikythera mechanism",
+    "angle": "An ancient Greek gear device found in a shipwreck that tracked the sky"
+  },
+  "created_at": "2026-10-25T17:35:51.372Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0027",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "The gears that came too early",
+    "body": {
+      "question": "The Antikythera mechanism, a geared sky-tracker from the 2nd century BC, was a wonder. How long before machines of similar complexity appeared again?",
+      "options": [
+        "About 150 years",
+        "About 500 years",
+        "About 1,500 years",
+        "About 5,000 years"
+      ],
+      "answer": 2,
+      "reveal": "Machines of similar complexity did not appear again for around 1,500 years, with early examples being 14th-century astronomical clocks. The Antikythera mechanism was hand-powered and could predict astronomical positions and eclipses decades in advance. It came from a shipwreck off the Greek island of Antikythera, retrieved in 1901."
+    },
+    "probes": [
+      {
+        "id": "hist-0027-p1",
+        "kind": "tf",
+        "question": "True or false: the Antikythera mechanism could also track the four-year cycle of athletic games like the ancient Olympics.",
+        "answer": true
+      },
+      {
+        "id": "hist-0027-p2",
+        "kind": "mcq",
+        "question": "In which year was the Antikythera mechanism discovered?",
+        "options": [
+          "1801",
+          "1901",
+          "1951",
+          "2001"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Antikythera mechanism (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Antikythera_mechanism"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The corroded bronze fragments of the Antikythera mechanism in the National Archaeological Museum, Athens",
+    "keywords": [
+      "Antikythera mechanism",
+      "National Archaeological Museum Athens",
+      "Fragment A",
+      "bronze gear"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:25.116Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Question/probe 2: geared sky-tracker from the 2nd century BC, discovered in 1901",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+        "quote": "built in the 2nd century BC and discovered in 1901"
+      },
+      {
+        "claim": "Answer/reveal: similar complexity did not appear again for about 1,500 years; early examples 14th-century astronomical clocks",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+        "quote": "Machines with similar complexity did not appear again for around 1,500 years, with early examples being the fourteenth century astronomical clocks"
+      },
+      {
+        "claim": "Reveal: could predict astronomical positions and eclipses decades in advance",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+        "quote": "It could be used to predict astronomical positions and eclipses decades in advance"
+      },
+      {
+        "claim": "Reveal: hand-powered",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+        "quote": "an ancient Greek hand-powered orrery"
+      },
+      {
+        "claim": "Reveal: from a shipwreck off the Greek island of Antikythera, retrieved in 1901",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+        "quote": "wreckage retrieved from a shipwreck off the coast of the Greek island Antikythera in 1901"
+      },
+      {
+        "claim": "Probe 1: it could also track the four-year cycle of athletic games like the ancient Olympics",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+        "quote": "It could also be used to track the four-year cycle of athletic games similar to an olympiad"
+      }
+    ],
+    "overall": "pass"
+  }
+}

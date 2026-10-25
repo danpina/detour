@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-44378681",
+  "alt": "Pluto, with its reddish and pale heart-shaped terrain, shown beside its large moon Charon against black space, in enhanced colour from New Horizons.",
+  "fits": true,
+  "note": "NASA/New Horizons public domain; black space leaves room for text.",
+  "crop": {
+    "fx": 0.6,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

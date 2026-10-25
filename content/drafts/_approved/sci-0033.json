@@ -1,0 +1,116 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "The first pulsar and Jocelyn Bell",
+    "angle": "A scruffy bit of chart recording first nicknamed LGM-1"
+  },
+  "created_at": "2026-10-25T17:36:54.758Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0033",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "A bit of scruff",
+    "body": {
+      "question": "In 1967, grad student Jocelyn Bell spotted a \"bit of scruff\" on her chart recordings. The signal was pulsing. How often?",
+      "options": [
+        "Every 1.3 seconds",
+        "Every 13 seconds",
+        "Every 1.3 minutes",
+        "Every 13 minutes"
+      ],
+      "answer": 0,
+      "reveal": "About one pulse every one and a third seconds. It was temporarily nicknamed \"Little Green Man 1\" (LGM-1), then identified as a rapidly rotating neutron star."
+    },
+    "probes": [
+      {
+        "id": "sci-0033-p1",
+        "kind": "mcq",
+        "question": "What does LGM-1 stand for?",
+        "options": [
+          "Little Green Man 1",
+          "Large Galaxy Map 1",
+          "Long Gamma Measurement 1"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0033-p2",
+        "kind": "tf",
+        "question": "True or false: Jocelyn Bell was among the recipients of the 1974 Nobel Prize in Physics.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Jocelyn Bell Burnell (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell"
+      },
+      {
+        "title": "Pulsar (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pulsar"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Jocelyn Bell Burnell at a conference, or a radio telescope array",
+    "keywords": [
+      "Jocelyn Bell Burnell",
+      "pulsar",
+      "radio telescope",
+      "Interplanetary Scintillation Array"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:42.485Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Pulsar",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1967 Bell, a postgraduate student, spotted a \"bit of scruff\" on her chart recordings",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell",
+        "quote": "while a postgraduate student at Cambridge, Bell Burnell detected a \"bit of scruff\" on her chart-recorder papers"
+      },
+      {
+        "claim": "The signal pulsed about once every one and a third seconds (answer \"Every 1.3 seconds\", reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell",
+        "quote": "at a rate of about one pulse every one and a third seconds",
+        "note": "Pulsar page gives 1.337 seconds; \"1.3 seconds\" is that value to one decimal."
+      },
+      {
+        "claim": "It was temporarily nicknamed \"Little Green Man 1\" (LGM-1) (reveal, probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell",
+        "quote": "Temporarily dubbed \"Little Green Man 1\" (LGM-1) the source"
+      },
+      {
+        "claim": "It was then identified as a rapidly rotating neutron star",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell",
+        "quote": "was identified after several years as a rapidly rotating neutron star"
+      },
+      {
+        "claim": "Probe p2: Bell was NOT among the recipients of the 1974 Nobel Prize in Physics (answer false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell",
+        "quote": "This discovery was recognized by the Nobel Prize in Physics in 1974, though she was not among its recipients."
+      }
+    ],
+    "overall": "pass"
+  }
+}

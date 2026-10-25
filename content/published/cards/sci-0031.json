@@ -1,0 +1,65 @@
+{
+  "id": "sci-0031",
+  "interest": "science",
+  "title": "Why Pluto isn't a planet",
+  "probes": [
+    {
+      "id": "sci-0031-p1",
+      "question": "Which planet criterion does Pluto not meet?",
+      "kind": "mcq",
+      "options": [
+        "It orbits the Sun",
+        "It is nearly round",
+        "It has cleared the neighbourhood around its orbit"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "sci-0031-p2",
+      "question": "True or false: the IAU's 2006 definition has three criteria for a planet.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "IAU definition of planet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/IAU_definition_of_planet"
+    },
+    {
+      "title": "Planet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Planet"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:24.468Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0031.webp",
+    "alt": "Pluto, with its reddish and pale heart-shaped terrain, shown beside its large moon Charon against black space, in enhanced colour from New Horizons.",
+    "kind": "photo",
+    "credit": "NASA / Johns Hopkins University Applied Physics Laboratory / Southwest Research Institute / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pluto-Charon-v2-10-1-15.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Pluto kept its status as a planet until 2006."
+      },
+      {
+        "text": "The discovery of other large objects in the Kuiper belt, particularly Eris, sparked a debate about what a planet really is."
+      },
+      {
+        "text": "In August 2006 the International Astronomical Union set three criteria: a planet orbits the Sun, is massive enough to be nearly round, and has cleared the neighbourhood around its orbit."
+      },
+      {
+        "text": "Pluto meets the first two but not the third. So it became a dwarf planet."
+      }
+    ]
+  }
+}

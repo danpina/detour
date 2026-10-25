@@ -1,0 +1,57 @@
+{
+  "id": "sci-0034",
+  "interest": "science",
+  "title": "Crows and long memories",
+  "probes": [
+    {
+      "id": "sci-0034-p1",
+      "question": "What is the longest an American crow is known to have lived in captivity?",
+      "kind": "estimate",
+      "answer": 30,
+      "unit": "years",
+      "min": 1,
+      "max": 100,
+      "scale": "log"
+    },
+    {
+      "id": "sci-0034-p2",
+      "question": "True or false: crows can recognise individual human faces.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "American crow (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/American_crow"
+    },
+    {
+      "title": "Corvus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Corvus"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:27.195Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "sci-0034.webp",
+    "alt": "A black crow standing on a white ledge, looking to the left.",
+    "kind": "photo",
+    "credit": "Gordon Leggett / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2014-04-29_01_Northwestern_crow_(Corvus_brachyrhynchos_caurinus).jpg"
+  },
+  "body": {
+    "question": "Crows can recognise individual people. What is the longest an American crow is known to have lived in captivity?",
+    "unit": "years",
+    "min": 1,
+    "max": 100,
+    "scale": "log",
+    "answer": 30,
+    "reveal": "Captive American crows are known to have lived up to 30 years, while the average in the wild is 7 to 8. Plenty of time to remember a face: studies indicate crows remember dangerous human faces and can pass that on to other crows."
+  }
+}

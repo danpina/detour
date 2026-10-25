@@ -1,0 +1,129 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Ötzi the Iceman",
+    "angle": "A 5000-year-old man preserved in an Alpine glacier and what he carried"
+  },
+  "created_at": "2026-10-25T17:35:51.374Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0030",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "The man in the ice",
+    "body": {
+      "claim": "Ötzi, a man who lived in the 4th millennium BC, was found in 1991 with a copper axe, a quiver of 14 arrows and a dried tinder fungus.",
+      "why": "He had been naturally preserved in glacier ice, so his body and belongings survived in the Ötztal Alps. He is Europe's oldest known natural human mummy, and his gear gives a rare view of Copper Age life."
+    },
+    "probes": [
+      {
+        "id": "hist-0030-p1",
+        "kind": "mcq",
+        "question": "What was Ötzi's axe head made of?",
+        "options": [
+          "Almost pure copper",
+          "Flint",
+          "Iron",
+          "Bronze"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0030-p2",
+        "kind": "cloze",
+        "question": "Ötzi was found in the ____ Alps, on the Austria-Italy border.",
+        "answer": "Ötztal",
+        "accept": [
+          "Oetztal",
+          "Otztal"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ötzi (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/%C3%96tzi"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Ötzi mummy on display at the South Tyrol Museum of Archaeology, or a replica of his copper axe",
+    "keywords": [
+      "Ötzi",
+      "Iceman",
+      "South Tyrol Museum of Archaeology",
+      "copper axe"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:25.118Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/%C3%96tzi",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Claim: found in 1991 in the Ötztal Alps",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%96tzi",
+        "quote": "Ötzi's remains were discovered on 19 September 1991 in the Ötztal Alps"
+      },
+      {
+        "claim": "Claim: lived in the 4th millennium BC",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%96tzi",
+        "quote": "is the natural mummy of a man who lived during the 4th millennium BC"
+      },
+      {
+        "claim": "Claim: found with a copper axe and a quiver of 14 arrows",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%96tzi",
+        "quote": "a copper axe with a yew handle, a chert -bladed knife with an ash handle and a quiver of 14 arrows"
+      },
+      {
+        "claim": "Claim: a dried fungus among his belongings",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%96tzi",
+        "quote": "a bone awl and a dried fungus"
+      },
+      {
+        "claim": "Claim: the fungus was a tinder fungus",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%96tzi",
+        "quote": "The other was a type of tinder fungus , included with part of what appeared to be a complex firelighting kit"
+      },
+      {
+        "claim": "Why: naturally preserved in glacier ice",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%96tzi",
+        "quote": "he was a wet mummy that had been naturally preserved in glacier ice"
+      },
+      {
+        "claim": "Why: Europe's oldest known natural human mummy; view of Copper Age life",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%96tzi",
+        "quote": "He is Europe's oldest known natural human mummy, showing an unprecedented view of Chalcolithic (Copper Age) Europeans"
+      },
+      {
+        "claim": "Probe 1: axe head almost pure copper",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%96tzi",
+        "quote": "The 9.5-centimetre-long (3.7 in) axe head is almost pure copper"
+      },
+      {
+        "claim": "Probe 2: found in the Ötztal Alps on the Austria-Italy border",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%96tzi",
+        "quote": "discovered on 19 September 1991 in the Ötztal Alps (hence the nickname \"Ötzi\") at the Austria-Italy border"
+      }
+    ],
+    "overall": "pass"
+  }
+}

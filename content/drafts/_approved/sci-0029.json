@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Tardigrades in open space",
+    "angle": "Water bears survived exposure to vacuum in a 2007 orbital experiment"
+  },
+  "created_at": "2026-10-25T17:36:54.758Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0029",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "Water bears in space",
+    "body": {
+      "question": "In 2007, tardigrades were taken into orbit and exposed to the vacuum of space. For how long?",
+      "options": [
+        "10 minutes",
+        "10 hours",
+        "10 days",
+        "10 weeks"
+      ],
+      "answer": 2,
+      "reveal": "For 10 days, on the 2007 FOTON-M3 mission. Back on Earth, the dehydrated tardigrades were revived just by adding water. The space vacuum did not much affect their egg-laying."
+    },
+    "probes": [
+      {
+        "id": "sci-0029-p1",
+        "kind": "tf",
+        "question": "True or false: tardigrades exposed to space vacuum in 2007 were revived by rehydration back on Earth.",
+        "answer": true
+      },
+      {
+        "id": "sci-0029-p2",
+        "kind": "cloze",
+        "question": "The 2007 tardigrade experiment flew on the ____ mission.",
+        "answer": "FOTON-M3",
+        "accept": [
+          "Foton-M3",
+          "FOTON M3"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tardigrades in space (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Tardigrades_in_space"
+      },
+      {
+        "title": "Tardigrade (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Tardigrade"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A microscope image of a tardigrade (water bear)",
+    "keywords": [
+      "tardigrade",
+      "water bear",
+      "tardigrade microscope"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:41:18.247Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tardigrades_in_space",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Tardigrade",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 2007 tardigrades were taken into orbit on FOTON-M3 and exposed to the vacuum of space for 10 days (question, answer 10 days, reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tardigrades_in_space",
+        "quote": "began in 2007 with the FOTON-M3 mission in low Earth orbit , where they were exposed to space's vacuum for 10 days"
+      },
+      {
+        "claim": "Back on Earth the tardigrades were revived just by rehydration (reveal, probe p1 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tardigrades_in_space",
+        "quote": "and reanimated, just by rehydration, back on Earth"
+      },
+      {
+        "claim": "Probe p2: the 2007 tardigrade experiment flew on the FOTON-M3 mission",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tardigrades_in_space",
+        "quote": "The 2007 FOTON-M3 mission carrying the BIOPAN astrobiology payload (illustrated) exposed tardigrades to vacuum"
+      },
+      {
+        "claim": "The space vacuum did not much affect their egg-laying (reveal last sentence)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tardigrades_in_space",
+        "quote": "The space vacuum did not much affect egg-laying in either Richtersius coronifer or M. tardigradum",
+        "note": "Page also says vacuum plus full solar UV sharply reduced survival; the card sentence is only about egg-laying, which matches."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "The Möbius strip",
+    "angle": "A band with only one side and one edge"
+  },
+  "created_at": "2026-10-25T17:37:15.415Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0033",
+    "interest": "numbers",
+    "type": "guess_first",
+    "title": "Cutting a Möbius strip in half",
+    "body": {
+      "question": "Twist a paper strip once and tape the ends: that is a Möbius strip. Now cut it lengthwise along the middle. What do you get?",
+      "options": [
+        "Two separate loops",
+        "One longer loop, with more twists",
+        "Two loops linked together",
+        "A smaller Möbius strip"
+      ],
+      "answer": 1,
+      "reveal": "One long strip with four half-twists in it. It is no longer a Möbius strip, but an ordinary two-sided band, double the length. The original has just one boundary curve and one side, and was found by Listing and Möbius in 1858; it already appears in Roman mosaics from the third century CE."
+    },
+    "probes": [
+      {
+        "id": "num-0033-p1",
+        "kind": "tf",
+        "question": "True or false: a Möbius strip has a single boundary curve.",
+        "answer": true
+      },
+      {
+        "id": "num-0033-p2",
+        "kind": "cloze",
+        "question": "A Möbius strip can be formed by attaching the ends of a paper strip with a half-____.",
+        "answer": "twist"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Möbius strip (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/M%C3%B6bius_strip"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A paper Möbius strip, a twisted loop of paper or ribbon",
+    "keywords": [
+      "Möbius strip",
+      "paper",
+      "twisted band"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:42:02.489Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/M%C3%B6bius_strip",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A Möbius strip is formed by attaching the ends of a paper strip with a half-twist (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%B6bius_strip",
+        "quote": "a surface that can be formed by attaching the ends of a strip of paper together with a half-twist"
+      },
+      {
+        "claim": "Cutting along the middle gives one long strip with four half-twists, not two strips",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%B6bius_strip",
+        "quote": "yields one long strip with four half-twists in it"
+      },
+      {
+        "claim": "The result is no longer a Möbius strip but a two-sided strip of double length",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%B6bius_strip",
+        "quote": "Cutting the centerline produces a double-length two-sided (non-Möbius) strip"
+      },
+      {
+        "claim": "The Möbius strip has a single boundary curve (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%B6bius_strip",
+        "quote": "It has only a single boundary curve"
+      },
+      {
+        "claim": "The Möbius strip has only one side",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%B6bius_strip",
+        "quote": "the Möbius strip has only one side"
+      },
+      {
+        "claim": "Discovered by Listing and Möbius in 1858",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%B6bius_strip",
+        "quote": "it was discovered by Johann Benedict Listing and August Ferdinand Möbius in 1858"
+      },
+      {
+        "claim": "It already appears in Roman mosaics from the third century CE",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/M%C3%B6bius_strip",
+        "quote": "but it had already appeared in Roman mosaics from the third century CE"
+      }
+    ],
+    "overall": "pass"
+  }
+}

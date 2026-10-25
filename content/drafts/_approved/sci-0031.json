@@ -1,0 +1,120 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Why Pluto lost its planet status",
+    "angle": "The 2006 IAU decision and the three criteria for a planet"
+  },
+  "created_at": "2026-10-25T17:36:54.758Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0031",
+    "interest": "science",
+    "type": "story",
+    "title": "Why Pluto isn't a planet",
+    "body": {
+      "panels": [
+        {
+          "text": "Pluto kept its status as a planet until 2006."
+        },
+        {
+          "text": "The discovery of other large objects in the Kuiper belt, particularly Eris, sparked a debate about what a planet really is."
+        },
+        {
+          "text": "In August 2006 the International Astronomical Union set three criteria: a planet orbits the Sun, is massive enough to be nearly round, and has cleared the neighbourhood around its orbit."
+        },
+        {
+          "text": "Pluto meets the first two but not the third. So it became a dwarf planet."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0031-p1",
+        "kind": "mcq",
+        "question": "Which planet criterion does Pluto not meet?",
+        "options": [
+          "It orbits the Sun",
+          "It is nearly round",
+          "It has cleared the neighbourhood around its orbit"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "sci-0031-p2",
+        "kind": "tf",
+        "question": "True or false: the IAU's 2006 definition has three criteria for a planet.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "IAU definition of planet (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/IAU_definition_of_planet"
+      },
+      {
+        "title": "Planet (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Planet"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Pluto as photographed by NASA's New Horizons spacecraft",
+    "keywords": [
+      "Pluto",
+      "New Horizons",
+      "Pluto Charon",
+      "dwarf planet"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:42.484Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/IAU_definition_of_planet",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Planet",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Pluto kept its status as a planet until 2006",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planet",
+        "quote": "Pluto kept its planetary status, only officially losing it in 2006"
+      },
+      {
+        "claim": "Discovery of other large Kuiper belt objects, particularly Eris, sparked debate about what a planet is",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planet",
+        "quote": "The discovery of other large objects in the Kuiper belt, particularly Eris , spurred debate about how exactly to define a planet."
+      },
+      {
+        "claim": "In August 2006 the IAU set the planet definition",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planet",
+        "quote": "this characteristic was mandated as part of the IAU 's official definition of a planet in August 2006"
+      },
+      {
+        "claim": "Three criteria: orbits the Sun, nearly round, has cleared the neighbourhood around its orbit (body, probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IAU_definition_of_planet",
+        "quote": "is in orbit around the Sun , has sufficient mass to assume hydrostatic equilibrium (a nearly round shape), and has \" cleared the neighbourhood \" around its orbit"
+      },
+      {
+        "claim": "Pluto meets the first two criteria but not the third, so it is a dwarf planet (final panel, probe p1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IAU_definition_of_planet",
+        "quote": "fulfilling only the first two of these criteria (such as Pluto , which had hitherto been considered a planet) is classified as a dwarf planet and not a planet"
+      }
+    ],
+    "overall": "pass"
+  }
+}

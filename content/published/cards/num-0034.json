@@ -1,0 +1,59 @@
+{
+  "id": "num-0034",
+  "interest": "numbers",
+  "title": "Fibonacci's rabbits",
+  "probes": [
+    {
+      "id": "num-0034-p1",
+      "question": "Following the rules of Fibonacci's rabbit puzzle, how many pairs are there after 12 months?",
+      "kind": "estimate",
+      "answer": 233,
+      "unit": "pairs",
+      "min": 10,
+      "max": 5000,
+      "scale": "log"
+    },
+    {
+      "id": "num-0034-p2",
+      "question": "Fibonacci's rabbit puzzle appeared in his 1202 book Liber ____.",
+      "kind": "cloze",
+      "answer": "Abaci",
+      "accept": [
+        "Abbaci"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fibonacci's Rabbits (Ron Knott, University of Surrey)",
+      "url": "https://r-knott.surrey.ac.uk/Fibonacci/fibnat.html"
+    },
+    {
+      "title": "Liber Abaci (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Liber_Abaci"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:01.487Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "num-0034.webp",
+    "alt": "Flat illustration of squares of growing sizes in orange and teal arranged like a Fibonacci spiral.",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "question": "One newborn pair of rabbits. A pair can mate at one month old, and from the end of its second month a pair produces one new pair every month. The rabbits never die. How many pairs after one year?",
+    "unit": "pairs",
+    "min": 10,
+    "max": 5000,
+    "scale": "log",
+    "answer": 233,
+    "reveal": "233 pairs. Month by month the pair counts go 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233: each total is the sum of the previous two. This puzzle from Fibonacci's 1202 book Liber Abaci is why the sequence carries his name."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0030",
+  "created_at": "2026-10-25T17:38:13.394Z",
+  "queries": [
+    "mantis shrimp Odontodactylus scyllarus peacock mantis shrimp",
+    "mantis shrimp",
+    "mantis shrimp Odontodactylus scyllarus"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-1322905",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Odontodactylus scyllarus1.jpg",
+      "credit": "Jens Petersen / Wikimedia Commons",
+      "license": "CC BY 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Odontodactylus_scyllarus1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Odontodactylus_scyllarus1.jpg/960px-Odontodactylus_scyllarus1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3264,
+      "height": 2448,
+      "alt_suggestion": "Picture of peacock mantis shrimp (Odontodactylus scyllarus). Taken at Tasik Ria house reef. Manado, Indonesia.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-129847",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Shrimp-Man",
+      "credit": "Unknown Artist French, 19th century / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/129847",
+      "image_url": "https://www.artic.edu/iiif/2/44a1f982-54a0-c48b-a4df-b90360f3fa30/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of pen and brown ink, with traces of graphite, on cream wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-149181422",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Camarón mantis (Odontodactylus scyllarus), Anilao, Filipinas, 2023-08-24, DD 164.jpg",
+      "credit": "Diego Delso / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Camar%C3%B3n_mantis_(Odontodactylus_scyllarus),_Anilao,_Filipinas,_2023-08-24,_DD_164.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Camar%C3%B3n_mantis_%28Odontodactylus_scyllarus%29%2C_Anilao%2C_Filipinas%2C_2023-08-24%2C_DD_164.jpg/960px-Camar%C3%B3n_mantis_%28Odontodactylus_scyllarus%29%2C_Anilao%2C_Filipinas%2C_2023-08-24%2C_DD_164.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4964,
+      "height": 4964,
+      "alt_suggestion": "This species ranges in size from 3–18 centimetres (1.2–7.1 in) and is a burrower, constructing U-shaped holes in the loose substrate near the bases of coral reefs in water ranging from 3–40 metres (9.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-103918",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Peacock and Dragon",
+      "credit": "Designed by William Morris (English, 1834–1896) Produced by Morris & Co., London (English, 1875–1940) Queens Square, London, or Merton Abbey, London (English, 1881–1940) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/103918",
+      "image_url": "https://www.artic.edu/iiif/2/2287bfa7-89a3-8c59-78ed-0d8f5f43b199/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of wool, three-colored complementary weft, weft-float faced 3:1 twill weave; lined with linen, plain weave; two panels pieced.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-117431670",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Odontodactylus scyllarus Réunion.jpg",
+      "credit": "Cédric Péneau / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Odontodactylus_scyllarus_R%C3%A9union.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Odontodactylus_scyllarus_R%C3%A9union.jpg/960px-Odontodactylus_scyllarus_R%C3%A9union.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5290,
+      "height": 3527,
+      "alt_suggestion": "Odontodactylus scyllarus observed at la Réunion (western Indian ocean).",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"mantis shrimp Odontodactylus scyllarus peacock mantis shrimp\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"mantis shrimp\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"mantis shrimp Odontodactylus scyllarus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

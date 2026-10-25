@@ -1,0 +1,107 @@
+{
+  "draft_id": "num-0030",
+  "created_at": "2026-10-25T17:37:46.787Z",
+  "queries": [
+    "circle degrees Babylonian",
+    "circle",
+    "circle degrees"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-98957383",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cosine-sine-read-on-clock-to-show-how-displace-against-physical-space-or-force-of-gravity-powered-load.png",
+      "credit": "Thetreespyder / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cosine-sine-read-on-clock-to-show-how-displace-against-physical-space-or-force-of-gravity-powered-load.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Cosine-sine-read-on-clock-to-show-how-displace-against-physical-space-or-force-of-gravity-powered-load.png/960px-Cosine-sine-read-on-clock-to-show-how-displace-against-physical-space-or-force-of-gravity-powered-load.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1273,
+      "height": 1607,
+      "alt_suggestion": "Cosine-sine-read-on-clock-to-show-how-displace-against-physical-space-or-force-of-gravity-powered-load. Ancient Babylonians gave us 360 degree circle, they showed on 12 hour clock, that was also 12 mo",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA16399",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "The Inner Circle",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA16399",
+      "image_url": "https://images-assets.nasa.gov/image/PIA16399/PIA16399~medium.jpg",
+      "alt_suggestion": "The Inner Circle",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-92711826",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Zhuravlyne ozero.jpg",
+      "credit": "Medoffer / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zhuravlyne_ozero.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Zhuravlyne_ozero.jpg/960px-Zhuravlyne_ozero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 2250,
+      "alt_suggestion": "Zhuravlyne Lake is a hydrological monument of nature, Sumy Oblast, Ukraine.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-PIA04870",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Circles and Streaks",
+      "credit": "NASA/JPL/Malin Space Science Systems / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA04870",
+      "image_url": "https://images-assets.nasa.gov/image/PIA04870/PIA04870~small.jpg",
+      "alt_suggestion": "Circles and Streaks",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-4519741",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Circle Alaska panorama.jpg",
+      "credit": "JKBrooks85 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Circle_Alaska_panorama.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Circle_Alaska_panorama.jpg/960px-Circle_Alaska_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 8382,
+      "height": 1144,
+      "alt_suggestion": "Downtown Circle, Alaska, as seen on August 6, 2008.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "generated-degrees",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: degrees",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-degrees.png",
+      "alt_suggestion": "Illustration of a circle divided into twelve equal wedges in alternating colours, with small tick marks around the rim"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Media, Babylon and Persia - including a study of the Zend-Avesta or religion of Zoroaster, from the fall of Nineveh to the Persian war (1889) (14594529920).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Mail team leaving Circle City for Ft. Gibson, Alaska, c.1900.jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"circle degrees Babylonian\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"circle\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"circle degrees\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

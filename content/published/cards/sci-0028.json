@@ -1,0 +1,52 @@
+{
+  "id": "sci-0028",
+  "interest": "science",
+  "title": "Sharks are older than trees",
+  "probes": [
+    {
+      "id": "sci-0028-p1",
+      "question": "Which appeared first: the oldest shark relatives (about 439 million years ago) or the earliest known trees (about 385 million years ago)?",
+      "kind": "mcq",
+      "options": [
+        "Shark relatives",
+        "Trees"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0028-p2",
+      "question": "True or false: the earliest known trees lived about 385 million years ago.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Shark (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Shark"
+    },
+    {
+      "title": "Wattieza (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wattieza"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-25T17:47:14.280Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0028.webp",
+    "alt": "A blacktip reef shark swimming just below the surface in clear blue water.",
+    "kind": "photo",
+    "credit": "Charles J. Sharp / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Blacktip_reef_shark_(Carcharhinus_melanopterus)_Moorea.jpg"
+  },
+  "body": {
+    "claim": "Sharks' ancestors were swimming before there were any trees.",
+    "why": "The oldest shark relatives, known as spiny sharks, appeared around 439 million years ago. The earliest known trees, such as Wattieza, grew about 385 million years ago."
+  }
+}

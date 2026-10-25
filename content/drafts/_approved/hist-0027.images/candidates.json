@@ -1,0 +1,109 @@
+{
+  "draft_id": "hist-0027",
+  "created_at": "2026-10-25T17:36:31.200Z",
+  "queries": [
+    "Antikythera mechanism National Archaeological Museum Athens Fragment A",
+    "Antikythera mechanism",
+    "Antikythera mechanism National Archaeological Museum Athens"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-73180760",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Antikythera Mechanism - National Archaeological Museum, Athens by Joy of Museum.jpg",
+      "credit": "Joyofmuseums / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Antikythera_Mechanism_-_National_Archaeological_Museum,_Athens_by_Joy_of_Museum.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Antikythera_Mechanism_-_National_Archaeological_Museum%2C_Athens_by_Joy_of_Museum.jpg/960px-Antikythera_Mechanism_-_National_Archaeological_Museum%2C_Athens_by_Joy_of_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4772,
+      "height": 2385,
+      "alt_suggestion": "Antikythera Mechanism - - National Archaeological Museum, Athens by Joy of Museum - for details see www.joyofmuseums.com",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-191",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Mug",
+      "credit": "Greek; Athens / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/191",
+      "image_url": "https://www.artic.edu/iiif/2/e47ce711-82da-5bfa-21e6-37b65b7170df/full/843,/0/default.jpg",
+      "alt_suggestion": "Black glazed terracotta vessel with a short, curved handle on one side. Visible cracks indicate fragmentary repair.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-164647291",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Antikythera Fragment A (Front).webp",
+      "credit": "Logg Tandy / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Antikythera_Fragment_A_(Front).webp",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Antikythera_Fragment_A_%28Front%29.webp/960px-Antikythera_Fragment_A_%28Front%29.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3648,
+      "height": 3648,
+      "alt_suggestion": "Main w:en:Antikythera mechanism fragment (fragment A). The mechanism consists of a complex system of 30 wheels and plates with inscriptions relating to signs of the zodiac, months, eclipses and pan-He",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-164648451",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Antikythera Fragment A (Back).webp",
+      "credit": "Logg Tandy / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Antikythera_Fragment_A_(Back).webp",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Antikythera_Fragment_A_%28Back%29.webp/960px-Antikythera_Fragment_A_%28Back%29.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3405,
+      "height": 3554,
+      "alt_suggestion": "Fragment A (rear) of the Antikythera mechanism. Main fragment. The mechanism consists of a complex system of 32 wheels and plates bearing inscriptions relating to the signs of the zodiac and the month",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "0149 - Archaeological Museum, Athens - Reconstruction of the Antikythera mechanism - Photo by Giovanni D.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "0146 - Archaeological Museum, Athens - Reconstruction of the Antikythera mechanism - Photo by Giovanni D.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "0145 - Archaeological Museum, Athens - Reconstruction of the Antikythera mechanism - Photo by Giovanni D.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "0148 - Archaeological Museum, Athens - Reconstruction of the Antikythera mechanism - Photo by Giovanni D.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "0143 - Archaeological Museum, Athens - Antikythera mechanism - Photo by Giovanni Dall'Orto, Nov 11 2009.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "0142 - Archaeological Museum, Athens - Antikythera mechanism - Photo by Giovanni Dall'Orto, Nov 11 2009.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Antikythera mechanism National Archaeological Museum Athens Fragment A\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Antikythera mechanism\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Antikythera mechanism National Archaeological Museum Athens\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

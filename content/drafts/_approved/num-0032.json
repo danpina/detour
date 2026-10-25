@@ -1,0 +1,120 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Mersenne primes and the largest known prime",
+    "angle": "A prime with tens of millions of digits found by volunteers' computers"
+  },
+  "created_at": "2026-10-25T17:37:15.415Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0032",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "A prime with 41 million digits",
+    "body": {
+      "claim": "As of October 2026, the largest known prime number is 2^136,279,841 − 1, which has 41,024,320 digits.",
+      "why": "It is a Mersenne prime (one less than a power of two), found on 12 October 2024 on a cloud computer volunteered by Luke Durant to GIMPS, a project of volunteers who search for these primes. Mersenne numbers have a fast special test, the Lucas-Lehmer test, which makes giant ones checkable."
+    },
+    "probes": [
+      {
+        "id": "num-0032-p1",
+        "kind": "mcq",
+        "question": "Roughly how many digits does the largest known prime have?",
+        "options": [
+          "About 41 thousand",
+          "About 41 million",
+          "About 41 billion"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0032-p2",
+        "kind": "cloze",
+        "question": "The prime was found by the Great Internet ____ Prime Search (GIMPS).",
+        "answer": "Mersenne"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Largest known prime number (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Largest_known_prime_number"
+      },
+      {
+        "title": "Great Internet Mersenne Prime Search (GIMPS)",
+        "url": "https://www.mersenne.org/"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A simple flat illustration of many small laptops and home computers connected by glowing lines to one big glowing number, no text",
+    "keywords": [
+      "volunteer computing",
+      "network",
+      "computers",
+      "prime number"
+    ],
+    "real_photo_likely": false
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:42:02.489Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Largest_known_prime_number",
+        "fetched": true
+      },
+      {
+        "url": "https://www.mersenne.org/",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "As of October 2026 the largest known prime is 2^136,279,841 - 1 (title, claim)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Largest_known_prime_number",
+        "quote": "The largest known prime number as of October 2026 is 136,279,841",
+        "note": "Page text renders the exponent without the caret; the digit count is in the same sentence."
+      },
+      {
+        "claim": "41,024,320 digits (claim, probe 1: about 41 million)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Largest_known_prime_number",
+        "quote": "a number that has 41,024,320 digits when written in the decimal system"
+      },
+      {
+        "claim": "Found on 12 October 2024 on a cloud-based virtual machine volunteered by Luke Durant to GIMPS",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Largest_known_prime_number",
+        "quote": "It was found on October 12, 2024, on a cloud-based virtual machine volunteered by Luke Durant"
+      },
+      {
+        "claim": "GIMPS is a project of volunteers who search for Mersenne primes (name: Great Internet Mersenne Prime Search, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://www.mersenne.org/",
+        "quote": "GIMPS is a collaborative project of volunteers who search for Mersenne prime numbers"
+      },
+      {
+        "claim": "Mersenne numbers are one less than a power of two and can be verified by a specialized test faster than the general one",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Largest_known_prime_number",
+        "quote": "numbers that are one less than a power of two , because they can be verified by a specialized primality test that is faster than the general one"
+      },
+      {
+        "claim": "Primality of the record number was confirmed with a Lucas-Lehmer test",
+        "verdict": "pass",
+        "source_url": "https://www.mersenne.org/",
+        "quote": "confirmed primality with a Lucas-Lehmer test"
+      },
+      {
+        "claim": "The digit count of 2^136279841-1 is about 41 million",
+        "verdict": "pass",
+        "note": "Verified by calculation: floor(136279841 * log10(2)) + 1 = 41024320 (double-precision estimate; matches the 41,024,320 stated by both sources)."
+      }
+    ],
+    "overall": "pass"
+  }
+}

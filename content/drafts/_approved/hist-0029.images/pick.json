@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-80149000",
+  "alt": "Long rows of terracotta warriors standing in an excavated trench in Pit 1 of the Terracotta Army near Xi'an.",
+  "fits": true,
+  "note": "Clean view of the rows; cand-1 is portrait but has a blurry blob in the corner.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

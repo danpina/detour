@@ -1,0 +1,118 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Christmas Truce of 1914",
+    "angle": "Soldiers on the Western Front stopped fighting for a night"
+  },
+  "created_at": "2026-10-25T17:35:51.373Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0028",
+    "interest": "history",
+    "type": "estimate",
+    "title": "The night the guns went quiet",
+    "body": {
+      "question": "In December 1914, unofficial ceasefires broke out along the Western Front around Christmas. Roughly how many British and German troops were involved?",
+      "unit": "troops",
+      "min": 100,
+      "max": 10000000,
+      "scale": "log",
+      "answer": 100000,
+      "reveal": "Roughly 100,000 British and German troops took part. They sang carols, met in no man's land, swapped small gifts like food and tobacco, and held joint burial ceremonies. Some played football too."
+    },
+    "probes": [
+      {
+        "id": "hist-0028-p1",
+        "kind": "tf",
+        "question": "True or false: in the Christmas truce, soldiers from both sides exchanged small gifts in no man's land.",
+        "answer": true
+      },
+      {
+        "id": "hist-0028-p2",
+        "kind": "mcq",
+        "question": "How long after the war began did the truce happen?",
+        "options": [
+          "Five days",
+          "Five weeks",
+          "Five months",
+          "Five years"
+        ],
+        "answer": 2
+      }
+    ],
+    "sources": [
+      {
+        "title": "Christmas truce (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Christmas_truce"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "British and German soldiers meeting in no man's land at Christmas 1914, a period photograph",
+    "keywords": [
+      "Christmas truce 1914",
+      "no man's land",
+      "Northumberland Hussars",
+      "Western Front Christmas"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-25T17:40:25.117Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Christmas_truce",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Estimate: roughly 100,000 British and German troops involved",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Christmas_truce",
+        "quote": "Roughly 100,000 British and German troops were involved in the informal cessations of hostility along the Western Front"
+      },
+      {
+        "claim": "Question: widespread unofficial ceasefires around Christmas 1914 on the Western Front",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Christmas_truce",
+        "quote": "The Christmas truce was a series of widespread unofficial ceasefires mainly along the Western Front of the First World War around Christmas in 1914"
+      },
+      {
+        "claim": "Reveal: they sang carols",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Christmas_truce",
+        "quote": "then continued the celebration by singing Christmas carols"
+      },
+      {
+        "claim": "Reveal/probe 1: met in no man's land and swapped small gifts like food and tobacco",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Christmas_truce",
+        "quote": "there were excursions across No Man's Land, where small gifts were exchanged, such as food, tobacco, alcohol, and souvenirs"
+      },
+      {
+        "claim": "Reveal: joint burial ceremonies",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Christmas_truce",
+        "quote": "There were joint burial ceremonies and prisoner swaps"
+      },
+      {
+        "claim": "Reveal: some played football",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Christmas_truce",
+        "quote": "They also played football against each other"
+      },
+      {
+        "claim": "Probe 2: the truce happened five months after the war began",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Christmas_truce",
+        "quote": "The truce occurred five months after hostilities had begun"
+      }
+    ],
+    "overall": "pass"
+  }
+}

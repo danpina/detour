@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-117431670",
+  "alt": "A colourful peacock mantis shrimp with striped green body and red legs standing on dark volcanic sand.",
+  "fits": true,
+  "note": "CC BY-SA 4.0, striking colours on dark background.",
+  "crop": {
+    "fx": 0.6,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-182676439",
+  "alt": "Black-and-white 1914 photograph of British and German soldiers standing together in a muddy field during the Christmas Truce.",
+  "fits": true,
+  "note": "IWM Q 50719, public domain; wide image so crop on the group.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.55,
+    "zoom": 1.3
+  }
+}

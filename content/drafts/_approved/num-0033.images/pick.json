@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-50359",
+  "alt": "A twisted green paper band forming a Mobius strip on a pale surface.",
+  "fits": true,
+  "note": "Real paper Mobius strip, CC BY-SA 3.0, exactly the brief.",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}
