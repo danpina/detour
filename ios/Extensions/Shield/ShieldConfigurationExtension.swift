@@ -28,15 +28,14 @@ final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
     /// iOS hands over the app's token (and sometimes nothing else). If the user said in Settings what that token is, use that.
     private func remember(_ application: Application) {
         let store = GuardStore.shared
+        // First thing, before anything that could fail: proves the extension ran at all.
+        store.log("shield screen: asked")
         let bundle = application.bundleIdentifier
         let name = application.localizedDisplayName
         let key = application.token.flatMap { GuardShield.tokenKey(for: $0) }
         let mapped = store.identify(tokenKey: key, bundle: bundle, name: name)
-        // Log what the shield was told, at most every 5 seconds.
-        if store.shieldLogStamp.map({ Date().timeIntervalSince($0) > 5 }) ?? true {
-            store.shieldLogStamp = Date()
-            store.log("shield screen: bundle=" + (bundle ?? "nil") + " name=" + (name ?? "nil") + " token=" + GuardShield.shortKey(key) + " mapped=" + (mapped ?? "nil"))
-        }
+        // Log what the shield was told, every time (the extension is only asked a few times per open).
+        store.log("shield screen: bundle=" + (bundle ?? "nil") + " name=" + (name ?? "nil") + " token=" + GuardShield.shortKey(key) + " mapped=" + (mapped ?? "nil"))
         store.shieldedTokenKey = key
         if let mapped {
             store.recordShielded(bundle: mapped, name: ReturnApps.displayName(for: mapped))

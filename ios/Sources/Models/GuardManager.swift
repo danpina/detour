@@ -88,7 +88,7 @@ final class GuardManager {
     /// Works out which app each guarded token is, from whatever iOS tells us (its bundle or name), and remembers it.
     /// Apps it cannot tell stay unnamed until the shield sees them or the user says. Logs what iOS said, for debugging.
     /// Bump when the guard code changes, so a pasted log shows which version of it was running.
-    private static let codeTag = "guided-pick-v3"
+    private static let codeTag = "guided-pick-v3-diag"
     @ObservationIgnored private static var loggedBuild = false
 
     private func logBuildOnce() {
