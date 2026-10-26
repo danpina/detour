@@ -50,10 +50,10 @@ export function shouldShowRecap(now: number, cards: number, seenWeek: string | n
   return seenWeek !== weekKey(dayKey(now));
 }
 
-export type HomeInfo = { dueCount: number; backupNudge: boolean; sessions: number; weekRecap: Recap | null };
+export type HomeInfo = { dueCount: number; backupNudge: boolean; sessions: number; weekRecap: Recap | null; mathLevel: number };
 
 export async function loadHomeInfo(now = Date.now()): Promise<HomeInfo> {
-  const [reviews, sessions, events, streakState] = await Promise.all([store.getReviews(), store.getSessions(), store.getEvents(), store.getStreak()]);
+  const [reviews, sessions, events, streakState, skills] = await Promise.all([store.getReviews(), store.getSessions(), store.getEvents(), store.getStreak(), store.getSkills()]);
   const streak = displayStreak(streakState ?? emptyStreak(), dayKey(now)).current;
   const recap = weeklyRecap(events, streak, now);
   let seen: string | null = null;
@@ -66,6 +66,7 @@ export async function loadHomeInfo(now = Date.now()): Promise<HomeInfo> {
     dueCount: dueReviews(ALL_CARDS, reviews, now).length,
     backupNudge: shouldNudgeBackup(sessions.length, getLastBackup(), now),
     sessions: sessions.length,
+    mathLevel: skills.find((s) => s.track_id === "mental-math")?.level ?? 1,
     weekRecap: shouldShowRecap(now, recap.cards, seen) ? recap : null,
   };
 }

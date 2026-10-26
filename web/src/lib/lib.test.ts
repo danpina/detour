@@ -3,6 +3,8 @@ import type { Card } from "@detour/content";
 import { ALL_CARDS, imageUrl } from "./content";
 import { closeness, closenessLabel, positionOf, tidy, valueAt } from "./scoring";
 import { pickSet } from "./pickSet";
+import { GAME_IDS } from "../games/ids";
+import { mathRound, pickGames } from "./session";
 
 const fake = (id: string, interest: Card["interest"], type: Card["type"]) => ({ id, interest, type }) as Card;
 
@@ -70,5 +72,27 @@ describe("pickSet", () => {
     expect(set.every((c) => c.interest === "tech")).toBe(true);
     const chosen = pickSet(cards, ["history", "money"], new Set(["hist-1", "hist-2"]), 5);
     expect(chosen.every((c) => c.interest === "history" || c.interest === "money")).toBe(true);
+  });
+});
+describe("the three rounds", () => {
+  it("a games round has distinct games", () => {
+    const games = pickGames(3, () => 0.3);
+    expect(games).toHaveLength(3);
+    expect(new Set(games).size).toBe(3);
+    expect(pickGames(100)).toHaveLength(GAME_IDS.length);
+  });
+
+  it("a math round is two drills at the player's level: mental math, then the other skill practised least recently", () => {
+    const skills = [
+      { track_id: "mental-math" as const, level: 4, recent_results: [], attempts_total: 0, last_at: 5 },
+      { track_id: "estimation" as const, level: 2, recent_results: [], attempts_total: 0, last_at: 1 },
+    ];
+    const items = mathRound(skills, () => 7);
+    expect(items).toHaveLength(2);
+    expect(items[0]).toEqual({ kind: "drill", drill: { track: "mental-math", level: 4, seed: 7 } });
+    expect(items[1]).toEqual({ kind: "drill", drill: { track: "estimation", level: 2, seed: 7 } });
+    // With nothing practised yet, everything starts at level 1.
+    const fresh = mathRound([], () => 1);
+    expect(fresh.every((i) => i.kind === "drill" && i.drill.level === 1)).toBe(true);
   });
 });

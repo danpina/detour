@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
 import { ALL_CARDS } from "../lib/content";
 import { loadHomeInfo, type HomeInfo } from "../lib/home";
+import type { RoundKind } from "../lib/session";
 import { isReviewer, seenInReview } from "../lib/reviewer";
 import { canPromptInstall, dismissInstall, installDismissed, installHint, isInstalled, isIos, promptInstall, type InstallHint } from "../lib/install";
 
-type Props = { onStart: (feed: boolean) => void; onOpenSettings: () => void; onOpenProgress: () => void; onReview: () => void };
+type Props = { onStart: (round: RoundKind) => void; onOpenSettings: () => void; onOpenProgress: () => void; onReview: () => void };
+
+const ROUNDS: { kind: RoundKind; emoji: string; title: string; blurb: (info: HomeInfo | null) => string }[] = [
+  { kind: "learning", emoji: "📚", title: "Learning round", blurb: (i) => (i && i.dueCount > 0 ? `Five small cards. ${i.dueCount} to check if they stuck.` : "Five small cards to learn something new.") },
+  { kind: "math", emoji: "🔢", title: "Math round", blurb: (i) => `Quick sums and puzzles · level ${i?.mathLevel ?? 1}` },
+  { kind: "games", emoji: "🎮", title: "Game round", blurb: () => "Three quick games: language, map, chess and more." },
+];
 
 export function HomeScreen({ onStart, onOpenSettings, onOpenProgress, onReview }: Props) {
   const [info, setInfo] = useState<HomeInfo | null>(null);
@@ -23,25 +30,29 @@ export function HomeScreen({ onStart, onOpenSettings, onOpenProgress, onReview }
     return () => window.removeEventListener("detour:install-available", compute);
   }, [info]);
 
-  const due = info?.dueCount ?? 0;
   const toReview = isReviewer() ? ALL_CARDS.filter((c) => c.review?.by === "agent" && !seenInReview().has(c.id)).length : 0;
   const card = "mt-4 rounded-2xl border border-dashed border-neutral-300 px-4 py-3 text-left text-sm dark:border-neutral-700";
 
   return (
     <div className="flex h-full flex-col justify-center overflow-auto px-8 pb-20 pt-8 text-center">
       <h1 className="text-3xl font-semibold tracking-tight">Quick one?</h1>
-      <p className="mt-2 text-neutral-500 dark:text-neutral-400">Five small cards, about a minute.</p>
+      <p className="mt-2 text-neutral-500 dark:text-neutral-400">Pick a round. About a minute.</p>
 
-      {due > 0 && (
-        <p className="mt-5 rounded-2xl bg-teal-50 px-4 py-3 text-sm text-teal-900 dark:bg-teal-950 dark:text-teal-100">
-          {due === 1 ? "1 thing is ready" : `${due} things are ready`} to check if it stuck.
-        </p>
-      )}
-
-      <button onClick={() => onStart(false)} className="mt-8 w-full rounded-2xl bg-teal-600 py-4 text-lg font-semibold text-white active:scale-[0.98]">
-        Let's go
-      </button>
-
+      <div className="mt-7 space-y-3 text-left">
+        {ROUNDS.map((r) => (
+          <button
+            key={r.kind}
+            onClick={() => onStart(r.kind)}
+            className="flex w-full items-center gap-4 rounded-2xl border border-neutral-200 bg-white p-4 active:scale-[0.99] dark:border-neutral-800 dark:bg-neutral-900"
+          >
+            <span className="text-3xl">{r.emoji}</span>
+            <span className="flex-1">
+              <span className="block text-lg font-semibold">{r.title}</span>
+              <span className="block text-sm text-neutral-500 dark:text-neutral-400">{r.blurb(info)}</span>
+            </span>
+          </button>
+        ))}
+      </div>
 
       {isReviewer() && (
         <button onClick={onReview} disabled={toReview === 0} className="mt-5 rounded-2xl border-2 border-rose-500 px-4 py-3 text-sm font-medium text-rose-700 disabled:opacity-50 dark:text-rose-300">

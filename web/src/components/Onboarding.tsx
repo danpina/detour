@@ -28,7 +28,8 @@ export function Onboarding({ initial = [], onDone, editing = false, onCancel, ey
       <p className="mt-2 text-neutral-500 dark:text-neutral-400">Pick at least {MIN}. You can change this any time.</p>
 
       <div className="mt-6 grid flex-1 grid-cols-2 content-start gap-3 overflow-auto pb-4">
-        {INTERESTS.map((i) => {
+        {/* Games and math have their own rounds on the home screen, so they are not topics to pick. */}
+        {INTERESTS.filter((i) => i !== "games").map((i) => {
           const on = picked.includes(i);
           return (
             <button

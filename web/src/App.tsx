@@ -16,15 +16,15 @@ import type { SessionItem } from "./lib/engine";
 import { EVENT_RETENTION_DAYS } from "./lib/progress";
 import { ALL_CARDS } from "./lib/content";
 import { seenInReview } from "./lib/reviewer";
-import { nextSet } from "./lib/session";
+import { nextSet, type RoundKind } from "./lib/session";
 
 type Screen =
   | { name: "loading" }
   | { name: "onboarding" }
   | { name: "interests" }
   | { name: Tab }
-  | { name: "session"; items: SessionItem[]; run: number; feed: boolean; dryRun?: boolean }
-  | { name: "end"; learned: number };
+  | { name: "session"; items: SessionItem[]; run: number; feed: boolean; round: RoundKind; dryRun?: boolean }
+  | { name: "end"; learned: number; round: RoundKind };
 
 export function App() {
   const [screen, setScreen] = useState<Screen>({ name: "loading" });
@@ -51,11 +51,11 @@ export function App() {
     void store.pruneEvents(EVENT_RETENTION_DAYS * 86_400_000).then(load);
   }, [load]);
 
-  /** Starts a 5-card set; in feed mode the next set follows seamlessly (free scroll = same engine, endless). */
-  const startSet = useCallback(async (ints: Interest[], feed: boolean) => {
-    const items = await nextSet(ints);
+  /** Starts a round (learning, math or games); in feed mode the next set follows seamlessly (free scroll = same engine, endless). */
+  const startSet = useCallback(async (ints: Interest[], feed: boolean, round: RoundKind = "learning") => {
+    const items = await nextSet(ints, round);
     track("session.started", { mode: feed ? "feed" : "set", cards: items.length });
-    setScreen((s) => ({ name: "session", items, feed, run: (s.name === "session" ? s.run : 0) + 1 }));
+    setScreen((s) => ({ name: "session", items, feed, round, run: (s.name === "session" ? s.run : 0) + 1 }));
   }, []);
 
   /** Reviewer mode: a batch of agent-approved cards not looked at yet. Nothing is recorded as progress. */
@@ -65,7 +65,7 @@ export function App() {
       .slice(0, 12)
       .map((card) => ({ kind: "new", card }));
     if (!items.length) return;
-    setScreen((s) => ({ name: "session", items, feed: false, dryRun: true, run: (s.name === "session" ? s.run : 0) + 1 }));
+    setScreen((s) => ({ name: "session", items, feed: false, round: "learning", dryRun: true, run: (s.name === "session" ? s.run : 0) + 1 }));
   }, []);
 
   /** Saving topics from Settings: keep everything else and go back to Settings (no new set is started). */
@@ -94,7 +94,7 @@ export function App() {
 
         {screen.name === "interests" && <Onboarding initial={interests} editing onDone={saveInterests} onCancel={() => setScreen({ name: "settings" })} />}
 
-        {screen.name === "home" && <HomeScreen onReview={startReview} onStart={(feed) => startSet(interests, feed)} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
+        {screen.name === "home" && <HomeScreen onReview={startReview} onStart={(round) => startSet(interests, false, round)} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
 
         {screen.name === "games" && <GamesScreen />}
 
@@ -110,13 +110,13 @@ export function App() {
             items={screen.items}
             source="free"
             dryRun={screen.dryRun}
-            onFinish={(n) => (screen.dryRun ? setScreen({ name: "home" }) : screen.feed ? void startSet(interests, true) : setScreen({ name: "end", learned: n }))}
+            onFinish={(n) => (screen.dryRun ? setScreen({ name: "home" }) : screen.feed ? void startSet(interests, true, screen.round) : setScreen({ name: "end", learned: n, round: screen.round }))}
             onExit={screen.feed ? () => setScreen({ name: "home" }) : undefined}
           />
         )}
 
         {screen.name === "end" && (
-          <EndScreen learned={screen.learned} onAnother={() => startSet(interests, false)} onProgress={() => setScreen({ name: "progress" })} onDone={() => setScreen({ name: "home" })} />
+          <EndScreen learned={screen.learned} round={screen.round} onAnother={() => startSet(interests, false, screen.round)} onProgress={() => setScreen({ name: "progress" })} onDone={() => setScreen({ name: "home" })} />
         )}
 
         <Toaster />

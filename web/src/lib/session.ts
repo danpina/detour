@@ -1,6 +1,6 @@
 import type { Interest } from "@detour/content";
 import { ALL_CARDS } from "./content";
-import { emptyProgress, applyResults, nextTrack, type DrillSpec, type SkillProgress, type TrackId } from "./drills";
+import { emptyProgress, applyResults, nextTrack, TRACK_IDS, type SkillProgress, type TrackId } from "./drills";
 import { buildSession, engagementFrom, DEFAULT_SET_SIZE, type SessionItem } from "./engine";
 
 /** When each card was last shown, from the local view events. */
@@ -14,30 +14,41 @@ export function lastShownFrom(events: { card_id: string; event: string; at: numb
 }
 import { applyReview, newReview, ratingFor } from "./fsrs";
 import { store } from "./db";
-import { randomGameId } from "../games/ids";
+import { GAME_IDS, type GameId } from "../games/ids";
 import { ALL_CARDS as CARDS } from "./content";
 import { dayKey, displayStreak, emptyStreak, knowledgeMap, recallStats, recordDay, skillSummary, weeklyRecap } from "./progress";
 
-export const DEFAULT_EXTRAS_EVERY = 3;
+/** The three kinds of round on the home screen. Each has its own place: cards, math, or games. */
+export type RoundKind = "learning" | "math" | "games";
 
-/** Loads local history and builds the next set. Used for quick sets and for each page of the free-scroll feed. */
-export async function nextSet(interests: Interest[], sizeOverride?: number): Promise<SessionItem[]> {
+/** How many games a games round plays. Each game plays the round size chosen on the Games screen. */
+export const GAMES_PER_ROUND = 3;
+
+/** Distinct random games, so a round never plays the same one twice. */
+export function pickGames(count = GAMES_PER_ROUND, rng: () => number = Math.random): GameId[] {
+  const pool = [...GAME_IDS];
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [pool[i], pool[j]] = [pool[j]!, pool[i]!];
+  }
+  return pool.slice(0, count);
+}
+
+/** A math round: a mental-math drill, then one more skill (the one practised least recently). Each at the player's level. */
+export function mathRound(skills: SkillProgress[], seed: () => number = () => Math.floor(Math.random() * 2 ** 31)): SessionItem[] {
+  const levelOf = (track: TrackId) => skills.find((s) => s.track_id === track)?.level ?? 1;
+  const second = nextTrack(skills, TRACK_IDS.filter((t) => t !== "mental-math"));
+  return (["mental-math", second] as TrackId[]).map((track) => ({ kind: "drill" as const, drill: { track, level: levelOf(track), seed: seed() } }));
+}
+
+/** Loads local history and builds the next round of the given kind. Used for quick rounds and for each page of the free-scroll feed. */
+export async function nextSet(interests: Interest[], kind: RoundKind = "learning", sizeOverride?: number): Promise<SessionItem[]> {
+  if (kind === "games") return pickGames().map((game) => ({ kind: "game" as const, game }));
+  if (kind === "math") return mathRound(await store.getSkills());
   const settings = await store.getSettings();
   const setSize = sizeOverride ?? settings?.set_size ?? DEFAULT_SET_SIZE;
-  // The skill round at the end of a set: mental math when it is turned on in Settings, estimation when it is one of the
-  // chosen interests. With both, they alternate; with neither there is no skill round.
-  // They do not come with every set: every Nth set (N is a setting, 3 by default), and a game on the set after a skill round.
-  const every = settings?.extras_every ?? DEFAULT_EXTRAS_EVERY;
-  const setNumber = (await store.getSessions()).length;
-  const skillDue = setNumber % every === 0;
-  const gameDue = interests.includes("games") && setNumber % every === (every > 1 ? 1 : 0);
-  const allowed: TrackId[] = [];
-  if (skillDue && settings?.drills) allowed.push("mental-math");
-  if (skillDue && interests.includes("estimation")) allowed.push("estimation");
-  const [reviews, completed, events, skills] = await Promise.all([store.getReviews(), store.completedCardIds(), store.getEvents(), store.getSkills()]);
-  const track = allowed.length ? nextTrack(skills, allowed) : undefined;
-  const level = skills.find((s) => s.track_id === track)?.level ?? 1;
-  const drill: DrillSpec | undefined = track ? { track, level, seed: Math.floor(Math.random() * 2 ** 31) } : undefined;
+  const [reviews, completed, events] = await Promise.all([store.getReviews(), store.completedCardIds(), store.getEvents()]);
+  // A learning round is cards only: reviews of what you learned, and new cards from your topics.
   return buildSession({
     cards: ALL_CARDS,
     reviews,
@@ -47,8 +58,6 @@ export async function nextSet(interests: Interest[], sizeOverride?: number): Pro
     lastShown: lastShownFrom(events),
     now: Date.now(),
     setSize,
-    makeDrill: drill ? () => drill : undefined,
-    makeGame: gameDue ? () => randomGameId() : undefined,
   });
 }
 
