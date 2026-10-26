@@ -23,7 +23,7 @@ struct DrillView: View {
 
     private var gradient: LinearGradient {
         LinearGradient(
-            colors: spec.track == .mentalMath ? [Color(red: 0.19, green: 0.18, blue: 0.51), .black] : [Color(red: 0.02, green: 0.37, blue: 0.27), .black],
+            colors: spec.track != .estimation ? [Color(red: 0.19, green: 0.18, blue: 0.51), .black] : [Color(red: 0.02, green: 0.37, blue: 0.27), .black],
             startPoint: .topLeading, endPoint: .bottomTrailing
         )
     }
@@ -81,11 +81,12 @@ struct DrillView: View {
                     ProgressViewBar(fraction: remaining / limit)
                 }
                 Text(problem.prompt)
-                    .font(.system(size: spec.track == .mentalMath ? 48 : 22, weight: .semibold))
+                    .font(.system(size: spec.track != .estimation ? (problem.prompt.count <= 14 ? 48 : 30) : 22, weight: .semibold))
+                    .minimumScaleFactor(0.6)
                     .multilineTextAlignment(.center)
                     .padding(.top, 12)
-                TextField(spec.track == .mentalMath ? "Your answer" : "Your best guess (try 5k or 2m)", text: $input)
-                    .keyboardType(spec.track == .mentalMath ? .numberPad : .numbersAndPunctuation)
+                TextField(spec.track != .estimation ? "Your answer" : "Your best guess (try 5k or 2m)", text: $input)
+                    .keyboardType(spec.track != .estimation ? .decimalPad : .numbersAndPunctuation)
                     .multilineTextAlignment(.center)
                     .font(.title2)
                     .padding(14)

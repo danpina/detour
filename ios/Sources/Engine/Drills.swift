@@ -27,8 +27,10 @@ struct SeededRng {
     }
 }
 
+/// The order here is the order skills are listed and tied: the same as the web app.
 enum TrackId: String, Codable, CaseIterable, Hashable {
     case mentalMath = "mental-math"
+    case algebra = "algebra"
     case estimation = "estimation"
 }
 
@@ -73,9 +75,41 @@ enum Drills {
                 "Easy percentages: 10%, 25%, 50%",
                 "Percentages: 5%, 15%, 20%, 30%",
                 "Squares ending in 5 and near-mirror products",
+                "Squares up to 20 × 20",
+                "Powers: cubes and powers of 2",
+                "Square roots",
+                "Multiply by 12, 15, 20, 30, 40, 50",
+                "Multiply a 3-digit number by a single digit",
+                "Fractions of numbers: ¾ of 80",
+                "Percentage up and down: 20% more, 25% less",
+                "What percent is it? 45 of 180",
+                "Order of operations",
+                "Averages",
+                "Adding and subtracting in any order",
+                "Remainders",
+                "Decimals: 0.6 × 0.7",
+                "Multiplying numbers near 100",
             ],
             problems: 3,
             timeLimitSeconds: 45
+        ),
+        .algebra: TrackInfo(
+            name: "Algebra & calculus",
+            blurb: "Equations, slopes, derivatives and areas",
+            levels: [
+                "Solve x + a = b",
+                "Solve kx = b and x ÷ k = b",
+                "Solve ax + b = c",
+                "Solve ax − b = c",
+                "Slope through two points",
+                "Evaluate ax² + b",
+                "Quadratics: the larger root",
+                "Derivatives: ax^n at a point",
+                "Derivatives: ax² + bx at a point",
+                "Integrals: area under ax^n",
+            ],
+            problems: 3,
+            timeLimitSeconds: 60
         ),
         .estimation: TrackInfo(
             name: "Estimation",
@@ -99,8 +133,11 @@ enum Drills {
             guardCount += 1
             let p: DrillProblem
             if spec.track == .mentalMath {
-                let lv = mentalMathLevel(spec.level, position: out.count, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.mentalMath).maxLevel, &rng)
                 p = mentalMath(lv, &rng)
+            } else if spec.track == .algebra {
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.algebra).maxLevel, &rng)
+                p = algebra(lv, &rng)
             } else {
                 p = estimation(spec.level, &rng)
             }
@@ -115,14 +152,26 @@ enum Drills {
 
     /// The level of the problem at `position` in a round. The first problem is at the player's level; the others are
     /// drawn from that level and the three below it, so a round mixes sums, differences, times and division.
-    private static func mentalMathLevel(_ level: Int, position: Int, _ r: inout SeededRng) -> Int {
-        let top = min(max(level, 1), 12)
+    private static func mentalMathLevel(_ level: Int, position: Int, maxLevel: Int, _ r: inout SeededRng) -> Int {
+        let top = min(max(level, 1), maxLevel)
         if position == 0 { return top }
         return r.int(max(1, top - 3), top)
     }
 
+    private static let superscripts = ["⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹"]
+
+    /// A small whole number as superscript digits: 3 becomes ³. 1 gives nothing, so "x¹" reads as "x".
+    private static func sup(_ n: Int) -> String {
+        if n == 1 { return "" }
+        return String(n).compactMap { Int(String($0)) }.map { superscripts[$0] }.joined()
+    }
+
+    private static let powers: [(Int, Int)] = [
+        (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (2, 10), (3, 3), (3, 4), (3, 5), (4, 3), (4, 4), (5, 3), (5, 4), (6, 3), (7, 3),
+    ]
+
     private static func mentalMath(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), 12) {
+        switch min(max(level, 1), info(.mentalMath).maxLevel) {
         case 1:
             let a = r.int(11, 89), b = r.int(11, 98)
             return DrillProblem(prompt: "\(a) + \(b)", answer: Double(a + b), hint: "Add the tens, then the ones.")
@@ -180,7 +229,7 @@ enum Drills {
                 30: "30% is three times 10%.",
             ]
             return DrillProblem(prompt: "\(p)% of \(base)", answer: Double(base * p) / 100, hint: hints[p])
-        default:
+        case 12:
             if r.next() < 0.5 {
                 let t = r.int(1, 9)
                 let a = t * 10 + 5
@@ -196,6 +245,126 @@ enum Drills {
                 prompt: "\(mid - d) × \(mid + d)",
                 answer: Double(mid * mid - d * d),
                 hint: "It is \(mid)² − \(d)², because (m − d)(m + d) = m² − d²."
+            )
+        case 13:
+            let a = r.int(11, 20)
+            return DrillProblem(prompt: "\(a)²", answer: Double(a * a), hint: "\(a)² = \(a - 10) × \(a + 10) + 100 = \((a - 10) * (a + 10)) + 100.")
+        case 14:
+            let (b, e) = r.pick(powers)
+            var value = 1
+            for _ in 0..<e { value *= b }
+            return DrillProblem(prompt: "\(b)\(sup(e))", answer: Double(value), hint: "Build it up: \(b) multiplied by itself \(e) times. Keep the running total in your head.")
+        case 15:
+            let n = r.int(4, 20)
+            return DrillProblem(prompt: "√\(n * n)", answer: Double(n), hint: "Which number times itself makes \(n * n)? It is between \(n / 10 * 10) and \(n / 10 * 10 + 10).")
+        case 16:
+            let a = r.int(13, 49)
+            let m = r.pick([12, 15, 20, 30, 40, 50])
+            let hints = [
+                12: "× 12 is × 10 plus × 2.",
+                15: "× 15 is × 10 plus half of that again.",
+                20: "× 20 is double it, then × 10.",
+                30: "× 30 is × 3, then × 10.",
+                40: "× 40 is × 4, then × 10.",
+                50: "× 50 is half of × 100.",
+            ]
+            return DrillProblem(prompt: "\(a) × \(m)", answer: Double(a * m), hint: hints[m])
+        case 17:
+            let a = r.int(112, 498)
+            let b = r.int(2, 9)
+            return DrillProblem(prompt: "\(a) × \(b)", answer: Double(a * b), hint: "Split it: \(a / 100 * 100) × \(b), \(a % 100 / 10 * 10) × \(b) and \(a % 10) × \(b), then add.")
+        case 18:
+            let den = r.pick([3, 4, 5, 8])
+            let num = r.int(1, den - 1)
+            let base = den * r.int(2, 12)
+            return DrillProblem(prompt: "\(num)/\(den) of \(base)", answer: Double(base / den * num), hint: "Find 1/\(den) first: \(base / den). Then times \(num).")
+        case 19:
+            let p = r.pick([10, 20, 25, 50])
+            let base = r.int(2, 20) * 20
+            let up = r.next() < 0.5
+            let change = base * p / 100
+            return DrillProblem(
+                prompt: "\(base) \(up ? "increased" : "decreased") by \(p)%",
+                answer: Double(up ? base + change : base - change),
+                hint: "Find \(p)% of \(base), which is \(change), then \(up ? "add" : "take away") it."
+            )
+        case 20:
+            let p = r.pick([10, 20, 25, 40, 50, 60, 75])
+            let whole = r.int(2, 12) * 20
+            let part = whole * p / 100
+            return DrillProblem(prompt: "\(part) is what % of \(whole)?", answer: Double(p), hint: "Divide the part by the whole: \(part) ÷ \(whole). Then turn it into a percent.")
+        case 21:
+            if r.next() < 0.5 {
+                let a = r.int(2, 9), b = r.int(2, 9), c = r.int(2, 9)
+                return DrillProblem(prompt: "\(a) + \(b) × \(c)", answer: Double(a + b * c), hint: "Multiply first, then add.")
+            }
+            let a = r.int(2, 9), b = r.int(2, 9), c = r.int(2, 9), d = r.int(1, 8)
+            return DrillProblem(prompt: "(\(a) + \(b)) × \(c) − \(d)", answer: Double((a + b) * c - d), hint: "Brackets first, then multiply, then subtract.")
+        case 22:
+            let m = r.int(10, 60), x = r.int(1, 9), y = r.int(1, 9)
+            return DrillProblem(prompt: "Average of \(m - x), \(m + y) and \(m + x - y)", answer: Double(m), hint: "Guess a middle value, then see how far each number is above or below it.")
+        case 23:
+            let b = r.int(5, 30), c = r.int(5, 30)
+            let a = r.int(b + c + 1, b + c + 40)
+            return DrillProblem(prompt: "−\(b) + \(a) − \(c)", answer: Double(a - b - c), hint: "Start from \(a), then take away \(b) and \(c).")
+        case 24:
+            let d = r.int(3, 9), q = r.int(3, 12), rem = r.int(1, d - 1)
+            let n = d * q + rem
+            return DrillProblem(prompt: "Remainder of \(n) ÷ \(d)", answer: Double(rem), hint: "\(d) × \(q) = \(d * q), so \(n) is \(rem) more than a multiple of \(d).")
+        case 25:
+            let a = r.int(2, 9), b = r.int(2, 9)
+            return DrillProblem(prompt: "0.\(a) × 0.\(b)", answer: Double(a * b) / 100, hint: "Multiply the digits: \(a) × \(b) = \(a * b). Then count two decimal places.")
+        default:
+            let a = r.int(1, 9), b = r.int(1, 9)
+            return DrillProblem(prompt: "\(100 - a) × \(100 - b)", answer: Double((100 - a) * (100 - b)), hint: "(100 − \(a))(100 − \(b)) = 10000 − 100 × \(a + b) + \(a) × \(b).")
+        }
+    }
+
+    // MARK: Algebra and calculus
+
+    /// The coefficient written in front of x: 1 is left out.
+    private static func coef(_ a: Int) -> String { a == 1 ? "" : String(a) }
+
+    private static func algebra(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
+        switch min(max(level, 1), info(.algebra).maxLevel) {
+        case 1:
+            let x = r.int(2, 30), a = r.int(2, 30)
+            return DrillProblem(prompt: "x + \(a) = \(x + a)", answer: Double(x), hint: "Take \(a) away from both sides.")
+        case 2:
+            let k = r.int(2, 9), x = r.int(2, 12)
+            if r.next() < 0.5 { return DrillProblem(prompt: "\(k)x = \(k * x)", answer: Double(x), hint: "Divide both sides by \(k).") }
+            return DrillProblem(prompt: "x ÷ \(k) = \(x)", answer: Double(k * x), hint: "Multiply both sides by \(k).")
+        case 3:
+            let a = r.int(2, 9), x = r.int(2, 12), b = r.int(1, 20)
+            return DrillProblem(prompt: "\(a)x + \(b) = \(a * x + b)", answer: Double(x), hint: "Take \(b) away first, then divide by \(a).")
+        case 4:
+            let a = r.int(2, 9), x = r.int(3, 12), b = r.int(1, a * 3 - 1)
+            return DrillProblem(prompt: "\(a)x − \(b) = \(a * x - b)", answer: Double(x), hint: "Add \(b) to both sides first, then divide by \(a).")
+        case 5:
+            let x1 = r.int(0, 5), dx = r.int(1, 4), m = r.int(1, 6), y1 = r.int(0, 9)
+            return DrillProblem(prompt: "Slope through (\(x1), \(y1)) and (\(x1 + dx), \(y1 + m * dx))", answer: Double(m), hint: "Slope is the rise over the run: \(m * dx) up for \(dx) across.")
+        case 6:
+            let a = r.int(1, 5), b = r.int(1, 9), x = r.int(2, 6)
+            return DrillProblem(prompt: "\(coef(a))x² + \(b), when x = \(x)", answer: Double(a * x * x + b), hint: "Square \(x) first (\(x * x)), then multiply by \(a) and add \(b).")
+        case 7:
+            let p = r.int(1, 9), q = r.int(1, 9)
+            return DrillProblem(prompt: "Larger root of x² − \(p + q)x + \(p * q) = 0", answer: Double(max(p, q)), hint: "Find two numbers that add to \(p + q) and multiply to \(p * q). Those are the roots.")
+        case 8:
+            let a = r.int(1, 4), n = r.int(2, 4), c = r.int(1, 3)
+            var power = 1
+            for _ in 0..<(n - 1) { power *= c }
+            return DrillProblem(prompt: "d/dx of \(coef(a))x\(sup(n)) at x = \(c)", answer: Double(a * n * power), hint: "The derivative of ax\(sup(n)) is \(a * n)x\(sup(n - 1)). Put \(c) in.")
+        case 9:
+            let a = r.int(1, 5), b = r.int(1, 9), c = r.int(1, 5)
+            return DrillProblem(prompt: "d/dx of \(coef(a))x² + \(b)x at x = \(c)", answer: Double(2 * a * c + b), hint: "The derivative is \(2 * a)x + \(b). Put \(c) in.")
+        default:
+            let a = r.int(1, 3), n = r.int(1, 3), c = r.int(1, 3)
+            var power = 1
+            for _ in 0..<(n + 1) { power *= c }
+            return DrillProblem(
+                prompt: "∫ from 0 to \(c) of \(a * (n + 1))x\(sup(n)) dx",
+                answer: Double(a * power),
+                hint: "The antiderivative of \(a * (n + 1))x\(sup(n)) is \(coef(a))x\(sup(n + 1)). Put \(c) in."
             )
         }
     }
@@ -259,7 +428,8 @@ enum Drills {
 
     static func judge(_ track: TrackId, _ problem: DrillProblem, input: String) -> Judgement {
         guard let guess = parseNumber(input) else { return Judgement(correct: false, guess: nil, note: "That wasn't a number.") }
-        if track == .mentalMath {
+        // Everything except estimation has one exact answer.
+        if track != .estimation {
             let ok = abs(guess - problem.answer) < 1e-9
             return Judgement(correct: ok, guess: guess, note: ok ? "Correct" : "Not quite")
         }

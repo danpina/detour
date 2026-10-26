@@ -82,9 +82,11 @@ final class DrillTests: XCTestCase {
     func testTracksAlternateLeastRecentFirst() {
         XCTAssertEqual(Skills.nextTrack([]), .mentalMath)
         var m = SkillProgress(track: .mentalMath); m.lastAt = Date(timeIntervalSince1970: 10)
-        XCTAssertEqual(Skills.nextTrack([m]), .estimation)
         var e = SkillProgress(track: .estimation); e.lastAt = Date(timeIntervalSince1970: 20)
-        XCTAssertEqual(Skills.nextTrack([m, e]), .mentalMath)
+        var g = SkillProgress(track: .algebra); g.lastAt = Date(timeIntervalSince1970: 30)
+        XCTAssertEqual(Skills.nextTrack([m, e, g]), .mentalMath)
+        XCTAssertEqual(Skills.nextTrack([m, e, g], among: [.estimation, .algebra]), .estimation)
+        XCTAssertEqual(Skills.nextTrack([m]), .algebra, "never-practised tracks come first, in the same order as the web app")
     }
 
     func testScoring() {
