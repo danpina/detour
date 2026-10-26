@@ -20,7 +20,32 @@ export const MENTAL_MATH_LEVELS = [
   "Easy percentages: 10%, 25%, 50%",
   "Percentages: 5%, 15%, 20%, 30%",
   "Squares ending in 5 and near-mirror products",
+  "Squares up to 20 × 20",
+  "Powers: cubes and powers of 2",
+  "Square roots",
+  "Multiply by 12, 15, 20, 30, 40, 50",
+  "Multiply a 3-digit number by a single digit",
+  "Fractions of numbers: ¾ of 80",
+  "Percentage up and down: 20% more, 25% less",
+  "What percent is it? 45 of 180",
+  "Order of operations",
+  "Averages",
+  "Adding and subtracting in any order",
+  "Remainders",
+  "Decimals: 0.6 × 0.7",
+  "Multiplying numbers near 100",
 ] as const;
+
+const SUPERSCRIPT = ["⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹"];
+
+/** A small whole number as superscript digits: 3 becomes ³. 1 gives nothing, so "x¹" reads as "x". */
+export function sup(n: number): string {
+  if (n === 1) return "";
+  return String(n)
+    .split("")
+    .map((d) => SUPERSCRIPT[Number(d)]!)
+    .join("");
+}
 
 type Gen = (r: Rng) => Problem;
 
@@ -111,6 +136,109 @@ const GENERATORS: Gen[] = [
     const d = r.int(1, 4);
     return { prompt: `${mid - d} × ${mid + d}`, answer: mid * mid - d * d, hint: `It is ${mid}² − ${d}², because (m − d)(m + d) = m² − d².` };
   },
+  // 13: squares up to 20 × 20
+  (r) => {
+    const a = r.int(11, 20);
+    return { prompt: `${a}²`, answer: a * a, hint: `${a}² = ${a - 10} × ${a + 10} + 100 = ${(a - 10) * (a + 10)} + 100.` };
+  },
+  // 14: cubes and powers of 2
+  (r) => {
+    const [b, e] = r.pick(POWERS);
+    let value = 1;
+    for (let i = 0; i < e; i++) value *= b;
+    return { prompt: `${b}${sup(e)}`, answer: value, hint: `Build it up: ${b} multiplied by itself ${e} times. Keep the running total in your head.` };
+  },
+  // 15: square roots
+  (r) => {
+    const n = r.int(4, 20);
+    return { prompt: `√${n * n}`, answer: n, hint: `Which number times itself makes ${n * n}? It is between ${Math.floor(n / 10) * 10} and ${Math.floor(n / 10) * 10 + 10}.` };
+  },
+  // 16: multiply by 12, 15, 20, 30, 40, 50
+  (r) => {
+    const a = r.int(13, 49);
+    const m = r.pick([12, 15, 20, 30, 40, 50] as const);
+    const hint = {
+      12: "× 12 is × 10 plus × 2.",
+      15: "× 15 is × 10 plus half of that again.",
+      20: "× 20 is double it, then × 10.",
+      30: "× 30 is × 3, then × 10.",
+      40: "× 40 is × 4, then × 10.",
+      50: "× 50 is half of × 100.",
+    }[m];
+    return { prompt: `${a} × ${m}`, answer: a * m, hint };
+  },
+  // 17: 3-digit number times a single digit
+  (r) => {
+    const a = r.int(112, 498);
+    const b = r.int(2, 9);
+    return { prompt: `${a} × ${b}`, answer: a * b, hint: `Split it: ${Math.floor(a / 100) * 100} × ${b}, ${Math.floor((a % 100) / 10) * 10} × ${b} and ${a % 10} × ${b}, then add.` };
+  },
+  // 18: fractions of numbers
+  (r) => {
+    const den = r.pick([3, 4, 5, 8] as const);
+    const num = r.int(1, den - 1);
+    const base = den * r.int(2, 12);
+    return { prompt: `${num}/${den} of ${base}`, answer: (base / den) * num, hint: `Find 1/${den} first: ${base / den}. Then times ${num}.` };
+  },
+  // 19: percentage up and down
+  (r) => {
+    const p = r.pick([10, 20, 25, 50] as const);
+    const base = r.int(2, 20) * 20;
+    const up = r.next() < 0.5;
+    const change = (base * p) / 100;
+    return {
+      prompt: `${base} ${up ? "increased" : "decreased"} by ${p}%`,
+      answer: up ? base + change : base - change,
+      hint: `Find ${p}% of ${base}, which is ${change}, then ${up ? "add" : "take away"} it.`,
+    };
+  },
+  // 20: what percent is it
+  (r) => {
+    const p = r.pick([10, 20, 25, 40, 50, 60, 75] as const);
+    const whole = r.int(2, 12) * 20;
+    const part = (whole * p) / 100;
+    return { prompt: `${part} is what % of ${whole}?`, answer: p, hint: `Divide the part by the whole: ${part} ÷ ${whole}. Then turn it into a percent.` };
+  },
+  // 21: order of operations
+  (r) => {
+    if (r.next() < 0.5) {
+      const a = r.int(2, 9), b = r.int(2, 9), c = r.int(2, 9);
+      return { prompt: `${a} + ${b} × ${c}`, answer: a + b * c, hint: "Multiply first, then add." };
+    }
+    const a = r.int(2, 9), b = r.int(2, 9), c = r.int(2, 9), d = r.int(1, 8);
+    return { prompt: `(${a} + ${b}) × ${c} − ${d}`, answer: (a + b) * c - d, hint: "Brackets first, then multiply, then subtract." };
+  },
+  // 22: averages
+  (r) => {
+    const m = r.int(10, 60), x = r.int(1, 9), y = r.int(1, 9);
+    return { prompt: `Average of ${m - x}, ${m + y} and ${m + x - y}`, answer: m, hint: "Guess a middle value, then see how far each number is above or below it." };
+  },
+  // 23: adding and subtracting in any order
+  (r) => {
+    const b = r.int(5, 30), c = r.int(5, 30);
+    const a = r.int(b + c + 1, b + c + 40);
+    return { prompt: `−${b} + ${a} − ${c}`, answer: a - b - c, hint: `Start from ${a}, then take away ${b} and ${c}.` };
+  },
+  // 24: remainders
+  (r) => {
+    const d = r.int(3, 9), q = r.int(3, 12), rem = r.int(1, d - 1);
+    const n = d * q + rem;
+    return { prompt: `Remainder of ${n} ÷ ${d}`, answer: rem, hint: `${d} × ${q} = ${d * q}, so ${n} is ${rem} more than a multiple of ${d}.` };
+  },
+  // 25: decimals
+  (r) => {
+    const a = r.int(2, 9), b = r.int(2, 9);
+    return { prompt: `0.${a} × 0.${b}`, answer: (a * b) / 100, hint: `Multiply the digits: ${a} × ${b} = ${a * b}. Then count two decimal places.` };
+  },
+  // 26: multiplying numbers near 100
+  (r) => {
+    const a = r.int(1, 9), b = r.int(1, 9);
+    return { prompt: `${100 - a} × ${100 - b}`, answer: (100 - a) * (100 - b), hint: `(100 − ${a})(100 − ${b}) = 10000 − 100 × ${a + b} + ${a} × ${b}.` };
+  },
+];
+
+const POWERS: readonly (readonly [number, number])[] = [
+  [2, 5], [2, 6], [2, 7], [2, 8], [2, 9], [2, 10], [3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [5, 3], [5, 4], [6, 3], [7, 3],
 ];
 
 export const MENTAL_MATH_MAX_LEVEL = GENERATORS.length;
@@ -123,8 +251,8 @@ export const generateMentalMath = (level: number, r: Rng): Problem =>
  * drawn from that level and the three below it, so a round mixes sums, differences, times and division instead of
  * repeating one kind.
  */
-export function mentalMathLevelFor(level: number, position: number, r: Rng): number {
-  const top = Math.min(Math.max(level, 1), GENERATORS.length);
+export function mentalMathLevelFor(level: number, position: number, r: Rng, maxLevel = GENERATORS.length): number {
+  const top = Math.min(Math.max(level, 1), maxLevel);
   if (position === 0) return top;
   return r.int(Math.max(1, top - 3), top);
 }

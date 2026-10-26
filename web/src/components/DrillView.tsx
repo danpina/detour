@@ -75,7 +75,7 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
   };
 
   return (
-    <div className={`absolute inset-0 overflow-hidden text-white ${spec.track === "mental-math" ? "bg-gradient-to-br from-indigo-900 via-slate-900 to-black" : "bg-gradient-to-br from-emerald-900 via-slate-900 to-black"}`}>
+    <div className={`absolute inset-0 overflow-hidden text-white ${spec.track !== "estimation" ? "bg-gradient-to-br from-indigo-900 via-slate-900 to-black" : "bg-gradient-to-br from-emerald-900 via-slate-900 to-black"}`}>
       <div className="absolute inset-x-0 top-0 z-20 px-4 pt-[max(0.75rem,env(safe-area-inset-top))]">
         <div className="flex gap-1" aria-label={`Card ${index + 1} of ${total}`}>
           {Array.from({ length: total }, (_, k) => (
@@ -101,7 +101,7 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
               </div>
             )}
 
-            <h1 className={`mt-8 text-center font-semibold leading-snug ${spec.track === "mental-math" ? "text-5xl tabular-nums" : "text-xl"}`}>{problem.prompt}</h1>
+            <h1 className={`mt-8 text-center font-semibold leading-snug ${spec.track !== "estimation" && problem.prompt.length <= 14 ? "text-5xl tabular-nums" : spec.track !== "estimation" ? "text-3xl" : "text-xl"}`}>{problem.prompt}</h1>
 
             <form onSubmit={submit} className="mt-8">
               <input
@@ -109,9 +109,9 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
                 value={input}
                 disabled={!!feedback}
                 onChange={(e) => setInput(e.target.value)}
-                inputMode={spec.track === "mental-math" ? "numeric" : "text"}
+                inputMode={spec.track !== "estimation" ? "decimal" : "text"}
                 autoComplete="off"
-                placeholder={spec.track === "mental-math" ? "Your answer" : "Your best guess (try 5k or 2m)"}
+                placeholder={spec.track !== "estimation" ? "Your answer" : "Your best guess (try 5k or 2m)"}
                 aria-label="Your answer"
                 className="w-full rounded-2xl border border-white/30 bg-white/10 px-4 py-4 text-center text-2xl text-white placeholder-white/40 outline-none focus:border-white disabled:opacity-70"
               />

@@ -1370,6 +1370,2742 @@
       ]
     },
     {
+      "track": "mental-math",
+      "level": 13,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "17²",
+          "answer": 289
+        },
+        {
+          "prompt": "25% of 1600",
+          "answer": 400
+        },
+        {
+          "prompt": "13²",
+          "answer": 169
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 13,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "18²",
+          "answer": 324
+        },
+        {
+          "prompt": "15% of 140",
+          "answer": 21
+        },
+        {
+          "prompt": "17²",
+          "answer": 289
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 13,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "18²",
+          "answer": 324
+        },
+        {
+          "prompt": "25% of 160",
+          "answer": 40
+        },
+        {
+          "prompt": "15²",
+          "answer": 225
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 13,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "17²",
+          "answer": 289
+        },
+        {
+          "prompt": "30% of 180",
+          "answer": 54
+        },
+        {
+          "prompt": "25% of 480",
+          "answer": 120
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 13,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "20²",
+          "answer": 400
+        },
+        {
+          "prompt": "15% of 200",
+          "answer": 30
+        },
+        {
+          "prompt": "15²",
+          "answer": 225
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 13,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "20²",
+          "answer": 400
+        },
+        {
+          "prompt": "10% of 370",
+          "answer": 37
+        },
+        {
+          "prompt": "45²",
+          "answer": 2025
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 14,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "4³",
+          "answer": 64
+        },
+        {
+          "prompt": "20% of 240",
+          "answer": 48
+        },
+        {
+          "prompt": "2⁹",
+          "answer": 512
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 14,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "5³",
+          "answer": 125
+        },
+        {
+          "prompt": "55²",
+          "answer": 3025
+        },
+        {
+          "prompt": "4³",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 14,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "4⁴",
+          "answer": 256
+        },
+        {
+          "prompt": "15% of 20",
+          "answer": 3
+        },
+        {
+          "prompt": "3⁴",
+          "answer": 81
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 14,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "4³",
+          "answer": 64
+        },
+        {
+          "prompt": "69 × 71",
+          "answer": 4899
+        },
+        {
+          "prompt": "13²",
+          "answer": 169
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 14,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "7³",
+          "answer": 343
+        },
+        {
+          "prompt": "85²",
+          "answer": 7225
+        },
+        {
+          "prompt": "14²",
+          "answer": 196
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 14,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "7³",
+          "answer": 343
+        },
+        {
+          "prompt": "5% of 220",
+          "answer": 11
+        },
+        {
+          "prompt": "14²",
+          "answer": 196
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 15,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "√196",
+          "answer": 14
+        },
+        {
+          "prompt": "86 × 94",
+          "answer": 8084
+        },
+        {
+          "prompt": "17²",
+          "answer": 289
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 15,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "√256",
+          "answer": 16
+        },
+        {
+          "prompt": "13²",
+          "answer": 169
+        },
+        {
+          "prompt": "6³",
+          "answer": 216
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 15,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "√256",
+          "answer": 16
+        },
+        {
+          "prompt": "15²",
+          "answer": 225
+        },
+        {
+          "prompt": "√144",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 15,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "√196",
+          "answer": 14
+        },
+        {
+          "prompt": "19²",
+          "answer": 361
+        },
+        {
+          "prompt": "2⁷",
+          "answer": 128
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 15,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "√400",
+          "answer": 20
+        },
+        {
+          "prompt": "15²",
+          "answer": 225
+        },
+        {
+          "prompt": "√144",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 15,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "√400",
+          "answer": 20
+        },
+        {
+          "prompt": "95²",
+          "answer": 9025
+        },
+        {
+          "prompt": "2¹⁰",
+          "answer": 1024
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 16,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "36 × 12",
+          "answer": 432
+        },
+        {
+          "prompt": "√400",
+          "answer": 20
+        },
+        {
+          "prompt": "23 × 30",
+          "answer": 690
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 16,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "40 × 15",
+          "answer": 600
+        },
+        {
+          "prompt": "3⁵",
+          "answer": 243
+        },
+        {
+          "prompt": "36 × 20",
+          "answer": 720
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 16,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "39 × 12",
+          "answer": 468
+        },
+        {
+          "prompt": "2⁶",
+          "answer": 64
+        },
+        {
+          "prompt": "30 × 20",
+          "answer": 600
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 16,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "35 × 20",
+          "answer": 700
+        },
+        {
+          "prompt": "37 × 15",
+          "answer": 555
+        },
+        {
+          "prompt": "√64",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 16,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "49 × 15",
+          "answer": 735
+        },
+        {
+          "prompt": "5⁴",
+          "answer": 625
+        },
+        {
+          "prompt": "√81",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 16,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "48 × 12",
+          "answer": 576
+        },
+        {
+          "prompt": "20²",
+          "answer": 400
+        },
+        {
+          "prompt": "√100",
+          "answer": 10
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 17,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "354 × 2",
+          "answer": 708
+        },
+        {
+          "prompt": "49 × 50",
+          "answer": 2450
+        },
+        {
+          "prompt": "√196",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 17,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "396 × 4",
+          "answer": 1584
+        },
+        {
+          "prompt": "√169",
+          "answer": 13
+        },
+        {
+          "prompt": "356 × 5",
+          "answer": 1780
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 17,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "390 × 2",
+          "answer": 780
+        },
+        {
+          "prompt": "√25",
+          "answer": 5
+        },
+        {
+          "prompt": "298 × 5",
+          "answer": 1490
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 17,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "344 × 5",
+          "answer": 1720
+        },
+        {
+          "prompt": "371 × 3",
+          "answer": 1113
+        },
+        {
+          "prompt": "23 × 30",
+          "answer": 690
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 17,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "491 × 4",
+          "answer": 1964
+        },
+        {
+          "prompt": "√289",
+          "answer": 17
+        },
+        {
+          "prompt": "25 × 12",
+          "answer": 300
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 17,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "480 × 3",
+          "answer": 1440
+        },
+        {
+          "prompt": "6³",
+          "answer": 216
+        },
+        {
+          "prompt": "26 × 20",
+          "answer": 520
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 18,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "1/5 of 35",
+          "answer": 7
+        },
+        {
+          "prompt": "2/8 of 64",
+          "answer": 16
+        },
+        {
+          "prompt": "276 × 9",
+          "answer": 2484
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 18,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "2/5 of 25",
+          "answer": 10
+        },
+        {
+          "prompt": "450 × 7",
+          "answer": 3150
+        },
+        {
+          "prompt": "26 × 40",
+          "answer": 1040
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 18,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "1/5 of 35",
+          "answer": 7
+        },
+        {
+          "prompt": "√256",
+          "answer": 16
+        },
+        {
+          "prompt": "31 × 12",
+          "answer": 372
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 18,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "2/5 of 55",
+          "answer": 22
+        },
+        {
+          "prompt": "179 × 6",
+          "answer": 1074
+        },
+        {
+          "prompt": "36 × 50",
+          "answer": 1800
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 18,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "3/8 of 56",
+          "answer": 21
+        },
+        {
+          "prompt": "2/5 of 10",
+          "answer": 4
+        },
+        {
+          "prompt": "6/8 of 56",
+          "answer": 42
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 18,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "1/8 of 16",
+          "answer": 2
+        },
+        {
+          "prompt": "2/5 of 30",
+          "answer": 12
+        },
+        {
+          "prompt": "22 × 30",
+          "answer": 660
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 19,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "40 decreased by 25%",
+          "answer": 30
+        },
+        {
+          "prompt": "140 decreased by 50%",
+          "answer": 70
+        },
+        {
+          "prompt": "3/4 of 28",
+          "answer": 21
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 19,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "160 increased by 25%",
+          "answer": 200
+        },
+        {
+          "prompt": "5/8 of 56",
+          "answer": 35
+        },
+        {
+          "prompt": "414 × 2",
+          "answer": 828
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 19,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "40 increased by 25%",
+          "answer": 50
+        },
+        {
+          "prompt": "41 × 20",
+          "answer": 820
+        },
+        {
+          "prompt": "174 × 4",
+          "answer": 696
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 19,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "200 decreased by 25%",
+          "answer": 150
+        },
+        {
+          "prompt": "2/3 of 15",
+          "answer": 10
+        },
+        {
+          "prompt": "4/8 of 32",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 19,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "140 increased by 50%",
+          "answer": 210
+        },
+        {
+          "prompt": "160 increased by 25%",
+          "answer": 200
+        },
+        {
+          "prompt": "340 increased by 50%",
+          "answer": 510
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 19,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "80 increased by 50%",
+          "answer": 120
+        },
+        {
+          "prompt": "180 increased by 25%",
+          "answer": 225
+        },
+        {
+          "prompt": "212 × 6",
+          "answer": 1272
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 20,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "20 is what % of 40?",
+          "answer": 50
+        },
+        {
+          "prompt": "400 increased by 50%",
+          "answer": 600
+        },
+        {
+          "prompt": "200 decreased by 25%",
+          "answer": 150
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 20,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "60 is what % of 100?",
+          "answer": 60
+        },
+        {
+          "prompt": "4/5 of 40",
+          "answer": 32
+        },
+        {
+          "prompt": "3/4 of 12",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 20,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "24 is what % of 40?",
+          "answer": 60
+        },
+        {
+          "prompt": "2/3 of 21",
+          "answer": 14
+        },
+        {
+          "prompt": "1/3 of 24",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 20,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "60 is what % of 120?",
+          "answer": 50
+        },
+        {
+          "prompt": "30 is what % of 60?",
+          "answer": 50
+        },
+        {
+          "prompt": "260 decreased by 20%",
+          "answer": 208
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 20,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "75 is what % of 100?",
+          "answer": 75
+        },
+        {
+          "prompt": "4/8 of 40",
+          "answer": 20
+        },
+        {
+          "prompt": "408 × 9",
+          "answer": 3672
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 20,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "45 is what % of 60?",
+          "answer": 75
+        },
+        {
+          "prompt": "465 × 7",
+          "answer": 3255
+        },
+        {
+          "prompt": "2/4 of 16",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 21,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "(2 + 6) × 9 − 8",
+          "answer": 64
+        },
+        {
+          "prompt": "300 increased by 25%",
+          "answer": 375
+        },
+        {
+          "prompt": "5 + 3 × 5",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 21,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "(4 + 4) × 6 − 8",
+          "answer": 40
+        },
+        {
+          "prompt": "40 is what % of 100?",
+          "answer": 40
+        },
+        {
+          "prompt": "8 + 3 × 5",
+          "answer": 23
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 21,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "(2 + 5) × 2 − 7",
+          "answer": 7
+        },
+        {
+          "prompt": "100 increased by 20%",
+          "answer": 120
+        },
+        {
+          "prompt": "8 is what % of 40?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 21,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "(5 + 8) × 7 − 2",
+          "answer": 89
+        },
+        {
+          "prompt": "32 is what % of 160?",
+          "answer": 20
+        },
+        {
+          "prompt": "3 + 9 × 7",
+          "answer": 66
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 21,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "(4 + 5) × 8 − 5",
+          "answer": 67
+        },
+        {
+          "prompt": "320 decreased by 10%",
+          "answer": 288
+        },
+        {
+          "prompt": "9 + 9 × 9",
+          "answer": 90
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 21,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "(3 + 2) × 9 − 6",
+          "answer": 39
+        },
+        {
+          "prompt": "180 increased by 20%",
+          "answer": 216
+        },
+        {
+          "prompt": "135 is what % of 180?",
+          "answer": 75
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 22,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Average of 40, 46 and 37",
+          "answer": 41
+        },
+        {
+          "prompt": "Average of 56, 65 and 56",
+          "answer": 59
+        },
+        {
+          "prompt": "9 + 5 × 5",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 22,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Average of 44, 50 and 47",
+          "answer": 47
+        },
+        {
+          "prompt": "(7 + 5) × 4 − 7",
+          "answer": 41
+        },
+        {
+          "prompt": "100 increased by 50%",
+          "answer": 150
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 22,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Average of 45, 51 and 42",
+          "answer": 46
+        },
+        {
+          "prompt": "220 increased by 50%",
+          "answer": 330
+        },
+        {
+          "prompt": "240 increased by 20%",
+          "answer": 288
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 22,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Average of 35, 48 and 37",
+          "answer": 40
+        },
+        {
+          "prompt": "6 + 4 × 6",
+          "answer": 30
+        },
+        {
+          "prompt": "Average of 31, 42 and 29",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 22,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Average of 56, 64 and 57",
+          "answer": 59
+        },
+        {
+          "prompt": "Average of 31, 36 and 38",
+          "answer": 35
+        },
+        {
+          "prompt": "Average of 52, 65 and 63",
+          "answer": 60
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 22,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Average of 56, 59 and 59",
+          "answer": 58
+        },
+        {
+          "prompt": "Average of 38, 46 and 42",
+          "answer": 42
+        },
+        {
+          "prompt": "32 is what % of 160?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 23,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "−21 + 48 − 5",
+          "answer": 22
+        },
+        {
+          "prompt": "−30 + 67 − 12",
+          "answer": 25
+        },
+        {
+          "prompt": "Average of 22, 36 and 35",
+          "answer": 31
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 23,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "−24 + 49 − 13",
+          "answer": 12
+        },
+        {
+          "prompt": "Average of 48, 59 and 55",
+          "answer": 54
+        },
+        {
+          "prompt": "(2 + 8) × 3 − 4",
+          "answer": 26
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 23,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "−23 + 48 − 6",
+          "answer": 19
+        },
+        {
+          "prompt": "84 is what % of 140?",
+          "answer": 60
+        },
+        {
+          "prompt": "4 + 6 × 3",
+          "answer": 22
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 23,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "−20 + 71 − 16",
+          "answer": 35
+        },
+        {
+          "prompt": "Average of 13, 21 and 20",
+          "answer": 18
+        },
+        {
+          "prompt": "Average of 49, 57 and 56",
+          "answer": 54
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 23,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "−30 + 62 − 12",
+          "answer": 20
+        },
+        {
+          "prompt": "−18 + 35 − 14",
+          "answer": 3
+        },
+        {
+          "prompt": "−30 + 75 − 26",
+          "answer": 19
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 23,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "−29 + 38 − 8",
+          "answer": 1
+        },
+        {
+          "prompt": "−21 + 53 − 14",
+          "answer": 18
+        },
+        {
+          "prompt": "6 + 9 × 7",
+          "answer": 69
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 24,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Remainder of 25 ÷ 7",
+          "answer": 4
+        },
+        {
+          "prompt": "Remainder of 50 ÷ 9",
+          "answer": 5
+        },
+        {
+          "prompt": "−16 + 65 − 30",
+          "answer": 19
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 24,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Remainder of 50 ÷ 8",
+          "answer": 2
+        },
+        {
+          "prompt": "−27 + 68 − 21",
+          "answer": 20
+        },
+        {
+          "prompt": "Average of 47, 57 and 43",
+          "answer": 49
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 24,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Remainder of 28 ÷ 8",
+          "answer": 4
+        },
+        {
+          "prompt": "(5 + 5) × 3 − 3",
+          "answer": 27
+        },
+        {
+          "prompt": "−10 + 46 − 7",
+          "answer": 29
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 24,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Remainder of 55 ÷ 7",
+          "answer": 6
+        },
+        {
+          "prompt": "−9 + 38 − 18",
+          "answer": 11
+        },
+        {
+          "prompt": "−27 + 54 − 17",
+          "answer": 10
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 24,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Remainder of 58 ÷ 9",
+          "answer": 4
+        },
+        {
+          "prompt": "Remainder of 37 ÷ 6",
+          "answer": 1
+        },
+        {
+          "prompt": "Remainder of 103 ÷ 9",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 24,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Remainder of 37 ÷ 9",
+          "answer": 1
+        },
+        {
+          "prompt": "Remainder of 45 ÷ 7",
+          "answer": 3
+        },
+        {
+          "prompt": "Average of 17, 32 and 20",
+          "answer": 23
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 25,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "0.7 × 0.2",
+          "answer": 0.14
+        },
+        {
+          "prompt": "Remainder of 111 ÷ 9",
+          "answer": 3
+        },
+        {
+          "prompt": "Remainder of 63 ÷ 8",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 25,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "0.7 × 0.4",
+          "answer": 0.28
+        },
+        {
+          "prompt": "−18 + 71 − 27",
+          "answer": 26
+        },
+        {
+          "prompt": "−14 + 44 − 25",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 25,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "0.7 × 0.2",
+          "answer": 0.14
+        },
+        {
+          "prompt": "−6 + 50 − 24",
+          "answer": 20
+        },
+        {
+          "prompt": "−9 + 43 − 11",
+          "answer": 23
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 25,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "0.6 × 0.5",
+          "answer": 0.3
+        },
+        {
+          "prompt": "0.7 × 0.3",
+          "answer": 0.21
+        },
+        {
+          "prompt": "Remainder of 39 ÷ 4",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 25,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "0.9 × 0.4",
+          "answer": 0.36
+        },
+        {
+          "prompt": "−26 + 58 − 18",
+          "answer": 14
+        },
+        {
+          "prompt": "Average of 40, 57 and 50",
+          "answer": 49
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 25,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "0.9 × 0.3",
+          "answer": 0.27
+        },
+        {
+          "prompt": "Average of 50, 60 and 58",
+          "answer": 56
+        },
+        {
+          "prompt": "−15 + 49 − 11",
+          "answer": 23
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 26,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "94 × 99",
+          "answer": 9306
+        },
+        {
+          "prompt": "0.9 × 0.9",
+          "answer": 0.81
+        },
+        {
+          "prompt": "Remainder of 73 ÷ 7",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 26,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "93 × 97",
+          "answer": 9021
+        },
+        {
+          "prompt": "Remainder of 70 ÷ 6",
+          "answer": 4
+        },
+        {
+          "prompt": "Remainder of 51 ÷ 5",
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 26,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "93 × 99",
+          "answer": 9207
+        },
+        {
+          "prompt": "Remainder of 31 ÷ 3",
+          "answer": 1
+        },
+        {
+          "prompt": "Remainder of 22 ÷ 4",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 26,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "94 × 95",
+          "answer": 8930
+        },
+        {
+          "prompt": "93 × 98",
+          "answer": 9114
+        },
+        {
+          "prompt": "0.4 × 0.6",
+          "answer": 0.24
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 26,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "91 × 97",
+          "answer": 8827
+        },
+        {
+          "prompt": "Remainder of 67 ÷ 8",
+          "answer": 3
+        },
+        {
+          "prompt": "−24 + 88 − 30",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "mental-math",
+      "level": 26,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "91 × 98",
+          "answer": 8918
+        },
+        {
+          "prompt": "−28 + 65 − 21",
+          "answer": 16
+        },
+        {
+          "prompt": "Remainder of 28 ÷ 5",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 1,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "x + 2 = 22",
+          "answer": 20
+        },
+        {
+          "prompt": "x + 30 = 60",
+          "answer": 30
+        },
+        {
+          "prompt": "x + 22 = 41",
+          "answer": 19
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 1,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "x + 11 = 34",
+          "answer": 23
+        },
+        {
+          "prompt": "x + 27 = 44",
+          "answer": 17
+        },
+        {
+          "prompt": "x + 12 = 28",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 1,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "x + 3 = 25",
+          "answer": 22
+        },
+        {
+          "prompt": "x + 24 = 28",
+          "answer": 4
+        },
+        {
+          "prompt": "x + 6 = 22",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 1,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "x + 15 = 34",
+          "answer": 19
+        },
+        {
+          "prompt": "x + 7 = 28",
+          "answer": 21
+        },
+        {
+          "prompt": "x + 20 = 29",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 1,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "x + 10 = 40",
+          "answer": 30
+        },
+        {
+          "prompt": "x + 16 = 41",
+          "answer": 25
+        },
+        {
+          "prompt": "x + 24 = 28",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 1,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "x + 5 = 34",
+          "answer": 29
+        },
+        {
+          "prompt": "x + 20 = 48",
+          "answer": 28
+        },
+        {
+          "prompt": "x + 13 = 27",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 2,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "x ÷ 7 = 2",
+          "answer": 14
+        },
+        {
+          "prompt": "x ÷ 9 = 5",
+          "answer": 45
+        },
+        {
+          "prompt": "5x = 60",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 2,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "7x = 35",
+          "answer": 5
+        },
+        {
+          "prompt": "9x = 72",
+          "answer": 8
+        },
+        {
+          "prompt": "x + 5 = 29",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 2,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "7x = 14",
+          "answer": 2
+        },
+        {
+          "prompt": "x + 15 = 39",
+          "answer": 24
+        },
+        {
+          "prompt": "x + 9 = 15",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 2,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "x ÷ 6 = 6",
+          "answer": 36
+        },
+        {
+          "prompt": "3x = 21",
+          "answer": 7
+        },
+        {
+          "prompt": "8x = 56",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 2,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "9x = 45",
+          "answer": 5
+        },
+        {
+          "prompt": "6x = 30",
+          "answer": 5
+        },
+        {
+          "prompt": "9x = 99",
+          "answer": 11
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 2,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "9x = 27",
+          "answer": 3
+        },
+        {
+          "prompt": "7x = 42",
+          "answer": 6
+        },
+        {
+          "prompt": "x + 18 = 27",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 3,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "7x + 11 = 25",
+          "answer": 2
+        },
+        {
+          "prompt": "9x + 13 = 58",
+          "answer": 5
+        },
+        {
+          "prompt": "5x + 10 = 70",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 3,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "7x + 6 = 41",
+          "answer": 5
+        },
+        {
+          "prompt": "9x = 72",
+          "answer": 8
+        },
+        {
+          "prompt": "x ÷ 8 = 3",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 3,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "7x + 10 = 24",
+          "answer": 2
+        },
+        {
+          "prompt": "x + 15 = 39",
+          "answer": 24
+        },
+        {
+          "prompt": "x ÷ 3 = 4",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 3,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "6x + 18 = 54",
+          "answer": 6
+        },
+        {
+          "prompt": "3x + 6 = 27",
+          "answer": 7
+        },
+        {
+          "prompt": "8x = 56",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 3,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "9x + 10 = 55",
+          "answer": 5
+        },
+        {
+          "prompt": "6x + 2 = 32",
+          "answer": 5
+        },
+        {
+          "prompt": "9x + 10 = 109",
+          "answer": 11
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 3,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "9x + 1 = 28",
+          "answer": 3
+        },
+        {
+          "prompt": "7x + 9 = 51",
+          "answer": 6
+        },
+        {
+          "prompt": "x ÷ 4 = 8",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 4,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "7x − 11 = 10",
+          "answer": 3
+        },
+        {
+          "prompt": "9x − 16 = 29",
+          "answer": 5
+        },
+        {
+          "prompt": "5x + 10 = 70",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 4,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "7x − 6 = 36",
+          "answer": 6
+        },
+        {
+          "prompt": "9x + 10 = 82",
+          "answer": 8
+        },
+        {
+          "prompt": "x ÷ 8 = 3",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 4,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "7x − 10 = 11",
+          "answer": 3
+        },
+        {
+          "prompt": "x + 15 = 39",
+          "answer": 24
+        },
+        {
+          "prompt": "x ÷ 3 = 4",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 4,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "6x − 15 = 27",
+          "answer": 7
+        },
+        {
+          "prompt": "3x + 6 = 27",
+          "answer": 7
+        },
+        {
+          "prompt": "8x + 5 = 61",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 4,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "9x − 13 = 41",
+          "answer": 6
+        },
+        {
+          "prompt": "6x − 2 = 34",
+          "answer": 6
+        },
+        {
+          "prompt": "9x − 12 = 87",
+          "answer": 11
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 4,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "9x − 1 = 35",
+          "answer": 4
+        },
+        {
+          "prompt": "7x − 9 = 33",
+          "answer": 6
+        },
+        {
+          "prompt": "x ÷ 4 = 8",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 5,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Slope through (3, 9) and (4, 13)",
+          "answer": 4
+        },
+        {
+          "prompt": "Slope through (1, 4) and (4, 19)",
+          "answer": 5
+        },
+        {
+          "prompt": "Slope through (2, 4) and (4, 6)",
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 5,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Slope through (4, 5) and (6, 9)",
+          "answer": 2
+        },
+        {
+          "prompt": "Slope through (3, 7) and (5, 13)",
+          "answer": 3
+        },
+        {
+          "prompt": "8x = 32",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 5,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Slope through (4, 0) and (5, 3)",
+          "answer": 3
+        },
+        {
+          "prompt": "Slope through (2, 2) and (4, 4)",
+          "answer": 1
+        },
+        {
+          "prompt": "3x − 6 = 3",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 5,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Slope through (3, 6) and (5, 18)",
+          "answer": 6
+        },
+        {
+          "prompt": "x ÷ 6 = 5",
+          "answer": 30
+        },
+        {
+          "prompt": "Slope through (2, 7) and (3, 13)",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 5,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Slope through (5, 8) and (7, 14)",
+          "answer": 3
+        },
+        {
+          "prompt": "4x − 9 = 3",
+          "answer": 3
+        },
+        {
+          "prompt": "Slope through (4, 8) and (6, 20)",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 5,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Slope through (5, 9) and (6, 10)",
+          "answer": 1
+        },
+        {
+          "prompt": "5x − 6 = 29",
+          "answer": 7
+        },
+        {
+          "prompt": "6x + 15 = 87",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 6,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "4x² + 1, when x = 4",
+          "answer": 65
+        },
+        {
+          "prompt": "5x² + 3, when x = 5",
+          "answer": 128
+        },
+        {
+          "prompt": "Slope through (2, 4) and (6, 16)",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 6,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "4x² + 3, when x = 3",
+          "answer": 39
+        },
+        {
+          "prompt": "Slope through (5, 3) and (8, 12)",
+          "answer": 3
+        },
+        {
+          "prompt": "x² + 8, when x = 3",
+          "answer": 17
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 6,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "4x² + 1, when x = 4",
+          "answer": 65
+        },
+        {
+          "prompt": "8x + 10 = 66",
+          "answer": 7
+        },
+        {
+          "prompt": "4x + 4 = 36",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 6,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "4x² + 5, when x = 6",
+          "answer": 149
+        },
+        {
+          "prompt": "Slope through (1, 6) and (4, 12)",
+          "answer": 2
+        },
+        {
+          "prompt": "3x² + 3, when x = 6",
+          "answer": 111
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 6,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "5x² + 3, when x = 4",
+          "answer": 83
+        },
+        {
+          "prompt": "3x² + 4, when x = 2",
+          "answer": 16
+        },
+        {
+          "prompt": "5x² + 8, when x = 4",
+          "answer": 88
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 6,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "5x² + 2, when x = 2",
+          "answer": 22
+        },
+        {
+          "prompt": "4x² + 4, when x = 4",
+          "answer": 68
+        },
+        {
+          "prompt": "4x − 11 = 21",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 7,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Larger root of x² − 7x + 6 = 0",
+          "answer": 6
+        },
+        {
+          "prompt": "5x² + 9, when x = 3",
+          "answer": 54
+        },
+        {
+          "prompt": "4x² + 4, when x = 6",
+          "answer": 148
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 7,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Larger root of x² − 10x + 21 = 0",
+          "answer": 7
+        },
+        {
+          "prompt": "Slope through (3, 4) and (7, 20)",
+          "answer": 4
+        },
+        {
+          "prompt": "Slope through (4, 2) and (5, 7)",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 7,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Larger root of x² − 8x + 7 = 0",
+          "answer": 7
+        },
+        {
+          "prompt": "Slope through (0, 4) and (4, 16)",
+          "answer": 3
+        },
+        {
+          "prompt": "4x − 3 = 29",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 7,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Larger root of x² − 11x + 30 = 0",
+          "answer": 6
+        },
+        {
+          "prompt": "Larger root of x² − 9x + 14 = 0",
+          "answer": 7
+        },
+        {
+          "prompt": "2x² + 6, when x = 6",
+          "answer": 78
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 7,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Larger root of x² − 12x + 27 = 0",
+          "answer": 9
+        },
+        {
+          "prompt": "Slope through (4, 0) and (7, 9)",
+          "answer": 3
+        },
+        {
+          "prompt": "Larger root of x² − 17x + 72 = 0",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 7,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Larger root of x² − 11x + 18 = 0",
+          "answer": 9
+        },
+        {
+          "prompt": "9x − 10 = 71",
+          "answer": 9
+        },
+        {
+          "prompt": "Slope through (2, 9) and (4, 17)",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 8,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "d/dx of 3x² at x = 2",
+          "answer": 12
+        },
+        {
+          "prompt": "d/dx of 4x² at x = 2",
+          "answer": 16
+        },
+        {
+          "prompt": "Larger root of x² − 13x + 36 = 0",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 8,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "d/dx of 3x² at x = 1",
+          "answer": 6
+        },
+        {
+          "prompt": "Larger root of x² − 14x + 48 = 0",
+          "answer": 8
+        },
+        {
+          "prompt": "2x² + 8, when x = 2",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 8,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "d/dx of 3x² at x = 2",
+          "answer": 12
+        },
+        {
+          "prompt": "Slope through (4, 1) and (6, 7)",
+          "answer": 3
+        },
+        {
+          "prompt": "3x² + 2, when x = 2",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 8,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "d/dx of 3x³ at x = 3",
+          "answer": 81
+        },
+        {
+          "prompt": "Larger root of x² − 7x + 10 = 0",
+          "answer": 5
+        },
+        {
+          "prompt": "4x² + 8, when x = 4",
+          "answer": 72
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 8,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "d/dx of 4x² at x = 2",
+          "answer": 16
+        },
+        {
+          "prompt": "d/dx of 3x³ at x = 1",
+          "answer": 9
+        },
+        {
+          "prompt": "d/dx of 4x⁴ at x = 2",
+          "answer": 128
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 8,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "d/dx of 4x² at x = 1",
+          "answer": 8
+        },
+        {
+          "prompt": "d/dx of 3x³ at x = 2",
+          "answer": 36
+        },
+        {
+          "prompt": "2x² + 6, when x = 6",
+          "answer": 78
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 9,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "d/dx of 4x² + 1x at x = 3",
+          "answer": 25
+        },
+        {
+          "prompt": "d/dx of 5x² + 3x at x = 4",
+          "answer": 43
+        },
+        {
+          "prompt": "d/dx of 2x⁴ at x = 2",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 9,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "d/dx of 4x² + 3x at x = 2",
+          "answer": 19
+        },
+        {
+          "prompt": "d/dx of 4x³ at x = 2",
+          "answer": 48
+        },
+        {
+          "prompt": "Larger root of x² − 10x + 16 = 0",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 9,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "d/dx of 4x² + 1x at x = 3",
+          "answer": 25
+        },
+        {
+          "prompt": "4x² + 5, when x = 4",
+          "answer": 69
+        },
+        {
+          "prompt": "2x² + 5, when x = 2",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 9,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "d/dx of 4x² + 5x at x = 5",
+          "answer": 45
+        },
+        {
+          "prompt": "d/dx of x³ at x = 1",
+          "answer": 3
+        },
+        {
+          "prompt": "d/dx of 4x³ at x = 1",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 9,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "d/dx of 5x² + 3x at x = 3",
+          "answer": 33
+        },
+        {
+          "prompt": "d/dx of 3x² + 4x at x = 1",
+          "answer": 10
+        },
+        {
+          "prompt": "d/dx of 5x² + 8x at x = 3",
+          "answer": 38
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 9,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "d/dx of 5x² + 2x at x = 1",
+          "answer": 12
+        },
+        {
+          "prompt": "d/dx of 4x² + 4x at x = 3",
+          "answer": 28
+        },
+        {
+          "prompt": "Larger root of x² − 9x + 18 = 0",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 10,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "∫ from 0 to 2 of 4x dx",
+          "answer": 8
+        },
+        {
+          "prompt": "∫ from 0 to 2 of 6x dx",
+          "answer": 12
+        },
+        {
+          "prompt": "d/dx of 3x² + 9x at x = 3",
+          "answer": 27
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 10,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "∫ from 0 to 1 of 6x dx",
+          "answer": 3
+        },
+        {
+          "prompt": "d/dx of 5x² + 6x at x = 3",
+          "answer": 36
+        },
+        {
+          "prompt": "d/dx of 4x² at x = 3",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 10,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "∫ from 0 to 2 of 6x dx",
+          "answer": 12
+        },
+        {
+          "prompt": "Larger root of x² − 12x + 35 = 0",
+          "answer": 7
+        },
+        {
+          "prompt": "d/dx of x² at x = 2",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 10,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "∫ from 0 to 3 of 6x² dx",
+          "answer": 54
+        },
+        {
+          "prompt": "d/dx of x² + 5x at x = 2",
+          "answer": 9
+        },
+        {
+          "prompt": "d/dx of 5x² + 5x at x = 2",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 10,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "∫ from 0 to 2 of 6x dx",
+          "answer": 12
+        },
+        {
+          "prompt": "∫ from 0 to 1 of 6x² dx",
+          "answer": 2
+        },
+        {
+          "prompt": "∫ from 0 to 2 of 12x³ dx",
+          "answer": 48
+        }
+      ]
+    },
+    {
+      "track": "algebra",
+      "level": 10,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "∫ from 0 to 1 of 6x dx",
+          "answer": 3
+        },
+        {
+          "prompt": "∫ from 0 to 2 of 6x² dx",
+          "answer": 16
+        },
+        {
+          "prompt": "d/dx of 2x³ at x = 3",
+          "answer": 54
+        }
+      ]
+    },
+    {
       "track": "estimation",
       "level": 1,
       "seed": 1,

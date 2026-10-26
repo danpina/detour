@@ -1,8 +1,9 @@
+import { ALGEBRA_LEVELS, ALGEBRA_MAX_LEVEL, generateAlgebra } from "./algebra";
 import { ESTIMATION_LEVELS, ESTIMATION_MAX_LEVEL, generateEstimation, isCloseEnough, timesOff, estimationVerdict } from "./estimation";
 import { MENTAL_MATH_LEVELS, MENTAL_MATH_MAX_LEVEL, generateMentalMath, mentalMathLevelFor, type Problem } from "./mentalMath";
 import { makeRng } from "./rng";
 
-export type TrackId = "mental-math" | "estimation";
+export type TrackId = "mental-math" | "estimation" | "algebra";
 export type DrillSpec = { track: TrackId; level: number; seed: number };
 export type { Problem };
 
@@ -14,6 +15,14 @@ export const TRACKS: Record<TrackId, { name: string; blurb: string; levels: read
     maxLevel: MENTAL_MATH_MAX_LEVEL,
     problems: 3,
     timeLimitMs: 45_000,
+  },
+  algebra: {
+    name: "Algebra & calculus",
+    blurb: "Equations, slopes, derivatives and areas",
+    levels: ALGEBRA_LEVELS,
+    maxLevel: ALGEBRA_MAX_LEVEL,
+    problems: 3,
+    timeLimitMs: 60_000,
   },
   estimation: {
     name: "Estimation",
@@ -33,7 +42,12 @@ export function generateRound(spec: DrillSpec): Problem[] {
   const out: Problem[] = [];
   for (let guard = 0; out.length < TRACKS[spec.track].problems && guard < 50; guard++) {
     // Mental-math rounds mix operations: the first problem is at the player's level, the rest from that level and below.
-    const p = spec.track === "mental-math" ? generateMentalMath(mentalMathLevelFor(spec.level, out.length, rng), rng) : generateEstimation(spec.level, rng);
+    const p =
+      spec.track === "mental-math"
+        ? generateMentalMath(mentalMathLevelFor(spec.level, out.length, rng), rng)
+        : spec.track === "algebra"
+          ? generateAlgebra(mentalMathLevelFor(spec.level, out.length, rng, ALGEBRA_MAX_LEVEL), rng)
+          : generateEstimation(spec.level, rng);
     if (seen.has(p.prompt)) continue;
     seen.add(p.prompt);
     out.push(p);
@@ -58,7 +72,8 @@ export type Judgement = { correct: boolean; guess?: number; note: string };
 export function judge(track: TrackId, problem: Problem, input: string): Judgement {
   const guess = parseNumber(input);
   if (guess === undefined) return { correct: false, note: "That wasn't a number." };
-  if (track === "mental-math") {
+  // Everything except estimation has one exact answer.
+  if (track !== "estimation") {
     const ok = Math.abs(guess - problem.answer) < 1e-9;
     return { correct: ok, guess, note: ok ? "Correct" : "Not quite" };
   }

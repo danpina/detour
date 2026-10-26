@@ -23,12 +23,15 @@ describe("mental math generators", () => {
     for (let level = 1; level <= MENTAL_MATH_MAX_LEVEL; level++) {
       for (let seed = 1; seed <= 200; seed++) {
         for (const p of generateRound({ track: "mental-math", level, seed })) {
-          expect(Number.isInteger(p.answer), `${p.prompt}`).toBe(true);
+          // Only the decimals level (0.6 × 0.7) has a fractional answer.
+          if (!p.prompt.startsWith("0.")) expect(Number.isInteger(p.answer), `${p.prompt}`).toBe(true);
           expect(p.answer).toBeGreaterThan(0);
         }
       }
     }
   });
+
+  const unsup = (s: string) => Number([...s].map((c) => "⁰¹²³⁴⁵⁶⁷⁸⁹".indexOf(c)).join(""));
 
   /** Evaluates a prompt such as "45 + 38", "84 ÷ 7", "15% of 80" or "35²", to check the generator's answer independently. */
   const evaluate = (prompt: string): number => {
@@ -44,6 +47,28 @@ describe("mental math generators", () => {
     if (m) return (Number(m[1]) * Number(m[2])) / 100;
     m = /^(\d+)²$/.exec(prompt);
     if (m) return Number(m[1]) ** 2;
+    m = /^(\d+)([⁰¹²³⁴⁵⁶⁷⁸⁹]+)$/.exec(prompt);
+    if (m) return Number(m[1]) ** unsup(m[2]!);
+    m = /^√(\d+)$/.exec(prompt);
+    if (m) return Math.sqrt(Number(m[1]));
+    m = /^(\d+)\/(\d+) of (\d+)$/.exec(prompt);
+    if (m) return (Number(m[3]) / Number(m[2])) * Number(m[1]);
+    m = /^(\d+) (increased|decreased) by (\d+)%$/.exec(prompt);
+    if (m) return Number(m[1]) * (1 + (m[2] === "increased" ? 1 : -1) * (Number(m[3]) / 100));
+    m = /^(\d+) is what % of (\d+)\?$/.exec(prompt);
+    if (m) return (Number(m[1]) / Number(m[2])) * 100;
+    m = /^(\d+) \+ (\d+) × (\d+)$/.exec(prompt);
+    if (m) return Number(m[1]) + Number(m[2]) * Number(m[3]);
+    m = /^\((\d+) \+ (\d+)\) × (\d+) − (\d+)$/.exec(prompt);
+    if (m) return (Number(m[1]) + Number(m[2])) * Number(m[3]) - Number(m[4]);
+    m = /^Average of (\d+), (\d+) and (\d+)$/.exec(prompt);
+    if (m) return (Number(m[1]) + Number(m[2]) + Number(m[3])) / 3;
+    m = /^−(\d+) \+ (\d+) − (\d+)$/.exec(prompt);
+    if (m) return -Number(m[1]) + Number(m[2]) - Number(m[3]);
+    m = /^Remainder of (\d+) ÷ (\d+)$/.exec(prompt);
+    if (m) return Number(m[1]) % Number(m[2]);
+    m = /^0\.(\d) × 0\.(\d)$/.exec(prompt);
+    if (m) return (Number(m[1]) / 10) * (Number(m[2]) / 10);
     throw new Error(`unrecognised prompt: ${prompt}`);
   };
 
@@ -191,8 +216,9 @@ describe("levelling up (80% over 20 attempts)", () => {
 
   it("alternates between tracks, least recent first", () => {
     expect(nextTrack([])).toBe("mental-math");
-    expect(nextTrack([{ ...emptyProgress("mental-math"), last_at: 10 }])).toBe("estimation");
-    expect(nextTrack([{ ...emptyProgress("mental-math"), last_at: 10 }, { ...emptyProgress("estimation"), last_at: 20 }])).toBe("mental-math");
+    const all = [{ ...emptyProgress("mental-math"), last_at: 10 }, { ...emptyProgress("estimation"), last_at: 20 }, { ...emptyProgress("algebra"), last_at: 30 }];
+    expect(nextTrack(all)).toBe("mental-math");
+    expect(nextTrack(all, ["estimation", "algebra"])).toBe("estimation");
   });
 });
 
@@ -236,5 +262,59 @@ describe("choosing the skill round", () => {
     const practised = [{ ...emptyProgress("mental-math"), last_at: 5000 }];
     expect(nextTrack(practised, ["mental-math", "estimation"])).toBe("estimation");
     expect(nextTrack(practised, ["mental-math"])).toBe("mental-math");
+  });
+});
+
+describe("algebra and calculus", () => {
+  const unsup = (s: string) => (s === "" ? 1 : Number([...s].map((c) => "⁰¹²³⁴⁵⁶⁷⁸⁹".indexOf(c)).join("")));
+  const coef = (s: string | undefined) => (s === undefined || s === "" ? 1 : Number(s));
+
+  /** Solves a prompt independently of the generator. */
+  const solve = (prompt: string): number => {
+    let m = /^x \+ (\d+) = (\d+)$/.exec(prompt);
+    if (m) return Number(m[2]) - Number(m[1]);
+    m = /^(\d+)x = (\d+)$/.exec(prompt);
+    if (m) return Number(m[2]) / Number(m[1]);
+    m = /^x ÷ (\d+) = (\d+)$/.exec(prompt);
+    if (m) return Number(m[2]) * Number(m[1]);
+    m = /^(\d+)x \+ (\d+) = (\d+)$/.exec(prompt);
+    if (m) return (Number(m[3]) - Number(m[2])) / Number(m[1]);
+    m = /^(\d+)x − (\d+) = (\d+)$/.exec(prompt);
+    if (m) return (Number(m[3]) + Number(m[2])) / Number(m[1]);
+    m = /^Slope through \((\d+), (\d+)\) and \((\d+), (\d+)\)$/.exec(prompt);
+    if (m) return (Number(m[4]) - Number(m[2])) / (Number(m[3]) - Number(m[1]));
+    m = /^(\d*)x² \+ (\d+), when x = (\d+)$/.exec(prompt);
+    if (m) return coef(m[1]) * Number(m[3]) ** 2 + Number(m[2]);
+    m = /^Larger root of x² − (\d+)x \+ (\d+) = 0$/.exec(prompt);
+    if (m) {
+      const s = Number(m[1]), p = Number(m[2]);
+      return (s + Math.sqrt(s * s - 4 * p)) / 2;
+    }
+    m = /^d\/dx of (\d*)x([⁰¹²³⁴⁵⁶⁷⁸⁹]*) at x = (\d+)$/.exec(prompt);
+    if (m) return coef(m[1]) * unsup(m[2]!) * Number(m[3]) ** (unsup(m[2]!) - 1);
+    m = /^d\/dx of (\d*)x² \+ (\d+)x at x = (\d+)$/.exec(prompt);
+    if (m) return 2 * coef(m[1]) * Number(m[3]) + Number(m[2]);
+    m = /^∫ from 0 to (\d+) of (\d+)x([⁰¹²³⁴⁵⁶⁷⁸⁹]*) dx$/.exec(prompt);
+    if (m) {
+      const n = unsup(m[3]!);
+      return (Number(m[2]) * Number(m[1]) ** (n + 1)) / (n + 1);
+    }
+    throw new Error(`unrecognised prompt: ${prompt}`);
+  };
+
+  it("has the levels it says, and every answer is a whole number that matches its prompt", () => {
+    expect(TRACKS.algebra.maxLevel).toBe(10);
+    for (let level = 1; level <= TRACKS.algebra.maxLevel; level++) {
+      for (let seed = 1; seed <= 200; seed++) {
+        const round = generateRound({ track: "algebra", level, seed });
+        expect(round.length).toBe(3);
+        for (const p of round) {
+          expect(Number.isInteger(p.answer), p.prompt).toBe(true);
+          expect(p.answer, p.prompt).toBeCloseTo(solve(p.prompt), 10);
+          expect(judge("algebra", p, String(p.answer)).correct).toBe(true);
+          expect(judge("algebra", p, String(p.answer + 1)).correct).toBe(false);
+        }
+      }
+    }
   });
 });
