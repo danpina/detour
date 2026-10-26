@@ -4,7 +4,8 @@ import { MENTAL_MATH_LEVELS, MENTAL_MATH_MAX_LEVEL, generateMentalMath, mentalMa
 import { makeRng } from "./rng";
 
 export type TrackId = "mental-math" | "estimation" | "algebra";
-export type DrillSpec = { track: TrackId; level: number; seed: number };
+/** `count` is how many problems the round has; left out, the track's usual number. */
+export type DrillSpec = { track: TrackId; level: number; seed: number; count?: number };
 export type { Problem };
 
 export const TRACKS: Record<TrackId, { name: string; blurb: string; levels: readonly string[]; maxLevel: number; problems: number; timeLimitMs?: number }> = {
@@ -40,7 +41,8 @@ export function generateRound(spec: DrillSpec): Problem[] {
   const rng = makeRng(spec.seed);
   const seen = new Set<string>();
   const out: Problem[] = [];
-  for (let guard = 0; out.length < TRACKS[spec.track].problems && guard < 50; guard++) {
+  const wanted = spec.count ?? TRACKS[spec.track].problems;
+  for (let guard = 0; out.length < wanted && guard < 50; guard++) {
     // Mental-math rounds mix operations: the first problem is at the player's level, the rest from that level and below.
     const p =
       spec.track === "mental-math"

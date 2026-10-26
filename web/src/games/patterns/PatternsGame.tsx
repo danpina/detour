@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { GameProps } from "../registry";
-import { recordRound } from "../stats";
+import { recordRound, roundFor } from "../stats";
 import { buildRound, type PatternPuzzle } from "./logic";
 
 function endLine(score: number, total: number): string {
@@ -11,7 +11,7 @@ function endLine(score: number, total: number): string {
 }
 
 export function PatternsGame({ onExit, embedded }: GameProps) {
-  const [round, setRound] = useState<PatternPuzzle[]>(() => buildRound());
+  const [round, setRound] = useState<PatternPuzzle[]>(() => buildRound(undefined, Math.random, roundFor(embedded)));
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const [score, setScore] = useState(0);
@@ -42,7 +42,7 @@ export function PatternsGame({ onExit, embedded }: GameProps) {
   }
 
   function again() {
-    setRound(buildRound());
+    setRound(buildRound(undefined, Math.random, roundFor(embedded)));
     setIndex(0);
     setPicked(null);
     setScore(0);

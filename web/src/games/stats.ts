@@ -13,6 +13,14 @@ export const MIN_ROUND_SIZE = 1;
 export const MAX_ROUND_SIZE = 20;
 export const DEFAULT_ROUND_SIZE = 2;
 
+/** A game played inside a Game round plays one puzzle, so a round of N games takes about as long as N cards. */
+export const EMBEDDED_ROUND_SIZE = 1;
+
+/** How many puzzles a game plays: one inside a Game round, otherwise the size chosen on the Games screen. */
+export function roundFor(embedded: unknown): number {
+  return embedded ? EMBEDDED_ROUND_SIZE : getRoundSize();
+}
+
 export function getRoundSize(): number {
   try {
     const n = Number(localStorage.getItem(ROUND_KEY));

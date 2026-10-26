@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import type { GameProps } from "../registry";
-import { getRoundSize, recordRound } from "../stats";
+import { recordRound, roundFor } from "../stats";
 import { buildRound, isCorrect, lettersOf, loadPuzzles, placeTile, removeSlot, wordPoints, type Puzzle } from "./logic";
 
 type Status = "playing" | "wrong" | "correct" | "skipped";
@@ -14,12 +14,12 @@ const STYLE = `
 `;
 
 /** Reads the round size when a round starts, not at import time. */
-function newRound(): Puzzle[] {
-  return buildRound(loadPuzzles(), Math.random, getRoundSize());
+function newRound(embedded: unknown): Puzzle[] {
+  return buildRound(loadPuzzles(), Math.random, roundFor(embedded));
 }
 
 export function WordsGame({ onExit, embedded }: GameProps) {
-  const [round, setRound] = useState<Puzzle[]>(newRound);
+  const [round, setRound] = useState<Puzzle[]>(() => newRound(embedded));
   const [index, setIndex] = useState(0);
   const [placed, setPlaced] = useState<number[]>([]);
   const [status, setStatus] = useState<Status>("playing");
@@ -112,7 +112,7 @@ export function WordsGame({ onExit, embedded }: GameProps) {
 
   function playAgain() {
     recorded.current = false;
-    setRound(newRound());
+    setRound(newRound(embedded));
     setScore(0);
     setFinished(false);
     setIsBest(false);

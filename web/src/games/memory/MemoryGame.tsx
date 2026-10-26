@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import type { GameProps } from "../registry";
-import { getRoundSize, getStats, recordRound } from "../stats";
+import { EMBEDDED_ROUND_SIZE, getStats, recordRound } from "../stats";
 import {
   GRID_TILES,
   applyResult,
@@ -30,7 +30,7 @@ const MODE_TITLE: Record<Mode, string> = { digits: "Digit span", grid: "Pattern 
 
 function embeddedStart(): { mode: Mode; short: ShortRound; seq: number[] } {
   const mode: Mode = Math.random() < 0.5 ? "digits" : "grid";
-  const short = newShortRound(getRoundSize());
+  const short = newShortRound(EMBEDDED_ROUND_SIZE);
   const seq = mode === "digits" ? generateDigits(short.run.length) : generateTiles(short.run.length, GRID_TILES);
   return { mode, short, seq };
 }

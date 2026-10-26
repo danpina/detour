@@ -136,6 +136,7 @@ export function skillSummary(rows: SkillProgress[]) {
       levelName: t.levels[(p?.level ?? 1) - 1]!,
       recentRight: p?.recent_results.filter(Boolean).length ?? 0,
       recentTotal: p?.recent_results.length ?? 0,
+      attempts: p?.attempts_total ?? 0,
     };
   });
 }

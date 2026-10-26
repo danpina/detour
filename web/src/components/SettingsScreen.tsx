@@ -160,8 +160,8 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
       </section>
 
       <section className={`${box} mt-4`}>
-        <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Cards per set</h2>
-        <div className="mt-3 grid grid-cols-3 gap-2" role="radiogroup" aria-label="Cards per set">
+        <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Round length</h2>
+        <div className="mt-3 grid grid-cols-3 gap-2" role="radiogroup" aria-label="Round length">
           {[3, 5, 8].map((n) => (
             <button
               key={n}
@@ -178,7 +178,7 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
             </button>
           ))}
         </div>
-        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">Five is about a minute.</p>
+        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">How many things in each round: 3 means 3 cards, 3 math problems or 3 games. Five is about a minute.</p>
       </section>
 
       <section className={`${box} mt-4`}>

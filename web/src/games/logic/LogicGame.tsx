@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import type { GameProps } from "../registry";
-import { getRoundSize, recordRound } from "../stats";
+import { recordRound, roundFor } from "../stats";
 import { LOGIC_ITEMS } from "./logicData";
 import { applyAnswer, buildRound, KIND_TITLE, type LogicItem, type LogicProgress } from "./logicLogic";
 import { loadLogicProgress, saveLogicProgress } from "./progress";
@@ -14,7 +14,7 @@ function endLine(score: number, total: number): string {
 
 export function LogicGame({ onExit, embedded }: GameProps) {
   const [progress, setProgress] = useState<LogicProgress>(loadLogicProgress);
-  const [round, setRound] = useState<LogicItem[]>(() => buildRound(LOGIC_ITEMS, progress, Math.random, getRoundSize()));
+  const [round, setRound] = useState<LogicItem[]>(() => buildRound(LOGIC_ITEMS, progress, Math.random, roundFor(embedded)));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -51,7 +51,7 @@ export function LogicGame({ onExit, embedded }: GameProps) {
   const done = index >= round.length;
 
   function restart() {
-    setRound(buildRound(LOGIC_ITEMS, progress, Math.random, getRoundSize()));
+    setRound(buildRound(LOGIC_ITEMS, progress, Math.random, roundFor(embedded)));
     setIndex(0);
     setScore(0);
     setPicked(null);

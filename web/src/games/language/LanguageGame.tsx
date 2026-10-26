@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import type { GameProps } from "../registry";
-import { getRoundSize, recordRound } from "../stats";
+import { recordRound, roundFor } from "../stats";
 import { loadProgress, saveProgress } from "./progress";
 import { getLanguage, getLevel, LEVEL_NAMES, type Language } from "./languageData";
 import { applyAnswer, buildRound, LEARNED_AT, type Level, type Progress, type Question, type Word } from "./languageLogic";
 
-function newRound(words: Word[], level: Level, progress: Progress): Question[] {
-  return buildRound(words, progress, Math.random, getRoundSize(), level);
+function newRound(words: Word[], level: Level, progress: Progress, size: number): Question[] {
+  return buildRound(words, progress, Math.random, size, level);
 }
 
 function learnedCount(words: Word[], level: Level, p: Progress): number {
@@ -22,7 +22,7 @@ function endLine(lang: Language, score: number, total: number): string {
 
 function LanguageRound({ words, lang, level, onExit, embedded }: GameProps & { words: Word[]; lang: Language; level: Level }) {
   const [progress, setProgress] = useState<Progress>(() => loadProgress(lang));
-  const [round, setRound] = useState<Question[]>(() => newRound(words, level, progress));
+  const [round, setRound] = useState<Question[]>(() => newRound(words, level, progress, roundFor(embedded)));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -58,7 +58,7 @@ function LanguageRound({ words, lang, level, onExit, embedded }: GameProps & { w
   const done = index >= round.length;
 
   function restart() {
-    setRound(newRound(words, level, progress));
+    setRound(newRound(words, level, progress, roundFor(embedded)));
     setIndex(0);
     setScore(0);
     setPicked(null);

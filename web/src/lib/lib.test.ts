@@ -4,6 +4,7 @@ import { ALL_CARDS, imageUrl } from "./content";
 import { closeness, closenessLabel, positionOf, tidy, valueAt } from "./scoring";
 import { pickSet } from "./pickSet";
 import { GAME_IDS } from "../games/ids";
+import { generateRound } from "./drills";
 import { mathRound, pickGames } from "./session";
 
 const fake = (id: string, interest: Card["interest"], type: Card["type"]) => ({ id, interest, type }) as Card;
@@ -82,18 +83,24 @@ describe("the three rounds", () => {
     expect(pickGames(100)).toHaveLength(GAME_IDS.length);
   });
 
-  it("a math round is two drills at the player's level: mental math, then the other skill practised least recently", () => {
+  it("a math round has exactly as many problems as the round length, split over mental math and one other skill", () => {
     const skills = [
       { track_id: "mental-math" as const, level: 4, recent_results: [], attempts_total: 0, last_at: 5 },
       { track_id: "estimation" as const, level: 2, recent_results: [], attempts_total: 0, last_at: 1 },
       { track_id: "algebra" as const, level: 3, recent_results: [], attempts_total: 0, last_at: 9 },
     ];
-    const items = mathRound(skills, () => 7);
-    expect(items).toHaveLength(2);
-    expect(items[0]).toEqual({ kind: "drill", drill: { track: "mental-math", level: 4, seed: 7 } });
-    expect(items[1]).toEqual({ kind: "drill", drill: { track: "estimation", level: 2, seed: 7 } });
+    const items = mathRound(skills, 5, () => 7);
+    expect(items).toEqual([
+      { kind: "drill", drill: { track: "mental-math", level: 4, seed: 7, count: 3 } },
+      { kind: "drill", drill: { track: "estimation", level: 2, seed: 7, count: 2 } },
+    ]);
+    for (const size of [1, 2, 3, 5, 8, 12]) {
+      const round = mathRound(skills, size, () => 11);
+      const problems = round.flatMap((i) => (i.kind === "drill" ? generateRound(i.drill) : []));
+      expect(problems.length, "size " + size).toBe(size);
+    }
     // With nothing practised yet, everything starts at level 1.
-    const fresh = mathRound([], () => 1);
+    const fresh = mathRound([], 5, () => 1);
     expect(fresh.every((i) => i.kind === "drill" && i.drill.level === 1)).toBe(true);
   });
 });

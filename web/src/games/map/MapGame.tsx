@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { GameProps } from "../registry";
-import { getRoundSize, recordRound } from "../stats";
+import { recordRound, roundFor } from "../stats";
 import { loadMap } from "./mapData";
 import {
   buildRound,
@@ -68,7 +68,7 @@ const lineOf = (line: number[]) => {
 };
 
 function MapRound({ data, settings, onExit, embedded, onSettings }: GameProps & { data: MapData; settings: MapSettings; onSettings: () => void }) {
-  const [round, setRound] = useState<Target[]>(() => buildRound(data, settings, Math.random, getRoundSize()));
+  const [round, setRound] = useState<Target[]>(() => buildRound(data, settings, Math.random, roundFor(embedded)));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [tap, setTap] = useState<{ x: number; y: number } | null>(null);
@@ -185,7 +185,7 @@ function MapRound({ data, settings, onExit, embedded, onSettings }: GameProps & 
   }
 
   function again() {
-    setRound(buildRound(data, settings, Math.random, getRoundSize()));
+    setRound(buildRound(data, settings, Math.random, roundFor(embedded)));
     setIndex(0);
     setScore(0);
     setVerdict(null);

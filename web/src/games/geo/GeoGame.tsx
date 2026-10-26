@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import type { GameProps } from "../registry";
-import { getRoundSize, recordRound } from "../stats";
+import { recordRound, roundFor } from "../stats";
 import { COUNTRIES } from "./geoData";
 import { buildRound, type Question } from "./geoLogic";
 
 /** Reads the round size when a round starts, not at import time. */
-function newRound(): Question[] {
-  return buildRound(COUNTRIES, Math.random, getRoundSize());
+function newRound(embedded: unknown): Question[] {
+  return buildRound(COUNTRIES, Math.random, roundFor(embedded));
 }
 
 function endLine(score: number, total: number): string {
@@ -17,7 +17,7 @@ function endLine(score: number, total: number): string {
 }
 
 export function GeoGame({ onExit, embedded }: GameProps) {
-  const [round, setRound] = useState<Question[]>(newRound);
+  const [round, setRound] = useState<Question[]>(() => newRound(embedded));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -54,7 +54,7 @@ export function GeoGame({ onExit, embedded }: GameProps) {
   const done = index >= round.length;
 
   function restart() {
-    setRound(newRound());
+    setRound(newRound(embedded));
     setIndex(0);
     setScore(0);
     setPicked(null);

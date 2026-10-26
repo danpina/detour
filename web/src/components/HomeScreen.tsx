@@ -8,9 +8,12 @@ import { canPromptInstall, dismissInstall, installDismissed, installHint, isInst
 type Props = { onStart: (round: RoundKind) => void; onOpenSettings: () => void; onOpenProgress: () => void; onReview: () => void };
 
 const ROUNDS: { kind: RoundKind; emoji: string; title: string; blurb: (info: HomeInfo | null) => string }[] = [
-  { kind: "learning", emoji: "📚", title: "Learning round", blurb: (i) => (i && i.dueCount > 0 ? `Five small cards. ${i.dueCount} to check if they stuck.` : "Five small cards to learn something new.") },
-  { kind: "math", emoji: "🔢", title: "Math round", blurb: (i) => `Quick sums and puzzles · level ${i?.mathLevel ?? 1}` },
-  { kind: "games", emoji: "🎮", title: "Game round", blurb: () => "Three quick games: language, map, chess and more." },
+  { kind: "learning", emoji: "📚", title: "Learning round", blurb: (i) => {
+    const n = i?.roundSize ?? 5;
+    return i && i.dueCount > 0 ? `${n} small cards. ${i.dueCount} to check if they stuck.` : `${n} small cards to learn something new.`;
+  } },
+  { kind: "math", emoji: "🔢", title: "Math round", blurb: (i) => `${i?.roundSize ?? 5} quick problems · level ${i?.mathLevel ?? 1}` },
+  { kind: "games", emoji: "🎮", title: "Game round", blurb: (i) => `${i?.roundSize ?? 5} quick games: language, map, chess and more.` },
 ];
 
 export function HomeScreen({ onStart, onOpenSettings, onOpenProgress, onReview }: Props) {

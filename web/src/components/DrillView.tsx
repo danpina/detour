@@ -19,12 +19,14 @@ type Answered = { judgement: Judgement; input: string };
 export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
   const track = TRACKS[spec.track];
   const problems = useMemo(() => generateRound(spec), [spec]);
+  // The time allowed grows or shrinks with the number of problems in the round.
+  const limitMs = track.timeLimitMs ? track.timeLimitMs * (problems.length / track.problems) : undefined;
   const [i, setI] = useState(0);
   const [answers, setAnswers] = useState<Answered[]>([]);
   const [input, setInput] = useState("");
   const [feedback, setFeedback] = useState<Answered | null>(null);
   const [done, setDone] = useState<null | { progress: SkillProgress; leveledUp: boolean; right: number }>(null);
-  const [left, setLeft] = useState(track.timeLimitMs ?? 0);
+  const [left, setLeft] = useState(limitMs ?? 0);
   const inputRef = useRef<HTMLInputElement>(null);
   const finished = useRef(false);
 
@@ -44,12 +46,12 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
 
   // Countdown runs only while a question is open (paused during feedback).
   useEffect(() => {
-    if (!track.timeLimitMs || feedback || done) return;
+    if (!limitMs || feedback || done) return;
     const t = setInterval(() => setLeft((l) => Math.max(0, l - 100)), 100);
     return () => clearInterval(t);
-  }, [track.timeLimitMs, feedback, done]);
+  }, [limitMs, feedback, done]);
   useEffect(() => {
-    if (track.timeLimitMs && left === 0 && !feedback && !done) finish(answers);
+    if (limitMs && left === 0 && !feedback && !done) finish(answers);
   }); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
@@ -95,9 +97,9 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
               {track.levels[spec.level - 1]} · {i + 1} of {problems.length}
             </p>
 
-            {track.timeLimitMs && (
+            {limitMs && (
               <div className="mx-auto mt-3 h-1.5 w-full overflow-hidden rounded-full bg-white/15" aria-label="Time left">
-                <div className="h-full rounded-full bg-white/80 transition-[width] duration-100" style={{ width: `${(left / track.timeLimitMs) * 100}%` }} />
+                <div className="h-full rounded-full bg-white/80 transition-[width] duration-100" style={{ width: `${(left / limitMs) * 100}%` }} />
               </div>
             )}
 
