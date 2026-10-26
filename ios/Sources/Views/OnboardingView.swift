@@ -12,7 +12,7 @@ struct OnboardingView: View {
     private let minimum = 3
 
     init(initial: [Interest], confirmLabel: String = "Show me a quick one", eyebrow: String = "Detour", onBack: (() -> Void)? = nil, onDone: @escaping ([Interest]) -> Void) {
-        _picked = State(initialValue: initial)
+        _picked = State(initialValue: initial.filter { $0 != .games && $0 != .estimation })
         self.confirmLabel = confirmLabel
         self.eyebrow = eyebrow
         self.onBack = onBack
@@ -59,7 +59,8 @@ struct OnboardingView: View {
 
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 12) {
-                    ForEach(Interest.allCases, id: \.self) { interest in
+                    // Games and math have their own rounds on the home screen, so they are not topics to pick.
+                    ForEach(Interest.allCases.filter { $0 != .games && $0 != .estimation }, id: \.self) { interest in
                         let on = picked.contains(interest)
                         Button {
                             if on { picked.removeAll { $0 == interest } } else { picked.append(interest) }

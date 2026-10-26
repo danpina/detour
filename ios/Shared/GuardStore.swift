@@ -27,6 +27,8 @@ struct GuardSettings: Codable, Equatable {
     var activeHours: ActiveHours? = nil
     /// Minutes of use per day in hard-lock mode. Optional so older saved settings still load.
     var allowanceMinutes: Int? = nil
+    /// What the shield's Start button offers: "learning", "math" or "games". nil means learning.
+    var detourRound: String? = nil
 
     var strictUseSeconds: Int { strictSeconds ?? (strictMinutes ?? 3) * 60 }
     var dailyAllowance: Int { allowanceMinutes ?? 30 }

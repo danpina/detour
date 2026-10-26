@@ -6,6 +6,8 @@ struct SessionRun: Identifiable {
     let feed: Bool
     /// Started from the shield's Start button: finishing it unlocks the guarded apps. Sets started inside Detour do not.
     var guarded = false
+    /// Which kind of round this is, so "Another" starts the same kind again.
+    var kind: AppModel.RoundKind = .learning
 }
 
 enum MainTab: Hashable {
@@ -29,7 +31,7 @@ struct RootView: View {
                 }
             } else {
                 TabView(selection: $tab) {
-                    HomeView(start: start)
+                    HomeView { kind in start(feed: false, kind: kind) }
                         .tabItem { Label("Home", systemImage: "bolt.fill") }
                         .tag(MainTab.home)
                     GamesView()
@@ -67,7 +69,7 @@ struct RootView: View {
                         if accepted { run = nil }
                     }
                 },
-                onAnother: { start(feed: false) },
+                onAnother: { start(feed: false, kind: current.kind) },
                 onProgress: {
                     tab = .progress
                     run = nil
@@ -90,18 +92,17 @@ struct RootView: View {
         if guardManager.consumePendingSession() {
             AppLog.log("opened from the shield's Start button (session open already: \(run != nil))")
             // A guarded session is always a fresh, plain set (never the endless feed), replacing anything already open.
-            if model.settings.onboardingDone { start(feed: false, why: "shield start") }
+            if model.settings.onboardingDone {
+                let kind = AppModel.RoundKind(rawValue: guardManager.settings.detourRound ?? "learning") ?? .learning
+                start(feed: false, why: "shield start", kind: kind)
+            }
         }
     }
 
-    private func start(feed: Bool) {
-        start(feed: feed, why: "button")
-    }
-
-    private func start(feed: Bool, why: String) {
-        let items = model.makeSet()
-        AppLog.log("start set: feed=\(feed) why=\(why) items=\(items.count)")
-        run = SessionRun(items: items, feed: feed, guarded: why == "shield start")
+    private func start(feed: Bool, why: String = "button", kind: AppModel.RoundKind = .learning) {
+        let items = model.makeSet(kind: kind)
+        AppLog.log("start set: feed=\(feed) why=\(why) kind=\(kind.rawValue) items=\(items.count)")
+        run = SessionRun(items: items, feed: feed, guarded: why == "shield start", kind: kind)
     }
 
 }

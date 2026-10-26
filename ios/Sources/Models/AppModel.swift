@@ -58,30 +58,8 @@ final class AppModel {
     var cards: [Card] { content.cards }
     var settings: UserSettings { data.settings }
 
-    /// Mental math at the end of each set is a setting (off by default).
-    var drillsEnabled: Bool { data.settings.drills ?? false }
-
-    /// The skills that get a round at the end of a set: mental math when it is turned on in Settings, estimation when it is
-    /// one of the chosen interests. With both they alternate; with neither there is no skill round.
-    var allowedTracks: [TrackId] {
-        var out: [TrackId] = []
-        if drillsEnabled { out.append(.mentalMath) }
-        if data.settings.interests.contains(.estimation) { out.append(.estimation) }
-        return out
-    }
-
-    static let defaultExtrasEvery = 3
-
-    /// The extras do not come with every set. A skill round comes every Nth set, and a game the set after it.
-    var extrasEvery: Int { max(1, data.settings.extrasEvery ?? AppModel.defaultExtrasEvery) }
-
-    /// Whether the next set gets a skill round.
-    var skillRoundDue: Bool { data.sessions.count % extrasEvery == 0 }
-
-    /// Whether the next set gets a game (only for people who picked Games as an interest).
-    var gameDue: Bool {
-        data.settings.interests.contains(.games) && data.sessions.count % extrasEvery == (extrasEvery > 1 ? 1 : 0)
-    }
+    /// The player's level in mental math, shown on the Math round.
+    var mathLevel: Int { data.skills.first { $0.track == .mentalMath }?.level ?? 1 }
 
     init(store: DataStore = DataStore(), content: LoadedContent = ContentStore.load(), clock: @escaping () -> Date = { Date() }, calendar: Calendar = .current) {
         self.store = store
@@ -114,15 +92,42 @@ final class AppModel {
         Set(data.events.filter { $0.kind == .complete }.map { $0.cardId })
     }
 
-    func makeSet() -> [SessionItem] {
-        let now = clock()
-        let tracks = skillRoundDue ? allowedTracks : []
-        var drill: DrillSpec?
-        if !tracks.isEmpty {
-            let track = Skills.nextTrack(data.skills, among: tracks)
-            let level = data.skills.first { $0.track == track }?.level ?? 1
-            drill = DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)))
+    /// How many games a games round plays. Each plays the round size chosen on the Games screen.
+    static let gamesPerRound = 3
+
+    /// The three kinds of round on the home screen. Each has its own place: cards, math, or games.
+    enum RoundKind: String, CaseIterable {
+        case learning, math, games
+    }
+
+    /// Builds a round of the given kind: cards (learning), skill drills (math) or a few games (games).
+    func makeSet(kind: RoundKind = .learning) -> [SessionItem] {
+        switch kind {
+        case .games:
+            let games = GameId.allCases.shuffled().prefix(AppModel.gamesPerRound).map { SessionItem.game($0) }
+            AppLog.log("round built: games=\(games.map { $0.key }.joined(separator: ", "))")
+            return Array(games)
+        case .math:
+            return mathRound()
+        case .learning:
+            return learningRound()
         }
+    }
+
+    /// A math round: a mental-math drill, then one more skill (the one practised least recently), each at the player's level.
+    private func mathRound() -> [SessionItem] {
+        let second = Skills.nextTrack(data.skills, among: TrackId.allCases.filter { $0 != .mentalMath })
+        let items = [TrackId.mentalMath, second].map { track -> SessionItem in
+            let level = data.skills.first { $0.track == track }?.level ?? 1
+            return .drill(DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31))))
+        }
+        AppLog.log("round built: math level=\(mathLevel) items=[\(items.map { $0.key }.joined(separator: ", "))]")
+        return items
+    }
+
+    /// A learning round is cards only: reviews of what you learned, and new cards from your topics.
+    private func learningRound() -> [SessionItem] {
+        let now = clock()
         let events = data.events.map { (cardId: $0.cardId, kind: $0.kind.rawValue) }
         let input = EngineInput(
             cards: cards,
@@ -132,13 +137,11 @@ final class AppModel {
             engagement: SessionEngine.engagement(events: events, cards: cards),
             now: now,
             setSize: data.settings.setSize,
-            drill: drill,
-            game: gameDue ? GameId.random() : nil,
             lastShown: lastShown
         )
         let items = SessionEngine.build(input)
         let list = items.map { $0.key }.joined(separator: ", ")
-        AppLog.log("set built: size=\(data.settings.setSize) due=\(dueCount) completedCards=\(completedCardIds.count) reviewRows=\(data.reviews.count) shownBefore=\(lastShown.count) skillRound=\(drill.map { $0.track.rawValue } ?? "none") game=\(input.game?.rawValue ?? "none") setNumber=\(data.sessions.count) every=\(extrasEvery) items=[\(list)]")
+        AppLog.log("set built: size=\(data.settings.setSize) due=\(dueCount) completedCards=\(completedCardIds.count) reviewRows=\(data.reviews.count) shownBefore=\(lastShown.count) items=[\(list)]")
         return items
     }
 

@@ -30,6 +30,7 @@ struct SessionView: View {
             ZStack {
                 if let finishedCount {
                     EndView(
+                        kind: run.kind,
                         learned: finishedCount,
                         unlockedMinutes: unlockedMinutes,
                         returnApp: returnApp,
@@ -135,6 +136,7 @@ struct SessionView: View {
 }
 
 struct EndView: View {
+    var kind: AppModel.RoundKind = .learning
     let learned: Int
     var unlockedMinutes: Int? = nil
     var returnApp: ReturnApp? = nil
@@ -147,11 +149,11 @@ struct EndView: View {
     var body: some View {
         VStack(spacing: 12) {
             Spacer()
-            Text("✨").font(.system(size: 56))
-            Text("You learned \(learned > 0 ? learned : 5) things.")
+            Text(kind == .math ? "🔢" : (kind == .games ? "🎮" : "✨")).font(.system(size: 56))
+            Text(kind == .math ? "Math round done." : (kind == .games ? "That was fun." : "You learned \(learned > 0 ? learned : 5) things."))
                 .font(.largeTitle.weight(.semibold))
                 .multilineTextAlignment(.center)
-            Text("We'll check tomorrow if they stuck.")
+            Text(kind == .math ? "Little and often is how numbers get easy." : (kind == .games ? "A good break, and a bit of practice on the side." : "We'll check tomorrow if they stuck."))
                 .font(.title3)
                 .foregroundStyle(.white.opacity(0.7))
             if let unlockedMinutes {
@@ -183,7 +185,7 @@ struct EndView: View {
                     Text("Another run").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
                 }
             } else {
-                Button(action: onAnother) { Text("Another quick one").whitePill() }
+                Button(action: onAnother) { Text(kind == .math ? "Another math round" : (kind == .games ? "Another game round" : "Another quick one")).whitePill() }
                 Button(action: onDone) {
                     Text("Done for now").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
                 }

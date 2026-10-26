@@ -105,6 +105,15 @@ struct GuardSettingsSection: View {
                         .foregroundStyle(.secondary)
                 }
 
+                Picker("The detour is", selection: Binding(
+                    get: { guardManager.settings.detourRound ?? "learning" },
+                    set: { round in guardManager.update { $0.detourRound = round } }
+                )) {
+                    Text("Learning round").tag("learning")
+                    Text("Math round").tag("math")
+                    Text("Game round").tag("games")
+                }
+
                 Group {
                     Picker("After a detour, open for", selection: Binding(
                         get: { guardManager.settings.unlockMinutes },
