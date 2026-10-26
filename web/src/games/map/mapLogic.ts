@@ -5,7 +5,8 @@
 
 export type Country = { id: string; name: string; continent: string; pop: number; area: number; label: [number, number]; rings: number[][] };
 export type River = { name: string; lines: number[][] };
-export type Mountain = { name: string; kind: "peak" | "range"; continent: string; at: [number, number] };
+/** A range also has its spine as a flat x, y line, so it is drawn and tapped along its length rather than at one dot. */
+export type Mountain = { name: string; kind: "peak" | "range"; continent: string; at: [number, number]; line?: number[] };
 export type MapData = { w: number; h: number; countries: Country[]; rivers: River[]; mountains: Mountain[] };
 
 export type Subject = "countries" | "rivers" | "mountains" | "mixed";
@@ -34,6 +35,8 @@ export type Rng = () => number;
 export const RIVER_REACH = 110;
 export const PEAK_REACH = 150;
 export const RANGE_REACH = 450;
+/** How close to a range's spine a tap has to be. */
+export const RANGE_LINE_REACH = 200;
 export const TINY_COUNTRY_AREA = 3000;
 export const TINY_COUNTRY_REACH = 170;
 
@@ -114,8 +117,8 @@ export function judge(data: MapData, target: Target, x: number, y: number): Verd
     const other = data.rivers.filter((r) => r.name !== target.river.name).map((r) => ({ r, d: distanceToLines(x, y, r.lines) })).sort((a, b) => a.d - b.d)[0];
     return { correct, tapped: other && other.d <= RIVER_REACH ? other.r.name : null };
   }
-  const reachOf = (m: Mountain) => (m.kind === "range" ? RANGE_REACH : PEAK_REACH);
-  const dist = (m: Mountain) => Math.hypot(x - m.at[0], y - m.at[1]);
+  const reachOf = (m: Mountain) => (m.kind === "range" ? (m.line ? RANGE_LINE_REACH : RANGE_REACH) : PEAK_REACH);
+  const dist = (m: Mountain) => (m.line ? distanceToLines(x, y, [m.line]) : Math.hypot(x - m.at[0], y - m.at[1]));
   const correct = dist(target.mountain) <= reachOf(target.mountain);
   if (correct) return { correct, tapped: null };
   const other = data.mountains.filter((m) => m.name !== target.mountain.name && dist(m) <= reachOf(m)).sort((a, b) => dist(a) - dist(b))[0];

@@ -200,27 +200,67 @@ const MOUNTAINS: Mountain[] = [
   { name: "Chimborazo", kind: "peak", lat: -1.47, lon: -78.82, continent: "South America" },
   { name: "Mount Kosciuszko", kind: "peak", lat: -36.46, lon: 148.26, continent: "Oceania" },
   { name: "Aoraki / Mount Cook", kind: "peak", lat: -43.59, lon: 170.14, continent: "Oceania" },
-  { name: "The Alps", kind: "range", lat: 46.5, lon: 9.5, continent: "Europe" },
-  { name: "The Pyrenees", kind: "range", lat: 42.7, lon: 0.5, continent: "Europe" },
-  { name: "The Carpathians", kind: "range", lat: 47.0, lon: 24.5, continent: "Europe" },
-  { name: "The Urals", kind: "range", lat: 60.0, lon: 60.0, continent: "Europe" },
-  { name: "The Caucasus", kind: "range", lat: 42.8, lon: 44.5, continent: "Europe" },
-  { name: "The Apennines", kind: "range", lat: 43.0, lon: 12.8, continent: "Europe" },
-  { name: "The Scandinavian Mountains", kind: "range", lat: 62.0, lon: 9.0, continent: "Europe" },
-  { name: "The Himalayas", kind: "range", lat: 29.0, lon: 84.0, continent: "Asia" },
-  { name: "The Hindu Kush", kind: "range", lat: 35.5, lon: 70.5, continent: "Asia" },
-  { name: "The Tian Shan", kind: "range", lat: 42.0, lon: 80.0, continent: "Asia" },
-  { name: "The Atlas Mountains", kind: "range", lat: 32.0, lon: -5.0, continent: "Africa" },
-  { name: "The Drakensberg", kind: "range", lat: -29.0, lon: 29.3, continent: "Africa" },
-  { name: "The Ethiopian Highlands", kind: "range", lat: 10.0, lon: 38.5, continent: "Africa" },
-  { name: "The Rocky Mountains", kind: "range", lat: 46.0, lon: -112.0, continent: "North America" },
-  { name: "The Appalachians", kind: "range", lat: 37.5, lon: -80.5, continent: "North America" },
-  { name: "The Sierra Madre", kind: "range", lat: 25.0, lon: -105.0, continent: "North America" },
-  { name: "The Andes", kind: "range", lat: -15.0, lon: -71.0, continent: "South America" },
-  { name: "The Great Dividing Range", kind: "range", lat: -33.0, lon: 150.0, continent: "Oceania" },
-  { name: "The Southern Alps", kind: "range", lat: -43.5, lon: 170.5, continent: "Oceania" },
+  { name: "Kangchenjunga", kind: "peak", lat: 27.7, lon: 88.15, continent: "Asia" },
+  { name: "Annapurna", kind: "peak", lat: 28.6, lon: 83.82, continent: "Asia" },
+  { name: "Mount Kailash", kind: "peak", lat: 31.07, lon: 81.31, continent: "Asia" },
+  { name: "Mount Damavand", kind: "peak", lat: 35.95, lon: 52.11, continent: "Asia" },
+  { name: "Mount Kinabalu", kind: "peak", lat: 6.08, lon: 116.56, continent: "Asia" },
+  { name: "Mount Sinai", kind: "peak", lat: 28.54, lon: 33.97, continent: "Asia" },
+  { name: "Table Mountain", kind: "peak", lat: -33.96, lon: 18.4, continent: "Africa" },
+  { name: "Mount Cameroon", kind: "peak", lat: 4.2, lon: 9.17, continent: "Africa" },
+  { name: "Ras Dashen", kind: "peak", lat: 13.24, lon: 38.4, continent: "Africa" },
+  { name: "Mount Teide", kind: "peak", lat: 28.27, lon: -16.64, continent: "Africa" },
+  { name: "Zugspitze", kind: "peak", lat: 47.42, lon: 10.98, continent: "Europe" },
+  { name: "Grossglockner", kind: "peak", lat: 47.07, lon: 12.69, continent: "Europe" },
+  { name: "Mount Vesuvius", kind: "peak", lat: 40.82, lon: 14.43, continent: "Europe" },
+  { name: "Mulhacén", kind: "peak", lat: 37.05, lon: -3.31, continent: "Europe" },
+  { name: "Mount Rainier", kind: "peak", lat: 46.85, lon: -121.76, continent: "North America" },
+  { name: "Mount Logan", kind: "peak", lat: 60.57, lon: -140.4, continent: "North America" },
+  { name: "Popocatépetl", kind: "peak", lat: 19.02, lon: -98.62, continent: "North America" },
+  { name: "Cotopaxi", kind: "peak", lat: -0.68, lon: -78.44, continent: "South America" },
+  { name: "Huascarán", kind: "peak", lat: -9.12, lon: -77.6, continent: "South America" },
+  { name: "Mount Taranaki", kind: "peak", lat: -39.3, lon: 174.06, continent: "Oceania" },
+  { name: "Mauna Kea", kind: "peak", lat: 19.82, lon: -155.47, continent: "Oceania" },
 ];
-const mountains = MOUNTAINS.map((m) => ({ name: m.name, kind: m.kind, continent: m.continent, at: project(m.lon, m.lat) }));
+
+/** Mountain ranges, drawn and judged along their spine (latitude, longitude points) rather than as one dot. */
+type Range = { name: string; continent: string; spine: [number, number][] };
+const RANGES: Range[] = [
+  { name: "The Alps", continent: "Europe", spine: [[43.7, 7.2], [44.5, 7.0], [45.5, 6.8], [46.0, 7.5], [46.5, 8.6], [46.8, 9.8], [47.0, 11.0], [47.3, 12.5], [47.5, 13.8], [47.6, 15.5]] },
+  { name: "The Pyrenees", continent: "Europe", spine: [[43.3, -1.8], [42.9, -0.5], [42.7, 0.7], [42.6, 1.7], [42.5, 2.6], [42.4, 3.2]] },
+  { name: "The Carpathians", continent: "Europe", spine: [[49.4, 19.0], [49.0, 20.5], [48.6, 22.5], [48.0, 24.2], [47.5, 25.2], [46.5, 25.6], [45.7, 25.5], [45.4, 24.5], [45.2, 23.0], [44.7, 22.2]] },
+  { name: "The Urals", continent: "Europe", spine: [[67.5, 66.5], [65.0, 60.5], [62.0, 59.5], [59.0, 59.0], [56.0, 59.5], [53.5, 58.5], [51.0, 58.5]] },
+  { name: "The Caucasus", continent: "Europe", spine: [[44.0, 38.5], [43.5, 40.5], [43.2, 42.5], [42.8, 44.5], [42.3, 46.5], [41.8, 47.8], [41.0, 48.8]] },
+  { name: "The Apennines", continent: "Europe", spine: [[44.3, 8.9], [44.0, 10.5], [43.5, 12.2], [42.5, 13.3], [41.5, 14.5], [40.3, 15.7], [39.2, 16.4], [38.2, 15.9]] },
+  { name: "The Scandinavian Mountains", continent: "Europe", spine: [[69.5, 20.5], [68.0, 17.5], [66.0, 14.5], [64.0, 12.5], [62.0, 9.5], [60.5, 8.0], [59.5, 7.0]] },
+  { name: "The Balkan Mountains", continent: "Europe", spine: [[43.3, 22.5], [43.0, 25.0], [42.8, 27.0]] },
+  { name: "The Himalayas", continent: "Asia", spine: [[34.5, 73.0], [33.0, 76.0], [31.0, 78.5], [29.5, 81.5], [28.3, 84.5], [27.8, 88.0], [27.5, 91.0], [28.2, 94.5], [29.0, 97.0]] },
+  { name: "The Karakoram", continent: "Asia", spine: [[36.5, 74.5], [36.0, 76.5], [35.5, 77.5]] },
+  { name: "The Hindu Kush", continent: "Asia", spine: [[37.0, 71.5], [36.0, 70.5], [35.3, 69.5], [34.6, 68.0], [34.2, 66.5]] },
+  { name: "The Tian Shan", continent: "Asia", spine: [[42.5, 71.0], [42.2, 75.0], [42.0, 78.5], [42.7, 82.0], [43.3, 85.5], [43.5, 88.5]] },
+  { name: "The Altai", continent: "Asia", spine: [[51.0, 85.0], [49.5, 88.0], [48.5, 90.5], [47.5, 93.0]] },
+  { name: "The Zagros", continent: "Asia", spine: [[37.5, 44.5], [35.5, 46.5], [33.5, 48.5], [31.5, 50.5], [29.5, 52.5], [27.5, 55.5]] },
+  { name: "The Western Ghats", continent: "Asia", spine: [[21.0, 73.5], [17.0, 73.8], [13.0, 75.2], [9.5, 77.0], [8.2, 77.3]] },
+  { name: "The Atlas Mountains", continent: "Africa", spine: [[31.2, -9.5], [31.8, -7.0], [32.2, -5.0], [33.0, -3.0], [34.2, -1.5], [35.4, 1.0], [36.1, 4.0], [35.9, 7.0], [35.7, 9.5]] },
+  { name: "The Drakensberg", continent: "Africa", spine: [[-27.0, 29.2], [-28.5, 29.0], [-29.5, 29.2], [-30.5, 28.2], [-31.3, 27.5], [-32.5, 27.0]] },
+  { name: "The Ethiopian Highlands", continent: "Africa", spine: [[14.0, 38.0], [12.0, 38.2], [10.0, 38.5], [8.0, 38.5], [7.0, 37.5]] },
+  { name: "The Rocky Mountains", continent: "North America", spine: [[59.5, -125.0], [56.0, -122.5], [52.5, -118.5], [49.5, -114.5], [46.5, -112.5], [43.5, -110.5], [40.5, -106.5], [37.5, -105.5], [35.5, -106.0]] },
+  { name: "The Appalachians", continent: "North America", spine: [[45.5, -70.0], [44.0, -71.5], [42.5, -73.0], [40.5, -76.5], [38.5, -79.0], [36.0, -81.5], [34.5, -84.0]] },
+  { name: "The Sierra Nevada", continent: "North America", spine: [[40.0, -121.0], [38.0, -119.5], [36.0, -118.3], [35.4, -118.0]] },
+  { name: "The Cascades", continent: "North America", spine: [[49.0, -121.5], [46.5, -121.7], [44.0, -121.8], [41.5, -122.2]] },
+  { name: "The Sierra Madre", continent: "North America", spine: [[30.0, -109.0], [28.0, -108.0], [26.0, -106.5], [24.0, -105.0], [22.0, -104.0], [20.5, -103.5]] },
+  { name: "The Andes", continent: "South America", spine: [[10.5, -72.5], [7.0, -73.5], [4.0, -75.5], [0.0, -77.8], [-3.5, -79.0], [-8.0, -77.5], [-12.0, -75.5], [-15.5, -72.0], [-18.0, -69.5], [-22.0, -68.0], [-27.0, -68.5], [-32.5, -70.0], [-37.0, -71.2], [-42.0, -72.0], [-48.0, -73.0], [-53.0, -72.0]] },
+  { name: "The Great Dividing Range", continent: "Oceania", spine: [[-15.0, 145.0], [-19.0, 146.5], [-23.5, 149.0], [-27.0, 152.0], [-30.5, 151.8], [-34.0, 150.5], [-37.0, 148.5], [-37.8, 145.5]] },
+  { name: "The Southern Alps", continent: "Oceania", spine: [[-41.0, 172.5], [-42.5, 171.5], [-43.5, 170.5], [-44.5, 169.2], [-45.5, 168.0]] },
+];
+
+const peaks = MOUNTAINS.map((m) => ({ name: m.name, kind: m.kind, continent: m.continent, at: project(m.lon, m.lat) }));
+const ranges = RANGES.map((r) => {
+  const pts = r.spine.map(([lat, lon]) => project(lon, lat));
+  const mid = pts[Math.floor(pts.length / 2)]!;
+  return { name: r.name, kind: "range" as const, continent: r.continent, at: mid, line: flat(pts) };
+});
+const mountains = [...peaks, ...ranges];
 
 // Output: one item per line, so the file is small and a diff is readable ---------------------------------------------------
 const lines = (items: unknown[]) => items.map((i) => "  " + JSON.stringify(i)).join(",\n");

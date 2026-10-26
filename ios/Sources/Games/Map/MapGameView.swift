@@ -454,7 +454,12 @@ private struct MapRoundView: View {
                 let hot = answered && isMountain(target, mountain.name)
                 let wasTapped = answered && verdict?.correct == false && verdict?.tapped == mountain.name
                 let colour = hot ? green : (wasTapped ? red : Color.brown.opacity(0.85))
-                let r = (mountain.isRange ? 7.0 : 5.0) * pt
+                if let spine = mountain.line {
+                    // A range is drawn along its spine, like a river, in the colour of mountains.
+                    c.stroke(Self.path(rings: [spine], closed: false), with: .color(hot || wasTapped ? colour : Color.brown.opacity(0.6)), style: StrokeStyle(lineWidth: (hot || wasTapped ? 6 : 4) * pt, lineCap: .round, lineJoin: .round))
+                    continue
+                }
+                let r = 5.0 * pt
                 let x = Double(mountain.at[0]), y = Double(mountain.at[1])
                 var tri = Path()
                 tri.move(to: CGPoint(x: x, y: y - r))

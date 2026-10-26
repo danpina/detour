@@ -77,3 +77,26 @@ final class MapTests: XCTestCase {
         XCTAssertLessThan(MapLogic.round(data, settings: settings, length: 20, using: &rng).count, 20)
     }
 }
+
+final class MapRangeTests: XCTestCase {
+    func testRangesAreTappedAlongTheirSpine() throws {
+        let data = try XCTUnwrap(MapStore.load())
+        let ranges = data.mountains.filter { $0.isRange }
+        let peaks = data.mountains.filter { !$0.isRange }
+        XCTAssertGreaterThanOrEqual(ranges.count, 20)
+        XCTAssertGreaterThanOrEqual(peaks.count, 30)
+        for r in ranges { XCTAssertGreaterThanOrEqual(r.line?.count ?? 0, 6, r.name) }
+        for p in peaks { XCTAssertNil(p.line, p.name) }
+
+        let alps = try XCTUnwrap(ranges.first { $0.name == "The Alps" })
+        let line = try XCTUnwrap(alps.line)
+        let x = Double(line[0]), y = Double(line[1])
+        XCTAssertTrue(MapLogic.judge(data, target: .mountain(alps), x: x + 30, y: y + 30).correct)
+        XCTAssertFalse(MapLogic.judge(data, target: .mountain(alps), x: x + 3000, y: y + 1500).correct)
+        let pyrenees = try XCTUnwrap(ranges.first { $0.name == "The Pyrenees" })
+        let pline = try XCTUnwrap(pyrenees.line)
+        let wrong = MapLogic.judge(data, target: .mountain(alps), x: Double(pline[0]), y: Double(pline[1]))
+        XCTAssertFalse(wrong.correct)
+        XCTAssertEqual(wrong.tapped, "The Pyrenees")
+    }
+}

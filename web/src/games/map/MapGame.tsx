@@ -284,7 +284,12 @@ function MapRound({ data, settings, onExit, embedded, onSettings }: GameProps & 
             data.mountains.map((m) => {
               const hot = answered && target.kind === "mountain" && target.mountain.name === m.name;
               const wasTapped = answered && !verdict.correct && verdict.tapped === m.name;
-              const r = (m.kind === "range" ? 7 : 5) * unit;
+              if (m.line) {
+                // A range is drawn along its spine, like a river, in the colour of mountains.
+                const stroke = hot ? "stroke-emerald-500" : wasTapped ? "stroke-rose-500" : "stroke-amber-700/70 dark:stroke-amber-400/70";
+                return <path key={m.name} d={lineOf(m.line)} className={stroke} fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth={(hot || wasTapped ? 6 : 4) * unit} />;
+              }
+              const r = 5 * unit;
               const colour = hot ? "fill-emerald-500" : wasTapped ? "fill-rose-500" : "fill-amber-700/80 dark:fill-amber-400/80";
               return <path key={m.name} d={`M${m.at[0]} ${m.at[1] - r}L${m.at[0] + r} ${m.at[1] + r * 0.8}L${m.at[0] - r} ${m.at[1] + r * 0.8}Z`} className={colour} />;
             })}

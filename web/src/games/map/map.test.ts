@@ -111,3 +111,27 @@ describe("rounds", () => {
     expect(buildRound(data, DEFAULT_SETTINGS, seeded(), 5)).toHaveLength(5);
   });
 });
+
+describe("mountain ranges are tapped along their spine", () => {
+  it("every range has a line, every peak a point, and there are enough of each", () => {
+    const ranges = data.mountains.filter((m) => m.kind === "range");
+    const peaks = data.mountains.filter((m) => m.kind === "peak");
+    expect(ranges.length).toBeGreaterThanOrEqual(20);
+    expect(peaks.length).toBeGreaterThanOrEqual(30);
+    for (const r of ranges) expect(r.line && r.line.length >= 6, r.name).toBe(true);
+    for (const p of peaks) expect(p.line, p.name).toBeUndefined();
+  });
+
+  it("a tap near the spine is right, far from it is wrong, and a nearby other range is named", () => {
+    const alps = data.mountains.find((m) => m.name === "The Alps")!;
+    const target: Target = { kind: "mountain", mountain: alps };
+    const [x, y] = [alps.line![0]!, alps.line![1]!];
+    expect(judge(data, target, x + 30, y + 30).correct).toBe(true);
+    expect(judge(data, target, x + 3000, y + 1500).correct).toBe(false);
+    // On the Pyrenees, asked for the Alps: wrong, and it says which range was tapped.
+    const pyrenees = data.mountains.find((m) => m.name === "The Pyrenees")!;
+    const wrong = judge(data, target, pyrenees.line![0]!, pyrenees.line![1]!);
+    expect(wrong.correct).toBe(false);
+    expect(wrong.tapped).toBe("The Pyrenees");
+  });
+});

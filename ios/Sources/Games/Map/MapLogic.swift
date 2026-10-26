@@ -24,6 +24,8 @@ struct MapMountain: Codable, Equatable {
     let kind: String
     let continent: String
     let at: [Int]
+    /// A range also has its spine as a flat x, y list, so it is drawn and tapped along its length rather than at one dot.
+    let line: [Int]?
 
     var isRange: Bool { kind == "range" }
 }
@@ -140,6 +142,8 @@ enum MapLogic {
     static let riverReach = 110.0
     static let peakReach = 150.0
     static let rangeReach = 450.0
+    /// How close to a range's spine a tap has to be.
+    static let rangeLineReach = 200.0
     static let tinyCountryArea = 3000
     static let tinyCountryReach = 170.0
 
@@ -199,8 +203,11 @@ enum MapLogic {
                 .min { $0.d < $1.d }
             return MapVerdict(correct: false, tapped: (other != nil && other!.d <= riverReach) ? other!.r.name : nil)
         case .mountain(let mountain):
-            func reach(_ m: MapMountain) -> Double { m.isRange ? rangeReach : peakReach }
-            func dist(_ m: MapMountain) -> Double { hypot(x - Double(m.at[0]), y - Double(m.at[1])) }
+            func reach(_ m: MapMountain) -> Double { m.isRange ? (m.line != nil ? rangeLineReach : rangeReach) : peakReach }
+            func dist(_ m: MapMountain) -> Double {
+                if let line = m.line { return distanceToLines(x: x, y: y, lines: [line]) }
+                return hypot(x - Double(m.at[0]), y - Double(m.at[1]))
+            }
             if dist(mountain) <= reach(mountain) { return MapVerdict(correct: true, tapped: nil) }
             let other = data.mountains.filter { $0.name != mountain.name && dist($0) <= reach($0) }.min { dist($0) < dist($1) }
             return MapVerdict(correct: false, tapped: other?.name)
