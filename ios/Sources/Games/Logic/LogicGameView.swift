@@ -38,7 +38,7 @@ struct LogicGameView: View {
 
     private func startRound() {
         var rng = SystemRandomNumberGenerator()
-        round = LogicBuilder.round(all: items, progress: progress, length: GameStats.roundSize, using: &rng)
+        round = LogicBuilder.round(all: items, progress: progress, length: GameStats.size(embedded: embedded != nil), using: &rng)
         index = 0
         score = 0
         picked = nil

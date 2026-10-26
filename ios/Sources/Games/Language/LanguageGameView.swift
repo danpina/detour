@@ -42,7 +42,7 @@ struct LanguageGameView: View {
 
     private func startRound() {
         var rng = SystemRandomNumberGenerator()
-        round = LanguageBuilder.round(everything: words, level: level, progress: progress, length: GameStats.roundSize, using: &rng)
+        round = LanguageBuilder.round(everything: words, level: level, progress: progress, length: GameStats.size(embedded: embedded != nil), using: &rng)
         index = 0
         score = 0
         picked = nil

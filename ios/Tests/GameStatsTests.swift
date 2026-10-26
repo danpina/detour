@@ -27,3 +27,10 @@ final class GameStatsTests: XCTestCase {
         XCTAssertEqual(GameStats.bestLabel(.memory, defaults: defaults), "7 in a row")
     }
 }
+
+final class EmbeddedRoundSizeTests: XCTestCase {
+    func testAGameInsideARoundPlaysOnePuzzle() {
+        XCTAssertEqual(GameStats.size(embedded: true), 1)
+        XCTAssertEqual(GameStats.size(embedded: false), GameStats.roundSize)
+    }
+}

@@ -31,6 +31,8 @@ struct SkillSummary: Identifiable {
     let levelName: String
     let recentRight: Int
     let recentTotal: Int
+    /// Problems answered in total.
+    let attempts: Int
     var id: String { track.rawValue }
 }
 
@@ -92,9 +94,6 @@ final class AppModel {
         Set(data.events.filter { $0.kind == .complete }.map { $0.cardId })
     }
 
-    /// How many games a games round plays. Each plays the round size chosen on the Games screen.
-    static let gamesPerRound = 3
-
     /// The three kinds of round on the home screen. Each has its own place: cards, math, or games.
     enum RoundKind: String, CaseIterable {
         case learning, math, games
@@ -104,7 +103,8 @@ final class AppModel {
     func makeSet(kind: RoundKind = .learning) -> [SessionItem] {
         switch kind {
         case .games:
-            let games = GameId.allCases.shuffled().prefix(AppModel.gamesPerRound).map { SessionItem.game($0) }
+            // One setting sets the length of every round: N cards, N math problems or N games (each a single puzzle).
+            let games = GameId.allCases.shuffled().prefix(data.settings.setSize).map { SessionItem.game($0) }
             AppLog.log("round built: games=\(games.map { $0.key }.joined(separator: ", "))")
             return Array(games)
         case .math:
@@ -114,12 +114,16 @@ final class AppModel {
         }
     }
 
-    /// A math round: a mental-math drill, then one more skill (the one practised least recently), each at the player's level.
+    /// A math round of N problems: a mental-math drill, then one more skill (the one practised least recently), each at the player's
+    /// level. The problems are split between the two, the first getting the extra one when N is odd.
     private func mathRound() -> [SessionItem] {
+        let size = data.settings.setSize
         let second = Skills.nextTrack(data.skills, among: TrackId.allCases.filter { $0 != .mentalMath })
-        let items = [TrackId.mentalMath, second].map { track -> SessionItem in
+        let first = (size + 1) / 2
+        let counts: [(TrackId, Int)] = [(.mentalMath, first), (second, size - first)]
+        let items = counts.filter { $0.1 > 0 }.map { track, count -> SessionItem in
             let level = data.skills.first { $0.track == track }?.level ?? 1
-            return .drill(DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31))))
+            return .drill(DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)), count: count))
         }
         AppLog.log("round built: math level=\(mathLevel) items=[\(items.map { $0.key }.joined(separator: ", "))]")
         return items
@@ -232,7 +236,7 @@ final class AppModel {
             let info = Drills.info(id)
             let level = p?.level ?? 1
             return SkillSummary(track: id, name: info.name, level: level, maxLevel: info.maxLevel, levelName: info.levels[level - 1],
-                                recentRight: p?.recentResults.filter { $0 }.count ?? 0, recentTotal: p?.recentResults.count ?? 0)
+                                recentRight: p?.recentResults.filter { $0 }.count ?? 0, recentTotal: p?.recentResults.count ?? 0, attempts: p?.attemptsTotal ?? 0)
         }
         return ProgressSnapshot(
             streak: shown.current,

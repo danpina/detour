@@ -21,6 +21,11 @@ struct DrillView: View {
     private var info: TrackInfo { Drills.info(spec.track) }
     private let tick = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
 
+    /// The time allowed grows or shrinks with the number of problems in the round.
+    private var limitSeconds: Double? {
+        Drills.info(spec.track).timeLimitSeconds.map { $0 * Double(max(problems.count, 1)) / Double(Drills.info(spec.track).problems) }
+    }
+
     private var gradient: LinearGradient {
         LinearGradient(
             colors: spec.track != .estimation ? [Color(red: 0.19, green: 0.18, blue: 0.51), .black] : [Color(red: 0.02, green: 0.37, blue: 0.27), .black],
@@ -56,11 +61,11 @@ struct DrillView: View {
         .foregroundStyle(.white)
         .onAppear {
             problems = Drills.generateRound(spec)
-            remaining = info.timeLimitSeconds ?? 0
+            remaining = limitSeconds ?? 0
             focused = true
         }
         .onReceive(tick) { _ in
-            guard let limit = info.timeLimitSeconds, !finished, feedback == nil, !problems.isEmpty else { return }
+            guard let limit = limitSeconds, !finished, feedback == nil, !problems.isEmpty else { return }
             remaining = max(0, remaining - 0.1)
             if remaining <= 0 && limit > 0 { finish(answers) }
         }
@@ -77,7 +82,7 @@ struct DrillView: View {
                     .font(.caption)
                     .tracking(1.2)
                     .foregroundStyle(.white.opacity(0.6))
-                if let limit = info.timeLimitSeconds {
+                if let limit = limitSeconds {
                     ProgressViewBar(fraction: remaining / limit)
                 }
                 Text(problem.prompt)

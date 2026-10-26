@@ -172,7 +172,7 @@ private struct MapRoundView: View {
         home = CGRect(x: b.x, y: b.y, width: b.w, height: b.h)
         box = home
         var rng = SystemRandomNumberGenerator()
-        round = MapLogic.round(data, settings: settings, length: GameStats.roundSize, using: &rng)
+        round = MapLogic.round(data, settings: settings, length: GameStats.size(embedded: embedded != nil), using: &rng)
         started = true
     }
 
@@ -192,7 +192,7 @@ private struct MapRoundView: View {
 
     private func again() {
         var rng = SystemRandomNumberGenerator()
-        round = MapLogic.round(data, settings: settings, length: GameStats.roundSize, using: &rng)
+        round = MapLogic.round(data, settings: settings, length: GameStats.size(embedded: embedded != nil), using: &rng)
         index = 0
         score = 0
         verdict = nil

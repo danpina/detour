@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// "What comes next?": number sequences, easy to hard (`GameStats.roundSize` of them). Pick the number that continues the pattern.
+/// "What comes next?": number sequences, easy to hard (the round size, one inside a Game round). Pick the number that continues the pattern.
 /// When `embedded` is set the game is played inside a set of cards: no end screen, `embedded(score)` is called when
 /// the round is done, and `onExit` means "skip".
 struct PatternsGameView: View {
@@ -38,7 +38,7 @@ struct PatternsGameView: View {
     }
 
     private func startRound() {
-        let built = PatternsData.buildRound(from: PatternsData.load(), size: GameStats.roundSize)
+        let built = PatternsData.buildRound(from: PatternsData.load(), size: GameStats.size(embedded: embedded != nil))
         if built.isEmpty {
             loadFailed = true
             return

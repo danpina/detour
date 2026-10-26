@@ -46,15 +46,15 @@ struct SettingsView: View {
                     Button("Change interests") { sheet = .interests }
                 }
 
-                Section("Cards per set") {
-                    Picker("Cards per set", selection: Binding(
+                Section("Round length") {
+                    Picker("Round length", selection: Binding(
                         get: { model.settings.setSize },
                         set: { size in model.updateSettings { $0.setSize = size } }
                     )) {
                         ForEach([3, 5, 8], id: \.self) { Text("\($0)").tag($0) }
                     }
                     .pickerStyle(.segmented)
-                    Text("Five is about a minute.").font(.footnote).foregroundStyle(.secondary)
+                    Text("How many things in each round: 3 means 3 cards, 3 math problems or 3 games. Five is about a minute.").font(.footnote).foregroundStyle(.secondary)
                 }
 
                 GuardSettingsSection(chooseApps: { sheet = .apps })

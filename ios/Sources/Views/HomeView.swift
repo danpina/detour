@@ -21,8 +21,8 @@ struct HomeView: View {
                     ? "\(model.settings.setSize) small cards. \(model.dueCount) to check if they stuck."
                     : "\(model.settings.setSize) small cards to learn something new."
             ),
-            Round(kind: .math, emoji: "🔢", title: "Math round", blurb: "Quick sums and puzzles · level \(model.mathLevel)"),
-            Round(kind: .games, emoji: "🎮", title: "Game round", blurb: "Three quick games: language, map, chess and more."),
+            Round(kind: .math, emoji: "🔢", title: "Math round", blurb: "\(model.settings.setSize) quick problems · level \(model.mathLevel)"),
+            Round(kind: .games, emoji: "🎮", title: "Game round", blurb: "\(model.settings.setSize) quick games: language, map, chess and more."),
         ]
     }
 

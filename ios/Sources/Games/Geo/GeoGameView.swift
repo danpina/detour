@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Geography quiz: GameStats.roundSize questions (flags, capitals, countries by capital), easy first.
+/// Geography quiz: the round size (one question inside a Game round) of questions (flags, capitals, countries by capital), easy first.
 /// When `embedded` is set the game is played inside a set of cards: no end screen, Skip calls onExit.
 struct GeoGameView: View {
     let onExit: () -> Void
@@ -36,7 +36,7 @@ struct GeoGameView: View {
 
     private func startRound() {
         var rng = SystemRandomNumberGenerator()
-        round = GeoBuilder.round(all: countries, length: GameStats.roundSize, using: &rng)
+        round = GeoBuilder.round(all: countries, length: GameStats.size(embedded: embedded != nil), using: &rng)
         index = 0
         score = 0
         picked = nil

@@ -16,6 +16,12 @@ enum GameStats {
         set { UserDefaults.standard.set(min(roundSizeRange.upperBound, max(roundSizeRange.lowerBound, newValue)), forKey: roundKey) }
     }
 
+    /// A game played inside a Game round plays one puzzle, so a round of N games takes about as long as N cards.
+    static let embeddedRoundSize = 1
+
+    /// How many puzzles a game plays: one inside a Game round, otherwise the size chosen on the Games screen.
+    static func size(embedded: Bool) -> Int { embedded ? embeddedRoundSize : roundSize }
+
     private static func bestKey(_ id: GameId) -> String { "detour.games.best." + id.rawValue }
     private static func ofKey(_ id: GameId) -> String { "detour.games.bestOf." + id.rawValue }
     private static func playsKey(_ id: GameId) -> String { "detour.games.plays." + id.rawValue }

@@ -33,7 +33,7 @@ struct ChessGameView: View {
         let loaded = ChessLogic.load()
         _data = State(initialValue: loaded)
         if let loaded = loaded {
-            _round = State(initialValue: ChessLogic.buildRound(loaded.puzzles(forLevel: ChessData.currentLevel), count: GameStats.roundSize))
+            _round = State(initialValue: ChessLogic.buildRound(loaded.puzzles(forLevel: ChessData.currentLevel), count: GameStats.size(embedded: embedded != nil)))
         } else {
             _round = State(initialValue: [])
         }
@@ -290,7 +290,7 @@ struct ChessGameView: View {
 
     private func playAgain() {
         guard let data = data else { return }
-        round = ChessLogic.buildRound(data.puzzles(forLevel: ChessData.currentLevel), count: GameStats.roundSize)
+        round = ChessLogic.buildRound(data.puzzles(forLevel: ChessData.currentLevel), count: GameStats.size(embedded: embedded != nil))
         index = 0
         score = 0
         wrong = 0

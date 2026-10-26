@@ -38,6 +38,8 @@ struct DrillSpec: Hashable {
     let track: TrackId
     let level: Int
     let seed: UInt32
+    /// How many problems the round has. nil means the track's usual number.
+    var count: Int? = nil
 }
 
 struct DrillProblem: Hashable {
@@ -128,7 +130,7 @@ enum Drills {
         var seen = Set<String>()
         var out: [DrillProblem] = []
         var guardCount = 0
-        let wanted = info(spec.track).problems
+        let wanted = spec.count ?? info(spec.track).problems
         while out.count < wanted && guardCount < 50 {
             guardCount += 1
             let p: DrillProblem

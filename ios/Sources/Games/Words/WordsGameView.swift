@@ -24,7 +24,7 @@ struct WordsGameView: View {
     /// Set when played inside a set of cards: called with the score when the round is finished.
     var embedded: ((Int) -> Void)? = nil
 
-    @State private var round: [WordPuzzle] = WordsGameView.makeRound()
+    @State private var round: [WordPuzzle]
     @State private var index = 0
     @State private var placed: [Int] = []
     @State private var status: WordStatus = .playing
@@ -35,9 +35,15 @@ struct WordsGameView: View {
     @State private var shakeCount = 0
     @State private var recorded = false
 
-    private static func makeRound() -> [WordPuzzle] {
+    init(onExit: @escaping () -> Void, embedded: ((Int) -> Void)? = nil) {
+        self.onExit = onExit
+        self.embedded = embedded
+        _round = State(initialValue: WordsGameView.makeRound(embedded: embedded != nil))
+    }
+
+    private static func makeRound(embedded: Bool) -> [WordPuzzle] {
         var rng = SystemRandomNumberGenerator()
-        return WordsLogic.buildRound(WordsLogic.loadPuzzles(), size: GameStats.roundSize, using: &rng)
+        return WordsLogic.buildRound(WordsLogic.loadPuzzles(), size: GameStats.size(embedded: embedded), using: &rng)
     }
 
     private var locked: Bool { status == .correct || status == .skipped }
@@ -354,7 +360,7 @@ struct WordsGameView: View {
     }
 
     private func playAgain() {
-        round = WordsGameView.makeRound()
+        round = WordsGameView.makeRound(embedded: embedded != nil)
         index = 0
         placed = []
         status = .playing

@@ -64,7 +64,7 @@ struct MemoryGameView: View {
     }
 
     private func startEmbedded() {
-        let newShort = MemoryLogic.ShortRound(target: GameStats.roundSize)
+        let newShort = MemoryLogic.ShortRound(target: GameStats.embeddedRoundSize)
         short = newShort
         run = newShort.run
         mode = Bool.random() ? .digits : .grid

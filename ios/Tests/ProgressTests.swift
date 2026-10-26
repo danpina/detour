@@ -134,27 +134,34 @@ final class AppModelTests: XCTestCase {
         }
     }
 
-    func testAMathRoundIsMentalMathThenAnotherSkillAtTheirLevels() {
+    func testAMathRoundHasAsManyProblemsAsTheRoundLength() {
         let (model, url) = makeModel()
         defer { try? FileManager.default.removeItem(at: url) }
         model.completeOnboarding(interests: [.history, .science, .money])
-        let items = model.makeSet(kind: .math)
-        XCTAssertEqual(items.count, 2)
-        guard case .drill(let first) = items[0], case .drill(let second) = items[1] else { return XCTFail("both items should be drills") }
-        XCTAssertEqual(first.track, .mentalMath)
-        XCTAssertNotEqual(second.track, .mentalMath)
-        XCTAssertEqual(first.level, 1)
+        for size in [3, 5, 8] {
+            model.updateSettings { $0.setSize = size }
+            let items = model.makeSet(kind: .math)
+            let specs: [DrillSpec] = items.compactMap { if case .drill(let s) = $0 { return s } else { return nil } }
+            XCTAssertEqual(specs.count, items.count, "every item is a drill")
+            XCTAssertEqual(specs.first?.track, .mentalMath)
+            if specs.count > 1 { XCTAssertNotEqual(specs[1].track, .mentalMath) }
+            XCTAssertEqual(specs.first?.level, 1)
+            XCTAssertEqual(specs.reduce(0) { $0 + Drills.generateRound($1).count }, size, "size " + String(size))
+        }
         XCTAssertEqual(model.mathLevel, 1)
     }
 
-    func testAGamesRoundIsThreeDifferentGames() {
+    func testAGamesRoundHasAsManyDifferentGamesAsTheRoundLength() {
         let (model, url) = makeModel()
         defer { try? FileManager.default.removeItem(at: url) }
         model.completeOnboarding(interests: [.history, .science, .money])
-        let items = model.makeSet(kind: .games)
-        XCTAssertEqual(items.count, AppModel.gamesPerRound)
-        XCTAssertTrue(items.allSatisfy(isGame))
-        XCTAssertEqual(Set(items.map { $0.key }).count, items.count)
+        for size in [3, 5, 8] {
+            model.updateSettings { $0.setSize = size }
+            let items = model.makeSet(kind: .games)
+            XCTAssertEqual(items.count, size)
+            XCTAssertTrue(items.allSatisfy(isGame))
+            XCTAssertEqual(Set(items.map { $0.key }).count, items.count)
+        }
     }
 
     func testFinishingANewCardSchedulesItsProbesForTomorrowAndStartsTheStreak() {
