@@ -5,7 +5,7 @@ import type { BackupData } from "./db";
 export const BACKUP_VERSION = 1;
 
 const num = z.number().finite();
-const settings = z.object({ id: z.literal("main"), interests: z.array(z.enum(INTERESTS)), onboarding_done: z.boolean(), set_size: z.number().int().min(3).max(10).optional(), drills: z.boolean().optional(), extras_every: z.number().int().min(1).max(10).optional() });
+const settings = z.object({ id: z.literal("main"), interests: z.array(z.enum(INTERESTS)), onboarding_done: z.boolean(), set_size: z.number().int().min(3).max(10).optional(), drills: z.boolean().optional(), extras_every: z.number().int().min(1).max(10).optional(), math_off: z.array(z.string()).optional() });
 const event = z.object({
   id: z.number().optional(),
   card_id: z.string(),
@@ -22,7 +22,7 @@ const review = z.object({
   learning_steps: num, reps: num, lapses: num, state: num, last_review_at: num.optional(),
 });
 const skill = z.object({
-  track_id: z.enum(["mental-math", "estimation", "algebra", "geometry", "probability", "number-theory", "money"]), level: z.number().int().min(1), recent_results: z.array(z.boolean()), attempts_total: num, last_at: num,
+  track_id: z.enum(["mental-math", "estimation", "algebra", "geometry", "probability", "number-theory", "money", "fractions", "statistics", "sequences", "rates"]), level: z.number().int().min(1), recent_results: z.array(z.boolean()), attempts_total: num, last_at: num,
 });
 const streak = z.object({ id: z.literal("main"), current: num, best: num, freezes_left: num, freeze_week: z.string(), last_active_day: z.string() });
 

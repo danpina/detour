@@ -8666,6 +8666,6162 @@
       ]
     },
     {
+      "track": "fractions",
+      "level": 1,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "1/7 = ?/28",
+          "answer": 4
+        },
+        {
+          "prompt": "3/9 = ?/45",
+          "answer": 15
+        },
+        {
+          "prompt": "4/5 = ?/20",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 1,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "2/7 = ?/21",
+          "answer": 6
+        },
+        {
+          "prompt": "6/9 = ?/36",
+          "answer": 24
+        },
+        {
+          "prompt": "1/8 = ?/40",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 1,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "1/7 = ?/28",
+          "answer": 4
+        },
+        {
+          "prompt": "4/8 = ?/32",
+          "answer": 16
+        },
+        {
+          "prompt": "2/4 = ?/8",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 1,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "3/6 = ?/36",
+          "answer": 18
+        },
+        {
+          "prompt": "2/3 = ?/9",
+          "answer": 6
+        },
+        {
+          "prompt": "4/8 = ?/24",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 1,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "3/9 = ?/36",
+          "answer": 12
+        },
+        {
+          "prompt": "2/6 = ?/12",
+          "answer": 4
+        },
+        {
+          "prompt": "7/9 = ?/36",
+          "answer": 28
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 1,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "2/9 = ?/18",
+          "answer": 4
+        },
+        {
+          "prompt": "3/7 = ?/28",
+          "answer": 12
+        },
+        {
+          "prompt": "2/4 = ?/24",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 2,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "8/10 in simplest form has what denominator?",
+          "answer": 5
+        },
+        {
+          "prompt": "45/72 in simplest form has what denominator?",
+          "answer": 8
+        },
+        {
+          "prompt": "4/6 = ?/24",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 2,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "20/24 in simplest form has what denominator?",
+          "answer": 6
+        },
+        {
+          "prompt": "5/6 = ?/30",
+          "answer": 25
+        },
+        {
+          "prompt": "3/4 = ?/8",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 2,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "10/12 in simplest form has what denominator?",
+          "answer": 6
+        },
+        {
+          "prompt": "1/2 = ?/8",
+          "answer": 4
+        },
+        {
+          "prompt": "1/3 = ?/12",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 2,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "20/25 in simplest form has what denominator?",
+          "answer": 5
+        },
+        {
+          "prompt": "12/15 in simplest form has what denominator?",
+          "answer": 5
+        },
+        {
+          "prompt": "12/18 in simplest form has what denominator?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 2,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "20/32 in simplest form has what denominator?",
+          "answer": 8
+        },
+        {
+          "prompt": "4/8 = ?/24",
+          "answer": 12
+        },
+        {
+          "prompt": "7/8 = ?/48",
+          "answer": 42
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 2,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "15/24 in simplest form has what denominator?",
+          "answer": 8
+        },
+        {
+          "prompt": "6/9 = ?/27",
+          "answer": 18
+        },
+        {
+          "prompt": "2/5 = ?/20",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 3,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "1/2 + 3/6 = ?/6",
+          "answer": 6
+        },
+        {
+          "prompt": "1/4 + 3/5 = ?/20",
+          "answer": 17
+        },
+        {
+          "prompt": "2/3 + 2/5 = ?/15",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 3,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "1/2 + 2/6 = ?/6",
+          "answer": 5
+        },
+        {
+          "prompt": "21/49 in simplest form has what denominator?",
+          "answer": 7
+        },
+        {
+          "prompt": "24/32 in simplest form has what denominator?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 3,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "1/2 + 3/6 = ?/6",
+          "answer": 6
+        },
+        {
+          "prompt": "4/8 = ?/32",
+          "answer": 16
+        },
+        {
+          "prompt": "2/4 = ?/8",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 3,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "2/4 + 5/6 = ?/12",
+          "answer": 16
+        },
+        {
+          "prompt": "2/3 + 1/4 = ?/12",
+          "answer": 11
+        },
+        {
+          "prompt": "15/35 in simplest form has what denominator?",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 3,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "1/4 + 2/5 = ?/20",
+          "answer": 13
+        },
+        {
+          "prompt": "2/4 + 1/6 = ?/12",
+          "answer": 8
+        },
+        {
+          "prompt": "3/4 + 2/5 = ?/20",
+          "answer": 23
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 3,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "1/4 + 1/5 = ?/20",
+          "answer": 9
+        },
+        {
+          "prompt": "1/2 + 3/6 = ?/6",
+          "answer": 6
+        },
+        {
+          "prompt": "12/18 in simplest form has what denominator?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 4,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "The ratio is 4:1. If the first part is 24, the second?",
+          "answer": 6
+        },
+        {
+          "prompt": "The ratio is 5:2. If the first part is 30, the second?",
+          "answer": 12
+        },
+        {
+          "prompt": "2/3 + 2/5 = ?/15",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 4,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "The ratio is 4:2. If the first part is 16, the second?",
+          "answer": 8
+        },
+        {
+          "prompt": "2/4 + 2/5 = ?/20",
+          "answer": 18
+        },
+        {
+          "prompt": "10/12 in simplest form has what denominator?",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 4,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "The ratio is 4:1. If the first part is 20, the second?",
+          "answer": 5
+        },
+        {
+          "prompt": "4/8 = ?/32",
+          "answer": 16
+        },
+        {
+          "prompt": "2/4 = ?/8",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 4,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "The ratio is 4:3. If the first part is 32, the second?",
+          "answer": 24
+        },
+        {
+          "prompt": "2/3 + 1/4 = ?/12",
+          "answer": 11
+        },
+        {
+          "prompt": "1/3 + 2/6 = ?/6",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 4,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "The ratio is 5:2. If the first part is 25, the second?",
+          "answer": 10
+        },
+        {
+          "prompt": "The ratio is 3:2. If the first part is 6, the second?",
+          "answer": 4
+        },
+        {
+          "prompt": "The ratio is 5:5. If the first part is 25, the second?",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 4,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "The ratio is 5:1. If the first part is 10, the second?",
+          "answer": 2
+        },
+        {
+          "prompt": "The ratio is 4:2. If the first part is 20, the second?",
+          "answer": 10
+        },
+        {
+          "prompt": "12/18 in simplest form has what denominator?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 5,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Share $35 in the ratio 4:1. The larger share, in dollars?",
+          "answer": 28
+        },
+        {
+          "prompt": "Share $56 in the ratio 5:2. The larger share, in dollars?",
+          "answer": 40
+        },
+        {
+          "prompt": "The ratio is 3:5. If the first part is 15, the second?",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 5,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Share $30 in the ratio 4:2. The larger share, in dollars?",
+          "answer": 20
+        },
+        {
+          "prompt": "The ratio is 5:4. If the first part is 25, the second?",
+          "answer": 20
+        },
+        {
+          "prompt": "1/3 + 4/6 = ?/6",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 5,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Share $35 in the ratio 4:1. The larger share, in dollars?",
+          "answer": 28
+        },
+        {
+          "prompt": "25/30 in simplest form has what denominator?",
+          "answer": 6
+        },
+        {
+          "prompt": "1/3 + 2/4 = ?/12",
+          "answer": 10
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 5,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Share $77 in the ratio 4:3. The larger share, in dollars?",
+          "answer": 44
+        },
+        {
+          "prompt": "The ratio is 1:3. If the first part is 4, the second?",
+          "answer": 12
+        },
+        {
+          "prompt": "The ratio is 5:3. If the first part is 15, the second?",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 5,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Share $49 in the ratio 5:2. The larger share, in dollars?",
+          "answer": 35
+        },
+        {
+          "prompt": "Share $10 in the ratio 3:2. The larger share, in dollars?",
+          "answer": 6
+        },
+        {
+          "prompt": "Share $70 in the ratio 5:5. The larger share, in dollars?",
+          "answer": 35
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 5,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Share $12 in the ratio 5:1. The larger share, in dollars?",
+          "answer": 10
+        },
+        {
+          "prompt": "Share $36 in the ratio 4:2. The larger share, in dollars?",
+          "answer": 24
+        },
+        {
+          "prompt": "1/2 + 4/5 = ?/10",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 6,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A recipe for 2 uses 6 tomatoes. How many tomatoes for 12 people?",
+          "answer": 36
+        },
+        {
+          "prompt": "A recipe for 4 uses 16 cups of flour. How many cups of flour for 7 people?",
+          "answer": 28
+        },
+        {
+          "prompt": "A recipe for 4 uses 4 cups of flour. How many cups of flour for 7 people?",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 6,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A recipe for 2 uses 4 tomatoes. How many tomatoes for 8 people?",
+          "answer": 16
+        },
+        {
+          "prompt": "A recipe for 4 uses 8 tomatoes. How many tomatoes for 10 people?",
+          "answer": 20
+        },
+        {
+          "prompt": "1/3 + 3/6 = ?/6",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 6,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A recipe for 2 uses 6 tomatoes. How many tomatoes for 3 people?",
+          "answer": 9
+        },
+        {
+          "prompt": "A recipe for 4 uses 4 cups of flour. How many cups of flour for 5 people?",
+          "answer": 5
+        },
+        {
+          "prompt": "Share $18 in the ratio 1:1. The larger share, in dollars?",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 6,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A recipe for 4 uses 20 tomatoes. How many tomatoes for 9 people?",
+          "answer": 45
+        },
+        {
+          "prompt": "1/4 + 4/6 = ?/12",
+          "answer": 11
+        },
+        {
+          "prompt": "A recipe for 2 uses 10 cups of flour. How many cups of flour for 10 people?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 6,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A recipe for 2 uses 6 spoons of sugar. How many spoons of sugar for 11 people?",
+          "answer": 33
+        },
+        {
+          "prompt": "Share $30 in the ratio 2:1. The larger share, in dollars?",
+          "answer": 20
+        },
+        {
+          "prompt": "A recipe for 4 uses 20 spoons of sugar. How many spoons of sugar for 11 people?",
+          "answer": 55
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 6,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A recipe for 2 uses 2 spoons of sugar. How many spoons of sugar for 12 people?",
+          "answer": 12
+        },
+        {
+          "prompt": "Share $30 in the ratio 2:3. The larger share, in dollars?",
+          "answer": 18
+        },
+        {
+          "prompt": "The ratio is 3:5. If the first part is 21, the second?",
+          "answer": 35
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 7,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "5 notebooks cost $10. What do 9 cost, in dollars?",
+          "answer": 18
+        },
+        {
+          "prompt": "6 notebooks cost $24. What do 10 cost, in dollars?",
+          "answer": 40
+        },
+        {
+          "prompt": "A recipe for 6 uses 18 cups of flour. How many cups of flour for 7 people?",
+          "answer": 21
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 7,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "5 notebooks cost $20. What do 7 cost, in dollars?",
+          "answer": 28
+        },
+        {
+          "prompt": "A recipe for 4 uses 12 spoons of sugar. How many spoons of sugar for 6 people?",
+          "answer": 18
+        },
+        {
+          "prompt": "2 notebooks cost $16. What do 5 cost, in dollars?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 7,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "5 notebooks cost $10. What do 9 cost, in dollars?",
+          "answer": 18
+        },
+        {
+          "prompt": "The ratio is 4:3. If the first part is 20, the second?",
+          "answer": 15
+        },
+        {
+          "prompt": "The ratio is 2:3. If the first part is 6, the second?",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 7,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "5 notebooks cost $25. What do 11 cost, in dollars?",
+          "answer": 55
+        },
+        {
+          "prompt": "A recipe for 4 uses 8 eggs. How many eggs for 9 people?",
+          "answer": 18
+        },
+        {
+          "prompt": "4 notebooks cost $12. What do 12 cost, in dollars?",
+          "answer": 36
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 7,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "6 notebooks cost $24. What do 9 cost, in dollars?",
+          "answer": 36
+        },
+        {
+          "prompt": "4 notebooks cost $16. What do 5 cost, in dollars?",
+          "answer": 20
+        },
+        {
+          "prompt": "6 notebooks cost $48. What do 9 cost, in dollars?",
+          "answer": 72
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 7,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "6 notebooks cost $18. What do 7 cost, in dollars?",
+          "answer": 21
+        },
+        {
+          "prompt": "5 notebooks cost $25. What do 9 cost, in dollars?",
+          "answer": 45
+        },
+        {
+          "prompt": "Share $60 in the ratio 2:3. The larger share, in dollars?",
+          "answer": 36
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 8,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A trip of 40 km. How many cm on a map where 1 cm is 20 km?",
+          "answer": 2
+        },
+        {
+          "prompt": "A trip of 250 km. How many cm on a map where 1 cm is 50 km?",
+          "answer": 5
+        },
+        {
+          "prompt": "4 notebooks cost $36. What do 8 cost, in dollars?",
+          "answer": 72
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 8,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "On a map, 1 cm is 25 km. How far is 5 cm, in km?",
+          "answer": 125
+        },
+        {
+          "prompt": "6 notebooks cost $42. What do 9 cost, in dollars?",
+          "answer": 63
+        },
+        {
+          "prompt": "A recipe for 2 uses 8 spoons of sugar. How many spoons of sugar for 5 people?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 8,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "On a map, 1 cm is 25 km. How far is 2 cm, in km?",
+          "answer": 50
+        },
+        {
+          "prompt": "Share $49 in the ratio 4:3. The larger share, in dollars?",
+          "answer": 28
+        },
+        {
+          "prompt": "Share $20 in the ratio 2:3. The larger share, in dollars?",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 8,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A trip of 120 km. How many cm on a map where 1 cm is 20 km?",
+          "answer": 6
+        },
+        {
+          "prompt": "2 notebooks cost $12. What do 5 cost, in dollars?",
+          "answer": 30
+        },
+        {
+          "prompt": "6 notebooks cost $30. What do 8 cost, in dollars?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 8,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "On a map, 1 cm is 50 km. How far is 5 cm, in km?",
+          "answer": 250
+        },
+        {
+          "prompt": "On a map, 1 cm is 20 km. How far is 5 cm, in km?",
+          "answer": 100
+        },
+        {
+          "prompt": "On a map, 1 cm is 50 km. How far is 11 cm, in km?",
+          "answer": 550
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 8,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "On a map, 1 cm is 50 km. How far is 3 cm, in km?",
+          "answer": 150
+        },
+        {
+          "prompt": "On a map, 1 cm is 20 km. How far is 6 cm, in km?",
+          "answer": 120
+        },
+        {
+          "prompt": "A recipe for 4 uses 20 cups of flour. How many cups of flour for 10 people?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 9,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "2/3 of 1/2 of 36",
+          "answer": 12
+        },
+        {
+          "prompt": "5 notebooks cost $35. What do 8 cost, in dollars?",
+          "answer": 56
+        },
+        {
+          "prompt": "1/3 of 1/3 of 18",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 9,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "1/4 of 1/2 of 48",
+          "answer": 6
+        },
+        {
+          "prompt": "A trip of 50 km. How many cm on a map where 1 cm is 10 km?",
+          "answer": 5
+        },
+        {
+          "prompt": "A recipe for 2 uses 6 spoons of sugar. How many spoons of sugar for 11 people?",
+          "answer": 33
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 9,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "2/4 of 1/2 of 40",
+          "answer": 10
+        },
+        {
+          "prompt": "4 notebooks cost $12. What do 7 cost, in dollars?",
+          "answer": 21
+        },
+        {
+          "prompt": "A trip of 10 km. How many cm on a map where 1 cm is 5 km?",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 9,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "2/3 of 2/3 of 18",
+          "answer": 8
+        },
+        {
+          "prompt": "A trip of 40 km. How many cm on a map where 1 cm is 5 km?",
+          "answer": 8
+        },
+        {
+          "prompt": "3 notebooks cost $27. What do 10 cost, in dollars?",
+          "answer": 90
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 9,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "2/4 of 1/2 of 32",
+          "answer": 8
+        },
+        {
+          "prompt": "2 notebooks cost $16. What do 12 cost, in dollars?",
+          "answer": 96
+        },
+        {
+          "prompt": "2/3 of 3/4 of 48",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 9,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "1/4 of 1/2 of 32",
+          "answer": 4
+        },
+        {
+          "prompt": "4 notebooks cost $20. What do 7 cost, in dollars?",
+          "answer": 35
+        },
+        {
+          "prompt": "A trip of 450 km. How many cm on a map where 1 cm is 50 km?",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 10,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "How many 2/3-cup scoops fit in 2 cups?",
+          "answer": 3
+        },
+        {
+          "prompt": "1/4 of 2/4 of 80",
+          "answer": 10
+        },
+        {
+          "prompt": "On a map, 1 cm is 50 km. How far is 7 cm, in km?",
+          "answer": 350
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 10,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "How many 1/3-cup scoops fit in 2 cups?",
+          "answer": 6
+        },
+        {
+          "prompt": "A trip of 220 km. How many cm on a map where 1 cm is 20 km?",
+          "answer": 11
+        },
+        {
+          "prompt": "On a map, 1 cm is 10 km. How far is 10 cm, in km?",
+          "answer": 100
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 10,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "How many 1/3-cup scoops fit in 1 cups?",
+          "answer": 3
+        },
+        {
+          "prompt": "On a map, 1 cm is 2 km. How far is 10 cm, in km?",
+          "answer": 20
+        },
+        {
+          "prompt": "A trip of 8 km. How many cm on a map where 1 cm is 2 km?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 10,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "How many 2/3-cup scoops fit in 6 cups?",
+          "answer": 9
+        },
+        {
+          "prompt": "How many 1/3-cup scoops fit in 1 cups?",
+          "answer": 3
+        },
+        {
+          "prompt": "1/2 of 1/3 of 12",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 10,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "How many 2/5-cup scoops fit in 4 cups?",
+          "answer": 10
+        },
+        {
+          "prompt": "On a map, 1 cm is 25 km. How far is 7 cm, in km?",
+          "answer": 175
+        },
+        {
+          "prompt": "5 notebooks cost $45. What do 11 cost, in dollars?",
+          "answer": 99
+        }
+      ]
+    },
+    {
+      "track": "fractions",
+      "level": 10,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "How many 2/5-cup scoops fit in 2 cups?",
+          "answer": 5
+        },
+        {
+          "prompt": "6 notebooks cost $42. What do 9 cost, in dollars?",
+          "answer": 63
+        },
+        {
+          "prompt": "A trip of 40 km. How many cm on a map where 1 cm is 10 km?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 1,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Mean of 27, 32, 25",
+          "answer": 28
+        },
+        {
+          "prompt": "Mean of 31, 23, 30",
+          "answer": 28
+        },
+        {
+          "prompt": "Mean of 14, 13, 9",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 1,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Mean of 30, 32, 34",
+          "answer": 32
+        },
+        {
+          "prompt": "Mean of 22, 29, 21",
+          "answer": 24
+        },
+        {
+          "prompt": "Mean of 23, 25, 15",
+          "answer": 21
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 1,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Mean of 29, 34, 30",
+          "answer": 31
+        },
+        {
+          "prompt": "Mean of 23, 23, 26",
+          "answer": 24
+        },
+        {
+          "prompt": "Mean of 36, 28, 29",
+          "answer": 31
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 1,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Mean of 33, 24, 24",
+          "answer": 27
+        },
+        {
+          "prompt": "Mean of 15, 13, 23",
+          "answer": 17
+        },
+        {
+          "prompt": "Mean of 30, 32, 34",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 1,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Mean of 38, 43, 39",
+          "answer": 40
+        },
+        {
+          "prompt": "Mean of 16, 5, 9",
+          "answer": 10
+        },
+        {
+          "prompt": "Mean of 41, 39, 31",
+          "answer": 37
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 1,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Mean of 38, 40, 39",
+          "answer": 39
+        },
+        {
+          "prompt": "Mean of 19, 23, 24",
+          "answer": 22
+        },
+        {
+          "prompt": "Mean of 40, 40, 37",
+          "answer": 39
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 2,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Median of 39, 26, 40, 22, 1",
+          "answer": 26
+        },
+        {
+          "prompt": "Median of 17, 6, 10, 20, 19",
+          "answer": 17
+        },
+        {
+          "prompt": "Median of 2, 24, 12, 8, 18",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 2,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Median of 30, 12, 36, 13, 22",
+          "answer": 22
+        },
+        {
+          "prompt": "Mean of 31, 36, 32",
+          "answer": 33
+        },
+        {
+          "prompt": "Mean of 27, 36, 27",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 2,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Median of 3, 31, 29, 2, 19",
+          "answer": 19
+        },
+        {
+          "prompt": "Median of 20, 8, 29, 4, 32",
+          "answer": 20
+        },
+        {
+          "prompt": "Median of 22, 1, 34, 36, 13",
+          "answer": 22
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 2,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Median of 25, 7, 27, 18, 35",
+          "answer": 25
+        },
+        {
+          "prompt": "Mean of 21, 17, 10",
+          "answer": 16
+        },
+        {
+          "prompt": "Median of 25, 19, 34, 1, 28",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 2,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Median of 33, 21, 20, 40, 13",
+          "answer": 21
+        },
+        {
+          "prompt": "Median of 36, 39, 19, 26, 38",
+          "answer": 36
+        },
+        {
+          "prompt": "Median of 3, 19, 27, 26, 32",
+          "answer": 26
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 2,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Median of 1, 39, 37, 26, 6",
+          "answer": 26
+        },
+        {
+          "prompt": "Median of 29, 3, 39, 12, 40",
+          "answer": 29
+        },
+        {
+          "prompt": "Mean of 14, 7, 3",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 3,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Mode of 1, 19, 19, 16, 16, 1, 19, 30",
+          "answer": 19
+        },
+        {
+          "prompt": "Median of 7, 20, 10, 17, 6",
+          "answer": 10
+        },
+        {
+          "prompt": "Mean of 13, 6, 8",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 3,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Mode of 9, 9, 23, 10, 23, 23, 10, 17",
+          "answer": 23
+        },
+        {
+          "prompt": "Mean of 23, 25, 15",
+          "answer": 21
+        },
+        {
+          "prompt": "Median of 2, 3, 37, 6, 39",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 3,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Mode of 14, 2, 3, 22, 22, 22, 2, 14",
+          "answer": 22
+        },
+        {
+          "prompt": "Mean of 36, 28, 29",
+          "answer": 31
+        },
+        {
+          "prompt": "Mode of 25, 16, 9, 21, 9, 16, 9, 21",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 3,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Mode of 19, 19, 26, 14, 26, 21, 14, 19",
+          "answer": 19
+        },
+        {
+          "prompt": "Mode of 6, 23, 16, 10, 23, 23, 10, 6",
+          "answer": 23
+        },
+        {
+          "prompt": "Mean of 15, 18, 15",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 3,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Mode of 30, 15, 15, 25, 10, 30, 30, 10",
+          "answer": 30
+        },
+        {
+          "prompt": "Mode of 27, 27, 8, 19, 19, 30, 27, 30",
+          "answer": 27
+        },
+        {
+          "prompt": "Median of 14, 9, 31, 3, 19",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 3,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Mode of 29, 28, 5, 5, 29, 1, 29, 1",
+          "answer": 29
+        },
+        {
+          "prompt": "Mode of 9, 3, 9, 29, 29, 29, 6, 3",
+          "answer": 29
+        },
+        {
+          "prompt": "Mode of 13, 26, 11, 11, 10, 10, 10, 26",
+          "answer": 10
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 4,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Range of 38, 1, 32, 59, 17, 37",
+          "answer": 58
+        },
+        {
+          "prompt": "Mode of 30, 14, 30, 14, 13, 15, 13, 13",
+          "answer": 13
+        },
+        {
+          "prompt": "Range of 18, 12, 3, 26, 36, 48",
+          "answer": 45
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 4,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Range of 45, 20, 18, 33, 53, 38",
+          "answer": 35
+        },
+        {
+          "prompt": "Median of 9, 32, 15, 5, 17",
+          "answer": 15
+        },
+        {
+          "prompt": "Median of 2, 3, 37, 6, 39",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 4,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Range of 44, 3, 28, 5, 46, 29",
+          "answer": 43
+        },
+        {
+          "prompt": "Median of 7, 4, 23, 11, 8",
+          "answer": 8
+        },
+        {
+          "prompt": "Median of 12, 22, 34, 28, 27",
+          "answer": 27
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 4,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Range of 37, 27, 52, 41, 11, 32",
+          "answer": 41
+        },
+        {
+          "prompt": "Median of 19, 36, 25, 35, 10",
+          "answer": 25
+        },
+        {
+          "prompt": "Mode of 19, 15, 1, 15, 19, 26, 1, 19",
+          "answer": 19
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 4,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Range of 59, 19, 30, 50, 31, 21",
+          "answer": 40
+        },
+        {
+          "prompt": "Mean of 27, 34, 38",
+          "answer": 33
+        },
+        {
+          "prompt": "Range of 59, 38, 15, 29, 19, 47",
+          "answer": 44
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 4,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Range of 58, 9, 1, 55, 38, 23",
+          "answer": 57
+        },
+        {
+          "prompt": "Median of 40, 23, 16, 11, 29",
+          "answer": 23
+        },
+        {
+          "prompt": "Range of 59, 13, 29, 2, 10, 46",
+          "answer": 57
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 5,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Mean of 57, 57, 73, 73, 65",
+          "answer": 65
+        },
+        {
+          "prompt": "Mean of 54, 56, 70, 52, 58",
+          "answer": 58
+        },
+        {
+          "prompt": "Mean of 50, 63, 46, 43, 53",
+          "answer": 51
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 5,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Mean of 67, 71, 70, 66, 76",
+          "answer": 70
+        },
+        {
+          "prompt": "Median of 24, 34, 9, 17, 32",
+          "answer": 24
+        },
+        {
+          "prompt": "Median of 37, 6, 8, 3, 1",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 5,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Mean of 73, 81, 61, 68, 62",
+          "answer": 69
+        },
+        {
+          "prompt": "Range of 12, 6, 43, 29, 48, 53",
+          "answer": 47
+        },
+        {
+          "prompt": "Mode of 25, 16, 21, 9, 21, 16, 21, 9",
+          "answer": 21
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 5,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Mean of 63, 62, 58, 70, 67",
+          "answer": 64
+        },
+        {
+          "prompt": "Mode of 23, 8, 10, 8, 23, 27, 27, 8",
+          "answer": 8
+        },
+        {
+          "prompt": "Median of 2, 8, 24, 11, 3",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 5,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Mean of 80, 78, 85, 77, 80",
+          "answer": 80
+        },
+        {
+          "prompt": "Mean of 66, 60, 66, 33, 65",
+          "answer": 58
+        },
+        {
+          "prompt": "Mean of 69, 65, 54, 71, 71",
+          "answer": 66
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 5,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Mean of 86, 73, 81, 84, 71",
+          "answer": 79
+        },
+        {
+          "prompt": "Range of 59, 44, 58, 18, 5, 12",
+          "answer": 54
+        },
+        {
+          "prompt": "Mean of 72, 79, 75, 74, 100",
+          "answer": 80
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 6,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Median of 22, 7, 11, 8, 24, 17",
+          "answer": 14
+        },
+        {
+          "prompt": "Range of 9, 25, 15, 10, 30, 5",
+          "answer": 25
+        },
+        {
+          "prompt": "Range of 47, 18, 12, 3, 26, 36",
+          "answer": 44
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 6,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Median of 25, 21, 8, 16, 10, 12",
+          "answer": 14
+        },
+        {
+          "prompt": "Mode of 13, 18, 26, 26, 13, 5, 13, 18",
+          "answer": 13
+        },
+        {
+          "prompt": "Mode of 14, 29, 29, 1, 14, 1, 1, 20",
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 6,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Median of 19, 16, 12, 9, 8, 12",
+          "answer": 12
+        },
+        {
+          "prompt": "Mode of 22, 24, 24, 27, 15, 22, 15, 22",
+          "answer": 22
+        },
+        {
+          "prompt": "Mode of 10, 24, 29, 27, 27, 27, 29, 10",
+          "answer": 27
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 6,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Median of 15, 7, 23, 20, 19, 10",
+          "answer": 17
+        },
+        {
+          "prompt": "Median of 19, 10, 23, 15, 11, 8",
+          "answer": 13
+        },
+        {
+          "prompt": "Mode of 2, 6, 9, 6, 24, 9, 9, 2",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 6,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Median of 12, 26, 15, 24, 21, 10",
+          "answer": 18
+        },
+        {
+          "prompt": "Median of 9, 14, 18, 18, 23, 21",
+          "answer": 18
+        },
+        {
+          "prompt": "Mean of 53, 62, 69, 55, 51",
+          "answer": 58
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 6,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Median of 10, 24, 18, 22, 11, 12",
+          "answer": 15
+        },
+        {
+          "prompt": "Mean of 74, 85, 72, 76, 88",
+          "answer": 79
+        },
+        {
+          "prompt": "Mode of 10, 23, 23, 30, 30, 10, 26, 30",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 7,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "The mean of 5 numbers is 35. 4 of them are 35, 41, 41, 32. The last one?",
+          "answer": 26
+        },
+        {
+          "prompt": "Median of 22, 18, 21, 8, 11, 16",
+          "answer": 17
+        },
+        {
+          "prompt": "Mean of 66, 89, 67, 70, 63",
+          "answer": 71
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 7,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "The mean of 6 numbers is 46. 5 of them are 43, 46, 51, 48, 46. The last one?",
+          "answer": 42
+        },
+        {
+          "prompt": "Mean of 71, 77, 65, 67, 80",
+          "answer": 72
+        },
+        {
+          "prompt": "Mean of 86, 73, 72, 93, 71",
+          "answer": 79
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 7,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "The mean of 6 numbers is 36. 5 of them are 35, 30, 39, 36, 36. The last one?",
+          "answer": 40
+        },
+        {
+          "prompt": "Range of 16, 34, 12, 6, 43, 29",
+          "answer": 37
+        },
+        {
+          "prompt": "The mean of 6 numbers is 46. 5 of them are 48, 43, 48, 46, 50. The last one?",
+          "answer": 41
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 7,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "The mean of 5 numbers is 51. 4 of them are 56, 53, 47, 51. The last one?",
+          "answer": 48
+        },
+        {
+          "prompt": "Mean of 61, 57, 71, 65, 71",
+          "answer": 65
+        },
+        {
+          "prompt": "Median of 11, 18, 17, 21, 8, 7",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 7,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "The mean of 6 numbers is 46. 5 of them are 46, 50, 46, 44, 40. The last one?",
+          "answer": 50
+        },
+        {
+          "prompt": "The mean of 6 numbers is 64. 5 of them are 63, 70, 69, 70, 66. The last one?",
+          "answer": 46
+        },
+        {
+          "prompt": "Range of 29, 19, 47, 52, 39, 48",
+          "answer": 33
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 7,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "The mean of 6 numbers is 39. 5 of them are 33, 44, 41, 37, 38. The last one?",
+          "answer": 41
+        },
+        {
+          "prompt": "Mean of 54, 29, 58, 51, 58",
+          "answer": 50
+        },
+        {
+          "prompt": "The mean of 4 numbers is 51. 3 of them are 45, 47, 57. The last one?",
+          "answer": 55
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 8,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "9 numbers add up to 45. Their mean?",
+          "answer": 5
+        },
+        {
+          "prompt": "12 numbers add up to 144. Their mean?",
+          "answer": 12
+        },
+        {
+          "prompt": "The mean of 5 numbers is 70. 4 of them are 69, 70, 65, 69. The last one?",
+          "answer": 77
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 8,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "The mean of 10 test scores is 13. What do they add up to?",
+          "answer": 130
+        },
+        {
+          "prompt": "The mean of 6 numbers is 57. 5 of them are 57, 55, 61, 52, 61. The last one?",
+          "answer": 56
+        },
+        {
+          "prompt": "Mean of 51, 53, 63, 60, 58",
+          "answer": 57
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 8,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "The mean of 10 test scores is 6. What do they add up to?",
+          "answer": 60
+        },
+        {
+          "prompt": "Mean of 81, 71, 67, 71, 65",
+          "answer": 71
+        },
+        {
+          "prompt": "Median of 25, 13, 8, 15, 21, 19",
+          "answer": 17
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 8,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "9 numbers add up to 144. Their mean?",
+          "answer": 16
+        },
+        {
+          "prompt": "The mean of 4 numbers is 53. 3 of them are 50, 55, 58. The last one?",
+          "answer": 49
+        },
+        {
+          "prompt": "Median of 18, 12, 8, 3, 14, 15",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 8,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "The mean of 12 test scores is 12. What do they add up to?",
+          "answer": 144
+        },
+        {
+          "prompt": "The mean of 8 test scores is 14. What do they add up to?",
+          "answer": 112
+        },
+        {
+          "prompt": "The mean of 12 test scores is 26. What do they add up to?",
+          "answer": 312
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 8,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "The mean of 12 test scores is 8. What do they add up to?",
+          "answer": 96
+        },
+        {
+          "prompt": "The mean of 9 test scores is 14. What do they add up to?",
+          "answer": 126
+        },
+        {
+          "prompt": "Median of 6, 20, 11, 15, 22, 3",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 9,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "1 student averaged 69 and 3 students averaged 57. The average of all of them?",
+          "answer": 60
+        },
+        {
+          "prompt": "4 students averaged 71 and 1 student averaged 56. The average of all of them?",
+          "answer": 68
+        },
+        {
+          "prompt": "The mean of 7 test scores is 30. What do they add up to?",
+          "answer": 210
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 9,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "3 students averaged 72 and 1 student averaged 64. The average of all of them?",
+          "answer": 70
+        },
+        {
+          "prompt": "The mean of 11 test scores is 21. What do they add up to?",
+          "answer": 231
+        },
+        {
+          "prompt": "The mean of 6 numbers is 39. 5 of them are 43, 35, 38, 43, 40. The last one?",
+          "answer": 35
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 9,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "3 students averaged 63 and 1 student averaged 55. The average of all of them?",
+          "answer": 61
+        },
+        {
+          "prompt": "Median of 16, 14, 19, 14, 8, 11",
+          "answer": 14
+        },
+        {
+          "prompt": "2 students averaged 83 and 1 student averaged 77. The average of all of them?",
+          "answer": 81
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 9,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "1 student averaged 85 and 3 students averaged 69. The average of all of them?",
+          "answer": 73
+        },
+        {
+          "prompt": "The mean of 4 test scores is 18. What do they add up to?",
+          "answer": 72
+        },
+        {
+          "prompt": "The mean of 11 test scores is 17. What do they add up to?",
+          "answer": 187
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 9,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "4 students averaged 71 and 1 student averaged 61. The average of all of them?",
+          "answer": 69
+        },
+        {
+          "prompt": "3 students averaged 72 and 2 students averaged 67. The average of all of them?",
+          "answer": 70
+        },
+        {
+          "prompt": "4 students averaged 87 and 1 student averaged 77. The average of all of them?",
+          "answer": 85
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 9,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "4 students averaged 65 and 1 student averaged 60. The average of all of them?",
+          "answer": 64
+        },
+        {
+          "prompt": "1 student averaged 77 and 3 students averaged 69. The average of all of them?",
+          "answer": 71
+        },
+        {
+          "prompt": "The mean of 4 numbers is 55. 3 of them are 61, 58, 61. The last one?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 10,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "The mean of 7 numbers is 10. You add a 42. New mean?",
+          "answer": 14
+        },
+        {
+          "prompt": "The mean of 9 numbers is 18. You add a 58. New mean?",
+          "answer": 22
+        },
+        {
+          "prompt": "2 students averaged 96 and 3 students averaged 86. The average of all of them?",
+          "answer": 90
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 10,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "The mean of 8 numbers is 20. You add a 38. New mean?",
+          "answer": 22
+        },
+        {
+          "prompt": "1 student averaged 87 and 4 students averaged 77. The average of all of them?",
+          "answer": 79
+        },
+        {
+          "prompt": "10 numbers add up to 70. Their mean?",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 10,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "The mean of 8 numbers is 11. You add a 38. New mean?",
+          "answer": 14
+        },
+        {
+          "prompt": "The mean of 6 numbers is 52. 5 of them are 52, 48, 49, 53, 48. The last one?",
+          "answer": 62
+        },
+        {
+          "prompt": "The mean of 6 numbers is 52. 5 of them are 56, 57, 50, 54, 49. The last one?",
+          "answer": 46
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 10,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "The mean of 7 numbers is 23. You add a 71. New mean?",
+          "answer": 29
+        },
+        {
+          "prompt": "1 student averaged 80 and 2 students averaged 74. The average of all of them?",
+          "answer": 76
+        },
+        {
+          "prompt": "1 student averaged 78 and 4 students averaged 73. The average of all of them?",
+          "answer": 74
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 10,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "The mean of 9 numbers is 19. You add a 49. New mean?",
+          "answer": 22
+        },
+        {
+          "prompt": "The mean of 6 numbers is 20. You add a 27. New mean?",
+          "answer": 21
+        },
+        {
+          "prompt": "The mean of 9 numbers is 35. You add a 65. New mean?",
+          "answer": 38
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 10,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "The mean of 9 numbers is 14. You add a 24. New mean?",
+          "answer": 15
+        },
+        {
+          "prompt": "The mean of 7 numbers is 21. You add a 45. New mean?",
+          "answer": 24
+        },
+        {
+          "prompt": "5 numbers add up to 95. Their mean?",
+          "answer": 19
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 11,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 30, 7, 18, 8, 24, 12, 26",
+          "answer": 18
+        },
+        {
+          "prompt": "2 students averaged 66 and 1 student averaged 60. The average of all of them?",
+          "answer": 64
+        },
+        {
+          "prompt": "The mean of 6 test scores is 24. What do they add up to?",
+          "answer": 144
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 11,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 10, 29, 26, 16, 8, 22, 12",
+          "answer": 16
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 7, 15, 12, 21, 22, 28, 6",
+          "answer": 15
+        },
+        {
+          "prompt": "The mean of 9 numbers is 17. You add a 47. New mean?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 11,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 18, 21, 13, 8, 12, 24, 9",
+          "answer": 12
+        },
+        {
+          "prompt": "1 student averaged 95 and 4 students averaged 85. The average of all of them?",
+          "answer": 87
+        },
+        {
+          "prompt": "The mean of 5 numbers is 30. You add a 54. New mean?",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 11,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 21, 10, 29, 7, 16, 27, 23",
+          "answer": 17
+        },
+        {
+          "prompt": "1 student averaged 81 and 2 students averaged 72. The average of all of them?",
+          "answer": 75
+        },
+        {
+          "prompt": "The mean of 3 numbers is 24. You add a 48. New mean?",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 11,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 10, 20, 15, 12, 24, 28, 27",
+          "answer": 15
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 29, 12, 7, 9, 14, 19, 25",
+          "answer": 16
+        },
+        {
+          "prompt": "The mean of 10 test scores is 7. What do they add up to?",
+          "answer": 70
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 11,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 10, 25, 22, 18, 28, 11, 12",
+          "answer": 14
+        },
+        {
+          "prompt": "1 student averaged 70 and 1 student averaged 62. The average of all of them?",
+          "answer": 66
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 14, 3, 8, 6, 21, 7, 19",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 12,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "In a group of 50, you rank #1 from the top. What percent scored below you?",
+          "answer": 98
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 36, 30, 27, 16, 10, 18, 22",
+          "answer": 14
+        },
+        {
+          "prompt": "The mean of 3 numbers is 22. You add a 42. New mean?",
+          "answer": 27
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 12,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "In a group of 50, you rank #16 from the top. What percent scored below you?",
+          "answer": 68
+        },
+        {
+          "prompt": "The mean of 6 numbers is 37. You add a 65. New mean?",
+          "answer": 41
+        },
+        {
+          "prompt": "The mean of 5 numbers is 34. You add a 40. New mean?",
+          "answer": 35
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 12,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "In a group of 50, you rank #2 from the top. What percent scored below you?",
+          "answer": 96
+        },
+        {
+          "prompt": "The mean of 3 numbers is 33. You add a 45. New mean?",
+          "answer": 36
+        },
+        {
+          "prompt": "The mean of 4 numbers is 18. You add a 38. New mean?",
+          "answer": 22
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 12,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "In a group of 50, you rank #22 from the top. What percent scored below you?",
+          "answer": 56
+        },
+        {
+          "prompt": "In a group of 50, you rank #9 from the top. What percent scored below you?",
+          "answer": 82
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 16, 3, 24, 18, 29, 7, 13",
+          "answer": 17
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 12,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "In a group of 100, you rank #31 from the top. What percent scored below you?",
+          "answer": 69
+        },
+        {
+          "prompt": "The mean of 8 numbers is 25. You add a 52. New mean?",
+          "answer": 28
+        },
+        {
+          "prompt": "3 students averaged 94 and 1 student averaged 78. The average of all of them?",
+          "answer": 90
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 12,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "In a group of 100, you rank #14 from the top. What percent scored below you?",
+          "answer": 86
+        },
+        {
+          "prompt": "4 students averaged 81 and 1 student averaged 71. The average of all of them?",
+          "answer": 79
+        },
+        {
+          "prompt": "The mean of 5 numbers is 18. You add a 42. New mean?",
+          "answer": 22
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 13,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A $130 prize with a 10% chance. What is the expected win, in dollars?",
+          "answer": 13
+        },
+        {
+          "prompt": "In a group of 100, you rank #96 from the top. What percent scored below you?",
+          "answer": 4
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 21, 28, 24, 27, 7, 12, 15",
+          "answer": 15
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 13,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A $150 prize with a 30% chance. What is the expected win, in dollars?",
+          "answer": 45
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 22, 6, 28, 19, 16, 12, 27",
+          "answer": 15
+        },
+        {
+          "prompt": "In a group of 25, you rank #24 from the top. What percent scored below you?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 13,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A $150 prize with a 10% chance. What is the expected win, in dollars?",
+          "answer": 15
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 15, 13, 9, 19, 12, 1, 6",
+          "answer": 9
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 7, 14, 27, 18, 23, 9, 28",
+          "answer": 18
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 13,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A $130 prize with a 50% chance. What is the expected win, in dollars?",
+          "answer": 65
+        },
+        {
+          "prompt": "A $140 prize with a 20% chance. What is the expected win, in dollars?",
+          "answer": 28
+        },
+        {
+          "prompt": "In a group of 25, you rank #15 from the top. What percent scored below you?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 13,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A $200 prize with a 30% chance. What is the expected win, in dollars?",
+          "answer": 60
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 16, 9, 13, 33, 22, 28, 17",
+          "answer": 15
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 24, 33, 15, 29, 9, 4, 19",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 13,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A $200 prize with a 20% chance. What is the expected win, in dollars?",
+          "answer": 40
+        },
+        {
+          "prompt": "The mean of 9 numbers is 29. You add a 59. New mean?",
+          "answer": 32
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 27, 10, 29, 16, 21, 6, 4",
+          "answer": 21
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 14,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Standard deviation of 13, 13, 27, 27, 13, 27",
+          "answer": 7
+        },
+        {
+          "prompt": "In a group of 100, you rank #46 from the top. What percent scored below you?",
+          "answer": 54
+        },
+        {
+          "prompt": "In a group of 20, you rank #8 from the top. What percent scored below you?",
+          "answer": 60
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 14,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Standard deviation of 37, 29, 37, 29, 29, 37",
+          "answer": 4
+        },
+        {
+          "prompt": "Standard deviation of 49, 55, 49, 55",
+          "answer": 3
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 24, 16, 17, 25, 23, 7, 10",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 14,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Standard deviation of 15, 27, 15, 27, 27, 15",
+          "answer": 6
+        },
+        {
+          "prompt": "In a group of 50, you rank #10 from the top. What percent scored below you?",
+          "answer": 80
+        },
+        {
+          "prompt": "Interquartile range (Q3 − Q1) of 29, 11, 8, 16, 31, 22, 24",
+          "answer": 18
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 14,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Standard deviation of 49, 49, 49, 27, 27, 27",
+          "answer": 11
+        },
+        {
+          "prompt": "Standard deviation of 41, 41, 19, 19",
+          "answer": 11
+        },
+        {
+          "prompt": "A $140 prize with a 60% chance. What is the expected win, in dollars?",
+          "answer": 84
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 14,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Standard deviation of 38, 38, 26, 38, 26, 26",
+          "answer": 6
+        },
+        {
+          "prompt": "Standard deviation of 50, 50, 26, 26, 26, 50",
+          "answer": 12
+        },
+        {
+          "prompt": "In a group of 100, you rank #86 from the top. What percent scored below you?",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 14,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Standard deviation of 24, 24, 24, 26, 26, 26",
+          "answer": 1
+        },
+        {
+          "prompt": "In a group of 50, you rank #48 from the top. What percent scored below you?",
+          "answer": 4
+        },
+        {
+          "prompt": "A $200 prize with a 30% chance. What is the expected win, in dollars?",
+          "answer": 60
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 15,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Variance of 16, 18, 24, 22",
+          "answer": 10
+        },
+        {
+          "prompt": "A $130 prize with a 70% chance. What is the expected win, in dollars?",
+          "answer": 91
+        },
+        {
+          "prompt": "A $200 prize with a 50% chance. What is the expected win, in dollars?",
+          "answer": 100
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 15,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Variance of 29, 35, 37, 31",
+          "answer": 10
+        },
+        {
+          "prompt": "Standard deviation of 44, 44, 24, 24",
+          "answer": 10
+        },
+        {
+          "prompt": "A $170 prize with a 60% chance. What is the expected win, in dollars?",
+          "answer": 102
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 15,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Variance of 23, 25, 17, 19",
+          "answer": 10
+        },
+        {
+          "prompt": "A $100 prize with a 20% chance. What is the expected win, in dollars?",
+          "answer": 20
+        },
+        {
+          "prompt": "A $120 prize with a 20% chance. What is the expected win, in dollars?",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 15,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Variance of 37, 33, 39, 43",
+          "answer": 13
+        },
+        {
+          "prompt": "Standard deviation of 34, 56, 34, 56",
+          "answer": 11
+        },
+        {
+          "prompt": "Standard deviation of 35, 21, 35, 21",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 15,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Variance of 25, 39, 33, 31",
+          "answer": 25
+        },
+        {
+          "prompt": "A $20 prize with a 70% chance. What is the expected win, in dollars?",
+          "answer": 14
+        },
+        {
+          "prompt": "Variance of 32, 36, 40, 44",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 15,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Variance of 32, 24, 26, 18",
+          "answer": 25
+        },
+        {
+          "prompt": "A $90 prize with a 40% chance. What is the expected win, in dollars?",
+          "answer": 36
+        },
+        {
+          "prompt": "A $120 prize with a 90% chance. What is the expected win, in dollars?",
+          "answer": 108
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 16,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A data set has a variance of 4. Its standard deviation?",
+          "answer": 2
+        },
+        {
+          "prompt": "Variance of 52, 60, 66, 58",
+          "answer": 25
+        },
+        {
+          "prompt": "Standard deviation of 44, 32, 44, 44, 32, 32",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 16,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A data set has a variance of 25. Its standard deviation?",
+          "answer": 5
+        },
+        {
+          "prompt": "Standard deviation of 63, 47, 47, 63, 63, 47",
+          "answer": 8
+        },
+        {
+          "prompt": "A $90 prize with a 80% chance. What is the expected win, in dollars?",
+          "answer": 72
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 16,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A data set has a variance of 4. Its standard deviation?",
+          "answer": 2
+        },
+        {
+          "prompt": "Standard deviation of 57, 45, 45, 57",
+          "answer": 6
+        },
+        {
+          "prompt": "Variance of 20, 26",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 16,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A data set has a variance of 36. Its standard deviation?",
+          "answer": 6
+        },
+        {
+          "prompt": "A data set has a variance of 9. Its standard deviation?",
+          "answer": 3
+        },
+        {
+          "prompt": "Variance of 47, 43, 43, 47",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 16,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A data set has a variance of 25. Its standard deviation?",
+          "answer": 5
+        },
+        {
+          "prompt": "Standard deviation of 45, 45, 35, 35, 45, 35",
+          "answer": 5
+        },
+        {
+          "prompt": "A data set has a variance of 144. Its standard deviation?",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 16,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A data set has a variance of 9. Its standard deviation?",
+          "answer": 3
+        },
+        {
+          "prompt": "A $190 prize with a 60% chance. What is the expected win, in dollars?",
+          "answer": 114
+        },
+        {
+          "prompt": "Standard deviation of 32, 40, 40, 32",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 17,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Mean 81, SD 2. A score of 87 is how many SDs above the mean?",
+          "answer": 3
+        },
+        {
+          "prompt": "Mean 99, SD 5. A score of 114 is how many SDs above the mean?",
+          "answer": 3
+        },
+        {
+          "prompt": "Standard deviation of 61, 53, 67, 59",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 17,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Mean 87, SD 6. A score of 99 is how many SDs above the mean?",
+          "answer": 2
+        },
+        {
+          "prompt": "A data set has a variance of 64. Its standard deviation?",
+          "answer": 8
+        },
+        {
+          "prompt": "Variance of 50, 54, 54, 50",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 17,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Mean 86, SD 2. A score of 90 is how many SDs above the mean?",
+          "answer": 2
+        },
+        {
+          "prompt": "Standard deviation of 33, 45, 45, 33, 45, 33",
+          "answer": 6
+        },
+        {
+          "prompt": "Standard deviation of 53, 51, 45, 59",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 17,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Mean 80, SD 8. A score of 112 is how many SDs above the mean?",
+          "answer": 4
+        },
+        {
+          "prompt": "Standard deviation of 34, 42, 48, 40",
+          "answer": 5
+        },
+        {
+          "prompt": "Variance of 53, 59",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 17,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Mean 99, SD 6. A score of 111 is how many SDs above the mean?",
+          "answer": 2
+        },
+        {
+          "prompt": "Mean 75, SD 6. A score of 81 is how many SDs above the mean?",
+          "answer": 1
+        },
+        {
+          "prompt": "Mean 100, SD 13. A score of 126 is how many SDs above the mean?",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 17,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Mean 98, SD 3. A score of 101 is how many SDs above the mean?",
+          "answer": 1
+        },
+        {
+          "prompt": "Mean 82, SD 7. A score of 96 is how many SDs above the mean?",
+          "answer": 2
+        },
+        {
+          "prompt": "Variance of 41, 41, 45, 45",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 18,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Mean 105, SD 2. What score is 3 SDs below the mean?",
+          "answer": 99
+        },
+        {
+          "prompt": "Mean 91, SD 10. What score is 3 SDs above the mean?",
+          "answer": 121
+        },
+        {
+          "prompt": "Mean 98, SD 8. What score is 1 SD above the mean?",
+          "answer": 106
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 18,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Mean 110, SD 6. What score is 2 SDs below the mean?",
+          "answer": 98
+        },
+        {
+          "prompt": "Mean 105, SD 8. What score is 2 SDs below the mean?",
+          "answer": 89
+        },
+        {
+          "prompt": "Variance of 22, 34, 30, 26",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 18,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Mean 109, SD 2. What score is 2 SDs above the mean?",
+          "answer": 113
+        },
+        {
+          "prompt": "Mean 99, SD 8. What score is 1 SD above the mean?",
+          "answer": 107
+        },
+        {
+          "prompt": "Mean 59, SD 3. A score of 68 is how many SDs above the mean?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 18,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Mean 104, SD 8. What score is 4 SDs below the mean?",
+          "answer": 72
+        },
+        {
+          "prompt": "Variance of 30, 26, 36, 32",
+          "answer": 13
+        },
+        {
+          "prompt": "Variance of 51, 57, 43, 49",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 18,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Mean 120, SD 6. What score is 2 SDs below the mean?",
+          "answer": 108
+        },
+        {
+          "prompt": "Mean 67, SD 3. A score of 79 is how many SDs above the mean?",
+          "answer": 4
+        },
+        {
+          "prompt": "Mean 113, SD 8. What score is 4 SDs below the mean?",
+          "answer": 81
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 18,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Mean 119, SD 3. What score is 1 SD below the mean?",
+          "answer": 116
+        },
+        {
+          "prompt": "Mean 69, SD 8. A score of 85 is how many SDs above the mean?",
+          "answer": 2
+        },
+        {
+          "prompt": "A data set has a variance of 144. Its standard deviation?",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 19,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A bell-shaped set has mean 144 and SD 5. Roughly what percent lie between 144 and 149?",
+          "answer": 34
+        },
+        {
+          "prompt": "A bell-shaped set has mean 168 and SD 8. Roughly what percent lie between 168 and 176?",
+          "answer": 34
+        },
+        {
+          "prompt": "Mean 97, SD 15. What score is 2 SDs above the mean?",
+          "answer": 127
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 19,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A bell-shaped set has mean 152 and SD 8. Roughly what percent lie between 136 and 168?",
+          "answer": 95
+        },
+        {
+          "prompt": "Mean 115, SD 10. What score is 2 SDs above the mean?",
+          "answer": 135
+        },
+        {
+          "prompt": "A bell-shaped set has mean 108 and SD 13. Roughly what percent lie between 95 and 121?",
+          "answer": 68
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 19,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A bell-shaped set has mean 151 and SD 5. Roughly what percent lie between 141 and 161?",
+          "answer": 95
+        },
+        {
+          "prompt": "A data set has a variance of 49. Its standard deviation?",
+          "answer": 7
+        },
+        {
+          "prompt": "Mean 58, SD 5. A score of 73 is how many SDs above the mean?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 19,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A bell-shaped set has mean 142 and SD 9. Roughly what percent lie above 151?",
+          "answer": 16
+        },
+        {
+          "prompt": "Mean 87, SD 9. What score is 2 SDs below the mean?",
+          "answer": 69
+        },
+        {
+          "prompt": "A bell-shaped set has mean 133 and SD 7. Roughly what percent lie above 140?",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 19,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A bell-shaped set has mean 169 and SD 8. Roughly what percent lie between 153 and 185?",
+          "answer": 95
+        },
+        {
+          "prompt": "A bell-shaped set has mean 136 and SD 8. Roughly what percent lie between 128 and 144?",
+          "answer": 68
+        },
+        {
+          "prompt": "A bell-shaped set has mean 170 and SD 14. Roughly what percent lie between 142 and 198?",
+          "answer": 95
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 19,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A bell-shaped set has mean 167 and SD 6. Roughly what percent lie between 161 and 173?",
+          "answer": 68
+        },
+        {
+          "prompt": "A bell-shaped set has mean 144 and SD 9. Roughly what percent lie between 126 and 162?",
+          "answer": 95
+        },
+        {
+          "prompt": "Mean 63, SD 9. A score of 99 is how many SDs above the mean?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 20,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A correlation of r = 0.7. What percent of the variation does it explain (r² × 100)?",
+          "answer": 49
+        },
+        {
+          "prompt": "Mean 76, SD 15. A score of 136 is how many SDs above the mean?",
+          "answer": 4
+        },
+        {
+          "prompt": "Mean 105, SD 12. What score is 2 SDs below the mean?",
+          "answer": 81
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 20,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A correlation of r = 0.7. What percent of the variation does it explain (r² × 100)?",
+          "answer": 49
+        },
+        {
+          "prompt": "Mean 91, SD 9. What score is 4 SDs below the mean?",
+          "answer": 55
+        },
+        {
+          "prompt": "Mean 94, SD 12. What score is 1 SD below the mean?",
+          "answer": 82
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 20,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A correlation of r = 0.7. What percent of the variation does it explain (r² × 100)?",
+          "answer": 49
+        },
+        {
+          "prompt": "Mean 73, SD 3. A score of 85 is how many SDs above the mean?",
+          "answer": 4
+        },
+        {
+          "prompt": "Mean 99, SD 4. What score is 2 SDs below the mean?",
+          "answer": 91
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 20,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A correlation of r = 0.6. What percent of the variation does it explain (r² × 100)?",
+          "answer": 36
+        },
+        {
+          "prompt": "Mean 114, SD 11. What score is 1 SD below the mean?",
+          "answer": 103
+        },
+        {
+          "prompt": "Mean 105, SD 14. What score is 2 SDs above the mean?",
+          "answer": 133
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 20,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A correlation of r = 0.9. What percent of the variation does it explain (r² × 100)?",
+          "answer": 81
+        },
+        {
+          "prompt": "Mean 99, SD 13. What score is 3 SDs above the mean?",
+          "answer": 138
+        },
+        {
+          "prompt": "Mean 89, SD 15. A score of 149 is how many SDs above the mean?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 20,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A correlation of r = 0.9. What percent of the variation does it explain (r² × 100)?",
+          "answer": 81
+        },
+        {
+          "prompt": "Mean 50, SD 14. A score of 92 is how many SDs above the mean?",
+          "answer": 3
+        },
+        {
+          "prompt": "Mean 97, SD 7. What score is 2 SDs below the mean?",
+          "answer": 83
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 21,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A fitted line: energy use = 5 + 6 × people in the house. Predict the energy use when people in the house is 30.",
+          "answer": 185
+        },
+        {
+          "prompt": "A fitted line: test score = 27 + 7 × hours studied. Predict the test score when hours studied is 16.",
+          "answer": 139
+        },
+        {
+          "prompt": "A fitted line: test score = 22 + 3 × hours studied. Predict the test score when hours studied is 15.",
+          "answer": 67
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 21,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A fitted line: energy use = 16 + 4 × people in the house. Predict the energy use when people in the house is 18.",
+          "answer": 88
+        },
+        {
+          "prompt": "A fitted line: energy use = 22 + 4 × people in the house. Predict the energy use when people in the house is 25.",
+          "answer": 122
+        },
+        {
+          "prompt": "Mean 112, SD 4. What score is 2 SDs below the mean?",
+          "answer": 104
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 21,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A fitted line: energy use = 6 + 5 × people in the house. Predict the energy use when people in the house is 6.",
+          "answer": 36
+        },
+        {
+          "prompt": "A fitted line: test score = 22 + 3 × hours studied. Predict the test score when hours studied is 11.",
+          "answer": 55
+        },
+        {
+          "prompt": "A correlation of r = 0.3. What percent of the variation does it explain (r² × 100)?",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 21,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A fitted line: energy use = 21 + 8 × people in the house. Predict the energy use when people in the house is 22.",
+          "answer": 197
+        },
+        {
+          "prompt": "Mean 101, SD 5. What score is 3 SDs below the mean?",
+          "answer": 86
+        },
+        {
+          "prompt": "A bell-shaped set has mean 117 and SD 14. Roughly what percent lie between 117 and 131?",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 21,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A fitted line: weight = 16 + 5 × height. Predict the weight when height is 26.",
+          "answer": 146
+        },
+        {
+          "prompt": "A correlation of r = 0.4. What percent of the variation does it explain (r² × 100)?",
+          "answer": 16
+        },
+        {
+          "prompt": "Mean 111, SD 15. What score is 4 SDs above the mean?",
+          "answer": 171
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 21,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A fitted line: weight = 9 + 2 × height. Predict the weight when height is 28.",
+          "answer": 65
+        },
+        {
+          "prompt": "A correlation of r = 0.5. What percent of the variation does it explain (r² × 100)?",
+          "answer": 25
+        },
+        {
+          "prompt": "A bell-shaped set has mean 128 and SD 7. Roughly what percent lie between 128 and 135?",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 22,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 100 have a condition. The test catches 90% of them and wrongly flags 10% of the rest. How many test positive?",
+          "answer": 180
+        },
+        {
+          "prompt": "A bell-shaped set has mean 137 and SD 15. Roughly what percent lie above 152?",
+          "answer": 16
+        },
+        {
+          "prompt": "A correlation of r = 0.6. What percent of the variation does it explain (r² × 100)?",
+          "answer": 36
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 22,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 60% of them and wrongly flags 5% of the rest. How many test positive?",
+          "answer": 160
+        },
+        {
+          "prompt": "A correlation of r = 0.4. What percent of the variation does it explain (r² × 100)?",
+          "answer": 16
+        },
+        {
+          "prompt": "A fitted line: weight = 27 + 5 × height. Predict the weight when height is 14.",
+          "answer": 97
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 22,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 60% of them and wrongly flags 5% of the rest. How many test positive?",
+          "answer": 160
+        },
+        {
+          "prompt": "A bell-shaped set has mean 132 and SD 5. Roughly what percent lie above 137?",
+          "answer": 16
+        },
+        {
+          "prompt": "A correlation of r = 0.5. What percent of the variation does it explain (r² × 100)?",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 22,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 100 have a condition. The test catches 90% of them and wrongly flags 10% of the rest. How many test positive?",
+          "answer": 180
+        },
+        {
+          "prompt": "A correlation of r = 0.8. What percent of the variation does it explain (r² × 100)?",
+          "answer": 64
+        },
+        {
+          "prompt": "A fitted line: sales = 23 + 4 × temperature. Predict the sales when temperature is 21.",
+          "answer": 107
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 22,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 80% of them and wrongly flags 20% of the rest. How many test positive?",
+          "answer": 320
+        },
+        {
+          "prompt": "A correlation of r = 0.5. What percent of the variation does it explain (r² × 100)?",
+          "answer": 25
+        },
+        {
+          "prompt": "Of 1000 people, 100 have a condition. The test catches 80% of them and wrongly flags 5% of the rest. How many test positive?",
+          "answer": 125
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 22,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 80% of them and wrongly flags 20% of the rest. How many test positive?",
+          "answer": 320
+        },
+        {
+          "prompt": "A bell-shaped set has mean 101 and SD 15. Roughly what percent lie between 101 and 116?",
+          "answer": 34
+        },
+        {
+          "prompt": "A correlation of r = 0.5. What percent of the variation does it explain (r² × 100)?",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 23,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 100 have a condition. The test catches 90% of them and wrongly flags 10% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 50
+        },
+        {
+          "prompt": "A correlation of r = 0.6. What percent of the variation does it explain (r² × 100)?",
+          "answer": 36
+        },
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 80% of them and wrongly flags 20% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 23,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 60% of them and wrongly flags 5% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 75
+        },
+        {
+          "prompt": "A fitted line: test score = 24 + 9 × hours studied. Predict the test score when hours studied is 21.",
+          "answer": 213
+        },
+        {
+          "prompt": "A fitted line: test score = 33 + 2 × hours studied. Predict the test score when hours studied is 25.",
+          "answer": 83
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 23,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 60% of them and wrongly flags 5% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 75
+        },
+        {
+          "prompt": "A correlation of r = 0.5. What percent of the variation does it explain (r² × 100)?",
+          "answer": 25
+        },
+        {
+          "prompt": "A correlation of r = 0.8. What percent of the variation does it explain (r² × 100)?",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 23,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 100 have a condition. The test catches 90% of them and wrongly flags 10% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 50
+        },
+        {
+          "prompt": "A fitted line: weight = 29 + 3 × height. Predict the weight when height is 18.",
+          "answer": 83
+        },
+        {
+          "prompt": "A fitted line: energy use = 36 + 5 × people in the house. Predict the energy use when people in the house is 11.",
+          "answer": 91
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 23,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 80% of them and wrongly flags 20% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 50
+        },
+        {
+          "prompt": "A fitted line: test score = 34 + 6 × hours studied. Predict the test score when hours studied is 14.",
+          "answer": 118
+        },
+        {
+          "prompt": "A correlation of r = 0.8. What percent of the variation does it explain (r² × 100)?",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 23,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 80% of them and wrongly flags 20% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 50
+        },
+        {
+          "prompt": "A correlation of r = 0.2. What percent of the variation does it explain (r² × 100)?",
+          "answer": 4
+        },
+        {
+          "prompt": "Of 1000 people, 100 have a condition. The test catches 90% of them and wrongly flags 10% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 24,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A poll of 100 people. Roughly what is the margin of error in percent (100 ÷ √n)?",
+          "answer": 10
+        },
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 80% of them and wrongly flags 20% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 50
+        },
+        {
+          "prompt": "A sample of 36 has an SD of 54. The standard error of its mean (SD ÷ √n)?",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 24,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A poll of 400 people. Roughly what is the margin of error in percent (100 ÷ √n)?",
+          "answer": 5
+        },
+        {
+          "prompt": "Of 1000 people, 100 have a condition. The test catches 80% of them and wrongly flags 5% of the rest. How many test positive?",
+          "answer": 125
+        },
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 60% of them and wrongly flags 5% of the rest. How many test positive?",
+          "answer": 160
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 24,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A poll of 100 people. Roughly what is the margin of error in percent (100 ÷ √n)?",
+          "answer": 10
+        },
+        {
+          "prompt": "Of 1000 people, 40 have a condition. The test catches 80% of them and wrongly flags 5% of the rest. How many test positive?",
+          "answer": 80
+        },
+        {
+          "prompt": "A sample of 25 has an SD of 15. The standard error of its mean (SD ÷ √n)?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 24,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A poll of 400 people. Roughly what is the margin of error in percent (100 ÷ √n)?",
+          "answer": 5
+        },
+        {
+          "prompt": "A poll of 100 people. Roughly what is the margin of error in percent (100 ÷ √n)?",
+          "answer": 10
+        },
+        {
+          "prompt": "Of 1000 people, 50 have a condition. The test catches 60% of them and wrongly flags 10% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 24,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A poll of 400 people. Roughly what is the margin of error in percent (100 ÷ √n)?",
+          "answer": 5
+        },
+        {
+          "prompt": "Of 1000 people, 200 have a condition. The test catches 60% of them and wrongly flags 10% of the rest. How many test positive?",
+          "answer": 200
+        },
+        {
+          "prompt": "Of 1000 people, 100 have a condition. The test catches 60% of them and wrongly flags 10% of the rest. If you test positive, what percent chance is it real?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "statistics",
+      "level": 24,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A poll of 100 people. Roughly what is the margin of error in percent (100 ÷ √n)?",
+          "answer": 10
+        },
+        {
+          "prompt": "A fitted line: weight = 27 + 5 × height. Predict the weight when height is 16.",
+          "answer": 107
+        },
+        {
+          "prompt": "Of 1000 people, 50 have a condition. The test catches 60% of them and wrongly flags 10% of the rest. How many test positive?",
+          "answer": 125
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 1,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "19, 21, 23, 25, ?",
+          "answer": 27
+        },
+        {
+          "prompt": "30, 39, 48, 57, ?",
+          "answer": 66
+        },
+        {
+          "prompt": "19, 26, 33, 40, ?",
+          "answer": 47
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 1,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "23, 27, 31, 35, ?",
+          "answer": 39
+        },
+        {
+          "prompt": "17, 26, 35, 44, ?",
+          "answer": 53
+        },
+        {
+          "prompt": "15, 19, 23, 27, ?",
+          "answer": 31
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 1,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "22, 24, 26, 28, ?",
+          "answer": 30
+        },
+        {
+          "prompt": "3, 11, 19, 27, ?",
+          "answer": 35
+        },
+        {
+          "prompt": "15, 18, 21, 24, ?",
+          "answer": 27
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 1,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "19, 24, 29, 34, ?",
+          "answer": 39
+        },
+        {
+          "prompt": "21, 24, 27, 30, ?",
+          "answer": 33
+        },
+        {
+          "prompt": "9, 15, 21, 27, ?",
+          "answer": 33
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 1,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "30, 34, 38, 42, ?",
+          "answer": 46
+        },
+        {
+          "prompt": "25, 31, 37, 43, ?",
+          "answer": 49
+        },
+        {
+          "prompt": "3, 11, 19, 27, ?",
+          "answer": 35
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 1,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "29, 32, 35, 38, ?",
+          "answer": 41
+        },
+        {
+          "prompt": "28, 35, 42, 49, ?",
+          "answer": 56
+        },
+        {
+          "prompt": "14, 19, 24, 29, ?",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 2,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "19, 21, ?, 25, 27",
+          "answer": 23
+        },
+        {
+          "prompt": "30, 34, ?, 42, 46",
+          "answer": 38
+        },
+        {
+          "prompt": "13, 22, ?, 40, 49",
+          "answer": 31
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 2,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "23, ?, 31, 35, 39",
+          "answer": 27
+        },
+        {
+          "prompt": "27, 34, ?, 48, 55",
+          "answer": 41
+        },
+        {
+          "prompt": "24, 26, 28, 30, ?",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 2,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "22, 24, ?, 28, 30",
+          "answer": 26
+        },
+        {
+          "prompt": "23, 28, 33, 38, ?",
+          "answer": 43
+        },
+        {
+          "prompt": "5, 9, 13, 17, ?",
+          "answer": 21
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 2,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "19, 24, 29, ?, 39",
+          "answer": 34
+        },
+        {
+          "prompt": "6, ?, 18, 24, 30",
+          "answer": 12
+        },
+        {
+          "prompt": "26, ?, 36, 41, 46",
+          "answer": 31
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 2,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "30, 34, ?, 42, 46",
+          "answer": 38
+        },
+        {
+          "prompt": "16, ?, 24, 28, 32",
+          "answer": 20
+        },
+        {
+          "prompt": "30, 38, ?, 54, 62",
+          "answer": 46
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 2,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "29, ?, 35, 38, 41",
+          "answer": 32
+        },
+        {
+          "prompt": "19, 24, ?, 34, 39",
+          "answer": 29
+        },
+        {
+          "prompt": "8, 14, 20, 26, ?",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 3,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "4, 8, 16, 32, ?",
+          "answer": 64
+        },
+        {
+          "prompt": "30, ?, 48, 57, 66",
+          "answer": 39
+        },
+        {
+          "prompt": "22, 27, 32, ?, 42",
+          "answer": 37
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 3,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "4, 8, 16, 32, ?",
+          "answer": 64
+        },
+        {
+          "prompt": "17, 26, 35, 44, ?",
+          "answer": 53
+        },
+        {
+          "prompt": "15, 19, 23, ?, 31",
+          "answer": 27
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 3,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "4, 8, 16, 32, ?",
+          "answer": 64
+        },
+        {
+          "prompt": "3, 11, ?, 27, 35",
+          "answer": 19
+        },
+        {
+          "prompt": "5, 9, ?, 17, 21",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 3,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "4, 12, 36, 108, ?",
+          "answer": 324
+        },
+        {
+          "prompt": "4, 8, 16, 32, ?",
+          "answer": 64
+        },
+        {
+          "prompt": "9, 15, 21, ?, 33",
+          "answer": 27
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 3,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "5, 10, 20, 40, ?",
+          "answer": 80
+        },
+        {
+          "prompt": "25, 31, ?, 43, 49",
+          "answer": 37
+        },
+        {
+          "prompt": "23, 32, 41, 50, ?",
+          "answer": 59
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 3,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "5, 10, 20, 40, ?",
+          "answer": 80
+        },
+        {
+          "prompt": "28, 35, 42, 49, ?",
+          "answer": 56
+        },
+        {
+          "prompt": "14, ?, 24, 29, 34",
+          "answer": 19
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 4,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "8, 10, 12, 14, ... What is term number 14?",
+          "answer": 34
+        },
+        {
+          "prompt": "12, 16, 20, 24, ... What is term number 15?",
+          "answer": 68
+        },
+        {
+          "prompt": "3, 12, 48, 192, ?",
+          "answer": 768
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 4,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "10, 14, 18, 22, ... What is term number 11?",
+          "answer": 50
+        },
+        {
+          "prompt": "5, 15, 45, 135, ?",
+          "answer": 405
+        },
+        {
+          "prompt": "11, ?, 27, 35, 43",
+          "answer": 19
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 4,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "9, 11, 13, 15, ... What is term number 13?",
+          "answer": 33
+        },
+        {
+          "prompt": "23, 28, 33, 38, ?",
+          "answer": 43
+        },
+        {
+          "prompt": "5, 9, ?, 17, 21",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 4,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "8, 13, 18, 23, ... What is term number 19?",
+          "answer": 98
+        },
+        {
+          "prompt": "1, 3, 9, 27, ?",
+          "answer": 81
+        },
+        {
+          "prompt": "19, 27, ?, 43, 51",
+          "answer": 35
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 4,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "12, 16, 20, 24, ... What is term number 14?",
+          "answer": 64
+        },
+        {
+          "prompt": "7, 11, 15, 19, ... What is term number 8?",
+          "answer": 35
+        },
+        {
+          "prompt": "12, 20, 28, 36, ... What is term number 13?",
+          "answer": 108
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 4,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "12, 15, 18, 21, ... What is term number 8?",
+          "answer": 33
+        },
+        {
+          "prompt": "8, 13, 18, 23, ... What is term number 13?",
+          "answer": 68
+        },
+        {
+          "prompt": "8, 14, 20, ?, 32",
+          "answer": 26
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 5,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 3 + ... + 18",
+          "answer": 171
+        },
+        {
+          "prompt": "12, 21, 30, 39, ... What is term number 11?",
+          "answer": 102
+        },
+        {
+          "prompt": "9, 14, 19, 24, ... What is term number 20?",
+          "answer": 104
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 5,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 3 + ... + 20",
+          "answer": 210
+        },
+        {
+          "prompt": "3, 12, 48, 192, ?",
+          "answer": 768
+        },
+        {
+          "prompt": "7, 11, 15, 19, ... What is term number 18?",
+          "answer": 75
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 5,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 3 + ... + 20",
+          "answer": 210
+        },
+        {
+          "prompt": "1, 4, 16, 64, ?",
+          "answer": 256
+        },
+        {
+          "prompt": "3, 6, 12, 24, ?",
+          "answer": 48
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 5,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 3 + ... + 18",
+          "answer": 171
+        },
+        {
+          "prompt": "1 + 2 + 3 + ... + 19",
+          "answer": 190
+        },
+        {
+          "prompt": "5, 11, 17, 23, ... What is term number 19?",
+          "answer": 113
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 5,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 3 + ... + 25",
+          "answer": 325
+        },
+        {
+          "prompt": "5, 15, 45, 135, ?",
+          "answer": 405
+        },
+        {
+          "prompt": "1, 4, 16, 64, ?",
+          "answer": 256
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 5,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 3 + ... + 25",
+          "answer": 325
+        },
+        {
+          "prompt": "28, 35, ?, 49, 56",
+          "answer": 42
+        },
+        {
+          "prompt": "2, 4, 8, 16, ?",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 6,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 11 odd numbers)",
+          "answer": 121
+        },
+        {
+          "prompt": "3, 12, 48, 192, ?",
+          "answer": 768
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 7 odd numbers)",
+          "answer": 49
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 6,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 12 odd numbers)",
+          "answer": 144
+        },
+        {
+          "prompt": "5, 11, 17, 23, ... What is term number 19?",
+          "answer": 113
+        },
+        {
+          "prompt": "1 + 2 + 3 + ... + 15",
+          "answer": 120
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 6,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 12 odd numbers)",
+          "answer": 144
+        },
+        {
+          "prompt": "3, 6, 12, 24, ?",
+          "answer": 48
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 9 odd numbers)",
+          "answer": 81
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 6,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 11 odd numbers)",
+          "answer": 121
+        },
+        {
+          "prompt": "11, 18, 25, 32, ... What is term number 10?",
+          "answer": 74
+        },
+        {
+          "prompt": "2 + 4 + 6 + ... + 22",
+          "answer": 132
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 6,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 15 odd numbers)",
+          "answer": 225
+        },
+        {
+          "prompt": "7, 15, 23, 31, ... What is term number 14?",
+          "answer": 111
+        },
+        {
+          "prompt": "2, 10, 18, 26, ... What is term number 20?",
+          "answer": 154
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 6,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 15 odd numbers)",
+          "answer": 225
+        },
+        {
+          "prompt": "1, 4, 16, 64, ?",
+          "answer": 256
+        },
+        {
+          "prompt": "1 + 2 + 3 + ... + 13",
+          "answer": 91
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 7,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "2, 6, 12, 20, ?",
+          "answer": 30
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 15 odd numbers)",
+          "answer": 225
+        },
+        {
+          "prompt": "7, 10, 15, 22, ?",
+          "answer": 31
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 7,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "1, 8, 27, 64, ?",
+          "answer": 125
+        },
+        {
+          "prompt": "2 + 4 + 6 + ... + 32",
+          "answer": 272
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 9 odd numbers)",
+          "answer": 81
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 7,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "1, 8, 27, 64, ?",
+          "answer": 125
+        },
+        {
+          "prompt": "2 + 4 + 6 + ... + 14",
+          "answer": 56
+        },
+        {
+          "prompt": "1 + 2 + 3 + ... + 15",
+          "answer": 120
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 7,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "2, 6, 12, 20, ?",
+          "answer": 30
+        },
+        {
+          "prompt": "1, 8, 27, 64, ?",
+          "answer": 125
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 7 odd numbers)",
+          "answer": 49
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 7,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "1, 8, 27, 64, ?",
+          "answer": 125
+        },
+        {
+          "prompt": "2 + 4 + 6 + ... + 44",
+          "answer": 506
+        },
+        {
+          "prompt": "2 + 4 + 6 + ... + 14",
+          "answer": 56
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 7,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "1, 8, 27, 64, ?",
+          "answer": 125
+        },
+        {
+          "prompt": "12, 19, 26, 33, ... What is term number 12?",
+          "answer": 89
+        },
+        {
+          "prompt": "1 + 2 + 3 + ... + 13",
+          "answer": 91
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 8,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Each term is the sum of the two before: 4, 1, 5, 6, ... What is the 8th term?",
+          "answer": 45
+        },
+        {
+          "prompt": "1, 8, 27, 64, ?",
+          "answer": 125
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 11 odd numbers)",
+          "answer": 121
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 8,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Each term is the sum of the two before: 5, 2, 7, 9, ... What is the 8th term?",
+          "answer": 66
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 10 odd numbers)",
+          "answer": 100
+        },
+        {
+          "prompt": "Each term is the sum of the two before: 4, 3, 7, 10, ... What is the 8th term?",
+          "answer": 71
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 8,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Each term is the sum of the two before: 5, 1, 6, 7, ... What is the 8th term?",
+          "answer": 53
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 4 odd numbers)",
+          "answer": 16
+        },
+        {
+          "prompt": "Each term is the sum of the two before: 3, 3, 6, 9, ... What is the 8th term?",
+          "answer": 63
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 8,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Each term is the sum of the two before: 4, 3, 7, 10, ... What is the 8th term?",
+          "answer": 71
+        },
+        {
+          "prompt": "Each term is the sum of the two before: 5, 2, 7, 9, ... What is the 8th term?",
+          "answer": 66
+        },
+        {
+          "prompt": "7, 10, 15, 22, ?",
+          "answer": 31
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 8,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Each term is the sum of the two before: 6, 2, 8, 10, ... What is the 8th term?",
+          "answer": 74
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 13 odd numbers)",
+          "answer": 169
+        },
+        {
+          "prompt": "2, 6, 12, 20, ?",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 8,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Each term is the sum of the two before: 6, 1, 7, 8, ... What is the 8th term?",
+          "answer": 61
+        },
+        {
+          "prompt": "2 + 4 + 6 + ... + 48",
+          "answer": 600
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 9 odd numbers)",
+          "answer": 81
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 9,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "13, 1, 17, 7, 21, 13, ?",
+          "answer": 25
+        },
+        {
+          "prompt": "6, 13, 11, 17, 16, 21, ?",
+          "answer": 21
+        },
+        {
+          "prompt": "10, 10, 12, 14, 14, 18, ?",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 9,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "15, 7, 18, 11, 21, 15, ?",
+          "answer": 24
+        },
+        {
+          "prompt": "13, 10, 16, 15, 19, 20, ?",
+          "answer": 22
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 13 odd numbers)",
+          "answer": 169
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 9,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "15, 1, 19, 3, 23, 5, ?",
+          "answer": 27
+        },
+        {
+          "prompt": "10, 10, 12, 13, 14, 16, ?",
+          "answer": 16
+        },
+        {
+          "prompt": "Each term is the sum of the two before: 2, 1, 3, 4, ... What is the 8th term?",
+          "answer": 29
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 9,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "13, 9, 19, 14, 25, 19, ?",
+          "answer": 31
+        },
+        {
+          "prompt": "1 + 3 + 5 + ... (the first 10 odd numbers)",
+          "answer": 100
+        },
+        {
+          "prompt": "2, 6, 12, 20, ?",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 9,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "20, 7, 24, 13, 28, 19, ?",
+          "answer": 32
+        },
+        {
+          "prompt": "Each term is the sum of the two before: 3, 1, 4, 5, ... What is the 8th term?",
+          "answer": 37
+        },
+        {
+          "prompt": "20, 17, 24, 23, 28, 29, ?",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 9,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "20, 3, 22, 9, 24, 15, ?",
+          "answer": 26
+        },
+        {
+          "prompt": "Each term is the sum of the two before: 3, 3, 6, 9, ... What is the 8th term?",
+          "answer": 63
+        },
+        {
+          "prompt": "6, 9, 14, 21, ?",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 10,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 4 + 8 + ... (6 terms)",
+          "answer": 63
+        },
+        {
+          "prompt": "9, 20, 13, 24, 17, 28, ?",
+          "answer": 21
+        },
+        {
+          "prompt": "2, 6, 12, 20, ?",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 10,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 4 + 8 + ... (5 terms)",
+          "answer": 31
+        },
+        {
+          "prompt": "18, 13, 22, 16, 26, 19, ?",
+          "answer": 30
+        },
+        {
+          "prompt": "8 + 11 + 14 + ... (8 terms)",
+          "answer": 148
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 10,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 4 + 8 + ... (5 terms)",
+          "answer": 31
+        },
+        {
+          "prompt": "1, 8, 27, 64, ?",
+          "answer": 125
+        },
+        {
+          "prompt": "Each term is the sum of the two before: 1, 2, 3, 5, ... What is the 8th term?",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 10,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 4 + 8 + ... (7 terms)",
+          "answer": 127
+        },
+        {
+          "prompt": "4, 11, 7, 16, 10, 21, ?",
+          "answer": 13
+        },
+        {
+          "prompt": "3 + 9 + 15 + ... (10 terms)",
+          "answer": 300
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 10,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 4 + 8 + ... (5 terms)",
+          "answer": 31
+        },
+        {
+          "prompt": "1 + 2 + 4 + 8 + ... (4 terms)",
+          "answer": 15
+        },
+        {
+          "prompt": "1 + 3 + 9 + 27 + ... (5 terms)",
+          "answer": 121
+        }
+      ]
+    },
+    {
+      "track": "sequences",
+      "level": 10,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "1 + 2 + 4 + 8 + ... (4 terms)",
+          "answer": 15
+        },
+        {
+          "prompt": "1 + 2 + 4 + 8 + ... (5 terms)",
+          "answer": 31
+        },
+        {
+          "prompt": "Each term is the sum of the two before: 2, 4, 6, 10, ... What is the 8th term?",
+          "answer": 68
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 1,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A train goes 90 km/h for 2 hours. How far?",
+          "answer": 180
+        },
+        {
+          "prompt": "A train goes 120 km/h for 5 hours. How far?",
+          "answer": 600
+        },
+        {
+          "prompt": "A train goes 90 km/h for 4 hours. How far?",
+          "answer": 360
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 1,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A train goes 100 km/h for 3 hours. How far?",
+          "answer": 300
+        },
+        {
+          "prompt": "A train goes 80 km/h for 5 hours. How far?",
+          "answer": 400
+        },
+        {
+          "prompt": "A train goes 70 km/h for 3 hours. How far?",
+          "answer": 210
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 1,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A train goes 100 km/h for 2 hours. How far?",
+          "answer": 200
+        },
+        {
+          "prompt": "A train goes 30 km/h for 5 hours. How far?",
+          "answer": 150
+        },
+        {
+          "prompt": "A train goes 70 km/h for 2 hours. How far?",
+          "answer": 140
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 1,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A train goes 90 km/h for 3 hours. How far?",
+          "answer": 270
+        },
+        {
+          "prompt": "A train goes 90 km/h for 2 hours. How far?",
+          "answer": 180
+        },
+        {
+          "prompt": "A train goes 50 km/h for 4 hours. How far?",
+          "answer": 200
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 1,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A train goes 120 km/h for 3 hours. How far?",
+          "answer": 360
+        },
+        {
+          "prompt": "A train goes 110 km/h for 4 hours. How far?",
+          "answer": 440
+        },
+        {
+          "prompt": "A train goes 30 km/h for 5 hours. How far?",
+          "answer": 150
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 1,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A train goes 120 km/h for 2 hours. How far?",
+          "answer": 240
+        },
+        {
+          "prompt": "A train goes 120 km/h for 4 hours. How far?",
+          "answer": 480
+        },
+        {
+          "prompt": "A train goes 70 km/h for 3 hours. How far?",
+          "answer": 210
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 2,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "180 km at 90 km/h. How many hours?",
+          "answer": 2
+        },
+        {
+          "prompt": "720 km at 120 km/h. How many hours?",
+          "answer": 6
+        },
+        {
+          "prompt": "A train goes 90 km/h for 4 hours. How far?",
+          "answer": 360
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 2,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "300 km at 100 km/h. How many hours?",
+          "answer": 3
+        },
+        {
+          "prompt": "A train goes 80 km/h for 5 hours. How far?",
+          "answer": 400
+        },
+        {
+          "prompt": "210 km at 70 km/h. How many hours?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 2,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "200 km at 100 km/h. How many hours?",
+          "answer": 2
+        },
+        {
+          "prompt": "A train goes 30 km/h for 5 hours. How far?",
+          "answer": 150
+        },
+        {
+          "prompt": "A train goes 70 km/h for 2 hours. How far?",
+          "answer": 140
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 2,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "360 km at 90 km/h. How many hours?",
+          "answer": 4
+        },
+        {
+          "prompt": "180 km at 90 km/h. How many hours?",
+          "answer": 2
+        },
+        {
+          "prompt": "250 km at 50 km/h. How many hours?",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 2,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "360 km at 120 km/h. How many hours?",
+          "answer": 3
+        },
+        {
+          "prompt": "A train goes 110 km/h for 4 hours. How far?",
+          "answer": 440
+        },
+        {
+          "prompt": "A train goes 30 km/h for 5 hours. How far?",
+          "answer": 150
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 2,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "240 km at 120 km/h. How many hours?",
+          "answer": 2
+        },
+        {
+          "prompt": "A train goes 120 km/h for 4 hours. How far?",
+          "answer": 480
+        },
+        {
+          "prompt": "A train goes 70 km/h for 3 hours. How far?",
+          "answer": 210
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 3,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "180 km in 2 hours. Speed in km/h?",
+          "answer": 90
+        },
+        {
+          "prompt": "720 km at 120 km/h. How many hours?",
+          "answer": 6
+        },
+        {
+          "prompt": "A train goes 90 km/h for 4 hours. How far?",
+          "answer": 360
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 3,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "300 km in 3 hours. Speed in km/h?",
+          "answer": 100
+        },
+        {
+          "prompt": "A train goes 80 km/h for 5 hours. How far?",
+          "answer": 400
+        },
+        {
+          "prompt": "210 km at 70 km/h. How many hours?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 3,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "200 km in 2 hours. Speed in km/h?",
+          "answer": 100
+        },
+        {
+          "prompt": "150 km at 30 km/h. How many hours?",
+          "answer": 5
+        },
+        {
+          "prompt": "140 km at 70 km/h. How many hours?",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 3,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "360 km in 4 hours. Speed in km/h?",
+          "answer": 90
+        },
+        {
+          "prompt": "180 km in 2 hours. Speed in km/h?",
+          "answer": 90
+        },
+        {
+          "prompt": "250 km at 50 km/h. How many hours?",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 3,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "360 km in 3 hours. Speed in km/h?",
+          "answer": 120
+        },
+        {
+          "prompt": "440 km at 110 km/h. How many hours?",
+          "answer": 4
+        },
+        {
+          "prompt": "150 km at 30 km/h. How many hours?",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 3,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "240 km in 2 hours. Speed in km/h?",
+          "answer": 120
+        },
+        {
+          "prompt": "A train goes 120 km/h for 4 hours. How far?",
+          "answer": 480
+        },
+        {
+          "prompt": "210 km at 70 km/h. How many hours?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 4,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "You drive out at 20 km/h and back at 30 km/h. Average speed for the round trip, in km/h?",
+          "answer": 24
+        },
+        {
+          "prompt": "A train goes 80 km/h for 5 hours. How far?",
+          "answer": 400
+        },
+        {
+          "prompt": "You drive out at 40 km/h and back at 60 km/h. Average speed for the round trip, in km/h?",
+          "answer": 48
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 4,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "You drive out at 60 km/h and back at 120 km/h. Average speed for the round trip, in km/h?",
+          "answer": 80
+        },
+        {
+          "prompt": "200 km at 50 km/h. How many hours?",
+          "answer": 4
+        },
+        {
+          "prompt": "You drive out at 20 km/h and back at 30 km/h. Average speed for the round trip, in km/h?",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 4,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "You drive out at 60 km/h and back at 120 km/h. Average speed for the round trip, in km/h?",
+          "answer": 80
+        },
+        {
+          "prompt": "A train goes 70 km/h for 2 hours. How far?",
+          "answer": 140
+        },
+        {
+          "prompt": "You drive out at 60 km/h and back at 90 km/h. Average speed for the round trip, in km/h?",
+          "answer": 72
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 4,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "You drive out at 20 km/h and back at 30 km/h. Average speed for the round trip, in km/h?",
+          "answer": 24
+        },
+        {
+          "prompt": "550 km at 110 km/h. How many hours?",
+          "answer": 5
+        },
+        {
+          "prompt": "A train goes 80 km/h for 3 hours. How far?",
+          "answer": 240
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 4,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "You drive out at 30 km/h and back at 45 km/h. Average speed for the round trip, in km/h?",
+          "answer": 36
+        },
+        {
+          "prompt": "420 km at 70 km/h. How many hours?",
+          "answer": 6
+        },
+        {
+          "prompt": "120 km in 2 hours. Speed in km/h?",
+          "answer": 60
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 4,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "You drive out at 30 km/h and back at 45 km/h. Average speed for the round trip, in km/h?",
+          "answer": 36
+        },
+        {
+          "prompt": "A train goes 30 km/h for 5 hours. How far?",
+          "answer": 150
+        },
+        {
+          "prompt": "240 km in 4 hours. Speed in km/h?",
+          "answer": 60
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 5,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Two trains 300 km apart head toward each other at 70 and 30 km/h. Hours until they meet?",
+          "answer": 3
+        },
+        {
+          "prompt": "Two trains 520 km apart head toward each other at 90 and 40 km/h. Hours until they meet?",
+          "answer": 4
+        },
+        {
+          "prompt": "You drive out at 60 km/h and back at 90 km/h. Average speed for the round trip, in km/h?",
+          "answer": 72
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 5,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Two trains 260 km apart head toward each other at 80 and 50 km/h. Hours until they meet?",
+          "answer": 2
+        },
+        {
+          "prompt": "You drive out at 30 km/h and back at 45 km/h. Average speed for the round trip, in km/h?",
+          "answer": 36
+        },
+        {
+          "prompt": "You drive out at 60 km/h and back at 90 km/h. Average speed for the round trip, in km/h?",
+          "answer": 72
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 5,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Two trains 330 km apart head toward each other at 80 and 30 km/h. Hours until they meet?",
+          "answer": 3
+        },
+        {
+          "prompt": "400 km at 100 km/h. How many hours?",
+          "answer": 4
+        },
+        {
+          "prompt": "120 km in 3 hours. Speed in km/h?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 5,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Two trains 650 km apart head toward each other at 70 and 60 km/h. Hours until they meet?",
+          "answer": 5
+        },
+        {
+          "prompt": "You drive out at 40 km/h and back at 60 km/h. Average speed for the round trip, in km/h?",
+          "answer": 48
+        },
+        {
+          "prompt": "You drive out at 30 km/h and back at 45 km/h. Average speed for the round trip, in km/h?",
+          "answer": 36
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 5,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Two trains 420 km apart head toward each other at 90 and 50 km/h. Hours until they meet?",
+          "answer": 3
+        },
+        {
+          "prompt": "Two trains 110 km apart head toward each other at 60 and 50 km/h. Hours until they meet?",
+          "answer": 1
+        },
+        {
+          "prompt": "Two trains 510 km apart head toward each other at 90 and 80 km/h. Hours until they meet?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 5,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Two trains 120 km apart head toward each other at 90 and 30 km/h. Hours until they meet?",
+          "answer": 1
+        },
+        {
+          "prompt": "Two trains 360 km apart head toward each other at 70 and 50 km/h. Hours until they meet?",
+          "answer": 3
+        },
+        {
+          "prompt": "200 km in 4 hours. Speed in km/h?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 6,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "One pipe fills a tank in 20 hours and another in 30 hours. Both open: how many hours?",
+          "answer": 12
+        },
+        {
+          "prompt": "480 km in 6 hours. Speed in km/h?",
+          "answer": 80
+        },
+        {
+          "prompt": "One pipe fills a tank in 12 hours and another in 4 hours. Both open: how many hours?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 6,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "One pipe fills a tank in 8 hours and another in 8 hours. Both open: how many hours?",
+          "answer": 4
+        },
+        {
+          "prompt": "You drive out at 40 km/h and back at 60 km/h. Average speed for the round trip, in km/h?",
+          "answer": 48
+        },
+        {
+          "prompt": "Two trains 480 km apart head toward each other at 90 and 70 km/h. Hours until they meet?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 6,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "One pipe fills a tank in 8 hours and another in 8 hours. Both open: how many hours?",
+          "answer": 4
+        },
+        {
+          "prompt": "140 km in 2 hours. Speed in km/h?",
+          "answer": 70
+        },
+        {
+          "prompt": "One pipe fills a tank in 6 hours and another in 12 hours. Both open: how many hours?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 6,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "One pipe fills a tank in 20 hours and another in 30 hours. Both open: how many hours?",
+          "answer": 12
+        },
+        {
+          "prompt": "You drive out at 30 km/h and back at 45 km/h. Average speed for the round trip, in km/h?",
+          "answer": 36
+        },
+        {
+          "prompt": "Two trains 200 km apart head toward each other at 40 and 60 km/h. Hours until they meet?",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 6,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "One pipe fills a tank in 12 hours and another in 12 hours. Both open: how many hours?",
+          "answer": 6
+        },
+        {
+          "prompt": "You drive out at 60 km/h and back at 90 km/h. Average speed for the round trip, in km/h?",
+          "answer": 72
+        },
+        {
+          "prompt": "One pipe fills a tank in 6 hours and another in 12 hours. Both open: how many hours?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 6,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "One pipe fills a tank in 12 hours and another in 12 hours. Both open: how many hours?",
+          "answer": 6
+        },
+        {
+          "prompt": "180 km in 6 hours. Speed in km/h?",
+          "answer": 30
+        },
+        {
+          "prompt": "Two trains 220 km apart head toward each other at 50 and 60 km/h. Hours until they meet?",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 7,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Two ages add up to 41 and differ by 31. The older age?",
+          "answer": 36
+        },
+        {
+          "prompt": "One pipe fills a tank in 12 hours and another in 12 hours. Both open: how many hours?",
+          "answer": 6
+        },
+        {
+          "prompt": "Two ages add up to 38 and differ by 16. The older age?",
+          "answer": 27
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 7,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Two ages add up to 47 and differ by 31. The older age?",
+          "answer": 39
+        },
+        {
+          "prompt": "Two trains 600 km apart head toward each other at 60 and 90 km/h. Hours until they meet?",
+          "answer": 4
+        },
+        {
+          "prompt": "Two trains 130 km apart head toward each other at 50 and 80 km/h. Hours until they meet?",
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 7,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Two ages add up to 43 and differ by 33. The older age?",
+          "answer": 38
+        },
+        {
+          "prompt": "Two trains 330 km apart head toward each other at 30 and 80 km/h. Hours until they meet?",
+          "answer": 3
+        },
+        {
+          "prompt": "Two trains 240 km apart head toward each other at 40 and 40 km/h. Hours until they meet?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 7,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Two ages add up to 44 and differ by 26. The older age?",
+          "answer": 35
+        },
+        {
+          "prompt": "Two ages add up to 43 and differ by 31. The older age?",
+          "answer": 37
+        },
+        {
+          "prompt": "One pipe fills a tank in 12 hours and another in 4 hours. Both open: how many hours?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 7,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Two ages add up to 53 and differ by 37. The older age?",
+          "answer": 45
+        },
+        {
+          "prompt": "Two trains 280 km apart head toward each other at 80 and 60 km/h. Hours until they meet?",
+          "answer": 2
+        },
+        {
+          "prompt": "You drive out at 60 km/h and back at 120 km/h. Average speed for the round trip, in km/h?",
+          "answer": 80
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 7,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Two ages add up to 50 and differ by 38. The older age?",
+          "answer": 44
+        },
+        {
+          "prompt": "You drive out at 30 km/h and back at 45 km/h. Average speed for the round trip, in km/h?",
+          "answer": 36
+        },
+        {
+          "prompt": "One pipe fills a tank in 10 hours and another in 15 hours. Both open: how many hours?",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 8,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "300 ml of 26% juice is mixed with 200 ml of 11% juice. Percent juice in the mix?",
+          "answer": 20
+        },
+        {
+          "prompt": "300 ml of 28% juice is mixed with 100 ml of 16% juice. Percent juice in the mix?",
+          "answer": 25
+        },
+        {
+          "prompt": "Two ages add up to 46 and differ by 16. The older age?",
+          "answer": 31
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 8,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "100 ml of 32% juice is mixed with 300 ml of 24% juice. Percent juice in the mix?",
+          "answer": 26
+        },
+        {
+          "prompt": "Two ages add up to 53 and differ by 31. The older age?",
+          "answer": 42
+        },
+        {
+          "prompt": "One pipe fills a tank in 10 hours and another in 15 hours. Both open: how many hours?",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 8,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "100 ml of 26% juice is mixed with 300 ml of 18% juice. Percent juice in the mix?",
+          "answer": 20
+        },
+        {
+          "prompt": "Two trains 420 km apart head toward each other at 80 and 60 km/h. Hours until they meet?",
+          "answer": 3
+        },
+        {
+          "prompt": "Two trains 100 km apart head toward each other at 40 and 60 km/h. Hours until they meet?",
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 8,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "300 ml of 37% juice is mixed with 200 ml of 17% juice. Percent juice in the mix?",
+          "answer": 29
+        },
+        {
+          "prompt": "Two ages add up to 34 and differ by 14. The older age?",
+          "answer": 24
+        },
+        {
+          "prompt": "One pipe fills a tank in 20 hours and another in 30 hours. Both open: how many hours?",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 8,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "300 ml of 28% juice is mixed with 100 ml of 20% juice. Percent juice in the mix?",
+          "answer": 26
+        },
+        {
+          "prompt": "200 ml of 30% juice is mixed with 300 ml of 25% juice. Percent juice in the mix?",
+          "answer": 27
+        },
+        {
+          "prompt": "300 ml of 39% juice is mixed with 100 ml of 31% juice. Percent juice in the mix?",
+          "answer": 37
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 8,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "300 ml of 23% juice is mixed with 100 ml of 19% juice. Percent juice in the mix?",
+          "answer": 22
+        },
+        {
+          "prompt": "300 ml of 31% juice is mixed with 200 ml of 21% juice. Percent juice in the mix?",
+          "answer": 27
+        },
+        {
+          "prompt": "One pipe fills a tank in 12 hours and another in 4 hours. Both open: how many hours?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 9,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A colony of 13 doubles every 2 years. How many after 8 years?",
+          "answer": 208
+        },
+        {
+          "prompt": "A colony of 20 doubles every 3 years. How many after 12 years?",
+          "answer": 320
+        },
+        {
+          "prompt": "200 ml of 42% juice is mixed with 100 ml of 36% juice. Percent juice in the mix?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 9,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A colony of 15 doubles every 3 years. How many after 9 years?",
+          "answer": 120
+        },
+        {
+          "prompt": "300 ml of 35% juice is mixed with 100 ml of 27% juice. Percent juice in the mix?",
+          "answer": 33
+        },
+        {
+          "prompt": "Two ages add up to 46 and differ by 34. The older age?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 9,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A colony of 15 doubles every 2 years. How many after 6 years?",
+          "answer": 120
+        },
+        {
+          "prompt": "One pipe fills a tank in 8 hours and another in 8 hours. Both open: how many hours?",
+          "answer": 4
+        },
+        {
+          "prompt": "Two ages add up to 38 and differ by 26. The older age?",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 9,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A colony of 13 doubles every 4 years. How many after 20 years?",
+          "answer": 416
+        },
+        {
+          "prompt": "100 ml of 35% juice is mixed with 200 ml of 29% juice. Percent juice in the mix?",
+          "answer": 31
+        },
+        {
+          "prompt": "300 ml of 30% juice is mixed with 100 ml of 26% juice. Percent juice in the mix?",
+          "answer": 29
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 9,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A colony of 20 doubles every 3 years. How many after 9 years?",
+          "answer": 160
+        },
+        {
+          "prompt": "A colony of 11 doubles every 3 years. How many after 6 years?",
+          "answer": 44
+        },
+        {
+          "prompt": "A colony of 20 doubles every 6 years. How many after 18 years?",
+          "answer": 160
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 9,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A colony of 20 doubles every 2 years. How many after 4 years?",
+          "answer": 80
+        },
+        {
+          "prompt": "A colony of 13 doubles every 3 years. How many after 9 years?",
+          "answer": 104
+        },
+        {
+          "prompt": "Two ages add up to 37 and differ by 15. The older age?",
+          "answer": 26
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 10,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Plan A: $29 plus $2 per GB. Plan B: $45 flat. At how many GB do they cost the same?",
+          "answer": 8
+        },
+        {
+          "prompt": "Plan A: $40 plus $4 per GB. Plan B: $76 flat. At how many GB do they cost the same?",
+          "answer": 9
+        },
+        {
+          "prompt": "A colony of 10 doubles every 6 years. How many after 18 years?",
+          "answer": 80
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 10,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Plan A: $32 plus $4 per GB. Plan B: $52 flat. At how many GB do they cost the same?",
+          "answer": 5
+        },
+        {
+          "prompt": "A colony of 18 doubles every 5 years. How many after 15 years?",
+          "answer": 144
+        },
+        {
+          "prompt": "100 ml of 34% juice is mixed with 300 ml of 18% juice. Percent juice in the mix?",
+          "answer": 22
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 10,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Plan A: $32 plus $2 per GB. Plan B: $46 flat. At how many GB do they cost the same?",
+          "answer": 7
+        },
+        {
+          "prompt": "Two ages add up to 49 and differ by 29. The older age?",
+          "answer": 39
+        },
+        {
+          "prompt": "100 ml of 31% juice is mixed with 200 ml of 22% juice. Percent juice in the mix?",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 10,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Plan A: $28 plus $5 per GB. Plan B: $83 flat. At how many GB do they cost the same?",
+          "answer": 11
+        },
+        {
+          "prompt": "A colony of 5 doubles every 4 years. How many after 12 years?",
+          "answer": 40
+        },
+        {
+          "prompt": "A colony of 18 doubles every 4 years. How many after 8 years?",
+          "answer": 72
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 10,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Plan A: $40 plus $4 per GB. Plan B: $68 flat. At how many GB do they cost the same?",
+          "answer": 7
+        },
+        {
+          "prompt": "Plan A: $25 plus $4 per GB. Plan B: $37 flat. At how many GB do they cost the same?",
+          "answer": 3
+        },
+        {
+          "prompt": "Plan A: $40 plus $8 per GB. Plan B: $96 flat. At how many GB do they cost the same?",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "rates",
+      "level": 10,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Plan A: $39 plus $3 per GB. Plan B: $48 flat. At how many GB do they cost the same?",
+          "answer": 3
+        },
+        {
+          "prompt": "Plan A: $29 plus $5 per GB. Plan B: $64 flat. At how many GB do they cost the same?",
+          "answer": 7
+        },
+        {
+          "prompt": "100 ml of 39% juice is mixed with 200 ml of 27% juice. Percent juice in the mix?",
+          "answer": 31
+        }
+      ]
+    },
+    {
       "track": "estimation",
       "level": 1,
       "seed": 1,

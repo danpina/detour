@@ -88,7 +88,7 @@ describe("the three rounds", () => {
       { track_id: "mental-math" as const, level: 4, recent_results: [], attempts_total: 0, last_at: 5 },
       { track_id: "estimation" as const, level: 2, recent_results: [], attempts_total: 0, last_at: 1 },
       { track_id: "algebra" as const, level: 3, recent_results: [], attempts_total: 0, last_at: 9 },
-      ...(["geometry", "probability", "number-theory", "money"] as const).map((track_id) => ({ track_id, level: 1, recent_results: [], attempts_total: 0, last_at: 50 })),
+      ...(["geometry", "probability", "number-theory", "money", "fractions", "statistics", "sequences", "rates"] as const).map((track_id) => ({ track_id, level: 1, recent_results: [], attempts_total: 0, last_at: 50 })),
     ];
     const items = mathRound(skills, 5, () => 7);
     expect(items).toEqual([
@@ -103,5 +103,15 @@ describe("the three rounds", () => {
     // With nothing practised yet, everything starts at level 1.
     const fresh = mathRound([], 5, () => 1);
     expect(fresh.every((i) => i.kind === "drill" && i.drill.level === 1)).toBe(true);
+  });
+});
+
+describe("math rounds and switched-off skills", () => {
+  it("never pick a skill that is switched off, and fall back to mental math alone", () => {
+    const off = ["geometry", "probability", "number-theory", "money", "fractions", "sequences", "rates", "estimation"];
+    const items = mathRound([], 5, () => 1, off);
+    expect(items.map((x) => (x.kind === "drill" ? x.drill.track : ""))).toEqual(["mental-math", "algebra"]);
+    const everything = [...off, "algebra", "statistics"];
+    expect(mathRound([], 5, () => 3, everything)).toEqual([{ kind: "drill", drill: { track: "mental-math", level: 1, seed: 3, count: 5 } }]);
   });
 });

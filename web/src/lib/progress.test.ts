@@ -129,9 +129,9 @@ describe("knowledge map", () => {
 describe("skills and recap", () => {
   it("summarises every track with defaults", () => {
     const s = skillSummary([{ track_id: "estimation", level: 2, recent_results: [true, false, true], attempts_total: 3, last_at: 1 }]);
-    expect(s.map((x) => x.id)).toEqual(["mental-math", "algebra", "geometry", "probability", "number-theory", "money", "estimation"]);
+    expect(s.map((x) => x.id)).toEqual(["mental-math", "algebra", "geometry", "probability", "number-theory", "money", "fractions", "statistics", "sequences", "rates", "estimation"]);
     expect(s[0]!.level).toBe(1);
-    expect(s[6]).toMatchObject({ level: 2, recentRight: 2, recentTotal: 3 });
+    expect(s[10]).toMatchObject({ level: 2, recentRight: 2, recentTotal: 3 });
   });
 
   it("builds the weekly recap from the last 7 days", () => {
