@@ -21,6 +21,8 @@ struct RootView: View {
     @Environment(\.openURL) private var openURL
     @State private var run: SessionRun?
     @State private var tab: MainTab = .home
+    /// Set when Detour is opened from a guarded app's shield: it always asks which round to do first.
+    @State private var choosingForShield = false
 
     var body: some View {
         Group {
@@ -44,6 +46,17 @@ struct RootView: View {
                         .tabItem { Label("Settings", systemImage: "gearshape") }
                         .tag(MainTab.settings)
                 }
+            }
+        }
+        .overlay {
+            if choosingForShield {
+                ShieldChoiceView(
+                    start: { kind in
+                        choosingForShield = false
+                        start(feed: false, why: "shield start", kind: kind)
+                    },
+                    onClose: { choosingForShield = false }
+                )
             }
         }
         .onChange(of: scenePhase) { _, phase in
@@ -91,10 +104,10 @@ struct RootView: View {
         guardManager.refresh()
         if guardManager.consumePendingSession() {
             AppLog.log("opened from the shield's Start button (session open already: \(run != nil))")
-            // A guarded session is always a fresh, plain set (never the endless feed), replacing anything already open.
+            // Coming from a guarded app always asks which round to take (cards, math or games), replacing anything already open.
             if model.settings.onboardingDone {
-                let kind = AppModel.RoundKind(rawValue: guardManager.settings.detourRound ?? "learning") ?? .learning
-                start(feed: false, why: "shield start", kind: kind)
+                run = nil
+                choosingForShield = true
             }
         }
     }

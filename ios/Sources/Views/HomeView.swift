@@ -2,6 +2,43 @@ import SwiftUI
 
 /// The home screen: three rounds, each with its own place. Learning (cards), Math (skills with levels) and Games.
 struct HomeView: View {
+    let start: (_ kind: AppModel.RoundKind) -> Void
+
+    var body: some View {
+        VStack(spacing: 12) {
+            Spacer()
+            Text("Quick one?").font(.largeTitle.weight(.semibold))
+            Text("Pick a round. About a minute.").foregroundStyle(.secondary)
+            RoundChoiceList(start: start).padding(.top, 14)
+            Spacer()
+        }
+        .padding(.horizontal, 24)
+    }
+}
+
+/// What you see when you open Detour from a guarded app: the same three rounds, asked every time, before anything is unlocked.
+struct ShieldChoiceView: View {
+    let start: (_ kind: AppModel.RoundKind) -> Void
+    let onClose: () -> Void
+
+    var body: some View {
+        VStack(spacing: 12) {
+            Spacer()
+            Text("Quick one first?").font(.largeTitle.weight(.semibold))
+            Text("Pick a round, then your app is yours for a while.").foregroundStyle(.secondary).multilineTextAlignment(.center)
+            RoundChoiceList(start: start).padding(.top, 14)
+            Button("Not now", action: onClose)
+                .padding(.top, 8)
+            Spacer()
+        }
+        .padding(.horizontal, 24)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(.systemBackground).ignoresSafeArea())
+    }
+}
+
+/// The three round buttons, shared by the home screen and the choice shown from the shield.
+struct RoundChoiceList: View {
     @Environment(AppModel.self) private var model
     let start: (_ kind: AppModel.RoundKind) -> Void
 
@@ -28,34 +65,25 @@ struct HomeView: View {
 
     var body: some View {
         VStack(spacing: 12) {
-            Spacer()
-            Text("Quick one?").font(.largeTitle.weight(.semibold))
-            Text("Pick a round. About a minute.").foregroundStyle(.secondary)
-
-            VStack(spacing: 12) {
-                ForEach(rounds) { round in
-                    Button {
-                        start(round.kind)
-                    } label: {
-                        HStack(spacing: 14) {
-                            Text(round.emoji).font(.largeTitle)
-                            VStack(alignment: .leading, spacing: 2) {
-                                Text(round.title).font(.headline)
-                                Text(round.blurb).font(.subheadline).foregroundStyle(.secondary).multilineTextAlignment(.leading)
-                            }
-                            Spacer()
+            ForEach(rounds) { round in
+                Button {
+                    start(round.kind)
+                } label: {
+                    HStack(spacing: 14) {
+                        Text(round.emoji).font(.largeTitle)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(round.title).font(.headline)
+                            Text(round.blurb).font(.subheadline).foregroundStyle(.secondary).multilineTextAlignment(.leading)
                         }
-                        .padding(16)
-                        .frame(maxWidth: .infinity)
-                        .background(Color(.secondarySystemBackground))
-                        .clipShape(RoundedRectangle(cornerRadius: 16))
+                        Spacer()
                     }
-                    .buttonStyle(.plain)
+                    .padding(16)
+                    .frame(maxWidth: .infinity)
+                    .background(Color(.secondarySystemBackground))
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
+                .buttonStyle(.plain)
             }
-            .padding(.top, 14)
-            Spacer()
         }
-        .padding(.horizontal, 24)
     }
 }
