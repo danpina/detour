@@ -31,6 +31,10 @@ struct SeededRng {
 enum TrackId: String, Codable, CaseIterable, Hashable {
     case mentalMath = "mental-math"
     case algebra = "algebra"
+    case geometry = "geometry"
+    case probability = "probability"
+    case numberTheory = "number-theory"
+    case money = "money"
     case estimation = "estimation"
 }
 
@@ -113,6 +117,34 @@ enum Drills {
             problems: 3,
             timeLimitSeconds: 60
         ),
+        .geometry: TrackInfo(
+            name: "Geometry",
+            blurb: "Areas, angles, circles and right triangles",
+            levels: MoreLevels.geometry,
+            problems: 3,
+            timeLimitSeconds: 60
+        ),
+        .probability: TrackInfo(
+            name: "Probability & counting",
+            blurb: "Chances, orders, codes and teams",
+            levels: MoreLevels.probability,
+            problems: 3,
+            timeLimitSeconds: 60
+        ),
+        .numberTheory: TrackInfo(
+            name: "Number theory",
+            blurb: "Factors, primes, remainders, binary and hex",
+            levels: MoreLevels.numberTheory,
+            problems: 3,
+            timeLimitSeconds: 60
+        ),
+        .money: TrackInfo(
+            name: "Everyday money",
+            blurb: "Change, discounts, tips and interest",
+            levels: MoreLevels.money,
+            problems: 3,
+            timeLimitSeconds: 60
+        ),
         .estimation: TrackInfo(
             name: "Estimation",
             blurb: "Fermi-style guesses",
@@ -140,6 +172,18 @@ enum Drills {
             } else if spec.track == .algebra {
                 let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.algebra).maxLevel, &rng)
                 p = algebra(lv, &rng)
+            } else if spec.track == .geometry {
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.geometry).maxLevel, &rng)
+                p = geometry(lv, &rng)
+            } else if spec.track == .probability {
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.probability).maxLevel, &rng)
+                p = probability(lv, &rng)
+            } else if spec.track == .numberTheory {
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.numberTheory).maxLevel, &rng)
+                p = numberTheory(lv, &rng)
+            } else if spec.track == .money {
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.money).maxLevel, &rng)
+                p = money(lv, &rng)
             } else {
                 p = estimation(spec.level, &rng)
             }

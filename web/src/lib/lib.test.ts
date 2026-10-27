@@ -88,6 +88,7 @@ describe("the three rounds", () => {
       { track_id: "mental-math" as const, level: 4, recent_results: [], attempts_total: 0, last_at: 5 },
       { track_id: "estimation" as const, level: 2, recent_results: [], attempts_total: 0, last_at: 1 },
       { track_id: "algebra" as const, level: 3, recent_results: [], attempts_total: 0, last_at: 9 },
+      ...(["geometry", "probability", "number-theory", "money"] as const).map((track_id) => ({ track_id, level: 1, recent_results: [], attempts_total: 0, last_at: 50 })),
     ];
     const items = mathRound(skills, 5, () => 7);
     expect(items).toEqual([

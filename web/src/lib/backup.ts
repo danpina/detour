@@ -22,7 +22,7 @@ const review = z.object({
   learning_steps: num, reps: num, lapses: num, state: num, last_review_at: num.optional(),
 });
 const skill = z.object({
-  track_id: z.enum(["mental-math", "estimation", "algebra"]), level: z.number().int().min(1), recent_results: z.array(z.boolean()), attempts_total: num, last_at: num,
+  track_id: z.enum(["mental-math", "estimation", "algebra", "geometry", "probability", "number-theory", "money"]), level: z.number().int().min(1), recent_results: z.array(z.boolean()), attempts_total: num, last_at: num,
 });
 const streak = z.object({ id: z.literal("main"), current: num, best: num, freezes_left: num, freeze_week: z.string(), last_active_day: z.string() });
 

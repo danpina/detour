@@ -4106,6 +4106,4566 @@
       ]
     },
     {
+      "track": "geometry",
+      "level": 1,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Perimeter of a 14 × 2 rectangle",
+          "answer": 32
+        },
+        {
+          "prompt": "Perimeter of a 20 × 15 rectangle",
+          "answer": 70
+        },
+        {
+          "prompt": "Perimeter of a 14 × 12 rectangle",
+          "answer": 52
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 1,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Perimeter of a 16 × 6 rectangle",
+          "answer": 44
+        },
+        {
+          "prompt": "Perimeter of a 12 × 14 rectangle",
+          "answer": 52
+        },
+        {
+          "prompt": "Perimeter of a 11 × 7 rectangle",
+          "answer": 36
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 1,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Perimeter of a 15 × 2 rectangle",
+          "answer": 34
+        },
+        {
+          "prompt": "Perimeter of a 4 × 12 rectangle",
+          "answer": 32
+        },
+        {
+          "prompt": "Perimeter of a 11 × 4 rectangle",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 1,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Perimeter of a 13 × 8 rectangle",
+          "answer": 42
+        },
+        {
+          "prompt": "Perimeter of a 15 × 4 rectangle",
+          "answer": 38
+        },
+        {
+          "prompt": "Perimeter of a 7 × 10 rectangle",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 1,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Perimeter of a 20 × 6 rectangle",
+          "answer": 52
+        },
+        {
+          "prompt": "Perimeter of a 17 × 9 rectangle",
+          "answer": 52
+        },
+        {
+          "prompt": "Perimeter of a 4 × 12 rectangle",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 1,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Perimeter of a 20 × 3 rectangle",
+          "answer": 46
+        },
+        {
+          "prompt": "Perimeter of a 19 × 10 rectangle",
+          "answer": 58
+        },
+        {
+          "prompt": "Perimeter of a 10 × 7 rectangle",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 2,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Area of a 9 × 3 rectangle",
+          "answer": 27
+        },
+        {
+          "prompt": "Area of a 12 × 12 rectangle",
+          "answer": 144
+        },
+        {
+          "prompt": "Perimeter of a 14 × 12 rectangle",
+          "answer": 52
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 2,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Area of a 10 × 6 rectangle",
+          "answer": 60
+        },
+        {
+          "prompt": "Perimeter of a 12 × 14 rectangle",
+          "answer": 52
+        },
+        {
+          "prompt": "Area of a 7 × 6 rectangle",
+          "answer": 42
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 2,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Area of a 10 × 3 rectangle",
+          "answer": 30
+        },
+        {
+          "prompt": "Perimeter of a 4 × 12 rectangle",
+          "answer": 32
+        },
+        {
+          "prompt": "Perimeter of a 11 × 4 rectangle",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 2,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Area of a 9 × 7 rectangle",
+          "answer": 63
+        },
+        {
+          "prompt": "Area of a 9 × 4 rectangle",
+          "answer": 36
+        },
+        {
+          "prompt": "Area of a 5 × 9 rectangle",
+          "answer": 45
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 2,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Area of a 12 × 6 rectangle",
+          "answer": 72
+        },
+        {
+          "prompt": "Perimeter of a 17 × 9 rectangle",
+          "answer": 52
+        },
+        {
+          "prompt": "Perimeter of a 4 × 12 rectangle",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 2,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Area of a 12 × 4 rectangle",
+          "answer": 48
+        },
+        {
+          "prompt": "Perimeter of a 19 × 10 rectangle",
+          "answer": 58
+        },
+        {
+          "prompt": "Perimeter of a 10 × 7 rectangle",
+          "answer": 34
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 3,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Area of a triangle, base 14, height 3",
+          "answer": 21
+        },
+        {
+          "prompt": "Area of a 12 × 12 rectangle",
+          "answer": 144
+        },
+        {
+          "prompt": "Perimeter of a 14 × 12 rectangle",
+          "answer": 52
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 3,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Area of a triangle, base 16, height 6",
+          "answer": 48
+        },
+        {
+          "prompt": "Perimeter of a 12 × 14 rectangle",
+          "answer": 52
+        },
+        {
+          "prompt": "Area of a 7 × 6 rectangle",
+          "answer": 42
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 3,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Area of a triangle, base 16, height 3",
+          "answer": 24
+        },
+        {
+          "prompt": "Area of a 3 × 10 rectangle",
+          "answer": 30
+        },
+        {
+          "prompt": "Area of a 7 × 4 rectangle",
+          "answer": 28
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 3,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Area of a triangle, base 14, height 7",
+          "answer": 49
+        },
+        {
+          "prompt": "Area of a triangle, base 16, height 4",
+          "answer": 32
+        },
+        {
+          "prompt": "Area of a 5 × 9 rectangle",
+          "answer": 45
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 3,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Area of a triangle, base 20, height 6",
+          "answer": 60
+        },
+        {
+          "prompt": "Area of a 11 × 8 rectangle",
+          "answer": 88
+        },
+        {
+          "prompt": "Area of a 3 × 10 rectangle",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 3,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Area of a triangle, base 20, height 4",
+          "answer": 40
+        },
+        {
+          "prompt": "Perimeter of a 19 × 10 rectangle",
+          "answer": 58
+        },
+        {
+          "prompt": "Area of a 7 × 6 rectangle",
+          "answer": 42
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 4,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Triangle with angles 61° and 30°. The third angle?",
+          "answer": 89
+        },
+        {
+          "prompt": "Area of a triangle, base 20, height 12",
+          "answer": 120
+        },
+        {
+          "prompt": "Area of a 9 × 10 rectangle",
+          "answer": 90
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 4,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Triangle with angles 67° and 46°. The third angle?",
+          "answer": 67
+        },
+        {
+          "prompt": "Area of a 8 × 11 rectangle",
+          "answer": 88
+        },
+        {
+          "prompt": "Area of a triangle, base 12, height 6",
+          "answer": 36
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 4,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Triangle with angles 66° and 31°. The third angle?",
+          "answer": 83
+        },
+        {
+          "prompt": "Area of a 3 × 10 rectangle",
+          "answer": 30
+        },
+        {
+          "prompt": "Area of a 7 × 4 rectangle",
+          "answer": 28
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 4,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Triangle with angles 60° and 52°. The third angle?",
+          "answer": 68
+        },
+        {
+          "prompt": "Triangle with angles 64° and 38°. The third angle?",
+          "answer": 78
+        },
+        {
+          "prompt": "Area of a triangle, base 8, height 9",
+          "answer": 36
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 4,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Triangle with angles 79° and 45°. The third angle?",
+          "answer": 56
+        },
+        {
+          "prompt": "Area of a 11 × 8 rectangle",
+          "answer": 88
+        },
+        {
+          "prompt": "Area of a 3 × 10 rectangle",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 4,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Triangle with angles 78° and 36°. The third angle?",
+          "answer": 66
+        },
+        {
+          "prompt": "Perimeter of a 19 × 10 rectangle",
+          "answer": 58
+        },
+        {
+          "prompt": "Area of a 7 × 6 rectangle",
+          "answer": 42
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 5,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Complement of 54° (adds up to 90°)",
+          "answer": 36
+        },
+        {
+          "prompt": "Triangle with angles 80° and 79°. The third angle?",
+          "answer": 21
+        },
+        {
+          "prompt": "Area of a triangle, base 14, height 10",
+          "answer": 70
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 5,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Complement of 62° (adds up to 90°)",
+          "answer": 28
+        },
+        {
+          "prompt": "Area of a triangle, base 12, height 11",
+          "answer": 66
+        },
+        {
+          "prompt": "Triangle with angles 55° and 48°. The third angle?",
+          "answer": 77
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 5,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Complement of 61° (adds up to 90°)",
+          "answer": 29
+        },
+        {
+          "prompt": "Area of a triangle, base 4, height 10",
+          "answer": 20
+        },
+        {
+          "prompt": "Area of a triangle, base 12, height 4",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 5,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Complement of 52° (adds up to 90°)",
+          "answer": 38
+        },
+        {
+          "prompt": "Complement of 57° (adds up to 90°)",
+          "answer": 33
+        },
+        {
+          "prompt": "Triangle with angles 43° and 61°. The third angle?",
+          "answer": 76
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 5,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Complement of 79° (adds up to 90°)",
+          "answer": 11
+        },
+        {
+          "prompt": "Area of a triangle, base 18, height 8",
+          "answer": 72
+        },
+        {
+          "prompt": "Area of a triangle, base 4, height 10",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 5,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Complement of 77° (adds up to 90°)",
+          "answer": 13
+        },
+        {
+          "prompt": "Area of a 12 × 9 rectangle",
+          "answer": 108
+        },
+        {
+          "prompt": "Area of a triangle, base 10, height 6",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 6,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "12 × 7 rectangle with a 4 × 4 corner cut out. Area?",
+          "answer": 68
+        },
+        {
+          "prompt": "9 × 10 rectangle with a 4 × 3 corner cut out. Area?",
+          "answer": 78
+        },
+        {
+          "prompt": "11 × 9 rectangle with a 2 × 3 corner cut out. Area?",
+          "answer": 93
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 6,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "13 × 8 rectangle with a 3 × 3 corner cut out. Area?",
+          "answer": 95
+        },
+        {
+          "prompt": "12 × 9 rectangle with a 3 × 4 corner cut out. Area?",
+          "answer": 96
+        },
+        {
+          "prompt": "Area of a triangle, base 18, height 5",
+          "answer": 45
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 6,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "13 × 7 rectangle with a 3 × 2 corner cut out. Area?",
+          "answer": 85
+        },
+        {
+          "prompt": "11 × 9 rectangle with a 2 × 2 corner cut out. Area?",
+          "answer": 95
+        },
+        {
+          "prompt": "Complement of 23° (adds up to 90°)",
+          "answer": 67
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 6,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "12 × 9 rectangle with a 5 × 4 corner cut out. Area?",
+          "answer": 88
+        },
+        {
+          "prompt": "Area of a triangle, base 12, height 5",
+          "answer": 30
+        },
+        {
+          "prompt": "Complement of 71° (adds up to 90°)",
+          "answer": 19
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 6,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "14 × 8 rectangle with a 3 × 4 corner cut out. Area?",
+          "answer": 100
+        },
+        {
+          "prompt": "Complement of 34° (adds up to 90°)",
+          "answer": 56
+        },
+        {
+          "prompt": "14 × 11 rectangle with a 3 × 4 corner cut out. Area?",
+          "answer": 142
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 6,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "14 × 7 rectangle with a 2 × 4 corner cut out. Area?",
+          "answer": 90
+        },
+        {
+          "prompt": "Complement of 36° (adds up to 90°)",
+          "answer": 54
+        },
+        {
+          "prompt": "Triangle with angles 43° and 58°. The third angle?",
+          "answer": 79
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 7,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Area of a circle, radius 7 (π ≈ 3)",
+          "answer": 147
+        },
+        {
+          "prompt": "14 × 12 rectangle with a 3 × 3 corner cut out. Area?",
+          "answer": 159
+        },
+        {
+          "prompt": "10 × 12 rectangle with a 3 × 3 corner cut out. Area?",
+          "answer": 111
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 7,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Area of a circle, radius 8 (π ≈ 3)",
+          "answer": 192
+        },
+        {
+          "prompt": "An angle of 108° on a straight line. The angle beside it?",
+          "answer": 72
+        },
+        {
+          "prompt": "An angle of 36° on a straight line. The angle beside it?",
+          "answer": 144
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 7,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Area of a circle, radius 8 (π ≈ 3)",
+          "answer": 192
+        },
+        {
+          "prompt": "An angle of 87° on a straight line. The angle beside it?",
+          "answer": 93
+        },
+        {
+          "prompt": "Complement of 21° (adds up to 90°)",
+          "answer": 69
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 7,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Area of a circle, radius 7 (π ≈ 3)",
+          "answer": 147
+        },
+        {
+          "prompt": "Area of a circle, radius 8 (π ≈ 3)",
+          "answer": 192
+        },
+        {
+          "prompt": "9 × 10 rectangle with a 5 × 3 corner cut out. Area?",
+          "answer": 75
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 7,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Area of a circle, radius 10 (π ≈ 3)",
+          "answer": 300
+        },
+        {
+          "prompt": "An angle of 68° on a straight line. The angle beside it?",
+          "answer": 112
+        },
+        {
+          "prompt": "Triangle with angles 69° and 80°. The third angle?",
+          "answer": 31
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 7,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Area of a circle, radius 10 (π ≈ 3)",
+          "answer": 300
+        },
+        {
+          "prompt": "Triangle with angles 76° and 62°. The third angle?",
+          "answer": 42
+        },
+        {
+          "prompt": "Complement of 40° (adds up to 90°)",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 8,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Volume of a 7 × 2 × 6 box",
+          "answer": 84
+        },
+        {
+          "prompt": "Volume of a 9 × 4 × 6 box",
+          "answer": 216
+        },
+        {
+          "prompt": "Circumference of a circle, radius 5 (π ≈ 3)",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 8,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Volume of a 7 × 4 × 4 box",
+          "answer": 112
+        },
+        {
+          "prompt": "Circumference of a circle, radius 9 (π ≈ 3)",
+          "answer": 54
+        },
+        {
+          "prompt": "10 × 11 rectangle with a 2 × 4 corner cut out. Area?",
+          "answer": 102
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 8,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Volume of a 7 × 2 × 5 box",
+          "answer": 70
+        },
+        {
+          "prompt": "Complement of 64° (adds up to 90°)",
+          "answer": 26
+        },
+        {
+          "prompt": "9 × 8 rectangle with a 4 × 2 corner cut out. Area?",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 8,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Volume of a 6 × 5 × 8 box",
+          "answer": 240
+        },
+        {
+          "prompt": "Circumference of a circle, radius 3 (π ≈ 3)",
+          "answer": 18
+        },
+        {
+          "prompt": "12 × 12 rectangle with a 3 × 2 corner cut out. Area?",
+          "answer": 138
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 8,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Volume of a 9 × 4 × 5 box",
+          "answer": 180
+        },
+        {
+          "prompt": "Volume of a 6 × 4 × 2 box",
+          "answer": 48
+        },
+        {
+          "prompt": "Volume of a 9 × 8 × 5 box",
+          "answer": 360
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 8,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Volume of a 9 × 3 × 2 box",
+          "answer": 54
+        },
+        {
+          "prompt": "Volume of a 7 × 5 × 5 box",
+          "answer": 175
+        },
+        {
+          "prompt": "9 × 10 rectangle with a 5 × 4 corner cut out. Area?",
+          "answer": 70
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 9,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Right triangle, long side 25, one leg 7. The other leg?",
+          "answer": 24
+        },
+        {
+          "prompt": "Right triangle, long side 29, one leg 20. The other leg?",
+          "answer": 21
+        },
+        {
+          "prompt": "Volume of a 5 × 9 × 5 box",
+          "answer": 225
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 9,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Right triangle, legs 7 and 24. The long side?",
+          "answer": 25
+        },
+        {
+          "prompt": "Volume of a 9 × 7 × 5 box",
+          "answer": 315
+        },
+        {
+          "prompt": "Area of a circle, radius 9 (π ≈ 3)",
+          "answer": 243
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 9,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Right triangle, legs 7 and 24. The long side?",
+          "answer": 25
+        },
+        {
+          "prompt": "13 × 9 rectangle with a 3 × 2 corner cut out. Area?",
+          "answer": 111
+        },
+        {
+          "prompt": "Area of a circle, radius 6 (π ≈ 3)",
+          "answer": 108
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 9,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Right triangle, long side 25, one leg 7. The other leg?",
+          "answer": 24
+        },
+        {
+          "prompt": "Volume of a 3 × 6 × 4 box",
+          "answer": 72
+        },
+        {
+          "prompt": "Volume of a 8 × 5 × 3 box",
+          "answer": 120
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 9,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Right triangle, legs 20 and 21. The long side?",
+          "answer": 29
+        },
+        {
+          "prompt": "Right triangle, legs 8 and 15. The long side?",
+          "answer": 17
+        },
+        {
+          "prompt": "Right triangle, legs 40 and 42. The long side?",
+          "answer": 58
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 9,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Right triangle, legs 20 and 21. The long side?",
+          "answer": 29
+        },
+        {
+          "prompt": "Right triangle, legs 7 and 24. The long side?",
+          "answer": 25
+        },
+        {
+          "prompt": "Circumference of a circle, radius 4 (π ≈ 3)",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 10,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Angles inside a 5-sided polygon add up to?",
+          "answer": 540
+        },
+        {
+          "prompt": "Right triangle, legs 40 and 42. The long side?",
+          "answer": 58
+        },
+        {
+          "prompt": "Right triangle, long side 25, one leg 7. The other leg?",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 10,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Angles inside a 6-sided polygon add up to?",
+          "answer": 720
+        },
+        {
+          "prompt": "Volume of a 6 × 9 × 7 box",
+          "answer": 378
+        },
+        {
+          "prompt": "Volume of a 4 × 8 × 2 box",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 10,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Angles inside a 5-sided polygon add up to?",
+          "answer": 540
+        },
+        {
+          "prompt": "Volume of a 2 × 8 × 5 box",
+          "answer": 80
+        },
+        {
+          "prompt": "Volume of a 3 × 4 × 6 box",
+          "answer": 72
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 10,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Angles inside a 7-sided polygon add up to?",
+          "answer": 900
+        },
+        {
+          "prompt": "Angles inside a 6-sided polygon add up to?",
+          "answer": 720
+        },
+        {
+          "prompt": "Right triangle, long side 26, one leg 10. The other leg?",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 10,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Angles inside a 6-sided polygon add up to?",
+          "answer": 720
+        },
+        {
+          "prompt": "Volume of a 8 × 6 × 4 box",
+          "answer": 192
+        },
+        {
+          "prompt": "Circumference of a circle, radius 8 (π ≈ 3)",
+          "answer": 48
+        }
+      ]
+    },
+    {
+      "track": "geometry",
+      "level": 10,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Angles inside a 5-sided polygon add up to?",
+          "answer": 540
+        },
+        {
+          "prompt": "Circumference of a circle, radius 10 (π ≈ 3)",
+          "answer": 60
+        },
+        {
+          "prompt": "Volume of a 5 × 5 × 4 box",
+          "answer": 100
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 1,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A fair coin is flipped 5 times. How many different results are there?",
+          "answer": 32
+        },
+        {
+          "prompt": "A fair coin is flipped 4 times. How many different results are there?",
+          "answer": 16
+        },
+        {
+          "prompt": "A fair coin is flipped 6 times. How many different results are there?",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 1,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A fair coin is flipped 5 times. How many different results are there?",
+          "answer": 32
+        },
+        {
+          "prompt": "A fair coin is flipped 3 times. How many different results are there?",
+          "answer": 8
+        },
+        {
+          "prompt": "A fair coin is flipped 6 times. How many different results are there?",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 1,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A fair coin is flipped 5 times. How many different results are there?",
+          "answer": 32
+        },
+        {
+          "prompt": "A fair coin is flipped 4 times. How many different results are there?",
+          "answer": 16
+        },
+        {
+          "prompt": "A fair coin is flipped 3 times. How many different results are there?",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 1,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A fair coin is flipped 5 times. How many different results are there?",
+          "answer": 32
+        },
+        {
+          "prompt": "A fair coin is flipped 6 times. How many different results are there?",
+          "answer": 64
+        },
+        {
+          "prompt": "A fair coin is flipped 2 times. How many different results are there?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 1,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A fair coin is flipped 6 times. How many different results are there?",
+          "answer": 64
+        },
+        {
+          "prompt": "A fair coin is flipped 4 times. How many different results are there?",
+          "answer": 16
+        },
+        {
+          "prompt": "A fair coin is flipped 2 times. How many different results are there?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 1,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A fair coin is flipped 6 times. How many different results are there?",
+          "answer": 64
+        },
+        {
+          "prompt": "A fair coin is flipped 2 times. How many different results are there?",
+          "answer": 4
+        },
+        {
+          "prompt": "A fair coin is flipped 5 times. How many different results are there?",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 2,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "7 shirts and 2 pairs of trousers. How many outfits?",
+          "answer": 14
+        },
+        {
+          "prompt": "9 shirts and 9 pairs of trousers. How many outfits?",
+          "answer": 81
+        },
+        {
+          "prompt": "A fair coin is flipped 5 times. How many different results are there?",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 2,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "7 shirts and 4 pairs of trousers. How many outfits?",
+          "answer": 28
+        },
+        {
+          "prompt": "A fair coin is flipped 4 times. How many different results are there?",
+          "answer": 16
+        },
+        {
+          "prompt": "7 shirts and 5 pairs of trousers. How many outfits?",
+          "answer": 35
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 2,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "7 shirts and 2 pairs of trousers. How many outfits?",
+          "answer": 14
+        },
+        {
+          "prompt": "A fair coin is flipped 2 times. How many different results are there?",
+          "answer": 4
+        },
+        {
+          "prompt": "5 shirts and 5 pairs of trousers. How many outfits?",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 2,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "6 shirts and 5 pairs of trousers. How many outfits?",
+          "answer": 30
+        },
+        {
+          "prompt": "7 shirts and 3 pairs of trousers. How many outfits?",
+          "answer": 21
+        },
+        {
+          "prompt": "4 shirts and 6 pairs of trousers. How many outfits?",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 2,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "9 shirts and 4 pairs of trousers. How many outfits?",
+          "answer": 36
+        },
+        {
+          "prompt": "A fair coin is flipped 6 times. How many different results are there?",
+          "answer": 64
+        },
+        {
+          "prompt": "4 shirts and 2 pairs of trousers. How many outfits?",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 2,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "9 shirts and 3 pairs of trousers. How many outfits?",
+          "answer": 27
+        },
+        {
+          "prompt": "A fair coin is flipped 6 times. How many different results are there?",
+          "answer": 64
+        },
+        {
+          "prompt": "5 shirts and 5 pairs of trousers. How many outfits?",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 3,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Roll a fair die 78 times. About how many times do you expect one particular number?",
+          "answer": 13
+        },
+        {
+          "prompt": "A fair coin is flipped 4 times. How many different results are there?",
+          "answer": 16
+        },
+        {
+          "prompt": "Roll a fair die 120 times. About how many times do you expect one particular number?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 3,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Roll a fair die 90 times. About how many times do you expect one particular number?",
+          "answer": 15
+        },
+        {
+          "prompt": "A fair coin is flipped 3 times. How many different results are there?",
+          "answer": 8
+        },
+        {
+          "prompt": "9 shirts and 7 pairs of trousers. How many outfits?",
+          "answer": 63
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 3,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Roll a fair die 90 times. About how many times do you expect one particular number?",
+          "answer": 15
+        },
+        {
+          "prompt": "A fair coin is flipped 4 times. How many different results are there?",
+          "answer": 16
+        },
+        {
+          "prompt": "A fair coin is flipped 5 times. How many different results are there?",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 3,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Roll a fair die 78 times. About how many times do you expect one particular number?",
+          "answer": 13
+        },
+        {
+          "prompt": "8 shirts and 7 pairs of trousers. How many outfits?",
+          "answer": 56
+        },
+        {
+          "prompt": "A fair coin is flipped 4 times. How many different results are there?",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 3,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Roll a fair die 120 times. About how many times do you expect one particular number?",
+          "answer": 20
+        },
+        {
+          "prompt": "A fair coin is flipped 4 times. How many different results are there?",
+          "answer": 16
+        },
+        {
+          "prompt": "Roll a fair die 66 times. About how many times do you expect one particular number?",
+          "answer": 11
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 3,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Roll a fair die 120 times. About how many times do you expect one particular number?",
+          "answer": 20
+        },
+        {
+          "prompt": "A fair coin is flipped 2 times. How many different results are there?",
+          "answer": 4
+        },
+        {
+          "prompt": "Roll a fair die 78 times. About how many times do you expect one particular number?",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 4,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A bag has 1 red and 19 blue marbles. Chance of drawing red, in percent?",
+          "answer": 5
+        },
+        {
+          "prompt": "Roll a fair die 120 times. About how many times do you expect one particular number?",
+          "answer": 20
+        },
+        {
+          "prompt": "A bag has 3 red and 2 blue marbles. Chance of drawing red, in percent?",
+          "answer": 60
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 4,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A bag has 7 red and 13 blue marbles. Chance of drawing red, in percent?",
+          "answer": 35
+        },
+        {
+          "prompt": "6 shirts and 9 pairs of trousers. How many outfits?",
+          "answer": 54
+        },
+        {
+          "prompt": "Roll a fair die 66 times. About how many times do you expect one particular number?",
+          "answer": 11
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 4,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A bag has 1 red and 19 blue marbles. Chance of drawing red, in percent?",
+          "answer": 5
+        },
+        {
+          "prompt": "2 shirts and 8 pairs of trousers. How many outfits?",
+          "answer": 16
+        },
+        {
+          "prompt": "5 shirts and 3 pairs of trousers. How many outfits?",
+          "answer": 15
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 4,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A bag has 9 red and 11 blue marbles. Chance of drawing red, in percent?",
+          "answer": 45
+        },
+        {
+          "prompt": "A bag has 4 red and 16 blue marbles. Chance of drawing red, in percent?",
+          "answer": 20
+        },
+        {
+          "prompt": "Roll a fair die 42 times. About how many times do you expect one particular number?",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 4,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A bag has 8 red and 17 blue marbles. Chance of drawing red, in percent?",
+          "answer": 32
+        },
+        {
+          "prompt": "8 shirts and 6 pairs of trousers. How many outfits?",
+          "answer": 48
+        },
+        {
+          "prompt": "2 shirts and 8 pairs of trousers. How many outfits?",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 4,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A bag has 4 red and 21 blue marbles. Chance of drawing red, in percent?",
+          "answer": 16
+        },
+        {
+          "prompt": "A fair coin is flipped 6 times. How many different results are there?",
+          "answer": 64
+        },
+        {
+          "prompt": "Roll a fair die 54 times. About how many times do you expect one particular number?",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 5,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "In how many different orders can 5 people stand in a line?",
+          "answer": 120
+        },
+        {
+          "prompt": "6 shirts and 9 pairs of trousers. How many outfits?",
+          "answer": 54
+        },
+        {
+          "prompt": "In how many different orders can 4 people stand in a line?",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 5,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "In how many different orders can 5 people stand in a line?",
+          "answer": 120
+        },
+        {
+          "prompt": "Roll a fair die 42 times. About how many times do you expect one particular number?",
+          "answer": 7
+        },
+        {
+          "prompt": "A bag has 16 red and 9 blue marbles. Chance of drawing red, in percent?",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 5,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "In how many different orders can 5 people stand in a line?",
+          "answer": 120
+        },
+        {
+          "prompt": "5 shirts and 2 pairs of trousers. How many outfits?",
+          "answer": 10
+        },
+        {
+          "prompt": "In how many different orders can 4 people stand in a line?",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 5,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "In how many different orders can 5 people stand in a line?",
+          "answer": 120
+        },
+        {
+          "prompt": "Roll a fair die 108 times. About how many times do you expect one particular number?",
+          "answer": 18
+        },
+        {
+          "prompt": "A bag has 2 red and 2 blue marbles. Chance of drawing red, in percent?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 5,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "In how many different orders can 6 people stand in a line?",
+          "answer": 720
+        },
+        {
+          "prompt": "Roll a fair die 66 times. About how many times do you expect one particular number?",
+          "answer": 11
+        },
+        {
+          "prompt": "In how many different orders can 5 people stand in a line?",
+          "answer": 120
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 5,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "In how many different orders can 6 people stand in a line?",
+          "answer": 720
+        },
+        {
+          "prompt": "2 shirts and 9 pairs of trousers. How many outfits?",
+          "answer": 18
+        },
+        {
+          "prompt": "A bag has 2 red and 3 blue marbles. Chance of drawing red, in percent?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 6,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Two fair dice. In how many ways can they total 8?",
+          "answer": 5
+        },
+        {
+          "prompt": "Roll a fair die 72 times. About how many times do you expect one particular number?",
+          "answer": 12
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 12?",
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 6,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Two fair dice. In how many ways can they total 10?",
+          "answer": 3
+        },
+        {
+          "prompt": "A bag has 3 red and 2 blue marbles. Chance of drawing red, in percent?",
+          "answer": 60
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 8?",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 6,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Two fair dice. In how many ways can they total 9?",
+          "answer": 4
+        },
+        {
+          "prompt": "Roll a fair die 60 times. About how many times do you expect one particular number?",
+          "answer": 10
+        },
+        {
+          "prompt": "Roll a fair die 96 times. About how many times do you expect one particular number?",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 6,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Two fair dice. In how many ways can they total 8?",
+          "answer": 5
+        },
+        {
+          "prompt": "A bag has 17 red and 8 blue marbles. Chance of drawing red, in percent?",
+          "answer": 68
+        },
+        {
+          "prompt": "Roll a fair die 72 times. About how many times do you expect one particular number?",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 6,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Two fair dice. In how many ways can they total 12?",
+          "answer": 1
+        },
+        {
+          "prompt": "A bag has 8 red and 2 blue marbles. Chance of drawing red, in percent?",
+          "answer": 80
+        },
+        {
+          "prompt": "In how many different orders can 4 people stand in a line?",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 6,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Two fair dice. In how many ways can they total 12?",
+          "answer": 1
+        },
+        {
+          "prompt": "Roll a fair die 12 times. About how many times do you expect one particular number?",
+          "answer": 2
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 8?",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 7,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "9 people shake hands once with each other. How many handshakes?",
+          "answer": 36
+        },
+        {
+          "prompt": "A bag has 9 red and 1 blue marbles. Chance of drawing red, in percent?",
+          "answer": 90
+        },
+        {
+          "prompt": "6 people shake hands once with each other. How many handshakes?",
+          "answer": 15
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 7,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "10 people shake hands once with each other. How many handshakes?",
+          "answer": 45
+        },
+        {
+          "prompt": "In how many different orders can 4 people stand in a line?",
+          "answer": 24
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 11?",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 7,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "10 people shake hands once with each other. How many handshakes?",
+          "answer": 45
+        },
+        {
+          "prompt": "A bag has 1 red and 9 blue marbles. Chance of drawing red, in percent?",
+          "answer": 10
+        },
+        {
+          "prompt": "8 people shake hands once with each other. How many handshakes?",
+          "answer": 28
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 7,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "9 people shake hands once with each other. How many handshakes?",
+          "answer": 36
+        },
+        {
+          "prompt": "In how many different orders can 6 people stand in a line?",
+          "answer": 720
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 3?",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 7,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "12 people shake hands once with each other. How many handshakes?",
+          "answer": 66
+        },
+        {
+          "prompt": "In how many different orders can 4 people stand in a line?",
+          "answer": 24
+        },
+        {
+          "prompt": "8 people shake hands once with each other. How many handshakes?",
+          "answer": 28
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 7,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "12 people shake hands once with each other. How many handshakes?",
+          "answer": 66
+        },
+        {
+          "prompt": "A bag has 3 red and 1 blue marbles. Chance of drawing red, in percent?",
+          "answer": 75
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 6?",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 8,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "How many possible 2-letter code (A–Z)? Repeats are fine.",
+          "answer": 676
+        },
+        {
+          "prompt": "12 people shake hands once with each other. How many handshakes?",
+          "answer": 66
+        },
+        {
+          "prompt": "How many possible 3-digit PIN (digits 0–9)? Repeats are fine.",
+          "answer": 1000
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 8,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "How many possible 2-letter code (A–Z)? Repeats are fine.",
+          "answer": 676
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 7?",
+          "answer": 6
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 10?",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 8,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "How many possible 2-letter code (A–Z)? Repeats are fine.",
+          "answer": 676
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 2?",
+          "answer": 1
+        },
+        {
+          "prompt": "How many possible 3-digit PIN (digits 0–9)? Repeats are fine.",
+          "answer": 1000
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 8,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "How many possible 2-letter code (A–Z)? Repeats are fine.",
+          "answer": 676
+        },
+        {
+          "prompt": "6 people shake hands once with each other. How many handshakes?",
+          "answer": 15
+        },
+        {
+          "prompt": "11 people shake hands once with each other. How many handshakes?",
+          "answer": 55
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 8,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "How many possible 2-letter code (A–Z)? Repeats are fine.",
+          "answer": 676
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 10?",
+          "answer": 3
+        },
+        {
+          "prompt": "7 people shake hands once with each other. How many handshakes?",
+          "answer": 21
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 8,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "How many possible 2-letter code (A–Z)? Repeats are fine.",
+          "answer": 676
+        },
+        {
+          "prompt": "In how many different orders can 6 people stand in a line?",
+          "answer": 720
+        },
+        {
+          "prompt": "7 people shake hands once with each other. How many handshakes?",
+          "answer": 21
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 9,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A 60% chance, then another 10% chance. Chance of both, in percent?",
+          "answer": 6
+        },
+        {
+          "prompt": "How many possible 3-letter code (A–Z)? Repeats are fine.",
+          "answer": 17576
+        },
+        {
+          "prompt": "9 people shake hands once with each other. How many handshakes?",
+          "answer": 36
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 9,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A 70% chance, then another 30% chance. Chance of both, in percent?",
+          "answer": 21
+        },
+        {
+          "prompt": "8 people shake hands once with each other. How many handshakes?",
+          "answer": 28
+        },
+        {
+          "prompt": "A 60% chance, then another 50% chance. Chance of both, in percent?",
+          "answer": 30
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 9,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A 70% chance, then another 10% chance. Chance of both, in percent?",
+          "answer": 7
+        },
+        {
+          "prompt": "4 people shake hands once with each other. How many handshakes?",
+          "answer": 6
+        },
+        {
+          "prompt": "A 50% chance, then another 50% chance. Chance of both, in percent?",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 9,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A 60% chance, then another 50% chance. Chance of both, in percent?",
+          "answer": 30
+        },
+        {
+          "prompt": "A 70% chance, then another 20% chance. Chance of both, in percent?",
+          "answer": 14
+        },
+        {
+          "prompt": "How many possible 3-digit PIN (digits 0–9)? Repeats are fine.",
+          "answer": 1000
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 9,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A 90% chance, then another 30% chance. Chance of both, in percent?",
+          "answer": 27
+        },
+        {
+          "prompt": "11 people shake hands once with each other. How many handshakes?",
+          "answer": 55
+        },
+        {
+          "prompt": "How many possible 2-digit PIN (digits 0–9)? Repeats are fine.",
+          "answer": 100
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 9,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A 90% chance, then another 20% chance. Chance of both, in percent?",
+          "answer": 18
+        },
+        {
+          "prompt": "Two fair dice. In how many ways can they total 12?",
+          "answer": 1
+        },
+        {
+          "prompt": "How many possible 3-digit PIN (digits 0–9)? Repeats are fine.",
+          "answer": 1000
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 10,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Choose 2 people from 7 for a team. How many different teams?",
+          "answer": 21
+        },
+        {
+          "prompt": "A 90% chance, then another 90% chance. Chance of both, in percent?",
+          "answer": 81
+        },
+        {
+          "prompt": "How many possible 3-letter code (A–Z)? Repeats are fine.",
+          "answer": 17576
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 10,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Choose 2 people from 7 for a team. How many different teams?",
+          "answer": 21
+        },
+        {
+          "prompt": "How many possible 3-letter code (A–Z)? Repeats are fine.",
+          "answer": 17576
+        },
+        {
+          "prompt": "A 50% chance, then another 40% chance. Chance of both, in percent?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 10,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Choose 2 people from 7 for a team. How many different teams?",
+          "answer": 21
+        },
+        {
+          "prompt": "How many possible 4-digit PIN (digits 0–9)? Repeats are fine.",
+          "answer": 10000
+        },
+        {
+          "prompt": "How many possible 2-digit PIN (digits 0–9)? Repeats are fine.",
+          "answer": 100
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 10,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Choose 2 people from 7 for a team. How many different teams?",
+          "answer": 21
+        },
+        {
+          "prompt": "A 30% chance, then another 60% chance. Chance of both, in percent?",
+          "answer": 18
+        },
+        {
+          "prompt": "Choose 2 people from 6 for a team. How many different teams?",
+          "answer": 15
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 10,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Choose 2 people from 8 for a team. How many different teams?",
+          "answer": 28
+        },
+        {
+          "prompt": "How many possible 3-letter code (A–Z)? Repeats are fine.",
+          "answer": 17576
+        },
+        {
+          "prompt": "How many possible 4-digit PIN (digits 0–9)? Repeats are fine.",
+          "answer": 10000
+        }
+      ]
+    },
+    {
+      "track": "probability",
+      "level": 10,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Choose 2 people from 8 for a team. How many different teams?",
+          "answer": 28
+        },
+        {
+          "prompt": "12 people shake hands once with each other. How many handshakes?",
+          "answer": 66
+        },
+        {
+          "prompt": "A 40% chance, then another 40% chance. Chance of both, in percent?",
+          "answer": 16
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 1,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "How many numbers divide 27 exactly? (1 and 27 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "How many numbers divide 24 exactly? (1 and 24 count)",
+          "answer": 8
+        },
+        {
+          "prompt": "How many numbers divide 39 exactly? (1 and 39 count)",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 1,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "How many numbers divide 31 exactly? (1 and 31 count)",
+          "answer": 2
+        },
+        {
+          "prompt": "How many numbers divide 15 exactly? (1 and 15 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "How many numbers divide 36 exactly? (1 and 36 count)",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 1,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "How many numbers divide 31 exactly? (1 and 31 count)",
+          "answer": 2
+        },
+        {
+          "prompt": "How many numbers divide 21 exactly? (1 and 21 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "How many numbers divide 32 exactly? (1 and 32 count)",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 1,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "How many numbers divide 27 exactly? (1 and 27 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "How many numbers divide 35 exactly? (1 and 35 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "How many numbers divide 12 exactly? (1 and 12 count)",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 1,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "How many numbers divide 40 exactly? (1 and 40 count)",
+          "answer": 8
+        },
+        {
+          "prompt": "How many numbers divide 22 exactly? (1 and 22 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "How many numbers divide 23 exactly? (1 and 23 count)",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 1,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "How many numbers divide 39 exactly? (1 and 39 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "How many numbers divide 6 exactly? (1 and 6 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "How many numbers divide 28 exactly? (1 and 28 count)",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 2,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Smallest prime factor of 55",
+          "answer": 5
+        },
+        {
+          "prompt": "Smallest prime factor of 161",
+          "answer": 7
+        },
+        {
+          "prompt": "How many numbers divide 27 exactly? (1 and 27 count)",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 2,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Smallest prime factor of 65",
+          "answer": 5
+        },
+        {
+          "prompt": "How many numbers divide 24 exactly? (1 and 24 count)",
+          "answer": 8
+        },
+        {
+          "prompt": "Smallest prime factor of 85",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 2,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Smallest prime factor of 55",
+          "answer": 5
+        },
+        {
+          "prompt": "How many numbers divide 8 exactly? (1 and 8 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "Smallest prime factor of 51",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 2,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Smallest prime factor of 85",
+          "answer": 5
+        },
+        {
+          "prompt": "Smallest prime factor of 55",
+          "answer": 5
+        },
+        {
+          "prompt": "Smallest prime factor of 57",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 2,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Smallest prime factor of 91",
+          "answer": 7
+        },
+        {
+          "prompt": "How many numbers divide 34 exactly? (1 and 34 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "Smallest prime factor of 33",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 2,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Smallest prime factor of 77",
+          "answer": 7
+        },
+        {
+          "prompt": "How many numbers divide 37 exactly? (1 and 37 count)",
+          "answer": 2
+        },
+        {
+          "prompt": "Smallest prime factor of 51",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 3,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "The first prime after 60",
+          "answer": 61
+        },
+        {
+          "prompt": "How many numbers divide 24 exactly? (1 and 24 count)",
+          "answer": 8
+        },
+        {
+          "prompt": "The first prime after 88",
+          "answer": 89
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 3,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "The first prime after 69",
+          "answer": 71
+        },
+        {
+          "prompt": "How many numbers divide 15 exactly? (1 and 15 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "Smallest prime factor of 133",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 3,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "The first prime after 68",
+          "answer": 71
+        },
+        {
+          "prompt": "How many numbers divide 21 exactly? (1 and 21 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "How many numbers divide 32 exactly? (1 and 32 count)",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 3,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "The first prime after 58",
+          "answer": 59
+        },
+        {
+          "prompt": "Smallest prime factor of 133",
+          "answer": 7
+        },
+        {
+          "prompt": "How many numbers divide 24 exactly? (1 and 24 count)",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 3,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "The first prime after 89",
+          "answer": 97
+        },
+        {
+          "prompt": "How many numbers divide 22 exactly? (1 and 22 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "The first prime after 51",
+          "answer": 53
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 3,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "The first prime after 87",
+          "answer": 89
+        },
+        {
+          "prompt": "How many numbers divide 6 exactly? (1 and 6 count)",
+          "answer": 4
+        },
+        {
+          "prompt": "The first prime after 60",
+          "answer": 61
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 4,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Greatest common divisor of 16 and 32",
+          "answer": 16
+        },
+        {
+          "prompt": "Greatest common divisor of 36 and 60",
+          "answer": 12
+        },
+        {
+          "prompt": "The first prime after 44",
+          "answer": 47
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 4,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Greatest common divisor of 30 and 30",
+          "answer": 30
+        },
+        {
+          "prompt": "The first prime after 80",
+          "answer": 83
+        },
+        {
+          "prompt": "The first prime after 50",
+          "answer": 53
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 4,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Greatest common divisor of 18 and 36",
+          "answer": 18
+        },
+        {
+          "prompt": "How many numbers divide 32 exactly? (1 and 32 count)",
+          "answer": 6
+        },
+        {
+          "prompt": "Smallest prime factor of 33",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 4,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Greatest common divisor of 32 and 48",
+          "answer": 16
+        },
+        {
+          "prompt": "The first prime after 24",
+          "answer": 29
+        },
+        {
+          "prompt": "The first prime after 32",
+          "answer": 37
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 4,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Greatest common divisor of 36 and 48",
+          "answer": 12
+        },
+        {
+          "prompt": "Greatest common divisor of 21 and 14",
+          "answer": 7
+        },
+        {
+          "prompt": "Greatest common divisor of 72 and 48",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 4,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Greatest common divisor of 24 and 24",
+          "answer": 24
+        },
+        {
+          "prompt": "Greatest common divisor of 24 and 32",
+          "answer": 8
+        },
+        {
+          "prompt": "Smallest prime factor of 51",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 5,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Least common multiple of 8 and 2",
+          "answer": 8
+        },
+        {
+          "prompt": "Greatest common divisor of 72 and 36",
+          "answer": 36
+        },
+        {
+          "prompt": "Greatest common divisor of 36 and 54",
+          "answer": 18
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 5,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Least common multiple of 10 and 5",
+          "answer": 10
+        },
+        {
+          "prompt": "The first prime after 53",
+          "answer": 59
+        },
+        {
+          "prompt": "Least common multiple of 8 and 7",
+          "answer": 56
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 5,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Least common multiple of 9 and 2",
+          "answer": 18
+        },
+        {
+          "prompt": "The first prime after 16",
+          "answer": 17
+        },
+        {
+          "prompt": "Least common multiple of 7 and 7",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 5,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Least common multiple of 8 and 6",
+          "answer": 24
+        },
+        {
+          "prompt": "Least common multiple of 9 and 3",
+          "answer": 9
+        },
+        {
+          "prompt": "Greatest common divisor of 25 and 30",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 5,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Least common multiple of 12 and 5",
+          "answer": 60
+        },
+        {
+          "prompt": "The first prime after 76",
+          "answer": 79
+        },
+        {
+          "prompt": "Greatest common divisor of 10 and 25",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 5,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Least common multiple of 12 and 3",
+          "answer": 12
+        },
+        {
+          "prompt": "Smallest prime factor of 133",
+          "answer": 7
+        },
+        {
+          "prompt": "The first prime after 45",
+          "answer": 47
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 6,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Remainder of 127 ÷ 9",
+          "answer": 1
+        },
+        {
+          "prompt": "Least common multiple of 12 and 12",
+          "answer": 12
+        },
+        {
+          "prompt": "Greatest common divisor of 40 and 32",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 6,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Remainder of 3317 ÷ 9",
+          "answer": 5
+        },
+        {
+          "prompt": "Greatest common divisor of 42 and 35",
+          "answer": 7
+        },
+        {
+          "prompt": "Greatest common divisor of 25 and 10",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 6,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Remainder of 482 ÷ 9",
+          "answer": 5
+        },
+        {
+          "prompt": "Greatest common divisor of 10 and 8",
+          "answer": 2
+        },
+        {
+          "prompt": "Greatest common divisor of 9 and 12",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 6,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Remainder of 4538 ÷ 9",
+          "answer": 2
+        },
+        {
+          "prompt": "Remainder of 1830 ÷ 9",
+          "answer": 3
+        },
+        {
+          "prompt": "Least common multiple of 5 and 8",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 6,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Remainder of 3136 ÷ 9",
+          "answer": 4
+        },
+        {
+          "prompt": "Greatest common divisor of 40 and 30",
+          "answer": 10
+        },
+        {
+          "prompt": "The first prime after 72",
+          "answer": 73
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 6,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Remainder of 1435 ÷ 9",
+          "answer": 4
+        },
+        {
+          "prompt": "The first prime after 84",
+          "answer": 89
+        },
+        {
+          "prompt": "Least common multiple of 6 and 6",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 7,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Binary 10111 in decimal",
+          "answer": 23
+        },
+        {
+          "prompt": "Least common multiple of 8 and 9",
+          "answer": 72
+        },
+        {
+          "prompt": "Least common multiple of 12 and 7",
+          "answer": 84
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 7,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Binary 100111 in decimal",
+          "answer": 39
+        },
+        {
+          "prompt": "Least common multiple of 5 and 10",
+          "answer": 10
+        },
+        {
+          "prompt": "Greatest common divisor of 30 and 40",
+          "answer": 10
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 7,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Binary 100010 in decimal",
+          "answer": 34
+        },
+        {
+          "prompt": "Least common multiple of 3 and 4",
+          "answer": 12
+        },
+        {
+          "prompt": "Remainder of 927 ÷ 3",
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 7,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Binary 10110 in decimal",
+          "answer": 22
+        },
+        {
+          "prompt": "Remainder of 6284 ÷ 3",
+          "answer": 2
+        },
+        {
+          "prompt": "Greatest common divisor of 35 and 35",
+          "answer": 35
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 7,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Binary 100110 in decimal",
+          "answer": 38
+        },
+        {
+          "prompt": "Greatest common divisor of 60 and 60",
+          "answer": 60
+        },
+        {
+          "prompt": "Least common multiple of 12 and 11",
+          "answer": 132
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 7,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Binary 100110 in decimal",
+          "answer": 38
+        },
+        {
+          "prompt": "Least common multiple of 6 and 4",
+          "answer": 12
+        },
+        {
+          "prompt": "Remainder of 7260 ÷ 9",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 8,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "41 in binary",
+          "answer": 101001
+        },
+        {
+          "prompt": "Least common multiple of 7 and 12",
+          "answer": 84
+        },
+        {
+          "prompt": "21 in binary",
+          "answer": 10101
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 8,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "48 in binary",
+          "answer": 110000
+        },
+        {
+          "prompt": "Remainder of 5425 ÷ 3",
+          "answer": 1
+        },
+        {
+          "prompt": "42 in binary",
+          "answer": 101010
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 8,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "47 in binary",
+          "answer": 101111
+        },
+        {
+          "prompt": "Least common multiple of 7 and 2",
+          "answer": 14
+        },
+        {
+          "prompt": "33 in binary",
+          "answer": 100001
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 8,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "40 in binary",
+          "answer": 101000
+        },
+        {
+          "prompt": "Remainder of 6730 ÷ 9",
+          "answer": 7
+        },
+        {
+          "prompt": "Least common multiple of 7 and 5",
+          "answer": 35
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 8,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "62 in binary",
+          "answer": 111110
+        },
+        {
+          "prompt": "Remainder of 8197 ÷ 3",
+          "answer": 1
+        },
+        {
+          "prompt": "Binary 10111 in decimal",
+          "answer": 23
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 8,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "61 in binary",
+          "answer": 111101
+        },
+        {
+          "prompt": "Least common multiple of 2 and 12",
+          "answer": 12
+        },
+        {
+          "prompt": "Binary 10001 in decimal",
+          "answer": 17
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 9,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Hexadecimal A0 in decimal",
+          "answer": 160
+        },
+        {
+          "prompt": "62 in binary",
+          "answer": 111110
+        },
+        {
+          "prompt": "Hexadecimal 59 in decimal",
+          "answer": 89
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 9,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Hexadecimal C5 in decimal",
+          "answer": 197
+        },
+        {
+          "prompt": "Binary 11100 in decimal",
+          "answer": 28
+        },
+        {
+          "prompt": "Hexadecimal 2C in decimal",
+          "answer": 44
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 9,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Hexadecimal B0 in decimal",
+          "answer": 176
+        },
+        {
+          "prompt": "Binary 1100 in decimal",
+          "answer": 12
+        },
+        {
+          "prompt": "Remainder of 5570 ÷ 3",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 9,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Hexadecimal A7 in decimal",
+          "answer": 167
+        },
+        {
+          "prompt": "Hexadecimal B2 in decimal",
+          "answer": 178
+        },
+        {
+          "prompt": "21 in binary",
+          "answer": 10101
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 9,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Hexadecimal F4 in decimal",
+          "answer": 244
+        },
+        {
+          "prompt": "Binary 110011 in decimal",
+          "answer": 51
+        },
+        {
+          "prompt": "Hexadecimal 7F in decimal",
+          "answer": 127
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 9,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Hexadecimal F2 in decimal",
+          "answer": 242
+        },
+        {
+          "prompt": "Remainder of 6328 ÷ 9",
+          "answer": 1
+        },
+        {
+          "prompt": "Binary 10011 in decimal",
+          "answer": 19
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 10,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Last digit of 7^2",
+          "answer": 9
+        },
+        {
+          "prompt": "Hexadecimal FF in decimal",
+          "answer": 255
+        },
+        {
+          "prompt": "41 in binary",
+          "answer": 101001
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 10,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Last digit of 7^3",
+          "answer": 3
+        },
+        {
+          "prompt": "36 in binary",
+          "answer": 100100
+        },
+        {
+          "prompt": "Last digit of 7^4",
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 10,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Last digit of 7^2",
+          "answer": 9
+        },
+        {
+          "prompt": "9 in binary",
+          "answer": 1001
+        },
+        {
+          "prompt": "Last digit of 5^4",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 10,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Last digit of 6^4",
+          "answer": 6
+        },
+        {
+          "prompt": "Last digit of 7^2",
+          "answer": 9
+        },
+        {
+          "prompt": "Hexadecimal 59 in decimal",
+          "answer": 89
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 10,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Last digit of 9^3",
+          "answer": 9
+        },
+        {
+          "prompt": "53 in binary",
+          "answer": 110101
+        },
+        {
+          "prompt": "Hexadecimal 61 in decimal",
+          "answer": 97
+        }
+      ]
+    },
+    {
+      "track": "number-theory",
+      "level": 10,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Last digit of 9^2",
+          "answer": 1
+        },
+        {
+          "prompt": "Binary 110000 in decimal",
+          "answer": 48
+        },
+        {
+          "prompt": "Hexadecimal FB in decimal",
+          "answer": 251
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 1,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "You pay $50 for something that costs $3. Change?",
+          "answer": 47
+        },
+        {
+          "prompt": "You pay $100 for something that costs $96. Change?",
+          "answer": 4
+        },
+        {
+          "prompt": "You pay $50 for something that costs $36. Change?",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 1,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "You pay $100 for something that costs $34. Change?",
+          "answer": 66
+        },
+        {
+          "prompt": "You pay $50 for something that costs $44. Change?",
+          "answer": 6
+        },
+        {
+          "prompt": "You pay $50 for something that costs $19. Change?",
+          "answer": 31
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 1,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "You pay $100 for something that costs $6. Change?",
+          "answer": 94
+        },
+        {
+          "prompt": "You pay $20 for something that costs $15. Change?",
+          "answer": 5
+        },
+        {
+          "prompt": "You pay $50 for something that costs $10. Change?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 1,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "You pay $50 for something that costs $24. Change?",
+          "answer": 26
+        },
+        {
+          "prompt": "You pay $100 for something that costs $19. Change?",
+          "answer": 81
+        },
+        {
+          "prompt": "You pay $20 for something that costs $13. Change?",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 1,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "You pay $100 for something that costs $32. Change?",
+          "answer": 68
+        },
+        {
+          "prompt": "You pay $100 for something that costs $52. Change?",
+          "answer": 48
+        },
+        {
+          "prompt": "You pay $20 for something that costs $16. Change?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 1,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "You pay $100 for something that costs $16. Change?",
+          "answer": 84
+        },
+        {
+          "prompt": "You pay $100 for something that costs $64. Change?",
+          "answer": 36
+        },
+        {
+          "prompt": "You pay $50 for something that costs $21. Change?",
+          "answer": 29
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 2,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "7 items at $2 each. Total?",
+          "answer": 14
+        },
+        {
+          "prompt": "9 items at $25 each. Total?",
+          "answer": 225
+        },
+        {
+          "prompt": "You pay $50 for something that costs $36. Change?",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 2,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "7 items at $9 each. Total?",
+          "answer": 63
+        },
+        {
+          "prompt": "You pay $50 for something that costs $44. Change?",
+          "answer": 6
+        },
+        {
+          "prompt": "5 items at $10 each. Total?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 2,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "7 items at $2 each. Total?",
+          "answer": 14
+        },
+        {
+          "prompt": "You pay $20 for something that costs $15. Change?",
+          "answer": 5
+        },
+        {
+          "prompt": "You pay $50 for something that costs $10. Change?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 2,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "6 items at $12 each. Total?",
+          "answer": 72
+        },
+        {
+          "prompt": "7 items at $6 each. Total?",
+          "answer": 42
+        },
+        {
+          "prompt": "4 items at $16 each. Total?",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 2,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "9 items at $9 each. Total?",
+          "answer": 81
+        },
+        {
+          "prompt": "You pay $100 for something that costs $52. Change?",
+          "answer": 48
+        },
+        {
+          "prompt": "You pay $20 for something that costs $16. Change?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 2,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "9 items at $5 each. Total?",
+          "answer": 45
+        },
+        {
+          "prompt": "You pay $100 for something that costs $64. Change?",
+          "answer": 36
+        },
+        {
+          "prompt": "You pay $50 for something that costs $21. Change?",
+          "answer": 29
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 3,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A pack of 10 costs $10. What does one cost, in dollars?",
+          "answer": 1
+        },
+        {
+          "prompt": "9 items at $25 each. Total?",
+          "answer": 225
+        },
+        {
+          "prompt": "You pay $50 for something that costs $36. Change?",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 3,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A pack of 10 costs $30. What does one cost, in dollars?",
+          "answer": 3
+        },
+        {
+          "prompt": "You pay $50 for something that costs $44. Change?",
+          "answer": 6
+        },
+        {
+          "prompt": "5 items at $10 each. Total?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 3,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A pack of 10 costs $10. What does one cost, in dollars?",
+          "answer": 1
+        },
+        {
+          "prompt": "2 items at $20 each. Total?",
+          "answer": 40
+        },
+        {
+          "prompt": "5 items at $5 each. Total?",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 3,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A pack of 10 costs $50. What does one cost, in dollars?",
+          "answer": 5
+        },
+        {
+          "prompt": "A pack of 10 costs $20. What does one cost, in dollars?",
+          "answer": 2
+        },
+        {
+          "prompt": "4 items at $16 each. Total?",
+          "answer": 64
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 3,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A pack of 12 costs $36. What does one cost, in dollars?",
+          "answer": 3
+        },
+        {
+          "prompt": "8 items at $14 each. Total?",
+          "answer": 112
+        },
+        {
+          "prompt": "2 items at $20 each. Total?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 3,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A pack of 12 costs $24. What does one cost, in dollars?",
+          "answer": 2
+        },
+        {
+          "prompt": "You pay $100 for something that costs $64. Change?",
+          "answer": 36
+        },
+        {
+          "prompt": "5 items at $11 each. Total?",
+          "answer": 55
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 4,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A $30 bill split evenly between 6 people. Each pays?",
+          "answer": 5
+        },
+        {
+          "prompt": "A pack of 12 costs $108. What does one cost, in dollars?",
+          "answer": 9
+        },
+        {
+          "prompt": "6 items at $19 each. Total?",
+          "answer": 114
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 4,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A $91 bill split evenly between 7 people. Each pays?",
+          "answer": 13
+        },
+        {
+          "prompt": "6 items at $23 each. Total?",
+          "answer": 138
+        },
+        {
+          "prompt": "A pack of 8 costs $32. What does one cost, in dollars?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 4,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A $42 bill split evenly between 7 people. Each pays?",
+          "answer": 6
+        },
+        {
+          "prompt": "2 items at $20 each. Total?",
+          "answer": 40
+        },
+        {
+          "prompt": "5 items at $5 each. Total?",
+          "answer": 25
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 4,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A $96 bill split evenly between 6 people. Each pays?",
+          "answer": 16
+        },
+        {
+          "prompt": "A $54 bill split evenly between 6 people. Each pays?",
+          "answer": 9
+        },
+        {
+          "prompt": "A pack of 6 costs $36. What does one cost, in dollars?",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 4,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A $96 bill split evenly between 8 people. Each pays?",
+          "answer": 12
+        },
+        {
+          "prompt": "8 items at $14 each. Total?",
+          "answer": 112
+        },
+        {
+          "prompt": "2 items at $20 each. Total?",
+          "answer": 40
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 4,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A $64 bill split evenly between 8 people. Each pays?",
+          "answer": 8
+        },
+        {
+          "prompt": "You pay $100 for something that costs $64. Change?",
+          "answer": 36
+        },
+        {
+          "prompt": "5 items at $11 each. Total?",
+          "answer": 55
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 5,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "$280 with 10% off. New price?",
+          "answer": 252
+        },
+        {
+          "prompt": "A $240 bill split evenly between 8 people. Each pays?",
+          "answer": 30
+        },
+        {
+          "prompt": "A pack of 10 costs $70. What does one cost, in dollars?",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 5,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "$320 with 20% off. New price?",
+          "answer": 256
+        },
+        {
+          "prompt": "A pack of 8 costs $64. What does one cost, in dollars?",
+          "answer": 8
+        },
+        {
+          "prompt": "A $70 bill split evenly between 5 people. Each pays?",
+          "answer": 14
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 5,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "$320 with 10% off. New price?",
+          "answer": 288
+        },
+        {
+          "prompt": "A pack of 4 costs $28. What does one cost, in dollars?",
+          "answer": 7
+        },
+        {
+          "prompt": "A pack of 8 costs $16. What does one cost, in dollars?",
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 5,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "$280 with 20% off. New price?",
+          "answer": 224
+        },
+        {
+          "prompt": "$280 with 10% off. New price?",
+          "answer": 252
+        },
+        {
+          "prompt": "A $63 bill split evenly between 3 people. Each pays?",
+          "answer": 21
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 5,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "$400 with 20% off. New price?",
+          "answer": 320
+        },
+        {
+          "prompt": "A pack of 12 costs $60. What does one cost, in dollars?",
+          "answer": 5
+        },
+        {
+          "prompt": "A pack of 4 costs $28. What does one cost, in dollars?",
+          "answer": 7
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 5,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "$400 with 10% off. New price?",
+          "answer": 360
+        },
+        {
+          "prompt": "9 items at $17 each. Total?",
+          "answer": 153
+        },
+        {
+          "prompt": "A pack of 8 costs $32. What does one cost, in dollars?",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 6,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "10% tip on a $160 bill. The tip, in dollars?",
+          "answer": 16
+        },
+        {
+          "prompt": "$400 with 50% off. New price?",
+          "answer": 200
+        },
+        {
+          "prompt": "A $138 bill split evenly between 6 people. Each pays?",
+          "answer": 23
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 6,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "10% tip on a $200 bill. The tip, in dollars?",
+          "answer": 20
+        },
+        {
+          "prompt": "A $135 bill split evenly between 5 people. Each pays?",
+          "answer": 27
+        },
+        {
+          "prompt": "$200 with 20% off. New price?",
+          "answer": 160
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 6,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "10% tip on a $180 bill. The tip, in dollars?",
+          "answer": 18
+        },
+        {
+          "prompt": "A $48 bill split evenly between 2 people. Each pays?",
+          "answer": 24
+        },
+        {
+          "prompt": "A $45 bill split evenly between 5 people. Each pays?",
+          "answer": 9
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 6,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "15% tip on a $160 bill. The tip, in dollars?",
+          "answer": 24
+        },
+        {
+          "prompt": "10% tip on a $180 bill. The tip, in dollars?",
+          "answer": 18
+        },
+        {
+          "prompt": "$120 with 25% off. New price?",
+          "answer": 90
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 6,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "10% tip on a $240 bill. The tip, in dollars?",
+          "answer": 24
+        },
+        {
+          "prompt": "A $126 bill split evenly between 7 people. Each pays?",
+          "answer": 18
+        },
+        {
+          "prompt": "A $48 bill split evenly between 2 people. Each pays?",
+          "answer": 24
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 6,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "10% tip on a $240 bill. The tip, in dollars?",
+          "answer": 24
+        },
+        {
+          "prompt": "A pack of 12 costs $72. What does one cost, in dollars?",
+          "answer": 6
+        },
+        {
+          "prompt": "A $75 bill split evenly between 5 people. Each pays?",
+          "answer": 15
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 7,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "Save $27 a week. How many weeks to reach $108?",
+          "answer": 4
+        },
+        {
+          "prompt": "20% tip on a $240 bill. The tip, in dollars?",
+          "answer": 48
+        },
+        {
+          "prompt": "$280 with 25% off. New price?",
+          "answer": 210
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 7,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "Save $31 a week. How many weeks to reach $279?",
+          "answer": 9
+        },
+        {
+          "prompt": "$240 with 50% off. New price?",
+          "answer": 120
+        },
+        {
+          "prompt": "15% tip on a $140 bill. The tip, in dollars?",
+          "answer": 21
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 7,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "Save $30 a week. How many weeks to reach $120?",
+          "answer": 4
+        },
+        {
+          "prompt": "$40 with 50% off. New price?",
+          "answer": 20
+        },
+        {
+          "prompt": "$200 with 10% off. New price?",
+          "answer": 180
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 7,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "Save $26 a week. How many weeks to reach $286?",
+          "answer": 11
+        },
+        {
+          "prompt": "Save $29 a week. How many weeks to reach $174?",
+          "answer": 6
+        },
+        {
+          "prompt": "15% tip on a $100 bill. The tip, in dollars?",
+          "answer": 15
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 7,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "Save $40 a week. How many weeks to reach $360?",
+          "answer": 9
+        },
+        {
+          "prompt": "$360 with 25% off. New price?",
+          "answer": 270
+        },
+        {
+          "prompt": "$40 with 50% off. New price?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 7,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "Save $39 a week. How many weeks to reach $234?",
+          "answer": 6
+        },
+        {
+          "prompt": "A $168 bill split evenly between 8 people. Each pays?",
+          "answer": 21
+        },
+        {
+          "prompt": "$200 with 20% off. New price?",
+          "answer": 160
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 8,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "A price drops from $140 to $126. By what percent did it fall?",
+          "answer": 10
+        },
+        {
+          "prompt": "A price drops from $200 to $160. By what percent did it fall?",
+          "answer": 20
+        },
+        {
+          "prompt": "Save $20 a week. How many weeks to reach $400?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 8,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "A price rises from $160 to $192. By what percent?",
+          "answer": 20
+        },
+        {
+          "prompt": "Save $36 a week. How many weeks to reach $504?",
+          "answer": 14
+        },
+        {
+          "prompt": "20% tip on a $100 bill. The tip, in dollars?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 8,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "A price rises from $160 to $176. By what percent?",
+          "answer": 10
+        },
+        {
+          "prompt": "$320 with 20% off. New price?",
+          "answer": 256
+        },
+        {
+          "prompt": "10% tip on a $60 bill. The tip, in dollars?",
+          "answer": 6
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 8,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "A price drops from $140 to $112. By what percent did it fall?",
+          "answer": 20
+        },
+        {
+          "prompt": "Save $11 a week. How many weeks to reach $132?",
+          "answer": 12
+        },
+        {
+          "prompt": "20% tip on a $160 bill. The tip, in dollars?",
+          "answer": 32
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 8,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "A price rises from $200 to $240. By what percent?",
+          "answer": 20
+        },
+        {
+          "prompt": "A price rises from $120 to $144. By what percent?",
+          "answer": 20
+        },
+        {
+          "prompt": "A price rises from $200 to $300. By what percent?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 8,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "A price rises from $200 to $220. By what percent?",
+          "answer": 10
+        },
+        {
+          "prompt": "A price rises from $140 to $168. By what percent?",
+          "answer": 20
+        },
+        {
+          "prompt": "15% tip on a $80 bill. The tip, in dollars?",
+          "answer": 12
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 9,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "$1300 at 2% simple interest a year, for 4 years. Interest earned?",
+          "answer": 104
+        },
+        {
+          "prompt": "$2000 at 3% simple interest a year, for 4 years. Interest earned?",
+          "answer": 240
+        },
+        {
+          "prompt": "A price rises from $100 to $150. By what percent?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 9,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "$1500 at 4% simple interest a year, for 3 years. Interest earned?",
+          "answer": 180
+        },
+        {
+          "prompt": "A price rises from $180 to $225. By what percent?",
+          "answer": 25
+        },
+        {
+          "prompt": "Save $33 a week. How many weeks to reach $165?",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 9,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "$1500 at 2% simple interest a year, for 3 years. Interest earned?",
+          "answer": 90
+        },
+        {
+          "prompt": "15% tip on a $200 bill. The tip, in dollars?",
+          "answer": 30
+        },
+        {
+          "prompt": "Save $10 a week. How many weeks to reach $80?",
+          "answer": 8
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 9,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "$1300 at 5% simple interest a year, for 5 years. Interest earned?",
+          "answer": 325
+        },
+        {
+          "prompt": "A price rises from $40 to $50. By what percent?",
+          "answer": 25
+        },
+        {
+          "prompt": "A price rises from $180 to $216. By what percent?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 9,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "$2000 at 4% simple interest a year, for 3 years. Interest earned?",
+          "answer": 240
+        },
+        {
+          "prompt": "$1100 at 4% simple interest a year, for 2 years. Interest earned?",
+          "answer": 88
+        },
+        {
+          "prompt": "$2000 at 7% simple interest a year, for 3 years. Interest earned?",
+          "answer": 420
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 9,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "$2000 at 2% simple interest a year, for 2 years. Interest earned?",
+          "answer": 80
+        },
+        {
+          "prompt": "$1300 at 4% simple interest a year, for 3 years. Interest earned?",
+          "answer": 156
+        },
+        {
+          "prompt": "Save $14 a week. How many weeks to reach $182?",
+          "answer": 13
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 10,
+      "seed": 1,
+      "problems": [
+        {
+          "prompt": "$700 grows 10% a year, compounded. How much after 2 years?",
+          "answer": 847
+        },
+        {
+          "prompt": "$2000 at 8% simple interest a year, for 3 years. Interest earned?",
+          "answer": 480
+        },
+        {
+          "prompt": "$1500 at 4% simple interest a year, for 5 years. Interest earned?",
+          "answer": 300
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 10,
+      "seed": 2,
+      "problems": [
+        {
+          "prompt": "$800 grows 10% a year, compounded. How much after 2 years?",
+          "answer": 968
+        },
+        {
+          "prompt": "A price drops from $120 to $60. By what percent did it fall?",
+          "answer": 50
+        },
+        {
+          "prompt": "A price rises from $80 to $120. By what percent?",
+          "answer": 50
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 10,
+      "seed": 3,
+      "problems": [
+        {
+          "prompt": "$800 grows 10% a year, compounded. How much after 2 years?",
+          "answer": 968
+        },
+        {
+          "prompt": "A price rises from $20 to $30. By what percent?",
+          "answer": 50
+        },
+        {
+          "prompt": "A price drops from $40 to $32. By what percent did it fall?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 10,
+      "seed": 42,
+      "problems": [
+        {
+          "prompt": "$700 grows 20% a year, compounded. How much after 2 years?",
+          "answer": 1008
+        },
+        {
+          "prompt": "$700 grows 10% a year, compounded. How much after 2 years?",
+          "answer": 847
+        },
+        {
+          "prompt": "$600 at 6% simple interest a year, for 5 years. Interest earned?",
+          "answer": 180
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 10,
+      "seed": 12345,
+      "problems": [
+        {
+          "prompt": "$1000 grows 10% a year, compounded. How much after 2 years?",
+          "answer": 1210
+        },
+        {
+          "prompt": "A price rises from $180 to $225. By what percent?",
+          "answer": 25
+        },
+        {
+          "prompt": "Save $32 a week. How many weeks to reach $640?",
+          "answer": 20
+        }
+      ]
+    },
+    {
+      "track": "money",
+      "level": 10,
+      "seed": 987654321,
+      "problems": [
+        {
+          "prompt": "$1000 grows 10% a year, compounded. How much after 2 years?",
+          "answer": 1210
+        },
+        {
+          "prompt": "Save $37 a week. How many weeks to reach $518?",
+          "answer": 14
+        },
+        {
+          "prompt": "A price rises from $100 to $120. By what percent?",
+          "answer": 20
+        }
+      ]
+    },
+    {
       "track": "estimation",
       "level": 1,
       "seed": 1,
