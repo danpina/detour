@@ -35,6 +35,10 @@ enum TrackId: String, Codable, CaseIterable, Hashable {
     case probability = "probability"
     case numberTheory = "number-theory"
     case money = "money"
+    case fractions = "fractions"
+    case statistics = "statistics"
+    case sequences = "sequences"
+    case rates = "rates"
     case estimation = "estimation"
 }
 
@@ -145,6 +149,34 @@ enum Drills {
             problems: 3,
             timeLimitSeconds: 60
         ),
+        .fractions: TrackInfo(
+            name: "Fractions & ratios",
+            blurb: "Fractions, ratios, recipes and map scales",
+            levels: MoreLevels.fractions,
+            problems: 3,
+            timeLimitSeconds: 60
+        ),
+        .statistics: TrackInfo(
+            name: "Statistics",
+            blurb: "Averages, spread, z-scores, risk and polls",
+            levels: MoreLevels.statistics,
+            problems: 3,
+            timeLimitSeconds: 75
+        ),
+        .sequences: TrackInfo(
+            name: "Sequences & patterns",
+            blurb: "Next terms, nth terms and sums",
+            levels: MoreLevels.sequences,
+            problems: 3,
+            timeLimitSeconds: 60
+        ),
+        .rates: TrackInfo(
+            name: "Rates & word problems",
+            blurb: "Speed, work, mixtures and growth",
+            levels: MoreLevels.rates,
+            problems: 3,
+            timeLimitSeconds: 75
+        ),
         .estimation: TrackInfo(
             name: "Estimation",
             blurb: "Fermi-style guesses",
@@ -184,6 +216,18 @@ enum Drills {
             } else if spec.track == .money {
                 let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.money).maxLevel, &rng)
                 p = money(lv, &rng)
+            } else if spec.track == .fractions {
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.fractions).maxLevel, &rng)
+                p = fractions(lv, &rng)
+            } else if spec.track == .statistics {
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.statistics).maxLevel, &rng)
+                p = statistics(lv, &rng)
+            } else if spec.track == .sequences {
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.sequences).maxLevel, &rng)
+                p = sequences(lv, &rng)
+            } else if spec.track == .rates {
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.rates).maxLevel, &rng)
+                p = rates(lv, &rng)
             } else {
                 p = estimation(spec.level, &rng)
             }

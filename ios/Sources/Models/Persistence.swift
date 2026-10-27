@@ -10,6 +10,8 @@ struct UserSettings: Codable, Hashable {
     var drills: Bool? = nil
     /// How often the extras (mental math, estimation, games) join a set: every Nth set. nil means every 3rd.
     var extrasEvery: Int? = nil
+    /// Math tracks switched off for math rounds (raw track ids). Mental math is always in. nil means none are off.
+    var mathOff: [String]? = nil
     var reminderEnabled = false
     /// Local time of the daily reminder.
     var reminderHour = 20

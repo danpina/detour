@@ -151,6 +151,21 @@ final class AppModelTests: XCTestCase {
         XCTAssertEqual(model.mathLevel, 1)
     }
 
+    func testAMathRoundSkipsTracksSwitchedOffAndFallsBackToMentalMath() {
+        let (model, url) = makeModel()
+        defer { try? FileManager.default.removeItem(at: url) }
+        model.completeOnboarding(interests: [.history, .science, .money])
+        model.updateSettings { $0.setSize = 5; $0.mathOff = TrackId.allCases.filter { $0 != .mentalMath && $0 != .statistics }.map { $0.rawValue } }
+        for _ in 0..<10 {
+            let tracks: [TrackId] = model.makeSet(kind: .math).compactMap { if case .drill(let s) = $0 { return s.track } else { return nil } }
+            XCTAssertEqual(tracks, [.mentalMath, .statistics])
+        }
+        model.updateSettings { $0.mathOff = TrackId.allCases.filter { $0 != .mentalMath }.map { $0.rawValue } }
+        let alone: [DrillSpec] = model.makeSet(kind: .math).compactMap { if case .drill(let s) = $0 { return s } else { return nil } }
+        XCTAssertEqual(alone.map { $0.track }, [.mentalMath])
+        XCTAssertEqual(alone.first?.count, 5)
+    }
+
     func testAGamesRoundHasAsManyDifferentGamesAsTheRoundLength() {
         let (model, url) = makeModel()
         defer { try? FileManager.default.removeItem(at: url) }

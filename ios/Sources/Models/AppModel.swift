@@ -118,9 +118,13 @@ final class AppModel {
     /// level. The problems are split between the two, the first getting the extra one when N is odd.
     private func mathRound() -> [SessionItem] {
         let size = data.settings.setSize
-        let second = Skills.nextTrack(data.skills, among: TrackId.allCases.filter { $0 != .mentalMath })
-        let first = (size + 1) / 2
-        let counts: [(TrackId, Int)] = [(.mentalMath, first), (second, size - first)]
+        // Tracks switched off in Settings never join; mental math is always in. With every other track off, a round is all mental math.
+        let off = data.settings.mathOff ?? []
+        let others = TrackId.allCases.filter { $0 != .mentalMath && !off.contains($0.rawValue) }
+        let second: TrackId? = others.isEmpty ? nil : Skills.nextTrack(data.skills, among: others)
+        let first = second == nil ? size : (size + 1) / 2
+        var counts: [(TrackId, Int)] = [(.mentalMath, first)]
+        if let second { counts.append((second, size - first)) }
         let items = counts.filter { $0.1 > 0 }.map { track, count -> SessionItem in
             let level = data.skills.first { $0.track == track }?.level ?? 1
             return .drill(DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)), count: count))
