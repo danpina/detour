@@ -21,8 +21,9 @@ struct RootView: View {
     @Environment(\.openURL) private var openURL
     @State private var run: SessionRun?
     @State private var tab: MainTab = .home
-    /// Set when Detour is opened from a guarded app's shield: it always asks which round to do first.
-    @State private var choosingForShield = false
+    /// Why the round choice is showing. It is always asked: when Detour is opened from a guarded app's shield, and after a round.
+    private enum Choice { case shield, another }
+    @State private var choosing: Choice?
 
     var body: some View {
         Group {
@@ -49,13 +50,16 @@ struct RootView: View {
             }
         }
         .overlay {
-            if choosingForShield {
-                ShieldChoiceView(
+            if let reason = choosing {
+                RoundChooserView(
+                    title: reason == .shield ? "Quick one first?" : "Another one?",
+                    subtitle: reason == .shield ? "Pick a round, then your app is yours for a while." : "Pick a round. Cards, math or games.",
+                    closeLabel: reason == .shield ? "Not now" : "Done for now",
                     start: { kind in
-                        choosingForShield = false
-                        start(feed: false, why: "shield start", kind: kind)
+                        choosing = nil
+                        start(feed: false, why: reason == .shield ? "shield start" : "button", kind: kind)
                     },
-                    onClose: { choosingForShield = false }
+                    onClose: { choosing = nil }
                 )
             }
         }
@@ -82,7 +86,11 @@ struct RootView: View {
                         if accepted { run = nil }
                     }
                 },
-                onAnother: { start(feed: false, kind: current.kind) },
+                onAnother: {
+                    // Always ask which round: close this one and show the three choices.
+                    run = nil
+                    choosing = .another
+                },
                 onProgress: {
                     tab = .progress
                     run = nil
@@ -107,7 +115,7 @@ struct RootView: View {
             // Coming from a guarded app always asks which round to take (cards, math or games), replacing anything already open.
             if model.settings.onboardingDone {
                 run = nil
-                choosingForShield = true
+                choosing = .shield
             }
         }
     }

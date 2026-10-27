@@ -173,7 +173,7 @@ struct EndView: View {
                     Text("iOS didn't open it. Switch back to it by hand.").font(.footnote).foregroundStyle(.white.opacity(0.7))
                 }
                 Button(action: onAnother) {
-                    Text("Another run").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
+                    Text("Another round").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
                 }
                 Button(action: onDone) {
                     Text("Done").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 4)
@@ -182,10 +182,10 @@ struct EndView: View {
                 // Guarded flow, app unknown: Done is the main button; the user switches back by hand.
                 Button(action: onDone) { Text("Done").whitePill() }
                 Button(action: onAnother) {
-                    Text("Another run").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
+                    Text("Another round").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
                 }
             } else {
-                Button(action: onAnother) { Text(kind == .math ? "Another math round" : (kind == .games ? "Another game round" : "Another quick one")).whitePill() }
+                Button(action: onAnother) { Text("Another round").whitePill() }
                 Button(action: onDone) {
                     Text("Done for now").font(.body).foregroundStyle(.white.opacity(0.7)).padding(.vertical, 12)
                 }

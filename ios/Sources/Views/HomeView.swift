@@ -16,18 +16,21 @@ struct HomeView: View {
     }
 }
 
-/// What you see when you open Detour from a guarded app: the same three rounds, asked every time, before anything is unlocked.
-struct ShieldChoiceView: View {
+/// The three rounds, asked every time: when you open Detour from a guarded app, and after you finish a round.
+struct RoundChooserView: View {
+    let title: String
+    let subtitle: String
+    let closeLabel: String
     let start: (_ kind: AppModel.RoundKind) -> Void
     let onClose: () -> Void
 
     var body: some View {
         VStack(spacing: 12) {
             Spacer()
-            Text("Quick one first?").font(.largeTitle.weight(.semibold))
-            Text("Pick a round, then your app is yours for a while.").foregroundStyle(.secondary).multilineTextAlignment(.center)
+            Text(title).font(.largeTitle.weight(.semibold))
+            Text(subtitle).foregroundStyle(.secondary).multilineTextAlignment(.center)
             RoundChoiceList(start: start).padding(.top, 14)
-            Button("Not now", action: onClose)
+            Button(closeLabel, action: onClose)
                 .padding(.top, 8)
             Spacer()
         }

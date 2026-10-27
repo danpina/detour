@@ -116,7 +116,7 @@ export function App() {
         )}
 
         {screen.name === "end" && (
-          <EndScreen learned={screen.learned} round={screen.round} onAnother={() => startSet(interests, false, screen.round)} onProgress={() => setScreen({ name: "progress" })} onDone={() => setScreen({ name: "home" })} />
+          <EndScreen learned={screen.learned} round={screen.round} onAnother={() => setScreen({ name: "home" })} onProgress={() => setScreen({ name: "progress" })} onDone={() => setScreen({ name: "home" })} />
         )}
 
         <Toaster />
