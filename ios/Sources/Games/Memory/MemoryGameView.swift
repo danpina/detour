@@ -373,11 +373,12 @@ struct MemoryGameView: View {
     }
 
     private func tileColor(_ index: Int) -> Color {
-        if phase == .watch && shown == index { return Color.teal.opacity(0.85) }
+        if phase == .watch && shown == index { return Color.teal }
         if phase == .result && input.last == index {
-            return lastWasRight ? Color.teal : Color.red.opacity(0.6)
+            return lastWasRight ? Color.teal : Color.red
         }
-        return Color(.secondarySystemBackground)
+        // A clear grey, darker than the page, so the grid is easy to see before and after the tiles light up.
+        return Color(.systemGray4)
     }
 
     private var gridPlay: some View {
@@ -389,7 +390,8 @@ struct MemoryGameView: View {
                         .aspectRatio(1, contentMode: .fit)
                 }
                 .buttonStyle(.plain)
-                .disabled(phase != .turn)
+                // Not .disabled: iOS fades a disabled button to about a third, which made the grid hard to see while watching.
+                .allowsHitTesting(phase == .turn)
                 .accessibilityLabel("Tile \(index + 1)")
             }
         }

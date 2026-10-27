@@ -258,7 +258,7 @@ export function MemoryGame({ onExit, embedded }: GameProps) {
                 onClick={() => press(i)}
                 aria-label={`Tile ${i + 1}`}
                 className={`aspect-square rounded-2xl transition-colors duration-150 ${
-                  lit ? "bg-teal-400" : tapped ? (ok ? "bg-teal-500" : "bg-rose-400") : "bg-neutral-200 dark:bg-neutral-800"
+                  lit ? "bg-teal-400 ring-4 ring-teal-200 dark:ring-teal-700" : tapped ? (ok ? "bg-teal-500" : "bg-rose-500") : "bg-neutral-300 dark:bg-neutral-600"
                 }`}
               />
             );
