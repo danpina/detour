@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Overfitting",
+    "angle": "A model that fits its training data too closely fails on new data"
+  },
+  "created_at": "2026-10-26T20:28:21.550Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0058",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "When a model memorises instead of learning",
+    "body": {
+      "claim": "A model can fit its training data so closely that it gets worse on new data.",
+      "why": "This is overfitting. The model starts to memorise the training data instead of learning the underlying trend, partly by treating noise as if it were structure. It then has a higher error rate on unseen data."
+    },
+    "probes": [
+      {
+        "id": "tech-0058-p1",
+        "kind": "mcq",
+        "question": "What does an overfitted model do?",
+        "options": [
+          "Ignores its training data",
+          "Follows its training data too closely and may fail on new data",
+          "Always predicts correctly",
+          "Needs no data at all"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0058-p2",
+        "kind": "tf",
+        "question": "True or false: overfitting means a model has learned to generalise well to new data.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Overfitting (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Overfitting"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Overfitting regression.png or File:RegressionOverfitting.png (CC BY-SA) show an overfitted curve against a simpler fit",
+    "keywords": [
+      "overfitting regression",
+      "overfitting",
+      "regression curve",
+      "overfit model"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.380Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Overfitting",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Overfitting: analysis corresponds too closely to a data set and may fail on new data (claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overfitting",
+        "quote": "overfitting is the production of an analysis that corresponds too closely or exactly to a particular set of data"
+      },
+      {
+        "claim": "Model starts to memorise training data instead of learning the trend (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overfitting",
+        "quote": "overfitting occurs when a model begins to"
+      },
+      {
+        "claim": "Overfitting treats noise as if it were structure",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overfitting",
+        "quote": "extract some of the residual variation (i.e., noise ) as if that variation represents the underlying model structure"
+      },
+      {
+        "claim": "Higher error rate on unseen data",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overfitting",
+        "quote": "is likely to have a higher error rate on new unseen data"
+      }
+    ],
+    "overall": "pass"
+  }
+}

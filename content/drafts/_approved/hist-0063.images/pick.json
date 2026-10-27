@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-74768455",
+  "alt": "A Chinese woodcut-style illustration of a papermaker dipping a screen into a brick vat of paper pulp",
+  "fits": true,
+  "note": "Papermaking illustration, later print; alt describes it as illustration",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.65,
+    "zoom": 1.2
+  }
+}

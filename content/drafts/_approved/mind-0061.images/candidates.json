@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0061",
+  "created_at": "2026-10-27T06:10:26.623Z",
+  "queries": [
+    "Dunning-Kruger effect Dunning Kruger confidence",
+    "Dunning-Kruger effect",
+    "Dunning-Kruger effect Dunning Kruger"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-81408549",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dunning–Kruger effect.jpg",
+      "credit": "LittleT889 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dunning%E2%80%93Kruger_effect.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Dunning%E2%80%93Kruger_effect.jpg/960px-Dunning%E2%80%93Kruger_effect.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 720,
+      "alt_suggestion": "Dunning–Kruger effect",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-20701",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Waterloo Bridge, Sunlight Effect",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/20701",
+      "image_url": "https://www.artic.edu/iiif/2/827d02ef-6765-9728-c07e-52ad22b73fd3/full/843,/0/default.jpg",
+      "alt_suggestion": "Horizontal oil painting in shades of pale purple, pink, and light blue of a bridge composed of multiple linked archways over water, engulfed in hazy fog. Various indistinct, colorful forms cross the bridge, and factory smokestacks rise in the distance.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-73234573",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dunning-Kruger effekten.png",
+      "credit": "Salgo60 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dunning-Kruger_effekten.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Dunning-Kruger_effekten.png/960px-Dunning-Kruger_effekten.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 768,
+      "alt_suggestion": "En kognitiv bias som innebär att den som är inkompetent också är oförmögen att förstå att denne är inkompetent",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-81545",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Stacks of Wheat (Sunset, Snow Effect)",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/81545",
+      "image_url": "https://www.artic.edu/iiif/2/be0d3e50-a600-6f33-ea8f-16a34d892442/full/843,/0/default.jpg",
+      "alt_suggestion": "Two haystacks, dusted with snow, in a hazy, snow-covered field at sunset. The snow is highlighted in purple tones, the sky a yellow and orange gradient.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-99500648",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dunning-Kruger- Effekt 2.png",
+      "credit": "Ob D. Dunning die Grafik selbst angefertigt hat oder ein/e beauftragte/r Zeichner/in kann ich nicht feststellen. / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dunning-Kruger-_Effekt_2.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Dunning-Kruger-_Effekt_2.png/960px-Dunning-Kruger-_Effekt_2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1262,
+      "height": 780,
+      "alt_suggestion": "Säulendiagramm aus Dunning 2011: Vergleich von Selbsteinschätzung und tatsächlich erbrachter Leistung von Studenten bei einem wissenschaftlichen Quizz",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Dunning-Kruger effect Dunning Kruger confidence\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Dunning-Kruger effect\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Dunning-Kruger effect Dunning Kruger\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

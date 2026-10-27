@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-153499770",
+  "alt": "Map with coloured arrows showing crops, animals and diseases crossing the Atlantic between the Americas, Europe, Africa and Asia in the Columbian Exchange.",
+  "fits": true,
+  "note": "Diagram of the exchange (CC BY-SA 4.0), 975x768; text-heavy so scrim needed, but accurate",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

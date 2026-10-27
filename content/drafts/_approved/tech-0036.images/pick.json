@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-41501847",
+  "alt": "A row of padlocks clipped onto a steel cable, with a red heart-shaped padlock in the centre against blurred lights.",
+  "fits": true,
+  "note": "Locks anyone can snap shut; no brand legible.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

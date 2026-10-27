@@ -1,0 +1,60 @@
+{
+  "draft_id": "num-0061",
+  "created_at": "2026-10-26T20:32:56.105Z",
+  "queries": [
+    "Claude Shannon NOR gate relay circuit logic gate",
+    "Claude Shannon",
+    "Claude Shannon NOR gate relay circuit"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-143998376",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "AT&T Claude Shannon Statue.jpg",
+      "credit": "BobTheBryan / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AT%26T_Claude_Shannon_Statue.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/AT%26T_Claude_Shannon_Statue.jpg/960px-AT%26T_Claude_Shannon_Statue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1694,
+      "height": 3696,
+      "alt_suggestion": "This is the statue of Claude Shannon at AT&T Shannon Labs. The Wikipedia article says it was sculpted by Eugene Daub.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-144716444",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "C.E. Shannon. Tekniska museet 43069.jpg",
+      "credit": "Tekniska Museet of Sweden, Item 43069 via Flickr / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:C.E._Shannon._Tekniska_museet_43069.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/C.E._Shannon._Tekniska_museet_43069.jpg/960px-C.E._Shannon._Tekniska_museet_43069.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1942,
+      "height": 2427,
+      "alt_suggestion": "Claude Elwood Shannon",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-202189197",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Claude Shannon Michigan registration circa 1932 (restored).jpg",
+      "credit": "Bentley Historical Library, University of Michigan. Item ID: HS14879 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_Shannon_Michigan_registration_circa_1932_(restored).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Claude_Shannon_Michigan_registration_circa_1932_%28restored%29.jpg/960px-Claude_Shannon_Michigan_registration_circa_1932_%28restored%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3626,
+      "height": 5439,
+      "alt_suggestion": "Registration photo of Claude E. Shannon, age 16, University of Michigan",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Claude Shannon NOR gate relay circuit logic gate\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Claude Shannon\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Claude Shannon NOR gate relay circuit\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

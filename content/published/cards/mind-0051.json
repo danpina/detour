@@ -1,0 +1,56 @@
+{
+  "id": "mind-0051",
+  "interest": "mind",
+  "title": "K at the start or in the middle?",
+  "probes": [
+    {
+      "id": "mind-0051-p1",
+      "question": "What does the availability heuristic rely on?",
+      "kind": "mcq",
+      "options": [
+        "Careful counting of past cases",
+        "Advice from experts",
+        "How easily examples come to mind",
+        "Gut feelings about luck"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "mind-0051-p2",
+      "question": "True or false: newsworthy events tend to be rated as more likely partly because examples of them are easy to recall.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Availability heuristic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Availability_heuristic"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:21.118Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0051.webp",
+    "alt": "A heap of wooden Scrabble-style letter tiles with black letters and point values.",
+    "kind": "photo",
+    "credit": "WOKANDAPIX / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wooden_srcabble_tiles.jpg"
+  },
+  "body": {
+    "question": "In ordinary English text, which is more common: words that start with the letter K, or words with K as the third letter?",
+    "options": [
+      "Words that start with K",
+      "Words with K as the third letter",
+      "They are about equally common"
+    ],
+    "answer": 1,
+    "reveal": "K is more often the third letter. But kangaroo, kitchen and kale come to mind faster than acknowledge or ask, so people overestimate the first group. That is the availability heuristic: judging how common something is by how easily examples come to mind."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-197583563",
+  "alt": "A black combination padlock with number dials hanging from a metal hasp on a box.",
+  "fits": true,
+  "note": "Combination padlock fits hashing metaphor; small embossed maker name on lock is barely legible.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.6,
+    "zoom": 1
+  }
+}

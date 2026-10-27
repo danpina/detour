@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-134618667",
+  "alt": "An aged 1891-92 Columbus Public Schools grammar-department report card with handwritten grades in reading, spelling and arithmetic.",
+  "fits": true,
+  "note": "Public-domain historic report card; long-ago student.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

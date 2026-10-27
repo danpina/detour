@@ -1,0 +1,89 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "The halting problem",
+    "angle": "A provably unsolvable problem in computing"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0067",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "Some questions no program can answer",
+    "body": {
+      "claim": "No single program can tell, for every other program, whether it will finish or run forever.",
+      "why": "This is the halting problem: given a program and an input, decide whether it eventually halts or runs forever. Alan Turing proved in 1937 that no general algorithm can solve it for all program-input pairs. A proof by contradiction supposes such a checker exists and shows that leads to nonsense."
+    },
+    "probes": [
+      {
+        "id": "num-0067-p1",
+        "kind": "mcq",
+        "question": "What does the halting problem ask?",
+        "options": [
+          "Whether a program is fast",
+          "Whether a program will finish or run forever",
+          "Whether a program has bugs",
+          "Whether a program is short"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0067-p2",
+        "kind": "tf",
+        "question": "True or false: Turing proved that one algorithm can decide the halting problem for every program and input.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Halting problem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Halting_problem"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Alan Turing (1951).jpg, a portrait of Alan Turing",
+    "keywords": [
+      "Alan Turing",
+      "Alan Turing 1951",
+      "Turing portrait"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.526Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Halting_problem",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Halting problem: decide whether a program halts or runs forever",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Halting_problem",
+        "quote": "determining whether said program will eventually finish running and halt, or will continue to run forever"
+      },
+      {
+        "claim": "Turing proved in 1937 that no general algorithm solves it for all program-input pairs",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Halting_problem",
+        "quote": "Alan Turing proved in 1937 that the halting problem is undecidable",
+        "note": "Same passage: no general algorithm exists that can correctly solve the problem for all possible program-input pairs."
+      },
+      {
+        "claim": "The proof is by contradiction, supposing such a checker exists",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Halting_problem",
+        "quote": "Christopher Strachey outlined a proof by contradiction that the halting problem is not solvable."
+      }
+    ],
+    "overall": "pass"
+  }
+}

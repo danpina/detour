@@ -1,0 +1,135 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "The Mississippi Company bubble",
+    "angle": "John Law's company, bank and the 1720 collapse"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0057",
+    "interest": "money",
+    "type": "story",
+    "title": "The company that bought the bank",
+    "body": {
+      "panels": [
+        {
+          "text": "In 1717 the Scottish financier John Law founded a joint-stock company. Its first shares were offered at 500 livres."
+        },
+        {
+          "text": "In February 1720 the company acquired John Law's Bank, which had been France's first central bank."
+        },
+        {
+          "text": "Share prices eventually reached a peak of 10,000 livres. As shareholders sold, the money supply in France suddenly doubled and inflation burgeoned, reaching 23% in a single month in January 1720."
+        },
+        {
+          "text": "In the second half of 1720 the shares collapsed, an event called the Mississippi Bubble. By April 1721 the company was in government receivership."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0057-p1",
+        "kind": "mcq",
+        "question": "In the story, what happened to France's money supply as shareholders sold?",
+        "options": [
+          "It halved",
+          "It stayed the same",
+          "It suddenly doubled"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "money-0057-p2",
+        "kind": "tf",
+        "question": "True or false: the Mississippi Company's first shares were offered at 500 livres, and later reached a peak of 10,000 livres.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mississippi Company (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Mississippi_Company"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Rue Quincampoix En l'annee 1720, G.13190.jpg (CC0) is an engraving of the crowded Rue Quincampoix during the 1720 speculation",
+    "keywords": [
+      "Rue Quincampoix",
+      "Rue Quincampoix 1720",
+      "John Law"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.982Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mississippi_Company",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1717 John Law founded a joint-stock company",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mississippi_Company",
+        "quote": "founded in 1717 by Scottish economist and financier John Law"
+      },
+      {
+        "claim": "Its first shares were offered at 500 livres (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mississippi_Company",
+        "quote": "The shares were offered at 500 livres face value"
+      },
+      {
+        "claim": "In February 1720 the company acquired John Law's Bank",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mississippi_Company",
+        "quote": "In February 1720, the company acquired John Law's Bank"
+      },
+      {
+        "claim": "John Law's Bank had been France's first central bank",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mississippi_Company",
+        "quote": "which had been France's first central bank"
+      },
+      {
+        "claim": "Share prices eventually reached a peak of 10,000 livres (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mississippi_Company",
+        "quote": "The market price of company shares eventually reached the peak of 10,000 livres."
+      },
+      {
+        "claim": "As shareholders sold, France's money supply suddenly doubled and inflation burgeoned (probe p1: doubled)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mississippi_Company",
+        "quote": "As the shareholders were selling their shares, the money supply in France suddenly doubled, and inflation burgeoned."
+      },
+      {
+        "claim": "Inflation reached 23% in a single month in January 1720",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mississippi_Company",
+        "quote": "Inflation reached a monthly rate of 23% in January 1720."
+      },
+      {
+        "claim": "In the second half of 1720 the shares collapsed, the Mississippi Bubble",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mississippi_Company",
+        "quote": "after a stock market collapse of the company's shares in the second half of 1720"
+      },
+      {
+        "claim": "By April 1721 the company was in government receivership",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mississippi_Company",
+        "quote": "the company was placed under government receivership in April 1721"
+      }
+    ],
+    "overall": "pass"
+  }
+}

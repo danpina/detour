@@ -1,0 +1,82 @@
+{
+  "draft_id": "mind-0060",
+  "created_at": "2026-10-27T06:10:14.813Z",
+  "queries": [
+    "treadmill running gym",
+    "treadmill",
+    "treadmill running"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-194512735",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Young blonde woman running on a treadmill in the gym closeup.jpg",
+      "credit": "Shixart1985 / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Young_blonde_woman_running_on_a_treadmill_in_the_gym_closeup.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Young_blonde_woman_running_on_a_treadmill_in_the_gym_closeup.jpg/960px-Young_blonde_woman_running_on_a_treadmill_in_the_gym_closeup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3429,
+      "height": 2289,
+      "alt_suggestion": "Young blonde woman running on a treadmill in the gym closeup",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-S08-13-0361",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Mission Specialist (MS) Bluford exercises on middeck treadmill",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/S08-13-0361",
+      "image_url": "https://images-assets.nasa.gov/image/S08-13-0361/S08-13-0361~medium.jpg",
+      "alt_suggestion": "STS008-13-0361 (30 Aug.-5 Sept. 1983) --- Astronaut Guion S. Bluford, STS-8 mission specialist, assists Dr. William E. Thornton (out of frame) with a medical test that requires use of the treadmill ex",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-188559",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Running Horse Weather Vane",
+      "credit": "Alvin L. Jewell (American, 1821–1867) A. L. Jewell and Company (American, 1852–67) Waltham, Massachusetts / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/188559",
+      "image_url": "https://www.artic.edu/iiif/2/46b51ea9-ad2c-df8c-61ee-9d5bd820c960/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of copper, lead or zinc, and gilding.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-116285199",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fit young man caucasian running on machine treadmill workout in gym.jpg",
+      "credit": "Nenad Stojkovic / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fit_young_man_caucasian_running_on_machine_treadmill_workout_in_gym.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Fit_young_man_caucasian_running_on_machine_treadmill_workout_in_gym.jpg/960px-Fit_young_man_caucasian_running_on_machine_treadmill_workout_in_gym.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4016,
+      "height": 6016,
+      "alt_suggestion": "Fit young man caucasian running on machine treadmill workout in gym",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-KSC-2009-3795",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-2009-3795",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-2009-3795",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-2009-3795/KSC-2009-3795~medium.jpg",
+      "alt_suggestion": "CAPE CANAVERAL, Fla. – This decal will be placed on the Combined Operational Load Bearing External Resistance Treadmill, or C.O.L.B.E.R.T., that will be carried to the International Space Station aboa",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"treadmill running gym\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"treadmill\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"treadmill running\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

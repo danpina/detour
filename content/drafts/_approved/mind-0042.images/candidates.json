@@ -1,0 +1,72 @@
+{
+  "draft_id": "mind-0042",
+  "created_at": "2026-10-26T20:31:17.668Z",
+  "queries": [
+    "weightlifting barbell Olympic barbell weightlifting",
+    "weightlifting barbell",
+    "weightlifting barbell Olympic barbell"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-19387212",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Olympic barbell.jpg",
+      "credit": "Tomáš Pilík / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Olympic_barbell.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Olympic_barbell.jpg/960px-Olympic_barbell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3134,
+      "height": 1702,
+      "alt_suggestion": "Olympic barbell with training discs. Total weight 75 kg.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-158220",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "View from the Banks of the Illisós: Mountains of the Argolid, Temple of Olympic Jupiter, the Acropolis, Palace of King Corydalus, Village of Ambelo'kypos, Mount Anchesmos, Forest of Olives and the River Illisós",
+      "credit": "Théodore Caruelle d'Aligny French, 1798-1871 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/158220",
+      "image_url": "https://www.artic.edu/iiif/2/f6826fd3-39c7-7d5e-7312-c55d7bcacc26/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on ivory china paper, laid down on white wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-61757688",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fred Winters, competitor in the barbell contest at the 1904 Olympics posing with weights.jpg",
+      "credit": "Missouri History MuseumURL: http://images.mohistory.org/image/5D4A427C-E2FD-2B58-62D7-A0C435832085/original.jpgGallery: http://collections.mohistory.org/resourc",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fred_Winters,_competitor_in_the_barbell_contest_at_the_1904_Olympics_posing_with_weights.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Fred_Winters%2C_competitor_in_the_barbell_contest_at_the_1904_Olympics_posing_with_weights.jpg/960px-Fred_Winters%2C_competitor_in_the_barbell_contest_at_the_1904_Olympics_posing_with_weights.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 7236,
+      "height": 6033,
+      "alt_suggestion": "Man standing in an open field wearing exercise clothing and holding up a vertical barbell that is resting on the ground. Winters was a member of a New York City athletic club.Title: Fred Winters, comp",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-92863562",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rio 2016 - Weightlifting - Flickr - ElleFlorio.jpg",
+      "credit": "Luca Florio / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rio_2016_-_Weightlifting_-_Flickr_-_ElleFlorio.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Rio_2016_-_Weightlifting_-_Flickr_-_ElleFlorio.jpg/960px-Rio_2016_-_Weightlifting_-_Flickr_-_ElleFlorio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5915,
+      "height": 3949,
+      "alt_suggestion": "Exploring the theme \"Macro - Summer Olympic Sports\" This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. If you use my image, please drop me a message to ma",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"weightlifting barbell Olympic barbell weightlifting\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"weightlifting barbell\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"weightlifting barbell Olympic barbell\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

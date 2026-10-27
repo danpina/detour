@@ -1,0 +1,147 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Electromagnetic induction",
+    "angle": "Faraday and the first generator"
+  },
+  "created_at": "2026-10-26T20:31:08.682Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0040",
+    "interest": "science",
+    "type": "story",
+    "title": "Faraday spins a disc",
+    "body": {
+      "panels": [
+        {
+          "text": "1831. Michael Faraday is experimenting with electricity and magnetism."
+        },
+        {
+          "text": "The rule that bears his name, Faraday's law of induction, says a changing magnetic field can induce an electric current in a circuit."
+        },
+        {
+          "text": "The same year he builds the Faraday disc: a conducting disc turning in a magnetic field, which creates a potential difference. It is the first homopolar generator, very inefficient and not used as a practical source of power."
+        },
+        {
+          "text": "The twist: his principle runs the world. Steam, gas, water and wind turbines, even hand cranks, can spin generators, and generators produce nearly all the electric power on worldwide grids."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0040-p1",
+        "kind": "mcq",
+        "question": "What does an electric generator convert?",
+        "options": [
+          "Electrical energy into mechanical energy",
+          "Mechanical energy into electrical energy",
+          "Heat into light",
+          "Chemical energy into sound"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0040-p2",
+        "kind": "tf",
+        "question": "True or false: a changing magnetic field can induce an electric current in a circuit.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Faraday's law of induction (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction"
+      },
+      {
+        "title": "Homopolar generator (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Homopolar_generator"
+      },
+      {
+        "title": "Electric generator (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Electric_generator"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Solid Faraday disc.PNG and File:Homopolar generator (diagram).jpg show the Faraday disc / homopolar generator",
+    "keywords": [
+      "Michael Faraday",
+      "Faraday disc",
+      "electric generator",
+      "generator turbine"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:07.695Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Homopolar_generator",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Electric_generator",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Faraday 1831: changing magnetic field induces an electric current in a circuit (panel 1-2, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction",
+        "quote": "when Michael Faraday demonstrated that a changing magnetic field could indeed induce an electric current in a circuit"
+      },
+      {
+        "claim": "Faraday disc: conducting disc in a magnetic field creates a potential difference",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Homopolar_generator",
+        "quote": "A potential difference is created between the center of the disc and the rim"
+      },
+      {
+        "claim": "Disc is a conductive disc rotating in a magnetic field",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Homopolar_generator",
+        "quote": "an electrically conductive disc or cylinder rotating in a plane perpendicular to a uniform static magnetic field"
+      },
+      {
+        "claim": "First homopolar generator, 1831 (same year)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Homopolar_generator",
+        "quote": "The first homopolar generator was developed by Michael Faraday during his experiments in 1831."
+      },
+      {
+        "claim": "Very inefficient and not used as a practical power source",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Homopolar_generator",
+        "quote": "It was very inefficient and was not used as a practical power source"
+      },
+      {
+        "claim": "Steam, gas, water, wind turbines and hand cranks drive generators",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electric_generator",
+        "quote": "Sources of mechanical energy used to drive generators include steam turbines"
+      },
+      {
+        "claim": "Generators produce nearly all electric power for worldwide grids",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electric_generator",
+        "quote": "Generators produce nearly all of the electric power for worldwide electric power grids."
+      },
+      {
+        "claim": "Generator converts mechanical energy into electrical energy (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electric_generator",
+        "quote": "an electromechanical device that converts mechanical energy to electrical energy"
+      }
+    ],
+    "overall": "pass"
+  }
+}

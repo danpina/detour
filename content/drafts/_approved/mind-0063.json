@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Asch conformity",
+    "angle": "Lines and a wrong majority"
+  },
+  "created_at": "2026-10-27T06:06:56.062Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0063",
+    "interest": "mind",
+    "type": "estimate",
+    "title": "How often people went along",
+    "body": {
+      "question": "In Asch's line task, actors unanimously gave the wrong answer. What percentage of the real participants' responses went along with them?",
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "answer": 35.7,
+      "reveal": "35.7% of responses followed the actors' wrong answer, while 64.3% stayed correct. Without actors the error rate was under 0.7%. About 12% followed the group nearly always, 26% consistently defied it, and about 95% defied the majority at least once."
+    },
+    "probes": [
+      {
+        "id": "mind-0063-p1",
+        "kind": "tf",
+        "question": "True or false: in Asch's actor condition, most of the participants' responses followed the actors' wrong answer.",
+        "answer": false
+      },
+      {
+        "id": "mind-0063-p2",
+        "kind": "mcq",
+        "question": "About what share of participants defied the majority at least once?",
+        "options": [
+          "About 5%",
+          "About 25%",
+          "About 50%",
+          "About 95%"
+        ],
+        "answer": 3
+      }
+    ],
+    "sources": [
+      {
+        "title": "Asch conformity experiments (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Asch_conformity_experiments"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Psychology-asch-1951.png shows the Asch line comparison cards",
+    "keywords": [
+      "Asch conformity experiment",
+      "line comparison",
+      "Asch",
+      "psychology"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.200Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Asch_conformity_experiments",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Actors unanimously gave the wrong answer on critical trials",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Asch_conformity_experiments",
+        "quote": "They would always unanimously nominate one comparator"
+      },
+      {
+        "claim": "35.7% of responses conformed to the actors' wrong answer",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Asch_conformity_experiments",
+        "quote": "a sizable minority of responses conformed to the actors' (incorrect) answer (35.7%)"
+      },
+      {
+        "claim": "64.3% stayed correct; so most responses did not follow the actors (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Asch_conformity_experiments",
+        "quote": "the majority of participants' responses remained correct (64.3%)"
+      },
+      {
+        "claim": "Without actors the error rate was under 0.7%",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Asch_conformity_experiments",
+        "quote": "In the control group, with no pressure to conform to actors, the error rate on the critical stimuli was less than 0.7%"
+      },
+      {
+        "claim": "About 12% followed the group nearly always; 26% consistently defied it",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Asch_conformity_experiments",
+        "quote": "12% of participants followed the group in nearly all of the tests. 26% of the sample consistently defied majority opinion"
+      },
+      {
+        "claim": "About 95% defied the majority at least once (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Asch_conformity_experiments",
+        "quote": "No text mentioned that 95% of subjects defied the majority at least once.",
+        "note": "Page states the 95% figure in a sentence about textbooks omitting it."
+      }
+    ],
+    "overall": "pass"
+  }
+}

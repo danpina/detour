@@ -1,0 +1,91 @@
+{
+  "draft_id": "tech-0055",
+  "created_at": "2026-10-26T20:29:48.992Z",
+  "queries": [
+    "GPU graphics card graphics processing unit",
+    "GPU",
+    "GPU graphics card"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-45314232",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "A Complex Graphics Card.jpg",
+      "credit": "Nick Stathas / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_Complex_Graphics_Card.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/A_Complex_Graphics_Card.jpg/960px-A_Complex_Graphics_Card.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6016,
+      "height": 4000,
+      "alt_suggestion": "A graphics card (Radeon R9 270X), shot on its long axis, with the GPU exposed.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-30095",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Portrait of Miss Constance MacDonald Gilchrist",
+      "credit": "Elliott & Fry English, 1863–1919 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/30095",
+      "image_url": "https://www.artic.edu/iiif/2/0d2080cb-97ba-4444-4e8e-17f0080b4f7a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of albumen print, cabinet card.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-41243545",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "AMD Fiji GPU package with GPU, HBM memory and interposer.jpg",
+      "credit": "C. Spille/pcgameshardware.de / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AMD_Fiji_GPU_package_with_GPU,_HBM_memory_and_interposer.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/AMD_Fiji_GPU_package_with_GPU%2C_HBM_memory_and_interposer.jpg/960px-AMD_Fiji_GPU_package_with_GPU%2C_HBM_memory_and_interposer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3872,
+      "height": 2592,
+      "alt_suggestion": "Photo of the AMD Fiji GPU package which includes the Fiji GPU, HBM memory, interposer, substrate and the rest of the package. This is GPU that powers the AMD Radeon R9 Fury X, AMD Radeon R9 Fury, AMD ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-135533",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Card Table",
+      "credit": "Charles-Honoré Lannuier (American, born France, 1779–1819) New York / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/135533",
+      "image_url": "https://www.artic.edu/iiif/2/b2bd9f9c-9478-481c-1457-0f42960cdc95/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of mahogany with rosewood veneer, giltwood, brass and ebony inlay, ormolu.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-1264614",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "GeForce 6800.png",
+      "credit": "Hellisp / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GeForce_6800.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/GeForce_6800.png/960px-GeForce_6800.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3737,
+      "height": 2237,
+      "alt_suggestion": "GPU GeForce 6800",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "ATI Radeon HD 5870 Graphics Card-oblique view.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"GPU graphics card graphics processing unit\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"GPU\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"GPU graphics card\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

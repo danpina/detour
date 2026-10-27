@@ -1,0 +1,82 @@
+{
+  "draft_id": "tech-0032",
+  "created_at": "2026-10-27T06:09:57.155Z",
+  "queries": [
+    "network cables data center server room",
+    "network cables",
+    "network cables data center"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-153786489",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "CAT8 Ethernet Cable-5839.jpg",
+      "credit": "Raimond Spekking / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CAT8_Ethernet_Cable-5839.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/CAT8_Ethernet_Cable-5839.jpg/960px-CAT8_Ethernet_Cable-5839.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3623,
+      "height": 2717,
+      "alt_suggestion": "Unknown manufacturer fake Cat.8 cable (not possible using U/FTP)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss034e040209",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Ford reconfigures cables for the JSL Area Network",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss034e040209",
+      "image_url": "https://images-assets.nasa.gov/image/iss034e040209/iss034e040209~medium.jpg",
+      "alt_suggestion": "ISS034-E-040209 (5 Feb. 2013) --- NASA astronaut Kevin Ford, Expedition 34 commander, reconfigures cables for the Joint Station Local Area Network in the Destiny laboratory of the International Space ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-43768",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "E25: French Bathroom and Boudoir of the Revolutionary Period, 1793–1804",
+      "credit": "Designed by Narcissa Niblack Thorne American, 1882–1966 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/43768",
+      "image_url": "https://www.artic.edu/iiif/2/5663045a-4348-200a-967c-1dea1cb4580d/full/843,/0/default.jpg",
+      "alt_suggestion": "Miniature model of a large, stately room with a circular marble tub sunk into the floor's center and fireplace at right. A central archway reveals a sitting area beyond.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-153786442",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "CAT8 Ethernet Cable-5837.jpg",
+      "credit": "Raimond Spekking / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CAT8_Ethernet_Cable-5837.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CAT8_Ethernet_Cable-5837.jpg/960px-CAT8_Ethernet_Cable-5837.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2875,
+      "height": 2156,
+      "alt_suggestion": "Unknown manufacturer fake Cat.8 cable (not possible using U/FTP)",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-iss065e444320",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "iss065e444320",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss065e444320",
+      "image_url": "https://images-assets.nasa.gov/image/iss065e444320/iss065e444320~medium.jpg",
+      "alt_suggestion": "iss065e444320 (Oct. 8, 2021) --- Expedition 65 Flight Engineer Akihiko Hoshide of the Japan Aerospace Exploration Agency (JAXA) inspects network connections, swaps cables, and replaces components insi",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"network cables data center server room\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"network cables\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"network cables data center\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

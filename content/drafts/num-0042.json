@@ -1,0 +1,139 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Survivorship bias",
+    "angle": "Wald and the WWII planes"
+  },
+  "created_at": "2026-10-27T06:06:56.033Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0042",
+    "interest": "numbers",
+    "type": "story",
+    "title": "The planes that never came back",
+    "body": {
+      "panels": [
+        {
+          "text": "World War II. The statistician Abraham Wald, in Columbia University's Statistical Research Group, studied how to protect bomber aircraft from damage."
+        },
+        {
+          "text": "The data came from planes that had returned from missions, with bullet holes mapped across them. It is tempting to add armour wherever the holes cluster."
+        },
+        {
+          "text": "Wald's catch: only survivors were in the data. Planes hit in other places presumably did not make it back to be counted, so reinforcing only the damaged areas would overlook where lost planes were fatally hit."
+        },
+        {
+          "text": "This is survivorship bias: concentrating on what passed a selection process and overlooking what did not. Wald took it into account, and his work was meant as a guide to where armour should go."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0042-p1",
+        "kind": "mcq",
+        "question": "Why were holes on returned planes a misleading guide to where to add armour?",
+        "options": [
+          "The holes were made after landing",
+          "Planes hit in other places presumably did not return to be counted",
+          "Armour makes planes heavier",
+          "Returned planes were repaired first"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0042-p2",
+        "kind": "tf",
+        "question": "True or false: survivorship bias comes from focusing on what passed a selection process and ignoring what did not.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Survivorship bias (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Survivorship_bias"
+      },
+      {
+        "title": "Abraham Wald (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Abraham_Wald"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Survivorship-bias.png shows a bomber outline with hypothetical damage dots",
+    "keywords": [
+      "survivorship bias",
+      "WWII bomber damage",
+      "Abraham Wald"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:00.881Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Abraham_Wald",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "WWII statistician Abraham Wald, member of Columbia's Statistical Research Group, studied aircraft vulnerability",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+        "quote": "The Statistical Research Group (SRG) at Columbia University , of which Wald was a member"
+      },
+      {
+        "claim": "Data came from planes that returned from missions",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+        "quote": "based on the damage done to aircraft that had returned from missions"
+      },
+      {
+        "claim": "Only survivors were in the data (survivorship bias)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+        "quote": "Given that there was only data from surviving aircraft, this work directly addresses the issue of survivorship bias."
+      },
+      {
+        "claim": "Reinforcing only the damaged areas would overlook where lost planes were fatally hit",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+        "quote": "Reinforcing aircraft solely in these areas would overlook the question of where non-surviving planes were fatally hit."
+      },
+      {
+        "claim": "Planes hit in other places presumably did not make it back / return to be counted (panel 3, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Abraham_Wald",
+        "quote": "those hit in other places presumedly do not survive"
+      },
+      {
+        "claim": "Survivorship bias defined as concentrating on what passed a selection process and overlooking what did not",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+        "quote": "Survivorship bias or survivor bias is a statistical error which results from concentrating on entities that passed a selection process over those that did not"
+      },
+      {
+        "claim": "Wald proposed his conclusions as a guide for placing armour",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+        "quote": "Wald proposed that his conclusions could be used as guide for locating the placement of protective armor."
+      },
+      {
+        "claim": "Wald's work on bomber damage took survivorship bias into account",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Abraham_Wald",
+        "quote": "took into account the survivorship bias in his calculations",
+        "note": "Card does not say to armour undamaged areas; OK."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-39967997",
+  "alt": "A network diagram of labelled circles linked by arrows, a sociogram showing how people in a group are connected.",
+  "fits": true,
+  "note": "Abstract network graph with initials only; no identifiable people.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

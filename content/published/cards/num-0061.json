@@ -1,0 +1,54 @@
+{
+  "id": "num-0061",
+  "interest": "numbers",
+  "title": "Logic turned out to be circuits",
+  "probes": [
+    {
+      "id": "num-0061-p1",
+      "question": "Whose algebra did Shannon apply to switching circuits?",
+      "kind": "mcq",
+      "options": [
+        "Euclid's",
+        "Newton's",
+        "George Boole's",
+        "Gödel's"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "num-0061-p2",
+      "question": "True or false: Shannon's thesis was about applying Boolean algebra to relay and switching circuits.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Claude Shannon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Claude_Shannon"
+    },
+    {
+      "title": "Boolean algebra (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Boolean_algebra"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:17.318Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0061.webp",
+    "alt": "Black-and-white studio portrait of the mathematician and engineer Claude Shannon in a tweed jacket.",
+    "kind": "photo",
+    "credit": "Tekniska Museet of Sweden, Item 43069 via Flickr / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:C.E._Shannon._Tekniska_museet_43069.jpg"
+  },
+  "body": {
+    "claim": "In 1937 a master's thesis showed that Boolean logic can be built from electrical switches.",
+    "why": "Claude Shannon's MIT thesis, 'A Symbolic Analysis of Relay and Switching Circuits', showed that electrical applications of Boolean algebra could construct any logical numerical relationship. A switch is on or off, like true or false, so circuits could carry out logic. It laid the theory behind digital circuits."
+  }
+}

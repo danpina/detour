@@ -1,0 +1,125 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Fall of Constantinople, 1453",
+    "angle": "Walls versus gunpowder"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0038",
+    "interest": "history",
+    "type": "story",
+    "title": "The walls that cannons broke",
+    "body": {
+      "panels": [
+        {
+          "text": "For about 800 years, the great Theodosian walls protected Constantinople. They were noted as some of the most advanced defences in the world."
+        },
+        {
+          "text": "The Ottoman siege began on 6 April 1453. Its huge cannons fired balls weighing around 500 kilograms, which opened gaps in the walls."
+        },
+        {
+          "text": "On 28 May, the night before the final assault, the emperor and the city's leaders held a last service in the Hagia Sophia."
+        },
+        {
+          "text": "The city fell on 29 May 1453. The siege is seen as heralding a change in siege warfare: gunpowder had beaten walls that had stood for centuries."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0038-p1",
+        "kind": "mcq",
+        "question": "What helped the Ottomans break through Constantinople's walls?",
+        "options": [
+          "A long famine inside the city",
+          "Cannons and gunpowder",
+          "A tunnel under the sea",
+          "A betrayal at the gates"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0038-p2",
+        "kind": "tf",
+        "question": "True or false: the Theodosian walls had protected Constantinople for about 800 years.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Fall of Constantinople (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Zonaro GatesofConst.jpg shows a painting of Mehmed II entering Constantinople (public domain, portrait); alternative File:Walls of Constantinople 1.jpg",
+    "keywords": [
+      "Mehmed II Constantinople",
+      "Conquest of Constantinople",
+      "Theodosian Walls",
+      "Zonaro"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.127Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Theodosian walls protected Constantinople for about 800 years (panel 1, p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+        "quote": "The walls of Constantinople , especially the Theodosian walls, protected Constantinople from attack for 800 years"
+      },
+      {
+        "claim": "Noted as some of the most advanced defences in the world",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+        "quote": "were noted as some of the most advanced defensive systems in the world at the time"
+      },
+      {
+        "claim": "Siege began 6 April 1453",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+        "quote": "culmination of a 53-day siege which had begun on 6 April"
+      },
+      {
+        "claim": "Huge cannons fired balls of around 500 kg that made gaps in the walls (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+        "quote": "The Ottoman cannons repeatedly fired massive cannonballs weighing 500 kilograms (1,100 lb) over 1.5 kilometres (0.93 mi) which created gaps in the Theodosian walls"
+      },
+      {
+        "claim": "On 28 May the emperor and leaders held a last service in the Hagia Sophia",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+        "quote": "In the evening, a solemn last ceremony of Vespers was held in the Hagia Sophia"
+      },
+      {
+        "claim": "City fell 29 May 1453",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+        "quote": "was captured by the Ottoman Empire on 29 May 1453"
+      },
+      {
+        "claim": "Siege seen as heralding a change in siege warfare; gunpowder beat the walls",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+        "quote": "overcome by Ottoman infantry with the support of gunpowder , specifically from cannons and bombards , heralding a change in siege warfare"
+      }
+    ],
+    "overall": "pass"
+  }
+}

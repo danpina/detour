@@ -1,0 +1,98 @@
+{
+  "draft_id": "money-0040",
+  "created_at": "2026-10-26T20:30:51.626Z",
+  "queries": [
+    "bond certificate Papal states bond government bond",
+    "bond certificate",
+    "bond certificate Papal states bond"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-64751069",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bond certificate (AM 793576).jpg",
+      "credit": "API data Catalogue record Photo / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bond_certificate_(AM_793576).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Bond_certificate_%28AM_793576%29.jpg/960px-Bond_certificate_%28AM_793576%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "Confederate States of America loan certificate $1000; blank including 20 coupons",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-31045",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Halt the Hun! Buy U.S. Government Bonds Third Liberty Loan",
+      "credit": "Henry Patrick Raleigh (American, 1880-1945) printed by Edwards & Deutsch Litho. Company / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/31045",
+      "image_url": "https://www.artic.edu/iiif/2/045fd504-e9ff-5f01-b59c-55b98c98d6f2/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color lithograph on cream wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-65678468",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bond certificate (AM 793573).jpg",
+      "credit": "API data Catalogue record Photo / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bond_certificate_(AM_793573).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Bond_certificate_%28AM_793573%29.jpg/960px-Bond_certificate_%28AM_793573%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2979,
+      "height": 1967,
+      "alt_suggestion": "Confederate States of America Charlottesville $500, numbered 481.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-69541",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "One Dollar Silver Certificate",
+      "credit": "Victor Dubreuil American, born France, 1842–after 1910 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/69541",
+      "image_url": "https://www.artic.edu/iiif/2/4ecbef85-aec1-7455-e329-28540504fe96/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-16941041",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "SHE'S READY, TOO. BUY WAR BONDS - NARA - 515403.jpg",
+      "credit": "U.S. National Archives and Records Administration / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SHE%27S_READY,_TOO._BUY_WAR_BONDS_-_NARA_-_515403.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/SHE%27S_READY%2C_TOO._BUY_WAR_BONDS_-_NARA_-_515403.jpg/960px-SHE%27S_READY%2C_TOO._BUY_WAR_BONDS_-_NARA_-_515403.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2348,
+      "height": 3000,
+      "alt_suggestion": "SHE'S READY, TOO. BUY WAR BONDS - NARA - 515403.jpg",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-184638667",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Papal states bond certificate 1817.jpg",
+      "credit": "Papal States / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Papal_states_bond_certificate_1817.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Papal_states_bond_certificate_1817.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 899,
+      "height": 1247,
+      "alt_suggestion": "Papal States government bond from 1817, with an annual interest payment of 13.54 scudi",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"bond certificate Papal states bond government bond\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"bond certificate\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"bond certificate Papal states bond\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

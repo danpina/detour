@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-70342336",
+  "alt": "A Renaissance portrait of the friar Luca Pacioli at a table with a geometric slate, a glass polyhedron and an open book, beside a young man",
+  "fits": true,
+  "note": "Pacioli portrait attributed to de Barbari, public domain painting",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.4,
+    "zoom": 1.4
+  }
+}

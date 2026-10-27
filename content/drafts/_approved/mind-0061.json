@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Dunning-Kruger effect",
+    "angle": "What the effect does and does not say"
+  },
+  "created_at": "2026-10-27T06:06:56.048Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0061",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "The Dunning-Kruger effect, misread",
+    "body": {
+      "claim": "The Dunning-Kruger effect does not show that unskilled people rate themselves above experts.",
+      "why": "In the classic exam data, low performers overestimated their abilities, but their self-assessment was still lower than that of high performers. Laypeople often misread it as saying low-intelligence people are more confident than high-intelligence people. Some critics argue the pattern may largely be a statistical effect, plus a general tendency to think we are better than average."
+    },
+    "probes": [
+      {
+        "id": "mind-0061-p1",
+        "kind": "tf",
+        "question": "True or false: in the classic data, low performers rated themselves higher than high performers did.",
+        "answer": false
+      },
+      {
+        "id": "mind-0061-p2",
+        "kind": "mcq",
+        "question": "What does the statistical explanation say about the effect?",
+        "options": [
+          "It is purely a myth",
+          "It may largely be a mere statistical effect",
+          "It only affects experts",
+          "It proves poor performers cannot learn"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Dunning-Kruger effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Dunning–Kruger effect.jpg shows a chart of the Dunning-Kruger effect",
+    "keywords": [
+      "Dunning-Kruger effect",
+      "Dunning Kruger",
+      "confidence",
+      "chart"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.183Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Effect does not claim low performers are as confident as high performers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
+        "quote": "Nor does it claim that people lacking a given skill are as confident as high performers."
+      },
+      {
+        "claim": "Low performers overestimated but self-assessment was still lower than high performers (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
+        "quote": "Nevertheless, low performers' self-assessment is lower than that of high performers."
+      },
+      {
+        "claim": "Low performers overestimated their abilities in the exam data",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
+        "quote": "the participants who scored in the bottom quartile overestimated their test performance and their abilities"
+      },
+      {
+        "claim": "Laypeople misread it as low-intelligence people being more confident than high-intelligence people",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
+        "quote": "Among laypeople, the Dunning-Kruger effect is often misunderstood as the claim that people with low intelligence are more confident in their knowledge"
+      },
+      {
+        "claim": "Critics: pattern may largely be a statistical effect (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
+        "quote": "the empirical effect may largely be the result of a mere statistical effect"
+      },
+      {
+        "claim": "...plus a general tendency to think we are better than average",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
+        "quote": "people have a general tendency to think that they are better than average"
+      }
+    ],
+    "overall": "pass"
+  }
+}

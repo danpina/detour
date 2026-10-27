@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Bank runs and deposit insurance",
+    "angle": "Why a false rumour can sink a bank"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0052",
+    "interest": "money",
+    "type": "guess_first",
+    "title": "The rumour that wasn't true",
+    "body": {
+      "question": "A rumour says a bank is about to fail. It is false, and many customers know it. Can a run on the bank still start?",
+      "options": [
+        "No, people who know it is false stay put",
+        "Only if the bank really is short of money",
+        "Yes, if they suspect others will believe it"
+      ],
+      "answer": 2,
+      "reveal": "Yes. Even depositors who know the story is false have a reason to withdraw if they suspect others will believe it. Banks keep only a small proportion of their assets as cash, so more withdrawals raise the chance of default, which triggers still more. Deposit insurance, like the US FDIC's, is one protection."
+    },
+    "probes": [
+      {
+        "id": "money-0052-p1",
+        "kind": "cloze",
+        "question": "A bank run can become a self-____ prophecy: more withdrawals raise the chance of default, triggering further withdrawals.",
+        "answer": "fulfilling",
+        "accept": [
+          "fulfilling",
+          "self-fulfilling"
+        ]
+      },
+      {
+        "id": "money-0052-p2",
+        "kind": "tf",
+        "question": "True or false: FDIC deposit insurance covers up to $250,000 per depositor, per insured bank, for each account ownership category.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bank run (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bank_run"
+      },
+      {
+        "title": "Federal Deposit Insurance Corporation (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Federal_Deposit_Insurance_Corporation"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Bank Run on American Union Bank.jpeg (public domain) shows depositors crowding in front of a closed bank in 1932",
+    "keywords": [
+      "bank run 1932",
+      "American Union Bank",
+      "depositors crowd closed bank"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.978Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bank_run",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Federal_Deposit_Insurance_Corporation",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Even if a bank-failure rumour is false and many customers know it, a run can start if they suspect others will believe it",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bank_run",
+        "quote": "Even depositors who know the story is false will have an incentive to withdraw, if they suspect other depositors will believe the story."
+      },
+      {
+        "claim": "Banks keep only a small proportion of their assets as cash",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bank_run",
+        "quote": "where banks normally only keep a small proportion of their assets as cash"
+      },
+      {
+        "claim": "More withdrawals raise the chance of default, triggering still more withdrawals",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bank_run",
+        "quote": "as more people withdraw cash, the likelihood of default increases, triggering further withdrawals"
+      },
+      {
+        "claim": "Cloze p1: self-fulfilling prophecy (answer 'fulfilling', accepts 'self-fulfilling')",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bank_run",
+        "quote": "The story becomes a self-fulfilling prophecy",
+        "note": "Page uses 'self-fulfilling prophecy'; the stem already supplies 'self-', so both accepted answers are fine."
+      },
+      {
+        "claim": "Deposit insurance, like the US FDIC's, is one protection",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bank_run",
+        "quote": "the protection of deposit insurance systems such as the U.S. Federal Deposit Insurance Corporation"
+      },
+      {
+        "claim": "Probe p2: FDIC deposit insurance covers up to $250,000 per depositor, per insured bank, for each account ownership category",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Federal_Deposit_Insurance_Corporation",
+        "quote": "FDIC deposit insurance covers up to $250,000 per depositor, per FDIC-insured bank, for each account ownership category."
+      }
+    ],
+    "overall": "pass"
+  }
+}

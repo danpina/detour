@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-71553709",
+  "alt": "Scatter chart on a logarithmic axis showing microchip transistor counts rising steadily from 1971 to 2019.",
+  "fits": true,
+  "note": "Direct illustration of Moore's law; chart is text-heavy and has an Our World in Data logo, but no cleaner option.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

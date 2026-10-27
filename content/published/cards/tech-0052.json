@@ -1,0 +1,62 @@
+{
+  "id": "tech-0052",
+  "interest": "tech",
+  "title": "Fetch, decode, execute",
+  "probes": [
+    {
+      "id": "tech-0052-p1",
+      "question": "What is the right order of the instruction cycle?",
+      "kind": "mcq",
+      "options": [
+        "Execute, fetch, decode",
+        "Decode, execute, fetch",
+        "Fetch, decode, execute",
+        "Fetch, execute, decode"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "tech-0052-p2",
+      "question": "True or false: the CPU follows the fetch-decode-execute cycle from boot-up until the computer shuts down.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Instruction cycle (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Instruction_cycle"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:35.556Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0052.webp",
+    "alt": "A microscope photo of an opened CPU showing the silicon die with its many rectangular blocks, gold bond wires and package pins.",
+    "kind": "photo",
+    "credit": "Thomy pc at German Wikipedia / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Die_(the_%27heart%27)_of_a_microprocessor_Intel_80486_with_1.2_millions_of_transistors,_ca._1990.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Under all the apps, a CPU does one thing over and over: the instruction cycle. It runs from boot-up until the computer shuts down."
+      },
+      {
+        "text": "Fetch. A register called the program counter holds the address of the next instruction. The CPU reads that instruction from memory, and the counter moves on to the one after."
+      },
+      {
+        "text": "Decode. The control unit works out what the instruction means: which operations and operands are needed, and it signals the parts of the CPU that will do the work."
+      },
+      {
+        "text": "Execute. The CPU carries it out. Then the cycle starts again with the next instruction."
+      }
+    ]
+  }
+}

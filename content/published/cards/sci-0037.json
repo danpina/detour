@@ -1,0 +1,54 @@
+{
+  "id": "sci-0037",
+  "interest": "science",
+  "title": "Volts, amps and ohms",
+  "probes": [
+    {
+      "id": "sci-0037-p1",
+      "question": "In the water-pipe picture, what does a resistor correspond to?",
+      "kind": "mcq",
+      "options": [
+        "A pump",
+        "A constriction in the pipe",
+        "A water tank",
+        "The water itself"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0037-p2",
+      "question": "True or false: in an ohmic conductor, the current is directly proportional to the voltage across it.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hydraulic analogy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hydraulic_analogy"
+    },
+    {
+      "title": "Ohm's law (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ohm%27s_law"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:51.928Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0037.webp",
+    "alt": "A hand-drawn diagram of a water-pressure analogy for electric circuits, with a tall water source pipe, a narrow section and a drain to ground.",
+    "kind": "photo",
+    "credit": "Cyril Mechkov -- Circuit-fantasist / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Philosophy_hydraulic_analogy_1000.jpg"
+  },
+  "body": {
+    "claim": "Voltage pushes, current flows, and resistance holds back: in many conductors, current is directly proportional to voltage.",
+    "why": "Picture water pipes: a pump supplies pressure like a voltage source, and a resistor is like a narrow constriction that needs more pressure to pass the same flow. Ohm's law gives the constant of proportionality between voltage and current a name: resistance."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Voltage, current, resistance",
+    "angle": "The water-pipe analogy"
+  },
+  "created_at": "2026-10-26T20:31:08.682Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0037",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Volts, amps and ohms",
+    "body": {
+      "claim": "Voltage pushes, current flows, and resistance holds back: in many conductors, current is directly proportional to voltage.",
+      "why": "Picture water pipes: a pump supplies pressure like a voltage source, and a resistor is like a narrow constriction that needs more pressure to pass the same flow. Ohm's law gives the constant of proportionality between voltage and current a name: resistance."
+    },
+    "probes": [
+      {
+        "id": "sci-0037-p1",
+        "kind": "mcq",
+        "question": "In the water-pipe picture, what does a resistor correspond to?",
+        "options": [
+          "A pump",
+          "A constriction in the pipe",
+          "A water tank",
+          "The water itself"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0037-p2",
+        "kind": "tf",
+        "question": "True or false: in an ohmic conductor, the current is directly proportional to the voltage across it.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hydraulic analogy (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hydraulic_analogy"
+      },
+      {
+        "title": "Ohm's law (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Ohm%27s_law"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Hydraulic circuit (fish tank analogy).jpg shows a hydraulic circuit analogy (or File:Electric guide 3×2.5 mm.jpg, a copper wire)",
+    "keywords": [
+      "Hydraulic analogy",
+      "water pipe",
+      "Ohm's law",
+      "resistor"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.585Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hydraulic_analogy",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ohm%27s_law",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Resistor is a constriction that needs more pressure for the same flow (body, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hydraulic_analogy",
+        "quote": "A resistor is equivalent to a constriction in the bore of a pipe which requires more pressure to pass the same amount of water."
+      },
+      {
+        "claim": "A pump supplies pressure like a voltage source",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hydraulic_analogy",
+        "quote": "Voltage or current source: a dynamic pump with feedback control"
+      },
+      {
+        "claim": "Current is directly proportional to voltage in a well-behaved (ohmic) conductor (claim, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ohm%27s_law",
+        "quote": "the electric current between two points is directly proportional to the voltage"
+      },
+      {
+        "claim": "The constant of proportionality is called resistance",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ohm%27s_law",
+        "quote": "Introducing the constant of proportionality, the resistance"
+      }
+    ],
+    "overall": "pass"
+  }
+}

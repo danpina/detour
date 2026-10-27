@@ -1,0 +1,47 @@
+{
+  "id": "money-0064",
+  "interest": "money",
+  "title": "How far the dot-com crash fell",
+  "probes": [
+    {
+      "id": "money-0064-p1",
+      "question": "By October 2002 the Nasdaq Composite had fallen by about what percentage from its March 2000 peak?",
+      "kind": "estimate",
+      "answer": 78,
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "scale": "linear"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dot-com bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:19.274Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "money-0064.webp",
+    "alt": "A line chart of the Nasdaq Composite index from 1994 to 2004, rising to a sharp peak around 2000 and then falling.",
+    "kind": "photo",
+    "credit": "Made by ed g2s • talk. / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:NASDAQ_IXIC_-_dot-com_bubble.png"
+  },
+  "body": {
+    "question": "The Nasdaq Composite rose by 600% between 1995 and its peak in March 2000. By October 2002, by about what percentage had it fallen from that peak?",
+    "unit": "%",
+    "min": 0,
+    "max": 100,
+    "scale": "linear",
+    "answer": 78,
+    "reveal": "About 78%. Between 1995 and its peak in March 2000 the Nasdaq Composite rose by 600%, then fell 78% from the peak by October 2002."
+  }
+}

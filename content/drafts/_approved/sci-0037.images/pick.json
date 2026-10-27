@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-3003369",
+  "alt": "A hand-drawn diagram of a water-pressure analogy for electric circuits, with a tall water source pipe, a narrow section and a drain to ground.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

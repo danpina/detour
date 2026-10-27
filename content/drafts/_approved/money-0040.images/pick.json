@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-184638667",
+  "alt": "An 1817 Papal States public-debt certificate in Italian, with a papal emblem and handwritten details.",
+  "fits": true,
+  "note": "A genuine early government bond certificate; the Confederate one was less neutral.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

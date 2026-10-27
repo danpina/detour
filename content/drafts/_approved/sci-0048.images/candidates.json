@@ -1,0 +1,110 @@
+{
+  "draft_id": "sci-0048",
+  "created_at": "2026-10-26T20:34:06.811Z",
+  "queries": [
+    "Superconductivity Meissner effect levitating magnet superconductor",
+    "Superconductivity",
+    "Superconductivity Meissner effect"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-74914092",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Superconductors.jpg",
+      "credit": "Ainur physicist / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Superconductors.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Superconductors.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 960,
+      "height": 1280,
+      "alt_suggestion": "Demonstrating a superconductivity at the boiling temperature of liquid nitrogen (77 K) using the 90 K superconductor YBa2Cu3O7. A little boat 'Thomas' levitates due to the Meissner effect. A supercond",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA17995",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Detectors See Gravitational Waves from Dawn of Universe",
+      "credit": "NASA/JPL-Caltech / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA17995",
+      "image_url": "https://images-assets.nasa.gov/image/PIA17995/PIA17995~medium.jpg",
+      "alt_suggestion": "This image shows an array of the 512 superconducting detectors used on the BICEP2 telescope at the South Pole. The technology was key to detecting the effects of gravitational waves associated with th",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-20701",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Waterloo Bridge, Sunlight Effect",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/20701",
+      "image_url": "https://www.artic.edu/iiif/2/827d02ef-6765-9728-c07e-52ad22b73fd3/full/843,/0/default.jpg",
+      "alt_suggestion": "Horizontal oil painting in shades of pale purple, pink, and light blue of a bridge composed of multiple linked archways over water, engulfed in hazy fog. Various indistinct, colorful forms cross the bridge, and factory smokestacks rise in the distance.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-129085322",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "SuperCond-ByYear-ALL.jpg",
+      "credit": "Walter Tau / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SuperCond-ByYear-ALL.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/SuperCond-ByYear-ALL.jpg/960px-SuperCond-ByYear-ALL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1299,
+      "height": 704,
+      "alt_suggestion": "searches were done on 2023-02-06 using SciFinder-N for non-patents and Questel-Orbit for patents.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-05pd0182",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-05pd-0182",
+      "credit": "NASA or National Aeronautics and Space Administration / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/05pd0182",
+      "image_url": "https://images-assets.nasa.gov/image/05pd0182/05pd0182~medium.jpg",
+      "alt_suggestion": "KENNEDY SPACE CENTER, FLA. - An employee at the Space Station Processing Facility performs engineering certification testing of the Alpha Magnetic spectrometer (AMS). The AMS is a superconducting magn",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-14899120",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Levitation of a magnet on a superconductor.jpg",
+      "credit": "Julien Bobroff (user:Jubobroff), Frederic Bouquet (user:Fbouquet), Jeffrey Quilliam, LPS, Orsay, France / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Levitation_of_a_magnet_on_a_superconductor.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Levitation_of_a_magnet_on_a_superconductor.jpg/960px-Levitation_of_a_magnet_on_a_superconductor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1607,
+      "height": 2400,
+      "alt_suggestion": "levitation of a magnet on top of a superconductor of cuprate type YBa2Cu3O7 cooled at -196°C.",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-74913901",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Magnet levitating on top of superconductor cooled by liquid nitrogen.jpg",
+      "credit": "Ainur physicist / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Magnet_levitating_on_top_of_superconductor_cooled_by_liquid_nitrogen.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Magnet_levitating_on_top_of_superconductor_cooled_by_liquid_nitrogen.jpg/960px-Magnet_levitating_on_top_of_superconductor_cooled_by_liquid_nitrogen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4048,
+      "height": 3036,
+      "alt_suggestion": "Meissner effect (responsible for levitation of the magnet here) basically shows the expulsion of magnetic flux when a material becomes superconducting in a magnetic field.",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Superconductivity Meissner effect levitating magnet superconductor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Superconductivity\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Superconductivity Meissner effect\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

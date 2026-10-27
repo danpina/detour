@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-121217256",
+  "alt": "A young oak seedling with lobed leaves growing beside a mossy old tree stump in grass.",
+  "fits": true,
+  "note": "Oak sapling for growth over time; other sapling candidate was a maple.",
+  "crop": {
+    "fx": 0.7,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

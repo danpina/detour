@@ -1,0 +1,50 @@
+{
+  "id": "num-0067",
+  "interest": "numbers",
+  "title": "Some questions no program can answer",
+  "probes": [
+    {
+      "id": "num-0067-p1",
+      "question": "What does the halting problem ask?",
+      "kind": "mcq",
+      "options": [
+        "Whether a program is fast",
+        "Whether a program will finish or run forever",
+        "Whether a program has bugs",
+        "Whether a program is short"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0067-p2",
+      "question": "True or false: Turing proved that one algorithm can decide the halting problem for every program and input.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Halting problem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Halting_problem"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:40.561Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0067.webp",
+    "alt": "A dark slate sculpture of Alan Turing seated at a desk, made by Stephen Kettle and shown in a museum.",
+    "kind": "photo",
+    "credit": "DeFacto / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Alan_Turing_by_Stephen_Kettle_2007.jpg"
+  },
+  "body": {
+    "claim": "No single program can tell, for every other program, whether it will finish or run forever.",
+    "why": "This is the halting problem: given a program and an input, decide whether it eventually halts or runs forever. Alan Turing proved in 1937 that no general algorithm can solve it for all program-input pairs. A proof by contradiction supposes such a checker exists and shows that leads to nonsense."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0039",
+  "created_at": "2026-10-26T20:33:08.035Z",
+  "queries": [
+    "Voltaic pile Alessandro Volta battery",
+    "Voltaic pile",
+    "Voltaic pile Alessandro Volta"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-68321006",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Volta battery-MHS 373-IMG 3840-gradient.jpg",
+      "credit": "Rama / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Volta_battery-MHS_373-IMG_3840-gradient.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Volta_battery-MHS_373-IMG_3840-gradient.jpg/960px-Volta_battery-MHS_373-IMG_3840-gradient.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 6000,
+      "alt_suggestion": "Volta battery-MHS 373-IMG 3840-gradient.jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-16633",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Seine at Port-Marly, Piles of Sand",
+      "credit": "Alfred Sisley (British, active in France, 1839–1899) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16633",
+      "image_url": "https://www.artic.edu/iiif/2/c4425cb6-d8b5-6390-603d-7f802406d05d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-107851712",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "La pile de Volta (Le Petit journal).jpg",
+      "credit": "Le Petit Journal / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_pile_de_Volta_(Le_Petit_journal).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/La_pile_de_Volta_%28Le_Petit_journal%29.jpg/960px-La_pile_de_Volta_%28Le_Petit_journal%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3444,
+      "height": 4939,
+      "alt_suggestion": "Italian physicist Alessandro Volta (1745-1827), demonstrating his pile (battery) to Napoleon in Paris, 1801. From Le Petit Journal 1901.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-23458",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Piled Up Strange Peaks",
+      "credit": "Qian Feng 錢灃 Chinese, 1740-1795 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/23458",
+      "image_url": "https://www.artic.edu/iiif/2/95fcaca2-fab6-8e7d-6f20-00cfedffce71/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of hanging scroll; ink on paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-107851013",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Volta présente son invention à Napoléon.jpg",
+      "credit": "Le Petit Journal / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Volta_pr%C3%A9sente_son_invention_%C3%A0_Napol%C3%A9on.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Volta_pr%C3%A9sente_son_invention_%C3%A0_Napol%C3%A9on.jpg/960px-Volta_pr%C3%A9sente_son_invention_%C3%A0_Napol%C3%A9on.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2148,
+      "height": 3000,
+      "alt_suggestion": "Italian physicist Alessandro Volta (1745-1827), demonstrating his pile (battery) to Napoleon in Paris, 1801. From Le Petit Journal 1901.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Voltaic pile Alessandro Volta battery\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Voltaic pile\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Voltaic pile Alessandro Volta\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

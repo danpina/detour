@@ -1,0 +1,54 @@
+{
+  "id": "sci-0044",
+  "interest": "science",
+  "title": "The grid has no spare shelf",
+  "probes": [
+    {
+      "id": "sci-0044-p1",
+      "question": "When a grid is heavily loaded, its frequency tends to...",
+      "kind": "mcq",
+      "options": [
+        "Rise",
+        "Fall slightly",
+        "Jump to double",
+        "Stay exactly fixed"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0044-p2",
+      "question": "True or false: on a synchronous grid, generation and consumption must be balanced across the whole grid.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Electrical grid (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Electrical_grid"
+    },
+    {
+      "title": "Utility frequency (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Utility_frequency"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:35:00.146Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0044.webp",
+    "alt": "A power plant control room with walls of gauges and switch panels and a desk console in the foreground.",
+    "kind": "photo",
+    "credit": "Magnetic Rahim / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Power_plant_control_room.jpg"
+  },
+  "body": {
+    "claim": "On a big electricity grid, generation and consumption must stay balanced, because energy is consumed as it is produced.",
+    "why": "The grid's AC frequency shows how things stand: it falls slightly when the grid is heavily loaded and rises when lightly loaded, and utilities adjust generation to keep it steady. In the immediate short term, the spinning generators themselves store energy as rotational motion."
+  }
+}

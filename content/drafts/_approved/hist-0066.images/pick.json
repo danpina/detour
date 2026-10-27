@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-2809505",
+  "alt": "A 13th-century Baghdad manuscript illustration of scholars seated in front of shelves of books in a library",
+  "fits": true,
+  "note": "Maqamat library scene; weak but accurate match for House of Wisdom as an Abbasid-era Baghdad library; alt does not claim it is the House of Wisdom",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

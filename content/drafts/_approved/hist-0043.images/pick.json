@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-107816063",
+  "alt": "Black and white photo of the graffiti-covered Berlin Wall in April 1989 with the Brandenburg Gate behind it.",
+  "fits": true,
+  "note": "CC BY-SA 4.0, 4608x3072; crop on the gate",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.55,
+    "zoom": 1.4
+  }
+}

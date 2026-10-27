@@ -1,0 +1,99 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Why we have leap years",
+    "angle": "Why 1900 was not a leap year"
+  },
+  "created_at": "2026-10-26T20:30:07.409Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0070",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "Was 1900 a leap year?",
+    "body": {
+      "question": "Was 1900 a leap year?",
+      "options": [
+        "Yes, it is divisible by 4",
+        "No"
+      ],
+      "answer": 1,
+      "reveal": "No. A leap day every 4 years is slightly too much, because the year is about 365.2422 days, not 365.25. That adds up to about 3 extra days every 400 years. So years divisible by 100 skip the leap day unless they are also divisible by 400: 2000 was a leap year, 1900 was not."
+    },
+    "probes": [
+      {
+        "id": "sci-0070-p1",
+        "kind": "cloze",
+        "question": "Years divisible by 100 are leap years only if they are also divisible by ____.",
+        "answer": "400",
+        "accept": []
+      },
+      {
+        "id": "sci-0070-p2",
+        "kind": "tf",
+        "question": "True or false: 2100 will be a leap year.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Leap year (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Leap_year"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Calendar-leapyeardate.jpg (CC BY-SA 3.0) shows a calendar with the leap day",
+    "keywords": [
+      "Calendar leap year date",
+      "leap year calendar",
+      "calendar February"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.065Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Leap_year",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Leap-year rule: every 4 years except years divisible by 100 but not by 400 (cloze 400; reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Leap_year",
+        "quote": "this extra leap day occurs in each year that is a multiple of 4, except for years evenly divisible by 100 but not by 400."
+      },
+      {
+        "claim": "2000 was a leap year, 1900 was not, 2100 will not be (probe 2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Leap_year",
+        "quote": "Thus 1600, 2000 and 2400 are leap years, but 1700, 1800, 1900, 2100, 2200, and 2300 are not."
+      },
+      {
+        "claim": "A year is about 365.2422 days, not 365.25",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Leap_year",
+        "quote": "a Julian year lasts 365.25 days, a mean tropical year about 365.2422 days"
+      },
+      {
+        "claim": "A leap day every 4 years drifts about 3 days every 400 years",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Leap_year",
+        "quote": "Consequently, even this Julian calendar drifts out of 'true' by about 3 days every 400 years."
+      },
+      {
+        "claim": "365.25 - 365.2422 = 0.0078 days/year x 400 = 3.1 days.",
+        "verdict": "pass",
+        "note": "Verified by calculation: 0.0078 x 400 = 3.1"
+      }
+    ],
+    "overall": "pass"
+  }
+}

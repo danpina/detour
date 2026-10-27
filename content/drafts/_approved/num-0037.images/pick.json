@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-51584011",
+  "alt": "Vintage and modern jets flying in a close formation with smoke trails above a sea of clouds and blue mountains.",
+  "fits": true,
+  "note": "Dramatic formation flight; wide image so crop centred.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

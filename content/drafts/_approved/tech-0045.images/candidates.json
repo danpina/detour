@@ -1,0 +1,89 @@
+{
+  "draft_id": "tech-0045",
+  "created_at": "2026-10-27T06:11:51.943Z",
+  "queries": [
+    "tunnel road tunnel underground tunnel",
+    "tunnel",
+    "tunnel road tunnel"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-54037672",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Gotthard Road Tunnel - Safety Tunnel (15420747249).jpg",
+      "credit": "Kecko / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gotthard_Road_Tunnel_-_Safety_Tunnel_(15420747249).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Gotthard_Road_Tunnel_-_Safety_Tunnel_%2815420747249%29.jpg/960px-Gotthard_Road_Tunnel_-_Safety_Tunnel_%2815420747249%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4352,
+      "height": 2904,
+      "alt_suggestion": "The safety tunnel is only in difficult geological rock lined with concrete. Without vehicle you would spend hours traveling on foot, because the tunnel has a length of 16,322 km. Switzerland, Oct 16, ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-AC-39666",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Wind Tunnel Test of Stoppable Rotors in Ames 40x80ft Wind Tunnel.",
+      "credit": "Don Richey / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/AC-39666",
+      "image_url": "https://images-assets.nasa.gov/image/AC-39666/AC-39666~medium.jpg",
+      "alt_suggestion": "3/4 front view of model in Ames 40x80 foot wind tunnel.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-86938",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Savoie 41, Tunnel de la Tête Noire",
+      "credit": "Auguste-Rosalie Bisson French, 1826–1900 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/86938",
+      "image_url": "https://www.artic.edu/iiif/2/8b2527ab-d438-f07e-2e1e-c95ca2e061f2/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of albumen print.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-54037705",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Gotthard Road Tunnel - Safety Tunnel (14987220533).jpg",
+      "credit": "Kecko / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gotthard_Road_Tunnel_-_Safety_Tunnel_(14987220533).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Gotthard_Road_Tunnel_-_Safety_Tunnel_%2814987220533%29.jpg/960px-Gotthard_Road_Tunnel_-_Safety_Tunnel_%2814987220533%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4352,
+      "height": 2904,
+      "alt_suggestion": "Ride through the safety tunnel from Göschenen towards ventilation center Bäzberg. Switzerland, Oct 16, 2014. (13/35)",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-A-7950",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Douglas A-26B Airplane in Ames 40x80 Wind Tunnel.",
+      "credit": "Don Richey / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/A-7950",
+      "image_url": "https://images-assets.nasa.gov/image/A-7950/A-7950~medium.jpg",
+      "alt_suggestion": "Installation of the Douglas A-26B airplane in the 40x80 foot wind tunnel at NACA's Ames Research Center. Airplane being centered over tunnel opening.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Kreta - Europastraße75 1.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"tunnel road tunnel underground tunnel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"tunnel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"tunnel road tunnel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

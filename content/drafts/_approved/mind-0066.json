@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Choice overload",
+    "angle": "When more choice backfires"
+  },
+  "created_at": "2026-10-27T06:06:56.077Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0066",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "When more choice backfires",
+    "body": {
+      "claim": "Too many similar options can leave people less satisfied, but only under certain conditions.",
+      "why": "With many equally good options, each must be weighed against the others. Satisfaction is described by an inverted U: it rises, peaks, then falls into pressure and confusion. The effect is not universal. It needs a chooser with no clear prior preference and no clearly dominant option. With a preference, the number of options has little impact."
+    },
+    "probes": [
+      {
+        "id": "mind-0066-p1",
+        "kind": "mcq",
+        "question": "Which situation is most likely to cause choice overload?",
+        "options": [
+          "Many equally good options and no clear preference",
+          "Two options, one clearly best",
+          "A shopper who knows exactly what they want",
+          "A single option"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0066-p2",
+        "kind": "tf",
+        "question": "True or false: when people have a clear preference, the number of options has little impact on their satisfaction.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Overchoice (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Overchoice"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Ice cream- 4 flavours.jpg shows four ice cream flavours",
+    "keywords": [
+      "ice cream flavours",
+      "ice cream",
+      "choice",
+      "dessert"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.235Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Overchoice",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Many similar options: each must be weighed against the others",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overchoice",
+        "quote": "Having too many approximately equally good options is mentally draining because each option must be weighed against alternatives to select the best one."
+      },
+      {
+        "claim": "Satisfaction follows an inverted U",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overchoice",
+        "quote": "The satisfaction of choices by number of options available can be described by an inverted U model."
+      },
+      {
+        "claim": "It rises, peaks, then falls into pressure and confusion",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overchoice",
+        "quote": "as the number of choices increases it then peaks and people tend to feel more pressure, confusion, and potentially dissatisfaction with their choice"
+      },
+      {
+        "claim": "Too many options can leave people less satisfied (smaller sets lead to more satisfaction)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overchoice",
+        "quote": "smaller choice sets lead to increased satisfaction and reduced regret"
+      },
+      {
+        "claim": "The effect is not universal; it has preconditions",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overchoice",
+        "quote": "Choice overload is not a problem in all cases, there are some preconditions that must be met before the effect can take place."
+      },
+      {
+        "claim": "Needs a chooser with no clear prior preference (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overchoice",
+        "quote": "people making the choice must not have a clear prior preference for an item type or category"
+      },
+      {
+        "claim": "Needs no clearly dominant option (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overchoice",
+        "quote": "there must not be a clearly dominant option in the choice set"
+      },
+      {
+        "claim": "With a preference, the number of options has little impact on satisfaction (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Overchoice",
+        "quote": "When the choice-maker has a preference, the number of options has little impact on the final decision and satisfaction."
+      }
+    ],
+    "overall": "pass"
+  }
+}

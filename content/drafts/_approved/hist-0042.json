@@ -1,0 +1,100 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "New Zealand women's vote, 1893",
+    "angle": "Persistent petitions won the vote for women"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0042",
+    "interest": "history",
+    "type": "estimate",
+    "title": "Thirty-two thousand names",
+    "body": {
+      "question": "In 1893, suffragists presented a petition to New Zealand's Parliament asking for votes for women. About how many signatures did it carry?",
+      "unit": "signatures",
+      "min": 1000,
+      "max": 1000000,
+      "scale": "log",
+      "answer": 32000,
+      "reveal": "Nearly 32,000, almost a quarter of the adult European female population of New Zealand. It followed petitions of over 9,000 signatures in 1891 and almost 20,000 in 1892. The electoral bill was given royal assent on 19 September 1893."
+    },
+    "probes": [
+      {
+        "id": "hist-0042-p1",
+        "kind": "mcq",
+        "question": "Which country became the first in the world where all women could vote in parliamentary elections?",
+        "options": [
+          "Britain",
+          "The United States",
+          "New Zealand",
+          "France"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "hist-0042-p2",
+        "kind": "tf",
+        "question": "True or false: the suffrage petitions to New Zealand's Parliament grew larger each year from 1891 to 1893.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Women's suffrage in New Zealand (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:1893 New Zealand suffrage petition.jpg shows part of the 1893 petition (CC BY 4.0, portrait)",
+    "keywords": [
+      "1893 suffrage petition",
+      "New Zealand women suffrage",
+      "Kate Sheppard",
+      "petition roll"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.132Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "1893 petition carried nearly 32,000 signatures, almost a quarter of the adult European female population (answer 32000)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand",
+        "quote": "finally in 1893 nearly 32,000 signatures were presented - almost a quarter of the adult European female population of New Zealand"
+      },
+      {
+        "claim": "Earlier petitions: over 9,000 in 1891 and almost 20,000 in 1892; grew each year (p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand",
+        "quote": "over 9,000 signatures were delivered in 1891, followed by a petition of almost 20,000 signatures in 1892"
+      },
+      {
+        "claim": "Electoral bill given royal assent on 19 September 1893",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand",
+        "quote": "The electoral bill granting women the franchise was given royal assent by Governor Lord Glasgow on 19 September 1893"
+      },
+      {
+        "claim": "New Zealand first nation where all women could vote in parliamentary elections (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand",
+        "quote": "New Zealand became the first nation in the world in which all women had the right to vote in parliamentary elections"
+      }
+    ],
+    "overall": "pass"
+  }
+}

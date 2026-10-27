@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-76347955",
+  "alt": "A Babylonian clay tablet (YBC 7289) with a square and its diagonals, inscribed with an ancient approximation of the square root of 2.",
+  "fits": true,
+  "note": "Babylonian tablet, described as such; shows square diagonal and sqrt2 value. Better than abstract diagrams.",
+  "crop": {
+    "fx": 0.6,
+    "fy": 0.27,
+    "zoom": 1.5
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Attentional blink",
+    "angle": "The missed second target"
+  },
+  "created_at": "2026-10-27T06:06:56.040Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0058",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "The two-target blind moment",
+    "body": {
+      "question": "Letters flash rapidly one after another and you must spot two targets, X and K. You catch the X. When is a second target K most likely to be missed?",
+      "options": [
+        "Several seconds after the X",
+        "About 200 to 500 milliseconds after the X",
+        "Only if K comes before the X",
+        "Never: you always catch both"
+      ],
+      "answer": 1,
+      "reveal": "People struggle to notice a second target that appears 200 to 500 milliseconds after the first and is followed by distractions. This is the attentional blink. It is thought to come from a two-stage visual system: everything gets some processing, but only salient items get in-depth processing."
+    },
+    "probes": [
+      {
+        "id": "mind-0058-p1",
+        "kind": "tf",
+        "question": "True or false: the attentional blink means people can never see a second target in a fast stream.",
+        "answer": false
+      },
+      {
+        "id": "mind-0058-p2",
+        "kind": "mcq",
+        "question": "In the stream B, X, C, K with targets X and K, which target is often missed?",
+        "options": [
+          "B",
+          "X",
+          "C",
+          "K"
+        ],
+        "answer": 3
+      }
+    ],
+    "sources": [
+      {
+        "title": "Attentional blink (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Attentional_blink"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:RSVP.png shows an example frame of a rapid serial visual presentation of letters",
+    "keywords": [
+      "RSVP",
+      "rapid serial visual presentation",
+      "letters",
+      "attention"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.160Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Attentional_blink",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Second target is missed if it appears 200 to 500 ms after the first and is followed by distractions",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Attentional_blink",
+        "quote": "struggle to notice a second visual target in a rapid sequence if it appears 200 to 500 milliseconds after the first"
+      },
+      {
+        "claim": "In a stream B, X, C, K with targets X and K, K is often missed (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Attentional_blink",
+        "quote": "\"K\" is often missed if a letter like \"C\" comes between them"
+      },
+      {
+        "claim": "It does not mean people can never see a second target: they often fail, and consecutive targets are usually both noticed (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Attentional_blink",
+        "quote": "people usually notice both because they are consecutive"
+      },
+      {
+        "claim": "Participants often fail to detect a second salient target within the blink",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Attentional_blink",
+        "quote": "participants often fail to detect a second salient target if it is presented within the blink"
+      },
+      {
+        "claim": "Thought to come from a two-stage visual system",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Attentional_blink",
+        "quote": "it is thought to be a product of a two-stage visual processing system"
+      },
+      {
+        "claim": "Everything gets some processing but only salient items get in-depth processing",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Attentional_blink",
+        "quote": "all stimuli are processed to some extent by an initial parallel stage, and only salient ones are selected for in-depth processing"
+      }
+    ],
+    "overall": "pass"
+  }
+}

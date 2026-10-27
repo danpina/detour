@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-54493609",
+  "alt": "Museum display of Yuan dynasty clay figurines of couriers on horseback, one carrying a box on its back.",
+  "fits": true,
+  "note": "CC BY-SA 4.0 museum photo, 5014x3105; some glass reflection",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.5,
+    "zoom": 1.3
+  }
+}

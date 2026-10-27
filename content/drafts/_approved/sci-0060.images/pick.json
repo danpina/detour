@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-74563757",
+ "alt": "Low tide at the Bay of Fundy, with exposed rocky seabed beside a red-cliffed wooded shore.",
+ "fits": true,
+ "note": "Shows low tide flats.",
+ "crop": {
+  "fx": 0.45,
+  "fy": 0.55,
+  "zoom": 1
+ }
+}

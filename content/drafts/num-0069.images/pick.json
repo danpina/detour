@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-65093104",
+  "alt": "An ornate old steel padlock with its key and sprung bolts displayed, from the Metropolitan Museum of Art.",
+  "fits": true,
+  "note": "Padlock with key, CC0, no brand (the brass padlock had a sticker).",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

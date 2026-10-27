@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0049",
+  "created_at": "2026-10-27T06:09:50.681Z",
+  "queries": [
+    "Norman Borlaug Green Revolution wheat field",
+    "Norman Borlaug",
+    "Norman Borlaug Green Revolution"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-4844830",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Norman Borlaug (2004).jpg",
+      "credit": "Ben Zinner, USAID / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Norman_Borlaug_(2004).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Norman_Borlaug_%282004%29.jpg/960px-Norman_Borlaug_%282004%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1270,
+      "height": 1116,
+      "alt_suggestion": "Green Revolution icon and Nobel Peace Laureate Norman Borlaug on his 90th birthday, 2004. Norman Borlaug, 94, told USAID officials that the world should avoid “complacency” in fighting the current foo",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-64818",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Stacks of Wheat (End of Summer)",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/64818",
+      "image_url": "https://www.artic.edu/iiif/2/a38e2828-ec6f-ece1-a30f-70243449197b/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting composed of short, dense brushstrokes depicts two domed stacks of wheat that cast long shadows on a field. The angled light indicates either a rising or setting sun.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-74578001",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Norman Borlaug 1.jpg",
+      "credit": "Kingkongphoto & www.celebrity-photos.com from Laurel Maryland, USA / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Norman_Borlaug_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Norman_Borlaug_1.jpg/960px-Norman_Borlaug_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1188,
+      "height": 1782,
+      "alt_suggestion": "Contact me for usage of this image. © copyright JohnMathewSmith 2010",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-111318",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Stack of Wheat",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/111318",
+      "image_url": "https://www.artic.edu/iiif/2/27c1d720-8ca5-79a4-5e51-530bf75c1591/full/843,/0/default.jpg",
+      "alt_suggestion": "A snowy landscape in cool tones featuring a prominent, snow-dusted haystack in reddish brown in front of a row of red-brown trees and low, blue mountains, all beheath a pink-gray strip of sky.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-5375782",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "2006 Norman Borlaug Congressional Gold Medal front.jpg",
+      "credit": "United States Mint. Design: Obverse - Phebe Hemphill. Reverse - Don Everhart. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2006_Norman_Borlaug_Congressional_Gold_Medal_front.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/2006_Norman_Borlaug_Congressional_Gold_Medal_front.jpg/960px-2006_Norman_Borlaug_Congressional_Gold_Medal_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1470,
+      "height": 1470,
+      "alt_suggestion": "Front and Back of Congressional Gold Medal awarded to Norman Borlaug",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Norman Borlaug Green Revolution wheat field\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Norman Borlaug\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Norman Borlaug Green Revolution\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

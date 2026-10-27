@@ -1,0 +1,114 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Emergency fund",
+    "angle": "Cash cushion for unplanned expenses"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0046",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "A cushion for the unexpected",
+    "body": {
+      "claim": "An emergency fund is cash set aside for unplanned expenses, and even a small one helps.",
+      "why": "The CFPB gives car repairs, medical bills and a loss of income as examples. Without savings, a financial shock can turn into debt that is generally harder to pay off. In an October 2025 Federal Reserve survey, 63 percent of US adults said they would cover a $400 emergency entirely with cash or its equivalent."
+    },
+    "probes": [
+      {
+        "id": "money-0046-p1",
+        "kind": "mcq",
+        "question": "Which is a typical use of an emergency fund?",
+        "options": [
+          "A holiday",
+          "A car repair",
+          "Concert tickets"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0046-p2",
+        "kind": "tf",
+        "question": "True or false: according to the CFPB, even a small amount put aside can provide some financial security.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "An essential guide to building an emergency fund (CFPB)",
+        "url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/"
+      },
+      {
+        "title": "Emergency fund (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Emergency_fund"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:A jar of world coins.jpg shows a jar full of coins",
+    "keywords": [
+      "jar of coins",
+      "coin jar",
+      "coins savings",
+      "savings jar"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.845Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Emergency_fund",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Emergency fund is cash set aside for unplanned expenses",
+        "verdict": "pass",
+        "source_url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/",
+        "quote": "An emergency fund is a cash reserve that's specifically set aside for unplanned expenses or financial emergencies."
+      },
+      {
+        "claim": "CFPB examples: car repairs, medical bills, loss of income (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/",
+        "quote": "Some common examples include car repairs, home repairs, medical bills, or a loss of income."
+      },
+      {
+        "claim": "Even a small amount put aside helps (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/",
+        "quote": "By putting money aside-even a small amount-for these unplanned expenses, you're able to recover quicker"
+      },
+      {
+        "claim": "Without savings a shock can turn into debt that is generally harder to pay off",
+        "verdict": "pass",
+        "source_url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/",
+        "quote": "They may rely on credit cards or loans, which can lead to debt that's generally harder to pay off."
+      },
+      {
+        "claim": "October 2025 Fed survey",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Emergency_fund",
+        "quote": "In the Federal Reserve's October 2025 Survey of Household Economics and Decisionmaking"
+      },
+      {
+        "claim": "63 percent would cover a $400 emergency entirely with cash or equivalent",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Emergency_fund",
+        "quote": "In the same survey, 63 percent said they would cover a hypothetical $400 emergency expense entirely with cash or its equivalent"
+      }
+    ],
+    "overall": "pass"
+  }
+}

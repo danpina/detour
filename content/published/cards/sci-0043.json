@@ -1,0 +1,54 @@
+{
+  "id": "sci-0043",
+  "interest": "science",
+  "title": "Why power lines run at high voltage",
+  "probes": [
+    {
+      "id": "sci-0043-p1",
+      "question": "If the current in a power line is halved, the energy lost to the wire's resistance falls by a factor of...",
+      "kind": "mcq",
+      "options": [
+        "2",
+        "4",
+        "8",
+        "It does not change"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0043-p2",
+      "question": "True or false: transformers can change AC voltage levels, stepping them up or down.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Electric power transmission (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Electric_power_transmission"
+    },
+    {
+      "title": "Transformer (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Transformer"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:58.865Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0043.webp",
+    "alt": "A steel lattice transmission tower carrying high-voltage power lines against a blue sky, with hills in the distance.",
+    "kind": "photo",
+    "credit": "Ron Clausen / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:High_voltage_transmission_tower_and_lines._Auburn_WA.jpg"
+  },
+  "body": {
+    "claim": "Long-distance power lines use very high voltage so that less energy is lost as heat.",
+    "why": "For the same power, higher voltage means lower current, and lower current means less heating loss. Joule's first law says energy losses are proportional to the square of the current, so halving the current cuts the loss in a given conductor by a factor of four. Transformers raise the AC voltage for transmission and lower it again for local use."
+  }
+}

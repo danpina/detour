@@ -1,0 +1,47 @@
+{
+  "id": "num-0062",
+  "interest": "numbers",
+  "title": "Counting to 1,023 on your fingers",
+  "probes": [
+    {
+      "id": "num-0062-p1",
+      "question": "How high can you count on one hand in finger binary?",
+      "kind": "estimate",
+      "answer": 31,
+      "unit": "",
+      "min": 5,
+      "max": 1000,
+      "scale": "log"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Finger binary (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Finger_binary"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:25.167Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "num-0062.webp",
+    "alt": "A hand held up with all five fingers spread open, from a photo series of finger-counting hand shapes.",
+    "kind": "photo",
+    "credit": "Justinkunimune / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Finger-counting_to_10_ASL.png"
+  },
+  "body": {
+    "question": "Using finger binary, where each finger is one binary digit, what is the highest number you can show on both hands?",
+    "unit": "",
+    "min": 10,
+    "max": 10000,
+    "scale": "log",
+    "answer": 1023,
+    "reveal": "1,023. Each finger is a bit worth twice the one before: 1, 2, 4, 8 and 16 on one hand. One hand alone reaches 31, and ten fingers reach 1,023."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-134195945",
+  "alt": "Close-up of server rack front panels with rows of drive bays and glowing blue and green lights.",
+  "fits": true,
+  "note": "Clean server hardware, no logos.",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

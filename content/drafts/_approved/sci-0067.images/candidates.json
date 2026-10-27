@@ -1,0 +1,67 @@
+{
+  "draft_id": "sci-0067",
+  "created_at": "2026-10-26T20:32:23.486Z",
+  "queries": [
+    "Atomic Clock Louis Essen caesium atomic clock atomic clock",
+    "Atomic Clock Louis Essen",
+    "Atomic Clock Louis Essen caesium atomic clock"
+  ],
+  "candidates": [
+    {
+      "id": "artic-57819",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Wall Clock",
+      "credit": "Case by Jean-Pierre Latz (born Cologne [now Germany], active France, 1691–1754) Clockwork by Francis Bayley (active Austrian Netherlands [now Belgium], mid-1700s) Case: Paris; clock: Ghent, Flanders, Austrian Netherlands (now Belgium) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/57819",
+      "image_url": "https://www.artic.edu/iiif/2/ce583554-7fac-705e-2130-ec94c1abb2e2/full/843,/0/default.jpg",
+      "alt_suggestion": "Golden-colored, ornate wall clock adorned with golden flourishes, a bent figure with an arrow at top.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-109627",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tall-Case Clock",
+      "credit": "Movement by George Stevens Hindon, England / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/109627",
+      "image_url": "https://www.artic.edu/iiif/2/0c2445d0-5d5e-b487-1824-dacb6ec0565f/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of japanned pine."
+    },
+    {
+      "id": "artic-90996",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Clock",
+      "credit": "Meissen Porcelain Manufactory German, founded 1710 Modeled by George Fritzsche (German, 1681-1709) Painted in the manner of Johann Gregor Höroldt (German, active 1720-56; 1763-65) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/90996",
+      "image_url": "https://www.artic.edu/iiif/2/900a21ae-83de-9df4-fb44-c6daabc9e75a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of hard-paste porcelain, polychrome enamels, and gilding.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-5543813",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Atomic Clock-Louis Essen.jpg",
+      "credit": "National Physical Laboratory / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Atomic_Clock-Louis_Essen.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Atomic_Clock-Louis_Essen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 620,
+      "height": 360,
+      "alt_suggestion": "Louis Essen and J. V. L. Parry standing next to the world's first caesium atomic clock, developed at the UK National Physical Laboratory in 1955.",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Atomic Clock Louis Essen caesium atomic clock atomic clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Atomic Clock Louis Essen\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Atomic Clock Louis Essen caesium atomic clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

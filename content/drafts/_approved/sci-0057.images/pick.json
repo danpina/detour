@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-27013490",
+ "alt": "An EPA diagram of the greenhouse effect showing sunlight, reflected radiation, and infrared absorbed and re-emitted by the atmosphere.",
+ "fits": true,
+ "note": "Public domain explanatory diagram.",
+ "crop": {
+  "fx": 0.5,
+  "fy": 0.5,
+  "zoom": 1
+ }
+}

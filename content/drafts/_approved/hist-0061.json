@@ -1,0 +1,114 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Every sum written twice",
+    "angle": "Every sum written twice"
+  },
+  "created_at": "2026-10-26T20:31:39.972Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0061",
+    "interest": "history",
+    "type": "story",
+    "title": "Every sum written twice",
+    "body": {
+      "panels": [
+        {
+          "text": "Double-entry bookkeeping records every financial transaction with equal and opposite entries, called debits and credits."
+        },
+        {
+          "text": "Each transaction goes into at least two accounts, so the totals of debits and credits must match. If they do not, something has been recorded wrongly."
+        },
+        {
+          "text": "That check helps catch errors and fraud. The books are 'balanced' because both sides must agree."
+        },
+        {
+          "text": "The Ragusan merchant Benedetto Cotrugli described the method in 1458. The Franciscan friar Luca Pacioli, a collaborator of Leonardo da Vinci, first codified it in a mathematics textbook published in Venice in 1494."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0061-p1",
+        "kind": "mcq",
+        "question": "What is the main check that double-entry bookkeeping provides?",
+        "options": [
+          "Every sale is doubled",
+          "Accounts are written in two languages",
+          "Total debits must equal total credits",
+          "Every bill is paid twice"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "hist-0061-p2",
+        "kind": "tf",
+        "question": "True or false: Luca Pacioli's mathematics textbook, published in Venice in 1494, first codified double-entry bookkeeping.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Double-entry bookkeeping (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Pacioli.jpg (public domain): portrait of Luca Pacioli attributed to Jacopo de' Barbari; also File:Jacopo de' Barbari - Portrait of Fra Luca Pacioli and an Unknown Young Man - WGA1269.jpg",
+    "keywords": [
+      "Luca Pacioli portrait",
+      "Jacopo de' Barbari Pacioli",
+      "Fra Luca Pacioli"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.660Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Every transaction is recorded with equal and opposite entries (debits and credits)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping",
+        "quote": "every financial transaction is recorded with equal and opposite entries"
+      },
+      {
+        "claim": "Each transaction goes into at least two accounts so total debits equal total credits (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping",
+        "quote": "every financial transaction is entered into at least two nominal ledger accounts to ensure that total debits equal total credits",
+        "note": "Page calls it a 'partial check', so 'catches errors' is fine but not a full guarantee."
+      },
+      {
+        "claim": "The method helps catch errors and fraud",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping",
+        "quote": "The purpose of double-entry bookkeeping is to maintain accuracy in financial records and allow detection of errors or fraud."
+      },
+      {
+        "claim": "Benedetto Cotrugli, a Ragusan merchant, described the method in 1458",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping",
+        "quote": "described double-entry bookkeeping in his treatise Della mercatura e del mercante perfetto",
+        "note": "Page: originally written in 1458 (no manuscript older than 1475 known; printed 1573)."
+      },
+      {
+        "claim": "Luca Pacioli, friar and collaborator of Leonardo, first codified it in a mathematics textbook published in Venice in 1494 (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping",
+        "quote": "first codified the system in his mathematics textbook"
+      }
+    ],
+    "overall": "pass"
+  }
+}

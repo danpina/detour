@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-10038173",
+  "alt": "A Gutenberg Bible open on a display stand in a museum case, showing two columns of printed Latin text.",
+  "fits": true,
+  "note": "Real Gutenberg Bible (NYPL copy), CC BY 2.0; briefed cand-1 was a press replica with a staff member",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

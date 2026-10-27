@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0048",
+  "created_at": "2026-10-26T20:32:04.757Z",
+  "queries": [
+    "school classroom high school classroom classroom",
+    "school classroom",
+    "school classroom high school classroom"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-146301654",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Janitor of SVN High school sitting near the Classrooms.jpg",
+      "credit": "iMahesh / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Janitor_of_SVN_High_school_sitting_near_the_Classrooms.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Janitor_of_SVN_High_school_sitting_near_the_Classrooms.jpg/960px-Janitor_of_SVN_High_school_sitting_near_the_Classrooms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 4000,
+      "alt_suggestion": "Janitor of SVN High school sitting near the Classrooms, looking towards the students who are celebrating Farewell party",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-jsc2022e057880",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Biopolymer Research for In-Situ Capabilities team assembles the control experiments",
+      "credit": "Ben Gao / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2022e057880",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2022e057880/jsc2022e057880~medium.jpg",
+      "alt_suggestion": "jsc2022e057880 (6/3/2022) --- The Biopolymer Research for In-Situ Capabilities team assembles the control experiments that will be delivered to middle school classrooms for the students to run as part",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-164182623",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "A high school classroom in North Carolina 04.jpg",
+      "credit": "Harrison Keely / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_high_school_classroom_in_North_Carolina_04.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/A_high_school_classroom_in_North_Carolina_04.jpg/960px-A_high_school_classroom_in_North_Carolina_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3994,
+      "height": 2995,
+      "alt_suggestion": "A high school classroom in North Carolina",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-KSC-04pd0848",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-04pd0848",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-04pd0848",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-04pd0848/KSC-04pd0848~medium.jpg",
+      "alt_suggestion": "KENNEDY SPACE CENTER, FLA. - Astronaut Rick Linnehan talks to a classroom teacher at Ralph Bunche Middle School, a NASA Explorer School, in Atlanta, Ga. Linnehan accompanied Center Director Jim Kenned",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-149479222",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "A public school, high school classroom in the United States 01.jpg",
+      "credit": "Harrison Keely / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_public_school,_high_school_classroom_in_the_United_States_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/A_public_school%2C_high_school_classroom_in_the_United_States_01.jpg/960px-A_public_school%2C_high_school_classroom_in_the_United_States_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3994,
+      "height": 2995,
+      "alt_suggestion": "A public school, high school English classroom in the United States",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"school classroom high school classroom classroom\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"school classroom\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"school classroom high school classroom\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

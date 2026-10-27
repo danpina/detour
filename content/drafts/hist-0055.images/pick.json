@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-100220043",
+  "alt": "A red-faced clock on the Corn Exchange in Bristol showing two minute hands, above a window between stone columns",
+  "fits": true,
+  "note": "Bristol Corn Exchange clock with second minute hand visible",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.35,
+    "zoom": 1.4
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "money-0057",
+  "interest": "money",
+  "title": "The company that bought the bank",
+  "probes": [
+    {
+      "id": "money-0057-p1",
+      "question": "In the story, what happened to France's money supply as shareholders sold?",
+      "kind": "mcq",
+      "options": [
+        "It halved",
+        "It stayed the same",
+        "It suddenly doubled"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0057-p2",
+      "question": "True or false: the Mississippi Company's first shares were offered at 500 livres, and later reached a peak of 10,000 livres.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mississippi Company (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mississippi_Company"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:21:41.125Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0057.webp",
+    "alt": "An 18th-century engraving of a dense crowd of traders in the Rue Quincampoix in Paris during the speculation of 1720.",
+    "kind": "photo",
+    "credit": "Humblot, Antoine (en 1758), graveur / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rue_Quincampoix_En_l%27ann%C3%A9e_1720,_G.13190.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In 1717 the Scottish financier John Law founded a joint-stock company. Its first shares were offered at 500 livres."
+      },
+      {
+        "text": "In February 1720 the company acquired John Law's Bank, which had been France's first central bank."
+      },
+      {
+        "text": "Share prices eventually reached a peak of 10,000 livres. As shareholders sold, the money supply in France suddenly doubled and inflation burgeoned, reaching 23% in a single month in January 1720."
+      },
+      {
+        "text": "In the second half of 1720 the shares collapsed, an event called the Mississippi Bubble. By April 1721 the company was in government receivership."
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0043",
+  "created_at": "2026-10-26T20:33:35.028Z",
+  "queries": [
+    "Electricity pylon High-voltage power lines transmission tower",
+    "Electricity pylon",
+    "Electricity pylon High-voltage power lines"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-61374409",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "High voltage transmission tower and lines. Auburn WA.jpg",
+      "credit": "Ron Clausen / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:High_voltage_transmission_tower_and_lines._Auburn_WA.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/High_voltage_transmission_tower_and_lines._Auburn_WA.jpg/960px-High_voltage_transmission_tower_and_lines._Auburn_WA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1572,
+      "height": 1204,
+      "alt_suggestion": "High-voltage transmission tower and lines. Auburn WA",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-65821",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Composition (No. 1) Gray-Red",
+      "credit": "Piet Mondrian Dutch, 1872–1944 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/65821",
+      "image_url": "https://www.artic.edu/iiif/2/254c654f-354a-0f4f-28b5-8eb01a02e95c/full/843,/0/default.jpg",
+      "alt_suggestion": "Abstract line composition of black lines at right angles forming quadrants including a gray square at upper left and a gray rectangle and red rectangle at lower right, against a white background.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-155521790",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "High voltage power lines on hill slope - geograph.org.uk - 7002813.jpg",
+      "credit": "Trevor Littlewood / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:High_voltage_power_lines_on_hill_slope_-_geograph.org.uk_-_7002813.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/High_voltage_power_lines_on_hill_slope_-_geograph.org.uk_-_7002813.jpg/960px-High_voltage_power_lines_on_hill_slope_-_geograph.org.uk_-_7002813.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1042,
+      "alt_suggestion": "High voltage power lines on hill slope",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-52040",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Grand Electric Calavera as a Present to You, A Calavera of Pure Electricity",
+      "credit": "José Guadalupe Posada Mexican, 1852-1913 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/52040",
+      "image_url": "https://www.artic.edu/iiif/2/f7799ffa-00db-4fc6-b08f-3222d3fecf0e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of relief engraving or photo relief etching on paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-9431898",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "High voltage transmission towers and lines.jpg",
+      "credit": "Stefan Andrej Shambora (St_A_Sh) / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:High_voltage_transmission_towers_and_lines.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/High_voltage_transmission_towers_and_lines.jpg/960px-High_voltage_transmission_towers_and_lines.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "alt_suggestion": "High-voltage transmission towers and lines in Oregon, United States, seen from U.S. Route 197 roughly one mile south of Celilo Converter Station; on the left a guyed portal tower of a 230 kV HVAC line",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Electricity pylon High-voltage power lines transmission tower\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Electricity pylon\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Electricity pylon High-voltage power lines\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

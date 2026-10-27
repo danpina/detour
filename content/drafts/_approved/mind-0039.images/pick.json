@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-227445",
+  "alt": "Three toothbrushes, blue, navy and white, lie on a white cloth.",
+  "fits": true,
+  "note": "Everyday habit object; replaces person photos; crop avoids brand text.",
+  "crop": {
+    "fx": 0.75,
+    "fy": 0.35,
+    "zoom": 1.5
+  }
+}

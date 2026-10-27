@@ -1,0 +1,131 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "AC versus DC",
+    "angle": "The war of the currents"
+  },
+  "created_at": "2026-10-26T20:31:08.682Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0042",
+    "interest": "science",
+    "type": "story",
+    "title": "The war of the currents",
+    "body": {
+      "panels": [
+        {
+          "text": "1882. Thomas Edison establishes the first investor-owned electric utility, built on direct current (DC)."
+        },
+        {
+          "text": "Low-voltage DC had a short useful range. To keep costly copper conductors small, plants had to sit in the middle of population centres and could only supply customers less than a mile away."
+        },
+        {
+          "text": "In 1886 George Westinghouse's company introduces alternating current (AC), using transformers to step high voltage down for indoor lighting. High voltage let power travel farther from large central stations."
+        },
+        {
+          "text": "AC won. Westinghouse took the major part of the Niagara Falls hydroelectric contract in 1893, and DC utility systems declined through the 20th century."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0042-p1",
+        "kind": "mcq",
+        "question": "Why could an AC system reach farther than Edison's low-voltage DC?",
+        "options": [
+          "It used thicker copper",
+          "It used transformers to step high voltage down for use",
+          "It ran on batteries",
+          "It needed no wires"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0042-p2",
+        "kind": "tf",
+        "question": "True or false: Edison's first utility was based on DC power.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "War of the currents (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/War_of_the_currents"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Robert moses niagara power plant 01.jpg shows the Niagara hydroelectric plant",
+    "keywords": [
+      "Niagara Falls power plant",
+      "Adams Power Plant",
+      "Westinghouse generator",
+      "Thomas Edison"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.587Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "1882 Edison established the first investor-owned electric utility, on DC (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+        "quote": "established the first investor-owned electric utility in 1882, basing its infrastructure on DC power"
+      },
+      {
+        "claim": "DC plants supplied customers less than a mile away",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+        "quote": "could only supply customers less than a mile from the plant"
+      },
+      {
+        "claim": "Copper cost forced plants into population centres",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+        "quote": "to keep the size of the expensive copper conductors down generating plants had to be situated in the middle of population centers"
+      },
+      {
+        "claim": "Westinghouse introduced AC in 1886",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+        "quote": "introduced a rival AC-based power distribution network in 1886"
+      },
+      {
+        "claim": "AC used transformers to step high voltage down for indoor lighting (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+        "quote": "that used transformers to step down from a high voltage so AC could be used for indoor lighting"
+      },
+      {
+        "claim": "High voltage let a central station supply farther",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+        "quote": "The high voltages allowed a central generating station to supply a large area"
+      },
+      {
+        "claim": "Westinghouse won major part of Niagara Falls contract in 1893",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+        "quote": "won the major part of the contract to build Niagara Falls hydroelectric project later that year"
+      },
+      {
+        "claim": "DC utility systems declined through the 20th century ('AC won')",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+        "quote": "DC commercial power distribution systems declined rapidly in numbers throughout the 20th century"
+      }
+    ],
+    "overall": "pass"
+  }
+}

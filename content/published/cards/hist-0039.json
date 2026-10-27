@@ -1,0 +1,50 @@
+{
+  "id": "hist-0039",
+  "interest": "history",
+  "title": "What Westphalia ended",
+  "probes": [
+    {
+      "id": "hist-0039-p1",
+      "question": "What do some historians argue about 'Westphalian sovereignty'?",
+      "kind": "mcq",
+      "options": [
+        "The treaties never mentioned religion",
+        "The idea of sovereignty it stands for emerged later, in the 19th and 20th centuries",
+        "Only France signed the treaties",
+        "It ended the war in 1618"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0039-p2",
+      "question": "True or false: the Peace of Westphalia ended the Thirty Years' War.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Peace of Westphalia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia"
+    }
+  ],
+  "difficulty": 5,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:22.392Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0039.webp",
+    "alt": "Gerard ter Borch's painting of delegates in Munster raising their hands to swear the 1648 peace oath around a green table.",
+    "kind": "photo",
+    "credit": "Gerard ter Borch / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Westfaelischer_Friede_in_Muenster_(Gerard_Terborch_1648).jpg"
+  },
+  "body": {
+    "claim": "The Peace of Westphalia ended the Thirty Years' War, which killed between 4.5 and 8 million people.",
+    "why": "Two treaties signed in October 1648, in Osnabrück and Munster, brought peace to the Holy Roman Empire. They gave legal recognition to Calvinism alongside Catholicism and Lutheranism. Several scholars of international relations see the peace as the origin of principles crucial to modern international relations, known as Westphalian sovereignty. Some historians argue that this view only grew later, in the 19th and 20th centuries."
+  }
+}

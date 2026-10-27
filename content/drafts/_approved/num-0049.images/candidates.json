@@ -1,0 +1,82 @@
+{
+  "draft_id": "num-0049",
+  "created_at": "2026-10-27T06:10:59.985Z",
+  "queries": [
+    "bell curve normal distribution Gaussian distribution",
+    "bell curve",
+    "bell curve normal distribution"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-30730622",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Normal distribution function.png",
+      "credit": "Shishirdasika / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Normal_distribution_function.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Normal_distribution_function.png/960px-Normal_distribution_function.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1597,
+      "height": 869,
+      "alt_suggestion": "Normal Gaussian Distribution Function",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-158212",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Study for \"The Distribution of the Eagles\"",
+      "credit": "Jacques-Louis David French, 1748-1825 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/158212",
+      "image_url": "https://www.artic.edu/iiif/2/c200b5f5-d260-745a-aa50-1667485dedf1/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of black chalk on ivory wove paper, squared in graphite.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-116977508",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bell curve.jpg",
+      "credit": "Ajay Raavi MD JD / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bell_curve.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Bell_curve.jpg/960px-Bell_curve.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1629,
+      "height": 1157,
+      "alt_suggestion": "Frustrated by the lack of free simple bell curve images on the internet, I created my own using Microsoft Word.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-196470",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Bell",
+      "credit": "Greek; Thessaly / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196470",
+      "image_url": "https://www.artic.edu/iiif/2/d2b2ee01-ea58-d5fd-726c-5628e77c2140/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of bronze.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-12086",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Bell (nao)",
+      "credit": "China, probably Hunan province / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12086",
+      "image_url": "https://www.artic.edu/iiif/2/7942dae0-6fdd-e6a1-9a23-b64d5c08e8fc/full/843,/0/default.jpg",
+      "alt_suggestion": "A bell with two convex sides of nearly rectangular shape and an opening at top rests on a slim cylindrical base. It boasts a green patina and is decorated with a geometric pattern and spikes. A small portion is missing at upper right.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"bell curve normal distribution Gaussian distribution\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"bell curve\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"bell curve normal distribution\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

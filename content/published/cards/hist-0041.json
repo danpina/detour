@@ -1,0 +1,62 @@
+{
+  "id": "hist-0041",
+  "interest": "history",
+  "title": "The country that retired its samurai",
+  "probes": [
+    {
+      "id": "hist-0041-p1",
+      "question": "What did the government decide in 1871?",
+      "kind": "mcq",
+      "options": [
+        "To abolish the lords' domains",
+        "To close the ports",
+        "To build a railway to Kyoto",
+        "To restore the shogun"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0041-p2",
+      "question": "True or false: in 1873 Japan introduced nationwide conscription.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meiji Restoration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Meiji_Restoration"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:23.965Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0041.webp",
+    "alt": "Painting by Shimada Bokusen of the Meiji restoration court scene, officials kneeling on green mats before the emperor seated behind a blind.",
+    "kind": "photo",
+    "credit": "Shimada Bokusen 島田墨仙 (1867–1943) / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Restoration_of_Imperial_Rule_by_Shimada_Bokusen_(Meiji_Memorial_Picture_Gallery).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "By 1868, a group led by Satsuma and Chōshū had overthrown the shogunal system. On 3 January 1868, Emperor Meiji declared power restored to the Imperial House."
+      },
+      {
+        "text": "In 1871 the new government told Japan's feudal lords it had decided to abolish their domains, without consulting them. In return they kept a small portion of their income and joined a new aristocracy."
+      },
+      {
+        "text": "In 1873 it brought in nationwide conscription: every man would serve four years in the armed forces from the age of 21."
+      },
+      {
+        "text": "The twist: the samurai class dissolved, and feudalism ended. Railways, communications and industry grew in its place."
+      }
+    ]
+  }
+}

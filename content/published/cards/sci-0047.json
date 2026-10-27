@@ -1,0 +1,61 @@
+{
+  "id": "sci-0047",
+  "interest": "science",
+  "title": "How a storm builds lightning",
+  "probes": [
+    {
+      "id": "sci-0047-p1",
+      "question": "What causes thunder?",
+      "kind": "mcq",
+      "options": [
+        "A shock wave from air heated suddenly by the discharge",
+        "Clouds bumping into each other",
+        "Rain hitting the ground"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0047-p2",
+      "question": "True or false: in the usual picture, collisions between ice crystals and graupel separate electric charge in a storm cloud.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lightning (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lightning"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:35:04.709Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0047.webp",
+    "alt": "Several bright lightning bolts strike down from a purple stormy night sky over a town and its rooftops.",
+    "kind": "photo",
+    "credit": "Mircea Madau / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lightning_over_Oradea_Romania_2.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Inside a thundercloud, rising air carries supercooled droplets and very small ice crystals upward. Larger, denser graupel tends to fall or hang in the updraft."
+      },
+      {
+        "text": "The ice crystals and graupel collide. In the usual picture the crystals become positively charged and the graupel negatively charged, and the updraft carries the positive crystals toward the top."
+      },
+      {
+        "text": "Exactly how the charge builds up is still a matter of scientific investigation. When the local electric field exceeds the dielectric strength of damp air, about 3 MV/m, a discharge results."
+      },
+      {
+        "text": "The twist: the air around the flash rapidly heats to about 30,000 °C. The sudden pressure rise sends out a shock wave, and that is thunder."
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-196431272",
+  "alt": "An open dated diary on a wooden desk with coloured pencils, glasses and a nail polish bottle.",
+  "fits": true,
+  "note": "Planning scene for if-then plans; no people.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.5,
+    "zoom": 1.4
+  }
+}

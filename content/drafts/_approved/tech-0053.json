@@ -1,0 +1,109 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "RAM versus storage",
+    "angle": "Volatile working memory versus non-volatile storage"
+  },
+  "created_at": "2026-10-26T20:28:21.550Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0053",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "RAM forgets when the power goes",
+    "body": {
+      "claim": "RAM is your computer's working memory, and it is wiped when the power goes off.",
+      "why": "RAM can be read and changed in any order and typically holds working data and machine code. Both static and dynamic RAM are volatile, so their state is lost when power is removed. Storage such as an SSD relies on non-volatile memory, which keeps your files."
+    },
+    "probes": [
+      {
+        "id": "tech-0053-p1",
+        "kind": "mcq",
+        "question": "What happens to the data in RAM when power is removed?",
+        "options": [
+          "It is lost",
+          "It is saved for a year",
+          "It moves to the SSD",
+          "It is backed up in the cloud"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0053-p2",
+        "kind": "tf",
+        "question": "True or false: SSDs rely on non-volatile memory to store data.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Random-access memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Random-access_memory"
+      },
+      {
+        "title": "Solid-state drive (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Solid-state_drive"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:SDRAM memory module, zoomed.jpg (CC0) or File:RAM Module (SDRAM-DDR4).jpg shows a RAM stick",
+    "keywords": [
+      "RAM module",
+      "SDRAM memory module",
+      "DDR4 RAM",
+      "computer memory"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.365Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Random-access_memory",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Solid-state_drive",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "RAM can be read and changed in any order and holds working data",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Random-access_memory",
+        "quote": "can be read and changed in any order, typically used to store working data and machine code"
+      },
+      {
+        "claim": "RAM loses its contents when power is removed (claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Random-access_memory",
+        "quote": "RAM is normally associated with volatile types of memory where stored information is lost if power is removed."
+      },
+      {
+        "claim": "Both static and dynamic RAM are volatile",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Random-access_memory",
+        "quote": "The two main types of volatile random-access semiconductor memory are static random-access memory (SRAM)"
+      },
+      {
+        "claim": "SSDs rely on non-volatile memory (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Solid-state_drive",
+        "quote": "SSDs rely on non-volatile memory"
+      },
+      {
+        "claim": "SSD flash memory keeps files when powered off",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Solid-state_drive",
+        "quote": "non-volatile NAND flash memory, which retains data even when powered off"
+      }
+    ],
+    "overall": "pass"
+  }
+}

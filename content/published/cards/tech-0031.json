@@ -1,0 +1,54 @@
+{
+  "id": "tech-0031",
+  "interest": "tech",
+  "title": "Why video calls skip the resend",
+  "probes": [
+    {
+      "id": "tech-0031-p1",
+      "question": "Why does UDP suit real-time applications like voice calls?",
+      "kind": "mcq",
+      "options": [
+        "It has no retransmission delays",
+        "It guarantees every packet arrives",
+        "It encrypts everything",
+        "It uses a different internet"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0031-p2",
+      "question": "True or false: TCP retransmits packets that are lost.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Transmission Control Protocol (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+    },
+    {
+      "title": "User Datagram Protocol (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:38.018Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0031.webp",
+    "alt": "A dense mass of blue, white and red Ethernet cables hanging in front of a network rack.",
+    "kind": "photo",
+    "credit": "Kim Scarborough from Chicago, IL / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Server_Rack_with_Spaghetti-Like_Mass_of_Network_Cables.jpg"
+  },
+  "body": {
+    "claim": "TCP resends lost data to make delivery reliable, while UDP does not, which suits real-time uses like voice calls and games.",
+    "why": "TCP sets up a connection with a three-way handshake, retransmits lost packets and keeps data in order, which adds delay. UDP has no handshake and no guarantee of delivery or ordering, but its lack of retransmission delays suits real-time applications such as voice over IP and online games."
+  }
+}

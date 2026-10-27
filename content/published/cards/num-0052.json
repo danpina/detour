@@ -1,0 +1,57 @@
+{
+  "id": "num-0052",
+  "interest": "numbers",
+  "title": "Two children and one clue",
+  "probes": [
+    {
+      "id": "num-0052-p1",
+      "question": "Listing two children by age, which equally likely cases are usually assumed?",
+      "kind": "mcq",
+      "options": [
+        "BB, BG, GB, GG",
+        "BB, GG",
+        "BB, BG, GG",
+        "BG, GB"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "num-0052-p2",
+      "question": "True or false: the answer to the \"at least one is a boy\" version can depend on how that information was obtained.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Boy or girl paradox (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Boy_or_girl_paradox"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:58.331Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0052.webp",
+    "alt": "A painting of two young sisters embracing under a yellow shawl on a terrace.",
+    "kind": "photo",
+    "credit": "Jeanne-Élisabeth Chaudet / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jeanne-Elisabeth_Chaudet_-_Two_sisters_embracing.jpg"
+  },
+  "body": {
+    "question": "Mr. Jones has two children. The older child is a girl. What is the probability that both children are girls?",
+    "options": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "answer": 2,
+    "reveal": "1/2. Only two cases remain: older girl with a younger girl, or older girl with a younger boy, and they are equally likely. If you are told only that \"at least one is a boy\", the answer can be 1/3 or 1/2 depending on how that was learned, which is why this puzzle sparked a long debate."
+  }
+}

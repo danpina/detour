@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-179653278",
+  "alt": "Muddy hands shape a small clay bowl on a rope-wrapped potter wheel.",
+  "fits": true,
+  "note": "Absorbed craft; hands only, no identifiable person.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.6,
+    "zoom": 1.7
+  }
+}

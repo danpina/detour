@@ -1,0 +1,97 @@
+{
+  "draft_id": "mind-0036",
+  "created_at": "2026-10-26T20:30:39.521Z",
+  "queries": [
+    "sleeping cat bedroom night sleep",
+    "sleeping cat",
+    "sleeping cat bedroom night"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-94464698",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Master Bedroom accent wall (2181639201).jpg",
+      "credit": "ilovebutter from Houston, TX, USA / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Master_Bedroom_accent_wall_(2181639201).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Master_Bedroom_accent_wall_%282181639201%29.jpg/960px-Master_Bedroom_accent_wall_%282181639201%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1060,
+      "alt_suggestion": "Accent Wall: Sherwin Williams \"Mink\" #6004 in Duration paint Main Walls: Sherwin Williams \"Grape Mist\" in Duration paint The 'mink' is a strange color - it changed dramatically with the light. At nigh",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-560",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Sleeping Infant Faun Visited by an Inquisitive Rabbit",
+      "credit": "Edward Clark Potter (American, 1857–1923) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/560",
+      "image_url": "https://www.artic.edu/iiif/2/4f93b5a2-40ed-c384-9452-6215060f52e9/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of marble.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-66389797",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Das Käuzchen - Fle(gel sc). LCCN2017658535.jpg",
+      "credit": "Johann Gottfried Flegel / Ludwig Richter / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Das_K%C3%A4uzchen_-_Fle(gel_sc)._LCCN2017658535.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Das_K%C3%A4uzchen_-_Fle%28gel_sc%29._LCCN2017658535.jpg/960px-Das_K%C3%A4uzchen_-_Fle%28gel_sc%29._LCCN2017658535.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 990,
+      "alt_suggestion": "Title: Das Käuzchen / Fle[gel sc]. Abstract/medium: 1 print : wood engraving ; sheet 11.9 × 12.2 cm.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-16488",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Armida Encounters the Sleeping Rinaldo",
+      "credit": "Giovanni Battista Tiepolo (Italian, 1696–1770) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16488",
+      "image_url": "https://www.artic.edu/iiif/2/633f464c-203f-f7b9-a251-7a2073f4b05d/full/843,/0/default.jpg",
+      "alt_suggestion": "Large painting of soldier asleep outdoors surrounded by two women and a cupid.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-158825558",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Dido in despair - DPLA - 1ba04008da747fa210bc5854835292d8.jpg",
+      "credit": "Gillray, James, 1756-1815 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dido_in_despair_-_DPLA_-_1ba04008da747fa210bc5854835292d8.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Dido_in_despair_-_DPLA_-_1ba04008da747fa210bc5854835292d8.jpg/960px-Dido_in_despair_-_DPLA_-_1ba04008da747fa210bc5854835292d8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4318,
+      "height": 3078,
+      "alt_suggestion": "Title from item.; BM Satires 9752; Wright/Evans 497; Additional information accompanying item: From the 1824 Gillray collection of copies, etched and published by John Miller and W. Blackwood.; Date f",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Book of cats and dogs, and other friends, for little folks (1885) (14775606823).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Book of cats and dogs, and other friends, for little folks (1885) (14775606823).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"sleeping cat bedroom night sleep\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"sleeping cat\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"sleeping cat bedroom night\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

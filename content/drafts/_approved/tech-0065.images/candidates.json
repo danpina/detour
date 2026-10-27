@@ -1,0 +1,96 @@
+{
+  "draft_id": "tech-0065",
+  "created_at": "2026-10-26T20:30:57.035Z",
+  "queries": [
+    "compiler toolchain compiler design source code",
+    "compiler toolchain",
+    "compiler toolchain compiler design"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-142828503",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Toolchain.png",
+      "credit": "D. Justen / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Toolchain.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Toolchain.png/960px-Toolchain.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1756,
+      "height": 837,
+      "alt_suggestion": "C/C++ Toolchain unter Darstellung der Ein- und Ausgabeformate von Compiler, Linker und Loader",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-105513",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Head of a Young Girl (Compiler's Title)",
+      "credit": "Odilon Redon French, 1840-1916 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/105513",
+      "image_url": "https://www.artic.edu/iiif/2/c33d8012-ac72-7c22-faaa-a3dd623b8295/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on white wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-30679682",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "BASIC stamp and analog voltmeter.jpg",
+      "credit": "Michael Hicks / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:BASIC_stamp_and_analog_voltmeter.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/BASIC_stamp_and_analog_voltmeter.jpg/960px-BASIC_stamp_and_analog_voltmeter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3456,
+      "height": 2304,
+      "alt_suggestion": "I'm still exploring the basic behaviors of transistors and capacitors, since I've never seen them explained terribly well beyond capacitors store charge and transistors switch and amplify! I'd gotten ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-20669",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "La Source",
+      "credit": "Albert Ernest Carrier-Belleuse (French, 1824–1887) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/20669",
+      "image_url": "https://www.artic.edu/iiif/2/d4176776-8e50-006d-06d3-d746bab1f5e1/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of terracotta.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-111935",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Unicorn Purifying a Source",
+      "credit": "Jean Duvet French, 1485-after 1561 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/111935",
+      "image_url": "https://www.artic.edu/iiif/2/b5653c20-b811-ac0a-ba98-830117e2d918/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching and engraving on paper.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-8809528",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Punch card with Fortran - 20091211.jpg",
+      "credit": "Tangopaso. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Punch_card_with_Fortran_-_20091211.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Punch_card_with_Fortran_-_20091211.jpg/960px-Punch_card_with_Fortran_-_20091211.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4416,
+      "height": 3312,
+      "alt_suggestion": "A punch card programmed with Fortran.",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"compiler toolchain compiler design source code\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"compiler toolchain\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"compiler toolchain compiler design\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

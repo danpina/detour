@@ -1,0 +1,50 @@
+{
+  "id": "mind-0032",
+  "interest": "mind",
+  "title": "Quiz yourself, don't reread",
+  "probes": [
+    {
+      "id": "mind-0032-p1",
+      "question": "As time passes, which tends to be remembered better?",
+      "kind": "mcq",
+      "options": [
+        "Material you only restudied",
+        "Material you practised recalling",
+        "Both the same",
+        "Neither"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0032-p2",
+      "question": "True or false: restudying tends to give higher recall right after practice than testing does.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Testing effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Testing_effect"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:55.603Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0032.webp",
+    "alt": "An open blank notebook with ribbon bookmarks rests on a wooden desk beside a window.",
+    "kind": "photo",
+    "credit": "Alina Daniker alinadaniker / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Open_book_1_(Unsplash).jpg"
+  },
+  "body": {
+    "claim": "Trying to recall something from memory strengthens it more, in the long run, than looking at it again.",
+    "why": "Studies of the testing effect find that restudied words are remembered better right after practice, but tested words are remembered better as time moves on. Researchers think tests work as learning opportunities, because pulling an answer out of memory takes effort."
+  }
+}

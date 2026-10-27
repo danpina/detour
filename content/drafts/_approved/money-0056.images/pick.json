@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-33488290",
+ "alt": "A close view of an electronic stock board with glowing red price and change figures in neat rows.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (CC BY 2.0).",
+ "crop": {
+  "fx": 0.5,
+  "fy": 0.5,
+  "zoom": 1
+ }
+}

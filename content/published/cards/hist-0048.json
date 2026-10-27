@@ -1,0 +1,56 @@
+{
+  "id": "hist-0048",
+  "interest": "history",
+  "title": "The shortcut at Suez",
+  "probes": [
+    {
+      "id": "hist-0048-p1",
+      "question": "Which two seas does the Suez Canal connect?",
+      "kind": "mcq",
+      "options": [
+        "Black Sea and Caspian Sea",
+        "Mediterranean and Red Sea",
+        "Red Sea and Dead Sea",
+        "Baltic and North Sea"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0048-p2",
+      "question": "True or false: the Suez Canal has no locks.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Suez Canal (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Suez_Canal"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:36.695Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0048.webp",
+    "alt": "View along the Suez Canal in Egypt, calm turquoise water beside a paved embankment under a hazy sky.",
+    "kind": "photo",
+    "credit": "Vyacheslav Argenberg / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Suez_Canal_2,_Suez,_Egypt.jpg"
+  },
+  "body": {
+    "question": "The Suez Canal lets ships go between the Mediterranean and the Red Sea instead of sailing around Africa. How much shorter is the trip from the Arabian Sea to London?",
+    "options": [
+      "About 900 km",
+      "About 2,900 km",
+      "About 8,900 km"
+    ],
+    "answer": 2,
+    "reveal": "Approximately 8,900 km, which brings the journey to about 10 days at 20 knots. The 193.3 km canal opened on 17 November 1869 after ten years of work, and it has no locks because it is a sea-level waterway."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "tech-0033",
+  "interest": "tech",
+  "title": "The address space that ran out",
+  "probes": [
+    {
+      "id": "tech-0033-p1",
+      "question": "How long are IPv6 addresses?",
+      "kind": "mcq",
+      "options": [
+        "64 bits",
+        "128 bits",
+        "256 bits",
+        "32 bits"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0033-p2",
+      "question": "True or false: IPv4 address exhaustion was one of the reasons IPv6 was developed.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "IPv4 address exhaustion (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/IPv4_address_exhaustion"
+    },
+    {
+      "title": "IPv6 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/IPv6"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:51.649Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0033.webp",
+    "alt": "Colorful orange, blue and green network cables spilling from ceiling trays above server cabinets in a computer lab.",
+    "kind": "photo",
+    "credit": "Kbh3rd / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Comp_lab_cables_20171121_131906.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "When the internet was an experiment, 32-bit addresses were chosen. That gives about 4.3 billion of them. Running out was not an early concern."
+      },
+      {
+        "text": "The experiment escaped. Users multiplied, and depletion had been anticipated since the late 1980s."
+      },
+      {
+        "text": "On 31 January 2011, the last two unreserved top-level blocks of IPv4 addresses were allocated."
+      },
+      {
+        "text": "The successor is IPv6, with 128-bit addresses: about 340 undecillion of them. The two protocols coexist."
+      }
+    ]
+  }
+}

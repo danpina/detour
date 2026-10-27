@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0051",
+  "created_at": "2026-10-26T20:32:30.837Z",
+  "queries": [
+    "clay tablet Uruk archaic cuneiform tablet proto-cuneiform tablet",
+    "clay tablet Uruk",
+    "clay tablet Uruk archaic cuneiform tablet"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-96023703",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Clay tablet. Counting board, the archaic cuneiform sign \"DUG\" (vessel) appears. From Uruk, Iraq. End of the 4th millennium BCE. Vorderasiatisches Museum, Berlin.jpg",
+      "credit": "Osama Shukir Muhammed Amin FRCP(Glasg) / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Clay_tablet._Counting_board,_the_archaic_cuneiform_sign_%22DUG%22_(vessel)_appears._From_Uruk,_Iraq._End_of_the_4th_millennium_BCE._Vorderasiatisches_Museum,_Berlin.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Clay_tablet._Counting_board%2C_the_archaic_cuneiform_sign_%22DUG%22_%28vessel%29_appears._From_Uruk%2C_Iraq._End_of_the_4th_millennium_BCE._Vorderasiatisches_Museum%2C_Berlin.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2281,
+      "height": 1566,
+      "alt_suggestion": "Clay tablet. Counting board; the archaic cuneiform sign \"DUG\" (vessel) appears. From Uruk, Iraq. End of the 4th millennium BCE. Vorderasiatisches Museum, Berlin.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-6798",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Women Looking at Religious Tablets",
+      "credit": "after Lazzaro Baldi Italian, c. 1624-1703 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/6798",
+      "image_url": "https://www.artic.edu/iiif/2/c48d86fd-8e80-410e-e72a-d063ff755f75/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of black chalk with brush and brown wash, heightened with lead white (discolored), on tan laid paper, laid down on ivory laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-90215089",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Clay tablet, lexical text, listing 58 different terms for pig. From Uruk, Iraq. 3200 BCE. Pergamon Museum.jpg",
+      "credit": "Osama Shukir Muhammed Amin FRCP(Glasg) / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Clay_tablet,_lexical_text,_listing_58_different_terms_for_pig._From_Uruk,_Iraq._3200_BCE._Pergamon_Museum.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Clay_tablet%2C_lexical_text%2C_listing_58_different_terms_for_pig._From_Uruk%2C_Iraq._3200_BCE._Pergamon_Museum.jpg/960px-Clay_tablet%2C_lexical_text%2C_listing_58_different_terms_for_pig._From_Uruk%2C_Iraq._3200_BCE._Pergamon_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2385,
+      "height": 3371,
+      "alt_suggestion": "Clay tablet (baked clay). The cuneiform inscription is a lexical text, listing 58 different terms for \"pig\". From Uruk (Warka), Iraq. 3200 BCE. On display at the Pergamon Museum, Germany.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-208227",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Notched Ovate Bannerstone",
+      "credit": "Archaic Bokes Creek, Union County, Ohio, United States / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/208227",
+      "image_url": "https://www.artic.edu/iiif/2/90790867-9102-b775-f086-6219be6cb130/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of banded slate.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-122870916",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Clay tablet, record of barley and emmer. Late Uruk period, 3300-3100 BCE. Purchased via Christie's, no provenance.jpg",
+      "credit": "Osama Shukir Muhammed Amin FRCP(Glasg) / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Clay_tablet,_record_of_barley_and_emmer._Late_Uruk_period,_3300-3100_BCE._Purchased_via_Christie%27s,_no_provenance.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Clay_tablet%2C_record_of_barley_and_emmer._Late_Uruk_period%2C_3300-3100_BCE._Purchased_via_Christie%27s%2C_no_provenance.jpg/960px-Clay_tablet%2C_record_of_barley_and_emmer._Late_Uruk_period%2C_3300-3100_BCE._Purchased_via_Christie%27s%2C_no_provenance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3953,
+      "height": 2597,
+      "alt_suggestion": "Clay tablet, late Uruk period, 3300-3100 BCE. Emmer wheat is differentiated from barley by writing numbers with extra strokes. The proto-cuneiform signs document barley. Barley appears 4 times here an",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"clay tablet Uruk archaic cuneiform tablet proto-cuneiform tablet\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"clay tablet Uruk\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"clay tablet Uruk archaic cuneiform tablet\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

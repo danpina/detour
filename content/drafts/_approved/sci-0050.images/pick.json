@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-16128583",
+  "alt": "A black laptop AC power adapter with its cable coiled beside it on a white background.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

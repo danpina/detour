@@ -1,0 +1,56 @@
+{
+  "id": "hist-0052",
+  "interest": "history",
+  "title": "The ten days that vanished",
+  "probes": [
+    {
+      "id": "hist-0052-p1",
+      "question": "Why did the 1582 reform delete ten days?",
+      "kind": "mcq",
+      "options": [
+        "To fix the drift built up by the Julian calendar's year being slightly too long",
+        "To make the year start in spring",
+        "To honour the Pope's birthday",
+        "To match the Moon's cycle exactly"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0052-p2",
+      "question": "True or false: under the Gregorian rule, 1900 was a leap year.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gregorian calendar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gregorian_calendar"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:31:07.707Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0052.webp",
+    "alt": "A page from a reference book titled Equivalent Dates in the Julian and Gregorian Calendars, listing the day offsets between the two systems",
+    "kind": "photo",
+    "credit": "Nautical almanac offices of the United Kingdom and the United States / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Table_of_equivalent_dates_in_the_Julian_and_Gregorian_calendars.JPG"
+  },
+  "body": {
+    "question": "In October 1582, Thursday 4 October was followed by...",
+    "options": [
+      "Friday 5 October",
+      "Friday 15 October",
+      "Monday 11 October"
+    ],
+    "answer": 1,
+    "reveal": "Friday 15 October. The reform deleted 10 days to correct the error that had built up since the Council of Nicaea, and the weekday cycle was not affected. It also changed leap years: a century year is a leap year only if divisible by 400, so 1900 was not one but 2000 was."
+  }
+}

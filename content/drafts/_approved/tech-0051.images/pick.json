@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-36995455",
+  "alt": "A shiny dark red silicon wafer spinning while liquid photoresist is spread across its surface.",
+  "fits": true,
+  "note": "Photoresist spin coating, matches card; no text.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.5
+  }
+}

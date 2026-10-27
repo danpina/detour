@@ -1,0 +1,50 @@
+{
+  "id": "hist-0033",
+  "interest": "history",
+  "title": "A peace deal that failed",
+  "probes": [
+    {
+      "id": "hist-0033-p1",
+      "question": "Why was Magna Carta sealed in 1215?",
+      "kind": "mcq",
+      "options": [
+        "To crown a new king",
+        "To end a war with France",
+        "To make peace between King John and rebel barons",
+        "To create Parliament"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "hist-0033-p2",
+      "question": "True or false: after it was sealed, both the king and the barons kept to Magna Carta and the conflict ended.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Magna Carta (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Magna_Carta"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:16:54.558Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0033.webp",
+    "alt": "Engraving of King John sitting at a table among barons, knights and clergy as the Magna Carta is sealed.",
+    "kind": "artwork",
+    "credit": "English School (Cassell's History of England - Century Edition) / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:King_John_signing_the_Great_Charter_(Magna_Carta)_by_English_School.png"
+  },
+  "body": {
+    "claim": "Magna Carta began as a peace deal between a king and his rebels, and it failed.",
+    "why": "King John sealed it at Runnymede on 15 June 1215 to settle a fight with rebel barons. It promised protection from illegal imprisonment, swift justice and limits on feudal payments. Neither side kept their commitments, and Pope Innocent III annulled it. Yet it lived on: it was reissued in 1216 by the government of John's young son, and in the early 17th century Sir Edward Coke cited it against the divine right of kings."
+  }
+}

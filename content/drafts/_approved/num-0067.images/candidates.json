@@ -1,0 +1,67 @@
+{
+  "draft_id": "num-0067",
+  "created_at": "2026-10-26T20:33:31.443Z",
+  "queries": [
+    "Alan Turing Alan Turing 1951 Turing portrait",
+    "Alan Turing",
+    "Alan Turing Alan Turing 1951"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-47736714",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Alan Turing by Stephen Kettle 2007.jpg",
+      "credit": "DeFacto / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alan_Turing_by_Stephen_Kettle_2007.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Alan_Turing_by_Stephen_Kettle_2007.jpg/960px-Alan_Turing_by_Stephen_Kettle_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2544,
+      "height": 3264,
+      "alt_suggestion": "Sculpture in slate of Alan Turing, the father of theoretical computer science and artificial intelligence, by Stephen Kettle (2007). Located in the Bletchley Park Block B Museum.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-24812812",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Open University MMB 11 Alan Turing Building.jpg",
+      "credit": "mattbuck (category) / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Open_University_MMB_11_Alan_Turing_Building.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Open_University_MMB_11_Alan_Turing_Building.jpg/960px-Open_University_MMB_11_Alan_Turing_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2436,
+      "height": 3620,
+      "alt_suggestion": "The Alan Turing Building on the Open University's Milton Keynes campus.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-128988928",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Alan Turing Sackville Gardens.jpg",
+      "credit": "MrBauer24 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alan_Turing_Sackville_Gardens.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Alan_Turing_Sackville_Gardens.jpg/960px-Alan_Turing_Sackville_Gardens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 973,
+      "height": 1297,
+      "alt_suggestion": "Alan Turning statue in Sackville Gardens, Manchester, United Kingdom",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "In the days of the guild (1918) (14750686214).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Alan Turing Alan Turing 1951 Turing portrait\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Alan Turing\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Alan Turing Alan Turing 1951\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

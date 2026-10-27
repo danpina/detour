@@ -1,0 +1,104 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Proof by contradiction",
+    "angle": "Why the square root of 2 is irrational"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0058",
+    "interest": "numbers",
+    "type": "guess_first",
+    "title": "Is the square root of 2 a fraction?",
+    "body": {
+      "question": "Can the square root of 2 be written exactly as a fraction of two whole numbers?",
+      "options": [
+        "Yes, with big enough numbers",
+        "No, no such fraction exists",
+        "Only as a repeating decimal"
+      ],
+      "answer": 1,
+      "reveal": "No. Suppose it were a/b in lowest terms. Then a squared equals 2 times b squared, so a is even. Write a as 2k and the same steps show b is even too. But a fraction in lowest terms cannot have both even. That is proof by contradiction: assume the opposite and reach an absurdity."
+    },
+    "probes": [
+      {
+        "id": "num-0058-p1",
+        "kind": "mcq",
+        "question": "What is the first move in a proof by contradiction?",
+        "options": [
+          "Test many examples",
+          "Assume the statement is false",
+          "Draw a picture",
+          "Assume the statement is true and stop"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0058-p2",
+        "kind": "tf",
+        "question": "True or false: if the square root of 2 equalled a/b, then a squared would equal 2 times b squared.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Square root of 2 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Square_root_of_2"
+      },
+      {
+        "title": "Proof by contradiction (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Proof_by_contradiction"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Quadrat-Wurzel-2.PNG or File:Costruzion sqrt2.png, a square with its diagonal marking root 2",
+    "keywords": [
+      "square root of 2",
+      "irrational number diagram",
+      "square diagonal"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.521Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Square_root_of_2",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Proof_by_contradiction",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The square root of 2 is irrational (cannot be written as a fraction of whole numbers)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Square_root_of_2",
+        "quote": "Pythagoreans discovered that the diagonal of a square is incommensurable with its side, or in modern language, that the square root of two is irrational"
+      },
+      {
+        "claim": "If sqrt2 = a/b then a^2 = 2b^2, so a is even",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Square_root_of_2",
+        "quote": "Therefore, a is even because it is equal to 2 b .",
+        "note": "Verified by calculation too: (a/b)^2 = 2 gives a^2 = 2b^2; a = 2k gives b^2 = 2k^2 so b is even; contradicts lowest terms."
+      },
+      {
+        "claim": "Proof by contradiction: assume the opposite",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Proof_by_contradiction",
+        "quote": "proof by assuming the opposite",
+        "note": "Page also describes it as showing a contrary proposition leads to absurdity or contradiction."
+      }
+    ],
+    "overall": "pass"
+  }
+}

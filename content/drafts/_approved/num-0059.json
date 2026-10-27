@@ -1,0 +1,103 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Logical fallacies",
+    "angle": "Modus ponens versus affirming the consequent"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0059",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "Wet street, so it rained?",
+    "body": {
+      "claim": "From 'if P then Q' and 'Q', you cannot conclude P.",
+      "why": "'If P then Q' plus 'P' lets you conclude Q: that is valid reasoning (modus ponens). Flipping it is the fallacy called affirming the consequent. If an animal is a dog, it has four legs; my cat has four legs; so my cat is a dog. Many other causes can lead to the same Q."
+    },
+    "probes": [
+      {
+        "id": "num-0059-p1",
+        "kind": "mcq",
+        "question": "You know 'If P, then Q' and that P is true. What follows?",
+        "options": [
+          "Nothing",
+          "Q is true",
+          "Q is false",
+          "P and Q are the same"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0059-p2",
+        "kind": "tf",
+        "question": "True or false: 'If an animal is a dog, it has four legs. My cat has four legs. So my cat is a dog' is valid reasoning.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Affirming the consequent (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Affirming_the_consequent"
+      },
+      {
+        "title": "Modus ponens (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Modus_ponens"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Modus Ponens W.png or File:Modus ponens 2024.png, a diagram of if p then q reasoning",
+    "keywords": [
+      "Modus ponens",
+      "argument map",
+      "logic diagram"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.521Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Affirming_the_consequent",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Modus_ponens",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Modus ponens: from 'If P then Q' and 'P' you can conclude Q (valid)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Modus_ponens",
+        "quote": "Therefore, Q must also be true.",
+        "note": "Page: summarised as P implies Q. P is true. Therefore, Q must also be true."
+      },
+      {
+        "claim": "Flipping it (from Q to P) is the fallacy of affirming the consequent",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Modus_ponens",
+        "quote": "Both have apparently similar but invalid forms: affirming the consequent and denying the antecedent ."
+      },
+      {
+        "claim": "Dog/cat four legs example",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Affirming_the_consequent",
+        "quote": "If an animal is a dog, then it has four legs. My cat has four legs. Therefore, my cat is a dog."
+      },
+      {
+        "claim": "Many other causes can lead to the same Q",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Affirming_the_consequent",
+        "quote": "the consequent (a dark room) can have other antecedents (no lamp, off-lamp), and so can still be true"
+      }
+    ],
+    "overall": "pass"
+  }
+}

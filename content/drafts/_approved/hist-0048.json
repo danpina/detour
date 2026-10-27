@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Suez Canal",
+    "angle": "A shortcut that cut a journey by thousands of kilometres"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0048",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "The shortcut at Suez",
+    "body": {
+      "question": "The Suez Canal lets ships go between the Mediterranean and the Red Sea instead of sailing around Africa. How much shorter is the trip from the Arabian Sea to London?",
+      "options": [
+        "About 900 km",
+        "About 2,900 km",
+        "About 8,900 km"
+      ],
+      "answer": 2,
+      "reveal": "Approximately 8,900 km, which brings the journey to about 10 days at 20 knots. The 193.3 km canal opened on 17 November 1869 after ten years of work, and it has no locks because it is a sea-level waterway."
+    },
+    "probes": [
+      {
+        "id": "hist-0048-p1",
+        "kind": "mcq",
+        "question": "Which two seas does the Suez Canal connect?",
+        "options": [
+          "Black Sea and Caspian Sea",
+          "Mediterranean and Red Sea",
+          "Red Sea and Dead Sea",
+          "Baltic and North Sea"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0048-p2",
+        "kind": "tf",
+        "question": "True or false: the Suez Canal has no locks.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Suez Canal (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Suez_Canal"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Suez Canal 2, Suez, Egypt.jpg shows the Suez Canal (CC BY 4.0, landscape)",
+    "keywords": [
+      "Suez Canal",
+      "Suez ship",
+      "Egypt canal",
+      "Suez Canal aerial"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.138Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Suez_Canal",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Journey from Arabian Sea to London reduced by about 8,900 km, to 10 days at 20 knots (answer, reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Suez_Canal",
+        "quote": "reducing the journey distance from the Arabian Sea to London by approximately 8,900 km (5,500 mi) , to 10 days at 20 knots"
+      },
+      {
+        "claim": "Canal is 193.3 km long",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Suez_Canal",
+        "quote": "Length 193.3 km (120.1 miles)"
+      },
+      {
+        "claim": "Opened 17 November 1869 after construction from 1859 to 1869 (ten years)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Suez_Canal",
+        "quote": "Construction of the canal lasted from 1859 to 1869 and it officially opened on 17 November 1869"
+      },
+      {
+        "claim": "No locks (p2); sea-level waterway",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Suez_Canal",
+        "quote": "The canal has no locks because of the flat terrain"
+      },
+      {
+        "claim": "Connects Mediterranean and Red Sea (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Suez_Canal",
+        "quote": "connecting the Mediterranean Sea to the Red Sea through the Isthmus of Suez"
+      }
+    ],
+    "overall": "pass"
+  }
+}

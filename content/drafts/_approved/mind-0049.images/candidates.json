@@ -1,0 +1,72 @@
+{
+  "draft_id": "mind-0049",
+  "created_at": "2026-10-26T20:32:11.997Z",
+  "queries": [
+    "running jogging park runner jogging",
+    "running jogging park",
+    "running jogging park runner"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-37742133",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Jogging couple - legs.jpg",
+      "credit": "Ed Yourdon / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jogging_couple_-_legs.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Jogging_couple_-_legs.jpg/960px-Jogging_couple_-_legs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1837,
+      "height": 1091,
+      "alt_suggestion": "Running action of two recreational runners in Riverside Park 31 May 2009.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-196328",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Plan of Chicago, Plate 63, Plan of a Proposed Park",
+      "credit": "Daniel Hudson Burnham, American, 1846–1912 Edward Herbert Bennett, American, born England, 1874–1954 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196328",
+      "image_url": "https://www.artic.edu/iiif/2/d06f6bb3-018a-b1de-7e9e-b5ff2986e974/full/843,/0/default.jpg",
+      "alt_suggestion": "A sepia-tones aerial plan drawing of a park with trees cut by roads and nonlinear paths, confined by less detailed gridded blocks.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-10644721",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "UAE Healthy Kidney 10K 2007.jpg",
+      "credit": "Peter Dutton from Forest Hills, Queens, USA / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:UAE_Healthy_Kidney_10K_2007.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/UAE_Healthy_Kidney_10K_2007.jpg/960px-UAE_Healthy_Kidney_10K_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2480,
+      "height": 3296,
+      "alt_suggestion": "The finish line of the fun run section of the 2007 UAE Healthy Kidney 10K at Central Park, New York. (Original description: While we were waiting for Jenn to finish, I figured I'd take photos of rando",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-82173370",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Indiana Dunes National Park (53224990-f633-4e36-90f9-dc15cabdcd7d).jpg",
+      "credit": "Victoria Stauffenberg / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Indiana_Dunes_National_Park_(53224990-f633-4e36-90f9-dc15cabdcd7d).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Indiana_Dunes_National_Park_%2853224990-f633-4e36-90f9-dc15cabdcd7d%29.jpg/960px-Indiana_Dunes_National_Park_%2853224990-f633-4e36-90f9-dc15cabdcd7d%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4272,
+      "height": 2848,
+      "alt_suggestion": "Joggers running on a trail through woods with fall colors Cowles Bog trails Keywords: Indiana Dunes National Park; Indiana Dunes; INDU; Indiana; Cowles Bog; fall foliage; visitors; trails; running; Na",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"running jogging park runner jogging\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"running jogging park\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"running jogging park runner\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

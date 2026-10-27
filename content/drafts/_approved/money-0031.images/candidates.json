@@ -1,0 +1,60 @@
+{
+  "draft_id": "money-0031",
+  "created_at": "2026-10-26T20:29:36.976Z",
+  "queries": [
+    "hyperinflation banknotes inflation banknotes Zimbabwe hyperinflation",
+    "hyperinflation banknotes",
+    "hyperinflation banknotes inflation banknotes"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-117492146",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "German Railways Banknote 500000000000 Mark 1923 Hyperinflation Notgeld Stuttgart, reverse.jpg",
+      "credit": "Berlin-George / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:German_Railways_Banknote_500000000000_Mark_1923_Hyperinflation_Notgeld_Stuttgart,_reverse.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/German_Railways_Banknote_500000000000_Mark_1923_Hyperinflation_Notgeld_Stuttgart%2C_reverse.jpg/960px-German_Railways_Banknote_500000000000_Mark_1923_Hyperinflation_Notgeld_Stuttgart%2C_reverse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3585,
+      "height": 2155,
+      "alt_suggestion": "German Railways Banknote 500000000000 Mark 1923 Hyperinflation Notgeld Stuttgart, Württemberg, Germany Fünfhundert Milliarden Mark (or in English language 500 Billion) Deutsche Reichsbahn, Reichsbahnd",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-117491921",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "German Railways Banknote 500000000000 Mark 1923 Hyperinflation Notgeld Stuttgart, obverse.jpg",
+      "credit": "Berlin-George / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:German_Railways_Banknote_500000000000_Mark_1923_Hyperinflation_Notgeld_Stuttgart,_obverse.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/German_Railways_Banknote_500000000000_Mark_1923_Hyperinflation_Notgeld_Stuttgart%2C_obverse.jpg/960px-German_Railways_Banknote_500000000000_Mark_1923_Hyperinflation_Notgeld_Stuttgart%2C_obverse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3622,
+      "height": 2124,
+      "alt_suggestion": "German Railways Banknote 500000000000 Mark 1923 Hyperinflation Notgeld Stuttgart, Württemberg, Germany Fünfhundert Milliarden Mark (or in English language 500 Billion) Deutsche Reichsbahn, Reichsbahnd",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-5736747",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Zimbabwe Hyperinflation 2008 notes.jpg",
+      "credit": "en:User:Discott / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zimbabwe_Hyperinflation_2008_notes.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Zimbabwe_Hyperinflation_2008_notes.jpg/960px-Zimbabwe_Hyperinflation_2008_notes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2704,
+      "height": 2160,
+      "alt_suggestion": "A selection of Zimbabwe Reserve Bank bearer cheques printed between July 2007 to July 2008 to illustrate the hyperinflation rate in Zimbabwe.",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"hyperinflation banknotes inflation banknotes Zimbabwe hyperinflation\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"hyperinflation banknotes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"hyperinflation banknotes inflation banknotes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

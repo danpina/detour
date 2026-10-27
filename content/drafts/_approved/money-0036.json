@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Credit scores",
+    "angle": "You have many scores, not one"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0036",
+    "interest": "money",
+    "type": "guess_first",
+    "title": "One person, many credit scores",
+    "body": {
+      "question": "How many credit scores does one person have?",
+      "options": [
+        "Exactly one",
+        "One for each credit card",
+        "Several, depending on model, data and day"
+      ],
+      "answer": 2,
+      "reveal": "Several. A credit score is a prediction of your credit behavior, calculated from the information in your credit reports with a scoring model. Each score depends on the model, the source of the data and even the day it was calculated. Most credit scores range from 300 to 850."
+    },
+    "probes": [
+      {
+        "id": "money-0036-p1",
+        "kind": "mcq",
+        "question": "Where does a credit score come from?",
+        "options": [
+          "Information in your credit reports",
+          "Your bank balance alone",
+          "Your employer"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0036-p2",
+        "kind": "tf",
+        "question": "True or false: most credit scores range from 300 to 850.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "What is a credit score? (CFPB)",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-score-en-315/"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Russian realschule report card 1908.jpg shows an old school report card, an everyday image of being scored",
+    "keywords": [
+      "report card",
+      "report card grades",
+      "school report card",
+      "grades"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.819Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-score-en-315/",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A credit score is a prediction of credit behavior",
+        "verdict": "pass",
+        "source_url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-score-en-315/",
+        "quote": "A credit score is a prediction of your credit behavior, such as how likely you are to pay a loan back on time"
+      },
+      {
+        "claim": "It is calculated from information in your credit reports (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-score-en-315/",
+        "quote": "based on information from your credit reports"
+      },
+      {
+        "claim": "Each score depends on model, data source and day, so a person has several",
+        "verdict": "pass",
+        "source_url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-score-en-315/",
+        "quote": "the source of the data used, and even the day when it was calculated"
+      },
+      {
+        "claim": "Scores differ depending on the scoring model",
+        "verdict": "pass",
+        "source_url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-score-en-315/",
+        "quote": "it may differ depending on the scoring model"
+      },
+      {
+        "claim": "Most credit scores range from 300 to 850 (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-score-en-315/",
+        "quote": "Most credit scores range from 300-850."
+      }
+    ],
+    "overall": "pass"
+  }
+}

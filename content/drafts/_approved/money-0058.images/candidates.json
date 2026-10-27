@@ -1,0 +1,91 @@
+{
+  "draft_id": "money-0058",
+  "created_at": "2026-10-27T06:10:06.343Z",
+  "queries": [
+    "Bitcoin physical coin Casascius bitcoin token blockchain diagram",
+    "Bitcoin physical coin",
+    "Bitcoin physical coin Casascius bitcoin token"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-198077040",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Close-up of a Bitcoin physical coin in a womans hand and a laptop on her lap.jpg",
+      "credit": "Shixart1985 / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_Bitcoin_physical_coin_in_a_womans_hand_and_a_laptop_on_her_lap.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Close-up_of_a_Bitcoin_physical_coin_in_a_womans_hand_and_a_laptop_on_her_lap.jpg/960px-Close-up_of_a_Bitcoin_physical_coin_in_a_womans_hand_and_a_laptop_on_her_lap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6016,
+      "height": 4016,
+      "alt_suggestion": "Close-up of a Bitcoin physical coin in a womans hand and a laptop on her lap",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-196347",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Plan of Chicago, Chicago, Illinois, Diagram Showing City Growth",
+      "credit": "Daniel Hudson Burnham (American, 1846-1912) Edward Herbert Bennett (American, born England, 1874-1954) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196347",
+      "image_url": "https://www.artic.edu/iiif/2/8da8a9e1-48f7-9bc1-982a-2206dae4f522/full/843,/0/default.jpg",
+      "alt_suggestion": "A detailed sepia-toned map of Chicago with areas labeled and marked by red stars and boundary lines marked with colored ink and paint.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-195963644",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Young kid pointing light at the Bitcoin physical coin.jpg",
+      "credit": "Shixart1985 / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Young_kid_pointing_light_at_the_Bitcoin_physical_coin.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Young_kid_pointing_light_at_the_Bitcoin_physical_coin.jpg/960px-Young_kid_pointing_light_at_the_Bitcoin_physical_coin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5436,
+      "height": 3629,
+      "alt_suggestion": "Young kid pointing light at the Bitcoin physical coin",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-75791",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "True Love's Fond Token (Valentine)",
+      "credit": "Joseph Addenbrooke English, 19th century / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/75791",
+      "image_url": "https://www.artic.edu/iiif/2/de9b901f-5c83-0fcc-e469-a31c9b86e3cb/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of collaged elements with watercolor and pen and black ink on gray accented and embossed ivory wove paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-97326253",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Physical Bitcoin 2011 Casascius 1 Bitcoin Coin Token.png",
+      "credit": "Tiberiandusk / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Physical_Bitcoin_2011_Casascius_1_Bitcoin_Coin_Token.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Physical_Bitcoin_2011_Casascius_1_Bitcoin_Coin_Token.png/960px-Physical_Bitcoin_2011_Casascius_1_Bitcoin_Coin_Token.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5420,
+      "height": 5584,
+      "alt_suggestion": "The front of a 2011 Casascius 1 Bitcoin and Bitcoin Cash Token.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Physical Bitcoin by Mike Cauldwell (Casascius).jpg",
+      "license": "Copyrighted free use",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Bitcoin physical coin Casascius bitcoin token blockchain diagram\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Bitcoin physical coin\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Bitcoin physical coin Casascius bitcoin token\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

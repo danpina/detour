@@ -1,0 +1,110 @@
+{
+  "draft_id": "money-0041",
+  "created_at": "2026-10-26T20:30:57.977Z",
+  "queries": [
+    "credit cards payment cards bank cards",
+    "credit cards",
+    "credit cards payment cards"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-123028248",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Kuala Lumpur, Digital River ePassporte bank card, Malaysia.jpg",
+      "credit": "Vyacheslav Argenberg / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kuala_Lumpur,_Digital_River_ePassporte_bank_card,_Malaysia.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Kuala_Lumpur%2C_Digital_River_ePassporte_bank_card%2C_Malaysia.jpg/960px-Kuala_Lumpur%2C_Digital_River_ePassporte_bank_card%2C_Malaysia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4032,
+      "height": 2688,
+      "alt_suggestion": "Digital River (DRIV) ePassporte bank card. Kuala Lumpur International Airport (KLIA), Malaysia.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-201204240010HQ",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Expedition 31 Preflight",
+      "credit": "NASA/Carla Cioffi / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/201204240010HQ",
+      "image_url": "https://images-assets.nasa.gov/image/201204240010HQ/201204240010HQ~medium.jpg",
+      "alt_suggestion": "Expedition 31 NASA backup crew member Kevin Ford, left, Oleg Novitskiy and Evgeny Tarelkin, third from left, select International Space Station Russian segment event simulation test cards for their fi",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-135533",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Card Table",
+      "credit": "Charles-Honoré Lannuier (American, born France, 1779–1819) New York / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/135533",
+      "image_url": "https://www.artic.edu/iiif/2/b2bd9f9c-9478-481c-1457-0f42960cdc95/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of mahogany with rosewood veneer, giltwood, brass and ebony inlay, ormolu.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-171243040",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "CTBC payment terminal at self-checkout of Carrefour Rende Store.jpg",
+      "credit": "Matt Zhuang / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CTBC_payment_terminal_at_self-checkout_of_Carrefour_Rende_Store.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/CTBC_payment_terminal_at_self-checkout_of_Carrefour_Rende_Store.jpg/960px-CTBC_payment_terminal_at_self-checkout_of_Carrefour_Rende_Store.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2268,
+      "height": 4032,
+      "alt_suggestion": "​在家樂福仁德店自助結帳機上的中國信託商業銀行刷卡機",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-201204240003HQ",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Expedition 31 Preflight",
+      "credit": "NASA/Carla Cioffi / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/201204240003HQ",
+      "image_url": "https://images-assets.nasa.gov/image/201204240003HQ/201204240003HQ~medium.jpg",
+      "alt_suggestion": "Expedition 31 NASA flight engineer Joe Acaba signs for his Soyuz vehicle simulation test card before senior officials at the Gagarin Cosmonaut Training Center, Tuesday, April 24, 2012 in Star City, Ru",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-135038733",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Frank and seder celluloid credit card 2.png",
+      "credit": "Inlineprogramming / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frank_and_seder_celluloid_credit_card_2.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Frank_and_seder_celluloid_credit_card_2.png/960px-Frank_and_seder_celluloid_credit_card_2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1449,
+      "height": 1081,
+      "alt_suggestion": "Frank & Seder Celluloid Credit Card Scan",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-99950",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Credit-cards.jpg",
+      "credit": "Lotus Head from Johannesburg, Gauteng, South Africa / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Credit-cards.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Credit-cards.jpg/960px-Credit-cards.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "alt_suggestion": "Credit cards",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"credit cards payment cards bank cards\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"credit cards\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"credit cards payment cards\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

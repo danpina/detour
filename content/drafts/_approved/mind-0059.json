@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Peak-end rule",
+    "angle": "Cold water and colonoscopies"
+  },
+  "created_at": "2026-10-27T06:06:56.044Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0059",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "Why a longer pain can feel better",
+    "body": {
+      "question": "Trial 1: hand in 14 degree Celsius water for 60 seconds. Trial 2: 60 seconds the same, then 30 more seconds as the water is warmed to 15 degrees. Which trial were people more willing to repeat?",
+      "options": [
+        "Trial 1, the shorter one",
+        "Trial 2, the longer one",
+        "No preference at all"
+      ],
+      "answer": 1,
+      "reveal": "Trial 2, despite the extra exposure. The researchers concluded people liked the memory of it better. In a colonoscopy study, patients likewise judged discomfort by the worst moment (peak) and the final moments (end), regardless of how long it lasted."
+    },
+    "probes": [
+      {
+        "id": "mind-0059-p1",
+        "kind": "mcq",
+        "question": "According to the peak-end rule, which moments dominate how an experience is remembered?",
+        "options": [
+          "The first and second minutes",
+          "The peak and the end",
+          "The average of every moment",
+          "Only the longest stretch"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0059-p2",
+        "kind": "tf",
+        "question": "True or false: in the colonoscopy study, patients' discomfort ratings depended mainly on how long the procedure lasted.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Peak-end rule (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Ice cubes on water.jpg shows ice cubes floating on liquid water",
+    "keywords": [
+      "ice cubes",
+      "cold water",
+      "ice water",
+      "glass"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.167Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Trial 1: hand in 14 C water for 60 seconds",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule",
+        "quote": "The first trial had subjects submerge a hand in 14 °C water for 60 seconds."
+      },
+      {
+        "claim": "Trial 2: same 60 seconds, then 30 more seconds as the water was warmed to 15 C",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule",
+        "quote": "but then keep their hand submerged for an additional 30 seconds, during which the temperature was raised to 15 °C"
+      },
+      {
+        "claim": "People were more willing to repeat Trial 2 despite longer exposure",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule",
+        "quote": "subjects were more willing to repeat the second trial, despite a prolonged exposure to uncomfortable temperatures"
+      },
+      {
+        "claim": "Researchers concluded people liked the memory of it better",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule",
+        "quote": "subjects chose the long trial simply because they liked the memory of it better than the alternative"
+      },
+      {
+        "claim": "Colonoscopy study: patients judged discomfort by worst moment (peak) and final moments (end)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule",
+        "quote": "They found that patients consistently evaluated the discomfort of the experience based on the intensity of pain at the worst (peak) and final (end) moments"
+      },
+      {
+        "claim": "...regardless of how long it lasted (probe 2: ratings did not depend mainly on duration)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule",
+        "quote": "This occurred regardless of length or variation in intensity of pain within the procedure."
+      },
+      {
+        "claim": "Peak-end rule: peak and end dominate how an experience is judged (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule",
+        "quote": "people judge an experience largely based on how they felt at its peak"
+      }
+    ],
+    "overall": "pass"
+  }
+}

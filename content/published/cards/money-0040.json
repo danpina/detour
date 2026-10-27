@@ -1,0 +1,55 @@
+{
+  "id": "money-0040",
+  "interest": "money",
+  "title": "The bond that gets cheaper",
+  "probes": [
+    {
+      "id": "money-0040-p1",
+      "question": "When a bond's market price falls, what happens to its yield?",
+      "kind": "mcq",
+      "options": [
+        "It rises",
+        "It falls",
+        "It stays the same"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0040-p2",
+      "question": "True or false: a fall in a bond's market price changes the interest payments the bondholder receives.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bond (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bond_(finance)"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:14.832Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0040.webp",
+    "alt": "An 1817 Papal States public-debt certificate in Italian, with a papal emblem and handwritten details.",
+    "kind": "photo",
+    "credit": "Papal States / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Papal_states_bond_certificate_1817.jpg"
+  },
+  "body": {
+    "question": "You hold a bond that pays fixed interest. Market interest rates then rise. What tends to happen to your bond's market price?",
+    "options": [
+      "It rises",
+      "It falls",
+      "Nothing, because it's fixed"
+    ],
+    "answer": 1,
+    "reveal": "It falls. A bond's price and yield are inversely related. New bonds can pay the higher rate, so an older one has to be cheaper to compete. The interest payments you receive don't change, so a lower price means a higher yield."
+  }
+}

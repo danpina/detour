@@ -1,0 +1,60 @@
+{
+  "draft_id": "mind-0034",
+  "created_at": "2026-10-26T20:30:26.931Z",
+  "queries": [
+    "equations blackboard blackboard formulas mathematics textbook",
+    "equations blackboard",
+    "equations blackboard blackboard formulas"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-63858808",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Enrico Fermi at the blackboard 2.jpg",
+      "credit": "U.S. Department of Energy from United States / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Enrico_Fermi_at_the_blackboard_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Enrico_Fermi_at_the_blackboard_2.jpg/960px-Enrico_Fermi_at_the_blackboard_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2207,
+      "height": 2773,
+      "alt_suggestion": "Enrico Fermi at the blackboard. Interestingly the blackboard contains an error: the equation for the fine-structure constant should read α=e2ℏc.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-62049662",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Formulas on an old blackboard (Unsplash).jpg",
+      "credit": "Roman Mager roman_lazygeek / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Formulas_on_an_old_blackboard_(Unsplash).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Formulas_on_an_old_blackboard_%28Unsplash%29.jpg/960px-Formulas_on_an_old_blackboard_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3264,
+      "height": 2448,
+      "alt_suggestion": "Minsk, Belarus",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-28098049",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Philip Emeagwali with scribbled Exxon-Mobil equations.jpg",
+      "credit": "InfoATemeagwaliDOTcom / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Philip_Emeagwali_with_scribbled_Exxon-Mobil_equations.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Philip_Emeagwali_with_scribbled_Exxon-Mobil_equations.jpg/960px-Philip_Emeagwali_with_scribbled_Exxon-Mobil_equations.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5922,
+      "height": 4680,
+      "alt_suggestion": "Philip Emeagwali with scribbled partial differential equations for petroleum reservoir simulations across an internet powered by a global network of 65,536 processors.",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"equations blackboard blackboard formulas mathematics textbook\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"equations blackboard\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"equations blackboard blackboard formulas\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

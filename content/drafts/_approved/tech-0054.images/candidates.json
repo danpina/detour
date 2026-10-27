@@ -1,0 +1,100 @@
+{
+  "draft_id": "tech-0054",
+  "created_at": "2026-10-26T20:29:43.595Z",
+  "queries": [
+    "SSD M.2 SSD NAND flash chip",
+    "SSD",
+    "SSD M.2 SSD"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-114178819",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "M.2 2230 M-key SSD in comparison with Micro-SD card.jpg",
+      "credit": "Phiarc / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:M.2_2230_M-key_SSD_in_comparison_with_Micro-SD_card.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/M.2_2230_M-key_SSD_in_comparison_with_Micro-SD_card.jpg/960px-M.2_2230_M-key_SSD_in_comparison_with_Micro-SD_card.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 2848,
+      "alt_suggestion": "512 GB M.2 2230 M-key SSD (Kioxia/Toshiba BG4 series) in comparison with Micro-SD card (SanDisk Ultra 8 GB). The big chip on the SSD contains both the NVMe controller and the NAND flash and conforms t",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-jsc2020e016860",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Alpha Experiment Preflight Imagery",
+      "credit": "Cornell Space Systems Design Studio (SSDS) / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2020e016860",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2020e016860/jsc2020e016860~medium.jpg",
+      "alt_suggestion": "jsc2020e016860 (8/5/2016) --- A view of the fully assembled prototype of Alpha CubeSat. Alpha comprises a 1U CubeSat capable of deploying a free-flying 1m x 1m light sail equipped with 4 chip satellit",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-60170264",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "2017 Dysk SSD Plextor M8Pe(Y) 256GB.jpg",
+      "credit": "Jacek Halicki / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2017_Dysk_SSD_Plextor_M8Pe(Y)_256GB.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/2017_Dysk_SSD_Plextor_M8Pe%28Y%29_256GB.jpg/960px-2017_Dysk_SSD_Plextor_M8Pe%28Y%29_256GB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4358,
+      "height": 2609,
+      "alt_suggestion": "Solid-state drive Plextor M8Pe(Y) 256GB",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-145931218",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Tribu Laarim, Kimotong, Sudán del Sur, 2024-01-25, DD 23.jpg",
+      "credit": "Diego Delso / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tribu_Laarim,_Kimotong,_Sud%C3%A1n_del_Sur,_2024-01-25,_DD_23.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Tribu_Laarim%2C_Kimotong%2C_Sud%C3%A1n_del_Sur%2C_2024-01-25%2C_DD_23.jpg/960px-Tribu_Laarim%2C_Kimotong%2C_Sud%C3%A1n_del_Sur%2C_2024-01-25%2C_DD_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4485,
+      "height": 6727,
+      "alt_suggestion": "Laarim Tribe, Kimotong, South Sudan",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-124906441",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "K9F1208U0B.jpg",
+      "credit": "Mister rf / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:K9F1208U0B.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/K9F1208U0B.jpg/960px-K9F1208U0B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2680,
+      "height": 1670,
+      "alt_suggestion": "K9F1208U0B: 64M x 8 Bit NAND Flash Memory, Memory Cell Array: (64M + 2048Kx 8 bit), Data Register: (512 + 16)bit x 8bit, 48 - Pin TSOP, 3.3V Vcc. Manufacturer: Samsung Electronics",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-124906445",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "NAND256W3A2BN6.jpg",
+      "credit": "Mister rf / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:NAND256W3A2BN6.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/NAND256W3A2BN6.jpg/960px-NAND256W3A2BN6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2760,
+      "height": 1690,
+      "alt_suggestion": "NAND256W3A2BN6ː 256MBIT non-volatile NAND Flash Memory Single Level Cell (SLC) technology. 48-TSOP Manufacturer: STMicroelectronics",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"SSD M.2 SSD NAND flash chip\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"SSD\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"SSD M.2 SSD\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

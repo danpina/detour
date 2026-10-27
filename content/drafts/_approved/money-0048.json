@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Supply and demand",
+    "angle": "Price settles where wants meet supply"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0048",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "Supply and demand is an old idea",
+    "body": {
+      "claim": "A fourteenth-century scholar wrote that if desire for a good rises while its availability falls, its price rises.",
+      "why": "Ibn Taymiyyah added that if availability rises and desire falls, the price comes down. In a perfectly competitive market, the price varies until it settles at the market-clearing price, where the quantity demanded equals the quantity supplied."
+    },
+    "probes": [
+      {
+        "id": "money-0048-p1",
+        "kind": "mcq",
+        "question": "At the market-clearing price, which two quantities are equal?",
+        "options": [
+          "Price and cost",
+          "Buyers and sellers",
+          "Quantity demanded and quantity supplied"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "money-0048-p2",
+        "kind": "tf",
+        "question": "True or false: if desire for a good rises while its availability falls, its price tends to fall.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Supply and demand (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Supply_and_demand"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Economics demand and supply curves.jpg (CC BY 4.0) or File:Basic supply demand.png show supply and demand curves crossing at the equilibrium",
+    "keywords": [
+      "supply demand equilibrium curves",
+      "supply and demand diagram",
+      "economics demand supply curves"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.975Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A fourteenth-century scholar (Ibn Taymiyyah) wrote that if desire rises while availability falls, price rises",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+        "quote": "If desire for goods increases while its availability decreases, its price rises.",
+        "note": "Page: fourteenth-century Syrian scholar Ibn Taymiyyah wrote this."
+      },
+      {
+        "claim": "Ibn Taymiyyah was a fourteenth-century scholar",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+        "quote": "the power of supply and demand was understood to some extent by several early Muslim scholars, such as fourteenth-century Syrian scholar Ibn Taymiyyah"
+      },
+      {
+        "claim": "Ibn Taymiyyah added that if availability rises and desire falls, the price comes down",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+        "quote": "On the other hand, if availability of the good increases and the desire for it decreases, the price comes down."
+      },
+      {
+        "claim": "In a perfectly competitive market the price varies until it settles at the market-clearing price",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+        "quote": "will vary until it settles at the market-clearing price"
+      },
+      {
+        "claim": "At the market-clearing price quantity demanded equals quantity supplied (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+        "quote": "where the quantity demanded equals the quantity supplied such that an economic equilibrium is achieved"
+      },
+      {
+        "claim": "Probe p2 (false): if desire rises while availability falls, price tends to fall - contradicted, price rises",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+        "quote": "If desire for goods increases while its availability decreases, its price rises."
+      }
+    ],
+    "overall": "pass"
+  }
+}

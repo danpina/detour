@@ -1,0 +1,151 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Bayes' theorem in plain words",
+    "angle": "Prior, evidence, updated belief"
+  },
+  "created_at": "2026-10-27T06:06:56.036Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0043",
+    "interest": "numbers",
+    "type": "story",
+    "title": "The paper found after Bayes died",
+    "body": {
+      "panels": [
+        {
+          "text": "Thomas Bayes, an 18th-century minister and mathematician, studied how to use evidence to put limits on an unknown quantity."
+        },
+        {
+          "text": "After his death, his family passed his papers to a friend, Richard Price. Price edited the manuscript for two years."
+        },
+        {
+          "text": "It was read aloud at the Royal Society on 23 December 1763 and published that year as An Essay Towards Solving a Problem in the Doctrine of Chances."
+        },
+        {
+          "text": "Independently, Pierre-Simon Laplace worked out the same idea: take a prior probability, add evidence, and get an updated one. Today it is Bayes' theorem, a rule for updating your belief when new information arrives."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0043-p1",
+        "kind": "mcq",
+        "question": "In Bayesian updating, what is the prior probability?",
+        "options": [
+          "The probability after seeing the evidence",
+          "The chance the evidence is wrong",
+          "The estimate before the new evidence is observed",
+          "The average of all outcomes"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0043-p2",
+        "kind": "tf",
+        "question": "True or false: Bayes' theorem is widely invoked to justify how someone should update beliefs after new information.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bayes' theorem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bayes%27_theorem"
+      },
+      {
+        "title": "Bayesian inference (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bayesian_inference"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Tomb of Thomas Bayes, Bunhill Cemetery, London, UK.jpg shows Bayes's tomb",
+    "keywords": [
+      "Thomas Bayes tomb",
+      "Bunhill Fields",
+      "Bayes"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.039Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bayesian_inference",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Thomas Bayes was a minister (18th century, 1763 work)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+        "quote": "Bayes' theorem is named after Thomas Bayes , a minister, statistician, and philosopher."
+      },
+      {
+        "claim": "Bayes used evidence to put limits on an unknown quantity",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+        "quote": "that uses evidence to calculate limits on an unknown parameter"
+      },
+      {
+        "claim": "Family gave his papers to friend Richard Price",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+        "quote": "his family gave his papers to a friend, the minister, philosopher, and mathematician Richard Price"
+      },
+      {
+        "claim": "Price edited the manuscript for two years",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+        "quote": "Price significantly edited the unpublished manuscript for two years"
+      },
+      {
+        "claim": "Read aloud at the Royal Society on 23 December 1763",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+        "quote": "who read it aloud at the Royal Society on 23 December 1763"
+      },
+      {
+        "claim": "Published 1763 as An Essay Towards Solving a Problem in the Doctrine of Chances",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+        "quote": "His work was published in 1763 as An Essay Towards Solving a Problem in the Doctrine of Chances"
+      },
+      {
+        "claim": "Laplace independently formulated updating a prior with evidence",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+        "quote": "Independently of Bayes, Pierre-Simon Laplace used conditional probability to formulate the relation of an updated posterior probability from a prior probability , given evidence"
+      },
+      {
+        "claim": "Prior probability is the initial estimate before new evidence (probe)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+        "quote": "is the prior probability , the initial degree of belief in A"
+      },
+      {
+        "claim": "Bayes' theorem as rule for updating belief with new information (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+        "quote": "Bayes' theorem links the degree of belief in a proposition before and after rationally accounting for evidence",
+        "note": "'widely invoked to justify' is looser than the page but the substance is supported."
+      },
+      {
+        "claim": "Bayesian inference updates probability as more information becomes available",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayesian_inference",
+        "quote": "Bayes' theorem is used to calculate a probability of a hypothesis, given prior evidence , and update it as more information becomes available"
+      }
+    ],
+    "overall": "pass"
+  }
+}

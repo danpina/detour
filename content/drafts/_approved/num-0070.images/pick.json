@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-74820875",
+  "alt": "Black-and-white portrait of the mathematician Georg Cantor, a bald man with a grey beard in a dark jacket.",
+  "fits": true,
+  "note": "Historical portrait, public domain, 1184x1600.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

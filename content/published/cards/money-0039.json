@@ -1,0 +1,49 @@
+{
+  "id": "money-0039",
+  "interest": "money",
+  "title": "Why spreading money lowers risk",
+  "probes": [
+    {
+      "id": "money-0039-p1",
+      "question": "Why does holding many different assets reduce risk?",
+      "kind": "mcq",
+      "options": [
+        "It guarantees a profit",
+        "It removes all risk",
+        "Prices don't all move in step"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0039-p2",
+      "question": "True or false: holding only one stock is an example of an undiversified portfolio.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Diversification (finance) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Diversification_(finance)"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:13.980Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0039.webp",
+    "alt": "A wicker basket filled with chicken and speckled quail eggs resting on dry hay.",
+    "kind": "photo",
+    "credit": "George Chernilevsky / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Eggs_in_basket_2020_G1.jpg"
+  },
+  "body": {
+    "claim": "Diversification lowers risk because asset prices don't all move in step.",
+    "why": "If prices don't change in perfect synchrony, a diversified portfolio varies less than the average of its parts. A single stock dropping 50% in a year is not unusual, but a portfolio of 20 stocks falls that far less often. It is the same idea as the proverb about eggs and baskets."
+  }
+}

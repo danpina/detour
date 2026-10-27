@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Flashbulb memory",
+    "angle": "Vivid and confident does not mean accurate"
+  },
+  "created_at": "2026-10-26T20:29:12.585Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0047",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Vivid is not the same as accurate",
+    "body": {
+      "claim": "A memory can feel like a photograph and still be wrong in its details.",
+      "why": "Flashbulb memories are vivid memories of surprising, important events. Evidence shows people are highly confident in them, but the details can be forgotten. In one study of the Challenger disaster, people were highly confident, yet their memories were not very accurate three years later."
+    },
+    "probes": [
+      {
+        "id": "mind-0047-p1",
+        "kind": "mcq",
+        "question": "What pattern do flashbulb memory studies show?",
+        "options": [
+          "Low confidence and low accuracy",
+          "Accuracy rises over time",
+          "High confidence even as details fade",
+          "Perfect accuracy for shocking events"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "mind-0047-p2",
+        "kind": "tf",
+        "question": "True or false: confidence in a flashbulb memory appears to stay stable even when accuracy declines.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Flashbulb memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Flashbulb_memory"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "The Challenger launch, e.g. File:Challenger explosion.jpg (public domain NASA)",
+    "keywords": [
+      "Challenger explosion",
+      "Space Shuttle Challenger",
+      "camera flash",
+      "photograph"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:08:00.210Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Flashbulb_memory",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Flashbulb memories are vivid memories of surprising events (why, claim)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flashbulb_memory",
+        "quote": "A flashbulb memory is a vivid, long-lasting memory about a surprising or shocking event."
+      },
+      {
+        "claim": "Importance: principal determinants include high surprise and high consequentiality",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flashbulb_memory",
+        "quote": "Arguably, the principal determinants of a flashbulb memory are a high level of surprise, a high level of consequentiality",
+        "note": "Supports 'important' in the card's wording."
+      },
+      {
+        "claim": "People are highly confident but details can be forgotten (why, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flashbulb_memory",
+        "quote": "Evidence has shown that although people are highly confident in their memories, the details of the memories can be forgotten."
+      },
+      {
+        "claim": "Challenger study: highly confident, not very accurate three years later",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flashbulb_memory",
+        "quote": "participants were highly confident about their memories of the event, their memories were not very accurate three years after the event had occurred"
+      },
+      {
+        "claim": "Confidence stays strong while accuracy declines (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flashbulb_memory",
+        "quote": "although participants' confidence in their memories remained strong, the accuracy of their memories declined 15 months after the event"
+      }
+    ],
+    "overall": "pass"
+  }
+}

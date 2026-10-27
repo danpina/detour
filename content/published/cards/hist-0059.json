@@ -1,0 +1,56 @@
+{
+  "id": "hist-0059",
+  "interest": "history",
+  "title": "How do we see?",
+  "probes": [
+    {
+      "id": "hist-0059-p1",
+      "question": "What did Ibn al-Haytham say a hypothesis needs?",
+      "kind": "mcq",
+      "options": [
+        "Approval from a ruler",
+        "Support from experiments",
+        "Agreement with ancient authors",
+        "A beautiful explanation"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0059-p2",
+      "question": "True or false: Euclid and Ptolemy believed that sight works by the eye emitting rays of light.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ibn al-Haytham (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ibn_al-Haytham"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:31:33.702Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0059.webp",
+    "alt": "A 16th-century woodcut from the Latin edition of Ibn al-Haytham's optics showing mirrors and sunlight burning ships in a harbour",
+    "kind": "artwork",
+    "credit": "Bavarian State Library / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Thesaurus_opticus_Titelblatt.jpg"
+  },
+  "body": {
+    "question": "Euclid and Ptolemy thought sight works by the eye sending out rays. What did Ibn al-Haytham argue around 1030?",
+    "options": [
+      "Eyes send out rays, but only in daylight",
+      "Every point of a lit object sends light along every straight line, and the eye receives it",
+      "Sight is a gift that cannot be explained"
+    ],
+    "answer": 1,
+    "reveal": "In his Book of Optics (written between 1028 and 1038) Ibn al-Haytham described objects as sending light and colour along every straight line from each point. He is credited as an early proponent of the idea that a hypothesis must be supported by experiments, about five centuries before Renaissance scientists."
+  }
+}

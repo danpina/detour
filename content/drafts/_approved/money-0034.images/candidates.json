@@ -1,0 +1,112 @@
+{
+  "draft_id": "money-0034",
+  "created_at": "2026-10-26T20:30:00.868Z",
+  "queries": [
+    "stock board electronic stock board stock market board display",
+    "stock board",
+    "stock board electronic stock board"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-33488290",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Electronic stock board in Yaesu, Tokyo 2007.jpg",
+      "credit": "nappa / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Electronic_stock_board_in_Yaesu,_Tokyo_2007.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Electronic_stock_board_in_Yaesu%2C_Tokyo_2007.jpg/960px-Electronic_stock_board_in_Yaesu%2C_Tokyo_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 1944,
+      "alt_suggestion": "Electronic board in Yaesu, Tokyo displaying stock exchange market data. Photo taken in March 2007.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-156538",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Chicago Stock Exchange Trading Room: Reconstruction at the Art Institute of Chicago",
+      "credit": "Adler & Sullivan, original architects; American, 1883-1896 Vinci & Kenny, reconstruction architects; American, 1970-1977 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/156538",
+      "image_url": "https://www.artic.edu/iiif/2/47b28b55-ced6-502d-f111-fbe0033f8dc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A grand, double-height room with wood paneling, stenciled wall patterns, four hexagonal columns, and an interior balcony with guardrail at left.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-33488132",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Shinko Securities's electronic stock board nearby Yaesu side of Tokyo Station in March 2009.jpg",
+      "credit": "Kondo Atsushi / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shinko_Securities%27s_electronic_stock_board_nearby_Yaesu_side_of_Tokyo_Station_in_March_2009.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Shinko_Securities%27s_electronic_stock_board_nearby_Yaesu_side_of_Tokyo_Station_in_March_2009.jpg/960px-Shinko_Securities%27s_electronic_stock_board_nearby_Yaesu_side_of_Tokyo_Station_in_March_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3648,
+      "height": 2736,
+      "alt_suggestion": "新光証券 The electronic stock board in Tokyo’s Yaesu neighborhood never jumps the shark. in 2013 東京・八重洲の株価ボード みずほ証券",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-12765",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Elevator T-Plate from the Chicago Stock Exchange",
+      "credit": "Adler & Sullivan, architects; American, 1883-1896 Louis H. Sullivan, designer; American, 1856-1924 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12765",
+      "image_url": "https://www.artic.edu/iiif/2/4dc63cce-a3c0-9976-8e13-e7aac9e7df6a/full/843,/0/default.jpg",
+      "alt_suggestion": "A T-shaped architectural fragment with ornate geometric patterning consisting of repeating ellipses and some foliage detail.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-95135710",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "PACKARD 120 CONVERTIBLE COUPE (1939) (50072477626).jpg",
+      "credit": "Pedro Ribeiro Simões from Lisboa, Portugal / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PACKARD_120_CONVERTIBLE_COUPE_(1939)_(50072477626).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/PACKARD_120_CONVERTIBLE_COUPE_%281939%29_%2850072477626%29.jpg/960px-PACKARD_120_CONVERTIBLE_COUPE_%281939%29_%2850072477626%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3845,
+      "height": 2423,
+      "alt_suggestion": "Belem, Lisbon, Portugal DESCRIPTION Packard was an American luxury automobile marque built by the Packard Motor Car Company of Detroit, Michigan, United States. The first Packard automobiles were prod",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-12262407",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Philippine-stock-market-board.jpg",
+      "credit": "Katrina.Tuliao / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Philippine-stock-market-board.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 640,
+      "height": 480,
+      "alt_suggestion": "Phillippine stock market board",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-9382940",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Market centre in Tokyo stock exchange.jpg",
+      "credit": "ehnmark / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Market_centre_in_Tokyo_stock_exchange.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Market_centre_in_Tokyo_stock_exchange.jpg/960px-Market_centre_in_Tokyo_stock_exchange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1000,
+      "height": 750,
+      "alt_suggestion": "Tokyo Stock Exchange's so-called Market Center. The real stock trading floor closed in 1999. In its place is now just a glass cylinder, a few screens and a silly ticker—something for clueless journali",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"stock board electronic stock board stock market board display\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"stock board\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"stock board electronic stock board\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

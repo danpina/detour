@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-54770993",
+  "alt": "A wet cobblestone street at night glistening with reflected lights after rain.",
+  "fits": true,
+  "note": "Illustrates the 'wet street' example; no people.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

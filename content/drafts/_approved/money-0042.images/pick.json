@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-141552300",
+  "alt": "An 1885 Chicago, Burlington and Quincy Railroad stock certificate for 100 shares, with a steam locomotive engraving.",
+  "fits": true,
+  "note": "Historic stock certificate, public domain.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

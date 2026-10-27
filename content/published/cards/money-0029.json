@@ -1,0 +1,50 @@
+{
+  "id": "money-0029",
+  "interest": "money",
+  "title": "A raise can't shrink your pay",
+  "probes": [
+    {
+      "id": "money-0029-p1",
+      "question": "A single filer's taxable income goes from $48,000 to $49,000 (2025 rates). What rate applies to the dollars above $48,475?",
+      "kind": "mcq",
+      "options": [
+        "10%",
+        "12%",
+        "22%",
+        "24%"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0029-p2",
+      "question": "True or false: when your income reaches a higher tax bracket, the higher rate applies to all of your income.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Federal income tax rates and brackets (IRS)",
+      "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:19:05.828Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0029.webp",
+    "alt": "A blank United States tax form, a Form 990-PF return, with lines and boxes to fill in.",
+    "kind": "photo",
+    "credit": "United States Government / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:US_tax_Form_990-PF_Return_of_Private_Foundation_2020.png"
+  },
+  "body": {
+    "claim": "Moving into a higher US tax bracket doesn't tax all your income at the higher rate.",
+    "why": "Income is taxed in layers called brackets, and only the part that falls inside the new bracket gets the higher rate. For a single filer in 2025, the 12% layer ends at $48,475, so each dollar above that is taxed at 22% while every earlier dollar keeps its old rate. That leaves 78 cents of each extra dollar after federal income tax."
+  }
+}

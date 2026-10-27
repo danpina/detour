@@ -1,0 +1,110 @@
+{
+  "draft_id": "hist-0034",
+  "created_at": "2026-10-27T06:06:54.476Z",
+  "queries": [
+    "Black Death plague Tournai Pierart dou Tielt",
+    "Black Death",
+    "Black Death plague Tournai"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-64384805",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Doutielt1.jpg",
+      "credit": "Pierart dou Tielt (fl. 1340-1360) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Doutielt1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Doutielt1.jpg/960px-Doutielt1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1473,
+      "height": 1001,
+      "alt_suggestion": "Miniature by Pierart dou Tielt illustrating the Tractatus quartus by Gilles li Muisit (Tournai, c. 1353). Title: \"Gilles li Muisis, Antiquitates Flandriae (Tractatus quartus)\"",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-GSFC_20171208_Archive_e000116",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "NASA's Swift Mission Maps a Star's 'Death Spiral' into a Black Hole",
+      "credit": "GSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000116",
+      "image_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000116/GSFC_20171208_Archive_e000116~small.jpg",
+      "alt_suggestion": "Some 290 million years ago, a star much like the sun wandered too close to the central black hole of its galaxy. Intense tides tore the star apart, which produced an eruption of optical, ultraviolet a",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-8076",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Death and the Young Mother, from Revue Fantaisiste",
+      "credit": "Rodolphe Bresdin French, 1825-1885 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/8076",
+      "image_url": "https://www.artic.edu/iiif/2/7e9041d2-85fa-d76c-9592-10c26f9263e9/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching and roulette on cream china paper laid down on white wove paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-91018594",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Carriers of the New Black Plague.jpg",
+      "credit": "William Cotton / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carriers_of_the_New_Black_Plague.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Carriers_of_the_New_Black_Plague.jpg/960px-Carriers_of_the_New_Black_Plague.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 12473,
+      "height": 7911,
+      "alt_suggestion": "Carriers of the New Black Plague, 1938. Well preserved example of the original artwork for this provocative satirical pictorial map, addressing the varying levels of control of free speech exercised a",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-s76-32986",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "JSC SITE - BUILDINGS - JSC",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/s76-32986",
+      "image_url": "https://images-assets.nasa.gov/image/s76-32986/s76-32986~medium.jpg",
+      "alt_suggestion": "S76-32986 (March 1962) --- A color enhancement of a black and white photograph of a water trough, windmill, grazing area and feed lot on the future site of the Manned Spacecraft Center, Houston, Texas",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-64384803",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Doutielt3.jpg",
+      "credit": "Pierart dou Tielt (fl. 1340-1360) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Doutielt3.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Doutielt3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 801,
+      "height": 482,
+      "alt_suggestion": "Miniature by Pierart dou Tielt illustrating the Tractatus quartus bu Gilles li Muisit (Tournai, c. 1353). The people of Tournai bury victims of the Black Death. ms. 13076 - 13077 fol. 24v.",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-18142655",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Burying Plague Victims of Tournai.jpg",
+      "credit": "http://supotnitskiy.ru/stat/stat8.htm / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Burying_Plague_Victims_of_Tournai.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Burying_Plague_Victims_of_Tournai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 400,
+      "height": 418,
+      "alt_suggestion": "The burial of the victims of the plague in Tournai. Detail of a miniature from \"The Chronicles of Gilles Li Muisis\" (1272-1352), abbot of the monastery of St. Martin of the Righteous. Bibliothèque roy",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Black Death plague Tournai Pierart dou Tielt\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Black Death\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Black Death plague Tournai\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "money-0038",
+  "interest": "money",
+  "title": "The same $5,000, twenty years apart",
+  "probes": [
+    {
+      "id": "money-0038-p1",
+      "question": "True or false: with compound interest, interest earned also earns interest.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "money-0038-p2",
+      "question": "About how many times bigger does a balance grow with 20 extra years at 7% a year?",
+      "kind": "mcq",
+      "options": [
+        "2 times",
+        "4 times",
+        "10 times"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:01.934Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0038.webp",
+    "alt": "A young oak seedling with lobed leaves growing beside a mossy old tree stump in grass.",
+    "kind": "photo",
+    "credit": "W.carter / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tree_stump_with_oak_sapling_at_Myrstigen_1.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Ana puts $5,000 into an account at 25. Ben puts $5,000 into an identical one at 45. Both leave it alone until 65."
+      },
+      {
+        "text": "Compound interest means interest is added to the balance, and then that bigger balance earns interest too."
+      },
+      {
+        "text": "Assume 7% a year, an example number, not a forecast. Ben's $5,000 has 20 years to grow and reaches about $19,300."
+      },
+      {
+        "text": "Ana's has 40 years and reaches about $74,900."
+      },
+      {
+        "text": "The twist: twenty extra years didn't double her result. They multiplied it by almost 4, because each year's growth builds on all the growth before it."
+      }
+    ]
+  }
+}

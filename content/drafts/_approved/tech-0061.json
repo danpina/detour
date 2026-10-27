@@ -1,0 +1,109 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Bayer filter",
+    "angle": "Why a camera sensor's colour filter is half green"
+  },
+  "created_at": "2026-10-26T20:28:21.551Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0061",
+    "interest": "tech",
+    "type": "guess_first",
+    "title": "Half of a camera’s colour filter is green",
+    "body": {
+      "question": "A camera sensor sees colour through a tiny red, green or blue filter over each photosensor. What share of a Bayer filter is green?",
+      "options": [
+        "A quarter",
+        "Half",
+        "A third",
+        "Two thirds"
+      ],
+      "answer": 1,
+      "reveal": "The pattern is half green, one quarter red and one quarter blue. Bryce Bayer used twice as many green elements to mimic the human eye. Software then interpolates the missing colour information at each pixel."
+    },
+    "probes": [
+      {
+        "id": "tech-0061-p1",
+        "kind": "mcq",
+        "question": "Why does the Bayer filter use twice as many green elements?",
+        "options": [
+          "Green is cheaper to make",
+          "To mimic the physiology of the human eye",
+          "Cameras prefer plants",
+          "To save battery"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0061-p2",
+        "kind": "tf",
+        "question": "True or false: the Bayer filter pattern is half green, one quarter red and one quarter blue.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bayer filter (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bayer_filter"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:An RGGB Bayer Colour Filter on a 1980's vintage Sony PAL Camcorder CCD.png (CC BY-SA) is a microscope view of a Bayer filter",
+    "keywords": [
+      "Bayer filter",
+      "colour filter array",
+      "camera sensor filter",
+      "CCD Bayer"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:10:27.317Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bayer_filter",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Bayer pattern is half green, one quarter red, one quarter blue (answer, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayer_filter",
+        "quote": "The filter pattern is half green, one quarter red and one quarter blue"
+      },
+      {
+        "claim": "Bryce Bayer used twice as many green elements to mimic the human eye (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayer_filter",
+        "quote": "He used twice as many green elements as red or blue to mimic the physiology of the human eye."
+      },
+      {
+        "claim": "Missing colour information is interpolated",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayer_filter",
+        "quote": "Reconstructed image after interpolating missing color information",
+        "note": "Page does not say 'software' explicitly; accepted as demosaicing."
+      },
+      {
+        "claim": "Filter is a grid of red, green, blue filters over photosensors",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayer_filter",
+        "quote": "color filters on a square grid of photosensors"
+      },
+      {
+        "claim": "Title: half of a camera colour filter is green",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bayer_filter",
+        "quote": "The filter pattern is half green, one quarter red and one quarter blue"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Great Fire of London",
+    "angle": "A disaster that changed how London was built"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0050",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "The fire that banned wooden fronts",
+    "body": {
+      "claim": "After the Great Fire of 1666, London was rebuilt in brick and stone instead of wood.",
+      "why": "The fire started in a bakery in Pudding Lane on 2 September 1666 and burned until 5 September, destroying around 13,200 to 13,500 houses and St Paul's Cathedral. The Rebuilding of London Act banned wood from the outside of buildings. The rebuild also brought wider streets and open wharves along the Thames. The traditional death toll is six, though some historians think it was higher."
+    },
+    "probes": [
+      {
+        "id": "hist-0050-p1",
+        "kind": "mcq",
+        "question": "What change did London's rebuilding bring?",
+        "options": [
+          "Buildings made of brick and stone, not wood",
+          "A new capital city elsewhere",
+          "Narrower streets",
+          "Houses with thatched roofs"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0050-p2",
+        "kind": "tf",
+        "question": "True or false: the Great Fire of London started in a bakery in Pudding Lane.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Great Fire of London (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Great_Fire_of_London"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Great Fire London.jpg shows a painting of the Great Fire of London seen from the Thames (public domain, landscape)",
+    "keywords": [
+      "Great Fire of London",
+      "1666 fire",
+      "London 1666",
+      "Pudding Lane"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.140Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Rebuilt in brick and stone, not wood (title, claim, p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+        "quote": "buildings constructed of brick and stone, not wood"
+      },
+      {
+        "claim": "Fire started in a bakery in Pudding Lane on 2 September (p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+        "quote": "The fire started in a bakery in Pudding Lane shortly after midnight on Sunday 2 September"
+      },
+      {
+        "claim": "Fire ran 2 to 5 September 1666",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+        "quote": "The Great Fire of London occurred from Sunday 2 September to Wednesday 5 September 1666"
+      },
+      {
+        "claim": "Destroyed around 13,200 to 13,500 houses and St Paul's Cathedral",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+        "quote": "The material destruction has been computed at 13,200-13,500 houses, 86 or 87 parish churches"
+      },
+      {
+        "claim": "Rebuilding of London Act banned wood from the outside of buildings",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+        "quote": "The Rebuilding of London Act 1666 banned wood from the exterior of buildings"
+      },
+      {
+        "claim": "Wider streets and open wharves along the Thames",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+        "quote": "wider streets, open and accessible wharves along the length of the Thames"
+      },
+      {
+        "claim": "Traditional death toll six, possibly higher",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+        "quote": "may have been higher than the traditional figure of six"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "How tides work",
+    "angle": "Two bulges and a rotating Earth"
+  },
+  "created_at": "2026-10-26T20:30:07.403Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0060",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Why there are two tides a day",
+    "body": {
+      "claim": "The oceans rise and fall about twice a day because the Moon's pull makes two tidal bulges.",
+      "why": "The Moon pulls differently on different parts of Earth. In Newton's simple model this makes a double bulge along the Earth-Moon line, a little bigger on the Moon's side. As Earth rotates, you pass through both bulges each day. Around new and full moon the Sun's pull adds to the Moon's, giving the biggest tides."
+    },
+    "probes": [
+      {
+        "id": "sci-0060-p1",
+        "kind": "mcq",
+        "question": "Why do most coasts see about two high tides a day?",
+        "options": [
+          "The Moon orbits Earth twice a day",
+          "Earth rotates through two tidal bulges",
+          "The Sun heats the sea twice a day",
+          "Wind pushes water in and out"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0060-p2",
+        "kind": "tf",
+        "question": "True or false: tides have the biggest range around new moon and full moon.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tide (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Tide"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Low tide, Bay of Fundy (20214469966).jpg (CC BY-SA 2.0) shows low tide at the Bay of Fundy; File:Bay of Fundy at Low Tide.jpg alternative",
+    "keywords": [
+      "Bay of Fundy low tide",
+      "Bay of Fundy",
+      "low tide"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.058Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tide",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The oceans rise and fall about twice a day (semi-diurnal tides)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tide",
+        "quote": "Many shorelines experience semi-diurnal tides"
+      },
+      {
+        "claim": "Newton's simple model gives a double bulge along the Earth-Moon line, a little bigger on the Moon's side",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tide",
+        "quote": "somewhat larger on the side closer to the Moon"
+      },
+      {
+        "claim": "As Earth rotates you pass through both bulges each day (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tide",
+        "quote": "As the Earth rotates on its axis, different points on Earth move through these bulges, roughly explaining the daily double tides."
+      },
+      {
+        "claim": "The Sun's pull adds to the Moon's around new and full moon, giving the biggest tides (also probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tide",
+        "quote": "the tidal force due to the Sun reinforces that due to the Moon."
+      },
+      {
+        "claim": "Biggest tide range happens around new moon and full moon",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tide",
+        "quote": "Approximately twice a month, around new moon and full moon when the Sun, Moon, and Earth form a line"
+      },
+      {
+        "claim": "The simplest model that explains two daily tides is due to Newton",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Tide",
+        "quote": "The simplest model, due to Isaac Newton that explains two daily tides is known as equilibrium theory ."
+      }
+    ],
+    "overall": "pass"
+  }
+}

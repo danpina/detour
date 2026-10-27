@@ -1,0 +1,98 @@
+{
+  "draft_id": "money-0048",
+  "created_at": "2026-10-27T06:08:13.081Z",
+  "queries": [
+    "supply demand equilibrium curves supply and demand diagram economics demand supply curves",
+    "supply demand equilibrium curves",
+    "supply demand equilibrium curves supply and demand diagram"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-85283221",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Liquid fuels supply and demand (million barrels per day) and North Sea Brent crude oil equilibrium prices in three cases, 2040 (28868907240).png",
+      "credit": "U.S. Energy Information Administration / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Liquid_fuels_supply_and_demand_(million_barrels_per_day)_and_North_Sea_Brent_crude_oil_equilibrium_prices_in_three_cases,_2040_(28868907240).png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Liquid_fuels_supply_and_demand_%28million_barrels_per_day%29_and_North_Sea_Brent_crude_oil_equilibrium_prices_in_three_cases%2C_2040_%2828868907240%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 929,
+      "height": 726,
+      "alt_suggestion": "The discussion presented here provides an overview of both the production and consumption of liquid fuels in the three price cases, as summarized in the notional supply and demand curves for 2040 show",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-90080",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The British Butcher, Supplying John Bull with a Substitute for Bread",
+      "credit": "James Gillray (English, 1756-1815) published by Hannah Humphrey (English, c. 1745-1818) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/90080",
+      "image_url": "https://www.artic.edu/iiif/2/579630c8-594e-78b6-0c17-6a2999df0da4/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching in dark brown, with handcoloring, and second plate with additional etched inscriptions in brown ink, below, on cream wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-95906183",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Price Ceiling.png",
+      "credit": "Karinnna13 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Price_Ceiling.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Price_Ceiling.png/960px-Price_Ceiling.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1106,
+      "height": 894,
+      "alt_suggestion": "Controlling rent through a price ceiling will create a shortage. The equilibrium is at P* and Q*.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-143459",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Medical Supply Boat, Appomattox Landing, Virginia",
+      "credit": "John Reekie American, active 1861–1865 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/143459",
+      "image_url": "https://www.artic.edu/iiif/2/7746549d-0730-07da-2bf8-42574e4b2b08/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of albumen print, pl. 72 from the album \"gardner's photographic sketch book of the war, volume ii\" (1866).",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-104129739",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Law of demand.jpg",
+      "credit": "Daydreamm / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Law_of_demand.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Law_of_demand.jpg/960px-Law_of_demand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3688,
+      "height": 2130,
+      "alt_suggestion": "The demand curve shown in blue is sloping downward from left to right because price and quantity demanded are inversely related. This relationship is contingent on certain ceteris paribus conditions r",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-104312669",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Supply and Demand curve.png",
+      "credit": "The Editors of Encyclopaedia Britannica / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Supply_and_Demand_curve.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Supply_and_Demand_curve.png/960px-Supply_and_Demand_curve.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1590,
+      "height": 1156,
+      "alt_suggestion": "The file describes the relationship between the supply and demand of a market, and the associated price.",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"supply demand equilibrium curves supply and demand diagram economics demand supply curves\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"supply demand equilibrium curves\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"supply demand equilibrium curves supply and demand diagram\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

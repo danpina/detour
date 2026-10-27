@@ -1,0 +1,89 @@
+{
+  "draft_id": "num-0056",
+  "created_at": "2026-10-26T20:32:09.846Z",
+  "queries": [
+    "pigeonholes mail cubbyholes pigeonhole mailboxes",
+    "pigeonholes mail",
+    "pigeonholes mail cubbyholes"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-73215148",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Read House Hotel Front Desk Cubbyholes.jpg",
+      "credit": "Dennis Rhea / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Read_House_Hotel_Front_Desk_Cubbyholes.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Read_House_Hotel_Front_Desk_Cubbyholes.jpg/960px-Read_House_Hotel_Front_Desk_Cubbyholes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3072,
+      "height": 2048,
+      "alt_suggestion": "The original mail cubbyholes at the Read House from 1926.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-9568",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Mail Coach",
+      "credit": "Horace Vernet (French, 1789-1863) printed by Francois Seraphin Delpech (French, 1778-1825) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/9568",
+      "image_url": "https://www.artic.edu/iiif/2/06ef09b5-5499-0b3a-0768-8c8760431267/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of lithograph in black on ivory wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-37099411",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "When is art ?.jpg",
+      "credit": "Erik Pevernagie .mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(--border-color-progressive,#6485d1);backgrou",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:When_is_art_%3F.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/When_is_art_%3F.jpg/960px-When_is_art_%3F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1865,
+      "height": 1433,
+      "alt_suggestion": "\"When is Art?\" , by Erik Pevernagie, oil on canvas, 80 x 100 cm xx MEDITATION ON THE PAINTING A piece of art comes to life when we can feel it breathing, when it talks to us, and when it starts raisin",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-106382",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Mail Shirt",
+      "credit": "Western European; probably German / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/106382",
+      "image_url": "https://www.artic.edu/iiif/2/100269f7-d9e3-a8d3-4386-5f18ca89536c/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of steel, iron, and brass.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-116846",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Mail Cape (Bishop's Mantle)",
+      "credit": "German / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/116846",
+      "image_url": "https://www.artic.edu/iiif/2/ceeee355-24ff-313e-83b2-320611269f7d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of steel and brass.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Sorting airmail (2551172370).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"pigeonholes mail cubbyholes pigeonhole mailboxes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"pigeonholes mail\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"pigeonholes mail cubbyholes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

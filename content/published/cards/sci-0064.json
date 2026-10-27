@@ -1,0 +1,53 @@
+{
+  "id": "sci-0064",
+  "interest": "science",
+  "title": "Sound in water",
+  "probes": [
+    {
+      "id": "sci-0064-p1",
+      "question": "How fast does sound travel in fresh water at 20 °C?",
+      "kind": "estimate",
+      "answer": 1481,
+      "unit": "m/s",
+      "min": 100,
+      "max": 10000,
+      "scale": "log"
+    },
+    {
+      "id": "sci-0064-p2",
+      "question": "True or false: sound typically travels fastest in solids and slowest in gases.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Speed of sound (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Speed_of_sound"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:12.500Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "sci-0064.webp",
+    "alt": "An underwater scene in dark blue Antarctic water with sea urchins and a brittle star on the seabed beneath an ice wall.",
+    "kind": "photo",
+    "credit": "NSF/USAP photo by Steve Clabuesch; uploaded by en:User:Fishdecoy / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Underwater_mcmurdo_sound.jpg"
+  },
+  "body": {
+    "question": "How fast does sound travel in fresh water at 20 °C?",
+    "unit": "m/s",
+    "min": 100,
+    "max": 10000,
+    "scale": "log",
+    "answer": 1481,
+    "reveal": "About 1481 m/s, slightly more than 4.3 times as fast as in air, where it moves at 343 m/s. In iron it is 5120 m/s. Typically sound travels most slowly in gases, faster in liquids, and fastest in solids."
+  }
+}

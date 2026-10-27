@@ -1,0 +1,62 @@
+{
+  "id": "hist-0061",
+  "interest": "history",
+  "title": "Every sum written twice",
+  "probes": [
+    {
+      "id": "hist-0061-p1",
+      "question": "What is the main check that double-entry bookkeeping provides?",
+      "kind": "mcq",
+      "options": [
+        "Every sale is doubled",
+        "Accounts are written in two languages",
+        "Total debits must equal total credits",
+        "Every bill is paid twice"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "hist-0061-p2",
+      "question": "True or false: Luca Pacioli's mathematics textbook, published in Venice in 1494, first codified double-entry bookkeeping.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Double-entry bookkeeping (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:31:34.781Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0061.webp",
+    "alt": "A Renaissance portrait of the friar Luca Pacioli at a table with a geometric slate, a glass polyhedron and an open book, beside a young man",
+    "kind": "photo",
+    "credit": "Jacopo de' Barbari / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jacopo_de%27_Barbari_(attributed_to)_Portrait_of_Luca_Pacioli_(1445_1517)_with_a_student_(Guidobaldo_da_Montefeltro)_(2).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Double-entry bookkeeping records every financial transaction with equal and opposite entries, called debits and credits."
+      },
+      {
+        "text": "Each transaction goes into at least two accounts, so the totals of debits and credits must match. If they do not, something has been recorded wrongly."
+      },
+      {
+        "text": "That check helps catch errors and fraud. The books are 'balanced' because both sides must agree."
+      },
+      {
+        "text": "The Ragusan merchant Benedetto Cotrugli described the method in 1458. The Franciscan friar Luca Pacioli, a collaborator of Leonardo da Vinci, first codified it in a mathematics textbook published in Venice in 1494."
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Lightning",
+    "angle": "How charge separation leads to a strike"
+  },
+  "created_at": "2026-10-26T20:31:08.683Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0047",
+    "interest": "science",
+    "type": "story",
+    "title": "How a storm builds lightning",
+    "body": {
+      "panels": [
+        {
+          "text": "Inside a thundercloud, rising air carries supercooled droplets and very small ice crystals upward. Larger, denser graupel tends to fall or hang in the updraft."
+        },
+        {
+          "text": "The ice crystals and graupel collide. In the usual picture the crystals become positively charged and the graupel negatively charged, and the updraft carries the positive crystals toward the top."
+        },
+        {
+          "text": "Exactly how the charge builds up is still a matter of scientific investigation. When the local electric field exceeds the dielectric strength of damp air, about 3 MV/m, a discharge results."
+        },
+        {
+          "text": "The twist: the air around the flash rapidly heats to about 30,000 °C. The sudden pressure rise sends out a shock wave, and that is thunder."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0047-p1",
+        "kind": "mcq",
+        "question": "What causes thunder?",
+        "options": [
+          "A shock wave from air heated suddenly by the discharge",
+          "Clouds bumping into each other",
+          "Rain hitting the ground"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0047-p2",
+        "kind": "tf",
+        "question": "True or false: in the usual picture, collisions between ice crystals and graupel separate electric charge in a storm cloud.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Lightning (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Lightning"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Lightning Pritzerbe 01 (MK).jpg and File:Lightning cloud to cloud (aka).jpg show lightning",
+    "keywords": [
+      "Lightning",
+      "cloud-to-ground lightning",
+      "thunderstorm lightning"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.589Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lightning",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Updraft carries supercooled droplets and very small ice crystals upward",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lightning",
+        "quote": "The updraft carries the super-cooled cloud droplets and very small ice crystals upward."
+      },
+      {
+        "claim": "Graupel is larger and denser, falls or hangs in the updraft",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lightning",
+        "quote": "the graupel, which is considerably larger and denser, tends to fall or be suspended in the rising air"
+      },
+      {
+        "claim": "Ice crystals become positive, graupel negative on collision (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lightning",
+        "quote": "When the rising ice crystals collide with graupel, the ice crystals become positively charged and the graupel becomes negatively charged."
+      },
+      {
+        "claim": "Updraft carries positive crystals toward the top",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lightning",
+        "quote": "The upper part of the thunderstorm cloud becomes positively charged"
+      },
+      {
+        "claim": "How charge builds up is still under investigation",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lightning",
+        "quote": "Mechanisms that cause the charges to build up to lightning are still a matter of scientific investigation."
+      },
+      {
+        "claim": "Discharge when field exceeds dielectric strength of damp air, about 3 MV/m",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lightning",
+        "quote": "When the local electric field exceeds the dielectric strength of damp air (about 3 MV/m), electrical discharge results in a strike"
+      },
+      {
+        "claim": "Air around flash heats to about 30,000 C",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lightning",
+        "quote": "The air around the lightning flash rapidly heats to temperatures of about 30,000 °C"
+      },
+      {
+        "claim": "Shock wave from sudden pressure rise is thunder (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lightning",
+        "quote": "a sound from the shock wave which develops as heated gases in the vicinity of the discharge experience a sudden increase in pressure"
+      }
+    ],
+    "overall": "pass"
+  }
+}

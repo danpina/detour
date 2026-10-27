@@ -1,0 +1,50 @@
+{
+  "id": "money-0049",
+  "interest": "money",
+  "title": "The cost of the road not taken",
+  "probes": [
+    {
+      "id": "money-0049-p1",
+      "question": "You can spend an evening on only one thing: a film, a run, or a course. You pick the film, and the run was your next-best option. What is the opportunity cost?",
+      "kind": "mcq",
+      "options": [
+        "The ticket price of the film",
+        "The value of the run you gave up",
+        "Nothing, since you chose freely",
+        "The value of all three options added up"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0049-p2",
+      "question": "True or false: opportunity costs only count money.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Opportunity cost (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Opportunity_cost"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:51.008Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0049.webp",
+    "alt": "A narrow country road splitting in two at a fork, with green hedges and trees on either side.",
+    "kind": "photo",
+    "credit": "Bill Nicholls / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Fork_in_the_road_-_geograph.org.uk_-_2520307.jpg"
+  },
+  "body": {
+    "claim": "The real cost of a choice is the best alternative you give up.",
+    "why": "Economists call this opportunity cost: the value of the best alternative forgone when limited resources force you to choose. It is not restricted to money. Lost time, pleasure or any other benefit counts too."
+  }
+}

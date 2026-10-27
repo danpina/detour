@@ -1,0 +1,55 @@
+{
+  "id": "tech-0059",
+  "interest": "tech",
+  "title": "How much does JPEG shrink a photo?",
+  "probes": [
+    {
+      "id": "tech-0059-p1",
+      "question": "What can you trade off by adjusting JPEG compression?",
+      "kind": "mcq",
+      "options": [
+        "Colour and sound",
+        "Speed and screen size",
+        "Storage size and image quality",
+        "Battery and weight"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "tech-0059-p2",
+      "question": "True or false: JPEG's degree of compression can be adjusted.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "JPEG (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/JPEG"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:51.854Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "tech-0059.webp",
+    "alt": "Two copies of the same photo of a green bird on a branch, the right one blurrier with blocky compression artifacts.",
+    "kind": "photo",
+    "credit": "JJ Harrison, side-by-side comparison by Ibrahim.ID / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:JPEG_compression_Example.jpg"
+  },
+  "body": {
+    "question": "JPEG throws away detail you are unlikely to miss. Typically, how many times smaller does JPEG make an image?",
+    "unit": "times smaller",
+    "min": 1,
+    "max": 1000,
+    "scale": "log",
+    "answer": 10,
+    "reveal": "JPEG typically achieves 10:1 compression, with a loss in image quality that is perceptible but widely agreed to be acceptable. The degree of compression can be adjusted, trading storage size against image quality."
+  }
+}

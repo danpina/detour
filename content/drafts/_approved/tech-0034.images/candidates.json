@@ -1,0 +1,169 @@
+{
+  "draft_id": "tech-0034",
+  "created_at": "2026-10-27T06:10:17.816Z",
+  "queries": [
+    "telephone directory phone book white pages",
+    "telephone directory",
+    "telephone directory phone book"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-130200118",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "U of A Telephone and Directory.jpg",
+      "credit": "University of Alberta Archives Photographs Collection - https://archive.org/details/UAA-1972-058-974 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:U_of_A_Telephone_and_Directory.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/U_of_A_Telephone_and_Directory.jpg/960px-U_of_A_Telephone_and_Directory.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2178,
+      "height": 1784,
+      "alt_suggestion": "University of Alberta Archives, UAA-1972-058-974, U of A Telephone and Directory, April 1943, https://discoverarchives.library.ualberta.ca/",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-51577",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The White Tablecloth",
+      "credit": "Jean Siméon Chardin (French, 1699–1779) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/51577",
+      "image_url": "https://www.artic.edu/iiif/2/7085f5ee-b5da-bd9f-e8f9-b692be466ea0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-176020873",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rodent damage to collections-Telephone directory-03.jpg",
+      "credit": "Heritage Preservation Department - MNHS / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rodent_damage_to_collections-Telephone_directory-03.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Rodent_damage_to_collections-Telephone_directory-03.jpg/960px-Rodent_damage_to_collections-Telephone_directory-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4246,
+      "height": 2901,
+      "alt_suggestion": "Rodent damage to collections-Telephone directory Agents of deterioration Photograph by Bob Herskovitz",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-25872",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The White Bridge",
+      "credit": "John Henry Twachtman (American, 1853–1902) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/25872",
+      "image_url": "https://www.artic.edu/iiif/2/b2b488b9-99f2-d091-ead4-538f20a94592/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-176020871",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rodent damage to collections-Telephone directory-01.jpg",
+      "credit": "Heritage Preservation Department - MNHS / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rodent_damage_to_collections-Telephone_directory-01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Rodent_damage_to_collections-Telephone_directory-01.jpg/960px-Rodent_damage_to_collections-Telephone_directory-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2841,
+      "height": 4173,
+      "alt_suggestion": "Rodent damage to collections-Telephone directory Agents of deterioration Photograph by Bob Herskovitz",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Bell telephone magazine (1942) (14753972944).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Polk-Husted Directory Co.'s Oakland, Berkeley and Alameda directory (1915) (14781005684).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "1913 Des Moines and Polk County, Iowa, City Directory (1913) (14762885291).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "1913 Des Moines and Polk County, Iowa, City Directory (1913) (14765671285).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Trow's general directory of the boroughs of Manhattan and Bronx, city of New York (1907) (14783432452).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The Lowell suburban directory for Billerica, Chelmsford, Dracut, Tewksbury, Tyngsboro and Westford - containing an alphabetical list of the inhabitants and business firms, streets, town offices, (14756097485).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The Ladies' home journal (1948) (14787232523).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "San Francisco and Bay counties telephone directory (1917) (14570060528).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "1926 Columbus Phone Book - DPLA - 86c174bf3dd1cbd903e287be57181d5f (page 16).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Home telephone directory (1910) (14569394679).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Telephone directory (1906) (14755643412).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Home telephone directory (1910) (14569189329).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Home telephone directory (1910) (14569418378).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Home telephone directory (1910) (14569205618).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"telephone directory phone book white pages\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"telephone directory\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"telephone directory phone book\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

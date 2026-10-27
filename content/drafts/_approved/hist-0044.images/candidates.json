@@ -1,0 +1,90 @@
+{
+  "draft_id": "hist-0044",
+  "created_at": "2026-10-27T06:08:57.333Z",
+  "queries": [
+    "Cuban Missile Crisis Cuban missiles reconnaissance R-12 missile",
+    "Cuban Missile Crisis",
+    "Cuban Missile Crisis Cuban missiles reconnaissance"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-113797285",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "SAM S-75 Dvina. ЗРК С-75 \"Двина\" (7322067464).jpg",
+      "credit": "Andrey Korchagin from St. Petersburg, Russia / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SAM_S-75_Dvina._%D0%97%D0%A0%D0%9A_%D0%A1-75_%22%D0%94%D0%B2%D0%B8%D0%BD%D0%B0%22_(7322067464).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/SAM_S-75_Dvina._%D0%97%D0%A0%D0%9A_%D0%A1-75_%22%D0%94%D0%B2%D0%B8%D0%BD%D0%B0%22_%287322067464%29.jpg/960px-SAM_S-75_Dvina._%D0%97%D0%A0%D0%9A_%D0%A1-75_%22%D0%94%D0%B2%D0%B8%D0%BD%D0%B0%22_%287322067464%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3544,
+      "height": 2332,
+      "alt_suggestion": "Saint-Petersburg. Artillery Museum. The S-75 Dvina (Russian: С-75; NATO reporting name SA-2 Guideline) is a Soviet-designed, high-altitude, command guided, surface-to-air missile (SAM). Since its firs",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-180742",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Center Table",
+      "credit": "England / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/180742",
+      "image_url": "https://www.artic.edu/iiif/2/1e5781cb-b29b-4d6e-7e63-3bb0a2200603/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of cuban mahogany and iron fittings.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-441590",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cuban missiles.jpg",
+      "credit": "see above / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cuban_missiles.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Cuban_missiles.jpg/960px-Cuban_missiles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1160,
+      "height": 1121,
+      "alt_suggestion": "U.S. aerial reconnaissance photograph of a medium range ballistic missile launch site at San Cristobal in Cuba, on 1 November 1962 during the Cuban missile crisis.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-158327",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "A Night Reconnaissance",
+      "credit": "Winslow Homer (American, 1836-1910) published by Harper's Weekly (American, 1857-1916) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/158327",
+      "image_url": "https://www.artic.edu/iiif/2/acf51ded-3fad-a150-2ad6-baf001cde262/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of wood engraving on paper."
+    },
+    {
+      "id": "wikimedia-51249915",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cuban Missile Crisis 1962 (15332098127).jpg",
+      "credit": "Archives New Zealand from New Zealand / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cuban_Missile_Crisis_1962_(15332098127).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Cuban_Missile_Crisis_1962_%2815332098127%29.jpg/960px-Cuban_Missile_Crisis_1962_%2815332098127%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5094,
+      "height": 4064,
+      "alt_suggestion": "The Cuban Missile Crisis was a 13-day confrontation in October 1962 between the United States and the Soviet Union over Soviet ballistic missiles deployed in Cuba. The crisis started on October 14 196",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "GCHQ Cuban Missile Crisis Intercept.webp",
+      "license": "OGL v1.0",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Cuban Missile Crisis Cuban missiles reconnaissance R-12 missile\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Cuban Missile Crisis\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Cuban Missile Crisis Cuban missiles reconnaissance\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

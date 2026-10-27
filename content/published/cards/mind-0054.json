@@ -1,0 +1,56 @@
+{
+  "id": "mind-0054",
+  "interest": "mind",
+  "title": "Same lives, different words",
+  "probes": [
+    {
+      "id": "mind-0054-p1",
+      "question": "When the options were framed as deaths instead of lives saved, which treatment did most people pick?",
+      "kind": "mcq",
+      "options": [
+        "Treatment A",
+        "Treatment B",
+        "Neither",
+        "Both equally"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0054-p2",
+      "question": "True or false: in the Asian disease problem, the two framings described different outcomes.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Framing effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:25.160Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0054.webp",
+    "alt": "A half-full glass of water on a sunlit cafe table.",
+    "kind": "photo",
+    "credit": "Gabecollett / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Is_the_Glass_Half_Full_or_Half_Empty%3F_The_Light_of_the_Glass_of_Water_Next_To_Black_Wallett.jpg"
+  },
+  "body": {
+    "question": "A deadly disease threatens 600 people. Treatment A: 200 people will be saved. Treatment B: a 33% chance that all 600 are saved, a 66% chance that no one is. Which did most people choose?",
+    "options": [
+      "Treatment A",
+      "Treatment B",
+      "They split evenly"
+    ],
+    "answer": 0,
+    "reveal": "72% chose Treatment A. But when the same outcomes were framed as deaths (A: 400 people will die; B: a 33% chance no one dies, a 66% chance all 600 die), 78% chose B. Same facts, flipped choice: the framing changed the decision."
+  }
+}

@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-142386148",
+ "alt": "A hand-painted Help Wanted sign on a post beside an empty prairie road.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (CC BY 2.0).",
+ "crop": {
+  "fx": 0.45,
+  "fy": 0.3,
+  "zoom": 1
+ }
+}

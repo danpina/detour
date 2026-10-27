@@ -1,0 +1,50 @@
+{
+  "id": "tech-0057",
+  "interest": "tech",
+  "title": "A GPT-style chatbot starts by guessing the next word",
+  "probes": [
+    {
+      "id": "tech-0057-p1",
+      "question": "What are GPT-style language models pre-trained to do?",
+      "kind": "mcq",
+      "options": [
+        "Draw pictures only",
+        "Search the web live",
+        "Predict the next word",
+        "Translate into binary"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "tech-0057-p2",
+      "question": "True or false: biased or inaccurate training data can make an LLM's output less reliable.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Large language model (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:50.922Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0057.webp",
+    "alt": "Diagram of the sentence 'Hey Barbora, how are you?' with a target word marked between its left and right context.",
+    "kind": "photo",
+    "credit": "Cepice / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Language_model_context_understanding.jpg"
+  },
+  "body": {
+    "claim": "GPT-style language models are first pre-trained to predict the next word.",
+    "why": "LLMs are neural networks trained on a vast amount of text. GPT-style models are pre-trained to predict the next word, then often fine-tuned to follow instructions and act as assistants. Biased or inaccurate training data can make the output less reliable."
+  }
+}

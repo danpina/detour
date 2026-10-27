@@ -1,0 +1,81 @@
+{
+  "draft_id": "hist-0038",
+  "created_at": "2026-10-27T06:07:44.231Z",
+  "queries": [
+    "Mehmed II Constantinople Conquest of Constantinople Theodosian Walls",
+    "Mehmed II Constantinople",
+    "Mehmed II Constantinople Conquest of Constantinople"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-147845",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bellini, Gentile - Sultan Mehmet II.jpg",
+      "credit": "Gentile Bellini / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bellini,_Gentile_-_Sultan_Mehmet_II.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Bellini%2C_Gentile_-_Sultan_Mehmet_II.jpg/960px-Bellini%2C_Gentile_-_Sultan_Mehmet_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3132,
+      "height": 4226,
+      "alt_suggestion": "Bellini, Gentile - Sultan Mehmet II.jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-7828957",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Gennadios II and Mehmed II.jpg",
+      "credit": "20th century Greek iconographer (Sotiris Varvoglis 1944-2023) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gennadios_II_and_Mehmed_II.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Gennadios_II_and_Mehmed_II.jpg/960px-Gennadios_II_and_Mehmed_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2376,
+      "height": 2948,
+      "alt_suggestion": "Mehmed II and Gennadios II A mosaic of Mehmed II, the Ottoman sultan who conquered Istanbul, granting authority to Gennadios II, the first Greek Patriarch of Constantinople under Ottoman rule, his aut",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-147190641",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Gennadios Mehmed II.jpg",
+      "credit": "Auction / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gennadios_Mehmed_II.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Gennadios_Mehmed_II.jpg/960px-Gennadios_Mehmed_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1309,
+      "height": 1600,
+      "alt_suggestion": "Patriarch Gennadios with Mehmet II depicted on a 18th-century painting",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-2727680",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Zonaro GatesofConst.jpg",
+      "credit": "Fausto Zonaro / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zonaro_GatesofConst.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Zonaro_GatesofConst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 903,
+      "height": 1224,
+      "alt_suggestion": "Mehmed II, Entering to Constantinople",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "The story of the map of Europe, its making and its changing (1916) (14591813827).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Mehmed II Constantinople Conquest of Constantinople Theodosian Walls\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Mehmed II Constantinople\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Mehmed II Constantinople Conquest of Constantinople\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

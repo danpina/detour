@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0047",
+  "created_at": "2026-10-27T06:12:05.006Z",
+  "queries": [
+    "fishing hook fishing lure phishing",
+    "fishing hook",
+    "fishing hook fishing lure"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-4525602",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fishing hooks on white surface.jpg",
+      "credit": "daniel jaeger / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fishing_hooks_on_white_surface.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Fishing_hooks_on_white_surface.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 945,
+      "height": 933,
+      "alt_suggestion": "Line of fishing hooks on a white surface",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-65",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Fishing Craft near the Cliffs at Collioure",
+      "credit": "Adolphe Appian French, 1818-1898 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/65",
+      "image_url": "https://www.artic.edu/iiif/2/6983bf9e-3cd8-c42d-4c91-cd646c97399c/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on china paper colle laid down on white wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-139955938",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "02023 fishing hook (Clark), Radusz around 7800 BC — 5400 BC.jpg",
+      "credit": "https://wmuzeach.pl/all-objects/DaSrgfDGSRYIH7DqdIGW_type-v-fishing-hook-clark-?search_token=euW1d5bJDgSOHZkXqvhL&sortby=created_at-desc / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:02023_fishing_hook_(Clark),_Radusz_around_7800_BC_%E2%80%94_5400_BC.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/02023_fishing_hook_%28Clark%29%2C_Radusz_around_7800_BC_%E2%80%94_5400_BC.jpg/960px-02023_fishing_hook_%28Clark%29%2C_Radusz_around_7800_BC_%E2%80%94_5400_BC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3604,
+      "height": 1549,
+      "alt_suggestion": "mns/a/22060 The sharp end of the lower part of the hook is a characteristic feature of products of this type for the Middle and Late Mesolithic populations. A thickening intended to make a suitable kn",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-4796",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Fishing Boats with Hucksters Bargaining for Fish",
+      "credit": "Joseph Mallord William Turner (English, 1775–1851) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/4796",
+      "image_url": "https://www.artic.edu/iiif/2/8641479e-c93e-f1a8-9925-19be061706da/full/843,/0/default.jpg",
+      "alt_suggestion": "Large marine landscape of boats on rough waves, storm clouds.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-149458213",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wood halibut hooks.jpg",
+      "credit": "Cullen328 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wood_halibut_hooks.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Wood_halibut_hooks.jpg/960px-Wood_halibut_hooks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2648,
+      "height": 2790,
+      "alt_suggestion": "Two wood halibut hooks on display at the Sitka Historical Museum in Sitka, Alaska",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"fishing hook fishing lure phishing\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"fishing hook\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"fishing hook fishing lure\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Green Revolution",
+    "angle": "High-yield crops and the people who fed more of the world"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0049",
+    "interest": "history",
+    "type": "story",
+    "title": "Short wheat, tall harvests",
+    "body": {
+      "panels": [
+        {
+          "text": "The Rockefeller Foundation funded an agricultural station in Mexico to breed corn and wheat for dry climates. It hired a young agronomist named Norman Borlaug."
+        },
+        {
+          "text": "The Green Revolution that followed spread high-yielding crops, especially dwarf wheat and rice. The new seeds needed far more fertiliser, plus pesticides and controlled irrigation."
+        },
+        {
+          "text": "In Asia, a rice called IR8 yielded about 10 times as much as traditional rice under the best conditions. It was nicknamed 'Miracle Rice'."
+        },
+        {
+          "text": "India's rice yields were about two tons per hectare in the 1960s and about six by the mid-1990s. Borlaug won the 1970 Nobel Peace Prize and is credited with saving over a billion people from starvation."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0049-p1",
+        "kind": "mcq",
+        "question": "What did the new high-yield seeds need to deliver their big harvests?",
+        "options": [
+          "Far more fertiliser",
+          "Less water than ever",
+          "No sunlight",
+          "Smaller fields"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0049-p2",
+        "kind": "tf",
+        "question": "True or false: Norman Borlaug received the Nobel Peace Prize in 1970.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Green Revolution (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Green_Revolution"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Norman Borlaug (2004).jpg shows a portrait of Norman Borlaug (public domain)",
+    "keywords": [
+      "Norman Borlaug",
+      "Green Revolution",
+      "wheat field",
+      "dwarf wheat"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.139Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Green_Revolution",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Rockefeller Foundation funded a Mexican station to breed corn and wheat for dry climates",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Green_Revolution",
+        "quote": "Wallace persuaded the Rockefeller Foundation to fund an agricultural station in Mexico to hybridize corn and wheat for arid climates"
+      },
+      {
+        "claim": "It hired a young agronomist named Norman Borlaug",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Green_Revolution",
+        "quote": "he hired a young Iowa agronomist named Norman Borlaug"
+      },
+      {
+        "claim": "Spread high-yielding crops especially dwarf wheat and rice",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Green_Revolution",
+        "quote": "high-yielding varieties of cereals, particularly dwarf wheat and rice"
+      },
+      {
+        "claim": "New seeds needed far more fertiliser (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Green_Revolution",
+        "quote": "the new seeds require far more fertilizer than traditional varieties"
+      },
+      {
+        "claim": "Pesticides and controlled irrigation also needed",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Green_Revolution",
+        "quote": "the new seeds require far more fertilizer than traditional varieties ), pesticides , and controlled irrigation"
+      },
+      {
+        "claim": "IR8 yielded about 10 times traditional rice under best conditions",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Green_Revolution",
+        "quote": "almost 10 tons per hectare under optimal conditions. This was 10 times the yield of traditional rice"
+      },
+      {
+        "claim": "IR8 nicknamed Miracle Rice, success throughout Asia",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Green_Revolution",
+        "quote": "IR8 was a success throughout Asia and dubbed the \"Miracle Rice\""
+      },
+      {
+        "claim": "India's rice yields about two tons/ha in 1960s, six by mid-1990s",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Green_Revolution",
+        "quote": "In the 1960s, rice yields in India were about two tons per hectare; by the mid-1990s, they had risen to 6 tons per hectare"
+      },
+      {
+        "claim": "Borlaug won 1970 Nobel Peace Prize (p2) and credited with saving over a billion people",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Green_Revolution",
+        "quote": "who received the Nobel Peace Prize in 1970. He is credited with saving over a billion people from starvation"
+      }
+    ],
+    "overall": "pass"
+  }
+}

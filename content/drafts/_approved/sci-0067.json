@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Relativity and time dilation, measured",
+    "angle": "The Hafele-Keating atomic clock flights"
+  },
+  "created_at": "2026-10-26T20:30:07.408Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0067",
+    "interest": "science",
+    "type": "story",
+    "title": "Clocks that flew around the world",
+    "body": {
+      "panels": [
+        {
+          "text": "Relativity predicts that clocks run at slightly different rates depending on how they move and how strong gravity is. But can you measure it with an airliner?"
+        },
+        {
+          "text": "In 1971 physicist Joseph Hafele and astronomer Richard Keating took four cesium atomic clocks on commercial flights twice around the world, first east, then west."
+        },
+        {
+          "text": "They compared the travelling clocks with clocks that stayed at the US Naval Observatory. When reunited, the clocks disagreed."
+        },
+        {
+          "text": "Measured against the ground clocks, the eastward clocks lost about 59 nanoseconds and the westward ones gained about 273. Relativity had predicted about -40 and +275, within the margin of error."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0067-p1",
+        "kind": "mcq",
+        "question": "What did the clocks show when they were reunited?",
+        "options": [
+          "They were identical",
+          "They disagreed, in line with relativity's predictions",
+          "They had all stopped",
+          "Only the ground clocks had changed"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0067-p2",
+        "kind": "tf",
+        "question": "True or false: the Hafele-Keating clocks travelled on commercial airliners.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hafele-Keating experiment (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Atomic Clock-Louis Essen.jpg (public domain) shows the first caesium atomic clock; or other atomic clock images",
+    "keywords": [
+      "Atomic Clock Louis Essen",
+      "caesium atomic clock",
+      "atomic clock"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.063Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1971 Hafele (physicist) and Keating (astronomer) took four cesium atomic clocks on commercial flights twice around the world, east then west",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment",
+        "quote": "took four cesium -beam atomic clocks aboard commercial airliners. They flew twice around the world, first eastward, then westward"
+      },
+      {
+        "claim": "They compared travelling clocks with stationary clocks at the US Naval Observatory",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment",
+        "quote": "and compared the clocks in motion to stationary clocks at the United States Naval Observatory ."
+      },
+      {
+        "claim": "Clocks disagreed, in line with relativity's predictions (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment",
+        "quote": "their differences were consistent with the predictions of special and general relativity ."
+      },
+      {
+        "claim": "Eastward measured about -59 ns, westward about +273; predicted about -40 and +275",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment",
+        "quote": "-40 ±23 -59 ±10 0.76 σ westward +179 ±18 +96 ±10 +275 ±21 +273 ±7",
+        "note": "Table columns: predicted total then measured; eastward -40 predicted / -59 measured, westward +275 predicted / +273 measured."
+      },
+      {
+        "claim": "Agreement within the margin of error",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment",
+        "quote": "The observed time gains and losses were in agreement with relativistic predictions to within the ~10% precision expected of the experiment."
+      },
+      {
+        "claim": "Relativity predicts clock rates depend on motion and gravity (altitude)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment",
+        "quote": "General relativity predicts an additional effect, in which an increase in gravitational potential due to altitude speeds the clocks up."
+      }
+    ],
+    "overall": "pass"
+  }
+}

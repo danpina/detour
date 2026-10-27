@@ -1,0 +1,51 @@
+{
+  "id": "mind-0036",
+  "interest": "mind",
+  "title": "How much sleep do adults need?",
+  "probes": [
+    {
+      "id": "mind-0036-p1",
+      "question": "True or false: the CDC advises teens aged 13 to 17 to get 8 to 10 hours of sleep a day.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0036-p2",
+      "question": "True or false: the hours of sleep recommended each day stay the same as you age.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "About Sleep (CDC)",
+      "url": "https://www.cdc.gov/sleep/about/index.html"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:03.155Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0036.webp",
+    "alt": "A tidy unmade double bed with white bedding and a sleeping ginger cat in a bedroom.",
+    "kind": "photo",
+    "credit": "ilovebutter from Houston, TX, USA / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Master_Bedroom_accent_wall_(2181639201).jpg"
+  },
+  "body": {
+    "question": "The CDC recommends how many hours of sleep a day for most adults aged 18 to 60?",
+    "options": [
+      "5 or more",
+      "6 or more",
+      "7 or more",
+      "9 or more"
+    ],
+    "answer": 2,
+    "reveal": "Adults aged 18 to 60 are advised to get 7 or more hours. The amount you need changes as you age: teens aged 13 to 17 are advised 8 to 10 hours."
+  }
+}

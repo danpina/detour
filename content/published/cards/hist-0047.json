@@ -1,0 +1,50 @@
+{
+  "id": "hist-0047",
+  "interest": "history",
+  "title": "The one disease we erased",
+  "probes": [
+    {
+      "id": "hist-0047-p1",
+      "question": "Which tool eradicated smallpox?",
+      "kind": "mcq",
+      "options": [
+        "Antibiotics",
+        "Vaccination campaigns",
+        "Mosquito nets",
+        "Quarantine alone"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0047-p2",
+      "question": "True or false: the WHO certified the global eradication of smallpox in 1980.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Smallpox (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Smallpox"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:35.462Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0047.webp",
+    "alt": "Japanese painting by Ota Chou of a woman in a kimono having her upper arm vaccinated by a nurse in white.",
+    "kind": "photo",
+    "credit": "Ōta Chōu / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ota_Chou_-_Smallpox_Vaccination.jpg"
+  },
+  "body": {
+    "claim": "Smallpox is the only human disease that has ever been eradicated.",
+    "why": "The last naturally occurring case was diagnosed in October 1977, and the World Health Organization certified global eradication in 1980. As recently as 1967, 15 million cases occurred a year, and the WHO stepped up its efforts that year. The key tool was the vaccine, introduced in its modern form by Edward Jenner in 1796, and the successful vaccination campaigns that followed."
+  }
+}

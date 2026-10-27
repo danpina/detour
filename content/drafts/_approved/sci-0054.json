@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "How DNA copies itself",
+    "angle": "Each strand is a template for its partner"
+  },
+  "created_at": "2026-10-26T20:30:07.372Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0054",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "DNA copies itself by unzipping",
+    "body": {
+      "claim": "When a cell copies its DNA, each old strand becomes the template for a new partner strand.",
+      "why": "The double helix is unwound and separated, and each strand guides the building of a matching strand. Every new molecule keeps one original strand and gains one new one. DNA polymerases do the building and can remove a wrong piece, which is part of why copying is near-perfect."
+    },
+    "probes": [
+      {
+        "id": "sci-0054-p1",
+        "kind": "mcq",
+        "question": "After DNA is copied, what does each new double helix contain?",
+        "options": [
+          "Two brand-new strands",
+          "Two original strands",
+          "One original strand and one newly made strand",
+          "A mix of short original and new fragments only"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "sci-0054-p2",
+        "kind": "tf",
+        "question": "True or false: DNA polymerases can remove a mismatched piece while copying, a step called proofreading.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "DNA replication (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/DNA_replication"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:DNA double helix horizontal.png (public domain) shows a DNA double helix",
+    "keywords": [
+      "DNA double helix",
+      "double helix",
+      "DNA"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.053Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/DNA_replication",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Each old strand becomes the template for a new partner strand",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/DNA_replication",
+        "quote": "each strand of the original DNA molecule then serves as a template for the production of a complementary counterpart strand"
+      },
+      {
+        "claim": "Every new molecule keeps one original strand and gains one new one (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/DNA_replication",
+        "quote": "each replicated DNA molecule is composed of one original DNA strand as well as one newly synthesized strand."
+      },
+      {
+        "claim": "The helix is unwound and separated; each strand guides a matching strand",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/DNA_replication",
+        "quote": "The double helix is 'unzipped' and unwound, then each separated strand (turquoise) acts as a template for replicating a new partner strand (green)."
+      },
+      {
+        "claim": "DNA polymerases do the building",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/DNA_replication",
+        "quote": "Most prominently, DNA polymerase synthesizes the new strands by incorporating nucleotides that complement the nucleotides of the template strand."
+      },
+      {
+        "claim": "Polymerases can remove a wrong piece (proofreading), part of near-perfect copying (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/DNA_replication",
+        "quote": "Some DNA polymerases can also delete nucleotides from the end of a developing strand in order to fix mismatched bases."
+      },
+      {
+        "claim": "Copying is near-perfect",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/DNA_replication",
+        "quote": "Cellular proofreading and error-checking mechanisms ensure near-perfect fidelity for DNA replication."
+      }
+    ],
+    "overall": "pass"
+  }
+}

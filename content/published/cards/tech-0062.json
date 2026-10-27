@@ -1,0 +1,57 @@
+{
+  "id": "tech-0062",
+  "interest": "tech",
+  "title": "Why computers count in twos",
+  "probes": [
+    {
+      "id": "tech-0062-p1",
+      "question": "How many symbols does the binary system use?",
+      "kind": "mcq",
+      "options": [
+        "Eight",
+        "Ten",
+        "Sixteen",
+        "Two"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "tech-0062-p2",
+      "question": "True or false: each binary digit is called a bit.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Binary number (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Binary_number"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:54.023Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "tech-0062.webp",
+    "alt": "Rows of zeros and ones in a black typeface filling the whole frame.",
+    "kind": "photo",
+    "credit": "Educator57 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Endless_Ones_and_Zeros,_Computer_Style,_Educator57_made.jpg"
+  },
+  "body": {
+    "question": "Almost every modern computer represents numbers using only 0 and 1. According to the usual explanation, why?",
+    "options": [
+      "Decimal digits are patented",
+      "It is simple to build with logic gates, and resists noise",
+      "Binary numbers are always shorter",
+      "Early users preferred it"
+    ],
+    "answer": 1,
+    "reveal": "Binary has just two symbols, 0 and 1, and each digit is called a bit. It is straightforward to implement in digital circuitry using logic gates and is robust against noise. Gottfried Leibniz is credited with inventing the modern binary system."
+  }
+}

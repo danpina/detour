@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-503708",
+  "alt": "A 16th-century woodcut from the Latin edition of Ibn al-Haytham's optics showing mirrors and sunlight burning ships in a harbour",
+  "fits": true,
+  "note": "Title-page woodcut of Opticae Thesaurus (1572), a later European print; relevant to optics",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1.3
+  }
+}

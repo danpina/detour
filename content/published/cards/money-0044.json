@@ -1,0 +1,55 @@
+{
+  "id": "money-0044",
+  "interest": "money",
+  "title": "Same dollars, more shares",
+  "probes": [
+    {
+      "id": "money-0044-p1",
+      "question": "In dollar-cost averaging, what stays fixed each period?",
+      "kind": "mcq",
+      "options": [
+        "The share price",
+        "The amount of money invested",
+        "The number of shares bought"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0044-p2",
+      "question": "True or false: dollar-cost averaging means buying the same number of shares each period.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dollar cost averaging (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:29.630Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0044.webp",
+    "alt": "An early Edison stock ticker under a glass dome, with a paper tape wheel and a ring of small keys.",
+    "kind": "photo",
+    "credit": "Jaclyn Nash (photographer) / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Thomas_Edison_stock_ticker_NMAH-JN2014-3625.jpg"
+  },
+  "body": {
+    "question": "You invest the same $100 every month. In a month when the share price is low, what happens to the number of shares your $100 buys?",
+    "options": [
+      "Fewer",
+      "The same",
+      "More"
+    ],
+    "answer": 2,
+    "reveal": "More. A fixed amount of money buys more shares when the price is low and fewer when it is high, which is the idea behind dollar-cost averaging. The investor decides only how much to invest and how often, which is why it often runs automatically, such as through payroll deductions."
+  }
+}

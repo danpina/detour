@@ -1,0 +1,81 @@
+{
+  "draft_id": "tech-0030",
+  "created_at": "2026-10-27T06:09:37.933Z",
+  "queries": [
+    "network switch ethernet cables patch panel",
+    "network switch",
+    "network switch ethernet cables"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-42202271",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "19-inch rackmount Ethernet switches and patch panels.jpg",
+      "credit": "Dsimic / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:19-inch_rackmount_Ethernet_switches_and_patch_panels.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/19-inch_rackmount_Ethernet_switches_and_patch_panels.jpg/960px-19-inch_rackmount_Ethernet_switches_and_patch_panels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 960,
+      "alt_suggestion": "A couple of managed D-Link Gigabit Ethernet rackmount switches, connected to the Ethernet ports on a few Panduit patch panels using Category 6 patch cables (all equipment is installed in a standard 19",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA24898",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Examining the Radio Frequency Panel of NASA's Europa Clipper",
+      "credit": "Johns Hopkins APL / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA24898",
+      "image_url": "https://images-assets.nasa.gov/image/PIA24898/PIA24898~thumb.jpg",
+      "alt_suggestion": "An engineer inspects the radio frequency (RF) panel of NASA's Europa Clipper in a cleanroom at the Johns Hopkins Applied Physics Laboratory in Laurel, Maryland. The RF panel hosts all the RF subsystem",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-6113",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Patch",
+      "credit": "Lambayeque Probably north coast, Peru / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/6113",
+      "image_url": "https://www.artic.edu/iiif/2/f815d0d2-2bf4-baaf-7582-65714f39944f/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of slit tapestry weave."
+    },
+    {
+      "id": "wikimedia-7988465",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "SZTE-JATIK, switch.jpg",
+      "credit": "Xbspiro / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SZTE-JATIK,_switch.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/SZTE-JATIK%2C_switch.jpg/960px-SZTE-JATIK%2C_switch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3024,
+      "height": 4032,
+      "alt_suggestion": "A set of network switches on the first floor of the building of JATIK, University of Szeged. This one is the busiest switch of the library. The photo have been taken on a \"Night in The Library, 2009\" ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-66042",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Trompe-l'Oeil Still Life with a Flower Garland and a Curtain",
+      "credit": "Adriaen van der Spelt (Dutch, 1630–1673) Frans van Mieris (Dutch, 1635–1681) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/66042",
+      "image_url": "https://www.artic.edu/iiif/2/4a04138f-43d8-cd9f-5ac4-478cd8828210/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on panel.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"network switch ethernet cables patch panel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"network switch\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"network switch ethernet cables\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

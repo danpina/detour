@@ -1,0 +1,50 @@
+{
+  "id": "tech-0055",
+  "interest": "tech",
+  "title": "Why AI runs on graphics chips",
+  "probes": [
+    {
+      "id": "tech-0055-p1",
+      "question": "What makes GPUs useful for AI work?",
+      "kind": "mcq",
+      "options": [
+        "A single very fast core",
+        "They never use electricity",
+        "Thousands of calculation units working in parallel",
+        "They store the internet"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "tech-0055-p2",
+      "question": "True or false: graphics functions are generally independent, so they can run on separate calculation engines.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Graphics processing unit (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Graphics_processing_unit"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:48.757Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0055.webp",
+    "alt": "A GPU package seen at an angle, with a large central graphics die surrounded by four smaller memory chips on a silicon interposer.",
+    "kind": "photo",
+    "credit": "C. Spille/pcgameshardware.de / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:AMD_Fiji_GPU_package_with_GPU,_HBM_memory_and_interposer.jpg"
+  },
+  "body": {
+    "claim": "Graphics chips suit AI because they have hundreds or thousands of calculation units.",
+    "why": "Graphics functions are largely independent, so they can run on separate calculation engines. Modern GPUs include hundreds or thousands of calculation units. That parallel design also helps with data-intensive tasks in artificial intelligence."
+  }
+}

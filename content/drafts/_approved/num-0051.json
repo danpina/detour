@@ -1,0 +1,112 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "The St Petersburg paradox",
+    "angle": "Infinite expected value, small willingness to pay"
+  },
+  "created_at": "2026-10-27T06:06:56.078Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0051",
+    "interest": "numbers",
+    "type": "guess_first",
+    "title": "The coin game with an infinite average",
+    "body": {
+      "question": "A fair coin is flipped until it lands heads. You win $2 if heads comes first, $4 if it comes second, $8 if third, doubling each time. What is the expected payoff?",
+      "options": [
+        "About $4",
+        "About $20",
+        "About $1,000",
+        "Infinite"
+      ],
+      "answer": 3,
+      "reveal": "Infinite. Each possible ending adds $1 on average (half the chance, double the prize, and so on), and the stages never stop. Yet few people would pay even $25 to play. That gap is the St. Petersburg paradox."
+    },
+    "probes": [
+      {
+        "id": "num-0051-p1",
+        "kind": "mcq",
+        "question": "Why is the St. Petersburg game called a paradox?",
+        "options": [
+          "The coin is biased",
+          "Its expected payoff is infinite, yet it seems worth very little",
+          "Nobody can win",
+          "The rules keep changing"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0051-p2",
+        "kind": "tf",
+        "question": "True or false: the problem was invented by Daniel Bernoulli.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "St. Petersburg paradox (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/St._Petersburg_paradox"
+      }
+    ],
+    "difficulty": 5,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Daniel Bernoulli 001.jpg shows a portrait of Daniel Bernoulli",
+    "keywords": [
+      "Daniel Bernoulli",
+      "Bernoulli portrait",
+      "Daniel Bernoulli 1700-1782"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.084Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/St._Petersburg_paradox",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Expected payoff of the game is infinite yet it seems worth very little",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/St._Petersburg_paradox",
+        "quote": "the expected payoff of the lottery game is infinite but nevertheless seems to be worth only a very small amount to the participants"
+      },
+      {
+        "claim": "Payouts double each stage (2, 4, 8) with probabilities 1/2, 1/4, 1/8 per stage",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/St._Petersburg_paradox",
+        "quote": "To answer this, one needs to consider what would be the expected payout at each stage"
+      },
+      {
+        "claim": "Each stage adds $1 on average and the stages never stop",
+        "verdict": "pass",
+        "note": "Verified by calculation: (1/2)*2=1, (1/4)*4=1, (1/8)*8=1, ...; sum diverges."
+      },
+      {
+        "claim": "Few people would pay even $25 to play",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/St._Petersburg_paradox",
+        "quote": "Few of us would pay even $25 to enter such a game"
+      },
+      {
+        "claim": "Paradox is the gap between willingness to pay and the infinite expected value (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/St._Petersburg_paradox",
+        "quote": "The apparent paradox is the discrepancy between what people seem willing to pay to enter the game and the infinite expected value"
+      },
+      {
+        "claim": "Problem was invented by Nicolas Bernoulli, not Daniel (probe 2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/St._Petersburg_paradox",
+        "quote": "The problem was invented by Nicolas Bernoulli , who stated it in a letter to Pierre Raymond de Montmort on September 9, 1713"
+      }
+    ],
+    "overall": "pass"
+  }
+}

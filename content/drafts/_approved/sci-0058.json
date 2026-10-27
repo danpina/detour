@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Photosynthesis",
+    "angle": "Where the oxygen comes from"
+  },
+  "created_at": "2026-10-26T20:30:07.393Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0058",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Plants split water, not air",
+    "body": {
+      "claim": "In photosynthesis, the oxygen comes from splitting water, and the sugar is built from carbon dioxide.",
+      "why": "Plants, algae and cyanobacteria use light to make chemical energy and split water, which releases oxygen. Then the Calvin cycle takes carbon dioxide from the air and adds it to existing organic compounds, building sugars. Light makes the energy; the air supplies the carbon."
+    },
+    "probes": [
+      {
+        "id": "sci-0058-p1",
+        "kind": "mcq",
+        "question": "Where does the oxygen released by photosynthesis come from?",
+        "options": [
+          "Carbon dioxide",
+          "The soil",
+          "Water",
+          "Sugar"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "sci-0058-p2",
+        "kind": "tf",
+        "question": "True or false: plants build sugars using carbon dioxide from the air.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Photosynthesis (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Photosynthesis"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Chloroplast in leaf of Anemone sp TEM 12000x.png (CC BY-SA 3.0) or File:Bryophyte Leaf Cells.jpg (CC BY-SA 4.0) show chloroplasts in leaf cells",
+    "keywords": [
+      "chloroplast leaf",
+      "leaf cells chloroplasts",
+      "chloroplast"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.056Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Photosynthesis",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The oxygen comes from splitting water (also probe 1 answer: water)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Photosynthesis",
+        "quote": "The term photosynthesis usually refers to oxygenic photosynthesis , a process that releases oxygen as a byproduct of water splitting ."
+      },
+      {
+        "claim": "Light is used to make chemical energy and water is split, releasing oxygen",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Photosynthesis",
+        "quote": "In these light-dependent reactions , some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas."
+      },
+      {
+        "claim": "The Calvin cycle takes carbon dioxide from the air and adds it to existing organic compounds, building sugars (also probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Photosynthesis",
+        "quote": "In this process, atmospheric carbon dioxide is incorporated into already existing organic compounds, such as ribulose bisphosphate (RuBP)."
+      },
+      {
+        "claim": "Plants, algae and cyanobacteria perform it; sugars are made in the Calvin cycle",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Photosynthesis",
+        "quote": "In plants, algae , and cyanobacteria , sugars are synthesized by a subsequent sequence of light-independent reactions called the Calvin cycle ."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "draft_id": "tech-0051",
+  "created_at": "2026-10-26T20:29:22.714Z",
+  "queries": [
+    "silicon wafer photoresist photolithography",
+    "silicon wafer",
+    "silicon wafer photoresist"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-36995455",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Photoresist spin coating.jpg",
+      "credit": "Sei / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Photoresist_spin_coating.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Photoresist_spin_coating.jpg/960px-Photoresist_spin_coating.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3452,
+      "height": 1594,
+      "alt_suggestion": "Photoresist during spin coating on silicon wafer",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-1300929",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "1300929",
+      "credit": "EMMETT GIVEN / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/1300929",
+      "image_url": "https://images-assets.nasa.gov/image/1300929/1300929~medium.jpg",
+      "alt_suggestion": "ARTHUR BROWN (AST, AEROSPACE METALLIC MATERIALS) LOADS A CERAMIC COATED SILICON WAFER INTO A KRATOS (ELECTRON SPECTROSCOPY FOR CHEMICAL ANALYSIS) TO PERFORM X-RAY PHOTOELECTRON SPECTROSCOPY (XPS). XPS",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-274533",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Sir J. William Dawson",
+      "credit": "Artist Unknown (Likely American, 19th century) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/274533",
+      "image_url": "https://www.artic.edu/iiif/2/85367ec8-fa90-489b-fbec-731ddae95063/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of photolithography on paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-152547672",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wafer 20110212.jpg",
+      "credit": "Sangitiana Fararano / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wafer_20110212.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Wafer_20110212.jpg/960px-Wafer_20110212.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1535,
+      "height": 1157,
+      "alt_suggestion": "A wafer is a thin slice of semiconductor material , such as a silicon crystal , used in the fabrication of integrated circuits and other microdevices. en.wikipedia.org/wiki/Wafer_(electronics). Dmensi",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-GRC-2015-C-00598",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "GRC-2015-C-00598",
+      "credit": "GRC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GRC-2015-C-00598",
+      "image_url": "https://images-assets.nasa.gov/image/GRC-2015-C-00598/GRC-2015-C-00598~medium.jpg",
+      "alt_suggestion": "Silicon Carbide, SiC wafer v8.1 OpAmp Chip in Co-fired Alumina Package for High-temperature Application",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"silicon wafer photoresist photolithography\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"silicon wafer\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"silicon wafer photoresist\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

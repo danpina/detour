@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0057",
+  "created_at": "2026-10-26T20:31:10.552Z",
+  "queries": [
+    "greenhouse effect diagram greenhouse effect Earth atmosphere",
+    "greenhouse effect diagram",
+    "greenhouse effect diagram greenhouse effect"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-123882739",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Attribution of individual atmospheric component contributions to the terrestrial greenhouse effect, separated into feedback and forcing categories (NASA)-ar.png",
+      "credit": "Bassem Fleifel / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Attribution_of_individual_atmospheric_component_contributions_to_the_terrestrial_greenhouse_effect,_separated_into_feedback_and_forcing_categories_(NASA)-ar.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Attribution_of_individual_atmospheric_component_contributions_to_the_terrestrial_greenhouse_effect%2C_separated_into_feedback_and_forcing_categories_%28NASA%29-ar.png/960px-Attribution_of_individual_atmospheric_component_contributions_to_the_terrestrial_greenhouse_effect%2C_separated_into_feedback_and_forcing_categories_%28NASA%29-ar.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3266,
+      "height": 2333,
+      "alt_suggestion": "رسمٌ بياني يُظهر كيفيَّة مُساهمة المُكونات الفرديَّة للغلاف الجوِّي في التأثير الكُلِّي للاحتباس الحراري.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-20701",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Waterloo Bridge, Sunlight Effect",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/20701",
+      "image_url": "https://www.artic.edu/iiif/2/827d02ef-6765-9728-c07e-52ad22b73fd3/full/843,/0/default.jpg",
+      "alt_suggestion": "Horizontal oil painting in shades of pale purple, pink, and light blue of a bridge composed of multiple linked archways over water, engulfed in hazy fog. Various indistinct, colorful forms cross the bridge, and factory smokestacks rise in the distance.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-27013490",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Earth's greenhouse effect (US EPA, 2012).png",
+      "credit": "US EPA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Earth%27s_greenhouse_effect_(US_EPA,_2012).png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Earth%27s_greenhouse_effect_%28US_EPA%2C_2012%29.png/960px-Earth%27s_greenhouse_effect_%28US_EPA%2C_2012%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2779,
+      "height": 1983,
+      "alt_suggestion": "This diagram shows the Earth's \"greenhouse effect.\" The Earth absorbs some of the energy it receives from the sun and radiates the rest back toward space. However, certain gases in the atmosphere, cal",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-81545",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Stacks of Wheat (Sunset, Snow Effect)",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/81545",
+      "image_url": "https://www.artic.edu/iiif/2/be0d3e50-a600-6f33-ea8f-16a34d892442/full/843,/0/default.jpg",
+      "alt_suggestion": "Two haystacks, dusted with snow, in a hazy, snow-covered field at sunset. The snow is highlighted in purple tones, the sky a yellow and orange gradient.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-4027129",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Greenhouse Effect eu.png",
+      "credit": "Created by Robert A. Rohde and translated in Basque by Josugoni / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Greenhouse_Effect_eu.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Greenhouse_Effect_eu.png/960px-Greenhouse_Effect_eu.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1628,
+      "height": 1212,
+      "alt_suggestion": "This figure is a simplified, schematic representation of the flows of energy between space, the atmosphere, and the Earth's surface, and shows how these flows combine to trap heat near the surface and",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"greenhouse effect diagram greenhouse effect Earth atmosphere\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"greenhouse effect diagram\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"greenhouse effect diagram greenhouse effect\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "tech-0064",
+  "interest": "tech",
+  "title": "Open source means you can read the code",
+  "probes": [
+    {
+      "id": "tech-0064-p1",
+      "question": "What does open source allow users to do with the code?",
+      "kind": "mcq",
+      "options": [
+        "Only read it",
+        "Only run it",
+        "Use, study, modify and distribute it",
+        "Nothing without paying"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "tech-0064-p2",
+      "question": "True or false: the Linux kernel was first released in 1991 by Linus Torvalds.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Open-source software (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Open-source_software"
+    },
+    {
+      "title": "Linux (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Linux"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:28:36.309Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0064.webp",
+    "alt": "The Linux mascot Tux, a cartoon penguin with black body, white belly and orange beak and feet.",
+    "kind": "photo",
+    "credit": "OpenClipart-Vectors from Pixabay. Based on Tux design by Larry Ewing (lewing@isc.tamu.edu) and The GIMP. / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Linux_mascot_tux.png"
+  },
+  "body": {
+    "claim": "Open-source software has publicly available source code that anyone may use, study, modify and share.",
+    "why": "That is the definition, usually granted through an open licence. Linux is a family of free and open-source operating systems built on the Linux kernel, first released by Linus Torvalds on 17 September 1991. It is one of the most prominent examples of free and open-source collaboration."
+  }
+}

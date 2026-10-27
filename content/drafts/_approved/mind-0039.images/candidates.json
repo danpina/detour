@@ -1,0 +1,98 @@
+{
+  "draft_id": "mind-0039",
+  "created_at": "2026-10-26T20:30:58.024Z",
+  "queries": [
+    "toothbrushing brushing teeth morning routine",
+    "toothbrushing",
+    "toothbrushing brushing teeth"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-24030567",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Man brushing teeth.jpg",
+      "credit": "Bill Branson (Photographer) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Man_brushing_teeth.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Man_brushing_teeth.jpg/960px-Man_brushing_teeth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 2165,
+      "alt_suggestion": "Title Man Brushing Teeth Description An Asian man brushing his teeth while looking in a mirror. Topics/Categories People -- Adult Type Color, Photo Source National Cancer Institute (NCI)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-16439",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Morning",
+      "credit": "Claude Joseph Vernet (French, 1714–1789) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16439",
+      "image_url": "https://www.artic.edu/iiif/2/e8f3fd3f-2098-1c68-1867-b5dccb21018e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-115130912",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Woman brushing teeth, by Lester Ralph.jpg",
+      "credit": "Lester Ralph / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Woman_brushing_teeth,_by_Lester_Ralph.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Woman_brushing_teeth%2C_by_Lester_Ralph.jpg/960px-Woman_brushing_teeth%2C_by_Lester_Ralph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1149,
+      "height": 2095,
+      "alt_suggestion": "Woman brushing her teeth, by Lester Ralph, from an advertisement for Pro-phy-lac-tic toothbrushes",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-64729",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Early Morning, Tarpon Springs",
+      "credit": "George Inness (American, 1825–1894) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/64729",
+      "image_url": "https://www.artic.edu/iiif/2/ef96e79b-f481-8114-0804-4bd39c101983/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-227445",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Toothbrush x3 20050716 002.jpg",
+      "credit": "Jonas Bergsten / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Toothbrush_x3_20050716_002.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Toothbrush_x3_20050716_002.jpg/960px-Toothbrush_x3_20050716_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2272,
+      "height": 1704,
+      "alt_suggestion": "Three toothbrushes, photo taken in Sweden",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-62852468",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Old sink and new toothbrush.jpg",
+      "credit": "WClarke / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Old_sink_and_new_toothbrush.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Old_sink_and_new_toothbrush.jpg/960px-Old_sink_and_new_toothbrush.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 7552,
+      "height": 3776,
+      "alt_suggestion": "An old sink and a new toothbrush",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"toothbrushing brushing teeth morning routine\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"toothbrushing\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"toothbrushing brushing teeth\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

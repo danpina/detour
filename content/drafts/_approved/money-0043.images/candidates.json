@@ -1,0 +1,97 @@
+{
+  "draft_id": "money-0043",
+  "created_at": "2026-10-26T20:31:12.310Z",
+  "queries": [
+    "Frankfurt Stock Exchange stock exchange stock exchange building",
+    "Frankfurt Stock Exchange",
+    "Frankfurt Stock Exchange stock exchange"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-32490277",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Börse Frankfurt stock exchange - Germany - Luminale 2014 - April 3rd 2014 - 02.jpg",
+      "credit": "Norbert Nagel / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%B6rse_Frankfurt_stock_exchange_-_Germany_-_Luminale_2014_-_April_3rd_2014_-_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/B%C3%B6rse_Frankfurt_stock_exchange_-_Germany_-_Luminale_2014_-_April_3rd_2014_-_02.jpg/960px-B%C3%B6rse_Frankfurt_stock_exchange_-_Germany_-_Luminale_2014_-_April_3rd_2014_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5202,
+      "height": 4143,
+      "alt_suggestion": "Former stock exchange of Frankfurt, Germany during Luminale 2014.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-156538",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Chicago Stock Exchange Trading Room: Reconstruction at the Art Institute of Chicago",
+      "credit": "Adler & Sullivan, original architects; American, 1883-1896 Vinci & Kenny, reconstruction architects; American, 1970-1977 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/156538",
+      "image_url": "https://www.artic.edu/iiif/2/47b28b55-ced6-502d-f111-fbe0033f8dc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A grand, double-height room with wood paneling, stenciled wall patterns, four hexagonal columns, and an interior balcony with guardrail at left.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-32490276",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Börse Frankfurt stock exchange - Germany - Luminale 2014 - April 3rd 2014 - 01.jpg",
+      "credit": "Norbert Nagel / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%B6rse_Frankfurt_stock_exchange_-_Germany_-_Luminale_2014_-_April_3rd_2014_-_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/B%C3%B6rse_Frankfurt_stock_exchange_-_Germany_-_Luminale_2014_-_April_3rd_2014_-_01.jpg/960px-B%C3%B6rse_Frankfurt_stock_exchange_-_Germany_-_Luminale_2014_-_April_3rd_2014_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3395,
+      "height": 5801,
+      "alt_suggestion": "Former stock exchange of Frankfurt, Germany during Luminale 2014.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-12765",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Elevator T-Plate from the Chicago Stock Exchange",
+      "credit": "Adler & Sullivan, architects; American, 1883-1896 Louis H. Sullivan, designer; American, 1856-1924 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12765",
+      "image_url": "https://www.artic.edu/iiif/2/4dc63cce-a3c0-9976-8e13-e7aac9e7df6a/full/843,/0/default.jpg",
+      "alt_suggestion": "A T-shaped architectural fragment with ornate geometric patterning consisting of repeating ellipses and some foliage detail.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-2181876",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Frankfurt Stock Exchange 1.jpg",
+      "credit": "aj82 / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Stock_Exchange_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Frankfurt_Stock_Exchange_1.jpg/960px-Frankfurt_Stock_Exchange_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 768,
+      "alt_suggestion": "Frankfurter Wertpapierbörse}, Architekt Rudolf Heinrich Burnitz (1827-1880)",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "The Stock Exchange in Amsterdam (SM 536).png",
+      "license": "PDM-owner",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Frankfurt Am Main-Neue Boerse von Suedosten-20120222.jpg",
+      "license": "GFDL 1.2",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Frankfurt Stock Exchange stock exchange stock exchange building\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Frankfurt Stock Exchange\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Frankfurt Stock Exchange stock exchange\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Polls, margins of error and sample size",
+    "angle": "Why about 1,000 people is enough"
+  },
+  "created_at": "2026-10-27T06:06:56.039Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0044",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "How many people make a poll?",
+    "body": {
+      "question": "About how many people must a poll ask to get a margin of error of roughly 3 percentage points?",
+      "unit": "people",
+      "min": 100,
+      "max": 10000,
+      "scale": "log",
+      "answer": 1000,
+      "reveal": "About 1,000. A sample of 1,013 gives a margin of about 3.1% at 95% confidence. The margin shrinks with the square root of the sample size, so quadrupling the sample only halves it."
+    },
+    "probes": [
+      {
+        "id": "num-0044-p1",
+        "kind": "tf",
+        "question": "True or false: the larger the sample, the smaller the margin of error.",
+        "answer": true
+      },
+      {
+        "id": "num-0044-p2",
+        "kind": "mcq",
+        "question": "Roughly how much bigger must a poll's sample be to halve its margin of error?",
+        "options": [
+          "Twice as big",
+          "Four times as big",
+          "Ten times as big",
+          "Half as big"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Margin of error (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Margin_of_error"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Urne Ballot box république.jpg shows a bronze ballot box",
+    "keywords": [
+      "ballot box",
+      "voting",
+      "election ballot"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.047Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Margin_of_error",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A sample of 1000 gives margin of error about 3.1% at 95% confidence (so about 1,000 for roughly 3 points)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Margin_of_error",
+        "quote": "the maximum margin error for a sample size of 1000 is ±3.1% at 95% confidence level"
+      },
+      {
+        "claim": "A sample of 1,013 gives about 3.1% at 95%",
+        "verdict": "pass",
+        "note": "Verified by calculation: 1.96*sqrt(0.25/1013)=0.0308, about 3.1%; page uses n=1013 giving +-3.1%."
+      },
+      {
+        "claim": "Margin shrinks with the square root of sample size, so quadrupling the sample only halves it (probe 2: four times as big)",
+        "verdict": "pass",
+        "note": "Verified by calculation: MOE ~ 1/sqrt(n); n x4 -> MOE x 1/2."
+      },
+      {
+        "claim": "Larger sample, smaller margin of error (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Margin_of_error",
+        "quote": "The larger the sample, the smaller the margin of error."
+      }
+    ],
+    "overall": "pass"
+  }
+}

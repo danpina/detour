@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-441590",
+  "alt": "US aerial reconnaissance photograph of a San Cristobal missile launch site in Cuba, dated 1 November 1962, with labelled tents, fuel trailers and former launch positions.",
+  "fits": true,
+  "note": "Public domain US government photo; labels are part of it",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

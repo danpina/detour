@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "The consumer price index basket",
+    "angle": "How inflation is measured"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0061",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "The basket behind inflation",
+    "body": {
+      "claim": "A consumer price index tracks the price of a shopping \"basket\" of what households buy.",
+      "why": "It is the weighted average price of a market basket of consumer goods and services. Prices are collected, often monthly, from a sample of shops and services. The items in the basket are updated periodically to reflect changes in consumer spending habits."
+    },
+    "probes": [
+      {
+        "id": "money-0061-p1",
+        "kind": "mcq",
+        "question": "A consumer price index is a weighted average price of what?",
+        "options": [
+          "Company profits",
+          "A market basket of consumer goods and services",
+          "Wages across the country",
+          "Stock prices"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0061-p2",
+        "kind": "tf",
+        "question": "True or false: the items in the basket are updated periodically to reflect changes in spending habits.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Consumer price index (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Consumer_price_index"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Grocery Store display-1979-17.jpg (CC BY 4.0) or File:Shelves in a Ralphs grocery store.jpg show shelves of groceries",
+    "keywords": [
+      "grocery store shelves",
+      "grocery store display",
+      "supermarket aisle"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.984Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A CPI tracks the price of a basket of what households buy",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+        "quote": "a statistical estimate of the level of prices of goods and services bought for consumption purposes by households"
+      },
+      {
+        "claim": "It is the weighted average price of a market basket of consumer goods and services (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+        "quote": "It is calculated as the weighted average price of a market basket of consumer goods and services."
+      },
+      {
+        "claim": "Prices are collected, often monthly, from a sample of shops and services",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+        "quote": "The prices of the goods and services in the basket are collected (often monthly) from a sample of retail and service establishments."
+      },
+      {
+        "claim": "Basket items are updated periodically to reflect changes in spending habits (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Consumer_price_index",
+        "quote": "The items in the basket are updated periodically to reflect changes in consumer spending habits."
+      }
+    ],
+    "overall": "pass"
+  }
+}

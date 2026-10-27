@@ -1,0 +1,109 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Fuses and breakers",
+    "angle": "Overcurrent protection"
+  },
+  "created_at": "2026-10-26T20:31:08.683Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0052",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "The part that sacrifices itself",
+    "body": {
+      "claim": "A fuse protects a circuit by melting when too much current flows, and a circuit breaker does the same job but can be reset.",
+      "why": "A fuse's essential component is a metal wire or strip that melts when too much current flows, stopping the current. It is a sacrificial device and must be replaced after it operates. A circuit breaker interrupts current flow to protect equipment and prevent fire, but can be reset to resume normal operation."
+    },
+    "probes": [
+      {
+        "id": "sci-0052-p1",
+        "kind": "mcq",
+        "question": "What happens inside a fuse when too much current flows?",
+        "options": [
+          "A metal wire or strip melts",
+          "A spring resets",
+          "A capacitor charges",
+          "The voltage doubles"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0052-p2",
+        "kind": "tf",
+        "question": "True or false: unlike a fuse, a circuit breaker can be reset after it trips.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Fuse (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Fuse_%28electrical%29"
+      },
+      {
+        "title": "Circuit breaker (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Circuit_breaker"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Electrical Fuse (aka).jpg and File:Fuse box in garage =).JPG show a fuse and a fuse box",
+    "keywords": [
+      "Fuse electrical",
+      "circuit breaker",
+      "glass fuse",
+      "distribution board"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.591Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fuse_%28electrical%29",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Circuit_breaker",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Fuse's essential component is a metal wire or strip that melts when too much current flows (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fuse_%28electrical%29",
+        "quote": "Its essential component is a metal wire or strip that melts when too much current flows through it, thereby stopping or interrupting the current."
+      },
+      {
+        "claim": "Fuse is a sacrificial device",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fuse_%28electrical%29",
+        "quote": "It is a sacrificial device"
+      },
+      {
+        "claim": "Fuse must be replaced after it operates",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fuse_%28electrical%29",
+        "quote": "once a fuse has operated, it is an open circuit, and must be replaced or rewired"
+      },
+      {
+        "claim": "Circuit breaker interrupts current to protect equipment and prevent fire",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Circuit_breaker",
+        "quote": "Its basic function is to interrupt current flow to protect equipment and to prevent fire"
+      },
+      {
+        "claim": "Circuit breaker can be reset (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Circuit_breaker",
+        "quote": "a circuit breaker can be reset (either manually or automatically) to resume normal operation"
+      }
+    ],
+    "overall": "pass"
+  }
+}

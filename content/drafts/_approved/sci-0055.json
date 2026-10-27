@@ -1,0 +1,132 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "How vaccines work",
+    "angle": "Jenner's cowpox experiment and the idea behind every vaccine"
+  },
+  "created_at": "2026-10-26T20:30:07.376Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0055",
+    "interest": "science",
+    "type": "story",
+    "title": "A milkmaid's cowpox",
+    "body": {
+      "panels": [
+        {
+          "text": "England, 1796. Edward Jenner suspects that people who catch cowpox, a much milder disease, are protected from smallpox."
+        },
+        {
+          "text": "On 14 May he takes pus from the cowpox blisters of a milkmaid, Sarah Nelmes, and inoculates James Phipps, an eight-year-old, through two small cuts."
+        },
+        {
+          "text": "Phipps gets a fever but no full-blown infection. On 1 July Jenner injects him with smallpox material, and again no disease follows."
+        },
+        {
+          "text": "That is the idea behind vaccines today: a harmless version of a germ teaches the immune system to recognise it, so it can destroy the real one later. The word vaccine comes from Jenner's Latin for cowpox."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0055-p1",
+        "kind": "mcq",
+        "question": "What does a vaccine do?",
+        "options": [
+          "It kills the germs directly in the blood",
+          "It teaches the immune system to recognise a germ before the real infection",
+          "It swaps your white blood cells for new ones",
+          "It makes the body immune to every disease"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0055-p2",
+        "kind": "tf",
+        "question": "True or false: Jenner's 1796 experiment used cowpox material to protect against smallpox.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Edward Jenner (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Edward_Jenner"
+      },
+      {
+        "title": "Vaccine (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Vaccine"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Portrait of Edward Jenner Wellcome L0049564.jpg or File:Edward Jenner. Pastel by John Raphael Smith. Wellcome L0026138.jpg (portrait of Edward Jenner, CC BY 4.0)",
+    "keywords": [
+      "Edward Jenner",
+      "smallpox vaccine",
+      "vaccination"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.054Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Vaccine",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "1796 England: Jenner suspected cowpox sufferers were protected from smallpox; cowpox is much milder",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "Jenner postulated that the pus in blisters from sufferers of cowpox (a disease similar to smallpox but much less virulent) protected them from smallpox."
+      },
+      {
+        "claim": "Jenner took pus from milkmaid Sarah Nelmes's cowpox blisters",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "Jenner scraped pus from cowpox blisters on the hands of Sarah Nelmes, a milkmaid who had caught cowpox from a cow called Blossom"
+      },
+      {
+        "claim": "On 14 May (1796) Jenner inoculated eight-year-old James Phipps",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "On 14 May 1796, he tested his hypothesis by inoculating James Phipps , the eight-year-old son of Jenner's gardener."
+      },
+      {
+        "claim": "Inoculated through two small cuts; fever but no full-blown infection",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "Jenner inoculated Phipps through two small cuts on his arm that day; this led to a fever and some uneasiness, but no full-blown infection."
+      },
+      {
+        "claim": "On 1 July Jenner injected smallpox material and no disease followed",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "On 1 July 1796, Jenner injected Phipps with variolous material , the routine method of immunisation at that time, and again no disease followed."
+      },
+      {
+        "claim": "A vaccine teaches the immune system to recognise a germ so it can destroy it later (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Vaccine",
+        "quote": "The agent stimulates the immune system to recognize the agent as a threat, destroy it, and recognize further and destroy any of the microorganisms associated with that agent that it may encounter in the future."
+      },
+      {
+        "claim": "The word vaccine comes from Jenner's Latin for cowpox; 1796 cowpox experiment (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "The terms vaccine and vaccination are derived from Variolae vaccinae (\"pustules of the cow\"), the term devised by Jenner to denote cowpox ."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Capacitors",
+    "angle": "Storing energy as separated charge"
+  },
+  "created_at": "2026-10-26T20:31:08.683Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0051",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "A tank with a rubber sheet",
+    "body": {
+      "question": "What does a capacitor do?",
+      "options": [
+        "It makes electricity from chemicals",
+        "It stores electrical energy by holding charge on two insulated surfaces",
+        "It turns heat into light"
+      ],
+      "answer": 1,
+      "reveal": "A capacitor stores energy by accumulating electric charges on two closely spaced surfaces that are insulated from each other. In the water picture it is a flexible diaphragm in a pipe: charge moves on both sides while no electrons actually pass through. The earliest ones were Leyden jars in the 1740s."
+    },
+    "probes": [
+      {
+        "id": "sci-0051-p1",
+        "kind": "mcq",
+        "question": "In the water-pipe analogy, a capacitor is like...",
+        "options": [
+          "A narrow constriction",
+          "A flexible diaphragm sealed in a pipe",
+          "A pump",
+          "A tee junction"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0051-p2",
+        "kind": "tf",
+        "question": "True or false: in a capacitor, electrons actually pass through the dielectric.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Capacitor (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Capacitor"
+      },
+      {
+        "title": "Hydraulic analogy (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hydraulic_analogy"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Paper Capacitor from RIFA.jpg and File:Dubilier S635 mica capacitor, 1940s (01).jpg show capacitors",
+    "keywords": [
+      "Capacitor",
+      "Leyden jar",
+      "electrolytic capacitor"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.591Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Capacitor",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Hydraulic_analogy",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Capacitor stores electrical energy by accumulating charge on two closely spaced insulated surfaces",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Capacitor",
+        "quote": "stores electrical energy by accumulating electric charges on two closely spaced surfaces that are insulated from each other"
+      },
+      {
+        "claim": "Water picture: flexible diaphragm sealed in a pipe (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hydraulic_analogy",
+        "quote": "a flexible diaphragm sealed inside a pipe"
+      },
+      {
+        "claim": "Tank with a rubber sheet dividing it",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hydraulic_analogy",
+        "quote": "A capacitor is equivalent to a tank with one connection at each end and a rubber sheet dividing the tank in two lengthwise"
+      },
+      {
+        "claim": "No electrons pass through the dielectric (probe 2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Capacitor",
+        "quote": "No current actually flows through a perfect dielectric",
+        "note": "Page says 'perfect dielectric'; card states it without 'ideal'. Acceptable for the ideal capacitor model; wording 'in an ideal capacitor' would be exact."
+      },
+      {
+        "claim": "Earliest capacitors were Leyden jars in the 1740s",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Capacitor",
+        "quote": "when European experimenters discovered that electric charge could be stored in water-filled glass jars that came to be known as Leyden jars"
+      }
+    ],
+    "overall": "pass"
+  }
+}

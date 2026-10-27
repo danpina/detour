@@ -1,0 +1,105 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Independent events and the gambler's fallacy",
+    "angle": "Why a streak does not change the next flip"
+  },
+  "created_at": "2026-10-27T06:06:55.995Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0036",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "The coin has no memory",
+    "body": {
+      "claim": "After a run of heads, the next toss of a fair coin is still 50-50.",
+      "why": "Each toss is independent, so earlier results do not change the next one. Three heads in three tosses has a 1 in 8 chance before you start, but once two have landed, the third is still 1 in 2. Thinking tails is \"due\" is called the gambler's fallacy."
+    },
+    "probes": [
+      {
+        "id": "num-0036-p1",
+        "kind": "mcq",
+        "question": "A fair coin lands heads five times in a row. What is the chance the next toss is heads?",
+        "options": [
+          "Less than 1 in 2",
+          "Exactly 1 in 2",
+          "More than 1 in 2",
+          "1 in 32"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0036-p2",
+        "kind": "cloze",
+        "question": "Believing an independent outcome is \"due\" after a streak is called the ____ fallacy.",
+        "answer": "gambler's",
+        "accept": [
+          "gamblers",
+          "gambler",
+          "gambler's",
+          "Monte Carlo"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Gambler's fallacy (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Coin Toss (3635981474).jpg shows a coin in the air",
+    "keywords": [
+      "coin toss",
+      "coin flip",
+      "coin"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.013Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Tosses of a fair coin are independent, so earlier results do not change the next one",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy",
+        "quote": "The outcomes in different tosses are statistically independent"
+      },
+      {
+        "claim": "After a run of heads (e.g. four, five) the next toss is still 1 in 2 (probe: after 5 heads)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy",
+        "quote": "Since the first four tosses turn up heads, the probability that the next toss is a head is"
+      },
+      {
+        "claim": "Three heads in three tosses has probability 1/8 before starting",
+        "verdict": "pass",
+        "note": "Verified by calculation: (1/2)^3 = 1/8; page also states it. Third toss after two heads is still 1/2."
+      },
+      {
+        "claim": "Thinking tails is due after a streak is the gambler's fallacy",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy",
+        "quote": "type one is the classic gambler's fallacy, where individuals believe that a particular outcome is due after a long streak of another outcome"
+      },
+      {
+        "claim": "Probe cloze: gambler's / Monte Carlo fallacy",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy",
+        "quote": "The gambler's fallacy, also known as the Monte Carlo fallacy or the fallacy of the maturity of chances"
+      }
+    ],
+    "overall": "pass"
+  }
+}

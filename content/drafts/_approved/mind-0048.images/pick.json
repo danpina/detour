@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-164182623",
+  "alt": "An empty high school classroom with wooden desks, a whiteboard and a sunlit window.",
+  "fits": true,
+  "note": "Empty classroom for teen school start; no people.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.3
+  }
+}

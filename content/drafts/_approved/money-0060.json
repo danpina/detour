@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Price controls and shortages",
+    "angle": "US gasoline lines in 1973-74"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0060",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "Capped prices, long lines",
+    "body": {
+      "claim": "In the 1973 oil crisis, price controls are described as having made the US shortage worse.",
+      "why": "The system capped the price of old oil but let newly discovered oil sell for more. As a result, old oil was withdrawn from the market, creating greater scarcity. Lines at gas stations were common, and the AAA reported that in the last week of February 1974, 20% of US stations had no fuel."
+    },
+    "probes": [
+      {
+        "id": "money-0060-p1",
+        "kind": "mcq",
+        "question": "In this account, what happened to old oil under the price cap?",
+        "options": [
+          "It was withdrawn from the market, creating greater scarcity",
+          "It was sold for double",
+          "It was exported for free"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0060-p2",
+        "kind": "tf",
+        "question": "True or false: the AAA reported that in the last week of February 1974, 20% of American gasoline stations had no fuel.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "1973 oil crisis (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/1973_oil_crisis"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:AFTER HOURS IN A GASOLINE LINE ... - NARA - 555459.jpg (public domain) shows a gasoline line at a pump during the crisis",
+    "keywords": [
+      "gasoline line 1973",
+      "gas shortage 1973",
+      "Oregon gasoline crisis odd even"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.983Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Price controls are described as having made the US shortage worse",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
+        "quote": "Price controls exacerbated the crisis in the US.",
+        "note": "Page states it flatly; the card's 'described as' hedge is conservative and fine."
+      },
+      {
+        "claim": "The system capped the price of old oil but let newly discovered oil sell for more",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
+        "quote": "The system limited the price of \"old oil\", that which had already been discovered"
+      },
+      {
+        "claim": "As a result old oil was withdrawn from the market, creating greater scarcity (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
+        "quote": "As a result, old oil was withdrawn from the market, creating greater scarcity."
+      },
+      {
+        "claim": "Lines at gas stations were common",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
+        "quote": "In other states, lines at gasoline stations were common.",
+        "note": "Page says 'in other states' (those where odd-even/other rationing was used); card states it generally, a minor generalisation."
+      },
+      {
+        "claim": "AAA reported that in the last week of February 1974, 20% of US stations had no fuel (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
+        "quote": "The American Automobile Association reported that in the last week of February 1974, 20% of American gasoline stations had no fuel."
+      }
+    ],
+    "overall": "pass"
+  }
+}

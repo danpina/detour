@@ -1,0 +1,98 @@
+{
+  "draft_id": "hist-0037",
+  "created_at": "2026-10-27T06:07:32.427Z",
+  "queries": [
+    "Toussaint Louverture Haitian Revolution Saint-Domingue",
+    "Toussaint Louverture",
+    "Toussaint Louverture Haitian Revolution"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-16131720",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Toussaint louverture.jpg",
+      "credit": "by John Kay 1805 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Toussaint_louverture.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Toussaint_louverture.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 912,
+      "height": 1254,
+      "alt_suggestion": "Toussaint Louverture, 1805.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-46230",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Reliquary Casket of Saints Adrian and Natalia",
+      "credit": "León, Spain / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/46230",
+      "image_url": "https://www.artic.edu/iiif/2/e1ac9f2d-591e-6063-ae1b-d0cd1c66a3a3/full/843,/0/default.jpg",
+      "alt_suggestion": "Silver-toned reliquary in the shape of a long rectangle with an upper resembling a pitched roof. In relief on its side, armed figures surround a falling figure in distress as a single figure attacks him.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-103258855",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Toussaint Louverture, Général en Chef à St. Domingue.jpg",
+      "credit": "Isaac Louverture / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Toussaint_Louverture,_G%C3%A9n%C3%A9ral_en_Chef_%C3%A0_St._Domingue.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Toussaint_Louverture%2C_G%C3%A9n%C3%A9ral_en_Chef_%C3%A0_St._Domingue.jpg/960px-Toussaint_Louverture%2C_G%C3%A9n%C3%A9ral_en_Chef_%C3%A0_St._Domingue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1388,
+      "height": 2636,
+      "alt_suggestion": "Illustration représentant un portrait de Toussaint Louverture, ancien esclave, homme politique et général haïtien qui initia l'indépendance de la colonie de Saint-Domingue, (devenue Haïti en 1804)à la",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-25740",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Scenes from the Life of Saint John the Baptist",
+      "credit": "Bartolomeo di Giovanni (Italian, active c. 1465-1501) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/25740",
+      "image_url": "https://www.artic.edu/iiif/2/a6c18204-e035-5fd0-408e-46b27d1ee6c5/full/843,/0/default.jpg",
+      "alt_suggestion": "Outdoors, distinct groupings of adult men and women, some with halos, gather near a building. The front-facing wall of the building is not depicted, allowing for a view inside, where a woman sits in bed with two women nearby and two other women dress a baby. A bearded man sits near the bed.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-82470808",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Vue de droite de la Place Toussaint Louverture.jpg",
+      "credit": "Rachad sanoussi / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vue_de_droite_de_la_Place_Toussaint_Louverture.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Vue_de_droite_de_la_Place_Toussaint_Louverture.jpg/960px-Vue_de_droite_de_la_Place_Toussaint_Louverture.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 1944,
+      "alt_suggestion": "Place Toussaint Louverture Au centre d'une petite placette, le père de l'indépendance d'Haïti se dresse sur un piédestal. Il est représenté en habit, avec des épaulettes dorées, avec une épée à chaque",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-9737080",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Général Toussaint Louverture.jpg",
+      "credit": "Schomburg Center for Research in Black Culture, Photographs and Prints Division, The New York Public Library. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:G%C3%A9n%C3%A9ral_Toussaint_Louverture.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/G%C3%A9n%C3%A9ral_Toussaint_Louverture.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 457,
+      "height": 760,
+      "alt_suggestion": "Depicted person: Toussaint Louverture – Haitian national hero (1743–1803)",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Toussaint Louverture Haitian Revolution Saint-Domingue\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Toussaint Louverture\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Toussaint Louverture Haitian Revolution\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

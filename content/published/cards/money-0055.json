@@ -1,0 +1,51 @@
+{
+  "id": "money-0055",
+  "interest": "money",
+  "title": "How an exchange pairs buyers and sellers",
+  "probes": [
+    {
+      "id": "money-0055-p1",
+      "question": "The difference between the highest bid and the lowest ask is called the bid-ask ____.",
+      "kind": "cloze",
+      "answer": "spread",
+      "accept": []
+    },
+    {
+      "id": "money-0055-p2",
+      "question": "True or false: a matching engine uses the order book to decide which orders can be fully or partially executed.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Order book (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Order_book"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:21:08.002Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0055.webp",
+    "alt": "A computer screen full of colourful rows of share prices and trading data from the Frankfurt Stock Exchange.",
+    "kind": "photo",
+    "credit": "Ank Kumar / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Stock_Exchange_(Ank_Kumar)_04.jpg"
+  },
+  "body": {
+    "question": "A stock exchange keeps a list of bids (buy orders) and asks (sell orders). When can a buy order be filled at once?",
+    "options": [
+      "When a broker approves it",
+      "When its bid is equal to or higher than the lowest ask",
+      "Only when the market closes"
+    ],
+    "answer": 1,
+    "reveal": "When a bid is equal to or higher than the lowest ask, those orders can be fulfilled immediately. The highest bid and the lowest ask are the top of the book, and the gap between them is called the bid-ask spread."
+  }
+}

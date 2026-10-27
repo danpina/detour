@@ -1,0 +1,50 @@
+{
+  "id": "mind-0037",
+  "interest": "mind",
+  "title": "Your body clock runs on light",
+  "probes": [
+    {
+      "id": "mind-0037-p1",
+      "question": "What is the main signal that keeps the body clock in sync?",
+      "kind": "mcq",
+      "options": [
+        "Mealtimes",
+        "Background noise",
+        "Light",
+        "Room temperature"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "mind-0037-p2",
+      "question": "True or false: SCN cells removed and cultured keep their own rhythm without outside cues.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Circadian rhythm (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Circadian_rhythm"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:07.797Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0037.webp",
+    "alt": "Ducks take off over a misty stream at sunrise, lit in warm golden light.",
+    "kind": "photo",
+    "credit": "Dietmar Rabich / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Umland,_Sonnenaufgang_--_2012_--_8084.jpg"
+  },
+  "body": {
+    "claim": "A tiny pair of cell clusters in your brain keeps your daily rhythm, and light is its main reset signal.",
+    "why": "In mammals the primary circadian clock is the suprachiasmatic nucleus (SCN), in the hypothalamus. It receives information about illumination through the eyes, and light is its primary synchronizer. SCN cells removed and cultured keep their own rhythm."
+  }
+}

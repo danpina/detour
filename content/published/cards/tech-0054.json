@@ -1,0 +1,54 @@
+{
+  "id": "tech-0054",
+  "interest": "tech",
+  "title": "An SSD stores bits as trapped electrons",
+  "probes": [
+    {
+      "id": "tech-0054-p1",
+      "question": "In a flash cell, what holds the stored charge?",
+      "kind": "mcq",
+      "options": [
+        "A floating gate insulated all around",
+        "A spinning magnetic disk",
+        "A tiny capacitor-free battery",
+        "A laser-etched groove"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0054-p2",
+      "question": "True or false: multi-level cell flash stores more than one bit in each memory cell.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Flash memory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Flash_memory"
+    },
+    {
+      "title": "Solid-state drive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Solid-state_drive"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:47.148Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0054.webp",
+    "alt": "Close-up of a black NAND flash memory chip with its many metal pins on a green circuit board.",
+    "kind": "photo",
+    "credit": "Mister rf / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:K9F1208U0B.jpg"
+  },
+  "body": {
+    "claim": "An SSD stores your data as electric charge trapped inside tiny memory cells.",
+    "why": "Each flash cell has a floating gate that is insulated all around, so electrons placed on it stay trapped. The charge changes the cell's threshold voltage, and that is how a bit is read back. Multi-level cells store more than one bit each. SSDs have no moving parts."
+  }
+}

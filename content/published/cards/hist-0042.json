@@ -1,0 +1,55 @@
+{
+  "id": "hist-0042",
+  "interest": "history",
+  "title": "Thirty-two thousand names",
+  "probes": [
+    {
+      "id": "hist-0042-p1",
+      "question": "Which country became the first in the world where all women could vote in parliamentary elections?",
+      "kind": "mcq",
+      "options": [
+        "Britain",
+        "The United States",
+        "New Zealand",
+        "France"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "hist-0042-p2",
+      "question": "True or false: the suffrage petitions to New Zealand's Parliament grew larger each year from 1891 to 1893.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Women's suffrage in New Zealand (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:25.916Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "hist-0042.webp",
+    "alt": "Page of the 1893 New Zealand women's suffrage petition, with printed text addressed to Parliament and handwritten signatures and addresses.",
+    "kind": "photo",
+    "credit": "Digitised by Archives New Zealand from New Zealand, but the author of the petition was Kate Sheppard [ca. 1847 – 13 July 1934]. Therefore petition is in the PD",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Women%27s_Suffrage_Petition_1893_(9365778997).jpg"
+  },
+  "body": {
+    "question": "In 1893, suffragists presented a petition to New Zealand's Parliament asking for votes for women. About how many signatures did it carry?",
+    "unit": "signatures",
+    "min": 1000,
+    "max": 1000000,
+    "scale": "log",
+    "answer": 32000,
+    "reveal": "Nearly 32,000, almost a quarter of the adult European female population of New Zealand. It followed petitions of over 9,000 signatures in 1891 and almost 20,000 in 1892. The electoral bill was given royal assent on 19 September 1893."
+  }
+}

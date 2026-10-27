@@ -1,0 +1,54 @@
+{
+  "id": "tech-0053",
+  "interest": "tech",
+  "title": "RAM forgets when the power goes",
+  "probes": [
+    {
+      "id": "tech-0053-p1",
+      "question": "What happens to the data in RAM when power is removed?",
+      "kind": "mcq",
+      "options": [
+        "It is lost",
+        "It is saved for a year",
+        "It moves to the SSD",
+        "It is backed up in the cloud"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0053-p2",
+      "question": "True or false: SSDs rely on non-volatile memory to store data.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Random-access memory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Random-access_memory"
+    },
+    {
+      "title": "Solid-state drive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Solid-state_drive"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:39.858Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0053.webp",
+    "alt": "The back of a green DDR4 memory stick with eight black memory chips and gold edge contacts.",
+    "kind": "photo",
+    "credit": "PantheraLeo1359531 / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png"
+  },
+  "body": {
+    "claim": "RAM is your computer's working memory, and it is wiped when the power goes off.",
+    "why": "RAM can be read and changed in any order and typically holds working data and machine code. Both static and dynamic RAM are volatile, so their state is lost when power is removed. Storage such as an SSD relies on non-volatile memory, which keeps your files."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-102030856",
+  "alt": "Flexible solar panels mounted on the deck of a sailboat, with sea and rigging behind.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "draft_id": "mind-0065",
+  "created_at": "2026-10-27T06:11:07.846Z",
+  "queries": [
+    "organ donor card donor card Organspendeausweis",
+    "organ donor card",
+    "organ donor card donor card"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-37979063",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Organspendeausweis kugelschreiber.JPG",
+      "credit": "Own work / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Organspendeausweis_kugelschreiber.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Organspendeausweis_kugelschreiber.JPG/960px-Organspendeausweis_kugelschreiber.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5184,
+      "height": 3456,
+      "alt_suggestion": "Der Organspendeausweis mit Kugelschreiber.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-79777",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Portrait of a Donor (recto); Saint Anthony of Padua (verso)",
+      "credit": "Hans Memling (Netherlandish, c. 1430–1494) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/79777",
+      "image_url": "https://www.artic.edu/iiif/2/0ce87c39-eb29-c888-95a8-e3394ed13c70/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on panel.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-123358001",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Organ donor card of Japanese Driver's licenses.jpg",
+      "credit": "KKPCW（Kyu3） / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Organ_donor_card_of_Japanese_Driver%27s_licenses.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Organ_donor_card_of_Japanese_Driver%27s_licenses.jpg/960px-Organ_donor_card_of_Japanese_Driver%27s_licenses.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1458,
+      "alt_suggestion": "日本の運転免許証裏側にある臓器提供意思表示欄。",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-14694",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "St. Francis of Assisi with Donors in a Historiated Initial from an Unidentified Manuscript",
+      "credit": "Italian (Florence) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/14694",
+      "image_url": "https://www.artic.edu/iiif/2/5201d68a-5b91-4adb-8130-b11f7756d003/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of manuscript cutting in tempera and gold leaf on parchment.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-145604546",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Organspendeausweisrückseite.png",
+      "credit": "BZgA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Organspendeausweisr%C3%BCckseite.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Organspendeausweisr%C3%BCckseite.png/960px-Organspendeausweisr%C3%BCckseite.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2944,
+      "height": 1904,
+      "alt_suggestion": "Rückseite eines w:de:Organspendeausweises der w:de:BZgA",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "The Union Minister for Health & Family Welfare, Shri J.P. Nadda presenting the organ donation card to the donor of body parts, on the occasion of Organ Donation Week, in New Delhi on November 27, 2016.jpg",
+      "license": "GODL-India",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The Union Minister for Health & Family Welfare, Shri J.P. Nadda presenting the organ donation card to the donor of body parts, on the occasion of Organ Donation Week, in New Delhi on November 27, 2016 (2).jpg",
+      "license": "GODL-India",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The Union Minister for Health & Family Welfare, Shri J.P. Nadda presenting the organ donation card to the donor of body parts, on the occasion of Organ Donation Week, in New Delhi on November 27, 2016 (1).jpg",
+      "license": "GODL-India",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"organ donor card donor card Organspendeausweis\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"organ donor card\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"organ donor card donor card\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

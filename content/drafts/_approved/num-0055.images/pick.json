@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-130379463",
+  "alt": "Seismologist Charles Richter looking over a long paper seismograph record beside a drum recorder.",
+  "fits": true,
+  "note": "Richter and seismograph illustrate the magnitude scale.",
+  "crop": {
+    "fx": 0.6,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

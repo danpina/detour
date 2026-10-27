@@ -1,0 +1,97 @@
+{
+  "draft_id": "num-0066",
+  "created_at": "2026-10-26T20:33:26.405Z",
+  "queries": [
+    "Trinity test fireball Trinity test Trinity Site explosion",
+    "Trinity test fireball",
+    "Trinity test fireball Trinity test"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-4179325",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Trinity Test Fireball 16ms.jpg",
+      "credit": "Berlyn Brixner / Los Alamos National Laboratory / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Trinity_Test_Fireball_16ms.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Trinity_Test_Fireball_16ms.jpg/960px-Trinity_Test_Fireball_16ms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1483,
+      "height": 1000,
+      "alt_suggestion": "PA-98-0520 — Trinity Site explosion, 0.016 second after explosion, July 16, 1945. The viewed hemisphere's highest point in this image is about 200 meters high.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-24361",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Holy Trinity with Saint Michael Conquering the Dragon",
+      "credit": "Pietro da Cortona Italian, 1596-1669 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/24361",
+      "image_url": "https://www.artic.edu/iiif/2/484f8cd4-97a3-9ca2-af2c-2b4c7daa51a0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of pen and brown ink, with brush and brown and gray wash, heightened with lead white (discolored) and black chalk, on tan laid paper, laid down on tan laid card.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-19294764",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Trinity atmospheric nucleat test - July 1945 - Flickr - The Official CTBTO Photostream.jpg",
+      "credit": "The Official CTBTO Photostream / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Trinity_atmospheric_nucleat_test_-_July_1945_-_Flickr_-_The_Official_CTBTO_Photostream.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Trinity_atmospheric_nucleat_test_-_July_1945_-_Flickr_-_The_Official_CTBTO_Photostream.jpg/960px-Trinity_atmospheric_nucleat_test_-_July_1945_-_Flickr_-_The_Official_CTBTO_Photostream.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2158,
+      "height": 2867,
+      "alt_suggestion": "Trinity Test (yield 19 kt) - Worlds first atomic bomb detonated by the U.S. at Trinity site in the southern New Mexico on 16 July 1945. Fast-rising incandescent cloud produced by explosion illuminated",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-10509",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Saint Helen Testing the True Cross",
+      "credit": "Tintoretto (Jacopo Robusti; Italian, 1518–1594) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/10509",
+      "image_url": "https://www.artic.edu/iiif/2/90a2969d-542a-e97f-09dd-fa1310d91acf/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-35935765",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Trinity Test - the early fireball at 6 milliseconds (10537699766).jpg",
+      "credit": "ENERGY.GOV / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Trinity_Test_-_the_early_fireball_at_6_milliseconds_(10537699766).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Trinity_Test_-_the_early_fireball_at_6_milliseconds_%2810537699766%29.jpg/960px-Trinity_Test_-_the_early_fireball_at_6_milliseconds_%2810537699766%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2949,
+      "height": 2193,
+      "alt_suggestion": "Trinity Test - Alamogordo, NM - July 16, 1945. The early fireball at 6 milliseconds.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Trinity test (LANL).jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Trinity test (LANL).jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Trinity test fireball Trinity test Trinity Site explosion\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Trinity test fireball\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Trinity test fireball Trinity test\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

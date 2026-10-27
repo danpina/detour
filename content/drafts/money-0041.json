@@ -1,0 +1,114 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Credit-card interest",
+    "angle": "APR compounded daily and the effective rate"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0041",
+    "interest": "money",
+    "type": "story",
+    "title": "The rate on the card isn't the rate you pay",
+    "body": {
+      "panels": [
+        {
+          "text": "Most US credit cards quote an APR, a nominal annual rate. A common example is 12.99%."
+        },
+        {
+          "text": "The card compounds it daily. Interest is added to the balance each day, and tomorrow's interest is charged on a slightly bigger balance."
+        },
+        {
+          "text": "Over a year, 12.99% compounded daily works out to an effective annual rate of about 13.87%."
+        },
+        {
+          "text": "So a $1,000 balance left alone would grow to about $1,139 in a year, before any new purchases or fees."
+        },
+        {
+          "text": "The twist: for a typical UK card issuer, between 80% and 90% of income from cardholders comes from interest charges."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0041-p1",
+        "kind": "mcq",
+        "question": "A card quotes 12.99% APR compounded daily. About what is the effective annual rate?",
+        "options": [
+          "12.99%",
+          "13.87%",
+          "16%"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0041-p2",
+        "kind": "tf",
+        "question": "True or false: compounding daily makes the effective annual rate higher than the quoted APR.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Credit card interest (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Credit_card_interest"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Credit-cards.jpg shows a stack of plastic payment cards",
+    "keywords": [
+      "credit cards",
+      "payment cards",
+      "bank cards",
+      "plastic cards"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.832Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Credit_card_interest",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Most US cards quote a nominal APR compounded daily",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Credit_card_interest",
+        "quote": "Most U.S. credit cards are quoted in terms of nominal annual percentage rate (APR) compounded daily"
+      },
+      {
+        "claim": "Common example 12.99% APR compounded daily gives EAR 13.87% (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Credit_card_interest",
+        "quote": "For a common credit card quoted at 12.99% APR compounded daily, the one-year EAR is"
+      },
+      {
+        "claim": "12.99% daily gives about 13.87%; $1,000 grows to about $1,139",
+        "verdict": "pass",
+        "note": "Verified by calculation: (1+0.1299/365)^365 = 1.13869; 1000 -> 1,138.69"
+      },
+      {
+        "claim": "Effective rate differs from (is not the same as) nominal APR (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Credit_card_interest",
+        "quote": "which in either case is not the same as the effective annual rate (EAR)"
+      },
+      {
+        "claim": "Typical UK issuer: 80-90% of cardholder income comes from interest",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Credit_card_interest",
+        "quote": "In a typical UK card issuer, between 80% and 90% of cardholder generated income is derived from interest charges."
+      }
+    ],
+    "overall": "pass"
+  }
+}

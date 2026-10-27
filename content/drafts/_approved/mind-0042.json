@@ -1,0 +1,118 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Ego depletion",
+    "angle": "A famous idea that struggled to replicate"
+  },
+  "created_at": "2026-10-26T20:29:12.580Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0042",
+    "interest": "mind",
+    "type": "story",
+    "title": "The willpower muscle that didn't replicate",
+    "body": {
+      "panels": [
+        {
+          "text": "Ego depletion is the idea that self-control draws on mental resources that can be used up, leaving less for the next task."
+        },
+        {
+          "text": "Roy Baumeister and colleagues proposed that self-control works like a muscle that can tire. Later experiments seemed to support the model."
+        },
+        {
+          "text": "Then came a big test. In 2016, a multi-lab replication study with 2141 participants at two dozen labs, using one protocol, failed to find any evidence for ego depletion."
+        },
+        {
+          "text": "Baumeister and Vohs objected to the protocol used. A later 36-lab replication led by Vohs, with 3531 participants, also found no effect. The lesson: one famous result is not settled until independent labs reproduce it."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0042-p1",
+        "kind": "mcq",
+        "question": "What is ego depletion?",
+        "options": [
+          "Having too high an opinion of yourself",
+          "The idea that self-control draws on a limited resource that can be used up",
+          "A memory disorder",
+          "A kind of sleep loss"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0042-p2",
+        "kind": "tf",
+        "question": "True or false: a 2016 multi-lab replication failed to find evidence for ego depletion.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ego depletion (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Ego_depletion"
+      }
+    ],
+    "difficulty": 5,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Weightlifting .jpg or File:Olympic barbell.jpg: a weightlifting scene echoing the 'willpower muscle'",
+    "keywords": [
+      "weightlifting barbell",
+      "Olympic barbell",
+      "weightlifting"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:11:21.204Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ego_depletion",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Ego depletion is the idea that self-control draws on mental resources that can be used up (panel 1, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ego_depletion",
+        "quote": "Ego depletion is the idea that self-control or willpower draws upon conscious mental resources that can be taxed to exhaustion"
+      },
+      {
+        "claim": "Baumeister and colleagues proposed a muscle model; later experiments seemed to support it (panel 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ego_depletion",
+        "quote": "Later experimental findings showed support for this muscle model of self-control and ego depletion."
+      },
+      {
+        "claim": "2016 multi-lab replication, 2141 participants, two dozen labs, one protocol, found no evidence (panel 3, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ego_depletion",
+        "quote": "a major multi-lab replication study (2141 participants) carried out at two dozen labs across the world using a single protocol"
+      },
+      {
+        "claim": "Same 2016 study failed to find any evidence for ego depletion (panel 3, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ego_depletion",
+        "quote": "failed to find any evidence for ego depletion"
+      },
+      {
+        "claim": "Baumeister and Vohs objected to the protocol used (panel 4)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ego_depletion",
+        "quote": "In response, Baumeister and Vohs argued that Baumeister's original protocol was rejected by the project coordinators"
+      },
+      {
+        "claim": "A later 36-lab replication led by Vohs, 3531 participants, also found no effect (panel 4)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ego_depletion",
+        "quote": "a subsequent, separate multi-lab replication project, led by Kathleen Vohs and involving 36 labs testing 3531 participants, also failed to find an ego-depletion effect"
+      }
+    ],
+    "overall": "pass"
+  }
+}

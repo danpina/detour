@@ -1,0 +1,50 @@
+{
+  "id": "sci-0057",
+  "interest": "science",
+  "title": "Why Earth isn't frozen",
+  "probes": [
+    {
+      "id": "sci-0057-p1",
+      "question": "Which of these gases absorbs the infrared heat that Earth radiates?",
+      "kind": "mcq",
+      "options": [
+        "Nitrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Argon"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "sci-0057-p2",
+      "question": "True or false: the natural greenhouse effect warms Earth's surface by about 33 °C.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Greenhouse effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greenhouse_effect"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:40.645Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0057.webp",
+    "alt": "An EPA diagram of the greenhouse effect showing sunlight, reflected radiation, and infrared absorbed and re-emitted by the atmosphere.",
+    "kind": "photo",
+    "credit": "US EPA / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Earth%27s_greenhouse_effect_(US_EPA,_2012).png"
+  },
+  "body": {
+    "claim": "Without the greenhouse effect, Earth's average surface temperature would be about -18 °C.",
+    "why": "Sunlight arrives mostly as visible and near-infrared light. The cooler Earth sends heat back out as longer infrared, and gases like water vapour and carbon dioxide absorb it. Nitrogen and oxygen are, for practical purposes, transparent to it. The result is an average surface temperature of around 15 °C, a warming of about 33 °C."
+  }
+}

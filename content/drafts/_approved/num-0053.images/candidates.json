@@ -1,0 +1,87 @@
+{
+  "draft_id": "num-0053",
+  "created_at": "2026-10-26T20:31:48.791Z",
+  "queries": [
+    "50% sale sign sale sign discount percent sale",
+    "50% sale sign",
+    "50% sale sign sale sign discount"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-80035694",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Shoeby tot 50% sale sign, Hoogezand (2019) 01.jpg",
+      "credit": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Original publication 📤: --Donald Trung 『徵國單』 (",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shoeby_tot_50%25_sale_sign,_Hoogezand_(2019)_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Shoeby_tot_50%25_sale_sign%2C_Hoogezand_%282019%29_01.jpg/960px-Shoeby_tot_50%25_sale_sign%2C_Hoogezand_%282019%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2736,
+      "height": 4864,
+      "alt_suggestion": "A sign indicating that this local clothing store has a sale with discount percentages never reaching higher than 50% (fifty percent) in the Groninger agglomeration of Hoogezand-Sappemeer, Midden-Groni",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-80035693",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Shoeby tot 50% sale sign, Hoogezand (2019) 02.jpg",
+      "credit": "Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia Commons - © CC BY-SA 4.0 International.(Want to use this image?)Original publication 📤: --Donald Trung 『徵國單』 (",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shoeby_tot_50%25_sale_sign,_Hoogezand_(2019)_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Shoeby_tot_50%25_sale_sign%2C_Hoogezand_%282019%29_02.jpg/960px-Shoeby_tot_50%25_sale_sign%2C_Hoogezand_%282019%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4864,
+      "height": 2736,
+      "alt_suggestion": "A sign indicating that this local clothing store has a sale with discount percentages never reaching higher than 50% (fifty percent) in the Groninger agglomeration of Hoogezand-Sappemeer, Midden-Groni",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-131697979",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "For sale sign, Beyoğlu 7May23.jpg",
+      "credit": "Mariam elr / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:For_sale_sign,_Beyo%C4%9Flu_7May23.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/For_sale_sign%2C_Beyo%C4%9Flu_7May23.jpg/960px-For_sale_sign%2C_Beyo%C4%9Flu_7May23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 4000,
+      "alt_suggestion": "50% for sale sign for mother's day",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-39762664",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Prozente Angebot.jpg",
+      "credit": "Erkaha / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Prozente_Angebot.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Prozente_Angebot.jpg/960px-Prozente_Angebot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1452,
+      "height": 1935,
+      "alt_suggestion": "Percentage symbols, seasonal discounts",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Illustrated catalog with honest descriptions of the very best, selected, tested money saving seeds - fruit plants, potatoes, cinnamon vines, roses, Japan tea plants, eggs for hatching, and the (20374710480).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Illinois Agricultural Association record (microform) (January 1931- December 1934) (16672365641).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"50% sale sign sale sign discount percent sale\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"50% sale sign\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"50% sale sign sale sign discount\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

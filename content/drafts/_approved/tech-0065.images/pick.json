@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-8809528",
+  "alt": "A stack of Fortran punch cards with typed program text and rows of numbered punch positions.",
+  "fits": true,
+  "note": "Fortran source on punch cards, evokes high-level code being translated.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

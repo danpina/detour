@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0051",
+  "created_at": "2026-10-27T06:11:15.567Z",
+  "queries": [
+    "Daniel Bernoulli Bernoulli portrait Daniel Bernoulli 1700-1782",
+    "Daniel Bernoulli",
+    "Daniel Bernoulli Bernoulli portrait"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-59419172",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "ETH-BIB-Bernoulli, Daniel (1700-1782)-Portrait-Portr 10971.jpg",
+      "credit": "Unbekannt / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Bernoulli,_Daniel_(1700-1782)-Portrait-Portr_10971.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/ETH-BIB-Bernoulli%2C_Daniel_%281700-1782%29-Portrait-Portr_10971.jpg/960px-ETH-BIB-Bernoulli%2C_Daniel_%281700-1782%29-Portrait-Portr_10971.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4120,
+      "height": 4990,
+      "alt_suggestion": "ETH-BIB-Bernoulli, Daniel (1700-1782)-Portrait-Portr 10971.jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-95",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Daniel Mytens",
+      "credit": "Paul Pontius (Flemish, 1603-1658) after Anthony van Dyck (Flemish, 1599-1641) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/95",
+      "image_url": "https://www.artic.edu/iiif/2/35203a2e-8500-a561-159f-46b2ac76ca7b/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving in black on cream laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-59419205",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "ETH-BIB-Bernoulli, Daniel (1700-1782)-Portrait-Portr 10971.tif (cropped).jpg",
+      "credit": "Unbekannt / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Bernoulli,_Daniel_(1700-1782)-Portrait-Portr_10971.tif_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/ETH-BIB-Bernoulli%2C_Daniel_%281700-1782%29-Portrait-Portr_10971.tif_%28cropped%29.jpg/960px-ETH-BIB-Bernoulli%2C_Daniel_%281700-1782%29-Portrait-Portr_10971.tif_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3184,
+      "height": 4510,
+      "alt_suggestion": "ETH-BIB-Bernoulli, Daniel (1700-1782)-Portrait-Portr 10971.tif (cropped).jpg",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-59784",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Daniel Hubbard",
+      "credit": "John Singleton Copley (American, 1738–1815) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/59784",
+      "image_url": "https://www.artic.edu/iiif/2/65451ace-5cb3-377b-403a-9b16531a81bc/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-36383746",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Daniel Bernoulli. Engraving. Wellcome V0000487.jpg",
+      "credit": "https://wellcomeimages.org/indexplus/obf_images/4e/5d/1af39644cc9067868acb1d6011f6.jpg Gallery: https://wellcomeimages.org/indexplus/image/V0000487.html Wellcom",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Daniel_Bernoulli._Engraving._Wellcome_V0000487.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Daniel_Bernoulli._Engraving._Wellcome_V0000487.jpg/960px-Daniel_Bernoulli._Engraving._Wellcome_V0000487.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2399,
+      "height": 3484,
+      "alt_suggestion": "Daniel Bernoulli. Engraving. Iconographic Collections Keywords: intaglio prints; portrait prints; bernoulli, daniel, 1700-1782; Daniel Bernoulli",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Daniel Bernoulli Bernoulli portrait Daniel Bernoulli 1700-1782\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Daniel Bernoulli\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Daniel Bernoulli Bernoulli portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

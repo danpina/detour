@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-105231645",
+  "alt": "A nail wrapped with coiled insulated wire and connected to a 9-volt battery, forming a simple electromagnet that holds small nails.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

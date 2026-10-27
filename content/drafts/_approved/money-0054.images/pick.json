@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-111971577",
+ "alt": "The white, red-roofed Mount Washington Hotel at Bretton Woods, New Hampshire, with autumn trees and mountains behind it.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (CC BY-SA 4.0).",
+ "crop": {
+  "fx": 0.65,
+  "fy": 0.4,
+  "zoom": 1.2
+ }
+}

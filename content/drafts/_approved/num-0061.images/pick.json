@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-144716444",
+  "alt": "Black-and-white studio portrait of the mathematician and engineer Claude Shannon in a tweed jacket.",
+  "fits": true,
+  "note": "Portrait of Shannon, CC BY 2.0, 1942x2427.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

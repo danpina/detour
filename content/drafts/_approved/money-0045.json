@@ -1,0 +1,88 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "How insurance pools risk",
+    "angle": "Risk pooling and the law of large numbers"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0045",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "Insurance is a shared pot",
+    "body": {
+      "claim": "Insurance pools money from many people to pay for the losses that a few of them have.",
+      "why": "Each person pays a fee, set by how often and how severe the insured event is. Because policies cover many similar people, the law of large numbers makes predicted losses close to the actual losses. The few who suffer a loss are paid from the pool."
+    },
+    "probes": [
+      {
+        "id": "money-0045-p1",
+        "kind": "mcq",
+        "question": "What does an insurer pool together?",
+        "options": [
+          "The insurer's own savings",
+          "Funds from many insured people",
+          "Government tax"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0045-p2",
+        "kind": "tf",
+        "question": "True or false: the fee for insurance depends on how often and how severe the insured event is.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Insurance (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Insurance"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Fire insurance plaque, High Street - geograph.org.uk - 1201347.jpg shows a metal fire insurance plaque on a building",
+    "keywords": [
+      "fire insurance plaque",
+      "fire mark",
+      "insurance plaque",
+      "fire insurance"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.843Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Insurance",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Insurance pools funds from many insured entities to pay for losses some incur (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Insurance",
+        "quote": "Insurance involves pooling funds from many insured entities to pay for the losses that some may incur"
+      },
+      {
+        "claim": "Fee depends on frequency and severity of the event (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Insurance",
+        "quote": "with the fee being dependent upon the frequency and severity of the event occurring"
+      },
+      {
+        "claim": "Law of large numbers: predicted losses similar to actual",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Insurance",
+        "quote": "allowing insurers to benefit from the law of large numbers in which predicted losses are similar to the actual losses"
+      }
+    ],
+    "overall": "pass"
+  }
+}

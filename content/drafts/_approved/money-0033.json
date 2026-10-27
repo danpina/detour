@@ -1,0 +1,138 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "How a mortgage amortizes",
+    "angle": "Early payments are mostly interest"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0033",
+    "interest": "money",
+    "type": "story",
+    "title": "The loan that starts out mostly interest",
+    "body": {
+      "panels": [
+        {
+          "text": "Take a $200,000 mortgage at 6% over 30 years. The fixed payment comes to about $1,199 a month. These are example numbers, not a quote."
+        },
+        {
+          "text": "Each payment has two parts: interest on what you still owe, and principal that pays the loan down. The payment stays the same, but the split between the two changes."
+        },
+        {
+          "text": "In month one, the interest is $1,000 and only about $199 goes to principal."
+        },
+        {
+          "text": "The balance shrinks slowly at first. After 10 years, a third of the way through, roughly $167,000 is still owed."
+        },
+        {
+          "text": "The twist: over all 360 payments you would pay about $431,700, of which about $231,700 is interest. Later payments are almost all principal."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0033-p1",
+        "kind": "mcq",
+        "question": "In the early years of a long fixed-payment mortgage, most of each payment goes to...",
+        "options": [
+          "Principal",
+          "Interest",
+          "Fees"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0033-p2",
+        "kind": "tf",
+        "question": "True or false: on an amortizing loan, the total amount of each payment stays the same while the split between interest and principal changes.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Amortization calculator (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Amortization_calculator"
+      },
+      {
+        "title": "Mortgage loan (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Mortgage_loan"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Typical 1930s suburban houses - geograph.org.uk - 1174258.jpg shows a row of suburban houses",
+    "keywords": [
+      "suburban houses",
+      "row of houses",
+      "houses street",
+      "terraced houses"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.814Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Amortization_calculator",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mortgage_loan",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "$200,000 at 6% over 30 years: payment about $1,199",
+        "verdict": "pass",
+        "note": "Verified by calculation: P*r/(1-(1+r)^-360), r=0.005 gives $1,199.10"
+      },
+      {
+        "claim": "Month one: interest $1,000, principal about $199",
+        "verdict": "pass",
+        "note": "Verified by calculation: 200000*0.005 = 1000; 1199.10-1000 = 199.10"
+      },
+      {
+        "claim": "After 10 years roughly $167,000 still owed; 10 of 30 years is a third",
+        "verdict": "pass",
+        "note": "Verified by calculation: Balance after 120 payments = $167,371"
+      },
+      {
+        "claim": "Total of 360 payments about $431,700, interest about $231,700",
+        "verdict": "pass",
+        "note": "Verified by calculation: 1199.10*360 = 431,676; minus 200,000 = 231,676"
+      },
+      {
+        "claim": "Early years of the mortgage are mostly interest (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mortgage_loan",
+        "quote": "In the early years the repayments are mostly interest."
+      },
+      {
+        "claim": "Later payments are mostly principal",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mortgage_loan",
+        "quote": "Towards the end of the mortgage, payments are mostly for principal.",
+        "note": "Calculation: last payment is about 99.5% principal, so almost all holds."
+      },
+      {
+        "claim": "Fixed payment while interest/principal split changes (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Amortization_calculator",
+        "quote": "The amortization repayment model factors varying amounts of both interest and principal into every installment, though the total amount of each payment is the same."
+      },
+      {
+        "claim": "Fixed monthly payment over a period of years",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mortgage_loan",
+        "quote": "a fixed monthly payment over a period of ten to thirty years"
+      }
+    ],
+    "overall": "pass"
+  }
+}

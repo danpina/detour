@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-69164863",
+  "alt": "A chrome twin-bell mechanical alarm clock stands on a wooden surface in front of a window.",
+  "fits": true,
+  "note": "Alarm clock illustrates being awake long; tiny dial text only.",
+  "crop": {
+    "fx": 0.42,
+    "fy": 0.55,
+    "zoom": 1.5
+  }
+}

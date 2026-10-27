@@ -1,0 +1,65 @@
+{
+  "id": "num-0057",
+  "interest": "numbers",
+  "title": "There is always another prime",
+  "probes": [
+    {
+      "id": "num-0057-p1",
+      "question": "Why can the prime p that divides P + 1 not be one of the primes on the list?",
+      "kind": "mcq",
+      "options": [
+        "It is too large",
+        "It would have to divide P + 1 and P, so it would divide 1",
+        "P + 1 is always prime",
+        "Lists of primes cannot exist"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0057-p2",
+      "question": "True or false: Euclid's argument shows that any finite list of primes is missing at least one prime.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Euclid's theorem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Euclid%27s_theorem"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:08.226Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0057.webp",
+    "alt": "A torn ancient papyrus fragment of Euclid's Elements with Greek text and a small geometric diagram.",
+    "kind": "photo",
+    "credit": "Euclid / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:P._Oxy._I_29.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Euclid proved in his Elements that there are infinitely many primes. There are now at least 200 proofs, but his was first."
+      },
+      {
+        "text": "Take any finite list of primes. Multiply them all together to get P, then look at P + 1."
+      },
+      {
+        "text": "If P + 1 is prime, it is a prime missing from your list. If not, some prime p divides it."
+      },
+      {
+        "text": "That p cannot be on your list. A listed prime divides P, so it would divide the difference (P + 1) - P = 1, and no prime divides 1. Either way the list was missing a prime."
+      },
+      {
+        "text": "A myth to drop: it is often told as a proof by contradiction, but Euclid's own argument works by cases."
+      }
+    ]
+  }
+}

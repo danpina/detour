@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "APY versus the stated rate",
+    "angle": "How compounding frequency changes the real yearly rate"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0030",
+    "interest": "money",
+    "type": "guess_first",
+    "title": "Why 4.65% is quoted as 4.75%",
+    "body": {
+      "question": "A deposit pays a 4.65% rate, compounded monthly. What annual percentage yield (APY) would the bank quote?",
+      "options": [
+        "4.65%",
+        "4.75%",
+        "5.65%"
+      ],
+      "answer": 1,
+      "reveal": "About 4.75%. APY restates a rate as if it compounded over one year, so the interest that is added each month and then earns interest of its own is counted. That makes APY a fair way to compare accounts that compound on different schedules, although it does not account for account fees."
+    },
+    "probes": [
+      {
+        "id": "money-0030-p1",
+        "kind": "tf",
+        "question": "True or false: APY takes account fees into account.",
+        "answer": false
+      },
+      {
+        "id": "money-0030-p2",
+        "kind": "mcq",
+        "question": "Why is a monthly-compounded 4.65% rate worth 4.75% a year?",
+        "options": [
+          "Inflation is subtracted",
+          "The bank adds a bonus",
+          "Interest added during the year earns interest too"
+        ],
+        "answer": 2
+      }
+    ],
+    "sources": [
+      {
+        "title": "Annual percentage yield (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Annual_percentage_yield"
+      },
+      {
+        "title": "Compound interest (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compound_interest"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:$1,000 with 1.2% APY.jpg shows a diagram comparing two savings accounts with different APY",
+    "keywords": [
+      "APY",
+      "savings accounts",
+      "interest rate comparison",
+      "savings account interest"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.800Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Annual_percentage_yield",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Compound_interest",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "4.65% compounded monthly gives APY about 4.75%",
+        "verdict": "pass",
+        "note": "Verified by calculation: (1+0.0465/12)^12 - 1 = 0.047504, i.e. 4.75%"
+      },
+      {
+        "claim": "APY restates a rate on a one-year compounding basis",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Annual_percentage_yield",
+        "quote": "is a normalized representation of an interest rate, based on a compounding period of one year"
+      },
+      {
+        "claim": "APY is a fair way to compare accounts with different compounding schedules",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Annual_percentage_yield",
+        "quote": "APY figures allow a reasonable, single-point comparison of different offerings with varying compounding schedules."
+      },
+      {
+        "claim": "APY does not account for fees (probe 1 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Annual_percentage_yield",
+        "quote": "it does not account for the possibility of account fees affecting the net gain"
+      },
+      {
+        "claim": "Interest added during the year earns interest too (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compound_interest",
+        "quote": "Compound interest or anatocism is interest accumulated from a principal sum and previously accumulated interest."
+      }
+    ],
+    "overall": "pass"
+  }
+}

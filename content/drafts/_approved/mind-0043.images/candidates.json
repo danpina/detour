@@ -1,0 +1,97 @@
+{
+  "draft_id": "mind-0043",
+  "created_at": "2026-10-26T20:31:24.776Z",
+  "queries": [
+    "potter working potter wheel pottery",
+    "potter working",
+    "potter working potter wheel"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-179653278",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Potter shaping clay on a traditional manual potter’s wheel in India 01.jpg",
+      "credit": "Gannu03 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Potter_shaping_clay_on_a_traditional_manual_potter%E2%80%99s_wheel_in_India_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Potter_shaping_clay_on_a_traditional_manual_potter%E2%80%99s_wheel_in_India_01.jpg/960px-Potter_shaping_clay_on_a_traditional_manual_potter%E2%80%99s_wheel_in_India_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 4000,
+      "alt_suggestion": "A traditional manual potter’s wheel used for shaping a small clay pot. The potter’s hands are seen working with wet clay while the wheel rotates. Photographed in India.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-81576",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Mrs. Potter Palmer",
+      "credit": "Anders Leonard Zorn (Swedish, 1860–1920) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/81576",
+      "image_url": "https://www.artic.edu/iiif/2/6f3dc71a-683d-7ad6-e24a-a97c4877f30d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-179653281",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Potter shaping clay on a traditional manual potter’s wheel in India 02.jpg",
+      "credit": "Gannu03 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Potter_shaping_clay_on_a_traditional_manual_potter%E2%80%99s_wheel_in_India_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Potter_shaping_clay_on_a_traditional_manual_potter%E2%80%99s_wheel_in_India_02.jpg/960px-Potter_shaping_clay_on_a_traditional_manual_potter%E2%80%99s_wheel_in_India_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 6000,
+      "alt_suggestion": "A traditional manual potter’s wheel used for shaping a small clay pot. The potter’s hands are seen working with wet clay while the wheel rotates. Photographed in India.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-24822",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Potters at Work - Imado",
+      "credit": "Katsushika Hokusai 葛飾 北斎 Japanese, 1760-1849 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/24822",
+      "image_url": "https://www.artic.edu/iiif/2/1eb422c6-a3f7-c3fa-aef9-3d6c5c3dccb5/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color woodblock print.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-66944430",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Potter working on wheel with pottery on table in front of him at the Dome of the Rock Tiles workshop, Via Dolorosa, Jerusalem LOC matpc.08777.jpg",
+      "credit": "Matson Collection / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Potter_working_on_wheel_with_pottery_on_table_in_front_of_him_at_the_Dome_of_the_Rock_Tiles_workshop,_Via_Dolorosa,_Jerusalem_LOC_matpc.08777.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Potter_working_on_wheel_with_pottery_on_table_in_front_of_him_at_the_Dome_of_the_Rock_Tiles_workshop%2C_Via_Dolorosa%2C_Jerusalem_LOC_matpc.08777.jpg/960px-Potter_working_on_wheel_with_pottery_on_table_in_front_of_him_at_the_Dome_of_the_Rock_Tiles_workshop%2C_Via_Dolorosa%2C_Jerusalem_LOC_matpc.08777.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5848,
+      "height": 4254,
+      "alt_suggestion": "Title: Potter working on wheel with pottery on table in front of him at the Dome of the Rock Tiles workshop, Via Dolorosa, Jerusalem Abstract/medium: G. Eric and Edith Matson Photograph Collection Phy",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "The fireside university of modern invention, discovery, industry and art for home circle study and entertainment (1902) (14799425803).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Potter working, Bangalore India.jpg",
+      "license": "GFDL 1.2",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"potter working potter wheel pottery\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"potter working\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"potter working potter wheel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

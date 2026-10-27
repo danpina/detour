@@ -1,0 +1,115 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Fees and compounding",
+    "angle": "A small annual cost gap compounds over decades"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0034",
+    "interest": "money",
+    "type": "estimate",
+    "title": "What a one-point fee costs over 30 years",
+    "body": {
+      "question": "Two funds earn the same before costs. After costs, one grows 7% a year and the other 6%. Starting from $10,000, about how many dollars bigger is the 7% pile after 30 years?",
+      "unit": "$",
+      "min": 0,
+      "max": 60000,
+      "scale": "linear",
+      "answer": 18700,
+      "reveal": "About $18,700. At 7% a year, $10,000 becomes about $76,100; at 6% it becomes about $57,400. Costs come out of returns every year, so the gap compounds too. These rates are made up to show the maths and are not a forecast or advice."
+    },
+    "probes": [
+      {
+        "kind": "estimate",
+        "question": "$10,000 grows 7% a year for 30 years, and a second $10,000 grows 6%. About how many dollars bigger is the first pile?",
+        "answer": 18700,
+        "unit": "$",
+        "min": 0,
+        "max": 60000,
+        "scale": "linear",
+        "id": "money-0034-p1"
+      },
+      {
+        "id": "money-0034-p2",
+        "kind": "mcq",
+        "question": "Why does it generally cost less to run an index fund than an actively managed fund?",
+        "options": [
+          "The target index is a known quantity",
+          "Index funds hold only bonds",
+          "Index funds never trade"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Index fund (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Index_fund"
+      },
+      {
+        "title": "Compound interest (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compound_interest"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Electronic stock board in Yaesu, Tokyo 2007.jpg shows an electronic board displaying market data",
+    "keywords": [
+      "stock board",
+      "electronic stock board",
+      "stock market board display",
+      "Yaesu Tokyo"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.815Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Index_fund",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Compound_interest",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "$10,000 at 7% for 30 years is about $76,100",
+        "verdict": "pass",
+        "note": "Verified by calculation: 10000*1.07^30 = 76,123"
+      },
+      {
+        "claim": "$10,000 at 6% for 30 years is about $57,400",
+        "verdict": "pass",
+        "note": "Verified by calculation: 10000*1.06^30 = 57,435"
+      },
+      {
+        "claim": "Gap is about $18,700 (answer, probe 1)",
+        "verdict": "pass",
+        "note": "Verified by calculation: 76,123 - 57,435 = 18,688, about 18,700"
+      },
+      {
+        "claim": "Index funds generally cost less to run than active funds (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Index_fund",
+        "quote": "Because the composition of a target index is a known quantity, relative to actively managed funds, it costs less to run an index fund."
+      },
+      {
+        "claim": "Costs reduce returns, so the gap compounds",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Index_fund",
+        "quote": "turnover has both explicit and implicit costs, which directly reduce returns on a dollar-for-dollar basis",
+        "note": "Assumed rates are labelled made up in the card; compounding of the gap is arithmetic."
+      }
+    ],
+    "overall": "pass"
+  }
+}

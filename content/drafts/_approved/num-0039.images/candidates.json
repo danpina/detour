@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0039",
+  "created_at": "2026-10-27T06:09:16.097Z",
+  "queries": [
+    "Monte Carlo Casino casino Monaco casino",
+    "Monte Carlo Casino",
+    "Monte Carlo Casino casino Monaco"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-50317420",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Casino de Montecarlo, Mónaco, 2016-06-23, DD 06.jpg",
+      "credit": "Diego Delso / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Casino_de_Montecarlo,_M%C3%B3naco,_2016-06-23,_DD_06.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Casino_de_Montecarlo%2C_M%C3%B3naco%2C_2016-06-23%2C_DD_06.jpg/960px-Casino_de_Montecarlo%2C_M%C3%B3naco%2C_2016-06-23%2C_DD_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3786,
+      "height": 2520,
+      "alt_suggestion": "View of the south balcony heading to the Mediterranean Sea of the Monte Carlo casino in Monaco. The building hosts a casino, the Grand Théâtre de Monte Carlo and the office of Les Ballets de Monte Car",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-105278",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Ravinia Park Casino Building: Window",
+      "credit": "Peter Joseph Weber American, born Germany, 1864-1923 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/105278",
+      "image_url": "https://www.artic.edu/iiif/2/8069bcfd-52a1-a0db-cf4c-86d93d3766ba/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of six panels of clear and colored textured glass in oak sash.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-129543026",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "2023 Żeton z Casino de Monte-Carlo.jpg",
+      "credit": "Jacek Halicki / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2023_%C5%BBeton_z_Casino_de_Monte-Carlo.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/2023_%C5%BBeton_z_Casino_de_Monte-Carlo.jpg/960px-2023_%C5%BBeton_z_Casino_de_Monte-Carlo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3832,
+      "height": 2734,
+      "alt_suggestion": "Casino de Monte-Carlo token",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-7573",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Caudieux at the Petit Casino, from Le Café-Concert",
+      "credit": "Henri de Toulouse-Lautrec (French, 1864-1901) printed by Edward Ancourt & Cie (French, 19th-20th c.) published by L'Estampe originale (French, 1893-1895) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/7573",
+      "image_url": "https://www.artic.edu/iiif/2/69939b11-791e-b5e2-4eb7-1dcc6f6fec54/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of lithograph on ivory wove paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-50317418",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Casino de Montecarlo, Mónaco, 2016-06-23, DD 04.jpg",
+      "credit": "Diego Delso / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Casino_de_Montecarlo,_M%C3%B3naco,_2016-06-23,_DD_04.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Casino_de_Montecarlo%2C_M%C3%B3naco%2C_2016-06-23%2C_DD_04.jpg/960px-Casino_de_Montecarlo%2C_M%C3%B3naco%2C_2016-06-23%2C_DD_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6137,
+      "height": 4715,
+      "alt_suggestion": "Monte Carlo Casino, Monaco",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Monte Carlo Casino casino Monaco casino\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Monte Carlo Casino\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Monte Carlo Casino casino Monaco\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

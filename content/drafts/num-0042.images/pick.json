@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-53081927",
+  "alt": "Outline drawing of a twin-engine bomber from above covered with red dots marking damage hits.",
+  "fits": true,
+  "note": "Classic survivorship-bias diagram; clean white background, 1427 px wide.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

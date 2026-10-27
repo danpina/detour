@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Grid balancing",
+    "angle": "Supply must meet demand at every moment"
+  },
+  "created_at": "2026-10-26T20:31:08.682Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0044",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "The grid has no spare shelf",
+    "body": {
+      "claim": "On a big electricity grid, generation and consumption must stay balanced, because energy is consumed as it is produced.",
+      "why": "The grid's AC frequency shows how things stand: it falls slightly when the grid is heavily loaded and rises when lightly loaded, and utilities adjust generation to keep it steady. In the immediate short term, the spinning generators themselves store energy as rotational motion."
+    },
+    "probes": [
+      {
+        "id": "sci-0044-p1",
+        "kind": "mcq",
+        "question": "When a grid is heavily loaded, its frequency tends to...",
+        "options": [
+          "Rise",
+          "Fall slightly",
+          "Jump to double",
+          "Stay exactly fixed"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0044-p2",
+        "kind": "tf",
+        "question": "True or false: on a synchronous grid, generation and consumption must be balanced across the whole grid.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Electrical grid (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Electrical_grid"
+      },
+      {
+        "title": "Utility frequency (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Utility_frequency"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Kozloduy Nuclear Power Plant - Control Room of Unit 5.jpg shows a power plant control room",
+    "keywords": [
+      "power plant control room",
+      "power station turbine hall",
+      "electrical grid control center"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.588Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Electrical_grid",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Utility_frequency",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Generation and consumption must be balanced because energy is consumed as produced (claim, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electrical_grid",
+        "quote": "Generation and consumption must be balanced across the entire grid, because energy is consumed as it is produced."
+      },
+      {
+        "claim": "Frequency falls when heavily loaded, rises when lightly loaded (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Utility_frequency",
+        "quote": "reducing when the grid is heavily loaded, and speeding up when lightly loaded"
+      },
+      {
+        "claim": "Utilities adjust generation to keep frequency steady",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Utility_frequency",
+        "quote": "most utilities will adjust generation onto the grid over the course of the day to ensure a constant number of cycles occur"
+      },
+      {
+        "claim": "Spinning generators store energy as rotation in the short term",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electrical_grid",
+        "quote": "Energy is stored in the immediate short term by the rotational kinetic energy of the generators."
+      }
+    ],
+    "overall": "pass"
+  }
+}

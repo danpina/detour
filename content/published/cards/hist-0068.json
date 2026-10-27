@@ -1,0 +1,59 @@
+{
+  "id": "hist-0068",
+  "interest": "history",
+  "title": "How many wells in Mohenjo-daro?",
+  "probes": [
+    {
+      "id": "hist-0068-p1",
+      "question": "Where did waste water from Mohenjo-daro's houses go?",
+      "kind": "mcq",
+      "options": [
+        "Into the fields",
+        "Into covered drains along the streets",
+        "Into the Great Bath",
+        "Into pits inside each house"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0068-p2",
+      "question": "True or false: Mohenjo-daro had roughly one well for every three houses.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mohenjo-daro (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mohenjo-daro"
+    },
+    {
+      "title": "Indus Valley Civilisation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:10.480Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "hist-0068.webp",
+    "alt": "Excavated brick ruins of Mohenjo-daro with the Great Bath in the foreground and a stupa on the mound behind",
+    "kind": "photo",
+    "credit": "Saqib Qayyum / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mohenjo-daro.jpg"
+  },
+  "body": {
+    "question": "Mohenjo-daro, a city of the Indus Valley, was planned with water supply and drainage built in from the start. About how many wells have been found there so far?",
+    "unit": "wells",
+    "min": 10,
+    "max": 10000,
+    "scale": "log",
+    "answer": 700,
+    "reveal": "Over 700 wells, about one for every three houses. Waste water was carried by a centralized drainage system, in covered drains along the streets. The Indus civilisation is credited with the world's first known city sanitation systems."
+  }
+}

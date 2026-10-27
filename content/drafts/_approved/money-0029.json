@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Tax brackets",
+    "angle": "Why a higher bracket never means a smaller paycheck from the extra earnings"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0029",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "A raise can't shrink your pay",
+    "body": {
+      "claim": "Moving into a higher US tax bracket doesn't tax all your income at the higher rate.",
+      "why": "Income is taxed in layers called brackets, and only the part that falls inside the new bracket gets the higher rate. For a single filer in 2025, the 12% layer ends at $48,475, so each dollar above that is taxed at 22% while every earlier dollar keeps its old rate. That leaves 78 cents of each extra dollar after federal income tax."
+    },
+    "probes": [
+      {
+        "id": "money-0029-p1",
+        "kind": "mcq",
+        "question": "A single filer's taxable income goes from $48,000 to $49,000 (2025 rates). What rate applies to the dollars above $48,475?",
+        "options": [
+          "10%",
+          "12%",
+          "22%",
+          "24%"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "money-0029-p2",
+        "kind": "tf",
+        "question": "True or false: when your income reaches a higher tax bracket, the higher rate applies to all of your income.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Federal income tax rates and brackets (IRS)",
+        "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Form 4868, 2010, with pen glasses phone.jpg shows a paper tax form with pen and glasses",
+    "keywords": [
+      "tax form",
+      "Form 4868",
+      "income tax return",
+      "tax return pen"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.795Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Moving into a higher bracket does not tax all income at the higher rate (title, claim, probe 2 false)",
+        "verdict": "pass",
+        "source_url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets",
+        "quote": "You pay the higher rate only on the part that's in the new tax bracket."
+      },
+      {
+        "claim": "Income is taxed in layers called brackets",
+        "verdict": "pass",
+        "source_url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets",
+        "quote": "You pay tax as a percentage of your income in layers called tax brackets."
+      },
+      {
+        "claim": "2025 single filer: 12% layer ends at $48,475, above that 22% (probe 1 answer 22%)",
+        "verdict": "pass",
+        "source_url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets",
+        "quote": "12% $11,926 $48,475 22% $48,476 $103,350"
+      },
+      {
+        "claim": "78 cents of each extra dollar after federal income tax",
+        "verdict": "pass",
+        "note": "Verified by calculation: 1 - 0.22 = 0.78 (federal income tax only, 22% marginal)"
+      }
+    ],
+    "overall": "pass"
+  }
+}

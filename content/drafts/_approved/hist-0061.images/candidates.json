@@ -1,0 +1,79 @@
+{
+  "draft_id": "hist-0061",
+  "created_at": "2026-10-26T20:33:35.004Z",
+  "queries": [
+    "Luca Pacioli portrait Jacopo de' Barbari Pacioli Fra Luca Pacioli",
+    "Luca Pacioli portrait",
+    "Luca Pacioli portrait Jacopo de' Barbari Pacioli"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-70342336",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Jacopo de' Barbari (attributed to) Portrait of Luca Pacioli (1445 1517) with a student (Guidobaldo da Montefeltro) (2).jpg",
+      "credit": "Jacopo de' Barbari / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacopo_de%27_Barbari_(attributed_to)_Portrait_of_Luca_Pacioli_(1445_1517)_with_a_student_(Guidobaldo_da_Montefeltro)_(2).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Jacopo_de%27_Barbari_%28attributed_to%29_Portrait_of_Luca_Pacioli_%281445_1517%29_with_a_student_%28Guidobaldo_da_Montefeltro%29_%282%29.jpg/960px-Jacopo_de%27_Barbari_%28attributed_to%29_Portrait_of_Luca_Pacioli_%281445_1517%29_with_a_student_%28Guidobaldo_da_Montefeltro%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 2500,
+      "alt_suggestion": "Jacopo de' Barbari (attributed to) Portrait of Luca Pacioli (1445 1517) with a student (Guidobaldo da Montefeltro) (2).jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-46",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Portrait Bust of a Woman with a Large Collar, from Perfect School to Learn How to Draw the Entire Human Body (English translation)",
+      "credit": "Luca Ciamberlano (Italian, c. 1580-c. 1641) after Agostino Carracci (Italian, 1557-1602) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/46",
+      "image_url": "https://www.artic.edu/iiif/2/7e00ffbc-16a9-96b9-3da2-f38174cccb5f/full/843,/0/default.jpg",
+      "alt_suggestion": "Engraving of a woman with a wide collar and an intricately braided hairstyle, curls framing her face.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-15367476",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Jacopo de' Barbari - Portrait of Fra Luca Pacioli and an Unknown Young Man - WGA1269.jpg",
+      "credit": "Attributed to Jacopo de' Barbari / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacopo_de%27_Barbari_-_Portrait_of_Fra_Luca_Pacioli_and_an_Unknown_Young_Man_-_WGA1269.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Jacopo_de%27_Barbari_-_Portrait_of_Fra_Luca_Pacioli_and_an_Unknown_Young_Man_-_WGA1269.jpg/960px-Jacopo_de%27_Barbari_-_Portrait_of_Fra_Luca_Pacioli_and_an_Unknown_Young_Man_-_WGA1269.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1100,
+      "height": 905,
+      "alt_suggestion": "It shows Pacioli standing behind a table and wearing the habit of a member of the Franciscan order. He draws a construction on a board, the edge of which bears the name Euclides. His left hand rests u",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-5775884",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Luca Pacioli (Gemaelde).jpeg",
+      "credit": "Attributed to Jacopo de' Barbari / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Luca_Pacioli_(Gemaelde).jpeg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Luca_Pacioli_%28Gemaelde%29.jpeg/960px-Luca_Pacioli_%28Gemaelde%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1055,
+      "height": 879,
+      "alt_suggestion": "It shows Pacioli standing behind a table and wearing the habit of a member of the Franciscan order. He draws a construction on a board, the edge of which bears the name Euclides. His left hand rests u",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Leonardo da Vinci, artist, thinker and man of science (1898) (14784185512).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Luca Pacioli portrait Jacopo de' Barbari Pacioli Fra Luca Pacioli\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Luca Pacioli portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Luca Pacioli portrait Jacopo de' Barbari Pacioli\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

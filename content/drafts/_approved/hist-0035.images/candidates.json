@@ -1,0 +1,103 @@
+{
+  "draft_id": "hist-0035",
+  "created_at": "2026-10-27T06:07:08.305Z",
+  "queries": [
+    "Gutenberg Bible printing press Gutenberg Museum",
+    "Gutenberg Bible",
+    "Gutenberg Bible printing press"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-83634599",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Page from the Gutenberg Bible in the Gutenberg Museum, Mainz, Germany (48988297126).jpg",
+      "credit": "dronepicr / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Page_from_the_Gutenberg_Bible_in_the_Gutenberg_Museum,_Mainz,_Germany_(48988297126).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Page_from_the_Gutenberg_Bible_in_the_Gutenberg_Museum%2C_Mainz%2C_Germany_%2848988297126%29.jpg/960px-Page_from_the_Gutenberg_Bible_in_the_Gutenberg_Museum%2C_Mainz%2C_Germany_%2848988297126%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2912,
+      "height": 3883,
+      "alt_suggestion": "Page from the Gutenberg Bible in the Gutenberg Museum, Mainz, Germany",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-91678",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Gutenberg Bible Leaf",
+      "credit": "Johannes Gutenberg German, c. 1398-1468 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/91678",
+      "image_url": "https://www.artic.edu/iiif/2/38d2771d-1bb2-50ba-ce11-d1455d2ca39a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of letterpress in black with initials in red and blue on ivory laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-10038173",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Gutenberg Bible, New York Public Library, USA. Pic 01.jpg",
+      "credit": "Joshua Keller / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible,_New_York_Public_Library,_USA._Pic_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Gutenberg_Bible%2C_New_York_Public_Library%2C_USA._Pic_01.jpg/960px-Gutenberg_Bible%2C_New_York_Public_Library%2C_USA._Pic_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3504,
+      "height": 2336,
+      "alt_suggestion": "Gutenberg Bible on display at the New York Public Library",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-118021",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Belshazzar's Feast, from Illustrations of the Bible",
+      "credit": "John Martin English, 1789-1854 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/118021",
+      "image_url": "https://www.artic.edu/iiif/2/56d8bf21-f54b-4dd0-eefe-770d72b6048c/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of mezzotint with etching in black on ivory wove paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-9914015",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Gutenberg Bible, Lenox Copy, New York Public Library, 2009. Pic 01.jpg",
+      "credit": "NYC Wanderer (Kevin Eng) / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible,_Lenox_Copy,_New_York_Public_Library,_2009._Pic_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/960px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1200,
+      "alt_suggestion": "The Gutenberg Bible [Bible, Latin Vulgate. Ca. 1455]. Biblia Latina. [Mainz: Johann Gutenberg, ca. 1455]. Rare Books Division. From the Lenox Library The first substantial printed book is this royal-f",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Nineteen Christian centuries in outline. A guide to historical study for home reading and literary clubs (1881) (14784326315).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Encyclopedia of antiquities - and elements of archaeology, classical and mediæval (1843) (14763050162).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Great men and famous women - a series of pen and pencil sketches of the lives of more than 200 of the most prominent personages in history Volume 5 (1894) (14595392057).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Gutenberg Bible printing press Gutenberg Museum\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Gutenberg Bible\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Gutenberg Bible printing press\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

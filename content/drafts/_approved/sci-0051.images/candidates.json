@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0051",
+  "created_at": "2026-10-26T20:34:21.296Z",
+  "queries": [
+    "Capacitor Leyden jar electrolytic capacitor",
+    "Capacitor",
+    "Capacitor Leyden jar"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-154920336",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dubilier S635 mica capacitor, 1940s (01).jpg",
+      "credit": "155LA3 / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dubilier_S635_mica_capacitor,_1940s_(01).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Dubilier_S635_mica_capacitor%2C_1940s_%2801%29.jpg/960px-Dubilier_S635_mica_capacitor%2C_1940s_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3147,
+      "height": 2098,
+      "alt_suggestion": "Dubilier S635 mica capacitor, 1940s",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-1301118",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "1301118",
+      "credit": "EMMETT GIVEN / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/1301118",
+      "image_url": "https://images-assets.nasa.gov/image/1301118/1301118~medium.jpg",
+      "alt_suggestion": "EXPLODING WIRE GUN WITH CAPACITORS",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-127516063",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Soviet capacitor МБМ (MBM) type 01.jpg",
+      "credit": "Retired electrician / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Soviet_capacitor_%D0%9C%D0%91%D0%9C_(MBM)_type_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Soviet_capacitor_%D0%9C%D0%91%D0%9C_%28MBM%29_type_01.jpg/960px-Soviet_capacitor_%D0%9C%D0%91%D0%9C_%28MBM%29_type_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2751,
+      "height": 1834,
+      "alt_suggestion": "Soviet paper-foil capacitors",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-GRC-1998-C-01765",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "GRC-1998-C-01765",
+      "credit": "GRC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GRC-1998-C-01765",
+      "image_url": "https://images-assets.nasa.gov/image/GRC-1998-C-01765/GRC-1998-C-01765~medium.jpg",
+      "alt_suggestion": "PULSED PLASMA THRUSTER CAPACITOR OPTIONS",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-127516072",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Soviet capacitor МБМ (MBM) type 04.jpg",
+      "credit": "Retired electrician / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Soviet_capacitor_%D0%9C%D0%91%D0%9C_(MBM)_type_04.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Soviet_capacitor_%D0%9C%D0%91%D0%9C_%28MBM%29_type_04.jpg/960px-Soviet_capacitor_%D0%9C%D0%91%D0%9C_%28MBM%29_type_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1366,
+      "alt_suggestion": "Soviet paper-foil capacitors",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Capacitor Leyden jar electrolytic capacitor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Capacitor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Capacitor Leyden jar\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

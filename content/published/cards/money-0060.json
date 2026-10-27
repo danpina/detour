@@ -1,0 +1,49 @@
+{
+  "id": "money-0060",
+  "interest": "money",
+  "title": "Capped prices, long lines",
+  "probes": [
+    {
+      "id": "money-0060-p1",
+      "question": "In this account, what happened to old oil under the price cap?",
+      "kind": "mcq",
+      "options": [
+        "It was withdrawn from the market, creating greater scarcity",
+        "It was sold for double",
+        "It was exported for free"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0060-p2",
+      "question": "True or false: the AAA reported that in the last week of February 1974, 20% of American gasoline stations had no fuel.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "1973 oil crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/1973_oil_crisis"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:03.494Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0060.webp",
+    "alt": "A car with a Sorry, temporarily out of gas sign on its back window in a queue of cars near a gas station during the 1973 oil crisis in Oregon.",
+    "kind": "photo",
+    "credit": "David Falconer / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:AFTER_HOURS_IN_A_GASOLINE_LINE_A_DRIVER_COULD_ARRIVE_AT_THE_PUMPS_AND_FIND_OUT_THAT_THE_CAR_AHEAD_OF_HIM_WAS_THE_LAST..._-_NARA_-_555459.jpg"
+  },
+  "body": {
+    "claim": "In the 1973 oil crisis, price controls are described as having made the US shortage worse.",
+    "why": "The system capped the price of old oil but let newly discovered oil sell for more. As a result, old oil was withdrawn from the market, creating greater scarcity. Lines at gas stations were common, and the AAA reported that in the last week of February 1974, 20% of US stations had no fuel."
+  }
+}

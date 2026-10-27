@@ -1,0 +1,60 @@
+{
+  "draft_id": "hist-0060",
+  "created_at": "2026-10-26T20:33:26.671Z",
+  "queries": [
+    "Hansekogge Hanseatic cog Holstentor Lübeck",
+    "Hansekogge",
+    "Hansekogge Hanseatic cog"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-152413880",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hansekogge Holstentormuseum (Lübeck).jpg",
+      "credit": "Wikitarisch / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hansekogge_Holstentormuseum_(L%C3%BCbeck).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Hansekogge_Holstentormuseum_%28L%C3%BCbeck%29.jpg/960px-Hansekogge_Holstentormuseum_%28L%C3%BCbeck%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2736,
+      "height": 3648,
+      "alt_suggestion": "Modell einer Hansekogge im Eingangsraum des Holstentores in Lübeck.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-121403388",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hanse Kogge S Kiel 22-06-2022 (1).jpg",
+      "credit": "Wolfgang Fricke / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hanse_Kogge_S_Kiel_22-06-2022_(1).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Hanse_Kogge_S_Kiel_22-06-2022_%281%29.jpg/960px-Hanse_Kogge_S_Kiel_22-06-2022_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 2560,
+      "alt_suggestion": "Hanse Kogge 2022 in Kiel",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-144254991",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Skulptur An der Hansekogge 21 (Frife) Die Kogge&Nikolaus Bode&19822.jpg",
+      "credit": "OTFW, Berlin / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Skulptur_An_der_Hansekogge_21_(Frife)_Die_Kogge%26Nikolaus_Bode%2619822.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Skulptur_An_der_Hansekogge_21_%28Frife%29_Die_Kogge%26Nikolaus_Bode%2619822.jpg/960px-Skulptur_An_der_Hansekogge_21_%28Frife%29_Die_Kogge%26Nikolaus_Bode%2619822.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2970,
+      "height": 3916,
+      "alt_suggestion": "Sculpture, \"Die Kogge\" by Nikolaus Bode, 1982, An der Hansekogge 21, Berlin-Friedrichsfelde, Germany",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Hansekogge Hanseatic cog Holstentor Lübeck\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Hansekogge\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Hansekogge Hanseatic cog\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

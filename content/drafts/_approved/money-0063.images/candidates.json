@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0063",
+  "created_at": "2026-10-27T06:11:04.909Z",
+  "queries": [
+    "Muhammad Yunus Muhammad Yunus portrait Grameen Bank founder",
+    "Muhammad Yunus",
+    "Muhammad Yunus Muhammad Yunus portrait"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-18227788",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Muhammad Yunus - World Economic Forum Annual Meeting 2012.jpg",
+      "credit": "World Economic Forum / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Muhammad_Yunus_-_World_Economic_Forum_Annual_Meeting_2012.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Muhammad_Yunus_-_World_Economic_Forum_Annual_Meeting_2012.jpg/960px-Muhammad_Yunus_-_World_Economic_Forum_Annual_Meeting_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2216,
+      "height": 3184,
+      "alt_suggestion": "DAVOS/SWITZERLAND, 25JAN12 - Muhammad Yunus, Chairman, Yunus Centre, Bangladesh makes a point during the session 'An Insight, An Idea with Muhammad Yunus' at the Annual Meeting 2012 of the World Econo",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-11",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Self-Portrait",
+      "credit": "Walter Shirlaw (American, 1838–1909) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/11",
+      "image_url": "https://www.artic.edu/iiif/2/7b7a6f39-1cd8-ea2f-9811-18b0e23edac0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-25718959",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Muhammad Yunus-Schlachthof Wiesbaden.jpg",
+      "credit": "Martin Kraft / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Muhammad_Yunus-Schlachthof_Wiesbaden.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Muhammad_Yunus-Schlachthof_Wiesbaden.jpg/960px-Muhammad_Yunus-Schlachthof_Wiesbaden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2081,
+      "height": 1280,
+      "alt_suggestion": "Nobel Peace Prize recipient Prof. Muhammad Yunus speaking to the audience of an YY Foundation event in the cultural centre \"Schlachthof\" in Wiesbaden, Germany",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-81539",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "On the Bank of the Seine, Bennecourt",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/81539",
+      "image_url": "https://www.artic.edu/iiif/2/66f95ea3-a11a-1cf4-6599-d0a49bb25744/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of woman in a striped dress seated on the bank of a river, beneath a full, leafy tree, a boat at the shore and a village visible across the river.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-74918179",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Muhammad Yunus (cropped).jpg",
+      "credit": "University of Salford Press Office / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Muhammad_Yunus_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Muhammad_Yunus_%28cropped%29.jpg/960px-Muhammad_Yunus_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 3148,
+      "alt_suggestion": "Nobel Peace Prize winner Muhammad Yunus championed his concept of social business as a way to release deprived people from the 'prison' of welfare at a special summit hosted by the University of Salfo",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Muhammad Yunus Muhammad Yunus portrait Grameen Bank founder\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Muhammad Yunus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Muhammad Yunus Muhammad Yunus portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

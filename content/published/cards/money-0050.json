@@ -1,0 +1,64 @@
+{
+  "id": "money-0050",
+  "interest": "money",
+  "title": "Better at everything, and still trading",
+  "probes": [
+    {
+      "id": "money-0050-p1",
+      "question": "In the story, what happens to total production when each country focuses on its comparative advantage?",
+      "kind": "mcq",
+      "options": [
+        "It stays the same",
+        "It rises",
+        "It falls"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0050-p2",
+      "question": "True or false: in the story, Portugal needs fewer hours than England for both cloth and wine.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Comparative advantage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Comparative_advantage"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:51.986Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0050.webp",
+    "alt": "A colorized oil portrait of the economist David Ricardo, seated in dark clothes with a white cravat and papers in his hand.",
+    "kind": "photo",
+    "credit": "Vladimír Krupa 81 / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:David_Ricardo_(colorized).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In 1817 David Ricardo pictured two countries, Portugal and England, each making cloth and wine of identical quality."
+      },
+      {
+        "text": "Portugal is better at both. One unit takes it 90 hours of work for cloth and 80 for wine. England needs 100 and 120."
+      },
+      {
+        "text": "But England is relatively better at cloth than wine, while Portugal is relatively better at wine than cloth."
+      },
+      {
+        "text": "So England puts its 220 hours into cloth, 2.2 units. Portugal puts its 170 hours into wine, 2.125 units. Without specialising, those hours made just one unit of each."
+      },
+      {
+        "text": "Total output of both goods rises, and swapping cloth for wine can leave both countries with more. That is comparative advantage."
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Large language models",
+    "angle": "Pre-training on next-word prediction"
+  },
+  "created_at": "2026-10-26T20:28:21.550Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0057",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "A GPT-style chatbot starts by guessing the next word",
+    "body": {
+      "claim": "GPT-style language models are first pre-trained to predict the next word.",
+      "why": "LLMs are neural networks trained on a vast amount of text. GPT-style models are pre-trained to predict the next word, then often fine-tuned to follow instructions and act as assistants. Biased or inaccurate training data can make the output less reliable."
+    },
+    "probes": [
+      {
+        "id": "tech-0057-p1",
+        "kind": "mcq",
+        "question": "What are GPT-style language models pre-trained to do?",
+        "options": [
+          "Draw pictures only",
+          "Search the web live",
+          "Predict the next word",
+          "Translate into binary"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0057-p2",
+        "kind": "tf",
+        "question": "True or false: biased or inaccurate training data can make an LLM's output less reliable.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Large language model (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Large_language_model"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Neural networks diagram.png (CC BY 4.0) or File:Simplified neural network model example.png (CC0) illustrate neural network models",
+    "keywords": [
+      "neural network",
+      "language model",
+      "artificial intelligence",
+      "neural networks diagram"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:10:27.314Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Large_language_model",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "LLMs are neural networks trained on a vast amount of text",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Large_language_model",
+        "quote": "a machine learning model (typically a neural network ) trained on a vast amount of text"
+      },
+      {
+        "claim": "GPT-style models are pre-trained to predict the next word (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Large_language_model",
+        "quote": "Generative pre-trained transformers (GPTs) are a type of LLM that is pre-trained to predict the next word."
+      },
+      {
+        "claim": "GPTs are then often fine-tuned to follow instructions and act as assistants",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Large_language_model",
+        "quote": "GPTs are then often fine-tuned to follow instructions and to behave as assistants."
+      },
+      {
+        "claim": "Biased or inaccurate training data can make output less reliable (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Large_language_model",
+        "quote": "Biased or inaccurate training data can make an LLM's output less reliable."
+      },
+      {
+        "claim": "Claim: GPT-style language models are first pre-trained to predict the next word",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Large_language_model",
+        "quote": "GPT models are first pretrained to predict the next word on a large amount of data"
+      },
+      {
+        "claim": "Title: a GPT-style chatbot starts by guessing the next word (GPTs are fine-tuned to act as assistants)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Large_language_model",
+        "quote": "GPTs are then often fine-tuned to follow instructions and to behave as assistants."
+      }
+    ],
+    "overall": "pass"
+  }
+}

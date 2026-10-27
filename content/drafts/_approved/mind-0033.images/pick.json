@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-114027086",
+  "alt": "An open ring-binder planner showing a weekly page with Monday to Sunday lined sections.",
+  "fits": true,
+  "note": "Planner suits spacing out study; no people or brands.",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.5,
+    "zoom": 1.2
+  }
+}

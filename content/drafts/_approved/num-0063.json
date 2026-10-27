@@ -1,0 +1,114 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "The 3-4-5 rope",
+    "angle": "A knotted rope makes a right angle"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0063",
+    "interest": "numbers",
+    "type": "story",
+    "title": "Knots, ropes and a right angle",
+    "body": {
+      "panels": [
+        {
+          "text": "Ancient Egypt had rope stretchers, surveyors who marked land and building foundations with knotted cords pulled tight so they did not sag."
+        },
+        {
+          "text": "They used 3-4-5 triangles. Why that triple? Because 3 squared plus 4 squared is 9 + 16 = 25, which is 5 squared."
+        },
+        {
+          "text": "A triangle whose sides are a Pythagorean triple like (3, 4, 5) is a right triangle. The right angle sits between the sides of length 3 and 4."
+        },
+        {
+          "text": "So a loop of rope knotted into 12 equal spaces, pulled taut into 3, 4 and 5, gives a perfect corner. Modern surveyors still use the trick."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0063-p1",
+        "kind": "mcq",
+        "question": "Which set of side lengths makes a right triangle?",
+        "options": [
+          "2, 3, 4",
+          "3, 4, 6",
+          "3, 4, 5",
+          "4, 5, 6"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0063-p2",
+        "kind": "tf",
+        "question": "True or false: in a 3-4-5 triangle, the right angle is between the sides of length 3 and 4.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Harpedonaptai (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Harpedonaptai"
+      },
+      {
+        "title": "Pythagorean triple (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pythagorean_triple"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Plimpton 322.jpg, a Babylonian tablet listing Pythagorean triples",
+    "keywords": [
+      "Plimpton 322",
+      "Pythagorean triple",
+      "Babylonian tablet"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.523Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Harpedonaptai",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Pythagorean_triple",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Ancient Egyptian rope stretchers surveyed land and foundations with knotted cords stretched so they did not sag",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Harpedonaptai",
+        "quote": "a surveyor who measured real property demarcations and foundations using knotted cords , stretched so the rope did not sag"
+      },
+      {
+        "claim": "They used 3-4-5 triangles, still used by modern surveyors",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Harpedonaptai",
+        "quote": "Rope stretchers used 3-4-5 triangles and the plummet , which are still in use by modern surveyors."
+      },
+      {
+        "claim": "3^2 + 4^2 = 9 + 16 = 25 = 5^2; a 12-space loop splits 3+4+5 = 12",
+        "verdict": "pass",
+        "note": "Verified by calculation: 9 + 16 = 25 = 5^2; 3+4+5 = 12."
+      },
+      {
+        "claim": "A triangle whose sides are a Pythagorean triple is a right triangle (so 3-4-5 is right, right angle between 3 and 4)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pythagorean_triple",
+        "quote": "A triangle whose side lengths are a Pythagorean triple is a right triangle",
+        "note": "Which sides meet at the right angle follows from 5 being the hypotenuse in a^2 + b^2 = c^2. The page does not describe the 12-knot loop itself; that is derived from the same maths."
+      }
+    ],
+    "overall": "pass"
+  }
+}

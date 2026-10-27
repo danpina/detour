@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Capacitive touchscreen",
+    "angle": "A conductive coating and a distorted electric field"
+  },
+  "created_at": "2026-10-26T20:28:21.551Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0060",
+    "interest": "tech",
+    "type": "story",
+    "title": "How a screen feels your finger",
+    "body": {
+      "panels": [
+        {
+          "text": "A capacitive touchscreen is glass coated with a transparent conductor, such as indium tin oxide."
+        },
+        {
+          "text": "The coating sets up an electrostatic field across the screen."
+        },
+        {
+          "text": "Your body is an electrical conductor too. When you touch the glass, the field is distorted, and the change in capacitance can be measured."
+        },
+        {
+          "text": "The twist: the first finger-driven touchscreen was developed by Eric Johnson at the Royal Radar Establishment in Malvern, England, and described in 1965."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0060-p1",
+        "kind": "mcq",
+        "question": "Why does a finger register on a capacitive screen?",
+        "options": [
+          "It presses a hidden button",
+          "The body is a conductor and distorts the screen's electrostatic field",
+          "It blocks a beam of light",
+          "It warms the glass"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0060-p2",
+        "kind": "cloze",
+        "question": "A touch is measured as a change in ____.",
+        "answer": "capacitance",
+        "accept": []
+      }
+    ],
+    "sources": [
+      {
+        "title": "Touchscreen (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Touchscreen"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Capacitive touchscreen.jpg (CC BY 3.0) shows a phone touchscreen with visible conductive tracks",
+    "keywords": [
+      "capacitive touchscreen",
+      "touchscreen",
+      "conductive tracks",
+      "phone touchscreen"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.385Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Touchscreen",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Capacitive screen is glass coated with a transparent conductor such as indium tin oxide",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Touchscreen",
+        "quote": "coated with a transparent conductor , such as indium tin oxide (ITO)."
+      },
+      {
+        "claim": "Body is a conductor; touching distorts the electrostatic field, measurable as capacitance change (probes 1, 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Touchscreen",
+        "quote": "As the human body is also an electrical conductor, touching the surface of the screen results in a distortion of the screen's electrostatic field"
+      },
+      {
+        "claim": "The coating sets up an electrostatic field across the screen",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Touchscreen",
+        "quote": "A small voltage is applied to the layer, resulting in a uniform electrostatic field."
+      },
+      {
+        "claim": "First finger-driven touchscreen by Eric Johnson, Royal Radar Establishment, Malvern, described 1965",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Touchscreen",
+        "quote": "The first finger-driven touchscreen was developed by Eric Johnson of the Royal Radar Establishment located in Malvern"
+      }
+    ],
+    "overall": "pass"
+  }
+}

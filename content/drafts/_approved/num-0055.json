@@ -1,0 +1,110 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Logarithmic scales",
+    "angle": "Why magnitude, pH and decibels use log scales"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0055",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "One earthquake step is 32 times the energy",
+    "body": {
+      "claim": "Each step up the earthquake magnitude scale means about 32 times more energy is released.",
+      "why": "Moment magnitude is a logarithmic scale, so equal steps multiply instead of add. One step is about 32 times the energy, and two steps is 1,000 times: a magnitude 7.0 releases 1,000 times as much energy as a 5.0. The pH scale for acidity is logarithmic too."
+    },
+    "probes": [
+      {
+        "id": "num-0055-p1",
+        "kind": "mcq",
+        "question": "How much more energy does a magnitude 7.0 earthquake release than a 5.0?",
+        "options": [
+          "2 times",
+          "20 times",
+          "1,000 times",
+          "100 times"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0055-p2",
+        "kind": "tf",
+        "question": "True or false: the pH scale is a logarithmic scale.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Moment magnitude scale (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Moment_magnitude_scale"
+      },
+      {
+        "title": "Logarithmic scale (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Logarithmic_scale"
+      },
+      {
+        "title": "pH (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/PH"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Charles Richter analyzing a seismograph log.jpg or File:How-the-Richter-Magnitude-Scale-is-determined.jpg",
+    "keywords": [
+      "Richter seismograph",
+      "Charles Richter",
+      "seismograph earthquake"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:41.292Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Moment_magnitude_scale",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Logarithmic_scale",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/PH",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "One magnitude step is about 32 times the energy; two steps is 1,000 times; M7.0 releases 1,000 times as much energy as 5.0",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Moment_magnitude_scale",
+        "quote": "Thus, an earthquake of M w of 7.0 releases 1,000 times as much energy as one of 5.0",
+        "note": "Same passage gives about 32 times per step."
+      },
+      {
+        "claim": "Moment magnitude is a logarithmic scale",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Moment_magnitude_scale",
+        "quote": "it uses a logarithmic scale"
+      },
+      {
+        "claim": "Two steps of about 32 is about 1,000",
+        "verdict": "pass",
+        "note": "Verified by calculation: 10^1.5 = 31.62; two steps = 10^3 = 1,000."
+      },
+      {
+        "claim": "The pH scale for acidity is logarithmic too (and probe)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/PH",
+        "quote": "is a logarithmic scale used to specify the acidity or basicity of aqueous solutions"
+      }
+    ],
+    "overall": "pass"
+  }
+}

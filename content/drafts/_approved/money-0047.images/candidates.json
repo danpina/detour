@@ -1,0 +1,60 @@
+{
+  "draft_id": "money-0047",
+  "created_at": "2026-10-27T06:07:59.198Z",
+  "queries": [
+    "Federal Reserve building Eccles Building Marriner Eccles Federal Reserve Board Building",
+    "Federal Reserve building",
+    "Federal Reserve building Eccles Building"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-6282818",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Marriner S. Eccles Federal Reserve Board Building.jpg",
+      "credit": "AgnosticPreachersKid / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg/960px-Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2978,
+      "height": 1652,
+      "alt_suggestion": "The Marriner S. Eccles Federal Reserve Board Building (commonly known as the Eccles Building or Federal Reserve Building) located at 20th Street & Constitution Avenue NW in the Foggy Bottom neighborho",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-50927860",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Eccles Building (26088200676).jpg",
+      "credit": "Federalreserve / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eccles_Building_(26088200676).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Eccles_Building_%2826088200676%29.jpg/960px-Eccles_Building_%2826088200676%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 2041,
+      "alt_suggestion": "The Eccles Building of the Federal Reserve, the central banking system of the United States.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-54151949",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Marriner S. Eccles Federal Reserve Board Building HQ of the tax-exempt Delaware private closed corporation fractional reserve central banking cartel monopoly, Board of Governors ^ Federal Open Market Committee (FOMC) o - panoramio.jpg",
+      "credit": "AlwaysAwakePR / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Marriner_S._Eccles_Federal_Reserve_Board_Building_HQ_of_the_tax-exempt_Delaware_private_closed_corporation_fractional_reserve_central_banking_cartel_monopoly,_Board_of_Governors_%5E_Federal_Open_Market_Committee_(FOMC)_o_-_panoramio.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Marriner_S._Eccles_Federal_Reserve_Board_Building_HQ_of_the_tax-exempt_Delaware_private_closed_corporation_fractional_reserve_central_banking_cartel_monopoly%2C_Board_of_Governors_%5E_Federal_Open_Market_Committee_%28FOMC%29_o_-_panoramio.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 768,
+      "alt_suggestion": "Marriner S. Eccles Federal Reserve Board Building HQ of the tax-exempt Delaware private closed corporation fractional reserve central banking cartel monopoly, Board of Governors & Federal Open Market ",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Federal Reserve building Eccles Building Marriner Eccles Federal Reserve Board Building\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Federal Reserve building\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Federal Reserve building Eccles Building\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

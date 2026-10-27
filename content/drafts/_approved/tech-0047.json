@@ -1,0 +1,114 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Phishing",
+    "angle": "Why URLs fool us"
+  },
+  "created_at": "2026-10-27T06:07:56.501Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0047",
+    "interest": "tech",
+    "type": "story",
+    "title": "Why a link can fool you",
+    "body": {
+      "panels": [
+        {
+          "text": "A link can look like it goes to example.com. But example.com.scam.com belongs to scam.com, despite appearing to refer to example.com."
+        },
+        {
+          "text": "Another tactic is to make the link's displayed text look trustworthy while the link itself leads to the phisher's site."
+        },
+        {
+          "text": "A third uses look-alike letters. The Cyrillic, Greek and Latin alphabets each have an o with the same shape but a different code point."
+        },
+        {
+          "text": "So an address can look identical and still be a different domain. It pays to read the whole address."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0047-p1",
+        "kind": "mcq",
+        "question": "Who owns the address example.com.scam.com?",
+        "options": [
+          "example.com",
+          "Neither",
+          "scam.com",
+          "Both"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0047-p2",
+        "kind": "tf",
+        "question": "True or false: look-alike letters from other alphabets can be used to fake a domain name.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Phishing (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Phishing"
+      },
+      {
+        "title": "IDN homograph attack (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/IDN_homograph_attack"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Fishing hooks on white surface.jpg shows fishing hooks",
+    "keywords": [
+      "fishing hook",
+      "fishing lure",
+      "phishing"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.727Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Phishing",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/IDN_homograph_attack",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "example.com.scam.com belongs to scam.com despite appearing to refer to example.com (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phishing",
+        "quote": "example.com.scam.com belongs to scam.com, despite appearing to refer to example.com."
+      },
+      {
+        "claim": "Link text can look trustworthy while the link leads to the phisher's site",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phishing",
+        "quote": "Another tactic is to make the link's displayed text appear trustworthy while the link itself leads to the phisher's site."
+      },
+      {
+        "claim": "Cyrillic, Greek and Latin each have an o with the same shape but different code points (probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IDN_homograph_attack",
+        "quote": "that has the same shape but have different code points"
+      },
+      {
+        "claim": "An address can look identical yet be a different domain",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Phishing",
+        "quote": "to allow attackers to create fake websites with visually identical addresses to legitimate ones"
+      }
+    ],
+    "overall": "pass"
+  }
+}

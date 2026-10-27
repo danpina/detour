@@ -1,0 +1,55 @@
+{
+  "id": "tech-0041",
+  "interest": "tech",
+  "title": "Cable or satellite?",
+  "probes": [
+    {
+      "id": "tech-0041-p1",
+      "question": "What share of US international capacity do satellites account for, per FCC statistics?",
+      "kind": "mcq",
+      "options": [
+        "About 0.37%",
+        "About 25%",
+        "About 50%",
+        "About 90%"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0041-p2",
+      "question": "True or false: for most of its journey a submarine cable is typically as wide as a garden hose.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Submarine Cable FAQs (TeleGeography)",
+      "url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:25:25.382Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "tech-0041.webp",
+    "alt": "A red-hulled cable-laying ship sailing on calm water under a blue sky.",
+    "kind": "photo",
+    "credit": "Gordon Leggett / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2024-10-22_01_CABLE_INNOVATOR_-_IMO_9101132_%E2%80%93_Victoria,_BC_CAN.jpg"
+  },
+  "body": {
+    "question": "Most data between continents travels under the sea or through space?",
+    "options": [
+      "Through space, by satellite",
+      "Under the sea, by fibre cable"
+    ],
+    "answer": 1,
+    "reveal": "Cables can carry far more data at a fraction of the cost of satellites. It is hard to say exactly, but satellites are a very small share: FCC statistics put them at just 0.37% of US international capacity. For most of the crossing, a cable is about as wide as a garden hose."
+  }
+}

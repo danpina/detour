@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-162569865",
+  "alt": "Bright electrical streamers arc from the metal sphere of a Van de Graaff generator inside a large hangar, in a black-and-white photograph.",
+  "fits": true,
+  "note": "Charged sphere with visible discharge; strong 4:5 portrait.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

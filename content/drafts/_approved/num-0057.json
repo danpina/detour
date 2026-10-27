@@ -1,0 +1,110 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Infinitely many primes",
+    "angle": "Euclid's proof that the primes never end"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0057",
+    "interest": "numbers",
+    "type": "story",
+    "title": "There is always another prime",
+    "body": {
+      "panels": [
+        {
+          "text": "Euclid proved in his Elements that there are infinitely many primes. There are now at least 200 proofs, but his was first."
+        },
+        {
+          "text": "Take any finite list of primes. Multiply them all together to get P, then look at P + 1."
+        },
+        {
+          "text": "If P + 1 is prime, it is a prime missing from your list. If not, some prime p divides it."
+        },
+        {
+          "text": "That p cannot be on your list. A listed prime divides P, so it would divide the difference (P + 1) - P = 1, and no prime divides 1. Either way the list was missing a prime."
+        },
+        {
+          "text": "A myth to drop: it is often told as a proof by contradiction, but Euclid's own argument works by cases."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0057-p1",
+        "kind": "mcq",
+        "question": "Why can the prime p that divides P + 1 not be one of the primes on the list?",
+        "options": [
+          "It is too large",
+          "It would have to divide P + 1 and P, so it would divide 1",
+          "P + 1 is always prime",
+          "Lists of primes cannot exist"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0057-p2",
+        "kind": "tf",
+        "question": "True or false: Euclid's argument shows that any finite list of primes is missing at least one prime.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Euclid's theorem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Euclid%27s_theorem"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:P. Oxy. I 29.jpg, an ancient papyrus fragment of Euclid's Elements",
+    "keywords": [
+      "Euclid Elements papyrus",
+      "Oxyrhynchus Euclid",
+      "Euclid Elements"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.520Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Euclid%27s_theorem",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Euclid proved in the Elements that there are infinitely many primes, first, and there are at least 200 proofs",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euclid%27s_theorem",
+        "quote": "It was first proven by Euclid in his work Elements . There are at least 200 proofs of the theorem."
+      },
+      {
+        "claim": "P + 1 is prime or has a prime factor p; p cannot be on the list because it would divide the difference (P + 1) - P = 1",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euclid%27s_theorem",
+        "quote": "If p divides P and q , then p must also divide the difference of the two numbers, which is ( P + 1) - P or just 1."
+      },
+      {
+        "claim": "No prime divides 1, so any finite list misses a prime",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euclid%27s_theorem",
+        "quote": "Since no prime number divides 1, p cannot be in the list."
+      },
+      {
+        "claim": "Myth: often told as a proof by contradiction, but Euclid's argument works by cases",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Euclid%27s_theorem",
+        "quote": "Euclid is often erroneously reported to have proved this result by contradiction",
+        "note": "Same sentence ends: it is actually a proof by cases, a direct proof method."
+      }
+    ],
+    "overall": "pass"
+  }
+}

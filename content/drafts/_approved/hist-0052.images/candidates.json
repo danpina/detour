@@ -1,0 +1,83 @@
+{
+  "draft_id": "hist-0052",
+  "created_at": "2026-10-26T20:32:43.508Z",
+  "queries": [
+    "Gregorian calendar reform Pope Gregory XIII Biccherna Tablet calendar reform",
+    "Gregorian calendar reform",
+    "Gregorian calendar reform Pope Gregory XIII"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-12798012",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ewiger Kalender gregorianisch.png",
+      "credit": "Karl Nimtsch / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ewiger_Kalender_gregorianisch.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Ewiger_Kalender_gregorianisch.png/960px-Ewiger_Kalender_gregorianisch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2145,
+      "height": 1428,
+      "alt_suggestion": "Kalender ab 15.Oktober 1582",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-63307",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Calendar",
+      "credit": "Johannes Regiomontanus Italian, 1436-1476 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/63307",
+      "image_url": "https://www.artic.edu/iiif/2/e952c5a7-fc64-e34b-e5ba-46fdd7b5a53e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of hand-colored woodcut and letterpress in black and red, with pen and ink, and metal and string elements, on cream and tan laid papers, in original full alum-tawed pigskin over beveled wooden boards, sewn on raised thongs, blind tooled ‘all-over’ with small tools in an h-frame layout, with two brass hook-clasp fastenings, and hand-sewn headbands.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-81240297",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "1914-julian-gregorian-calendar-Greek-French.jpg",
+      "credit": "www.kathimerini.gr / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1914-julian-gregorian-calendar-Greek-French.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/1914-julian-gregorian-calendar-Greek-French.jpg/960px-1914-julian-gregorian-calendar-Greek-French.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1384,
+      "alt_suggestion": "Two pages of a Greek-French Julian-Gregorian calendar, Sept. 1914.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-54993",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Design for Memorial to Pope Gregory XV",
+      "credit": "After Alessandro Algardi Italian, 1598-1654 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/54993",
+      "image_url": "https://www.artic.edu/iiif/2/8ab8e1b6-662b-5015-e0f6-21d03b87c0af/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of pen and brown ink, with brush and gray wash and watercolor, on vellum."
+    },
+    {
+      "id": "wikimedia-19313130",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Table of equivalent dates in the Julian and Gregorian calendars.JPG",
+      "credit": "Nautical almanac offices of the United Kingdom and the United States / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Table_of_equivalent_dates_in_the_Julian_and_Gregorian_calendars.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Table_of_equivalent_dates_in_the_Julian_and_Gregorian_calendars.JPG/960px-Table_of_equivalent_dates_in_the_Julian_and_Gregorian_calendars.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2736,
+      "height": 3648,
+      "alt_suggestion": "This table allows the reader to convert between Julian and Gregorian calendar between the years -500 to 2100.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Gregorian calendar reform Pope Gregory XIII Biccherna Tablet calendar reform\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Gregorian calendar reform\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Gregorian calendar reform Pope Gregory XIII\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

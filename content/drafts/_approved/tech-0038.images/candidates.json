@@ -1,0 +1,112 @@
+{
+  "draft_id": "tech-0038",
+  "created_at": "2026-10-27T06:11:01.226Z",
+  "queries": [
+    "padlock combination lock keyhole",
+    "padlock",
+    "padlock combination lock"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-41501847",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Love padlocks on the Butchers' Bridge (Ljubljana).jpg",
+      "credit": "Petar Milošević / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Love_padlocks_on_the_Butchers%27_Bridge_(Ljubljana).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Love_padlocks_on_the_Butchers%27_Bridge_%28Ljubljana%29.jpg/960px-Love_padlocks_on_the_Butchers%27_Bridge_%28Ljubljana%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4529,
+      "height": 3041,
+      "alt_suggestion": "Love padlocks on the Butchers' Bridge in Ljubljana, Slovenia.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-106204",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Walking Stick-Hammer-Sword-Wheellock Pistol",
+      "credit": "South German, probably Augsburg / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/106204",
+      "image_url": "https://www.artic.edu/iiif/2/1332c644-3c72-20b9-299c-e0ad94cd8528/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of steel, iron, bronze, brass, gilding, walnut, ebony, nd staghorn.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-65582711",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Solex 99 30 padlock with keys (DSCF2659).jpg",
+      "credit": "Trougnouf / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Solex_99_30_padlock_with_keys_(DSCF2659).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Solex_99_30_padlock_with_keys_%28DSCF2659%29.jpg/960px-Solex_99_30_padlock_with_keys_%28DSCF2659%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2575,
+      "height": 2344,
+      "alt_suggestion": "Solex 99 30 lock with keys (DSCF2659)",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-116715",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Combined Axe and Flintlock Pistol",
+      "credit": "German / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/116715",
+      "image_url": "https://www.artic.edu/iiif/2/48f3d2c8-1571-ecd7-1ade-128bd639c45d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of steel, wood, bone, and staghorn.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-20370677",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Love padlocks brooklyn bridge.jpg",
+      "credit": "Superbass / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Love_padlocks_brooklyn_bridge.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Love_padlocks_brooklyn_bridge.jpg/960px-Love_padlocks_brooklyn_bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5184,
+      "height": 3456,
+      "alt_suggestion": "Love padlocks on Brooklyn Bridge",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-69952447",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Combination Padlock on a Car 1 2018-06-14.jpg",
+      "credit": "FASTILY / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Combination_Padlock_on_a_Car_1_2018-06-14.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Combination_Padlock_on_a_Car_1_2018-06-14.jpg/960px-Combination_Padlock_on_a_Car_1_2018-06-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3024,
+      "height": 4032,
+      "alt_suggestion": "Combination Padlock on a Car",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-197583563",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Close-up of a padlock with number combination (50724043466).jpg",
+      "credit": "Ivan Radic / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_padlock_with_number_combination_(50724043466).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Close-up_of_a_padlock_with_number_combination_%2850724043466%29.jpg/960px-Close-up_of_a_padlock_with_number_combination_%2850724043466%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4004,
+      "height": 3003,
+      "alt_suggestion": "Close-up of a padlock with number combination (50724043466).jpg",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"padlock combination lock keyhole\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"padlock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"padlock combination lock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

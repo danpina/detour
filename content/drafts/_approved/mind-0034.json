@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Interleaved practice",
+    "angle": "Mixed-up maths problems beat blocks"
+  },
+  "created_at": "2026-10-26T20:29:12.573Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0034",
+    "interest": "mind",
+    "type": "story",
+    "title": "The harder practice that worked better",
+    "body": {
+      "panels": [
+        {
+          "text": "In 2006, Rohrer ran a two-part study in which students were taught how to solve maths problems."
+        },
+        {
+          "text": "Part one compared mass and spaced practice. When tested one week later, the spaced practice group did significantly better."
+        },
+        {
+          "text": "In part two, practice problems were either grouped by type or mixed randomly. The mixed order felt harder, but those students performed far better."
+        },
+        {
+          "text": "Why? Students often know the formula but not when to use it. Shuffled problems force you to choose the right method each time."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0034-p1",
+        "kind": "mcq",
+        "question": "Why might mixed-up practice problems help?",
+        "options": [
+          "They are easier to get through",
+          "They make you work out which method fits each problem",
+          "They are shorter",
+          "They remove the need to know formulas"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0034-p2",
+        "kind": "tf",
+        "question": "True or false: practising problems grouped by type led to better results than mixing them randomly.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Spacing effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Spacing_effect"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Formulas on an old blackboard (Unsplash).jpg shows formulas on a blackboard",
+    "keywords": [
+      "equations blackboard",
+      "blackboard formulas",
+      "mathematics textbook"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:07:59.415Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Spacing_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 2006 Rohrer ran a two-part study teaching students to solve maths problems",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spacing_effect",
+        "quote": "Rohrer conducted a two-part study in 2006 where students were taught how to solve math problems."
+      },
+      {
+        "claim": "Part 1: spaced practice did significantly better when tested one week later",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spacing_effect",
+        "quote": "spaced practice showed significant improvement over mass practice when tested one week later"
+      },
+      {
+        "claim": "Part 2: mixed order performed far better than grouped (panel 3, probe 2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spacing_effect",
+        "quote": "the performance by students who solved the randomly mixed problems was vastly superior to the students who solved the problems grouped by type",
+        "note": "'Felt harder' = page's 'desirable difficulties'."
+      },
+      {
+        "claim": "Students know the formula but not when to use it; shuffling forces choosing method (panel 4, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spacing_effect",
+        "quote": "students know the formula for solving equations, but do not always know when to apply the formula"
+      }
+    ],
+    "overall": "pass"
+  }
+}

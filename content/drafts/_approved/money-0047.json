@@ -1,0 +1,100 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Central banks and interest rates",
+    "angle": "How a policy rate fights inflation"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0047",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "The one rate that cools an economy",
+    "body": {
+      "claim": "To fight inflation, many central banks adjust one interest rate: the policy rate.",
+      "why": "Changes in the policy rate normally feed through to the rates banks charge firms and households. Higher interest rates reduce inflation by cutting how much is spent on goods and services. In the United States, the Federal Reserve sets a target range for its policy rate, the federal funds rate."
+    },
+    "probes": [
+      {
+        "id": "money-0047-p1",
+        "kind": "mcq",
+        "question": "A central bank raises its policy rate to fight inflation. What is it aiming to reduce?",
+        "options": [
+          "The number of banks",
+          "The price of gold",
+          "Spending on goods and services",
+          "Tax bills"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "money-0047-p2",
+        "kind": "tf",
+        "question": "True or false: in the United States, the policy rate is called the federal funds rate.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Monetary policy (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Monetary_policy"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Eccles Building (26088200676).jpg shows the Federal Reserve Board building in Washington",
+    "keywords": [
+      "Federal Reserve building",
+      "Eccles Building",
+      "Marriner Eccles Federal Reserve Board Building"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.970Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Monetary_policy",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "To fight inflation, many central banks adjust one interest rate: the policy rate (title, claim)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Monetary_policy",
+        "quote": "For central banks targeting inflation directly, adjusting interest rates are crucial for the monetary transmission mechanism which ultimately affects inflation."
+      },
+      {
+        "claim": "The policy rate is the main rate the central bank uses to communicate its policy",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Monetary_policy",
+        "quote": "The \"policy rate\" itself, i.e. the main interest rate which the central bank uses to communicate its policy"
+      },
+      {
+        "claim": "Changes in the policy rate normally feed through to rates banks charge firms and households",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Monetary_policy",
+        "quote": "Changes in the central bank policy rates normally affect the interest rates that banks and other lenders charge on loans to firms and households."
+      },
+      {
+        "claim": "Higher interest rates reduce inflation by cutting spending on goods and services (why; probe p1 answer: spending on goods and services)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Monetary_policy",
+        "quote": "Higher interest rates reduce inflation by reducing aggregate consumption of goods and services by several causal paths."
+      },
+      {
+        "claim": "US Federal Reserve sets a target range for its policy rate, the federal funds rate (why; probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Monetary_policy",
+        "quote": "In the United States, the Federal Reserve sets a target range for its policy rate, the federal funds rate."
+      }
+    ],
+    "overall": "pass"
+  }
+}

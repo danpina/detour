@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Hexagons and tessellation",
+    "angle": "The honeycomb theorem"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0065",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "Why bees build hexagons",
+    "body": {
+      "claim": "A regular hexagonal grid has the least total wall of any way to divide a flat surface into equal-area cells.",
+      "why": "This is the honeycomb theorem. It was first recorded in 36 BC by Varro, and in the 17th century Jan Brozek used a similar theorem to argue why bees create hexagonal honeycombs. It was finally proven in 1999 by Thomas Hales."
+    },
+    "probes": [
+      {
+        "id": "num-0065-p1",
+        "kind": "mcq",
+        "question": "Which grid uses the least total wall for cells of equal area?",
+        "options": [
+          "Squares",
+          "Triangles",
+          "Regular hexagons",
+          "Circles"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0065-p2",
+        "kind": "tf",
+        "question": "True or false: the honeycomb conjecture was proven in 1999.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Honeycomb conjecture (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Honeycomb_conjecture"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Honey comb.jpg or File:Fresh honeycomb dripping honey India.jpg, a honeycomb of hexagonal wax cells",
+    "keywords": [
+      "honeycomb",
+      "honeycomb hexagon cells",
+      "bees honeycomb"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.524Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Honeycomb_conjecture",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Regular hexagonal grid has least total perimeter of any subdivision into equal-area regions (honeycomb theorem)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Honeycomb_conjecture",
+        "quote": "a regular hexagonal grid or honeycomb has the least total perimeter of any subdivision of the plane into regions of equal area"
+      },
+      {
+        "claim": "First recorded in 36 BC by Varro",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Honeycomb_conjecture",
+        "quote": "The first record of the conjecture dates back to 36 BC, from Marcus Terentius Varro"
+      },
+      {
+        "claim": "17th century: Jan Brozek used a similar theorem to argue why bees make hexagonal honeycombs",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Honeycomb_conjecture",
+        "quote": "In the 17th century, Jan Brożek used a similar theorem to argue why bees create hexagonal honeycombs",
+        "note": "Page spells the name Brożek; card spells Brozek."
+      },
+      {
+        "claim": "Proven in 1999 by Thomas Hales",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Honeycomb_conjecture",
+        "quote": "The conjecture was proven in 1999 by mathematician Thomas C. Hales"
+      }
+    ],
+    "overall": "pass"
+  }
+}

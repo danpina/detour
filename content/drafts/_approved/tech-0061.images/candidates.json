@@ -1,0 +1,110 @@
+{
+  "draft_id": "tech-0061",
+  "created_at": "2026-10-26T20:30:29.152Z",
+  "queries": [
+    "Bayer filter colour filter array camera sensor filter",
+    "Bayer filter",
+    "Bayer filter colour filter array"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-23427926",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "An RGGB Bayer Colour Filter on a 1980's vintage Sony PAL Camcorder CCD.png",
+      "credit": "Binarysequence / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:An_RGGB_Bayer_Colour_Filter_on_a_1980%27s_vintage_Sony_PAL_Camcorder_CCD.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/An_RGGB_Bayer_Colour_Filter_on_a_1980%27s_vintage_Sony_PAL_Camcorder_CCD.png/960px-An_RGGB_Bayer_Colour_Filter_on_a_1980%27s_vintage_Sony_PAL_Camcorder_CCD.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1369,
+      "height": 1054,
+      "alt_suggestion": "A x80 microscope view of the RGGB Bayer colour filter on a 1980's vintage 240line resolution Sony PAL Camcorder CCD",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA16799",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Filters for Color Imaging and for Science",
+      "credit": "NASA/JPL-Caltech/MSSS/ASU / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA16799",
+      "image_url": "https://images-assets.nasa.gov/image/PIA16799/PIA16799~small.jpg",
+      "alt_suggestion": "The color cameras on NASA Mars rover Curiosity, including the pair that make up the rover Mastcam instrument, use the same type of Bayer pattern RGB filter as found in typical commercial color cameras",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-15978",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Water Filter with Floral Design",
+      "credit": "Islamic; Fustat (now Cairo), Egypt / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/15978",
+      "image_url": "https://www.artic.edu/iiif/2/faaa2809-3e04-b1cc-ea9e-ec9407cb384e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of earthenware with pierced and incised decoration.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-17520201",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Normal and Bayer Filter (120px-Colorful spring garden).png",
+      "credit": "Original: Anita Martinz / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Normal_and_Bayer_Filter_(120px-Colorful_spring_garden).png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Normal_and_Bayer_Filter_%28120px-Colorful_spring_garden%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 960,
+      "height": 1280,
+      "alt_suggestion": "The bottom image is how a Bayer filter sensor in a digital camera would capture the image. The camera interpolates the missing colour information to reconstruct the top image as good as possible.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA22066",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Science-Filters Study of Martian Rock Sees Hematite",
+      "credit": "NASA/JPL-Caltech/MSSS / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA22066",
+      "image_url": "https://images-assets.nasa.gov/image/PIA22066/PIA22066~small.jpg",
+      "alt_suggestion": "This false-color image demonstrates how use of special filters available on the Mast Camera (Mastcam) of NASA's Curiosity Mars rover can reveal the presence of certain minerals in target rocks. It is ",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-29660831",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bayer filter simulation.png",
+      "credit": "Wikifil / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bayer_filter_simulation.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Bayer_filter_simulation.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 550,
+      "height": 864,
+      "alt_suggestion": "Simulation of Bayer mask view at full-color scene and resulting missing color components calculation to preserve on image the same amount of full-color pixels as amount of single-color pixels on mask.",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-50744814",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Matrice de Bayer.png",
+      "credit": "Interiot / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Matrice_de_Bayer.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Matrice_de_Bayer.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 484,
+      "height": 466,
+      "alt_suggestion": "Répartition des filtres dans la matrice de Bayer",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Bayer filter colour filter array camera sensor filter\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Bayer filter\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Bayer filter colour filter array\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

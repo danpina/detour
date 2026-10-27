@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-31519718",
+  "alt": "Excavated brick ruins of Mohenjo-daro with the Great Bath in the foreground and a stupa on the mound behind",
+  "fits": true,
+  "note": "Mohenjo-daro, fits",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

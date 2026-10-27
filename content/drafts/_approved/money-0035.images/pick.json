@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-156463348",
+  "alt": "A two-pan balance scale with chain-hung steel pans and small brass weights in an open wooden case lined with red felt.",
+  "fits": true,
+  "note": "Balance scale for weighted factors; no brand marks.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

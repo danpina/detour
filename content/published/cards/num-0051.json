@@ -1,0 +1,57 @@
+{
+  "id": "num-0051",
+  "interest": "numbers",
+  "title": "The coin game with an infinite average",
+  "probes": [
+    {
+      "id": "num-0051-p1",
+      "question": "Why is the St. Petersburg game called a paradox?",
+      "kind": "mcq",
+      "options": [
+        "The coin is biased",
+        "Its expected payoff is infinite, yet it seems worth very little",
+        "Nobody can win",
+        "The rules keep changing"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0051-p2",
+      "question": "True or false: the problem was invented by Daniel Bernoulli.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "St. Petersburg paradox (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/St._Petersburg_paradox"
+    }
+  ],
+  "difficulty": 5,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:56.258Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0051.webp",
+    "alt": "Sepia portrait of Daniel Bernoulli in a powdered wig and velvet coat.",
+    "kind": "photo",
+    "credit": "Unbekannt / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Bernoulli,_Daniel_(1700-1782)-Portrait-Portr_10971.jpg"
+  },
+  "body": {
+    "question": "A fair coin is flipped until it lands heads. You win $2 if heads comes first, $4 if it comes second, $8 if third, doubling each time. What is the expected payoff?",
+    "options": [
+      "About $4",
+      "About $20",
+      "About $1,000",
+      "Infinite"
+    ],
+    "answer": 3,
+    "reveal": "Infinite. Each possible ending adds $1 on average (half the chance, double the prize, and so on), and the stages never stop. Yet few people would pay even $25 to play. That gap is the St. Petersburg paradox."
+  }
+}

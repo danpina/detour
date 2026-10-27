@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "How long habits take",
+    "angle": "Lally's study of automaticity"
+  },
+  "created_at": "2026-10-26T20:29:12.579Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0040",
+    "interest": "mind",
+    "type": "estimate",
+    "title": "How long does a habit take to form?",
+    "body": {
+      "question": "On average, how many days did it take people in Lally and colleagues' study to make a new behaviour automatic?",
+      "unit": "days",
+      "min": 0,
+      "max": 300,
+      "scale": "linear",
+      "answer": 66,
+      "reveal": "The average was 66 days, but the range was wide: from 18 to 254 days. Habits form on different timelines for different people."
+    },
+    "probes": [
+      {
+        "id": "mind-0040-p1",
+        "kind": "mcq",
+        "question": "What does the range of 18 to 254 days tell us?",
+        "options": [
+          "Every habit takes exactly 21 days",
+          "People differ a lot in how long a habit takes",
+          "Habits cannot form",
+          "Habits form faster with age"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0040-p2",
+        "kind": "tf",
+        "question": "True or false: in simple models, automaticity rises with repetition up to a plateau, and that process can be slow.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Habit (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Habit"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A calendar or daily-routine scene, e.g. File:Personal organizer book (India, 2026).jpg",
+    "keywords": [
+      "calendar planner",
+      "personal organizer",
+      "agenda",
+      "daily routine"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:07:59.782Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Habit",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Lally et al.: average 66 days, range 18-254 days (question, reveal, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Habit",
+        "quote": "Lally et al. found the average time for participants to reach the asymptote of automaticity was 66 days with a range of 18-254 days.",
+        "note": "Card says 'make a new behaviour automatic' for page's 'reach the asymptote of automaticity'; acceptable paraphrase."
+      },
+      {
+        "claim": "Automaticity rises with repetition up to a plateau (asymptote) (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Habit",
+        "quote": "increase in automaticity with the number of repetitions, up to an asymptote"
+      },
+      {
+        "claim": "Habit formation can be slow (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Habit",
+        "quote": "This process of habit formation can be slow."
+      }
+    ],
+    "overall": "pass"
+  }
+}

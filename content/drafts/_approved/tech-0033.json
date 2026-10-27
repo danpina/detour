@@ -1,0 +1,141 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "IPv6",
+    "angle": "Why 32 bits ran out"
+  },
+  "created_at": "2026-10-27T06:07:56.468Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0033",
+    "interest": "tech",
+    "type": "story",
+    "title": "The address space that ran out",
+    "body": {
+      "panels": [
+        {
+          "text": "When the internet was an experiment, 32-bit addresses were chosen. That gives about 4.3 billion of them. Running out was not an early concern."
+        },
+        {
+          "text": "The experiment escaped. Users multiplied, and depletion had been anticipated since the late 1980s."
+        },
+        {
+          "text": "On 31 January 2011, the last two unreserved top-level blocks of IPv4 addresses were allocated."
+        },
+        {
+          "text": "The successor is IPv6, with 128-bit addresses: about 340 undecillion of them. The two protocols coexist."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0033-p1",
+        "kind": "mcq",
+        "question": "How long are IPv6 addresses?",
+        "options": [
+          "64 bits",
+          "128 bits",
+          "256 bits",
+          "32 bits"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0033-p2",
+        "kind": "tf",
+        "question": "True or false: IPv4 address exhaustion was one of the reasons IPv6 was developed.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "IPv4 address exhaustion (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/IPv4_address_exhaustion"
+      },
+      {
+        "title": "IPv6 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/IPv6"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Network cabling or a map of internet connectivity",
+    "keywords": [
+      "network cables",
+      "internet cables",
+      "data center",
+      "server"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:16:02.256Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/IPv4_address_exhaustion",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/IPv6",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Panel 1: IPv4 had 32-bit addresses, about 4.3 billion of them",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv6",
+        "quote": "or approximately 4.3 billion addresses",
+        "note": "32 bits in IPv4 also stated on the IPv6 page: 'The size of an IPv6 address is 128 bits, compared to 32 bits in IPv4.'"
+      },
+      {
+        "claim": "Panel 1: the internet began as an experiment; running out of addresses was not an early concern (first decade of operation)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv6",
+        "quote": "Address exhaustion was not initially a concern in IPv4 as this version was originally presumed to be a test of DARPA's networking concepts.",
+        "note": "Quote says exhaustion was not initially a concern; the exhaustion page says depletion was anticipated only since the late 1980s."
+      },
+      {
+        "claim": "Depletion had been anticipated since the late 1980s as users multiplied",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv4_address_exhaustion",
+        "quote": "depletion had been anticipated since the late 1980s when the Internet started experiencing dramatic growth"
+      },
+      {
+        "claim": "On 31 January 2011 the last two unreserved top-level (/8) blocks were allocated",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv4_address_exhaustion",
+        "quote": "On 31 January 2011, the last two unreserved IANA /8 address blocks were allocated to APNIC"
+      },
+      {
+        "claim": "IPv6 uses 128-bit addresses (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv6",
+        "quote": "The size of an IPv6 address is 128 bits, compared to 32 bits in IPv4."
+      },
+      {
+        "claim": "IPv6 has about 340 undecillion addresses",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv6",
+        "quote": "340 undecillion"
+      },
+      {
+        "claim": "The two protocols coexist",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv4_address_exhaustion",
+        "quote": "IPv4 and IPv6 coexist on the Internet."
+      },
+      {
+        "claim": "IPv4 exhaustion was one of the reasons IPv6 was developed (probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv4_address_exhaustion",
+        "quote": "This depletion was one of the reasons for the development and deployment of its successor protocol"
+      }
+    ],
+    "overall": "pass"
+  }
+}

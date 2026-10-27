@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-59419172",
+  "alt": "Sepia portrait of Daniel Bernoulli in a powdered wig and velvet coat.",
+  "fits": true,
+  "note": "Historical portrait of a notable figure, public domain, portrait-oriented.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

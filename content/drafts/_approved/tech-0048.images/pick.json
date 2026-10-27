@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-186554645",
+  "alt": "Diagram of GPS satellite orbits drawn as teal rings around a small Earth against black space.",
+  "fits": true,
+  "note": "Orbit constellation matches the card; dark, clean background.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.6
+  }
+}

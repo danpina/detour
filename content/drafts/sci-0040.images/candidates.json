@@ -1,0 +1,60 @@
+{
+  "draft_id": "sci-0040",
+  "created_at": "2026-10-26T20:33:15.406Z",
+  "queries": [
+    "Michael Faraday Faraday disc electric generator",
+    "Michael Faraday",
+    "Michael Faraday Faraday disc"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-3261751",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Faraday disk generator.jpg",
+      "credit": "Émile Alglave / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Faraday_disk_generator.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Faraday_disk_generator.jpg/960px-Faraday_disk_generator.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1500,
+      "alt_suggestion": "Drawing of Faraday disk, the first electromagnetic generator, invented by British scientist Michael Faraday in 1831. The copper disk (D) rotated between the poles of a horseshoe shaped magnet (A), cre",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-31866628",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Faraday disk - National Museum of Nature and Science, Tokyo - DSC07366.JPG",
+      "credit": "Daderot / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Faraday_disk_-_National_Museum_of_Nature_and_Science,_Tokyo_-_DSC07366.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Faraday_disk_-_National_Museum_of_Nature_and_Science%2C_Tokyo_-_DSC07366.JPG/960px-Faraday_disk_-_National_Museum_of_Nature_and_Science%2C_Tokyo_-_DSC07366.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3657,
+      "height": 3505,
+      "alt_suggestion": "Model of Faraday's disk, the first electric generator, invented by British scientist Michael Faraday in 1831. It consists of a copper disk between the poles of a horseshoe magnet. When the disk is tur",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-463384",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "M Faraday Th Phillips oil 1842.jpg",
+      "credit": "Thomas Phillips / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:M_Faraday_Th_Phillips_oil_1842.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/M_Faraday_Th_Phillips_oil_1842.jpg/960px-M_Faraday_Th_Phillips_oil_1842.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1110,
+      "height": 1437,
+      "alt_suggestion": "Michael Faraday by Thomas Phillips oil on canvas, 1841-1842 35 3/4 in. x 28 in. (908 mm x 711 mm) Purchased, 1868 NPG 269",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Michael Faraday Faraday disc electric generator\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Michael Faraday\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Michael Faraday Faraday disc\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

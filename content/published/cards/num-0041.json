@@ -1,0 +1,50 @@
+{
+  "id": "num-0041",
+  "interest": "numbers",
+  "title": "Ice cream and drowning rise together",
+  "probes": [
+    {
+      "id": "num-0041-p1",
+      "question": "Ice cream sales and drownings rise together. Which explanation fits best?",
+      "kind": "mcq",
+      "options": [
+        "Ice cream causes drowning",
+        "Drowning makes people buy ice cream",
+        "Something else, like hot weather, is linked to both",
+        "Nothing can be concluded about any link, ever"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "num-0041-p2",
+      "question": "True or false: a confounding variable is a third factor that affects both of the things being compared.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Correlation does not imply causation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:36.764Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0041.webp",
+    "alt": "A hand holding an ice cream cone on a boardwalk by the sea under a blue sky.",
+    "kind": "photo",
+    "credit": "AlphaLemur / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ice_cream_cone_at_the_beach.jpg"
+  },
+  "body": {
+    "claim": "Two things can rise together without one causing the other.",
+    "why": "As ice cream sales rise, so do drowning deaths, but ice cream does not cause drowning. The example misses the time of year and temperature, which are linked to ice cream sales. A hidden factor that affects both things is called a confounding (or lurking) variable."
+  }
+}

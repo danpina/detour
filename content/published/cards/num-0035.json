@@ -1,0 +1,57 @@
+{
+  "id": "num-0035",
+  "interest": "numbers",
+  "title": "Why a positive test is probably wrong",
+  "probes": [
+    {
+      "id": "num-0035-p1",
+      "question": "True or false: when a condition is very rare, most positive results can still be false positives.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "num-0035-p2",
+      "question": "Besides a test's accuracy, what else decides how much a positive result means?",
+      "kind": "mcq",
+      "options": [
+        "The colour of the report",
+        "How common the condition is in the people tested",
+        "How many tests were run last year",
+        "Nothing else matters"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Base rate fallacy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Base_rate_fallacy"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:05.707Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0035.webp",
+    "alt": "Close-up of a handheld breath-alcohol tester with a black mouthpiece and printed operating instructions.",
+    "kind": "photo",
+    "credit": "Foto: Elza Fiúza/ABr / Wikimedia Commons",
+    "license": "CC BY 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bafometro.JPG"
+  },
+  "body": {
+    "question": "A breathalyzer wrongly flags 5% of sober drivers and never misses a drunk one. One driver in 1,000 is drunk. A random driver tests positive. How likely is it that they are drunk?",
+    "options": [
+      "About 95%",
+      "About 50%",
+      "About 2%",
+      "About 0.1%"
+    ],
+    "answer": 2,
+    "reveal": "About 2%. Picture 1,000 drivers: 1 is drunk and tests positive, while about 50 of the 999 sober drivers test positive too. So only around 1 positive in 51 is real. When something is rare, false alarms from the many outnumber true hits from the few."
+  }
+}

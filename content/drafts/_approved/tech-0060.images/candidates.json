@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0060",
+  "created_at": "2026-10-26T20:30:22.937Z",
+  "queries": [
+    "capacitive touchscreen touchscreen conductive tracks",
+    "capacitive touchscreen",
+    "capacitive touchscreen touchscreen"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-11552682",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Capacitive touchscreen.jpg",
+      "credit": "Medvedev / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Capacitive_touchscreen.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Capacitive_touchscreen.jpg/960px-Capacitive_touchscreen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 1993,
+      "alt_suggestion": "Capacitive touchscreen of a mobile phone with clearly visible conductive tracks",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-104183",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Tracks, Chicago",
+      "credit": "Joseph Pennell American, 1857-1926 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/104183",
+      "image_url": "https://www.artic.edu/iiif/2/c1404a3c-8e98-c49f-4f10-5876e8009c01/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on ivory laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-4273142",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hear Music touchscreen.jpg",
+      "credit": "Thomas Duesing from Austin, TX, USA (tfduesing) / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hear_Music_touchscreen.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Hear_Music_touchscreen.jpg/960px-Hear_Music_touchscreen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1536,
+      "alt_suggestion": "There are 35 of these LCD touchscreens around the store. They're what let you access the 1 million+ songs that you can mix and burn. Each station has nice Bose headphones, an extra headphone jack, a b",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-33486",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Untitled (carriage tracks)",
+      "credit": "Joshua Appleby Williams American, active 1850-1880s / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/33486",
+      "image_url": "https://www.artic.edu/iiif/2/8fb4521e-cf7d-8897-9e63-a67653ce561a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of albumen print.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-40074878",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Livid DIY Controller - touchscreen by retrofittable resistive (2010-04-15 12.08.14 by c-g.).jpg",
+      "credit": "c-g. / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Livid_DIY_Controller_-_touchscreen_by_retrofittable_resistive_(2010-04-15_12.08.14_by_c-g.).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Livid_DIY_Controller_-_touchscreen_by_retrofittable_resistive_%282010-04-15_12.08.14_by_c-g.%29.jpg/960px-Livid_DIY_Controller_-_touchscreen_by_retrofittable_resistive_%282010-04-15_12.08.14_by_c-g.%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3072,
+      "height": 2304,
+      "alt_suggestion": "Did I mention the 7\" LCD display is going to be made touch sensitive? Retrofittable resistive (single touch) kits are cheap @ ▲12! I'll hopefully be able to interact with software on-screen as well .",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"capacitive touchscreen touchscreen conductive tracks\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"capacitive touchscreen\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"capacitive touchscreen touchscreen\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

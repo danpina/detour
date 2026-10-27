@@ -1,0 +1,103 @@
+{
+  "draft_id": "sci-0055",
+  "created_at": "2026-10-26T20:30:56.227Z",
+  "queries": [
+    "Edward Jenner smallpox vaccine vaccination",
+    "Edward Jenner",
+    "Edward Jenner smallpox vaccine"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-36010848",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Edward Jenner. Pastel by John Raphael Smith. Wellcome L0026138.jpg",
+      "credit": "https://wellcomeimages.org/indexplus/obf_images/71/53/539a741a44d833d1fc0347093647.jpg Gallery: https://wellcomeimages.org/indexplus/image/L0026138.html Wellcom",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Edward_Jenner._Pastel_by_John_Raphael_Smith._Wellcome_L0026138.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Edward_Jenner._Pastel_by_John_Raphael_Smith._Wellcome_L0026138.jpg/960px-Edward_Jenner._Pastel_by_John_Raphael_Smith._Wellcome_L0026138.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2856,
+      "height": 3698,
+      "alt_suggestion": "Edward Jenner. Pastel by John Raphael Smith. Edward Jenner pionneered vaccination against smallpox using the cowpox vaccine. Iconographic Collections Keywords: Vaccination; Smallpox; Smallpox Vaccine;",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-4714",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Ideal Pastoral Life",
+      "credit": "Edward Calvert English, 1799-1883 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/4714",
+      "image_url": "https://www.artic.edu/iiif/2/3cb2a7b7-f4ee-8cc8-bb14-1754cf1e8507/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of woodcut on paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-36353851",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Vaccine points used by E.Jenner. Wellcome M0012844.jpg",
+      "credit": "https://wellcomeimages.org/indexplus/obf_images/a3/a5/1b0739cb37174fda53584ec11f0b.jpg Gallery: https://wellcomeimages.org/indexplus/image/M0012844.html Wellcom",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vaccine_points_used_by_E.Jenner._Wellcome_M0012844.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Vaccine_points_used_by_E.Jenner._Wellcome_M0012844.jpg/960px-Vaccine_points_used_by_E.Jenner._Wellcome_M0012844.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2373,
+      "height": 4545,
+      "alt_suggestion": "Vaccine points used by E.Jenner. Wellcome Images Keywords: Edward Jenner",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-71573",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "A Holiday",
+      "credit": "Edward Henry Potthast (American, 1857–1927) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/71573",
+      "image_url": "https://www.artic.edu/iiif/2/a67c4473-57a4-9807-a94e-1136d3daf876/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-7310321",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Edward Jenner statue.jpg",
+      "credit": "Cjc13 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Edward_Jenner_statue.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Edward_Jenner_statue.jpg/960px-Edward_Jenner_statue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2616,
+      "height": 3488,
+      "alt_suggestion": "Statue of Edward Jenner in Kensington Gardens, London,UK.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Jenner, Edward - Jenner, Edouard (1749-1823) CIPA0235.jpg",
+      "license": "Licence Ouverte",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Jenner, Edward - Jenner, Edouard (1749-1823) CIPA0235.jpg",
+      "license": "Licence Ouverte",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Jenner, Edward - Jenner, Edouard (1749-1823) CIPA0235.jpg",
+      "license": "Licence Ouverte",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Edward Jenner smallpox vaccine vaccination\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Edward Jenner\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Edward Jenner smallpox vaccine\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Regression to the mean",
+    "angle": "Kahneman and the flight instructors"
+  },
+  "created_at": "2026-10-27T06:06:55.997Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0037",
+    "interest": "numbers",
+    "type": "story",
+    "title": "Why scolding seems to work",
+    "body": {
+      "panels": [
+        {
+          "text": "Daniel Kahneman once taught flight instructors that praise works better than punishment for building skill."
+        },
+        {
+          "text": "A veteran instructor objected. Cadets he praised for a clean manoeuvre usually did worse next time. Cadets he screamed at usually did better."
+        },
+        {
+          "text": "Kahneman saw the catch. A very good (or very bad) attempt is partly luck, and luck rarely repeats, so the next attempt tends to land nearer the average. This is regression to the mean."
+        },
+        {
+          "text": "The twist: we tend to praise the good and scold the bad, so it can look as if praise backfires and scolding helps. The same effect gives sport its \"sophomore slump\" after a great rookie season."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0037-p1",
+        "kind": "mcq",
+        "question": "A cadet's best-ever flight is followed by a weaker one. What is the most likely reason?",
+        "options": [
+          "The praise made him lazy",
+          "The instructor was unfair",
+          "Exceptional results include luck, which rarely repeats",
+          "He forgot how to fly"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0037-p2",
+        "kind": "cloze",
+        "question": "A great rookie season followed by a worse second year is called the sophomore ____.",
+        "answer": "slump",
+        "accept": [
+          "Slump"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Regression toward the mean (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Regression_toward_the_mean"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Thunderbirds, Blue Angels perform 'Super Delta' 210302-F-JV039-9090.jpg shows jets flying a tight aerobatic formation",
+    "keywords": [
+      "aerobatic formation",
+      "Thunderbirds",
+      "military jets formation flight"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.020Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Regression_toward_the_mean",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Kahneman taught flight instructors that praise works better than punishment for building skill",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Regression_toward_the_mean",
+        "quote": "attempting to teach flight instructors that praise is more effective than punishment for promoting skill-learning",
+        "note": "Page says 'attempting to teach'; card 'once taught' is a fair paraphrase."
+      },
+      {
+        "claim": "Veteran instructor: praised cadets usually did worse next time, screamed-at cadets usually did better",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Regression_toward_the_mean",
+        "quote": "I have often screamed at cadets for bad execution, and in general they do better the next time"
+      },
+      {
+        "claim": "Exceptional attempts include luck, which rarely repeats, so next attempt lands nearer average (regression to the mean)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Regression_toward_the_mean",
+        "quote": "Hence, those who did well previously are unlikely to do quite as well in the second test"
+      },
+      {
+        "claim": "We praise the good and scold the bad, so it can seem praise backfires and scolding helps",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Regression_toward_the_mean",
+        "quote": "regression to the mean might explain why rebukes can seem to improve performance, while praise seems to backfire"
+      },
+      {
+        "claim": "Great rookie season followed by worse second year is the sophomore slump (probe cloze)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Regression_toward_the_mean",
+        "quote": "Baseball players who hit well in their rookie season are likely to do worse their second",
+        "note": "Page names it the \"sophomore slump\" in the same passage."
+      }
+    ],
+    "overall": "pass"
+  }
+}

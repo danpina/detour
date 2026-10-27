@@ -1,0 +1,103 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Solar cells",
+    "angle": "The photovoltaic effect"
+  },
+  "created_at": "2026-10-26T20:31:08.682Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0045",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "How a solar cell makes current",
+    "body": {
+      "claim": "A solar cell turns the energy of light directly into electricity using the photovoltaic effect.",
+      "why": "Light is absorbed, exciting an electron to a higher-energy state and creating electron-hole pairs. The cell must then separate these opposite types of charge carrier and extract them separately to an external circuit, which gives the current you can use."
+    },
+    "probes": [
+      {
+        "id": "sci-0045-p1",
+        "kind": "mcq",
+        "question": "After light is absorbed in a solar cell, what must happen for useful current?",
+        "options": [
+          "The charges are separated and extracted to a circuit",
+          "The cell must be heated",
+          "The light must be stored as sound",
+          "Nothing, current flows by itself"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0045-p2",
+        "kind": "tf",
+        "question": "True or false: the photovoltaic effect is when a semiconductor generates electric energy upon being exposed to light.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Solar cell (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Solar_cell"
+      },
+      {
+        "title": "Photovoltaic effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Photovoltaic_effect"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Ground mounted solar panels.gk.jpg shows solar panels; File:Sketch of silicon solar cells interconnections.jpg a cell sketch",
+    "keywords": [
+      "solar cell",
+      "silicon solar cell",
+      "photovoltaic",
+      "solar panel"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.588Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Solar_cell",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Photovoltaic_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Solar cell converts the energy of light directly into electricity via the photovoltaic effect",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Solar_cell",
+        "quote": "converts the energy of light directly into electricity by using the photovoltaic effect"
+      },
+      {
+        "claim": "Absorbed photons excite electrons, producing electron-hole pairs",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Solar_cell",
+        "quote": "When the photons are absorbed, electrons are excited from the valence band to the conduction band"
+      },
+      {
+        "claim": "Opposite charge carriers must be separated and extracted separately to a circuit (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Solar_cell",
+        "quote": "The separation of charge carriers of opposite types. The separate extraction of those carriers to an external circuit."
+      },
+      {
+        "claim": "Photovoltaic effect definition (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Photovoltaic_effect",
+        "quote": "The photovoltaic effect is a physical phenomenon in which a semiconductor material generates electric energy upon being exposed to light."
+      }
+    ],
+    "overall": "pass"
+  }
+}

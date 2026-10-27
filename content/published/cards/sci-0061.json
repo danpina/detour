@@ -1,0 +1,66 @@
+{
+  "id": "sci-0061",
+  "interest": "science",
+  "title": "Bounced back from gold foil",
+  "probes": [
+    {
+      "id": "sci-0061-p1",
+      "question": "What did the rare bounced-back particles show about atoms?",
+      "kind": "mcq",
+      "options": [
+        "Atoms are solid balls all the way through",
+        "A tiny central nucleus holds most of the atom's mass, with empty space around it",
+        "Gold atoms are unusually small",
+        "Electrons are heavier than the nucleus"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0061-p2",
+      "question": "True or false: Geiger and Marsden's experiment used a very thin gold foil.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Geiger-Marsden experiments (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments"
+    },
+    {
+      "title": "Rutherford model (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rutherford_model"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:06.917Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0061.webp",
+    "alt": "A 3D computer rendering of the Geiger-Marsden apparatus with a gold foil target, screen and rotating disc.",
+    "kind": "photo",
+    "credit": "Kurzon / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Geiger-Marsden_apparatus_2_CGI_mock-up.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Manchester, 1909. In Ernest Rutherford's lab, Hans Geiger and Ernest Marsden fire alpha particles from radium at a very thin gold foil and count flashes on a screen."
+      },
+      {
+        "text": "The popular atom model predicted that the particles should all go almost straight through."
+      },
+      {
+        "text": "But about 1 in 8000 bounced back. Rutherford said it was as unlikely as a huge shell fired at tissue paper coming back to hit you."
+      },
+      {
+        "text": "His explanation: an atom has a tiny, dense centre holding most of its mass. Most particles sail past it through the empty space around it, and rare near-hits scatter them."
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "draft_id": "mind-0057",
+  "created_at": "2026-10-27T06:09:46.215Z",
+  "queries": [
+    "juggling balls juggling balls",
+    "juggling balls",
+    "juggling balls juggling"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-158808077",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Juggling Balls (2255528591).jpg",
+      "credit": "Marcus Jeffrey from Kenora, Canada / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Juggling_Balls_(2255528591).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Juggling_Balls_%282255528591%29.jpg/960px-Juggling_Balls_%282255528591%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3456,
+      "height": 2304,
+      "alt_suggestion": "Juggling Balls",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-135",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Jar with Tubular Handles, Peonies, “Endless Knot,” Pendant Balls, and Pendant Lozenges",
+      "credit": "China / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/135",
+      "image_url": "https://www.artic.edu/iiif/2/abf4b078-b26b-e69c-d689-8aab2d5fa075/full/843,/0/default.jpg",
+      "alt_suggestion": "Green glazed vessel decorated with floral adornments, tapered and flared at the neck, with two small cylindrical handles.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-158808004",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Juggling Balls (7391715334).jpg",
+      "credit": "charlene mcbride from Seattle, WA, US / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Juggling_Balls_(7391715334).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Juggling_Balls_%287391715334%29.jpg/960px-Juggling_Balls_%287391715334%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1536,
+      "height": 2048,
+      "alt_suggestion": "packing the juggling balls",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-158807967",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Juggling Balls (81706016).jpg",
+      "credit": "Richard Leonard / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Juggling_Balls_(81706016).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Juggling_Balls_%2881706016%29.jpg/960px-Juggling_Balls_%2881706016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2183,
+      "height": 1507,
+      "alt_suggestion": "Closeup of three juggling balls",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"juggling balls juggling balls\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"juggling balls\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"juggling balls juggling\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-36010848",
+ "alt": "A pastel portrait of Edward Jenner leaning on a tree, with a milkmaid and cows in the background.",
+ "fits": true,
+ "note": "Historic portrait of the subject.",
+ "crop": {
+  "fx": 0.5,
+  "fy": 0.4,
+  "zoom": 1
+ }
+}

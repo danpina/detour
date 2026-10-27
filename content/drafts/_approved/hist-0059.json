@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "How do we see?",
+    "angle": "How do we see?"
+  },
+  "created_at": "2026-10-26T20:31:39.969Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0059",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "How do we see?",
+    "body": {
+      "question": "Euclid and Ptolemy thought sight works by the eye sending out rays. What did Ibn al-Haytham argue around 1030?",
+      "options": [
+        "Eyes send out rays, but only in daylight",
+        "Every point of a lit object sends light along every straight line, and the eye receives it",
+        "Sight is a gift that cannot be explained"
+      ],
+      "answer": 1,
+      "reveal": "In his Book of Optics (written between 1028 and 1038) Ibn al-Haytham described objects as sending light and colour along every straight line from each point. He is credited as an early proponent of the idea that a hypothesis must be supported by experiments, about five centuries before Renaissance scientists."
+    },
+    "probes": [
+      {
+        "id": "hist-0059-p1",
+        "kind": "mcq",
+        "question": "What did Ibn al-Haytham say a hypothesis needs?",
+        "options": [
+          "Approval from a ruler",
+          "Support from experiments",
+          "Agreement with ancient authors",
+          "A beautiful explanation"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0059-p2",
+        "kind": "tf",
+        "question": "True or false: Euclid and Ptolemy believed that sight works by the eye emitting rays of light.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ibn al-Haytham (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Ibn_al-Haytham"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Thesaurus opticus Titelblatt.jpg (public domain): title page of a Latin edition of Ibn al-Haytham's Book of Optics; also File:Alhazen1652.png (public domain, the eye according to Ibn al-Haytham)",
+    "keywords": [
+      "Ibn al-Haytham Book of Optics",
+      "Opticae Thesaurus",
+      "Alhazen optics",
+      "Ibn al-Haytham eye"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.658Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ibn_al-Haytham",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Euclid and Ptolemy believed sight works by the eye emitting rays (question, probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ibn_al-Haytham",
+        "quote": "who believed that sight worked by the eye emitting rays of light"
+      },
+      {
+        "claim": "Ibn al-Haytham held that light and colour issue from each point of a lit body along every straight line",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ibn_al-Haytham",
+        "quote": "from each point of every colored body, illuminated by any light, issue light and color along every straight line that can be drawn from that point"
+      },
+      {
+        "claim": "Book of Optics written between 1028 and 1038 (around 1030)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ibn_al-Haytham",
+        "quote": "composed between 1028 CE and 1038 CE"
+      },
+      {
+        "claim": "Early proponent that a hypothesis must be supported by experiments, five centuries before Renaissance scientists (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ibn_al-Haytham",
+        "quote": "Ibn al-Haytham was an early proponent of the concept that a hypothesis must be supported by experiments"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-279513",
+  "alt": "Several bright lightning bolts strike down from a purple stormy night sky over a town and its rooftops.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

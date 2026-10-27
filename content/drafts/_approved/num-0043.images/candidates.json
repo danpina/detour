@@ -1,0 +1,72 @@
+{
+  "draft_id": "num-0043",
+  "created_at": "2026-10-27T06:09:56.351Z",
+  "queries": [
+    "Thomas Bayes tomb Bunhill Fields Bayes",
+    "Thomas Bayes tomb",
+    "Thomas Bayes tomb Bunhill Fields"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-14532509",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Tomb of Thomas Bayes, Bunhill Cemetery, London, UK.jpg",
+      "credit": "Cory Doctorow / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tomb_of_Thomas_Bayes,_Bunhill_Cemetery,_London,_UK.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Tomb_of_Thomas_Bayes%2C_Bunhill_Cemetery%2C_London%2C_UK.jpg/960px-Tomb_of_Thomas_Bayes%2C_Bunhill_Cemetery%2C_London%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "Tomb of Thomas Bayes, Bunhill Cemetery, London, UK",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-97328",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tombeau de la chrétienne. Vue du côté nord. (Tomb of the Christian Woman. View of the North Side.)",
+      "credit": "John Beasley Greene American, born France, 1832–1856 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/97328",
+      "image_url": "https://www.artic.edu/iiif/2/56acd70f-b28c-9126-5cca-9cd8244b6c77/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of albumen print.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-14532491",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Tomb of statistician Thomas Bayes, Bunhill Cemetery, London 1.jpg",
+      "credit": "Cory Doctorow / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tomb_of_statistician_Thomas_Bayes,_Bunhill_Cemetery,_London_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Tomb_of_statistician_Thomas_Bayes%2C_Bunhill_Cemetery%2C_London_1.jpg/960px-Tomb_of_statistician_Thomas_Bayes%2C_Bunhill_Cemetery%2C_London_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 768,
+      "alt_suggestion": "Tomb of statistician Thomas Bayes, Bunhill Cemetery, London",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-14532405",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bayes tab.jpg",
+      "credit": "Simon Harriyott / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bayes_tab.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Bayes_tab.jpg/960px-Bayes_tab.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 1024,
+      "alt_suggestion": "Thomas Bayes 1702 - 1761 Nonconformist minister and mathematician Originator of the statistical theory of probability, the basis of most market research and opinion poll techniques, lived here 1731-17",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Thomas Bayes tomb Bunhill Fields Bayes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Thomas Bayes tomb\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Thomas Bayes tomb Bunhill Fields\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

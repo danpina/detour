@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-160060",
+  "alt": "A 14th-century miniature of a professor lecturing from a pulpit to rows of students in a medieval university hall at Bologna",
+  "fits": true,
+  "note": "Voltolina miniature, fits",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

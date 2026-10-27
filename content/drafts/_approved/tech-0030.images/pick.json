@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-7988465",
+  "alt": "A tangle of orange network cables fanning out of a tall network rack in a cabinet.",
+  "fits": true,
+  "note": "Tall portrait photo, no logos; cables convey many data paths.",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

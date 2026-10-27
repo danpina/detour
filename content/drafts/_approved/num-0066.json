@@ -1,0 +1,88 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Fermi estimation",
+    "angle": "Fermi's paper scraps and the logic of rough estimates"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0066",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "Fermi and the falling paper",
+    "body": {
+      "question": "During the Trinity test blast, Enrico Fermi dropped scraps of paper and estimated the explosion's strength from how far they travelled. What yield did he estimate?",
+      "unit": "kilotons of TNT",
+      "min": 1,
+      "max": 1000,
+      "scale": "log",
+      "answer": 10,
+      "reveal": "About 10 kilotons of TNT, well within an order of magnitude of the now-accepted 21 kilotons. Estimates like this work because over- and underestimates tend to cancel out."
+    },
+    "probes": [
+      {
+        "id": "num-0066-p1",
+        "kind": "mcq",
+        "question": "Why do Fermi estimates built from several rough factors often land close?",
+        "options": [
+          "Each factor is exact",
+          "Overestimates and underestimates tend to cancel",
+          "They always use computers",
+          "Errors never matter"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Fermi problem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Fermi_problem"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Trinity Test Fireball 16ms.jpg, the Trinity test fireball in 1945",
+    "keywords": [
+      "Trinity test fireball",
+      "Trinity test",
+      "Trinity Site explosion"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.525Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fermi_problem",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Fermi dropped paper scraps at the Trinity test and estimated the yield from the distance travelled",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermi_problem",
+        "quote": "based on the distance traveled by pieces of paper he dropped from his hand during the blast"
+      },
+      {
+        "claim": "Fermi estimated 10 kilotons of TNT, within an order of magnitude of the accepted 21 kilotons",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermi_problem",
+        "quote": "Fermi's estimate of 10 kilotons of TNT was well within an order of magnitude of the now-accepted value of 21 kilotons.",
+        "note": "Page's own Justification section carries an 'unsourced' banner, but this passage is in the lead."
+      },
+      {
+        "claim": "Over- and underestimates tend to cancel out",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fermi_problem",
+        "quote": "overestimates and underestimates help cancel each other out"
+      }
+    ],
+    "overall": "pass"
+  }
+}

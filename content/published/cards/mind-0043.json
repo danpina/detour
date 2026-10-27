@@ -1,0 +1,54 @@
+{
+  "id": "mind-0043",
+  "interest": "mind",
+  "title": "When does flow happen?",
+  "probes": [
+    {
+      "id": "mind-0043-p1",
+      "question": "True or false: flow is most likely at moderate levels of arousal, not overwhelmed and not understimulated.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0043-p2",
+      "question": "Flow comes from balancing a skill against how ____ the task is.",
+      "kind": "cloze",
+      "answer": "challenging",
+      "accept": [
+        "difficult",
+        "hard"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Flow (psychology) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Flow_(psychology)"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:24.131Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0043.webp",
+    "alt": "Muddy hands shape a small clay bowl on a rope-wrapped potter wheel.",
+    "kind": "photo",
+    "credit": "Gannu03 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Potter_shaping_clay_on_a_traditional_manual_potter%E2%80%99s_wheel_in_India_01.jpg"
+  },
+  "body": {
+    "question": "According to the idea of flow, when are you most likely to get lost in a task?",
+    "options": [
+      "When the task is far beyond your skill",
+      "When the task is far easier than your skill",
+      "When the challenge and your skill are in balance"
+    ],
+    "answer": 2,
+    "reveal": "Flow is a state of finding a balance between a skill and how challenging the task is, with a high level of concentration. You are most likely to experience it at moderate arousal, neither overwhelmed nor bored."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "The speed of light",
+    "angle": "How fast light travels in a vacuum"
+  },
+  "created_at": "2026-10-26T20:30:07.409Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0069",
+    "interest": "science",
+    "type": "estimate",
+    "title": "How fast is light?",
+    "body": {
+      "question": "How fast does light travel in a vacuum?",
+      "unit": "km/s",
+      "min": 1000,
+      "max": 10000000,
+      "scale": "log",
+      "answer": 299792,
+      "reveal": "Exactly 299,792,458 metres per second, about 300,000 km/s or roughly a billion kilometres per hour. It is exact because the metre is defined from it."
+    },
+    "probes": [
+      {
+        "id": "sci-0069-p1",
+        "kind": "estimate",
+        "question": "How fast does light travel in a vacuum?",
+        "answer": 299792,
+        "unit": "km/s",
+        "min": 1000,
+        "max": 10000000,
+        "scale": "log"
+      },
+      {
+        "id": "sci-0069-p2",
+        "kind": "tf",
+        "question": "True or false: the speed of light is exact because the metre is defined using it.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Speed of light (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Speed_of_light"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Laser Towards Milky Ways Centre.jpg (CC BY 4.0) shows a laser beam shooting into the sky at Paranal",
+    "keywords": [
+      "Laser Towards Milky Ways Centre",
+      "laser beam sky",
+      "laser Paranal"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.064Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Speed_of_light",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Light travels at exactly 299,792,458 m/s; exact because the metre is defined from it (also probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Speed_of_light",
+        "quote": "It is exact because, by international agreement, a metre is defined as the length of the path travelled by light in vacuum during a time interval of 1 ⁄ 299 792 458 second ."
+      },
+      {
+        "claim": "About a billion kilometres per hour",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Speed_of_light",
+        "quote": "The value 299,792,458 metres per second is approximately 1 billion kilometres per hour; 700 million miles per hour ."
+      },
+      {
+        "claim": "Quiz answer 299792 km/s is a unit conversion: 299,792,458 m/s / 1000 = 299,792.458 km/s, rounded to 299792; about 300,000 km/s.",
+        "verdict": "pass",
+        "note": "Verified by calculation: 299,792,458 m/s = 299,792.458 km/s"
+      }
+    ],
+    "overall": "pass"
+  }
+}

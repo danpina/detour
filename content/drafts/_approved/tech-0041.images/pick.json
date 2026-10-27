@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-164099849",
+  "alt": "A red-hulled cable-laying ship sailing on calm water under a blue sky.",
+  "fits": true,
+  "note": "Cable ship illustrates undersea cable; ship name is not a brand logo.",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

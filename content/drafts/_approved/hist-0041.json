@@ -1,0 +1,125 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Meiji Restoration",
+    "angle": "A rapid shift from feudal rule to a modern state"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0041",
+    "interest": "history",
+    "type": "story",
+    "title": "The country that retired its samurai",
+    "body": {
+      "panels": [
+        {
+          "text": "By 1868, a group led by Satsuma and Chōshū had overthrown the shogunal system. On 3 January 1868, Emperor Meiji declared power restored to the Imperial House."
+        },
+        {
+          "text": "In 1871 the new government told Japan's feudal lords it had decided to abolish their domains, without consulting them. In return they kept a small portion of their income and joined a new aristocracy."
+        },
+        {
+          "text": "In 1873 it brought in nationwide conscription: every man would serve four years in the armed forces from the age of 21."
+        },
+        {
+          "text": "The twist: the samurai class dissolved, and feudalism ended. Railways, communications and industry grew in its place."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0041-p1",
+        "kind": "mcq",
+        "question": "What did the government decide in 1871?",
+        "options": [
+          "To abolish the lords' domains",
+          "To close the ports",
+          "To build a railway to Kyoto",
+          "To restore the shogun"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0041-p2",
+        "kind": "tf",
+        "question": "True or false: in 1873 Japan introduced nationwide conscription.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Meiji Restoration (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Meiji_Restoration"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Restoration of Imperial Rule by Shimada Bokusen (Meiji Memorial Picture Gallery).jpg shows a painting of the restoration of imperial rule (public domain)",
+    "keywords": [
+      "Meiji Restoration",
+      "Taisei Hōkan",
+      "Emperor Meiji",
+      "Restoration of Imperial Rule"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.130Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Led by Satsuma and Chōshū they overthrew the shogunal system",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+        "quote": "led by Satsuma and Chōshū , they overthrew the shogunal system"
+      },
+      {
+        "claim": "3 January 1868 Emperor Meiji declared power restored to the Imperial House",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+        "quote": "On 3 January 1868, Emperor Meiji declared political power to be restored to the Imperial House"
+      },
+      {
+        "claim": "1871: lords told domains would be abolished without consultation (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+        "quote": "informed of the decision taken to abolish the domains without consultation"
+      },
+      {
+        "claim": "In return lords kept a small portion of income and joined a new aristocracy",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+        "quote": "In return they were to keep a small portion of their income and gain access to the new aristocracy"
+      },
+      {
+        "claim": "1873 nationwide conscription, four years from age 21 (p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+        "quote": "the government instituted nationwide conscription in 1873, mandating that every male would serve for four years in the armed forces upon turning 21 years old"
+      },
+      {
+        "claim": "Samurai class dissolved and feudalism ended",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+        "quote": "Industrialisation and the abolition of feudalism Dissolution of the domain system and samurai class"
+      },
+      {
+        "claim": "Railways, communications and industry grew",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+        "quote": "Industrialisation additionally went hand in hand with the development of a national railway system and modern communications"
+      }
+    ],
+    "overall": "pass"
+  }
+}

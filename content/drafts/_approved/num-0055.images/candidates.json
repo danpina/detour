@@ -1,0 +1,60 @@
+{
+  "draft_id": "num-0055",
+  "created_at": "2026-10-26T20:32:04.385Z",
+  "queries": [
+    "Richter seismograph Charles Richter seismograph earthquake",
+    "Richter seismograph",
+    "Richter seismograph Charles Richter"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-130379463",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Charles Richter analyzing a seismograph log.jpg",
+      "credit": "Gil Cooper, Los Angeles Times / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charles_Richter_analyzing_a_seismograph_log.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Charles_Richter_analyzing_a_seismograph_log.jpg/960px-Charles_Richter_analyzing_a_seismograph_log.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5391,
+      "height": 5372,
+      "alt_suggestion": "QUIVERINGS—Dr. Charles Richter, one of the world's leading earthquake experts, studies seismograph log upon which earth movements are recorded. He devised the Richter Scale to measure temblor intensit",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-91160271",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "How-the-Richter-Magnitude-Scale-is-determined.jpg",
+      "credit": "Benjamin J. Burger / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:How-the-Richter-Magnitude-Scale-is-determined.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/How-the-Richter-Magnitude-Scale-is-determined.jpg/960px-How-the-Richter-Magnitude-Scale-is-determined.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2304,
+      "height": 998,
+      "alt_suggestion": "How the Richter Magnitude Scale of Earthquakes is determined from a seismograph.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-126816907",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Offshore northern California magnitude 6.4 earthquake (2-34 AM, 20 December 2022).png",
+      "credit": "James St. John / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Offshore_northern_California_magnitude_6.4_earthquake_(2-34_AM,_20_December_2022).png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Offshore_northern_California_magnitude_6.4_earthquake_%282-34_AM%2C_20_December_2022%29.png/960px-Offshore_northern_California_magnitude_6.4_earthquake_%282-34_AM%2C_20_December_2022%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1000,
+      "height": 700,
+      "alt_suggestion": "This is a seismogram from the Corvallis seismic station in Oregon, USA. The noise was caused by a magnitude 6.4 earthquakes that hit just offshore from northern California at 2:34 AM, local time, on 2",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Richter seismograph Charles Richter seismograph earthquake\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Richter seismograph\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Richter seismograph Charles Richter\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

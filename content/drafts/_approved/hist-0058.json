@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Laws carved in basalt",
+    "angle": "Laws carved in basalt"
+  },
+  "created_at": "2026-10-26T20:31:39.968Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0058",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "Laws carved in basalt",
+    "body": {
+      "claim": "Hammurabi's laws were carved on a stone stele and put on public display.",
+      "why": "The Code of Hammurabi is a Babylonian legal text from about 1753 BC, inscribed on a basalt stele. Setting it up on public stelae was supposedly meant to make justice easier to reach, and the text even suggests that a wronged man could have it read aloud to him. Scholars have noted an 'eye for an eye' principle running through it. The stele now in the Louvre was found at Susa."
+    },
+    "probes": [
+      {
+        "id": "hist-0058-p1",
+        "kind": "mcq",
+        "question": "Why were the laws displayed on public stelae?",
+        "options": [
+          "To hide them from ordinary people",
+          "To record the king's travels",
+          "Supposedly to make justice more accessible",
+          "To decorate temples"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "hist-0058-p2",
+        "kind": "tf",
+        "question": "True or false: the Code of Hammurabi was inscribed on a basalt stele.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Code of Hammurabi (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:P1050763 Louvre code Hammurabi face rwk.JPG (CC BY 3.0) or File:Code of Hammurabi Louvre Museum.jpg (CC BY-SA 4.0): the Hammurabi stele in the Louvre",
+    "keywords": [
+      "Code of Hammurabi stele Louvre",
+      "Hammurabi stele",
+      "Code of Hammurabi Louvre"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.657Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Code of Hammurabi is a Babylonian legal text from about 1753 BC",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+        "quote": "The Code of Hammurabi is a Babylonian legal text composed c. 1753 BC."
+      },
+      {
+        "claim": "It was inscribed on a basalt stele (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+        "quote": "Media type Basalt stele"
+      },
+      {
+        "claim": "Display on public stelae was supposedly meant to make justice easier to reach (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+        "quote": "the Code's establishment on public stelae was supposedly intended to increase access to justice"
+      },
+      {
+        "claim": "Text suggests a wronged man could have it read aloud to him",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+        "quote": "may have the laws of the stele read aloud to him and know his rights"
+      },
+      {
+        "claim": "Scholars noted an 'eye for an eye' principle",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+        "quote": "Scholars quickly identified lex talionis"
+      },
+      {
+        "claim": "The stele now in the Louvre was found at Susa",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+        "quote": "Location Louvre Museum , Ile-de-France , France (originally Sippar , Mesopotamia (now Iraq ), found at Susa , Iran)"
+      }
+    ],
+    "overall": "pass"
+  }
+}

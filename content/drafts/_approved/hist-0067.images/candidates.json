@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0067",
+  "created_at": "2026-10-26T20:34:03.686Z",
+  "queries": [
+    "Wells Cathedral clock medieval mechanical clock Salisbury Cathedral clock",
+    "Wells Cathedral clock",
+    "Wells Cathedral clock medieval mechanical clock"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-58712448",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wells clock.jpg",
+      "credit": "DeFacto / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wells_clock.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Wells_clock.jpg/960px-Wells_clock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2807,
+      "height": 3307,
+      "alt_suggestion": "The Wells clock in Wells Cathedral, Somerset. This clock was made in about 1390 and is the world's oldest known clock with its original dials.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-9",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Interior of St. Mark's, Venice",
+      "credit": "David Dalhoff Neal (American, 1838–1915) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/9",
+      "image_url": "https://www.artic.edu/iiif/2/b55d836c-ee20-59f8-1f0c-a95e09905361/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-58897168",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wells clock exterior.jpg",
+      "credit": "DeFacto / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wells_clock_exterior.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Wells_clock_exterior.jpg/960px-Wells_clock_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2669,
+      "height": 3494,
+      "alt_suggestion": "Wells Cathedral exterior clock, Somerset.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-57819",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Wall Clock",
+      "credit": "Case by Jean-Pierre Latz (born Cologne [now Germany], active France, 1691–1754) Clockwork by Francis Bayley (active Austrian Netherlands [now Belgium], mid-1700s) Case: Paris; clock: Ghent, Flanders, Austrian Netherlands (now Belgium) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/57819",
+      "image_url": "https://www.artic.edu/iiif/2/ce583554-7fac-705e-2130-ec94c1abb2e2/full/843,/0/default.jpg",
+      "alt_suggestion": "Golden-colored, ornate wall clock adorned with golden flourishes, a bent figure with an arrow at top.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-157322384",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wells Cathedral - Clock - geograph.org.uk - 7154193.jpg",
+      "credit": "Colin Smith / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wells_Cathedral_-_Clock_-_geograph.org.uk_-_7154193.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Wells_Cathedral_-_Clock_-_geograph.org.uk_-_7154193.jpg/960px-Wells_Cathedral_-_Clock_-_geograph.org.uk_-_7154193.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5152,
+      "height": 3864,
+      "alt_suggestion": "Wells Cathedral - Clock",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Wells Cathedral clock medieval mechanical clock Salisbury Cathedral clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Wells Cathedral clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Wells Cathedral clock medieval mechanical clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

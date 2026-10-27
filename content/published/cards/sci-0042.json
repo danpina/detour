@@ -1,0 +1,62 @@
+{
+  "id": "sci-0042",
+  "interest": "science",
+  "title": "The war of the currents",
+  "probes": [
+    {
+      "id": "sci-0042-p1",
+      "question": "Why could an AC system reach farther than Edison's low-voltage DC?",
+      "kind": "mcq",
+      "options": [
+        "It used thicker copper",
+        "It used transformers to step high voltage down for use",
+        "It ran on batteries",
+        "It needed no wires"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0042-p2",
+      "question": "True or false: Edison's first utility was based on DC power.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "War of the currents (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/War_of_the_currents"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:57.632Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0042.webp",
+    "alt": "A large hydroelectric power plant building beside blue water on the Niagara River, seen from the bank.",
+    "kind": "photo",
+    "credit": "Busfahrer / Wikimedia Commons",
+    "license": "CC BY 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Robert_moses_niagara_power_plant_01.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "1882. Thomas Edison establishes the first investor-owned electric utility, built on direct current (DC)."
+      },
+      {
+        "text": "Low-voltage DC had a short useful range. To keep costly copper conductors small, plants had to sit in the middle of population centres and could only supply customers less than a mile away."
+      },
+      {
+        "text": "In 1886 George Westinghouse's company introduces alternating current (AC), using transformers to step high voltage down for indoor lighting. High voltage let power travel farther from large central stations."
+      },
+      {
+        "text": "AC won. Westinghouse took the major part of the Niagara Falls hydroelectric contract in 1893, and DC utility systems declined through the 20th century."
+      }
+    ]
+  }
+}

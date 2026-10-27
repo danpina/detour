@@ -1,0 +1,145 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Bystander effect",
+    "angle": "Kitty Genovese and what the research really says"
+  },
+  "created_at": "2026-10-27T06:06:56.033Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0056",
+    "interest": "mind",
+    "type": "story",
+    "title": "The 37 witnesses who weren't",
+    "body": {
+      "panels": [
+        {
+          "text": "1964, Queens, New York. Two weeks after Kitty Genovese was murdered, a newspaper reported that thirty-seven witnesses saw or heard it and none helped."
+        },
+        {
+          "text": "Psychologists John Darley and Bibb Latané brought the topic into the lab. In one 1969 study by Latané and Judith Rodin, 70% of people alone called out or went to help a woman who seemed hurt, but only 40% did when paired with a stranger."
+        },
+        {
+          "text": "The famous story was exaggerated. Some neighbours heard cries but many did not realise how serious it was, and her friend Sophia Farrar held her until an ambulance arrived."
+        },
+        {
+          "text": "The effect itself is real but nuanced. A 2011 meta-analysis found it most likely in non-dangerous emergencies, and not in dangerous ones."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0056-p1",
+        "kind": "tf",
+        "question": "True or false: later investigations showed the original newspaper account of the Genovese murder was exaggerated.",
+        "answer": true
+      },
+      {
+        "id": "mind-0056-p2",
+        "kind": "mcq",
+        "question": "In a 2011 meta-analysis, when was the bystander effect most likely to occur?",
+        "options": [
+          "In dangerous emergencies",
+          "In non-dangerous emergencies",
+          "Only when the victim was a friend",
+          "Only with large crowds"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bystander effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bystander_effect"
+      },
+      {
+        "title": "Murder of Kitty Genovese (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Murder_of_Kitty_Genovese"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:People walking on a street in Copenhagen.jpg shows people walking along a busy street, none interacting",
+    "keywords": [
+      "people walking street",
+      "pedestrians",
+      "crowd",
+      "city street"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:02.128Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bystander_effect",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Murder_of_Kitty_Genovese",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "1964, Queens: two weeks after Genovese was murdered a newspaper reported thirty-seven witnesses saw or heard it and none helped",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Murder_of_Kitty_Genovese",
+        "quote": "Two weeks after the murder, The New York Times published an article claiming that thirty-seven witnesses saw or heard the attack"
+      },
+      {
+        "claim": "Darley and Latane brought the topic into the lab",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bystander_effect",
+        "quote": "first demonstrated and popularized in the laboratory by social psychologists John M. Darley and Bibb Latané in 1968"
+      },
+      {
+        "claim": "In one 1969 study by Latane and Judith Rodin, 70% of people alone called out or went to help a woman who seemed hurt, only 40% when paired with a stranger",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bystander_effect",
+        "quote": "Seventy percent of the people alone called out or went to help the woman after they believed she had fallen and was hurt"
+      },
+      {
+        "claim": "...but only 40% did when paired with a stranger",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bystander_effect",
+        "quote": "but when paired with a stranger only 40 percent offered help"
+      },
+      {
+        "claim": "Later investigations showed the story was exaggerated (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Murder_of_Kitty_Genovese",
+        "quote": "However, subsequent investigations revealed that the extent of public apathy was exaggerated."
+      },
+      {
+        "claim": "Some neighbours heard cries but many did not realise how serious it was",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Murder_of_Kitty_Genovese",
+        "quote": "While some neighbors heard her cries, many did not realize the severity of the situation."
+      },
+      {
+        "claim": "Friend Sophia Farrar held her until an ambulance arrived",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Murder_of_Kitty_Genovese",
+        "quote": "held her in her arms, whispering, \"Help is on the way\" until an ambulance arrived"
+      },
+      {
+        "claim": "The effect itself is real (replicable)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bystander_effect",
+        "quote": "one of the strongest and most replicable effects in social psychology"
+      },
+      {
+        "claim": "2011 meta-analysis: most likely in non-dangerous emergencies, not in dangerous ones (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bystander_effect",
+        "quote": "A 2011 meta-analysis found that the bystander effect was most likely to occur in non-dangerous emergencies but did not occur in dangerous emergencies."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Context-dependent memory",
+    "angle": "The diving study"
+  },
+  "created_at": "2026-10-26T20:29:12.583Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0045",
+    "interest": "mind",
+    "type": "story",
+    "title": "The divers who forgot on land",
+    "body": {
+      "panels": [
+        {
+          "text": "Researchers noticed that deep-sea divers remembered less about events they had seen underwater once they had resurfaced."
+        },
+        {
+          "text": "In 1975, Godden and Baddeley tested whether the setting mattered. Divers learned word lists in two places: under water and on dry land."
+        },
+        {
+          "text": "Words learned under water were recalled better under water, and words learned on land were recalled better on land."
+        },
+        {
+          "text": "Changing the context between learning and recall made it harder to remember the words. The study likely started today's research on context-dependent memory."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0045-p1",
+        "kind": "mcq",
+        "question": "Where did divers best recall words they had learned under water?",
+        "options": [
+          "Under water",
+          "On dry land",
+          "In a classroom",
+          "No difference"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0045-p2",
+        "kind": "tf",
+        "question": "True or false: changing the context between learning and recall reduced the divers' ability to recall words.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Context-dependent memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Context-dependent_memory"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Scuba divers under water, e.g. File:Scuba Diver - Ahmad Faiz Mustafa.jpg",
+    "keywords": [
+      "scuba diver underwater",
+      "diver",
+      "scuba diving",
+      "underwater"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:08:00.114Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Context-dependent_memory",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Divers remembered less about underwater events after resurfacing (panel 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Context-dependent_memory",
+        "quote": "the memory of deep sea divers for events witnessed underwater was reduced after resurfacing."
+      },
+      {
+        "claim": "1975 Godden and Baddeley: word lists learned and recalled under water and on land (panel 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Context-dependent_memory",
+        "quote": "Godden and Baddeley had divers learn and recall word lists in two separate environments; under water and on dry land."
+      },
+      {
+        "claim": "Words learned under water recalled better under water; same on land (panel 3, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Context-dependent_memory",
+        "quote": "memory for word lists learned under water was better when recall sessions occurred under water as well"
+      },
+      {
+        "claim": "Changing context reduced recall (panel 4, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Context-dependent_memory",
+        "quote": "changing the context between encoding and retrieval reduced the divers' ability to recall learned words."
+      },
+      {
+        "claim": "The study likely started today's research on context-dependent memory (panel 4)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Context-dependent_memory",
+        "quote": "The publication of this study likely initiated the current synthesis of context-dependent memory"
+      }
+    ],
+    "overall": "pass"
+  }
+}

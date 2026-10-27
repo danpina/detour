@@ -1,0 +1,92 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "How much sleep",
+    "angle": "CDC sleep guidance for adults and teens"
+  },
+  "created_at": "2026-10-26T20:29:12.576Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0036",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "How much sleep do adults need?",
+    "body": {
+      "question": "The CDC recommends how many hours of sleep a day for most adults aged 18 to 60?",
+      "options": [
+        "5 or more",
+        "6 or more",
+        "7 or more",
+        "9 or more"
+      ],
+      "answer": 2,
+      "reveal": "Adults aged 18 to 60 are advised to get 7 or more hours. The amount you need changes as you age: teens aged 13 to 17 are advised 8 to 10 hours."
+    },
+    "probes": [
+      {
+        "id": "mind-0036-p1",
+        "kind": "tf",
+        "question": "True or false: the CDC advises teens aged 13 to 17 to get 8 to 10 hours of sleep a day.",
+        "answer": true
+      },
+      {
+        "id": "mind-0036-p2",
+        "kind": "tf",
+        "question": "True or false: the hours of sleep recommended each day stay the same as you age.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "About Sleep (CDC)",
+        "url": "https://www.cdc.gov/sleep/about/index.html"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A sleeping cat or bedroom scene, e.g. File:Sleeping cat on her back.jpg",
+    "keywords": [
+      "sleeping cat",
+      "bedroom night",
+      "sleep",
+      "bed"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:07:59.500Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://www.cdc.gov/sleep/about/index.html",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "CDC: adults 18-60 advised 7 or more hours (question, reveal)",
+        "verdict": "pass",
+        "source_url": "https://www.cdc.gov/sleep/about/index.html",
+        "quote": "Adult 18&ndash;60 years 7 or more hours",
+        "note": "Page text contains the literal entity '&ndash;'; quote reproduces it."
+      },
+      {
+        "claim": "CDC: teens 13-17 advised 8-10 hours (reveal, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://www.cdc.gov/sleep/about/index.html",
+        "quote": "Teen 13&ndash;17 years 8&ndash;10 hours"
+      },
+      {
+        "claim": "Recommended hours change with age (reveal, probe 2 false)",
+        "verdict": "pass",
+        "source_url": "https://www.cdc.gov/sleep/about/index.html",
+        "quote": "School age 6&ndash;12 years 9&ndash;12 hours",
+        "note": "Table shows differing recommendations by age group."
+      }
+    ],
+    "overall": "pass"
+  }
+}

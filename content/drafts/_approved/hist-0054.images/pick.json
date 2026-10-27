@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-10331682",
+  "alt": "A carved marble standard metre bar set into a wall beneath the word METRE in Paris",
+  "fits": true,
+  "note": "Historic mètre étalon marker, fits",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.55,
+    "zoom": 1.5
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Peppered moths and natural selection",
+    "angle": "Pale moths turned dark with soot, then pale again"
+  },
+  "created_at": "2026-10-26T20:30:07.360Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0053",
+    "interest": "science",
+    "type": "story",
+    "title": "The moths that changed colour",
+    "body": {
+      "panels": [
+        {
+          "text": "Before the Industrial Revolution, peppered moths in England were mostly pale. Pale wings were nearly invisible against light, lichen-covered bark, and the black form was rare."
+        },
+        {
+          "text": "Then coal-burning factories blanketed the countryside with soot. Many lichens died and the trees darkened, so birds found pale moths more easily."
+        },
+        {
+          "text": "Dark moths now survived more often and passed their colour on. By 1895, the dark form had reached a reported 98% of moths in Manchester."
+        },
+        {
+          "text": "The twist: from about 1962, as the air got cleaner, the dark form steadily declined. The moths did not choose anything. Whichever colour hid better simply left more offspring."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0053-p1",
+        "kind": "mcq",
+        "question": "Why did dark peppered moths become common near industrial cities?",
+        "options": [
+          "They chose darker trees to rest on",
+          "Soot darkened the trees, so dark moths were eaten less often and left more offspring",
+          "Pollution turned each moth's wings dark",
+          "Pale moths all migrated away"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0053-p2",
+        "kind": "tf",
+        "question": "True or false: the dark form of the peppered moth declined again from about 1962 as the air became cleaner.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Peppered moth evolution (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Peppered_moth_evolution"
+      },
+      {
+        "title": "Natural selection (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Natural_selection"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Peppered moth (Biston betularia) female.jpg shows a peppered moth (CC BY-SA 4.0); File:-1931- Peppered Moth (Biston betularia) (40936387433).jpg (CC BY 2.0) alternative",
+    "keywords": [
+      "peppered moth",
+      "Biston betularia",
+      "moth"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.049Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Peppered_moth_evolution",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Natural_selection",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Before the Industrial Revolution the black form was rare and pale moths blended with light lichen-covered bark",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peppered_moth_evolution",
+        "quote": "The light-bodied moths were able to blend in with the light-coloured lichens and tree bark, and the less common black moths were more likely to be eaten by birds."
+      },
+      {
+        "claim": "Coal soot covered the countryside, many lichens died, trees darkened, so birds found pale moths more easily",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peppered_moth_evolution",
+        "quote": "Many of the light-bodied lichens died from sulphur dioxide emissions, and the trees became darkened."
+      },
+      {
+        "claim": "Dark moths survived more often and passed colour on; birds eat the less camouflaged form (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peppered_moth_evolution",
+        "quote": "As a result, birds would find and eat those morphs that were not camouflaged with increased frequency."
+      },
+      {
+        "claim": "By 1895 the dark form reached a reported 98% in Manchester",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peppered_moth_evolution",
+        "quote": "By 1895, it had reached a reported frequency of 98% in Manchester."
+      },
+      {
+        "claim": "From about 1962 the dark form steadily declined as the air got cleaner (body and probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peppered_moth_evolution",
+        "quote": "From around 1962 to the present, the phenotype frequency of carbonaria has steadily fallen in line with cleaner air around industrial cities."
+      },
+      {
+        "claim": "Moths did not choose; whichever colour hid better left more offspring (natural selection)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Natural_selection",
+        "quote": "Natural selection is the differential survival and reproduction of individuals due to differences in the relative fitness endowed on them by their own particular complement of observable characteristics."
+      }
+    ],
+    "overall": "pass"
+  }
+}

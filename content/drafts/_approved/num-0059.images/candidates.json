@@ -1,0 +1,86 @@
+{
+  "draft_id": "num-0059",
+  "created_at": "2026-10-26T20:32:39.012Z",
+  "queries": [
+    "Modus ponens argument map logic diagram",
+    "Modus ponens",
+    "Modus ponens argument map"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-157493350",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Modus Ponens W.png",
+      "credit": "Pastrypride / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Modus_Ponens_W.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Modus_Ponens_W.png/960px-Modus_Ponens_W.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2318,
+      "height": 1185,
+      "alt_suggestion": "An argument map with an inference box. ‘If p, then q’ and ‘p’ are the premises, ‘q’ is the conclusion, and modus ponens is the inference rule.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-196347",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Plan of Chicago, Chicago, Illinois, Diagram Showing City Growth",
+      "credit": "Daniel Hudson Burnham (American, 1846-1912) Edward Herbert Bennett (American, born England, 1874-1954) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196347",
+      "image_url": "https://www.artic.edu/iiif/2/8da8a9e1-48f7-9bc1-982a-2206dae4f522/full/843,/0/default.jpg",
+      "alt_suggestion": "A detailed sepia-toned map of Chicago with areas labeled and marked by red stars and boundary lines marked with colored ink and paint.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-154161961",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Modus ponens 2024.png",
+      "credit": "Cmatrix / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Modus_ponens_2024.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Modus_ponens_2024.png/960px-Modus_ponens_2024.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1400,
+      "height": 1275,
+      "alt_suggestion": "Modus ponens (affirming the antecedent): p implies q",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-18985071",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Vultures in the nest, Orchha, MP, India.jpg",
+      "credit": "Yann (talk) / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vultures_in_the_nest,_Orchha,_MP,_India.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Vultures_in_the_nest%2C_Orchha%2C_MP%2C_India.jpg/960px-Vultures_in_the_nest%2C_Orchha%2C_MP%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2753,
+      "height": 2008,
+      "alt_suggestion": "Vultures in the nest (Gyps indicus), Orchha, Madhya Pradesh, India.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-54770993",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "After rain in winter evening, wet cobblestone street Steinweg Marburg (Germany) with bicycle and reflection of lights in a puddle 2017-01-04.jpg",
+      "credit": "LudwigSebastianMicheler / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:After_rain_in_winter_evening,_wet_cobblestone_street_Steinweg_Marburg_(Germany)_with_bicycle_and_reflection_of_lights_in_a_puddle_2017-01-04.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/After_rain_in_winter_evening%2C_wet_cobblestone_street_Steinweg_Marburg_%28Germany%29_with_bicycle_and_reflection_of_lights_in_a_puddle_2017-01-04.jpg/960px-After_rain_in_winter_evening%2C_wet_cobblestone_street_Steinweg_Marburg_%28Germany%29_with_bicycle_and_reflection_of_lights_in_a_puddle_2017-01-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3264,
+      "height": 2448,
+      "alt_suggestion": "After rain in winter evening, wet cobblestone street Steinweg Marburg (Germany) with bicycle and reflection of lights in a puddle (2017-01-04).",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Modus ponens argument map logic diagram\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Modus ponens\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Modus ponens argument map\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

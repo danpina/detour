@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Fundamental attribution error",
+    "angle": "The Castro essay study"
+  },
+  "created_at": "2026-10-27T06:06:56.067Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0064",
+    "interest": "mind",
+    "type": "story",
+    "title": "Even a coin toss didn't change minds",
+    "body": {
+      "panels": [
+        {
+          "text": "1967. Edward Jones and Victor Harris had people read essays for and against Fidel Castro, then rate how pro-Castro each writer was."
+        },
+        {
+          "text": "When readers thought the writers freely chose their side, they rated the pro-Castro writers as more pro-Castro. That seems fair."
+        },
+        {
+          "text": "Then came the twist. Readers were told the writers' positions were decided by a coin toss. They still rated the pro-Castro writers as more favourable to Castro."
+        },
+        {
+          "text": "Readers could not properly see the pull of the situation. A decade later Lee Ross named this the fundamental attribution error: we favour a person's character over their circumstances."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0064-p1",
+        "kind": "mcq",
+        "question": "What decided the writers' positions in the twist version of the study?",
+        "options": [
+          "Their own beliefs",
+          "A coin toss",
+          "Their teachers",
+          "A vote"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0064-p2",
+        "kind": "tf",
+        "question": "True or false: readers stopped attributing sincere belief to writers once they learned it was a coin toss.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Fundamental attribution error (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Fundamental_attribution_error"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Coin Toss (3635981474).jpg shows a coin flipped in the air",
+    "keywords": [
+      "coin toss",
+      "coin flip",
+      "heads or tails",
+      "coin"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.207Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fundamental_attribution_error",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Subjects read essays for and against Fidel Castro and rated the writers' pro-Castro attitude",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fundamental_attribution_error",
+        "quote": "Subjects in an experiment read essays for and against Fidel Castro"
+      },
+      {
+        "claim": "1967, Edward Jones and Victor Harris; Lee Ross named the error a decade later",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fundamental_attribution_error",
+        "quote": "The phrase was coined by Lee Ross 10 years after an experiment by Edward E. Jones and Victor Harris in 1967."
+      },
+      {
+        "claim": "When writers freely chose, pro-Castro writers were rated more pro-Castro",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fundamental_attribution_error",
+        "quote": "they would normally rate the people who praised Castro as having a more positive attitude towards Castro"
+      },
+      {
+        "claim": "Told the position was decided by a coin toss, readers still rated pro-Castro writers as more favourable (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fundamental_attribution_error",
+        "quote": "when the subjects were told that the writers' positions were determined by a coin toss, they still rated writers who spoke in favor"
+      },
+      {
+        "claim": "Readers could not properly see the pull of the situation; kept attributing sincere belief (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fundamental_attribution_error",
+        "quote": "they could not refrain from attributing sincere belief to the writers"
+      },
+      {
+        "claim": "FAE: we favour a person's character over their circumstances",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Fundamental_attribution_error",
+        "quote": "observers underemphasize situational and environmental factors for the behavior of an actor while overemphasizing dispositional or personality factors"
+      }
+    ],
+    "overall": "pass"
+  }
+}

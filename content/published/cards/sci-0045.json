@@ -1,0 +1,54 @@
+{
+  "id": "sci-0045",
+  "interest": "science",
+  "title": "How a solar cell makes current",
+  "probes": [
+    {
+      "id": "sci-0045-p1",
+      "question": "After light is absorbed in a solar cell, what must happen for useful current?",
+      "kind": "mcq",
+      "options": [
+        "The charges are separated and extracted to a circuit",
+        "The cell must be heated",
+        "The light must be stored as sound",
+        "Nothing, current flows by itself"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0045-p2",
+      "question": "True or false: the photovoltaic effect is when a semiconductor generates electric energy upon being exposed to light.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Solar cell (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Solar_cell"
+    },
+    {
+      "title": "Photovoltaic effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Photovoltaic_effect"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:35:01.632Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0045.webp",
+    "alt": "Flexible solar panels mounted on the deck of a sailboat, with sea and rigging behind.",
+    "kind": "photo",
+    "credit": "Ddgfoto / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Solar_cell_ship.jpg"
+  },
+  "body": {
+    "claim": "A solar cell turns the energy of light directly into electricity using the photovoltaic effect.",
+    "why": "Light is absorbed, exciting an electron to a higher-energy state and creating electron-hole pairs. The cell must then separate these opposite types of charge carrier and extract them separately to an external circuit, which gives the current you can use."
+  }
+}

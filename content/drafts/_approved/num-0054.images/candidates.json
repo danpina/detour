@@ -1,0 +1,82 @@
+{
+  "draft_id": "num-0054",
+  "created_at": "2026-10-26T20:31:55.608Z",
+  "queries": [
+    "water lily pond Monet water lily water lilies pond",
+    "water lily pond",
+    "water lily pond Monet water lily"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-136550510",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Detail of \"The Water-Lily Pond\" by Claude Monet 02.jpg",
+      "credit": "Kritzolina / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Detail_of_%22The_Water-Lily_Pond%22_by_Claude_Monet_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Detail_of_%22The_Water-Lily_Pond%22_by_Claude_Monet_02.jpg/960px-Detail_of_%22The_Water-Lily_Pond%22_by_Claude_Monet_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5472,
+      "height": 3648,
+      "alt_suggestion": "Detail of the paintin \"The Water-Lily Pond\" by Claude Monet",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-KSC-08pd3162",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-08pd3162",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-08pd3162",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-08pd3162/KSC-08pd3162~medium.jpg",
+      "alt_suggestion": "CAPE CANAVERAL, Fla. - A great blue heron stands watch among a pond of water lilies on NASA's Kennedy Space Center in Florida. It is one of 310 species of birds that inhabit the National Merritt Islan",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-87088",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Water Lily Pond",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/87088",
+      "image_url": "https://www.artic.edu/iiif/2/8534685d-1102-e1e3-e194-94f6e925e8b0/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of a small pond dense with pink water lilies, their roots visible through the water, a railed footbridge arching over the pond and lush, dark green folliage surrounding it.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-1169979",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Claude Monet, Water-Lily Pond and Weeping Willow.JPG",
+      "credit": "Claude Monet / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_Monet,_Water-Lily_Pond_and_Weeping_Willow.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Claude_Monet%2C_Water-Lily_Pond_and_Weeping_Willow.JPG/960px-Claude_Monet%2C_Water-Lily_Pond_and_Weeping_Willow.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1309,
+      "height": 1215,
+      "alt_suggestion": "Claude Monet, Water-Lily Pond and Weeping Willow.JPG",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-97933",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Water Lily Pond",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/97933",
+      "image_url": "https://www.artic.edu/iiif/2/7a23ad22-2044-6d7d-6315-9b101dadc559/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"water lily pond Monet water lily water lilies pond\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"water lily pond\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"water lily pond Monet water lily\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

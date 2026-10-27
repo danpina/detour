@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-154152886",
+ "alt": "Two foam archery targets with colourful rings on a green lawn while a child draws a bow.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (Public domain).",
+ "crop": {
+  "fx": 0.2,
+  "fy": 0.5,
+  "zoom": 1.7
+ }
+}

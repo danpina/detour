@@ -1,0 +1,122 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Default effect",
+    "angle": "Organ donation opt-in versus opt-out"
+  },
+  "created_at": "2026-10-27T06:06:56.072Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0065",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "The power of the pre-ticked box",
+    "body": {
+      "question": "Germany asks people to opt in to organ donation and has a consent rate of 12%. Austria has a very similar culture and economy but makes everyone a donor unless they opt out. What is Austria's consent rate?",
+      "options": [
+        "About 20%",
+        "99.98%",
+        "About 50%",
+        "About 75%"
+      ],
+      "answer": 1,
+      "reveal": "99.98%. Opt-out systems dramatically raise effective consent rates through the default effect. Most people support donation, yet under opt-in only a small share register, because they fail to go through the process."
+    },
+    "probes": [
+      {
+        "id": "mind-0065-p1",
+        "kind": "mcq",
+        "question": "What is the default under an opt-out donation system?",
+        "options": [
+          "Everyone is a non-donor",
+          "Everyone is a donor unless they opt out",
+          "Only registered people donate",
+          "Families decide each time"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0065-p2",
+        "kind": "tf",
+        "question": "True or false: the default effect is the tendency to pick whichever option is pre-set.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Organ donation (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Organ_donation"
+      },
+      {
+        "title": "Default effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Default_effect"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Organspendeausweis kugelschreiber.JPG shows an organ donor card with a pen",
+    "keywords": [
+      "organ donor card",
+      "donor card",
+      "Organspendeausweis",
+      "pen"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:17.548Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Organ_donation",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Default_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Germany (opt-in) has a 12% consent rate",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Organ_donation",
+        "quote": "Germany, which uses an opt-in system, has an organ donation consent rate of 12% among its population"
+      },
+      {
+        "claim": "Austria: very similar culture and economy, opt-out, 99.98% consent rate",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Organ_donation",
+        "quote": "Austria, a country with a very similar culture and economic development, but which uses an opt-out system, has a consent rate of 99.98%"
+      },
+      {
+        "claim": "Opt-out systems dramatically raise effective consent through the default effect",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Organ_donation",
+        "quote": "Opt-out legislative systems dramatically increase effective consent rates for donation as a result of the default effect"
+      },
+      {
+        "claim": "Most people support donation yet under opt-in only a small share register because they fail to go through the process",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Organ_donation",
+        "quote": "only a small percentage of the population are actually registered, because they fail to go through the actual step of registration"
+      },
+      {
+        "claim": "Opt-out: everyone is a donor unless they opt out (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Organ_donation",
+        "quote": "anyone who has not refused consent to donate is a donor"
+      },
+      {
+        "claim": "Default effect: tendency to accept the pre-set default option (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Default_effect",
+        "quote": "explains the tendency for an agent to generally accept the default option in a strategic interaction"
+      }
+    ],
+    "overall": "pass"
+  }
+}

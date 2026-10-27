@@ -1,0 +1,96 @@
+{
+  "draft_id": "tech-0056",
+  "created_at": "2026-10-26T20:29:57.787Z",
+  "queries": [
+    "neural network neural network diagram artificial neural network",
+    "neural network",
+    "neural network neural network diagram"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-152360962",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Neural networks diagram.png",
+      "credit": "hikari_no_yume / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Neural_networks_diagram.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Neural_networks_diagram.png/960px-Neural_networks_diagram.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4730,
+      "height": 3548,
+      "alt_suggestion": "A flowchart diagram that comments on the impossibility of neural networks' to deliver \"infallible results\" as advertised.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss068e028286",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "iss068e028286",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss068e028286",
+      "image_url": "https://images-assets.nasa.gov/image/iss068e028286/iss068e028286~medium.jpg",
+      "alt_suggestion": "iss068e028286 (Dec. 1, 2022) --- Expedition 68 Flight Engineer Koichi Wakata of the Japan Aerospace Exploration (JAXA) works on the Neural Integration System investigation. The investigation uses nema",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-196347",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Plan of Chicago, Chicago, Illinois, Diagram Showing City Growth",
+      "credit": "Daniel Hudson Burnham (American, 1846-1912) Edward Herbert Bennett (American, born England, 1874-1954) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196347",
+      "image_url": "https://www.artic.edu/iiif/2/8da8a9e1-48f7-9bc1-982a-2206dae4f522/full/843,/0/default.jpg",
+      "alt_suggestion": "A detailed sepia-toned map of Chicago with areas labeled and marked by red stars and boundary lines marked with colored ink and paint.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-152360985",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Deep neural networks diagram.png",
+      "credit": "hikari_no_yume / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Deep_neural_networks_diagram.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Deep_neural_networks_diagram.png/960px-Deep_neural_networks_diagram.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4731,
+      "height": 3548,
+      "alt_suggestion": "A diagram that comments on the impossibility of deep neural networks to turn untrustworthy data into infallible results.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-196332",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Plan of Chicago, Chicago, Illinois, Railroad Circuits Diagram",
+      "credit": "Daniel Hudson Burnham (American, 1846-1912) Edward Herbert Bennett (American, born England, 1874-1954) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196332",
+      "image_url": "https://www.artic.edu/iiif/2/be9ed8a8-62d9-8fde-7ffb-29d9361d5cee/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of colored ink and paint on a printed map.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-41652806",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Two-layer feedforward artificial neural network.png",
+      "credit": "Akritasa / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Two-layer_feedforward_artificial_neural_network.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Two-layer_feedforward_artificial_neural_network.png/960px-Two-layer_feedforward_artificial_neural_network.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 720,
+      "alt_suggestion": "A two-layer feedforward artificial neural network with 8 inputs, 2x8 hidden and 2 outputs. Given position state, direction and other enviroment values outputs thruster based control values.",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"neural network neural network diagram artificial neural network\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"neural network\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"neural network neural network diagram\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

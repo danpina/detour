@@ -1,0 +1,49 @@
+{
+  "id": "money-0048",
+  "interest": "money",
+  "title": "Supply and demand is an old idea",
+  "probes": [
+    {
+      "id": "money-0048-p1",
+      "question": "At the market-clearing price, which two quantities are equal?",
+      "kind": "mcq",
+      "options": [
+        "Price and cost",
+        "Buyers and sellers",
+        "Quantity demanded and quantity supplied"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0048-p2",
+      "question": "True or false: if desire for a good rises while its availability falls, its price tends to fall.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Supply and demand (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Supply_and_demand"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:49.898Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0048.webp",
+    "alt": "A simple chart with a downward-sloping demand line and an upward-sloping supply line crossing at the equilibrium price and quantity.",
+    "kind": "photo",
+    "credit": "Daydreamm / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Law_of_demand.jpg"
+  },
+  "body": {
+    "claim": "A fourteenth-century scholar wrote that if desire for a good rises while its availability falls, its price rises.",
+    "why": "Ibn Taymiyyah added that if availability rises and desire falls, the price comes down. In a perfectly competitive market, the price varies until it settles at the market-clearing price, where the quantity demanded equals the quantity supplied."
+  }
+}

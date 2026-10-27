@@ -1,0 +1,55 @@
+{
+  "id": "mind-0040",
+  "interest": "mind",
+  "title": "How long does a habit take to form?",
+  "probes": [
+    {
+      "id": "mind-0040-p1",
+      "question": "What does the range of 18 to 254 days tell us?",
+      "kind": "mcq",
+      "options": [
+        "Every habit takes exactly 21 days",
+        "People differ a lot in how long a habit takes",
+        "Habits cannot form",
+        "Habits form faster with age"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0040-p2",
+      "question": "True or false: in simple models, automaticity rises with repetition up to a plateau, and that process can be slow.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Habit (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Habit"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:13.816Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "mind-0040.webp",
+    "alt": "A brown leather diary with a gold 2026 on the cover lies on a light wooden table.",
+    "kind": "photo",
+    "credit": "Gpkp / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Personal_organizer_book_(India,_2026).jpg"
+  },
+  "body": {
+    "question": "On average, how many days did it take people in Lally and colleagues' study to make a new behaviour automatic?",
+    "unit": "days",
+    "min": 0,
+    "max": 300,
+    "scale": "linear",
+    "answer": 66,
+    "reveal": "The average was 66 days, but the range was wide: from 18 to 254 days. Habits form on different timelines for different people."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Columbian exchange",
+    "angle": "How crops and diseases reshaped two hemispheres"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0036",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "Tomatoes crossed an ocean",
+    "body": {
+      "claim": "Potatoes, maize and tomatoes crossed the Atlantic after 1492 and changed what the world eats.",
+      "why": "After Columbus's voyage, crops and animals began moving between the hemispheres. American crops such as maize, potatoes, tomatoes, cassava and chili peppers became important worldwide, and helped food production and population grow in the Old World. Wheat, rice, sugar cane and livestock went the other way. The exchange also carried disease: Old World illnesses cut the Indigenous population of the Americas by 80 to 95 percent."
+    },
+    "probes": [
+      {
+        "id": "hist-0036-p1",
+        "kind": "mcq",
+        "question": "Which of these crops came to the rest of the world from the Americas?",
+        "options": [
+          "Wheat",
+          "Rice",
+          "Potatoes",
+          "Sugar cane"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "hist-0036-p2",
+        "kind": "tf",
+        "question": "True or false: the Columbian exchange moved plants and animals in only one direction.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Columbian exchange (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Columbian_exchange"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:BRI Columbian Exchange.jpg is a diagram of crops, livestock and diseases moving between the Americas and the Old World (CC BY-SA 4.0)",
+    "keywords": [
+      "Columbian Exchange",
+      "Columbus voyages",
+      "crop exchange map",
+      "Columbus"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.125Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Columbian_exchange",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Maize, potatoes, tomatoes, cassava and chili peppers became important crops worldwide (title, claim, p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Columbian_exchange",
+        "quote": "maize , potatoes , tomatoes , tobacco , cassava , sweet potatoes , and chili peppers became important crops around the world"
+      },
+      {
+        "claim": "Exchange followed Columbus's 1492 voyage",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Columbian_exchange",
+        "quote": "following his 1492 voyage"
+      },
+      {
+        "claim": "Crops and livestock interchange supported food production and population growth in the Old World",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Columbian_exchange",
+        "quote": "interchange of many species of crops and livestock , which supported increases in food production and population in the Old World"
+      },
+      {
+        "claim": "Wheat, rice, sugar cane and livestock went the other way (p2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Columbian_exchange",
+        "quote": "Old World rice , wheat , sugar cane , and livestock , among other crops, became important in the New World"
+      },
+      {
+        "claim": "Old World illnesses cut the Indigenous population of the Americas by 80 to 95 percent",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Columbian_exchange",
+        "quote": "Communicable diseases of Old World origin resulted in an 80 to 95 percent reduction in the Indigenous population of the Americas"
+      }
+    ],
+    "overall": "pass"
+  }
+}

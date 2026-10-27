@@ -1,0 +1,50 @@
+{
+  "id": "mind-0066",
+  "interest": "mind",
+  "title": "When more choice backfires",
+  "probes": [
+    {
+      "id": "mind-0066-p1",
+      "question": "Which situation is most likely to cause choice overload?",
+      "kind": "mcq",
+      "options": [
+        "Many equally good options and no clear preference",
+        "Two options, one clearly best",
+        "A shopper who knows exactly what they want",
+        "A single option"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0066-p2",
+      "question": "True or false: when people have a clear preference, the number of options has little impact on their satisfaction.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Overchoice (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Overchoice"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:03.369Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0066.webp",
+    "alt": "Three ice cream scoops in metal dessert cups on a black perforated table: pink berry, chocolate and caramel.",
+    "kind": "photo",
+    "credit": "JIP / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ice_cream_in_Loviisa.jpg"
+  },
+  "body": {
+    "claim": "Too many similar options can leave people less satisfied, but only under certain conditions.",
+    "why": "With many equally good options, each must be weighed against the others. Satisfaction is described by an inverted U: it rises, peaks, then falls into pressure and confusion. The effect is not universal. It needs a chooser with no clear prior preference and no clearly dominant option. With a preference, the number of options has little impact."
+  }
+}

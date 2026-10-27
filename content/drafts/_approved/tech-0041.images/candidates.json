@@ -1,0 +1,112 @@
+{
+  "draft_id": "tech-0041",
+  "created_at": "2026-10-27T06:11:22.219Z",
+  "queries": [
+    "submarine communications cable undersea cable cable ship",
+    "submarine communications cable",
+    "submarine communications cable undersea cable"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-43344349",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Bell telephone magazine (1922) (14569651087).jpg",
+      "credit": "Internet Archive Book Images / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bell_telephone_magazine_(1922)_(14569651087).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Bell_telephone_magazine_%281922%29_%2814569651087%29.jpg/960px-Bell_telephone_magazine_%281922%29_%2814569651087%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2180,
+      "height": 1198,
+      "alt_suggestion": "Identifier: belltelephonemag4344amerrich (find matches) Title: Bell telephone magazine Year: 1922 (1920s) Note: this date is wrong. This issue was published Winter 1964-1965. Authors: American Telepho",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-24645",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series \"Thirty-Six Views of Mount Fuji (Fugaku sanjūrokkei)\"",
+      "credit": "Katsushika Hokusai 葛飾 北斎 Japanese, 1760-1849 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/24645",
+      "image_url": "https://www.artic.edu/iiif/2/b3974542-b9b4-7568-fc4b-966738f61d78/full/843,/0/default.jpg",
+      "alt_suggestion": "A crashing wave looms over two small ships, Mount Fuji in the background.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-86978158",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Landing of the submarine cable, Port Darwin, 7 November 1871(GN01968).jpg",
+      "credit": "State Government Photographer / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Landing_of_the_submarine_cable,_Port_Darwin,_7_November_1871(GN01968).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Landing_of_the_submarine_cable%2C_Port_Darwin%2C_7_November_1871%28GN01968%29.jpg/960px-Landing_of_the_submarine_cable%2C_Port_Darwin%2C_7_November_1871%28GN01968%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3264,
+      "height": 2448,
+      "alt_suggestion": "This image shows a momentous event in Australian history: the landing of the submarine telegraph cable from London (via Java) at Port Darwin in the Northern Territory on 7 November 1871. It is the onl",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-23271",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Mines Today By Cables (Electric Driven). This Is The Power Room Of A Pennsylvania Coal Mine",
+      "credit": "Lewis Wickes Hine American, 1874–1940 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/23271",
+      "image_url": "https://www.artic.edu/iiif/2/051f4515-7398-0e3c-7625-c8b8a3303775/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of gelatin silver print.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-154233791",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Submarine telegraph cable in the early 1900s (3).png",
+      "credit": "Cerevisae / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Submarine_telegraph_cable_in_the_early_1900s_(3).png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Submarine_telegraph_cable_in_the_early_1900s_%283%29.png/960px-Submarine_telegraph_cable_in_the_early_1900s_%283%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6345,
+      "height": 2944,
+      "alt_suggestion": "Submarine telegraph cable in the early 1900s with double layers of armour wires (shore end type) as seen in the Taiping Telegraph museum",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-164099849",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "2024-10-22 01 CABLE INNOVATOR - IMO 9101132 – Victoria, BC CAN.jpg",
+      "credit": "Gordon Leggett / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2024-10-22_01_CABLE_INNOVATOR_-_IMO_9101132_%E2%80%93_Victoria,_BC_CAN.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/2024-10-22_01_CABLE_INNOVATOR_-_IMO_9101132_%E2%80%93_Victoria%2C_BC_CAN.jpg/960px-2024-10-22_01_CABLE_INNOVATOR_-_IMO_9101132_%E2%80%93_Victoria%2C_BC_CAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6012,
+      "height": 4000,
+      "alt_suggestion": "Bow view of cable laying vessel, CS CABLE INNOVATOR - IMO 9101132, arriving at Ogden Point Terminal Pier A, Victoria BC Canada on October 22, 2024.",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-118509691",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Port Side of CS Cable Innovator.jpg",
+      "credit": "DeVos Max / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Port_Side_of_CS_Cable_Innovator.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Port_Side_of_CS_Cable_Innovator.jpg/960px-Port_Side_of_CS_Cable_Innovator.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4624,
+      "height": 3468,
+      "alt_suggestion": "Photograph of Port Side of CS Cable Innovator",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"submarine communications cable undersea cable cable ship\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"submarine communications cable\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"submarine communications cable undersea cable\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

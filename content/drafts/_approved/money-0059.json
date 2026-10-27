@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Goodhart's law",
+    "angle": "Measures stop working once they are targets"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0059",
+    "interest": "money",
+    "type": "guess_first",
+    "title": "When a measure becomes a target",
+    "body": {
+      "question": "A car dealership rewards its salespeople by the number of cars they sell each month. What are they likely to do?",
+      "options": [
+        "Sell the same number as before",
+        "Sell fewer, pricier cars",
+        "Sell more cars, even at a loss"
+      ],
+      "answer": 2,
+      "reveal": "Sell more cars, even at a loss. This is Goodhart's law: \"When a measure becomes a target, it ceases to be a good measure.\" It is named after the British economist Charles Goodhart, who expressed the core idea in a 1975 article on monetary policy in the United Kingdom."
+    },
+    "probes": [
+      {
+        "id": "money-0059-p1",
+        "kind": "cloze",
+        "question": "When a measure becomes a ____, it ceases to be a good measure.",
+        "answer": "target",
+        "accept": []
+      },
+      {
+        "id": "money-0059-p2",
+        "kind": "mcq",
+        "question": "Goodhart's core idea first appeared in an article about what?",
+        "options": [
+          "Monetary policy in the United Kingdom",
+          "Car sales",
+          "School exams",
+          "Farm prices"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Goodhart's law (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Scioto Grove - Archery Range Target 1.jpg (CC BY-SA 4.0) shows an archery target",
+    "keywords": [
+      "archery target",
+      "target bullseye",
+      "archery range target"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.983Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Goodhart's law: \"When a measure becomes a target, it ceases to be a good measure\" (reveal; cloze p1: target)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Goodhart%27s_law",
+        "quote": "When a measure becomes a target, it ceases to be a good measure"
+      },
+      {
+        "claim": "Named after British economist Charles Goodhart",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Goodhart%27s_law",
+        "quote": "It is named after British economist Charles Goodhart"
+      },
+      {
+        "claim": "He expressed the core idea in a 1975 article on monetary policy in the United Kingdom (reveal; probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Goodhart%27s_law",
+        "quote": "who is credited with expressing the core idea of the adage in a 1975 article on monetary policy in the United Kingdom",
+        "note": "Page says 'credited with'; it also notes related ideas (Campbell's law) predate Goodhart's statement. Card's 'first appeared' in p2 is acceptable but could say 'Goodhart is credited with expressing the core idea in'."
+      },
+      {
+        "claim": "Dealership scenario: employees rewarded by cars sold will sell more cars, even at a loss",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Goodhart%27s_law",
+        "quote": "rewarded based on the number of cars sold each month, they will try to sell more cars, even at a loss"
+      }
+    ],
+    "overall": "pass"
+  }
+}

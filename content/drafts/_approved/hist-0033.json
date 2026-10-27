@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Magna Carta",
+    "angle": "A peace deal that failed, but became a lasting symbol"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0033",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "A peace deal that failed",
+    "body": {
+      "claim": "Magna Carta began as a peace deal between a king and his rebels, and it failed.",
+      "why": "King John sealed it at Runnymede on 15 June 1215 to settle a fight with rebel barons. It promised protection from illegal imprisonment, swift justice and limits on feudal payments. Neither side kept their commitments, and Pope Innocent III annulled it. Yet it lived on: it was reissued in 1216 by the government of John's young son, and in the early 17th century Sir Edward Coke cited it against the divine right of kings."
+    },
+    "probes": [
+      {
+        "id": "hist-0033-p1",
+        "kind": "mcq",
+        "question": "Why was Magna Carta sealed in 1215?",
+        "options": [
+          "To crown a new king",
+          "To end a war with France",
+          "To make peace between King John and rebel barons",
+          "To create Parliament"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "hist-0033-p2",
+        "kind": "tf",
+        "question": "True or false: after it was sealed, both the king and the barons kept to Magna Carta and the conflict ended.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Magna Carta (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Magna_Carta"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:King John signing the Great Charter (Magna Carta) by English School.png shows King John signing Magna Carta at Runnymede (portrait, public domain); alternative File:Magna Carta (1215) - BL Cotton MS Augustus II 106.jpg (CC0)",
+    "keywords": [
+      "Magna Carta 1215",
+      "King John signing Magna Carta",
+      "Runnymede",
+      "Great Charter"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.119Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Magna_Carta",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Magna Carta began as a peace deal between a king and rebels, and it failed (title, body, p1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+        "quote": "Although the Charter of 1215 was a failure as a peace treaty"
+      },
+      {
+        "claim": "King John sealed it at Runnymede on 15 June 1215",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+        "quote": "sealed by King John of England at Runnymede, near Windsor, on 15 June 1215"
+      },
+      {
+        "claim": "It promised protection from illegal imprisonment, swift justice and limits on feudal payments",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+        "quote": "protection for the barons from illegal imprisonment, access to swift and impartial justice, and limitations on feudal payments to the Crown"
+      },
+      {
+        "claim": "Neither side kept their commitments and Pope Innocent III annulled it (p2 answer false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+        "quote": "Neither side stood by their commitments, and the charter was annulled by Pope Innocent III"
+      },
+      {
+        "claim": "It was reissued in 1216 by the government of John's young son",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+        "quote": "the regency government of his young son, Henry III , reissued the document in 1216"
+      },
+      {
+        "claim": "In the early 17th century Sir Edward Coke cited it against the divine right of kings",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+        "quote": "jurists such as Sir Edward Coke invoked Magna Carta extensively in the early 17th century, arguing against the divine right of kings"
+      },
+      {
+        "claim": "Probe 1: sealed to make peace between King John and rebel barons",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+        "quote": "to make peace between the unpopular king and a group of rebel barons"
+      }
+    ],
+    "overall": "pass"
+  }
+}

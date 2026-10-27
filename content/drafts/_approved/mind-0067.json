@@ -1,0 +1,143 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Spotlight effect",
+    "angle": "The invisible scar"
+  },
+  "created_at": "2026-10-27T06:06:56.080Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0067",
+    "interest": "mind",
+    "type": "story",
+    "title": "The scar that wasn't there",
+    "body": {
+      "panels": [
+        {
+          "text": "1980. Volunteers had makeup applied to look like a prominent facial scar, and checked it in a mirror."
+        },
+        {
+          "text": "The makeup artist then added a cream, said to stop the scar drying out. In fact, it removed the scar entirely, and the volunteers did not know."
+        },
+        {
+          "text": "They chatted with another person, then rated how they had been treated. They reported being treated significantly differently: more tense, less eye contact, more patronising."
+        },
+        {
+          "text": "The scar was gone. The difference was entirely their self-consciousness. This is the spotlight effect: believing we are noticed more than we really are."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0067-p1",
+        "kind": "tf",
+        "question": "True or false: in the scar study, the scar was still visible when volunteers met the other person.",
+        "answer": false
+      },
+      {
+        "id": "mind-0067-p2",
+        "kind": "mcq",
+        "question": "What is the spotlight effect?",
+        "options": [
+          "Believing you are noticed more than you are",
+          "Noticing others more than yourself",
+          "Performing better under lights",
+          "Forgetting a conversation"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Spotlight effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Spotlight_effect"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Spotlight stage August Wilson Center.jpg shows a theatre stage lit by spotlights",
+    "keywords": [
+      "spotlight",
+      "stage lights",
+      "theatre stage",
+      "stage"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.243Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "1980 study (Kleck and Strenta) on perceived reactions to a physical disfigurement",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "quote": "Kleck and Strenta (1980) examined how subjects perceived reactions to them having a physical disfigurement"
+      },
+      {
+        "claim": "Volunteers had makeup applied to look like a prominent facial scar",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "quote": "volunteers had a cosmetic effect applied to their face which had the appearance of a prominent facial scar"
+      },
+      {
+        "claim": "They checked it in a mirror",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "quote": "The volunteer was shown the scar in a mirror."
+      },
+      {
+        "claim": "Makeup artist added a 'cream' said to stop the scar drying out",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "quote": "The makeup artist then applied a \"cream\" to \"prevent the scar from drying out\""
+      },
+      {
+        "claim": "The cream removed the scar entirely without the volunteers knowing (probe 1: scar not visible)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "quote": "the scar was removed entirely by the makeup artist, without the volunteer realizing it"
+      },
+      {
+        "claim": "They had a normal conversation with another person",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "quote": "were instructed to have a normal conversation with another person on a given topic"
+      },
+      {
+        "claim": "They rated more tense, less eye contact, more patronising",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "quote": "whether they perceived the other person as being more tense than normal, making less eye contact, being more distant, more patronizing"
+      },
+      {
+        "claim": "They reported being treated significantly differently",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "quote": "the volunteers perceived that they were treated significantly \"differently\" because of the scar"
+      },
+      {
+        "claim": "The difference was entirely their self-consciousness",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "quote": "Thus the perception of being treated differently was entirely due to the volunteer's self-consciousness."
+      },
+      {
+        "claim": "Spotlight effect: believing we are noticed more than we really are (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spotlight_effect",
+        "quote": "people tend to believe they are being noticed more than they really are"
+      }
+    ],
+    "overall": "pass"
+  }
+}

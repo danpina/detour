@@ -1,0 +1,59 @@
+{
+  "id": "money-0030",
+  "interest": "money",
+  "title": "Why 4.65% is quoted as 4.75%",
+  "probes": [
+    {
+      "id": "money-0030-p1",
+      "question": "True or false: APY takes account fees into account.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "money-0030-p2",
+      "question": "Why is a monthly-compounded 4.65% rate worth 4.75% a year?",
+      "kind": "mcq",
+      "options": [
+        "Inflation is subtracted",
+        "The bank adds a bonus",
+        "Interest added during the year earns interest too"
+      ],
+      "answer": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Annual percentage yield (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annual_percentage_yield"
+    },
+    {
+      "title": "Compound interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compound_interest"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:19:09.583Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0030.webp",
+    "alt": "A glass jar with a red lid holding copper coins and a folded banknote while another coin drops in through the slot.",
+    "kind": "photo",
+    "credit": "stevepb / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Piggy-bank-968302.jpg"
+  },
+  "body": {
+    "question": "A deposit pays a 4.65% rate, compounded monthly. What annual percentage yield (APY) would the bank quote?",
+    "options": [
+      "4.65%",
+      "4.75%",
+      "5.65%"
+    ],
+    "answer": 1,
+    "reveal": "About 4.75%. APY restates a rate as if it compounded over one year, so the interest that is added each month and then earns interest of its own is counted. That makes APY a fair way to compare accounts that compound on different schedules, although it does not account for account fees."
+  }
+}

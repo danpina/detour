@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0062",
+  "created_at": "2026-10-26T20:33:40.895Z",
+  "queries": [
+    "Penny Black Penny Black stamp 1840 first postage stamp",
+    "Penny Black",
+    "Penny Black Penny Black stamp 1840"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-14699362",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Stamp GB-Penny Black first day cover.jpg",
+      "credit": "General Post Office of the United Kingdom / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stamp_GB-Penny_Black_first_day_cover.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Stamp_GB-Penny_Black_first_day_cover.jpg/960px-Stamp_GB-Penny_Black_first_day_cover.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1763,
+      "height": 1813,
+      "alt_suggestion": "Very scarce use of the world's first postage stamp Penny Black used on first day of valid use, May 6, 1840, tied by red Maltese Cross cancel on folded cover to Warwickshire, brown \"C MY-6 1840\" first ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-43729",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "E14: English Drawing Room of the Victorian Period, 1840–70",
+      "credit": "Designed by Narcissa Niblack Thorne American, 1882–1966 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/43729",
+      "image_url": "https://www.artic.edu/iiif/2/d1ed8c0d-fe1f-ff27-231e-9cdf779826d7/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of miniature room, mixed media.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-22537580",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Penny-black-stamp-great-britain-circa-1840.jpg",
+      "credit": "freestock.ca / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Penny-black-stamp-great-britain-circa-1840.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Penny-black-stamp-great-britain-circa-1840.jpg/960px-Penny-black-stamp-great-britain-circa-1840.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1522,
+      "height": 1800,
+      "alt_suggestion": "High resolution scan of the Penny Black Stamp from Great Britain / United Kingdom. Issued circa 1840, it is reportedly the world's first adhesive postage stamp used in a public postal system.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-64818",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Stacks of Wheat (End of Summer)",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/64818",
+      "image_url": "https://www.artic.edu/iiif/2/a38e2828-ec6f-ece1-a30f-70243449197b/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting composed of short, dense brushstrokes depicts two domed stacks of wheat that cast long shadows on a field. The angled light indicates either a rising or setting sun.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-58253511",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Penny Black cover, first ever First Day Cover from 6th May 1840.jpg",
+      "credit": "General Post Office / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Penny_Black_cover,_first_ever_First_Day_Cover_from_6th_May_1840.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Penny_Black_cover%2C_first_ever_First_Day_Cover_from_6th_May_1840.jpg/960px-Penny_Black_cover%2C_first_ever_First_Day_Cover_from_6th_May_1840.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1454,
+      "height": 898,
+      "alt_suggestion": "entire posted with Penny Black, the world's first postage stamp, supposedly used on the first day of use, 6 May 1840 - no evidence provided by way of a dated postmark or letter with date",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Penny Black Penny Black stamp 1840 first postage stamp\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Penny Black\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Penny Black Penny Black stamp 1840\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

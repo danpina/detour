@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Birds on power lines",
+    "angle": "Why same potential means no current"
+  },
+  "created_at": "2026-10-26T20:31:08.682Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0046",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "The bird on the wire",
+    "body": {
+      "question": "A bird perches on a high-voltage power line and is not shocked. Why?",
+      "options": [
+        "Its feathers are perfect insulators",
+        "Birds are immune to electricity",
+        "Its body and the wire are at the same electric potential, so no current passes through it"
+      ],
+      "answer": 2,
+      "reveal": "Current needs a voltage difference between two points to push it. Sitting on one wire, the bird is at the same potential as the wire. Lineworkers on a live line are safe for the same reason, and it is the same principle that lets birds sit on power lines."
+    },
+    "probes": [
+      {
+        "id": "sci-0046-p1",
+        "kind": "mcq",
+        "question": "A lineworker safely holds a live wire when the worker and the wire are...",
+        "options": [
+          "At the same electric potential",
+          "At different potentials",
+          "Made of the same metal"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "sci-0046-p2",
+        "kind": "tf",
+        "question": "True or false: in an ohmic conductor, the current between two points is directly proportional to the voltage across them.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Live-line working (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Live-line_working"
+      },
+      {
+        "title": "Ohm's law (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Ohm%27s_law"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Power line and birds.jpg and File:Birds on Far Bank's Power Line - geograph.org.uk - 1008653.jpg show birds on power lines",
+    "keywords": [
+      "birds on power line",
+      "birds on wire",
+      "starlings power line",
+      "bird power line"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.589Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Live-line_working",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ohm%27s_law",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Bird and wire at same potential so no current passes through it",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Live-line_working",
+        "quote": "Because the worker and the work are at the same potential, no current flows through the worker."
+      },
+      {
+        "claim": "Same principle lets birds sit on power lines",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Live-line_working",
+        "quote": "This is the same principle as that which allows birds to safely sit on power lines."
+      },
+      {
+        "claim": "Lineworker raised to same potential as live parts is safe (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Live-line_working",
+        "quote": "the worker's body is raised to the same electric potential as the live parts"
+      },
+      {
+        "claim": "Current needs a voltage difference; proportional to voltage in ohmic conductor (reveal, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Ohm%27s_law",
+        "quote": "the electric current between two points is directly proportional to the voltage"
+      }
+    ],
+    "overall": "pass"
+  }
+}

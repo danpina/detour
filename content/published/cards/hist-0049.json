@@ -1,0 +1,62 @@
+{
+  "id": "hist-0049",
+  "interest": "history",
+  "title": "Short wheat, tall harvests",
+  "probes": [
+    {
+      "id": "hist-0049-p1",
+      "question": "What did the new high-yield seeds need to deliver their big harvests?",
+      "kind": "mcq",
+      "options": [
+        "Far more fertiliser",
+        "Less water than ever",
+        "No sunlight",
+        "Smaller fields"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0049-p2",
+      "question": "True or false: Norman Borlaug received the Nobel Peace Prize in 1970.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Green Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Green_Revolution"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:37.464Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0049.webp",
+    "alt": "Portrait photograph of Norman Borlaug, an elderly man with white hair in a dark suit and tie, on a city street.",
+    "kind": "photo",
+    "credit": "Ben Zinner, USAID / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Norman_Borlaug_(2004).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "The Rockefeller Foundation funded an agricultural station in Mexico to breed corn and wheat for dry climates. It hired a young agronomist named Norman Borlaug."
+      },
+      {
+        "text": "The Green Revolution that followed spread high-yielding crops, especially dwarf wheat and rice. The new seeds needed far more fertiliser, plus pesticides and controlled irrigation."
+      },
+      {
+        "text": "In Asia, a rice called IR8 yielded about 10 times as much as traditional rice under the best conditions. It was nicknamed 'Miracle Rice'."
+      },
+      {
+        "text": "India's rice yields were about two tons per hectare in the 1960s and about six by the mid-1990s. Borlaug won the 1970 Nobel Peace Prize and is credited with saving over a billion people from starvation."
+      }
+    ]
+  }
+}

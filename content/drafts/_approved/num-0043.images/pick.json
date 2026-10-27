@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-14532509",
+  "alt": "Weathered stone tomb carved with names of the Bayes family, covered in moss at Bunhill Fields cemetery.",
+  "fits": true,
+  "note": "Bayes family tomb; inscription shows Bayes relatives.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

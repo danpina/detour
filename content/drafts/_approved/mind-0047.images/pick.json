@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-530754",
+  "alt": "A tangled white smoke plume against a black sky after the Space Shuttle Challenger broke apart in 1986.",
+  "fits": true,
+  "note": "The event itself, NASA public domain; no people, respectful.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.2
+  }
+}

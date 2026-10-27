@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-64285941",
+  "alt": "Colorful orange, blue and green network cables spilling from ceiling trays above server cabinets in a computer lab.",
+  "fits": true,
+  "note": "Generic network cabling per brief; no readable logos.",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

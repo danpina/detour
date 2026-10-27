@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Transistor as a switch",
+    "angle": "A small voltage or current controls a larger current, so it can switch on and off"
+  },
+  "created_at": "2026-10-26T20:28:21.550Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0049",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "A transistor is a solid-state switch",
+    "body": {
+      "claim": "A transistor can act as an electrically controlled switch.",
+      "why": "A voltage or current applied to one pair of a transistor's terminals controls the current through another pair. Because the control can be switched on and off, the transistor can act as a switch. The transistor was invented in 1947."
+    },
+    "probes": [
+      {
+        "id": "tech-0049-p1",
+        "kind": "mcq",
+        "question": "What controls the current through one pair of a transistor's terminals?",
+        "options": [
+          "A voltage or current applied to another pair of terminals",
+          "A tiny moving lever",
+          "Heat from the room",
+          "A magnet"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0049-p2",
+        "kind": "tf",
+        "question": "True or false: a transistor can be used as an electrically controlled switch.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Transistor (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Transistor"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Transistors.agr.jpg or File:Transistorer (cropped).jpg (CC BY-SA) show several discrete transistors",
+    "keywords": [
+      "transistor",
+      "transistors",
+      "discrete transistors",
+      "electronic components"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:10:27.284Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Transistor",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A transistor can act as an electrically controlled switch (claim, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Transistor",
+        "quote": "It can also be used as an electrically controlled switch"
+      },
+      {
+        "claim": "Voltage/current on one pair of terminals controls current through another pair (why, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Transistor",
+        "quote": "A voltage or current applied to one pair of the transistor's terminals controls the current through another pair of terminals."
+      },
+      {
+        "claim": "The transistor was invented in 1947",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Transistor",
+        "quote": "The first working device was a point-contact transistor invented in 1947 by physicists John Bardeen"
+      },
+      {
+        "claim": "Title: a transistor is a solid-state switch",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Transistor",
+        "quote": "Solid-state electrically operated switch also used as an amplifier"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Framing effect",
+    "angle": "The Asian disease problem"
+  },
+  "created_at": "2026-10-27T06:06:56.027Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0054",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "Same lives, different words",
+    "body": {
+      "question": "A deadly disease threatens 600 people. Treatment A: 200 people will be saved. Treatment B: a 33% chance that all 600 are saved, a 66% chance that no one is. Which did most people choose?",
+      "options": [
+        "Treatment A",
+        "Treatment B",
+        "They split evenly"
+      ],
+      "answer": 0,
+      "reveal": "72% chose Treatment A. But when the same outcomes were framed as deaths (A: 400 people will die; B: a 33% chance no one dies, a 66% chance all 600 die), 78% chose B. Same facts, flipped choice: the framing changed the decision."
+    },
+    "probes": [
+      {
+        "id": "mind-0054-p1",
+        "kind": "mcq",
+        "question": "When the options were framed as deaths instead of lives saved, which treatment did most people pick?",
+        "options": [
+          "Treatment A",
+          "Treatment B",
+          "Neither",
+          "Both equally"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0054-p2",
+        "kind": "tf",
+        "question": "True or false: in the Asian disease problem, the two framings described different outcomes.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Framing effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Glass-of-water.jpg shows a glass of water, the classic half full or half empty question",
+    "keywords": [
+      "glass of water",
+      "half full",
+      "half empty",
+      "glass"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.124Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Deadly disease threatens 600 people; two treatments",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+        "quote": "Participants were asked to choose between two treatments for 600 people affected by a deadly disease."
+      },
+      {
+        "claim": "Gain framing: A saves 200; B 33% chance of saving all 600, 66% chance of saving no one",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+        "quote": "A 33% chance of saving all 600 people, 66% possibility of saving no one."
+      },
+      {
+        "claim": "72% chose Treatment A under the lives-saved framing",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+        "quote": "Treatment A was chosen by 72% of participants when it was presented with positive framing (\"saves 200 lives\")"
+      },
+      {
+        "claim": "Loss framing: A means 400 die",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+        "quote": "Treatment A was predicted to result in 400 deaths"
+      },
+      {
+        "claim": "Loss framing: B 33% chance no one dies, 66% chance everyone dies",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+        "quote": "treatment B had a 33% chance that no one would die but a 66% chance that everyone would die"
+      },
+      {
+        "claim": "When framed as deaths, 78% chose Treatment B (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+        "quote": "When the question was negatively framed, the result reversed, and 78% of participants chose Treatment B."
+      },
+      {
+        "claim": "Same outcomes, different framings, flipped choice (probe 2: framings did not describe different outcomes)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+        "quote": "Though the choices across the positive and negative framing conditions are logically equivalent, people in different conditions make different decisions."
+      },
+      {
+        "claim": "It is called the Asian disease problem (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+        "quote": "the classic question, the Asian disease problem"
+      },
+      {
+        "claim": "200 saved of 600 equals 400 die",
+        "verdict": "pass",
+        "note": "Verified by calculation: 600 - 200 = 400; 33% x 600 is about 200 expected saved; the page itself calls the framings logically equivalent."
+      }
+    ],
+    "overall": "pass"
+  }
+}

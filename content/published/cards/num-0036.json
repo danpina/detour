@@ -1,0 +1,56 @@
+{
+  "id": "num-0036",
+  "interest": "numbers",
+  "title": "The coin has no memory",
+  "probes": [
+    {
+      "id": "num-0036-p1",
+      "question": "A fair coin lands heads five times in a row. What is the chance the next toss is heads?",
+      "kind": "mcq",
+      "options": [
+        "Less than 1 in 2",
+        "Exactly 1 in 2",
+        "More than 1 in 2",
+        "1 in 32"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0036-p2",
+      "question": "Believing an independent outcome is \"due\" after a streak is called the ____ fallacy.",
+      "kind": "cloze",
+      "answer": "gambler's",
+      "accept": [
+        "gamblers",
+        "gambler",
+        "gambler's",
+        "Monte Carlo"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gambler's fallacy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gambler%27s_fallacy"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:06.997Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0036.webp",
+    "alt": "A coin tumbling in the air above a thumbs-up hand against a green studio background.",
+    "kind": "photo",
+    "credit": "ICMA Photos / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Coin_Toss_(3635981474).jpg"
+  },
+  "body": {
+    "claim": "After a run of heads, the next toss of a fair coin is still 50-50.",
+    "why": "Each toss is independent, so earlier results do not change the next one. Three heads in three tosses has a 1 in 8 chance before you start, but once two have landed, the third is still 1 in 2. Thinking tails is \"due\" is called the gambler's fallacy."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Why earthquakes happen",
+    "angle": "Locked faults store energy, then snap"
+  },
+  "created_at": "2026-10-26T20:30:07.380Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0056",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "An earthquake is rock snapping free",
+    "body": {
+      "claim": "An earthquake is stored energy in rock being released all at once.",
+      "why": "Tectonic plates typically move between zero and about 10 cm a year. Where plates meet, the two sides of a fault can lock on rough spots, so strain slowly builds. When the stress finally breaks through, the rock suddenly slides and the stored energy is released as seismic waves. This build-up and sudden release is called elastic rebound."
+    },
+    "probes": [
+      {
+        "id": "sci-0056-p1",
+        "kind": "mcq",
+        "question": "What builds up in the rock before an earthquake?",
+        "options": [
+          "Heat from the core",
+          "Pressure from the ocean",
+          "Stored elastic strain energy",
+          "Gas in cracks"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "sci-0056-p2",
+        "kind": "tf",
+        "question": "True or false: tectonic plates typically move between zero and about 10 cm a year.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Earthquake (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Earthquake"
+      },
+      {
+        "title": "Plate tectonics (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Plate_tectonics"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:San Andreas Fault, Carrizo Plain National Monument, California (21394880568).jpg shows the San Andreas Fault (CC BY-SA 2.0); File:Aerial-SanAndreas-CarrizoPlain.jpg alternative",
+    "keywords": [
+      "San Andreas Fault",
+      "Carrizo Plain",
+      "fault"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:06.578Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Earthquake",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Plate_tectonics",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "An earthquake is stored energy in rock released suddenly; stored elastic strain energy builds up (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Earthquake",
+        "quote": "This continues until the stress has risen sufficiently to break through the asperity, suddenly allowing sliding over the locked portion of the fault, releasing the stored energy ."
+      },
+      {
+        "claim": "Plates typically move between zero and about 10 cm a year (body and probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Plate_tectonics",
+        "quote": "The relative movement of the plates typically ranges from zero to 10 cm annually."
+      },
+      {
+        "claim": "Fault sides lock on rough spots so strain slowly builds",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Earthquake",
+        "quote": "Once the fault has locked, continued relative motion between the plates leads to increasing stress and, therefore, stored strain energy in the volume around the fault surface."
+      },
+      {
+        "claim": "Energy is released as seismic waves",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Earthquake",
+        "quote": "This energy is released as a combination of radiated elastic strain seismic waves , frictional heating of the fault surface, and cracking of the rock, thus causing an earthquake."
+      },
+      {
+        "claim": "Build-up and sudden release is called elastic rebound",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Earthquake",
+        "quote": "This process of gradual build-up of strain and stress punctuated by occasional sudden earthquake failure is referred to as the elastic-rebound theory ."
+      }
+    ],
+    "overall": "pass"
+  }
+}

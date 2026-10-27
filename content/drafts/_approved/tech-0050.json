@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Moore's law",
+    "angle": "Gordon Moore's 1965 forecast and its 1975 revision"
+  },
+  "created_at": "2026-10-26T20:28:21.550Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0050",
+    "interest": "tech",
+    "type": "guess_first",
+    "title": "Moore's wild extrapolation",
+    "body": {
+      "question": "In 1965 Gordon Moore noted that the number of components per chip had been doubling every year. In 1975 he revised his forecast. How often did he then expect the doubling?",
+      "options": [
+        "Every month",
+        "Every year, still",
+        "Every two years",
+        "Every ten years"
+      ],
+      "answer": 2,
+      "reveal": "In 1975 he revised it to a doubling every two years. Moore later described his 1965 prediction as a wild extrapolation. It is an observation about industry growth, not a law of physics, and it became known as a law because it kept holding."
+    },
+    "probes": [
+      {
+        "id": "tech-0050-p1",
+        "kind": "mcq",
+        "question": "In 1965, Gordon Moore noted the number of components per integrated circuit had been doubling every...",
+        "options": [
+          "Month",
+          "Year",
+          "Decade",
+          "Century"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0050-p2",
+        "kind": "tf",
+        "question": "True or false: Moore's law is a law of physics.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Moore's law (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Moore%27s_law"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Moore's Law Transistor Count 1970-2020.png (CC BY) is a log graph of transistor counts over time",
+    "keywords": [
+      "Moore's Law",
+      "transistor count",
+      "Moore's law chart",
+      "microchips transistor count"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.356Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Moore%27s_law",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1965 Moore noted components per chip had been doubling every year (question, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Moore%27s_law",
+        "quote": "in 1965 noted that the number of components per integrated circuit had been doubling every year"
+      },
+      {
+        "claim": "In 1975 he revised the forecast to doubling every two years (answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Moore%27s_law",
+        "quote": "In 1975, looking forward to the next decade, he revised the forecast to doubling every two years"
+      },
+      {
+        "claim": "Moore later called his 1965 prediction a wild extrapolation",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Moore%27s_law",
+        "quote": "I just did a wild extrapolation saying it's going to continue to double every year for the next 10 years."
+      },
+      {
+        "claim": "It is an observation, not a law of physics (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Moore%27s_law",
+        "quote": "describes an empirical relationship , not a scientific law"
+      },
+      {
+        "claim": "It became known as a law because it kept holding",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Moore%27s_law",
+        "quote": "nevertheless, his prediction has held since 1975 and has since become known as a law"
+      }
+    ],
+    "overall": "pass"
+  }
+}

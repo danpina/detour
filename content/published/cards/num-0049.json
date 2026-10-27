@@ -1,0 +1,50 @@
+{
+  "id": "num-0049",
+  "interest": "numbers",
+  "title": "A p-value is not the odds you are right",
+  "probes": [
+    {
+      "id": "num-0049-p1",
+      "question": "Which does a p-value actually describe?",
+      "kind": "mcq",
+      "options": [
+        "The chance your hypothesis is true",
+        "How unlikely such an extreme result would be if the null hypothesis were true",
+        "The size of the effect",
+        "The chance the result was a fluke"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0049-p2",
+      "question": "True or false: a p-value measures the importance of a result.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "P-value (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/P-value"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:53.954Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0049.webp",
+    "alt": "A histogram of random data forming a bell-shaped Gaussian curve with a smooth curve overlaid.",
+    "kind": "photo",
+    "credit": "Shishirdasika / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Normal_distribution_function.png"
+  },
+  "body": {
+    "claim": "A p-value is not the probability that your hypothesis is true, or that your result was a fluke.",
+    "why": "A p-value says how unlikely a result this extreme would be if the null hypothesis were true. In 2016 the American Statistical Association stated that p-values do not measure the probability that the studied hypothesis is true or that the data were produced by chance alone, nor the size or importance of an effect."
+  }
+}

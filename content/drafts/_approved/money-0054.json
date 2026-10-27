@@ -1,0 +1,135 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Gold standard and Bretton Woods",
+    "angle": "How the postwar currency system worked and ended"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0054",
+    "interest": "money",
+    "type": "story",
+    "title": "When the dollar was as good as gold",
+    "body": {
+      "panels": [
+        {
+          "text": "In July 1944, delegates met at the Mount Washington Hotel in Bretton Woods, New Hampshire, and signed an agreement on the last day."
+        },
+        {
+          "text": "Countries guaranteed to convert their currencies into US dollars. The US linked the dollar to gold at $35 an ounce, so foreign governments and central banks could swap dollars for gold."
+        },
+        {
+          "text": "The agreement also set up the International Monetary Fund to monitor exchange rates."
+        },
+        {
+          "text": "By 1970 the US had seen its gold coverage fall from 55% to 22%. On 15 August 1971 it ended the convertibility of the dollar to gold, which effectively brought the system to an end."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0054-p1",
+        "kind": "mcq",
+        "question": "Under the Bretton Woods system, the dollar was convertible to what for foreign governments and central banks?",
+        "options": [
+          "Silver",
+          "Oil",
+          "Gold bullion"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "money-0054-p2",
+        "kind": "tf",
+        "question": "True or false: on 15 August 1971 the United States ended the convertibility of the dollar to gold.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bretton Woods system (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bretton_Woods_system"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Mount Washington Hotel Bretton Woods October 2021 002.jpg shows the Mount Washington Hotel where the 1944 conference was held",
+    "keywords": [
+      "Mount Washington Hotel Bretton Woods",
+      "Bretton Woods New Hampshire hotel",
+      "Mount Washington Hotel"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.980Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "July 1944 delegates met at the Mount Washington Hotel in Bretton Woods, New Hampshire",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+        "quote": "delegates from 44 Allied countries gathered at the Mount Washington Hotel in Bretton Woods, New Hampshire"
+      },
+      {
+        "claim": "They signed the agreement on the last day",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+        "quote": "The delegates deliberated from 1 to 22 July 1944, and signed the Bretton Woods agreement on its final day."
+      },
+      {
+        "claim": "Countries guaranteed convertibility of their currencies into US dollars",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+        "quote": "required countries to guarantee convertibility of their currencies into U.S. dollars"
+      },
+      {
+        "claim": "The dollar was convertible to gold for foreign governments and central banks (probe p1: gold bullion)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+        "quote": "the dollar convertible to gold bullion for foreign governments and central banks"
+      },
+      {
+        "claim": "The US linked the dollar to gold at $35 an ounce",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+        "quote": "the fixed relationship of the dollar to gold ($35 an ounce)"
+      },
+      {
+        "claim": "The agreement set up the IMF to monitor exchange rates",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+        "quote": "established the International Monetary Fund (IMF) to monitor exchange rates"
+      },
+      {
+        "claim": "By 1970 US gold coverage fell from 55% to 22%",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+        "quote": "By 1970, the U.S. had seen its gold coverage deteriorate from 55% to 22%."
+      },
+      {
+        "claim": "On 15 August 1971 the US ended the convertibility of the dollar to gold (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+        "quote": "On 15 August 1971, the United States ended the convertibility of the US dollar to gold"
+      },
+      {
+        "claim": "That effectively brought the system to an end",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bretton_Woods_system",
+        "quote": "effectively bringing the Bretton Woods system to an end"
+      }
+    ],
+    "overall": "pass"
+  }
+}

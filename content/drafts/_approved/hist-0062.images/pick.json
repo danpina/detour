@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-22537580",
+  "alt": "A used Penny Black stamp, the first adhesive postage stamp, showing Queen Victoria in profile with the words Postage and One Penny",
+  "fits": true,
+  "note": "Penny Black scan, fits",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

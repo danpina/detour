@@ -1,0 +1,109 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "High-voltage transmission",
+    "angle": "Why high voltage saves energy"
+  },
+  "created_at": "2026-10-26T20:31:08.682Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0043",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Why power lines run at high voltage",
+    "body": {
+      "claim": "Long-distance power lines use very high voltage so that less energy is lost as heat.",
+      "why": "For the same power, higher voltage means lower current, and lower current means less heating loss. Joule's first law says energy losses are proportional to the square of the current, so halving the current cuts the loss in a given conductor by a factor of four. Transformers raise the AC voltage for transmission and lower it again for local use."
+    },
+    "probes": [
+      {
+        "id": "sci-0043-p1",
+        "kind": "mcq",
+        "question": "If the current in a power line is halved, the energy lost to the wire's resistance falls by a factor of...",
+        "options": [
+          "2",
+          "4",
+          "8",
+          "It does not change"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0043-p2",
+        "kind": "tf",
+        "question": "True or false: transformers can change AC voltage levels, stepping them up or down.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Electric power transmission (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Electric_power_transmission"
+      },
+      {
+        "title": "Transformer (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Transformer"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Transmission towers at sunset in East Texas.jpg and File:Raitersaich SK DSC 0028.jpg show pylons and power lines",
+    "keywords": [
+      "Electricity pylon",
+      "High-voltage power lines",
+      "transmission tower",
+      "transformer substation"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.588Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Electric_power_transmission",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Transformer",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Higher voltage means lower current and lower losses",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electric_power_transmission",
+        "quote": "higher voltages corresponds to lower currents and lower losses caused by such currents"
+      },
+      {
+        "claim": "Reduced current reduces heating losses; Joule's first law: losses proportional to current squared",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electric_power_transmission",
+        "quote": "Joule's first law states that energy losses are proportional to the square of the current."
+      },
+      {
+        "claim": "Halving current cuts loss by factor four (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electric_power_transmission",
+        "quote": "reducing the current by a factor of two lowers the energy lost to conductor resistance by a factor of four"
+      },
+      {
+        "claim": "Voltage raised for transmission, reduced for local distribution, using transformers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electric_power_transmission",
+        "quote": "the voltage is often increased for transmission, then reduced for local distribution"
+      },
+      {
+        "claim": "Transformers step AC voltage up or down (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Transformer",
+        "quote": "Transformers are used to change AC voltage levels, such transformers being termed step-up or step-down type"
+      }
+    ],
+    "overall": "pass"
+  }
+}

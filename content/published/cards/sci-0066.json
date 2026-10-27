@@ -1,0 +1,50 @@
+{
+  "id": "sci-0066",
+  "interest": "science",
+  "title": "Resistance is evolution in a hurry",
+  "probes": [
+    {
+      "id": "sci-0066-p1",
+      "question": "Why does misusing antibiotics make resistance more common?",
+      "kind": "mcq",
+      "options": [
+        "It makes bacteria decide to adapt",
+        "It kills susceptible microbes, leaving resistant ones to multiply",
+        "It makes the medicine weaker in the bottle",
+        "It turns viruses into bacteria"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0066-p2",
+      "question": "True or false: a gene for antibiotic resistance can spread from one microbe to another.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Antimicrobial resistance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:18.121Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0066.webp",
+    "alt": "A petri dish of agar with small white antibiotic discs and bacterial growth around them.",
+    "kind": "photo",
+    "credit": "Ajay Kumar Chaurasiya / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Antimicrobial_susceptibility_testing_(AST)_result_of_Leuconostoc.jpg"
+  },
+  "body": {
+    "claim": "Antibiotic resistance is natural selection playing out in bacteria.",
+    "why": "Some microbes already resist a drug. When an antibiotic is used, the susceptible ones die and the resistant ones survive and multiply, so over time most of the bacteria in an infection can be the resistant kind. A resistance gene can also spread to other microbes. Misuse and overuse of antimicrobials speed this up."
+  }
+}

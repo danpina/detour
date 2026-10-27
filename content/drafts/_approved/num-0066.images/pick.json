@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-4179325",
+  "alt": "Black-and-white photograph of the Trinity test fireball, a glowing dome just after the 1945 explosion.",
+  "fits": true,
+  "note": "Historical test photo (public domain), no people.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

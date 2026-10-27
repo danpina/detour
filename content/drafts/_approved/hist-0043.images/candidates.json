@@ -1,0 +1,98 @@
+{
+  "draft_id": "hist-0043",
+  "created_at": "2026-10-27T06:08:46.341Z",
+  "queries": [
+    "Berlin Wall Brandenburg Gate 1989 Berlin Wall graffiti",
+    "Berlin Wall",
+    "Berlin Wall Brandenburg Gate 1989"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-73619864",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Berlin Wall at the Brandenburg Gate (165458703).jpg",
+      "credit": "Thomas Roessler / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Berlin_Wall_at_the_Brandenburg_Gate_(165458703).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Berlin_Wall_at_the_Brandenburg_Gate_%28165458703%29.jpg/960px-Berlin_Wall_at_the_Brandenburg_Gate_%28165458703%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1366,
+      "alt_suggestion": "500px provided description: 2168110679 Jpg []",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-66284",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Sun Rays—Paula, Berlin",
+      "credit": "Alfred Stieglitz American, 1864–1946 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/66284",
+      "image_url": "https://www.artic.edu/iiif/2/c68643ad-3cc8-986a-8542-f10f47e6e7e8/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of gelatin silver print.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-1402275",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Berlinermauer.jpg",
+      "credit": "Noir / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Berlinermauer.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Berlinermauer.jpg/960px-Berlinermauer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 913,
+      "alt_suggestion": "This image of the Berlin Wall was taken in 1986 by Thierry Noir at Bethaniendamm in Berlin-Kreuzberg.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-57819",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Wall Clock",
+      "credit": "Case by Jean-Pierre Latz (born Cologne [now Germany], active France, 1691–1754) Clockwork by Francis Bayley (active Austrian Netherlands [now Belgium], mid-1700s) Case: Paris; clock: Ghent, Flanders, Austrian Netherlands (now Belgium) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/57819",
+      "image_url": "https://www.artic.edu/iiif/2/ce583554-7fac-705e-2130-ec94c1abb2e2/full/843,/0/default.jpg",
+      "alt_suggestion": "Golden-colored, ornate wall clock adorned with golden flourishes, a bent figure with an arrow at top.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-8877855",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Juggling on the Berlin Wall 1a.jpg",
+      "credit": "Juggling_on_the_Berlin_Wall_1.jpg: Yann Forget derivative work: Durova (talk) / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Juggling_on_the_Berlin_Wall_1a.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Juggling_on_the_Berlin_Wall_1a.jpg/960px-Juggling_on_the_Berlin_Wall_1a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1179,
+      "height": 1743,
+      "alt_suggestion": "Juggling on the Berlin Wall on 16. November 1989. The black, white and red graffitti banner on the wall below the juggler depicts a pair of marching hammers, an allusion to the film Pink Floyd The Wal",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-107816063",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Berlin Wall April 1989 56.JPG",
+      "credit": "Kuebi = Armin Kübelbeck / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Berlin_Wall_April_1989_56.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Berlin_Wall_April_1989_56.JPG/960px-Berlin_Wall_April_1989_56.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 3072,
+      "alt_suggestion": "Ein Abschnitt der Berliner Mauer mit dem Brandenburger Tor im April 1989 vom Westen aus fotografiert. Kamera: Canon A1. Aufgenommen auf Ilford FP 4 und entwickelt mit Sease III.",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Berlin Wall Brandenburg Gate 1989 Berlin Wall graffiti\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Berlin Wall\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Berlin Wall Brandenburg Gate 1989\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Mean versus median",
+    "angle": "Skew and the billionaire in the bar"
+  },
+  "created_at": "2026-10-27T06:06:56.043Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0045",
+    "interest": "numbers",
+    "type": "guess_first",
+    "title": "When the average misleads",
+    "body": {
+      "question": "Five friends each earn about the same. A billionaire joins them. Which number barely changes: the mean income or the median income?",
+      "options": [
+        "The mean",
+        "The median",
+        "Both change equally"
+      ],
+      "answer": 1,
+      "reveal": "The median. It is the middle value, so a few extreme values cannot drag it far, and increases in the largest incomes have no effect on it. The mean adds everything up and gets pulled hard. For 1, 2, 2, 2, 3, 14 the median is 2, while the mean is 4."
+    },
+    "probes": [
+      {
+        "id": "num-0045-p1",
+        "kind": "mcq",
+        "question": "Which summary is not skewed by a small number of extreme values?",
+        "options": [
+          "The mean",
+          "The total",
+          "The median",
+          "The range"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0045-p2",
+        "kind": "tf",
+        "question": "True or false: raising the very largest incomes in a group has no effect on the median income.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Median (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Median"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Bar in Bristol.jpg shows a bar interior",
+    "keywords": [
+      "bar interior",
+      "pub",
+      "bar counter"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.053Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Median",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Median is not skewed by a small proportion of extreme values, unlike the mean",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Median",
+        "quote": "is that it is not skewed by a small proportion of extreme values"
+      },
+      {
+        "claim": "Increases in the largest incomes have no effect on the median (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Median",
+        "quote": "increases in the largest incomes alone have no effect on the median"
+      },
+      {
+        "claim": "For 1,2,2,2,3,14 the median is 2",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Median",
+        "quote": "For example, consider the multiset 1, 2, 2, 2, 3, 14. The median is 2 in this case"
+      },
+      {
+        "claim": "Mean of 1,2,2,2,3,14 is 4",
+        "verdict": "pass",
+        "note": "Verified by calculation: (1+2+2+2+3+14)=24; 24/6=4."
+      },
+      {
+        "claim": "Probe 1: the range is not the unskewed summary; median is",
+        "verdict": "pass",
+        "note": "Verified by calculation: range 14-1=13 depends only on extremes; median 2 does not."
+      }
+    ],
+    "overall": "pass"
+  }
+}

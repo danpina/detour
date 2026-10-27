@@ -1,0 +1,77 @@
+{
+  "draft_id": "mind-0041",
+  "created_at": "2026-10-26T20:31:11.209Z",
+  "queries": [
+    "notebook planning planning session stationery notebook",
+    "notebook planning",
+    "notebook planning planning session"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-196431272",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Working on a planning session with stationery items, notebook, and colorful pencils on a wooden desk.jpg",
+      "credit": "Shixart1985 / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Working_on_a_planning_session_with_stationery_items,_notebook,_and_colorful_pencils_on_a_wooden_desk.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Working_on_a_planning_session_with_stationery_items%2C_notebook%2C_and_colorful_pencils_on_a_wooden_desk.jpg/960px-Working_on_a_planning_session_with_stationery_items%2C_notebook%2C_and_colorful_pencils_on_a_wooden_desk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6016,
+      "height": 4016,
+      "alt_suggestion": "A planner is open to a new week with blank pages on a wooden desk. Nearby are colored pencils, glasses, and ink, suggesting an organized workspace for creative tasks.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-2113",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Notebook",
+      "credit": "Germany / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/2113",
+      "image_url": "https://www.artic.edu/iiif/2/5f408d13-19a5-6a0e-4f93-6a99282c6030/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of leather binding; covers of velvet, embroidered with chenille and metal thread.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-163446018",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wikimedia Bangladesh Notebook (DSC00540).jpg",
+      "credit": "Moheen Reeyad / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wikimedia_Bangladesh_Notebook_(DSC00540).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Wikimedia_Bangladesh_Notebook_%28DSC00540%29.jpg/960px-Wikimedia_Bangladesh_Notebook_%28DSC00540%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1750,
+      "height": 2624,
+      "alt_suggestion": "Wikimedia Bangladesh Notebook, 2024",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-158110",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Page from a Notebook with Ritual Symbols",
+      "credit": "Mongolia / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/158110",
+      "image_url": "https://www.artic.edu/iiif/2/082213ea-4f06-7465-e241-dbae5cb13511/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of ink and opaque watercolor on paper.",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Bulletin of the State Normal School, Fredericksburg, Virginia, June, 1917 (1917) (14597203740).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"notebook planning planning session stationery notebook\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"notebook planning\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"notebook planning planning session\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

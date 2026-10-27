@@ -1,0 +1,60 @@
+{
+  "id": "num-0058",
+  "interest": "numbers",
+  "title": "Is the square root of 2 a fraction?",
+  "probes": [
+    {
+      "id": "num-0058-p1",
+      "question": "What is the first move in a proof by contradiction?",
+      "kind": "mcq",
+      "options": [
+        "Test many examples",
+        "Assume the statement is false",
+        "Draw a picture",
+        "Assume the statement is true and stop"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0058-p2",
+      "question": "True or false: if the square root of 2 equalled a/b, then a squared would equal 2 times b squared.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Square root of 2 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Square_root_of_2"
+    },
+    {
+      "title": "Proof by contradiction (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Proof_by_contradiction"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:10.114Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0058.webp",
+    "alt": "A Babylonian clay tablet (YBC 7289) with a square and its diagonals, inscribed with an ancient approximation of the square root of 2.",
+    "kind": "artwork",
+    "credit": "Urcia, A., Yale Peabody Museum of Natural History, http://peabody.yale.edu, http://hdl.handle.net/10079/8931zqj derivative work, user:Theodor Langhorne Franklin",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:YBC-7289-OBV-REV.jpg"
+  },
+  "body": {
+    "question": "Can the square root of 2 be written exactly as a fraction of two whole numbers?",
+    "options": [
+      "Yes, with big enough numbers",
+      "No, no such fraction exists",
+      "Only as a repeating decimal"
+    ],
+    "answer": 1,
+    "reveal": "No. Suppose it were a/b in lowest terms. Then a squared equals 2 times b squared, so a is even. Write a as 2k and the same steps show b is even too. But a fraction in lowest terms cannot have both even. That is proof by contradiction: assume the opposite and reach an absurdity."
+  }
+}

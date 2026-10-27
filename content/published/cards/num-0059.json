@@ -1,0 +1,54 @@
+{
+  "id": "num-0059",
+  "interest": "numbers",
+  "title": "Wet street, so it rained?",
+  "probes": [
+    {
+      "id": "num-0059-p1",
+      "question": "You know 'If P, then Q' and that P is true. What follows?",
+      "kind": "mcq",
+      "options": [
+        "Nothing",
+        "Q is true",
+        "Q is false",
+        "P and Q are the same"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0059-p2",
+      "question": "True or false: 'If an animal is a dog, it has four legs. My cat has four legs. So my cat is a dog' is valid reasoning.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Affirming the consequent (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Affirming_the_consequent"
+    },
+    {
+      "title": "Modus ponens (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Modus_ponens"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:12.251Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0059.webp",
+    "alt": "A wet cobblestone street at night glistening with reflected lights after rain.",
+    "kind": "photo",
+    "credit": "LudwigSebastianMicheler / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:After_rain_in_winter_evening,_wet_cobblestone_street_Steinweg_Marburg_(Germany)_with_bicycle_and_reflection_of_lights_in_a_puddle_2017-01-04.jpg"
+  },
+  "body": {
+    "claim": "From 'if P then Q' and 'Q', you cannot conclude P.",
+    "why": "'If P then Q' plus 'P' lets you conclude Q: that is valid reasoning (modus ponens). Flipping it is the fallacy called affirming the consequent. If an animal is a dog, it has four legs; my cat has four legs; so my cat is a dog. Many other causes can lead to the same Q."
+  }
+}

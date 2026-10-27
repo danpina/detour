@@ -1,0 +1,82 @@
+{
+  "draft_id": "tech-0048",
+  "created_at": "2026-10-26T20:29:01.067Z",
+  "queries": [
+    "GPS satellite constellation GPS satellites orbit Global Positioning System",
+    "GPS satellite constellation",
+    "GPS satellite constellation GPS satellites orbit"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-186554645",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Global Navigation Satellite System (GNSS) Satellite Fleet (SVS5627 - gnss 02 usa 00001).jpg",
+      "credit": "NASA's Scientific Visualization Studio - Science and Technology Corporation/Kel Elkins / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Global_Navigation_Satellite_System_(GNSS)_Satellite_Fleet_(SVS5627_-_gnss_02_usa_00001).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Global_Navigation_Satellite_System_%28GNSS%29_Satellite_Fleet_%28SVS5627_-_gnss_02_usa_00001%29.jpg/960px-Global_Navigation_Satellite_System_%28GNSS%29_Satellite_Fleet_%28SVS5627_-_gnss_02_usa_00001%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3840,
+      "height": 2160,
+      "alt_suggestion": "A 3D view of Earth surrounded by Global Positioning System (GPS) satellites, shown as dots and orbital paths representing the United States’ navigation satellite constellation.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA24905",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Tonga Eruption Atmospheric Wave",
+      "credit": "NASA/JPL-Caltech/GDGPS / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA24905",
+      "image_url": "https://images-assets.nasa.gov/image/PIA24905/PIA24905~medium.jpg",
+      "alt_suggestion": "Real-time data collected by the Global Differential Global Positioning System network, operated by NASA's Jet Propulsion Laboratory, shows the atmospheric signature of the Hunga Tonga Hunga Ha'apai vo",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-18582",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Dish with Mythical Bovine (Xiniu) amid Waves Viewing the Moon and Constellations",
+      "credit": "China / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/18582",
+      "image_url": "https://www.artic.edu/iiif/2/8d07c6c5-cc9b-d0c1-1dbf-a8159196df96/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of ding ware; porcelain with underglaze molded decoration; metal rim.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-145640096",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "GPS III.jpg",
+      "credit": "Lockheed Martin for the United States Space Force / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GPS_III.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/GPS_III.jpg/960px-GPS_III.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2400,
+      "height": 1600,
+      "alt_suggestion": "GPS III SV-01 sits in Lockheed Martin's GPS III Processing facility after its successful core mate. The satellite is currently part of the on-orbit GPS constellation.(Photo courtesy of Lockheed Martin",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-KSC-20180412-PH_CSH01_0032",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "ELaNa 19 / Venture Class CubeSats - CHOMPTT",
+      "credit": "NASA/Cory Huston / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-20180412-PH_CSH01_0032",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-20180412-PH_CSH01_0032/KSC-20180412-PH_CSH01_0032~medium.jpg",
+      "alt_suggestion": "The goal of the CHOMPTT mission is to demonstrate new technologies that could be used for navigation and satellite networking in deep space. For future explorers and colonizers of the Moon or Mars, na",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"GPS satellite constellation GPS satellites orbit Global Positioning System\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"GPS satellite constellation\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"GPS satellite constellation GPS satellites orbit\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

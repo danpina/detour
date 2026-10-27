@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0053",
+  "created_at": "2026-10-26T20:30:43.515Z",
+  "queries": [
+    "peppered moth Biston betularia moth",
+    "peppered moth",
+    "peppered moth Biston betularia"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-126736674",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Peppered moth (Biston betularia) female.jpg",
+      "credit": "Charles J. Sharp / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peppered_moth_(Biston_betularia)_female.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Peppered_moth_%28Biston_betularia%29_female.jpg/960px-Peppered_moth_%28Biston_betularia%29_female.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5018,
+      "height": 3345,
+      "alt_suggestion": "Peppered moth (Biston betularia) female, Kondor Tanya, near Kecskemét, Hungary",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-18642",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "A Moth, Butterflies, and Bees, from Diversae Insectorum...Figurae",
+      "credit": "Wenceslaus Hollar Bohemian, 1607-1677 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/18642",
+      "image_url": "https://www.artic.edu/iiif/2/bf5d9384-1d24-18c3-b05f-1517a9ed902b/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on ivory laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-147112944",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "(MHNT) Biston betularia - Lustenice Czech Republic - Male dorsal.jpg",
+      "credit": "Didier Descouens / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:(MHNT)_Biston_betularia_-_Lustenice_Czech_Republic_-_Male_dorsal.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/%28MHNT%29_Biston_betularia_-_Lustenice_Czech_Republic_-_Male_dorsal.jpg/960px-%28MHNT%29_Biston_betularia_-_Lustenice_Czech_Republic_-_Male_dorsal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6435,
+      "height": 4542,
+      "alt_suggestion": "Biston betularia - Dorsal side",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-148342",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Plate with an Image of a Moth",
+      "credit": "Huaxtec Isla de Sacrificios, Veracruz, Mexico / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/148342",
+      "image_url": "https://www.artic.edu/iiif/2/76f70cf7-43ea-f5e8-7913-76ee29e5d9b2/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of earthenware and pigment.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-147112960",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "(MHNT) Biston betularia - Lustenice Czech Republic - Male ventral.jpg",
+      "credit": "Didier Descouens / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:(MHNT)_Biston_betularia_-_Lustenice_Czech_Republic_-_Male_ventral.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/%28MHNT%29_Biston_betularia_-_Lustenice_Czech_Republic_-_Male_ventral.jpg/960px-%28MHNT%29_Biston_betularia_-_Lustenice_Czech_Republic_-_Male_ventral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6435,
+      "height": 4324,
+      "alt_suggestion": "Biston betularia - Ventral side",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"peppered moth Biston betularia moth\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"peppered moth\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"peppered moth Biston betularia\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

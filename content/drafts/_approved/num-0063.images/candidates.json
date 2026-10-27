@@ -1,0 +1,32 @@
+{
+  "draft_id": "num-0063",
+  "created_at": "2026-10-26T20:33:07.734Z",
+  "queries": [
+    "Plimpton 322 Pythagorean triple Babylonian tablet",
+    "Plimpton 322",
+    "Plimpton 322 Pythagorean triple"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-1170904",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Plimpton 322.jpg",
+      "credit": "image copied from http://www.math.ubc.ca/~cass/courses/m446-03/pl322/pl322.html / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Plimpton_322.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Plimpton_322.jpg/960px-Plimpton_322.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1246,
+      "height": 863,
+      "alt_suggestion": "w:Plimpton 322, Babylonian tablet listing pythagorean triples",
+      "file": "cand-1.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Plimpton 322 Pythagorean triple Babylonian tablet\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Plimpton 322\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Plimpton 322 Pythagorean triple\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

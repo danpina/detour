@@ -1,0 +1,50 @@
+{
+  "id": "hist-0036",
+  "interest": "history",
+  "title": "Tomatoes crossed an ocean",
+  "probes": [
+    {
+      "id": "hist-0036-p1",
+      "question": "Which of these crops came to the rest of the world from the Americas?",
+      "kind": "mcq",
+      "options": [
+        "Wheat",
+        "Rice",
+        "Potatoes",
+        "Sugar cane"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "hist-0036-p2",
+      "question": "True or false: the Columbian exchange moved plants and animals in only one direction.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Columbian exchange (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Columbian_exchange"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:00.101Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0036.webp",
+    "alt": "Map with coloured arrows showing crops, animals and diseases crossing the Atlantic between the Americas, Europe, Africa and Asia in the Columbian Exchange.",
+    "kind": "photo",
+    "credit": "Mark Christensen / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:BRI_Columbian_Exchange.jpg"
+  },
+  "body": {
+    "claim": "Potatoes, maize and tomatoes crossed the Atlantic after 1492 and changed what the world eats.",
+    "why": "After Columbus's voyage, crops and animals began moving between the hemispheres. American crops such as maize, potatoes, tomatoes, cassava and chili peppers became important worldwide, and helped food production and population grow in the Old World. Wheat, rice, sugar cane and livestock went the other way. The exchange also carried disease: Old World illnesses cut the Indigenous population of the Americas by 80 to 95 percent."
+  }
+}

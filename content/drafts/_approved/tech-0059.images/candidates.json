@@ -1,0 +1,86 @@
+{
+  "draft_id": "tech-0059",
+  "created_at": "2026-10-26T20:30:16.377Z",
+  "queries": [
+    "JPEG compression artifacts JPEG compression image compression",
+    "JPEG compression artifacts",
+    "JPEG compression artifacts JPEG compression"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-111840",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Julia set (highres 01).jpg",
+      "credit": "Solkoll / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Julia_set_(highres_01).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Julia_set_%28highres_01%29.jpg/960px-Julia_set_%28highres_01%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 2048,
+      "alt_suggestion": "Julia set, a fractal. C = [0.285, 0.01]. From a self-written tool I named \"Julia dream\" (after the Pink Floyd tune carrying the same title).",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-183283",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Image Design for a Poster, Wagenaar's Cantata 'The Shipwreck'",
+      "credit": "Jan Toorop Dutch, 1858-1928 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/183283",
+      "image_url": "https://www.artic.edu/iiif/2/e0a26a9a-80a8-dcd5-bba5-0fa007375721/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of zincograph in blue-black on yellow wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-29901624",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "JPEG compression Example.jpg",
+      "credit": "JJ Harrison, side-by-side comparison by Ibrahim.ID / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:JPEG_compression_Example.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/JPEG_compression_Example.jpg/960px-JPEG_compression_Example.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1000,
+      "height": 750,
+      "alt_suggestion": "Example of excessive JPEG compression Right: Sample of Loss of detail due to JPEG artifacts and enlargement Left: original image",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-69225969",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Visual impact of a jpeg compression on Photoshop.jpg",
+      "credit": "Basile Morin / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Visual_impact_of_a_jpeg_compression_on_Photoshop.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Visual_impact_of_a_jpeg_compression_on_Photoshop.jpg/960px-Visual_impact_of_a_jpeg_compression_on_Photoshop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1220,
+      "height": 920,
+      "alt_suggestion": "Visual impact of a jpeg compression on Photoshop on a picture of 4480x4480 pixels. This file of comparisons gives an idea about the quality of a jpeg image according to various rates of size and compr",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-22450519",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Puente Burate Example for JPG compression problems.png",
+      "credit": "Puente_Burate.jpg: Rjcastillo derivative work: Smial / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Puente_Burate_Example_for_JPG_compression_problems.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Puente_Burate_Example_for_JPG_compression_problems.png/960px-Puente_Burate_Example_for_JPG_compression_problems.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1104,
+      "height": 736,
+      "alt_suggestion": "El puente se encuentra entre las poblaciones de Boconó y Niquitao. El río que pasa por debajo es el Burate, el cual es un afluente del río Boconó.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"JPEG compression artifacts JPEG compression image compression\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"JPEG compression artifacts\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"JPEG compression artifacts JPEG compression\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

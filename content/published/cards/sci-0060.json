@@ -1,0 +1,50 @@
+{
+  "id": "sci-0060",
+  "interest": "science",
+  "title": "Why there are two tides a day",
+  "probes": [
+    {
+      "id": "sci-0060-p1",
+      "question": "Why do most coasts see about two high tides a day?",
+      "kind": "mcq",
+      "options": [
+        "The Moon orbits Earth twice a day",
+        "Earth rotates through two tidal bulges",
+        "The Sun heats the sea twice a day",
+        "Wind pushes water in and out"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0060-p2",
+      "question": "True or false: tides have the biggest range around new moon and full moon.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tide (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tide"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:05.666Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0060.webp",
+    "alt": "Low tide at the Bay of Fundy, with exposed rocky seabed beside a red-cliffed wooded shore.",
+    "kind": "photo",
+    "credit": "Lars Plougmann from United States / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Low_tide,_Bay_of_Fundy_(20214469966).jpg"
+  },
+  "body": {
+    "claim": "The oceans rise and fall about twice a day because the Moon's pull makes two tidal bulges.",
+    "why": "The Moon pulls differently on different parts of Earth. In Newton's simple model this makes a double bulge along the Earth-Moon line, a little bigger on the Moon's side. As Earth rotates, you pass through both bulges each day. Around new and full moon the Sun's pull adds to the Moon's, giving the biggest tides."
+  }
+}

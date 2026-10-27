@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Lottery odds in context",
+    "angle": "The jackpot compared with coin flips"
+  },
+  "created_at": "2026-10-27T06:06:56.063Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0047",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "Your chance at the Powerball jackpot",
+    "body": {
+      "question": "With one ticket, the Powerball jackpot odds are 1 in about how many?",
+      "unit": "1 in",
+      "min": 1000,
+      "max": 10000000000,
+      "scale": "log",
+      "answer": 292201338,
+      "reveal": "About 1 in 292 million. That is slightly less likely than flipping a fair coin 28 times and getting heads every time, which is about 1 in 268 million."
+    },
+    "probes": [
+      {
+        "id": "num-0047-p1",
+        "kind": "mcq",
+        "question": "About how many fair-coin flips in a row, all heads, are as unlikely as the jackpot?",
+        "options": [
+          "10",
+          "20",
+          "28",
+          "50"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0047-p2",
+        "kind": "cloze",
+        "question": "Powerball jackpot odds are about 1 in ____ million.",
+        "answer": "292",
+        "accept": [
+          "292.2",
+          "292 million"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Powerball (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Powerball"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Bingo balls in bingo drum.jpg shows numbered lottery balls in a drum",
+    "keywords": [
+      "lottery balls",
+      "bingo balls drum",
+      "lottery draw"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.064Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Powerball",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Powerball jackpot odds are 1 in 292,201,338 (about 1 in 292 million; probe cloze 292)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Powerball",
+        "quote": "resulting in jackpot odds of 1 in 292,201,338 per play"
+      },
+      {
+        "claim": "28 fair-coin heads in a row is 1 in 2^28 = 268,435,456 (about 1 in 268 million), slightly more likely than the jackpot (292,201,338)",
+        "verdict": "pass",
+        "note": "Verified by calculation: 2^28=268,435,456 < 292,201,338; ratio 1.089."
+      },
+      {
+        "claim": "Probe 1: 28 flips is the closest match",
+        "verdict": "pass",
+        "note": "Verified by calculation: 2^10=1,024; 2^20=1,048,576; 2^28=268,435,456; 2^50=1.1e15; only 28 is near 2.9e8."
+      }
+    ],
+    "overall": "pass"
+  }
+}

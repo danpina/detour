@@ -1,0 +1,88 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Public-key cryptography",
+    "angle": "A lock anyone can close"
+  },
+  "created_at": "2026-10-27T06:07:56.476Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0036",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "A lock anyone can close",
+    "body": {
+      "claim": "With public-key encryption, anyone can encrypt a message, but only the holder of the paired private key can decrypt it.",
+      "why": "Each person has a pair of keys. The public key can be openly distributed without compromising security, and the private key must stay secret. The security of the whole system depends on the private key never becoming known to anyone else."
+    },
+    "probes": [
+      {
+        "id": "tech-0036-p1",
+        "kind": "mcq",
+        "question": "Which key can decrypt a message encrypted with your public key?",
+        "options": [
+          "Your public key",
+          "Any public key",
+          "Your private key",
+          "The sender's key"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0036-p2",
+        "kind": "tf",
+        "question": "True or false: the public key must be kept secret.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Public-key cryptography (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Public-key_cryptography"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Solex 99 30 padlock with keys (DSCF2659).jpg shows a padlock with keys",
+    "keywords": [
+      "padlock",
+      "key",
+      "lock and key"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.718Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Public-key_cryptography",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Anyone can encrypt with a public key, but only the holder of the paired private key can decrypt (claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Public-key_cryptography",
+        "quote": "anyone can encrypt messages using a public key, but only the holder of the paired private key can decrypt such a message"
+      },
+      {
+        "claim": "The public key can be openly distributed (probe 2: must be secret is false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Public-key_cryptography",
+        "quote": "the public key can be openly distributed without compromising security"
+      },
+      {
+        "claim": "Security depends on the private key never becoming known to anyone else",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Public-key_cryptography",
+        "quote": "The security of the system depends on the secrecy of the private key, which must not become known to any other."
+      }
+    ],
+    "overall": "pass"
+  }
+}

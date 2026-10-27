@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-82727205",
+  "alt": "Two scuba divers explore a coral-covered shipwreck underwater, one holding a red light.",
+  "fits": true,
+  "note": "Divers; faces masked and small.",
+  "crop": {
+    "fx": 0.3,
+    "fy": 0.5,
+    "zoom": 1.4
+  }
+}

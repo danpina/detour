@@ -1,0 +1,121 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "HTTPS",
+    "angle": "Who vouches for the padlock"
+  },
+  "created_at": "2026-10-27T06:07:56.472Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0035",
+    "interest": "tech",
+    "type": "guess_first",
+    "title": "Who vouches for a website?",
+    "body": {
+      "question": "When you connect to a site over HTTPS, who signs the certificate that helps prove the site is who it says?",
+      "options": [
+        "The website signs it itself",
+        "A trusted third party signs it",
+        "Your internet provider signs it"
+      ],
+      "answer": 1,
+      "reveal": "HTTPS needs a trusted third party to sign the server's digital certificate. Your browser checks that the certificate matches the site's hostname and was signed by a trusted certificate authority. The connection is then encrypted against eavesdropping and tampering."
+    },
+    "probes": [
+      {
+        "id": "tech-0035-p1",
+        "kind": "mcq",
+        "question": "What does your browser check about a site's certificate?",
+        "options": [
+          "That the site has a nice design",
+          "That a trusted authority signed it and it matches the site name",
+          "That the site is free",
+          "That the site is fast"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0035-p2",
+        "kind": "tf",
+        "question": "True or false: HTTPS protects the communication from eavesdropping and tampering.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "HTTPS (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/HTTPS"
+      },
+      {
+        "title": "Transport Layer Security (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Transport_Layer_Security"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Solex 99 30 padlock with keys (DSCF2659).jpg shows a padlock with keys",
+    "keywords": [
+      "padlock",
+      "lock",
+      "brass lock"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.718Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/HTTPS",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Transport_Layer_Security",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "HTTPS needs a trusted third party to sign the server's digital certificate (answer 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/HTTPS",
+        "quote": "The authentication aspect of HTTPS requires a trusted third party to sign server-side digital certificates."
+      },
+      {
+        "claim": "Certificate is signed by a trusted certificate authority (drafter hint: 'usually a certificate authority')",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Transport_Layer_Security",
+        "quote": "TLS typically relies on a set of trusted third-party certificate authorities to establish the authenticity of certificates.",
+        "note": "Pages say trusted third party / trusted certificate authority; the card's wording 'trusted certificate authority' is supported."
+      },
+      {
+        "claim": "A valid certificate was signed by a trusted authority (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/HTTPS",
+        "quote": "The website provides a valid certificate, which means it was signed by a trusted authority."
+      },
+      {
+        "claim": "The certificate must match the site (hostname)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/HTTPS",
+        "quote": "The certificate correctly identifies the website"
+      },
+      {
+        "claim": "The browser checks the certificate (warns on invalid ones)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/HTTPS",
+        "quote": "Most browsers display a warning if they receive an invalid certificate."
+      },
+      {
+        "claim": "The connection is encrypted against eavesdropping and tampering (probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/HTTPS",
+        "quote": "the bidirectional block cipher encryption of communications between a client and server protects the communications against eavesdropping and tampering"
+      }
+    ],
+    "overall": "pass"
+  }
+}

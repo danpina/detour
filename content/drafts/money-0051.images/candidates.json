@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0051",
+  "created_at": "2026-10-27T06:08:52.757Z",
+  "queries": [
+    "Simon Kuznets Kuznets economist Simon Kuznets 1971",
+    "Simon Kuznets",
+    "Simon Kuznets Kuznets economist"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-69403520",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Volodymyr S. Pomomarenko on the Opening of the Startup-center at S. Kuznets KhNUE. 10.2013.jpg",
+      "credit": "Харківський національний економічний університет імені Семена Кузнеця / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Volodymyr_S._Pomomarenko_on_the_Opening_of_the_Startup-center_at_S._Kuznets_KhNUE._10.2013.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Volodymyr_S._Pomomarenko_on_the_Opening_of_the_Startup-center_at_S._Kuznets_KhNUE._10.2013.jpg/960px-Volodymyr_S._Pomomarenko_on_the_Opening_of_the_Startup-center_at_S._Kuznets_KhNUE._10.2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1812,
+      "height": 1200,
+      "alt_suggestion": "Ректор Харківського національного економічного університету імені Семена Кузнеця Володимир Пономаренко відкриває в університеті Startup-центр “First Capital”. 15 жовтня 2013 року.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-100",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Simon Vouet",
+      "credit": "Robert van Voerst (Flemish, 1597-1636/37) after Anthony van Dyck (Flemish, 1599-1641) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/100",
+      "image_url": "https://www.artic.edu/iiif/2/03c0fd45-3690-5fae-8023-4a3c16d3bfad/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving in black on cream laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-69403517",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Visit of Ambassador Alain Rémy to S. Kuznets KhNUE. 25.10.2015 (01).jpg",
+      "credit": "Харківський національний економічний університет імені Семена Кузнеця / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Visit_of_Ambassador_Alain_R%C3%A9my_to_S._Kuznets_KhNUE._25.10.2015_(01).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/The_Visit_of_Ambassador_Alain_R%C3%A9my_to_S._Kuznets_KhNUE._25.10.2015_%2801%29.jpg/960px-The_Visit_of_Ambassador_Alain_R%C3%A9my_to_S._Kuznets_KhNUE._25.10.2015_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3060,
+      "height": 2256,
+      "alt_suggestion": "Надзвичайний і Повноважний Посол Франції в Україні Ален Ремі вручає Ректору Харківського національного економічного університету імені Семена Кузнеця професору Володимиру Степановичу Пономаренку Орден",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-18170",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Saint Simon",
+      "credit": "Master F.V.B. Netherlandish, active 1475-1500 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/18170",
+      "image_url": "https://www.artic.edu/iiif/2/a8422449-3c69-f01f-d1f4-b2faea1a303c/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving on paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-69403521",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Volodymyr S. Pomomarenko’s Lecture for New Students of S. Kuznets KhNUE. 09.2017.jpg",
+      "credit": "Харківський національний економічний університет імені Семена Кузнеця / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Volodymyr_S._Pomomarenko%E2%80%99s_Lecture_for_New_Students_of_S._Kuznets_KhNUE._09.2017.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Volodymyr_S._Pomomarenko%E2%80%99s_Lecture_for_New_Students_of_S._Kuznets_KhNUE._09.2017.jpg/960px-Volodymyr_S._Pomomarenko%E2%80%99s_Lecture_for_New_Students_of_S._Kuznets_KhNUE._09.2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3696,
+      "height": 2448,
+      "alt_suggestion": "Лекція ректора Харківського національного економічного університету імені Семена Кузнеця Володимира Пономаренка для першокурсників університету. 1 вересня 2017 року.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Simon Kuznets Kuznets economist Simon Kuznets 1971\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Simon Kuznets\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Simon Kuznets Kuznets economist\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

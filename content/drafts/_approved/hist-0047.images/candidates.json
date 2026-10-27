@@ -1,0 +1,111 @@
+{
+  "draft_id": "hist-0047",
+  "created_at": "2026-10-27T06:09:31.042Z",
+  "queries": [
+    "smallpox vaccination smallpox poster smallpox eradication",
+    "smallpox vaccination",
+    "smallpox vaccination smallpox poster"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-367791",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Smallpox vaccine.jpg",
+      "credit": "Photo Credit: James Gathany Content Providers(s): CDC / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Smallpox_vaccine.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Smallpox_vaccine.jpg/960px-Smallpox_vaccine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3032,
+      "height": 2008,
+      "alt_suggestion": "Components of a smallpox vaccination kit including the diluent, a vial of Dryvax® smallpox vaccine, and a bifurcated needle. Vaccinia (smallpox) vaccine, derived from calf lymph, and currently license",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-13598",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Aristide Bruant",
+      "credit": "Henri de Toulouse-Lautrec French, 1864-1901 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/13598",
+      "image_url": "https://www.artic.edu/iiif/2/31d7fb60-ddd1-c78d-1cc1-eca25cb603c1/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color lithograph poster on tan wove paper, laid down on white wove japan tissue.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-117995762",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ota Chou - Smallpox Vaccination.jpg",
+      "credit": "Ōta Chōu / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ota_Chou_-_Smallpox_Vaccination.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Ota_Chou_-_Smallpox_Vaccination.jpg/960px-Ota_Chou_-_Smallpox_Vaccination.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1191,
+      "height": 1918,
+      "alt_suggestion": "Ota Chou - Smallpox Vaccination.jpg",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-92303",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Rev. Cotton Mather (Son of Increase) Using His Powerful Influence to Overcome the Prejudice Against Inoculation for Smallpox in Boston, 1721",
+      "credit": "Sally James Farnham American, 1869–1943 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/92303",
+      "image_url": "https://www.artic.edu/iiif/2/dc42e8b7-6cf3-e6c6-e727-829a16a00846/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of bronze.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-1848401",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Smallpox vaccine injection.jpg",
+      "credit": "Photo Credit: James Gathany Content Providers(s): CDC / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Smallpox_vaccine_injection.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Smallpox_vaccine_injection.jpg/960px-Smallpox_vaccine_injection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3008,
+      "height": 1960,
+      "alt_suggestion": "CDC Clinician demonstrates the use of a bifurcated needle during the 2002 Smallpox Vaccinator Workshop. In December 2002, CDC Clinicians trained state licensed vaccine administers how to deliver small",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-367819",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Poster for vaccination against smallpox.jpg",
+      "credit": "Unknown author / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Poster_for_vaccination_against_smallpox.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Poster_for_vaccination_against_smallpox.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 634,
+      "height": 995,
+      "alt_suggestion": "Poster for vaccination against smallpox.jpg",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Smallpox poster 1851 (MH12-5968-2) (38845684690).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Smallpox poster 1851 (MH12-5968-2) (38845684690).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"smallpox vaccination smallpox poster smallpox eradication\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"smallpox vaccination\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"smallpox vaccination smallpox poster\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

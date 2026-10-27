@@ -1,0 +1,110 @@
+{
+  "draft_id": "sci-0038",
+  "created_at": "2026-10-26T20:33:02.004Z",
+  "queries": [
+    "copper wire electrical wire copper cable",
+    "copper wire",
+    "copper wire electrical wire"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-11026143",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cable nut IP65.JPG",
+      "credit": "Dmitry G / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cable_nut_IP65.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Cable_nut_IP65.JPG/960px-Cable_nut_IP65.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3648,
+      "height": 2736,
+      "alt_suggestion": "Nut for outdoor wiring.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-1301117",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "1301117",
+      "credit": "EMMETT GIVEN / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/1301117",
+      "image_url": "https://images-assets.nasa.gov/image/1301117/1301117~medium.jpg",
+      "alt_suggestion": "EXPLODING WIRE GUN, BLDG 4205, WITH BACKING BLOCK, BARREL, COPPER RIBBON WITH WIRE",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-196463",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Bow Fibula (wire)",
+      "credit": "Greek; Thessaly / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196463",
+      "image_url": "https://www.artic.edu/iiif/2/ad2ff290-7de3-605b-40f5-58908617f606/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of bronze.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-62718856",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Industries of War - Electrical Apparatus - General - MANUFACTURE OF TELEPHONE CABLE; NATIONAL CONDUIT AND CABLE CO., HASTINGS ON HUDSON, New York. Copper department; continuous wire drawing machine - NARA - 31488145.jpg",
+      "credit": "U.S. National Archives and Records Administration / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Industries_of_War_-_Electrical_Apparatus_-_General_-_MANUFACTURE_OF_TELEPHONE_CABLE;_NATIONAL_CONDUIT_AND_CABLE_CO.,_HASTINGS_ON_HUDSON,_New_York._Copper_department;_continuous_wire_drawing_machine_-_NARA_-_31488145.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Industries_of_War_-_Electrical_Apparatus_-_General_-_MANUFACTURE_OF_TELEPHONE_CABLE%3B_NATIONAL_CONDUIT_AND_CABLE_CO.%2C_HASTINGS_ON_HUDSON%2C_New_York._Copper_department%3B_continuous_wire_drawing_machine_-_NARA_-_31488145.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 9890,
+      "height": 6600,
+      "alt_suggestion": "Scope and content: Photographer: National Conduit and Cable Co.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-jsc2020e040941",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "ExHAM-Antenna Metal Mesh",
+      "credit": "NGK Insulators, Ltd., Taiyo Wire Cloth Co., Ltd., Technosolver Corporation, Koyo Materica Corporation, JAXA.. / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2020e040941",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2020e040941/jsc2020e040941~small.jpg",
+      "alt_suggestion": "jsc2020e040941 (9/3/2018) --- Copper zirconium alloy wire being produced. The Exposure Experiment of Copper-Zirconium Antenna Metal Mesh to the Space Environment (ExHAM-Antenna Metal Mesh) investigati",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-64476215",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Electric guide 3×2.5 mm.jpg",
+      "credit": "Petar Milošević / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Electric_guide_3%C3%972.5_mm.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Electric_guide_3%C3%972.5_mm.jpg/960px-Electric_guide_3%C3%972.5_mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4504,
+      "height": 3232,
+      "alt_suggestion": "Electric guide (electric wire) 3×2.5 mm (diameter)",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-22588366",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Copper wire rod produced by LS Cable & System.jpg",
+      "credit": "Lsgeeks / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Copper_wire_rod_produced_by_LS_Cable_%26_System.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Copper_wire_rod_produced_by_LS_Cable_%26_System.jpg/960px-Copper_wire_rod_produced_by_LS_Cable_%26_System.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3264,
+      "height": 2448,
+      "alt_suggestion": "copper wire rod produced by LS Cable & System at their copper wire rod factory in Gumi, South Korea",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"copper wire electrical wire copper cable\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"copper wire\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"copper wire electrical wire\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

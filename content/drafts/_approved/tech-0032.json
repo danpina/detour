@@ -1,0 +1,99 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "IPv4",
+    "angle": "How many addresses fit in 32 bits"
+  },
+  "created_at": "2026-10-27T06:07:56.466Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0032",
+    "interest": "tech",
+    "type": "estimate",
+    "title": "How many IPv4 addresses are there?",
+    "body": {
+      "question": "Every device on the internet needs an address. IPv4 uses 32 bits for it. About how many unique addresses is that?",
+      "unit": "billion addresses",
+      "min": 0.01,
+      "max": 1000,
+      "scale": "log",
+      "answer": 4.29,
+      "reveal": "32 bits gives 4,294,967,296 unique addresses, about 4.3 billion, and large blocks of them are reserved for special purposes. That was not enough for the global internet."
+    },
+    "probes": [
+      {
+        "id": "tech-0032-p1",
+        "kind": "mcq",
+        "question": "About how many unique addresses does IPv4's 32-bit address space provide?",
+        "options": [
+          "430 million",
+          "4.3 billion",
+          "43 billion",
+          "430 billion"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0032-p2",
+        "kind": "tf",
+        "question": "True or false: IPv4 addresses are 32 bits long.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "IPv4 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/IPv4"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Network cabling or a server room aisle",
+    "keywords": [
+      "network cables",
+      "data center",
+      "server room",
+      "router"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.715Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/IPv4",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "IPv4 uses a 32-bit address space providing 4,294,967,296 addresses (probe 2: 32 bits)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv4",
+        "quote": "IPv4 uses a 32-bit address space which provides 4,294,967,296"
+      },
+      {
+        "claim": "2^32 = 4,294,967,296, about 4.29 or 4.3 billion (answer 4.29, reveal, probe 1 option 4.3 billion)",
+        "verdict": "pass",
+        "note": "Verified by calculation: 2^32 = 4,294,967,296 = 4.29 billion"
+      },
+      {
+        "claim": "Large blocks of the addresses are reserved for special purposes",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv4",
+        "quote": "but large blocks are reserved for special networking purposes"
+      },
+      {
+        "claim": "That was not enough for the global internet",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/IPv4",
+        "quote": "This quantity of unique addresses is not large enough to meet the needs of the global Internet"
+      }
+    ],
+    "overall": "pass"
+  }
+}

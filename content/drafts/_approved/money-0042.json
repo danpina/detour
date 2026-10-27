@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "What a stock is",
+    "angle": "A share as fractional ownership"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0042",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "A share is a slice of a company",
+    "body": {
+      "claim": "One share of stock means fractional ownership of the company.",
+      "why": "A share typically entitles its holder to a matching fraction of the company's earnings, of what is left if assets are sold off after debts are paid, or of voting power. These are split in proportion to the shares each person owns. Not all stock is equal, though, because a company can issue different classes with different rules."
+    },
+    "probes": [
+      {
+        "id": "money-0042-p1",
+        "kind": "mcq",
+        "question": "What does a single share of stock represent?",
+        "options": [
+          "A loan to the company",
+          "Fractional ownership of the company",
+          "A guaranteed monthly payment"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0042-p2",
+        "kind": "tf",
+        "question": "True or false: all stock is always identical, whatever the class.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Stock (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Stock"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Aktie Chicago Burlington.jpg shows an 1885 railroad stock certificate",
+    "keywords": [
+      "stock certificate",
+      "share certificate",
+      "Chicago Burlington Quincy",
+      "railroad stock"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.833Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Stock",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "One share means fractional ownership of the company (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stock",
+        "quote": "A single share of the stock means fractional ownership of the corporation in proportion to the total number of shares."
+      },
+      {
+        "claim": "Entitles holder to a fraction of earnings, liquidation proceeds or voting power",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stock",
+        "quote": "This typically entitles the shareholder (stockholder) to that fraction of the company's earnings"
+      },
+      {
+        "claim": "Divided in proportion to shares owned",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stock",
+        "quote": "in proportion to the number of like shares each stockholder owns"
+      },
+      {
+        "claim": "Not all stock is equal; classes differ (probe 2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Stock",
+        "quote": "Not all stock is necessarily equal, as certain classes of stock may be issued"
+      }
+    ],
+    "overall": "pass"
+  }
+}

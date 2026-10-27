@@ -1,0 +1,99 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Electromagnets",
+    "angle": "Currents make magnetic fields"
+  },
+  "created_at": "2026-10-26T20:31:08.682Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0041",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "A magnet you can switch off",
+    "body": {
+      "claim": "An electromagnet is a magnet whose field is produced by an electric current, so the field disappears when the current is turned off.",
+      "why": "Hans Christian Ørsted discovered in 1820 that electric currents create magnetic fields. Wrapping the wire into a coil around an iron core makes a more powerful magnet, and the strength of the field is proportional to the current through the winding."
+    },
+    "probes": [
+      {
+        "id": "sci-0041-p1",
+        "kind": "mcq",
+        "question": "What happens to an electromagnet's field when the current is turned off?",
+        "options": [
+          "It doubles",
+          "It stays the same",
+          "It disappears"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "sci-0041-p2",
+        "kind": "tf",
+        "question": "True or false: an iron core makes an electromagnet's field more powerful.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Electromagnet (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Electromagnet"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Electromagnet-with-9V-battery.jpg shows a homemade electromagnet; File:Westinghouse surgical electromagnet 1915.jpg an old one",
+    "keywords": [
+      "electromagnet",
+      "electromagnet scrap",
+      "solenoid"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.587Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Electromagnet",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Electromagnet's field is produced by an electric current",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electromagnet",
+        "quote": "the magnetic field is produced by an electric current"
+      },
+      {
+        "claim": "Field disappears when current is turned off (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electromagnet",
+        "quote": "The magnetic field disappears when the current is turned off."
+      },
+      {
+        "claim": "Orsted discovered in 1820 that currents create magnetic fields",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electromagnet",
+        "quote": "Danish scientist Hans Christian Ørsted discovered in 1820 that electric currents create magnetic fields."
+      },
+      {
+        "claim": "Coil around iron core makes a more powerful magnet (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electromagnet",
+        "quote": "the magnetic core concentrates the magnetic flux and makes a more powerful magnet"
+      },
+      {
+        "claim": "Field strength proportional to current through the winding",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electromagnet",
+        "quote": "The strength of the magnetic field generated is proportional to the amount of current through the winding."
+      }
+    ],
+    "overall": "pass"
+  }
+}

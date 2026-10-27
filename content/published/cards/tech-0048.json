@@ -1,0 +1,56 @@
+{
+  "id": "tech-0048",
+  "interest": "tech",
+  "title": "GPS needs four satellites, not three",
+  "probes": [
+    {
+      "id": "tech-0048-p1",
+      "question": "Why does a GPS receiver normally need four satellites?",
+      "kind": "mcq",
+      "options": [
+        "To double-check the weather",
+        "It solves for three position coordinates and its own clock error",
+        "Each satellite covers one compass direction",
+        "Four is the most a phone can hear"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0048-p2",
+      "question": "In the simplified picture, the spheres around three satellites typically intersect at how many points?",
+      "kind": "mcq",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Global Positioning System (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Global_Positioning_System"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:15.474Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0048.webp",
+    "alt": "Diagram of GPS satellite orbits drawn as teal rings around a small Earth against black space.",
+    "kind": "photo",
+    "credit": "NASA's Scientific Visualization Studio - Science and Technology Corporation/Kel Elkins / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Global_Navigation_Satellite_System_(GNSS)_Satellite_Fleet_(SVS5627_-_gnss_02_usa_00001).jpg"
+  },
+  "body": {
+    "claim": "A GPS receiver normally needs signals from at least four satellites to find where you are.",
+    "why": "Each satellite broadcasts its position and the time. The receiver turns each signal delay into a range, using the speed of light. Three satellites give three coordinates, but the receiver also has to solve for the error in its own clock, so there are four unknowns."
+  }
+}

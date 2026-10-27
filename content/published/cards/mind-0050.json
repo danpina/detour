@@ -1,0 +1,62 @@
+{
+  "id": "mind-0050",
+  "interest": "mind",
+  "title": "The number rule nobody guessed",
+  "probes": [
+    {
+      "id": "mind-0050-p1",
+      "question": "What was the real rule in Wason's number task?",
+      "kind": "mcq",
+      "options": [
+        "Numbers going up by two",
+        "Any ascending sequence",
+        "Only even numbers",
+        "Each number double the last"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0050-p2",
+      "question": "True or false: confirmation bias mainly comes from people deliberately deceiving others.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Confirmation bias (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Confirmation_bias"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:12.206Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0050.webp",
+    "alt": "A magnifying glass held over an old German postage stamp, with other stamps and letters blurred around it.",
+    "kind": "photo",
+    "credit": "Heptagon / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Magnifying_glass2.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "1960. Psychologist Peter Wason shows people the numbers 2, 4, 6 and says they fit a secret rule. Their job is to find it by proposing other triples."
+      },
+      {
+        "text": "Each time, the experimenter says yes or no. People tend to test an idea in a one-sided way, looking for evidence that fits the guess they already hold."
+      },
+      {
+        "text": "The real rule was simply any ascending sequence. People often announced rules far more specific than that, and had great difficulty finding the right one."
+      },
+      {
+        "text": "That is confirmation bias: we search for, interpret and remember information in ways that support what we already believe. It runs on automatic strategies, not deliberate cheating."
+      }
+    ]
+  }
+}

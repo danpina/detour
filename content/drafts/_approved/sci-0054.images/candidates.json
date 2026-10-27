@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0054",
+  "created_at": "2026-10-26T20:30:49.841Z",
+  "queries": [
+    "DNA double helix double helix DNA",
+    "DNA double helix",
+    "DNA double helix double helix"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-7925094",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "DNA Double Helix by NHGRI.jpg",
+      "credit": "National Human Genome Research Institute / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:DNA_Double_Helix_by_NHGRI.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/DNA_Double_Helix_by_NHGRI.jpg/960px-DNA_Double_Helix_by_NHGRI.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1192,
+      "height": 897,
+      "alt_suggestion": "DNA Double Helix",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-0300202",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Biotechnology",
+      "credit": "MSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/0300202",
+      "image_url": "https://images-assets.nasa.gov/image/0300202/0300202~medium.jpg",
+      "alt_suggestion": "The blueprint of life, DNA's double helix is found in the cells of everything from bacteria to astronauts. Exposure to radiation(depicted at right) such as X-rays (upper) or heavy ion particles (lower",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-70",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Double Bass Player",
+      "credit": "Alphonse Legros French, 1837-1911 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/70",
+      "image_url": "https://www.artic.edu/iiif/2/467b538e-158b-7422-7f5a-0b87d325648b/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on ivory japanese tissue.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-102928157",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "DNA Double Helix 1953 'The secret of life' plaque Cambridge.jpg",
+      "credit": "Spudgun67 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:DNA_Double_Helix_1953_%27The_secret_of_life%27_plaque_Cambridge.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/DNA_Double_Helix_1953_%27The_secret_of_life%27_plaque_Cambridge.jpg/960px-DNA_Double_Helix_1953_%27The_secret_of_life%27_plaque_Cambridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 4000,
+      "alt_suggestion": "DNA Double Helix 1953 'The secret of life'. For decades the Eagle was the local pub for scientists from the nearby Cavendish Laboratory. It was here on February 28th 1953 that Francis Crick and James ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-6430",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Panel (Dress Fabric)",
+      "credit": "Iran / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/6430",
+      "image_url": "https://www.artic.edu/iiif/2/a96087ff-ea2e-924b-c6ec-7f279a2c140b/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of silk, 2:1 twill weave, with complementary weft plain weave double cloth.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"DNA double helix double helix DNA\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"DNA double helix\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"DNA double helix double helix\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

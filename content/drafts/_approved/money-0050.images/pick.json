@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-131154859",
+ "alt": "A colorized oil portrait of the economist David Ricardo, seated in dark clothes with a white cravat and papers in his hand.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (CC0).",
+ "crop": {
+  "fx": 0.45,
+  "fy": 0.3,
+  "zoom": 1
+ }
+}

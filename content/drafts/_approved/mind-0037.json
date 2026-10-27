@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Circadian rhythm",
+    "angle": "The master clock and light"
+  },
+  "created_at": "2026-10-26T20:29:12.577Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0037",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Your body clock runs on light",
+    "body": {
+      "claim": "A tiny pair of cell clusters in your brain keeps your daily rhythm, and light is its main reset signal.",
+      "why": "In mammals the primary circadian clock is the suprachiasmatic nucleus (SCN), in the hypothalamus. It receives information about illumination through the eyes, and light is its primary synchronizer. SCN cells removed and cultured keep their own rhythm."
+    },
+    "probes": [
+      {
+        "id": "mind-0037-p1",
+        "kind": "mcq",
+        "question": "What is the main signal that keeps the body clock in sync?",
+        "options": [
+          "Mealtimes",
+          "Background noise",
+          "Light",
+          "Room temperature"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "mind-0037-p2",
+        "kind": "tf",
+        "question": "True or false: SCN cells removed and cultured keep their own rhythm without outside cues.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Circadian rhythm (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Circadian_rhythm"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Sunrise or morning light, e.g. File:Morning sky shortly after sunrise, High Desert, California.jpg",
+    "keywords": [
+      "sunrise morning sky",
+      "sunrise",
+      "morning light",
+      "dawn"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:07:59.565Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Circadian_rhythm",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Primary circadian clock in mammals is the SCN in the hypothalamus, a pair of cell groups",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Circadian_rhythm",
+        "quote": "The primary circadian clock in mammals is located in the suprachiasmatic nucleus (or nuclei) (SCN), a pair of distinct groups of cells located in the hypothalamus"
+      },
+      {
+        "claim": "SCN receives information about illumination through the eyes",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Circadian_rhythm",
+        "quote": "The SCN receives information about illumination through the eyes."
+      },
+      {
+        "claim": "Light is the primary synchronizer (claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Circadian_rhythm",
+        "quote": "light is the primary synchronizer of the circadian rhythm through the suprachiasmatic nucleus (SCN)"
+      },
+      {
+        "claim": "SCN cells removed and cultured keep their own rhythm (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Circadian_rhythm",
+        "quote": "If cells from the SCN are removed and cultured, they maintain their own rhythm in the absence of external cues."
+      }
+    ],
+    "overall": "pass"
+  }
+}

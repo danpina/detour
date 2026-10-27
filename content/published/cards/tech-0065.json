@@ -1,0 +1,62 @@
+{
+  "id": "tech-0065",
+  "interest": "tech",
+  "title": "The program that translates programs",
+  "probes": [
+    {
+      "id": "tech-0065-p1",
+      "question": "What does a compiler do?",
+      "kind": "mcq",
+      "options": [
+        "Runs code only on the internet",
+        "Deletes unused files",
+        "Translates source code into a lower-level language such as machine code",
+        "Draws the user interface"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "tech-0065-p2",
+      "question": "True or false: Grace Hopper's team coined the term \"compiler\" in connection with the A-0 language.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Compiler (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Compiler"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:28:41.447Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0065.webp",
+    "alt": "A stack of Fortran punch cards with typed program text and rows of numbered punch positions.",
+    "kind": "photo",
+    "credit": "Tangopaso. / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Punch_card_with_Fortran_-_20091211.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "People write code in high-level languages, such as FORTRAN or COBOL."
+      },
+      {
+        "text": "A compiler translates the source code from a high-level language into a low-level one, such as assembly, object code or machine code."
+      },
+      {
+        "text": "The output is an executable program."
+      },
+      {
+        "text": "In May 1952, Grace Hopper's team at Remington Rand wrote the compiler for the A-0 language and coined the term. It worked more like a loader or linker than a modern compiler."
+      }
+    ]
+  }
+}

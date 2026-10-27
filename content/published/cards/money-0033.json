@@ -1,0 +1,68 @@
+{
+  "id": "money-0033",
+  "interest": "money",
+  "title": "The loan that starts out mostly interest",
+  "probes": [
+    {
+      "id": "money-0033-p1",
+      "question": "In the early years of a long fixed-payment mortgage, most of each payment goes to...",
+      "kind": "mcq",
+      "options": [
+        "Principal",
+        "Interest",
+        "Fees"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0033-p2",
+      "question": "True or false: on an amortizing loan, the total amount of each payment stays the same while the split between interest and principal changes.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amortization calculator (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Amortization_calculator"
+    },
+    {
+      "title": "Mortgage loan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mortgage_loan"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:19:25.165Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0033.webp",
+    "alt": "A row of colourful Victorian-style houses on a street under a blue sky, with a few small distant pedestrians and parked cars.",
+    "kind": "photo",
+    "credit": "Jakob Owens jakobowens1 / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Row_of_houses_trees_and_cars_(Unsplash).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Take a $200,000 mortgage at 6% over 30 years. The fixed payment comes to about $1,199 a month. These are example numbers, not a quote."
+      },
+      {
+        "text": "Each payment has two parts: interest on what you still owe, and principal that pays the loan down. The payment stays the same, but the split between the two changes."
+      },
+      {
+        "text": "In month one, the interest is $1,000 and only about $199 goes to principal."
+      },
+      {
+        "text": "The balance shrinks slowly at first. After 10 years, a third of the way through, roughly $167,000 is still owed."
+      },
+      {
+        "text": "The twist: over all 360 payments you would pay about $431,700, of which about $231,700 is interest. Later payments are almost all principal."
+      }
+    ]
+  }
+}

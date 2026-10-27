@@ -1,0 +1,60 @@
+{
+  "draft_id": "hist-0053",
+  "created_at": "2026-10-26T20:32:49.745Z",
+  "queries": [
+    "Harrison H4 clockwork Harrison H4 Royal Observatory Greenwich Harrison marine chronometer",
+    "Harrison H4 clockwork",
+    "Harrison H4 clockwork Harrison H4 Royal Observatory Greenwich"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-39623290",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Harrison H4 clockwork 2.jpg",
+      "credit": "Photograph by Mike Peel (www.mikepeel.net). / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Harrison_H4_clockwork_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Harrison_H4_clockwork_2.jpg/960px-Harrison_H4_clockwork_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5184,
+      "height": 3456,
+      "alt_suggestion": "Harrison H4 clockwork, at the Royal Observatory, Greenwich, during the National Maritime Museum editathon.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-39623296",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Harrison H4 clockwork 3.jpg",
+      "credit": "Photograph by Mike Peel (www.mikepeel.net). / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Harrison_H4_clockwork_3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Harrison_H4_clockwork_3.jpg/960px-Harrison_H4_clockwork_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5184,
+      "height": 3456,
+      "alt_suggestion": "Harrison H4 clockwork, at the Royal Observatory, Greenwich, during the National Maritime Museum editathon.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-39623280",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Harrison H4 clockwork 1.jpg",
+      "credit": "Photograph by Mike Peel (www.mikepeel.net). / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Harrison_H4_clockwork_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Harrison_H4_clockwork_1.jpg/960px-Harrison_H4_clockwork_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5184,
+      "height": 3456,
+      "alt_suggestion": "Harrison H4 clockwork, at the Royal Observatory, Greenwich, during the National Maritime Museum editathon.",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Harrison H4 clockwork Harrison H4 Royal Observatory Greenwich Harrison marine chronometer\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Harrison H4 clockwork\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Harrison H4 clockwork Harrison H4 Royal Observatory Greenwich\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

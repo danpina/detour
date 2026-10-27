@@ -1,0 +1,93 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Implementation intentions",
+    "angle": "If-then plans"
+  },
+  "created_at": "2026-10-26T20:29:12.579Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0041",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "If this happens, I'll do that",
+    "body": {
+      "claim": "A plan shaped like 'if X happens, I will do Y' can make you more likely to reach a goal.",
+      "why": "Psychologist Peter Gollwitzer introduced these 'implementation intentions' in 1999. A goal says what you want. An if-then plan adds the when, where and how, linking a future situation to a specific action. Studies show a higher probability of successful goal attainment."
+    },
+    "probes": [
+      {
+        "id": "mind-0041-p1",
+        "kind": "cloze",
+        "question": "An if-then plan links a future ____ to a specific action.",
+        "answer": "situation",
+        "accept": [
+          "cue",
+          "moment"
+        ]
+      },
+      {
+        "id": "mind-0041-p2",
+        "kind": "tf",
+        "question": "True or false: a goal intention ('I want to reach X') is more specific than an if-then plan.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Implementation intention (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Implementation_intention"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Working on a planning session with stationery items, notebook, and colorful pencils on a wooden desk.jpg shows a planning session with a notebook",
+    "keywords": [
+      "notebook planning",
+      "planning session",
+      "stationery notebook"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:07:59.832Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Implementation_intention",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Gollwitzer introduced implementation intentions in 1999",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Implementation_intention",
+        "quote": "The concept of implementation intentions was introduced in 1999 by psychologist Peter Gollwitzer ."
+      },
+      {
+        "claim": "Studies show higher probability of successful goal attainment (claim, why)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Implementation_intention",
+        "quote": "the use of implementation intentions can result in a higher probability of successful goal attainment",
+        "note": "Page: 'can result in'; card's 'can make you more likely' is hedged correctly."
+      },
+      {
+        "claim": "If-then plan specifies when, where and how; links future situation to specific action (why, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Implementation_intention",
+        "quote": "It is subordinate to goal intentions as it specifies the when , where and how portions of goal-directed behavior."
+      },
+      {
+        "claim": "Goal intention ('I want to reach X') is less specific than an if-then plan (probe 2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Implementation_intention",
+        "quote": "Implementation intentions on the other hand are much more specific and seek to connect a future critical situation"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "mind-0055",
+  "interest": "mind",
+  "title": "One good trait casts a halo",
+  "probes": [
+    {
+      "id": "mind-0055-p1",
+      "question": "What does the halo effect describe?",
+      "kind": "mcq",
+      "options": [
+        "Forgetting a person's faults",
+        "A good impression in one area colouring other judgments",
+        "Judging people only by their words",
+        "Disliking people who are successful"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0055-p2",
+      "question": "True or false: the halo effect only works in a positive direction.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Halo effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Halo_effect"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:36.130Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0055.webp",
+    "alt": "A medieval Italian panel painting of the Madonna and Child enthroned, surrounded by angels and saints with gold halos.",
+    "kind": "photo",
+    "credit": "Giotto / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Madonna-saints-virtues-giotto-1315.jpg"
+  },
+  "body": {
+    "claim": "A positive impression in one area can make a person look better in unrelated areas too.",
+    "why": "This is the halo effect, a term coined by Edward Thorndike. In 1920 he had commanding officers rate soldiers on physical, intellectual, leadership and personal qualities, and found that the correlations between traits were too high and too even. The reverse exists too: negative impressions can spill over, sometimes called the horn effect."
+  }
+}

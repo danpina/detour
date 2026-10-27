@@ -1,0 +1,124 @@
+{
+  "draft_id": "tech-0037",
+  "created_at": "2026-10-27T06:10:52.294Z",
+  "queries": [
+    "smartphone mobile phone padlock",
+    "smartphone",
+    "smartphone mobile phone"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-129470457",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Smartphone display screen.jpg",
+      "credit": "Skitterphoto / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Smartphone_display_screen.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Smartphone_display_screen.jpg/960px-Smartphone_display_screen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3798,
+      "height": 2407,
+      "alt_suggestion": "Smartphone display screen with time and icons",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-GSFC_20171208_Archive_e001489",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Smartphone Photos From Orbit",
+      "credit": "GSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001489",
+      "image_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001489/GSFC_20171208_Archive_e001489~thumb.jpg",
+      "alt_suggestion": "These images of Earth were reconstructed from photos taken by three smartphones in orbit, or \"PhoneSats.\" The trio of PhoneSats launched on April 21, 2013, aboard the Antares rocket from NASA's Wallop",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-11466",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Angel of the Ninth Sphere, or Primum Mobile, plate 49 from Planets and Spheres",
+      "credit": "Master of the E-Series Tarocchi Italian, active c. 1465 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/11466",
+      "image_url": "https://www.artic.edu/iiif/2/2d55c8c9-4d11-3748-5c88-06d63557a01b/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving in black on tan laid paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-154576560",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Smartphone ownership in 2013.jpg",
+      "credit": "Maps.interlude / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Smartphone_ownership_in_2013.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Smartphone_ownership_in_2013.jpg/960px-Smartphone_ownership_in_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1414,
+      "height": 1590,
+      "alt_suggestion": "Countries where more than 50 percent of population owned a smartphone",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA23825",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Smartphone 'Walkdown'",
+      "credit": "NASA/JPL-Caltech / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA23825",
+      "image_url": "https://images-assets.nasa.gov/image/PIA23825/PIA23825~medium.jpg",
+      "alt_suggestion": "A technician points a smartphone camera at NASA's Perseverance rover during an inspection — called a \"walkdown\" — at Kennedy Space Center in Florida. The imagery from the phone was seen live by missio",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-62246488",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Black smartphone in hand (Unsplash).jpg",
+      "credit": "Dennis Cortés cortes / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_smartphone_in_hand_(Unsplash).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Black_smartphone_in_hand_%28Unsplash%29.jpg/960px-Black_smartphone_in_hand_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 4000,
+      "alt_suggestion": "St. Louis, United States",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-119015398",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Smartphone Use.jpg",
+      "credit": "Océanos y dados / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Smartphone_Use.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Smartphone_Use.jpg/960px-Smartphone_Use.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 853,
+      "alt_suggestion": "Foto: bohed, Pixabay.",
+      "file": "cand-7.jpg"
+    },
+    {
+      "id": "wikimedia-97601482",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Messaging on smartphone (22389367255).jpg",
+      "credit": "StockyPics / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Messaging_on_smartphone_(22389367255).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Messaging_on_smartphone_%2822389367255%29.jpg/960px-Messaging_on_smartphone_%2822389367255%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5184,
+      "height": 3456,
+      "alt_suggestion": "All my photos can be used for free for your blog or website :) I add new photos daily with no copyright restrictions",
+      "file": "cand-8.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"smartphone mobile phone padlock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"smartphone\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"smartphone mobile phone\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

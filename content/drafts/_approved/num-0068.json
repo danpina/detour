@@ -1,0 +1,89 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Six degrees of separation",
+    "angle": "Measuring distance in a social network"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0068",
+    "interest": "numbers",
+    "type": "guess_first",
+    "title": "How many friends apart are we?",
+    "body": {
+      "question": "An old idea says anyone is connected to anyone else through six other people. When Facebook measured its friend graph in 2016, how many people on average stood between two users?",
+      "options": [
+        "About 6",
+        "About 20",
+        "About 3.5"
+      ],
+      "answer": 2,
+      "reveal": "About three and a half. Across the 1.59 billion people active on Facebook, the average distance was 4.57 steps, which is 3.57 intermediaries. Friend networks are smaller than they feel."
+    },
+    "probes": [
+      {
+        "id": "num-0068-p1",
+        "kind": "mcq",
+        "question": "What is the folk idea that everyone is connected through a certain number of other people?",
+        "options": [
+          "Two",
+          "Six",
+          "Twenty",
+          "One hundred"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Three and a half degrees of separation (Facebook Research)",
+        "url": "https://research.facebook.com/blog/2016/2/three-and-a-half-degrees-of-separation/"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Social Network Analysis Visualization.png or File:Moreno Sociogram 4th Grade.png, a network graph of connected people",
+    "keywords": [
+      "social network graph",
+      "sociogram",
+      "network visualization"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.526Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://research.facebook.com/blog/2016/2/three-and-a-half-degrees-of-separation/",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Old idea: everyone is connected through six other people",
+        "verdict": "pass",
+        "source_url": "https://research.facebook.com/blog/2016/2/three-and-a-half-degrees-of-separation/",
+        "quote": "everyone on the planet is connected to everyone else by six other people"
+      },
+      {
+        "claim": "Facebook found 3.57 on average (about three and a half) intermediaries; average distance 4.57",
+        "verdict": "pass",
+        "source_url": "https://research.facebook.com/blog/2016/2/three-and-a-half-degrees-of-separation/",
+        "quote": "The average distance we observe is 4.57, corresponding to 3.57 intermediaries or \"degrees of separation.\""
+      },
+      {
+        "claim": "Among the 1.59 billion people active on Facebook, in 2016",
+        "verdict": "pass",
+        "source_url": "https://research.facebook.com/blog/2016/2/three-and-a-half-degrees-of-separation/",
+        "quote": "at least among the 1.59 billion people active on Facebook",
+        "note": "Blog post is dated February 4, 2016, matching 2016."
+      }
+    ],
+    "overall": "pass"
+  }
+}

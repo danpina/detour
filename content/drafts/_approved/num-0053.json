@@ -1,0 +1,98 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Percent changes do not cancel",
+    "angle": "Why +50% then -50% is not back to even"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0053",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "Up 50%, down 50%, not back to even",
+    "body": {
+      "claim": "A 50% rise followed by a 50% fall leaves you below where you started.",
+      "why": "Each percentage is measured against a different starting amount. A 100 that rises 50% becomes 150, but 50% of 150 is 75, so the fall lands on 75. In general, an increase of x percent followed by a decrease of x percent ends with a net decrease."
+    },
+    "probes": [
+      {
+        "id": "num-0053-p1",
+        "kind": "mcq",
+        "question": "A $200 price rises 10%, then falls 10%. What is the final price?",
+        "options": [
+          "$200",
+          "$198",
+          "$202",
+          "$180"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0053-p2",
+        "kind": "tf",
+        "question": "True or false: a 25% increase is undone by a 25% decrease.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Percentage (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Percentage"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Shoeby tot 50% sale sign, Hoogezand (2019) 01.jpg or File:Sale sign.jpg, a shop sale sign with a percentage discount",
+    "keywords": [
+      "50% sale sign",
+      "sale sign discount",
+      "percent sale"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.514Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Percentage",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A 100 that rises 50% becomes 150, and 50% of 150 is 75 (title, claim, why)",
+        "verdict": "pass",
+        "note": "Verified by calculation: 100 x 1.5 = 150; 150 x 0.5 = 75, below 100."
+      },
+      {
+        "claim": "An increase of x percent followed by a decrease of x percent ends with a net decrease",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Percentage",
+        "quote": "hence the net change is an overall decrease by x percent of x percent"
+      },
+      {
+        "claim": "Each percentage is measured against a different starting amount (percent changes do not cancel)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Percentage",
+        "quote": "a percentage increase requires a different percentage decrease to return to the original value"
+      },
+      {
+        "claim": "Probe: $200 up 10% then down 10% is $198",
+        "verdict": "pass",
+        "note": "Verified by calculation: 200 x 1.1 = 220; 220 x 0.9 = 198. Also stated on the page ($198, not the original $200)."
+      },
+      {
+        "claim": "Probe: a 25% increase is not undone by a 25% decrease",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Percentage",
+        "quote": "a 25% increase ($100 to $125) must be followed by a 20% decrease ($125 to $100) to restore the initial amount"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "tech-0040",
+  "interest": "tech",
+  "title": "Wi-Fi devices take turns",
+  "probes": [
+    {
+      "id": "tech-0040-p1",
+      "question": "How do Wi-Fi devices share a channel?",
+      "kind": "mcq",
+      "options": [
+        "Each gets its own cable",
+        "They start transmitting only after sensing the channel is idle",
+        "They all transmit at once",
+        "A satellite assigns turns"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0040-p2",
+      "question": "True or false: CSMA/CA completely prevents collisions.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wi-Fi (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wi-Fi"
+    },
+    {
+      "title": "Carrier-sense multiple access with collision avoidance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_avoidance"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:25:23.004Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0040.webp",
+    "alt": "A flat cream-coloured wireless antenna panel mounted on a brick wall with cables below.",
+    "kind": "photo",
+    "credit": "Mbrickn / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Outdoors_Wireless_Access_Point.jpg"
+  },
+  "body": {
+    "claim": "Within range, only one transmitter can transmit on a Wi-Fi channel at a time.",
+    "why": "Wi-Fi radio bands are divided into channels, and channels can be shared between networks. With CSMA/CA, devices begin transmitting only after sensing the channel is idle. Two stations may sense it idle at the same time, so collisions cannot be completely prevented."
+  }
+}

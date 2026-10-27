@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0049",
+  "created_at": "2026-10-27T06:08:26.833Z",
+  "queries": [
+    "fork in the road road junction two paths diverge",
+    "fork in the road",
+    "fork in the road road junction"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-105170169",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fork in the road - geograph.org.uk - 1984609.jpg",
+      "credit": "Eileen Henderson / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fork_in_the_road_-_geograph.org.uk_-_1984609.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Fork_in_the_road_-_geograph.org.uk_-_1984609.jpg/960px-Fork_in_the_road_-_geograph.org.uk_-_1984609.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 766,
+      "alt_suggestion": "Fork in the road",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-890",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "On the Road",
+      "credit": "Jules Dupré (French, 1811–1889) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/890",
+      "image_url": "https://www.artic.edu/iiif/2/e0d8a305-15b0-bdcd-1e83-06d8594a2f7e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-109273142",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fork in the road - geograph.org.uk - 2520307.jpg",
+      "credit": "Bill Nicholls / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fork_in_the_road_-_geograph.org.uk_-_2520307.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Fork_in_the_road_-_geograph.org.uk_-_2520307.jpg/960px-Fork_in_the_road_-_geograph.org.uk_-_2520307.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 768,
+      "alt_suggestion": "Fork in the road",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-896",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Road to Market",
+      "credit": "Constant Troyon (French, 1810–1865) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/896",
+      "image_url": "https://www.artic.edu/iiif/2/6aaa3537-abbf-f49e-877f-4d8e8e4d50c2/full/843,/0/default.jpg",
+      "alt_suggestion": "In a shaft of light, surrounded by dramatic shadow and numerous sheep, a woman on horseback in a white bonnet and red skirt carries a baby and a basket, a black dog at right. Behind her two men follow, one mounted, one on foot, on a dirt path surrounded by trees.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-67479889",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Jan Novopacký - Fork in the Road - O 3581 - Slovak National Gallery.jpg",
+      "credit": "Jan Nowopacký / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Novopack%C3%BD_-_Fork_in_the_Road_-_O_3581_-_Slovak_National_Gallery.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Jan_Novopack%C3%BD_-_Fork_in_the_Road_-_O_3581_-_Slovak_National_Gallery.jpg/960px-Jan_Novopack%C3%BD_-_Fork_in_the_Road_-_O_3581_-_Slovak_National_Gallery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4505,
+      "height": 5000,
+      "alt_suggestion": "Jan Novopacký - Fork in the Road - O 3581 - Slovak National Gallery.jpg",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"fork in the road road junction two paths diverge\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"fork in the road\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"fork in the road road junction\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

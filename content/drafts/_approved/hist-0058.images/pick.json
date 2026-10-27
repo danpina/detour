@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-16931676",
+  "alt": "The black basalt stele of the Code of Hammurabi in the Louvre, with the king shown before a seated god above rows of cuneiform law text",
+  "fits": true,
+  "note": "Hammurabi stele, fits; crop to relief",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.25,
+    "zoom": 2
+  }
+}

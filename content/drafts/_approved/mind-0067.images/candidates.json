@@ -1,0 +1,117 @@
+{
+  "draft_id": "mind-0067",
+  "created_at": "2026-10-27T06:11:22.242Z",
+  "queries": [
+    "spotlight stage lights theatre stage",
+    "spotlight",
+    "spotlight stage lights"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-147659609",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "赤を基調とした (53324032285).jpg",
+      "credit": "whity / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E8%B5%A4%E3%82%92%E5%9F%BA%E8%AA%BF%E3%81%A8%E3%81%97%E3%81%9F_(53324032285).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/%E8%B5%A4%E3%82%92%E5%9F%BA%E8%AA%BF%E3%81%A8%E3%81%97%E3%81%9F_%2853324032285%29.jpg/960px-%E8%B5%A4%E3%82%92%E5%9F%BA%E8%AA%BF%E3%81%A8%E3%81%97%E3%81%9F_%2853324032285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 7008,
+      "height": 4672,
+      "alt_suggestion": "DSC06920.jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA06572",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Spotlight on Mimas",
+      "credit": "NASA/JPL/Space Science Institute / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA06572",
+      "image_url": "https://images-assets.nasa.gov/image/PIA06572/PIA06572~small.jpg",
+      "alt_suggestion": "Spotlight on Mimas",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-81531",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "On the Stage",
+      "credit": "Edgar Degas French, 1834-1917 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/81531",
+      "image_url": "https://www.artic.edu/iiif/2/7ea8e269-0fef-35d3-2299-9ec7cae0f757/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of pastel and essence over monotype on cream laid paper, laid down on board.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-38030378",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Spotlight in OS X Yosemite 2.png",
+      "credit": "Apple Inc. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Spotlight_in_OS_X_Yosemite_2.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Spotlight_in_OS_X_Yosemite_2.png/960px-Spotlight_in_OS_X_Yosemite_2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1556,
+      "height": 1068,
+      "alt_suggestion": "Spotlight in OS X Yosemite showing Wikipedia article on Bugatti Veyron. Icons of Safari were replaced with Firefox icon. (it is possible to change the default web browser in OS X, so it's accurate.)",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA05508",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Spotlight on El",
+      "credit": "NASA/JPL/Cornell/Ames / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA05508",
+      "image_url": "https://images-assets.nasa.gov/image/PIA05508/PIA05508~small.jpg",
+      "alt_suggestion": "Spotlight on El",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-30755015",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Spotlight stage August Wilson Center.jpg",
+      "credit": "daveynin from United States / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Spotlight_stage_August_Wilson_Center.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Spotlight_stage_August_Wilson_Center.jpg/960px-Spotlight_stage_August_Wilson_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3456,
+      "height": 2304,
+      "alt_suggestion": "Theater stage in August Wilson Center also the above box screen is real-time captioning.",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-164378872",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Stage lighting - Theatre Hall De Vooruit as seen from below.jpg",
+      "credit": "Vikebe / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stage_lighting_-_Theatre_Hall_De_Vooruit_as_seen_from_below.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Stage_lighting_-_Theatre_Hall_De_Vooruit_as_seen_from_below.jpg/960px-Stage_lighting_-_Theatre_Hall_De_Vooruit_as_seen_from_below.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 768,
+      "alt_suggestion": "Lamper til scenelys set nedefra - teatersalen i Viernulvier (Vooruit) i Gent, Belgien",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Insect flights in the night in front of a spotlight HP L7869.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"spotlight stage lights theatre stage\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"spotlight\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"spotlight stage lights\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

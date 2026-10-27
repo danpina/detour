@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Start early or late",
+    "angle": "Same deposit, more years of compounding"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0038",
+    "interest": "money",
+    "type": "story",
+    "title": "The same $5,000, twenty years apart",
+    "body": {
+      "panels": [
+        {
+          "text": "Ana puts $5,000 into an account at 25. Ben puts $5,000 into an identical one at 45. Both leave it alone until 65."
+        },
+        {
+          "text": "Compound interest means interest is added to the balance, and then that bigger balance earns interest too."
+        },
+        {
+          "text": "Assume 7% a year, an example number, not a forecast. Ben's $5,000 has 20 years to grow and reaches about $19,300."
+        },
+        {
+          "text": "Ana's has 40 years and reaches about $74,900."
+        },
+        {
+          "text": "The twist: twenty extra years didn't double her result. They multiplied it by almost 4, because each year's growth builds on all the growth before it."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0038-p1",
+        "kind": "tf",
+        "question": "True or false: with compound interest, interest earned also earns interest.",
+        "answer": true
+      },
+      {
+        "id": "money-0038-p2",
+        "kind": "mcq",
+        "question": "About how many times bigger does a balance grow with 20 extra years at 7% a year?",
+        "options": [
+          "2 times",
+          "4 times",
+          "10 times"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Compound interest (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compound_interest"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Rapidly growing White Oak sapling along Tranquility Court in the Franklin Farm section of Oak Hill, Fairfax County, Virginia.jpg shows a young oak sapling",
+    "keywords": [
+      "oak sapling",
+      "sapling growing",
+      "young tree",
+      "tree sapling"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.825Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Compound_interest",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Compound interest: interest accumulated on principal and previous interest (panel 2, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compound_interest",
+        "quote": "Compound interest or anatocism is interest accumulated from a principal sum and previously accumulated interest."
+      },
+      {
+        "claim": "Ben: $5,000 at 7% for 20 years about $19,300",
+        "verdict": "pass",
+        "note": "Verified by calculation: 5000*1.07^20 = 19,348"
+      },
+      {
+        "claim": "Ana: $5,000 at 7% for 40 years about $74,900",
+        "verdict": "pass",
+        "note": "Verified by calculation: 5000*1.07^40 = 74,872"
+      },
+      {
+        "claim": "Ages 25/45 to 65 give 40 and 20 years; extra 20 years multiplies result by almost 4 (not double) (probe 2)",
+        "verdict": "pass",
+        "note": "Verified by calculation: 74,872/19,348 = 3.87 = 1.07^20"
+      }
+    ],
+    "overall": "pass"
+  }
+}

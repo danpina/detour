@@ -1,0 +1,61 @@
+{
+  "id": "tech-0046",
+  "interest": "tech",
+  "title": "How much of a QR code can be damaged?",
+  "probes": [
+    {
+      "id": "tech-0046-p1",
+      "question": "What kind of error correction do QR codes use?",
+      "kind": "mcq",
+      "options": [
+        "Reed-Solomon",
+        "Wi-Fi signals",
+        "DNS lookups",
+        "Salted hashing"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0046-p2",
+      "question": "True or false: how well a damaged level H code scans depends on where the damage is.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "QR code (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/QR_code"
+    },
+    {
+      "title": "Reed-Solomon error correction (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:12.416Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "tech-0046.webp",
+    "alt": "A black-and-white QR code on a white background.",
+    "kind": "photo",
+    "credit": "User1042 / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:QR_Code_Linking_to_QR_Code_Apps.png"
+  },
+  "body": {
+    "question": "A QR code gets scuffed. At the highest error-correction level, about how much of its data can be restored?",
+    "options": [
+      "About 3%",
+      "About 10%",
+      "About 30%",
+      "About 60%"
+    ],
+    "answer": 2,
+    "reveal": "QR codes use Reed-Solomon error correction. Level H can theoretically restore about 30% of the codewords. In practice it depends on where the damage is, because the corner finder patterns must survive."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0056",
+  "created_at": "2026-10-27T06:09:47.303Z",
+  "queries": [
+    "electronic stock board stock market board stock ticker board",
+    "electronic stock board",
+    "electronic stock board stock market board"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-33488290",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Electronic stock board in Yaesu, Tokyo 2007.jpg",
+      "credit": "nappa / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Electronic_stock_board_in_Yaesu,_Tokyo_2007.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Electronic_stock_board_in_Yaesu%2C_Tokyo_2007.jpg/960px-Electronic_stock_board_in_Yaesu%2C_Tokyo_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 1944,
+      "alt_suggestion": "Electronic board in Yaesu, Tokyo displaying stock exchange market data. Photo taken in March 2007.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-156538",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Chicago Stock Exchange Trading Room: Reconstruction at the Art Institute of Chicago",
+      "credit": "Adler & Sullivan, original architects; American, 1883-1896 Vinci & Kenny, reconstruction architects; American, 1970-1977 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/156538",
+      "image_url": "https://www.artic.edu/iiif/2/47b28b55-ced6-502d-f111-fbe0033f8dc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A grand, double-height room with wood paneling, stenciled wall patterns, four hexagonal columns, and an interior balcony with guardrail at left.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-33488132",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Shinko Securities's electronic stock board nearby Yaesu side of Tokyo Station in March 2009.jpg",
+      "credit": "Kondo Atsushi / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shinko_Securities%27s_electronic_stock_board_nearby_Yaesu_side_of_Tokyo_Station_in_March_2009.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Shinko_Securities%27s_electronic_stock_board_nearby_Yaesu_side_of_Tokyo_Station_in_March_2009.jpg/960px-Shinko_Securities%27s_electronic_stock_board_nearby_Yaesu_side_of_Tokyo_Station_in_March_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3648,
+      "height": 2736,
+      "alt_suggestion": "新光証券 The electronic stock board in Tokyo’s Yaesu neighborhood never jumps the shark. in 2013 東京・八重洲の株価ボード みずほ証券",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-12765",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Elevator T-Plate from the Chicago Stock Exchange",
+      "credit": "Adler & Sullivan, architects; American, 1883-1896 Louis H. Sullivan, designer; American, 1856-1924 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12765",
+      "image_url": "https://www.artic.edu/iiif/2/4dc63cce-a3c0-9976-8e13-e7aac9e7df6a/full/843,/0/default.jpg",
+      "alt_suggestion": "A T-shaped architectural fragment with ornate geometric patterning consisting of repeating ellipses and some foliage detail.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-164163199",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Spokane and Palouse Railway Company, Stock Certificate, 1889 - Spokane Falls, Washington (47224966122).jpg",
+      "credit": "Steve Shook from Moscow, Idaho, USA / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Spokane_and_Palouse_Railway_Company,_Stock_Certificate,_1889_-_Spokane_Falls,_Washington_(47224966122).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Spokane_and_Palouse_Railway_Company%2C_Stock_Certificate%2C_1889_-_Spokane_Falls%2C_Washington_%2847224966122%29.jpg/960px-Spokane_and_Palouse_Railway_Company%2C_Stock_Certificate%2C_1889_-_Spokane_Falls%2C_Washington_%2847224966122%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 10468,
+      "height": 7463,
+      "alt_suggestion": "Spokane and Palouse Railway Company. Spokane Falls, Spokane County, Washington Date: November 6, 1889 Source Type: Stock Certificate Publisher, Printer, Photographer: Unknown Postmark: Not Applicable ",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"electronic stock board stock market board stock ticker board\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"electronic stock board\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"electronic stock board stock market board\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

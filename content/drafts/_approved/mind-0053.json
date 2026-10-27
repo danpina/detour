@@ -1,0 +1,151 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Planning fallacy",
+    "angle": "Thesis estimates and the Sydney Opera House"
+  },
+  "created_at": "2026-10-27T06:06:56.023Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0053",
+    "interest": "mind",
+    "type": "story",
+    "title": "The thesis that took 22 days longer",
+    "body": {
+      "panels": [
+        {
+          "text": "In a 1994 study, 37 psychology students estimated how long their senior thesis would take. The average guess: 33.9 days."
+        },
+        {
+          "text": "They also guessed the best case, 27.4 days, and the worst case, 48.6 days."
+        },
+        {
+          "text": "The average actual time was 55.5 days, longer than even the worst-case guess. Only about 30% finished in the time they predicted."
+        },
+        {
+          "text": "That is the planning fallacy: optimistic time predictions, even when similar tasks have run long before. Outside observers tend to overestimate the time instead."
+        },
+        {
+          "text": "Sydney Opera House was expected in 1963. A scaled-down version opened in 1973, at $102 million against an original estimate of $7 million."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0053-p1",
+        "kind": "mcq",
+        "question": "In the 1994 study, what was the students' average actual completion time?",
+        "options": [
+          "27.4 days",
+          "33.9 days",
+          "48.6 days",
+          "55.5 days"
+        ],
+        "answer": 3
+      },
+      {
+        "id": "mind-0053-p2",
+        "kind": "tf",
+        "question": "True or false: outside observers predicting someone else's task time tend to be optimistic.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Planning fallacy (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Planning_fallacy"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Sydney (AU), Opera House -- 2019 -- 3061-4.jpg shows the Sydney Opera House",
+    "keywords": [
+      "Sydney Opera House",
+      "Sydney Harbour",
+      "opera house",
+      "sails"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.115Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "1994 study: 37 psychology students estimated how long their senior thesis would take",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "quote": "In a 1994 study, 37 psychology students were asked to estimate how long it would take to finish their senior theses"
+      },
+      {
+        "claim": "Average guess 33.9 days",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "quote": "The average estimate was 33.9 days."
+      },
+      {
+        "claim": "Best-case guess 27.4 days",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "quote": "if everything went as well as it possibly could\" (averaging 27.4 days)"
+      },
+      {
+        "claim": "Worst-case guess 48.6 days",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "quote": "\"if everything went as poorly as it possibly could\" (averaging 48.6 days)"
+      },
+      {
+        "claim": "Average actual time 55.5 days (probe 1) and about 30% finished in the predicted time",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "quote": "The average actual completion time was 55.5 days, with about 30% of the students completing their thesis in the amount of time they predicted."
+      },
+      {
+        "claim": "Title '22 days longer' and 'longer than even the worst-case guess'",
+        "verdict": "pass",
+        "note": "Verified by calculation: 55.5 - 33.9 = 21.6, which rounds to 22 days; 55.5 > 48.6."
+      },
+      {
+        "claim": "Optimistic predictions even when similar tasks have run long before",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "quote": "regardless of the individual's knowledge that past tasks of a similar nature have taken longer to complete than generally planned"
+      },
+      {
+        "claim": "Outside observers tend to overestimate the time, i.e. are not optimistic (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "quote": "when outside observers predict task completion times, they tend to exhibit a pessimistic bias, overestimating the time needed"
+      },
+      {
+        "claim": "Sydney Opera House expected in 1963",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "quote": "The Sydney Opera House was expected to be completed in 1963."
+      },
+      {
+        "claim": "A scaled-down version opened in 1973",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "quote": "A scaled-down version opened in 1973, a decade later."
+      },
+      {
+        "claim": "$102 million against an original estimate of $7 million",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+        "quote": "The original cost was estimated at $7 million, but its delayed completion led to a cost of $102 million."
+      }
+    ],
+    "overall": "pass"
+  }
+}

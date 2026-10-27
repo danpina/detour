@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Chosen by lot, not by vote",
+    "angle": "Chosen by lot, not by vote"
+  },
+  "created_at": "2026-10-26T20:31:39.967Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0057",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "Chosen by lot, not by vote",
+    "body": {
+      "claim": "In ancient Athens, most magistrates and jurors were picked by lot, not elected.",
+      "why": "Athenian democracy grew out of isonomia, equality of law and political rights, and drawing lots was the main way of achieving that fairness. Juries were typically of 501 men. From 370 BC a stone slab called the kleroterion was used: citizens' tokens were set in slots, with each tribe in its own column, and coloured dice released through a tube decided who was chosen."
+    },
+    "probes": [
+      {
+        "id": "hist-0057-p1",
+        "kind": "mcq",
+        "question": "How were most Athenian magistrates and jurors usually chosen?",
+        "options": [
+          "By a vote of the whole city",
+          "By drawing lots",
+          "By the richest families",
+          "By the oldest citizens"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0057-p2",
+        "kind": "tf",
+        "question": "True or false: the kleroterion was a stone device used to select citizens by chance.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sortition (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sortition"
+      },
+      {
+        "title": "Kleroterion (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Kleroterion"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Kleroterion, AGMA, 225287.jpg (CC BY-SA 4.0): a kleroterion in the Ancient Agora Museum at Athens; also File:Reconstructed Kleroterions in the Ure Museum.JPG (CC0)",
+    "keywords": [
+      "Kleroterion",
+      "kleroterion Ancient Agora Museum",
+      "Athens jury selection device"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.656Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sortition",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Kleroterion",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Most Athenian magistrates and jurors were picked by lot (claim, probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sortition",
+        "quote": "It was utilized to pick most of the magistrates for their governing committees, and for their juries"
+      },
+      {
+        "claim": "Democracy grew out of isonomia and sortition was the main way of achieving that fairness",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sortition",
+        "quote": "Sortition was then the principal way of achieving this fairness."
+      },
+      {
+        "claim": "Juries were typically of 501 men",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sortition",
+        "quote": "for their juries (typically of 501 men)"
+      },
+      {
+        "claim": "From 370 BC the kleroterion was used",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Kleroterion",
+        "quote": "from 370 BC onwards, they employed the kleroterion"
+      },
+      {
+        "claim": "Kleroterion was a stone slab with slots; tokens with each tribe in its own column; coloured dice through a tube chose (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Kleroterion",
+        "quote": "The kleroterion was a slab of stone incised with rows of slots and with an attached tube."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "draft_id": "hist-0036",
+  "created_at": "2026-10-27T06:07:22.423Z",
+  "queries": [
+    "Columbian Exchange Columbus voyages crop exchange map",
+    "Columbian Exchange",
+    "Columbian Exchange Columbus voyages"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-153499770",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "BRI Columbian Exchange.jpg",
+      "credit": "Mark Christensen / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:BRI_Columbian_Exchange.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/BRI_Columbian_Exchange.jpg/960px-BRI_Columbian_Exchange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 975,
+      "height": 768,
+      "alt_suggestion": "The Columbian Exchange of crop plants, livestock, and diseases in both directions between the Old World and the New World",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-156538",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Chicago Stock Exchange Trading Room: Reconstruction at the Art Institute of Chicago",
+      "credit": "Adler & Sullivan, original architects; American, 1883-1896 Vinci & Kenny, reconstruction architects; American, 1970-1977 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/156538",
+      "image_url": "https://www.artic.edu/iiif/2/47b28b55-ced6-502d-f111-fbe0033f8dc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A grand, double-height room with wood paneling, stenciled wall patterns, four hexagonal columns, and an interior balcony with guardrail at left.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-154837328",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Kolumbiaansken uuttuusk.png",
+      "credit": "Woolters / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kolumbiaansken_uuttuusk.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Kolumbiaansken_uuttuusk.png/960px-Kolumbiaansken_uuttuusk.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1080,
+      "alt_suggestion": "Overview of the most important exchanges in the Columbian Exchange.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-12765",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Elevator T-Plate from the Chicago Stock Exchange",
+      "credit": "Adler & Sullivan, architects; American, 1883-1896 Louis H. Sullivan, designer; American, 1856-1924 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12765",
+      "image_url": "https://www.artic.edu/iiif/2/4dc63cce-a3c0-9976-8e13-e7aac9e7df6a/full/843,/0/default.jpg",
+      "alt_suggestion": "A T-shaped architectural fragment with ornate geometric patterning consisting of repeating ellipses and some foliage detail.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-66952249",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "World's Columbian Exposition lantern slides, Electric Building, Interior, Bell Telephone Exchange... (NBY 8732).jpg",
+      "credit": "Midwest MS WCE Slides / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:World%27s_Columbian_Exposition_lantern_slides,_Electric_Building,_Interior,_Bell_Telephone_Exchange..._(NBY_8732).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/World%27s_Columbian_Exposition_lantern_slides%2C_Electric_Building%2C_Interior%2C_Bell_Telephone_Exchange..._%28NBY_8732%29.jpg/960px-World%27s_Columbian_Exposition_lantern_slides%2C_Electric_Building%2C_Interior%2C_Bell_Telephone_Exchange..._%28NBY_8732%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3600,
+      "height": 2957,
+      "alt_suggestion": "56 glass lantern slides showing environs, buildings and exhibits at the 1893 World's Columbian Exposition, Chicago.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "The World's Columbian exposition, Chicago, 1893 (1893) (14593411387).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The official directory of the World's Columbian exposition, May 1st to October 30th, 1893. A reference book of exhibitors and exhibits; of the officers and members of the World's Columbian commission, (14579674988).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The official directory of the World's Columbian exposition, May 1st to October 30th, 1893. A reference book of exhibitors and exhibits; of the officers and members of the World's Columbian commission, (14579785499).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The Columbian magazine - or, monthly miscellany (3178) (14781094011).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The Columbian magazine - or, monthly miscellany (3178) (14597575178).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Christopher Columbus and the New World of his discovery - a narrative (1906) (14779142115).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Christopher Columbus and the New World of his discovery - a narrative (1906) (14775987011).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Columbian Exchange Columbus voyages crop exchange map\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Columbian Exchange\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Columbian Exchange Columbus voyages\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

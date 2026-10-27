@@ -1,0 +1,91 @@
+{
+  "draft_id": "money-0033",
+  "created_at": "2026-10-26T20:29:54.716Z",
+  "queries": [
+    "suburban houses row of houses houses street",
+    "suburban houses",
+    "suburban houses row of houses"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-61908608",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Row of houses trees and cars (Unsplash).jpg",
+      "credit": "Jakob Owens jakobowens1 / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Row_of_houses_trees_and_cars_(Unsplash).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Row_of_houses_trees_and_cars_%28Unsplash%29.jpg/960px-Row_of_houses_trees_and_cars_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2880,
+      "height": 1920,
+      "alt_suggestion": "Jakob Owens 2016-08-22",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-16584",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Houses of Parliament, London",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16584",
+      "image_url": "https://www.artic.edu/iiif/2/03930df3-1e6c-eeca-8660-c0b22ca477ff/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-92290276",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Frank Hower House, Amherst, New York - 20200706.jpg",
+      "credit": "Andre Carrotflower / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frank_Hower_House,_Amherst,_New_York_-_20200706.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Frank_Hower_House%2C_Amherst%2C_New_York_-_20200706.jpg/960px-Frank_Hower_House%2C_Amherst%2C_New_York_-_20200706.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2868,
+      "height": 2151,
+      "alt_suggestion": "The Frank Hower House, 23 Four Seasons Road West, Amherst, New York, July 2020. An unusual take on the Neoclassical style courtesy of an architect whose name has been lost to time, the cross-shaped fl",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-104835635",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Suburban Hospital main entrance Bethesda MD 20210430 073615 1 crop.jpg",
+      "credit": "G. Edward Johnson / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Suburban_Hospital_main_entrance_Bethesda_MD_20210430_073615_1_crop.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Suburban_Hospital_main_entrance_Bethesda_MD_20210430_073615_1_crop.jpg/960px-Suburban_Hospital_main_entrance_Bethesda_MD_20210430_073615_1_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 7360,
+      "height": 4140,
+      "alt_suggestion": "The main entrance to Suburban Hospital, a member of Jons Hopkins Medicine. 8600 Old Georgetown Road, Bethesda, Maryland.",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "ARCHITECTURE. DESIGNS FOR STREET FRONTS, SUBURBAN HOUSES, AND COTTAGES, INCLUDING DETAILS, FOR BOTH EXTERIOR AND INTERIOR, OF THE ABOVE CLASSES OF BUILDINGS (1868) (14764996535).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "ARCHITECTURE. DESIGNS FOR STREET FRONTS, SUBURBAN HOUSES, AND COTTAGES, INCLUDING DETAILS, FOR BOTH EXTERIOR AND INTERIOR, OF THE ABOVE CLASSES OF BUILDINGS (1868) (14764996535).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Lambert's suburban architecture (1894) (14758653456).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"suburban houses row of houses houses street\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"suburban houses\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"suburban houses row of houses\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

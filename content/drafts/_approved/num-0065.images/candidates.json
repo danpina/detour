@@ -1,0 +1,81 @@
+{
+  "draft_id": "num-0065",
+  "created_at": "2026-10-26T20:33:19.383Z",
+  "queries": [
+    "honeycomb honeycomb hexagon cells bees honeycomb",
+    "honeycomb",
+    "honeycomb honeycomb hexagon cells"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-186766788",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fresh honeycomb dripping honey India.jpg",
+      "credit": "Vraj Acharya / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fresh_honeycomb_dripping_honey_India.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Fresh_honeycomb_dripping_honey_India.jpg/960px-Fresh_honeycomb_dripping_honey_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3468,
+      "height": 4624,
+      "alt_suggestion": "Fresh honeycomb with visible hexagonal wax cells, filled with raw honey produced by honey bees (Apis). Honey is dripping from the comb during harvesting into a metal container. Photograph taken in an ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA22118",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Honeycomb-Textured Landforms in Northwestern Hellas Planitia",
+      "credit": "NASA/JPL-Caltech/Univ. of Arizona / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA22118",
+      "image_url": "https://images-assets.nasa.gov/image/PIA22118/PIA22118~medium.jpg",
+      "alt_suggestion": "This image from NASA's Mars Reconnaissance Orbiter (MRO) targets a portion of a group of honeycomb-textured landforms in northwestern Hellas Planitia, which is part of one of the largest and most anci",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-79528",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Unfinished Mosaic or Honeycomb Quilt Top",
+      "credit": "United States / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/79528",
+      "image_url": "https://www.artic.edu/iiif/2/e1d1e50f-c77b-bb6e-4b3a-f8d9546043f6/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of cotton, pieced plain weaves; some printed; some glazed; backed with paper."
+    },
+    {
+      "id": "wikimedia-193653512",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Honeycomb (Mauri ko maha) from a domestic bee colony.jpg",
+      "credit": "Nabinbhatt28 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Honeycomb_(Mauri_ko_maha)_from_a_domestic_bee_colony.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Honeycomb_%28Mauri_ko_maha%29_from_a_domestic_bee_colony.jpg/960px-Honeycomb_%28Mauri_ko_maha%29_from_a_domestic_bee_colony.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3072,
+      "height": 4080,
+      "alt_suggestion": "Honeycomb(Mauri ko maha)containing honey from a bee colony maintained at a household in Nepal. The hexagonal wax cells used for storing honey are visible.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA07211",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Orbiter Skeleton",
+      "credit": "NASA/JPL/Lockheed Martin / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA07211",
+      "image_url": "https://images-assets.nasa.gov/image/PIA07211/PIA07211~thumb.jpg",
+      "alt_suggestion": "The structure of NASA Mars Reconnaissance Orbiter spacecraft is constructed from composite panels of carbon layers over aluminum honeycomb, lightweight yet strong.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"honeycomb honeycomb hexagon cells bees honeycomb\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"honeycomb\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"honeycomb honeycomb hexagon cells\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

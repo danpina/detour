@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-61908608",
+  "alt": "A row of colourful Victorian-style houses on a street under a blue sky, with a few small distant pedestrians and parked cars.",
+  "fits": true,
+  "note": "Generic housing row; people are tiny and unidentifiable.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

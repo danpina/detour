@@ -1,0 +1,54 @@
+{
+  "id": "tech-0034",
+  "interest": "tech",
+  "title": "The internet's phone book",
+  "probes": [
+    {
+      "id": "tech-0034-p1",
+      "question": "What does DNS do?",
+      "kind": "mcq",
+      "options": [
+        "Encrypts web pages",
+        "Turns a website name into an IP address",
+        "Stores your passwords",
+        "Speeds up your Wi-Fi"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0034-p2",
+      "question": "True or false: a website's IP address may vary depending on where you are.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "How the web works (MDN)",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"
+    },
+    {
+      "title": "Domain Name System (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Domain_Name_System"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:53.390Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0034.webp",
+    "alt": "A black rotary telephone on a desk beside a small student telephone directory booklet, in an old black-and-white photo.",
+    "kind": "photo",
+    "credit": "University of Alberta Archives Photographs Collection - https://archive.org/details/UAA-1972-058-974 / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:U_of_A_Telephone_and_Directory.jpg"
+  },
+  "body": {
+    "claim": "When you type a website name, a system called DNS looks up its numeric address for you.",
+    "why": "Computers find each other by IP addresses, which are numbers like 192.0.2.172. DNS uses special servers to match a name you can remember, like mozilla.org, to the real address. Large sites run on multiple servers, so the address you get may vary depending on where you are."
+  }
+}

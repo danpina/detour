@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-39623290",
+  "alt": "The engraved gilt brass movement of John Harrison's H4 marine timekeeper on a clear display stand",
+  "fits": true,
+  "note": "Harrison H4 clockwork, fits",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.45,
+    "zoom": 1.3
+  }
+}

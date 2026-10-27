@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-144622468",
+  "alt": "Black-and-white portrait of the mathematician Kurt Goedel in a suit, standing in front of bookshelves.",
+  "fits": true,
+  "note": "Historical portrait of notable mathematician, 1920x2631.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.3,
+    "zoom": 1
+  }
+}
