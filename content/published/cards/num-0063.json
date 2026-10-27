@@ -1,0 +1,66 @@
+{
+  "id": "num-0063",
+  "interest": "numbers",
+  "title": "Knots, ropes and a right angle",
+  "probes": [
+    {
+      "id": "num-0063-p1",
+      "question": "Which set of side lengths makes a right triangle?",
+      "kind": "mcq",
+      "options": [
+        "2, 3, 4",
+        "3, 4, 6",
+        "3, 4, 5",
+        "4, 5, 6"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "num-0063-p2",
+      "question": "True or false: in a 3-4-5 triangle, the right angle is between the sides of length 3 and 4.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Harpedonaptai (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Harpedonaptai"
+    },
+    {
+      "title": "Pythagorean triple (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pythagorean_triple"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:27.118Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0063.webp",
+    "alt": "A weathered Babylonian clay tablet, Plimpton 322, covered in rows of cuneiform numerals.",
+    "kind": "photo",
+    "credit": "image copied from http://www.math.ubc.ca/~cass/courses/m446-03/pl322/pl322.html / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Plimpton_322.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Ancient Egypt had rope stretchers, surveyors who marked land and building foundations with knotted cords pulled tight so they did not sag."
+      },
+      {
+        "text": "They used 3-4-5 triangles. Why that triple? Because 3 squared plus 4 squared is 9 + 16 = 25, which is 5 squared."
+      },
+      {
+        "text": "A triangle whose sides are a Pythagorean triple like (3, 4, 5) is a right triangle. The right angle sits between the sides of length 3 and 4."
+      },
+      {
+        "text": "So a loop of rope knotted into 12 equal spaces, pulled taut into 3, 4 and 5, gives a perfect corner. Modern surveyors still use the trick."
+      }
+    ]
+  }
+}

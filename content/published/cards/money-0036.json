@@ -1,0 +1,55 @@
+{
+  "id": "money-0036",
+  "interest": "money",
+  "title": "One person, many credit scores",
+  "probes": [
+    {
+      "id": "money-0036-p1",
+      "question": "Where does a credit score come from?",
+      "kind": "mcq",
+      "options": [
+        "Information in your credit reports",
+        "Your bank balance alone",
+        "Your employer"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0036-p2",
+      "question": "True or false: most credit scores range from 300 to 850.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "What is a credit score? (CFPB)",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-score-en-315/"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:19:32.651Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0036.webp",
+    "alt": "An aged 1891-92 Columbus Public Schools grammar-department report card with handwritten grades in reading, spelling and arithmetic.",
+    "kind": "photo",
+    "credit": "This file was contributed to Wikimedia Commons by Columbus Metropolitan Library as part of a cooperation project. The donation was facilitated by the Digital Pu",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Columbus_public_Schools_6th_Grade_Grammar_School_report_card_for_James_Dooley,_1891-92._-_DPLA_-_da92f47a504a26702f6dc366e21a9f0b.jpg"
+  },
+  "body": {
+    "question": "How many credit scores does one person have?",
+    "options": [
+      "Exactly one",
+      "One for each credit card",
+      "Several, depending on model, data and day"
+    ],
+    "answer": 2,
+    "reveal": "Several. A credit score is a prediction of your credit behavior, calculated from the information in your credit reports with a scoring model. Each score depends on the model, the source of the data and even the day it was calculated. Most credit scores range from 300 to 850."
+  }
+}

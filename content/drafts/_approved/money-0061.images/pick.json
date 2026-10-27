@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-176128864",
+ "alt": "A grocery shelf stacked with tomatoes, avocados and other produce, each with handwritten price labels.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (CC BY-SA 4.0).",
+ "crop": {
+  "fx": 0.5,
+  "fy": 0.5,
+  "zoom": 1.2
+ }
+}

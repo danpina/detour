@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0045",
+  "created_at": "2026-10-26T20:33:47.449Z",
+  "queries": [
+    "solar cell silicon solar cell photovoltaic",
+    "solar cell",
+    "solar cell silicon solar cell"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-133746215",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sketch of silicon solar cells interconnections.jpg",
+      "credit": "Cesardd / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sketch_of_silicon_solar_cells_interconnections.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Sketch_of_silicon_solar_cells_interconnections.jpg/960px-Sketch_of_silicon_solar_cells_interconnections.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1535,
+      "height": 767,
+      "alt_suggestion": "Left: two identical c-Si cells wired in series. The figure includes the typical interconnection elements employed in PV modules. Right: parallel connection of two strings of 4 cells in series.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-GRC-1966-C-02754",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "New Thin-Film Solar Cells Compared to Normal Solar Cells",
+      "credit": "GRC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GRC-1966-C-02754",
+      "image_url": "https://images-assets.nasa.gov/image/GRC-1966-C-02754/GRC-1966-C-02754~medium.jpg",
+      "alt_suggestion": "Adolph Spakowski, head of the Photovoltaic Fundamentals Section at the National Aeronautics and Space Administration (NASA) Lewis Research Center, illustrated the difference between conventional silic",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-106551",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Saint Jerome in his Cell",
+      "credit": "Albrecht Dürer German, 1471-1528 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/106551",
+      "image_url": "https://www.artic.edu/iiif/2/927d4fdd-a7f3-b69e-1ba6-3f74f00b9bc4/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of woodcut in black on ivory laid paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-102030856",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Solar cell ship.jpg",
+      "credit": "Ddgfoto / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Solar_cell_ship.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Solar_cell_ship.jpg/960px-Solar_cell_ship.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5612,
+      "height": 3744,
+      "alt_suggestion": "photovoltaic cells for the ship",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-GRC-2019-C-09534",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Perovskite Solar Cells",
+      "credit": "NASA/GRC/Bridget Caswell / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GRC-2019-C-09534",
+      "image_url": "https://images-assets.nasa.gov/image/GRC-2019-C-09534/GRC-2019-C-09534~medium.jpg",
+      "alt_suggestion": "Perovskite Solar Cells",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"solar cell silicon solar cell photovoltaic\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"solar cell\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"solar cell silicon solar cell\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

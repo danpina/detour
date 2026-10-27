@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-41243545",
+  "alt": "A GPU package seen at an angle, with a large central graphics die surrounded by four smaller memory chips on a silicon interposer.",
+  "fits": true,
+  "note": "Fiji GPU with HBM, clear and attractive; only a tiny AMD marking on the edge.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.3
+  }
+}

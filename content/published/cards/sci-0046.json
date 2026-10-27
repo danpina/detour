@@ -1,0 +1,59 @@
+{
+  "id": "sci-0046",
+  "interest": "science",
+  "title": "The bird on the wire",
+  "probes": [
+    {
+      "id": "sci-0046-p1",
+      "question": "A lineworker safely holds a live wire when the worker and the wire are...",
+      "kind": "mcq",
+      "options": [
+        "At the same electric potential",
+        "At different potentials",
+        "Made of the same metal"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0046-p2",
+      "question": "True or false: in an ohmic conductor, the current between two points is directly proportional to the voltage across them.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Live-line working (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Live-line_working"
+    },
+    {
+      "title": "Ohm's law (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ohm%27s_law"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:35:03.436Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "sci-0046.webp",
+    "alt": "A row of small birds perched on overhead power lines under a cloudy grey sky.",
+    "kind": "photo",
+    "credit": "Nvss132 / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Birds,_Buck_Lodge_Community_Park.jpg"
+  },
+  "body": {
+    "question": "A bird perches on a high-voltage power line and is not shocked. Why?",
+    "options": [
+      "Its feathers are perfect insulators",
+      "Birds are immune to electricity",
+      "Its body and the wire are at the same electric potential, so no current passes through it"
+    ],
+    "answer": 2,
+    "reveal": "Current needs a voltage difference between two points to push it. Sitting on one wire, the bird is at the same potential as the wire. Lineworkers on a live line are safe for the same reason, and it is the same principle that lets birds sit on power lines."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0059",
+  "created_at": "2026-10-26T20:31:27.300Z",
+  "queries": [
+    "Earth Blue Marble Apollo 17 Earth Earth from space",
+    "Earth Blue Marble",
+    "Earth Blue Marble Apollo 17 Earth"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-43894484",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Earth seen from Apollo 17.jpg",
+      "credit": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/960px-The_Earth_seen_from_Apollo_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 3002,
+      "alt_suggestion": "\"The Blue Marble\" is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of about 29,400 kilometres (18,300 mi). It s",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-GSFC_20171208_Archive_e000496",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "NASA Releases New High-Resolution Earthrise Image",
+      "credit": "GSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000496",
+      "image_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000496/GSFC_20171208_Archive_e000496~small.jpg",
+      "alt_suggestion": "NASA's Lunar Reconnaissance Orbiter (LRO) recently captured a unique view of Earth from the spacecraft's vantage point in orbit around the moon. \"The image is simply stunning,\" said Noah Petro, Deputy",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-236395",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The British Consular Yamun, Canton",
+      "credit": "John Thomson Scottish, 1837–1921 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/236395",
+      "image_url": "https://www.artic.edu/iiif/2/3daccafa-ffac-11a4-eb33-c569d2867e40/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of collotype, pl. xvii from the album \"illustrations of china and its people, volume i\" (1873).",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-171069392",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Blue Marble, AS17-148-22727.jpg",
+      "credit": "Harrison Schmitt / Apollo 17 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Blue_Marble,_AS17-148-22727.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/The_Blue_Marble%2C_AS17-148-22727.jpg/960px-The_Blue_Marble%2C_AS17-148-22727.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6750,
+      "height": 6750,
+      "alt_suggestion": "The Blue Marble, by Apollo 17, AS17-148-22727.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-GSFC_20171208_Archive_e001386",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Most Amazing High Definition Image of Earth - Blue Marble 2012",
+      "credit": "GSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001386",
+      "image_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001386/GSFC_20171208_Archive_e001386~medium.jpg",
+      "alt_suggestion": "January 25, 2012 *Updated February 2, 2012: According to Flickr, \"The western hemisphere Blue Marble 2012 image has rocketed up to over 3.1 million views making it one of the all time most viewed imag",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Earth Blue Marble Apollo 17 Earth Earth from space\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Earth Blue Marble\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Earth Blue Marble Apollo 17 Earth\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

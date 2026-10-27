@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-47037226",
+  "alt": "Page of the 1893 New Zealand women's suffrage petition, with printed text addressed to Parliament and handwritten signatures and addresses.",
+  "fits": true,
+  "note": "Primary document, public domain, very tall; crop to signatures",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.7,
+    "zoom": 2
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Password hashing",
+    "angle": "Storing passwords without storing passwords"
+  },
+  "created_at": "2026-10-27T06:07:56.483Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0038",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "How sites can store passwords safely",
+    "body": {
+      "claim": "A safer way for a site to store passwords is as salted hashes, not as the passwords themselves.",
+      "why": "A hash is a one-way operation that is quick to calculate but hard to reverse, and even a small change in the input gives a very different result. A salt is random data added to each password, which helps defend against precomputed tables like rainbow tables."
+    },
+    "probes": [
+      {
+        "id": "tech-0038-p1",
+        "kind": "mcq",
+        "question": "What does adding a unique salt to each password help defend against?",
+        "options": [
+          "Forgetting your password",
+          "Slow websites",
+          "Attacks using precomputed tables of hashes",
+          "Phishing emails"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0038-p2",
+        "kind": "tf",
+        "question": "True or false: a hash is designed to be easy to reverse.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cryptographic hash function (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cryptographic_hash_function"
+      },
+      {
+        "title": "Salt (cryptography) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Salt_(cryptography)"
+      },
+      {
+        "title": "Password (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Password"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A combination padlock",
+    "keywords": [
+      "padlock",
+      "combination lock",
+      "keyhole"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.720Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cryptographic_hash_function",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Salt_(cryptography)",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Password",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Safer to store salted hashes than the passwords themselves (plain text needs no cracking)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Password",
+        "quote": "If an attacker gains access to the password file, then if it is stored as plain text, no cracking is necessary."
+      },
+      {
+        "claim": "Hashed but unsalted passwords are vulnerable to rainbow tables, hence salting",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Password",
+        "quote": "If it is hashed but not salted then it is vulnerable to rainbow table attacks"
+      },
+      {
+        "claim": "A hash is one-way: quick to calculate, hard to reverse (probe 2: false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cryptographic_hash_function",
+        "quote": "Hashing is a one-directional mathematical operation which is quick to calculate, yet hard to reverse."
+      },
+      {
+        "claim": "Even a small change in the input gives a very different hash",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cryptographic_hash_function",
+        "quote": "Even a small change in the input results in a very different hash"
+      },
+      {
+        "claim": "A salt is random data added to the password hashing",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Salt_(cryptography)",
+        "quote": "a salt is random data fed as an additional input to a one-way function that hashes data, a password or passphrase"
+      },
+      {
+        "claim": "A unique salt is generated for each password",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Salt_(cryptography)",
+        "quote": "Typically, a unique salt is randomly generated for each password."
+      },
+      {
+        "claim": "Salting helps defend against precomputed tables like rainbow tables (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Salt_(cryptography)",
+        "quote": "Salting helps defend against attacks that use partially precomputed tables"
+      }
+    ],
+    "overall": "pass"
+  }
+}

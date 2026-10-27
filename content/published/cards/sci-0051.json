@@ -1,0 +1,60 @@
+{
+  "id": "sci-0051",
+  "interest": "science",
+  "title": "A tank with a rubber sheet",
+  "probes": [
+    {
+      "id": "sci-0051-p1",
+      "question": "In the water-pipe analogy, a capacitor is like...",
+      "kind": "mcq",
+      "options": [
+        "A narrow constriction",
+        "A flexible diaphragm sealed in a pipe",
+        "A pump",
+        "A tee junction"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0051-p2",
+      "question": "True or false: in a capacitor, electrons actually pass through the dielectric.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Capacitor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Capacitor"
+    },
+    {
+      "title": "Hydraulic analogy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hydraulic_analogy"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:35:10.658Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "sci-0051.webp",
+    "alt": "A cylindrical metal paper-type capacitor with wire leads lies on a light background beside a second one.",
+    "kind": "photo",
+    "credit": "Retired electrician / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Soviet_capacitor_%D0%9C%D0%91%D0%9C_(MBM)_type_01.jpg"
+  },
+  "body": {
+    "question": "What does a capacitor do?",
+    "options": [
+      "It makes electricity from chemicals",
+      "It stores electrical energy by holding charge on two insulated surfaces",
+      "It turns heat into light"
+    ],
+    "answer": 1,
+    "reveal": "A capacitor stores energy by accumulating electric charges on two closely spaced surfaces that are insulated from each other. In the water picture it is a flexible diaphragm in a pipe: charge moves on both sides while no electrons actually pass through. The earliest ones were Leyden jars in the 1740s."
+  }
+}

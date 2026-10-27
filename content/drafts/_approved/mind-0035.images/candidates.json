@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0035",
+  "created_at": "2026-10-26T20:30:32.782Z",
+  "queries": [
+    "sleeping cat sleeping sleep bed",
+    "sleeping cat",
+    "sleeping cat sleeping"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-92825640",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "A cat sleeping in a cat bed.jpg",
+      "credit": "JW2009 / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_cat_sleeping_in_a_cat_bed.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/A_cat_sleeping_in_a_cat_bed.jpg/960px-A_cat_sleeping_in_a_cat_bed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3024,
+      "height": 4032,
+      "alt_suggestion": "A calico cat taking a cat nap on a cat bed.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-560",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Sleeping Infant Faun Visited by an Inquisitive Rabbit",
+      "credit": "Edward Clark Potter (American, 1857–1923) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/560",
+      "image_url": "https://www.artic.edu/iiif/2/4f93b5a2-40ed-c384-9452-6215060f52e9/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of marble.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-55991162",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sleeping cat on a bed.jpg",
+      "credit": "AhmadElq / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_a_bed.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Sleeping_cat_on_a_bed.jpg/960px-Sleeping_cat_on_a_bed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2448,
+      "height": 2448,
+      "alt_suggestion": "Sleeping cat on a bed, KFUPM",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-16488",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Armida Encounters the Sleeping Rinaldo",
+      "credit": "Giovanni Battista Tiepolo (Italian, 1696–1770) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16488",
+      "image_url": "https://www.artic.edu/iiif/2/633f464c-203f-f7b9-a251-7a2073f4b05d/full/843,/0/default.jpg",
+      "alt_suggestion": "Large painting of soldier asleep outdoors surrounded by two women and a cupid.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-8364006",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "December 2008 sleeping cat and dog.jpg",
+      "credit": "BlackKitten / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:December_2008_sleeping_cat_and_dog.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/December_2008_sleeping_cat_and_dog.jpg/960px-December_2008_sleeping_cat_and_dog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1748,
+      "height": 1311,
+      "alt_suggestion": "Perro y Gato",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"sleeping cat sleeping sleep bed\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"sleeping cat\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"sleeping cat sleeping\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

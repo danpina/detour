@@ -1,0 +1,98 @@
+{
+  "draft_id": "money-0057",
+  "created_at": "2026-10-27T06:09:56.976Z",
+  "queries": [
+    "Rue Quincampoix Rue Quincampoix 1720 John Law",
+    "Rue Quincampoix",
+    "Rue Quincampoix Rue Quincampoix 1720"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-27379550",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Estampe satirique sur le fonctionement du systeme de Law et sa banqueroute 1720.jpg",
+      "credit": "Bernard Picart / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Estampe_satirique_sur_le_fonctionement_du_systeme_de_Law_et_sa_banqueroute_1720.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Estampe_satirique_sur_le_fonctionement_du_systeme_de_Law_et_sa_banqueroute_1720.jpg/960px-Estampe_satirique_sur_le_fonctionement_du_systeme_de_Law_et_sa_banqueroute_1720.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3824,
+      "height": 2945,
+      "alt_suggestion": "Allegorical engraving and humorous, on the bankruptcy of John Law and representing a parade, street Quincampoix in 1720. Text in French and Dutch.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-45320",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "A3: Massachusetts Dining Room, 1720",
+      "credit": "Designed by Narcissa Niblack Thorne American, 1882–1966 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/45320",
+      "image_url": "https://www.artic.edu/iiif/2/809ba0d7-86de-e6be-da7b-e92a9a7f5d9c/full/843,/0/default.jpg",
+      "alt_suggestion": "Miniature dining room with yellow painted and white wood-paneled walls, rustic wooden furniture, dark wood floors.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-28846639",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rue Quincampoix, 75004 Paris, France 2010.jpg",
+      "credit": "zoetnet / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rue_Quincampoix,_75004_Paris,_France_2010.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Rue_Quincampoix%2C_75004_Paris%2C_France_2010.jpg/960px-Rue_Quincampoix%2C_75004_Paris%2C_France_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1788,
+      "height": 2315,
+      "alt_suggestion": "Rue Quincampoix, 75004 Paris, France.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-117618",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "E20: French Library of the Louis XV Period, c. 1720",
+      "credit": "Designed by Narcissa Niblack Thorne American, 1882–1966 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/117618",
+      "image_url": "https://www.artic.edu/iiif/2/2d6719e1-8c05-5d23-82fd-75297feca652/full/843,/0/default.jpg",
+      "alt_suggestion": "Miniature aristocratic home library with wood-paneled walls, floral carpet, and ornate and upholstered furniture.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-61352847",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rue Quincampoix (9305893053).jpg",
+      "credit": "Jeanne Menjoulet from Paris, France / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rue_Quincampoix_(9305893053).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Rue_Quincampoix_%289305893053%29.jpg/960px-Rue_Quincampoix_%289305893053%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3869,
+      "height": 5157,
+      "alt_suggestion": "Paris",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-140124767",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Rue Quincampoix En l'année 1720, G.13190.jpg",
+      "credit": "Humblot, Antoine (en 1758), graveur / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rue_Quincampoix_En_l%27ann%C3%A9e_1720,_G.13190.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Rue_Quincampoix_En_l%27ann%C3%A9e_1720%2C_G.13190.jpg/960px-Rue_Quincampoix_En_l%27ann%C3%A9e_1720%2C_G.13190.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6125,
+      "height": 4329,
+      "alt_suggestion": "Auteur(s): Humblot, Antoine (en 1758), graveur Humblot, Antoine (en 1758), auteur du modèle Duchange, Gaspard (en 1662 - 06–01–1757 — 1757), editeur Date de production: Vers 1720 Datation en siècle: 1",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Rue Quincampoix Rue Quincampoix 1720 John Law\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Rue Quincampoix\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Rue Quincampoix Rue Quincampoix 1720\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

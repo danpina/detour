@@ -1,0 +1,91 @@
+{
+  "draft_id": "money-0039",
+  "created_at": "2026-10-26T20:30:44.434Z",
+  "queries": [
+    "eggs in basket eggs basket wicker basket eggs",
+    "eggs in basket",
+    "eggs in basket eggs basket"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-93178466",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Eggs in basket 2020 G1.jpg",
+      "credit": "George Chernilevsky / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eggs_in_basket_2020_G1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Eggs_in_basket_2020_G1.jpg/960px-Eggs_in_basket_2020_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3700,
+      "height": 3700,
+      "alt_suggestion": "Chicken eggs and quail eggs in a wicker basket, Ukraine",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-111436",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Basket of Apples",
+      "credit": "Paul Cezanne (French, 1839–1906) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/111436",
+      "image_url": "https://www.artic.edu/iiif/2/52ac8996-3460-cf71-cb42-5c4d0aa29b74/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of a basket of green and red-yellow apples spilling over into a white cloth placed on a wooden table, with a dark green bottle and a plate of pale biscuits behind.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-72439681",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Egg warmer basket, 2018-(01).jpg",
+      "credit": "Jocian / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Egg_warmer_basket,_2018-(01).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Egg_warmer_basket%2C_2018-%2801%29.jpg/960px-Egg_warmer_basket%2C_2018-%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2760,
+      "height": 2069,
+      "alt_suggestion": "„Eierwärmer-Körbchen“ für bis zu 6 (gekochte) Eier.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-181737",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Burden Basket",
+      "credit": "Pomo Northern California, United States / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/181737",
+      "image_url": "https://www.artic.edu/iiif/2/2037a3c0-76ca-fae7-1060-25a486f51561/full/843,/0/default.jpg",
+      "alt_suggestion": "Large tan woven basket with dark brown triangles.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-72441902",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Egg warmer basket, 2018-(02).jpg",
+      "credit": "Jocian / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Egg_warmer_basket,_2018-(02).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Egg_warmer_basket%2C_2018-%2802%29.jpg/960px-Egg_warmer_basket%2C_2018-%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2696,
+      "height": 2022,
+      "alt_suggestion": "„Eierwärmer-Körbchen“ für bis zu 6 (gekochte) Eier.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "The bride's cook book; (1908) (14592048207).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"eggs in basket eggs basket wicker basket eggs\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"eggs in basket\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"eggs in basket eggs basket\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

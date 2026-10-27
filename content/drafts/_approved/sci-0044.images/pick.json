@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-45568987",
+  "alt": "A power plant control room with walls of gauges and switch panels and a desk console in the foreground.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

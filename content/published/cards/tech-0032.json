@@ -1,0 +1,55 @@
+{
+  "id": "tech-0032",
+  "interest": "tech",
+  "title": "How many IPv4 addresses are there?",
+  "probes": [
+    {
+      "id": "tech-0032-p1",
+      "question": "About how many unique addresses does IPv4's 32-bit address space provide?",
+      "kind": "mcq",
+      "options": [
+        "430 million",
+        "4.3 billion",
+        "43 billion",
+        "430 billion"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0032-p2",
+      "question": "True or false: IPv4 addresses are 32 bits long.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "IPv4 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/IPv4"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:48.861Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "tech-0032.webp",
+    "alt": "Close-up of the cut end of a shielded Ethernet cable showing foil-wrapped twisted pairs and copper conductors.",
+    "kind": "photo",
+    "credit": "Raimond Spekking / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:CAT8_Ethernet_Cable-5839.jpg"
+  },
+  "body": {
+    "question": "Every device on the internet needs an address. IPv4 uses 32 bits for it. About how many unique addresses is that?",
+    "unit": "billion addresses",
+    "min": 0.01,
+    "max": 1000,
+    "scale": "log",
+    "answer": 4.29,
+    "reveal": "32 bits gives 4,294,967,296 unique addresses, about 4.3 billion, and large blocks of them are reserved for special purposes. That was not enough for the global internet."
+  }
+}

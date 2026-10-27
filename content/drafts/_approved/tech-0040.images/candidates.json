@@ -1,0 +1,88 @@
+{
+  "draft_id": "tech-0040",
+  "created_at": "2026-10-27T06:11:15.633Z",
+  "queries": [
+    "wireless router router antenna Wi-Fi router",
+    "wireless router",
+    "wireless router router antenna"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-28977327",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wi-Fi and mobile phone antenna inside New York City subway.jpg",
+      "credit": "User:z22 / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wi-Fi_and_mobile_phone_antenna_inside_New_York_City_subway.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Wi-Fi_and_mobile_phone_antenna_inside_New_York_City_subway.jpg/960px-Wi-Fi_and_mobile_phone_antenna_inside_New_York_City_subway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1536,
+      "alt_suggestion": "An antenna of Transit Wireless for its Wi-Fi and mobile phone services at the ceiling of a New York City subway station.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-50474510",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Netgear-Nighthawk-AC1900-WiFi-Router.jpg",
+      "credit": "Evan-Amos / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Netgear-Nighthawk-AC1900-WiFi-Router.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Netgear-Nighthawk-AC1900-WiFi-Router.jpg/960px-Netgear-Nighthawk-AC1900-WiFi-Router.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4600,
+      "height": 3400,
+      "alt_suggestion": "A Netgear Nighthawk WiFi router, model AC1900. This is a wireless router first released in 2013 with a list price of $249. It is a dual band router with a 1GHz dual core processor.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-5914167",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "MetroFi WiFi antenna.jpg",
+      "credit": "Jason McHuff / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MetroFi_WiFi_antenna.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/MetroFi_WiFi_antenna.jpg/960px-MetroFi_WiFi_antenna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 960,
+      "alt_suggestion": "SW 11th & Yamhill, as seen from the Multnomah County Library",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-14976039",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "USI router.jpg",
+      "credit": "Collin Knopp-Schwyn / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:USI_router.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/USI_router.jpg/960px-USI_router.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2191,
+      "height": 1959,
+      "alt_suggestion": "A wireless internet router, part of Minneapolis, Minnesota's broadband wireless internet network run by U.S. Internet.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-97110619",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Outdoors Wireless Access Point.jpg",
+      "credit": "Mbrickn / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Outdoors_Wireless_Access_Point.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Outdoors_Wireless_Access_Point.jpg/960px-Outdoors_Wireless_Access_Point.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3024,
+      "height": 4032,
+      "alt_suggestion": "A wireless access point mounted outside McDonald Hall at Bowling Green State University.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"wireless router router antenna Wi-Fi router\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"wireless router\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"wireless router router antenna\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

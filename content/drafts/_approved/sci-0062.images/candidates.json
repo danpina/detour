@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0062",
+  "created_at": "2026-10-26T20:31:48.606Z",
+  "queries": [
+    "Black hole Messier 87 Event Horizon Telescope M87 black hole",
+    "Black hole Messier 87",
+    "Black hole Messier 87 Event Horizon Telescope"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-77916527",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Black hole - Messier 87.jpg",
+      "credit": "Event Horizon Telescope / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Black_hole_-_Messier_87.jpg/960px-Black_hole_-_Messier_87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 7416,
+      "height": 4320,
+      "alt_suggestion": "The Event Horizon Telescope (EHT) — a planet-scale array of eight ground-based radio telescopes forged through international collaboration — was designed to capture images of a black hole. In coordina",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA23122",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Spitzer Captures Messier 87",
+      "credit": "NASA/JPL-Caltech/IPAC/Event Horizon Telescope Collaboration / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA23122",
+      "image_url": "https://images-assets.nasa.gov/image/PIA23122/PIA23122~medium.jpg",
+      "alt_suggestion": "This image from NASA's Spitzer Space Telescope shows the elliptical galaxy Messier 87 (M87), the home galaxy of the supermassive black hole recently imaged by the Event Horizon Telescope (EHT). Spitze",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-55341",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Breton Bather",
+      "credit": "Paul Gauguin French, 1848-1903 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/55341",
+      "image_url": "https://www.artic.edu/iiif/2/d9cbc708-6974-6429-f62b-86b8acc8374a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of charcoal and pastel, with touches of brush and brown ink, on ivory laid paper (discolored to tan), partially outlined in graphite and squared in black fabricated chalk, with yellow paint residue on verso.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-77925953",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Black hole - Messier 87 crop max res.jpg",
+      "credit": "Event Horizon Telescope, uploader cropped and converted TIF to JPG / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87_crop_max_res.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/960px-Black_hole_-_Messier_87_crop_max_res.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4320,
+      "height": 4320,
+      "alt_suggestion": "The Event Horizon Telescope (EHT) — a planet-scale array of eight ground-based radio telescopes forged through international collaboration — was designed to capture images of a black hole. In coordina",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-103673703",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Telescopes Unite in Unprecedented Observations of Famous Black Hole M87.jpg",
+      "credit": "The EHT Multi-wavelength Science Working Group; the EHT Collaboration; ALMA (ESO/NAOJ/NRAO); the EVN; the EAVN Collaboration; VLBA (NRAO); the GMVA; the Hubble ",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Telescopes_Unite_in_Unprecedented_Observations_of_Famous_Black_Hole_M87.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Telescopes_Unite_in_Unprecedented_Observations_of_Famous_Black_Hole_M87.jpg/960px-Telescopes_Unite_in_Unprecedented_Observations_of_Famous_Black_Hole_M87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3991,
+      "height": 3000,
+      "alt_suggestion": "Composite image showing how the M87 system looked, across the entire electromagnetic spectrum, during the Event Horizon Telescope’s April 2017 campaign to take the iconic first image of a black hole. ",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Black hole Messier 87 Event Horizon Telescope M87 black hole\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Black hole Messier 87\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Black hole Messier 87 Event Horizon Telescope\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

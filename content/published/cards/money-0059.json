@@ -1,0 +1,57 @@
+{
+  "id": "money-0059",
+  "interest": "money",
+  "title": "When a measure becomes a target",
+  "probes": [
+    {
+      "id": "money-0059-p1",
+      "question": "When a measure becomes a ____, it ceases to be a good measure.",
+      "kind": "cloze",
+      "answer": "target",
+      "accept": []
+    },
+    {
+      "id": "money-0059-p2",
+      "question": "Goodhart's core idea first appeared in an article about what?",
+      "kind": "mcq",
+      "options": [
+        "Monetary policy in the United Kingdom",
+        "Car sales",
+        "School exams",
+        "Farm prices"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Goodhart's law (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:02.556Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0059.webp",
+    "alt": "Two foam archery targets with colourful rings on a green lawn while a child draws a bow.",
+    "kind": "photo",
+    "credit": "U.S. Army photo by Bryan Gatchell / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bull%27s_eye_(8338593).jpg"
+  },
+  "body": {
+    "question": "A car dealership rewards its salespeople by the number of cars they sell each month. What are they likely to do?",
+    "options": [
+      "Sell the same number as before",
+      "Sell fewer, pricier cars",
+      "Sell more cars, even at a loss"
+    ],
+    "answer": 2,
+    "reveal": "Sell more cars, even at a loss. This is Goodhart's law: \"When a measure becomes a target, it ceases to be a good measure.\" It is named after the British economist Charles Goodhart, who expressed the core idea in a 1975 article on monetary policy in the United Kingdom."
+  }
+}

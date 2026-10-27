@@ -1,0 +1,89 @@
+{
+  "draft_id": "sci-0049",
+  "created_at": "2026-10-26T20:34:11.410Z",
+  "queries": [
+    "electricity meter kilowatt hour meter energy meter",
+    "electricity meter",
+    "electricity meter kilowatt hour meter"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-10795599",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hydro quebec meter.JPG",
+      "credit": "Kristoferb (talk) / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hydro_quebec_meter.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Hydro_quebec_meter.JPG/960px-Hydro_quebec_meter.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2432,
+      "height": 2852,
+      "alt_suggestion": "Hydro-Quebec electric meter. Records energy usage in kilowatt-hours. Note that alternate dials are read in opposite directions, so this meter reads 2211.7.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-KSC-97PC903",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-97PC903",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-97PC903",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-97PC903/KSC-97PC903~medium.jpg",
+      "alt_suggestion": "Environmental Health Specialist Jamie A. Keeley, of EG&G Florida Inc., uses an ion chamber dose rate meter to measure radiation levels in one of three radioisotope thermoelectric generators (RTGs) tha",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-20233",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Book of Hours",
+      "credit": "Netherlandish (Utrecht) 15th century / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/20233",
+      "image_url": "https://www.artic.edu/iiif/2/bd3724a5-b9a2-7984-62ec-ad021cdb1cac/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of manuscript with 259 folios, six miniatures and other decorations in tempera and gold leaf, with dutch inscriptions in littera textualis, in blackish brown ink, ruled in graphite, on parchment, in a modern binding of brown morocco over wooden boards, with stamped designs on the endbands, and with machine cut edges, marbled in red and blue.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-110715686",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "NASA’s Webb “Powerhouse” Solar Array Reconnects to the Telescope - 50278384506.jpg",
+      "credit": "Chris Gunn / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:NASA%E2%80%99s_Webb_%E2%80%9CPowerhouse%E2%80%9D_Solar_Array_Reconnects_to_the_Telescope_-_50278384506.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/NASA%E2%80%99s_Webb_%E2%80%9CPowerhouse%E2%80%9D_Solar_Array_Reconnects_to_the_Telescope_-_50278384506.jpg/960px-NASA%E2%80%99s_Webb_%E2%80%9CPowerhouse%E2%80%9D_Solar_Array_Reconnects_to_the_Telescope_-_50278384506.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 7259,
+      "height": 5469,
+      "alt_suggestion": "One kilowatt is about what it takes to heat up some leftovers in a microwave — or to power the largest and most technically advanced telescope ever built. Thanks to its solar array, NASA’s James Webb ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-22229",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Visitation, from Book of Hours",
+      "credit": "Philippe Pigouchet (French, active 1488-1518) published by Simon Vostre (French, active 1486–1518) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/22229",
+      "image_url": "https://www.artic.edu/iiif/2/c39da13c-7998-e649-2820-aa4f45a86e99/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of woodcut, with hand-coloring, in black on paper.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Pacific service magazine (1918) (14780204441).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"electricity meter kilowatt hour meter energy meter\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"electricity meter\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"electricity meter kilowatt hour meter\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "SSD flash cells",
+    "angle": "How a flash cell holds a bit using a floating gate"
+  },
+  "created_at": "2026-10-26T20:28:21.550Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0054",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "An SSD stores bits as trapped electrons",
+    "body": {
+      "claim": "An SSD stores your data as electric charge trapped inside tiny memory cells.",
+      "why": "Each flash cell has a floating gate that is insulated all around, so electrons placed on it stay trapped. The charge changes the cell's threshold voltage, and that is how a bit is read back. Multi-level cells store more than one bit each. SSDs have no moving parts."
+    },
+    "probes": [
+      {
+        "id": "tech-0054-p1",
+        "kind": "mcq",
+        "question": "In a flash cell, what holds the stored charge?",
+        "options": [
+          "A floating gate insulated all around",
+          "A spinning magnetic disk",
+          "A tiny capacitor-free battery",
+          "A laser-etched groove"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0054-p2",
+        "kind": "tf",
+        "question": "True or false: multi-level cell flash stores more than one bit in each memory cell.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Flash memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Flash_memory"
+      },
+      {
+        "title": "Solid-state drive (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Solid-state_drive"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:M.2 2230 M-key SSD in comparison with Micro-SD card.jpg (CC BY-SA) shows an SSD",
+    "keywords": [
+      "SSD",
+      "M.2 SSD",
+      "NAND flash chip",
+      "solid-state drive"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.368Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Flash_memory",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Solid-state_drive",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Flash stores data as electrons trapped on a floating gate",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flash_memory",
+        "quote": "Because the FG is electrically isolated by its insulating layer, electrons placed on it are trapped."
+      },
+      {
+        "claim": "Floating gate is insulated all around (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flash_memory",
+        "quote": "which is insulated all around by an oxide layer"
+      },
+      {
+        "claim": "Trapped charge changes the cell's threshold voltage",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flash_memory",
+        "quote": "When the FG is charged with electrons, this charge screens the electric field from the CG, thus increasing the threshold voltage"
+      },
+      {
+        "claim": "A bit is read back by applying a voltage and seeing if the channel conducts",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flash_memory",
+        "quote": "In order to read a value from the cell, an intermediate voltage"
+      },
+      {
+        "claim": "Multi-level cells store more than one bit each (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flash_memory",
+        "quote": "Multi-level cell (MLC) technology stores more than one bit in each memory cell"
+      },
+      {
+        "claim": "SSDs have no moving parts",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Solid-state_drive",
+        "quote": "SSDs have no moving parts"
+      }
+    ],
+    "overall": "pass"
+  }
+}

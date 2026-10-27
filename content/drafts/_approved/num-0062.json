@@ -1,0 +1,78 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Binary counting on fingers",
+    "angle": "Ten fingers, 1,024 values"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0062",
+    "interest": "numbers",
+    "type": "estimate",
+    "title": "Counting to 1,023 on your fingers",
+    "body": {
+      "question": "Using finger binary, where each finger is one binary digit, what is the highest number you can show on both hands?",
+      "unit": "",
+      "min": 10,
+      "max": 10000,
+      "scale": "log",
+      "answer": 1023,
+      "reveal": "1,023. Each finger is a bit worth twice the one before: 1, 2, 4, 8 and 16 on one hand. One hand alone reaches 31, and ten fingers reach 1,023."
+    },
+    "probes": [
+      {
+        "id": "num-0062-p1",
+        "kind": "estimate",
+        "question": "How high can you count on one hand in finger binary?",
+        "answer": 31,
+        "unit": "",
+        "min": 5,
+        "max": 1000,
+        "scale": "log"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Finger binary (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Finger_binary"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:I love you in Sign Language or the number 19 in Finger Binary.jpg shows a hand showing 19 in finger binary",
+    "keywords": [
+      "finger binary",
+      "binary counting hand",
+      "hand fingers counting"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.523Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Finger_binary",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Each finger is one bit; 31 on one hand, 1023 with both",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Finger_binary",
+        "quote": "This allows counting from zero to 31 using the fingers of one hand, or 1023 using both"
+      },
+      {
+        "claim": "Finger values 1,2,4,8,16 on one hand total 31; ten fingers 2^10 - 1 = 1,023",
+        "verdict": "pass",
+        "note": "Verified by calculation: 1+2+4+8+16 = 31; 2^10 - 1 = 1,023."
+      }
+    ],
+    "overall": "pass"
+  }
+}

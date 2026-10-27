@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Compilers",
+    "angle": "From source code to machine instructions"
+  },
+  "created_at": "2026-10-26T20:28:21.551Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0065",
+    "interest": "tech",
+    "type": "story",
+    "title": "The program that translates programs",
+    "body": {
+      "panels": [
+        {
+          "text": "People write code in high-level languages, such as FORTRAN or COBOL."
+        },
+        {
+          "text": "A compiler translates the source code from a high-level language into a low-level one, such as assembly, object code or machine code."
+        },
+        {
+          "text": "The output is an executable program."
+        },
+        {
+          "text": "In May 1952, Grace Hopper's team at Remington Rand wrote the compiler for the A-0 language and coined the term. It worked more like a loader or linker than a modern compiler."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0065-p1",
+        "kind": "mcq",
+        "question": "What does a compiler do?",
+        "options": [
+          "Runs code only on the internet",
+          "Deletes unused files",
+          "Translates source code into a lower-level language such as machine code",
+          "Draws the user interface"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0065-p2",
+        "kind": "tf",
+        "question": "True or false: Grace Hopper's team coined the term \"compiler\" in connection with the A-0 language.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Compiler (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compiler"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Toolchain.png (CC BY 4.0) shows the C/C++ toolchain with compiler, linker and loader, or File:Compiler design IPL.png (CC BY-SA) shows compiler design",
+    "keywords": [
+      "compiler toolchain",
+      "compiler design",
+      "source code",
+      "programming"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.393Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Compiler",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "People write code in high-level languages such as FORTRAN",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compiler",
+        "quote": "FORTRAN (Formula Translation) for engineering and science applications is considered to be one of the first implemented high-level languages"
+      },
+      {
+        "claim": "... and COBOL",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compiler",
+        "quote": "COBOL (Common Business-Oriented Language) evolved from A-0 and FLOW-MATIC to become the dominant high-level language for business applications."
+      },
+      {
+        "claim": "A compiler translates high-level source into a low-level language (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compiler",
+        "quote": "translate source code from a high-level programming language to a low-level programming language"
+      },
+      {
+        "claim": "The output is an executable program",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compiler",
+        "quote": "to create an executable program"
+      },
+      {
+        "claim": "May 1952: Hopper's team at Remington Rand wrote the A-0 compiler and coined the term (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Compiler",
+        "quote": "Grace Hopper 's team at Remington Rand wrote the compiler for the A-0 programming language (and coined the term compiler to describe it)"
+      }
+    ],
+    "overall": "pass"
+  }
+}

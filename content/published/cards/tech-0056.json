@@ -1,0 +1,70 @@
+{
+  "id": "tech-0056",
+  "interest": "tech",
+  "title": "How a network learns from its errors",
+  "probes": [
+    {
+      "id": "tech-0056-p1",
+      "question": "In gradient descent, which way does each step go?",
+      "kind": "mcq",
+      "options": [
+        "In the direction of the gradient",
+        "Opposite the gradient",
+        "Sideways to the gradient",
+        "In a random direction"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0056-p2",
+      "question": "True or false: backpropagation efficiently computes the gradient of the loss with respect to the network weights.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gradient descent (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gradient_descent"
+    },
+    {
+      "title": "Backpropagation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Backpropagation"
+    },
+    {
+      "title": "Neural network (machine learning) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:49.507Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0056.webp",
+    "alt": "Glowing white nodes arranged in layers and joined by orange and green lines, depicting a neural network on a black background.",
+    "kind": "photo",
+    "credit": "Akritasa / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Two-layer_feedforward_artificial_neural_network.png"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "A neural network is made of connections with weights. The strength of each connection is a weight, and training adjusts them."
+      },
+      {
+        "text": "The network produces outputs, and training compares them with the target values. The gap is the error that training tries to shrink."
+      },
+      {
+        "text": "The gradient shows which way the error rises fastest. So training steps the other way, the direction of steepest descent."
+      },
+      {
+        "text": "Backpropagation works out the gradient with respect to the weights, layer by layer from the output back. Repeat with many small steps, and the error shrinks toward a local minimum."
+      }
+    ]
+  }
+}

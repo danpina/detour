@@ -1,0 +1,82 @@
+{
+  "draft_id": "mind-0037",
+  "created_at": "2026-10-26T20:30:45.597Z",
+  "queries": [
+    "sunrise morning sky sunrise morning light",
+    "sunrise morning sky",
+    "sunrise morning sky sunrise"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-30298391",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dülmen, Umland, Sonnenaufgang -- 2012 -- 8084.jpg",
+      "credit": "Dietmar Rabich / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Umland,_Sonnenaufgang_--_2012_--_8084.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/D%C3%BClmen%2C_Umland%2C_Sonnenaufgang_--_2012_--_8084.jpg/960px-D%C3%BClmen%2C_Umland%2C_Sonnenaufgang_--_2012_--_8084.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3456,
+      "height": 5184,
+      "alt_suggestion": "Drainage ditch (Kettbach) during sunrise in morning mist near Dülmen, North Rhine-Westphalia, Germany",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-KSC-99pp0594",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "KSC-99pp0594",
+      "credit": "KSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/KSC-99pp0594",
+      "image_url": "https://images-assets.nasa.gov/image/KSC-99pp0594/KSC-99pp0594~medium.jpg",
+      "alt_suggestion": "KENNEDY SPACE CENTER, FLA. -- Competing with the sunrise, the brilliant flames from the launch of Space Shuttle Discovery light up the morning sky. Mission STS-96 lifted off at 6:49:42 a.m. EDT. The c",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-16439",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Morning",
+      "credit": "Claude Joseph Vernet (French, 1714–1789) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16439",
+      "image_url": "https://www.artic.edu/iiif/2/e8f3fd3f-2098-1c68-1867-b5dccb21018e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-38576339",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dülmen, Hausdülmen, Sonnenaufgang -- 2015 -- 4952.jpg",
+      "credit": "Dietmar Rabich / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Sonnenaufgang_--_2015_--_4952.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/D%C3%BClmen%2C_Hausd%C3%BClmen%2C_Sonnenaufgang_--_2015_--_4952.jpg/960px-D%C3%BClmen%2C_Hausd%C3%BClmen%2C_Sonnenaufgang_--_2015_--_4952.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5354,
+      "height": 3569,
+      "alt_suggestion": "Sunrise near Hausdülmen, Dülmen, North Rhine-Westphalia, Germany",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-ED06-0202-001",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "One of NASA's two modified Boeing 747 Shuttle Carrier Aircraft is silhouetted against the morning sky at sunrise on the ramp at Edwards Air Force Base",
+      "credit": "NASA/Tony Landis / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/ED06-0202-001",
+      "image_url": "https://images-assets.nasa.gov/image/ED06-0202-001/ED06-0202-001~medium.jpg",
+      "alt_suggestion": "One of NASA's two modified Boeing 747 Shuttle Carrier Aircraft is silhouetted against the morning sky at sunrise on the ramp at Edwards Air Force Base.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"sunrise morning sky sunrise morning light\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"sunrise morning sky\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"sunrise morning sky sunrise\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

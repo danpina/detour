@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Dollar-cost averaging",
+    "angle": "A fixed amount buys more shares when prices are low"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0044",
+    "interest": "money",
+    "type": "guess_first",
+    "title": "Same dollars, more shares",
+    "body": {
+      "question": "You invest the same $100 every month. In a month when the share price is low, what happens to the number of shares your $100 buys?",
+      "options": [
+        "Fewer",
+        "The same",
+        "More"
+      ],
+      "answer": 2,
+      "reveal": "More. A fixed amount of money buys more shares when the price is low and fewer when it is high, which is the idea behind dollar-cost averaging. The investor decides only how much to invest and how often, which is why it often runs automatically, such as through payroll deductions."
+    },
+    "probes": [
+      {
+        "id": "money-0044-p1",
+        "kind": "mcq",
+        "question": "In dollar-cost averaging, what stays fixed each period?",
+        "options": [
+          "The share price",
+          "The amount of money invested",
+          "The number of shares bought"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0044-p2",
+        "kind": "tf",
+        "question": "True or false: dollar-cost averaging means buying the same number of shares each period.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Dollar cost averaging (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Thomas Edison stock ticker NMAH-JN2014-3625.jpg shows an early stock ticker machine",
+    "keywords": [
+      "stock ticker",
+      "Edison stock ticker",
+      "ticker machine",
+      "ticker tape"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.842Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Fixed money buys more shares when price low, fewer when high (answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+        "quote": "DCA effectively leads to more shares being purchased when their price is low and fewer when they are expensive."
+      },
+      {
+        "claim": "Number of shares varies inversely with price for a fixed amount",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+        "quote": "the number of shares that can be bought for a fixed amount of money varies inversely with their price"
+      },
+      {
+        "claim": "Investor decides only how much and how often",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+        "quote": "the investor decides only two parameters: the fixed amount of money to invest each time period"
+      },
+      {
+        "claim": "Often automatic, such as payroll deductions",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+        "quote": "this lends itself to an automatic investment system such as a payroll deduction or scheduled bank transfer"
+      },
+      {
+        "claim": "Fixed number of shares each period is an alternative strategy, not DCA (probe 2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+        "quote": "The alternate strategies are to purchase a fixed number of shares each time period"
+      }
+    ],
+    "overall": "pass"
+  }
+}

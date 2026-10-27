@@ -1,0 +1,92 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Flow",
+    "angle": "Balance of challenge and skill"
+  },
+  "created_at": "2026-10-26T20:29:12.581Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0043",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "When does flow happen?",
+    "body": {
+      "question": "According to the idea of flow, when are you most likely to get lost in a task?",
+      "options": [
+        "When the task is far beyond your skill",
+        "When the task is far easier than your skill",
+        "When the challenge and your skill are in balance"
+      ],
+      "answer": 2,
+      "reveal": "Flow is a state of finding a balance between a skill and how challenging the task is, with a high level of concentration. You are most likely to experience it at moderate arousal, neither overwhelmed nor bored."
+    },
+    "probes": [
+      {
+        "id": "mind-0043-p1",
+        "kind": "tf",
+        "question": "True or false: flow is most likely at moderate levels of arousal, not overwhelmed and not understimulated.",
+        "answer": true
+      },
+      {
+        "id": "mind-0043-p2",
+        "kind": "cloze",
+        "question": "Flow comes from balancing a skill against how ____ the task is.",
+        "answer": "challenging",
+        "accept": [
+          "difficult",
+          "hard"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Flow (psychology) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Flow_(psychology)"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:A Potter Working (BM 1982,U.1585).jpg shows a potter absorbed at the wheel",
+    "keywords": [
+      "potter working",
+      "potter wheel",
+      "pottery"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:07:59.931Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Flow_(psychology)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Flow is a balance between skill and challenge, with high concentration (reveal, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flow_(psychology)",
+        "quote": "the state of finding a balance between a skill and how challenging that task is."
+      },
+      {
+        "claim": "Balance between challenge and skill is the central precondition of flow (question/answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flow_(psychology)",
+        "quote": "such balance can be identified as the central precondition of flow experience."
+      },
+      {
+        "claim": "Most likely at moderate arousal, neither overwhelmed nor bored (reveal, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Flow_(psychology)",
+        "quote": "One is most likely to experience flow at moderate levels of psychological arousal"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0063",
+  "created_at": "2026-10-26T20:33:45.767Z",
+  "queries": [
+    "Five Steps of Papermaking papermaking Cai Lun Ming woodcut papermaking",
+    "Five Steps of Papermaking",
+    "Five Steps of Papermaking papermaking Cai Lun"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-74768454",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Five Steps of Papermaking - Step 2 - Boiling the Bamboo - As described by Cai Lun in 105 CE.jpg",
+      "credit": "Collection of reproductions of Ming dynasty woodcuts / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Five_Steps_of_Papermaking_-_Step_2_-_Boiling_the_Bamboo_-_As_described_by_Cai_Lun_in_105_CE.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Five_Steps_of_Papermaking_-_Step_2_-_Boiling_the_Bamboo_-_As_described_by_Cai_Lun_in_105_CE.jpg/960px-Five_Steps_of_Papermaking_-_Step_2_-_Boiling_the_Bamboo_-_As_described_by_Cai_Lun_in_105_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1119,
+      "height": 1501,
+      "alt_suggestion": "An image of a Ming dynasty woodcut describing one of the five major steps in the ancient Chinese papermaking process as outlined by Cai Lun in 105 CE. Step 2 - Boiling the bamboo",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-72947",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Book of Silk Braids",
+      "credit": "England / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/72947",
+      "image_url": "https://www.artic.edu/iiif/2/4214e3c6-75d3-6bd1-5aa9-f52a36ac5077/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of paper with sepia ink; silk.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-74768457",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Five Steps of Papermaking - Step 4 - Pressing the Paper - As described by Cai Lun in 105 CE.jpg",
+      "credit": "Collection of reproductions of Ming dynasty woodcuts / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Five_Steps_of_Papermaking_-_Step_4_-_Pressing_the_Paper_-_As_described_by_Cai_Lun_in_105_CE.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Five_Steps_of_Papermaking_-_Step_4_-_Pressing_the_Paper_-_As_described_by_Cai_Lun_in_105_CE.jpg/960px-Five_Steps_of_Papermaking_-_Step_4_-_Pressing_the_Paper_-_As_described_by_Cai_Lun_in_105_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1136,
+      "height": 1539,
+      "alt_suggestion": "An image of a Ming dynasty woodcut describing one of the five major steps in the ancient Chinese papermaking process as outlined by Cai Lun in 105 CE. Step 4 - Pressing the paper",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-228576",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Jinbaori",
+      "credit": "Japan / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/228576",
+      "image_url": "https://www.artic.edu/iiif/2/6395b6e1-f751-47c1-af6c-abcb3589f0f4/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of wool, plain weave; fulled (gorofukuren); appliqué; edged with fur and silk, plain weave with secondary plain interlacings; lined with silk and gilt-paper strips, satin weave with plain interlacings of secondary binding warps and supplementary patterning wefts; closure: wool plain weave, fulled; embroidered with silk cord; edged with silk and gilt-paper strips, plain weave; band of silk, plain oblique interlacing with attached wooden bead.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-74768455",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Five Steps of Papermaking - Step 3 - Casting the Paper Pulp - As described by Cai Lun in 105 CE.jpg",
+      "credit": "Collection of reproductions of Ming dynasty woodcuts / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Five_Steps_of_Papermaking_-_Step_3_-_Casting_the_Paper_Pulp_-_As_described_by_Cai_Lun_in_105_CE.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Five_Steps_of_Papermaking_-_Step_3_-_Casting_the_Paper_Pulp_-_As_described_by_Cai_Lun_in_105_CE.jpg/960px-Five_Steps_of_Papermaking_-_Step_3_-_Casting_the_Paper_Pulp_-_As_described_by_Cai_Lun_in_105_CE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1087,
+      "height": 1479,
+      "alt_suggestion": "An image of a Ming dynasty woodcut describing one of the five major steps in the ancient Chinese papermaking process as outlined by Cai Lun in 105 CE. Step 3 - Casting the paper pulp",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Five Steps of Papermaking papermaking Cai Lun Ming woodcut papermaking\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Five Steps of Papermaking\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Five Steps of Papermaking papermaking Cai Lun\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

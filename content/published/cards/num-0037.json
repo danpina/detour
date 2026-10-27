@@ -1,0 +1,65 @@
+{
+  "id": "num-0037",
+  "interest": "numbers",
+  "title": "Why scolding seems to work",
+  "probes": [
+    {
+      "id": "num-0037-p1",
+      "question": "A cadet's best-ever flight is followed by a weaker one. What is the most likely reason?",
+      "kind": "mcq",
+      "options": [
+        "The praise made him lazy",
+        "The instructor was unfair",
+        "Exceptional results include luck, which rarely repeats",
+        "He forgot how to fly"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "num-0037-p2",
+      "question": "A great rookie season followed by a worse second year is called the sophomore ____.",
+      "kind": "cloze",
+      "answer": "slump",
+      "accept": [
+        "Slump"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Regression toward the mean (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Regression_toward_the_mean"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:10.629Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0037.webp",
+    "alt": "Vintage and modern jets flying in a close formation with smoke trails above a sea of clouds and blue mountains.",
+    "kind": "photo",
+    "credit": "Peng Chen / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Patrulla_%C3%81guila_in_formation_flight_with_the_Flying_Bulls.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Daniel Kahneman once taught flight instructors that praise works better than punishment for building skill."
+      },
+      {
+        "text": "A veteran instructor objected. Cadets he praised for a clean manoeuvre usually did worse next time. Cadets he screamed at usually did better."
+      },
+      {
+        "text": "Kahneman saw the catch. A very good (or very bad) attempt is partly luck, and luck rarely repeats, so the next attempt tends to land nearer the average. This is regression to the mean."
+      },
+      {
+        "text": "The twist: we tend to praise the good and scold the bad, so it can look as if praise backfires and scolding helps. The same effect gives sport its \"sophomore slump\" after a great rookie season."
+      }
+    ]
+  }
+}

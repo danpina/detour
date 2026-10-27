@@ -1,0 +1,73 @@
+{
+  "draft_id": "tech-0044",
+  "created_at": "2026-10-27T06:11:43.257Z",
+  "queries": [
+    "mailbox envelopes letters",
+    "mailbox",
+    "mailbox envelopes"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-36392617",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Letterboxes Ocotillo Wells 2013 Crop.jpg",
+      "credit": "Tuxyso / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Letterboxes_Ocotillo_Wells_2013_Crop.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Letterboxes_Ocotillo_Wells_2013_Crop.jpg/960px-Letterboxes_Ocotillo_Wells_2013_Crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4364,
+      "height": 2240,
+      "alt_suggestion": "Letterboxes at Ocotillo Wells, CA, USA",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-40026204",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Post box Nordbrief, Ribnitz-Damgarten (DSC04840).JPG",
+      "credit": "Matti Blume / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Post_box_Nordbrief,_Ribnitz-Damgarten_(DSC04840).JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Post_box_Nordbrief%2C_Ribnitz-Damgarten_%28DSC04840%29.JPG/960px-Post_box_Nordbrief%2C_Ribnitz-Damgarten_%28DSC04840%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 3456,
+      "alt_suggestion": "Post box of Nordbrief in Ribnitz-Damgarten",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-77597757",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Post box at Irby Mill.jpg",
+      "credit": "Rodhullandemu / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Post_box_at_Irby_Mill.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Post_box_at_Irby_Mill.jpg/960px-Post_box_at_Irby_Mill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2853,
+      "height": 4317,
+      "alt_suggestion": "Edward VII wall-mounted Type C post box CH49 176 at Irby Mill roundabout.",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "The rustiest letter box in Bavaria.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Varde - Briefkasten.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"mailbox envelopes letters\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"mailbox\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"mailbox envelopes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

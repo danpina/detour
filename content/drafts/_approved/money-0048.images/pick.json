@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-104129739",
+ "alt": "A simple chart with a downward-sloping demand line and an upward-sloping supply line crossing at the equilibrium price and quantity.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (CC BY-SA 4.0).",
+ "crop": {
+  "fx": 0.5,
+  "fy": 0.5,
+  "zoom": 1
+ }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-4844830",
+  "alt": "Portrait photograph of Norman Borlaug, an elderly man with white hair in a dark suit and tie, on a city street.",
+  "fits": true,
+  "note": "Public domain; real portrait of the subject (public figure)",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1.1
+  }
+}

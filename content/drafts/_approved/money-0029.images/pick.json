@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-111275563",
+  "alt": "A blank United States tax form, a Form 990-PF return, with lines and boxes to fill in.",
+  "fits": true,
+  "note": "Public-domain government tax form; clean paper-form look.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.25,
+    "zoom": 1
+  }
+}

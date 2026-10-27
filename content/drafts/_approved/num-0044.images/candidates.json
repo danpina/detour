@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0044",
+  "created_at": "2026-10-27T06:10:06.476Z",
+  "queries": [
+    "ballot box voting election ballot",
+    "ballot box",
+    "ballot box voting"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-149212271",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ballot dropped into ballot box 2024 Swedish EU election at Stångenässkolan, Brastad.jpg",
+      "credit": "W.carter / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ballot_dropped_into_ballot_box_2024_Swedish_EU_election_at_St%C3%A5ngen%C3%A4sskolan,_Brastad.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Ballot_dropped_into_ballot_box_2024_Swedish_EU_election_at_St%C3%A5ngen%C3%A4sskolan%2C_Brastad.jpg/960px-Ballot_dropped_into_ballot_box_2024_Swedish_EU_election_at_St%C3%A5ngen%C3%A4sskolan%2C_Brastad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5203,
+      "height": 3468,
+      "alt_suggestion": "A ballot enclosed in an envelope being dropped into a sealed ballot box by a voting official. The 2024 Swedish EU election at Stångenässkolan, used as a polling station in Brastad, Lysekil Municipalit",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-151565",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "County Election",
+      "credit": "John Sartain (English, 1808-1897) after George Caleb Bingham (American, 1811-1879) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/151565",
+      "image_url": "https://www.artic.edu/iiif/2/2d335e46-d0c9-1a40-f980-3423882532dc/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving hand-colored with watercolor on cream chine laid down on cream wove plate paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-149218376",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ballot dropped into ballot box 2024 Swedish EU election at Stångenässkolan, Brastad 2.jpg",
+      "credit": "W.carter / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ballot_dropped_into_ballot_box_2024_Swedish_EU_election_at_St%C3%A5ngen%C3%A4sskolan,_Brastad_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Ballot_dropped_into_ballot_box_2024_Swedish_EU_election_at_St%C3%A5ngen%C3%A4sskolan%2C_Brastad_2.jpg/960px-Ballot_dropped_into_ballot_box_2024_Swedish_EU_election_at_St%C3%A5ngen%C3%A4sskolan%2C_Brastad_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4904,
+      "height": 2758,
+      "alt_suggestion": "A ballot enclosed in an envelope being dropped into a sealed ballot box by a voting official. The 2024 Swedish EU election at Stångenässkolan, used as a polling station in Brastad, Lysekil Municipalit",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-80830",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "An Election Entertainment, plate one from Four Prints of an Election",
+      "credit": "William Hogarth English, 1697-1764 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/80830",
+      "image_url": "https://www.artic.edu/iiif/2/0f5ee26f-4730-7f8e-55c5-c400a708653c/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving in black on cream laid paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-149218378",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ballot dropped into ballot box 2024 Swedish EU election at Stångenässkolan, Brastad 3.jpg",
+      "credit": "W.carter / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ballot_dropped_into_ballot_box_2024_Swedish_EU_election_at_St%C3%A5ngen%C3%A4sskolan,_Brastad_3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Ballot_dropped_into_ballot_box_2024_Swedish_EU_election_at_St%C3%A5ngen%C3%A4sskolan%2C_Brastad_3.jpg/960px-Ballot_dropped_into_ballot_box_2024_Swedish_EU_election_at_St%C3%A5ngen%C3%A4sskolan%2C_Brastad_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4770,
+      "height": 3272,
+      "alt_suggestion": "A ballot enclosed in an envelope being dropped into a sealed ballot box by a voting official. The 2024 Swedish EU election at Stångenässkolan, used as a polling station in Brastad, Lysekil Municipalit",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"ballot box voting election ballot\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ballot box\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ballot box voting\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Procrastination",
+    "angle": "Putting things off as feeling management"
+  },
+  "created_at": "2026-10-26T20:29:12.582Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0044",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Why we put things off",
+    "body": {
+      "claim": "One explanation says people delay a stressful task to avoid unpleasant feelings.",
+      "why": "The pleasure principle may be responsible: delaying can help someone avoid negative emotions, a way of coping with the anxiety of starting. The evidence is debated, though. Piers Steel indicated in 2010 that anxiety is as likely to make people start early as late, and pointed to impulsiveness instead."
+    },
+    "probes": [
+      {
+        "id": "mind-0044-p1",
+        "kind": "mcq",
+        "question": "According to one explanation, why might someone delay a stressful task?",
+        "options": [
+          "To avoid negative emotions",
+          "Because they have no goals",
+          "To save energy for later",
+          "Because the task is too easy"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "mind-0044-p2",
+        "kind": "tf",
+        "question": "True or false: Piers Steel indicated that studies should focus on impulsiveness rather than anxiety.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Procrastination (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Procrastination"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Small black alarm clock on a desk.jpg shows an alarm clock on a desk",
+    "keywords": [
+      "alarm clock desk",
+      "desk clock",
+      "alarm clock"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:07:59.996Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Procrastination",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The pleasure principle may be responsible; avoid negative emotions by delaying stressful tasks (claim, why, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Procrastination",
+        "quote": "The pleasure principle may be responsible for procrastination; one may prefer to avoid negative emotions by delaying stressful tasks.",
+        "note": "Card hedges ('One explanation says', 'may be responsible') as the page does."
+      },
+      {
+        "claim": "Some psychologists cite delay as coping with the anxiety of starting",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Procrastination",
+        "quote": "Some psychologists cite such behavior as a mechanism for coping with the anxiety associated with starting or completing any task or decision."
+      },
+      {
+        "claim": "Steel in 2010: anxiety as likely to make people start early as late (why)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Procrastination",
+        "quote": "Piers Steel indicated in 2010 that anxiety is just as likely to induce people to start working early as late"
+      },
+      {
+        "claim": "Steel: studies should focus on impulsiveness (why, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Procrastination",
+        "quote": "the focus of studies on procrastination should be impulsiveness"
+      }
+    ],
+    "overall": "pass"
+  }
+}

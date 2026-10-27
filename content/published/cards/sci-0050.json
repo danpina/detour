@@ -1,0 +1,57 @@
+{
+  "id": "sci-0050",
+  "interest": "science",
+  "title": "Why your charger gets warm",
+  "probes": [
+    {
+      "id": "sci-0050-p1",
+      "question": "A charger warms up as it works. Where does that heat energy come from?",
+      "kind": "mcq",
+      "options": [
+        "It is created from nothing",
+        "It is converted from electrical energy",
+        "It is absorbed from the air"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0050-p2",
+      "question": "True or false: Joule's law says heating power equals resistance times the square of the current.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Conservation of energy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Conservation_of_energy"
+    },
+    {
+      "title": "Joule heating (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Joule_heating"
+    },
+    {
+      "title": "AC adapter (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/AC_adapter"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:35:09.452Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0050.webp",
+    "alt": "A black laptop AC power adapter with its cable coiled beside it on a white background.",
+    "kind": "photo",
+    "credit": "Evan-Amos / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Notebook-Computer-AC-Adapter.jpg"
+  },
+  "body": {
+    "claim": "A warm charger is not losing energy for nothing: some of it is being transformed into heat.",
+    "why": "Energy can neither be created nor destroyed, only transformed or transferred. Current through any conductor produces heat, with heating power equal to the resistance times the square of the current. In older adapters the losses in the transformer and regulator were considerable, and significant power was dissipated as heat even with no load."
+  }
+}

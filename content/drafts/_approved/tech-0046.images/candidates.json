@@ -1,0 +1,56 @@
+{
+  "draft_id": "tech-0046",
+  "created_at": "2026-10-27T06:12:00.702Z",
+  "queries": [
+    "QR code"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-158677307",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Qr Code Free.png",
+      "credit": "Superplural / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Qr_Code_Free.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Qr_Code_Free.png/960px-Qr_Code_Free.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1000,
+      "height": 1000,
+      "alt_suggestion": "QR Code",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-118468986",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "QR Code pointé.jpg",
+      "credit": "Tomsimon67 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:QR_Code_point%C3%A9.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/QR_Code_point%C3%A9.jpg/960px-QR_Code_point%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1867,
+      "height": 2433,
+      "alt_suggestion": "Le tableau est la représentation minimaliste parfaite de la discrimination, de l’ostracisme, de la ségrégation. Symbole de la liberté, de l’esprit critique, du libre arbitre et du rejet de tout QRCode",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-127781378",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "QR Code Linking to QR Code Apps.png",
+      "credit": "User1042 / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:QR_Code_Linking_to_QR_Code_Apps.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/QR_Code_Linking_to_QR_Code_Apps.png/960px-QR_Code_Linking_to_QR_Code_Apps.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1015,
+      "height": 1015,
+      "alt_suggestion": "QR Code Linking to QR Code Apps: the chicken and egg problem is embodied in this QR code that links to QR code apps.",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"QR code\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

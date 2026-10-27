@@ -1,0 +1,109 @@
+{
+  "draft_id": "hist-0046",
+  "created_at": "2026-10-27T06:09:18.483Z",
+  "queries": [
+    "Appian Way Roman road via Appia",
+    "Appian Way",
+    "Appian Way Roman road"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-198531942",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Roman Appian Way.jpg",
+      "credit": "Manciniart / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Roman_Appian_Way.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Roman_Appian_Way.jpg/960px-Roman_Appian_Way.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3072,
+      "height": 4080,
+      "alt_suggestion": "The road is paved with large interlocking basalt stone (Sanpietrini ancestors)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-4090",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "View of Rome, with via Appia",
+      "credit": "After Giovanni Francesco Grimaldi Italian, 1606-1680 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/4090",
+      "image_url": "https://www.artic.edu/iiif/2/8f9876f6-6ecf-8766-e68f-cc57266efb41/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of pen and brown ink, with brush and brown wash, on ivory laid paper, laid down on ivory laid card.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-156040096",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Tempio di Marte - Via Appia - Pietas Comunità Gentile.jpg",
+      "credit": "Giuseppe Barbera / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tempio_di_Marte_-_Via_Appia_-_Pietas_Comunit%C3%A0_Gentile.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Tempio_di_Marte_-_Via_Appia_-_Pietas_Comunit%C3%A0_Gentile.jpg/960px-Tempio_di_Marte_-_Via_Appia_-_Pietas_Comunit%C3%A0_Gentile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "alt_suggestion": "Tempio di Marte - Appian road",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-48142",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "A. View of the Tomb of Licinianus Piso on the ancient Appian Way... B. Tomb of the Cornelii..., from Views of Rome",
+      "credit": "Giovanni Battista Piranesi (Italian, 1720-1778) published by Francesco (Italian, 1758-1810) and Pietro Piranesi (Italian, born 1758/9) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/48142",
+      "image_url": "https://www.artic.edu/iiif/2/17e37609-c1ea-a41e-8ea0-23293febcb03/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on heavy ivory laid paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-191843542",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "A flock of sheep with a few goats on the Via Appia - Nov 17, 2022.jpg",
+      "credit": "Kent Wang / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_flock_of_sheep_with_a_few_goats_on_the_Via_Appia_-_Nov_17,_2022.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/A_flock_of_sheep_with_a_few_goats_on_the_Via_Appia_-_Nov_17%2C_2022.jpg/960px-A_flock_of_sheep_with_a_few_goats_on_the_Via_Appia_-_Nov_17%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4032,
+      "height": 3024,
+      "alt_suggestion": "The Appian Way (Via Appia) is one of the earliest and most important Roman roads of the ancient republic, connecting Rome to Brindisi, in southeast Italy. The first section was completed in 312 BC by ",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "American bee journal (1915) (18117798791).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Roman cities in Italy and Dalmatia (1910) (14776345912).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Life in the Roman world of Nero and St. Paul (1910) (14589953569).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "History of Rome and the Roman people, from its origin to the establishment of the Christian empire (1884) (14764908895).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Appian Way Roman road via Appia\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Appian Way\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Appian Way Roman road\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "sci-0059",
+  "interest": "science",
+  "title": "Closest to the Sun in winter",
+  "probes": [
+    {
+      "id": "sci-0059-p1",
+      "question": "What causes the seasons?",
+      "kind": "mcq",
+      "options": [
+        "Changes in Earth's distance from the Sun",
+        "Earth's tilted axis",
+        "Phases of the Moon",
+        "Solar storms"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0059-p2",
+      "question": "True or false: Earth is closest to the Sun during the Northern Hemisphere's winter.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Season (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Season"
+    },
+    {
+      "title": "Axial tilt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:02.137Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "sci-0059.webp",
+    "alt": "The whole Earth seen from Apollo 17, showing Africa, Madagascar, swirling clouds and Antarctica against black space.",
+    "kind": "photo",
+    "credit": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg"
+  },
+  "body": {
+    "question": "In which month is Earth closest to the Sun?",
+    "options": [
+      "April",
+      "July",
+      "January",
+      "October"
+    ],
+    "answer": 2,
+    "reveal": "Earth is closest to the Sun in early January and farthest in early July, so distance works against the Northern Hemisphere's seasons. The real cause is Earth's tilt, about 23.4 degrees, which changes how high the Sun climbs in the sky."
+  }
+}

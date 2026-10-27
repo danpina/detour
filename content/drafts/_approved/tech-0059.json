@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "JPEG compression",
+    "angle": "Lossy compression with a loss that is perceptible but acceptable"
+  },
+  "created_at": "2026-10-26T20:28:21.551Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0059",
+    "interest": "tech",
+    "type": "estimate",
+    "title": "How much does JPEG shrink a photo?",
+    "body": {
+      "question": "JPEG throws away detail you are unlikely to miss. Typically, how many times smaller does JPEG make an image?",
+      "unit": "times smaller",
+      "min": 1,
+      "max": 1000,
+      "scale": "log",
+      "answer": 10,
+      "reveal": "JPEG typically achieves 10:1 compression, with a loss in image quality that is perceptible but widely agreed to be acceptable. The degree of compression can be adjusted, trading storage size against image quality."
+    },
+    "probes": [
+      {
+        "id": "tech-0059-p1",
+        "kind": "mcq",
+        "question": "What can you trade off by adjusting JPEG compression?",
+        "options": [
+          "Colour and sound",
+          "Speed and screen size",
+          "Storage size and image quality",
+          "Battery and weight"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0059-p2",
+        "kind": "tf",
+        "question": "True or false: JPEG's degree of compression can be adjusted.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "JPEG (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/JPEG"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Compression.artifacts.jpg (CC0) or File:JPEG compression Example.jpg (CC BY-SA) show JPEG compression artifacts",
+    "keywords": [
+      "JPEG compression artifacts",
+      "JPEG compression",
+      "image compression",
+      "compression artifacts"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.383Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/JPEG",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "JPEG typically achieves 10:1 compression (answer 10)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/JPEG",
+        "quote": "JPEG typically achieves 10:1 compression with a loss in image quality that, while perceptible, is widely agreed upon to be acceptable."
+      },
+      {
+        "claim": "Loss in quality is perceptible but widely agreed acceptable",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/JPEG",
+        "quote": "a loss in image quality that, while perceptible, is widely agreed upon to be acceptable"
+      },
+      {
+        "claim": "Degree of compression can be adjusted, trading storage size against image quality (probes 1, 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/JPEG",
+        "quote": "The degree of compression can be adjusted, allowing a selectable trade off between storage size and image quality"
+      }
+    ],
+    "overall": "pass"
+  }
+}

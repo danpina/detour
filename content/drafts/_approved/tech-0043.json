@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "CDN",
+    "angle": "Moving content closer"
+  },
+  "created_at": "2026-10-27T06:07:56.494Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0043",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "Why popular sites load fast everywhere",
+    "body": {
+      "claim": "A content delivery network distributes content geographically closer to end users.",
+      "why": "A CDN is a geographically distributed network of proxy servers and data centres. Its web caches store popular content on the servers with the greatest demand, which reduces bandwidth needs and server load and improves response times."
+    },
+    "probes": [
+      {
+        "id": "tech-0043-p1",
+        "kind": "mcq",
+        "question": "What does a CDN do?",
+        "options": [
+          "Encrypts your passwords",
+          "Turns names into IP addresses",
+          "Distributes content geographically closer to users",
+          "Sends email"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0043-p2",
+        "kind": "tf",
+        "question": "True or false: web caches in a CDN help reduce server load.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Content delivery network (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Content_delivery_network"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A server room",
+    "keywords": [
+      "data center",
+      "server rack",
+      "network cables"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.724Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Content_delivery_network",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A CDN distributes content geographically closer to end users (claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Content_delivery_network",
+        "quote": "CDNs provide high availability and performance by distributing content geographically closer to end users"
+      },
+      {
+        "claim": "A CDN is a geographically distributed network of proxy servers and data centres",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Content_delivery_network",
+        "quote": "is a geographically distributed network of proxy servers and corresponding data centers"
+      },
+      {
+        "claim": "Web caches store popular content on servers with the greatest demand",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Content_delivery_network",
+        "quote": "Web caches store popular content on servers that have the greatest demand for the content requested."
+      },
+      {
+        "claim": "Caches reduce bandwidth needs and server load and improve response times (probe 2: true; title: load fast)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Content_delivery_network",
+        "quote": "These shared network appliances reduce bandwidth requirements, reduce server load, and improve the client response times"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Peace of Westphalia",
+    "angle": "A war-ending peace and the debate over its legacy"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0039",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "What Westphalia ended",
+    "body": {
+      "claim": "The Peace of Westphalia ended the Thirty Years' War, which killed between 4.5 and 8 million people.",
+      "why": "Two treaties signed in October 1648, in Osnabrück and Munster, brought peace to the Holy Roman Empire. They gave legal recognition to Calvinism alongside Catholicism and Lutheranism. Several scholars of international relations see the peace as the origin of principles crucial to modern international relations, known as Westphalian sovereignty. Some historians argue that this view only grew later, in the 19th and 20th centuries."
+    },
+    "probes": [
+      {
+        "id": "hist-0039-p1",
+        "kind": "mcq",
+        "question": "What do some historians argue about 'Westphalian sovereignty'?",
+        "options": [
+          "The treaties never mentioned religion",
+          "The idea of sovereignty it stands for emerged later, in the 19th and 20th centuries",
+          "Only France signed the treaties",
+          "It ended the war in 1618"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0039-p2",
+        "kind": "tf",
+        "question": "True or false: the Peace of Westphalia ended the Thirty Years' War.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Peace of Westphalia (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia"
+      }
+    ],
+    "difficulty": 5,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Westfaelischer Friede in Muenster (Gerard Terborch 1648).jpg shows Gerard ter Borch's painting of the 1648 peace oath in Münster (public domain)",
+    "keywords": [
+      "Peace of Westphalia",
+      "Ter Borch Munster 1648",
+      "Westphalian peace",
+      "Thirty Years War"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:16:07.826Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Peace ended the Thirty Years' War (claim, p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+        "quote": "They ended the Thirty Years' War (1618-1648) and brought peace to the Holy Roman Empire"
+      },
+      {
+        "claim": "The Thirty Years' War killed between 4.5 and 8 million people",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+        "quote": "closing a calamitous period of European history that killed between 4.5 and 8 million people"
+      },
+      {
+        "claim": "Two treaties signed in October 1648 in Osnabrück and Münster",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+        "quote": "the collective name for two peace treaties signed in October 1648 in the Westphalian cities of Osnabrück and Münster"
+      },
+      {
+        "claim": "Legal recognition to Calvinism alongside Catholicism and Lutheranism",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+        "quote": "Westphalia guaranteed the right to practice any of the recognized denominations: Catholicism , Lutheranism , and Calvinism"
+      },
+      {
+        "claim": "Several scholars of international relations see the peace as the origin of principles crucial to modern international relations",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+        "quote": "Several scholars of international relations have identified the Peace of Westphalia as the origin of principles crucial to modern international relations"
+      },
+      {
+        "claim": "Those principles are known as Westphalian sovereignty",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+        "quote": "collectively known as Westphalian sovereignty"
+      },
+      {
+        "claim": "Some historians argue the view emerged in the 19th and 20th centuries (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+        "quote": "some historians have argued against this, suggesting that such views emerged during the nineteenth and twentieth centuries"
+      }
+    ],
+    "overall": "pass"
+  }
+}

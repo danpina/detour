@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Availability heuristic",
+    "angle": "Words starting with K"
+  },
+  "created_at": "2026-10-27T06:06:56.018Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0051",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "K at the start or in the middle?",
+    "body": {
+      "question": "In ordinary English text, which is more common: words that start with the letter K, or words with K as the third letter?",
+      "options": [
+        "Words that start with K",
+        "Words with K as the third letter",
+        "They are about equally common"
+      ],
+      "answer": 1,
+      "reveal": "K is more often the third letter. But kangaroo, kitchen and kale come to mind faster than acknowledge or ask, so people overestimate the first group. That is the availability heuristic: judging how common something is by how easily examples come to mind."
+    },
+    "probes": [
+      {
+        "id": "mind-0051-p1",
+        "kind": "mcq",
+        "question": "What does the availability heuristic rely on?",
+        "options": [
+          "Careful counting of past cases",
+          "Advice from experts",
+          "How easily examples come to mind",
+          "Gut feelings about luck"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "mind-0051-p2",
+        "kind": "tf",
+        "question": "True or false: newsworthy events tend to be rated as more likely partly because examples of them are easy to recall.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Availability heuristic (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Availability_heuristic"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Scrabble tiles en.jpg shows a full set of English Scrabble letter tiles",
+    "keywords": [
+      "Scrabble tiles",
+      "letters",
+      "alphabet",
+      "typography"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.093Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In ordinary text, K is more often the third letter than the first (answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+        "quote": "a typical text contains twice as many words that have \"K\" as the third letter than \"K\" as the first letter"
+      },
+      {
+        "claim": "Kangaroo, kitchen, kale come to mind faster",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+        "quote": "(kangaroo, kitchen, kale)"
+      },
+      {
+        "claim": "Acknowledge and ask are third-letter-K examples",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+        "quote": "(acknowledge, ask)"
+      },
+      {
+        "claim": "People overestimate the number of words starting with K",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+        "quote": "Results indicated that participants overestimated the number of words that began with the letter"
+      },
+      {
+        "claim": "Availability heuristic: judging how common something is by how easily examples come to mind (reveal, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+        "quote": "comparing the availability of the two categories and assessing how easily they can recall these instances"
+      },
+      {
+        "claim": "Availability heuristic is a mental shortcut relying on examples that come to mind (not careful counting)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+        "quote": "a mental shortcut that relies on immediate examples that come to a given person's mind when evaluating a specific topic"
+      },
+      {
+        "claim": "Newsworthy events are rated more likely partly because examples are easy to recall (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+        "quote": "people tend to rate \"newsworthy\" events as more likely because they can more readily recall an example from memory"
+      }
+    ],
+    "overall": "pass"
+  }
+}

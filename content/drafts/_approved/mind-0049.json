@@ -1,0 +1,89 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Exercise and memory",
+    "angle": "Aerobic exercise and the hippocampus"
+  },
+  "created_at": "2026-10-26T20:29:12.587Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0049",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Exercise feeds the memory centre",
+    "body": {
+      "claim": "Regular aerobic exercise increases gray matter in the hippocampus, a region that supports memory.",
+      "why": "Reviews of neuroimaging studies find that consistent aerobic exercise increases gray matter volume in nearly all brain regions. The most prominent gains are in the prefrontal cortex, caudate nucleus and hippocampus. Growth in the hippocampus is associated with measurable improvements in spatial memory."
+    },
+    "probes": [
+      {
+        "id": "mind-0049-p1",
+        "kind": "mcq",
+        "question": "Which brain region is among those with the most prominent gains from aerobic exercise?",
+        "options": [
+          "Cerebellum only",
+          "Hippocampus",
+          "Optic nerve",
+          "None of them"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0049-p2",
+        "kind": "tf",
+        "question": "True or false: exercise-induced growth in the hippocampus is associated with improved spatial memory.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Neurobiological effects of physical exercise (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Neurobiological_effects_of_physical_exercise"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A runner in a park, e.g. File:Running in a park in Brussels - 2023 - P060598-109033.jpg",
+    "keywords": [
+      "running jogging park",
+      "runner",
+      "jogging",
+      "hippocampus brain"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:08:00.287Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Neurobiological_effects_of_physical_exercise",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Reviews of neuroimaging studies: consistent aerobic exercise increases gray matter volume in nearly all brain regions (why)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neurobiological_effects_of_physical_exercise",
+        "quote": "Reviews of neuroimaging studies indicate that consistent aerobic exercise increases gray matter volume in nearly all regions of the brain"
+      },
+      {
+        "claim": "Most prominent gains in prefrontal cortex, caudate nucleus and hippocampus (why, claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neurobiological_effects_of_physical_exercise",
+        "quote": "the most prominent gains in gray matter volume are seen in the prefrontal cortex, caudate nucleus, and hippocampus"
+      },
+      {
+        "claim": "Hippocampal growth associated with measurable improvements in spatial memory (why, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neurobiological_effects_of_physical_exercise",
+        "quote": "Exercise-induced neurogenesis (i.e., the increases in gray matter volume) in the hippocampus is associated with measurable improvements in spatial memory"
+      }
+    ],
+    "overall": "pass"
+  }
+}

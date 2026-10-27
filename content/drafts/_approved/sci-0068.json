@@ -1,0 +1,124 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "How the Moon formed",
+    "angle": "The giant-impact hypothesis"
+  },
+  "created_at": "2026-10-26T20:30:07.408Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0068",
+    "interest": "science",
+    "type": "story",
+    "title": "The Moon was made in a collision",
+    "body": {
+      "panels": [
+        {
+          "text": "The giant-impact hypothesis says the Moon began in a collision. About 4.5 billion years ago, the young Earth was likely hit by a planet about the size of Mars, nicknamed Theia."
+        },
+        {
+          "text": "Some of the debris thrown out by the impact later gathered together to form the Moon."
+        },
+        {
+          "text": "That fits a clue: the Moon has a small iron core and is less dense than Earth. Models suggest the impactor's core sank into Earth's, leaving lighter crust and mantle debris to become the Moon."
+        },
+        {
+          "text": "The idea was first proposed in 1946 by the geologist Reginald Daly. It is still a hypothesis, and questions remain about the best models."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0068-p1",
+        "kind": "mcq",
+        "question": "According to the giant-impact hypothesis, what hit the early Earth?",
+        "options": [
+          "A comet",
+          "A Mars-sized planet",
+          "A star",
+          "A black hole"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0068-p2",
+        "kind": "tf",
+        "question": "True or false: the hypothesis says the Moon formed from debris thrown out by an impact.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Giant-impact hypothesis (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Full Moon Luc Viatour.jpg (CC BY-SA 3.0) shows the full Moon; File:FullMoon2010.jpg alternative",
+    "keywords": [
+      "Full Moon",
+      "Moon photograph",
+      "Moon"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.063Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "About 4.5 billion years ago the young Earth collided with a Mars-sized planet (Theia)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+        "quote": "collided with a Mars -sized co-orbital protoplanet likely from the L 4 or L 5 Lagrange points of the Earth's orbit approximately 4.5 billion years ago"
+      },
+      {
+        "claim": "Some ejected debris later gathered to form the Moon (also probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+        "quote": "some of the ejected debris from the impact event later re- accreted to form the Moon."
+      },
+      {
+        "claim": "Moon has a small iron core and is less dense than Earth",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+        "quote": "The Moon has a relatively small iron core , which gives it a much lower density than Earth."
+      },
+      {
+        "claim": "Impactor's core sank into Earth's, leaving lighter debris to become the Moon",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+        "quote": "Theia's iron core would have sunk into the young Earth's core, and most of Theia's mantle accreted onto Earth's mantle."
+      },
+      {
+        "claim": "Moon formed from lighter crustal and mantle fragments",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+        "quote": "it would leave the Moon, which was formed from coalesced ejectae of lighter crustal and mantle fragments"
+      },
+      {
+        "claim": "First proposed in 1946 by geologist Reginald Daly",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+        "quote": "first proposed in 1946 by Canadian geologist Reginald Daly ."
+      },
+      {
+        "claim": "Still a hypothesis with remaining questions about best models",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+        "quote": "However, several questions remain concerning the best current models of the giant-impact hypothesis."
+      }
+    ],
+    "overall": "pass"
+  }
+}

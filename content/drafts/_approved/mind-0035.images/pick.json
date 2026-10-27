@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-55991162",
+  "alt": "A ginger and white cat sleeps stretched out on a striped mattress in the sun beside a building.",
+  "fits": true,
+  "note": "Sleeping cat evokes sleep; no people.",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.6,
+    "zoom": 1.4
+  }
+}

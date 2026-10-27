@@ -1,0 +1,50 @@
+{
+  "id": "mind-0052",
+  "interest": "mind",
+  "title": "Why the past looks obvious",
+  "probes": [
+    {
+      "id": "mind-0052-p1",
+      "question": "True or false: after being told which outcome of a story is true, people tend to rate that outcome as more likely.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0052-p2",
+      "question": "Hindsight bias makes past events seem...",
+      "kind": "mcq",
+      "options": [
+        "More predictable than they were",
+        "Less important than they were",
+        "Completely forgotten",
+        "More random than they were"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hindsight bias (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hindsight_bias"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:22.872Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0052.webp",
+    "alt": "A view through a car rear-view mirror of a road, green hills and a jeep following behind.",
+    "kind": "photo",
+    "credit": "Dan Gold danielcgold / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Green_rear-view_mirror_(Unsplash).jpg"
+  },
+  "body": {
+    "claim": "Once you know how something turned out, it feels as if it was predictable all along.",
+    "why": "This is hindsight bias: the tendency to see past events as more predictable than they were. In a study around Nixon's trip to Beijing and Moscow, people later overestimated the likelihood they had given to outcomes that actually happened. In a 1975 method, people read a story with four outcomes, were told one was true, and then rated that one as more likely."
+  }
+}

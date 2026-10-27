@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Wi-Fi",
+    "angle": "Taking turns on the air"
+  },
+  "created_at": "2026-10-27T06:07:56.489Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0040",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "Wi-Fi devices take turns",
+    "body": {
+      "claim": "Within range, only one transmitter can transmit on a Wi-Fi channel at a time.",
+      "why": "Wi-Fi radio bands are divided into channels, and channels can be shared between networks. With CSMA/CA, devices begin transmitting only after sensing the channel is idle. Two stations may sense it idle at the same time, so collisions cannot be completely prevented."
+    },
+    "probes": [
+      {
+        "id": "tech-0040-p1",
+        "kind": "mcq",
+        "question": "How do Wi-Fi devices share a channel?",
+        "options": [
+          "Each gets its own cable",
+          "They start transmitting only after sensing the channel is idle",
+          "They all transmit at once",
+          "A satellite assigns turns"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0040-p2",
+        "kind": "tf",
+        "question": "True or false: CSMA/CA completely prevents collisions.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wi-Fi (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Wi-Fi"
+      },
+      {
+        "title": "Carrier-sense multiple access with collision avoidance (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_avoidance"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:ASUS Wi-Fi ROUTER TUF 6500.jpg shows a Wi-Fi router",
+    "keywords": [
+      "wireless router",
+      "router antenna",
+      "Wi-Fi router"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.722Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wi-Fi",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_avoidance",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Within range, only one transmitter can transmit on a channel at a time; channels can be shared between networks",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wi-Fi",
+        "quote": "Channels can be shared between networks, but, within range, only one transmitter can transmit on a channel at a time."
+      },
+      {
+        "claim": "Wi-Fi radio bands are divided into channels",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wi-Fi",
+        "quote": "these bands are subdivided into multiple channels"
+      },
+      {
+        "claim": "CSMA/CA: devices begin transmitting only after sensing the channel idle (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wi-Fi",
+        "quote": "With CSMA/CA, stations attempt to avoid collisions by beginning transmission only after the channel is sensed to be idle"
+      },
+      {
+        "claim": "Two stations may sense idle simultaneously so collisions are not completely prevented (probe 2: false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Wi-Fi",
+        "quote": "CSMA/CA cannot completely prevent collisions, as two stations may sense the channel to be idle at the same time"
+      }
+    ],
+    "overall": "pass"
+  }
+}

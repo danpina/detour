@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-82173370",
+  "alt": "Two distant walkers on a leaf-covered forest trail between tall bare trees in autumn.",
+  "fits": true,
+  "note": "Outdoor exercise; walkers tiny and unidentifiable.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.55,
+    "zoom": 1.4
+  }
+}

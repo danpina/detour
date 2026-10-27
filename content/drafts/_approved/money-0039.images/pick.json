@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-93178466",
+  "alt": "A wicker basket filled with chicken and speckled quail eggs resting on dry hay.",
+  "fits": true,
+  "note": "Eggs in basket for diversification.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

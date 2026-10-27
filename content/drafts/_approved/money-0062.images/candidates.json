@@ -1,0 +1,98 @@
+{
+  "draft_id": "money-0062",
+  "created_at": "2026-10-27T06:10:57.602Z",
+  "queries": [
+    "unemployed men queue Great Depression Great Depression breadline unemployment line 1930s",
+    "unemployed men queue Great Depression",
+    "unemployed men queue Great Depression Great Depression breadline"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-17057587",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Unemployed men queued outside a depression soup kitchen opened in Chicago by Al Capone, 02-1931 - NARA - 541927.jpg",
+      "credit": "U.S. National Archives and Records Administration / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone,_02-1931_-_NARA_-_541927.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927.jpg/960px-Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2939,
+      "height": 2392,
+      "alt_suggestion": "The storefront sign reads \"Free Soup Coffee & Doughnuts for the Unemployed.\"",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-5764",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tetradrachm (Coin) Portraying Alexander the Great",
+      "credit": "Greek; minted in Ephesus, Asia Minor (modern Turkey) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/5764",
+      "image_url": "https://www.artic.edu/iiif/2/eed63520-b035-7587-0d5e-07af9216a627/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of silver.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-60443089",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Unemployed men queued outside a depression soup kitchen opened in Chicago by Al Capone, 02-1931 - NARA - 541927 (cropped).jpg",
+      "credit": "U.S. National Archives and Records Administration / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone,_02-1931_-_NARA_-_541927_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927_%28cropped%29.jpg/960px-Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2917,
+      "height": 2372,
+      "alt_suggestion": "Scope and content: The storefront sign reads \"Free Soup Coffee & Doughnuts for the Unemployed.\"",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-9755",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tetradrachm (Coin) Portraying Alexander the Great",
+      "credit": "Greek; Thrace / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/9755",
+      "image_url": "https://www.artic.edu/iiif/2/670e58ac-d9d1-9acc-d0aa-c0d21ee26579/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of silver.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-16234357",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "StateLibQld 1 106492 Relief workers at Annerley during the Great Depression, 1938.jpg",
+      "credit": "Contributor(s): Sunday Truth (Brisbane, Qld. ) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:StateLibQld_1_106492_Relief_workers_at_Annerley_during_the_Great_Depression,_1938.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/StateLibQld_1_106492_Relief_workers_at_Annerley_during_the_Great_Depression%2C_1938.jpg/960px-StateLibQld_1_106492_Relief_workers_at_Annerley_during_the_Great_Depression%2C_1938.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1000,
+      "height": 756,
+      "alt_suggestion": "Relief workers at Annerley during the Great Depression, 1938 Line of unemployed male relief workers at Annerley in 1938, towards the end of the Great Depression. They are dressed in long pants and lon",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-142386148",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Help Wanted - Nebraska (44113871694).jpg",
+      "credit": "Bradley Weber / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Help_Wanted_-_Nebraska_(44113871694).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Help_Wanted_-_Nebraska_%2844113871694%29.jpg/960px-Help_Wanted_-_Nebraska_%2844113871694%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3744,
+      "height": 5616,
+      "alt_suggestion": "Nebraska",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"unemployed men queue Great Depression Great Depression breadline unemployment line 1930s\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"unemployed men queue Great Depression\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"unemployed men queue Great Depression Great Depression breadline\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

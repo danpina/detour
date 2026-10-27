@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Expected value",
+    "angle": "The roulette single-number bet"
+  },
+  "created_at": "2026-10-27T06:06:56.018Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0038",
+    "interest": "numbers",
+    "type": "guess_first",
+    "title": "What a roulette bet is really worth",
+    "body": {
+      "question": "In American roulette (38 pockets), you bet $1 on a single number. It pays $35 if you win. On average, what happens to each $1 you bet?",
+      "options": [
+        "You gain about 5 cents",
+        "You break even",
+        "You lose about 5 cents",
+        "You lose about 50 cents"
+      ],
+      "answer": 2,
+      "reveal": "You lose about 5 cents. A win has a 1 in 38 chance and pays $35, so the expected result is -$1 x 37/38 + $35 x 1/38 = -$1/19. Expected value is the average outcome if you could repeat the bet many times."
+    },
+    "probes": [
+      {
+        "id": "num-0038-p1",
+        "kind": "mcq",
+        "question": "What does the expected value of a bet describe?",
+        "options": [
+          "The most you can win",
+          "The single most likely outcome",
+          "The average result if repeated many times",
+          "The chance of winning once"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0038-p2",
+        "kind": "tf",
+        "question": "True or false: a single-number roulette bet in American roulette has a negative expected value for the player.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Expected value (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Expected_value"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Roulette wheel (5276348473).jpg shows a casino roulette wheel",
+    "keywords": [
+      "roulette wheel",
+      "roulette",
+      "casino roulette"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.025Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Expected_value",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "American roulette has 38 pockets",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Expected_value",
+        "quote": "The roulette game consists of a small ball and a wheel with 38 numbered pockets around the edge."
+      },
+      {
+        "claim": "$1 single-number bet wins with probability 1/38 and pays $35",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Expected_value",
+        "quote": "the payoff is $35; otherwise the player loses the bet"
+      },
+      {
+        "claim": "Expected result is -$1 x 37/38 + $35 x 1/38 = -$1/19, about -5 cents per $1",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Expected_value",
+        "quote": "Thus, in 190 bets, the net loss will probably be about $10.",
+        "note": "Verified by calculation: -37/38 + 35/38 = -2/38 = -1/19 = -$0.0526. Page states -$1/19."
+      },
+      {
+        "claim": "Expected value is the average outcome if repeated many times (probe)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Expected_value",
+        "quote": "the expected value can be interpreted as the long-run average of results from independent repetitions of the same random experiment"
+      },
+      {
+        "claim": "Single-number bet has negative expected value (probe true)",
+        "verdict": "pass",
+        "note": "Verified by calculation: -1/19 < 0"
+      }
+    ],
+    "overall": "pass"
+  }
+}

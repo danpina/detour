@@ -1,0 +1,99 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Spacing effect",
+    "angle": "Spread study out versus cramming"
+  },
+  "created_at": "2026-10-26T20:29:12.572Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0033",
+    "interest": "mind",
+    "type": "guess_first",
+    "title": "Spread it out or cram it in?",
+    "body": {
+      "question": "In a 2006 review of memory studies, spaced practice was compared with massed practice (cramming) in 271 cases. How often did spaced practice come out ahead?",
+      "options": [
+        "About half the time",
+        "About two thirds of the time",
+        "Nearly every time"
+      ],
+      "answer": 2,
+      "reveal": "Spaced practice beat massed practice in 259 of 271 cases. The gains are especially large when the gaps between sessions are days or weeks."
+    },
+    "probes": [
+      {
+        "id": "mind-0033-p1",
+        "kind": "mcq",
+        "question": "Which study plan favours long-term memory?",
+        "options": [
+          "One long session the night before",
+          "Several sessions spread over days or weeks",
+          "Reading the notes once, slowly",
+          "Studying only in the morning"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0033-p2",
+        "kind": "cloze",
+        "question": "Learning more by spreading study out in time is called the ____ effect.",
+        "answer": "spacing",
+        "accept": [
+          "spaced"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Spacing effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Spacing_effect"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A planner or calendar page, e.g. File:Personal organizer with metallic ring binder.jpg, or students at a library table",
+    "keywords": [
+      "calendar planner",
+      "personal organizer",
+      "student studying library",
+      "agenda"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:07:59.361Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Spacing_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "2006 study: spaced beat massed in 259 of 271 cases (question, reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spacing_effect",
+        "quote": "participants who used spaced practice on memory tasks outperformed those using massed practice in 259 out of 271 cases",
+        "note": "Page says Cepeda et al. (2006) 'study'; its reference title calls it a review and quantitative synthesis."
+      },
+      {
+        "claim": "Gains are especially large when gaps are days or weeks (reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spacing_effect",
+        "quote": "long-term spacing effects are prevalent in learning and produce significant learning gains, particularly when the spacing gaps are on the order of days or weeks"
+      },
+      {
+        "claim": "Spreading study out in time is the spacing effect; favours long-term memory (probes)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Spacing_effect",
+        "quote": "Psychological effect that people learn more by spreading studying out in time"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "draft_id": "money-0052",
+  "created_at": "2026-10-27T06:09:03.670Z",
+  "queries": [
+    "bank run 1932 American Union Bank depositors crowd closed bank",
+    "bank run 1932",
+    "bank run 1932 American Union Bank"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-106474449",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "American Madness ad - The Film Daily, Jul-Dec 1932 (page 134 crop).jpg",
+      "credit": "New York, Wid's Films and Film Folks, Inc. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:American_Madness_ad_-_The_Film_Daily,_Jul-Dec_1932_(page_134_crop).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/American_Madness_ad_-_The_Film_Daily%2C_Jul-Dec_1932_%28page_134_crop%29.jpg/960px-American_Madness_ad_-_The_Film_Daily%2C_Jul-Dec_1932_%28page_134_crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3110,
+      "height": 4078,
+      "alt_suggestion": "American Madness ad - The Film Daily, Jul-Dec 1932 (page 134 crop).jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-66577",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "From My Window at An American Place, Southwest",
+      "credit": "Alfred Stieglitz American, 1864–1946 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/66577",
+      "image_url": "https://www.artic.edu/iiif/2/3419d686-ec61-7b10-4591-47b7fe78d10d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of gelatin silver print.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-55213059",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bank Run on American Union Bank.jpeg",
+      "credit": "Wikideas1 Wikideas1 (talk) (Uploads) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bank_Run_on_American_Union_Bank.jpeg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Bank_Run_on_American_Union_Bank.jpeg/960px-Bank_Run_on_American_Union_Bank.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2840,
+      "height": 2226,
+      "alt_suggestion": "Bank_Run_on_American_Union_Bank. Groups of depositors in front of the closed American Union Bank, New York City. April 26, 1932. Local Identifier: 306-NT-677-B-177.476C.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-84795634",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Jamestown. The old Savings Bank of South Australia. A grand 19th century style bank building. (44043913335).jpg",
+      "credit": "denisbin from Adelaide, Australia / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jamestown._The_old_Savings_Bank_of_South_Australia._A_grand_19th_century_style_bank_building._(44043913335).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Jamestown._The_old_Savings_Bank_of_South_Australia._A_grand_19th_century_style_bank_building._%2844043913335%29.jpg/960px-Jamestown._The_old_Savings_Bank_of_South_Australia._A_grand_19th_century_style_bank_building._%2844043913335%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4896,
+      "height": 3672,
+      "alt_suggestion": "Jamestown. John Bristow Hughes took out the first pastoral lease in this area in 1841. The country is high, with good and reliable rainfall and ideal for pastoralism. He named his property Bundaleer. ",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"bank run 1932 American Union Bank depositors crowd closed bank\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"bank run 1932\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"bank run 1932 American Union Bank\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

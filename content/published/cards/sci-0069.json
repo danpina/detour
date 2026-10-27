@@ -1,0 +1,53 @@
+{
+  "id": "sci-0069",
+  "interest": "science",
+  "title": "How fast is light?",
+  "probes": [
+    {
+      "id": "sci-0069-p1",
+      "question": "How fast does light travel in a vacuum?",
+      "kind": "estimate",
+      "answer": 299792,
+      "unit": "km/s",
+      "min": 1000,
+      "max": 10000000,
+      "scale": "log"
+    },
+    {
+      "id": "sci-0069-p2",
+      "question": "True or false: the speed of light is exact because the metre is defined using it.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Speed of light (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Speed_of_light"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:32.274Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "sci-0069.webp",
+    "alt": "A yellow laser beam shooting from an observatory dome into a starry sky toward the center of the Milky Way.",
+    "kind": "photo",
+    "credit": "ESO/Yuri Beletsky (ybialets at eso.org) / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Laser_Towards_Milky_Ways_Centre.jpg"
+  },
+  "body": {
+    "question": "How fast does light travel in a vacuum?",
+    "unit": "km/s",
+    "min": 1000,
+    "max": 10000000,
+    "scale": "log",
+    "answer": 299792,
+    "reveal": "Exactly 299,792,458 metres per second, about 300,000 km/s or roughly a billion kilometres per hour. It is exact because the metre is defined from it."
+  }
+}

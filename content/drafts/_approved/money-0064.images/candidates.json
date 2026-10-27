@@ -1,0 +1,70 @@
+{
+  "draft_id": "money-0064",
+  "created_at": "2026-10-27T06:11:12.992Z",
+  "queries": [
+    "NASDAQ dot-com bubble NASDAQ composite chart dot-com bubble chart",
+    "NASDAQ dot-com bubble",
+    "NASDAQ dot-com bubble NASDAQ composite chart"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-144352907",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "2000 Events montage 16-grid version.jpg",
+      "credit": "From a variety of images credited above. / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2000_Events_montage_16-grid_version.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/2000_Events_montage_16-grid_version.jpg/960px-2000_Events_montage_16-grid_version.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4096,
+      "height": 3704,
+      "alt_suggestion": "16 major events of 2000. From top to bottom, left to right: Kenya Airways Flight 431 Air France Flight 4590 Kursk submarine disaster USS Cole bombing Second Chechen War Millennium Summit Millennium ce",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-103108",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Boy Blowing Soap Bubbles",
+      "credit": "Édouard Manet French, 1832-1883 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/103108",
+      "image_url": "https://www.artic.edu/iiif/2/a0d396bf-3e64-4e10-2420-929881eb5d8b/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching in warm black on ivory wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-80873",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Boy Blowing Soap Bubbles",
+      "credit": "Édouard Manet (French, 1832-1883) printed by Henri Charles Guérard (French, 1846-1897) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/80873",
+      "image_url": "https://www.artic.edu/iiif/2/25475dd2-8721-224d-3579-f91043540df5/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching and aquatint, with roulette, with color applied à la poupée, on cream wove paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-121454",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "NASDAQ IXIC - dot-com bubble.png",
+      "credit": "Made by ed g2s • talk. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:NASDAQ_IXIC_-_dot-com_bubble.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/NASDAQ_IXIC_-_dot-com_bubble.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 948,
+      "height": 582,
+      "alt_suggestion": "A rendering of the NASDAQ Composite index from 1994 to 2005, showing the stunning peak in early 2000 that coincides with the dot-com bust.",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"NASDAQ dot-com bubble NASDAQ composite chart dot-com bubble chart\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"NASDAQ dot-com bubble\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"NASDAQ dot-com bubble NASDAQ composite chart\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

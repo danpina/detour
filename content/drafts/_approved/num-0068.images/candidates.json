@@ -1,0 +1,83 @@
+{
+  "draft_id": "num-0068",
+  "created_at": "2026-10-26T20:33:35.925Z",
+  "queries": [
+    "social network graph sociogram network visualization",
+    "social network graph",
+    "social network graph sociogram"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-50571810",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Gephi 0.9.1 Network Analysis and Visualization Software.png",
+      "credit": "SlvrKy / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gephi_0.9.1_Network_Analysis_and_Visualization_Software.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Gephi_0.9.1_Network_Analysis_and_Visualization_Software.png/960px-Gephi_0.9.1_Network_Analysis_and_Visualization_Software.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1397,
+      "height": 871,
+      "alt_suggestion": "Screenshot of Gephi 0.9.1",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-49832",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Social Duty",
+      "credit": "Théophile-Alexandre Steinlen French, born Switzerland, 1859-1923 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/49832",
+      "image_url": "https://www.artic.edu/iiif/2/52ce070b-d6f5-25fb-2e42-36036e8e2cab/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of lithograph in red and black on cream wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-39967997",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Moreno Sociogram 6th Grade.png",
+      "credit": "Martin Grandjean / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Moreno_Sociogram_6th_Grade.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Moreno_Sociogram_6th_Grade.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 932,
+      "height": 932,
+      "alt_suggestion": "Mapping the social affinities of a group of individuals, Moreno’s first sociograms visualize the relationships between pupils in a classroom: who wants to be sitting next to whom? Each child can choos",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-4",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Priest and Boy",
+      "credit": "Lawrence Carmichael Earle American, 1845-1921 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/4",
+      "image_url": "https://www.artic.edu/iiif/2/1753b638-d4fb-8e45-3db9-92dde7f053da/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of watercolor over graphite on cream wove paper."
+    },
+    {
+      "id": "wikimedia-39967995",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Moreno Sociogram 5th Grade.png",
+      "credit": "Martin Grandjean / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Moreno_Sociogram_5th_Grade.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Moreno_Sociogram_5th_Grade.png/960px-Moreno_Sociogram_5th_Grade.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1000,
+      "height": 1000,
+      "alt_suggestion": "Mapping the social affinities of a group of individuals, Moreno’s first sociograms visualize the relationships between pupils in a classroom: who wants to be sitting next to whom? Each child can choos",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"social network graph sociogram network visualization\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"social network graph\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"social network graph sociogram\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

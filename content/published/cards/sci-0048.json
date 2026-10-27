@@ -1,0 +1,50 @@
+{
+  "id": "sci-0048",
+  "interest": "science",
+  "title": "Zero resistance",
+  "probes": [
+    {
+      "id": "sci-0048-p1",
+      "question": "Below its critical temperature, a superconductor's resistance...",
+      "kind": "mcq",
+      "options": [
+        "Rises sharply",
+        "Falls gradually",
+        "Drops abruptly to zero",
+        "Stays the same"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "sci-0048-p2",
+      "question": "True or false: a current in a loop of superconducting wire can persist indefinitely with no power source.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Superconductivity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Superconductivity"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:35:05.436Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0048.webp",
+    "alt": "A small magnet floats in mid-air above a superconductor cooled with liquid nitrogen.",
+    "kind": "photo",
+    "credit": "Julien Bobroff (user:Jubobroff), Frederic Bouquet (user:Fbouquet), Jeffrey Quilliam, LPS, Orsay, France / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Levitation_of_a_magnet_on_a_superconductor.jpg"
+  },
+  "body": {
+    "claim": "A superconductor has a critical temperature below which its electrical resistance drops abruptly to zero.",
+    "why": "An ordinary metal's resistance decreases only gradually as it is cooled. Heike Kamerlingh Onnes discovered superconductivity in 1911, in mercury cooled with liquid helium to 4.2 K. A current in a loop of superconducting wire can persist indefinitely with no power source, and superconducting magnets are used in MRI scanners and particle accelerators."
+  }
+}

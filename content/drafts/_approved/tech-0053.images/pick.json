@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-107866675",
+  "alt": "The back of a green DDR4 memory stick with eight black memory chips and gold edge contacts.",
+  "fits": true,
+  "note": "Clear RAM module; only small chip markings.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.2
+  }
+}

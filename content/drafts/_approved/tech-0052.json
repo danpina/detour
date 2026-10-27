@@ -1,0 +1,119 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "CPU instruction cycle",
+    "angle": "The loop a CPU repeats from boot-up to shutdown"
+  },
+  "created_at": "2026-10-26T20:28:21.550Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0052",
+    "interest": "tech",
+    "type": "story",
+    "title": "Fetch, decode, execute",
+    "body": {
+      "panels": [
+        {
+          "text": "Under all the apps, a CPU does one thing over and over: the instruction cycle. It runs from boot-up until the computer shuts down."
+        },
+        {
+          "text": "Fetch. A register called the program counter holds the address of the next instruction. The CPU reads that instruction from memory, and the counter moves on to the one after."
+        },
+        {
+          "text": "Decode. The control unit works out what the instruction means: which operations and operands are needed, and it signals the parts of the CPU that will do the work."
+        },
+        {
+          "text": "Execute. The CPU carries it out. Then the cycle starts again with the next instruction."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0052-p1",
+        "kind": "mcq",
+        "question": "What is the right order of the instruction cycle?",
+        "options": [
+          "Execute, fetch, decode",
+          "Decode, execute, fetch",
+          "Fetch, decode, execute",
+          "Fetch, execute, decode"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0052-p2",
+        "kind": "tf",
+        "question": "True or false: the CPU follows the fetch-decode-execute cycle from boot-up until the computer shuts down.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Instruction cycle (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Instruction_cycle"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Stacked CPU die up close.png (CC BY-SA) shows the die of an Am386 DX-40 processor",
+    "keywords": [
+      "CPU die",
+      "processor die",
+      "microprocessor",
+      "Am386"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.362Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Instruction_cycle",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The CPU follows the instruction cycle from boot-up until shutdown",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Instruction_cycle",
+        "quote": "the cycle that the central processing unit (CPU) follows from boot-up until the computer has shut down"
+      },
+      {
+        "claim": "Order is fetch, decode, execute (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Instruction_cycle",
+        "quote": "It is composed of three main stages: the fetch stage, the decode stage, and the execute stage."
+      },
+      {
+        "claim": "Fetch: program counter holds address of next instruction",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Instruction_cycle",
+        "quote": "The PC contains the address of the instruction to be fetched."
+      },
+      {
+        "claim": "Fetch: counter then moves on to the following instruction",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Instruction_cycle",
+        "quote": "At the end of this stage, the PC points to the next instruction that will be read at the next cycle."
+      },
+      {
+        "claim": "Decode: control unit interprets the instruction and signals the CPU parts that do the work",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Instruction_cycle",
+        "quote": "the encoded instruction in the CIR is interpreted by the CU."
+      },
+      {
+        "claim": "Execute: the CPU carries out the operation",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Instruction_cycle",
+        "quote": "This is the stage where the actual operation specified by the instruction is carried out by the relevant functional units of the CPU."
+      }
+    ],
+    "overall": "pass"
+  }
+}

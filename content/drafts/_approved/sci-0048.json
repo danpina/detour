@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Superconductors",
+    "angle": "Zero resistance below a critical temperature"
+  },
+  "created_at": "2026-10-26T20:31:08.683Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0048",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Zero resistance",
+    "body": {
+      "claim": "A superconductor has a critical temperature below which its electrical resistance drops abruptly to zero.",
+      "why": "An ordinary metal's resistance decreases only gradually as it is cooled. Heike Kamerlingh Onnes discovered superconductivity in 1911, in mercury cooled with liquid helium to 4.2 K. A current in a loop of superconducting wire can persist indefinitely with no power source, and superconducting magnets are used in MRI scanners and particle accelerators."
+    },
+    "probes": [
+      {
+        "id": "sci-0048-p1",
+        "kind": "mcq",
+        "question": "Below its critical temperature, a superconductor's resistance...",
+        "options": [
+          "Rises sharply",
+          "Falls gradually",
+          "Drops abruptly to zero",
+          "Stays the same"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "sci-0048-p2",
+        "kind": "tf",
+        "question": "True or false: a current in a loop of superconducting wire can persist indefinitely with no power source.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Superconductivity (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Superconductivity"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Magnet 4.jpg shows a magnet suspended over a superconductor; File:Pastilla superconductora.jpg a levitating pellet",
+    "keywords": [
+      "Superconductivity",
+      "Meissner effect",
+      "levitating magnet superconductor",
+      "MRI scanner"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.590Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Superconductivity",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Superconductor has a critical temperature below which resistance drops abruptly to zero (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Superconductivity",
+        "quote": "a superconductor has a characteristic critical temperature below which the resistance drops abruptly to zero"
+      },
+      {
+        "claim": "Ordinary metal's resistance decreases only gradually when cooled",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Superconductivity",
+        "quote": "whose resistance decreases gradually as its temperature is lowered"
+      },
+      {
+        "claim": "Kamerlingh Onnes discovered superconductivity in 1911",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Superconductivity",
+        "quote": "The superconductivity phenomenon was discovered in 1911 by Dutch physicist Heike Kamerlingh Onnes"
+      },
+      {
+        "claim": "In mercury cooled with liquid helium",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Superconductivity",
+        "quote": "studying the resistance of mercury at cryogenic temperatures using the recently produced liquid helium as a refrigerant"
+      },
+      {
+        "claim": "At 4.2 K",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Superconductivity",
+        "quote": "At the temperature of 4.2 K"
+      },
+      {
+        "claim": "Current in a superconducting loop can persist indefinitely with no power source (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Superconductivity",
+        "quote": "An electric current through a loop of superconducting wire can persist indefinitely with no power source."
+      },
+      {
+        "claim": "Superconducting magnets used in MRI scanners and particle accelerators",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Superconductivity",
+        "quote": "found wide application in MRI medical imagers, bending and focusing magnets for enormous high-energy-particle accelerators"
+      }
+    ],
+    "overall": "pass"
+  }
+}

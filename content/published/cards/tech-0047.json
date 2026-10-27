@@ -1,0 +1,66 @@
+{
+  "id": "tech-0047",
+  "interest": "tech",
+  "title": "Why a link can fool you",
+  "probes": [
+    {
+      "id": "tech-0047-p1",
+      "question": "Who owns the address example.com.scam.com?",
+      "kind": "mcq",
+      "options": [
+        "example.com",
+        "Neither",
+        "scam.com",
+        "Both"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "tech-0047-p2",
+      "question": "True or false: look-alike letters from other alphabets can be used to fake a domain name.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Phishing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Phishing"
+    },
+    {
+      "title": "IDN homograph attack (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/IDN_homograph_attack"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:13.023Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0047.webp",
+    "alt": "A row of shiny steel fishing hooks of decreasing size on a white surface.",
+    "kind": "photo",
+    "credit": "daniel jaeger / Wikimedia Commons",
+    "license": "CC BY-SA 2.5",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Fishing_hooks_on_white_surface.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "A link can look like it goes to example.com. But example.com.scam.com belongs to scam.com, despite appearing to refer to example.com."
+      },
+      {
+        "text": "Another tactic is to make the link's displayed text look trustworthy while the link itself leads to the phisher's site."
+      },
+      {
+        "text": "A third uses look-alike letters. The Cyrillic, Greek and Latin alphabets each have an o with the same shape but a different code point."
+      },
+      {
+        "text": "So an address can look identical and still be a different domain. It pays to read the whole address."
+      }
+    ]
+  }
+}

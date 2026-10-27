@@ -1,0 +1,96 @@
+{
+  "draft_id": "tech-0042",
+  "created_at": "2026-10-27T06:11:28.633Z",
+  "queries": [
+    "data center server racks server room",
+    "data center",
+    "data center server racks"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-110874437",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Virginia Tech - data center.jpg",
+      "credit": "Christopher Bowns / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Virginia_Tech_-_data_center.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Virginia_Tech_-_data_center.jpg/960px-Virginia_Tech_-_data_center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3264,
+      "height": 2448,
+      "alt_suggestion": "Virginia Tech - data center",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-A-31182",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Data Processing at Ames Research Center.",
+      "credit": "Don Richey / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/A-31182",
+      "image_url": "https://images-assets.nasa.gov/image/A-31182/A-31182~medium.jpg",
+      "alt_suggestion": "IBM 1401 Data Processing System at NASA Ames Research Center.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-181453",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Server",
+      "credit": "Designed by Lockwood de Forest (American, 1850–1932) Designed and assembled in New York Wood carved in Ahmedabad, India / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/181453",
+      "image_url": "https://www.artic.edu/iiif/2/58305eee-7c44-06ea-cb2f-e8516f81b8df/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of teak, ash or oak.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-120635175",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Data Center 2 (UNC).jpg",
+      "credit": "Ana Las Heras / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Data_Center_2_(UNC).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Data_Center_2_%28UNC%29.jpg/960px-Data_Center_2_%28UNC%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 4000,
+      "alt_suggestion": "Fotografías tomadas un día domingo en la ciudad universitaria de la Universidad Nacional de Córdoba",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-A-31180",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Data Processing System at Ames Research Center.",
+      "credit": "Don Richey / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/A-31180",
+      "image_url": "https://images-assets.nasa.gov/image/A-31180/A-31180~medium.jpg",
+      "alt_suggestion": "Equipment: Data Processing and Data Reduction at the NASA Ames Research Center, EMC. IBM 7090 Data Processing System.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-134195945",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "NOIRLab HQ Server Racks (6V6A0402-CC).jpg",
+      "credit": "NOIRLab/NSF/AURA/T. Slovinský / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:NOIRLab_HQ_Server_Racks_(6V6A0402-CC).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/NOIRLab_HQ_Server_Racks_%286V6A0402-CC%29.jpg/960px-NOIRLab_HQ_Server_Racks_%286V6A0402-CC%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5472,
+      "height": 3648,
+      "alt_suggestion": "Server racks at the NOIRLab Headquarters Computer Server Room in Tucson, Arizona.",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"data center server racks server room\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"data center\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"data center server racks\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

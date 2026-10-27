@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0068",
+  "created_at": "2026-10-26T20:32:36.789Z",
+  "queries": [
+    "Full Moon Moon photograph Moon",
+    "Full Moon",
+    "Full Moon Moon photograph"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-1254946",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Full Moon Luc Viatour.jpg",
+      "credit": "Luc Viatour / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Full_Moon_Luc_Viatour.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Full_Moon_Luc_Viatour.jpg/960px-Full_Moon_Luc_Viatour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1411,
+      "height": 1424,
+      "alt_suggestion": "Nearly Full Moon view from earth in Belgium (Hamois).",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-as17-152-23311",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Full disc of moon photographed by Apollo 17 crewmen during transearth coast",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/as17-152-23311",
+      "image_url": "https://images-assets.nasa.gov/image/as17-152-23311/as17-152-23311~medium.jpg",
+      "alt_suggestion": "AS17-152-23311 (19 Dec. 1972) --- This full disc of the moon was photographed by the Apollo 17 crewmen during their trans-Earth coast homeward following a successful lunar landing mission in December ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-64754",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Moonrise",
+      "credit": "George Inness (American, 1825–1894) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/64754",
+      "image_url": "https://www.artic.edu/iiif/2/4425984b-e241-6413-1404-cdac0fb06518/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-1458138",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Full moon partially obscured by atmosphere.jpg",
+      "credit": "NASA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Full_moon_partially_obscured_by_atmosphere.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Full_moon_partially_obscured_by_atmosphere.jpg/960px-Full_moon_partially_obscured_by_atmosphere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3064,
+      "height": 2043,
+      "alt_suggestion": "Original caption from NASA: \"S103-E-5037 (21 December 1999)--- Astronauts aboard the Space Shuttle Discovery recorded this rarely seen phenomenon of the full Moon partially obscured by the atmosphere ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-as13-60-8703",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "View of near full Moon photographed by Apollo 13 during transearth journey",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/as13-60-8703",
+      "image_url": "https://images-assets.nasa.gov/image/as13-60-8703/as13-60-8703~medium.jpg",
+      "alt_suggestion": "AS13-60-8703 (11-17 April 1970) --- This outstanding view of a near full moon was photographed from the Apollo 13 spacecraft during its trans-Earth journey homeward. Though the explosion of the oxygen",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Full Moon Moon photograph Moon\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Full Moon\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Full Moon Moon photograph\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

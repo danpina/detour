@@ -1,0 +1,100 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "A company anyone could own a piece of",
+    "angle": "A company anyone could own a piece of"
+  },
+  "created_at": "2026-10-26T20:31:39.975Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0064",
+    "interest": "history",
+    "type": "estimate",
+    "title": "A company anyone could own a piece of",
+    "body": {
+      "question": "The Dutch East India Company (VOC), founded in 1602, paid annual dividends for almost 200 years. About what share of its capital did they average each year?",
+      "unit": "% of capital",
+      "min": 1,
+      "max": 100,
+      "scale": "log",
+      "answer": 18,
+      "reveal": "About 18% of the capital a year. Any citizen of the Dutch Republic could buy shares, and shares could be bought and sold on secondary markets, one of which became the Amsterdam Stock Exchange."
+    },
+    "probes": [
+      {
+        "id": "hist-0064-p1",
+        "kind": "mcq",
+        "question": "How could a VOC investor get their money back before the company ended?",
+        "options": [
+          "Ask the company to repay it",
+          "Wait for the next ship",
+          "Sell the share to someone else on the exchange",
+          "Swap it for a ship"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "hist-0064-p2",
+        "kind": "tf",
+        "question": "True or false: shares in the VOC could be bought by any citizen of the Dutch Republic.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Dutch East India Company (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:VOC aandeel 9 september 1606.jpg (public domain): an early VOC share certificate; also File:The dock of the Dutch East India Company at Amsterdam.jpg (public domain)",
+    "keywords": [
+      "VOC aandeel",
+      "VOC share certificate",
+      "Dutch East India Company share",
+      "Dutch East India Company Amsterdam dock"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:28.459Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "VOC founded 1602",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+        "quote": "Established on 20 March 1602 by the States General of the Netherlands"
+      },
+      {
+        "claim": "Annual dividends averaged about 18% of capital for almost 200 years (answer 18)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+        "quote": "paid annual dividends that averaged about 18% of the capital for almost 200 years"
+      },
+      {
+        "claim": "Any citizen of the Dutch Republic could buy shares (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+        "quote": "Shares in the company could be purchased by any citizen of the Dutch Republic"
+      },
+      {
+        "claim": "Shares could be bought and sold on secondary markets, one of which became the Amsterdam Stock Exchange (reveal, probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+        "quote": "bought and sold in open-air secondary markets , one of which became the Amsterdam Stock Exchange"
+      }
+    ],
+    "overall": "pass"
+  }
+}

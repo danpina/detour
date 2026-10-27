@@ -1,0 +1,66 @@
+{
+  "id": "tech-0030",
+  "interest": "tech",
+  "title": "Why web pages arrive in pieces",
+  "probes": [
+    {
+      "id": "tech-0030-p1",
+      "question": "Why is it useful that data travels as small packets?",
+      "kind": "mcq",
+      "options": [
+        "Only missing packets need to be re-requested, and packets can take different paths",
+        "Every packet must follow the same single cable",
+        "Packets can never be lost",
+        "Packets always arrive in the right order"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0030-p2",
+      "question": "True or false: packets can arrive out of order and still be assembled correctly.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "How the web works (MDN)",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"
+    },
+    {
+      "title": "Packet switching (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Packet_switching"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:36.231Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0030.webp",
+    "alt": "A tangle of orange network cables fanning out of a tall network rack in a cabinet.",
+    "kind": "photo",
+    "credit": "Xbspiro / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:SZTE-JATIK,_switch.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "When a server sends you a web page, it does not send one long stream. It cuts the data into small chunks called packets."
+      },
+      {
+        "text": "Each packet has a header and a payload. The header holds the sender and receiver addresses and the packet's number. The payload is the actual data."
+      },
+      {
+        "text": "Packets can be routed along different paths, which keeps the network efficient when many people want the same thing. They may arrive out of order."
+      },
+      {
+        "text": "The twist: that is fine. If one is dropped or corrupted, your computer asks for just that packet again, and the headers put everything back in order."
+      }
+    ]
+  }
+}

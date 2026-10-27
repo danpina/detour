@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0047",
+  "created_at": "2026-10-27T06:10:35.513Z",
+  "queries": [
+    "lottery balls bingo balls drum lottery draw",
+    "lottery balls",
+    "lottery balls bingo balls drum"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-91578153",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bingo balls in bingo drum.jpg",
+      "credit": "elizaIO / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bingo_balls_in_bingo_drum.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Bingo_balls_in_bingo_drum.jpg/960px-Bingo_balls_in_bingo_drum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3415,
+      "height": 2562,
+      "alt_suggestion": "A bunch of bingo balls/lottery balls inside a bingo drum/lottery drum",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-51998",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Lottery Game",
+      "credit": "José Guadalupe Posada Mexican, 1852-1913 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/51998",
+      "image_url": "https://www.artic.edu/iiif/2/67229750-cf40-982f-3983-fd911de4ae58/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of relief engraving or photo relief etching on tan wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-90015296",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "A New Road to Riches. Lottery Chances (BM 1868,0808.5386).jpg",
+      "credit": "Print made by: William Dent Published by: James Aitken / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_New_Road_to_Riches._Lottery_Chances_(BM_1868,0808.5386).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/A_New_Road_to_Riches._Lottery_Chances_%28BM_1868%2C0808.5386%29.jpg/960px-A_New_Road_to_Riches._Lottery_Chances_%28BM_1868%2C0808.5386%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1186,
+      "height": 1600,
+      "alt_suggestion": "Illustration to a sheet of etched verses. The front of a 'Lottery Assurance Office', the windows plastered with advertisements. Sam House stands on the doorstep, speaking to a ragged woman (right) wit",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-135",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Jar with Tubular Handles, Peonies, “Endless Knot,” Pendant Balls, and Pendant Lozenges",
+      "credit": "China / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/135",
+      "image_url": "https://www.artic.edu/iiif/2/abf4b078-b26b-e69c-d689-8aab2d5fa075/full/843,/0/default.jpg",
+      "alt_suggestion": "Green glazed vessel decorated with floral adornments, tapered and flared at the neck, with two small cylindrical handles.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-160330040",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Lottery at Kanab Visitor Center (49981322321).jpg",
+      "credit": "BLMUtah / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lottery_at_Kanab_Visitor_Center_(49981322321).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Lottery_at_Kanab_Visitor_Center_%2849981322321%29.jpg/960px-Lottery_at_Kanab_Visitor_Center_%2849981322321%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4032,
+      "height": 3024,
+      "alt_suggestion": "U.S. Department of the Interior Deputy Secretary Kate MacGregor and Grand Staircase-Escalante National Monument District Manager Harry Barber take a look at the bingo balls for the Wave lottery at the",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"lottery balls bingo balls drum lottery draw\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"lottery balls\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"lottery balls bingo balls drum\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

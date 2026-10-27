@@ -1,0 +1,50 @@
+{
+  "id": "mind-0044",
+  "interest": "mind",
+  "title": "Why we put things off",
+  "probes": [
+    {
+      "id": "mind-0044-p1",
+      "question": "According to one explanation, why might someone delay a stressful task?",
+      "kind": "mcq",
+      "options": [
+        "To avoid negative emotions",
+        "Because they have no goals",
+        "To save energy for later",
+        "Because the task is too easy"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0044-p2",
+      "question": "True or false: Piers Steel indicated that studies should focus on impulsiveness rather than anxiety.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Procrastination (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Procrastination"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:30.892Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0044.webp",
+    "alt": "A small black twin-bell alarm clock with gold hands stands on a wooden desk.",
+    "kind": "photo",
+    "credit": "Solise / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Small_black_alarm_clock_on_a_desk.jpg"
+  },
+  "body": {
+    "claim": "One explanation says people delay a stressful task to avoid unpleasant feelings.",
+    "why": "The pleasure principle may be responsible: delaying can help someone avoid negative emotions, a way of coping with the anxiety of starting. The evidence is debated, though. Piers Steel indicated in 2010 that anxiety is as likely to make people start early as late, and pointed to impulsiveness instead."
+  }
+}

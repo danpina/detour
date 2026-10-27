@@ -1,0 +1,49 @@
+{
+  "id": "sci-0035",
+  "interest": "science",
+  "title": "Two kinds of charge",
+  "probes": [
+    {
+      "id": "sci-0035-p1",
+      "question": "An object has more electrons than protons. What is its overall charge?",
+      "kind": "mcq",
+      "options": [
+        "Positive",
+        "Negative",
+        "Neutral"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0035-p2",
+      "question": "True or false: two charges of the same sign attract each other.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Electric charge (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Electric_charge"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:50.052Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0035.webp",
+    "alt": "Bright electrical streamers arc from the metal sphere of a Van de Graaff generator inside a large hangar, in a black-and-white photograph.",
+    "kind": "photo",
+    "credit": "John G. Trump / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Round_Hill_van_de_Graaff_generator_1.png"
+  },
+  "body": {
+    "claim": "Electric charge comes in two kinds, and like charges repel while unlike charges attract.",
+    "why": "In ordinary matter, electrons carry negative charge and the protons in atomic nuclei carry positive charge. An object with equal numbers of each is neutral, and one with extra electrons is negative."
+  }
+}

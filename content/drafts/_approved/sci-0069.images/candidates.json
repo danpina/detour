@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0069",
+  "created_at": "2026-10-26T20:32:47.019Z",
+  "queries": [
+    "Laser Towards Milky Ways Centre laser beam sky laser Paranal",
+    "Laser Towards Milky Ways Centre",
+    "Laser Towards Milky Ways Centre laser beam sky"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-71452798",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Laser Towards Milky Ways Centre.jpg",
+      "credit": "ESO/Yuri Beletsky (ybialets at eso.org) / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Laser_Towards_Milky_Ways_Centre.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Laser_Towards_Milky_Ways_Centre.jpg/960px-Laser_Towards_Milky_Ways_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3631,
+      "alt_suggestion": "In mid-August 2010 ESO Photo Ambassador Yuri Beletsky snapped this photo at ESO’s Paranal Observatory, Chile. A group of astronomers were observing the centre of the Milky Way using the laser guide st",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-158421",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "\"Honeycomb Centre\" Quilt",
+      "credit": "Union City, Michigan, United States / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/158421",
+      "image_url": "https://www.artic.edu/iiif/2/91f55c21-d934-ef17-d6dc-cc7c07293834/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of cotton and silk, plain weaves, some roller printed; pieced; appliquéd with cotton and wool, plain weave wrapped cardboard; edged and backed with cotton, plain weave; roller printed; quilted with cotton thread.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-15931084",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Laser Towards Milky Ways Centre Wallpaper.jpg",
+      "credit": "Original by ESO/Yuri Beletsky / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Laser_Towards_Milky_Ways_Centre_Wallpaper.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Laser_Towards_Milky_Ways_Centre_Wallpaper.jpg/960px-Laser_Towards_Milky_Ways_Centre_Wallpaper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3008,
+      "height": 1692,
+      "alt_suggestion": "A derivative of File:Laser Towards Milky Ways Centre.jpg by ESO/Yuri Beletsky, in 16:9 resolution and extended borders for use as a wallpaper (note that the extended portion is not \"real\"; it is just ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-77421",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Ornamental Design with a Bat in the Centre",
+      "credit": "Heinrich Aldegrever German, 1502-c.1560 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/77421",
+      "image_url": "https://www.artic.edu/iiif/2/a920e83f-1b5d-5fea-5dd0-a99986822d77/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving in black on ivory laid paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-36257241",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "SQM GE 289A Boxcab Carmelita - Reverso.jpg",
+      "credit": "Kabelleger / David Gubler / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SQM_GE_289A_Boxcab_Carmelita_-_Reverso.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/SQM_GE_289A_Boxcab_Carmelita_-_Reverso.jpg/960px-SQM_GE_289A_Boxcab_Carmelita_-_Reverso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5513,
+      "height": 3676,
+      "alt_suggestion": "High above Tocopilla, Chile, one of SQMs Boxcabs coasts downhill to the Reverso switchback.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Laser Towards Milky Ways Centre laser beam sky laser Paranal\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Laser Towards Milky Ways Centre\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Laser Towards Milky Ways Centre laser beam sky\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

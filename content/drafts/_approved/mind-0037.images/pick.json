@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-30298391",
+  "alt": "Ducks take off over a misty stream at sunrise, lit in warm golden light.",
+  "fits": true,
+  "note": "Sunrise light fits body clock card; portrait crop.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

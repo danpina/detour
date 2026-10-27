@@ -1,0 +1,133 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "The periodic table's logic",
+    "angle": "Mendeleev predicted elements from gaps"
+  },
+  "created_at": "2026-10-26T20:30:07.407Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0065",
+    "interest": "science",
+    "type": "story",
+    "title": "The table that predicted the future",
+    "body": {
+      "panels": [
+        {
+          "text": "1869. Dmitri Mendeleev arranges the elements by atomic mass and sees that their chemical properties follow a pattern."
+        },
+        {
+          "text": "Not every element was known, so his table had gaps. Instead of hiding them, he predicted that undiscovered elements would fill them."
+        },
+        {
+          "text": "He called one eka-aluminium, expecting an atomic mass of about 68 and a density of about 6.0 g/cm³. In 1875 Lecoq de Boisbaudran discovered gallium."
+        },
+        {
+          "text": "Gallium came out at about 69.7 and 5.91 g/cm³. In 1886 germanium, predicted as eka-silicon, matched too. The table was not just a list, it was a map with blanks."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0065-p1",
+        "kind": "mcq",
+        "question": "What did Mendeleev do with the gaps in his table?",
+        "options": [
+          "Left them blank because the data was missing",
+          "Predicted that undiscovered elements would fill them",
+          "Filled them with copies of nearby elements",
+          "Removed those columns"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0065-p2",
+        "kind": "tf",
+        "question": "True or false: gallium, discovered in 1875, closely matched Mendeleev's predicted eka-aluminium.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mendeleev's predicted elements (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements"
+      },
+      {
+        "title": "Periodic table (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Periodic_table"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Dmitri Mendeleev's hand drawn periodic table.jpg (CC0) or File:Mendeleev's periodic table (1869 year).jpg (public domain)",
+    "keywords": [
+      "Mendeleev periodic table",
+      "Mendeleev hand drawn periodic table",
+      "periodic table 1869"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.062Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Periodic_table",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1869 Mendeleev arranged elements by atomic mass and chemical properties followed a pattern",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Periodic_table",
+        "quote": "The first periodic table to become generally accepted was that of the Russian chemist Dmitri Mendeleev in 1869; he formulated the periodic law as a dependence of chemical properties on atomic mass ."
+      },
+      {
+        "claim": "His table had gaps and he predicted undiscovered elements would fill them (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements",
+        "quote": "he noted gaps in the table and predicted that then-unknown elements existed with properties appropriate to fill those gaps."
+      },
+      {
+        "claim": "Eka-aluminium predicted atomic mass about 68",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements",
+        "quote": "He named them eka-boron, eka-aluminium, eka-silicon, and eka-manganese, with respective atomic masses of 44, 68, 72, and 100."
+      },
+      {
+        "claim": "Gallium discovered 1875 by Lecoq de Boisbaudran (also probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements",
+        "quote": "which was discovered, soon after Mendeleev predicted its existence, in 1875 by Paul Emile Lecoq de Boisbaudran ."
+      },
+      {
+        "claim": "Predicted density 6.0 g/cm3 vs gallium 5.91; mass 68 vs about 69.7 (page 69.723)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements",
+        "quote": "Atomic Mass 68 69.723 Density (g/cm ) 6.0 5.91",
+        "note": "69.723 rounds to 69.7."
+      },
+      {
+        "claim": "In 1886 germanium, predicted as eka-silicon, matched too",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements",
+        "quote": "germanium was called eka-silicon until its discovery in 1886"
+      },
+      {
+        "claim": "Eka-silicon proved a good predictor of germanium",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements",
+        "quote": "proved to be good predictors of the properties of scandium (Sc, 21), gallium (Ga, 31), technetium (Tc, 43), and germanium (Ge, 32) respectively"
+      }
+    ],
+    "overall": "pass"
+  }
+}

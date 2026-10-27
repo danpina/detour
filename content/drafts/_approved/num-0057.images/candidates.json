@@ -1,0 +1,72 @@
+{
+  "draft_id": "num-0057",
+  "created_at": "2026-10-26T20:32:15.518Z",
+  "queries": [
+    "Euclid Elements papyrus Oxyrhynchus Euclid Euclid Elements",
+    "Euclid Elements papyrus",
+    "Euclid Elements papyrus Oxyrhynchus Euclid"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-1259734",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "P. Oxy. I 29.jpg",
+      "credit": "Euclid / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:P._Oxy._I_29.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/P._Oxy._I_29.jpg/960px-P._Oxy._I_29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1694,
+      "height": 1032,
+      "alt_suggestion": "Oxyrhynchus papyrus (P.Oxy. I 29) showing fragment of Euclid's Elements",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-805",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Funerary Papyrus of Tayuhenutmut",
+      "credit": "Egyptian; probably Thebes (now Luxor), Egypt / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/805",
+      "image_url": "https://www.artic.edu/iiif/2/6cb56687-a433-ae6b-ab07-af71dd755ec9/full/843,/0/default.jpg",
+      "alt_suggestion": "Horizontal five-panel document featuring written characters in black on the left four pages and an illustration of the fifth. A seated figure at left in profile, wearing a tall headdress and white clothing, looks toward a dark-haired female figure at right in white with a white object on her head. She holds up her hands in gesture. A panel of hieroglyphs in white squares is visible behind them.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-23782904",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Euclid-POxy.jpg",
+      "credit": "Benutzer:Bibhistor / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Euclid-POxy.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Euclid-POxy.jpg/960px-Euclid-POxy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4748,
+      "height": 1099,
+      "alt_suggestion": "Euclid’s Elements School Papyrus of Roman Oxyrhynchus, 100 AD Same in English School Book, London, 1901 AD",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-169166171",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "P.Penn. Museum inv. E02748 Euclid's Elements 2.5.jpg",
+      "credit": "University of Pennsylvania Museum of Archaeology and Anthropology / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg/960px-P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3745,
+      "height": 2322,
+      "alt_suggestion": "Originally P.Oxy.29 (now P.Penn. Museum inv. E02748); a papyrus fragment of Euclid's Elements Book II, Proposition 5 dated 3rd-4th century CE.",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Euclid Elements papyrus Oxyrhynchus Euclid Euclid Elements\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Euclid Elements papyrus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Euclid Elements papyrus Oxyrhynchus Euclid\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

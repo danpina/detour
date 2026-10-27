@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0045",
+  "created_at": "2026-10-27T06:10:15.492Z",
+  "queries": [
+    "bar interior pub bar counter",
+    "bar interior",
+    "bar interior pub"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-28423935",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Jumpru Pub Bar Oulu 20130718.jpg",
+      "credit": "Estormiz / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jumpru_Pub_Bar_Oulu_20130718.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Jumpru_Pub_Bar_Oulu_20130718.jpg/960px-Jumpru_Pub_Bar_Oulu_20130718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2460,
+      "height": 1845,
+      "alt_suggestion": "Bar of Pub Jumpru in Oulu.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA22210",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Wide-Angle Panorama from Ridge in Mars' Gale Crater",
+      "credit": "NASA/JPL-Caltech/MSSS / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA22210",
+      "image_url": "https://images-assets.nasa.gov/image/PIA22210/PIA22210~medium.jpg",
+      "alt_suggestion": "Climbing \"Vera Rubin Ridge\" provided NASA's Curiosity Mars rover this sweeping vista of the interior and rim of Gale Crater, including much of the rover's route during its first five-and-a-half years ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-9",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Interior of St. Mark's, Venice",
+      "credit": "David Dalhoff Neal (American, 1838–1915) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/9",
+      "image_url": "https://www.artic.edu/iiif/2/b55d836c-ee20-59f8-1f0c-a95e09905361/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-50880034",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bar at Neptunes Hall pub in Broadstairs Kent England.jpg",
+      "credit": "Acabashi / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bar_at_Neptunes_Hall_pub_in_Broadstairs_Kent_England.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Bar_at_Neptunes_Hall_pub_in_Broadstairs_Kent_England.jpg/960px-Bar_at_Neptunes_Hall_pub_in_Broadstairs_Kent_England.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2000,
+      "height": 3000,
+      "alt_suggestion": "The front bar of the Neptunes Hall public house in Broadstairs, Kent, England.Mobile device view: Wikimedia (as at 2018) makes it difficult to view photos related to this image, so to see its most rel",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-146816881",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Viaduct Tavern bar interior, Newgate St, St Paul's, London 02.jpg",
+      "credit": "Acabashi / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Viaduct_Tavern_bar_interior,_Newgate_St,_St_Paul%27s,_London_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/The_Viaduct_Tavern_bar_interior%2C_Newgate_St%2C_St_Paul%27s%2C_London_02.jpg/960px-The_Viaduct_Tavern_bar_interior%2C_Newgate_St%2C_St_Paul%27s%2C_London_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 3456,
+      "alt_suggestion": "The bar of The Viaduct Tavern, with beer taps and beer engines, on the corner of Newgate St and Giltspur St, at St Paul's, London, England.Camera: Canon PowerShot SX60 HS.Software: file lens-corrected",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"bar interior pub bar counter\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"bar interior\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"bar interior pub\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

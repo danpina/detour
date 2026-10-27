@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Efficient-market hypothesis",
+    "angle": "If prices reflect all information, beating the market is hard"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0056",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "Why it's hard to beat the market",
+    "body": {
+      "claim": "The efficient-market hypothesis says asset prices reflect all available information.",
+      "why": "A direct implication is that it is impossible to beat the market consistently on a risk-adjusted basis, since prices should only react to new information. The idea is closely associated with Eugene Fama and his influential 1970 review."
+    },
+    "probes": [
+      {
+        "id": "money-0056-p1",
+        "kind": "mcq",
+        "question": "According to the efficient-market hypothesis, what should make market prices move?",
+        "options": [
+          "New information",
+          "The calendar",
+          "Past price patterns",
+          "Traders' hunches"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0056-p2",
+        "kind": "tf",
+        "question": "True or false: the efficient-market hypothesis implies it is impossible to beat the market consistently on a risk-adjusted basis.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Efficient-market hypothesis (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Electronic stock board in Yaesu, Tokyo 2007.jpg (CC BY 2.0) shows an electronic board displaying stock market data",
+    "keywords": [
+      "electronic stock board",
+      "stock market board",
+      "stock ticker board"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.981Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The efficient-market hypothesis says asset prices reflect all available information",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+        "quote": "is a hypothesis in financial economics that states that asset prices reflect all available information"
+      },
+      {
+        "claim": "A direct implication is that it is impossible to beat the market consistently on a risk-adjusted basis (probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+        "quote": "it is impossible to \"beat the market\" consistently on a risk-adjusted basis",
+        "note": "Card correctly frames it as what the hypothesis implies, not as fact."
+      },
+      {
+        "claim": "Prices should only react to new information (probe p1 answer: new information)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+        "quote": "since market prices should only react to new information"
+      },
+      {
+        "claim": "The idea is closely associated with Eugene Fama",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+        "quote": "closely associated with Eugene Fama"
+      },
+      {
+        "claim": "Fama's influential 1970 review",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+        "quote": "In Fama's influential 1970 review paper"
+      }
+    ],
+    "overall": "pass"
+  }
+}

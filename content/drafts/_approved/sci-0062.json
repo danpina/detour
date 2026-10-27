@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Black holes",
+    "angle": "A region from which nothing escapes"
+  },
+  "created_at": "2026-10-26T20:30:07.405Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0062",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "A black hole is a place, not a thing",
+    "body": {
+      "claim": "A black hole is a region of spacetime where gravity is so strong that nothing, not even light, can escape.",
+      "why": "In 1784 John Michell suggested that gravity near a massive, compact object could trap even light. Today a black hole is defined as a region from which no signal or object can escape. Sagittarius A*, at the centre of our Milky Way, holds one of about 4.3 million solar masses."
+    },
+    "probes": [
+      {
+        "id": "sci-0062-p1",
+        "kind": "mcq",
+        "question": "Roughly how massive is the black hole at the centre of the Milky Way?",
+        "options": [
+          "About 4.3 thousand Suns",
+          "About 4.3 million Suns",
+          "About 4.3 billion Suns",
+          "About one Sun"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0062-p2",
+        "kind": "tf",
+        "question": "True or false: in 1784 John Michell proposed that gravity could be strong enough to trap even light.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Black hole (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Black_hole"
+      },
+      {
+        "title": "Event horizon (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Event_horizon"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Black hole - Messier 87.jpg (CC BY 4.0, Event Horizon Telescope image of the M87 black hole)",
+    "keywords": [
+      "Black hole Messier 87",
+      "Event Horizon Telescope",
+      "M87 black hole"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.060Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Black_hole",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Event_horizon",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A black hole: nothing, not even light, can escape",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Black_hole",
+        "quote": "Nothing, not even light, can escape from inside the event horizon."
+      },
+      {
+        "claim": "Today a black hole is defined as a region from which no signal or object can escape",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Black_hole",
+        "quote": "A black hole is generally defined as a region of spacetime from which no information-carrying signals or objects can escape."
+      },
+      {
+        "claim": "In 1784 John Michell suggested gravity near a massive compact object could trap even light (body and probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Event_horizon",
+        "quote": "In 1784, John Michell proposed that gravity can be strong enough in the vicinity of massive compact objects that even light cannot escape."
+      },
+      {
+        "claim": "Sagittarius A* at the centre of the Milky Way holds a black hole of about 4.3 million solar masses (body and probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Black_hole",
+        "quote": "contains a supermassive black hole of about 4.3 million solar masses."
+      }
+    ],
+    "overall": "pass"
+  }
+}

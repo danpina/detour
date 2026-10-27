@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-61374409",
+  "alt": "A steel lattice transmission tower carrying high-voltage power lines against a blue sky, with hills in the distance.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

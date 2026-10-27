@@ -1,0 +1,70 @@
+{
+  "id": "sci-0040",
+  "interest": "science",
+  "title": "Faraday spins a disc",
+  "probes": [
+    {
+      "id": "sci-0040-p1",
+      "question": "What does an electric generator convert?",
+      "kind": "mcq",
+      "options": [
+        "Electrical energy into mechanical energy",
+        "Mechanical energy into electrical energy",
+        "Heat into light",
+        "Chemical energy into sound"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0040-p2",
+      "question": "True or false: a changing magnetic field can induce an electric current in a circuit.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Faraday's law of induction (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction"
+    },
+    {
+      "title": "Homopolar generator (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Homopolar_generator"
+    },
+    {
+      "title": "Electric generator (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Electric_generator"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:38:11.559Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0040.webp",
+    "alt": "A Faraday disk generator on a wooden base, with a copper disc turned by a crank between the poles of a red horseshoe magnet.",
+    "kind": "photo",
+    "credit": "Daderot / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Faraday_disk_-_National_Museum_of_Nature_and_Science,_Tokyo_-_DSC07366.JPG"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "1831. Michael Faraday is experimenting with electricity and magnetism."
+      },
+      {
+        "text": "The rule that bears his name, Faraday's law of induction, says a changing magnetic field can induce an electric current in a circuit."
+      },
+      {
+        "text": "The same year he builds the Faraday disc: a conducting disc turning in a magnetic field, which creates a potential difference. It is the first homopolar generator, very inefficient and not used as a practical source of power."
+      },
+      {
+        "text": "The twist: his principle runs the world. Steam, gas, water and wind turbines, even hand cranks, can spin generators, and generators produce nearly all the electric power on worldwide grids."
+      }
+    ]
+  }
+}

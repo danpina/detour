@@ -1,0 +1,96 @@
+{
+  "draft_id": "tech-0057",
+  "created_at": "2026-10-26T20:30:04.640Z",
+  "queries": [
+    "neural network language model artificial intelligence",
+    "neural network",
+    "neural network language model"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-151216028",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Encoder self-attention, detailed diagram.png",
+      "credit": "dvgodoy / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Encoder_self-attention,_detailed_diagram.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Encoder_self-attention%2C_detailed_diagram.png/960px-Encoder_self-attention%2C_detailed_diagram.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1426,
+      "height": 958,
+      "alt_suggestion": "Illustrations for the Transformer, and attention mechanism. Encoder self-attention, detailed diagram.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss068e028286",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "iss068e028286",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss068e028286",
+      "image_url": "https://images-assets.nasa.gov/image/iss068e028286/iss068e028286~medium.jpg",
+      "alt_suggestion": "iss068e028286 (Dec. 1, 2022) --- Expedition 68 Flight Engineer Koichi Wakata of the Japan Aerospace Exploration (JAXA) works on the Neural Integration System investigation. The investigation uses nema",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-127874",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Model of a River Boat",
+      "credit": "Egyptian; Meir, Egypt / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/127874",
+      "image_url": "https://www.artic.edu/iiif/2/f16a5e00-31c5-1e61-a953-15c5abb42ca3/full/843,/0/default.jpg",
+      "alt_suggestion": "A painted wooden boat with 15 wooden figures, all painted with dark skin and hair, shirtless, and white cloth around their lower halves. Fourteen figures are seated as if rowing; one figures stands facing sideways at the back of the boat.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-151216020",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Transformer, one encoder-decoder block, detailed view.png",
+      "credit": "dvgodoy / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Transformer,_one_encoder-decoder_block,_detailed_view.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Transformer%2C_one_encoder-decoder_block%2C_detailed_view.png/960px-Transformer%2C_one_encoder-decoder_block%2C_detailed_view.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1426,
+      "height": 1040,
+      "alt_suggestion": "Illustrations for the Transformer, and attention mechanism. Transformer, one encoder-decoder block, detailed view.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-27992",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "A Sunday on La Grande Jatte — 1884",
+      "credit": "Georges Seurat (French, 1859–1891) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/27992",
+      "image_url": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg",
+      "alt_suggestion": "Large painting of people in a crowded park, brushstrokes are dots.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-136199696",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Language model context understanding.jpg",
+      "credit": "Cepice / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Language_model_context_understanding.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Language_model_context_understanding.jpg/960px-Language_model_context_understanding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2000,
+      "height": 1414,
+      "alt_suggestion": "Language model context understanding",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"neural network language model artificial intelligence\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"neural network\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"neural network language model\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

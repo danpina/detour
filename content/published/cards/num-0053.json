@@ -1,0 +1,50 @@
+{
+  "id": "num-0053",
+  "interest": "numbers",
+  "title": "Up 50%, down 50%, not back to even",
+  "probes": [
+    {
+      "id": "num-0053-p1",
+      "question": "A $200 price rises 10%, then falls 10%. What is the final price?",
+      "kind": "mcq",
+      "options": [
+        "$200",
+        "$198",
+        "$202",
+        "$180"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0053-p2",
+      "question": "True or false: a 25% increase is undone by a 25% decrease.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Percentage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Percentage"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:00.088Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0053.webp",
+    "alt": "A large red sale poster with the word 'sale' and a big white percent sign.",
+    "kind": "photo",
+    "credit": "Erkaha / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Prozente_Angebot.jpg"
+  },
+  "body": {
+    "claim": "A 50% rise followed by a 50% fall leaves you below where you started.",
+    "why": "Each percentage is measured against a different starting amount. A 100 that rises 50% becomes 150, but 50% of 150 is 75, so the fall lands on 75. In general, an increase of x percent followed by a decrease of x percent ends with a net decrease."
+  }
+}

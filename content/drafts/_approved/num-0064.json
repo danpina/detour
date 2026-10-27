@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Golden ratio myth",
+    "angle": "Where the golden ratio is claimed and where it is not"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0064",
+    "interest": "numbers",
+    "type": "guess_first",
+    "title": "Is the Parthenon built on the golden ratio?",
+    "body": {
+      "question": "The golden ratio is said to hide in famous buildings and paintings. What do we know about the Parthenon?",
+      "options": [
+        "It was designed around the golden ratio",
+        "Many claim so, but the claim is largely discredited",
+        "Only its roof follows it"
+      ],
+      "answer": 1,
+      "reveal": "Many of its proportions are alleged to show the golden ratio, but this has largely been discredited. The same goes for the Mona Lisa: the idea is not supported by Leonardo's own writings. Some golden ratio claims rest on dubious fits to data."
+    },
+    "probes": [
+      {
+        "id": "num-0064-p1",
+        "kind": "tf",
+        "question": "True or false: Leonardo's own writings support the claim that the Mona Lisa uses golden ratio proportions.",
+        "answer": false
+      },
+      {
+        "id": "num-0064-p2",
+        "kind": "mcq",
+        "question": "What is the status of the claim that the Parthenon's proportions show the golden ratio?",
+        "options": [
+          "Proven by its architects",
+          "Largely discredited",
+          "Proven in 1999",
+          "Only true for its roof"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Golden ratio (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Golden_ratio"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Parthenon from west.jpg, the Parthenon on the Acropolis",
+    "keywords": [
+      "Parthenon",
+      "Parthenon Athens",
+      "Parthenon west"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:10.992Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Golden_ratio",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Many Parthenon proportions are alleged to show the golden ratio, but this has largely been discredited",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Golden_ratio",
+        "quote": "Many of the proportions of the Parthenon are alleged to exhibit the golden ratio, but this has largely been discredited."
+      },
+      {
+        "claim": "The Mona Lisa golden ratio idea is not supported by Leonardo's own writings",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Golden_ratio",
+        "quote": "is not supported by Leonardo's own writings"
+      },
+      {
+        "claim": "Some golden ratio claims rest on dubious fits to data",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Golden_ratio",
+        "quote": "in some cases based on dubious fits to data",
+        "note": "Page: the golden ratio has been used to analyze proportions of natural objects and artificial systems, in some cases based on dubious fits to data."
+      }
+    ],
+    "overall": "pass"
+  }
+}

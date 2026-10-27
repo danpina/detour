@@ -1,0 +1,54 @@
+{
+  "id": "sci-0052",
+  "interest": "science",
+  "title": "The part that sacrifices itself",
+  "probes": [
+    {
+      "id": "sci-0052-p1",
+      "question": "What happens inside a fuse when too much current flows?",
+      "kind": "mcq",
+      "options": [
+        "A metal wire or strip melts",
+        "A spring resets",
+        "A capacitor charges",
+        "The voltage doubles"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "sci-0052-p2",
+      "question": "True or false: unlike a fuse, a circuit breaker can be reset after it trips.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fuse (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fuse_%28electrical%29"
+    },
+    {
+      "title": "Circuit breaker (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Circuit_breaker"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:35:12.063Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0052.webp",
+    "alt": "A metal electrical fuse box mounted on a garage wall with its door open, showing fuses and wiring.",
+    "kind": "photo",
+    "credit": "Dmitry G / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Fuse_box_in_garage_%3D).JPG"
+  },
+  "body": {
+    "claim": "A fuse protects a circuit by melting when too much current flows, and a circuit breaker does the same job but can be reset.",
+    "why": "A fuse's essential component is a metal wire or strip that melts when too much current flows, stopping the current. It is a sacrificial device and must be replaced after it operates. A circuit breaker interrupts current flow to protect equipment and prevent fire, but can be reset to resume normal operation."
+  }
+}

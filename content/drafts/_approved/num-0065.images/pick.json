@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-193653512",
+  "alt": "Broken pieces of honeycomb in a steel bowl, with the small hexagonal wax cells visible.",
+  "fits": true,
+  "note": "Honeycomb with visible hexagonal cells.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Haitian Revolution",
+    "angle": "From slave revolt to a new state, and the price of recognition"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0037",
+    "interest": "history",
+    "type": "story",
+    "title": "The revolt that built a country",
+    "body": {
+      "panels": [
+        {
+          "text": "In August 1791, enslaved people in the French colony of Saint-Domingue rose against colonial rule. The fight would last until 1 January 1804."
+        },
+        {
+          "text": "Toussaint Louverture, a self-educated former domestic slave, became one of its most successful commanders. He decided to fight for France if it would agree to free all the slaves."
+        },
+        {
+          "text": "The result was rare. Few slave rebellions in history led to a new state that was free from slavery and ruled by formerly enslaved people. This one created Haiti."
+        },
+        {
+          "text": "The twist: France did not recognise Haiti's independence until 1825, and only if Haiti agreed to pay an indemnity of 150 million francs."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0037-p1",
+        "kind": "mcq",
+        "question": "What made the Haitian Revolution unusual?",
+        "options": [
+          "It was fought mainly at sea",
+          "It led to a state free from slavery, ruled by former slaves",
+          "It ended within a month",
+          "It was led by French royalists"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0037-p2",
+        "kind": "mcq",
+        "question": "What condition did France attach to recognising Haiti in 1825?",
+        "options": [
+          "A trade ban",
+          "A royal marriage",
+          "An indemnity of 150 million francs",
+          "Returning to French rule"
+        ],
+        "answer": 2
+      }
+    ],
+    "sources": [
+      {
+        "title": "Haitian Revolution (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Haitian_Revolution"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Général Toussaint Louverture.jpg shows a portrait of Toussaint Louverture (public domain, portrait)",
+    "keywords": [
+      "Toussaint Louverture",
+      "Haitian Revolution",
+      "Saint-Domingue",
+      "Haiti 1804"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:16:07.824Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Enslaved people in Saint-Domingue rose against colonial rule in August 1791",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+        "quote": "led to the slave revolt on 21 August 1791, which ended with the former colony's independence on 1 January 1804"
+      },
+      {
+        "claim": "Fight lasted until 1 January 1804",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+        "quote": "which ended with the former colony's independence on 1 January 1804"
+      },
+      {
+        "claim": "Toussaint Louverture was a self-educated former domestic slave and one of the most successful commanders",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+        "quote": "Toussaint Louverture , although a self-educated former domestic slave, was one of the most successful Black commanders"
+      },
+      {
+        "claim": "Toussaint decided to fight for France if it would agree to free all the slaves",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+        "quote": "Louverture decided to fight for the French if they would agree to free all the slaves"
+      },
+      {
+        "claim": "Few slave rebellions led to a state free from slavery and ruled by former slaves; this created Haiti (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+        "quote": "one of the only known slave rebellions in human history that led to the founding of a state which was both free from slavery"
+      },
+      {
+        "claim": "State was ruled by former enslaved people",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+        "quote": "and ruled by former enslaved captives"
+      },
+      {
+        "claim": "France did not recognise independence until 1825 (p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+        "quote": "France did not officially recognize the independence of Haiti until 1825"
+      },
+      {
+        "claim": "Condition of recognition: indemnity of 150 million francs (p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+        "quote": "As a condition of recognition, Haiti was required to pay an indemnity of 150 million Francs"
+      }
+    ],
+    "overall": "pass"
+  }
+}

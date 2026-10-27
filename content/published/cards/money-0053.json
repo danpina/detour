@@ -1,0 +1,61 @@
+{
+  "id": "money-0053",
+  "interest": "money",
+  "title": "How a housing boom became a crash",
+  "probes": [
+    {
+      "id": "money-0053-p1",
+      "question": "What theory led to bundled subprime mortgages being valued so highly?",
+      "kind": "mcq",
+      "options": [
+        "Interest rates would fall to zero",
+        "Housing prices would keep rising",
+        "Borrowers would repay early"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0053-p2",
+      "question": "True or false: the bankruptcy of Lehman Brothers on 15 September 2008 is often considered the climax of the crisis.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Financial crisis of 2007-2008 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:54.958Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0053.webp",
+    "alt": "A white wooden sign reading FORECLOSURE in red letters in front of a suburban house.",
+    "kind": "photo",
+    "credit": "respres / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sign_of_the_Times-Foreclosure.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In 2006, after years of rising prices, US house prices peaked and mortgage delinquencies began to climb. It was the first sign the housing bubble was bursting."
+      },
+      {
+        "text": "Lending standards had grown lax. One-third of all mortgages in 2006 were subprime or no-documentation loans, which made up 17% of home purchases that year."
+      },
+      {
+        "text": "Bundled subprime mortgages were valued highly on the theory that housing prices would keep rising. Pay structures rewarded short-term deal flow over long-term value."
+      },
+      {
+        "text": "On 15 September 2008 Lehman Brothers, the fourth-largest US investment bank, went bankrupt. It is often considered the climax of the 2008 financial crisis."
+      }
+    ]
+  }
+}

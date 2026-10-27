@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0066",
+  "created_at": "2026-10-27T06:11:15.675Z",
+  "queries": [
+    "ice cream flavours ice cream choice",
+    "ice cream flavours",
+    "ice cream flavours ice cream"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-137217822",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ice cream at EMMA.jpg",
+      "credit": "JIP / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ice_cream_at_EMMA.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Ice_cream_at_EMMA.jpg/960px-Ice_cream_at_EMMA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 3456,
+      "alt_suggestion": "Blackcurrant and mango flavoured ice cream served at the café at the EMMA art museum in Tapiola, Espoo, Finland.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-126316",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Ice Cream Cooler",
+      "credit": "Vienna State Porcelain Manufactory Austrian, 1744-1864 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/126316",
+      "image_url": "https://www.artic.edu/iiif/2/638d3cd2-1690-b796-c6b4-f56d9a962ec0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of hard-paste porcelain and enamel decoration.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-122812764",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ice cream in Loviisa.jpg",
+      "credit": "JIP / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ice_cream_in_Loviisa.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Ice_cream_in_Loviisa.jpg/960px-Ice_cream_in_Loviisa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 3456,
+      "alt_suggestion": "Three different flavours of ice cream served at restaurant Locale in Loviisa, Finland: cherry sorbet, coffee and chocolate.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-24611",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Ice Cream Peddler",
+      "credit": "Modeleled by Jean Rachette (French, 1744-1809) Russian Imperial Porcelain Factory Russian, founded 1744 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/24611",
+      "image_url": "https://www.artic.edu/iiif/2/8bc8597c-7ae1-0f54-660a-21ed6a80ec2a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of porcelain with polychrome enamel decoration.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-144573246",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Lemon liquorice ice cream and coffee at Dylan Marmoripiha.jpg",
+      "credit": "JIP / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lemon_liquorice_ice_cream_and_coffee_at_Dylan_Marmoripiha.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Lemon_liquorice_ice_cream_and_coffee_at_Dylan_Marmoripiha.jpg/960px-Lemon_liquorice_ice_cream_and_coffee_at_Dylan_Marmoripiha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 3456,
+      "alt_suggestion": "A bowl of ice cream with lemon liquorice flavour and a cup of coffee served as dessert at restaurant Dylan Marmoripiha in central Helsinki, Finland.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"ice cream flavours ice cream choice\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ice cream flavours\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ice cream flavours ice cream\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

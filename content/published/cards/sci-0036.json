@@ -1,0 +1,56 @@
+{
+  "id": "sci-0036",
+  "interest": "science",
+  "title": "The balloon on the wall",
+  "probes": [
+    {
+      "id": "sci-0036-p1",
+      "question": "True or false: when two materials are rubbed together, one gains positive charge and the other gains an equal negative charge.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "sci-0036-p2",
+      "question": "A balloon rubbed against hair becomes...",
+      "kind": "mcq",
+      "options": [
+        "Positively charged",
+        "Negatively charged",
+        "Magnetic",
+        "Heavier by a visible amount"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Static electricity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Static_electricity"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:51.231Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "sci-0036.webp",
+    "alt": "A hand holds a red balloon against a person's head so that strands of hair are pulled up toward it, against a teal background.",
+    "kind": "photo",
+    "credit": "MikeRun / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Attractive-electric-force-between-hair-and-balloon.jpg"
+  },
+  "body": {
+    "question": "You rub a balloon on your hair and it sticks to a wall. Why?",
+    "options": [
+      "Rubbing makes it sticky like glue",
+      "Rubbing charges it, and the charged balloon is attracted to particles in the wall",
+      "Rubbing fills it with warm air that rises"
+    ],
+    "answer": 1,
+    "reveal": "When two materials touch or rub, electrons or ions can move from one to the other, leaving one with positive charge and the other with an equal negative charge. A balloon rubbed on hair becomes negatively charged. Near a wall it is attracted to positively charged particles there, and can cling against gravity."
+  }
+}

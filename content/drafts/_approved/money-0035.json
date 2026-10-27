@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "How credit scores are built",
+    "angle": "The five weighted factors of a FICO Score"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0035",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "What's inside a credit score",
+    "body": {
+      "claim": "A FICO Score is built from five weighted categories, and payment history counts the most.",
+      "why": "Payment history makes up 35%, amounts owed 30%, length of credit history 15%, new credit 10% and credit mix 10%. It is built mainly from your credit report, so personal details like income and age are not part of it."
+    },
+    "probes": [
+      {
+        "id": "money-0035-p1",
+        "kind": "mcq",
+        "question": "Which category carries the most weight in a FICO Score?",
+        "options": [
+          "Credit mix",
+          "Length of credit history",
+          "Payment history",
+          "New credit"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "money-0035-p2",
+        "kind": "tf",
+        "question": "True or false: your salary is one of the factors in your FICO Score.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "What's in your credit score? (myFICO)",
+        "url": "https://www.myfico.com/credit-education/whats-in-your-credit-score"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Balance scale IMGP9755.jpg shows an old two-pan balance, standing for weighted factors",
+    "keywords": [
+      "balance scale",
+      "two pan balance",
+      "scales weighing",
+      "weighing scale"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:13:51.633Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://www.myfico.com/credit-education/whats-in-your-credit-score",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Five weighted categories with weights 35/30/15/10/10; payment history counts most (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://www.myfico.com/credit-education/whats-in-your-credit-score",
+        "quote": "payment history (35%), amounts owed (30%), length of credit history (15%), new credit (10%), and credit mix (10%)"
+      },
+      {
+        "claim": "Built mainly from the credit report",
+        "verdict": "pass",
+        "source_url": "https://www.myfico.com/credit-education/whats-in-your-credit-score",
+        "quote": "Your credit report is the primary source of information used to calculate your credit score"
+      },
+      {
+        "claim": "Personal details like income and age are not part of it",
+        "verdict": "pass",
+        "source_url": "https://www.myfico.com/credit-education/whats-in-your-credit-score",
+        "quote": "personal details like income, age, and where you live don't factor in"
+      },
+      {
+        "claim": "Salary is not a factor (probe 2 false)",
+        "verdict": "pass",
+        "source_url": "https://www.myfico.com/credit-education/whats-in-your-credit-score",
+        "quote": "FICO Scores also don't factor in the following financial information: Your salary, occupation, title, employer"
+      }
+    ],
+    "overall": "pass"
+  }
+}

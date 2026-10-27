@@ -1,0 +1,68 @@
+{
+  "draft_id": "sci-0037",
+  "created_at": "2026-10-26T20:32:57.947Z",
+  "queries": [
+    "Hydraulic analogy water pipe Ohm's law",
+    "Hydraulic analogy",
+    "Hydraulic analogy water pipe"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-3003369",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Philosophy hydraulic analogy 1000.jpg",
+      "credit": "Cyril Mechkov -- Circuit-fantasist / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Philosophy_hydraulic_analogy_1000.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Philosophy_hydraulic_analogy_1000.jpg/960px-Philosophy_hydraulic_analogy_1000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1000,
+      "height": 712,
+      "alt_suggestion": "A hydraulic analogy of Miller integrator",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-16568",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Water Lilies",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16568",
+      "image_url": "https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of a pond seen up close spotted with thickly painted pink and white water lilies and a shadow across the top third of the picture.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-87088",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Water Lily Pond",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/87088",
+      "image_url": "https://www.artic.edu/iiif/2/8534685d-1102-e1e3-e194-94f6e925e8b0/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of a small pond dense with pink water lilies, their roots visible through the water, a railed footbridge arching over the pond and lush, dark green folliage surrounding it.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-162",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Hydria (Water Jar)",
+      "credit": "Attributed to a painter of the Leagros group Greek; Athens / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/162",
+      "image_url": "https://www.artic.edu/iiif/2/4a81239a-1bb6-d899-03f8-ee4a88e3a8f8/full/843,/0/default.jpg",
+      "alt_suggestion": "A terracotta jar, wider at the top with a narrow neck and small handles, decorated in black, featuring human figures against red. One wrestles at center with a merman, creating a mass of tangled limbs, the creature's tail dominating the left portion of the scene.",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Hydraulic analogy water pipe Ohm's law\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Hydraulic analogy\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Hydraulic analogy water pipe\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

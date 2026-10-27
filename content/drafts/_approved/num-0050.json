@@ -1,0 +1,124 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "The Texas sharpshooter",
+    "angle": "Painting the target around the bullet holes"
+  },
+  "created_at": "2026-10-27T06:06:56.073Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0050",
+    "interest": "numbers",
+    "type": "story",
+    "title": "Paint the target after you shoot",
+    "body": {
+      "panels": [
+        {
+          "text": "A man in Texas fires a gun at the side of a barn. The bullets land in a scatter."
+        },
+        {
+          "text": "Then he paints a target around the tightest cluster of holes and calls himself a sharpshooter."
+        },
+        {
+          "text": "Statisticians call this the Texas sharpshooter fallacy: finding meaning in what is really a random scatter of data points. It is the rhetorical cousin of data dredging, or p-hacking."
+        },
+        {
+          "text": "The mathematician John Venn used the target-chalking analogy in 1866, though similar stories are older. Ask for the pattern to be named before you look at the data."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0050-p1",
+        "kind": "mcq",
+        "question": "In the Texas sharpshooter fallacy, when is the target drawn?",
+        "options": [
+          "Before any shots",
+          "After the shots have landed",
+          "Only if the shooter misses",
+          "It is never drawn"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0050-p2",
+        "kind": "tf",
+        "question": "True or false: the fallacy means inferring meaning from what is essentially a random distribution of data points.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Texas sharpshooter fallacy (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Lydd firing range - target with bullet holes - geograph.org.uk - 1170924.jpg shows a target with bullet holes",
+    "keywords": [
+      "target bullet holes",
+      "firing range target",
+      "shooting target"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:00.883Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Man in Texas fires at a barn, bullets land in a scatter",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy",
+        "quote": "a person in Texas who fires a gun at the side of a barn, with bullets landing in a random distribution"
+      },
+      {
+        "claim": "Then paints a target around the tightest cluster and claims to be a sharpshooter (probe 1: target after shots)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy",
+        "quote": "He then paints a target around the tightest cluster of shots and claims to be a sharpshooter ."
+      },
+      {
+        "claim": "Fallacy is finding meaning in a random scatter of data points (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy",
+        "quote": "is the statistical fallacy of inferring meaning from what is essentially a random distribution of data points"
+      },
+      {
+        "claim": "Related to data dredging / p-hacking",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy",
+        "quote": "also known as data dredging or p -hacking in statistics"
+      },
+      {
+        "claim": "John Venn used the target-chalking analogy in 1866",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy",
+        "quote": "The mathematician John Venn presented the statistical fallacy and the shooting analogy in 1866"
+      },
+      {
+        "claim": "Similar stories are older than Venn",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy",
+        "quote": "The story about drawing the target after making the shot is older than that."
+      },
+      {
+        "claim": "State the pattern/hypothesis before looking at the data",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy",
+        "quote": "The fallacy is characterized by the failure to specify a hypothesis before gathering data"
+      }
+    ],
+    "overall": "pass"
+  }
+}

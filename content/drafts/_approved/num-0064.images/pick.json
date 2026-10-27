@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-1427237",
+  "alt": "The columns and pediment of the Parthenon on the Acropolis in Athens against a deep blue sky.",
+  "fits": true,
+  "note": "Parthenon from the west, public domain.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

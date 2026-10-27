@@ -1,0 +1,100 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Paper before the battle",
+    "angle": "Paper before the battle"
+  },
+  "created_at": "2026-10-26T20:31:39.974Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0063",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "Paper before the battle",
+    "body": {
+      "claim": "Paper probably reached Central Asia before the famous Battle of Talas.",
+      "why": "Popular history says papermaking spread west after the Battle of Talas in 751 CE, when captured Tang papermakers revealed their secrets. But an archive of 76 paper writings in Sogdian, Arabic and Chinese was found at Panjikent, left by its ruler before the city was captured by Arabs in 722. Paper itself is much older: the pulp process is ascribed to Cai Lun in the 2nd century CE, and the oldest known fragments of its precursor date to the 2nd century BCE in China."
+    },
+    "probes": [
+      {
+        "id": "hist-0063-p1",
+        "kind": "mcq",
+        "question": "What does the Panjikent archive suggest about paper?",
+        "options": [
+          "It was invented at Talas",
+          "It was already known in Central Asia before 751",
+          "It was only used by Chinese emperors",
+          "It was made from papyrus"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0063-p2",
+        "kind": "tf",
+        "question": "True or false: the oldest known fragments of the precursor of modern paper date to the 2nd century BCE in China.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Paper (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Paper"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Five Steps of Papermaking - Step 3 - Casting the Paper Pulp - As described by Cai Lun in 105 CE.jpg (public domain): Ming woodcut of papermaking; also the other steps in that series",
+    "keywords": [
+      "Five Steps of Papermaking",
+      "papermaking Cai Lun",
+      "Ming woodcut papermaking"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.661Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Paper",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Popular history says papermaking spread west after Talas in 751 CE via captured Tang papermakers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Paper",
+        "quote": "Popular history points to the Battle of Talas in 751 CE as the moment when papermaking spread to the Islamic world"
+      },
+      {
+        "claim": "Archive of 76 paper writings in Sogdian, Arabic and Chinese at Panjikent, before the 722 Arab capture (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Paper",
+        "quote": "an archive of 76 paper writings in Sogdian, Arabic, and Chinese has been found in Panjikent"
+      },
+      {
+        "claim": "Paper probably reached Central Asia before Talas",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Paper",
+        "quote": "it had already been in the region for centuries"
+      },
+      {
+        "claim": "Pulp process ascribed to Cai Lun in the 2nd century CE",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Paper",
+        "quote": "The pulp papermaking process is ascribed to Cai Lun , a 2nd-century CE Han court eunuch ."
+      },
+      {
+        "claim": "Oldest known fragments of the precursor date to the 2nd century BCE in China (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Paper",
+        "quote": "The oldest known archaeological fragments of the immediate precursor to modern paper date to the 2nd century BCE in China"
+      }
+    ],
+    "overall": "pass"
+  }
+}

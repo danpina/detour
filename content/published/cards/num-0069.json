@@ -1,0 +1,50 @@
+{
+  "id": "num-0069",
+  "interest": "numbers",
+  "title": "The hard part is factoring",
+  "probes": [
+    {
+      "id": "num-0069-p1",
+      "question": "What does RSA's public key consist of?",
+      "kind": "mcq",
+      "options": [
+        "The sum of two primes",
+        "The product of two large primes",
+        "A single large prime",
+        "A random word"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0069-p2",
+      "question": "True or false: RSA's security is related to the difficulty of factoring a product of two large primes.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "RSA cryptosystem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/RSA_cryptosystem"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:38:09.110Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0069.webp",
+    "alt": "An ornate old steel padlock with its key and sprung bolts displayed, from the Metropolitan Museum of Art.",
+    "kind": "photo",
+    "credit": "André Omereler / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Padlock_and_key_MET_DP-13615-068.jpg"
+  },
+  "body": {
+    "claim": "RSA, widely used for secure data transmission, relies on the difficulty of factoring the product of two large primes.",
+    "why": "In RSA, a user's public key is the product of two large prime numbers, and the primes stay secret. The security of RSA is related to the difficulty of factoring that product. There are no published methods to defeat the system if a large enough key is used."
+  }
+}

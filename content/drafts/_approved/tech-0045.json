@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "VPN",
+    "angle": "What a VPN does and does not do"
+  },
+  "created_at": "2026-10-27T06:07:56.497Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0045",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "What a VPN does and doesn't do",
+    "body": {
+      "claim": "A VPN encrypts your traffic through a tunnel, but it does not make you invisible.",
+      "why": "A VPN uses encryption and tunneling to carry traffic across a public network. It can stop your internet provider from reading the private data you exchange. However, the VPN provider and the online service you reach may still have visibility of your activities."
+    },
+    "probes": [
+      {
+        "id": "tech-0045-p1",
+        "kind": "mcq",
+        "question": "Who may still see your activity when you use a VPN?",
+        "options": [
+          "Nobody at all",
+          "Only your neighbours",
+          "The VPN provider and the online service accessed",
+          "Only your internet provider"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0045-p2",
+        "kind": "tf",
+        "question": "True or false: a VPN uses encryption and tunneling protocols.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Virtual private network (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Virtual_private_network"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A tunnel",
+    "keywords": [
+      "tunnel",
+      "road tunnel",
+      "underground tunnel"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.726Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Virtual_private_network",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A VPN uses encryption and tunneling protocols (claim, probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Virtual_private_network",
+        "quote": "via the use of encryption and tunneling protocols"
+      },
+      {
+        "claim": "A VPN can stop the ISP from reading the private data exchanged",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Virtual_private_network",
+        "quote": "VPNs can enhance usage privacy by making an ISP unable to access the private data exchanged across the VPN."
+      },
+      {
+        "claim": "The VPN provider and online service may still have visibility of activities (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Virtual_private_network",
+        "quote": "However, the VPN provider and the online service being accessed via the VPN may have visibility of the user's activities."
+      },
+      {
+        "claim": "A VPN does not make you invisible/anonymous",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Virtual_private_network",
+        "quote": "VPNs do not make connected users anonymous or unidentifiable to the untrusted medium network provider"
+      }
+    ],
+    "overall": "pass"
+  }
+}

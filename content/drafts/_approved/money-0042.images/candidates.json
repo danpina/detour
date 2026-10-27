@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0042",
+  "created_at": "2026-10-26T20:31:04.502Z",
+  "queries": [
+    "stock certificate share certificate Chicago Burlington Quincy",
+    "stock certificate",
+    "stock certificate share certificate"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-141552300",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Aktie Chicago Burlington.jpg",
+      "credit": "Issued by Chicago, Burlington and Quincy Railroad Company in 1885, reproduced from an original document by Palauenc05. / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aktie_Chicago_Burlington.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Aktie_Chicago_Burlington.jpg/960px-Aktie_Chicago_Burlington.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6717,
+      "height": 4712,
+      "alt_suggestion": "Stock exchange certificate of Chicago, Burlington and Quincy Railroad Company, 1885.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-69541",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "One Dollar Silver Certificate",
+      "credit": "Victor Dubreuil American, born France, 1842–after 1910 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/69541",
+      "image_url": "https://www.artic.edu/iiif/2/4ecbef85-aec1-7455-e329-28540504fe96/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-148448165",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Cumberland Telephone and Telegraph Company Stock Certificate, 1880s.jpg",
+      "credit": "Cumberland Telephone & Telegraph Company / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cumberland_Telephone_and_Telegraph_Company_Stock_Certificate,_1880s.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Cumberland_Telephone_and_Telegraph_Company_Stock_Certificate%2C_1880s.jpg/960px-Cumberland_Telephone_and_Telegraph_Company_Stock_Certificate%2C_1880s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 874,
+      "alt_suggestion": "Cumberland Telephone and Telegraph Company Stock Certificate, 1880s",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-156538",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Chicago Stock Exchange Trading Room: Reconstruction at the Art Institute of Chicago",
+      "credit": "Adler & Sullivan, original architects; American, 1883-1896 Vinci & Kenny, reconstruction architects; American, 1970-1977 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/156538",
+      "image_url": "https://www.artic.edu/iiif/2/47b28b55-ced6-502d-f111-fbe0033f8dc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A grand, double-height room with wood paneling, stenciled wall patterns, four hexagonal columns, and an interior balcony with guardrail at left.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-185565291",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Baltimore and Ohio Railroad stock certificate.jpg",
+      "credit": "Baltimore and Ohio Railroad / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Baltimore_and_Ohio_Railroad_stock_certificate.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Baltimore_and_Ohio_Railroad_stock_certificate.jpg/960px-Baltimore_and_Ohio_Railroad_stock_certificate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3426,
+      "height": 2225,
+      "alt_suggestion": "Stock certificate from the Baltimore and Ohio Railroad",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"stock certificate share certificate Chicago Burlington Quincy\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"stock certificate\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"stock certificate share certificate\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

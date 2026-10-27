@@ -1,0 +1,130 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Photolithography",
+    "angle": "How patterns are printed onto silicon with light and photoresist"
+  },
+  "created_at": "2026-10-26T20:28:21.550Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0051",
+    "interest": "tech",
+    "type": "story",
+    "title": "Printing a chip with light",
+    "body": {
+      "panels": [
+        {
+          "text": "A chip starts as a silicon wafer. It is coated with a photoresist, a material that reacts to light."
+        },
+        {
+          "text": "A photomask carrying the pattern is placed over the wafer, and light is shone through it. Only some areas of the photoresist are exposed."
+        },
+        {
+          "text": "The exposed areas undergo a chemical change. A developer solution then washes away either the exposed or the unexposed parts, leaving the pattern behind."
+        },
+        {
+          "text": "That pattern guides etching, deposition or ion implantation to build the circuit. The twist: one technique, EUV lithography, uses extreme ultraviolet light with a wavelength of 13.5 nm."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0051-p1",
+        "kind": "mcq",
+        "question": "What happens to photoresist where light hits it?",
+        "options": [
+          "It undergoes a chemical change",
+          "It melts away instantly",
+          "It turns to metal",
+          "Nothing at all"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0051-p2",
+        "kind": "cloze",
+        "question": "Light is shone through a ____ that carries the desired pattern.",
+        "answer": "photomask",
+        "accept": [
+          "mask"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Photolithography (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Photolithography"
+      },
+      {
+        "title": "Extreme ultraviolet lithography (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Extreme_ultraviolet_lithography"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Silicon wafer close view.jpg (CC BY) or File:Photoresist spin coating.jpg (CC BY-SA) show a silicon wafer",
+    "keywords": [
+      "silicon wafer",
+      "photoresist",
+      "photolithography",
+      "wafer chip"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:10:27.311Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Photolithography",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Extreme_ultraviolet_lithography",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A chip starts as a silicon wafer coated with photoresist",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Photolithography",
+        "quote": "a process that uses light to transfer a pattern onto a photoresist layer deposited on a sample, typically a silicon wafer"
+      },
+      {
+        "claim": "Photomask with pattern placed over wafer; light shone through it exposing only some areas (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Photolithography",
+        "quote": "Light is shone through the photomask, exposing the photoresist in certain areas."
+      },
+      {
+        "claim": "Exposed areas undergo a chemical change; developer washes away exposed or unexposed parts (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Photolithography",
+        "quote": "The exposed areas undergo a chemical change, making them either soluble or insoluble in a developer solution."
+      },
+      {
+        "claim": "Pattern then guides etching, deposition or ion implantation",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Photolithography",
+        "quote": "After development, the pattern is transferred onto the sample through etching"
+      },
+      {
+        "claim": "EUV lithography uses 13.5 nm light",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Extreme_ultraviolet_lithography",
+        "quote": "uses 13.5 nm extreme ultraviolet (EUV) light to create intricate patterns on semiconductor substrates"
+      },
+      {
+        "claim": "Panel 4: one technique, EUV lithography, uses extreme ultraviolet light of 13.5 nm wavelength",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Extreme_ultraviolet_lithography",
+        "quote": "Lithography using 13.5 nm UV light"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-59268653",
+  "alt": "Two wooden Galton boards side by side, one with metal beads piled at the bottom and one with beads forming a bell-shaped column pattern.",
+  "fits": true,
+  "note": "Shows the bell-shaped result of a Galton board clearly.",
+  "crop": {
+    "fx": 0.7,
+    "fy": 0.6,
+    "zoom": 1
+  }
+}

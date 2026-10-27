@@ -1,0 +1,50 @@
+{
+  "id": "hist-0034",
+  "interest": "history",
+  "title": "When workers became scarce",
+  "probes": [
+    {
+      "id": "hist-0034-p1",
+      "question": "What happened to wages after the Black Death cut the population?",
+      "kind": "mcq",
+      "options": [
+        "They fell, because there was less work",
+        "They rose, because workers were scarce",
+        "They stayed exactly the same",
+        "They were fixed by landowners at one price"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0034-p2",
+      "question": "True or false: landowners offered money rents in place of labour services to keep their tenants.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black Death (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Black_Death"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:16:55.648Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0034.webp",
+    "alt": "Medieval miniature of townspeople carrying coffins and burying plague victims in graves at Tournai.",
+    "kind": "photo",
+    "credit": "Pierart dou Tielt (fl. 1340-1360) / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Doutielt3.jpg"
+  },
+  "body": {
+    "claim": "After the Black Death, workers were so scarce that wages soared.",
+    "why": "The plague of 1346-1353 shrank the population, and the resulting labour shortage pushed wages up. In some places rents collapsed: one record says a letting that once brought in £5 now brought only £1. Landowners swapped labour services for money rents to keep their tenants. It was not a win for everyone, though: people living on wages alone often lost out to rampant inflation."
+  }
+}

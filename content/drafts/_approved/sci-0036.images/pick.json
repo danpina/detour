@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-86185462",
+  "alt": "A hand holds a red balloon against a person's head so that strands of hair are pulled up toward it, against a teal background.",
+  "fits": true,
+  "note": "Classic balloon-and-hair static demo.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "sci-0065",
+  "interest": "science",
+  "title": "The table that predicted the future",
+  "probes": [
+    {
+      "id": "sci-0065-p1",
+      "question": "What did Mendeleev do with the gaps in his table?",
+      "kind": "mcq",
+      "options": [
+        "Left them blank because the data was missing",
+        "Predicted that undiscovered elements would fill them",
+        "Filled them with copies of nearby elements",
+        "Removed those columns"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0065-p2",
+      "question": "True or false: gallium, discovered in 1875, closely matched Mendeleev's predicted eka-aluminium.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mendeleev's predicted elements (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mendeleev%27s_predicted_elements"
+    },
+    {
+      "title": "Periodic table (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Periodic_table"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:15.755Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0065.webp",
+    "alt": "A close-up of Dmitri Mendeleev's handwritten notes with elements and atomic weights crossed out and reworked.",
+    "kind": "photo",
+    "credit": "Scotted400 / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Dmitri_Mendeleev%27s_hand_drawn_periodic_table.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "1869. Dmitri Mendeleev arranges the elements by atomic mass and sees that their chemical properties follow a pattern."
+      },
+      {
+        "text": "Not every element was known, so his table had gaps. Instead of hiding them, he predicted that undiscovered elements would fill them."
+      },
+      {
+        "text": "He called one eka-aluminium, expecting an atomic mass of about 68 and a density of about 6.0 g/cm³. In 1875 Lecoq de Boisbaudran discovered gallium."
+      },
+      {
+        "text": "Gallium came out at about 69.7 and 5.91 g/cm³. In 1886 germanium, predicted as eka-silicon, matched too. The table was not just a list, it was a map with blanks."
+      }
+    ]
+  }
+}

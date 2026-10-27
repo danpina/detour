@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-124906441",
+  "alt": "Close-up of a black NAND flash memory chip with its many metal pins on a green circuit board.",
+  "fits": true,
+  "note": "NAND flash chip, the part that stores SSD data; chip model text is visible but no better unbranded option found.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.2
+  }
+}

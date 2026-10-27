@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-34968916",
+  "alt": "A green circuit board packed with rows of small black transistors, resistors and a blue capacitor, with red digital clock displays on top.",
+  "fits": true,
+  "note": "Many discrete transistors, no brands (Philips-branded alternative rejected).",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.6,
+    "zoom": 1
+  }
+}

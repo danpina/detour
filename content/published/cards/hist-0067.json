@@ -1,0 +1,62 @@
+{
+  "id": "hist-0067",
+  "interest": "history",
+  "title": "The part that made clocks tick",
+  "probes": [
+    {
+      "id": "hist-0067-p1",
+      "question": "What does an escapement do in a mechanical clock?",
+      "kind": "mcq",
+      "options": [
+        "Winds the clock",
+        "Releases the clock's power in small controlled steps",
+        "Rings the bell",
+        "Pumps water into the clock"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0067-p2",
+      "question": "True or false: the first mechanical clocks needed water or mercury to work.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Clock (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Clock"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:06.574Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0067.webp",
+    "alt": "The medieval astronomical clock face of Wells Cathedral with a starry blue dial, Roman numerals and mounted knights on horseback above",
+    "kind": "photo",
+    "credit": "DeFacto / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wells_clock.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Water clocks and sundials are possibly the oldest time-measuring instruments."
+      },
+      {
+        "text": "Around 1300 in Europe, a new idea made the first mechanical clocks possible: the verge escapement."
+      },
+      {
+        "text": "Water-driven clock mechanisms were adapted to run on falling weights. An oscillating part, probably derived from bell-ringing or alarm devices, controlled how that power was released."
+      },
+      {
+        "text": "That controlled release of power is the escapement. These clocks needed no water or mercury, and were meant for signalling, such as timing services and public events, and for modelling the Solar System."
+      }
+    ]
+  }
+}

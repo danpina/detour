@@ -1,0 +1,99 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Diversification",
+    "angle": "Not all eggs in one basket"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0039",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "Why spreading money lowers risk",
+    "body": {
+      "claim": "Diversification lowers risk because asset prices don't all move in step.",
+      "why": "If prices don't change in perfect synchrony, a diversified portfolio varies less than the average of its parts. A single stock dropping 50% in a year is not unusual, but a portfolio of 20 stocks falls that far less often. It is the same idea as the proverb about eggs and baskets."
+    },
+    "probes": [
+      {
+        "id": "money-0039-p1",
+        "kind": "mcq",
+        "question": "Why does holding many different assets reduce risk?",
+        "options": [
+          "It guarantees a profit",
+          "It removes all risk",
+          "Prices don't all move in step"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "money-0039-p2",
+        "kind": "tf",
+        "question": "True or false: holding only one stock is an example of an undiversified portfolio.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Diversification (finance) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Diversification_(finance)"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Eggs in basket 2020 G1.jpg shows eggs in a wicker basket",
+    "keywords": [
+      "eggs in basket",
+      "eggs basket",
+      "wicker basket eggs"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.827Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Diversification_(finance)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "If prices don't move in perfect synchrony a diversified portfolio varies less (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Diversification_(finance)",
+        "quote": "If asset prices do not change in perfect synchrony, a diversified portfolio will have less variance than the weighted average variance of its constituent assets"
+      },
+      {
+        "claim": "A single stock dropping 50% in a year is not unusual",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Diversification_(finance)",
+        "quote": "it is not unusual for a single stock to go down 50% in one year"
+      },
+      {
+        "claim": "A 20-stock portfolio falls that far less often",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Diversification_(finance)",
+        "quote": "It is less common for a portfolio of 20 stocks to go down that much"
+      },
+      {
+        "claim": "Eggs and baskets proverb",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Diversification_(finance)",
+        "quote": "Don't put all your eggs in one basket"
+      },
+      {
+        "claim": "Holding only one stock is undiversified (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Diversification_(finance)",
+        "quote": "an example of an undiversified portfolio is to hold only one stock"
+      }
+    ],
+    "overall": "pass"
+  }
+}

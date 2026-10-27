@@ -1,0 +1,62 @@
+{
+  "id": "mind-0039",
+  "interest": "mind",
+  "title": "The loop behind your habits",
+  "probes": [
+    {
+      "id": "mind-0039-p1",
+      "question": "In the habit loop, what triggers the routine?",
+      "kind": "mcq",
+      "options": [
+        "The reward",
+        "The cue",
+        "Willpower",
+        "Boredom"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0039-p2",
+      "question": "True or false: a habit that seems to have gone can re-emerge when its old cues are reintroduced.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Habit (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Habit"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:09.907Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0039.webp",
+    "alt": "Three toothbrushes, blue, navy and white, lie on a white cloth.",
+    "kind": "photo",
+    "credit": "Jonas Bergsten / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Toothbrush_x3_20050716_002.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "According to Charles Duhigg, every habit has a loop: a cue, a routine and a reward."
+      },
+      {
+        "text": "For example, a TV programme ends (cue), you go to the fridge (routine), you eat a snack (reward)."
+      },
+      {
+        "text": "A cue can be a prior action, a time of day, a location, or anything you associate with the habit."
+      },
+      {
+        "text": "The key to changing a habit is to identify the cue and modify the routine and reward. Old habits may come back when old cues return, which is called habit renewal."
+      }
+    ]
+  }
+}

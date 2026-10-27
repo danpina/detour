@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-3106006",
+ "alt": "An aerial view of the San Andreas Fault as a line of ridges across the Carrizo Plain.",
+ "fits": true,
+ "note": "Chosen over cand-1 which shows an airline logo on a wing.",
+ "crop": {
+  "fx": 0.65,
+  "fy": 0.5,
+  "zoom": 1
+ }
+}

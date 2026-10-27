@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0042",
+  "created_at": "2026-10-27T06:09:46.848Z",
+  "queries": [
+    "survivorship bias WWII bomber damage Abraham Wald",
+    "survivorship bias",
+    "survivorship bias WWII bomber damage"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-122967814",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bilişsel Yanlılıklar Kodeksi.png",
+      "credit": "By design: John Manoogian III categories and descriptions: Buster Benson implementation: TilmannR Translation: Ayşenur Büyükkaymaz. Tasarlayan: John Manoogian I",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bili%C5%9Fsel_Yanl%C4%B1l%C4%B1klar_Kodeksi.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Bili%C5%9Fsel_Yanl%C4%B1l%C4%B1klar_Kodeksi.png/960px-Bili%C5%9Fsel_Yanl%C4%B1l%C4%B1klar_Kodeksi.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3816,
+      "height": 3032,
+      "alt_suggestion": "Wikipedia’s list of 188 cognitive biases, grouped into categories and rendered by John Manoogian III (jm3) as a radial dendrogram (circle diagram). Category model by Buster Benson, biases linked to co",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-566",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Life Cast of the Hands and Face of Abraham Lincoln",
+      "credit": "Leonard Wells Volk (American, 1828–1895) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/566",
+      "image_url": "https://www.artic.edu/iiif/2/8ad03fff-be28-ab22-689c-8f022b5e181c/full/843,/0/default.jpg",
+      "alt_suggestion": "Three-part bronze sculpture set of two clenched hands and a man's face with closed eyes and mouth, an object in one hand.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-7180001",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Apple I Computer.jpg",
+      "credit": "Ed Uthman / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Apple_I_Computer.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Apple_I_Computer.jpg/960px-Apple_I_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2833,
+      "height": 1720,
+      "alt_suggestion": "Apple 1 On display at the Smithsonian",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-111659",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Abraham Lincoln",
+      "credit": "Daniel Chester French (American, 1850–1931) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/111659",
+      "image_url": "https://www.artic.edu/iiif/2/a22d1c57-2ffb-10b0-7d9b-b3d346bf2c6f/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of bronze.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-53081927",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Survivorship-bias.png",
+      "credit": "McGeddon / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Survivorship-bias.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Survivorship-bias.png/960px-Survivorship-bias.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1427,
+      "height": 1063,
+      "alt_suggestion": "Illustration of hypothetical damage pattern on a WW2 bomber, dot pattern roughly based on that given at http://www.motherjones.com/kevin-drum/2010/09/counterintuitive-world which gives credit to Camer",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"survivorship bias WWII bomber damage Abraham Wald\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"survivorship bias\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"survivorship bias WWII bomber damage\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

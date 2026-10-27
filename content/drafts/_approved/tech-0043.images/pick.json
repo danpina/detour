@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-17445617",
+  "alt": "A long aisle between tall dark server racks in a data hall with a light floor.",
+  "fits": true,
+  "note": "Data-centre aisle; crop avoids small shipping box at right edge.",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

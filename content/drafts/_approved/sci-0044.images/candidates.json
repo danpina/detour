@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0044",
+  "created_at": "2026-10-26T20:33:40.994Z",
+  "queries": [
+    "power plant control room power station turbine hall electrical grid control center",
+    "power plant control room",
+    "power plant control room power station turbine hall"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-15089304",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fukushima 1 Power Plant control room (crop).jpg",
+      "credit": "kawamoto takuo / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fukushima_1_Power_Plant_control_room_(crop).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Fukushima_1_Power_Plant_control_room_%28crop%29.jpg/960px-Fukushima_1_Power_Plant_control_room_%28crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 854,
+      "alt_suggestion": "Reactor control room at Fukushima 1 nuclear power plant in Japan This photo was taken on June 23, 1999 during a tour of the plant.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-7027868",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Skylab",
+      "credit": "MSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/7027868",
+      "image_url": "https://images-assets.nasa.gov/image/7027868/7027868~medium.jpg",
+      "alt_suggestion": "This photograph depicts the flight article of the Airlock Module (AM) Flight Article being mated to the Fixed Airlock Shroud and aligned in a clean room of the McDornell Douglas Plant in St. Louis, Mi",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-156538",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Chicago Stock Exchange Trading Room: Reconstruction at the Art Institute of Chicago",
+      "credit": "Adler & Sullivan, original architects; American, 1883-1896 Vinci & Kenny, reconstruction architects; American, 1970-1977 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/156538",
+      "image_url": "https://www.artic.edu/iiif/2/47b28b55-ced6-502d-f111-fbe0033f8dc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A grand, double-height room with wood paneling, stenciled wall patterns, four hexagonal columns, and an interior balcony with guardrail at left.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-45568987",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Power plant control room.jpg",
+      "credit": "Magnetic Rahim / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Power_plant_control_room.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Power_plant_control_room.jpg/960px-Power_plant_control_room.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2464,
+      "height": 1848,
+      "alt_suggestion": "Control room of a power plant",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-7027886",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Skylab",
+      "credit": "MSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/7027886",
+      "image_url": "https://images-assets.nasa.gov/image/7027886/7027886~medium.jpg",
+      "alt_suggestion": "This photograph shows the flight article of the Airlock Module (AM)/Multiple Docking Adapter (MDA) assembly being readied for testing in a clean room at the McDornell Douglas Plant in St. Louis, Misso",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"power plant control room power station turbine hall electrical grid control center\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"power plant control room\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"power plant control room power station turbine hall\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

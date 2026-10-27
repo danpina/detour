@@ -1,0 +1,89 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Opportunity cost",
+    "angle": "The real cost of a choice"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0049",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "The cost of the road not taken",
+    "body": {
+      "claim": "The real cost of a choice is the best alternative you give up.",
+      "why": "Economists call this opportunity cost: the value of the best alternative forgone when limited resources force you to choose. It is not restricted to money. Lost time, pleasure or any other benefit counts too."
+    },
+    "probes": [
+      {
+        "id": "money-0049-p1",
+        "kind": "mcq",
+        "question": "You can spend an evening on only one thing: a film, a run, or a course. You pick the film, and the run was your next-best option. What is the opportunity cost?",
+        "options": [
+          "The ticket price of the film",
+          "The value of the run you gave up",
+          "Nothing, since you chose freely",
+          "The value of all three options added up"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0049-p2",
+        "kind": "tf",
+        "question": "True or false: opportunity costs only count money.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Opportunity cost (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Opportunity_cost"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Fork in the road - geograph.org.uk - 1313908.jpg (portrait) shows a road splitting in two directions",
+    "keywords": [
+      "fork in the road",
+      "road junction",
+      "two paths diverge"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.976Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Opportunity_cost",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The real cost of a choice is the best alternative you give up; opportunity cost is the value of the best alternative forgone when limited resources force a choice",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Opportunity_cost",
+        "quote": "the opportunity cost of a choice is the value of the best alternative forgone"
+      },
+      {
+        "claim": "Opportunity cost is not restricted to money; lost time, pleasure or any other benefit counts (why; probe p2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Opportunity_cost",
+        "quote": "opportunity costs are not restricted to monetary or financial costs"
+      },
+      {
+        "claim": "Probe p1: with the film chosen and the run next-best, the opportunity cost is the value of the run",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Opportunity_cost",
+        "quote": "the opportunity cost of a choice is the value of the best alternative forgone",
+        "note": "Direct application of the definition to the scenario."
+      }
+    ],
+    "overall": "pass"
+  }
+}

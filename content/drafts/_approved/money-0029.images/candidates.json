@@ -1,0 +1,72 @@
+{
+  "draft_id": "money-0029",
+  "created_at": "2026-10-26T20:29:23.922Z",
+  "queries": [
+    "tax form Form 4868 income tax return",
+    "tax form",
+    "tax form Form 4868"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-111275563",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "US tax Form 990-PF Return of Private Foundation 2020.png",
+      "credit": "United States Government / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:US_tax_Form_990-PF_Return_of_Private_Foundation_2020.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/US_tax_Form_990-PF_Return_of_Private_Foundation_2020.png/960px-US_tax_Form_990-PF_Return_of_Private_Foundation_2020.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1602,
+      "height": 2088,
+      "alt_suggestion": "US tax Form 990-PF (Return of Private Foundation)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-9090",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Jar in the Form of a Phallus",
+      "credit": "Moche North coast, Peru / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/9090",
+      "image_url": "https://www.artic.edu/iiif/2/b13348c3-a27d-356d-8c1b-0b12ea91fcb4/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of ceramic and pigment.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-25251178",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Banners of tax return Nobori.JPG",
+      "credit": "Mti / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Banners_of_tax_return_Nobori.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Banners_of_tax_return_Nobori.JPG/960px-Banners_of_tax_return_Nobori.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2304,
+      "height": 1536,
+      "alt_suggestion": "洲本税務署 洲本県税事務所 確定申告を知らせる幟",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-49510795",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "IRS tax form 1098-T (2016).jpg",
+      "credit": "Churrupy / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:IRS_tax_form_1098-T_(2016).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/IRS_tax_form_1098-T_%282016%29.jpg/960px-IRS_tax_form_1098-T_%282016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1275,
+      "height": 1650,
+      "alt_suggestion": "Form 1098-T for the 2016 tax year",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"tax form Form 4868 income tax return\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"tax form\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"tax form Form 4868\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

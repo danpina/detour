@@ -1,0 +1,66 @@
+{
+  "id": "sci-0053",
+  "interest": "science",
+  "title": "The moths that changed colour",
+  "probes": [
+    {
+      "id": "sci-0053-p1",
+      "question": "Why did dark peppered moths become common near industrial cities?",
+      "kind": "mcq",
+      "options": [
+        "They chose darker trees to rest on",
+        "Soot darkened the trees, so dark moths were eaten less often and left more offspring",
+        "Pollution turned each moth's wings dark",
+        "Pale moths all migrated away"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0053-p2",
+      "question": "True or false: the dark form of the peppered moth declined again from about 1962 as the air became cleaner.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Peppered moth evolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Peppered_moth_evolution"
+    },
+    {
+      "title": "Natural selection (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Natural_selection"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:36.352Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0053.webp",
+    "alt": "A dark peppered moth with spread wings resting on lichen-covered tree bark.",
+    "kind": "photo",
+    "credit": "Charles J. Sharp / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Peppered_moth_(Biston_betularia)_female.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Before the Industrial Revolution, peppered moths in England were mostly pale. Pale wings were nearly invisible against light, lichen-covered bark, and the black form was rare."
+      },
+      {
+        "text": "Then coal-burning factories blanketed the countryside with soot. Many lichens died and the trees darkened, so birds found pale moths more easily."
+      },
+      {
+        "text": "Dark moths now survived more often and passed their colour on. By 1895, the dark form had reached a reported 98% of moths in Manchester."
+      },
+      {
+        "text": "The twist: from about 1962, as the air got cleaner, the dark form steadily declined. The moths did not choose anything. Whichever colour hid better simply left more offspring."
+      }
+    ]
+  }
+}

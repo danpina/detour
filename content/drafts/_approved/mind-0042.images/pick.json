@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-19387212",
+  "alt": "A barbell loaded with red weight plates rests on a rubber mat in a gym.",
+  "fits": true,
+  "note": "Weightlifting echoes willpower muscle; plate says ARTIS KG only.",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.5,
+    "zoom": 1.6
+  }
+}

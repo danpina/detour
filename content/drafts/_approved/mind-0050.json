@@ -1,0 +1,131 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Confirmation bias",
+    "angle": "Wason's 2-4-6 rule task"
+  },
+  "created_at": "2026-10-27T06:06:55.979Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0050",
+    "interest": "mind",
+    "type": "story",
+    "title": "The number rule nobody guessed",
+    "body": {
+      "panels": [
+        {
+          "text": "1960. Psychologist Peter Wason shows people the numbers 2, 4, 6 and says they fit a secret rule. Their job is to find it by proposing other triples."
+        },
+        {
+          "text": "Each time, the experimenter says yes or no. People tend to test an idea in a one-sided way, looking for evidence that fits the guess they already hold."
+        },
+        {
+          "text": "The real rule was simply any ascending sequence. People often announced rules far more specific than that, and had great difficulty finding the right one."
+        },
+        {
+          "text": "That is confirmation bias: we search for, interpret and remember information in ways that support what we already believe. It runs on automatic strategies, not deliberate cheating."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0050-p1",
+        "kind": "mcq",
+        "question": "What was the real rule in Wason's number task?",
+        "options": [
+          "Numbers going up by two",
+          "Any ascending sequence",
+          "Only even numbers",
+          "Each number double the last"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0050-p2",
+        "kind": "tf",
+        "question": "True or false: confirmation bias mainly comes from people deliberately deceiving others.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Confirmation bias (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Confirmation_bias"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Magnifying glass2.jpg shows a magnifying glass over a small printed item, a symbol of searching for evidence",
+    "keywords": [
+      "magnifying glass",
+      "search",
+      "evidence",
+      "detective"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.078Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "1960: Peter Wason's experiment on a rule for triples of numbers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+        "quote": "In Peter Wason's initial experiment published in 1960"
+      },
+      {
+        "claim": "People were told 2, 4, 6 fits a secret rule and had to find it by proposing other triples",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+        "quote": "They were told that (2,4,6) fits the rule."
+      },
+      {
+        "claim": "Each time the experimenter says yes or no",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+        "quote": "the experimenter told them whether each triple conformed to the rule"
+      },
+      {
+        "claim": "People tend to test an idea one-sidedly, seeking evidence for the guess they hold",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+        "quote": "people tend to test ideas in a one sided way, mainly searching for evidence that supports what they already assume"
+      },
+      {
+        "claim": "The real rule was any ascending sequence (probe answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+        "quote": "The actual rule was simply \"any ascending sequence\""
+      },
+      {
+        "claim": "People often announced far more specific rules and had great difficulty finding the right one",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+        "quote": "but participants had great difficulty in finding it, often announcing rules that were far more specific"
+      },
+      {
+        "claim": "Confirmation bias: we search for, interpret and remember information in ways that support prior beliefs",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+        "quote": "the tendency to search for, interpret, favor and recall information in a way that confirms or supports one's prior beliefs"
+      },
+      {
+        "claim": "It runs on automatic strategies, not deliberate cheating (probe: not mainly deliberate deception)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+        "quote": "Confirmation bias is a result of automatic, unintentional strategies rather than deliberate deception."
+      }
+    ],
+    "overall": "pass"
+  }
+}

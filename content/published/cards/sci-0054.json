@@ -1,0 +1,50 @@
+{
+  "id": "sci-0054",
+  "interest": "science",
+  "title": "DNA copies itself by unzipping",
+  "probes": [
+    {
+      "id": "sci-0054-p1",
+      "question": "After DNA is copied, what does each new double helix contain?",
+      "kind": "mcq",
+      "options": [
+        "Two brand-new strands",
+        "Two original strands",
+        "One original strand and one newly made strand",
+        "A mix of short original and new fragments only"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "sci-0054-p2",
+      "question": "True or false: DNA polymerases can remove a mismatched piece while copying, a step called proofreading.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "DNA replication (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/DNA_replication"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:37.143Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0054.webp",
+    "alt": "A computer-generated illustration of a twisting DNA double helix with colored base pairs.",
+    "kind": "photo",
+    "credit": "National Human Genome Research Institute / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:DNA_Double_Helix_by_NHGRI.jpg"
+  },
+  "body": {
+    "claim": "When a cell copies its DNA, each old strand becomes the template for a new partner strand.",
+    "why": "The double helix is unwound and separated, and each strand guides the building of a matching strand. Every new molecule keeps one original strand and gains one new one. DNA polymerases do the building and can remove a wrong piece, which is part of why copying is near-perfect."
+  }
+}

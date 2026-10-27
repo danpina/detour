@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0054",
+  "created_at": "2026-10-26T20:32:55.481Z",
+  "queries": [
+    "mètre étalon Paris standard metre rue de Vaugirard Chalgrin standard meter",
+    "mètre étalon Paris",
+    "mètre étalon Paris standard metre rue de Vaugirard"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-10331682",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Mètre-étalon Paris.JPG",
+      "credit": "LPLT / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%A8tre-%C3%A9talon_Paris.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/M%C3%A8tre-%C3%A9talon_Paris.JPG/960px-M%C3%A8tre-%C3%A9talon_Paris.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3072,
+      "height": 2304,
+      "alt_suggestion": "One of the historical (18th century), standard-meter (mètre-étalon) by Chalgrin located at 36, rue de Vaugirard in Paris",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-30661",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Khamsa Standard",
+      "credit": "Iran / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/30661",
+      "image_url": "https://www.artic.edu/iiif/2/b81eb149-737c-0c3b-146e-3de2c3bef13a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of brass, with silver.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-4296613",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Mètre étalon (36, rue de Vaugirard, Paris).jpg",
+      "credit": "Airair / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%A8tre_%C3%A9talon_(36,_rue_de_Vaugirard,_Paris).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/M%C3%A8tre_%C3%A9talon_%2836%2C_rue_de_Vaugirard%2C_Paris%29.jpg/960px-M%C3%A8tre_%C3%A9talon_%2836%2C_rue_de_Vaugirard%2C_Paris%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1024,
+      "height": 768,
+      "alt_suggestion": "Public meter standard by Chalgrin from 18th century (36, rue de Vaugirard, 6th arrondissement of Paris, near the Luxembourg Palace). The public could bring meter rulers and check if they were accurate",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-62065",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Ceremonial Standard ('Alam)",
+      "credit": "India Deccan / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/62065",
+      "image_url": "https://www.artic.edu/iiif/2/2bd39ca7-a1ad-1ef6-e1bf-5912961aadd9/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of brass with pierced and engraved decoration.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-57045326",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Mètre étalon Hôtel Bourvallais Paris 3.jpg",
+      "credit": "Chabe01 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%A8tre_%C3%A9talon_H%C3%B4tel_Bourvallais_Paris_3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/M%C3%A8tre_%C3%A9talon_H%C3%B4tel_Bourvallais_Paris_3.jpg/960px-M%C3%A8tre_%C3%A9talon_H%C3%B4tel_Bourvallais_Paris_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5184,
+      "height": 3456,
+      "alt_suggestion": "Mètre étalon sur la façade de l'hôtel Bourvallais à Paris.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"mètre étalon Paris standard metre rue de Vaugirard Chalgrin standard meter\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"mètre étalon Paris\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"mètre étalon Paris standard metre rue de Vaugirard\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

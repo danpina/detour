@@ -1,0 +1,90 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Sleep and memory",
+    "angle": "Sleep consolidates what you learned"
+  },
+  "created_at": "2026-10-26T20:29:12.574Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0035",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Sleep helps memories stick",
+    "body": {
+      "claim": "Memories hold up better after sleep than after the same time spent awake.",
+      "why": "In 1924, Jenkins and Dallenbach found that retention was much better after a period of sleep than after the same interval awake. Slow-wave sleep is believed to help declarative memories (facts and events), while REM sleep is believed to help non-declarative memories, though results are not fully consistent."
+    },
+    "probes": [
+      {
+        "id": "mind-0035-p1",
+        "kind": "mcq",
+        "question": "Which sleep stage is believed to help memories of facts and events?",
+        "options": [
+          "REM sleep",
+          "Slow-wave sleep",
+          "Neither",
+          "Only daytime naps"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0035-p2",
+        "kind": "tf",
+        "question": "True or false: Jenkins and Dallenbach found retention was better after sleep than after the same time awake.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sleep and memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sleep_and_memory"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Someone or something sleeping peacefully, e.g. File:Sleeping cat on her back.jpg",
+    "keywords": [
+      "sleeping cat",
+      "sleeping",
+      "sleep bed",
+      "dreaming"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:08:21.547Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sleep_and_memory",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "1924 Jenkins and Dallenbach: retention much better after sleep than same time awake (claim, why, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sleep_and_memory",
+        "quote": "Their results showed that memory retention was much better after a period of sleep compared to the same time interval spent awake."
+      },
+      {
+        "claim": "Slow-wave sleep believed to help declarative memories, REM non-declarative, results inconsistent (why, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sleep_and_memory",
+        "quote": "declarative memories are believed to be enhanced by slow-wave sleep , while non-declarative memories are enhanced by rapid eye movement (REM) sleep",
+        "note": "Card hedges with 'believed' as the page does."
+      },
+      {
+        "claim": "Results are not fully consistent (why)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sleep_and_memory",
+        "quote": "although there are some inconsistencies among experimental results"
+      }
+    ],
+    "overall": "pass"
+  }
+}

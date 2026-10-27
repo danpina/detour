@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-13890882",
+  "alt": "A yellow wooden board on posts with many small bullet holes scattered around a dark square.",
+  "fits": true,
+  "note": "Low resolution (about 640 px wide, below 700 guideline) but only people-free target with scattered holes found; reviewer may reject.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "hist-0055",
+  "interest": "history",
+  "title": "When every town kept its own time",
+  "probes": [
+    {
+      "id": "hist-0055-p1",
+      "question": "Why did railways push for one standard time?",
+      "kind": "mcq",
+      "options": [
+        "Different local times made timetables confusing and risked accidents",
+        "Passengers asked for later trains",
+        "Clocks were too expensive to keep local time",
+        "Governments had banned local time"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0055-p2",
+      "question": "True or false: Bristol's local time ran about 10 or 11 minutes behind London time.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Railway time (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Railway_time"
+    },
+    {
+      "title": "Standard time (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Standard_time"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:37:39.237Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0055.webp",
+    "alt": "A red-faced clock on the Corn Exchange in Bristol showing two minute hands, above a window between stone columns",
+    "kind": "photo",
+    "credit": "Chris Mitchell / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Corn_Exchange_clock_in_Bristol.jpg"
+  },
+  "body": {
+    "claim": "Britain once had no single time: each town kept its own, until railways pushed them into line.",
+    "why": "Local-time differences were large enough to cause problems for railway schedules. Railway time began with the Great Western Railway in November 1840, partly to reduce accidents and near misses. A clock in Bristol even showed two minute hands, London time and Bristol time, which ran about 10 or 11 minutes behind. In North America, standard railway time was introduced at noon on 18 November 1883."
+  }
+}

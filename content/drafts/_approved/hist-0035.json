@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The printing press",
+    "angle": "Printing scaled up book production within 60 years"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0035",
+    "interest": "history",
+    "type": "estimate",
+    "title": "How many books by 1500?",
+    "body": {
+      "question": "Gutenberg's press arrived around 1440. By 1500, about how many copies had printing presses across Western Europe produced?",
+      "unit": "million copies",
+      "min": 0.1,
+      "max": 1000,
+      "scale": "log",
+      "answer": 20,
+      "reveal": "Over 20 million copies by 1500, and an estimated 150-200 million by 1600. Cheaper printed texts helped raise adult literacy, and books increasingly appeared in everyday languages instead of Latin."
+    },
+    "probes": [
+      {
+        "id": "hist-0035-p1",
+        "kind": "mcq",
+        "question": "As printing spread, books increasingly appeared in which kind of language?",
+        "options": [
+          "Latin only",
+          "The everyday (vernacular) languages",
+          "Ancient Greek only",
+          "Hebrew"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0035-p2",
+        "kind": "tf",
+        "question": "True or false: the printing press was invented by Johannes Gutenberg around 1440.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Printing press (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Printing_press"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Page from the Gutenberg Bible in the Gutenberg Museum, Mainz, Germany (48988297126).jpg shows a Gutenberg Bible page (CC BY 2.0, portrait)",
+    "keywords": [
+      "Gutenberg Bible",
+      "printing press",
+      "Gutenberg Museum",
+      "movable type"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.124Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Printing_press",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Gutenberg's press arrived around 1440; invented by Gutenberg c.1440 (question, p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Printing_press",
+        "quote": "Inventor Johannes Gutenberg Invented c. 1440"
+      },
+      {
+        "claim": "By 1500 presses in Western Europe produced over 20 million copies (answer 20)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Printing_press",
+        "quote": "By 1500, printing presses throughout Western Europe had produced over 20 million copies"
+      },
+      {
+        "claim": "Estimated 150-200 million by 1600",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Printing_press",
+        "quote": "Their output grew to an estimated 150-200 million copies by 1600"
+      },
+      {
+        "claim": "Cheaper printed texts helped raise adult literacy",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Printing_press",
+        "quote": "The cost of printed texts declined and their availability increased, facilitating higher adult literacy rates across Europe"
+      },
+      {
+        "claim": "Books increasingly appeared in everyday languages instead of Latin (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Printing_press",
+        "quote": "Books increasingly appeared in vernacular languages rather than Latin"
+      }
+    ],
+    "overall": "pass"
+  }
+}

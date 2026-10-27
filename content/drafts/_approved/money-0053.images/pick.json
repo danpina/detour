@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-6694382",
+ "alt": "A white wooden sign reading FORECLOSURE in red letters in front of a suburban house.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (CC BY 2.0).",
+ "crop": {
+  "fx": 0.35,
+  "fy": 0.5,
+  "zoom": 1.2
+ }
+}

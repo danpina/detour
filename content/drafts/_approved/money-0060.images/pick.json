@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-17173615",
+ "alt": "A car with a Sorry, temporarily out of gas sign on its back window in a queue of cars near a gas station during the 1973 oil crisis in Oregon.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (Public domain).",
+ "crop": {
+  "fx": 0.5,
+  "fy": 0.5,
+  "zoom": 1.3
+ }
+}

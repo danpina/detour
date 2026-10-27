@@ -1,0 +1,62 @@
+{
+  "id": "hist-0044",
+  "interest": "history",
+  "title": "Call it a quarantine",
+  "probes": [
+    {
+      "id": "hist-0044-p1",
+      "question": "Why did Kennedy call the blockade a 'quarantine'?",
+      "kind": "mcq",
+      "options": [
+        "It was about a disease",
+        "To avoid the formal implications of a state of war",
+        "To please the United Nations",
+        "Because it was only for ships carrying food"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0044-p2",
+      "question": "True or false: the deal included the secret removal of American missiles from Turkey and Italy.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cuban Missile Crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:29.962Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0044.webp",
+    "alt": "US aerial reconnaissance photograph of a San Cristobal missile launch site in Cuba, dated 1 November 1962, with labelled tents, fuel trailers and former launch positions.",
+    "kind": "photo",
+    "credit": "see above / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cuban_missiles.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In 1961 the US placed nuclear Jupiter missiles in Italy and Turkey, all within range of Moscow."
+      },
+      {
+        "text": "In October 1962 the world learned that Soviet nuclear missiles were in Cuba. On 22 October, President Kennedy ordered a naval blockade."
+      },
+      {
+        "text": "He called it a 'quarantine', not a blockade, so the US could avoid the formal implications of a state of war."
+      },
+      {
+        "text": "The crisis ended on 28 October with a deal. The Soviets removed their missiles, the US promised not to invade Cuba, and US missiles left Turkey and Italy without publicity. A Moscow-Washington hotline followed."
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "mind-0067",
+  "interest": "mind",
+  "title": "The scar that wasn't there",
+  "probes": [
+    {
+      "id": "mind-0067-p1",
+      "question": "True or false: in the scar study, the scar was still visible when volunteers met the other person.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "mind-0067-p2",
+      "question": "What is the spotlight effect?",
+      "kind": "mcq",
+      "options": [
+        "Believing you are noticed more than you are",
+        "Noticing others more than yourself",
+        "Performing better under lights",
+        "Forgetting a conversation"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spotlight effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spotlight_effect"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:04.424Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0067.webp",
+    "alt": "Rows of black stage spotlights on a lighting truss seen from below inside a theatre.",
+    "kind": "photo",
+    "credit": "Vikebe / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stage_lighting_-_Theatre_Hall_De_Vooruit_as_seen_from_below.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "1980. Volunteers had makeup applied to look like a prominent facial scar, and checked it in a mirror."
+      },
+      {
+        "text": "The makeup artist then added a cream, said to stop the scar drying out. In fact, it removed the scar entirely, and the volunteers did not know."
+      },
+      {
+        "text": "They chatted with another person, then rated how they had been treated. They reported being treated significantly differently: more tense, less eye contact, more patronising."
+      },
+      {
+        "text": "The scar was gone. The difference was entirely their self-consciousness. This is the spotlight effect: believing we are noticed more than we really are."
+      }
+    ]
+  }
+}

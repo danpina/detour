@@ -1,0 +1,66 @@
+{
+  "id": "sci-0055",
+  "interest": "science",
+  "title": "A milkmaid's cowpox",
+  "probes": [
+    {
+      "id": "sci-0055-p1",
+      "question": "What does a vaccine do?",
+      "kind": "mcq",
+      "options": [
+        "It kills the germs directly in the blood",
+        "It teaches the immune system to recognise a germ before the real infection",
+        "It swaps your white blood cells for new ones",
+        "It makes the body immune to every disease"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0055-p2",
+      "question": "True or false: Jenner's 1796 experiment used cowpox material to protect against smallpox.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Edward Jenner (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Edward_Jenner"
+    },
+    {
+      "title": "Vaccine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vaccine"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:39.935Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0055.webp",
+    "alt": "A pastel portrait of Edward Jenner leaning on a tree, with a milkmaid and cows in the background.",
+    "kind": "photo",
+    "credit": "https://wellcomeimages.org/indexplus/obf_images/71/53/539a741a44d833d1fc0347093647.jpg Gallery: https://wellcomeimages.org/indexplus/image/L0026138.html Wellcom",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Edward_Jenner._Pastel_by_John_Raphael_Smith._Wellcome_L0026138.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "England, 1796. Edward Jenner suspects that people who catch cowpox, a much milder disease, are protected from smallpox."
+      },
+      {
+        "text": "On 14 May he takes pus from the cowpox blisters of a milkmaid, Sarah Nelmes, and inoculates James Phipps, an eight-year-old, through two small cuts."
+      },
+      {
+        "text": "Phipps gets a fever but no full-blown infection. On 1 July Jenner injects him with smallpox material, and again no disease follows."
+      },
+      {
+        "text": "That is the idea behind vaccines today: a harmless version of a germ teaches the immune system to recognise it, so it can destroy the real one later. The word vaccine comes from Jenner's Latin for cowpox."
+      }
+    ]
+  }
+}

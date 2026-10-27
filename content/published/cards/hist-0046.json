@@ -1,0 +1,56 @@
+{
+  "id": "hist-0046",
+  "interest": "history",
+  "title": "How long were Rome's roads?",
+  "probes": [
+    {
+      "id": "hist-0046-p1",
+      "question": "How were Roman roads built?",
+      "kind": "mcq",
+      "options": [
+        "A single slab of marble",
+        "Layers of rubble, gravel and stone",
+        "Only wooden planks",
+        "Packed sand alone"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0046-p2",
+      "question": "True or false: all of the 400,000 km of Roman roads were stone-paved.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Roman road (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Roman_road"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:34.462Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0046.webp",
+    "alt": "Low view across the large dark basalt paving stones of the ancient Appian Way, with ruined tombs and cypress and pine trees beside it.",
+    "kind": "photo",
+    "credit": "Manciniart / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Roman_Appian_Way.jpg"
+  },
+  "body": {
+    "question": "At the peak of Rome's development, the empire's roads added up to more than...",
+    "options": [
+      "4,000 km",
+      "40,000 km",
+      "400,000 km"
+    ],
+    "answer": 2,
+    "reveal": "More than 400,000 km, of which over 80,500 km were stone-paved. 29 great military highways radiated from Rome, and 372 great roads linked the empire's 113 provinces. Builders laid rubble, gravel and stone in layers."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0050",
+  "created_at": "2026-10-26T20:29:15.145Z",
+  "queries": [
+    "Moore's Law transistor count Moore's law chart",
+    "Moore's Law",
+    "Moore's Law transistor count"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-71553709",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Moore's Law – chart of transistor count of microchips.png",
+      "credit": "ourworldindata.org / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Moore%27s_Law_%E2%80%93_chart_of_transistor_count_of_microchips.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Moore%27s_Law_%E2%80%93_chart_of_transistor_count_of_microchips.png/960px-Moore%27s_Law_%E2%80%93_chart_of_transistor_count_of_microchips.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3133,
+      "height": 2355,
+      "alt_suggestion": "Moore's Law Transistor Count",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-22566",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Three Moored Sailing Vessels, from Thirteen Naval Scenes",
+      "credit": "Reinier Nooms, called Zeeman Dutch, c.1623-1664 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/22566",
+      "image_url": "https://www.artic.edu/iiif/2/4c8dbc95-100c-8563-8121-521d0a9f3a93/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching on ivory laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-79751151",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Moore's Law Transistor Count 1971-2018.png",
+      "credit": "Max Roser / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Moore%27s_Law_Transistor_Count_1971-2018.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Moore%27s_Law_Transistor_Count_1971-2018.png/960px-Moore%27s_Law_Transistor_Count_1971-2018.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6529,
+      "height": 4716,
+      "alt_suggestion": "Data source: https://en.wikipedia.org/wiki/Transistor_count Author: Max Roser URL: https://ourworldindata.org/uploads/2019/05/Transistor-Count-over-time-to-2018.png",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-150788",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Counted Out",
+      "credit": "George Wesley Bellows American, 1882-1925 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/150788",
+      "image_url": "https://www.artic.edu/iiif/2/a8ce0e11-1b34-60ac-133e-8a3fad6649e5/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of lithographic crayon and charcoal, with brush and black ink, scraping and smudging, over touches of graphite on cut and pieced cream wove papers, laid down on ivory wove paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-5172862",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Transistor Count and Moore's Law - 2008.png",
+      "credit": "Wgsimon / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Transistor_Count_and_Moore%27s_Law_-_2008.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Transistor_Count_and_Moore%27s_Law_-_2008.png/960px-Transistor_Count_and_Moore%27s_Law_-_2008.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3343,
+      "height": 3042,
+      "alt_suggestion": "Transistor counts for integrated circuits plotted against their dates of introduction. Curve shows Moore's law - the doubling of transistor counts every two years.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Moore's Law transistor count Moore's law chart\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Moore's Law\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Moore's Law transistor count\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

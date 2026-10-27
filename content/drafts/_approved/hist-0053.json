@@ -1,0 +1,148 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "A clock that found the way",
+    "angle": "A clock that found the way"
+  },
+  "created_at": "2026-10-26T20:31:39.961Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0053",
+    "interest": "history",
+    "type": "story",
+    "title": "A clock that found the way",
+    "body": {
+      "panels": [
+        {
+          "text": "The Earth turns, so local time changes with longitude. A difference of 15 degrees of longitude is a one-hour difference in local time."
+        },
+        {
+          "text": "So a ship that knew the time at a fixed place, such as Greenwich, could compare it with local time from the Sun and work out how far east or west it was."
+        },
+        {
+          "text": "The catch: pendulum clocks do not work well in an ocean swell. In 1714 Britain offered prizes of £10,000 to £20,000 for a practical method."
+        },
+        {
+          "text": "John Harrison, a Yorkshire carpenter, built a sea clock called H4, which looked like a large pocket watch. He received payments totalling £23,065, though the £20,000 prize was never awarded in one lump sum."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0053-p1",
+        "kind": "mcq",
+        "question": "A difference of how many degrees of longitude equals one hour of local time?",
+        "options": [
+          "5 degrees",
+          "15 degrees",
+          "30 degrees",
+          "60 degrees"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0053-p2",
+        "kind": "mcq",
+        "question": "To find longitude at sea, a navigator compares local time with...",
+        "options": [
+          "The time at a reference place such as Greenwich",
+          "The time of the last port visited",
+          "The length of the day",
+          "The phase of the Moon"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Longitude (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Longitude"
+      },
+      {
+        "title": "Marine chronometer (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Marine_chronometer"
+      },
+      {
+        "title": "Longitude rewards (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Longitude_prize"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Harrison H4 clockwork 2.jpg (CC BY-SA 4.0): Harrison's H4 clockwork at the Royal Observatory, Greenwich; also File:Chronometer 01.JPG, File:Clock that changed the world (H4, 1759) - Flickr - Tatters.jpg",
+    "keywords": [
+      "Harrison H4 clockwork",
+      "Harrison H4 Royal Observatory Greenwich",
+      "Harrison marine chronometer"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.651Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Longitude",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Marine_chronometer",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Longitude_prize",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "15 degrees of longitude is a one-hour difference in local time (body, probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Longitude",
+        "quote": "a difference of 15° longitude corresponds to a one-hour difference in local time",
+        "note": "Also verified by calculation: 360/24 = 15."
+      },
+      {
+        "claim": "Comparing time at a reference place (Greenwich) with local time gives longitude (body panel 2, probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Marine_chronometer",
+        "quote": "the time difference between the chronometer and the ship's local time can be used to calculate the longitude of the ship"
+      },
+      {
+        "claim": "Pendulum clocks do not work well in an ocean swell",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Longitude",
+        "quote": "pendulum clocks do not work well in these conditions"
+      },
+      {
+        "claim": "In 1714 Britain offered prizes of £10,000 to £20,000",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Marine_chronometer",
+        "quote": "In 1714, the British government offered a longitude prize for a method of determining longitude at sea, with the awards ranging from £10,000 to £20,000"
+      },
+      {
+        "claim": "John Harrison, a Yorkshire carpenter",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Marine_chronometer",
+        "quote": "John Harrison , a Yorkshire carpenter, submitted a project in 1730"
+      },
+      {
+        "claim": "H4 looked like a large pocket watch",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Marine_chronometer",
+        "quote": "H4 looked much like a large five-inch (12 cm) diameter pocket watch",
+        "note": "Page calls H4 a chronometer / sea watch; card's 'sea clock' is loose but acceptable."
+      },
+      {
+        "claim": "Harrison received payments totalling £23,065; the £20,000 prize never awarded in one lump sum",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Longitude_prize",
+        "quote": "Ultimately, the £20,000 reward was not awarded to anyone in a lump sum, although John Harrison did receive a series of payments totaling £23,065."
+      }
+    ],
+    "overall": "pass"
+  }
+}

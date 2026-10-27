@@ -1,0 +1,60 @@
+{
+  "id": "mind-0048",
+  "interest": "mind",
+  "title": "Why teenagers go to bed late",
+  "probes": [
+    {
+      "id": "mind-0048-p1",
+      "question": "True or false: an evening chronotype is unique to adolescence, compared with childhood and adulthood.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0048-p2",
+      "question": "How many hours of sleep does the CDC advise for ages 13 to 17?",
+      "kind": "mcq",
+      "options": [
+        "6 to 8",
+        "8 to 10",
+        "10 to 12",
+        "5 to 7"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Adolescent sleep (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Adolescent_sleep"
+    },
+    {
+      "title": "About Sleep (CDC)",
+      "url": "https://www.cdc.gov/sleep/about/index.html"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:44.576Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0048.webp",
+    "alt": "An empty high school classroom with wooden desks, a whiteboard and a sunlit window.",
+    "kind": "photo",
+    "credit": "Harrison Keely / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:A_high_school_classroom_in_North_Carolina_04.jpg"
+  },
+  "body": {
+    "question": "How does the body's sleep timing tend to shift during adolescence?",
+    "options": [
+      "Earlier",
+      "Later",
+      "It doesn't change"
+    ],
+    "answer": 1,
+    "reveal": "Later. In adolescence the circadian rhythm shifts so that sleep and wake times become later, and an evening chronotype is unique to this period. The CDC advises 8 to 10 hours for ages 13 to 17. Concern about teen sleep has drawn public attention, especially to school start times."
+  }
+}

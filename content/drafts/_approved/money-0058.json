@@ -1,0 +1,99 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Bitcoin and the blockchain",
+    "angle": "How chained blocks and the longest chain protect the record"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0058",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "Why you can't edit the blockchain",
+    "body": {
+      "claim": "Bitcoin's record of payments is a chain of blocks, and each block contains the hash of the previous block.",
+      "why": "So altering one block requires changing all the blocks after it. When nodes disagree, they trust the longest chain, which took the greatest effort to produce. To tamper with the ledger, someone would need to control the majority of the global hashrate."
+    },
+    "probes": [
+      {
+        "id": "money-0058-p1",
+        "kind": "mcq",
+        "question": "Why is altering an old block in the blockchain so hard?",
+        "options": [
+          "Blocks are stored on paper",
+          "A bank must approve each change",
+          "All the later blocks would have to be changed too"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "money-0058-p2",
+        "kind": "tf",
+        "question": "True or false: when nodes disagree, they trust the longest chain.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bitcoin (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bitcoin"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Physical Bitcoin 2011 Casascius 1 Bitcoin Coin Token.png (CC BY-SA 4.0) shows a physical bitcoin token; alternatively File:Blockchain.png diagram",
+    "keywords": [
+      "Bitcoin physical coin",
+      "Casascius bitcoin token",
+      "blockchain diagram"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.982Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bitcoin",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Bitcoin's record is a chain of blocks",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bitcoin",
+        "quote": "The blockchain is implemented as an ordered list of blocks."
+      },
+      {
+        "claim": "Each block contains the hash of the previous block",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bitcoin",
+        "quote": "Each block contains the hash of the previous block"
+      },
+      {
+        "claim": "Altering one block requires changing all the blocks after it (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bitcoin",
+        "quote": "altering one block requires changing all subsequent blocks"
+      },
+      {
+        "claim": "When nodes disagree they trust the longest chain, which took the greatest effort to produce (probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bitcoin",
+        "quote": "In case of disagreement, nodes trust the longest chain, which required the greatest amount of effort to produce."
+      },
+      {
+        "claim": "To tamper with the ledger someone would need to control the majority of the global hashrate",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bitcoin",
+        "quote": "To tamper or censor the ledger, one needs to control the majority of the global hashrate"
+      }
+    ],
+    "overall": "pass"
+  }
+}

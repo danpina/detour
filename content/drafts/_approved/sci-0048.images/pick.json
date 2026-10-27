@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-14899120",
+  "alt": "A small magnet floats in mid-air above a superconductor cooled with liquid nitrogen.",
+  "fits": true,
+  "note": "Meissner levitation demo.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "draft_id": "tech-0031",
+  "created_at": "2026-10-27T06:09:47.124Z",
+  "queries": [
+    "network cable ethernet server rack",
+    "network cable",
+    "network cable ethernet"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-22948476",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Server Rack with Spaghetti-Like Mass of Network Cables.jpg",
+      "credit": "Kim Scarborough from Chicago, IL / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Server_Rack_with_Spaghetti-Like_Mass_of_Network_Cables.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Server_Rack_with_Spaghetti-Like_Mass_of_Network_Cables.jpg/960px-Server_Rack_with_Spaghetti-Like_Mass_of_Network_Cables.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2560,
+      "height": 1920,
+      "alt_suggestion": "Server Rack with Spaghetti-Like Mass of Network Cables. I love trying to patch stuff in here.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss034e040209",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Ford reconfigures cables for the JSL Area Network",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss034e040209",
+      "image_url": "https://images-assets.nasa.gov/image/iss034e040209/iss034e040209~medium.jpg",
+      "alt_suggestion": "ISS034-E-040209 (5 Feb. 2013) --- NASA astronaut Kevin Ford, Expedition 34 commander, reconfigures cables for the Joint Station Local Area Network in the Destiny laboratory of the International Space ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-181453",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Server",
+      "credit": "Designed by Lockwood de Forest (American, 1850–1932) Designed and assembled in New York Wood carved in Ahmedabad, India / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/181453",
+      "image_url": "https://www.artic.edu/iiif/2/58305eee-7c44-06ea-cb2f-e8516f81b8df/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of teak, ash or oak.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-4244488",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Panduit Pan-Net Cable Management System front.JPG",
+      "credit": "BrokenSphere / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Panduit_Pan-Net_Cable_Management_System_front.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Panduit_Pan-Net_Cable_Management_System_front.JPG/960px-Panduit_Pan-Net_Cable_Management_System_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2448,
+      "height": 3264,
+      "alt_suggestion": "A Panduit Pan-Net Cable Management System found in an office building in Palo Alto, California.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-iss065e444320",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "iss065e444320",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss065e444320",
+      "image_url": "https://images-assets.nasa.gov/image/iss065e444320/iss065e444320~medium.jpg",
+      "alt_suggestion": "iss065e444320 (Oct. 8, 2021) --- Expedition 65 Flight Engineer Akihiko Hoshide of the Japan Aerospace Exploration Agency (JAXA) inspects network connections, swaps cables, and replaces components insi",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Network cable tester IMGP1639 smial wp.jpg",
+      "license": "FAL",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"network cable ethernet server rack\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"network cable\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"network cable ethernet\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

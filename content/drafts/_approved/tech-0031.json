@@ -1,0 +1,115 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "TCP and UDP",
+    "angle": "Reliable versus fast"
+  },
+  "created_at": "2026-10-27T06:07:56.464Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0031",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "Why video calls skip the resend",
+    "body": {
+      "claim": "TCP resends lost data to make delivery reliable, while UDP does not, which suits real-time uses like voice calls and games.",
+      "why": "TCP sets up a connection with a three-way handshake, retransmits lost packets and keeps data in order, which adds delay. UDP has no handshake and no guarantee of delivery or ordering, but its lack of retransmission delays suits real-time applications such as voice over IP and online games."
+    },
+    "probes": [
+      {
+        "id": "tech-0031-p1",
+        "kind": "mcq",
+        "question": "Why does UDP suit real-time applications like voice calls?",
+        "options": [
+          "It has no retransmission delays",
+          "It guarantees every packet arrives",
+          "It encrypts everything",
+          "It uses a different internet"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0031-p2",
+        "kind": "tf",
+        "question": "True or false: TCP retransmits packets that are lost.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Transmission Control Protocol (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+      },
+      {
+        "title": "User Datagram Protocol (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Network cables or a diagram of the internet protocol suite",
+    "keywords": [
+      "network cable",
+      "ethernet",
+      "server rack",
+      "patch cable"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.714Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/User_Datagram_Protocol",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "TCP resends lost data (claim, probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol",
+        "quote": "Retransmission of lost packets: any cumulative stream not acknowledged is retransmitted"
+      },
+      {
+        "claim": "TCP's handshake, retransmission and error detection add delay",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol",
+        "quote": "The three-way handshake (active open), retransmission, and error detection add to reliability but lengthen latency."
+      },
+      {
+        "claim": "TCP keeps data in order",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol",
+        "quote": "Ordered data transfer: the destination host rearranges segments according to a sequence number"
+      },
+      {
+        "claim": "UDP has no handshake",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/User_Datagram_Protocol",
+        "quote": "It has no handshaking dialogues and thus exposes the user's program to any unreliability of the underlying network"
+      },
+      {
+        "claim": "UDP has no guarantee of delivery or ordering (probe 1 distractor 'guarantees every packet arrives' is false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/User_Datagram_Protocol",
+        "quote": "there is no guarantee of delivery, ordering, or duplicate protection"
+      },
+      {
+        "claim": "UDP's lack of retransmission delays suits real-time uses like voice over IP and online games (claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/User_Datagram_Protocol",
+        "quote": "The lack of retransmission delays makes it suitable for real-time applications such as Voice over IP, online games"
+      }
+    ],
+    "overall": "pass"
+  }
+}

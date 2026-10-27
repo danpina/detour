@@ -1,0 +1,55 @@
+{
+  "id": "money-0062",
+  "interest": "money",
+  "title": "Giving up the job hunt",
+  "probes": [
+    {
+      "id": "money-0062-p1",
+      "question": "To be counted as unemployed under the ILO definition, a person must have done what?",
+      "kind": "mcq",
+      "options": [
+        "Retired early",
+        "Registered with a bank",
+        "Actively searched for work"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0062-p2",
+      "question": "True or false: the unemployment rate is the number of unemployed people as a percentage of the labour force.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Unemployment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Unemployment"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:15.672Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0062.webp",
+    "alt": "A hand-painted Help Wanted sign on a post beside an empty prairie road.",
+    "kind": "photo",
+    "credit": "Bradley Weber / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Help_Wanted_-_Nebraska_(44113871694).jpg"
+  },
+  "body": {
+    "question": "Someone loses their job, searches for months, then stops looking. In many official unemployment statistics, are they counted as unemployed?",
+    "options": [
+      "Yes, they still have no job",
+      "No, they are no longer counted",
+      "Only after a full year"
+    ],
+    "answer": 1,
+    "reveal": "In many countries only those with no work who are actively looking are counted. The ILO counts as unemployed those not working but willing, available and having actively searched for work. Broader US measures such as U-4 add discouraged workers, who stopped looking."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Writing started as a way to count",
+    "angle": "Writing started as a way to count"
+  },
+  "created_at": "2026-10-26T20:31:39.957Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0051",
+    "interest": "history",
+    "type": "story",
+    "title": "Writing may have started as a way to count",
+    "body": {
+      "panels": [
+        {
+          "text": "Before writing, people kept track of goods with small clay tokens. Each token is thought to have stood for a specific amount of livestock or other commodities."
+        },
+        {
+          "text": "The tokens were pressed into the surface of round clay envelopes, called bullae, and then stored inside them."
+        },
+        {
+          "text": "Little by little, flat clay tablets replaced the tokens. Signs were recorded on them with a stylus."
+        },
+        {
+          "text": "Writing is first recorded in Uruk, at the end of the 4th millennium BC. Cuneiform is thought to stem from a token system used for accounting, though how the tokens were used is still debated."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0051-p1",
+        "kind": "mcq",
+        "question": "What kind of job may writing have first grown out of?",
+        "options": [
+          "Recording amounts of livestock and goods",
+          "Writing down poems",
+          "Sending letters between kings",
+          "Drawing maps"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0051-p2",
+        "kind": "tf",
+        "question": "True or false: clay tokens were gradually replaced by flat tablets marked with a stylus.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cuneiform (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cuneiform"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Clay tablet. Counting board, the archaic cuneiform sign \"DUG\" (vessel) appears. From Uruk, Iraq. End of the 4th millennium BCE. Vorderasiatisches Museum, Berlin.jpg (CC BY-SA 4.0) or File:British Museum Middle east 14022019 Gypsum tablet with archaic numbers Late Uruk Period 3667.jpg (CC0): an archaic clay tablet from Uruk",
+    "keywords": [
+      "clay tablet Uruk",
+      "archaic cuneiform tablet",
+      "proto-cuneiform tablet",
+      "Late Uruk tablet"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:28.454Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Tokens are thought to have stood for specific amounts of livestock or other commodities",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "clay tokens were used to record specific amounts of livestock or commodities",
+        "note": "Card hedges ('thought to'); page also says token meaning is debated."
+      },
+      {
+        "claim": "Tokens were pressed into round clay envelopes (bullae) and stored inside",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "These tokens were initially impressed on the surface of round clay envelopes"
+      },
+      {
+        "claim": "Flat clay tablets with stylus signs replaced the tokens (panel 3, probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "The tokens were then progressively replaced by flat tablets, on which signs were recorded with a stylus."
+      },
+      {
+        "claim": "Writing is first recorded in Uruk at the end of the 4th millennium BC",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "Writing is first recorded in Uruk , at the end of the 4th millennium BC"
+      },
+      {
+        "claim": "Cuneiform is thought to stem from a token system used for accounting (title, panel 4, probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "stemming from the Near Eastern token system that was used for accounting"
+      },
+      {
+        "claim": "How the tokens were used is still debated",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "The meaning and usage of these tokens is still a matter of debate."
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-190085482",
+  "alt": "A small black twin-bell alarm clock with gold hands stands on a wooden desk.",
+  "fits": true,
+  "note": "Clock/deadlines for procrastination.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.5
+  }
+}

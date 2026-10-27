@@ -1,0 +1,54 @@
+{
+  "id": "sci-0062",
+  "interest": "science",
+  "title": "A black hole is a place, not a thing",
+  "probes": [
+    {
+      "id": "sci-0062-p1",
+      "question": "Roughly how massive is the black hole at the centre of the Milky Way?",
+      "kind": "mcq",
+      "options": [
+        "About 4.3 thousand Suns",
+        "About 4.3 million Suns",
+        "About 4.3 billion Suns",
+        "About one Sun"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0062-p2",
+      "question": "True or false: in 1784 John Michell proposed that gravity could be strong enough to trap even light.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black hole (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Black_hole"
+    },
+    {
+      "title": "Event horizon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Event_horizon"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:08.314Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0062.webp",
+    "alt": "The first image of a black hole, a glowing orange ring around a dark center, from the Event Horizon Telescope.",
+    "kind": "photo",
+    "credit": "Event Horizon Telescope / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87.jpg"
+  },
+  "body": {
+    "claim": "A black hole is a region of spacetime where gravity is so strong that nothing, not even light, can escape.",
+    "why": "In 1784 John Michell suggested that gravity near a massive, compact object could trap even light. Today a black hole is defined as a region from which no signal or object can escape. Sagittarius A*, at the centre of our Milky Way, holds one of about 4.3 million solar masses."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0059",
+  "created_at": "2026-10-27T06:10:23.596Z",
+  "queries": [
+    "archery target target bullseye archery range target",
+    "archery target",
+    "archery target target bullseye"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-154152886",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bull's eye (8338593).jpg",
+      "credit": "U.S. Army photo by Bryan Gatchell / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bull%27s_eye_(8338593).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Bull%27s_eye_%288338593%29.jpg/960px-Bull%27s_eye_%288338593%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4288,
+      "height": 2848,
+      "alt_suggestion": "JOINT MULTINATIONAL READINESS CENTER, Germany -- Staff of Hohenfels' Outdoor Recreation program help children hit their targets at their Kinderfest archery range. The Hohenfels Military Community at U",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-116841",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Target Crossbow",
+      "credit": "French, possibly Flemish / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/116841",
+      "image_url": "https://www.artic.edu/iiif/2/4a701985-e220-35a7-922a-277bf24e5621/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of wood, steel, and cord.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-154152880",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bull's eye (8338582).jpg",
+      "credit": "U.S. Army photo by Bryan Gatchell / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bull%27s_eye_(8338582).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Bull%27s_eye_%288338582%29.jpg/960px-Bull%27s_eye_%288338582%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4288,
+      "height": 2848,
+      "alt_suggestion": "JOINT MULTINATIONAL READINESS CENTER, Germany -- Staff of Hohenfels' Outdoor Recreation program help children hit their targets at their Kinderfest archery range. The Hohenfels Military Community at U",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-13693",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Lady Tamamushi raising a fan target",
+      "credit": "Attributed to Sugimura Jihei Japanese, active c. 1681-98 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/13693",
+      "image_url": "https://www.artic.edu/iiif/2/24bcba71-583a-ece5-270b-fe0f7b4844a1/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of hand-colored woodblock print; vertical o-oban, tan-e.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-50925818",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Bullseye (9472723579).jpg",
+      "credit": "US Air Force from USA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bullseye_(9472723579).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Bullseye_%289472723579%29.jpg/960px-Bullseye_%289472723579%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2011,
+      "height": 2400,
+      "alt_suggestion": "Airman 1st Class Samantha Rule takes aim at a target during the opening of the new archery range Aug. 1, 2013, at Ellsworth Air Force Base, S.D. The 28th Force Support Squadron separated the archery r",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"archery target target bullseye archery range target\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"archery target\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"archery target target bullseye\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

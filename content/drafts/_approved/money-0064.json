@@ -1,0 +1,86 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "The dot-com bubble",
+    "angle": "How far the Nasdaq fell after its 2000 peak"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0064",
+    "interest": "money",
+    "type": "estimate",
+    "title": "How far the dot-com crash fell",
+    "body": {
+      "question": "The Nasdaq Composite rose by 600% between 1995 and its peak in March 2000. By October 2002, by about what percentage had it fallen from that peak?",
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "answer": 78,
+      "reveal": "About 78%. Between 1995 and its peak in March 2000 the Nasdaq Composite rose by 600%, then fell 78% from the peak by October 2002."
+    },
+    "probes": [
+      {
+        "id": "money-0064-p1",
+        "kind": "estimate",
+        "question": "By October 2002 the Nasdaq Composite had fallen by about what percentage from its March 2000 peak?",
+        "answer": 78,
+        "unit": "%",
+        "min": 0,
+        "max": 100,
+        "scale": "linear"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Dot-com bubble (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:NASDAQ IXIC - dot-com bubble.png (public domain) shows the Nasdaq Composite index from 1994 to 2005 with its peak",
+    "keywords": [
+      "NASDAQ dot-com bubble",
+      "NASDAQ composite chart",
+      "dot-com bubble chart"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.986Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dot-com_bubble",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The Nasdaq Composite rose by 600% between 1995 and its March 2000 peak",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dot-com_bubble",
+        "quote": "investments in the Nasdaq Composite stock market index rose by 600%",
+        "note": "Page phrase: 'investments in the Nasdaq Composite ... rose by 600%'; consistent with the index rise."
+      },
+      {
+        "claim": "Period is between 1995 and the peak in March 2000",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dot-com_bubble",
+        "quote": "Between 1995 and its peak in March 2000"
+      },
+      {
+        "claim": "It fell 78% from the peak by October 2002 (answer 78, reveal, probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Dot-com_bubble",
+        "quote": "only to fall 78% from its peak by October 2002"
+      }
+    ],
+    "overall": "pass"
+  }
+}

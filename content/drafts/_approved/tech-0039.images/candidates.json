@@ -1,0 +1,110 @@
+{
+  "draft_id": "tech-0039",
+  "created_at": "2026-10-27T06:11:09.024Z",
+  "queries": [
+    "smartphone security token key fob",
+    "smartphone",
+    "smartphone security token"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-129470457",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Smartphone display screen.jpg",
+      "credit": "Skitterphoto / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Smartphone_display_screen.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Smartphone_display_screen.jpg/960px-Smartphone_display_screen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3798,
+      "height": 2407,
+      "alt_suggestion": "Smartphone display screen with time and icons",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-GSFC_20171208_Archive_e001489",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Smartphone Photos From Orbit",
+      "credit": "GSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001489",
+      "image_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001489/GSFC_20171208_Archive_e001489~thumb.jpg",
+      "alt_suggestion": "These images of Earth were reconstructed from photos taken by three smartphones in orbit, or \"PhoneSats.\" The trio of PhoneSats launched on April 21, 2013, aboard the Antares rocket from NASA's Wallop",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-75791",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "True Love's Fond Token (Valentine)",
+      "credit": "Joseph Addenbrooke English, 19th century / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/75791",
+      "image_url": "https://www.artic.edu/iiif/2/de9b901f-5c83-0fcc-e469-a31c9b86e3cb/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of collaged elements with watercolor and pen and black ink on gray accented and embossed ivory wove paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-154576560",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Smartphone ownership in 2013.jpg",
+      "credit": "Maps.interlude / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Smartphone_ownership_in_2013.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Smartphone_ownership_in_2013.jpg/960px-Smartphone_ownership_in_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1414,
+      "height": 1590,
+      "alt_suggestion": "Countries where more than 50 percent of population owned a smartphone",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA23825",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Smartphone 'Walkdown'",
+      "credit": "NASA/JPL-Caltech / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA23825",
+      "image_url": "https://images-assets.nasa.gov/image/PIA23825/PIA23825~medium.jpg",
+      "alt_suggestion": "A technician points a smartphone camera at NASA's Perseverance rover during an inspection — called a \"walkdown\" — at Kennedy Space Center in Florida. The imagery from the phone was seen live by missio",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-77734502",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Google Titan Security Key - Two Factor Authentication (47400104011).jpg",
+      "credit": "Tony Webster from Minneapolis, Minnesota, United States / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Google_Titan_Security_Key_-_Two_Factor_Authentication_(47400104011).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Google_Titan_Security_Key_-_Two_Factor_Authentication_%2847400104011%29.jpg/960px-Google_Titan_Security_Key_-_Two_Factor_Authentication_%2847400104011%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6073,
+      "height": 3951,
+      "alt_suggestion": "Two-factor authentication (2FA) security key sold by Google, in a kit that includes a USB-A FIDO key with NFC (pictured) and a Bluetooth version (not pictured).",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-79992741",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "SafeID.jpg",
+      "credit": "Jeffery Birks / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SafeID.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/SafeID.jpg/960px-SafeID.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4032,
+      "height": 3024,
+      "alt_suggestion": "TOTP Hardware Token SafeId Deepnet security",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"smartphone security token key fob\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"smartphone\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"smartphone security token\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

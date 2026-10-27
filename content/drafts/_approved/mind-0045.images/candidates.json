@@ -1,0 +1,82 @@
+{
+  "draft_id": "mind-0045",
+  "created_at": "2026-10-26T20:31:41.241Z",
+  "queries": [
+    "scuba diver underwater diver scuba diving",
+    "scuba diver underwater",
+    "scuba diver underwater diver"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-82727205",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ship wreck Carnatic 2017-04-22 Egypt-7947.jpg",
+      "credit": "W.Strickling / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ship_wreck_Carnatic_2017-04-22_Egypt-7947.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Ship_wreck_Carnatic_2017-04-22_Egypt-7947.jpg/960px-Ship_wreck_Carnatic_2017-04-22_Egypt-7947.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2954,
+      "height": 2214,
+      "alt_suggestion": "Wreck of the SS Carnatic (built 1862) in the Red Sea, Egypt.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-jsc2005e14733",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "STS-114 astronauts during underwater training",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2005e14733",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2005e14733/jsc2005e14733~small.jpg",
+      "alt_suggestion": "JSC2005-E-14733 (21 March 2005) ---Three STS-114 astronauts give a simultaneous thumbs-up signal to indicate preparedness during an underwater training session in the Neutral Buoyancy Laboratory in Ho",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-44659",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Abalone Divers",
+      "credit": "Kitagawa Utamaro 喜多川 歌麿 Japanese, c.1753-1806 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/44659",
+      "image_url": "https://www.artic.edu/iiif/2/0d1630a5-d953-51c6-4b10-ffe1446fa520/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color woodblock prints; oban triptych.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-63976007",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ice tube.jpg",
+      "credit": "Erwan AMICE / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ice_tube.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Ice_tube.jpg/960px-Ice_tube.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4256,
+      "height": 2832,
+      "alt_suggestion": "Polar scientific diver at French scientific base in Antarctica. In an ice tube.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-s84-36901",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Preparations for Underwater EVA training for the STS 41-G crew",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/s84-36901",
+      "image_url": "https://images-assets.nasa.gov/image/s84-36901/s84-36901~medium.jpg",
+      "alt_suggestion": "Preparations for Underwater EVA training for the STS 41-G crew. Divers prepare to don their scuba gear for the begining of EVA training.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"scuba diver underwater diver scuba diving\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"scuba diver underwater\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"scuba diver underwater diver\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

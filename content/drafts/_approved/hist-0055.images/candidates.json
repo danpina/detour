@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0055",
+  "created_at": "2026-10-26T20:33:00.347Z",
+  "queries": [
+    "Corn Exchange clock Bristol Bristol Time clock Bristol Exchange two minute hands",
+    "Corn Exchange clock Bristol",
+    "Corn Exchange clock Bristol Bristol Time clock"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-138503197",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "2023-09-17 The Corn Exchange Clock Information Plaque on the wall of The Exchange in Bristol.jpg",
+      "credit": "Bernd Schwabe / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2023-09-17_The_Corn_Exchange_Clock_Information_Plaque_on_the_wall_of_The_Exchange_in_Bristol.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/2023-09-17_The_Corn_Exchange_Clock_Information_Plaque_on_the_wall_of_The_Exchange_in_Bristol.jpg/960px-2023-09-17_The_Corn_Exchange_Clock_Information_Plaque_on_the_wall_of_The_Exchange_in_Bristol.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2252,
+      "height": 4000,
+      "alt_suggestion": "Information Plaque on the wall of The Exchange in Bristol, Corn Street: „THE CORN EXCHANGE CLOCK The clock on this building with an extra minute hand recalls early Victorian days, when Bristol was in ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-57819",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Wall Clock",
+      "credit": "Case by Jean-Pierre Latz (born Cologne [now Germany], active France, 1691–1754) Clockwork by Francis Bayley (active Austrian Netherlands [now Belgium], mid-1700s) Case: Paris; clock: Ghent, Flanders, Austrian Netherlands (now Belgium) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/57819",
+      "image_url": "https://www.artic.edu/iiif/2/ce583554-7fac-705e-2130-ec94c1abb2e2/full/843,/0/default.jpg",
+      "alt_suggestion": "Golden-colored, ornate wall clock adorned with golden flourishes, a bent figure with an arrow at top.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-107118143",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Corn Exchange Clock Bristol - geograph.org.uk - 2257846.jpg",
+      "credit": "Rick Crowley / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Corn_Exchange_Clock_Bristol_-_geograph.org.uk_-_2257846.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Corn_Exchange_Clock_Bristol_-_geograph.org.uk_-_2257846.jpg/960px-Corn_Exchange_Clock_Bristol_-_geograph.org.uk_-_2257846.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2288,
+      "height": 1712,
+      "alt_suggestion": "Corn Exchange Clock Bristol",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-156538",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Chicago Stock Exchange Trading Room: Reconstruction at the Art Institute of Chicago",
+      "credit": "Adler & Sullivan, original architects; American, 1883-1896 Vinci & Kenny, reconstruction architects; American, 1970-1977 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/156538",
+      "image_url": "https://www.artic.edu/iiif/2/47b28b55-ced6-502d-f111-fbe0033f8dc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A grand, double-height room with wood paneling, stenciled wall patterns, four hexagonal columns, and an interior balcony with guardrail at left.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-100220043",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Corn Exchange clock in Bristol.jpg",
+      "credit": "Chris Mitchell / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Corn_Exchange_clock_in_Bristol.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Corn_Exchange_clock_in_Bristol.jpg/960px-Corn_Exchange_clock_in_Bristol.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 1944,
+      "alt_suggestion": "This is the clock on the Corn Exchange, in Corn Street, Bristol, UK. It has an extra minute hand, displaced from the main one by 10 minutes. This was added when the Great Western Railway came to Brist",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Corn Exchange clock Bristol Bristol Time clock Bristol Exchange two minute hands\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Corn Exchange clock Bristol\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Corn Exchange clock Bristol Bristol Time clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

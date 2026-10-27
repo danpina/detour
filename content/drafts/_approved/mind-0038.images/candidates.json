@@ -1,0 +1,83 @@
+{
+  "draft_id": "mind-0038",
+  "created_at": "2026-10-26T20:30:51.951Z",
+  "queries": [
+    "alarm clock classic alarm clock clock",
+    "alarm clock",
+    "alarm clock classic alarm clock"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-69164863",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Classic alarm clock 20180513.jpg",
+      "credit": "Santeri Viinamäki / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Classic_alarm_clock_20180513.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Classic_alarm_clock_20180513.jpg/960px-Classic_alarm_clock_20180513.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4468,
+      "height": 3348,
+      "alt_suggestion": "Classic mechanical alarm clock.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-57819",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Wall Clock",
+      "credit": "Case by Jean-Pierre Latz (born Cologne [now Germany], active France, 1691–1754) Clockwork by Francis Bayley (active Austrian Netherlands [now Belgium], mid-1700s) Case: Paris; clock: Ghent, Flanders, Austrian Netherlands (now Belgium) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/57819",
+      "image_url": "https://www.artic.edu/iiif/2/ce583554-7fac-705e-2130-ec94c1abb2e2/full/843,/0/default.jpg",
+      "alt_suggestion": "Golden-colored, ornate wall clock adorned with golden flourishes, a bent figure with an arrow at top.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-9770198",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Casio OCEANUS OCW-S1350PC-1AJR 01.JPG",
+      "credit": "Kansai explorer / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Casio_OCEANUS_OCW-S1350PC-1AJR_01.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Casio_OCEANUS_OCW-S1350PC-1AJR_01.JPG/960px-Casio_OCEANUS_OCW-S1350PC-1AJR_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2736,
+      "height": 3648,
+      "alt_suggestion": "CASIO OCEANUS Manta OCW-S1P World Musical Clock with Special Alarm and Classic Westminster and Classic Whittington from 2010",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-109627",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tall-Case Clock",
+      "credit": "Movement by George Stevens Hindon, England / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/109627",
+      "image_url": "https://www.artic.edu/iiif/2/0c2445d0-5d5e-b487-1824-dacb6ec0565f/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of japanned pine."
+    },
+    {
+      "id": "wikimedia-48299319",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Farewell reception for retiring NSF Deputy Director Cora Marrett.jpg",
+      "credit": "National Science Foundation / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Farewell_reception_for_retiring_NSF_Deputy_Director_Cora_Marrett.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Farewell_reception_for_retiring_NSF_Deputy_Director_Cora_Marrett.jpg/960px-Farewell_reception_for_retiring_NSF_Deputy_Director_Cora_Marrett.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1500,
+      "height": 1153,
+      "alt_suggestion": "NSF celebrated the career of Deputy Director Cora Marrett at a farewell reception, with science policy leaders, current and former NSF staff, and special guests. Marrett retired from the foundation at",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"alarm clock classic alarm clock clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"alarm clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"alarm clock classic alarm clock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

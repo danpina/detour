@@ -1,0 +1,133 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Email",
+    "angle": "How email travels"
+  },
+  "created_at": "2026-10-27T06:07:56.495Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0044",
+    "interest": "tech",
+    "type": "story",
+    "title": "How an email really travels",
+    "body": {
+      "panels": [
+        {
+          "text": "You press send. Your mail client hands the message to a mail server."
+        },
+        {
+          "text": "That server resolves the domain after the @ using DNS. The answer, an MX record, lists the mail exchange servers for that domain."
+        },
+        {
+          "text": "The message goes by SMTP to that server, sometimes forwarded through other relays. Each one adds a Received line to the header."
+        },
+        {
+          "text": "The twist: nobody has to be online at once. Email works store-and-forward, and the recipient picks it up from a mailbox later."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0044-p1",
+        "kind": "mcq",
+        "question": "What do MX records list?",
+        "options": [
+          "Your password",
+          "The mail exchange servers for a domain",
+          "The sender's age",
+          "How big the message is"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0044-p2",
+        "kind": "tf",
+        "question": "True or false: sender and recipient must both be online at the same moment for email to work.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Email (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Email"
+      },
+      {
+        "title": "Message transfer agent (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Message_transfer_agent"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "Envelopes or a post box",
+    "keywords": [
+      "mailbox",
+      "envelopes",
+      "letters",
+      "postbox"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.726Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Email",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Message_transfer_agent",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Your mail client hands the message to a mail server (submission agent)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Email",
+        "quote": "to send the message content to the local mail submission agent"
+      },
+      {
+        "claim": "The server resolves the domain after the @ using DNS",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Email",
+        "quote": "The MSA resolves a domain name to determine the fully qualified domain name of the mail server"
+      },
+      {
+        "claim": "The answer is an MX record listing the mail exchange servers (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Email",
+        "quote": "responds with any MX records listing the mail exchange servers for that domain"
+      },
+      {
+        "claim": "The message goes by SMTP, sometimes forwarded through other relays",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Email",
+        "quote": "This server may need to forward the message to other MTAs before the message reaches the final message delivery agent"
+      },
+      {
+        "claim": "Each relay adds a Received line to the header",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Message_transfer_agent",
+        "quote": "Every time an MTA receives an email message, it adds a Received trace header field to the top of the header of the message"
+      },
+      {
+        "claim": "Email is store-and-forward; nobody has to be online at once (probe 2: false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Email",
+        "quote": "Neither the users nor their computers are required to be online simultaneously"
+      },
+      {
+        "claim": "The recipient picks it up from a mailbox later",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Email",
+        "quote": "The MDA delivers it to the mailbox of user bob."
+      }
+    ],
+    "overall": "pass"
+  }
+}

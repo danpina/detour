@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-77916527",
+ "alt": "The first image of a black hole, a glowing orange ring around a dark center, from the Event Horizon Telescope.",
+ "fits": true,
+ "note": "Actual EHT image of M87.",
+ "crop": {
+  "fx": 0.48,
+  "fy": 0.45,
+  "zoom": 1.3
+ }
+}

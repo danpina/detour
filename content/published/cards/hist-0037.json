@@ -1,0 +1,68 @@
+{
+  "id": "hist-0037",
+  "interest": "history",
+  "title": "The revolt that built a country",
+  "probes": [
+    {
+      "id": "hist-0037-p1",
+      "question": "What made the Haitian Revolution unusual?",
+      "kind": "mcq",
+      "options": [
+        "It was fought mainly at sea",
+        "It led to a state free from slavery, ruled by former slaves",
+        "It ended within a month",
+        "It was led by French royalists"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0037-p2",
+      "question": "What condition did France attach to recognising Haiti in 1825?",
+      "kind": "mcq",
+      "options": [
+        "A trade ban",
+        "A royal marriage",
+        "An indemnity of 150 million francs",
+        "Returning to French rule"
+      ],
+      "answer": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Haitian Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Haitian_Revolution"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:07.978Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0037.webp",
+    "alt": "Hand-coloured period print of Toussaint Louverture in a blue uniform and plumed hat, holding a sabre and a paper, with soldiers behind him.",
+    "kind": "photo",
+    "credit": "by John Kay 1805 / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Toussaint_louverture.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In August 1791, enslaved people in the French colony of Saint-Domingue rose against colonial rule. The fight would last until 1 January 1804."
+      },
+      {
+        "text": "Toussaint Louverture, a self-educated former domestic slave, became one of its most successful commanders. He decided to fight for France if it would agree to free all the slaves."
+      },
+      {
+        "text": "The result was rare. Few slave rebellions in history led to a new state that was free from slavery and ruled by formerly enslaved people. This one created Haiti."
+      },
+      {
+        "text": "The twist: France did not recognise Haiti's independence until 1825, and only if Haiti agreed to pay an indemnity of 150 million francs."
+      }
+    ]
+  }
+}

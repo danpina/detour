@@ -1,0 +1,56 @@
+{
+  "id": "num-0045",
+  "interest": "numbers",
+  "title": "When the average misleads",
+  "probes": [
+    {
+      "id": "num-0045-p1",
+      "question": "Which summary is not skewed by a small number of extreme values?",
+      "kind": "mcq",
+      "options": [
+        "The mean",
+        "The total",
+        "The median",
+        "The range"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "num-0045-p2",
+      "question": "True or false: raising the very largest incomes in a group has no effect on the median income.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Median (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Median"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:48.686Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0045.webp",
+    "alt": "A traditional wood-panelled pub bar with beer taps, bottles and ornate mirrors.",
+    "kind": "photo",
+    "credit": "Acabashi / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:The_Viaduct_Tavern_bar_interior,_Newgate_St,_St_Paul%27s,_London_02.jpg"
+  },
+  "body": {
+    "question": "Five friends each earn about the same. A billionaire joins them. Which number barely changes: the mean income or the median income?",
+    "options": [
+      "The mean",
+      "The median",
+      "Both change equally"
+    ],
+    "answer": 1,
+    "reveal": "The median. It is the middle value, so a few extreme values cannot drag it far, and increases in the largest incomes have no effect on it. The mean adds everything up and gets pulled hard. For 1, 2, 2, 2, 3, 14 the median is 2, while the mean is 4."
+  }
+}

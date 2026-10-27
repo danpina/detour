@@ -1,0 +1,112 @@
+{
+  "draft_id": "money-0061",
+  "created_at": "2026-10-27T06:10:44.961Z",
+  "queries": [
+    "grocery store shelves grocery store display supermarket aisle",
+    "grocery store shelves",
+    "grocery store shelves grocery store display"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-63916949",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "REMA 1000 dyreartikler dyremat - supermarket grocery store interior aisle shelves pet food - Tønsberg Norway 2017-11-03.jpg",
+      "credit": "Wolfmann / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:REMA_1000_dyreartikler_dyremat_-_supermarket_grocery_store_interior_aisle_shelves_pet_food_-_T%C3%B8nsberg_Norway_2017-11-03.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/REMA_1000_dyreartikler_dyremat_-_supermarket_grocery_store_interior_aisle_shelves_pet_food_-_T%C3%B8nsberg_Norway_2017-11-03.jpg/960px-REMA_1000_dyreartikler_dyremat_-_supermarket_grocery_store_interior_aisle_shelves_pet_food_-_T%C3%B8nsberg_Norway_2017-11-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2957,
+      "height": 2971,
+      "alt_suggestion": "Pet food and products (\"Dyreartikler\", \"dyremat\") displayed for sale in REMA 1000 (discount supermarket chain) in Tønsberg, Norway, November 2017.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-36536",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Elevator Grille Ornament from the Schlesinger and Mayer Store, Chicago, Illinois",
+      "credit": "Louis H. Sullivan American, 1856-1924 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/36536",
+      "image_url": "https://www.artic.edu/iiif/2/974010ee-1383-0ac1-7c76-4ab9c826f22a/full/843,/0/default.jpg",
+      "alt_suggestion": "A circular decoration with a central cross and radiating organic motifs composed of natural and geometric forms.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-136721041",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "SPAR kolonial mat varehandel hyller (Supermarket interior GROCERY store aisle shelves) Frokostblandinger gryn grøt kjeks müsli Axa (cereals oatmeal biscuits, muesli) etc Tjøme NORWAY 2023-08-31 IMG 1092.jpg",
+      "credit": "Wolfmann / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SPAR_kolonial_mat_varehandel_hyller_(Supermarket_interior_GROCERY_store_aisle_shelves)_Frokostblandinger_gryn_gr%C3%B8t_kjeks_m%C3%BCsli_Axa_(cereals_oatmeal_biscuits,_muesli)_etc_Tj%C3%B8me_NORWAY_2023-08-31_IMG_1092.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/SPAR_kolonial_mat_varehandel_hyller_%28Supermarket_interior_GROCERY_store_aisle_shelves%29_Frokostblandinger_gryn_gr%C3%B8t_kjeks_m%C3%BCsli_Axa_%28cereals_oatmeal_biscuits%2C_muesli%29_etc_Tj%C3%B8me_NORWAY_2023-08-31_IMG_1092.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5770,
+      "height": 7694,
+      "alt_suggestion": "Groceries/food items/consumer goods for sale displayed on shelves/store shelves with price tags, in a grocery store/general store/supermarket in Norway in late August 2023: SPAR Tjøme, a store in the ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-38908",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Frieze Section from the Rothschild Store, Chicago, Illinois",
+      "credit": "Adler and Sullivan (American, 1883-1896) Louis Sullivan (American, 1856–1924) Dankmar Adler (American, born Germany, 1844–1900) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/38908",
+      "image_url": "https://www.artic.edu/iiif/2/357dd4ac-02e4-e1d8-a36f-ecb5f75959e6/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of cast iron.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-136721044",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "SPAR kolonial mat varehandel hyller (Supermarket interior GROCERY store aisle shelves) Frokostblandinger gryn grøt kjeks müsli Axa (cereals oatmeal biscuits, muesli) etc Tjøme NORWAY 2023-08-31 IMG 1093.jpg",
+      "credit": "Wolfmann / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SPAR_kolonial_mat_varehandel_hyller_(Supermarket_interior_GROCERY_store_aisle_shelves)_Frokostblandinger_gryn_gr%C3%B8t_kjeks_m%C3%BCsli_Axa_(cereals_oatmeal_biscuits,_muesli)_etc_Tj%C3%B8me_NORWAY_2023-08-31_IMG_1093.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/SPAR_kolonial_mat_varehandel_hyller_%28Supermarket_interior_GROCERY_store_aisle_shelves%29_Frokostblandinger_gryn_gr%C3%B8t_kjeks_m%C3%BCsli_Axa_%28cereals_oatmeal_biscuits%2C_muesli%29_etc_Tj%C3%B8me_NORWAY_2023-08-31_IMG_1093.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5725,
+      "height": 7634,
+      "alt_suggestion": "Groceries/food items/consumer goods for sale displayed on shelves/store shelves with price tags, in a grocery store/general store/supermarket in Norway in late August 2023: SPAR Tjøme, a store in the ",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-195892367",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Parsley for 99 cents, and other vegetables, in supermarket in Clearwater, Florida, US on 25 September 2020.jpg",
+      "credit": "MatthewHoobin / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Parsley_for_99_cents,_and_other_vegetables,_in_supermarket_in_Clearwater,_Florida,_US_on_25_September_2020.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Parsley_for_99_cents%2C_and_other_vegetables%2C_in_supermarket_in_Clearwater%2C_Florida%2C_US_on_25_September_2020.jpg/960px-Parsley_for_99_cents%2C_and_other_vegetables%2C_in_supermarket_in_Clearwater%2C_Florida%2C_US_on_25_September_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4160,
+      "height": 2340,
+      "alt_suggestion": "Parsley, green onions/scallions, and other vegetables in the produce section inside a Publix Super Market in Clearwater, Florida, United States, on 25 September 2020. Tags in front of the parsley read",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-176128864",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Supermarket pavement display West Green Road Tottenham London England 02.jpg",
+      "credit": "Acabashi / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Supermarket_pavement_display_West_Green_Road_Tottenham_London_England_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Supermarket_pavement_display_West_Green_Road_Tottenham_London_England_02.jpg/960px-Supermarket_pavement_display_West_Green_Road_Tottenham_London_England_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "Supermarket pavement display West Green Road Tottenham London EnglandWikimedia (2025) makes it difficult to immediately view photo groups related to this image. To see the most relevant allied images,",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"grocery store shelves grocery store display supermarket aisle\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"grocery store shelves\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"grocery store shelves grocery store display\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

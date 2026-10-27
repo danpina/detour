@@ -1,0 +1,98 @@
+{
+  "draft_id": "sci-0046",
+  "created_at": "2026-10-26T20:33:54.388Z",
+  "queries": [
+    "birds on power line birds on wire starlings power line",
+    "birds on power line",
+    "birds on power line birds on wire"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-64288945",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Storni 7 Starlings in Tuscany.jpg",
+      "credit": "Mauri.lunardi / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Storni_7_Starlings_in_Tuscany.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Storni_7_Starlings_in_Tuscany.jpg/960px-Storni_7_Starlings_in_Tuscany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3968,
+      "height": 2976,
+      "alt_suggestion": "I want to catch the relax after the fly; Starlings on overhead power line wires; Grosseto, Tuscany, Italy",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-65821",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Composition (No. 1) Gray-Red",
+      "credit": "Piet Mondrian Dutch, 1872–1944 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/65821",
+      "image_url": "https://www.artic.edu/iiif/2/254c654f-354a-0f4f-28b5-8eb01a02e95c/full/843,/0/default.jpg",
+      "alt_suggestion": "Abstract line composition of black lines at right angles forming quadrants including a gray square at upper left and a gray rectangle and red rectangle at lower right, against a white background.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-64288944",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Storni 6 Starlings in Tuscany.jpg",
+      "credit": "Mauri.lunardi / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Storni_6_Starlings_in_Tuscany.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Storni_6_Starlings_in_Tuscany.jpg/960px-Storni_6_Starlings_in_Tuscany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3968,
+      "height": 2976,
+      "alt_suggestion": "I want to catch the relax after the fly; Starlings on overhead power line wires; Grosseto, Tuscany, Italy",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-1601",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Panel (Judith with the head of Holofernes, Possibly from an Altar Frontal)",
+      "credit": "Switzerland / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/1601",
+      "image_url": "https://www.artic.edu/iiif/2/29ca142c-9294-b70b-c443-86b3877f02f9/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of linen, plain weave; embroidered with silk, linen, and gilt-metal-strip-wrapped linen in back, a variety of buttonhole, chain, square chain, cross, long-armed cross, eyelet, herring bone, threaded herringbone, knotted, interlocking lace, overcast, running, double running, satin, and stem stitches; couching; edged with linen and gilt-metal-strip-wrapped linen bobbin lace.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-64288943",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Storni 5 Starlings in Tuscany.jpg",
+      "credit": "Mauri.lunardi / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Storni_5_Starlings_in_Tuscany.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Storni_5_Starlings_in_Tuscany.jpg/960px-Storni_5_Starlings_in_Tuscany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1256,
+      "height": 857,
+      "alt_suggestion": "I want to catch the relax after the fly; Starlings on overhead power line wires; Grosseto, Tuscany, Italy",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-191732615",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Birds, Buck Lodge Community Park.jpg",
+      "credit": "Nvss132 / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Birds,_Buck_Lodge_Community_Park.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Birds%2C_Buck_Lodge_Community_Park.jpg/960px-Birds%2C_Buck_Lodge_Community_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4032,
+      "height": 3024,
+      "alt_suggestion": "Birds on a power line, Buck Lodge Community Park, College Park MD",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"birds on power line birds on wire starlings power line\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"birds on power line\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"birds on power line birds on wire\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "num-0047",
+  "interest": "numbers",
+  "title": "Your chance at the Powerball jackpot",
+  "probes": [
+    {
+      "id": "num-0047-p1",
+      "question": "About how many fair-coin flips in a row, all heads, are as unlikely as the jackpot?",
+      "kind": "mcq",
+      "options": [
+        "10",
+        "20",
+        "28",
+        "50"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "num-0047-p2",
+      "question": "Powerball jackpot odds are about 1 in ____ million.",
+      "kind": "cloze",
+      "answer": "292",
+      "accept": [
+        "292.2",
+        "292 million"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Powerball (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Powerball"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:51.854Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "num-0047.webp",
+    "alt": "Close-up of numbered bingo balls in many colours inside a wire drum.",
+    "kind": "photo",
+    "credit": "elizaIO / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bingo_balls_in_bingo_drum.jpg"
+  },
+  "body": {
+    "question": "With one ticket, the Powerball jackpot odds are 1 in about how many?",
+    "unit": "1 in",
+    "min": 1000,
+    "max": 10000000000,
+    "scale": "log",
+    "answer": 292201338,
+    "reveal": "About 1 in 292 million. That is slightly less likely than flipping a fair coin 28 times and getting heads every time, which is about 1 in 268 million."
+  }
+}

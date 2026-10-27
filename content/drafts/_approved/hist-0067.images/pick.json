@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-58712448",
+  "alt": "The medieval astronomical clock face of Wells Cathedral with a starry blue dial, Roman numerals and mounted knights on horseback above",
+  "fits": true,
+  "note": "Wells Cathedral clock, fits",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.1
+  }
+}

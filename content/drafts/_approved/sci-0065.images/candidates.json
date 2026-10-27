@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0065",
+  "created_at": "2026-10-26T20:32:08.390Z",
+  "queries": [
+    "Mendeleev periodic table Mendeleev hand drawn periodic table periodic table 1869",
+    "Mendeleev periodic table",
+    "Mendeleev periodic table Mendeleev hand drawn periodic table"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-107970454",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Huge Mendeleev periodic table of elements in Dubna.jpg",
+      "credit": "Salixinto / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Huge_Mendeleev_periodic_table_of_elements_in_Dubna.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Huge_Mendeleev_periodic_table_of_elements_in_Dubna.jpg/960px-Huge_Mendeleev_periodic_table_of_elements_in_Dubna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3213,
+      "height": 2097,
+      "alt_suggestion": "Периодическая система химических элементов (таблица Менделеева) на стене здания в Дубне",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-43711",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "E9: English Drawing Room of the Georgian Period, 1770–1800",
+      "credit": "Designed by Narcissa Niblack Thorne American, 1882–1966 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/43711",
+      "image_url": "https://www.artic.edu/iiif/2/251f2720-f92f-6af2-759d-59510d410893/full/843,/0/default.jpg",
+      "alt_suggestion": "Miniature room with cream-colored walls with inset columns on the side walls and two columns at the back framing a dark wooden bookshelf. A large crystal chandelier hangs from a curved ceiling patterned with geometric designs in relief. A beige floral rug fills the floor, upon which a yellow couch and other upholstered wood furniture are unevenly spaced. On the right wall is an ornate fireplace with a mantle framing a painting of a landscape.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-77983870",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dmitri Mendeleev's hand drawn periodic table.jpg",
+      "credit": "Scotted400 / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dmitri_Mendeleev%27s_hand_drawn_periodic_table.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Dmitri_Mendeleev%27s_hand_drawn_periodic_table.jpg/960px-Dmitri_Mendeleev%27s_hand_drawn_periodic_table.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 3456,
+      "alt_suggestion": "One of Dmitri Mendeleev's hand drawn periodic tables on display in his apartments at Saint Petersburg University",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-43714",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "E10: English Dining Room of the Georgian Period, 1770–90",
+      "credit": "Designed by Narcissa Niblack Thorne American, 1882–1966 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/43714",
+      "image_url": "https://www.artic.edu/iiif/2/0a2d277c-34e2-8c29-e142-4daea2546217/full/843,/0/default.jpg",
+      "alt_suggestion": "Miniature Georgian-era dining room with pale green walls, ornate white trim, long glass table.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-51628272",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Periodic Table after Mendeleev 2.png",
+      "credit": "Squee3 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Periodic_Table_after_Mendeleev_2.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Periodic_Table_after_Mendeleev_2.png/960px-Periodic_Table_after_Mendeleev_2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2947,
+      "height": 2574,
+      "alt_suggestion": "Another version of Mendeleev's periodic table.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Mendeleev periodic table Mendeleev hand drawn periodic table periodic table 1869\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Mendeleev periodic table\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Mendeleev periodic table Mendeleev hand drawn periodic table\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

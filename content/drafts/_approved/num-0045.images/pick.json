@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-146816881",
+  "alt": "A traditional wood-panelled pub bar with beer taps, bottles and ornate mirrors.",
+  "fits": true,
+  "note": "Atmospheric, no identifiable people.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

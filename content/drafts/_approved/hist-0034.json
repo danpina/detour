@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Black Death and wages",
+    "angle": "A labour shortage changed the balance of power"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0034",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "When workers became scarce",
+    "body": {
+      "claim": "After the Black Death, workers were so scarce that wages soared.",
+      "why": "The plague of 1346-1353 shrank the population, and the resulting labour shortage pushed wages up. In some places rents collapsed: one record says a letting that once brought in £5 now brought only £1. Landowners swapped labour services for money rents to keep their tenants. It was not a win for everyone, though: people living on wages alone often lost out to rampant inflation."
+    },
+    "probes": [
+      {
+        "id": "hist-0034-p1",
+        "kind": "mcq",
+        "question": "What happened to wages after the Black Death cut the population?",
+        "options": [
+          "They fell, because there was less work",
+          "They rose, because workers were scarce",
+          "They stayed exactly the same",
+          "They were fixed by landowners at one price"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0034-p2",
+        "kind": "tf",
+        "question": "True or false: landowners offered money rents in place of labour services to keep their tenants.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Black Death (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Black_Death"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Doutielt1.jpg shows a medieval miniature of the people of Tournai burying plague victims (public domain, landscape)",
+    "keywords": [
+      "Black Death",
+      "plague Tournai",
+      "Pierart dou Tielt",
+      "medieval plague"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.123Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Black_Death",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "After the Black Death workers were scarce and wages soared (title, claim, p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Black_Death",
+        "quote": "wages soared in response to a subsequent labour shortage"
+      },
+      {
+        "claim": "The plague of 1346-1353",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Black_Death",
+        "quote": "Black Death 1346-1353 plague pandemic in Eurasia and North Africa"
+      },
+      {
+        "claim": "Population shrank (plague) and labour shortage pushed wages up",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Black_Death",
+        "quote": "along with population decline from the pandemic, wages soared in response to a subsequent labour shortage"
+      },
+      {
+        "claim": "In some places rents collapsed: a letting once £5 now £1",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Black_Death",
+        "quote": "In some places rents collapsed (e.g., lettings \"used to bring in £5, and now but £1\")"
+      },
+      {
+        "claim": "Landowners swapped labour services for money rents to keep tenants (p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Black_Death",
+        "quote": "Landowners were also pushed to substitute monetary rents for labour services in an effort to keep tenants"
+      },
+      {
+        "claim": "People living on wages alone often lost out to rampant inflation",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Black_Death",
+        "quote": "suffered a reduction in real incomes owing to rampant inflation"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "mind-0065",
+  "interest": "mind",
+  "title": "The power of the pre-ticked box",
+  "probes": [
+    {
+      "id": "mind-0065-p1",
+      "question": "What is the default under an opt-out donation system?",
+      "kind": "mcq",
+      "options": [
+        "Everyone is a non-donor",
+        "Everyone is a donor unless they opt out",
+        "Only registered people donate",
+        "Families decide each time"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0065-p2",
+      "question": "True or false: the default effect is the tendency to pick whichever option is pre-set.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Organ donation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Organ_donation"
+    },
+    {
+      "title": "Default effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Default_effect"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:01.874Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0065.webp",
+    "alt": "A close-up of a German organ donor card with tick-box options, with a pen resting beside it on a wooden table.",
+    "kind": "photo",
+    "credit": "Own work / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Organspendeausweis_kugelschreiber.JPG"
+  },
+  "body": {
+    "question": "Germany asks people to opt in to organ donation and has a consent rate of 12%. Austria has a very similar culture and economy but makes everyone a donor unless they opt out. What is Austria's consent rate?",
+    "options": [
+      "About 20%",
+      "99.98%",
+      "About 50%",
+      "About 75%"
+    ],
+    "answer": 1,
+    "reveal": "99.98%. Opt-out systems dramatically raise effective consent rates through the default effect. Most people support donation, yet under opt-in only a small share register, because they fail to go through the process."
+  }
+}

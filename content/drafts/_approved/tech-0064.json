@@ -1,0 +1,110 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Open source and Linux",
+    "angle": "What open source allows, with Linux as the famous example"
+  },
+  "created_at": "2026-10-26T20:28:21.551Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0064",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "Open source means you can read the code",
+    "body": {
+      "claim": "Open-source software has publicly available source code that anyone may use, study, modify and share.",
+      "why": "That is the definition, usually granted through an open licence. Linux is a family of free and open-source operating systems built on the Linux kernel, first released by Linus Torvalds on 17 September 1991. It is one of the most prominent examples of free and open-source collaboration."
+    },
+    "probes": [
+      {
+        "id": "tech-0064-p1",
+        "kind": "mcq",
+        "question": "What does open source allow users to do with the code?",
+        "options": [
+          "Only read it",
+          "Only run it",
+          "Use, study, modify and distribute it",
+          "Nothing without paying"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0064-p2",
+        "kind": "tf",
+        "question": "True or false: the Linux kernel was first released in 1991 by Linus Torvalds.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Open-source software (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Open-source_software"
+      },
+      {
+        "title": "Linux (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Linux"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Tux, the Linux penguin I.jpg (CC BY-SA 4.0) or File:Giant Linux kernel tux mascotte at Linux Day 2022 in Milano.jpg (CC0) show Tux the Linux penguin",
+    "keywords": [
+      "Tux Linux penguin",
+      "Linux penguin",
+      "Tux mascot",
+      "Linux Day"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.392Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Open-source_software",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Linux",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Open-source software has public source code that users may use, study, modify and distribute (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Open-source_software",
+        "quote": "software whose source code is publicly available, allowing users to use, study, modify, and distribute it"
+      },
+      {
+        "claim": "Granted usually through an open licence",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Open-source_software",
+        "quote": "These abilities are typically granted through open licenses"
+      },
+      {
+        "claim": "Linux is a family of free and open-source operating systems based on the Linux kernel",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Linux",
+        "quote": "a family of free and open-source software Unix-like operating systems based on the Linux kernel"
+      },
+      {
+        "claim": "Kernel first released by Linus Torvalds on 17 September 1991 (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Linux",
+        "quote": "which was first released on 17 September 1991 by Linus Torvalds",
+        "note": "Page says 17 Sep 1991 for first release; it does not mention kernel 0.02 or 5 October 1991, so the card's wording is supported as written."
+      },
+      {
+        "claim": "Linux is one of the most prominent examples of free and open-source collaboration",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Linux",
+        "quote": "Linux is one of the most prominent examples of free and open-source software collaboration."
+      }
+    ],
+    "overall": "pass"
+  }
+}

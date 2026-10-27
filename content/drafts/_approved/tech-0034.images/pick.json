@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-130200118",
+  "alt": "A black rotary telephone on a desk beside a small student telephone directory booklet, in an old black-and-white photo.",
+  "fits": true,
+  "note": "Phone plus directory booklet illustrates the phone-book analogy; public domain.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Two-factor authentication",
+    "angle": "Codes that change every 30 seconds"
+  },
+  "created_at": "2026-10-27T06:07:56.487Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0039",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "Why the code changes every 30 seconds",
+    "body": {
+      "claim": "Time-based one-time codes use the current time as a source of uniqueness.",
+      "why": "The authenticator and the server both compute the code and check that they match. The default time step is 30 seconds, so codes are only valid for a limited time. They rely on a shared secret known to both sides."
+    },
+    "probes": [
+      {
+        "id": "tech-0039-p1",
+        "kind": "mcq",
+        "question": "What does a time-based one-time password use as its source of uniqueness?",
+        "options": [
+          "Your last password",
+          "Your location",
+          "The current time",
+          "The weather"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0039-p2",
+        "kind": "tf",
+        "question": "True or false: the default time step for these codes is 30 seconds.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Time-based one-time password (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Time-based_one-time_password"
+      },
+      {
+        "title": "Multi-factor authentication (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Multi-factor_authentication"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A smartphone, or a security token key fob",
+    "keywords": [
+      "smartphone",
+      "security token",
+      "key fob"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.721Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Time-based_one-time_password",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Multi-factor_authentication",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "TOTP uses the current time as a source of uniqueness (claim, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Time-based_one-time_password",
+        "quote": "using the current time as a source of uniqueness"
+      },
+      {
+        "claim": "Authenticator and server both compute the code and check they match",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Time-based_one-time_password",
+        "quote": "Both the authenticator and the authenticatee compute the TOTP value, then the authenticator checks whether the TOTP value supplied by the authenticatee matches"
+      },
+      {
+        "claim": "Default time step is 30 seconds (probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Time-based_one-time_password",
+        "quote": "default is 30 seconds"
+      },
+      {
+        "claim": "Codes are only valid for a limited time",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Time-based_one-time_password",
+        "quote": "due to the short window in which TOTP codes are valid"
+      },
+      {
+        "claim": "They rely on a shared secret known to both sides",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Time-based_one-time_password",
+        "quote": "TOTP credentials are also based on a shared secret known to both the client and the server"
+      }
+    ],
+    "overall": "pass"
+  }
+}

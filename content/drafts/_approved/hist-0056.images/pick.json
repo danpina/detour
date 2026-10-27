@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-36028426",
+  "alt": "A 19th-century oil painting of Edward Jenner vaccinating a young child held by its mother in a cottage interior",
+  "fits": true,
+  "note": "Later painting (1884), not a period record; alt says painting",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.5,
+    "zoom": 1.2
+  }
+}

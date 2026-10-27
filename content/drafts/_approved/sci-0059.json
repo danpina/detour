@@ -1,0 +1,110 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Why the seasons happen",
+    "angle": "Not distance from the Sun"
+  },
+  "created_at": "2026-10-26T20:30:07.401Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0059",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "Closest to the Sun in winter",
+    "body": {
+      "question": "In which month is Earth closest to the Sun?",
+      "options": [
+        "April",
+        "July",
+        "January",
+        "October"
+      ],
+      "answer": 2,
+      "reveal": "Earth is closest to the Sun in early January and farthest in early July, so distance works against the Northern Hemisphere's seasons. The real cause is Earth's tilt, about 23.4 degrees, which changes how high the Sun climbs in the sky."
+    },
+    "probes": [
+      {
+        "id": "sci-0059-p1",
+        "kind": "mcq",
+        "question": "What causes the seasons?",
+        "options": [
+          "Changes in Earth's distance from the Sun",
+          "Earth's tilted axis",
+          "Phases of the Moon",
+          "Solar storms"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0059-p2",
+        "kind": "tf",
+        "question": "True or false: Earth is closest to the Sun during the Northern Hemisphere's winter.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Season (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Season"
+      },
+      {
+        "title": "Axial tilt (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Axial_tilt"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:The Earth seen from Apollo 17.jpg (public domain, the Blue Marble) shows the whole Earth",
+    "keywords": [
+      "Earth Blue Marble",
+      "Apollo 17 Earth",
+      "Earth from space"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.057Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Season",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Axial_tilt",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Earth is closest to the Sun in early January and farthest in early July (answer January)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Season",
+        "quote": "Angular size of the Sun at Earth's orbital periapsis called perihelion (max./closest, 2. to 5. January) and at apoapsis called aphelion (min./furthest, 3. to 6. July)."
+      },
+      {
+        "claim": "Seasons are caused by tilt, which changes how high the Sun climbs (probe 1 answer: tilted axis)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Season",
+        "quote": "It is Earth's axial tilt that causes the Sun to be higher in the sky during the summer months , which increases the solar flux ."
+      },
+      {
+        "claim": "Earth's tilt is about 23.4 degrees",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Axial_tilt",
+        "quote": "Earth currently has an axial tilt of about 23.44°."
+      },
+      {
+        "claim": "Earth is closest to the Sun during the Northern Hemisphere's winter (probe 2; January perihelion)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Season",
+        "quote": "Angular size of the Sun at Earth's orbital periapsis called perihelion (max./closest, 2. to 5. January) and at apoapsis called aphelion (min./furthest, 3. to 6. July).",
+        "note": "January perihelion falls in Northern Hemisphere winter (same page: NH warmest months are June to August)."
+      }
+    ],
+    "overall": "pass"
+  }
+}

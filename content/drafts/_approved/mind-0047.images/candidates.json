@@ -1,0 +1,82 @@
+{
+  "draft_id": "mind-0047",
+  "created_at": "2026-10-26T20:31:56.534Z",
+  "queries": [
+    "Challenger explosion Space Shuttle Challenger camera flash",
+    "Challenger explosion",
+    "Challenger explosion Space Shuttle Challenger"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-530754",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Challenger explosion.jpg",
+      "credit": "Kennedy Space Center / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Challenger_explosion.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Challenger_explosion.jpg/960px-Challenger_explosion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3555,
+      "height": 2879,
+      "alt_suggestion": "Short Description: Space Shuttle Challenger explodes shortly after take-off. Full Description: On January 28, 1986, the Challenger space shuttle and her seven-member crew were lost when a ruptured O-r",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-S85-25624",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Official portrait Gregory Jarvis STS 51-L payload specialist",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/S85-25624",
+      "image_url": "https://images-assets.nasa.gov/image/S85-25624/S85-25624~medium.jpg",
+      "alt_suggestion": "S85-25624 (1985) --- Astronaut Gregory B. Jarvis, payload specialist. Photo credit: NASA (NOTE: Since this portrait was taken, Jarvis died in the STS-51L space shuttle Challenger explosion, on Jan. 28",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-23207",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Throwing the Shuttle",
+      "credit": "Suzuki Harunobu 鈴木 春信 Japanese, 1725 (?)-1770 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/23207",
+      "image_url": "https://www.artic.edu/iiif/2/0e5bff2b-8622-78a9-bc90-971d036ad7f4/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color woodblock print; chuban.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-181762",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Challenger flight 51-l crew.jpg",
+      "credit": "NASA / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Challenger_flight_51-l_crew.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Challenger_flight_51-l_crew.jpg/960px-Challenger_flight_51-l_crew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3869,
+      "height": 3095,
+      "alt_suggestion": "The crew of Space Shuttle mission STS-51-L pose for their official portrait on November 15, 1985. In the back row from left to right: Ellison S. Onizuka, Sharon Christa McAuliffe, Greg Jarvis, and Jud",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-S85-37164",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Teacher in Space Christa McAuliffe talks to the media",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/S85-37164",
+      "image_url": "https://images-assets.nasa.gov/image/S85-37164/S85-37164~medium.jpg",
+      "alt_suggestion": "S85-37164 (8-12 July 1985) --- Sharon C. (Christa) McAuliffe of Concord High, Concord, New Hampshire, talks to the media at Johnson Space Center. Christa McAuliffe was eventually chosen as the first T",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Challenger explosion Space Shuttle Challenger camera flash\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Challenger explosion\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Challenger explosion Space Shuttle Challenger\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

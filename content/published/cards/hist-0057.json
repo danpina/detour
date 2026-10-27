@@ -1,0 +1,54 @@
+{
+  "id": "hist-0057",
+  "interest": "history",
+  "title": "Chosen by lot, not by vote",
+  "probes": [
+    {
+      "id": "hist-0057-p1",
+      "question": "How were most Athenian magistrates and jurors usually chosen?",
+      "kind": "mcq",
+      "options": [
+        "By a vote of the whole city",
+        "By drawing lots",
+        "By the richest families",
+        "By the oldest citizens"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0057-p2",
+      "question": "True or false: the kleroterion was a stone device used to select citizens by chance.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sortition (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sortition"
+    },
+    {
+      "title": "Kleroterion (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kleroterion"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:31:24.157Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0057.webp",
+    "alt": "An ancient Greek kleroterion, a stone slab with rows of slots used to select jurors by lot, in a museum with bronze allotment tokens below",
+    "kind": "photo",
+    "credit": "Sharon Mollerus / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:AGMA_Kleroterion_1.jpg"
+  },
+  "body": {
+    "claim": "In ancient Athens, most magistrates and jurors were picked by lot, not elected.",
+    "why": "Athenian democracy grew out of isonomia, equality of law and political rights, and drawing lots was the main way of achieving that fairness. Juries were typically of 501 men. From 370 BC a stone slab called the kleroterion was used: citizens' tokens were set in slots, with each tribe in its own column, and coloured dice released through a tube decided who was chosen."
+  }
+}

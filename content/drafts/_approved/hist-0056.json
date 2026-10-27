@@ -1,0 +1,127 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The cow that gave us 'vaccine'",
+    "angle": "The cow that gave us 'vaccine'"
+  },
+  "created_at": "2026-10-26T20:31:39.966Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0056",
+    "interest": "history",
+    "type": "story",
+    "title": "The cow that gave us 'vaccine'",
+    "body": {
+      "panels": [
+        {
+          "text": "In Edward Jenner's day, smallpox killed around 10% of the global population."
+        },
+        {
+          "text": "Jenner suspected that cowpox, a much milder disease, protected people from smallpox."
+        },
+        {
+          "text": "On 14 May 1796 he tested the idea on James Phipps, the eight-year-old son of his gardener, using pus from cowpox blisters on the hands of a milkmaid named Sarah Nelmes."
+        },
+        {
+          "text": "Jenner called the cowpox variolae vaccinae, 'pustules of the cow'. That is where the words vaccine and vaccination come from. His 1798 Inquiry described how cowpox protected against smallpox."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0056-p1",
+        "kind": "mcq",
+        "question": "What did Jenner use to protect people from smallpox?",
+        "options": [
+          "Material from the milder disease cowpox",
+          "Weakened plague bacteria",
+          "A herbal tea",
+          "Smoke from burning sulphur"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0056-p2",
+        "kind": "mcq",
+        "question": "The word 'vaccine' comes from a term meaning...",
+        "options": [
+          "Healing water",
+          "Shield against fever",
+          "Pustules of the cow",
+          "Doctor's needle"
+        ],
+        "answer": 2
+      }
+    ],
+    "sources": [
+      {
+        "title": "Edward Jenner (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Edward_Jenner"
+      },
+      {
+        "title": "Smallpox vaccine (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Smallpox_vaccine"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Edward Jenner vaccinating a boy. Oil painting by E.-E. Hille Wellcome L0029093.jpg (CC BY 4.0): oil painting of Jenner vaccinating a boy, 1884; also File:Edward Jenner by James Northcote.jpg (public domain)",
+    "keywords": [
+      "Edward Jenner vaccinating a boy",
+      "Jenner vaccination painting",
+      "Edward Jenner",
+      "Hillemacher Jenner"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.654Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Smallpox_vaccine",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In Jenner's time smallpox killed around 10% of the global population",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "In Jenner's time, smallpox killed around 10% of the global population"
+      },
+      {
+        "claim": "Jenner suspected cowpox, a much milder disease, protected against smallpox (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "Jenner postulated that the pus in blisters from sufferers of cowpox"
+      },
+      {
+        "claim": "On 14 May 1796 he inoculated James Phipps, eight-year-old son of his gardener, with pus from Sarah Nelmes's cowpox blisters",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "On 14 May 1796, he tested his hypothesis by inoculating James Phipps"
+      },
+      {
+        "claim": "Jenner called cowpox variolae vaccinae ('pustules of the cow'); vaccine and vaccination derive from it (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "The terms vaccine and vaccination are derived from Variolae vaccinae"
+      },
+      {
+        "claim": "1798 Inquiry described how cowpox protected against smallpox",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+        "quote": "He used it in 1798 in the title of his Inquiry into the Variolae vaccinae known as the Cow Pox"
+      }
+    ],
+    "overall": "pass"
+  }
+}

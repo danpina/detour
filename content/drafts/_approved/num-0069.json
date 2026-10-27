@@ -1,0 +1,97 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Primes in cryptography",
+    "angle": "Why factoring is the lock"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0069",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "The hard part is factoring",
+    "body": {
+      "claim": "RSA, widely used for secure data transmission, relies on the difficulty of factoring the product of two large primes.",
+      "why": "In RSA, a user's public key is the product of two large prime numbers, and the primes stay secret. The security of RSA is related to the difficulty of factoring that product. There are no published methods to defeat the system if a large enough key is used."
+    },
+    "probes": [
+      {
+        "id": "num-0069-p1",
+        "kind": "mcq",
+        "question": "What does RSA's public key consist of?",
+        "options": [
+          "The sum of two primes",
+          "The product of two large primes",
+          "A single large prime",
+          "A random word"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0069-p2",
+        "kind": "tf",
+        "question": "True or false: RSA's security is related to the difficulty of factoring a product of two large primes.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "RSA cryptosystem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/RSA_cryptosystem"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Brass padlock with key.jpg, a brass padlock with its key",
+    "keywords": [
+      "padlock key",
+      "brass padlock",
+      "padlock"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:48.354Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/RSA_cryptosystem",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "RSA relies on the difficulty of factoring the product of two large primes",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/RSA_cryptosystem",
+        "quote": "The security of RSA is related to the difficulty of factoring the product of two large prime numbers",
+        "note": "'Relies on' vs the page's 'is related to'; acceptable."
+      },
+      {
+        "claim": "In RSA the public key is the product of two large primes, primes kept secret",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/RSA_cryptosystem",
+        "quote": "A user's public key - which can be used to verify messages from the user, or encrypt messages so that only that user can decrypt them - is the product of the prime numbers.",
+        "note": "Page: the product of two large prime numbers is what must be factored."
+      },
+      {
+        "claim": "No published methods defeat it if a large enough key is used",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/RSA_cryptosystem",
+        "quote": "There are no published methods to defeat the system if a large enough key is used."
+      },
+      {
+        "claim": "RSA is widely used for secure data transmission",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/RSA_cryptosystem",
+        "quote": "widely used for secure data transmission",
+        "note": "Page: RSA is a family of public-key cryptosystems (one of the oldest), widely used for secure data transmission."
+      }
+    ],
+    "overall": "pass"
+  }
+}

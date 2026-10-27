@@ -1,0 +1,50 @@
+{
+  "id": "sci-0058",
+  "interest": "science",
+  "title": "Plants split water, not air",
+  "probes": [
+    {
+      "id": "sci-0058-p1",
+      "question": "Where does the oxygen released by photosynthesis come from?",
+      "kind": "mcq",
+      "options": [
+        "Carbon dioxide",
+        "The soil",
+        "Water",
+        "Sugar"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "sci-0058-p2",
+      "question": "True or false: plants build sugars using carbon dioxide from the air.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Photosynthesis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Photosynthesis"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:58.621Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0058.webp",
+    "alt": "A microscope view of tightly packed green leaf cells, each filled with small green chloroplasts.",
+    "kind": "photo",
+    "credit": "KarlGaff / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bryophyte_Leaf_Cells.jpg"
+  },
+  "body": {
+    "claim": "In photosynthesis, the oxygen comes from splitting water, and the sugar is built from carbon dioxide.",
+    "why": "Plants, algae and cyanobacteria use light to make chemical energy and split water, which releases oxygen. Then the Calvin cycle takes carbon dioxide from the air and adds it to existing organic compounds, building sugars. Light makes the energy; the air supplies the carbon."
+  }
+}

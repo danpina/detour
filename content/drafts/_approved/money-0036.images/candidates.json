@@ -1,0 +1,91 @@
+{
+  "draft_id": "money-0036",
+  "created_at": "2026-10-26T20:30:15.748Z",
+  "queries": [
+    "report card report card grades school report card",
+    "report card",
+    "report card report card grades"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-181297962",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "School report card.jpg",
+      "credit": "Musinguzibenard / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:School_report_card.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/School_report_card.jpg/960px-School_report_card.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1190,
+      "height": 1683,
+      "alt_suggestion": "School report card in uganda",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-7992",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Reporter",
+      "credit": "Jean Louis Forain French, 1852-1931 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/7992",
+      "image_url": "https://www.artic.edu/iiif/2/4e9f26ae-0f9c-85ff-848f-e45ae33dc6ad/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of lithograph on off-white wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-134618667",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Columbus public Schools 6th Grade Grammar School report card for James Dooley, 1891-92. - DPLA - da92f47a504a26702f6dc366e21a9f0b.jpg",
+      "credit": "This file was contributed to Wikimedia Commons by Columbus Metropolitan Library as part of a cooperation project. The donation was facilitated by the Digital Pu",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Columbus_public_Schools_6th_Grade_Grammar_School_report_card_for_James_Dooley,_1891-92._-_DPLA_-_da92f47a504a26702f6dc366e21a9f0b.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Columbus_public_Schools_6th_Grade_Grammar_School_report_card_for_James_Dooley%2C_1891-92._-_DPLA_-_da92f47a504a26702f6dc366e21a9f0b.jpg/960px-Columbus_public_Schools_6th_Grade_Grammar_School_report_card_for_James_Dooley%2C_1891-92._-_DPLA_-_da92f47a504a26702f6dc366e21a9f0b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4437,
+      "height": 2446,
+      "alt_suggestion": "A Columbus public Schools 6th Grade Grammar School report card for James Dooley, for the 1891-92 term. The card is signed by his teacher, Cora B. Runyan. James Dooley attended the Garfield Elementary ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-135533",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Card Table",
+      "credit": "Charles-Honoré Lannuier (American, born France, 1779–1819) New York / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/135533",
+      "image_url": "https://www.artic.edu/iiif/2/b2bd9f9c-9478-481c-1457-0f42960cdc95/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of mahogany with rosewood veneer, giltwood, brass and ebony inlay, ormolu.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-145504877",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Miloslav Stingl school report (SOkA Rakovník).jpg",
+      "credit": "State Regional Archives in Prague / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Miloslav_Stingl_school_report_(SOkA_Rakovn%C3%ADk).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Miloslav_Stingl_school_report_%28SOkA_Rakovn%C3%ADk%29.jpg/960px-Miloslav_Stingl_school_report_%28SOkA_Rakovn%C3%ADk%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1500,
+      "height": 2117,
+      "alt_suggestion": "Attendance and benefit records of Miloslav Stingl. According to the report card of the second class of the Rakovník High school (Reálné gymnázium Rakovník) in the academic year 1943/1944, Stingl was e",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Seventh Annual Report of the State Board of Health, Lunacy and Charity of Massachusetts. Supplement Containing Report and Papers on Public Health. 1885. (1886) (14742265886).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"report card report card grades school report card\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"report card\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"report card report card grades\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

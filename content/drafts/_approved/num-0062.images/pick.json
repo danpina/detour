@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-196037827",
+  "alt": "A hand held up with all five fingers spread open, from a photo series of finger-counting hand shapes.",
+  "fits": true,
+  "note": "Only adequate image found (finger binary photo is 212 px); crop on the open hand. Decimal ASL, not binary, so alt avoids claiming binary.",
+  "crop": {
+    "fx": 0.88,
+    "fy": 0.26,
+    "zoom": 2.2
+  }
+}

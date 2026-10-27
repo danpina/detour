@@ -1,0 +1,51 @@
+{
+  "id": "sci-0038",
+  "interest": "science",
+  "title": "How fast do electrons crawl?",
+  "probes": [
+    {
+      "id": "sci-0038-p1",
+      "question": "In a 2 mm copper wire carrying 1 ampere, how fast do the electrons drift along the wire?",
+      "kind": "estimate",
+      "answer": 23,
+      "unit": "µm/s",
+      "min": 1,
+      "max": 1000000,
+      "scale": "log"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Drift velocity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Drift_velocity"
+    },
+    {
+      "title": "Electric current (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Electric_current"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:38:10.518Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "sci-0038.webp",
+    "alt": "Close-up of a cable cut open to show three insulated wires, blue, green and brown, with bare copper conductors at the tips.",
+    "kind": "photo",
+    "credit": "Petar Milošević / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Electric_guide_3%C3%972.5_mm.jpg"
+  },
+  "body": {
+    "question": "In a 2 mm copper wire carrying 1 ampere, how fast do the electrons drift along the wire?",
+    "unit": "µm/s",
+    "min": 1,
+    "max": 1000000,
+    "scale": "log",
+    "answer": 23,
+    "reveal": "About 23 micrometres per second, a slow crawl. Yet a lamp lights at once, because a change in current travels as an electromagnetic wave at a significant fraction of the speed of light, far faster than the electrons drift."
+  }
+}

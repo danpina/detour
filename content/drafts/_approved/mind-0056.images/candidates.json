@@ -1,0 +1,123 @@
+{
+  "draft_id": "mind-0056",
+  "created_at": "2026-10-27T06:09:37.280Z",
+  "queries": [
+    "people walking street pedestrians crowd",
+    "people walking street",
+    "people walking street pedestrians"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-58845313",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "People walking on a street in Copenhagen.jpg",
+      "credit": "Øyvind Holmstad / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:People_walking_on_a_street_in_Copenhagen.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/People_walking_on_a_street_in_Copenhagen.jpg/960px-People_walking_on_a_street_in_Copenhagen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5472,
+      "height": 3078,
+      "alt_suggestion": "People walking on a street in Copenhagen - København, Denmark.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-NHQ202102090001",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Cindy Steele Portrait",
+      "credit": "NASA/Aubrey Gemignani / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/NHQ202102090001",
+      "image_url": "https://images-assets.nasa.gov/image/NHQ202102090001/NHQ202102090001~medium.jpg",
+      "alt_suggestion": "“At the end of the day people won't remember what you said or did. They will remember how you made them feel.’ [This quote] resonates with me because I feel my job in public engagement is creating uni",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-20684",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Paris Street; Rainy Day",
+      "credit": "Gustave Caillebotte (French, 1848–1894) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/20684",
+      "image_url": "https://www.artic.edu/iiif/2/f8fd76e9-c396-5678-36ed-6a348c904d27/full/843,/0/default.jpg",
+      "alt_suggestion": "Life-size painting of an urban scene in Paris. A man in a top hat holding an umbrella and a woman in a long fashionable dark dress walk arm in arm toward the viewer as other city dwellers with umbrellas walk in various directions across cobblestone roads and sidewalks.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-98522575",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Kluuvi, Rautatientori - ser114743 - hkm.HKMS000005-km0000omhu.jpg",
+      "credit": "Eeva Rista / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kluuvi,_Rautatientori_-_ser114743_-_hkm.HKMS000005-km0000omhu.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Kluuvi%2C_Rautatientori_-_ser114743_-_hkm.HKMS000005-km0000omhu.jpg/960px-Kluuvi%2C_Rautatientori_-_ser114743_-_hkm.HKMS000005-km0000omhu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3915,
+      "height": 2621,
+      "alt_suggestion": "Kluuvi, Rautatientori. Jalankulkijoita, liikennevalotolppia ja linja-autoja iltapäivän ruuhka-aikaan Rautatientorin kulmassa. Utuinen näkymä Kaivokadun ja Mikonkadun risteyksestä Helsingin rautatiease",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-69852",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Walking Man",
+      "credit": "Auguste Rodin (French, 1840–1917) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/69852",
+      "image_url": "https://www.artic.edu/iiif/2/636e99c5-65d7-19c3-c61f-753d6917bbed/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of bronze.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-195229175",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "DFC 0766 Empty well-lit street at night with a few stray dogs resting along the curb and trees lining the sidewalk.jpg",
+      "credit": "PattayaPatrol / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:DFC_0766_Empty_well-lit_street_at_night_with_a_few_stray_dogs_resting_along_the_curb_and_trees_lining_the_sidewalk.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/DFC_0766_Empty_well-lit_street_at_night_with_a_few_stray_dogs_resting_along_the_curb_and_trees_lining_the_sidewalk.jpg/960px-DFC_0766_Empty_well-lit_street_at_night_with_a_few_stray_dogs_resting_along_the_curb_and_trees_lining_the_sidewalk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5568,
+      "height": 3712,
+      "alt_suggestion": "This photo shows a quiet street at night illuminated by streetlights. The road is empty with no traffic, and the scene has a peaceful, still quality to it. On the left side of the street, there appear",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-189035867",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "DZ6 2616 A quiet dimly lit alley at night with streetlights casting long shadows along shuttered shopfronts.jpg",
+      "credit": "PattayaPatrol / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:DZ6_2616_A_quiet_dimly_lit_alley_at_night_with_streetlights_casting_long_shadows_along_shuttered_shopfronts.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/DZ6_2616_A_quiet_dimly_lit_alley_at_night_with_streetlights_casting_long_shadows_along_shuttered_shopfronts.jpg/960px-DZ6_2616_A_quiet_dimly_lit_alley_at_night_with_streetlights_casting_long_shadows_along_shuttered_shopfronts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6048,
+      "height": 4024,
+      "alt_suggestion": "This photo shows a quiet, narrow street at night. The street is illuminated by a bright light (possibly a street lamp or moonlight) visible in the upper right portion of the frame. On both sides of th",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "18-08-31-Aleksanterinkatu RRK8326.jpg",
+      "license": "GFDL 1.2",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "People walking on Westmoreland Street c1901.jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"people walking street pedestrians crowd\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"people walking street\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"people walking street pedestrians\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

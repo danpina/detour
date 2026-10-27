@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-94464698",
+  "alt": "A tidy unmade double bed with white bedding and a sleeping ginger cat in a bedroom.",
+  "fits": true,
+  "note": "Bedroom/sleep scene without people.",
+  "crop": {
+    "fx": 0.6,
+    "fy": 0.7,
+    "zoom": 1.7
+  }
+}

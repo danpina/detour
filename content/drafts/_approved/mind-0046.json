@@ -1,0 +1,120 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "False memories",
+    "angle": "Lost in the mall"
+  },
+  "created_at": "2026-10-26T20:29:12.584Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0046",
+    "interest": "mind",
+    "type": "story",
+    "title": "Lost in a mall that never happened",
+    "body": {
+      "panels": [
+        {
+          "text": "Can people remember something that never happened? Elizabeth Loftus and her student Jim Coan set out to test it."
+        },
+        {
+          "text": "Coan gave his brother a booklet of four childhood stories to remember over six days. One was false: getting lost in a shopping mall at around age five and being rescued by an elderly person."
+        },
+        {
+          "text": "His brother invented extra details, and at the end could not tell which story was false."
+        },
+        {
+          "text": "In a formal follow-up with 24 participants, Loftus and Jacqueline Pickrell found that about 25% reported remembering the false event. Loftus suggests it forms as the suggested event gets built into existing memories of going to the mall."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0046-p1",
+        "kind": "mcq",
+        "question": "About what share of participants reported remembering the false event in the formal follow-up?",
+        "options": [
+          "Almost none",
+          "About 25%",
+          "About 75%",
+          "Everyone"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0046-p2",
+        "kind": "tf",
+        "question": "True or false: the false event in the study was getting lost in a shopping mall.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Lost in the mall technique (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Lost_in_the_mall_technique"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A shopping mall interior, e.g. File:Melbourne Old Post Office (Shopping Mall Interior).jpg",
+    "keywords": [
+      "shopping mall interior",
+      "shopping centre",
+      "mall",
+      "arcade"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:08:00.140Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lost_in_the_mall_technique",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Loftus and student Jim Coan developed the technique (panel 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lost_in_the_mall_technique",
+        "quote": "It was first developed by Elizabeth Loftus and her undergraduate student Jim Coan"
+      },
+      {
+        "claim": "Booklet of four stories over six days; one false: lost in a mall at about 5, rescued by an elderly person (panel 2, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lost_in_the_mall_technique",
+        "quote": "it described Coan's brother getting lost in a shopping mall at around the age of 5, then being rescued by an elderly person",
+        "note": "Page: Coan enlisted his mother, sister and brother; the false story concerned the brother."
+      },
+      {
+        "claim": "Brother invented extra details (panel 3)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lost_in_the_mall_technique",
+        "quote": "Coan's brother unwittingly invented several additional details of the false narrative."
+      },
+      {
+        "claim": "Brother could not tell which story was false (panel 3)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lost_in_the_mall_technique",
+        "quote": "Coan's brother could not identify which one was false"
+      },
+      {
+        "claim": "Loftus and Pickrell formal study: 24 participants, about 25% reported remembering the false event (panel 4, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lost_in_the_mall_technique",
+        "quote": "a formal study with 24 participants, about 25% of whom reported remembering the false event."
+      },
+      {
+        "claim": "Loftus suggests the memory forms as the event is incorporated into existing memories of going to the mall (panel 4)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Lost_in_the_mall_technique",
+        "quote": "suggests that the false memory is formed as a result of the suggested event (being lost in a mall) being incorporated into already existing memories"
+      }
+    ],
+    "overall": "pass"
+  }
+}

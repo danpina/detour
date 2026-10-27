@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-50317420",
+  "alt": "Ornate facade of the Monte Carlo Casino with arched windows, marble columns and colourful mosaic frieze.",
+  "fits": true,
+  "note": "Building facade, no people or brands; crop on centre arch.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

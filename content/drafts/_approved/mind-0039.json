@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Habit loop",
+    "angle": "Cue, routine, reward"
+  },
+  "created_at": "2026-10-26T20:29:12.578Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0039",
+    "interest": "mind",
+    "type": "story",
+    "title": "The loop behind your habits",
+    "body": {
+      "panels": [
+        {
+          "text": "According to Charles Duhigg, every habit has a loop: a cue, a routine and a reward."
+        },
+        {
+          "text": "For example, a TV programme ends (cue), you go to the fridge (routine), you eat a snack (reward)."
+        },
+        {
+          "text": "A cue can be a prior action, a time of day, a location, or anything you associate with the habit."
+        },
+        {
+          "text": "The key to changing a habit is to identify the cue and modify the routine and reward. Old habits may come back when old cues return, which is called habit renewal."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0039-p1",
+        "kind": "mcq",
+        "question": "In the habit loop, what triggers the routine?",
+        "options": [
+          "The reward",
+          "The cue",
+          "Willpower",
+          "Boredom"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0039-p2",
+        "kind": "tf",
+        "question": "True or false: a habit that seems to have gone can re-emerge when its old cues are reintroduced.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Habit (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Habit"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "An everyday habit scene, e.g. File:Man brushing teeth.jpg",
+    "keywords": [
+      "toothbrushing",
+      "brushing teeth",
+      "morning routine",
+      "habit"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:07:59.756Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Habit",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "According to Duhigg every habit has a cue, routine and reward",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Habit",
+        "quote": "According to Charles Duhigg , there is a loop that includes a cue, routine, and reward for every habit."
+      },
+      {
+        "claim": "Example: TV programme ends (cue), fridge (routine), snack (reward)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Habit",
+        "quote": "TV program ends (cue), go to the fridge (routine), eat a snack (reward)."
+      },
+      {
+        "claim": "Cue can be prior action, time of day, location, or anything associated; cue triggers (panel 3, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Habit",
+        "quote": "The context cue can be a prior action, time of day, location, or anything that triggers the habitual behavior."
+      },
+      {
+        "claim": "Key to changing a habit is identify the cue and modify routine and reward",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Habit",
+        "quote": "The key to changing habits is to identify the cue and modify routine and reward."
+      },
+      {
+        "claim": "Old habits may re-emerge when cues return: habit renewal (panel 4, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Habit",
+        "quote": "it may re-emerge when environmental cues are reintroduced, a phenomenon known as habit renewal."
+      }
+    ],
+    "overall": "pass"
+  }
+}

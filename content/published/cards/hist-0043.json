@@ -1,0 +1,50 @@
+{
+  "id": "hist-0043",
+  "interest": "history",
+  "title": "A wall to stop people leaving",
+  "probes": [
+    {
+      "id": "hist-0043-p1",
+      "question": "What did the Berlin Wall mainly stop?",
+      "kind": "mcq",
+      "options": [
+        "Trade by sea",
+        "East Germans leaving for the West",
+        "Weather",
+        "Rail travel"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0043-p2",
+      "question": "True or false: before the wall, about 3.5 million East Germans had left East Germany.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Berlin Wall (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Berlin_Wall"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:27.181Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0043.webp",
+    "alt": "Black and white photo of the graffiti-covered Berlin Wall in April 1989 with the Brandenburg Gate behind it.",
+    "kind": "photo",
+    "credit": "Kuebi = Armin Kübelbeck / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Berlin_Wall_April_1989_56.JPG"
+  },
+  "body": {
+    "claim": "Before the Berlin Wall went up, 3.5 million East Germans had already left, and afterwards almost none could.",
+    "why": "The 3.5 million who defected were about 20 percent of East Germany's population. Many crossed from East Berlin into West Berlin and travelled on from there. Construction of the wall began on 13 August 1961, and its border ran 155 km around West Berlin. After 1961, deadly force prevented almost all such emigration."
+  }
+}

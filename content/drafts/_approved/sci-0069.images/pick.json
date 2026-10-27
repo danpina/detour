@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-71452798",
+ "alt": "A yellow laser beam shooting from an observatory dome into a starry sky toward the center of the Milky Way.",
+ "fits": true,
+ "note": "ESO Paranal laser guide star.",
+ "crop": {
+  "fx": 0.5,
+  "fy": 0.5,
+  "zoom": 1
+ }
+}

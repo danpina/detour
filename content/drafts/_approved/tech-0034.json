@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "DNS",
+    "angle": "The phone book of the internet"
+  },
+  "created_at": "2026-10-27T06:07:56.470Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0034",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "The internet's phone book",
+    "body": {
+      "claim": "When you type a website name, a system called DNS looks up its numeric address for you.",
+      "why": "Computers find each other by IP addresses, which are numbers like 192.0.2.172. DNS uses special servers to match a name you can remember, like mozilla.org, to the real address. Large sites run on multiple servers, so the address you get may vary depending on where you are."
+    },
+    "probes": [
+      {
+        "id": "tech-0034-p1",
+        "kind": "mcq",
+        "question": "What does DNS do?",
+        "options": [
+          "Encrypts web pages",
+          "Turns a website name into an IP address",
+          "Stores your passwords",
+          "Speeds up your Wi-Fi"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0034-p2",
+        "kind": "tf",
+        "question": "True or false: a website's IP address may vary depending on where you are.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "How the web works (MDN)",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"
+      },
+      {
+        "title": "Domain Name System (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Domain_Name_System"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:U of A Telephone and Directory.jpg (public domain) shows a telephone directory",
+    "keywords": [
+      "telephone directory",
+      "phone book",
+      "white pages"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.717Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Domain_Name_System",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "DNS looks up a numeric address for a website name",
+        "verdict": "pass",
+        "source_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "quote": "special servers that match up a web address you type into your browser"
+      },
+      {
+        "claim": "Computers use IP addresses that are numbers like 192.0.2.172",
+        "verdict": "pass",
+        "source_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "quote": "special numbers that look like this: 192.0.2.172"
+      },
+      {
+        "claim": "Title: DNS is the internet's phone book",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Domain_Name_System",
+        "quote": "serves as the phone book for the Internet by translating human-friendly computer hostnames into IP addresses"
+      },
+      {
+        "claim": "Large sites run on multiple servers",
+        "verdict": "pass",
+        "source_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "quote": "Large websites are commonly made available on multiple servers, so that they load efficiently for different users worldwide."
+      },
+      {
+        "claim": "The IP address may vary depending on where you are (probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "quote": "As a result, the IP address may vary depending on where you are."
+      }
+    ],
+    "overall": "pass"
+  }
+}

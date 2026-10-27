@@ -1,0 +1,60 @@
+{
+  "draft_id": "sci-0035",
+  "created_at": "2026-10-26T20:32:46.211Z",
+  "queries": [
+    "Van de Graaff generator electroscope static electricity",
+    "Van de Graaff generator",
+    "Van de Graaff generator electroscope"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-162569865",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Round Hill van de Graaff generator 1.png",
+      "credit": "John G. Trump / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Round_Hill_van_de_Graaff_generator_1.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Round_Hill_van_de_Graaff_generator_1.png/960px-Round_Hill_van_de_Graaff_generator_1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2530,
+      "height": 3296,
+      "alt_suggestion": "Electrical streamers emanate from the demonstration Van de Graaff generator inside a hanger at Round Hill in South Dartmouth, Massachusetts",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-162991703",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Robinson Trump van de Graaff HVEC accelerator.jpg",
+      "credit": "Physics Today Collection. Niels Bohr Library & Archives. Object ID: NBLA 308564 / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Robinson_Trump_van_de_Graaff_HVEC_accelerator.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Robinson_Trump_van_de_Graaff_HVEC_accelerator.jpg/960px-Robinson_Trump_van_de_Graaff_HVEC_accelerator.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2606,
+      "height": 3979,
+      "alt_suggestion": "Denis Robinson (left), John Trump and Robert Van de Graaff in front of an EN tandem accelerator at the High Voltage Engineering Corporation factory in Burlington, MA",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-57159274",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Van de Graaff Generator - Science City - Calcutta 1997 016.JPG",
+      "credit": "Biswarup Ganguly / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Van_de_Graaff_Generator_-_Science_City_-_Calcutta_1997_016.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Van_de_Graaff_Generator_-_Science_City_-_Calcutta_1997_016.JPG/960px-Van_de_Graaff_Generator_-_Science_City_-_Calcutta_1997_016.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5592,
+      "height": 3706,
+      "alt_suggestion": "The upcoming Science City at the Dhapa dumping ground in Calcutta, that was developed by the National Council of Science Museums (NCSM).",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Van de Graaff generator electroscope static electricity\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Van de Graaff generator\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Van de Graaff generator electroscope\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

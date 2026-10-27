@@ -1,0 +1,50 @@
+{
+  "id": "tech-0049",
+  "interest": "tech",
+  "title": "A transistor is a solid-state switch",
+  "probes": [
+    {
+      "id": "tech-0049-p1",
+      "question": "What controls the current through one pair of a transistor's terminals?",
+      "kind": "mcq",
+      "options": [
+        "A voltage or current applied to another pair of terminals",
+        "A tiny moving lever",
+        "Heat from the room",
+        "A magnet"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0049-p2",
+      "question": "True or false: a transistor can be used as an electrically controlled switch.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Transistor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Transistor"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:27.831Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0049.webp",
+    "alt": "A green circuit board packed with rows of small black transistors, resistors and a blue capacitor, with red digital clock displays on top.",
+    "kind": "photo",
+    "credit": "Wtshymanski / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Transistor_Clock.jpg"
+  },
+  "body": {
+    "claim": "A transistor can act as an electrically controlled switch.",
+    "why": "A voltage or current applied to one pair of a transistor's terminals controls the current through another pair. Because the control can be switched on and off, the transistor can act as a switch. The transistor was invented in 1947."
+  }
+}

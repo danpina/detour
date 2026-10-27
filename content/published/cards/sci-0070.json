@@ -1,0 +1,50 @@
+{
+  "id": "sci-0070",
+  "interest": "science",
+  "title": "Was 1900 a leap year?",
+  "probes": [
+    {
+      "id": "sci-0070-p1",
+      "question": "Years divisible by 100 are leap years only if they are also divisible by ____.",
+      "kind": "cloze",
+      "answer": "400",
+      "accept": []
+    },
+    {
+      "id": "sci-0070-p2",
+      "question": "True or false: 2100 will be a leap year.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Leap year (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Leap_year"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:33.642Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "sci-0070.webp",
+    "alt": "An open paper diary showing the week of Friday 29 February 2008 on a wooden table.",
+    "kind": "photo",
+    "credit": "Fluff / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Calendar-leapyeardate.jpg"
+  },
+  "body": {
+    "question": "Was 1900 a leap year?",
+    "options": [
+      "Yes, it is divisible by 4",
+      "No"
+    ],
+    "answer": 1,
+    "reveal": "No. A leap day every 4 years is slightly too much, because the year is about 365.2422 days, not 365.25. That adds up to about 3 extra days every 400 years. So years divisible by 100 skip the leap day unless they are also divisible by 400: 2000 was a leap year, 1900 was not."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "draft_id": "mind-0059",
+  "created_at": "2026-10-27T06:10:06.560Z",
+  "queries": [
+    "ice cubes cold water ice water",
+    "ice cubes",
+    "ice cubes cold water"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-74961246",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ice cubes on water.jpg",
+      "credit": "Cleiton Andrade Andrade from Alfenas, Brasil / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ice_cubes_on_water.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Ice_cubes_on_water.jpg/960px-Ice_cubes_on_water.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2176,
+      "height": 3264,
+      "alt_suggestion": "Ice cubes on liquid water.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-jsc2022e057886",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "ICE Cubes #9.2 – Maleth 2",
+      "credit": "Space Applications Services, NV/SA / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2022e057886",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2022e057886/jsc2022e057886~medium.jpg",
+      "alt_suggestion": "jsc2022e057886 (5/12/2022) --- ICE Cubes mission control centre at the Space Applications Services, Brussels, Belgium [credit: Space Applications Services, NV/SA]",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-16568",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Water Lilies",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16568",
+      "image_url": "https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of a pond seen up close spotted with thickly painted pink and white water lilies and a shadow across the top third of the picture.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-81389235",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ice cube (143761739).jpg",
+      "credit": "Matthew Bellemare / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ice_cube_(143761739).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Ice_cube_%28143761739%29.jpg/960px-Ice_cube_%28143761739%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1365,
+      "alt_suggestion": "500px provided description: 19 105 Ice [#water ,#cold ,#closeup ,#food ,#ice ,#105mm]",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-jsc2022e057890",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "ICE Cubes #9.2 – Maleth 2",
+      "credit": "Space Applications Services, NV/SA / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2022e057890",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2022e057890/jsc2022e057890~medium.jpg",
+      "alt_suggestion": "jsc2022e057890 (5/12/2022) --- MALETH II Biocube, based on the ICE Cubes platform by Space Applications Services, that takes Malta’s second space mission samples to the International Space Station. Th",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "American cookery (1915) (14784637535).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "American cookery (1915) (14784637535).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"ice cubes cold water ice water\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ice cubes\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"ice cubes cold water\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

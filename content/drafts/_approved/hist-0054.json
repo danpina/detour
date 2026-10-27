@@ -1,0 +1,100 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "A metre from the Earth itself",
+    "angle": "A metre from the Earth itself"
+  },
+  "created_at": "2026-10-26T20:31:39.964Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0054",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "A metre from the Earth itself",
+    "body": {
+      "question": "When revolutionary France built the metric system, how was the metre defined?",
+      "options": [
+        "The length of a pendulum that swings once a second",
+        "One ten-millionth of the distance from the North Pole to the Equator",
+        "The length of the king's arm"
+      ],
+      "answer": 1,
+      "reveal": "On 7 April 1795 the metre was defined in French law as one ten-millionth of the distance from the North Pole to the Equator, through Paris. A pendulum had been proposed as a standard, but pendulum lengths varied from place to place."
+    },
+    "probes": [
+      {
+        "id": "hist-0054-p1",
+        "kind": "tf",
+        "question": "True or false: the metre was defined as one ten-millionth of the distance from the North Pole to the Equator.",
+        "answer": true
+      },
+      {
+        "id": "hist-0054-p2",
+        "kind": "mcq",
+        "question": "Why was a pendulum length a poor standard for the metre?",
+        "options": [
+          "It was too long to carry around",
+          "Pendulum lengths varied between locations",
+          "Pendulums were not invented yet",
+          "It could not be written down"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "History of the metric system (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/History_of_the_metric_system"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Mètre-étalon Paris.JPG (CC BY-SA 3.0): one of the historical standard-metre markers (mètre étalon) at 36 rue de Vaugirard, Paris; also File:Standard Metre, Paris France, 36 rue Vaugirard, intalled March 26, 1791.jpg",
+    "keywords": [
+      "mètre étalon Paris",
+      "standard metre rue de Vaugirard",
+      "Chalgrin standard meter"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.652Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/History_of_the_metric_system",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "On 7 April 1795 the metre was defined in French law as one ten-millionth of the distance from the North Pole to the Equator through Paris (body, reveal, probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_the_metric_system",
+        "quote": "one ten-millionth of the distance between the North Pole and the Equator through Paris"
+      },
+      {
+        "claim": "Metric system formally defined in French law on 7 April 1795",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_the_metric_system",
+        "quote": "On 7 April 1795, the metric system was formally defined in French law."
+      },
+      {
+        "claim": "A pendulum had been proposed as a standard",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_the_metric_system",
+        "quote": "This gave rise to proposals to use its length as a standard unit."
+      },
+      {
+        "claim": "Pendulum lengths varied from place to place (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/History_of_the_metric_system",
+        "quote": "the pendulum lengths of calibrated clocks in different locations varied"
+      }
+    ],
+    "overall": "pass"
+  }
+}

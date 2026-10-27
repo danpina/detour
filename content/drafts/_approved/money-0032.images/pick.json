@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-195892367",
+  "alt": "Bunches of parsley, green onions and lettuce on a supermarket shelf with a 99 cent price label.",
+  "fits": true,
+  "note": "Grocery price label; no brand logos visible.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.55,
+    "zoom": 1
+  }
+}

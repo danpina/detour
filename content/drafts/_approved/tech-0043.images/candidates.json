@@ -1,0 +1,110 @@
+{
+  "draft_id": "tech-0043",
+  "created_at": "2026-10-27T06:11:36.865Z",
+  "queries": [
+    "data center server rack network cables",
+    "data center",
+    "data center server rack"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-180481432",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "EFTA00002518 - Server rack with multiple hard drives and network cables connected in a data center environment.jpg",
+      "credit": "Federal Bureau of Investigation / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:EFTA00002518_-_Server_rack_with_multiple_hard_drives_and_network_cables_connected_in_a_data_center_environment.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/EFTA00002518_-_Server_rack_with_multiple_hard_drives_and_network_cables_connected_in_a_data_center_environment.jpg/960px-EFTA00002518_-_Server_rack_with_multiple_hard_drives_and_network_cables_connected_in_a_data_center_environment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1152,
+      "height": 768,
+      "alt_suggestion": "Part of Epstein Files released by the DOJ on December 19 2025",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-A-31182",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Data Processing at Ames Research Center.",
+      "credit": "Don Richey / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/A-31182",
+      "image_url": "https://images-assets.nasa.gov/image/A-31182/A-31182~medium.jpg",
+      "alt_suggestion": "IBM 1401 Data Processing System at NASA Ames Research Center.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-181453",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Server",
+      "credit": "Designed by Lockwood de Forest (American, 1850–1932) Designed and assembled in New York Wood carved in Ahmedabad, India / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/181453",
+      "image_url": "https://www.artic.edu/iiif/2/58305eee-7c44-06ea-cb2f-e8516f81b8df/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of teak, ash or oak.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-180481776",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "EFTA00002629 - Server rack with multiple networking devices and cables connected showing a typical data center setup.jpg",
+      "credit": "Federal Bureau of Investigation / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:EFTA00002629_-_Server_rack_with_multiple_networking_devices_and_cables_connected_showing_a_typical_data_center_setup.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/EFTA00002629_-_Server_rack_with_multiple_networking_devices_and_cables_connected_showing_a_typical_data_center_setup.jpg/960px-EFTA00002629_-_Server_rack_with_multiple_networking_devices_and_cables_connected_showing_a_typical_data_center_setup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1152,
+      "height": 768,
+      "alt_suggestion": "Part of Epstein Files released by the DOJ on December 19 2025",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-A-31180",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Data Processing System at Ames Research Center.",
+      "credit": "Don Richey / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/A-31180",
+      "image_url": "https://images-assets.nasa.gov/image/A-31180/A-31180~medium.jpg",
+      "alt_suggestion": "Equipment: Data Processing and Data Reduction at the NASA Ames Research Center, EMC. IBM 7090 Data Processing System.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-145738210",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Server racks near the GBAR experiment.jpg",
+      "credit": "Unnerving duck / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Server_racks_near_the_GBAR_experiment.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Server_racks_near_the_GBAR_experiment.jpg/960px-Server_racks_near_the_GBAR_experiment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 4000,
+      "alt_suggestion": "Server racks near the GBAR experiment, in the antimatter factory building in CERN",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-17445617",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Front of server racks at NERSC.jpg",
+      "credit": "Derrick Coetzee from Berkeley, CA, USA / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Front_of_server_racks_at_NERSC.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Front_of_server_racks_at_NERSC.jpg/960px-Front_of_server_racks_at_NERSC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4288,
+      "height": 2848,
+      "alt_suggestion": "With overhead cable railing at top. CC0 waiver: To the extent possible under law, I waive all copyright and related or neighboring rights to this work.",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"data center server rack network cables\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"data center\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"data center server rack\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

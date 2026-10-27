@@ -1,0 +1,60 @@
+{
+  "id": "tech-0035",
+  "interest": "tech",
+  "title": "Who vouches for a website?",
+  "probes": [
+    {
+      "id": "tech-0035-p1",
+      "question": "What does your browser check about a site's certificate?",
+      "kind": "mcq",
+      "options": [
+        "That the site has a nice design",
+        "That a trusted authority signed it and it matches the site name",
+        "That the site is free",
+        "That the site is fast"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0035-p2",
+      "question": "True or false: HTTPS protects the communication from eavesdropping and tampering.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "HTTPS (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/HTTPS"
+    },
+    {
+      "title": "Transport Layer Security (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Transport_Layer_Security"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:54.326Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "tech-0035.webp",
+    "alt": "An old brass padlock stamped 'Secure Lock' photographed against a dark background.",
+    "kind": "photo",
+    "credit": "Science Museum Group Studio / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Brass_padlock,_inscribed_%22secure_lock%22.jpg"
+  },
+  "body": {
+    "question": "When you connect to a site over HTTPS, who signs the certificate that helps prove the site is who it says?",
+    "options": [
+      "The website signs it itself",
+      "A trusted third party signs it",
+      "Your internet provider signs it"
+    ],
+    "answer": 1,
+    "reveal": "HTTPS needs a trusted third party to sign the server's digital certificate. Your browser checks that the certificate matches the site's hostname and was signed by a trusted certificate authority. The connection is then encrypted against eavesdropping and tampering."
+  }
+}

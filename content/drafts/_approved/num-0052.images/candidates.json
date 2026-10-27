@@ -1,0 +1,98 @@
+{
+  "draft_id": "num-0052",
+  "created_at": "2026-10-27T06:11:23.739Z",
+  "queries": [
+    "two sisters sisters painting siblings",
+    "two sisters",
+    "two sisters sisters painting"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-6778337",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Copley-Col-Fitch-sisters-1800.jpg",
+      "credit": "John Singleton Copley / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Copley-Col-Fitch-sisters-1800.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Copley-Col-Fitch-sisters-1800.jpg/960px-Copley-Col-Fitch-sisters-1800.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 2255,
+      "alt_suggestion": "Col. Fitch is shown in army uniform with his horse, and one of his sisters is shown in neo-Classical pure white, while the other is in apparent mourning.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-14655",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Two Sisters (On the Terrace)",
+      "credit": "Pierre-Auguste Renoir (French, 1841–1919) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/14655",
+      "image_url": "https://www.artic.edu/iiif/2/3a608f55-d76e-fa96-d0b1-0789fbc48f1e/full/843,/0/default.jpg",
+      "alt_suggestion": "Impressionist painting of two girls on balcony, bright flower hat, knitting basket.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-91952340",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Portrait of the Three Egerton Sisters by Marcus Gheeraerts the younger.jpg",
+      "credit": "Marcus Gheeraerts the Younger / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_the_Three_Egerton_Sisters_by_Marcus_Gheeraerts_the_younger.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Portrait_of_the_Three_Egerton_Sisters_by_Marcus_Gheeraerts_the_younger.jpg/960px-Portrait_of_the_Three_Egerton_Sisters_by_Marcus_Gheeraerts_the_younger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1300,
+      "height": 1346,
+      "alt_suggestion": "Portrait of the Three Egerton Sisters by Marcus Gheeraerts the younger. The sisters are Elizabeth, aged 6; Vere, age 5; and Mary, age 3.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-60444",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Two Sisters",
+      "credit": "Ernst Ludwig Kirchner German, 1880-1938 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/60444",
+      "image_url": "https://www.artic.edu/iiif/2/58af868e-f8cf-cb55-62d5-f25b1816598a/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of etching, from a zinc plate, in olive-green on white wove paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-21620655",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Pedro II of Brazil and his sisters 1839.JPG",
+      "credit": "Adolphe Hastrel de Rivedoux / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pedro_II_of_Brazil_and_his_sisters_1839.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Pedro_II_of_Brazil_and_his_sisters_1839.JPG/960px-Pedro_II_of_Brazil_and_his_sisters_1839.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1032,
+      "height": 1232,
+      "alt_suggestion": "Watercolor painting depicts Emperor Pedro II of Brazil studying next to his sisters Januária and Francisca, c.1839",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-102324787",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Jeanne-Elisabeth Chaudet - Two sisters embracing.jpg",
+      "credit": "Jeanne-Élisabeth Chaudet / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jeanne-Elisabeth_Chaudet_-_Two_sisters_embracing.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Jeanne-Elisabeth_Chaudet_-_Two_sisters_embracing.jpg/960px-Jeanne-Elisabeth_Chaudet_-_Two_sisters_embracing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2657,
+      "height": 3200,
+      "alt_suggestion": "Two sisters embracing",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"two sisters sisters painting siblings\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"two sisters\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"two sisters sisters painting\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

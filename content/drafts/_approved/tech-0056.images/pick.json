@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-41652806",
+  "alt": "Glowing white nodes arranged in layers and joined by orange and green lines, depicting a neural network on a black background.",
+  "fits": true,
+  "note": "Clean neural net visual with no text.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.6
+  }
+}

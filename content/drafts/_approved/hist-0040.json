@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Neolithic Revolution",
+    "angle": "Agriculture arose in several places and changed how people lived"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0040",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "Where did farming begin?",
+    "body": {
+      "question": "Farming began in the Fertile Crescent roughly 10,000 years ago. Did it start there once and spread everywhere, or arise in several places?",
+      "options": [
+        "It started once and spread everywhere",
+        "It arose separately in several parts of the world"
+      ],
+      "answer": 1,
+      "reveal": "Domestication of plants and animals happened in separate places around the world, beginning about 11,700 years ago after the last Ice Age. In the Fertile Crescent it began around 10,000 to 8,000 BCE, and perhaps around 8000 BCE in Papua New Guinea. It turned small mobile groups of hunter-gatherers into settled villages and towns."
+    },
+    "probes": [
+      {
+        "id": "hist-0040-p1",
+        "kind": "mcq",
+        "question": "What did the Neolithic Revolution change about how people lived?",
+        "options": [
+          "Nomadic hunter-gatherers became settled societies in villages and towns",
+          "People stopped using tools",
+          "Cities were first built at sea",
+          "People moved from farms to caves"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0040-p2",
+        "kind": "tf",
+        "question": "True or false: farming was invented in one place and then spread to the entire world.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Neolithic Revolution (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Neolithic_Revolution"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Beginning of neolithic in levant 1 1 1 1.png is a diagram of the beginning of the Neolithic in the Levant (CC BY 4.0, landscape)",
+    "keywords": [
+      "Neolithic",
+      "Fertile Crescent",
+      "wheat domestication",
+      "Levant Neolithic"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.129Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Neolithic_Revolution",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Farming began in the Fertile Crescent roughly 10,000 years ago (question)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution",
+        "quote": "The Neolithic is characterized by fixed human settlements and the invention of agriculture from c. 10,000 BP",
+        "note": "Loose: page dates Fertile Crescent start 10,000-8,000 BCE (c. 10,000-12,000 years ago); 'roughly 10,000' is acceptable but reveal uses the BCE range."
+      },
+      {
+        "claim": "Domestication arose separately in several places (answer, p2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution",
+        "quote": "happened in separate locations worldwide, starting in the geological epoch of the Holocene 11,700 years ago, after the end of the last Ice Age"
+      },
+      {
+        "claim": "Fertile Crescent 10,000 to 8,000 BCE; perhaps around 8000 BCE in Papua New Guinea",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution",
+        "quote": "dated from 10,000 to 8,000 BCE in the Fertile Crescent , and perhaps 8000 BCE in the Kuk Early Agricultural Site of Papua New Guinea"
+      },
+      {
+        "claim": "It turned small mobile groups of hunter-gatherers into settled villages and towns (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution",
+        "quote": "into sedentary (non- nomadic ) societies based in built-up villages and towns"
+      }
+    ],
+    "overall": "pass"
+  }
+}

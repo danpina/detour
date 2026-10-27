@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0051",
+  "created_at": "2026-10-27T06:08:38.150Z",
+  "queries": [
+    "Scrabble tiles letters alphabet",
+    "Scrabble tiles",
+    "Scrabble tiles letters"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-99635742",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wooden srcabble tiles.jpg",
+      "credit": "WOKANDAPIX / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wooden_srcabble_tiles.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Wooden_srcabble_tiles.jpg/960px-Wooden_srcabble_tiles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3037,
+      "height": 2168,
+      "alt_suggestion": "wooden srcabble tiles",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-31892",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Alphabet",
+      "credit": "Lucas Kilian German, 1579-1637 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/31892",
+      "image_url": "https://www.artic.edu/iiif/2/bbce6294-5b62-1fa1-2be1-31f4ad5831d5/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of book with 24 etchings, bound in crimson levant with marbled endpapers, outer slip case.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-74019048",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wooden Block Letters Vision.jpg",
+      "credit": "WOKANDAPIX / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wooden_Block_Letters_Vision.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Wooden_Block_Letters_Vision.jpg/960px-Wooden_Block_Letters_Vision.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 1283,
+      "alt_suggestion": "Wooden Block Letters Vision Image",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-22653",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Letter B, from The Alphabet",
+      "credit": "Master E. S. German, active c. 1450-1467 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/22653",
+      "image_url": "https://www.artic.edu/iiif/2/6c711555-d6a5-ef4a-3b9a-30bae91b1858/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of engraving in black on ivory laid paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-125174487",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "AÖ.jpg",
+      "credit": "JIP / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A%C3%96.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/A%C3%96.jpg/960px-A%C3%96.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4608,
+      "height": 3456,
+      "alt_suggestion": "Two Scrabble tiles, A and Ö, left over at the end of a two-player game of Scrabble in Finnish. A and Ö are the first and last letters of the Finnish alphabet.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Scrabble tiles letters alphabet\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Scrabble tiles\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Scrabble tiles letters\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Base rates and the false positive paradox",
+    "angle": "Natural frequencies: count 1,000 drivers instead of juggling percentages"
+  },
+  "created_at": "2026-10-27T06:06:55.988Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0035",
+    "interest": "numbers",
+    "type": "guess_first",
+    "title": "Why a positive test is probably wrong",
+    "body": {
+      "question": "A breathalyzer wrongly flags 5% of sober drivers and never misses a drunk one. One driver in 1,000 is drunk. A random driver tests positive. How likely is it that they are drunk?",
+      "options": [
+        "About 95%",
+        "About 50%",
+        "About 2%",
+        "About 0.1%"
+      ],
+      "answer": 2,
+      "reveal": "About 2%. Picture 1,000 drivers: 1 is drunk and tests positive, while about 50 of the 999 sober drivers test positive too. So only around 1 positive in 51 is real. When something is rare, false alarms from the many outnumber true hits from the few."
+    },
+    "probes": [
+      {
+        "id": "num-0035-p1",
+        "kind": "tf",
+        "question": "True or false: when a condition is very rare, most positive results can still be false positives.",
+        "answer": true
+      },
+      {
+        "id": "num-0035-p2",
+        "kind": "mcq",
+        "question": "Besides a test's accuracy, what else decides how much a positive result means?",
+        "options": [
+          "The colour of the report",
+          "How common the condition is in the people tested",
+          "How many tests were run last year",
+          "Nothing else matters"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Base rate fallacy (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Base_rate_fallacy"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Breathalyzer study.jpg shows an airman blowing into a breath-alcohol tester",
+    "keywords": [
+      "breathalyzer",
+      "breath alcohol test",
+      "alcohol breath analyzer"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:39.993Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Base_rate_fallacy",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Breathalyzer wrongly flags 5% of sober drivers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Base_rate_fallacy",
+        "quote": "Imagine that a group of police officers have breathalyzers displaying false drunkenness in 5% of the cases in which the driver is sober"
+      },
+      {
+        "claim": "Never misses a drunk driver; one in 1,000 drivers is drunk",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Base_rate_fallacy",
+        "quote": "the breathalyzers never fail to detect a truly drunk person. One in a thousand drivers is driving drunk."
+      },
+      {
+        "claim": "Correct probability of being drunk after a positive test is about 2%, not 95%",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Base_rate_fallacy",
+        "quote": "Many would estimate the probability that the driver is drunk as high as 95%, but the correct probability is about 2%."
+      },
+      {
+        "claim": "Of 1,000 drivers 1 drunk true positive, about 50 of 999 sober false positives, about 1 in 51",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Base_rate_fallacy",
+        "quote": "999 drivers are not drunk, and among those drivers there are 5% false positive test results, so there are 49.95 false positive test results",
+        "note": "Verified by calculation: 0.05*999=49.95; 1/(1+49.95)=1/50.95, about 1 in 51 (1.96%)."
+      },
+      {
+        "claim": "Probe: when a condition is very rare, most positives can still be false (true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Base_rate_fallacy",
+        "quote": "This paradox describes situations where there are more false positive test results than true positives"
+      },
+      {
+        "claim": "Probe: how common the condition is (base rate) also decides what a positive means",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Base_rate_fallacy",
+        "quote": "is a type of fallacy in which people tend to ignore the base rate"
+      }
+    ],
+    "overall": "pass"
+  }
+}

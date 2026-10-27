@@ -1,0 +1,62 @@
+{
+  "id": "mind-0042",
+  "interest": "mind",
+  "title": "The willpower muscle that didn't replicate",
+  "probes": [
+    {
+      "id": "mind-0042-p1",
+      "question": "What is ego depletion?",
+      "kind": "mcq",
+      "options": [
+        "Having too high an opinion of yourself",
+        "The idea that self-control draws on a limited resource that can be used up",
+        "A memory disorder",
+        "A kind of sleep loss"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0042-p2",
+      "question": "True or false: a 2016 multi-lab replication failed to find evidence for ego depletion.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ego depletion (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ego_depletion"
+    }
+  ],
+  "difficulty": 5,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:21.607Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0042.webp",
+    "alt": "A barbell loaded with red weight plates rests on a rubber mat in a gym.",
+    "kind": "photo",
+    "credit": "Tomáš Pilík / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Olympic_barbell.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Ego depletion is the idea that self-control draws on mental resources that can be used up, leaving less for the next task."
+      },
+      {
+        "text": "Roy Baumeister and colleagues proposed that self-control works like a muscle that can tire. Later experiments seemed to support the model."
+      },
+      {
+        "text": "Then came a big test. In 2016, a multi-lab replication study with 2141 participants at two dozen labs, using one protocol, failed to find any evidence for ego depletion."
+      },
+      {
+        "text": "Baumeister and Vohs objected to the protocol used. A later 36-lab replication led by Vohs, with 3531 participants, also found no effect. The lesson: one famous result is not settled until independent labs reproduce it."
+      }
+    ]
+  }
+}

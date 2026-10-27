@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0035",
+  "created_at": "2026-10-27T06:10:28.896Z",
+  "queries": [
+    "padlock lock brass lock",
+    "padlock",
+    "padlock lock"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-120626925",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Brass padlock, inscribed \"secure lock\".jpg",
+      "credit": "Science Museum Group Studio / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brass_padlock,_inscribed_%22secure_lock%22.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Brass_padlock%2C_inscribed_%22secure_lock%22.jpg/960px-Brass_padlock%2C_inscribed_%22secure_lock%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1087,
+      "height": 1536,
+      "alt_suggestion": "Brass padlock, inscribed \"secure lock\".jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-879",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Landscape (The Lock)",
+      "credit": "Attributed to John Constable (English, 1776–1837) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/879",
+      "image_url": "https://www.artic.edu/iiif/2/ff3b5c8a-5b14-5c35-8775-3d021e92a381/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-175204113",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Fish like Brass lock with keys.jpg",
+      "credit": "Suyash.dwivedi / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fish_like_Brass_lock_with_keys.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Fish_like_Brass_lock_with_keys.jpg/960px-Fish_like_Brass_lock_with_keys.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2230,
+      "height": 3347,
+      "alt_suggestion": "Fish like Brass lock with keys",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-106231",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Dagger with Wheel-Lock Pistol",
+      "credit": "Italian / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/106231",
+      "image_url": "https://www.artic.edu/iiif/2/abdf2f5b-82f6-c640-0ebe-e8837096b6e0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of steel, wood, iron, brass, and copper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-89481647",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Closeup-photography-of-white-gate-with-brass-colored-padlock-846288.jpg",
+      "credit": "Bich Tran / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Closeup-photography-of-white-gate-with-brass-colored-padlock-846288.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Closeup-photography-of-white-gate-with-brass-colored-padlock-846288.jpg/960px-Closeup-photography-of-white-gate-with-brass-colored-padlock-846288.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4096,
+      "height": 2725,
+      "alt_suggestion": "Gatekeeping as a media practice is the governing of news content being released to the public.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"padlock lock brass lock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"padlock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"padlock lock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

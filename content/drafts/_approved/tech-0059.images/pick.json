@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-29901624",
+  "alt": "Two copies of the same photo of a green bird on a branch, the right one blurrier with blocky compression artifacts.",
+  "fits": true,
+  "note": "Shows lossy compression visually; JPEG compression example (Commons).",
+  "crop": {
+    "fx": 0.25,
+    "fy": 0.5,
+    "zoom": 1.1
+  }
+}

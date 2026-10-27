@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-19313130",
+  "alt": "A page from a reference book titled Equivalent Dates in the Julian and Gregorian Calendars, listing the day offsets between the two systems",
+  "fits": true,
+  "note": "Photo of a conversion table showing the 10-day jump of 1582; plain but accurate",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1.2
+  }
+}

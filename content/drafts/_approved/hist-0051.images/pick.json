@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-122870916",
+  "alt": "A late Uruk clay tablet with pressed round numerals and early pictographic signs recording goods, displayed in a museum case",
+  "fits": true,
+  "note": "Archaic Uruk accounting tablet, authentic artefact; crop to tablet",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.4
+  }
+}

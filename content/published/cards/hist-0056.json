@@ -1,0 +1,72 @@
+{
+  "id": "hist-0056",
+  "interest": "history",
+  "title": "The cow that gave us 'vaccine'",
+  "probes": [
+    {
+      "id": "hist-0056-p1",
+      "question": "What did Jenner use to protect people from smallpox?",
+      "kind": "mcq",
+      "options": [
+        "Material from the milder disease cowpox",
+        "Weakened plague bacteria",
+        "A herbal tea",
+        "Smoke from burning sulphur"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0056-p2",
+      "question": "The word 'vaccine' comes from a term meaning...",
+      "kind": "mcq",
+      "options": [
+        "Healing water",
+        "Shield against fever",
+        "Pustules of the cow",
+        "Doctor's needle"
+      ],
+      "answer": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Edward Jenner (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Edward_Jenner"
+    },
+    {
+      "title": "Smallpox vaccine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Smallpox_vaccine"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:31:21.001Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0056.webp",
+    "alt": "A 19th-century oil painting of Edward Jenner vaccinating a young child held by its mother in a cottage interior",
+    "kind": "artwork",
+    "credit": "Eugène Ernest Hillemacher / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029093.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In Edward Jenner's day, smallpox killed around 10% of the global population."
+      },
+      {
+        "text": "Jenner suspected that cowpox, a much milder disease, protected people from smallpox."
+      },
+      {
+        "text": "On 14 May 1796 he tested the idea on James Phipps, the eight-year-old son of his gardener, using pus from cowpox blisters on the hands of a milkmaid named Sarah Nelmes."
+      },
+      {
+        "text": "Jenner called the cowpox variolae vaccinae, 'pustules of the cow'. That is where the words vaccine and vaccination come from. His 1798 Inquiry described how cowpox protected against smallpox."
+      }
+    ]
+  }
+}

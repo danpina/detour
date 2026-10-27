@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Hedonic adaptation",
+    "angle": "The hedonic treadmill"
+  },
+  "created_at": "2026-10-27T06:06:56.046Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0060",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Why new things stop feeling new",
+    "body": {
+      "claim": "We tend to drift back toward a baseline level of happiness, though not completely.",
+      "why": "The hedonic treadmill is the tendency to keep a fairly stable baseline of happiness despite external events. In a 1978 study of 22 lottery winners and 29 paraplegics, the lottery winners reported being similarly happy before and after winning. Later large panel studies found that divorce, a spouse's death, unemployment and disability do change long-term well-being, even though some adaptation occurs."
+    },
+    "probes": [
+      {
+        "id": "mind-0060-p1",
+        "kind": "mcq",
+        "question": "What did the lottery winners in the 1978 study report?",
+        "options": [
+          "Much more happiness than before",
+          "Much less happiness than before",
+          "Being similarly happy before and after",
+          "They would not answer"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "mind-0060-p2",
+        "kind": "tf",
+        "question": "True or false: large panel studies found that people fully adapt to every life event.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hedonic treadmill (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hedonic_treadmill"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Exercise Treadmill Convey Motion.jpg shows a person running on an exercise treadmill",
+    "keywords": [
+      "treadmill",
+      "running",
+      "gym",
+      "exercise"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.175Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hedonic_treadmill",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Tendency to keep a fairly stable baseline of happiness despite external events",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hedonic_treadmill",
+        "quote": "describing the tendency of people to keep a fairly stable baseline level of happiness despite external events"
+      },
+      {
+        "claim": "We drift back toward baseline",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hedonic_treadmill",
+        "quote": "the conjecture that humans quickly return to a relatively stable level of happiness",
+        "note": "Page calls it a conjecture/theory; card's 'tend to' wording is compatible."
+      },
+      {
+        "claim": "1978 study of 22 lottery winners and 29 paraplegics",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hedonic_treadmill",
+        "quote": "researchers interviewed 22 lottery winners and 29 paraplegics to determine their change in happiness levels"
+      },
+      {
+        "claim": "Lottery winners reported being similarly happy before and after (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hedonic_treadmill",
+        "quote": "The lottery winners reported being similarly happy before and after the event"
+      },
+      {
+        "claim": "Large panel studies: divorce, spouse's death, unemployment, disability change long-term well-being, though some adaptation occurs (probe 2; 'not completely')",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hedonic_treadmill",
+        "quote": "divorce, death of a spouse, unemployment, disability, and similar events have been shown to change long-term subjective well-being, even though some adaptation does occur"
+      }
+    ],
+    "overall": "pass"
+  }
+}

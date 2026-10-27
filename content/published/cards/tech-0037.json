@@ -1,0 +1,62 @@
+{
+  "id": "tech-0037",
+  "interest": "tech",
+  "title": "Messages even the app cannot read",
+  "probes": [
+    {
+      "id": "tech-0037-p1",
+      "question": "In end-to-end encryption, who can decrypt a message?",
+      "kind": "mcq",
+      "options": [
+        "The service provider too",
+        "Only the sender and recipient",
+        "Anyone on the same Wi-Fi",
+        "The internet provider"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0037-p2",
+      "question": "True or false: an eavesdropper may try to impersonate the recipient by substituting their own public key.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "End-to-end encryption (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/End-to-end_encryption"
+    }
+  ],
+  "difficulty": 5,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:59.123Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0037.webp",
+    "alt": "The corner of a dark smartphone screen showing the time 10:29 and a battery icon.",
+    "kind": "photo",
+    "credit": "Skitterphoto / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Smartphone_display_screen.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In many chat systems, messages pass through intermediaries and are stored by a service provider. Even if encrypted, they are only encrypted in transit."
+      },
+      {
+        "text": "End-to-end encryption changes that. Messages are encrypted on the sender's device so they can be decoded only by the recipient's device."
+      },
+      {
+        "text": "So no third party, including the service provider, has the means to decrypt them. WhatsApp, iMessage and Signal use it for chat messages."
+      },
+      {
+        "text": "The weak spot is not the maths. An eavesdropper may impersonate the recipient by substituting their own public key."
+      }
+    ]
+  }
+}

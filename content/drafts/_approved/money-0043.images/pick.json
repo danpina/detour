@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-2181876",
+  "alt": "The sandstone facade of the Frankfurt Stock Exchange building with statues, columns and a street clock.",
+  "fits": true,
+  "note": "Exchange building; two pedestrians only incidental.",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

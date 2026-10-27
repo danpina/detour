@@ -1,0 +1,76 @@
+{
+  "id": "hist-0053",
+  "interest": "history",
+  "title": "A clock that found the way",
+  "probes": [
+    {
+      "id": "hist-0053-p1",
+      "question": "A difference of how many degrees of longitude equals one hour of local time?",
+      "kind": "mcq",
+      "options": [
+        "5 degrees",
+        "15 degrees",
+        "30 degrees",
+        "60 degrees"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0053-p2",
+      "question": "To find longitude at sea, a navigator compares local time with...",
+      "kind": "mcq",
+      "options": [
+        "The time at a reference place such as Greenwich",
+        "The time of the last port visited",
+        "The length of the day",
+        "The phase of the Moon"
+      ],
+      "answer": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Longitude (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Longitude"
+    },
+    {
+      "title": "Marine chronometer (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Marine_chronometer"
+    },
+    {
+      "title": "Longitude rewards (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Longitude_prize"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:31:14.993Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0053.webp",
+    "alt": "The engraved gilt brass movement of John Harrison's H4 marine timekeeper on a clear display stand",
+    "kind": "photo",
+    "credit": "Photograph by Mike Peel (www.mikepeel.net). / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Harrison_H4_clockwork_2.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "The Earth turns, so local time changes with longitude. A difference of 15 degrees of longitude is a one-hour difference in local time."
+      },
+      {
+        "text": "So a ship that knew the time at a fixed place, such as Greenwich, could compare it with local time from the Sun and work out how far east or west it was."
+      },
+      {
+        "text": "The catch: pendulum clocks do not work well in an ocean swell. In 1714 Britain offered prizes of £10,000 to £20,000 for a practical method."
+      },
+      {
+        "text": "John Harrison, a Yorkshire carpenter, built a sea clock called H4, which looked like a large pocket watch. He received payments totalling £23,065, though the £20,000 prize was never awarded in one lump sum."
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "How a stock exchange matches orders",
+    "angle": "The order book and the matching engine"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0055",
+    "interest": "money",
+    "type": "guess_first",
+    "title": "How an exchange pairs buyers and sellers",
+    "body": {
+      "question": "A stock exchange keeps a list of bids (buy orders) and asks (sell orders). When can a buy order be filled at once?",
+      "options": [
+        "When a broker approves it",
+        "When its bid is equal to or higher than the lowest ask",
+        "Only when the market closes"
+      ],
+      "answer": 1,
+      "reveal": "When a bid is equal to or higher than the lowest ask, those orders can be fulfilled immediately. The highest bid and the lowest ask are the top of the book, and the gap between them is called the bid-ask spread."
+    },
+    "probes": [
+      {
+        "id": "money-0055-p1",
+        "kind": "cloze",
+        "question": "The difference between the highest bid and the lowest ask is called the bid-ask ____.",
+        "answer": "spread",
+        "accept": []
+      },
+      {
+        "id": "money-0055-p2",
+        "kind": "tf",
+        "question": "True or false: a matching engine uses the order book to decide which orders can be fully or partially executed.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Order book (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Order_book"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Frankfurt Stock Exchange (Ank Kumar) 04.jpg shows the Frankfurt Stock Exchange trading hall with price boards",
+    "keywords": [
+      "Frankfurt Stock Exchange",
+      "stock exchange trading floor",
+      "stock exchange"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.980Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Order_book",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "An exchange keeps a list of bids (buy orders) and asks (sell orders)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Order_book",
+        "quote": "an order book contains the list of buy orders and the list of sell orders"
+      },
+      {
+        "claim": "When a bid is equal to or higher than the lowest ask, those orders can be fulfilled immediately (question answer and reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Order_book",
+        "quote": "When there are orders where the bid price is equal or higher than the lowest ask, those orders can be immediately fulfilled"
+      },
+      {
+        "claim": "The highest bid and lowest ask are the top of the book",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Order_book",
+        "quote": "The highest bid and the lowest ask are referred to as the top of the book."
+      },
+      {
+        "claim": "The gap between them is the bid-ask spread (cloze p1: spread)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Order_book",
+        "quote": "The difference between the highest bid and the lowest ask is called the bid-ask spread"
+      },
+      {
+        "claim": "Probe p2: a matching engine uses the order book to decide which orders can be fully or partially executed",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Order_book",
+        "quote": "A matching engine uses the book to determine which orders can be fully or partially executed."
+      }
+    ],
+    "overall": "pass"
+  }
+}

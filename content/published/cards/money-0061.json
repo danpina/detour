@@ -1,0 +1,50 @@
+{
+  "id": "money-0061",
+  "interest": "money",
+  "title": "The basket behind inflation",
+  "probes": [
+    {
+      "id": "money-0061-p1",
+      "question": "A consumer price index is a weighted average price of what?",
+      "kind": "mcq",
+      "options": [
+        "Company profits",
+        "A market basket of consumer goods and services",
+        "Wages across the country",
+        "Stock prices"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0061-p2",
+      "question": "True or false: the items in the basket are updated periodically to reflect changes in spending habits.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Consumer price index (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Consumer_price_index"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:06.977Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0061.webp",
+    "alt": "A grocery shelf stacked with tomatoes, avocados and other produce, each with handwritten price labels.",
+    "kind": "photo",
+    "credit": "Acabashi / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Supermarket_pavement_display_West_Green_Road_Tottenham_London_England_02.jpg"
+  },
+  "body": {
+    "claim": "A consumer price index tracks the price of a shopping \"basket\" of what households buy.",
+    "why": "It is the weighted average price of a market basket of consumer goods and services. Prices are collected, often monthly, from a sample of shops and services. The items in the basket are updated periodically to reflect changes in consumer spending habits."
+  }
+}

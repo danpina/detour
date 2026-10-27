@@ -1,0 +1,105 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Exponential growth",
+    "angle": "The water lily riddle: doubling looks harmless until the last day"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0054",
+    "interest": "numbers",
+    "type": "story",
+    "title": "The lily pond riddle",
+    "body": {
+      "panels": [
+        {
+          "text": "A riddle French children are given: a water lily grows in a pond, and the plant doubles in size every day."
+        },
+        {
+          "text": "Left alone, it would smother the pond in 30 days, killing the other living things in the water."
+        },
+        {
+          "text": "Day after day the plant looks small, so people decide not to worry until it covers half the pond."
+        },
+        {
+          "text": "Which day is that? The 29th, which leaves only one day to save the pond. Doubling feels slow, then suddenly it is not."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0054-p1",
+        "kind": "mcq",
+        "question": "A lily doubles every day and covers half the pond on day 29. When is the pond fully covered?",
+        "options": [
+          "Day 59",
+          "Day 45",
+          "Day 30",
+          "Day 31"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0054-p2",
+        "kind": "tf",
+        "question": "True or false: with daily doubling, the lily covers a quarter of the pond the day before it covers half.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Exponential growth (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Exponential_growth"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Detail of \"The Water-Lily Pond\" by Claude Monet 02.jpg, a painting of a pond covered with water lilies",
+    "keywords": [
+      "water lily pond",
+      "Monet water lily",
+      "water lilies pond"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.518Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Exponential_growth",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "French children are given a water lily riddle: the plant doubles every day and would smother the pond in 30 days",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Exponential_growth",
+        "quote": "The plant doubles in size every day and, if left alone, it would smother the pond in 30 days killing all the other living things in the water."
+      },
+      {
+        "claim": "Because the growth looks small, nobody worries until it covers half the pond; that is day 29, one day left",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Exponential_growth",
+        "quote": "The 29th day, leaving only one day to save the pond."
+      },
+      {
+        "claim": "Doubling feels slow, then suddenly it is not",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Exponential_growth",
+        "quote": "the apparent suddenness with which an exponentially growing quantity approaches a fixed limit"
+      },
+      {
+        "claim": "Probe: half covered on day 29 means full on day 30; the day before half it is a quarter",
+        "verdict": "pass",
+        "note": "Verified by calculation: doubling daily: day 30 = 2 x day 29 = full; day 28 = half of day 29 = a quarter."
+      }
+    ],
+    "overall": "pass"
+  }
+}

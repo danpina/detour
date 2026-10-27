@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Binary",
+    "angle": "Why almost all computers use binary"
+  },
+  "created_at": "2026-10-26T20:28:21.551Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0062",
+    "interest": "tech",
+    "type": "guess_first",
+    "title": "Why computers count in twos",
+    "body": {
+      "question": "Almost every modern computer represents numbers using only 0 and 1. According to the usual explanation, why?",
+      "options": [
+        "Decimal digits are patented",
+        "It is simple to build with logic gates, and resists noise",
+        "Binary numbers are always shorter",
+        "Early users preferred it"
+      ],
+      "answer": 1,
+      "reveal": "Binary has just two symbols, 0 and 1, and each digit is called a bit. It is straightforward to implement in digital circuitry using logic gates and is robust against noise. Gottfried Leibniz is credited with inventing the modern binary system."
+    },
+    "probes": [
+      {
+        "id": "tech-0062-p1",
+        "kind": "mcq",
+        "question": "How many symbols does the binary system use?",
+        "options": [
+          "Eight",
+          "Ten",
+          "Sixteen",
+          "Two"
+        ],
+        "answer": 3
+      },
+      {
+        "id": "tech-0062-p2",
+        "kind": "tf",
+        "question": "True or false: each binary digit is called a bit.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Binary number (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Binary_number"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Binary Code.jpg or File:Binary-code.png (CC BY-SA) show rows of binary digits",
+    "keywords": [
+      "binary code",
+      "binary digits",
+      "binary numbers",
+      "0 and 1"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.388Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Binary_number",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Binary uses only two symbols, 0 and 1 (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Binary_number",
+        "quote": "uses only two symbols for the natural numbers"
+      },
+      {
+        "claim": "Each digit is called a bit (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Binary_number",
+        "quote": "Each digit is referred to as a bit"
+      },
+      {
+        "claim": "Easy to implement with logic gates and noise immune; used by almost all modern computers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Binary_number",
+        "quote": "Because of its straightforward implementation in digital electronic circuitry using logic gates"
+      },
+      {
+        "claim": "Leibniz is credited with inventing the modern binary system",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Binary_number",
+        "quote": "decades later by Gottfried Leibniz , who is credited for the invention"
+      }
+    ],
+    "overall": "pass"
+  }
+}

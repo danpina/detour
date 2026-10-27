@@ -1,0 +1,48 @@
+{
+  "id": "mind-0041",
+  "interest": "mind",
+  "title": "If this happens, I'll do that",
+  "probes": [
+    {
+      "id": "mind-0041-p1",
+      "question": "An if-then plan links a future ____ to a specific action.",
+      "kind": "cloze",
+      "answer": "situation",
+      "accept": [
+        "cue",
+        "moment"
+      ]
+    },
+    {
+      "id": "mind-0041-p2",
+      "question": "True or false: a goal intention ('I want to reach X') is more specific than an if-then plan.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Implementation intention (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Implementation_intention"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:20.481Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0041.webp",
+    "alt": "An open dated diary on a wooden desk with coloured pencils, glasses and a nail polish bottle.",
+    "kind": "photo",
+    "credit": "Shixart1985 / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Working_on_a_planning_session_with_stationery_items,_notebook,_and_colorful_pencils_on_a_wooden_desk.jpg"
+  },
+  "body": {
+    "claim": "A plan shaped like 'if X happens, I will do Y' can make you more likely to reach a goal.",
+    "why": "Psychologist Peter Gollwitzer introduced these 'implementation intentions' in 1999. A goal says what you want. An if-then plan adds the when, where and how, linking a future situation to a specific action. Studies show a higher probability of successful goal attainment."
+  }
+}

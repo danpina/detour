@@ -1,0 +1,97 @@
+{
+  "draft_id": "money-0044",
+  "created_at": "2026-10-26T20:31:18.750Z",
+  "queries": [
+    "stock ticker Edison stock ticker ticker machine",
+    "stock ticker",
+    "stock ticker Edison stock ticker"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-44515836",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Digital-financial-led-stock-ticker-tape-photonplay.jpg",
+      "credit": "Photonplay Systems Inc / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Digital-financial-led-stock-ticker-tape-photonplay.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Digital-financial-led-stock-ticker-tape-photonplay.jpg/960px-Digital-financial-led-stock-ticker-tape-photonplay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5472,
+      "height": 3080,
+      "alt_suggestion": "Stock ticker installed by Photonplay Systems Inc at University of tecnologico de Monterrey, Mexico",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-156538",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Chicago Stock Exchange Trading Room: Reconstruction at the Art Institute of Chicago",
+      "credit": "Adler & Sullivan, original architects; American, 1883-1896 Vinci & Kenny, reconstruction architects; American, 1970-1977 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/156538",
+      "image_url": "https://www.artic.edu/iiif/2/47b28b55-ced6-502d-f111-fbe0033f8dc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A grand, double-height room with wood paneling, stenciled wall patterns, four hexagonal columns, and an interior balcony with guardrail at left.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-166925105",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Thomas Edison stock ticker NMAH-JN2014-3625.jpg",
+      "credit": "Jaclyn Nash (photographer) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Thomas_Edison_stock_ticker_NMAH-JN2014-3625.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Thomas_Edison_stock_ticker_NMAH-JN2014-3625.jpg/960px-Thomas_Edison_stock_ticker_NMAH-JN2014-3625.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3070,
+      "height": 3798,
+      "alt_suggestion": "Until the decade of the 1990s, when traders adopted the Internet, tickers provided vital stock market information to businesses and news organizations. Stock tickers were a special type of telegraph r",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-12765",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Elevator T-Plate from the Chicago Stock Exchange",
+      "credit": "Adler & Sullivan, architects; American, 1883-1896 Louis H. Sullivan, designer; American, 1856-1924 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12765",
+      "image_url": "https://www.artic.edu/iiif/2/4dc63cce-a3c0-9976-8e13-e7aac9e7df6a/full/843,/0/default.jpg",
+      "alt_suggestion": "A T-shaped architectural fragment with ornate geometric patterning consisting of repeating ellipses and some foliage detail.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-58276541",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dumping Ticker Tape (4691901446).jpg",
+      "credit": "vxla from Chicago, US / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dumping_Ticker_Tape_(4691901446).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Dumping_Ticker_Tape_%284691901446%29.jpg/960px-Dumping_Ticker_Tape_%284691901446%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4288,
+      "height": 2848,
+      "alt_suggestion": "Dumping Ticker Tape",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "The great American book of biography (1896) (14749285312).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The great American book of biography (1896) (14749285312).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"stock ticker Edison stock ticker ticker machine\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"stock ticker\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"stock ticker Edison stock ticker\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

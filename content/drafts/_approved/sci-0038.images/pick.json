@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-64476215",
+  "alt": "Close-up of a cable cut open to show three insulated wires, blue, green and brown, with bare copper conductors at the tips.",
+  "fits": true,
+  "note": "Copper conductors clearly visible.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

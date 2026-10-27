@@ -1,0 +1,56 @@
+{
+  "id": "num-0070",
+  "interest": "numbers",
+  "title": "Are all infinities the same size?",
+  "probes": [
+    {
+      "id": "num-0070-p1",
+      "question": "True or false: the even numbers can be matched one-to-one with the natural numbers.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "num-0070-p2",
+      "question": "What is a set called if it cannot be put into one-to-one correspondence with the natural numbers?",
+      "kind": "mcq",
+      "options": [
+        "Finite",
+        "Uncountable",
+        "Empty",
+        "Prime"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cantor's diagonal argument (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:43.451Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0070.webp",
+    "alt": "Black-and-white portrait of the mathematician Georg Cantor, a bald man with a grey beard in a dark jacket.",
+    "kind": "photo",
+    "credit": "https://www.math.cmu.edu/~rcristof/pdf/Cantor_pubblicato.pdf and they had it from https://photos.aip.org/history-programs/niels-bohr-library/photos/cantor-georg",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Georg_Cantor_(Portr%C3%A4t).jpg"
+  },
+  "body": {
+    "question": "There are infinitely many whole numbers and infinitely many real numbers. Is one infinity bigger than the other?",
+    "options": [
+      "No, infinity is infinity",
+      "Yes, the real numbers are a bigger infinity",
+      "Yes, the whole numbers are bigger"
+    ],
+    "answer": 1,
+    "reveal": "Cantor's diagonal argument shows there are infinite sets that cannot be matched one-to-one with the natural numbers. Such sets are called uncountable. Meanwhile the even numbers can be matched with all natural numbers by doubling, so an infinite set can have the same size as a part of itself."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "What an index fund is",
+    "angle": "Index funds replicate an index; low costs"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0037",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "An index fund copies a list",
+    "body": {
+      "claim": "An index fund doesn't pick stocks. It holds what an index holds, in the same proportions.",
+      "why": "The aim is to match an index's performance, before fees and expenses, so there is no manager hunting for winners. Because the target index is a known quantity, it costs less to run than an actively managed fund. Fees still matter, since they are taken from what the fund earns."
+    },
+    "probes": [
+      {
+        "id": "money-0037-p1",
+        "kind": "mcq",
+        "question": "How does an index fund decide what to hold?",
+        "options": [
+          "A manager picks the best stocks",
+          "It copies an index",
+          "It holds only cash"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0037-p2",
+        "kind": "tf",
+        "question": "True or false: index funds use passive management.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Index fund (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Index_fund"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Philippine-stock-market-board.jpg shows a stock market board listing many companies",
+    "keywords": [
+      "stock market board",
+      "stock board",
+      "stock exchange board",
+      "market board"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.823Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Index_fund",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Index fund holds what the index holds in the same proportions",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Index_fund",
+        "quote": "holding the same securities as the index in the same proportions"
+      },
+      {
+        "claim": "It does not pick stocks (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Index_fund",
+        "quote": "they merely mirror an index and do not use stock picking"
+      },
+      {
+        "claim": "Aim is to match index performance before fees and expenses; fees still reduce what the fund earns",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Index_fund",
+        "quote": "replicating, before fees and expenses, the performance of a stock market index"
+      },
+      {
+        "claim": "Cheaper to run because target index is a known quantity",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Index_fund",
+        "quote": "Because the composition of a target index is a known quantity, relative to actively managed funds, it costs less to run an index fund."
+      },
+      {
+        "claim": "Index funds use passive management (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Index_fund",
+        "quote": "Index funds use passive management"
+      }
+    ],
+    "overall": "pass"
+  }
+}

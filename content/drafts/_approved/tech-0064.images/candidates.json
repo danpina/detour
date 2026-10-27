@@ -1,0 +1,72 @@
+{
+  "draft_id": "tech-0064",
+  "created_at": "2026-10-26T20:30:50.309Z",
+  "queries": [
+    "Tux Linux penguin Linux penguin Tux mascot",
+    "Tux Linux penguin",
+    "Tux Linux penguin Linux penguin"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-119275999",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Linux mascot tux.png",
+      "credit": "OpenClipart-Vectors from Pixabay. Based on Tux design by Larry Ewing (lewing@isc.tamu.edu) and The GIMP. / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Linux_mascot_tux.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Linux_mascot_tux.png/960px-Linux_mascot_tux.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1057,
+      "height": 1280,
+      "alt_suggestion": "Tux, the linux mascot which is a penguin.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-91201",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Penguin Vessel",
+      "credit": "Ceramist unknown (Nazca) South coast, Peru / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/91201",
+      "image_url": "https://www.artic.edu/iiif/2/73910d4a-e0a1-32c3-0203-909b57a1aa48/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of earthenware and slip.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-152664073",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "2023-11-12 Linux-dev-fix-my-styluses by-David-Revoy.jpg",
+      "credit": "David Revoy / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2023-11-12_Linux-dev-fix-my-styluses_by-David-Revoy.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/2023-11-12_Linux-dev-fix-my-styluses_by-David-Revoy.jpg/960px-2023-11-12_Linux-dev-fix-my-styluses_by-David-Revoy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3834,
+      "height": 1775,
+      "alt_suggestion": "Linux mascot fixing a pen by David Revoy",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-82084002",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Tux, the Linux penguin I - Thumbnail.jpg",
+      "credit": "Renato.pierri / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tux,_the_Linux_penguin_I_-_Thumbnail.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Tux%2C_the_Linux_penguin_I_-_Thumbnail.jpg/960px-Tux%2C_the_Linux_penguin_I_-_Thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1046,
+      "height": 1046,
+      "alt_suggestion": "Tux, the Linux penguin I. It is a gift that was given to IBMers from Brazil. There is a video about its refurbishing process: Search by \"Reformando o Tux da IBM\"",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Tux Linux penguin Linux penguin Tux mascot\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Tux Linux penguin\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Tux Linux penguin Linux penguin\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

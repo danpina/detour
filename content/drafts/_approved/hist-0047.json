@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The end of smallpox",
+    "angle": "The only human disease eradicated so far"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0047",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "The one disease we erased",
+    "body": {
+      "claim": "Smallpox is the only human disease that has ever been eradicated.",
+      "why": "The last naturally occurring case was diagnosed in October 1977, and the World Health Organization certified global eradication in 1980. As recently as 1967, 15 million cases occurred a year, and the WHO stepped up its efforts that year. The key tool was the vaccine, introduced in its modern form by Edward Jenner in 1796, and the successful vaccination campaigns that followed."
+    },
+    "probes": [
+      {
+        "id": "hist-0047-p1",
+        "kind": "mcq",
+        "question": "Which tool eradicated smallpox?",
+        "options": [
+          "Antibiotics",
+          "Vaccination campaigns",
+          "Mosquito nets",
+          "Quarantine alone"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0047-p2",
+        "kind": "tf",
+        "question": "True or false: the WHO certified the global eradication of smallpox in 1980.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Smallpox (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Smallpox"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Poster for vaccination against smallpox.jpg shows a vaccination poster (public domain, portrait)",
+    "keywords": [
+      "smallpox vaccination",
+      "smallpox poster",
+      "smallpox eradication",
+      "Jenner vaccine"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.137Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Smallpox",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Smallpox is the only human disease eradicated (title, claim)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Smallpox",
+        "quote": "making smallpox the only human disease to have been eradicated"
+      },
+      {
+        "claim": "Last natural case October 1977; WHO certified eradication in 1980 (p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Smallpox",
+        "quote": "The last naturally occurring case was diagnosed in October 1977, and the World Health Organization certified the global eradication of the disease in 1980"
+      },
+      {
+        "claim": "As recently as 1967, 15 million cases a year",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Smallpox",
+        "quote": "As recently as 1967, 15 million cases occurred a year"
+      },
+      {
+        "claim": "WHO stepped up efforts in 1967",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Smallpox",
+        "quote": "In 1967, the World Health Organization intensified efforts to eliminate the disease"
+      },
+      {
+        "claim": "Edward Jenner introduced the modern vaccine in 1796",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Smallpox",
+        "quote": "In 1796, Edward Jenner introduced the modern smallpox vaccine"
+      },
+      {
+        "claim": "Vaccination campaigns eradicated smallpox (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Smallpox",
+        "quote": "the World Health Organization (WHO) conducted a global vaccination campaign that eradicated smallpox"
+      }
+    ],
+    "overall": "pass"
+  }
+}

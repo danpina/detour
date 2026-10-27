@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0039",
+  "created_at": "2026-10-27T06:07:54.500Z",
+  "queries": [
+    "Peace of Westphalia Ter Borch Munster 1648 Westphalian peace",
+    "Peace of Westphalia",
+    "Peace of Westphalia Ter Borch Munster 1648"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-337672",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Westfaelischer Friede in Muenster (Gerard Terborch 1648).jpg",
+      "credit": "Gerard ter Borch / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Westfaelischer_Friede_in_Muenster_(Gerard_Terborch_1648).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Westfaelischer_Friede_in_Muenster_%28Gerard_Terborch_1648%29.jpg/960px-Westfaelischer_Friede_in_Muenster_%28Gerard_Terborch_1648%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 4649,
+      "alt_suggestion": "Westfaelischer Friede in Muenster (Gerard Terborch 1648).jpg",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-7167",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Portrait of Frances Theresa, Duchess of Richmond (1648-1702)",
+      "credit": "Richard Gibson (English, 1615–1690) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/7167",
+      "image_url": "https://www.artic.edu/iiif/2/335ca1b9-f5e7-9f49-ee53-9b6d9041fdec/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of opaque watercolor on paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-131181456",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The Peace of Westphalia celebrated with fireworks in Narva 1649.jpg",
+      "credit": "Possibly Anders Håkansson / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Peace_of_Westphalia_celebrated_with_fireworks_in_Narva_1649.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/The_Peace_of_Westphalia_celebrated_with_fireworks_in_Narva_1649.jpg/960px-The_Peace_of_Westphalia_celebrated_with_fireworks_in_Narva_1649.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 10200,
+      "height": 10356,
+      "alt_suggestion": "To celebrate the Peace of Westphalia the Swedish General-Governor of Ingria and Kexholm counties had a fireworks display organised December 8 1649. The fireworks display was likely prepared by artille",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-149778",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Allegory of Peace and War",
+      "credit": "Pompeo Girolamo Batoni (Italian, 1708–1787) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/149778",
+      "image_url": "https://www.artic.edu/iiif/2/92ad2a28-eac9-e358-6e3c-1c1cf39efd91/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-48540806",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Peace of Westphalia, Treaty of Osnabrück.jpg",
+      "credit": "parties of the Peace of Westphalia / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peace_of_Westphalia,_Treaty_of_Osnabr%C3%BCck.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Peace_of_Westphalia%2C_Treaty_of_Osnabr%C3%BCck.jpg/960px-Peace_of_Westphalia%2C_Treaty_of_Osnabr%C3%BCck.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2121,
+      "height": 1567,
+      "alt_suggestion": "The Peace of Westphalia. Treaty of Osnabrück. Copy of 1649 for Elector-Duke Maximilian of Bavaria. Seals of the imperial and Swedish envoys and of the envoy of Mainz. München, Bayerisches Hauptstaatsa",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Peace of Westphalia Ter Borch Munster 1648 Westphalian peace\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Peace of Westphalia\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Peace of Westphalia Ter Borch Munster 1648\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-12262407",
+  "alt": "A dark electronic stock board with columns of green ticker codes and orange prices.",
+  "fits": true,
+  "note": "Board listing many stocks, brand-free; works as an index list.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

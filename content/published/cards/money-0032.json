@@ -1,0 +1,53 @@
+{
+  "id": "money-0032",
+  "interest": "money",
+  "title": "One pricey thing is not inflation",
+  "probes": [
+    {
+      "id": "money-0032-p1",
+      "question": "True or false: a price rise in a single product is enough to measure inflation.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "money-0032-p2",
+      "question": "Your income stays the same while prices rise. What happens to your purchasing power?",
+      "kind": "mcq",
+      "options": [
+        "It rises",
+        "It stays the same",
+        "It falls"
+      ],
+      "answer": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "What is inflation? (Federal Reserve)",
+      "url": "https://www.federalreserve.gov/faqs/economy_14419.htm"
+    },
+    {
+      "title": "Purchasing power (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Purchasing_power"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:19:21.188Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0032.webp",
+    "alt": "Bunches of parsley, green onions and lettuce on a supermarket shelf with a 99 cent price label.",
+    "kind": "photo",
+    "credit": "MatthewHoobin / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Parsley_for_99_cents,_and_other_vegetables,_in_supermarket_in_Clearwater,_Florida,_US_on_25_September_2020.jpg"
+  },
+  "body": {
+    "claim": "Inflation is a general rise in prices across the economy, not one product getting more expensive.",
+    "why": "The Federal Reserve says inflation can't be measured by the cost of one product or even several, so it tracks price indexes that cover many goods and services. If your income stays the same while prices rise, your purchasing power falls. Over the longer run, the Fed has said that 2 percent a year in the PCE price index fits its goals best."
+  }
+}

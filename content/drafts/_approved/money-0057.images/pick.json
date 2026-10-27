@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-140124767",
+ "alt": "An 18th-century engraving of a dense crowd of traders in the Rue Quincampoix in Paris during the speculation of 1720.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (CC0).",
+ "crop": {
+  "fx": 0.5,
+  "fy": 0.55,
+  "zoom": 1.5
+ }
+}

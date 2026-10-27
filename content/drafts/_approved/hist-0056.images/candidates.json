@@ -1,0 +1,67 @@
+{
+  "draft_id": "hist-0056",
+  "created_at": "2026-10-26T20:33:05.450Z",
+  "queries": [
+    "Edward Jenner vaccinating a boy Jenner vaccination painting Edward Jenner",
+    "Edward Jenner vaccinating a boy",
+    "Edward Jenner vaccinating a boy Jenner vaccination painting"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-36028440",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Edward Jenner vaccinating a boy. Oil painting by E.-E. Hille Wellcome L0029094.jpg",
+      "credit": "Eugène Ernest Hillemacher / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029094.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029094.jpg/960px-Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029094.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3680,
+      "height": 2898,
+      "alt_suggestion": "Edward Jenner vaccinating a boy. Oil painting by E.-E. Hillemacher, 1884. Iconographic Collections Keywords: brn 45436; edward jenner; ic; Vaccination; Immunization; Disease Transmission, Infectious; ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-36028426",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Edward Jenner vaccinating a boy. Oil painting by E.-E. Hille Wellcome L0029093.jpg",
+      "credit": "Eugène Ernest Hillemacher / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029093.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029093.jpg/960px-Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029093.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3720,
+      "height": 2896,
+      "alt_suggestion": "Edward Jenner vaccinating a boy. Oil painting by E.-E. Hillemacher, 1884. Iconographic Collections Keywords: Vaccination; Edward Jenner; Sarah Nelmes; James Phipps; Eugène-Ernest Hillemacher",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-123935297",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Edward Jenner vaccinating a boy. Oil painting by E.-E. Hille Wellcome L0029094 (cropped).jpg",
+      "credit": "Eugène Ernest Hillemacher / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029094_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029094_%28cropped%29.jpg/960px-Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029094_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1759,
+      "height": 1319,
+      "alt_suggestion": "Edward Jenner vaccinating a boy. Oil painting by E.-E. Hillemacher, 1884. Iconographic Collections Keywords: brn 45436; edward jenner; ic; Vaccination; Immunization; Disease Transmission, Infectious; ",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Edward Jenner vaccinating his own son against smallpox, after Giulio Monteverde.jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Edward Jenner vaccinating a boy Jenner vaccination painting Edward Jenner\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Edward Jenner vaccinating a boy\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Edward Jenner vaccinating a boy Jenner vaccination painting\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

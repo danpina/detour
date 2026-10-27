@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The ten days that vanished",
+    "angle": "The ten days that vanished"
+  },
+  "created_at": "2026-10-26T20:31:39.960Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0052",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "The ten days that vanished",
+    "body": {
+      "question": "In October 1582, Thursday 4 October was followed by...",
+      "options": [
+        "Friday 5 October",
+        "Friday 15 October",
+        "Monday 11 October"
+      ],
+      "answer": 1,
+      "reveal": "Friday 15 October. The reform deleted 10 days to correct the error that had built up since the Council of Nicaea, and the weekday cycle was not affected. It also changed leap years: a century year is a leap year only if divisible by 400, so 1900 was not one but 2000 was."
+    },
+    "probes": [
+      {
+        "id": "hist-0052-p1",
+        "kind": "mcq",
+        "question": "Why did the 1582 reform delete ten days?",
+        "options": [
+          "To fix the drift built up by the Julian calendar's year being slightly too long",
+          "To make the year start in spring",
+          "To honour the Pope's birthday",
+          "To match the Moon's cycle exactly"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0052-p2",
+        "kind": "tf",
+        "question": "True or false: under the Gregorian rule, 1900 was a leap year.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Gregorian calendar (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Gregorian_calendar"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Biccherna Tablet - Commission for the Reform of the Calendar (Pope Gregory XIII Presiding).jpg (public domain) or File:Pope Gregory XIII (Ugo Buoncompagni, 1502–1585, pope 1572), Promulger of the Gregorian Calendar MET 13987.jpg (CC0)",
+    "keywords": [
+      "Gregorian calendar reform",
+      "Pope Gregory XIII",
+      "Biccherna Tablet calendar reform",
+      "Gregorian calendar 1582"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.650Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gregorian_calendar",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Thursday 4 October 1582 was followed by Friday 15 October (weekday cycle unaffected)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gregorian_calendar",
+        "quote": "the reform advanced the date by 10 days: Thursday 4 October 1582 was followed by Friday 15 October 1582."
+      },
+      {
+        "claim": "The reform deleted 10 days to correct drift built up since the Council of Nicaea",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gregorian_calendar",
+        "quote": "At the time of Gregory's reform, there had already been a drift of 10 days since the Council of Nicaea"
+      },
+      {
+        "claim": "Century year is a leap year only if divisible by 400; 1900 was not, 2000 was (reveal and probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gregorian_calendar",
+        "quote": "For example, 1800 and 1900 were not leap years, but 1600 and 2000 were."
+      },
+      {
+        "claim": "Julian calendar's year was slightly too long, causing the drift (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gregorian_calendar",
+        "quote": "the Julian calendar was based on the estimate that the average solar year is exactly 365.25 days long"
+      }
+    ],
+    "overall": "pass"
+  }
+}

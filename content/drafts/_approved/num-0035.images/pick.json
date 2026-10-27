@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-3339041",
+  "alt": "Close-up of a handheld breath-alcohol tester with a black mouthpiece and printed operating instructions.",
+  "fits": true,
+  "note": "No people; device only (photo options with identifiable people rejected). Text-heavy label, crop to mouthpiece.",
+  "crop": {
+    "fx": 0.6,
+    "fy": 0.4,
+    "zoom": 1
+  }
+}

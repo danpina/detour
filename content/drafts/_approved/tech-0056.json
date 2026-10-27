@@ -1,0 +1,141 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Gradient descent",
+    "angle": "Training as many small steps downhill on the error"
+  },
+  "created_at": "2026-10-26T20:28:21.550Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0056",
+    "interest": "tech",
+    "type": "story",
+    "title": "How a network learns from its errors",
+    "body": {
+      "panels": [
+        {
+          "text": "A neural network is made of connections with weights. The strength of each connection is a weight, and training adjusts them."
+        },
+        {
+          "text": "The network produces outputs, and training compares them with the target values. The gap is the error that training tries to shrink."
+        },
+        {
+          "text": "The gradient shows which way the error rises fastest. So training steps the other way, the direction of steepest descent."
+        },
+        {
+          "text": "Backpropagation works out the gradient with respect to the weights, layer by layer from the output back. Repeat with many small steps, and the error shrinks toward a local minimum."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0056-p1",
+        "kind": "mcq",
+        "question": "In gradient descent, which way does each step go?",
+        "options": [
+          "In the direction of the gradient",
+          "Opposite the gradient",
+          "Sideways to the gradient",
+          "In a random direction"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0056-p2",
+        "kind": "tf",
+        "question": "True or false: backpropagation efficiently computes the gradient of the loss with respect to the network weights.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Gradient descent (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Gradient_descent"
+      },
+      {
+        "title": "Backpropagation (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Backpropagation"
+      },
+      {
+        "title": "Neural network (machine learning) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Simplified neural network model example.png (CC0) shows a simplified neural network diagram",
+    "keywords": [
+      "neural network",
+      "neural network diagram",
+      "artificial neural network",
+      "deep learning"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.373Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gradient_descent",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Backpropagation",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Connection strength is a weight, adjusted during training",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)",
+        "quote": "The strength of the signal at each connection is determined by a weight"
+      },
+      {
+        "claim": "Training compares network output with desired output; the gap is the error to minimise",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)",
+        "quote": "tries to minimize the average squared error between the network's output and the desired output"
+      },
+      {
+        "claim": "Moving along the gradient increases the function, i.e. the gradient points uphill",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gradient_descent",
+        "quote": "stepping in the direction of the gradient will lead to a trajectory that maximizes that function"
+      },
+      {
+        "claim": "Steps go opposite the gradient, the direction of steepest descent (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gradient_descent",
+        "quote": "take repeated steps in the opposite direction of the gradient (or approximate gradient) of the function at the current point"
+      },
+      {
+        "claim": "Backpropagation computes the gradient with respect to the weights (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Backpropagation",
+        "quote": "Backpropagation efficiently computes the gradient of the loss with respect to the network weights"
+      },
+      {
+        "claim": "Backpropagation works layer by layer from the output back",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Backpropagation",
+        "quote": "propagating derivatives backward, one layer at a time, from the output layer to the input layer"
+      },
+      {
+        "claim": "Repeated steps shrink the error toward a local minimum",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gradient_descent",
+        "quote": "we want to move against the gradient, toward the local minimum"
+      }
+    ],
+    "overall": "pass"
+  }
+}

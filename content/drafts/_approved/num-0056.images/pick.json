@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-73215148",
+  "alt": "A tall wooden cabinet with hundreds of small pigeonhole slots, used for sorting hotel mail.",
+  "fits": true,
+  "note": "Pigeonholes illustrate pigeonhole principle.",
+  "crop": {
+    "fx": 0.42,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

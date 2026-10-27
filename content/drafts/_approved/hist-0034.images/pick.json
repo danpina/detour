@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-64384803",
+  "alt": "Medieval miniature of townspeople carrying coffins and burying plague victims in graves at Tournai.",
+  "fits": true,
+  "note": "Doutielt1 (briefed) actually depicts Jews being burned and would mislead; Doutielt3 shows the plague burials. 801x482 landscape",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

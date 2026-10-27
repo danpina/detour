@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-191732615",
+  "alt": "A row of small birds perched on overhead power lines under a cloudy grey sky.",
+  "fits": true,
+  "note": "Birds on lines; neutral, no danger implied.",
+  "crop": {
+    "fx": 0.75,
+    "fy": 0.35,
+    "zoom": 1
+  }
+}

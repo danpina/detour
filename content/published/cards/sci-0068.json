@@ -1,0 +1,62 @@
+{
+  "id": "sci-0068",
+  "interest": "science",
+  "title": "The Moon was made in a collision",
+  "probes": [
+    {
+      "id": "sci-0068-p1",
+      "question": "According to the giant-impact hypothesis, what hit the early Earth?",
+      "kind": "mcq",
+      "options": [
+        "A comet",
+        "A Mars-sized planet",
+        "A star",
+        "A black hole"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0068-p2",
+      "question": "True or false: the hypothesis says the Moon formed from debris thrown out by an impact.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Giant-impact hypothesis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:19.613Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0068.webp",
+    "alt": "A detailed photograph of the full Moon showing dark maria and bright rayed craters against black sky.",
+    "kind": "photo",
+    "credit": "Luc Viatour / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Full_Moon_Luc_Viatour.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "The giant-impact hypothesis says the Moon began in a collision. About 4.5 billion years ago, the young Earth was likely hit by a planet about the size of Mars, nicknamed Theia."
+      },
+      {
+        "text": "Some of the debris thrown out by the impact later gathered together to form the Moon."
+      },
+      {
+        "text": "That fits a clue: the Moon has a small iron core and is less dense than Earth. Models suggest the impactor's core sank into Earth's, leaving lighter crust and mantle debris to become the Moon."
+      },
+      {
+        "text": "The idea was first proposed in 1946 by the geologist Reginald Daly. It is still a hypothesis, and questions remain about the best models."
+      }
+    ]
+  }
+}

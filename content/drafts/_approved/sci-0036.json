@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Static electricity",
+    "angle": "Why rubbed balloons cling"
+  },
+  "created_at": "2026-10-26T20:31:08.682Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0036",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "The balloon on the wall",
+    "body": {
+      "question": "You rub a balloon on your hair and it sticks to a wall. Why?",
+      "options": [
+        "Rubbing makes it sticky like glue",
+        "Rubbing charges it, and the charged balloon is attracted to particles in the wall",
+        "Rubbing fills it with warm air that rises"
+      ],
+      "answer": 1,
+      "reveal": "When two materials touch or rub, electrons or ions can move from one to the other, leaving one with positive charge and the other with an equal negative charge. A balloon rubbed on hair becomes negatively charged. Near a wall it is attracted to positively charged particles there, and can cling against gravity."
+    },
+    "probes": [
+      {
+        "id": "sci-0036-p1",
+        "kind": "tf",
+        "question": "True or false: when two materials are rubbed together, one gains positive charge and the other gains an equal negative charge.",
+        "answer": true
+      },
+      {
+        "id": "sci-0036-p2",
+        "kind": "mcq",
+        "question": "A balloon rubbed against hair becomes...",
+        "options": [
+          "Positively charged",
+          "Negatively charged",
+          "Magnetic",
+          "Heavier by a visible amount"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Static electricity (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Static_electricity"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Attractive-electric-force-between-hair-and-balloon.jpg shows hair attracted to a balloon",
+    "keywords": [
+      "balloon static electricity hair",
+      "static electricity hair",
+      "balloon hair"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.584Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Static_electricity",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Balloon rubbed on hair becomes negatively charged (reveal, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Static_electricity",
+        "quote": "a balloon rubbed against the hair becomes negatively charged"
+      },
+      {
+        "claim": "Charged balloon is attracted to positively charged particles in the wall",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Static_electricity",
+        "quote": "the charged balloon is attracted to positively charged particles in the wall"
+      },
+      {
+        "claim": "Can cling against gravity",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Static_electricity",
+        "quote": "suspended against gravity"
+      },
+      {
+        "claim": "Electrons or ions move between materials on contact",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Static_electricity",
+        "quote": "Electrons or ions can be exchanged between materials on contact"
+      },
+      {
+        "claim": "One material positive, other equal negative (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Static_electricity",
+        "quote": "which leaves an excess of positive charge on one material, and an equal negative charge on the other."
+      }
+    ],
+    "overall": "pass"
+  }
+}

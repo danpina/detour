@@ -1,0 +1,118 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "End-to-end encryption",
+    "angle": "Messages even the app cannot read"
+  },
+  "created_at": "2026-10-27T06:07:56.479Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0037",
+    "interest": "tech",
+    "type": "story",
+    "title": "Messages even the app cannot read",
+    "body": {
+      "panels": [
+        {
+          "text": "In many chat systems, messages pass through intermediaries and are stored by a service provider. Even if encrypted, they are only encrypted in transit."
+        },
+        {
+          "text": "End-to-end encryption changes that. Messages are encrypted on the sender's device so they can be decoded only by the recipient's device."
+        },
+        {
+          "text": "So no third party, including the service provider, has the means to decrypt them. WhatsApp, iMessage and Signal use it for chat messages."
+        },
+        {
+          "text": "The weak spot is not the maths. An eavesdropper may impersonate the recipient by substituting their own public key."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0037-p1",
+        "kind": "mcq",
+        "question": "In end-to-end encryption, who can decrypt a message?",
+        "options": [
+          "The service provider too",
+          "Only the sender and recipient",
+          "Anyone on the same Wi-Fi",
+          "The internet provider"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0037-p2",
+        "kind": "tf",
+        "question": "True or false: an eavesdropper may try to impersonate the recipient by substituting their own public key.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "End-to-end encryption (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/End-to-end_encryption"
+      }
+    ],
+    "difficulty": 5,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "A smartphone or a padlock",
+    "keywords": [
+      "smartphone",
+      "mobile phone",
+      "padlock"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.719Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/End-to-end_encryption",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In many chat systems messages pass through intermediaries and are stored by a service provider",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/End-to-end_encryption",
+        "quote": "messages pass through intermediaries and are stored by a third-party service provider"
+      },
+      {
+        "claim": "Even if encrypted, they are only encrypted in transit",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/End-to-end_encryption",
+        "quote": "Even if messages are encrypted, they are only encrypted 'in transit'"
+      },
+      {
+        "claim": "E2EE: encrypted on the sender's device so no third party, including the provider, can decrypt",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/End-to-end_encryption",
+        "quote": "messages are encrypted on the sender's device such that no third party, including the service provider, has the means to decrypt them"
+      },
+      {
+        "claim": "Only sender and recipient can decrypt (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/End-to-end_encryption",
+        "quote": "End-to-end encryption prevents data from being read or secretly modified, except by the sender and intended recipients."
+      },
+      {
+        "claim": "WhatsApp, iMessage and Signal use it for chat messages",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/End-to-end_encryption",
+        "quote": "Popular messaging apps like WhatsApp, iMessage, Facebook Messenger and Signal use end-to-end encryption for chat messages"
+      },
+      {
+        "claim": "The weak spot is not the maths; an eavesdropper may impersonate the recipient by substituting their public key (probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/End-to-end_encryption",
+        "quote": "rather than try to break the encryption, an eavesdropper may impersonate a message recipient"
+      }
+    ],
+    "overall": "pass"
+  }
+}

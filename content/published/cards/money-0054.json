@@ -1,0 +1,61 @@
+{
+  "id": "money-0054",
+  "interest": "money",
+  "title": "When the dollar was as good as gold",
+  "probes": [
+    {
+      "id": "money-0054-p1",
+      "question": "Under the Bretton Woods system, the dollar was convertible to what for foreign governments and central banks?",
+      "kind": "mcq",
+      "options": [
+        "Silver",
+        "Oil",
+        "Gold bullion"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0054-p2",
+      "question": "True or false: on 15 August 1971 the United States ended the convertibility of the dollar to gold.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bretton Woods system (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bretton_Woods_system"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:21:05.475Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0054.webp",
+    "alt": "The white, red-roofed Mount Washington Hotel at Bretton Woods, New Hampshire, with autumn trees and mountains behind it.",
+    "kind": "photo",
+    "credit": "King of Hearts / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mount_Washington_Hotel_Bretton_Woods_October_2021_002.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In July 1944, delegates met at the Mount Washington Hotel in Bretton Woods, New Hampshire, and signed an agreement on the last day."
+      },
+      {
+        "text": "Countries guaranteed to convert their currencies into US dollars. The US linked the dollar to gold at $35 an ounce, so foreign governments and central banks could swap dollars for gold."
+      },
+      {
+        "text": "The agreement also set up the International Monetary Fund to monitor exchange rates."
+      },
+      {
+        "text": "By 1970 the US had seen its gold coverage fall from 55% to 22%. On 15 August 1971 it ended the convertibility of the dollar to gold, which effectively brought the system to an end."
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0066",
+  "created_at": "2026-10-26T20:32:14.670Z",
+  "queries": [
+    "antibiotic susceptibility test agar plate antibiogram Mueller-Hinton agar",
+    "antibiotic susceptibility test agar plate",
+    "antibiotic susceptibility test agar plate antibiogram"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-147024781",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Antimicrobial susceptibility testing (AST) result of Leuconostoc.jpg",
+      "credit": "Ajay Kumar Chaurasiya / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Antimicrobial_susceptibility_testing_(AST)_result_of_Leuconostoc.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Antimicrobial_susceptibility_testing_%28AST%29_result_of_Leuconostoc.jpg/960px-Antimicrobial_susceptibility_testing_%28AST%29_result_of_Leuconostoc.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "Antimicrobial susceptibility testing (AST) result of Leuconostoc mesenteroides on MHA plate after a day of incubation",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-123793",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Because She Was Susceptible, plate 32 from Los Caprichos",
+      "credit": "Francisco José de Goya y Lucientes Spanish, 1746-1828 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/123793",
+      "image_url": "https://www.artic.edu/iiif/2/dd31fbf5-9d04-d957-5d47-6347a7a85980/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of aquatint on ivory laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-138047762",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "MHA and MacConkey agar plates stacks.jpg",
+      "credit": "Ajay Kumar Chaurasiya / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MHA_and_MacConkey_agar_plates_stacks.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/MHA_and_MacConkey_agar_plates_stacks.jpg/960px-MHA_and_MacConkey_agar_plates_stacks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4160,
+      "height": 2340,
+      "alt_suggestion": "MHA (Mueller-Hinton Agar): Purpose- MHA is primarily used for antibiotic susceptibility testing through the Kirby-Bauer disc diffusion method. It provides a consistent and standardized medium for test",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-10509",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Saint Helen Testing the True Cross",
+      "credit": "Tintoretto (Jacopo Robusti; Italian, 1518–1594) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/10509",
+      "image_url": "https://www.artic.edu/iiif/2/90a2969d-542a-e97f-09dd-fa1310d91acf/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-147024891",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Leuconostoc antibiogram result.jpg",
+      "credit": "Ajay Kumar Chaurasiya / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leuconostoc_antibiogram_result.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Leuconostoc_antibiogram_result.jpg/960px-Leuconostoc_antibiogram_result.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "Leuconostoc Antibiotic Susceptibility Testing (AST) result on Muller-Hinton agar plate after a day of incubation",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"antibiotic susceptibility test agar plate antibiogram Mueller-Hinton agar\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"antibiotic susceptibility test agar plate\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"antibiotic susceptibility test agar plate antibiogram\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

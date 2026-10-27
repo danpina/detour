@@ -1,0 +1,103 @@
+{
+  "draft_id": "tech-0033",
+  "created_at": "2026-10-27T06:10:06.401Z",
+  "queries": [
+    "network cables internet cables data center",
+    "network cables",
+    "network cables internet cables"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-43344849",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Bell telephone magazine (1922) (14753868424).jpg",
+      "credit": "Internet Archive Book Images / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bell_telephone_magazine_(1922)_(14753868424).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Bell_telephone_magazine_%281922%29_%2814753868424%29.jpg/960px-Bell_telephone_magazine_%281922%29_%2814753868424%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1696,
+      "height": 906,
+      "alt_suggestion": "Identifier: belltelephonemag4344amerrich (find matches) Title: Bell telephone magazine Year: 1922 (1920s) Authors: American Telephone and Telegraph Company American Telephone and Telegraph Company. In",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss034e040209",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Ford reconfigures cables for the JSL Area Network",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss034e040209",
+      "image_url": "https://images-assets.nasa.gov/image/iss034e040209/iss034e040209~medium.jpg",
+      "alt_suggestion": "ISS034-E-040209 (5 Feb. 2013) --- NASA astronaut Kevin Ford, Expedition 34 commander, reconfigures cables for the Joint Station Local Area Network in the Destiny laboratory of the International Space ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-8987",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Painting with Green Center",
+      "credit": "Vasily Kandinsky Born Moscow (formerly Russian Empire, now Russia), 1866; died Neuilly-sur-Seine, France, 1944 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/8987",
+      "image_url": "https://www.artic.edu/iiif/2/c68f33ec-feb1-5277-334b-b71ac15ae394/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of vibrantly colored shapes and lines intersecting and overlapping.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-23182945",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "USMC-051025-M-0884D-003.jpg",
+      "credit": "This image was released by the United States Marine Corps with the ID 051025-M-0884D-003 (next). This tag does not indicate the copyright status of the attached",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:USMC-051025-M-0884D-003.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/USMC-051025-M-0884D-003.jpg/960px-USMC-051025-M-0884D-003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1396,
+      "height": 2100,
+      "alt_suggestion": "Lance Cpl. John E. Sabia, computer and data network specialist, tapes down local-area network cables after wiring the training site with secured and non-secured internet protocol lines. The command po",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-iss065e444320",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "iss065e444320",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss065e444320",
+      "image_url": "https://images-assets.nasa.gov/image/iss065e444320/iss065e444320~medium.jpg",
+      "alt_suggestion": "iss065e444320 (Oct. 8, 2021) --- Expedition 65 Flight Engineer Akihiko Hoshide of the Japan Aerospace Exploration Agency (JAXA) inspects network connections, swaps cables, and replaces components insi",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-64285941",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Comp lab cables 20171121 131906.jpg",
+      "credit": "Kbh3rd / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Comp_lab_cables_20171121_131906.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Comp_lab_cables_20171121_131906.jpg/960px-Comp_lab_cables_20171121_131906.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4137,
+      "height": 2299,
+      "alt_suggestion": "Ethernet and fiber optic cables laid in an ad hoc manner in ceiling trays of a computer and networking lab. A production data center would never look like this.",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Bell telephone magazine (1922) (14569481250).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"network cables internet cables data center\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"network cables\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"network cables internet cables\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

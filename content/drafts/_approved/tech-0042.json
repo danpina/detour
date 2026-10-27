@@ -1,0 +1,102 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "The cloud",
+    "angle": "It is a building"
+  },
+  "created_at": "2026-10-27T06:07:56.492Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0042",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "The cloud has an address",
+    "body": {
+      "claim": "Cloud computing runs on resources you reach over a network, and those live in physical data centres.",
+      "why": "A data centre is a physical room, building or facility that houses computer systems. Hyperscale data centres, operated by major cloud providers, serve cloud services. Cloud computing itself is network access to a pool of shareable resources, on demand."
+    },
+    "probes": [
+      {
+        "id": "tech-0042-p1",
+        "kind": "mcq",
+        "question": "What is a data centre?",
+        "options": [
+          "A kind of Wi-Fi signal",
+          "A physical facility that houses computer systems",
+          "A program that stores files",
+          "A cable under the sea"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0042-p2",
+        "kind": "tf",
+        "question": "True or false: hyperscale data centres are operated by major cloud providers.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Data center (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Data_center"
+      },
+      {
+        "title": "Cloud computing (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cloud_computing"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:BalticServers data center.jpg shows a server room",
+    "keywords": [
+      "data center",
+      "server racks",
+      "server room"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.723Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Data_center",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Cloud_computing",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Cloud computing is network access to a pool of shareable resources, on demand",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cloud_computing",
+        "quote": "a paradigm for enabling network access to a scalable and elastic pool of shareable physical or virtual resources"
+      },
+      {
+        "claim": "A data centre is a physical room, building or facility housing computer systems (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Data_center",
+        "quote": "data center is a physical room, building, or facility for storing, managing, and disseminating data and information"
+      },
+      {
+        "claim": "Cloud data centres house the resources reached through an internet connection (cloud runs in physical data centres)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Data_center",
+        "quote": "cloud data centers, including hyperscale data centers, house IT infrastructure resources through an internet connection"
+      },
+      {
+        "claim": "Hyperscale data centres are operated by major cloud providers and serve cloud services (probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Data_center",
+        "quote": "Massive scalability; operated by major cloud providers"
+      }
+    ],
+    "overall": "pass"
+  }
+}

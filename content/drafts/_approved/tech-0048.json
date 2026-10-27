@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "GPS positioning",
+    "angle": "Why a receiver needs four satellites: three coordinates plus its own clock error"
+  },
+  "created_at": "2026-10-26T20:28:21.548Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0048",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "GPS needs four satellites, not three",
+    "body": {
+      "claim": "A GPS receiver normally needs signals from at least four satellites to find where you are.",
+      "why": "Each satellite broadcasts its position and the time. The receiver turns each signal delay into a range, using the speed of light. Three satellites give three coordinates, but the receiver also has to solve for the error in its own clock, so there are four unknowns."
+    },
+    "probes": [
+      {
+        "id": "tech-0048-p1",
+        "kind": "mcq",
+        "question": "Why does a GPS receiver normally need four satellites?",
+        "options": [
+          "To double-check the weather",
+          "It solves for three position coordinates and its own clock error",
+          "Each satellite covers one compass direction",
+          "Four is the most a phone can hear"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "tech-0048-p2",
+        "kind": "mcq",
+        "question": "In the simplified picture, the spheres around three satellites typically intersect at how many points?",
+        "options": [
+          "One",
+          "Two",
+          "Three",
+          "Four"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Global Positioning System (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Global_Positioning_System"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:GPS satellite constellation.jpg and File:GPS-constellation-3D-NOAA.jpg (public domain) show the orbiting GPS satellites around Earth",
+    "keywords": [
+      "GPS satellite constellation",
+      "GPS satellites orbit",
+      "Global Positioning System",
+      "GPS NOAA"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.337Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A GPS receiver normally needs at least four satellites (title, claim, probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+        "quote": "at a minimum, four satellites must be in view of the receiver for it to compute four unknown quantities"
+      },
+      {
+        "claim": "Four unknowns: three position coordinates plus the receiver's clock error (why)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+        "quote": "three position coordinates and the deviation of its own clock from satellite time"
+      },
+      {
+        "claim": "Each satellite broadcasts its position and the time",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+        "quote": "of its own position and time, and broadcasts that data continuously"
+      },
+      {
+        "claim": "Receiver turns signal delay into range using the speed of light",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+        "quote": "the receiver forms four time of flight (TOF) values, which are (given the speed of light) approximately equivalent to receiver-satellite ranges"
+      },
+      {
+        "claim": "Probe 2: in the simplified picture three satellite spheres typically intersect at two points",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+        "quote": "Signals from at minimum three satellites are required, and their three spheres would typically intersect at two points."
+      }
+    ],
+    "overall": "pass"
+  }
+}

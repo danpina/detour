@@ -1,0 +1,97 @@
+{
+  "draft_id": "tech-0036",
+  "created_at": "2026-10-27T06:10:39.457Z",
+  "queries": [
+    "padlock key lock and key",
+    "padlock",
+    "padlock key"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-65582711",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Solex 99 30 padlock with keys (DSCF2659).jpg",
+      "credit": "Trougnouf / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Solex_99_30_padlock_with_keys_(DSCF2659).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Solex_99_30_padlock_with_keys_%28DSCF2659%29.jpg/960px-Solex_99_30_padlock_with_keys_%28DSCF2659%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2575,
+      "height": 2344,
+      "alt_suggestion": "Solex 99 30 lock with keys (DSCF2659)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-116729",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Door Key with Flintlock Pistol",
+      "credit": "Italian / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/116729",
+      "image_url": "https://www.artic.edu/iiif/2/d1fb9898-8e4e-9d73-0ed8-609088a24640/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of steel."
+    },
+    {
+      "id": "wikimedia-75101505",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Medieval key (locking), Barrel padlock key (FindID 846183).jpg",
+      "credit": "Oxfordshire County Council, Anni Byard, 2017-05-08 18:23:08 / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Medieval_key_(locking),_Barrel_padlock_key_(FindID_846183).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Medieval_key_%28locking%29%2C_Barrel_padlock_key_%28FindID_846183%29.jpg/960px-Medieval_key_%28locking%29%2C_Barrel_padlock_key_%28FindID_846183%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3877,
+      "height": 2731,
+      "alt_suggestion": "A complete iron key for a barrel padlock, dating to the medieval period. The key has a sub-oval loop and a thick shank which is boradly rectangular / flat in cross section. The shank tapers from the l",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-19040",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Snow at Benzaiten Shrine in Inokashira Pond (Inokashira no ike Benzaiten no yashiro yuki no kei), from the series \"Snow, Moon, and Flowers at Famous Places (Meisho setsugekka)\"",
+      "credit": "Utagawa Hiroshige 歌川 広重 Japanese, 1797-1858 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/19040",
+      "image_url": "https://www.artic.edu/iiif/2/880f5bf5-4675-c0aa-2e39-1eec70e6c9df/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color woodblock print; oban.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-58066853",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Lock and Key microsculptures.jpg",
+      "credit": "Salavat Fidai / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lock_and_Key_microsculptures.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Lock_and_Key_microsculptures.jpg/960px-Lock_and_Key_microsculptures.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1080,
+      "height": 1080,
+      "alt_suggestion": "Microsculptures of a lock and key in graphite by Salavat Fidai",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-41501847",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Love padlocks on the Butchers' Bridge (Ljubljana).jpg",
+      "credit": "Petar Milošević / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Love_padlocks_on_the_Butchers%27_Bridge_(Ljubljana).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Love_padlocks_on_the_Butchers%27_Bridge_%28Ljubljana%29.jpg/960px-Love_padlocks_on_the_Butchers%27_Bridge_%28Ljubljana%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4529,
+      "height": 3041,
+      "alt_suggestion": "Love padlocks on the Butchers' Bridge in Ljubljana, Slovenia.",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"padlock key lock and key\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"padlock\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"padlock key\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

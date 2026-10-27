@@ -1,0 +1,150 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "The structure of the atom",
+    "angle": "The gold foil experiment and the nucleus"
+  },
+  "created_at": "2026-10-26T20:30:07.404Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0061",
+    "interest": "science",
+    "type": "story",
+    "title": "Bounced back from gold foil",
+    "body": {
+      "panels": [
+        {
+          "text": "Manchester, 1909. In Ernest Rutherford's lab, Hans Geiger and Ernest Marsden fire alpha particles from radium at a very thin gold foil and count flashes on a screen."
+        },
+        {
+          "text": "The popular atom model predicted that the particles should all go almost straight through."
+        },
+        {
+          "text": "But about 1 in 8000 bounced back. Rutherford said it was as unlikely as a huge shell fired at tissue paper coming back to hit you."
+        },
+        {
+          "text": "His explanation: an atom has a tiny, dense centre holding most of its mass. Most particles sail past it through the empty space around it, and rare near-hits scatter them."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0061-p1",
+        "kind": "mcq",
+        "question": "What did the rare bounced-back particles show about atoms?",
+        "options": [
+          "Atoms are solid balls all the way through",
+          "A tiny central nucleus holds most of the atom's mass, with empty space around it",
+          "Gold atoms are unusually small",
+          "Electrons are heavier than the nucleus"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0061-p2",
+        "kind": "tf",
+        "question": "True or false: Geiger and Marsden's experiment used a very thin gold foil.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Geiger-Marsden experiments (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments"
+      },
+      {
+        "title": "Rutherford model (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Rutherford_model"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Geiger-Marsden apparatus CGI mock-up.png (CC BY 3.0) or File:Geiger-Marsden apparatus 2 CGI mock-up.jpg (CC BY 4.0) show the apparatus",
+    "keywords": [
+      "Rutherford gold foil",
+      "Geiger-Marsden apparatus",
+      "gold foil experiment"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.059Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Rutherford_model",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Geiger and Marsden worked under Rutherford at the University of Manchester, 1909",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments",
+        "quote": "The experiments were performed between 1906 and 1913 by Hans Geiger and Ernest Marsden under the direction of Ernest Rutherford at the Physical Laboratories of the University of Manchester ."
+      },
+      {
+        "claim": "In 1909 they found foils could scatter some alpha particles in all directions",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments",
+        "quote": "In a 1909 experiment, Geiger and Marsden discovered that the metal foils could scatter some alpha particles in all directions"
+      },
+      {
+        "claim": "They counted flashes of light on a screen",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments",
+        "quote": "Each impact of an alpha particle on the screen produced a tiny flash of light."
+      },
+      {
+        "claim": "They used a very thin gold foil (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments",
+        "quote": "they tested a variety of metals, but favoured gold because they could make the foil very thin, as gold is the most malleable metal."
+      },
+      {
+        "claim": "Alpha particles from radium",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments",
+        "quote": "As a source of alpha particles, Rutherford's substance of choice was radium"
+      },
+      {
+        "claim": "The popular model predicted particles should pass almost straight through",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments",
+        "quote": "Had Thomson's model been correct, all the alpha particles should have passed through the foil with minimal scattering."
+      },
+      {
+        "claim": "About 1 in 8000 bounced back",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments",
+        "quote": "They were able to demonstrate that 1 in 8000 alpha particle collisions were diffuse reflections."
+      },
+      {
+        "claim": "Rutherford compared it to a huge shell fired at tissue paper coming back",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments",
+        "quote": "It was almost as incredible as if you fired a 15-inch shell at a piece of tissue paper and it came back and hit you."
+      },
+      {
+        "claim": "Tiny dense centre holding most of the atom's mass (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Rutherford_model",
+        "quote": "The mass of heavy atoms such as gold is mostly concentrated in the central charge region"
+      },
+      {
+        "claim": "Most particles pass through empty space; rare close encounters scatter them",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Geiger%E2%80%93Marsden_experiments",
+        "quote": "reflecting the tiny nucleus surrounded by empty space."
+      }
+    ],
+    "overall": "pass"
+  }
+}

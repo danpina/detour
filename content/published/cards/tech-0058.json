@@ -1,0 +1,50 @@
+{
+  "id": "tech-0058",
+  "interest": "tech",
+  "title": "When a model memorises instead of learning",
+  "probes": [
+    {
+      "id": "tech-0058-p1",
+      "question": "What does an overfitted model do?",
+      "kind": "mcq",
+      "options": [
+        "Ignores its training data",
+        "Follows its training data too closely and may fail on new data",
+        "Always predicts correctly",
+        "Needs no data at all"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0058-p2",
+      "question": "True or false: overfitting means a model has learned to generalise well to new data.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Overfitting (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Overfitting"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:51.377Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0058.webp",
+    "alt": "A plot with a few data points, a straight black line, and a wiggly red curve that passes through every point then shoots upward.",
+    "kind": "photo",
+    "credit": "Amirreza mirzaei2001 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Overfitting_regression_deg5vsdeg1.png"
+  },
+  "body": {
+    "claim": "A model can fit its training data so closely that it gets worse on new data.",
+    "why": "This is overfitting. The model starts to memorise the training data instead of learning the underlying trend, partly by treating noise as if it were structure. It then has a higher error rate on unseen data."
+  }
+}

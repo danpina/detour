@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "P-values and what they are not",
+    "angle": "The ASA's 2016 statement"
+  },
+  "created_at": "2026-10-27T06:06:56.070Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0049",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "A p-value is not the odds you are right",
+    "body": {
+      "claim": "A p-value is not the probability that your hypothesis is true, or that your result was a fluke.",
+      "why": "A p-value says how unlikely a result this extreme would be if the null hypothesis were true. In 2016 the American Statistical Association stated that p-values do not measure the probability that the studied hypothesis is true or that the data were produced by chance alone, nor the size or importance of an effect."
+    },
+    "probes": [
+      {
+        "id": "num-0049-p1",
+        "kind": "mcq",
+        "question": "Which does a p-value actually describe?",
+        "options": [
+          "The chance your hypothesis is true",
+          "How unlikely such an extreme result would be if the null hypothesis were true",
+          "The size of the effect",
+          "The chance the result was a fluke"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0049-p2",
+        "kind": "tf",
+        "question": "True or false: a p-value measures the importance of a result.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "P-value (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/P-value"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Bell curve.jpg shows a bell curve chart",
+    "keywords": [
+      "bell curve",
+      "normal distribution",
+      "Gaussian distribution"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.068Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/P-value",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 2016 the ASA stated p-values do not measure probability the hypothesis is true or that data were produced by chance alone",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/P-value",
+        "quote": "p -values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone"
+      },
+      {
+        "claim": "ASA statement was made in 2016",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/P-value",
+        "quote": "In 2016, the American Statistical Association (ASA) made a formal statement"
+      },
+      {
+        "claim": "A p-value is how unlikely a result this extreme would be if the null hypothesis were true (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/P-value",
+        "quote": "is the probability of obtaining test results at least as extreme as the result actually observed"
+      },
+      {
+        "claim": "p-value does not measure the size or importance of an effect/result (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/P-value",
+        "quote": "does not measure the size of an effect or the importance of a result",
+        "note": "Card says 'size or importance of an effect'; page says 'size of an effect or the importance of a result'. Substance matches."
+      }
+    ],
+    "overall": "pass"
+  }
+}

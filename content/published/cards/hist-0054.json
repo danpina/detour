@@ -1,0 +1,56 @@
+{
+  "id": "hist-0054",
+  "interest": "history",
+  "title": "A metre from the Earth itself",
+  "probes": [
+    {
+      "id": "hist-0054-p1",
+      "question": "True or false: the metre was defined as one ten-millionth of the distance from the North Pole to the Equator.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "hist-0054-p2",
+      "question": "Why was a pendulum length a poor standard for the metre?",
+      "kind": "mcq",
+      "options": [
+        "It was too long to carry around",
+        "Pendulum lengths varied between locations",
+        "Pendulums were not invented yet",
+        "It could not be written down"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "History of the metric system (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/History_of_the_metric_system"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:31:17.328Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0054.webp",
+    "alt": "A carved marble standard metre bar set into a wall beneath the word METRE in Paris",
+    "kind": "photo",
+    "credit": "LPLT / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%A8tre-%C3%A9talon_Paris.JPG"
+  },
+  "body": {
+    "question": "When revolutionary France built the metric system, how was the metre defined?",
+    "options": [
+      "The length of a pendulum that swings once a second",
+      "One ten-millionth of the distance from the North Pole to the Equator",
+      "The length of the king's arm"
+    ],
+    "answer": 1,
+    "reveal": "On 7 April 1795 the metre was defined in French law as one ten-millionth of the distance from the North Pole to the Equator, through Paris. A pendulum had been proposed as a standard, but pendulum lengths varied from place to place."
+  }
+}

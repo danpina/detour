@@ -1,0 +1,100 @@
+{
+  "draft_id": "tech-0062",
+  "created_at": "2026-10-26T20:30:36.518Z",
+  "queries": [
+    "binary code binary digits binary numbers",
+    "binary code",
+    "binary code binary digits"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-55841928",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "KLM Boeing 737-800 PH-BCD (16984429737).jpg",
+      "credit": "wiltshirespotter / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:KLM_Boeing_737-800_PH-BCD_(16984429737).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/KLM_Boeing_737-800_PH-BCD_%2816984429737%29.jpg/960px-KLM_Boeing_737-800_PH-BCD_%2816984429737%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1400,
+      "height": 938,
+      "alt_suggestion": "Hamburg 16 April 2015",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA24431",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Mars Decoder Ring",
+      "credit": "NASA/JPL-Caltech / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA24431",
+      "image_url": "https://images-assets.nasa.gov/image/PIA24431/PIA24431~small.jpg",
+      "alt_suggestion": "This annotated image was taken by a parachute-up-look camera aboard the protective back shell of NASA's Perseverance rover during its descent toward Mars' Jezero Crater on February 18, 2021. Using bin",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-32584078",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "LV-BCD Boeing 737 LAN (7374648514).jpg",
+      "credit": "Aeroprints.com / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:LV-BCD_Boeing_737_LAN_(7374648514).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/LV-BCD_Boeing_737_LAN_%287374648514%29.jpg/960px-LV-BCD_Boeing_737_LAN_%287374648514%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1536,
+      "height": 1024,
+      "alt_suggestion": "At Buenos Aires Aeroparque",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-32567574",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "AP-BCD Boeing 737 PIA (7608346586).jpg",
+      "credit": "Aeroprints.com / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AP-BCD_Boeing_737_PIA_(7608346586).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/AP-BCD_Boeing_737_PIA_%287608346586%29.jpg/960px-AP-BCD_Boeing_737_PIA_%287608346586%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2304,
+      "height": 1536,
+      "alt_suggestion": "At Dubai",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-69194565",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Endless Ones and Zeros, Computer Style, Educator57 made.jpg",
+      "credit": "Educator57 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Endless_Ones_and_Zeros,_Computer_Style,_Educator57_made.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Endless_Ones_and_Zeros%2C_Computer_Style%2C_Educator57_made.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 588,
+      "height": 956,
+      "alt_suggestion": "This photo consists of ones and zeros, and was screenshotted in Pages app, in my own work. Under the creative commons license.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-790412",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Leibniz binary system 1703.png",
+      "credit": "Gottfried Wilhelm Leibniz / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leibniz_binary_system_1703.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Leibniz_binary_system_1703.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 727,
+      "height": 979,
+      "alt_suggestion": "Table of the numbers 0 to 32 in binary figures from the Leibniz's paper Explication de l'arithmétique binaire, qui se sert des seuls caractères 0 et 1, avec des remarques sur son utilité, et sur ce qu",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"binary code binary digits binary numbers\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"binary code\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"binary code binary digits\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

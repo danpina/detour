@@ -1,0 +1,57 @@
+{
+  "id": "tech-0061",
+  "interest": "tech",
+  "title": "Half of a camera’s colour filter is green",
+  "probes": [
+    {
+      "id": "tech-0061-p1",
+      "question": "Why does the Bayer filter use twice as many green elements?",
+      "kind": "mcq",
+      "options": [
+        "Green is cheaper to make",
+        "To mimic the physiology of the human eye",
+        "Cameras prefer plants",
+        "To save battery"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0061-p2",
+      "question": "True or false: the Bayer filter pattern is half green, one quarter red and one quarter blue.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bayer filter (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bayer_filter"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:53.491Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "tech-0061.webp",
+    "alt": "Three stacked views of orange flowers: the original, a green-dominant Bayer mosaic version, and the reconstructed colour image.",
+    "kind": "photo",
+    "credit": "Wikifil / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bayer_filter_simulation.png"
+  },
+  "body": {
+    "question": "A camera sensor sees colour through a tiny red, green or blue filter over each photosensor. What share of a Bayer filter is green?",
+    "options": [
+      "A quarter",
+      "Half",
+      "A third",
+      "Two thirds"
+    ],
+    "answer": 1,
+    "reveal": "The pattern is half green, one quarter red and one quarter blue. Bryce Bayer used twice as many green elements to mimic the human eye. Software then interpolates the missing colour information at each pixel."
+  }
+}

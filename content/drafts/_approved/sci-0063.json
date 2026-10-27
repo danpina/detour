@@ -1,0 +1,87 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Light and colour",
+    "angle": "Why leaves are green"
+  },
+  "created_at": "2026-10-26T20:30:07.405Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0063",
+    "interest": "science",
+    "type": "guess_first",
+    "title": "Why leaves look green",
+    "body": {
+      "question": "Why do leaves look green?",
+      "options": [
+        "Chlorophyll glows green in sunlight",
+        "Leaves absorb green light and reflect blue",
+        "Chlorophyll absorbs mostly red and blue light, so green is absorbed less and scattered back"
+      ],
+      "answer": 2,
+      "reveal": "Chlorophyll absorbs strongly in the blue and red parts of the spectrum and is a poor absorber of green. Green light, reflected by structures like cell walls, is less absorbed, so leaves look green. Green is what is left over."
+    },
+    "probes": [
+      {
+        "id": "sci-0063-p1",
+        "kind": "mcq",
+        "question": "Which colours of light does chlorophyll absorb best?",
+        "options": [
+          "Green and yellow",
+          "Blue and red",
+          "Only green"
+        ],
+        "answer": 1
+      }
+    ],
+    "sources": [
+      {
+        "title": "Chlorophyll (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chlorophyll"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Oak leaves with autumn coloration.jpg (CC0) shows leaves in stages from green to yellow and red; File:Fall a matter of chlorophyll (2960766791).jpg alternative",
+    "keywords": [
+      "autumn leaves chlorophyll",
+      "oak leaves autumn coloration",
+      "chlorophyll"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.060Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chlorophyll",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Chlorophyll absorbs mainly blue and red; green is less absorbed and reflected by structures like cell walls (answer and reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Chlorophyll",
+        "quote": "Plants are perceived as green because chlorophyll absorbs mainly the blue and red wavelengths but green light, reflected by plant structures like cell walls, is less absorbed."
+      },
+      {
+        "claim": "Chlorophyll absorbs most strongly in blue and red (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Chlorophyll",
+        "quote": "Chlorophylls absorb light most strongly in the blue and red portions of the electromagnetic spectrum ."
+      },
+      {
+        "claim": "Chlorophyll is a poor absorber of green",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Chlorophyll",
+        "quote": "Conversely, it is a poor absorber of green and near-green portions of the spectrum."
+      }
+    ],
+    "overall": "pass"
+  }
+}

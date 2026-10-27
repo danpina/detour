@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-1303944",
+  "alt": "Dutch school painting of the Great Fire of London at night, flames over the city beyond the Thames with the Tower of London at right.",
+  "fits": true,
+  "note": "Public domain, 5477x3189 landscape; 17th-century painting",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

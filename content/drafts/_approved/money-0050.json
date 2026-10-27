@@ -1,0 +1,143 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Comparative advantage",
+    "angle": "Why trade helps even a country that is better at everything"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0050",
+    "interest": "money",
+    "type": "story",
+    "title": "Better at everything, and still trading",
+    "body": {
+      "panels": [
+        {
+          "text": "In 1817 David Ricardo pictured two countries, Portugal and England, each making cloth and wine of identical quality."
+        },
+        {
+          "text": "Portugal is better at both. One unit takes it 90 hours of work for cloth and 80 for wine. England needs 100 and 120."
+        },
+        {
+          "text": "But England is relatively better at cloth than wine, while Portugal is relatively better at wine than cloth."
+        },
+        {
+          "text": "So England puts its 220 hours into cloth, 2.2 units. Portugal puts its 170 hours into wine, 2.125 units. Without specialising, those hours made just one unit of each."
+        },
+        {
+          "text": "Total output of both goods rises, and swapping cloth for wine can leave both countries with more. That is comparative advantage."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0050-p1",
+        "kind": "mcq",
+        "question": "In the story, what happens to total production when each country focuses on its comparative advantage?",
+        "options": [
+          "It stays the same",
+          "It rises",
+          "It falls"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0050-p2",
+        "kind": "tf",
+        "question": "True or false: in the story, Portugal needs fewer hours than England for both cloth and wine.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Comparative advantage (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Comparative_advantage"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Portrait of David Ricardo by Thomas Phillips.jpg shows an oil portrait of the economist David Ricardo",
+    "keywords": [
+      "David Ricardo portrait",
+      "David Ricardo Thomas Phillips",
+      "David Ricardo economist"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.977Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1817 David Ricardo developed the theory (pictured two countries)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+        "quote": "In 1817, David Ricardo published what has since become known as the theory of comparative advantage"
+      },
+      {
+        "claim": "Two countries, Portugal and England, each producing cloth and wine of identical quality",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+        "quote": "each producing two goods of identical quality"
+      },
+      {
+        "claim": "Hours per unit: Portugal 90 cloth, 80 wine; England 100 cloth, 120 wine",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+        "quote": "Hours of work necessary to produce one unit Produce Country Cloth Wine Total England 100 120 220 Portugal 90 80 170"
+      },
+      {
+        "claim": "England relatively better at cloth, Portugal relatively better at wine",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+        "quote": "England is more efficient at producing cloth than wine, and Portugal is more efficient at producing wine than cloth."
+      },
+      {
+        "claim": "England puts its 220 hours into cloth for 2.2 units; Portugal 170 hours into wine for 2.125 units",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+        "quote": "England can spend 220 labor hours to produce 2.2 units of cloth while Portugal can spend 170 hours to produce 2.125 units of wine"
+      },
+      {
+        "claim": "England/Portugal arithmetic",
+        "verdict": "pass",
+        "note": "Verified by calculation: 220/100 = 2.2 units of cloth; 170/80 = 2.125 units of wine; one of each costs 100+120=220 and 90+80=170 hours, i.e. one unit of each without specialising."
+      },
+      {
+        "claim": "Without specialising, those hours made just one unit of each",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+        "quote": "England requires 220 hours of work to both produce and consume one unit each of cloth and wine"
+      },
+      {
+        "claim": "Total output of both goods rises (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+        "quote": "then the global production of both goods increases"
+      },
+      {
+        "claim": "Swapping cloth for wine can leave both countries with more",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+        "quote": "both England and Portugal can consume more wine and cloth under free trade"
+      },
+      {
+        "claim": "Probe p2: Portugal needs fewer hours than England for both goods (90<100, 80<120)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+        "quote": "it is possible to produce wine and cloth with less labor than it would take to produce the same quantities in England"
+      }
+    ],
+    "overall": "pass"
+  }
+}

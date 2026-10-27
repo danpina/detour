@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "What was the House of Wisdom?",
+    "angle": "What was the House of Wisdom?"
+  },
+  "created_at": "2026-10-26T20:31:39.978Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0066",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "What was the House of Wisdom?",
+    "body": {
+      "claim": "Baghdad's House of Wisdom was a real library, but it was probably not the university it is often pictured as.",
+      "why": "It was an Abbasid library in Baghdad, part of the larger Translation Movement that rendered works from Greek and Syriac into Arabic. Under Caliph al-Ma'mun (813 to 833) it became a public academy and library, and it was destroyed in the Mongol siege of 1258. Some historians argue that the image of a university with departments was built up in the 19th and early 20th centuries, and note that major translation efforts also happened elsewhere."
+    },
+    "probes": [
+      {
+        "id": "hist-0066-p1",
+        "kind": "mcq",
+        "question": "What did the Translation Movement do?",
+        "options": [
+          "Translated Arabic into Latin",
+          "Translated works from Greek and Syriac into Arabic",
+          "Copied Persian poems",
+          "Taught Greek to children"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0066-p2",
+        "kind": "tf",
+        "question": "True or false: the House of Wisdom was destroyed during the Mongol siege of Baghdad in 1258.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "House of Wisdom (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/House_of_Wisdom"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Maqamat hariri.jpg (public domain): 1237 manuscript illustration by Yahya ibn Mahmud al-Wasiti, the image used for the House of Wisdom on Wikipedia, showing a scholarly library scene",
+    "keywords": [
+      "Maqamat Hariri library",
+      "Yahya ibn Mahmud al-Wasiti",
+      "Abbasid library manuscript"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.664Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "House of Wisdom was part of the Translation Movement translating from Greek and Syriac into Arabic (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+        "quote": "translating works from Greek and Syriac to Arabic"
+      },
+      {
+        "claim": "It was a real library in Baghdad",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+        "quote": "also known as the Grand Library of Baghdad"
+      },
+      {
+        "claim": "Under al-Ma'mun (813-833) it became a public academy and library",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+        "quote": "it was turned into a public academy and a library"
+      },
+      {
+        "claim": "Destroyed in the Mongol siege of Baghdad in 1258 (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+        "quote": "It was destroyed in 1258 during the Mongol siege of Baghdad"
+      },
+      {
+        "claim": "The university-with-departments image is disputed and said to be built up in the 19th and early 20th centuries",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+        "quote": "has been challenged by some historians , who argue this image was constructed over the course of the nineteenth and early twentieth centuries"
+      },
+      {
+        "claim": "Major translation efforts also happened elsewhere",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+        "quote": "it is unlikely that the House of Wisdom existed as the sole center of such"
+      }
+    ],
+    "overall": "pass"
+  }
+}

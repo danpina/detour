@@ -1,0 +1,53 @@
+{
+  "id": "money-0046",
+  "interest": "money",
+  "title": "A cushion for the unexpected",
+  "probes": [
+    {
+      "id": "money-0046-p1",
+      "question": "Which is a typical use of an emergency fund?",
+      "kind": "mcq",
+      "options": [
+        "A holiday",
+        "A car repair",
+        "Concert tickets"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0046-p2",
+      "question": "True or false: according to the CFPB, even a small amount put aside can provide some financial security.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "An essential guide to building an emergency fund (CFPB)",
+      "url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/"
+    },
+    {
+      "title": "Emergency fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emergency_fund"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:47.403Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0046.webp",
+    "alt": "A clear tub of mixed coins from several countries, including Australian, Dutch and Kenyan pieces.",
+    "kind": "photo",
+    "credit": "Billjones94 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:A_jar_of_world_coins.jpg"
+  },
+  "body": {
+    "claim": "An emergency fund is cash set aside for unplanned expenses, and even a small one helps.",
+    "why": "The CFPB gives car repairs, medical bills and a loss of income as examples. Without savings, a financial shock can turn into debt that is generally harder to pay off. In an October 2025 Federal Reserve survey, 63 percent of US adults said they would cover a $400 emergency entirely with cash or its equivalent."
+  }
+}

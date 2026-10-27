@@ -1,0 +1,65 @@
+{
+  "id": "sci-0039",
+  "interest": "science",
+  "title": "The pile that started the battery age",
+  "probes": [
+    {
+      "id": "sci-0039-p1",
+      "question": "In a battery that is supplying power, electrons flow out of which terminal?",
+      "kind": "mcq",
+      "options": [
+        "Positive",
+        "Negative",
+        "Neither, they stay inside"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0039-p2",
+      "question": "True or false: Volta's 1800 pile stacked alternating metal discs separated by brine-soaked cloth.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Voltaic pile (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Voltaic_pile"
+    },
+    {
+      "title": "Electric battery (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Electric_battery"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:53.488Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0039.webp",
+    "alt": "A tall column of stacked metal discs on a round base, an early Volta battery, displayed against a dark background.",
+    "kind": "photo",
+    "credit": "Rama / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Volta_battery-MHS_373-IMG_3840-gradient.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "1780s, Italy. Luigi Galvani finds that a circuit of two metals and a frog's leg makes the leg respond."
+      },
+      {
+        "text": "In 1794 Alessandro Volta shows that you do not need the frog: two metals and brine-soaked cloth or cardboard in a circuit also produce an electric current."
+      },
+      {
+        "text": "In 1800 he stacks several pairs of copper (or silver) and zinc discs, separated by brine-soaked cloth, which increases the total electromotive force. Connect the top and bottom, and a current flows."
+      },
+      {
+        "text": "Today the idea lives on in every battery: its negative terminal is the source of electrons, which flow through your device to the positive terminal."
+      }
+    ]
+  }
+}

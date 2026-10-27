@@ -1,0 +1,50 @@
+{
+  "id": "num-0068",
+  "interest": "numbers",
+  "title": "How many friends apart are we?",
+  "probes": [
+    {
+      "id": "num-0068-p1",
+      "question": "What is the folk idea that everyone is connected through a certain number of other people?",
+      "kind": "mcq",
+      "options": [
+        "Two",
+        "Six",
+        "Twenty",
+        "One hundred"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Three and a half degrees of separation (Facebook Research)",
+      "url": "https://research.facebook.com/blog/2016/2/three-and-a-half-degrees-of-separation/"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:41.170Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0068.webp",
+    "alt": "A network diagram of labelled circles linked by arrows, a sociogram showing how people in a group are connected.",
+    "kind": "photo",
+    "credit": "Martin Grandjean / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Moreno_Sociogram_6th_Grade.png"
+  },
+  "body": {
+    "question": "An old idea says anyone is connected to anyone else through six other people. When Facebook measured its friend graph in 2016, how many people on average stood between two users?",
+    "options": [
+      "About 6",
+      "About 20",
+      "About 3.5"
+    ],
+    "answer": 2,
+    "reveal": "About three and a half. Across the 1.59 billion people active on Facebook, the average distance was 4.57 steps, which is 3.57 intermediaries. Friend networks are smaller than they feel."
+  }
+}

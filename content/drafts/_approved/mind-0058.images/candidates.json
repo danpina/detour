@@ -1,0 +1,86 @@
+{
+  "draft_id": "mind-0058",
+  "created_at": "2026-10-27T06:09:55.632Z",
+  "queries": [
+    "RSVP rapid serial visual presentation letters",
+    "RSVP",
+    "RSVP rapid serial visual presentation"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-115130338",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Monsieur Decauville aine prie M de lui faire l'honneur de venir visiter ses ateliers de Petit-Bourg ed assistr a des experiences de chemns de fer portatifs.jpg",
+      "credit": "Monsieur Decauville aine (Mr. Decauville the Elder) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monsieur_Decauville_aine_prie_M_de_lui_faire_l%27honneur_de_venir_visiter_ses_ateliers_de_Petit-Bourg_ed_assistr_a_des_experiences_de_chemns_de_fer_portatifs.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Monsieur_Decauville_aine_prie_M_de_lui_faire_l%27honneur_de_venir_visiter_ses_ateliers_de_Petit-Bourg_ed_assistr_a_des_experiences_de_chemns_de_fer_portatifs.jpg/960px-Monsieur_Decauville_aine_prie_M_de_lui_faire_l%27honneur_de_venir_visiter_ses_ateliers_de_Petit-Bourg_ed_assistr_a_des_experiences_de_chemns_de_fer_portatifs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1455,
+      "height": 1080,
+      "alt_suggestion": "An invitation letter Mr. Decauville the Elder sent to a guest, or M., RSPV: M. is invited to visit Mr. Decauville's workshops in Petit-Bourg and witness experiments planned with portable railways.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-16823",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Rapids, Hudson River, Adirondacks",
+      "credit": "Winslow Homer American, 1836-1910 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16823",
+      "image_url": "https://www.artic.edu/iiif/2/5873d7d7-732d-6e45-2bc0-8402afd7c0f0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of transparent watercolor, with traces of opaque watercolor, blotting, and scraping, over graphite, on thick, rough-textured, ivory wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-124407275",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "RSVP link.jpg",
+      "credit": "KgomotsoRamushu / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RSVP_link.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/RSVP_link.jpg/960px-RSVP_link.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1080,
+      "height": 1920,
+      "alt_suggestion": "Rsvp link",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-147150502",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "RSVP South End Sign Early April 2024.jpg",
+      "credit": "City Dweller 2 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RSVP_South_End_Sign_Early_April_2024.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/RSVP_South_End_Sign_Early_April_2024.jpg/960px-RSVP_South_End_Sign_Early_April_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3000,
+      "height": 4000,
+      "alt_suggestion": "RSVP South End sign in April 2024",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-36067814",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dülmen, Viktorkirmes auf dem Overbergplatz -- 2014 -- 3738 (2).jpg",
+      "credit": "Dietmar Rabich / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Viktorkirmes_auf_dem_Overbergplatz_--_2014_--_3738_(2).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/D%C3%BClmen%2C_Viktorkirmes_auf_dem_Overbergplatz_--_2014_--_3738_%282%29.jpg/960px-D%C3%BClmen%2C_Viktorkirmes_auf_dem_Overbergplatz_--_2014_--_3738_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5184,
+      "height": 3456,
+      "alt_suggestion": "Light traces of a Ferris wheel, Viktorkirmes in Dülmen, North Rhine-Westphalia, GermanyTwo traditional folk festivals are particularly important in Dülmen: the Trinity Fair and the Victor Fair.The Tri",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"RSVP rapid serial visual presentation letters\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"RSVP\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"RSVP rapid serial visual presentation\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

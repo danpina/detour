@@ -1,0 +1,62 @@
+{
+  "id": "hist-0038",
+  "interest": "history",
+  "title": "The walls that cannons broke",
+  "probes": [
+    {
+      "id": "hist-0038-p1",
+      "question": "What helped the Ottomans break through Constantinople's walls?",
+      "kind": "mcq",
+      "options": [
+        "A long famine inside the city",
+        "Cannons and gunpowder",
+        "A tunnel under the sea",
+        "A betrayal at the gates"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0038-p2",
+      "question": "True or false: the Theodosian walls had protected Constantinople for about 800 years.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fall of Constantinople (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:16.901Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0038.webp",
+    "alt": "Painting by Fausto Zonaro of Sultan Mehmed II on a white horse entering Constantinople through an arch among his troops.",
+    "kind": "photo",
+    "credit": "Fausto Zonaro / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Zonaro_GatesofConst.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "For about 800 years, the great Theodosian walls protected Constantinople. They were noted as some of the most advanced defences in the world."
+      },
+      {
+        "text": "The Ottoman siege began on 6 April 1453. Its huge cannons fired balls weighing around 500 kilograms, which opened gaps in the walls."
+      },
+      {
+        "text": "On 28 May, the night before the final assault, the emperor and the city's leaders held a last service in the Hagia Sophia."
+      },
+      {
+        "text": "The city fell on 29 May 1453. The siege is seen as heralding a change in siege warfare: gunpowder had beaten walls that had stood for centuries."
+      }
+    ]
+  }
+}

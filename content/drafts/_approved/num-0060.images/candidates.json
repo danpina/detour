@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0060",
+  "created_at": "2026-10-26T20:32:48.924Z",
+  "queries": [
+    "Kurt Gödel Gödel portrait Kurt Godel",
+    "Kurt Gödel",
+    "Kurt Gödel Gödel portrait"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-144622468",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Kurt Gödel.png",
+      "credit": "Kurt Gödel / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kurt_G%C3%B6del.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Kurt_G%C3%B6del.png/960px-Kurt_G%C3%B6del.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 2631,
+      "alt_suggestion": "Kurt Gödel never defined the constitutional loophole he’d found, but he was far too exacting a logician not to have spotted something.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-11",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Self-Portrait",
+      "credit": "Walter Shirlaw (American, 1838–1909) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/11",
+      "image_url": "https://www.artic.edu/iiif/2/7b7a6f39-1cd8-ea2f-9811-18b0e23edac0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-5074350",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Kurt godel tomb 2004.jpg",
+      "credit": "Antonio G Colombo / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kurt_godel_tomb_2004.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Kurt_godel_tomb_2004.jpg/960px-Kurt_godel_tomb_2004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1443,
+      "height": 906,
+      "alt_suggestion": "Picture of the tomb of Kurt Gödel in the Princeton, New Jersey, cemetery",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-80607",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Self-Portrait",
+      "credit": "Vincent van Gogh (Dutch, 1853–1890) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/80607",
+      "image_url": "https://www.artic.edu/iiif/2/47c5bcb8-62ef-e5d7-55e7-f5121f409a30/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of a red-haired, bearded man with light skin, painted in short brushstrokes and multicolored dots. The background is likewise a mass of small, closely spaced colored dots, these in green, blue, and red-orange.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-74520069",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pamětní deska Kurta Gödela na jeho rodném domě.jpg",
+      "credit": "Jvs / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pam%C4%9Btn%C3%AD_deska_Kurta_G%C3%B6dela_na_jeho_rodn%C3%A9m_dom%C4%9B.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Pam%C4%9Btn%C3%AD_deska_Kurta_G%C3%B6dela_na_jeho_rodn%C3%A9m_dom%C4%9B.jpg/960px-Pam%C4%9Btn%C3%AD_deska_Kurta_G%C3%B6dela_na_jeho_rodn%C3%A9m_dom%C4%9B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2543,
+      "height": 1601,
+      "alt_suggestion": "Here-was-born plaque of Kurt Gödel in Brno, Pekařská 5",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Kurt Gödel Gödel portrait Kurt Godel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Kurt Gödel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Kurt Gödel Gödel portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

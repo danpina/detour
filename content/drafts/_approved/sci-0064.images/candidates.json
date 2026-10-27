@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0064",
+  "created_at": "2026-10-26T20:32:01.996Z",
+  "queries": [
+    "underwater sound hydroacoustic ocean sound wave",
+    "underwater sound",
+    "underwater sound hydroacoustic"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-1815140",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Underwater mcmurdo sound.jpg",
+      "credit": "NSF/USAP photo by Steve Clabuesch; uploaded by en:User:Fishdecoy / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Underwater_mcmurdo_sound.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Underwater_mcmurdo_sound.jpg/960px-Underwater_mcmurdo_sound.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1867,
+      "height": 1400,
+      "alt_suggestion": "Image of an ice wall and the ocean floor adjacent to remote-controlled photographic equipment at Explorer's Cove, New Harbor, McMurdo Sound. An underwater camera is connected by cable to onshore facil",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-77333",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series \"Thirty-Six Views of Mount Fuji (Fugaku sanjurokkei)\"",
+      "credit": "Katsushika Hokusai 葛飾 北斎 Japanese, 1760-1849 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/77333",
+      "image_url": "https://www.artic.edu/iiif/2/05cd1ba7-67d1-96c5-0e78-2eb4114b65e7/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color woodblock print; oban.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-76978900",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "1991 Heard Island Feasibility Test.png",
+      "credit": "Bdushaw / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1991_Heard_Island_Feasibility_Test.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/1991_Heard_Island_Feasibility_Test.png/960px-1991_Heard_Island_Feasibility_Test.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2538,
+      "height": 1202,
+      "alt_suggestion": "An acoustic experiment in 1991 called the Heard Island Feasibility Test (HIFT) tested the ability of sound signals to measure ocean temperature. The coded signals transmitted during the tests traveled",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-89503",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series \"Thirty-Six Views of Mount Fuji (Fugaku sanjurokkei)\"",
+      "credit": "Katsushika Hokusai 葛飾 北斎 Japanese, 1760-1849 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/89503",
+      "image_url": "https://www.artic.edu/iiif/2/2fa24f36-cc26-41b6-4b49-12bba2a6c1c8/full/843,/0/default.jpg",
+      "alt_suggestion": "A color woodblock print of a large crashing wave, looms over two narrow boats full of people. Mt Fuji in the background. There is a faint peach colored sky.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-52780157",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Milford Sound Underwater Observatory.jpg",
+      "credit": "Pseudopanax at English Wikipedia / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Milford_Sound_Underwater_Observatory.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Milford_Sound_Underwater_Observatory.jpg/960px-Milford_Sound_Underwater_Observatory.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3840,
+      "height": 2160,
+      "alt_suggestion": "Milford Sound Underwater Observatory, a floating building in Harrison Cove",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"underwater sound hydroacoustic ocean sound wave\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"underwater sound\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"underwater sound hydroacoustic\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

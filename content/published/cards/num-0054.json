@@ -1,0 +1,62 @@
+{
+  "id": "num-0054",
+  "interest": "numbers",
+  "title": "The lily pond riddle",
+  "probes": [
+    {
+      "id": "num-0054-p1",
+      "question": "A lily doubles every day and covers half the pond on day 29. When is the pond fully covered?",
+      "kind": "mcq",
+      "options": [
+        "Day 59",
+        "Day 45",
+        "Day 30",
+        "Day 31"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "num-0054-p2",
+      "question": "True or false: with daily doubling, the lily covers a quarter of the pond the day before it covers half.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Exponential growth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Exponential_growth"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:02.419Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0054.webp",
+    "alt": "Claude Monet's painting of a pond covered with water lilies beneath a footbridge.",
+    "kind": "artwork",
+    "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+    "license": "CC0",
+    "source_url": "https://www.artic.edu/artworks/87088"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "A riddle French children are given: a water lily grows in a pond, and the plant doubles in size every day."
+      },
+      {
+        "text": "Left alone, it would smother the pond in 30 days, killing the other living things in the water."
+      },
+      {
+        "text": "Day after day the plant looks small, so people decide not to worry until it covers half the pond."
+      },
+      {
+        "text": "Which day is that? The 29th, which leaves only one day to save the pond. Doubling feels slow, then suddenly it is not."
+      }
+    ]
+  }
+}

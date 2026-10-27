@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-108867046",
+  "alt": "View along the Suez Canal in Egypt, calm turquoise water beside a paved embankment under a hazy sky.",
+  "fits": true,
+  "note": "CC BY 4.0, 3072x2048; plain but accurate",
+  "crop": {
+    "fx": 0.55,
+    "fy": 0.5,
+    "zoom": 1.3
+  }
+}

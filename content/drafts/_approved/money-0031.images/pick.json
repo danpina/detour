@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-5736747",
+  "alt": "A fan of Zimbabwean banknotes from 10 dollars up to 100 billion dollars on a black background.",
+  "fits": true,
+  "note": "Classic hyperinflation image, public domain.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

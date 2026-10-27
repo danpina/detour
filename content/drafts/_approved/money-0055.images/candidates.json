@@ -1,0 +1,84 @@
+{
+  "draft_id": "money-0055",
+  "created_at": "2026-10-27T06:09:37.855Z",
+  "queries": [
+    "Frankfurt Stock Exchange stock exchange trading floor stock exchange",
+    "Frankfurt Stock Exchange",
+    "Frankfurt Stock Exchange stock exchange trading floor"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-101209626",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Frankfurt Stock Exchange (Ank Kumar) 05.jpg",
+      "credit": "Ank Kumar / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Stock_Exchange_(Ank_Kumar)_05.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Frankfurt_Stock_Exchange_%28Ank_Kumar%29_05.jpg/960px-Frankfurt_Stock_Exchange_%28Ank_Kumar%29_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 4000,
+      "alt_suggestion": "Frankfurt Stock Exchange (Ank Kumar)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-156538",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Chicago Stock Exchange Trading Room: Reconstruction at the Art Institute of Chicago",
+      "credit": "Adler & Sullivan, original architects; American, 1883-1896 Vinci & Kenny, reconstruction architects; American, 1970-1977 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/156538",
+      "image_url": "https://www.artic.edu/iiif/2/47b28b55-ced6-502d-f111-fbe0033f8dc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A grand, double-height room with wood paneling, stenciled wall patterns, four hexagonal columns, and an interior balcony with guardrail at left.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-101209619",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Frankfurt Stock Exchange (Ank Kumar) 04.jpg",
+      "credit": "Ank Kumar / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Stock_Exchange_(Ank_Kumar)_04.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Frankfurt_Stock_Exchange_%28Ank_Kumar%29_04.jpg/960px-Frankfurt_Stock_Exchange_%28Ank_Kumar%29_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 4000,
+      "alt_suggestion": "Frankfurt Stock Exchange (Ank Kumar)",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-12765",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Elevator T-Plate from the Chicago Stock Exchange",
+      "credit": "Adler & Sullivan, architects; American, 1883-1896 Louis H. Sullivan, designer; American, 1856-1924 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12765",
+      "image_url": "https://www.artic.edu/iiif/2/4dc63cce-a3c0-9976-8e13-e7aac9e7df6a/full/843,/0/default.jpg",
+      "alt_suggestion": "A T-shaped architectural fragment with ornate geometric patterning consisting of repeating ellipses and some foliage detail.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-101209641",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Frankfurt Stock Exchange (Ank Kumar) 03.jpg",
+      "credit": "Ank Kumar / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Stock_Exchange_(Ank_Kumar)_03.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Frankfurt_Stock_Exchange_%28Ank_Kumar%29_03.jpg/960px-Frankfurt_Stock_Exchange_%28Ank_Kumar%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6000,
+      "height": 4000,
+      "alt_suggestion": "Frankfurt Stock Exchange (Ank Kumar)",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Frankfurt Stock Exchange stock exchange trading floor stock exchange\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Frankfurt Stock Exchange\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Frankfurt Stock Exchange stock exchange trading floor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

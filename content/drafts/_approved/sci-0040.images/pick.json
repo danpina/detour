@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-31866628",
+  "alt": "A Faraday disk generator on a wooden base, with a copper disc turned by a crank between the poles of a red horseshoe magnet.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

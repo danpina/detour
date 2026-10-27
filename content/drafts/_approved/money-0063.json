@@ -1,0 +1,123 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Microfinance and Grameen Bank",
+    "angle": "Small loans to the poor without collateral"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0063",
+    "interest": "money",
+    "type": "story",
+    "title": "Loans without collateral",
+    "body": {
+      "panels": [
+        {
+          "text": "In 1976 Muhammad Yunus, a professor at the University of Chittagong, launched a research project on how to bring banking services to the rural poor."
+        },
+        {
+          "text": "It grew into Grameen Bank, founded in Bangladesh. It makes small loans, called microcredit, to poor people without requiring collateral."
+        },
+        {
+          "text": "Terms are kept reasonable, with group lending and weekly instalments. Around 97% of its members are women."
+        },
+        {
+          "text": "The bank is owned by its borrowers, most of whom are poor women. In 2006 the bank and Yunus were jointly awarded the Nobel Peace Prize."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "money-0063-p1",
+        "kind": "mcq",
+        "question": "What does Grameen Bank not require from the people it lends to?",
+        "options": [
+          "Collateral",
+          "Weekly instalments",
+          "A repayment plan"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0063-p2",
+        "kind": "tf",
+        "question": "True or false: Grameen Bank is owned by its borrowers.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Grameen Bank (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Grameen_Bank"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Professor Muhammad Yunus, portrait.jpg (CC BY 2.0) shows Nobel Peace Prize winner Muhammad Yunus",
+    "keywords": [
+      "Muhammad Yunus",
+      "Muhammad Yunus portrait",
+      "Grameen Bank founder"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.985Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Grameen_Bank",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1976 Muhammad Yunus, a professor at the University of Chittagong, launched a research project on banking services for the rural poor",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Grameen_Bank",
+        "quote": "It is originated in 1976, in the work of Muhammad Yunus"
+      },
+      {
+        "claim": "Yunus's project aimed to provide banking services to the rural poor",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Grameen_Bank",
+        "quote": "who launched a research project to study how to design a credit delivery system to provide banking services to the rural poor"
+      },
+      {
+        "claim": "Grameen Bank, founded in Bangladesh, makes small loans (microcredit) without requiring collateral (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Grameen_Bank",
+        "quote": "It provides small loans (known as microcredit or \"grameencredit\") to the impoverished without requiring collateral"
+      },
+      {
+        "claim": "Terms are reasonable, with group lending and weekly instalments",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Grameen_Bank",
+        "quote": "Access to credit is based on reasonable terms, such as the group lending system, and weekly-instalment payments"
+      },
+      {
+        "claim": "Around 97% of its members are women",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Grameen_Bank",
+        "quote": "around 97% of its members are women"
+      },
+      {
+        "claim": "The bank is owned by its borrowers, most of whom are poor women (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Grameen_Bank",
+        "quote": "Grameen Bank is owned by the borrowers of the bank, most of whom are poor women."
+      },
+      {
+        "claim": "In 2006 the bank and Yunus were jointly awarded the Nobel Peace Prize",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Grameen_Bank",
+        "quote": "In 2006, the bank and its founder, Muhammad Yunus, were jointly awarded the Nobel Peace Prize."
+      }
+    ],
+    "overall": "pass"
+  }
+}

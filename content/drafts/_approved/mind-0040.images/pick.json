@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-182220764",
+  "alt": "A brown leather diary with a gold 2026 on the cover lies on a light wooden table.",
+  "fits": true,
+  "note": "Calendar-style diary for time to form a habit.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.35,
+    "zoom": 1.1
+  }
+}

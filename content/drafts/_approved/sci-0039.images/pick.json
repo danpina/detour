@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-68321006",
+  "alt": "A tall column of stacked metal discs on a round base, an early Volta battery, displayed against a dark background.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

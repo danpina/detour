@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-50927860",
+ "alt": "The white marble Marriner S. Eccles Federal Reserve Board building in Washington under a blue sky, with an American flag on its roof.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (Public domain).",
+ "crop": {
+  "fx": 0.5,
+  "fy": 0.45,
+  "zoom": 1.3
+ }
+}

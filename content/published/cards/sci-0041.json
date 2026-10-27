@@ -1,0 +1,49 @@
+{
+  "id": "sci-0041",
+  "interest": "science",
+  "title": "A magnet you can switch off",
+  "probes": [
+    {
+      "id": "sci-0041-p1",
+      "question": "What happens to an electromagnet's field when the current is turned off?",
+      "kind": "mcq",
+      "options": [
+        "It doubles",
+        "It stays the same",
+        "It disappears"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "sci-0041-p2",
+      "question": "True or false: an iron core makes an electromagnet's field more powerful.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Electromagnet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Electromagnet"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:54.437Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0041.webp",
+    "alt": "A nail wrapped with coiled insulated wire and connected to a 9-volt battery, forming a simple electromagnet that holds small nails.",
+    "kind": "photo",
+    "credit": "MikeRun / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Electromagnet-with-9V-battery.jpg"
+  },
+  "body": {
+    "claim": "An electromagnet is a magnet whose field is produced by an electric current, so the field disappears when the current is turned off.",
+    "why": "Hans Christian Ørsted discovered in 1820 that electric currents create magnetic fields. Wrapping the wire into a coil around an iron core makes a more powerful magnet, and the strength of the field is proportional to the current through the winding."
+  }
+}

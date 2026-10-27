@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Hindsight bias",
+    "angle": "I knew it all along"
+  },
+  "created_at": "2026-10-27T06:06:56.020Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0052",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Why the past looks obvious",
+    "body": {
+      "claim": "Once you know how something turned out, it feels as if it was predictable all along.",
+      "why": "This is hindsight bias: the tendency to see past events as more predictable than they were. In a study around Nixon's trip to Beijing and Moscow, people later overestimated the likelihood they had given to outcomes that actually happened. In a 1975 method, people read a story with four outcomes, were told one was true, and then rated that one as more likely."
+    },
+    "probes": [
+      {
+        "id": "mind-0052-p1",
+        "kind": "tf",
+        "question": "True or false: after being told which outcome of a story is true, people tend to rate that outcome as more likely.",
+        "answer": true
+      },
+      {
+        "id": "mind-0052-p2",
+        "kind": "mcq",
+        "question": "Hindsight bias makes past events seem...",
+        "options": [
+          "More predictable than they were",
+          "Less important than they were",
+          "Completely forgotten",
+          "More random than they were"
+        ],
+        "answer": 0
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hindsight bias (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hindsight_bias"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Rear-view mirror.jpg shows a car rear-view mirror, looking back at where you have been",
+    "keywords": [
+      "rear-view mirror",
+      "car mirror",
+      "road",
+      "looking back"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:01.107Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hindsight_bias",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Once you know the outcome it feels predictable all along; hindsight bias = seeing past events as more predictable than they were",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hindsight_bias",
+        "quote": "the common tendency for people to perceive past events as having been more predictable than they were"
+      },
+      {
+        "claim": "Beyth and Fischhoff study about Nixon's trip to Beijing and Moscow",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hindsight_bias",
+        "quote": "Some time after president Nixon's return, participants were asked to recall (or reconstruct) the probabilities they had assigned to each possible outcome"
+      },
+      {
+        "claim": "In that study people later overestimated the likelihood they had given to outcomes that happened",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hindsight_bias",
+        "quote": "their perceptions of the likelihood of each outcome were greater or overestimated for events that had occurred"
+      },
+      {
+        "claim": "1975 method: a story with four outcomes, one told to be true",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hindsight_bias",
+        "quote": "giving participants a short story with four possible outcomes, one of which they are told is true"
+      },
+      {
+        "claim": "They then rated that outcome as more likely (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hindsight_bias",
+        "quote": "Participants frequently assign a higher likelihood of occurrence to whichever outcome they have been told is true."
+      },
+      {
+        "claim": "Hindsight bias makes past events seem more predictable than they were (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hindsight_bias",
+        "quote": "perceive past events as having been more predictable than they were"
+      }
+    ],
+    "overall": "pass"
+  }
+}

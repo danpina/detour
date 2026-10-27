@@ -1,0 +1,74 @@
+{
+  "draft_id": "tech-0052",
+  "created_at": "2026-10-26T20:29:28.915Z",
+  "queries": [
+    "CPU die processor die microprocessor",
+    "CPU die",
+    "CPU die processor die"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-131540349",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Intel SB80486DX2-50.jpg",
+      "credit": "Mister rf / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Intel_SB80486DX2-50.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Intel_SB80486DX2-50.jpg/960px-Intel_SB80486DX2-50.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5260,
+      "height": 4636,
+      "alt_suggestion": "Intel - SB80486DX2-50, a fourth-generation x86 microprocessor introduced by Intel in 1992. This chip, which is based on the 80486 microarchitecture, had a clock doubler operating at 50 MHz. This chip ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-131269299",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "A80386DX-25 SX218.jpg",
+      "credit": "Mister rf / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A80386DX-25_SX218.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/A80386DX-25_SX218.jpg/960px-A80386DX-25_SX218.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2925,
+      "height": 2225,
+      "alt_suggestion": "A80386DX-25 microprocessor; Micro-architecture i386; Data width 32 bit; Frequency 25 MHz; S-spec number SX218; Package 132-pin ceramic PGA; 1.45\" x 1.45\" (3.68 cm x 3.68 cm); Manufacturing process 1 m",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-150102290",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "CPUs 20240707 HOF0369 RAW-Export.png",
+      "credit": "PantheraLeo1359531 / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CPUs_20240707_HOF0369_RAW-Export.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/CPUs_20240707_HOF0369_RAW-Export.png/960px-CPUs_20240707_HOF0369_RAW-Export.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2799,
+      "height": 2799,
+      "alt_suggestion": "View of microprocessors (SL6WK).",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-145112890",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Die (the 'heart') of a microprocessor Intel 80486 with 1.2 millions of transistors, ca. 1990.jpg",
+      "credit": "Thomy pc at German Wikipedia / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Die_(the_%27heart%27)_of_a_microprocessor_Intel_80486_with_1.2_millions_of_transistors,_ca._1990.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Die_%28the_%27heart%27%29_of_a_microprocessor_Intel_80486_with_1.2_millions_of_transistors%2C_ca._1990.jpg/500px-Die_%28the_%27heart%27%29_of_a_microprocessor_Intel_80486_with_1.2_millions_of_transistors%2C_ca._1990.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 935,
+      "height": 1165,
+      "alt_suggestion": "Opened CPU Intel 80486. The area with the different rectangular fields or compartments in the middle is the microchip with 1.2 millions of transistors, the rest around it is casing and wiring for maki",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"CPU die processor die microprocessor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"CPU die\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"CPU die processor die\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0053",
+  "created_at": "2026-10-27T06:09:03.041Z",
+  "queries": [
+    "Sydney Opera House Sydney Harbour opera house",
+    "Sydney Opera House",
+    "Sydney Opera House Sydney Harbour"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-5420726",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sydney Opera House - Dec 2008.jpg",
+      "credit": "Diliff / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Sydney_Opera_House_-_Dec_2008.jpg/960px-Sydney_Opera_House_-_Dec_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2544,
+      "height": 1406,
+      "alt_suggestion": "A exposure blended photo of the Sydney Opera House, as viewed from the Sydney Harbour Bridge. Taken by myself with a Canon 5D and 100mm f/2.8 macro lens.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-103391",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Mephisto from the Opera Faust",
+      "credit": "Adolphe Monticelli (French, 1824–1886) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/103391",
+      "image_url": "https://www.artic.edu/iiif/2/1a0b480a-7bb3-587a-2461-4cbd3ed2508d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on panel.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-438293",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sydney Harbour Bridge night.jpg",
+      "credit": "Diliff / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sydney_Harbour_Bridge_night.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Sydney_Harbour_Bridge_night.jpg/960px-Sydney_Harbour_Bridge_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 13742,
+      "height": 3431,
+      "alt_suggestion": "A panoramic view of the Sydney Harbour Bridge at night, as seen from the North Shore suburb of Kirribilli.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-88989",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "In the Opera Box, No. 3",
+      "credit": "Mary Cassatt American, 1844-1926 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/88989",
+      "image_url": "https://www.artic.edu/iiif/2/40927708-ae7a-6f4b-0a5e-ba332c266a0e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of soft ground etching and aquatint on cream laid paper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-88746958",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sydney Opera House and Harbour Bridge Dusk (3) 2019-06-21.jpg",
+      "credit": "Benh LIEU SONG (Flickr) / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge_Dusk_(3)_2019-06-21.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%283%29_2019-06-21.jpg/960px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%283%29_2019-06-21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 7520,
+      "height": 2972,
+      "alt_suggestion": "Jørn Utzon's Sydney Opera House, and the Harbour Bridge, two of Sydney's most famous landmarks, at dusk. The Sydney Opera House is one of the most iconic buildings built in the 20th century (1973) and",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Sydney Opera House Sydney Harbour opera house\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Sydney Opera House\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Sydney Opera House Sydney Harbour\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

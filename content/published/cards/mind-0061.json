@@ -1,0 +1,50 @@
+{
+  "id": "mind-0061",
+  "interest": "mind",
+  "title": "The Dunning-Kruger effect, misread",
+  "probes": [
+    {
+      "id": "mind-0061-p1",
+      "question": "True or false: in the classic data, low performers rated themselves higher than high performers did.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "mind-0061-p2",
+      "question": "What does the statistical explanation say about the effect?",
+      "kind": "mcq",
+      "options": [
+        "It is purely a myth",
+        "It may largely be a mere statistical effect",
+        "It only affects experts",
+        "It proves poor performers cannot learn"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dunning-Kruger effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:57.750Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0061.webp",
+    "alt": "A simple line chart with confidence on the vertical axis and competence on the horizontal axis, showing a sharp early peak, a deep dip, then a slow rise.",
+    "kind": "photo",
+    "credit": "LittleT889 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Dunning%E2%80%93Kruger_effect.jpg"
+  },
+  "body": {
+    "claim": "The Dunning-Kruger effect does not show that unskilled people rate themselves above experts.",
+    "why": "In the classic exam data, low performers overestimated their abilities, but their self-assessment was still lower than that of high performers. Laypeople often misread it as saying low-intelligence people are more confident than high-intelligence people. Some critics argue the pattern may largely be a statistical effect, plus a general tendency to think we are better than average."
+  }
+}

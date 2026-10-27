@@ -1,0 +1,131 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Liar paradox and Gödel",
+    "angle": "A self-referring sentence and how it echoes in Gödel's theorems"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0060",
+    "interest": "numbers",
+    "type": "story",
+    "title": "The sentence that disagrees with itself",
+    "body": {
+      "panels": [
+        {
+          "text": "Read this sentence: 'This sentence is false.' Is it true, or false?"
+        },
+        {
+          "text": "If it is true, then what it says holds, so it is false. If it is false, what it says is wrong, so it is true. Either answer leads to a contradiction."
+        },
+        {
+          "text": "This is the liar paradox, and it is old. The Epimenides paradox, around 600 BC, has been suggested as an early example."
+        },
+        {
+          "text": "In 1931 Kurt Gödel published his incompleteness theorems. He named the liar paradox as a loose analogue of his result."
+        },
+        {
+          "text": "His first theorem says that no consistent set of axioms that an algorithm can list is able to prove all truths about the arithmetic of natural numbers."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "num-0060-p1",
+        "kind": "mcq",
+        "question": "Suppose 'This sentence is false' is true. What follows from what it says?",
+        "options": [
+          "It is also false",
+          "Nothing at all",
+          "It is certainly true",
+          "It is a number"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "num-0060-p2",
+        "kind": "tf",
+        "question": "True or false: Gödel cited the liar paradox as an analogue of his incompleteness result.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Liar paradox (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Liar_paradox"
+      },
+      {
+        "title": "Gödel's incompleteness theorems (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems"
+      }
+    ],
+    "difficulty": 5,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Young Kurt Gödel as a student in 1925.jpg, a portrait of Kurt Gödel",
+    "keywords": [
+      "Kurt Gödel",
+      "Gödel portrait",
+      "Kurt Godel"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:30:04.531Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Liar_paradox",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Liar sentence: if true then false, if false then true",
+        "verdict": "pass",
+        "note": "Verified by calculation: true implies its content (false) holds; false implies its content is wrong so it is true; both cases contradict."
+      },
+      {
+        "claim": "Assuming it true leads to contradiction, and likewise assuming the opposite",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Liar_paradox",
+        "quote": "Similarly, we get a contradiction when we assume the opposite."
+      },
+      {
+        "claim": "Epimenides paradox (around 600 BC) has been suggested as an early example",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Liar_paradox",
+        "quote": "The Epimenides paradox (c. 600 BC) has been suggested as an example of the liar paradox",
+        "note": "Page adds that they are not logically equivalent; card says only 'suggested', which is fair."
+      },
+      {
+        "claim": "In 1931 Goedel published his incompleteness theorems",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+        "quote": "These results, published by Kurt Gödel in 1931, are important both in mathematical logic"
+      },
+      {
+        "claim": "Goedel cited the liar paradox as an analogue of his result",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+        "quote": "Gödel specifically cites Richard's paradox and the liar paradox as semantical analogues to his syntactical incompleteness result",
+        "note": "Card's 'loose' analogue is the drafter's word; page says 'semantical analogues'."
+      },
+      {
+        "claim": "First theorem: no consistent algorithmically listable set of axioms proves all truths about arithmetic of natural numbers",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+        "quote": "The first incompleteness theorem states that no consistent system of axioms whose theorems can be listed by an effective procedure",
+        "note": "Sentence continues: is capable of proving all truths about the arithmetic of natural numbers."
+      }
+    ],
+    "overall": "pass"
+  }
+}

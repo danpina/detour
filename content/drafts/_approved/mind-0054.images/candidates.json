@@ -1,0 +1,95 @@
+{
+  "draft_id": "mind-0054",
+  "created_at": "2026-10-27T06:09:14.655Z",
+  "queries": [
+    "glass of water half full half empty",
+    "glass of water",
+    "glass of water half full"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-61460273",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Glass half full or half empty.png",
+      "credit": "Sealle / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Glass_half_full_or_half_empty.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Glass_half_full_or_half_empty.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 902,
+      "height": 1319,
+      "alt_suggestion": "Glass half full or half empty",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA09558",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Stereo Anaglyphs of River Meanders in Eberswalde Delta",
+      "credit": "NASA/JPL/Univ. of Arizona / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA09558",
+      "image_url": "https://images-assets.nasa.gov/image/PIA09558/PIA09558~medium.jpg",
+      "alt_suggestion": "This anaglyph from NASA Mars Reconnaissance Orbiter spacecraft, shows that Eberswalde Delta contains river meanders, which indicate that flowing water was present for an extended period of time. 3D gl",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-94840",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Young Woman at an Open Half-Door",
+      "credit": "Rembrandt van Rijn (Dutch, 1606–1669) Workshop of Rembrandt van Rijn (Dutch, 1606–1669) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/94840",
+      "image_url": "https://www.artic.edu/iiif/2/91c51644-871f-cda9-82bb-94f4973ae339/full/843,/0/default.jpg",
+      "alt_suggestion": "A young woman peers out to the right from from a Dutch door whose bottom half is closed. She wears a brown dress with a corset and a red beaded necklace.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-59384350",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Is the Glass Half Full or Half Empty? The Light of the Glass of Water Next To Black Wallett.jpg",
+      "credit": "Gabecollett / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Is_the_Glass_Half_Full_or_Half_Empty%3F_The_Light_of_the_Glass_of_Water_Next_To_Black_Wallett.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Is_the_Glass_Half_Full_or_Half_Empty%3F_The_Light_of_the_Glass_of_Water_Next_To_Black_Wallett.jpg/960px-Is_the_Glass_Half_Full_or_Half_Empty%3F_The_Light_of_the_Glass_of_Water_Next_To_Black_Wallett.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "A half full glass of water in the bend of light on a table next to a black wallett for size comparison.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-PIA16223",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Martian Streambed Evidence Rock in 3-D",
+      "credit": "NASA/JPL-Caltech/MSSS / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA16223",
+      "image_url": "https://images-assets.nasa.gov/image/PIA16223/PIA16223~medium.jpg",
+      "alt_suggestion": "This stereo image from the Mast Camera Mastcam on NASA Mars rover Curiosity shows a rock outcrop called Hottah, cited as evidence for vigorous flow of water in a long-ago Martian stream. You need 3D g",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "The boy travellers in Australasia - adventures of two youths in a journey to the Sandwich, Marquesas, Society, Samoan and Feejee islands, and through the colonies of New Zealand, New South Wales, (14598384497).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Generating nitrous oxide;Dental review (1901).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"glass of water half full half empty\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"glass of water\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"glass of water half full\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

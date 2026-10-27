@@ -1,0 +1,49 @@
+{
+  "id": "money-0043",
+  "interest": "money",
+  "title": "An ETF trades like a stock",
+  "probes": [
+    {
+      "id": "money-0043-p1",
+      "question": "How are ETFs priced, unlike mutual funds?",
+      "kind": "mcq",
+      "options": [
+        "Once a week",
+        "Once a day after the close",
+        "Continuously during the trading day"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0043-p2",
+      "question": "True or false: ETF issuers charge annual expense ratios.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Exchange-traded fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Exchange-traded_fund"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:28.163Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0043.webp",
+    "alt": "The sandstone facade of the Frankfurt Stock Exchange building with statues, columns and a street clock.",
+    "kind": "photo",
+    "credit": "aj82 / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Stock_Exchange_1.jpg"
+  },
+  "body": {
+    "claim": "An exchange-traded fund is a fund you buy and sell on a stock exchange, priced all day long.",
+    "why": "ETFs own assets such as stocks and bonds, and most are index funds. Unlike mutual funds, they are priced continuously through the trading day. ETF issuers charge annual expense ratios, so the cost of holding one is a number worth looking at."
+  }
+}

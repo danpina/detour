@@ -1,0 +1,49 @@
+{
+  "id": "money-0042",
+  "interest": "money",
+  "title": "A share is a slice of a company",
+  "probes": [
+    {
+      "id": "money-0042-p1",
+      "question": "What does a single share of stock represent?",
+      "kind": "mcq",
+      "options": [
+        "A loan to the company",
+        "Fractional ownership of the company",
+        "A guaranteed monthly payment"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0042-p2",
+      "question": "True or false: all stock is always identical, whatever the class.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stock (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stock"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:27.203Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0042.webp",
+    "alt": "An 1885 Chicago, Burlington and Quincy Railroad stock certificate for 100 shares, with a steam locomotive engraving.",
+    "kind": "photo",
+    "credit": "Issued by Chicago, Burlington and Quincy Railroad Company in 1885, reproduced from an original document by Palauenc05. / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aktie_Chicago_Burlington.jpg"
+  },
+  "body": {
+    "claim": "One share of stock means fractional ownership of the company.",
+    "why": "A share typically entitles its holder to a matching fraction of the company's earnings, of what is left if assets are sold off after debts are paid, or of voting power. These are split in proportion to the shares each person owns. Not all stock is equal, though, because a company can issue different classes with different rules."
+  }
+}

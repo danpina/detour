@@ -1,0 +1,56 @@
+{
+  "id": "num-0056",
+  "interest": "numbers",
+  "title": "How many socks guarantee a pair?",
+  "probes": [
+    {
+      "id": "num-0056-p1",
+      "question": "How many people guarantee that at least two share a birthday?",
+      "kind": "mcq",
+      "options": [
+        "183",
+        "365",
+        "366",
+        "367"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "num-0056-p2",
+      "question": "True or false: if you pull 3 socks from a drawer of only black and blue socks, two of them must match.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pigeonhole principle (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pigeonhole_principle"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:07.415Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "num-0056.webp",
+    "alt": "A tall wooden cabinet with hundreds of small pigeonhole slots, used for sorting hotel mail.",
+    "kind": "photo",
+    "credit": "Dennis Rhea / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Read_House_Hotel_Front_Desk_Cubbyholes.jpg"
+  },
+  "body": {
+    "question": "A drawer holds a mix of black and blue socks and you pull them out in the dark. How many must you pull to be certain of a matching pair?",
+    "options": [
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 1,
+    "reveal": "Three. With two colours there are only two 'pigeonholes', so by the third sock one colour must repeat. This is the pigeonhole principle: more items than boxes forces a box to hold two. The same idea says 367 people guarantee a shared birthday."
+  }
+}

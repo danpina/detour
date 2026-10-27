@@ -1,0 +1,137 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Cuban Missile Crisis",
+    "angle": "A naval blockade, a deal and a hotline"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0044",
+    "interest": "history",
+    "type": "story",
+    "title": "Call it a quarantine",
+    "body": {
+      "panels": [
+        {
+          "text": "In 1961 the US placed nuclear Jupiter missiles in Italy and Turkey, all within range of Moscow."
+        },
+        {
+          "text": "In October 1962 the world learned that Soviet nuclear missiles were in Cuba. On 22 October, President Kennedy ordered a naval blockade."
+        },
+        {
+          "text": "He called it a 'quarantine', not a blockade, so the US could avoid the formal implications of a state of war."
+        },
+        {
+          "text": "The crisis ended on 28 October with a deal. The Soviets removed their missiles, the US promised not to invade Cuba, and US missiles left Turkey and Italy without publicity. A Moscow-Washington hotline followed."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0044-p1",
+        "kind": "mcq",
+        "question": "Why did Kennedy call the blockade a 'quarantine'?",
+        "options": [
+          "It was about a disease",
+          "To avoid the formal implications of a state of war",
+          "To please the United Nations",
+          "Because it was only for ships carrying food"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0044-p2",
+        "kind": "tf",
+        "question": "True or false: the deal included the secret removal of American missiles from Turkey and Italy.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Cuban Missile Crisis (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis"
+      }
+    ],
+    "difficulty": 4,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Cuban missiles.jpg shows a US aerial reconnaissance photograph of a missile launch site in Cuba (public domain)",
+    "keywords": [
+      "Cuban Missile Crisis",
+      "Cuban missiles reconnaissance",
+      "R-12 missile",
+      "Kennedy 1962"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.134Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "In 1961 the US put Jupiter missiles in Italy and Turkey, all within range of Moscow",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+        "quote": "In 1961 the US put Jupiter nuclear missiles in Italy and Turkey . All were within range of Moscow"
+      },
+      {
+        "claim": "In October 1962 the world learned of Soviet missiles in Cuba",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+        "quote": "Kennedy delivered a nationwide televised address on all of the major networks announcing the discovery of the missiles"
+      },
+      {
+        "claim": "22 October Kennedy ordered a naval blockade",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+        "quote": "On 22 October, Kennedy ordered a naval blockade to prevent further missiles from reaching Cuba"
+      },
+      {
+        "claim": "He called it a quarantine so the US could avoid the formal implications of a state of war (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+        "quote": "He referred to the blockade as a \"quarantine\", not as a blockade, so the US could avoid the formal implications of a state of war"
+      },
+      {
+        "claim": "Crisis ended 28 October",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+        "quote": "The crisis lasted from 16 to 28 October 1962"
+      },
+      {
+        "claim": "Soviets dismantled missiles, US agreed not to invade Cuba",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+        "quote": "in exchange for a US public declaration and agreement not to invade Cuba again"
+      },
+      {
+        "claim": "US secretly removed missiles from Turkey (p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+        "quote": "The United States secretly agreed to dismantle all of the offensive weapons it had deployed to Turkey"
+      },
+      {
+        "claim": "US missiles left Turkey and Italy without publicity (p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+        "quote": "the withdrawal of US missiles from Italy and Turkey was a secret deal between Kennedy and Khrushchev"
+      },
+      {
+        "claim": "A Moscow-Washington hotline followed",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+        "quote": "The evident necessity of a quick and direct communication line between the two powers resulted in the Moscow-Washington hotline"
+      }
+    ],
+    "overall": "pass"
+  }
+}

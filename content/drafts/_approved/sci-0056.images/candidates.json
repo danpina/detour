@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0056",
+  "created_at": "2026-10-26T20:31:03.149Z",
+  "queries": [
+    "San Andreas Fault Carrizo Plain fault",
+    "San Andreas Fault",
+    "San Andreas Fault Carrizo Plain"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-45414270",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "San Andreas Fault, Carrizo Plain National Monument, California (21394880568).jpg",
+      "credit": "Ken Lund from Reno, Nevada, USA / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:San_Andreas_Fault,_Carrizo_Plain_National_Monument,_California_(21394880568).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/San_Andreas_Fault%2C_Carrizo_Plain_National_Monument%2C_California_%2821394880568%29.jpg/960px-San_Andreas_Fault%2C_Carrizo_Plain_National_Monument%2C_California_%2821394880568%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "The San Andreas Fault is a continental transform fault that extends roughly 1300 km (810 miles) through California. It forms the tectonic boundary between the Pacific Plate and the North American Plat",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-PIA14555",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Carrizo Plain, California",
+      "credit": "NASA/GSFC/METI/ERSDAC/JAROS, and U.S./Japan ASTER Science Team / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA14555",
+      "image_url": "https://images-assets.nasa.gov/image/PIA14555/PIA14555~medium.jpg",
+      "alt_suggestion": "This image acquired by NASA Terra spacecraft shows the Carrizo Plain, located northwest of Los Angeles, CA. It is one of the easiest places to see surface fractures of the San Andreas Fault, evident a",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-3106006",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Kluft-photo-Carrizo-Plain-Nov-2007-Img 0327.jpg",
+      "credit": "Ikluft / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kluft-photo-Carrizo-Plain-Nov-2007-Img_0327.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Kluft-photo-Carrizo-Plain-Nov-2007-Img_0327.jpg/960px-Kluft-photo-Carrizo-Plain-Nov-2007-Img_0327.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3072,
+      "height": 2048,
+      "alt_suggestion": "San Andreas Fault in the Carrizo Plain, aerial view from 8500 feet altitude",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-PIA02786",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "San Andreas Fault in the Carrizo Plain",
+      "credit": "NASA/JPL / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/PIA02786",
+      "image_url": "https://images-assets.nasa.gov/image/PIA02786/PIA02786~small.jpg",
+      "alt_suggestion": "The 1,200-kilometer 800-mile San Andreas is the longest fault in California and one of the longest in North America as seen by NASA Shuttle Radar Topography Mission SRTM on February 16, 2000.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-37632116",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "PIA02786 San Andreas Fault.jpg",
+      "credit": "NASA/JPL / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PIA02786_San_Andreas_Fault.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/PIA02786_San_Andreas_Fault.jpg/960px-PIA02786_San_Andreas_Fault.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1152,
+      "height": 870,
+      "alt_suggestion": "The 1,200-kilometer (800-mile)San Andreas is the longest fault in California and one of the longest in North America. This perspective view of a portion of the fault was generated using data from the ",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"San Andreas Fault Carrizo Plain fault\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"San Andreas Fault\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"San Andreas Fault Carrizo Plain\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

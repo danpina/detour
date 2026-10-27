@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0049",
+  "created_at": "2026-10-26T20:29:08.334Z",
+  "queries": [
+    "transistor transistors discrete transistors",
+    "transistor",
+    "transistor transistors"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-11885148",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Transistorer (cropped).jpg",
+      "credit": "Mister rf at English Wikipedia / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Transistorer_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Transistorer_%28cropped%29.jpg/960px-Transistorer_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4400,
+      "height": 3480,
+      "alt_suggestion": "Assorted discrete transistors. Packages in order from top to bottom: TO-3, TO-126, TO-92, SOT-23. BUX83: NPN silicon high voltage power transistor from Philips,TO-3 packaging M126: PNP silicon medium ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-jsc2025e015684",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "PRO Imagery Submittal - Radiation Harden GaN",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2025e015684",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2025e015684/jsc2025e015684~medium.jpg",
+      "alt_suggestion": "jsc2025e015684 (3/6/2025) --- The Radiation Harden GaN research team in the lithography room where patterning of transistors takes place. The High Performance Radiation Hardened GaN High Electron Mobi",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-34968916",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Transistor Clock.jpg",
+      "credit": "Wtshymanski / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Transistor_Clock.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Transistor_Clock.jpg/960px-Transistor_Clock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2096,
+      "height": 2696,
+      "alt_suggestion": "A digital clock made only with discrete transistors, diodes and resistors, no integrated circuits. This clock uses 550 switching diodes and 196 transistors to divide 60 Hz power line frequency down to",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-jsc2025e015690",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "PRO Imagery Submittal - Radiation Harden GaN",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/jsc2025e015690",
+      "image_url": "https://images-assets.nasa.gov/image/jsc2025e015690/jsc2025e015690~small.jpg",
+      "alt_suggestion": "jsc2025e015690 (3/6/2025) --- An overview of the prototype with the various components as part of the High Performance Radiation Hardened GaN High Electron Mobility Transistors for Space Applications ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-34950016",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Diode logic for transistor clock.jpg",
+      "credit": "Wtshymanski / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Diode_logic_for_transistor_clock.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Diode_logic_for_transistor_clock.jpg/960px-Diode_logic_for_transistor_clock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1632,
+      "height": 2564,
+      "alt_suggestion": "Diode-transistor logic in a discrete transistor clock. The diodes at A decode 1 of 12 lines to light the seven segment displays to show the hours 1 to 12. The transistors at B drive the decode diodes ",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"transistor transistors discrete transistors\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"transistor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"transistor transistors\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

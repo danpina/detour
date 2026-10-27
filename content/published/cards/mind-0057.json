@@ -1,0 +1,54 @@
+{
+  "id": "mind-0057",
+  "interest": "mind",
+  "title": "Switching tasks isn't free",
+  "probes": [
+    {
+      "id": "mind-0057-p1",
+      "question": "What is the switch cost?",
+      "kind": "mcq",
+      "options": [
+        "The price of a productivity app",
+        "The performance gap between repeating a task and switching to another",
+        "Time spent resting between tasks",
+        "The energy used by sleep"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0057-p2",
+      "question": "True or false: giving people ample warning of a task switch removes the switch cost.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Task switching (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Task_switching_(psychology)"
+    },
+    {
+      "title": "Human multitasking (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Human_multitasking"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:37:46.716Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0057.webp",
+    "alt": "Three leather juggling balls in yellow, red and blue stacked together on a soft white towel.",
+    "kind": "photo",
+    "credit": "Richard Leonard / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Juggling_Balls_(81706016).jpg"
+  },
+  "body": {
+    "claim": "Switching between tasks costs speed and accuracy, even with plenty of warning.",
+    "why": "Researchers compare doing task A after another A with doing task A after a different task B. The difference is the switch cost. It stays even with ample warning of the switch, so it reflects executive control work such as shifting attention and reconfiguring for the new task. Wikipedia notes a great deal of evidence for negative effects of multitasking on cognitive tasks, and none for a positive or neutral effect."
+  }
+}

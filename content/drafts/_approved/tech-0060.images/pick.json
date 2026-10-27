@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-11552682",
+  "alt": "A phone touchscreen showing the faint diamond-shaped grid of conductive tracks across its surface.",
+  "fits": true,
+  "note": "Shows the electrode pattern of a capacitive touchscreen.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1.4
+  }
+}

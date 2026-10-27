@@ -1,0 +1,91 @@
+{
+  "draft_id": "num-0048",
+  "created_at": "2026-10-27T06:10:50.976Z",
+  "queries": [
+    "tablets pills medicine tablets pills",
+    "tablets pills",
+    "tablets pills medicine tablets"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-36208331",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Dr Williams' 'Pink Pills', London, England, 1850-1920 Wellcome A627306.jpg",
+      "credit": "https://wellcomeimages.org/indexplus/obf_images/ed/7b/3b6984a03303ea351ccb108e250a.jpg Gallery: https://wellcomeimages.org/indexplus/image/L0058211.html Wellcom",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dr_Williams%27_%27Pink_Pills%27,_London,_England,_1850-1920_Wellcome_A627306.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg/960px-Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2694,
+      "height": 4036,
+      "alt_suggestion": "Dr Williams' 'Pink Pills' were advertised as an iron rich tonic for the blood and nerves to treat anaemia, clinical depression, poor appetite and lack of energy. The tablets were originally advertised",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-6798",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Women Looking at Religious Tablets",
+      "credit": "after Lazzaro Baldi Italian, c. 1624-1703 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/6798",
+      "image_url": "https://www.artic.edu/iiif/2/c48d86fd-8e80-410e-e72a-d063ff755f75/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of black chalk with brush and brown wash, heightened with lead white (discolored), on tan laid paper, laid down on ivory laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-8707786",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Tablets pills medicine medical waste.jpg",
+      "credit": "Pöllö / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tablets_pills_medicine_medical_waste.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Tablets_pills_medicine_medical_waste.jpg/960px-Tablets_pills_medicine_medical_waste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3648,
+      "height": 2736,
+      "alt_suggestion": "Various unused tablets collected to be treated as medical waste.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-144397",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Medicine Buddha Bhaishajyaguru With His Mandala Retinue",
+      "credit": "Central Tibet / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/144397",
+      "image_url": "https://www.artic.edu/iiif/2/541a96f7-faf6-1359-264c-5b4a6226bcf1/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of pigment and gold on cotton.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-8711678",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Medicine cocktail tablets and pills in glass.jpg",
+      "credit": "Pöllö / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Medicine_cocktail_tablets_and_pills_in_glass.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Medicine_cocktail_tablets_and_pills_in_glass.jpg/960px-Medicine_cocktail_tablets_and_pills_in_glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2736,
+      "height": 3648,
+      "alt_suggestion": "A glass half-filled with various medicinal tablets and pills.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Clinical medicine (1894) (14801598773).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"tablets pills medicine tablets pills\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"tablets pills\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"tablets pills medicine tablets\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "What inflation is",
+    "angle": "Inflation is a general price level, not one item; purchasing power"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0032",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "One pricey thing is not inflation",
+    "body": {
+      "claim": "Inflation is a general rise in prices across the economy, not one product getting more expensive.",
+      "why": "The Federal Reserve says inflation can't be measured by the cost of one product or even several, so it tracks price indexes that cover many goods and services. If your income stays the same while prices rise, your purchasing power falls. Over the longer run, the Fed has said that 2 percent a year in the PCE price index fits its goals best."
+    },
+    "probes": [
+      {
+        "id": "money-0032-p1",
+        "kind": "tf",
+        "question": "True or false: a price rise in a single product is enough to measure inflation.",
+        "answer": false
+      },
+      {
+        "id": "money-0032-p2",
+        "kind": "mcq",
+        "question": "Your income stays the same while prices rise. What happens to your purchasing power?",
+        "options": [
+          "It rises",
+          "It stays the same",
+          "It falls"
+        ],
+        "answer": 2
+      }
+    ],
+    "sources": [
+      {
+        "title": "What is inflation? (Federal Reserve)",
+        "url": "https://www.federalreserve.gov/faqs/economy_14419.htm"
+      },
+      {
+        "title": "Purchasing power (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Purchasing_power"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:\"wow\" price tag.jpg shows shelf price labels in a grocery store",
+    "keywords": [
+      "price tags",
+      "grocery prices",
+      "supermarket shelves prices",
+      "price labels"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.812Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://www.federalreserve.gov/faqs/economy_14419.htm",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Purchasing_power",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Inflation is a general rise in prices, not one product",
+        "verdict": "pass",
+        "source_url": "https://www.federalreserve.gov/faqs/economy_14419.htm",
+        "quote": "Inflation cannot be measured by an increase in the cost of one product or service, or even several products or services."
+      },
+      {
+        "claim": "Inflation is a general increase in the overall price level",
+        "verdict": "pass",
+        "source_url": "https://www.federalreserve.gov/faqs/economy_14419.htm",
+        "quote": "Rather, inflation is a general increase in the overall price level of the goods and services in the economy."
+      },
+      {
+        "claim": "Fed tracks price indexes covering many goods and services",
+        "verdict": "pass",
+        "source_url": "https://www.federalreserve.gov/faqs/economy_14419.htm",
+        "quote": "Federal Reserve policymakers evaluate changes in inflation by monitoring several different price indexes."
+      },
+      {
+        "claim": "Constant income plus rising prices lowers purchasing power (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Purchasing_power",
+        "quote": "If one's income remains constant but prices rise, their purchasing power decreases."
+      },
+      {
+        "claim": "Fed: 2 percent a year in the PCE price index fits its goals best over the longer run",
+        "verdict": "pass",
+        "source_url": "https://www.federalreserve.gov/faqs/economy_14419.htm",
+        "quote": "an annual increase in inflation of 2 percent in the price index for personal consumption expenditures (PCE)"
+      }
+    ],
+    "overall": "pass"
+  }
+}

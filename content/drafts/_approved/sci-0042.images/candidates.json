@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0042",
+  "created_at": "2026-10-26T20:33:26.449Z",
+  "queries": [
+    "Niagara Falls power plant Adams Power Plant Westinghouse generator",
+    "Niagara Falls power plant",
+    "Niagara Falls power plant Adams Power Plant"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-47451093",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Niagara Falls USA Canada from Skylon Tower on 2002-05-28.png",
+      "credit": "Robert F. Tobler / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Niagara_Falls_USA_Canada_from_Skylon_Tower_on_2002-05-28.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Niagara_Falls_USA_Canada_from_Skylon_Tower_on_2002-05-28.png/960px-Niagara_Falls_USA_Canada_from_Skylon_Tower_on_2002-05-28.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 12288,
+      "height": 3072,
+      "alt_suggestion": "NOTE: This image is a panorama consisting of 13 frames that were merged or stitched in PTGui Pro. As a result, this image necessarily underwent some form of digital manipulation. These manipulations m",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-iss015e05624",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Earth Observations taken by the Expedition 15 Crew",
+      "credit": "JSC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss015e05624",
+      "image_url": "https://images-assets.nasa.gov/image/iss015e05624/iss015e05624~medium.jpg",
+      "alt_suggestion": "ISS015-E-05624 (29 April 2007) --- The Niagara River, eastern end of Lake Erie and western end of Lake Ontario are featured in this image photographed by an Expedition 15 crewmember on the Internation",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-90048",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Distant View of Niagara Falls",
+      "credit": "Thomas Cole (American, born England, 1801–1848) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/90048",
+      "image_url": "https://www.artic.edu/iiif/2/18092196-50ae-3ff1-9205-1b3110e966c3/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting of a vast autumn scene with two very small figures in Indigenous clothing standing on a cliff overlooking a massive waterfall in the distance.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-3941077",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Robert moses niagara power plant 01.jpg",
+      "credit": "Busfahrer / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Robert_moses_niagara_power_plant_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Robert_moses_niagara_power_plant_01.jpg/960px-Robert_moses_niagara_power_plant_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3072,
+      "height": 2304,
+      "alt_suggestion": "Robert Moses Niagara Hydroelectric Power Station, Lewiston, New York",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-27163",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Niagara Falls in Winter",
+      "credit": "Jasper Francis Cropsey American, 1823–1900 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/27163",
+      "image_url": "https://www.artic.edu/iiif/2/42924282-d483-cd95-e676-52aee4bc4164/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Niagara Falls power plant Adams Power Plant Westinghouse generator\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Niagara Falls power plant\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Niagara Falls power plant Adams Power Plant\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

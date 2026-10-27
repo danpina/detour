@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0064",
+  "created_at": "2026-10-27T06:10:59.108Z",
+  "queries": [
+    "coin toss coin flip heads or tails",
+    "coin toss",
+    "coin toss coin flip"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-71147286",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Coin Toss (3635981474).jpg",
+      "credit": "ICMA Photos / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coin_Toss_(3635981474).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Coin_Toss_%283635981474%29.jpg/960px-Coin_Toss_%283635981474%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3730,
+      "height": 4724,
+      "alt_suggestion": "Coin Toss",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-194522",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tetradrachm (Coin) Portraying Queen Cleopatra VII",
+      "credit": "Roman; minted in Eastern Mediterranean (possibly Antioch, Syria) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/194522",
+      "image_url": "https://www.artic.edu/iiif/2/010469dd-fb00-f67a-3d59-5ff90dea4643/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of silver.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-5986235",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Coin toss at Super Bowl 43 1.jpg",
+      "credit": "Staff Sergeant Bradley Lail, United States Air Force / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coin_toss_at_Super_Bowl_43_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Coin_toss_at_Super_Bowl_43_1.jpg/960px-Coin_toss_at_Super_Bowl_43_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 3872,
+      "alt_suggestion": "U.S. Army Gen. David H. Petraeus, commander, U.S. Central Command, gets ready to toss the coin at Super Bowl XLIII, Feb 1, 2009, at Raymond James Stadium in Tampa, Fla.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-9655",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Tetradrachm (Coin) Depicting the Goddess Athena",
+      "credit": "Greek / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/9655",
+      "image_url": "https://www.artic.edu/iiif/2/c1691eb7-517e-6d06-987d-dbd9a87d0826/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of silver.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-24651442",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Coin tossing.JPG",
+      "credit": "Филип Романски / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coin_tossing.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Coin_tossing.JPG/960px-Coin_tossing.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3240,
+      "height": 4320,
+      "alt_suggestion": "Tossed coin.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"coin toss coin flip heads or tails\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"coin toss\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"coin toss coin flip\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0063",
+  "created_at": "2026-10-26T20:30:43.736Z",
+  "queries": [
+    "PageRank PageRank diagram web links graph",
+    "PageRank",
+    "PageRank PageRank diagram"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-80932749",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "20190731 Central England Temperature (CET) (annual mean, beginning in 1659).png",
+      "credit": "RCraig09 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20190731_Central_England_Temperature_(CET)_(annual_mean,_beginning_in_1659).png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/20190731_Central_England_Temperature_%28CET%29_%28annual_mean%2C_beginning_in_1659%29.png/960px-20190731_Central_England_Temperature_%28CET%29_%28annual_mean%2C_beginning_in_1659%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3323,
+      "height": 1351,
+      "alt_suggestion": "Graphs of annual mean w:Central England temperature (CET) beginning in 1659, and of 10-year and 30-year moving averages. Source for version with data through 2018 (OUTDATED): mean CET ranked coldest t",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-196347",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Plan of Chicago, Chicago, Illinois, Diagram Showing City Growth",
+      "credit": "Daniel Hudson Burnham (American, 1846-1912) Edward Herbert Bennett (American, born England, 1874-1954) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/196347",
+      "image_url": "https://www.artic.edu/iiif/2/8da8a9e1-48f7-9bc1-982a-2206dae4f522/full/843,/0/default.jpg",
+      "alt_suggestion": "A detailed sepia-toned map of Chicago with areas labeled and marked by red stars and boundary lines marked with colored ink and paint.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-2776582",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "PageRank-hi-res.png",
+      "credit": "Unknown author / Wikimedia Commons",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PageRank-hi-res.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/PageRank-hi-res.png/960px-PageRank-hi-res.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 2878,
+      "alt_suggestion": "PageRank-hi-res.png",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-119575",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Eleven Links Mounted as a Necklace",
+      "credit": "South German / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/119575",
+      "image_url": "https://www.artic.edu/iiif/2/f36b7618-7b3f-f161-9c0e-a0c32ea4426e/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of gold, enamel, and diamonds.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-13270167",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "CheiPageRank.png",
+      "credit": "Shepelyansky / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CheiPageRank.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/CheiPageRank.png/960px-CheiPageRank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4174,
+      "height": 2878,
+      "alt_suggestion": "Nodes with links in two-dimensional plane of PageRank and CheiRank",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"PageRank PageRank diagram web links graph\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"PageRank\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"PageRank PageRank diagram\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

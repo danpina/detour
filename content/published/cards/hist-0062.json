@@ -1,0 +1,50 @@
+{
+  "id": "hist-0062",
+  "interest": "history",
+  "title": "The stamp that made the sender pay",
+  "probes": [
+    {
+      "id": "hist-0062-p1",
+      "question": "What did the Penny Black change?",
+      "kind": "mcq",
+      "options": [
+        "Letters became free",
+        "Only the rich could post letters",
+        "Recipients paid by distance",
+        "The sender prepaid a flat rate, whatever the distance"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "hist-0062-p2",
+      "question": "True or false: under the Penny Black, the price of a letter rose with the distance it travelled.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Penny Black (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Penny_Black"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:31:46.527Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0062.webp",
+    "alt": "A used Penny Black stamp, the first adhesive postage stamp, showing Queen Victoria in profile with the words Postage and One Penny",
+    "kind": "photo",
+    "credit": "freestock.ca / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Penny-black-stamp-great-britain-circa-1840.jpg"
+  },
+  "body": {
+    "claim": "Before the Penny Black, the person receiving a letter in Britain usually paid for it.",
+    "why": "In 1837 British postal rates were high and complicated. It was normal for the recipient to pay on delivery, charged by the sheet and the distance travelled. Sir Rowland Hill proposed an adhesive stamp to show that postage was prepaid. The Penny Black, first issued on 1 May 1840, let a letter of up to half an ounce travel for one penny, whatever the distance."
+  }
+}

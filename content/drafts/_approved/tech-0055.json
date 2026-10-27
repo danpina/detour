@@ -1,0 +1,95 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "GPUs and AI",
+    "angle": "Graphics work splits into independent calculations, which suits AI too"
+  },
+  "created_at": "2026-10-26T20:28:21.550Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0055",
+    "interest": "tech",
+    "type": "fact_why",
+    "title": "Why AI runs on graphics chips",
+    "body": {
+      "claim": "Graphics chips suit AI because they have hundreds or thousands of calculation units.",
+      "why": "Graphics functions are largely independent, so they can run on separate calculation engines. Modern GPUs include hundreds or thousands of calculation units. That parallel design also helps with data-intensive tasks in artificial intelligence."
+    },
+    "probes": [
+      {
+        "id": "tech-0055-p1",
+        "kind": "mcq",
+        "question": "What makes GPUs useful for AI work?",
+        "options": [
+          "A single very fast core",
+          "They never use electricity",
+          "Thousands of calculation units working in parallel",
+          "They store the internet"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "tech-0055-p2",
+        "kind": "tf",
+        "question": "True or false: graphics functions are generally independent, so they can run on separate calculation engines.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Graphics processing unit (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Graphics_processing_unit"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:AMD Fiji GPU package with GPU, HBM memory and interposer.jpg (CC BY-SA) or File:Graphics Card Diamond Viper 330 with Nvidia (RIVA 128) GPU.jpg show GPU hardware",
+    "keywords": [
+      "GPU",
+      "graphics card",
+      "graphics processing unit",
+      "GPU package"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:06:41.371Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Graphics_processing_unit",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Modern GPUs include hundreds or thousands of calculation units",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Graphics_processing_unit",
+        "quote": "Modern GPUs include hundreds, or thousands, of calculation units."
+      },
+      {
+        "claim": "Graphics functions are largely independent so can run on separate calculation engines (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Graphics_processing_unit",
+        "quote": "Graphics functions are generally independent and this lends these tasks to being implemented on separate calculation engines."
+      },
+      {
+        "claim": "Parallel design helps with data-intensive AI tasks (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Graphics_processing_unit",
+        "quote": "adoption in diverse fields including artificial intelligence (AI) where they excel at handling data-intensive and computationally demanding tasks"
+      },
+      {
+        "claim": "GPUs are used for AI",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Graphics_processing_unit",
+        "quote": "GPUs are also increasingly being used for artificial intelligence (AI) processing and model training"
+      }
+    ],
+    "overall": "pass"
+  }
+}

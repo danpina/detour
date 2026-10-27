@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-7667990",
+  "alt": "An ancient Greek kleroterion, a stone slab with rows of slots used to select jurors by lot, in a museum with bronze allotment tokens below",
+  "fits": true,
+  "note": "Kleroterion at Agora Museum, fits",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.4,
+    "zoom": 1.3
+  }
+}

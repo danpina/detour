@@ -1,0 +1,62 @@
+{
+  "id": "sci-0067",
+  "interest": "science",
+  "title": "Clocks that flew around the world",
+  "probes": [
+    {
+      "id": "sci-0067-p1",
+      "question": "What did the clocks show when they were reunited?",
+      "kind": "mcq",
+      "options": [
+        "They were identical",
+        "They disagreed, in line with relativity's predictions",
+        "They had all stopped",
+        "Only the ground clocks had changed"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0067-p2",
+      "question": "True or false: the Hafele-Keating clocks travelled on commercial airliners.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hafele-Keating experiment (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hafele%E2%80%93Keating_experiment"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:18.783Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "sci-0067.webp",
+    "alt": "A black-and-white photo of the first caesium atomic clock at the National Physical Laboratory with two scientists beside it.",
+    "kind": "photo",
+    "credit": "National Physical Laboratory / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Atomic_Clock-Louis_Essen.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Relativity predicts that clocks run at slightly different rates depending on how they move and how strong gravity is. But can you measure it with an airliner?"
+      },
+      {
+        "text": "In 1971 physicist Joseph Hafele and astronomer Richard Keating took four cesium atomic clocks on commercial flights twice around the world, first east, then west."
+      },
+      {
+        "text": "They compared the travelling clocks with clocks that stayed at the US Naval Observatory. When reunited, the clocks disagreed."
+      },
+      {
+        "text": "Measured against the ground clocks, the eastward clocks lost about 59 nanoseconds and the westward ones gained about 273. Relativity had predicted about -40 and +275, within the margin of error."
+      }
+    ]
+  }
+}

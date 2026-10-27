@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The league with no founding day",
+    "angle": "The league with no founding day"
+  },
+  "created_at": "2026-10-26T20:31:39.970Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0060",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "The league with no founding day",
+    "body": {
+      "claim": "The Hanseatic League dominated Baltic and North Sea trade without ever being formally founded.",
+      "why": "Because it was never formally founded, it has no foundation date. Historians have traditionally traced its origins to the rebuilding of Lübeck in 1159. Its merchants set up trading posts called Kontors in London (the Steelyard), Bruges, Bergen and Novgorod, which had considerable legal autonomy. Treaties between members provided mutual defence. The league gradually unravelled and disintegrated in 1669."
+    },
+    "probes": [
+      {
+        "id": "hist-0060-p1",
+        "kind": "mcq",
+        "question": "Why does the Hanseatic League have no founding date?",
+        "options": [
+          "Its records were all burned",
+          "It was never formally founded",
+          "It was founded in secret",
+          "It was founded many times"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0060-p2",
+        "kind": "tf",
+        "question": "True or false: the Hanseatic League had trading posts as far east as Novgorod.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hanseatic League (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hanseatic_League"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Hansekogge Holstentormuseum (Lübeck).jpg (CC BY 4.0): model of a Hanseatic cog in the Holstentor museum, Lübeck; also File:Holstentormuseum (Lübeck) 01.jpg",
+    "keywords": [
+      "Hansekogge",
+      "Hanseatic cog",
+      "Holstentor Lübeck",
+      "Hanseatic League cog model"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:28.458Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hanseatic_League",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "The league dominated Baltic and North Sea trade",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hanseatic_League",
+        "quote": "the Hanseatic League dominated maritime trade in the North and Baltic Seas"
+      },
+      {
+        "claim": "It was never formally founded, so it has no foundation date (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hanseatic_League",
+        "quote": "As the Hanseatic League was never formally founded, it lacks a date of foundation."
+      },
+      {
+        "claim": "Historians have traditionally traced its origins to the rebuilding of Lübeck in 1159",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hanseatic_League",
+        "quote": "Historians have traditionally traced its origins to the rebuilding of the north German town of Lübeck in 1159"
+      },
+      {
+        "claim": "Kontors in London (Steelyard), Bruges, Bergen and Novgorod had considerable legal autonomy (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hanseatic_League",
+        "quote": "notably the Kontors in London (known as the Steelyard ), Bruges , Bergen , and Novgorod"
+      },
+      {
+        "claim": "Treaties between members provided mutual defence",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hanseatic_League",
+        "quote": "internal treaties established mutual defense and external treaties codified privileges"
+      },
+      {
+        "claim": "League gradually unravelled and disintegrated in 1669",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Hanseatic_League",
+        "quote": "it gradually unraveled as members merged into other realms or departed, ultimately disintegrating in 1669"
+      }
+    ],
+    "overall": "pass"
+  }
+}

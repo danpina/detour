@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Correlation versus causation",
+    "angle": "The ice cream and drowning example"
+  },
+  "created_at": "2026-10-27T06:06:56.030Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0041",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "Ice cream and drowning rise together",
+    "body": {
+      "claim": "Two things can rise together without one causing the other.",
+      "why": "As ice cream sales rise, so do drowning deaths, but ice cream does not cause drowning. The example misses the time of year and temperature, which are linked to ice cream sales. A hidden factor that affects both things is called a confounding (or lurking) variable."
+    },
+    "probes": [
+      {
+        "id": "num-0041-p1",
+        "kind": "mcq",
+        "question": "Ice cream sales and drownings rise together. Which explanation fits best?",
+        "options": [
+          "Ice cream causes drowning",
+          "Drowning makes people buy ice cream",
+          "Something else, like hot weather, is linked to both",
+          "Nothing can be concluded about any link, ever"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0041-p2",
+        "kind": "tf",
+        "question": "True or false: a confounding variable is a third factor that affects both of the things being compared.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Correlation does not imply causation (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Ice cream cone at the beach.jpg shows a hand holding an ice cream cone at a beach",
+    "keywords": [
+      "ice cream cone beach",
+      "ice cream",
+      "beach summer"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.035Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "As ice cream sales rise, so do drowning deaths",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation",
+        "quote": "As ice cream sales increase, the rate of drowning deaths increases sharply."
+      },
+      {
+        "claim": "The example misses time of year and temperature, linked to ice cream sales",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation",
+        "quote": "This example fails to recognize the importance of time of year and temperature to ice cream sales."
+      },
+      {
+        "claim": "Hot weather is linked to both (probe)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation",
+        "quote": "Ice cream is sold during the hot summer months at a much greater rate than during colder times"
+      },
+      {
+        "claim": "Hidden factor affecting both is a lurking variable",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation",
+        "quote": "a hidden third variable that affects both of the variables observed to be correlated"
+      },
+      {
+        "claim": "Also known as a confounding variable",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation",
+        "quote": "That third variable is also known as a confounding variable",
+        "note": "Page notes confounding variables need not be hidden; card's '(or lurking)' is acceptable."
+      }
+    ],
+    "overall": "pass"
+  }
+}

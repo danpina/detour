@@ -1,0 +1,58 @@
+{
+  "id": "num-0055",
+  "interest": "numbers",
+  "title": "One earthquake step is 32 times the energy",
+  "probes": [
+    {
+      "id": "num-0055-p1",
+      "question": "How much more energy does a magnitude 7.0 earthquake release than a 5.0?",
+      "kind": "mcq",
+      "options": [
+        "2 times",
+        "20 times",
+        "1,000 times",
+        "100 times"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "num-0055-p2",
+      "question": "True or false: the pH scale is a logarithmic scale.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Moment magnitude scale (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moment_magnitude_scale"
+    },
+    {
+      "title": "Logarithmic scale (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Logarithmic_scale"
+    },
+    {
+      "title": "pH (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/PH"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:34:04.715Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0055.webp",
+    "alt": "Seismologist Charles Richter looking over a long paper seismograph record beside a drum recorder.",
+    "kind": "photo",
+    "credit": "Gil Cooper, Los Angeles Times / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Charles_Richter_analyzing_a_seismograph_log.jpg"
+  },
+  "body": {
+    "claim": "Each step up the earthquake magnitude scale means about 32 times more energy is released.",
+    "why": "Moment magnitude is a logarithmic scale, so equal steps multiply instead of add. One step is about 32 times the energy, and two steps is 1,000 times: a magnitude 7.0 releases 1,000 times as much energy as a 5.0. The pH scale for acidity is logarithmic too."
+  }
+}

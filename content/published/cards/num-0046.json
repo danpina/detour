@@ -1,0 +1,66 @@
+{
+  "id": "num-0046",
+  "interest": "numbers",
+  "title": "The 1 in 73 million error",
+  "probes": [
+    {
+      "id": "num-0046-p1",
+      "question": "What was wrong with squaring 1 in 8,500 to get the odds of two deaths?",
+      "kind": "mcq",
+      "options": [
+        "It assumed the two deaths were independent",
+        "It used too small a number",
+        "Squaring is never allowed",
+        "It ignored the date"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "num-0046-p2",
+      "question": "True or false: even a valid 1 in 73 million figure would simply be the probability that she was innocent.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sally Clark (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sally_Clark"
+    },
+    {
+      "title": "Base rate fallacy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Base_rate_fallacy"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:50.575Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0046.webp",
+    "alt": "A grand historic courtroom with ornate plaster ceiling, royal coat of arms and wooden benches.",
+    "kind": "photo",
+    "credit": "Michael D Beckwith / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Beverley_Guildhall_Courtroom.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In 1998, British woman Sally Clark was accused of killing her two baby sons. Her defence said both had died of sudden infant death syndrome."
+      },
+      {
+        "text": "An expert witness told the court the chance of two such deaths in a family like hers was 1 in 73 million. He got it by squaring an estimate of about 1 in 8,500."
+      },
+      {
+        "text": "Two mistakes. Squaring assumes the deaths are independent, but unknown genetic or environmental factors could make a second more likely. And press reports treated the figure as the chance she was innocent, which confuses a chance of coincidence with a chance of innocence."
+      },
+      {
+        "text": "She was convicted in November 1999. The conviction was overturned in January 2003, after it emerged that test results suggesting her younger son died of natural causes had not been disclosed."
+      }
+    ]
+  }
+}

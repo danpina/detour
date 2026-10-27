@@ -1,0 +1,66 @@
+{
+  "id": "tech-0044",
+  "interest": "tech",
+  "title": "How an email really travels",
+  "probes": [
+    {
+      "id": "tech-0044-p1",
+      "question": "What do MX records list?",
+      "kind": "mcq",
+      "options": [
+        "Your password",
+        "The mail exchange servers for a domain",
+        "The sender's age",
+        "How big the message is"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0044-p2",
+      "question": "True or false: sender and recipient must both be online at the same moment for email to work.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Email (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Email"
+    },
+    {
+      "title": "Message transfer agent (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Message_transfer_agent"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:08.110Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0044.webp",
+    "alt": "A red cast-iron Royal Mail postbox set into a red sandstone wall.",
+    "kind": "photo",
+    "credit": "Rodhullandemu / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Post_box_at_Irby_Mill.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "You press send. Your mail client hands the message to a mail server."
+      },
+      {
+        "text": "That server resolves the domain after the @ using DNS. The answer, an MX record, lists the mail exchange servers for that domain."
+      },
+      {
+        "text": "The message goes by SMTP to that server, sometimes forwarded through other relays. Each one adds a Received line to the header."
+      },
+      {
+        "text": "The twist: nobody has to be online at once. Email works store-and-forward, and the recipient picks it up from a mailbox later."
+      }
+    ]
+  }
+}

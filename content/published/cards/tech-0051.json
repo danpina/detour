@@ -1,0 +1,69 @@
+{
+  "id": "tech-0051",
+  "interest": "tech",
+  "title": "Printing a chip with light",
+  "probes": [
+    {
+      "id": "tech-0051-p1",
+      "question": "What happens to photoresist where light hits it?",
+      "kind": "mcq",
+      "options": [
+        "It undergoes a chemical change",
+        "It melts away instantly",
+        "It turns to metal",
+        "Nothing at all"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "tech-0051-p2",
+      "question": "Light is shone through a ____ that carries the desired pattern.",
+      "kind": "cloze",
+      "answer": "photomask",
+      "accept": [
+        "mask"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Photolithography (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Photolithography"
+    },
+    {
+      "title": "Extreme ultraviolet lithography (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Extreme_ultraviolet_lithography"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:34.574Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "tech-0051.webp",
+    "alt": "A shiny dark red silicon wafer spinning while liquid photoresist is spread across its surface.",
+    "kind": "photo",
+    "credit": "Sei / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Photoresist_spin_coating.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "A chip starts as a silicon wafer. It is coated with a photoresist, a material that reacts to light."
+      },
+      {
+        "text": "A photomask carrying the pattern is placed over the wafer, and light is shone through it. Only some areas of the photoresist are exposed."
+      },
+      {
+        "text": "The exposed areas undergo a chemical change. A developer solution then washes away either the exposed or the unexposed parts, leaving the pattern behind."
+      },
+      {
+        "text": "That pattern guides etching, deposition or ion implantation to build the circuit. The twist: one technique, EUV lithography, uses extreme ultraviolet light with a wavelength of 13.5 nm."
+      }
+    ]
+  }
+}

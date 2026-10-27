@@ -1,0 +1,56 @@
+{
+  "id": "sci-0049",
+  "interest": "science",
+  "title": "Same bill, different gadgets",
+  "probes": [
+    {
+      "id": "sci-0049-p1",
+      "question": "What does a kilowatt-hour measure?",
+      "kind": "mcq",
+      "options": [
+        "Power",
+        "Energy",
+        "Voltage",
+        "Current"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "sci-0049-p2",
+      "question": "True or false: a 2 kW appliance running for 30 minutes uses 1 kWh.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kilowatt-hour (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kilowatt-hour"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:35:07.704Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "sci-0049.webp",
+    "alt": "A round analogue electricity meter with kWh dials mounted on a brick wall.",
+    "kind": "photo",
+    "credit": "Kristoferb (talk) / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hydro_quebec_meter.JPG"
+  },
+  "body": {
+    "question": "Which uses more electricity: a 1,000 W heater running for 1 hour, or a 100 W bulb running for 10 hours?",
+    "options": [
+      "The heater",
+      "The bulb",
+      "Exactly the same"
+    ],
+    "answer": 2,
+    "reveal": "A kilowatt-hour is the energy delivered by one kilowatt for one hour, and utilities bill by it. The heater uses 1 kW for 1 hour, which is 1 kWh. The bulb uses 0.1 kW for 10 hours, which is also 1 kWh. One kWh equals 3.6 megajoules."
+  }
+}

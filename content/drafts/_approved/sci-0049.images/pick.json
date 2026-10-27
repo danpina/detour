@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-10795599",
+  "alt": "A round analogue electricity meter with kWh dials mounted on a brick wall.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

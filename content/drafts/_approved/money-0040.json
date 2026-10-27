@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Bond prices and yields",
+    "angle": "Price and yield move in opposite directions"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0040",
+    "interest": "money",
+    "type": "guess_first",
+    "title": "The bond that gets cheaper",
+    "body": {
+      "question": "You hold a bond that pays fixed interest. Market interest rates then rise. What tends to happen to your bond's market price?",
+      "options": [
+        "It rises",
+        "It falls",
+        "Nothing, because it's fixed"
+      ],
+      "answer": 1,
+      "reveal": "It falls. A bond's price and yield are inversely related. New bonds can pay the higher rate, so an older one has to be cheaper to compete. The interest payments you receive don't change, so a lower price means a higher yield."
+    },
+    "probes": [
+      {
+        "id": "money-0040-p1",
+        "kind": "mcq",
+        "question": "When a bond's market price falls, what happens to its yield?",
+        "options": [
+          "It rises",
+          "It falls",
+          "It stays the same"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "money-0040-p2",
+        "kind": "tf",
+        "question": "True or false: a fall in a bond's market price changes the interest payments the bondholder receives.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bond (finance) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bond_(finance)"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Papal states bond certificate 1817.jpg shows an 1817 government bond certificate",
+    "keywords": [
+      "bond certificate",
+      "Papal states bond",
+      "government bond",
+      "bond 1817"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.830Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bond_(finance)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Bond price and yield are inversely related; when market rates rise, prices fall (title, probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bond_(finance)",
+        "quote": "The yield and price of a bond are inversely related so that when market interest rates rise, bond prices fall and vice versa."
+      },
+      {
+        "claim": "Yield stays close to rates on comparable new bonds, so older bond must reprice",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bond_(finance)",
+        "quote": "likely to be close to the current market interest rate for other bonds with similar characteristics"
+      },
+      {
+        "claim": "Interest payment is fixed; lower price means higher yield; price change does not alter payments (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bond_(finance)",
+        "quote": "the annual interest payment divided by the current market price of the bond"
+      }
+    ],
+    "overall": "pass"
+  }
+}

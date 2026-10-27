@@ -1,0 +1,56 @@
+{
+  "id": "hist-0065",
+  "interest": "history",
+  "title": "The students who ran the university",
+  "probes": [
+    {
+      "id": "hist-0065-p1",
+      "question": "What was the 'universitas scholarium' at Bologna?",
+      "kind": "mcq",
+      "options": [
+        "A royal library",
+        "A council of bishops",
+        "A guild of students",
+        "A school for monks"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "hist-0065-p2",
+      "question": "True or false: Bologna is considered the oldest university in continuous operation in the world.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "University of Bologna (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/University_of_Bologna"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:31:52.303Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0065.webp",
+    "alt": "A 14th-century miniature of a professor lecturing from a pulpit to rows of students in a medieval university hall at Bologna",
+    "kind": "photo",
+    "credit": "Laurentius de Voltolina / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Laurentius_de_Voltolina_001.jpg"
+  },
+  "body": {
+    "question": "Medieval Bologna became a university in the late 12th century. Who was it organised by?",
+    "options": [
+      "The local bishop alone",
+      "The king's ministers",
+      "Guilds of students"
+    ],
+    "answer": 2,
+    "reveal": "Guilds of students. The university became organised as a universitas scholarium, a guild of students, by the late 12th century. Teaching began around 1088, and Bologna is regarded as the oldest university in continuous operation."
+  }
+}

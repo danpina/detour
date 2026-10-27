@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The Mongol postal system",
+    "angle": "Relay stations made messages travel fast"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0045",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "The Mongol relay",
+    "body": {
+      "question": "Mongol messengers changed horses at relay stations along the road. About how far could they cover in a single day?",
+      "options": [
+        "30-50 km",
+        "80-100 km",
+        "200-300 km",
+        "800 km"
+      ],
+      "answer": 2,
+      "reveal": "Messengers covered 200-300 km per day. Stations roughly 32-64 km apart offered food, shelter and spare horses, and a messenger could hand the message on and rest. Ögedei Khan gave the system special attention because Mongol armies travelled fast and their messengers had to be even faster."
+    },
+    "probes": [
+      {
+        "id": "hist-0045-p1",
+        "kind": "mcq",
+        "question": "What did the yam relay stations provide?",
+        "options": [
+          "Food, shelter and spare horses",
+          "Weapons and armour",
+          "Printed maps",
+          "Ships"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0045-p2",
+        "kind": "tf",
+        "question": "True or false: in the yam system, a messenger could pass the information to another messenger at a station.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Yam (route) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Yam_(route)"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Yuan Dynasty figurine of a mounted courier (see File:元背囊负匣骑马俑、急递驿.jpg) shows a Yuan Dynasty figurine of a mounted courier with a backpack and box (CC BY-SA 4.0)",
+    "keywords": [
+      "Yuan dynasty courier",
+      "Mongol messenger horse",
+      "yam postal station",
+      "Yuan figurine"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.135Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yam_(route)",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Messengers covered 200-300 km per day (answer, reveal)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Yam_(route)",
+        "quote": "they covered 200-300 kilometres (120-190 mi) per day"
+      },
+      {
+        "claim": "Stations roughly 32-64 km apart",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Yam_(route)",
+        "quote": "usually around 20-40 miles (32-64 km) apart"
+      },
+      {
+        "claim": "Stations offered food, shelter and spare horses (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Yam_(route)",
+        "quote": "Relay stations provided food, shelter and spare horses for Mongol army messengers"
+      },
+      {
+        "claim": "Messenger hands message on and rests (p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Yam_(route)",
+        "quote": "A messenger would arrive at a station and give his information to another messenger, and meanwhile rest"
+      },
+      {
+        "claim": "Ögedei gave the system special attention because armies travelled fast and messengers had to be faster",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Yam_(route)",
+        "quote": "Ögedei Khan gave special attention to the yam because Mongol armies traveled quickly; their messengers had to be even faster"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "draft_id": "sci-0061",
+  "created_at": "2026-10-26T20:31:41.237Z",
+  "queries": [
+    "Rutherford gold foil Geiger-Marsden apparatus gold foil experiment",
+    "Rutherford gold foil",
+    "Rutherford gold foil Geiger-Marsden apparatus"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-46535111",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Geiger-Marsden experiment expectation and result.svg - (Indonesia).png",
+      "credit": "Kurzon / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Geiger-Marsden_experiment_expectation_and_result.svg_-_(Indonesia).png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Geiger-Marsden_experiment_expectation_and_result.svg_-_%28Indonesia%29.png/960px-Geiger-Marsden_experiment_expectation_and_result.svg_-_%28Indonesia%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1109,
+      "height": 1034,
+      "alt_suggestion": "A simple diagram illustrating the Geiger-Marsden experiment. The left column shows the scattering pattern that the experimenters expected to see, given the plum pudding model of the atom. The right co",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-1992",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Fragment",
+      "credit": "Italy / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/1992",
+      "image_url": "https://www.artic.edu/iiif/2/196438f8-33de-d834-2b24-60b5be84f1d7/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of silk, cut, uncut, voided velvet with additional patterning wefts in gold foil against plain weave foundation.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-34550090",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Geiger-Marsden apparatus 2 CGI mock-up.jpg",
+      "credit": "Kurzon / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Geiger-Marsden_apparatus_2_CGI_mock-up.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Geiger-Marsden_apparatus_2_CGI_mock-up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 940,
+      "height": 1080,
+      "alt_suggestion": "In 1913, Hans Geiger and Ernest Marsden performed a scientific experiment by which they proved the existence of the atomic nucleus by measuring how a metal foil scatters a beam of alpha particles. Thi",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-594",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Ring with a Scarab Bezel",
+      "credit": "Egyptian / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/594",
+      "image_url": "https://www.artic.edu/iiif/2/d9067d6e-e133-705c-cf53-528c035a5201/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of gold and green jasper.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "artic-845",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Fragment of a Necklace",
+      "credit": "Roman; probably Egypt / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/845",
+      "image_url": "https://www.artic.edu/iiif/2/051007c3-2ef5-64bf-f7dc-71b123d75e4d/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of gold.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Rutherford gold foil Geiger-Marsden apparatus gold foil experiment\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Rutherford gold foil\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Rutherford gold foil Geiger-Marsden apparatus\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Task switching",
+    "angle": "The switch cost"
+  },
+  "created_at": "2026-10-27T06:06:56.037Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0057",
+    "interest": "mind",
+    "type": "fact_why",
+    "title": "Switching tasks isn't free",
+    "body": {
+      "claim": "Switching between tasks costs speed and accuracy, even with plenty of warning.",
+      "why": "Researchers compare doing task A after another A with doing task A after a different task B. The difference is the switch cost. It stays even with ample warning of the switch, so it reflects executive control work such as shifting attention and reconfiguring for the new task. Wikipedia notes a great deal of evidence for negative effects of multitasking on cognitive tasks, and none for a positive or neutral effect."
+    },
+    "probes": [
+      {
+        "id": "mind-0057-p1",
+        "kind": "mcq",
+        "question": "What is the switch cost?",
+        "options": [
+          "The price of a productivity app",
+          "The performance gap between repeating a task and switching to another",
+          "Time spent resting between tasks",
+          "The energy used by sleep"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "mind-0057-p2",
+        "kind": "tf",
+        "question": "True or false: giving people ample warning of a task switch removes the switch cost.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Task switching (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Task_switching_(psychology)"
+      },
+      {
+        "title": "Human multitasking (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Human_multitasking"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Juggling Balls (81706016).jpg shows a close-up of three juggling balls",
+    "keywords": [
+      "juggling balls",
+      "juggling",
+      "balls",
+      "multitasking"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:03.681Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Task_switching_(psychology)",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Human_multitasking",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Switching between tasks costs speed and accuracy",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Task_switching_(psychology)",
+        "quote": "This disruption is characterized by a slower performance and decrease in accuracy",
+        "note": "Page describes this for lab task-switching trials; 'every switch' is stronger than the page states (it says performance 'is disrupted when a switch ... is required')."
+      },
+      {
+        "claim": "Switch cost = difference between doing A after A vs A after B (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Task_switching_(psychology)",
+        "quote": "The difference in accuracy and performance between a task repeat (A-A) and a task switch (A-B) is known as the switch cost."
+      },
+      {
+        "claim": "Cost remains even with ample warning (probe 2: warning does not remove it)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Task_switching_(psychology)",
+        "quote": "The switch cost remains even when there is ample warning of an upcoming switch"
+      },
+      {
+        "claim": "So it reflects executive control work such as shifting attention and reconfiguring for the new task",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Task_switching_(psychology)",
+        "quote": "thus it is thought to reflect the functioning of numerous executive control processes ranging from attention shifting"
+      },
+      {
+        "claim": "A great deal of evidence for negative effects of multitasking on cognitive tasks",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Human_multitasking",
+        "quote": "there is a great deal of evidence showing the negative effects of multitasking on cognitive tasks"
+      },
+      {
+        "claim": "...and no evidence for a positive or neutral effect",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Human_multitasking",
+        "quote": "there is no evidence showing that multitasking has a positive or neutral effect on these tasks"
+      }
+    ],
+    "overall": "pass"
+  }
+}

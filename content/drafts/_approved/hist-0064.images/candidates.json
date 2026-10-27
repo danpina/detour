@@ -1,0 +1,84 @@
+{
+  "draft_id": "hist-0064",
+  "created_at": "2026-10-26T20:33:50.765Z",
+  "queries": [
+    "VOC aandeel VOC share certificate Dutch East India Company share",
+    "VOC aandeel",
+    "VOC aandeel VOC share certificate"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-13358504",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "VOC aandeel 9 september 1606.jpg",
+      "credit": "VOC / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:VOC_aandeel_9_september_1606.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/VOC_aandeel_9_september_1606.jpg/960px-VOC_aandeel_9_september_1606.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1826,
+      "height": 1329,
+      "alt_suggestion": "Ruben Schalk, history student at the Universiteit Utrecht, discovered (2010) the so far oldest share in the world in the Westfries Archief in Hoorn. The certificate dates from September 9th, 1606 and ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-69541",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "One Dollar Silver Certificate",
+      "credit": "Victor Dubreuil American, born France, 1842–after 1910 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/69541",
+      "image_url": "https://www.artic.edu/iiif/2/4ecbef85-aec1-7455-e329-28540504fe96/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-44098097",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "VOC aandeel 6 oktober 1606 (2).jpeg",
+      "credit": "Verenigde Oostindische Compagnie / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:VOC_aandeel_6_oktober_1606_(2).jpeg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/VOC_aandeel_6_oktober_1606_%282%29.jpeg/960px-VOC_aandeel_6_oktober_1606_%282%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4210,
+      "height": 5906,
+      "alt_suggestion": "VOC aandeel 6 oktober 1606 uitgeschreven aan Theunis Jansz adij 12e desember a(nno) 1612 hier op ontfangen d'aff gifte van Seevenenvijftich ende eenen halven p(ro)cent In gelde Bedragende 341:-:- Den ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-55056",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Investiture Certificate of Sister Maria Theresa Baglioni",
+      "credit": "Artist Unknown Italy / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/55056",
+      "image_url": "https://www.artic.edu/iiif/2/8e1c4097-0e79-68f7-7a3d-93c2bff86d12/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of manuscript cutting in opaque and translucent water-based paint and metalic paint over traces of black chalk on parchment.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-44098098",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "VOC aandeel 6 oktober 1606 (3).jpeg",
+      "credit": "Verenigde Oostindische Compagnie / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:VOC_aandeel_6_oktober_1606_(3).jpeg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/VOC_aandeel_6_oktober_1606_%283%29.jpeg/960px-VOC_aandeel_6_oktober_1606_%283%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4109,
+      "height": 5906,
+      "alt_suggestion": "VOC aandeel 6 oktober 1606 uitgeschreven aan Theunis Jansz Staet nu op de naem van De kinderen van Maritje Teu nis f 200,- de kinderen van Valk Teunis f 200,- en (op zijn kop) seedel van die thien Jar",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"VOC aandeel VOC share certificate Dutch East India Company share\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"VOC aandeel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"VOC aandeel VOC share certificate\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Submarine cables",
+    "angle": "Cables beat satellites"
+  },
+  "created_at": "2026-10-27T06:07:56.491Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0041",
+    "interest": "tech",
+    "type": "guess_first",
+    "title": "Cable or satellite?",
+    "body": {
+      "question": "Most data between continents travels under the sea or through space?",
+      "options": [
+        "Through space, by satellite",
+        "Under the sea, by fibre cable"
+      ],
+      "answer": 1,
+      "reveal": "Cables can carry far more data at a fraction of the cost of satellites. It is hard to say exactly, but satellites are a very small share: FCC statistics put them at just 0.37% of US international capacity. For most of the crossing, a cable is about as wide as a garden hose."
+    },
+    "probes": [
+      {
+        "id": "tech-0041-p1",
+        "kind": "mcq",
+        "question": "What share of US international capacity do satellites account for, per FCC statistics?",
+        "options": [
+          "About 0.37%",
+          "About 25%",
+          "About 50%",
+          "About 90%"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0041-p2",
+        "kind": "tf",
+        "question": "True or false: for most of its journey a submarine cable is typically as wide as a garden hose.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Submarine Cable FAQs (TeleGeography)",
+        "url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:EB1911 Telegraph - submarine cable - intermediate type.jpg (public domain) shows a cable cross-section",
+    "keywords": [
+      "submarine communications cable",
+      "undersea cable",
+      "cable ship",
+      "fiber optic cable"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.723Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Most intercontinental data goes under the sea by cable, not via satellite (question, answer 1)",
+        "verdict": "pass",
+        "source_url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+        "quote": "it's a very small percentage",
+        "note": "Page says only a very small percentage of international traffic is carried by satellite; fibre cables dominate. It does not state 'most data between continents' verbatim, but that follows."
+      },
+      {
+        "claim": "Cables carry far more data at a fraction of the cost of satellites",
+        "verdict": "pass",
+        "source_url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+        "quote": "Cables can carry far more data at a fraction of the cost of satellites."
+      },
+      {
+        "claim": "It is hard to say exactly how much goes by satellite, but it is a very small share",
+        "verdict": "pass",
+        "source_url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+        "quote": "It's challenging to determine precisely how much of all international traffic is still carried via satellite, but it's a very small percentage."
+      },
+      {
+        "claim": "FCC statistics: satellites are just 0.37% of US international capacity (probe 1); source fetched fine",
+        "verdict": "pass",
+        "source_url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+        "quote": "Statistics released by U.S. Federal Communications Commission indicate that satellites account for just 0.37% of all U.S. international capacity."
+      },
+      {
+        "claim": "For most of the crossing a cable is about as wide as a garden hose (probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+        "quote": "For most of its journey across the ocean, a cable is typically as wide as a garden hose."
+      }
+    ],
+    "overall": "pass"
+  }
+}

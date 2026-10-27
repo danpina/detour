@@ -1,0 +1,60 @@
+{
+  "draft_id": "hist-0057",
+  "created_at": "2026-10-26T20:33:10.351Z",
+  "queries": [
+    "Kleroterion kleroterion Ancient Agora Museum Athens jury selection device",
+    "Kleroterion",
+    "Kleroterion kleroterion Ancient Agora Museum"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-7667990",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "AGMA Kleroterion 1.jpg",
+      "credit": "Sharon Mollerus / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AGMA_Kleroterion_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/AGMA_Kleroterion_1.jpg/960px-AGMA_Kleroterion_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2852,
+      "height": 2236,
+      "alt_suggestion": "Kleroterion. This device was used for the jury selection system in Athens. Bronze identification tickets were inserted to indicate eligible jurors who were also divided into tribes. By a random proces",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-50458273",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "AGMA Kleroterion 2.jpg",
+      "credit": "Dorieo / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AGMA_Kleroterion_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/AGMA_Kleroterion_2.jpg/960px-AGMA_Kleroterion_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 2638,
+      "alt_suggestion": "This device was used for the jury selection system in Athens. Bronze identification tickets were inserted to indicate eligible jurors who were also divided into tribes. By a random process, a whole ro",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-3885597",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Athen Stoa Wahlmaschine.jpg",
+      "credit": "--Xocolatl 08:49, 15 April 2008 (UTC) / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Athen_Stoa_Wahlmaschine.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Athen_Stoa_Wahlmaschine.jpg/960px-Athen_Stoa_Wahlmaschine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2560,
+      "height": 1920,
+      "alt_suggestion": "Kleroterion. This device was used for the jury selection system in Athens. Bronze identification tickets were inserted to indicate eligible jurors who were also divided into tribes. By a random proces",
+      "file": "cand-3.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Kleroterion kleroterion Ancient Agora Museum Athens jury selection device\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Kleroterion\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Kleroterion kleroterion Ancient Agora Museum\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "tech-0043",
+  "interest": "tech",
+  "title": "Why popular sites load fast everywhere",
+  "probes": [
+    {
+      "id": "tech-0043-p1",
+      "question": "What does a CDN do?",
+      "kind": "mcq",
+      "options": [
+        "Encrypts your passwords",
+        "Turns names into IP addresses",
+        "Distributes content geographically closer to users",
+        "Sends email"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "tech-0043-p2",
+      "question": "True or false: web caches in a CDN help reduce server load.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Content delivery network (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Content_delivery_network"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:25:29.092Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0043.webp",
+    "alt": "A long aisle between tall dark server racks in a data hall with a light floor.",
+    "kind": "photo",
+    "credit": "Derrick Coetzee from Berkeley, CA, USA / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Front_of_server_racks_at_NERSC.jpg"
+  },
+  "body": {
+    "claim": "A content delivery network distributes content geographically closer to end users.",
+    "why": "A CDN is a geographically distributed network of proxy servers and data centres. Its web caches store popular content on the servers with the greatest demand, which reduces bandwidth needs and server load and improves response times."
+  }
+}

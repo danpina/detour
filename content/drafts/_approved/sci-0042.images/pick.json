@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-3941077",
+  "alt": "A large hydroelectric power plant building beside blue water on the Niagara River, seen from the bank.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

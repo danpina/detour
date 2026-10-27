@@ -1,0 +1,49 @@
+{
+  "id": "money-0037",
+  "interest": "money",
+  "title": "An index fund copies a list",
+  "probes": [
+    {
+      "id": "money-0037-p1",
+      "question": "How does an index fund decide what to hold?",
+      "kind": "mcq",
+      "options": [
+        "A manager picks the best stocks",
+        "It copies an index",
+        "It holds only cash"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0037-p2",
+      "question": "True or false: index funds use passive management.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Index fund (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Index_fund"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:19:33.150Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0037.webp",
+    "alt": "A dark electronic stock board with columns of green ticker codes and orange prices.",
+    "kind": "photo",
+    "credit": "Katrina.Tuliao / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Philippine-stock-market-board.jpg"
+  },
+  "body": {
+    "claim": "An index fund doesn't pick stocks. It holds what an index holds, in the same proportions.",
+    "why": "The aim is to match an index's performance, before fees and expenses, so there is no manager hunting for winners. Because the target index is a known quantity, it costs less to run than an actively managed fund. Fees still matter, since they are taken from what the fund earns."
+  }
+}

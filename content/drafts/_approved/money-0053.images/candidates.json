@@ -1,0 +1,112 @@
+{
+  "draft_id": "money-0053",
+  "created_at": "2026-10-27T06:09:14.910Z",
+  "queries": [
+    "foreclosure house foreclosed home foreclosure sign house",
+    "foreclosure house",
+    "foreclosure house foreclosed home"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-4968075",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Foreclosure Deserted House.jpeg",
+      "credit": "Joguldi / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Foreclosure_Deserted_House.jpeg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Foreclosure_Deserted_House.jpeg/960px-Foreclosure_Deserted_House.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3456,
+      "height": 2304,
+      "alt_suggestion": "Foreclosure, Mortgage Crisis. Deserted House.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-16554",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "The Artist's House at Argenteuil",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16554",
+      "image_url": "https://www.artic.edu/iiif/2/7d533ed4-ff54-fa2c-64f4-2b16bfbb5880/full/843,/0/default.jpg",
+      "alt_suggestion": "Among potted flowers and lush foliage, a tiny child in a white dress plays with a hoop. A woman peers at the child from an ivy-covered building at right.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-121347418",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Press conference and rally against foreclosure of the house of Leslie Parks in Minneapolis on November 13, 2009 (4101964340).jpg",
+      "credit": "Fibonacci Blue from Minnesota, USA / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Press_conference_and_rally_against_foreclosure_of_the_house_of_Leslie_Parks_in_Minneapolis_on_November_13,_2009_(4101964340).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Press_conference_and_rally_against_foreclosure_of_the_house_of_Leslie_Parks_in_Minneapolis_on_November_13%2C_2009_%284101964340%29.jpg/960px-Press_conference_and_rally_against_foreclosure_of_the_house_of_Leslie_Parks_in_Minneapolis_on_November_13%2C_2009_%284101964340%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 900,
+      "alt_suggestion": "Press conference and rally against foreclosure of the house of Leslie Parks in Minneapolis on November 13, 2009",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-16584",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Houses of Parliament, London",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/16584",
+      "image_url": "https://www.artic.edu/iiif/2/03930df3-1e6c-eeca-8660-c0b22ca477ff/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-121347422",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Press conference and rally against foreclosure of the house of Leslie Parks in Minneapolis on November 13, 2009 (4101208439).jpg",
+      "credit": "Fibonacci Blue from Minnesota, USA / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Press_conference_and_rally_against_foreclosure_of_the_house_of_Leslie_Parks_in_Minneapolis_on_November_13,_2009_(4101208439).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Press_conference_and_rally_against_foreclosure_of_the_house_of_Leslie_Parks_in_Minneapolis_on_November_13%2C_2009_%284101208439%29.jpg/960px-Press_conference_and_rally_against_foreclosure_of_the_house_of_Leslie_Parks_in_Minneapolis_on_November_13%2C_2009_%284101208439%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 900,
+      "alt_suggestion": "Press conference and rally against foreclosure of the house of Leslie Parks in Minneapolis on November 13, 2009",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-6694382",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Sign of the Times-Foreclosure.jpg",
+      "credit": "respres / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sign_of_the_Times-Foreclosure.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Sign_of_the_Times-Foreclosure.jpg/960px-Sign_of_the_Times-Foreclosure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3456,
+      "height": 2592,
+      "alt_suggestion": "Sign of the times - Foreclosure",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-4968020",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Foreclosure sign.jpeg",
+      "credit": "Casey Serin / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Foreclosure_sign.jpeg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Foreclosure_sign.jpeg/960px-Foreclosure_sign.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "alt_suggestion": "Sale by owner previous to foreclosure.",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"foreclosure house foreclosed home foreclosure sign house\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"foreclosure house\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"foreclosure house foreclosed home\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

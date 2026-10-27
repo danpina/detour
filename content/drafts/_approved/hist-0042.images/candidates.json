@@ -1,0 +1,74 @@
+{
+  "draft_id": "hist-0042",
+  "created_at": "2026-10-27T06:08:32.167Z",
+  "queries": [
+    "1893 suffrage petition New Zealand women suffrage Kate Sheppard",
+    "1893 suffrage petition",
+    "1893 suffrage petition New Zealand women suffrage"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-47037226",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Women's Suffrage Petition 1893 (9365778997).jpg",
+      "credit": "Digitised by Archives New Zealand from New Zealand, but the author of the petition was Kate Sheppard [ca. 1847 – 13 July 1934]. Therefore petition is in the PD ",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Women%27s_Suffrage_Petition_1893_(9365778997).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Women%27s_Suffrage_Petition_1893_%289365778997%29.jpg/960px-Women%27s_Suffrage_Petition_1893_%289365778997%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5204,
+      "height": 10359,
+      "alt_suggestion": "On 19 September 1893, all women of New Zealand earned the right to vote in parliamentary elections. This equality of suffrage was a world-first, but it did not come easily. Facing entrenched views of ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-87301802",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The 1893 Women's Suffrage Petition (16734429368) (cropped).jpg",
+      "credit": "Archives New Zealand from New Zealand / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_1893_Women%27s_Suffrage_Petition_(16734429368)_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/The_1893_Women%27s_Suffrage_Petition_%2816734429368%29_%28cropped%29.jpg/960px-The_1893_Women%27s_Suffrage_Petition_%2816734429368%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3153,
+      "height": 1787,
+      "alt_suggestion": "The above photo was used by the Ministry of Women's Affairs funded project which celebrated the centenary of the 1893 Women’s Suffrage Petition in 1993. When Governor Glasgow signed the Electoral Bill",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-47037228",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "The 1893 Women's Suffrage Petition (16734429368).jpg",
+      "credit": "Archives New Zealand from New Zealand / Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_1893_Women%27s_Suffrage_Petition_(16734429368).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/The_1893_Women%27s_Suffrage_Petition_%2816734429368%29.jpg/960px-The_1893_Women%27s_Suffrage_Petition_%2816734429368%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3260,
+      "height": 2262,
+      "alt_suggestion": "The above photo was used by the Ministry of Women's Affairs funded project which celebrated the centenary of the 1893 Women’s Suffrage Petition in 1993. When Governor Glasgow signed the Electoral Bill",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-193231034",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "1893 New Zealand suffrage petition.jpg",
+      "credit": "AlphaLemur / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1893_New_Zealand_suffrage_petition.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/1893_New_Zealand_suffrage_petition.jpg/960px-1893_New_Zealand_suffrage_petition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3024,
+      "height": 4032,
+      "alt_suggestion": "1893 New Zealand suffrage petition",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"1893 suffrage petition New Zealand women suffrage Kate Sheppard\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"1893 suffrage petition\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"1893 suffrage petition New Zealand women suffrage\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

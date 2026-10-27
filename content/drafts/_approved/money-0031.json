@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "Real versus nominal returns",
+    "angle": "Why the headline interest rate is not the whole story"
+  },
+  "created_at": "2026-10-26T09:00:00.000Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0031",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "What 5% really earns",
+    "body": {
+      "claim": "A 5% interest rate in a year with 2% price rises earns about 3% in real terms.",
+      "why": "The real interest rate is what a saver or lender receives after allowing for inflation. It is roughly the nominal rate minus the inflation rate, a link known as the Fisher equation. Prices are rising, so each dollar you get back buys a little less than it did."
+    },
+    "probes": [
+      {
+        "id": "money-0031-p1",
+        "kind": "mcq",
+        "question": "You earn 5% interest in a year when prices rise 2%. About what is your real interest rate?",
+        "options": [
+          "7%",
+          "3%",
+          "5%",
+          "2%"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "money-0031-p2",
+        "kind": "tf",
+        "question": "True or false: the real interest rate is the rate you receive after allowing for inflation.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Real interest rate (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Real_interest_rate"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Zimbabwe Hyperinflation 2008 notes.jpg shows banknotes of huge face value from Zimbabwe, a vivid case of nominal money losing real value",
+    "keywords": [
+      "hyperinflation banknotes",
+      "inflation banknotes",
+      "Zimbabwe hyperinflation",
+      "banknotes"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:12:22.806Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Real_interest_rate",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Real interest rate is what a saver or lender receives after allowing for inflation (probe 2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Real_interest_rate",
+        "quote": "The real interest rate is the rate of interest an investor, saver or lender receives (or expects to receive) after allowing for inflation."
+      },
+      {
+        "claim": "Real rate is roughly nominal minus inflation (Fisher equation)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Real_interest_rate",
+        "quote": "which states that the real interest rate is approximately the nominal interest rate minus the inflation rate"
+      },
+      {
+        "claim": "5% interest with 2% inflation is about 3% real (probe 1)",
+        "verdict": "pass",
+        "note": "Verified by calculation: 5 - 2 = 3 (exact Fisher: 1.05/1.02 - 1 = 2.94%)"
+      },
+      {
+        "claim": "Rising prices mean each dollar buys less",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Real_interest_rate",
+        "quote": "the prices of the food, clothing, housing, and other things that she wishes to purchase have increased 25% over this period"
+      }
+    ],
+    "overall": "pass"
+  }
+}

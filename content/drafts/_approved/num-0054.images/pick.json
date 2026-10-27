@@ -1,0 +1,11 @@
+{
+  "candidate_id": "artic-87088",
+  "alt": "Claude Monet's painting of a pond covered with water lilies beneath a footbridge.",
+  "fits": true,
+  "note": "Painting; fits lily-pond riddle (alt says painting). 843 px wide.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.72,
+    "zoom": 1
+  }
+}

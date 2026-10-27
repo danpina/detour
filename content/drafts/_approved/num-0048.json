@@ -1,0 +1,93 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Relative versus absolute risk",
+    "angle": "The hypothetical colon cancer drug"
+  },
+  "created_at": "2026-10-27T06:06:56.067Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0048",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "A halved risk can still be tiny",
+    "body": {
+      "claim": "A risk can be cut in half while your actual chance barely changes.",
+      "why": "Take a hypothetical drug that lowers the yearly risk of colon cancer from 1 case in 5,000 to 1 in 10,000. The relative risk reduction is 50%, but the absolute reduction is only 0.01%. Quoting only the relative figure can lead readers to exaggerate how effective a drug is, so look for both."
+    },
+    "probes": [
+      {
+        "id": "num-0048-p1",
+        "kind": "mcq",
+        "question": "A risk falls from 1 in 5,000 to 1 in 10,000. What is the absolute risk reduction?",
+        "options": [
+          "50%",
+          "5%",
+          "0.01%",
+          "0.0001%"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "num-0048-p2",
+        "kind": "tf",
+        "question": "True or false: a 50% relative risk reduction always means a large drop in your actual chance.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Absolute risk reduction (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Absolute_risk_reduction"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Lorafen (lorazepamum) tablets, 1 mg.jpg shows tablets beside a ruler",
+    "keywords": [
+      "tablets pills",
+      "medicine tablets",
+      "pills"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.067Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Absolute_risk_reduction",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Hypothetical drug lowers colon cancer risk from 1 in 5,000 to 1 in 10,000 over one year",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Absolute_risk_reduction",
+        "quote": "a hypothetical drug which reduces the risk of colon cancer from 1 case in 5000 to 1 case in 10,000 over one year"
+      },
+      {
+        "claim": "Relative risk reduction 50%, absolute reduction 0.01% (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Absolute_risk_reduction",
+        "quote": "The relative risk reduction is 0.5 (50%), while the absolute risk reduction is 0.0001 (0.01%)."
+      },
+      {
+        "claim": "Quoting only the relative figure can lead readers to exaggerate effectiveness",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Absolute_risk_reduction",
+        "quote": "reporting only relative risk reduction, would run into risk of readers exaggerating the effectiveness of the drug"
+      },
+      {
+        "claim": "1/5000=0.02%, 1/10000=0.01%, difference 0.01%; 50% relative reduction does not imply a large absolute drop (probe 2)",
+        "verdict": "pass",
+        "note": "Verified by calculation: 0.0002-0.0001=0.0001=0.01%."
+      }
+    ],
+    "overall": "pass"
+  }
+}

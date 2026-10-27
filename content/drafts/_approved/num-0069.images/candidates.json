@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0069",
+  "created_at": "2026-10-26T20:33:41.466Z",
+  "queries": [
+    "padlock key brass padlock padlock",
+    "padlock key",
+    "padlock key brass padlock"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-79539688",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Brass padlock with key.jpg",
+      "credit": "Shillings1005 / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brass_padlock_with_key.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Brass_padlock_with_key.jpg/960px-Brass_padlock_with_key.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1474,
+      "height": 1474,
+      "alt_suggestion": "A brass padlock with its key",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-7637",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Buddhist Deity Vajrasattva with Bell (Ghanta) and Thunderbolt (Vajra)",
+      "credit": "Tibet / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/7637",
+      "image_url": "https://www.artic.edu/iiif/2/c1371419-94ab-5d34-99f7-a2ebd5cbb352/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of brass with coral and turquoise.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-60160495",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Padlock with key MET SF10 100 181.jpg",
+      "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy / Wikimed",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Padlock_with_key_MET_SF10_100_181.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Padlock_with_key_MET_SF10_100_181.jpg/960px-Padlock_with_key_MET_SF10_100_181.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1543,
+      "height": 996,
+      "alt_suggestion": "Russian; Padlock with key; Metalwork-Iron",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-15744",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Guhyasamāja Mañjuvajra",
+      "credit": "India Bengal or Bihar / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/15744",
+      "image_url": "https://www.artic.edu/iiif/2/0c77cb16-87c4-e13c-edb4-2c8f2603bbaa/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of brass with silver, copper, turquoise, and coral inlay.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-65093104",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Padlock and key MET DP-13615-068.jpg",
+      "credit": "André Omereler / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Padlock_and_key_MET_DP-13615-068.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Padlock_and_key_MET_DP-13615-068.jpg/960px-Padlock_and_key_MET_DP-13615-068.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4000,
+      "height": 3000,
+      "alt_suggestion": "Southern German; Padlock with key; Metalwork-Steel",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"padlock key brass padlock padlock\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"padlock key\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"padlock key brass padlock\": HTTP 403 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

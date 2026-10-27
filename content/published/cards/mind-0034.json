@@ -1,0 +1,62 @@
+{
+  "id": "mind-0034",
+  "interest": "mind",
+  "title": "The harder practice that worked better",
+  "probes": [
+    {
+      "id": "mind-0034-p1",
+      "question": "Why might mixed-up practice problems help?",
+      "kind": "mcq",
+      "options": [
+        "They are easier to get through",
+        "They make you work out which method fits each problem",
+        "They are shorter",
+        "They remove the need to know formulas"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0034-p2",
+      "question": "True or false: practising problems grouped by type led to better results than mixing them randomly.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spacing effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spacing_effect"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:00.167Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0034.webp",
+    "alt": "Chalk equations written on a scratched, reddish-brown blackboard in a classroom.",
+    "kind": "photo",
+    "credit": "Roman Mager roman_lazygeek / Wikimedia Commons",
+    "license": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Formulas_on_an_old_blackboard_(Unsplash).jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In 2006, Rohrer ran a two-part study in which students were taught how to solve maths problems."
+      },
+      {
+        "text": "Part one compared mass and spaced practice. When tested one week later, the spaced practice group did significantly better."
+      },
+      {
+        "text": "In part two, practice problems were either grouped by type or mixed randomly. The mixed order felt harder, but those students performed far better."
+      },
+      {
+        "text": "Why? Students often know the formula but not when to use it. Shuffled problems force you to choose the right method each time."
+      }
+    ]
+  }
+}

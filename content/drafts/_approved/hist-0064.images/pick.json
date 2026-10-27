@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-13358504",
+  "alt": "A page from the Dutch East India Company records, a handwritten 1606 share receipt from the Enkhuizen chamber beside a page of dividend entries",
+  "fits": true,
+  "note": "Real VOC share document; text-heavy but authentic",
+  "crop": {
+    "fx": 0.3,
+    "fy": 0.3,
+    "zoom": 1.5
+  }
+}

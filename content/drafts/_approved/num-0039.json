@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Law of large numbers",
+    "angle": "Casino profit as an average over many spins"
+  },
+  "created_at": "2026-10-27T06:06:56.021Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0039",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "Why the casino always wins",
+    "body": {
+      "claim": "A casino can lose on one spin of the roulette wheel, yet reliably profits over many.",
+      "why": "This is the law of large numbers. The average of many repeated random results moves toward the expected value, so the casino's earnings tend toward a predictable percentage. A player's winning streak is eventually overwhelmed by the odds built into the game."
+    },
+    "probes": [
+      {
+        "id": "num-0039-p1",
+        "kind": "mcq",
+        "question": "What does the law of large numbers say about repeated random events?",
+        "options": [
+          "Streaks always reverse",
+          "Their average tends toward the expected value",
+          "Every outcome becomes equally likely next time",
+          "Small samples are always accurate"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0039-p2",
+        "kind": "tf",
+        "question": "True or false: a casino must win every single spin to make a predictable profit.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Law of large numbers (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Law_of_large_numbers"
+      },
+      {
+        "title": "Expected value (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Expected_value"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Casino de Montecarlo, Mónaco, 2016-06-23, DD 04.jpg shows the Monte Carlo Casino building",
+    "keywords": [
+      "Monte Carlo Casino",
+      "casino Monaco",
+      "casino"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.034Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Law_of_large_numbers",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Expected_value",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "A casino can lose on one spin yet its earnings tend toward a predictable percentage over many spins",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Law_of_large_numbers",
+        "quote": "its earnings will tend towards a predictable percentage over a large number of spins"
+      },
+      {
+        "claim": "A player's winning streak is eventually overcome by the odds built into the game",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Law_of_large_numbers",
+        "quote": "Any winning streak by a player will eventually be overcome by the parameters of the game."
+      },
+      {
+        "claim": "Law of large numbers: the average of many repeated random results moves toward the expected value",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Law_of_large_numbers",
+        "quote": "Averages of repeated trials converge to the expected value"
+      },
+      {
+        "claim": "Expected value as long-run average (probe/context)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Expected_value",
+        "quote": "the expected value can be interpreted as the long-run average of results from independent repetitions of the same random experiment"
+      },
+      {
+        "claim": "Probe: casino need not win every spin to make predictable profit (false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Law_of_large_numbers",
+        "quote": "its earnings will tend towards a predictable percentage over a large number of spins"
+      }
+    ],
+    "overall": "pass"
+  }
+}

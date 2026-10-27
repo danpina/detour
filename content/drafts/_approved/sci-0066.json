@@ -1,0 +1,106 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Antibiotic resistance",
+    "angle": "Natural selection inside an infection"
+  },
+  "created_at": "2026-10-26T20:30:07.407Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0066",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Resistance is evolution in a hurry",
+    "body": {
+      "claim": "Antibiotic resistance is natural selection playing out in bacteria.",
+      "why": "Some microbes already resist a drug. When an antibiotic is used, the susceptible ones die and the resistant ones survive and multiply, so over time most of the bacteria in an infection can be the resistant kind. A resistance gene can also spread to other microbes. Misuse and overuse of antimicrobials speed this up."
+    },
+    "probes": [
+      {
+        "id": "sci-0066-p1",
+        "kind": "mcq",
+        "question": "Why does misusing antibiotics make resistance more common?",
+        "options": [
+          "It makes bacteria decide to adapt",
+          "It kills susceptible microbes, leaving resistant ones to multiply",
+          "It makes the medicine weaker in the bottle",
+          "It turns viruses into bacteria"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0066-p2",
+        "kind": "tf",
+        "question": "True or false: a gene for antibiotic resistance can spread from one microbe to another.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Antimicrobial resistance (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Antimicrobial susceptibility testing (AST) result of Leuconostoc.jpg (CC0) shows antibiotic discs on an agar plate; File:Leuconostoc antibiogram result.jpg alternative",
+    "keywords": [
+      "antibiotic susceptibility test agar plate",
+      "antibiogram",
+      "Mueller-Hinton agar"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.062Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Antibiotic resistance is natural selection in bacteria",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance",
+        "quote": "AMR is a naturally occurring process."
+      },
+      {
+        "claim": "Natural selection: organisms that survive continued attack by the agent persist",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance",
+        "quote": "Natural selection means that organisms that are able to adapt to their environment, survive, and continue to produce offspring."
+      },
+      {
+        "claim": "Over time most of the bacteria in an infection can be the resistant kind",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance",
+        "quote": "Over time, most of the strains of bacteria and infections present will be the type resistant to the antimicrobial agent being used to treat them"
+      },
+      {
+        "claim": "A resistance gene can spread to other microbes (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance",
+        "quote": "once a gene for resistance to an antibiotic appears in a microbial community, it can then spread to other microbes"
+      },
+      {
+        "claim": "Misuse and overuse of antimicrobials speed this up (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance",
+        "quote": "AMR is driven largely by the misuse and overuse of antimicrobials ."
+      },
+      {
+        "claim": "Some microbes already resist a drug",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance",
+        "quote": "certain strains of microbes that have a natural resistance to antimicrobials"
+      }
+    ],
+    "overall": "pass"
+  }
+}

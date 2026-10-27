@@ -1,0 +1,95 @@
+{
+  "draft_id": "mind-0055",
+  "created_at": "2026-10-27T06:09:25.373Z",
+  "queries": [
+    "halo angel Giotto",
+    "halo",
+    "halo angel"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-23708706",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Madonna-saints-virtues-giotto-1315.jpg",
+      "credit": "Giotto / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Madonna-saints-virtues-giotto-1315.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Madonna-saints-virtues-giotto-1315.jpg/960px-Madonna-saints-virtues-giotto-1315.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1342,
+      "height": 2000,
+      "alt_suggestion": "The Madonna Enthroned with Saints and Virtues. Saint John the Baptist is to the left, while St. Francis of Assisi is to the right. The female figures with polygonal haloes are virtues. In front of St.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-HALO",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Gateway HALO fabrication - 2021 2",
+      "credit": "Northrop Grumman, Thales Alenia Space / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/HALO",
+      "image_url": "https://images-assets.nasa.gov/image/HALO/HALO~thumb.jpg",
+      "alt_suggestion": "Northrop Grumman and subcontractor Thales Alenia Space complete fabrication work on the Habitation and Logistics Outpost (HALO) module, one of two of the Gateway Space Station's habitation elements wh",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "artic-79515",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Serpent-Halo",
+      "credit": "Odilon Redon French, 1840-1916 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/79515",
+      "image_url": "https://www.artic.edu/iiif/2/917c46b0-5b30-71ef-4ff4-5d995d8d9b34/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of lithograph in black on ivory china paper laid down on ivory wove paper.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-18839201",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Pietro Lorenzetti - Virgin and Child with Saints and Angels - Walters 37731.jpg",
+      "credit": "Pietro Lorenzetti / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pietro_Lorenzetti_-_Virgin_and_Child_with_Saints_and_Angels_-_Walters_37731.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Pietro_Lorenzetti_-_Virgin_and_Child_with_Saints_and_Angels_-_Walters_37731.jpg/960px-Pietro_Lorenzetti_-_Virgin_and_Child_with_Saints_and_Angels_-_Walters_37731.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1063,
+      "height": 1800,
+      "alt_suggestion": "This magnificent enthroned Virgin and Child with four saints and two angels originally formed the center of a folding triptych, a three-part painting. The delicate punch-work in the haloes, costumes, ",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "nasa-HALO Shell - Illuminated",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Gateway HALO Shell Illuminated",
+      "credit": "Northrop Grumman and Thales Alenia Space / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/HALO%20Shell%20-%20Illuminated",
+      "image_url": "https://images-assets.nasa.gov/image/HALO Shell - Illuminated/HALO Shell - Illuminated~medium.jpg",
+      "alt_suggestion": "The primary structure of the Gateway space station's HALO (Habitation and Logistics Outpost) module is one step closer to launch following welding completion in Turin, Italy. HALO is one of four Gatew",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Giotto (1905) (14796292973).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Studies in pictures; an introduction to the famous galleries (1907) (14776033382).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"halo angel Giotto\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"halo\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"halo angel\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "mind-0058",
+  "interest": "mind",
+  "title": "The two-target blind moment",
+  "probes": [
+    {
+      "id": "mind-0058-p1",
+      "question": "True or false: the attentional blink means people can never see a second target in a fast stream.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "mind-0058-p2",
+      "question": "In the stream B, X, C, K with targets X and K, which target is often missed?",
+      "kind": "mcq",
+      "options": [
+        "B",
+        "X",
+        "C",
+        "K"
+      ],
+      "answer": 3
+    }
+  ],
+  "sources": [
+    {
+      "title": "Attentional blink (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Attentional_blink"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:51.124Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0058.webp",
+    "alt": "A brightly lit funfair Ferris wheel at night, its spinning lights blurred into blue and white streaks.",
+    "kind": "photo",
+    "credit": "Dietmar Rabich / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Viktorkirmes_auf_dem_Overbergplatz_--_2014_--_3738_(2).jpg"
+  },
+  "body": {
+    "question": "Letters flash rapidly one after another and you must spot two targets, X and K. You catch the X. When is a second target K most likely to be missed?",
+    "options": [
+      "Several seconds after the X",
+      "About 200 to 500 milliseconds after the X",
+      "Only if K comes before the X",
+      "Never: you always catch both"
+    ],
+    "answer": 1,
+    "reveal": "People struggle to notice a second target that appears 200 to 500 milliseconds after the first and is followed by distractions. This is the attentional blink. It is thought to come from a two-stage visual system: everything gets some processing, but only salient items get in-depth processing."
+  }
+}

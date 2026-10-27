@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-47736714",
+  "alt": "A dark slate sculpture of Alan Turing seated at a desk, made by Stephen Kettle and shown in a museum.",
+  "fits": true,
+  "note": "Sculpture of Turing; avoids the unrelated building photos. CC BY-SA 4.0.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.35,
+    "zoom": 1
+  }
+}

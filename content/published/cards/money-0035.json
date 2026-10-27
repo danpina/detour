@@ -1,0 +1,50 @@
+{
+  "id": "money-0035",
+  "interest": "money",
+  "title": "What's inside a credit score",
+  "probes": [
+    {
+      "id": "money-0035-p1",
+      "question": "Which category carries the most weight in a FICO Score?",
+      "kind": "mcq",
+      "options": [
+        "Credit mix",
+        "Length of credit history",
+        "Payment history",
+        "New credit"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0035-p2",
+      "question": "True or false: your salary is one of the factors in your FICO Score.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "What's in your credit score? (myFICO)",
+      "url": "https://www.myfico.com/credit-education/whats-in-your-credit-score"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:19:26.576Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0035.webp",
+    "alt": "A two-pan balance scale with chain-hung steel pans and small brass weights in an open wooden case lined with red felt.",
+    "kind": "photo",
+    "credit": "W.carter / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Modern_collapsible_balance_scale_for_jewellers_1.jpg"
+  },
+  "body": {
+    "claim": "A FICO Score is built from five weighted categories, and payment history counts the most.",
+    "why": "Payment history makes up 35%, amounts owed 30%, length of credit history 15%, new credit 10% and credit mix 10%. It is built mainly from your credit report, so personal details like income and age are not part of it."
+  }
+}

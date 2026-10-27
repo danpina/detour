@@ -1,0 +1,79 @@
+{
+  "draft_id": "mind-0062",
+  "created_at": "2026-10-27T06:10:34.676Z",
+  "queries": [
+    "placebo pills tablets",
+    "placebo",
+    "placebo pills"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-30181524",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Medicine Drug Pills on Plate.png",
+      "credit": "epSos .de / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Medicine_Drug_Pills_on_Plate.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Medicine_Drug_Pills_on_Plate.png/960px-Medicine_Drug_Pills_on_Plate.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4100,
+      "height": 3084,
+      "alt_suggestion": "Picture of placebo medicine tablets and real drug pills on a white, plate from the table of pharmaceutical companies that make drugs that help the pharma industry to heal narcotic drug addiction with ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-6798",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Women Looking at Religious Tablets",
+      "credit": "after Lazzaro Baldi Italian, c. 1624-1703 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/6798",
+      "image_url": "https://www.artic.edu/iiif/2/c48d86fd-8e80-410e-e72a-d063ff755f75/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of black chalk with brush and brown wash, heightened with lead white (discolored), on tan laid paper, laid down on ivory laid paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-7254797",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Denhaag kunstwerk placebo.jpg",
+      "credit": "Wikifrits / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Denhaag_kunstwerk_placebo.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Denhaag_kunstwerk_placebo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 912,
+      "height": 1800,
+      "alt_suggestion": "Denhaag kunstwerk placebo.jpg",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-2606324",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Placebo coachella.jpg",
+      "credit": "Marcelo Teson from Los Angeles, CA, USA / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Placebo_coachella.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Placebo_coachella.jpg/960px-Placebo_coachella.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2272,
+      "height": 1704,
+      "alt_suggestion": "2 удзельніка гурта «Placebo» на фестывалі «Coachella».",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Boomerang controle.jpg",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"placebo pills tablets\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"placebo\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"placebo pills\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

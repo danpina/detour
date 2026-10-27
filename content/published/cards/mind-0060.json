@@ -1,0 +1,50 @@
+{
+  "id": "mind-0060",
+  "interest": "mind",
+  "title": "Why new things stop feeling new",
+  "probes": [
+    {
+      "id": "mind-0060-p1",
+      "question": "What did the lottery winners in the 1978 study report?",
+      "kind": "mcq",
+      "options": [
+        "Much more happiness than before",
+        "Much less happiness than before",
+        "Being similarly happy before and after",
+        "They would not answer"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "mind-0060-p2",
+      "question": "True or false: large panel studies found that people fully adapt to every life event.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hedonic treadmill (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hedonic_treadmill"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:57.128Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0060.webp",
+    "alt": "A woman in a sports top and leggings stands at a gym treadmill, shown from the neck down.",
+    "kind": "photo",
+    "credit": "Shixart1985 / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Young_blonde_woman_running_on_a_treadmill_in_the_gym_closeup.jpg"
+  },
+  "body": {
+    "claim": "We tend to drift back toward a baseline level of happiness, though not completely.",
+    "why": "The hedonic treadmill is the tendency to keep a fairly stable baseline of happiness despite external events. In a 1978 study of 22 lottery winners and 29 paraplegics, the lottery winners reported being similarly happy before and after winning. Later large panel studies found that divorce, a spouse's death, unemployment and disability do change long-term well-being, even though some adaptation occurs."
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "draft_id": "hist-0040",
+  "created_at": "2026-10-27T06:08:07.162Z",
+  "queries": [
+    "Neolithic Fertile Crescent wheat domestication",
+    "Neolithic",
+    "Neolithic Fertile Crescent"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-15993559",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Hache néolithique des Récollets MHNT.PRE.2011.0.450.jpg",
+      "credit": "I, the copyright holder of this work, hereby publish it under the following license: / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hache_n%C3%A9olithique_des_R%C3%A9collets_MHNT.PRE.2011.0.450.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Hache_n%C3%A9olithique_des_R%C3%A9collets_MHNT.PRE.2011.0.450.jpg/960px-Hache_n%C3%A9olithique_des_R%C3%A9collets_MHNT.PRE.2011.0.450.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 7224,
+      "height": 3774,
+      "alt_suggestion": "Polished stone axe - Different views of the same specimen",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-111318",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Stack of Wheat",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/111318",
+      "image_url": "https://www.artic.edu/iiif/2/27c1d720-8ca5-79a4-5e51-530bf75c1591/full/843,/0/default.jpg",
+      "alt_suggestion": "A snowy landscape in cool tones featuring a prominent, snow-dusted haystack in reddish brown in front of a row of red-brown trees and low, blue mountains, all beheath a pink-gray strip of sky.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-182917348",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Neolithic funeral and burial dolmen with neolithic woman.jpg",
+      "credit": "Rowyn flowerdew / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Neolithic_funeral_and_burial_dolmen_with_neolithic_woman.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Neolithic_funeral_and_burial_dolmen_with_neolithic_woman.jpg/960px-Neolithic_funeral_and_burial_dolmen_with_neolithic_woman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 1651,
+      "alt_suggestion": "illustration of Neolithic funeral and burial dolmen with neolithic woman by pigeonduckthing",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-64818",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Stacks of Wheat (End of Summer)",
+      "credit": "Claude Monet (French, 1840–1926) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/64818",
+      "image_url": "https://www.artic.edu/iiif/2/a38e2828-ec6f-ece1-a30f-70243449197b/full/843,/0/default.jpg",
+      "alt_suggestion": "Painting composed of short, dense brushstrokes depicts two domed stacks of wheat that cast long shadows on a field. The angled light indicates either a rising or setting sun.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-95501106",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Neolithic pottery from Boeotia, AM of Thebes, 201116.jpg",
+      "credit": "Zde / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Neolithic_pottery_from_Boeotia,_AM_of_Thebes,_201116.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Neolithic_pottery_from_Boeotia%2C_AM_of_Thebes%2C_201116.jpg/960px-Neolithic_pottery_from_Boeotia%2C_AM_of_Thebes%2C_201116.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 5110,
+      "height": 3407,
+      "alt_suggestion": "Late Neolithic pottery from Boeotia, 5000–3000 BC. Archaeological Museum of Thebes‎.",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-179180418",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Beginning of neolithic in levant 1 1 1 1.png",
+      "credit": "Merikanto / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Beginning_of_neolithic_in_levant_1_1_1_1.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Beginning_of_neolithic_in_levant_1_1_1_1.png/960px-Beginning_of_neolithic_in_levant_1_1_1_1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1657,
+      "height": 840,
+      "alt_suggestion": "Beginning of neolithic in Levant",
+      "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-50746246",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wheat field and Chapel Avenue in Kraainem.jpg",
+      "credit": "ArticCynda / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wheat_field_and_Chapel_Avenue_in_Kraainem.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Wheat_field_and_Chapel_Avenue_in_Kraainem.jpg/960px-Wheat_field_and_Chapel_Avenue_in_Kraainem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3648,
+      "height": 2736,
+      "alt_suggestion": "View of a ripe wheat field in Kraainem, with tree row of the Chapel Avenue (\"Kapellelaan\") in the background. Photographed in summer at dusk.",
+      "file": "cand-7.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Neolithic Fertile Crescent wheat domestication\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Neolithic\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Neolithic Fertile Crescent\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

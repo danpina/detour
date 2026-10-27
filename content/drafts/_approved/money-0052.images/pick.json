@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-55213059",
+ "alt": "A black-and-white 1932 photograph of a large crowd of depositors gathered on the pavement outside a bank in New York during a bank run.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (Public domain).",
+ "crop": {
+  "fx": 0.4,
+  "fy": 0.5,
+  "zoom": 1
+ }
+}

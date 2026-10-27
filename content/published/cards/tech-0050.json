@@ -1,0 +1,57 @@
+{
+  "id": "tech-0050",
+  "interest": "tech",
+  "title": "Moore's wild extrapolation",
+  "probes": [
+    {
+      "id": "tech-0050-p1",
+      "question": "In 1965, Gordon Moore noted the number of components per integrated circuit had been doubling every...",
+      "kind": "mcq",
+      "options": [
+        "Month",
+        "Year",
+        "Decade",
+        "Century"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "tech-0050-p2",
+      "question": "True or false: Moore's law is a law of physics.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Moore's law (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moore%27s_law"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:26:29.060Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "tech-0050.webp",
+    "alt": "Scatter chart on a logarithmic axis showing microchip transistor counts rising steadily from 1971 to 2019.",
+    "kind": "photo",
+    "credit": "ourworldindata.org / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Moore%27s_Law_%E2%80%93_chart_of_transistor_count_of_microchips.png"
+  },
+  "body": {
+    "question": "In 1965 Gordon Moore noted that the number of components per chip had been doubling every year. In 1975 he revised his forecast. How often did he then expect the doubling?",
+    "options": [
+      "Every month",
+      "Every year, still",
+      "Every two years",
+      "Every ten years"
+    ],
+    "answer": 2,
+    "reveal": "In 1975 he revised it to a doubling every two years. Moore later described his 1965 prediction as a wild extrapolation. It is an observation about industry growth, not a law of physics, and it became known as a law because it kept holding."
+  }
+}

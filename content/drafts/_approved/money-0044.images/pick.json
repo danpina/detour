@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-166925105",
+  "alt": "An early Edison stock ticker under a glass dome, with a paper tape wheel and a ring of small keys.",
+  "fits": true,
+  "note": "Early stock ticker, public domain.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.45,
+    "zoom": 1
+  }
+}

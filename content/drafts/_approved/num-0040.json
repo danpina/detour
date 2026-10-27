@@ -1,0 +1,108 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Normal distribution and the central limit theorem",
+    "angle": "Galton's bean machine as a bell-curve maker"
+  },
+  "created_at": "2026-10-27T06:06:56.027Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0040",
+    "interest": "numbers",
+    "type": "fact_why",
+    "title": "Why averages draw a bell",
+    "body": {
+      "claim": "Averages of many independent random values form a bell curve, even when the individual values do not.",
+      "why": "This is the central limit theorem: the distribution of a sample mean approaches the normal distribution, even if the original variables are not normally distributed. In Francis Galton's bean machine, beads bounce left or right off rows of pegs, and the piles in the bins at the bottom approximate a bell curve."
+    },
+    "probes": [
+      {
+        "id": "num-0040-p1",
+        "kind": "mcq",
+        "question": "What does the central limit theorem say about a sample mean?",
+        "options": [
+          "It is always exactly the true mean",
+          "Its distribution approaches a normal distribution",
+          "It gets more skewed as the sample grows",
+          "It only works for bell-shaped data"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "num-0040-p2",
+        "kind": "tf",
+        "question": "True or false: the individual values must themselves be normally distributed for the central limit theorem to apply.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Central limit theorem (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Central_limit_theorem"
+      },
+      {
+        "title": "Galton board (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bean_machine"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:The Mathematica Exhibit Galton's Probability Board and Science Quote by La Place 1796.jpg shows a Galton board",
+    "keywords": [
+      "Galton board",
+      "bean machine",
+      "quincunx probability board"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:31:40.035Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Central_limit_theorem",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bean_machine",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Distribution of the sample mean approaches the normal distribution (central limit theorem)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Central_limit_theorem",
+        "quote": "the distribution of a normalized version of the sample mean converges to a standard normal distribution"
+      },
+      {
+        "claim": "This holds even if the original variables are not normally distributed (also probe false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Central_limit_theorem",
+        "quote": "This holds even if the original variables themselves are not normally distributed ."
+      },
+      {
+        "claim": "Galton's bean machine: beads bounce left or right off rows of pegs",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bean_machine",
+        "quote": "Beads are dropped from the top and, when the device is level, bounce either left or right as they hit the pegs"
+      },
+      {
+        "claim": "Piles in the bins approximate a bell curve",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bean_machine",
+        "quote": "the height of bead columns accumulated in the bins approximate a bell curve"
+      },
+      {
+        "claim": "Bean machine invented by Francis Galton",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Bean_machine",
+        "quote": "is a device invented by Francis Galton to demonstrate the central limit theorem"
+      }
+    ],
+    "overall": "pass"
+  }
+}

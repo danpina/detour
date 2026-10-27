@@ -1,0 +1,101 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "Roman roads",
+    "angle": "A road network of more than 400,000 km"
+  },
+  "created_at": "2026-10-26T20:32:43.269013Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0046",
+    "interest": "history",
+    "type": "guess_first",
+    "title": "How long were Rome's roads?",
+    "body": {
+      "question": "At the peak of Rome's development, the empire's roads added up to more than...",
+      "options": [
+        "4,000 km",
+        "40,000 km",
+        "400,000 km"
+      ],
+      "answer": 2,
+      "reveal": "More than 400,000 km, of which over 80,500 km were stone-paved. 29 great military highways radiated from Rome, and 372 great roads linked the empire's 113 provinces. Builders laid rubble, gravel and stone in layers."
+    },
+    "probes": [
+      {
+        "id": "hist-0046-p1",
+        "kind": "mcq",
+        "question": "How were Roman roads built?",
+        "options": [
+          "A single slab of marble",
+          "Layers of rubble, gravel and stone",
+          "Only wooden planks",
+          "Packed sand alone"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0046-p2",
+        "kind": "tf",
+        "question": "True or false: all of the 400,000 km of Roman roads were stone-paved.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Roman road (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Roman_road"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Roman Appian Way.jpg shows a stone-paved section of the Appian Way (CC0, portrait)",
+    "keywords": [
+      "Appian Way",
+      "Roman road",
+      "via Appia",
+      "Roman paved road"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:27.136Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Roman_road",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Roads totalled more than 400,000 km, over 80,500 km stone-paved (answer, p2 false)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_road",
+        "quote": "The whole comprised more than 400,000 kilometres (250,000 miles ) of roads, of which over 80,500 kilometres (50,000 mi) were stone-paved"
+      },
+      {
+        "claim": "29 great military highways radiated from Rome; 372 great roads linked 113 provinces",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_road",
+        "quote": "no fewer than 29 great military highways radiated from the capital, and the empire's 113 provinces were interconnected by 372 great roads"
+      },
+      {
+        "claim": "Builders laid rubble, gravel and stone in layers (p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_road",
+        "quote": "Into the fossa was placed large amounts of rubble , gravel and stone, whatever fill was available"
+      },
+      {
+        "claim": "At the peak of Rome's development (question)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Roman_road",
+        "quote": "At the peak of Rome's development, no fewer than 29 great military highways radiated from the capital"
+      }
+    ],
+    "overall": "pass"
+  }
+}

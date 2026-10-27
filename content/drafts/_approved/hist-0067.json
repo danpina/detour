@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "The part that made clocks tick",
+    "angle": "The part that made clocks tick"
+  },
+  "created_at": "2026-10-26T20:31:39.979Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0067",
+    "interest": "history",
+    "type": "story",
+    "title": "The part that made clocks tick",
+    "body": {
+      "panels": [
+        {
+          "text": "Water clocks and sundials are possibly the oldest time-measuring instruments."
+        },
+        {
+          "text": "Around 1300 in Europe, a new idea made the first mechanical clocks possible: the verge escapement."
+        },
+        {
+          "text": "Water-driven clock mechanisms were adapted to run on falling weights. An oscillating part, probably derived from bell-ringing or alarm devices, controlled how that power was released."
+        },
+        {
+          "text": "That controlled release of power is the escapement. These clocks needed no water or mercury, and were meant for signalling, such as timing services and public events, and for modelling the Solar System."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "hist-0067-p1",
+        "kind": "mcq",
+        "question": "What does an escapement do in a mechanical clock?",
+        "options": [
+          "Winds the clock",
+          "Releases the clock's power in small controlled steps",
+          "Rings the bell",
+          "Pumps water into the clock"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "hist-0067-p2",
+        "kind": "tf",
+        "question": "True or false: the first mechanical clocks needed water or mercury to work.",
+        "answer": false
+      }
+    ],
+    "sources": [
+      {
+        "title": "Clock (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Clock"
+      }
+    ],
+    "difficulty": 3,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Wells clock.jpg (CC BY-SA 4.0): the medieval Wells Cathedral clock, made about 1390; also File:Salisbury Cathedral clock - geograph.org.uk - 772882.jpg, File:De Wick clock front.png (public domain)",
+    "keywords": [
+      "Wells Cathedral clock",
+      "medieval mechanical clock",
+      "Salisbury Cathedral clock",
+      "verge escapement"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:29:33.665Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Clock",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Water clocks and sundials are possibly the oldest time-measuring instruments",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clock",
+        "quote": "Water clocks , along with sundials, are possibly the oldest time-measuring instruments."
+      },
+      {
+        "claim": "The verge escapement made the first mechanical clocks possible around 1300 in Europe",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clock",
+        "quote": "invention of the verge escapement , which made possible the first mechanical clocks around 1300 in Europe"
+      },
+      {
+        "claim": "Water-driven mechanisms were adapted to falling weights, controlled by an oscillating part probably from bell-ringing or alarm devices",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clock",
+        "quote": "Existing clock mechanisms that used water power were being adapted to take their driving power from falling weights."
+      },
+      {
+        "claim": "Controlled release of power is the escapement (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clock",
+        "quote": "This controlled release of power - the escapement - marks the beginning of the true mechanical clock"
+      },
+      {
+        "claim": "These clocks needed no water or mercury; meant for signalling and modelling the Solar System (probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Clock",
+        "quote": "which did not need any kind of fluid power, like water or mercury, to work"
+      }
+    ],
+    "overall": "pass"
+  }
+}

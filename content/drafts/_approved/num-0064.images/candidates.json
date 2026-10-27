@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0064",
+  "created_at": "2026-10-26T20:33:12.882Z",
+  "queries": [
+    "Parthenon Parthenon Athens Parthenon west",
+    "Parthenon",
+    "Parthenon Parthenon Athens"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-1427237",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Parthenon from west.jpg",
+      "credit": "User:Mountain / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Parthenon_from_west.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Parthenon_from_west.jpg/960px-Parthenon_from_west.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2048,
+      "height": 1536,
+      "alt_suggestion": "Parthenon from west",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-82881",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Copy of Calvary from the Parthenon Frieze",
+      "credit": "Possibly John Flaxman, II English, 1755-1826 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/82881",
+      "image_url": "https://www.artic.edu/iiif/2/2f5c2a88-d09e-4669-e788-36eb42a3926c/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of pen and black ink, over traces of graphite, on ivory wove paper.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-42004944",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Restoration work Parthenon facade Acropolis Athens Greece.jpg",
+      "credit": "Jebulon / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Restoration_work_Parthenon_facade_Acropolis_Athens_Greece.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Restoration_work_Parthenon_facade_Acropolis_Athens_Greece.jpg/960px-Restoration_work_Parthenon_facade_Acropolis_Athens_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4636,
+      "height": 2996,
+      "alt_suggestion": "Restoration work at the western facade of the Parthenon, Acropolis, Athens, Greece.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-36374",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Le Thésée de Phidias/ Fragment du Fronton du Parthenon d'Athènes/ Maintenant au Musée Britannique",
+      "credit": "Louis-Désiré Blanquart-Evrard French, 1802–1872 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/36374",
+      "image_url": "https://www.artic.edu/iiif/2/b94c80d8-97bc-ffda-7331-f9ef4ab9095b/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of salted paper print.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-44872645",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Restoration Parthenon Acropolis Athens.jpg",
+      "credit": "Jebulon / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Restoration_Parthenon_Acropolis_Athens.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Restoration_Parthenon_Acropolis_Athens.jpg/960px-Restoration_Parthenon_Acropolis_Athens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4491,
+      "height": 2532,
+      "alt_suggestion": "Restoration of the Parthenon, may 2015. Athens, Greece.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Parthenon Parthenon Athens Parthenon west\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Parthenon\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Parthenon Parthenon Athens\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

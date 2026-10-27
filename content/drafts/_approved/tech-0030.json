@@ -1,0 +1,127 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "tech",
+    "topic": "Packets",
+    "angle": "Why web pages arrive in pieces"
+  },
+  "created_at": "2026-10-27T06:07:56.454Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "tech-0030",
+    "interest": "tech",
+    "type": "story",
+    "title": "Why web pages arrive in pieces",
+    "body": {
+      "panels": [
+        {
+          "text": "When a server sends you a web page, it does not send one long stream. It cuts the data into small chunks called packets."
+        },
+        {
+          "text": "Each packet has a header and a payload. The header holds the sender and receiver addresses and the packet's number. The payload is the actual data."
+        },
+        {
+          "text": "Packets can be routed along different paths, which keeps the network efficient when many people want the same thing. They may arrive out of order."
+        },
+        {
+          "text": "The twist: that is fine. If one is dropped or corrupted, your computer asks for just that packet again, and the headers put everything back in order."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "tech-0030-p1",
+        "kind": "mcq",
+        "question": "Why is it useful that data travels as small packets?",
+        "options": [
+          "Only missing packets need to be re-requested, and packets can take different paths",
+          "Every packet must follow the same single cable",
+          "Packets can never be lost",
+          "Packets always arrive in the right order"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "tech-0030-p2",
+        "kind": "tf",
+        "question": "True or false: packets can arrive out of order and still be assembled correctly.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "How the web works (MDN)",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"
+      },
+      {
+        "title": "Packet switching (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Packet_switching"
+      }
+    ],
+    "difficulty": 1,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Network switches.jpg shows two network switches and CAT5 cables",
+    "keywords": [
+      "network switch",
+      "ethernet cables",
+      "patch panel",
+      "router"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:14:49.704Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Packet_switching",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Title/body: a server sends a web page as small chunks called packets, not one long stream",
+        "verdict": "pass",
+        "source_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "quote": "sending the website's files to the browser as a series of small chunks called packets"
+      },
+      {
+        "claim": "Each packet has a header (sender/receiver addresses, packet number) and a payload (the actual data)",
+        "verdict": "pass",
+        "source_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "quote": "A header, which includes details such as the server and client IP address, the packet number"
+      },
+      {
+        "claim": "Packets consist of a header and a payload",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Packet_switching",
+        "quote": "Packets consist of a header and a payload."
+      },
+      {
+        "claim": "Packets can be routed along different paths, which keeps the network efficient when many people want the same thing (probe 1: packets can take different paths)",
+        "verdict": "pass",
+        "source_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "quote": "The packets can be routed along different paths, making the transmission as efficient as possible"
+      },
+      {
+        "claim": "Packets may arrive out of order; headers put them back in order (probe 2: true)",
+        "verdict": "pass",
+        "source_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "quote": "the client can use the information in the packet headers to make sure they are assembled in the correct order"
+      },
+      {
+        "claim": "If one packet is dropped or corrupted, only that packet is re-requested (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+        "quote": "They are sometimes dropped or corrupted, and when this happens, it's quicker and easier for the client to request the missing packets"
+      }
+    ],
+    "overall": "pass"
+  }
+}

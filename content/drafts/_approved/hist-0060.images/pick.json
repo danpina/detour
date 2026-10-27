@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-152413880",
+  "alt": "A wooden model of a medieval Hanseatic cog with a red and white striped sail, hung in a museum in Lübeck",
+  "fits": true,
+  "note": "Hanseatic cog model, crop away visitor and brochures",
+  "crop": {
+    "fx": 0.45,
+    "fy": 0.45,
+    "zoom": 1.7
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "draft_id": "sci-0063",
+  "created_at": "2026-10-26T20:31:55.003Z",
+  "queries": [
+    "autumn leaves chlorophyll oak leaves autumn coloration chlorophyll",
+    "autumn leaves chlorophyll",
+    "autumn leaves chlorophyll oak leaves autumn coloration"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-64299164",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Oak leaves with autumn coloration.jpg",
+      "credit": "Stanature / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Oak_leaves_with_autumn_coloration.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Oak_leaves_with_autumn_coloration.jpg/960px-Oak_leaves_with_autumn_coloration.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3448,
+      "height": 4592,
+      "alt_suggestion": "Four leaves of a young,bavarian, oak tree in different stages of coloration: Top: Chlorophyll rich green leaf, Right: Chlorophyll only still present close to the leaf vessels, therefore the yellowish ",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-127644",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Autumn Maples with Poem Slips",
+      "credit": "Tosa Mitsuoki Japanese, 1617-1691 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/127644",
+      "image_url": "https://www.artic.edu/iiif/2/86e919b9-d366-b3ca-d26f-4c16880474a3/full/843,/0/default.jpg",
+      "alt_suggestion": "Papers with Japanese text hang from a tree bearing red and gold leaves.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-138598633",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "Fall Colors in Quebec, New York, and New England (MODIS).jpg",
+      "credit": "MODIS Land Rapid Response Team, NASA GSFC / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fall_Colors_in_Quebec,_New_York,_and_New_England_(MODIS).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Fall_Colors_in_Quebec%2C_New_York%2C_and_New_England_%28MODIS%29.jpg/960px-Fall_Colors_in_Quebec%2C_New_York%2C_and_New_England_%28MODIS%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3531,
+      "height": 2687,
+      "alt_suggestion": "With daylight hours shortening and temperatures cooling, the annual flush of autumn color was painting the deciduous forests of Canada and the Northeastern United States with a glorious glow in early ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-20827",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Burning Autumn Maple Leaves",
+      "credit": "Suzuki Harunobu 鈴木 春信 Japanese, 1725 (?)-1770 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/20827",
+      "image_url": "https://www.artic.edu/iiif/2/3af5346b-5849-7afa-2e0a-6dd5949ed965/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of color woodblock print; chuban.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-39882549",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Autumn Leaves (1501293225).jpg",
+      "credit": "Tony Webster from Portland, Oregon, United States / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Autumn_Leaves_(1501293225).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Autumn_Leaves_%281501293225%29.jpg/960px-Autumn_Leaves_%281501293225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2304,
+      "height": 3456,
+      "alt_suggestion": "Autumn Leaves",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"autumn leaves chlorophyll oak leaves autumn coloration chlorophyll\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"autumn leaves chlorophyll\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"autumn leaves chlorophyll oak leaves autumn coloration\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

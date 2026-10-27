@@ -1,0 +1,11 @@
+{
+ "candidate_id": "wikimedia-121454",
+ "alt": "A line chart of the Nasdaq Composite index from 1994 to 2004, rising to a sharp peak around 2000 and then falling.",
+ "fits": true,
+ "note": "Chosen by image agent; matches brief, allowed licence (Public domain).",
+ "crop": {
+  "fx": 0.5,
+  "fy": 0.5,
+  "zoom": 1
+ }
+}

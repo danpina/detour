@@ -1,0 +1,84 @@
+{
+  "draft_id": "mind-0033",
+  "created_at": "2026-10-26T20:30:20.234Z",
+  "queries": [
+    "calendar planner personal organizer student studying library",
+    "calendar planner",
+    "calendar planner personal organizer"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-182220764",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Personal organizer book (India, 2026).jpg",
+      "credit": "Gpkp / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Personal_organizer_book_(India,_2026).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Personal_organizer_book_%28India%2C_2026%29.jpg/960px-Personal_organizer_book_%28India%2C_2026%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3072,
+      "height": 4080,
+      "alt_suggestion": "Personal organizer book (India, 2026)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-616",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Pyxis (Container for Personal Objects)",
+      "credit": "Greek; Athens / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/616",
+      "image_url": "https://www.artic.edu/iiif/2/aeb6ae53-78e6-b76d-1993-dd108da55710/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of terracotta, red-figure.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-98046510",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Axenda.JPG",
+      "credit": "PepedoCouto / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Axenda.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Axenda.JPG/960px-Axenda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2376,
+      "height": 1758,
+      "alt_suggestion": "Axenda en galego",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-160",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Pyxis (Container for Personal Objects)",
+      "credit": "Greek; Athens / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/160",
+      "image_url": "https://www.artic.edu/iiif/2/e0db998b-5586-aa1f-e2cd-913904656247/full/843,/0/default.jpg",
+      "alt_suggestion": "Bowl-shaped terracotta vessel with a foot, glazed in red with black figures encircling its body.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-114027086",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Personal organizer with metallic ring binder.jpg",
+      "credit": "Old Photo Profile / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Personal_organizer_with_metallic_ring_binder.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Personal_organizer_with_metallic_ring_binder.jpg/960px-Personal_organizer_with_metallic_ring_binder.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3888,
+      "height": 2592,
+      "alt_suggestion": "Personal organizer with white lined punched pages held by several rings. Each page has lined rows and sections for certain days of the week.",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"calendar planner personal organizer student studying library\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"calendar planner\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"calendar planner personal organizer\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

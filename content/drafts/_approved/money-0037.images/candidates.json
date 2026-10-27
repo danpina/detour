@@ -1,0 +1,129 @@
+{
+  "draft_id": "money-0037",
+  "created_at": "2026-10-26T20:30:28.944Z",
+  "queries": [
+    "stock market board stock board stock exchange board",
+    "stock market board",
+    "stock market board stock board"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-33488290",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Electronic stock board in Yaesu, Tokyo 2007.jpg",
+      "credit": "nappa / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Electronic_stock_board_in_Yaesu,_Tokyo_2007.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Electronic_stock_board_in_Yaesu%2C_Tokyo_2007.jpg/960px-Electronic_stock_board_in_Yaesu%2C_Tokyo_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 1944,
+      "alt_suggestion": "Electronic board in Yaesu, Tokyo displaying stock exchange market data. Photo taken in March 2007.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-156538",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Chicago Stock Exchange Trading Room: Reconstruction at the Art Institute of Chicago",
+      "credit": "Adler & Sullivan, original architects; American, 1883-1896 Vinci & Kenny, reconstruction architects; American, 1970-1977 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/156538",
+      "image_url": "https://www.artic.edu/iiif/2/47b28b55-ced6-502d-f111-fbe0033f8dc8/full/843,/0/default.jpg",
+      "alt_suggestion": "A grand, double-height room with wood paneling, stenciled wall patterns, four hexagonal columns, and an interior balcony with guardrail at left.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-67395285",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Discuss stock market situation. Washington, D.C., Oct. 19. The Board of governors of the Federal Reserve System met today to discuss the current slump in the stock market. The board, with LCCN2016872460.jpg",
+      "credit": "Harris & Ewing, photographer / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Discuss_stock_market_situation._Washington,_D.C.,_Oct._19._The_Board_of_governors_of_the_Federal_Reserve_System_met_today_to_discuss_the_current_slump_in_the_stock_market._The_board,_with_LCCN2016872460.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Discuss_stock_market_situation._Washington%2C_D.C.%2C_Oct._19._The_Board_of_governors_of_the_Federal_Reserve_System_met_today_to_discuss_the_current_slump_in_the_stock_market._The_board%2C_with_LCCN2016872460.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 10055,
+      "height": 8002,
+      "alt_suggestion": "Title: Discuss stock market situation. Washington, D.C., Oct. 19. The Board of governors of the Federal Reserve System met today to discuss the current slump in the stock market. The board, with its c",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-12765",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Elevator T-Plate from the Chicago Stock Exchange",
+      "credit": "Adler & Sullivan, architects; American, 1883-1896 Louis H. Sullivan, designer; American, 1856-1924 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/12765",
+      "image_url": "https://www.artic.edu/iiif/2/4dc63cce-a3c0-9976-8e13-e7aac9e7df6a/full/843,/0/default.jpg",
+      "alt_suggestion": "A T-shaped architectural fragment with ornate geometric patterning consisting of repeating ellipses and some foliage detail.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-164319200",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Floor of Toronto Stock Exchange 1956.jpg",
+      "credit": "Chris Lund / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Floor_of_Toronto_Stock_Exchange_1956.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Floor_of_Toronto_Stock_Exchange_1956.jpg/960px-Floor_of_Toronto_Stock_Exchange_1956.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1000,
+      "height": 1007,
+      "alt_suggestion": "Title based on the following caption from the NFB Photo Story: Canada's biggest and most complex market-place, the Toronto Stock Exchange auctions off the securities of 1,103 companies. The Exchange h",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-12262407",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Philippine-stock-market-board.jpg",
+      "credit": "Katrina.Tuliao / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Philippine-stock-market-board.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Philippine-stock-market-board.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 640,
+      "height": 480,
+      "alt_suggestion": "Phillippine stock market board",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Wall Street guide - (1902) (14597834638).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "Twenty years among the bulls and bears of Wall street (1870) (14592540887).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The world's meat future. An account of the live stock position and meat prospects of all leading stock countries of the world, with full lists of freezing works (1918) (14595376899).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "The world's meat future. An account of the live stock position and meat prospects of all leading stock countries of the world, with full lists of freezing works (1918) (14595376899).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    },
+    {
+      "source": "wikimedia",
+      "title": "1954 catalog of hardy Ozark Mountain grown nursery stock at amazingly low prices direct from grower to planter (1954) (16463349267).jpg",
+      "license": "No restrictions",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"stock market board stock board stock exchange board\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"stock market board\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"stock market board stock board\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

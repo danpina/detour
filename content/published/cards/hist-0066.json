@@ -1,0 +1,50 @@
+{
+  "id": "hist-0066",
+  "interest": "history",
+  "title": "What was the House of Wisdom?",
+  "probes": [
+    {
+      "id": "hist-0066-p1",
+      "question": "What did the Translation Movement do?",
+      "kind": "mcq",
+      "options": [
+        "Translated Arabic into Latin",
+        "Translated works from Greek and Syriac into Arabic",
+        "Copied Persian poems",
+        "Taught Greek to children"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0066-p2",
+      "question": "True or false: the House of Wisdom was destroyed during the Mongol siege of Baghdad in 1258.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "House of Wisdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/House_of_Wisdom"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:31:53.273Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0066.webp",
+    "alt": "A 13th-century Baghdad manuscript illustration of scholars seated in front of shelves of books in a library",
+    "kind": "photo",
+    "credit": "Zereshk / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Maqamat_hariri.jpg"
+  },
+  "body": {
+    "claim": "Baghdad's House of Wisdom was a real library, but it was probably not the university it is often pictured as.",
+    "why": "It was an Abbasid library in Baghdad, part of the larger Translation Movement that rendered works from Greek and Syriac into Arabic. Under Caliph al-Ma'mun (813 to 833) it became a public academy and library, and it was destroyed in the Mongol siege of 1258. Some historians argue that the image of a university with departments was built up in the 19th and early 20th centuries, and note that major translation efforts also happened elsewhere."
+  }
+}

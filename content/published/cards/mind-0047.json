@@ -1,0 +1,50 @@
+{
+  "id": "mind-0047",
+  "interest": "mind",
+  "title": "Vivid is not the same as accurate",
+  "probes": [
+    {
+      "id": "mind-0047-p1",
+      "question": "What pattern do flashbulb memory studies show?",
+      "kind": "mcq",
+      "options": [
+        "Low confidence and low accuracy",
+        "Accuracy rises over time",
+        "High confidence even as details fade",
+        "Perfect accuracy for shocking events"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "mind-0047-p2",
+      "question": "True or false: confidence in a flashbulb memory appears to stay stable even when accuracy declines.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Flashbulb memory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Flashbulb_memory"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:40.214Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0047.webp",
+    "alt": "A tangled white smoke plume against a black sky after the Space Shuttle Challenger broke apart in 1986.",
+    "kind": "photo",
+    "credit": "Kennedy Space Center / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Challenger_explosion.jpg"
+  },
+  "body": {
+    "claim": "A memory can feel like a photograph and still be wrong in its details.",
+    "why": "Flashbulb memories are vivid memories of surprising, important events. Evidence shows people are highly confident in them, but the details can be forgotten. In one study of the Challenger disaster, people were highly confident, yet their memories were not very accurate three years later."
+  }
+}

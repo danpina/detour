@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-7426237",
+  "alt": "A tall glass-roofed shopping centre interior seen from an escalator.",
+  "fits": true,
+  "note": "Mall interior; few distant people; some small shop signs.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

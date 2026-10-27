@@ -1,0 +1,62 @@
+{
+  "id": "mind-0045",
+  "interest": "mind",
+  "title": "The divers who forgot on land",
+  "probes": [
+    {
+      "id": "mind-0045-p1",
+      "question": "Where did divers best recall words they had learned under water?",
+      "kind": "mcq",
+      "options": [
+        "Under water",
+        "On dry land",
+        "In a classroom",
+        "No difference"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "mind-0045-p2",
+      "question": "True or false: changing the context between learning and recall reduced the divers' ability to recall words.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Context-dependent memory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Context-dependent_memory"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:18:33.073Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0045.webp",
+    "alt": "Two scuba divers explore a coral-covered shipwreck underwater, one holding a red light.",
+    "kind": "photo",
+    "credit": "W.Strickling / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ship_wreck_Carnatic_2017-04-22_Egypt-7947.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Researchers noticed that deep-sea divers remembered less about events they had seen underwater once they had resurfaced."
+      },
+      {
+        "text": "In 1975, Godden and Baddeley tested whether the setting mattered. Divers learned word lists in two places: under water and on dry land."
+      },
+      {
+        "text": "Words learned under water were recalled better under water, and words learned on land were recalled better on land."
+      },
+      {
+        "text": "Changing the context between learning and recall made it harder to remember the words. The study likely started today's research on context-dependent memory."
+      }
+    ]
+  }
+}

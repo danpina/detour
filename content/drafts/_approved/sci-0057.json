@@ -1,0 +1,113 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "The greenhouse effect",
+    "angle": "Why Earth's surface is not frozen"
+  },
+  "created_at": "2026-10-26T20:30:07.387Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0057",
+    "interest": "science",
+    "type": "fact_why",
+    "title": "Why Earth isn't frozen",
+    "body": {
+      "claim": "Without the greenhouse effect, Earth's average surface temperature would be about -18 °C.",
+      "why": "Sunlight arrives mostly as visible and near-infrared light. The cooler Earth sends heat back out as longer infrared, and gases like water vapour and carbon dioxide absorb it. Nitrogen and oxygen are, for practical purposes, transparent to it. The result is an average surface temperature of around 15 °C, a warming of about 33 °C."
+    },
+    "probes": [
+      {
+        "id": "sci-0057-p1",
+        "kind": "mcq",
+        "question": "Which of these gases absorbs the infrared heat that Earth radiates?",
+        "options": [
+          "Nitrogen",
+          "Oxygen",
+          "Carbon dioxide",
+          "Argon"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "sci-0057-p2",
+        "kind": "tf",
+        "question": "True or false: the natural greenhouse effect warms Earth's surface by about 33 °C.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Greenhouse effect (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Greenhouse_effect"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Earth's greenhouse effect (US EPA, 2012).png (public domain) diagram of the greenhouse effect; File:Greenhouse effect diagram.png alternative",
+    "keywords": [
+      "greenhouse effect diagram",
+      "greenhouse effect",
+      "Earth atmosphere"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:19.055Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Without the greenhouse effect Earth's average surface temperature would be about -18 C",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+        "quote": "Without this absorption, Earth's surface would have an average temperature of -18 °C (-0.4 °F) ."
+      },
+      {
+        "claim": "Sunlight arrives mostly as visible and near-infrared light",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+        "quote": "so it emits most of its energy as shortwave radiation in near-infrared and visible wavelengths (as sunlight)."
+      },
+      {
+        "claim": "Earth emits longer-wavelength (mid- and far-) infrared",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+        "quote": "In contrast, Earth's surface has a much lower temperature, so it emits longwave radiation at mid- and far- infrared wavelengths."
+      },
+      {
+        "claim": "Water vapour and carbon dioxide absorb Earth's outgoing infrared (probe 1 answer)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+        "quote": "largely due to water vapor, though small percentages of hydrocarbons and carbon dioxide had a significant effect.",
+        "note": "Page text is about Tyndall's measurements; the same page states a gas is a greenhouse gas if it absorbs longwave radiation and lists CO2 and water vapour among greenhouse gases."
+      },
+      {
+        "claim": "Nitrogen and oxygen are, for practical purposes, transparent to it",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+        "quote": "They are transparent to longwave radiation, and, for practical purposes, do not absorb or emit longwave radiation."
+      },
+      {
+        "claim": "Average surface temperature around 15 C (body)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+        "quote": "However, because some of the radiation is absorbed, Earth's average surface temperature is around 15 °C (59 °F) ."
+      },
+      {
+        "claim": "A warming of about 33 C (body and probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+        "quote": "they prevent that radiation from escaping into space, causing surface temperatures to rise by about 33 °C (59 °F) ."
+      }
+    ],
+    "overall": "pass"
+  }
+}

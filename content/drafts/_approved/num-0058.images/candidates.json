@@ -1,0 +1,74 @@
+{
+  "draft_id": "num-0058",
+  "created_at": "2026-10-26T20:32:23.902Z",
+  "queries": [
+    "square root of 2 irrational number diagram square diagonal",
+    "square root of 2",
+    "square root of 2 irrational number diagram"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-116702440",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Root 4 square.png",
+      "credit": "Dicklyon / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Root_4_square.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Root_4_square.png/960px-Root_4_square.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1090,
+      "height": 1032,
+      "alt_suggestion": "Square with vertices at integer grid points (-1, 0), (0, -1), (1, 0), and (0, 1), the unique size square with area equal to diagonal",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "wikimedia-170659040",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Square root of 5.png",
+      "credit": "Jacob Rus / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Square_root_of_5.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Square_root_of_5.png/960px-Square_root_of_5.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1274,
+      "height": 774,
+      "alt_suggestion": "The square root of 5 is the diagonal of a 1 × 2 rectangle",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-126411485",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "FB-Visual sequence of ratios approximating √2.png",
+      "credit": "Frédéric BEATRIX / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:FB-Visual_sequence_of_ratios_approximating_%E2%88%9A2.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/FB-Visual_sequence_of_ratios_approximating_%E2%88%9A2.png/960px-FB-Visual_sequence_of_ratios_approximating_%E2%88%9A2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4960,
+      "height": 944,
+      "alt_suggestion": "Using this graph and the two initial numbers [1;1], we define the value assigned to each successive angle as the sum of the values of the other two angles of the same triangle.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "wikimedia-76347955",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "YBC-7289-OBV-REV.jpg",
+      "credit": "Urcia, A., Yale Peabody Museum of Natural History, http://peabody.yale.edu, http://hdl.handle.net/10079/8931zqj derivative work, user:Theodor Langhorne Franklin",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:YBC-7289-OBV-REV.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/YBC-7289-OBV-REV.jpg/960px-YBC-7289-OBV-REV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1920,
+      "height": 2665,
+      "alt_suggestion": "Photograph of the Yale Babylonian Collection's Tablet YBC 7289 obverse and reverse (YPM BC 021354). This tablet shows an approximation of the square root of 2 (1 24 51 10 w: sexagesimal) using the Pyt",
+      "file": "cand-4.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"square root of 2 irrational number diagram square diagonal\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"square root of 2\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"square root of 2 irrational number diagram\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "tech-0036",
+  "interest": "tech",
+  "title": "A lock anyone can close",
+  "probes": [
+    {
+      "id": "tech-0036-p1",
+      "question": "Which key can decrypt a message encrypted with your public key?",
+      "kind": "mcq",
+      "options": [
+        "Your public key",
+        "Any public key",
+        "Your private key",
+        "The sender's key"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "tech-0036-p2",
+      "question": "True or false: the public key must be kept secret.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Public-key cryptography (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Public-key_cryptography"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:24:58.101Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0036.webp",
+    "alt": "A row of padlocks clipped onto a steel cable, with a red heart-shaped padlock in the centre against blurred lights.",
+    "kind": "photo",
+    "credit": "Petar Milošević / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Love_padlocks_on_the_Butchers%27_Bridge_(Ljubljana).jpg"
+  },
+  "body": {
+    "claim": "With public-key encryption, anyone can encrypt a message, but only the holder of the paired private key can decrypt it.",
+    "why": "Each person has a pair of keys. The public key can be openly distributed without compromising security, and the private key must stay secret. The security of the whole system depends on the private key never becoming known to anyone else."
+  }
+}

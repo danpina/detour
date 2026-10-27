@@ -1,0 +1,59 @@
+{
+  "id": "mind-0033",
+  "interest": "mind",
+  "title": "Spread it out or cram it in?",
+  "probes": [
+    {
+      "id": "mind-0033-p1",
+      "question": "Which study plan favours long-term memory?",
+      "kind": "mcq",
+      "options": [
+        "One long session the night before",
+        "Several sessions spread over days or weeks",
+        "Reading the notes once, slowly",
+        "Studying only in the morning"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0033-p2",
+      "question": "Learning more by spreading study out in time is called the ____ effect.",
+      "kind": "cloze",
+      "answer": "spacing",
+      "accept": [
+        "spaced"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spacing effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spacing_effect"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:17:58.214Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "mind-0033.webp",
+    "alt": "An open ring-binder planner showing a weekly page with Monday to Sunday lined sections.",
+    "kind": "photo",
+    "credit": "Old Photo Profile / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Personal_organizer_with_metallic_ring_binder.jpg"
+  },
+  "body": {
+    "question": "In a 2006 review of memory studies, spaced practice was compared with massed practice (cramming) in 271 cases. How often did spaced practice come out ahead?",
+    "options": [
+      "About half the time",
+      "About two thirds of the time",
+      "Nearly every time"
+    ],
+    "answer": 2,
+    "reveal": "Spaced practice beat massed practice in 259 of 271 cases. The gains are especially large when the gaps between sessions are days or weeks."
+  }
+}

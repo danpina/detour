@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-1259734",
+  "alt": "A torn ancient papyrus fragment of Euclid's Elements with Greek text and a small geometric diagram.",
+  "fits": true,
+  "note": "Oxyrhynchus papyrus of Euclid; diagram on the right.",
+  "crop": {
+    "fx": 0.65,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

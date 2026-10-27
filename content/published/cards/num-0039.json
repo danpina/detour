@@ -1,0 +1,54 @@
+{
+  "id": "num-0039",
+  "interest": "numbers",
+  "title": "Why the casino always wins",
+  "probes": [
+    {
+      "id": "num-0039-p1",
+      "question": "What does the law of large numbers say about repeated random events?",
+      "kind": "mcq",
+      "options": [
+        "Streaks always reverse",
+        "Their average tends toward the expected value",
+        "Every outcome becomes equally likely next time",
+        "Small samples are always accurate"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0039-p2",
+      "question": "True or false: a casino must win every single spin to make a predictable profit.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Law of large numbers (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Law_of_large_numbers"
+    },
+    {
+      "title": "Expected value (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Expected_value"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:29.782Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0039.webp",
+    "alt": "Ornate facade of the Monte Carlo Casino with arched windows, marble columns and colourful mosaic frieze.",
+    "kind": "photo",
+    "credit": "Diego Delso / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Casino_de_Montecarlo,_M%C3%B3naco,_2016-06-23,_DD_06.jpg"
+  },
+  "body": {
+    "claim": "A casino can lose on one spin of the roulette wheel, yet reliably profits over many.",
+    "why": "This is the law of large numbers. The average of many repeated random results moves toward the expected value, so the casino's earnings tend toward a predictable percentage. A player's winning streak is eventually overwhelmed by the odds built into the game."
+  }
+}

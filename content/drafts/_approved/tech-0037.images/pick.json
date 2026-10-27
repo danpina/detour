@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-129470457",
+  "alt": "The corner of a dark smartphone screen showing the time 10:29 and a battery icon.",
+  "fits": true,
+  "note": "Generic phone, no brand visible; other candidates showed Apple/Samsung logos.",
+  "crop": {
+    "fx": 0.25,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

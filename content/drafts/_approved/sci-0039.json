@@ -1,0 +1,138 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "science",
+    "topic": "Batteries",
+    "angle": "From frog legs to the first battery"
+  },
+  "created_at": "2026-10-26T20:31:08.682Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "sci-0039",
+    "interest": "science",
+    "type": "story",
+    "title": "The pile that started the battery age",
+    "body": {
+      "panels": [
+        {
+          "text": "1780s, Italy. Luigi Galvani finds that a circuit of two metals and a frog's leg makes the leg respond."
+        },
+        {
+          "text": "In 1794 Alessandro Volta shows that you do not need the frog: two metals and brine-soaked cloth or cardboard in a circuit also produce an electric current."
+        },
+        {
+          "text": "In 1800 he stacks several pairs of copper (or silver) and zinc discs, separated by brine-soaked cloth, which increases the total electromotive force. Connect the top and bottom, and a current flows."
+        },
+        {
+          "text": "Today the idea lives on in every battery: its negative terminal is the source of electrons, which flow through your device to the positive terminal."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "sci-0039-p1",
+        "kind": "mcq",
+        "question": "In a battery that is supplying power, electrons flow out of which terminal?",
+        "options": [
+          "Positive",
+          "Negative",
+          "Neither, they stay inside"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "sci-0039-p2",
+        "kind": "tf",
+        "question": "True or false: Volta's 1800 pile stacked alternating metal discs separated by brine-soaked cloth.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Voltaic pile (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Voltaic_pile"
+      },
+      {
+        "title": "Electric battery (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Electric_battery"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Pile de Volta.jpg and File:Voltaic pile battery.png show Volta's pile",
+    "keywords": [
+      "Voltaic pile",
+      "Alessandro Volta",
+      "battery",
+      "galvanic cell"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:56.586Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Voltaic_pile",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Electric_battery",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Galvani 1780s: circuit of two metals and a frog's leg makes the leg respond",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voltaic_pile",
+        "quote": "1780s discovery that a circuit of two metals and a frog's leg can cause the frog's leg to respond"
+      },
+      {
+        "claim": "1794 Volta shows metals and brine-soaked cloth or cardboard in a circuit produce current",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voltaic_pile",
+        "quote": "Volta demonstrated in 1794 that when two metals and"
+      },
+      {
+        "claim": "1800 Volta stacks pairs of copper (or silver) and zinc discs",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voltaic_pile",
+        "quote": "In 1800, Volta stacked several pairs of alternating copper"
+      },
+      {
+        "claim": "Discs separated by brine-soaked cloth (probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voltaic_pile",
+        "quote": "separated by cloth or cardboard soaked in brine"
+      },
+      {
+        "claim": "Stacking increased total electromotive force",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voltaic_pile",
+        "quote": "which increased the total electromotive force"
+      },
+      {
+        "claim": "Connecting top and bottom makes a current flow",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Voltaic_pile",
+        "quote": "an electric current flowed through the voltaic pile and the connecting wire"
+      },
+      {
+        "claim": "Negative terminal is the source of electrons (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electric_battery",
+        "quote": "The terminal marked negative is the source of electrons."
+      },
+      {
+        "claim": "Electrons flow through the device to the positive terminal",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Electric_battery",
+        "quote": "those negatively charged electrons flow through the circuit and reach the positive terminal"
+      }
+    ],
+    "overall": "pass"
+  }
+}

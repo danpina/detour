@@ -1,0 +1,49 @@
+{
+  "id": "money-0045",
+  "interest": "money",
+  "title": "Insurance is a shared pot",
+  "probes": [
+    {
+      "id": "money-0045-p1",
+      "question": "What does an insurer pool together?",
+      "kind": "mcq",
+      "options": [
+        "The insurer's own savings",
+        "Funds from many insured people",
+        "Government tax"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0045-p2",
+      "question": "True or false: the fee for insurance depends on how often and how severe the insured event is.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Insurance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Insurance"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:40.622Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0045.webp",
+    "alt": "A blue metal fire insurance plaque with three silver heads and the number 5266, mounted on a red brick wall.",
+    "kind": "photo",
+    "credit": "Richard Law / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Fire_Insurance_plaque_-_The_Cottage_-_geograph.org.uk_-_8186669.jpg"
+  },
+  "body": {
+    "claim": "Insurance pools money from many people to pay for the losses that a few of them have.",
+    "why": "Each person pays a fee, set by how often and how severe the insured event is. Because policies cover many similar people, the law of large numbers makes predicted losses close to the actual losses. The few who suffer a loss are paid from the pool."
+  }
+}

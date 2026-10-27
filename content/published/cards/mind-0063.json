@@ -1,0 +1,55 @@
+{
+  "id": "mind-0063",
+  "interest": "mind",
+  "title": "How often people went along",
+  "probes": [
+    {
+      "id": "mind-0063-p1",
+      "question": "True or false: in Asch's actor condition, most of the participants' responses followed the actors' wrong answer.",
+      "kind": "tf",
+      "answer": false
+    },
+    {
+      "id": "mind-0063-p2",
+      "question": "About what share of participants defied the majority at least once?",
+      "kind": "mcq",
+      "options": [
+        "About 5%",
+        "About 25%",
+        "About 50%",
+        "About 95%"
+      ],
+      "answer": 3
+    }
+  ],
+  "sources": [
+    {
+      "title": "Asch conformity experiments (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Asch_conformity_experiments"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:32:58.529Z"
+  },
+  "type": "estimate",
+  "image": {
+    "file": "mind-0063.webp",
+    "alt": "Two panels of the Asch line experiment: a card with three vertical lines of different lengths beside a card with one reference line.",
+    "kind": "photo",
+    "credit": "Shadigaafar / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A2%D8%B4.jpg"
+  },
+  "body": {
+    "question": "In Asch's line task, actors unanimously gave the wrong answer. What percentage of the real participants' responses went along with them?",
+    "unit": "%",
+    "min": 0,
+    "max": 100,
+    "scale": "linear",
+    "answer": 35.7,
+    "reveal": "35.7% of responses followed the actors' wrong answer, while 64.3% stayed correct. Without actors the error rate was under 0.7%. About 12% followed the group nearly always, 26% consistently defied it, and about 95% defied the majority at least once."
+  }
+}

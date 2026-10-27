@@ -1,0 +1,84 @@
+{
+  "draft_id": "num-0070",
+  "created_at": "2026-10-26T20:33:49.771Z",
+  "queries": [
+    "Georg Cantor Cantor portrait Georg Cantor mathematician",
+    "Georg Cantor",
+    "Georg Cantor Cantor portrait"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-199624555",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "George Cantor (Kunstbibliothek Berlin).jpg",
+      "credit": "Ferdinand Anders-Paltzow / Otto Zeth / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:George_Cantor_(Kunstbibliothek_Berlin).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/George_Cantor_%28Kunstbibliothek_Berlin%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 937,
+      "height": 1500,
+      "alt_suggestion": "Carte de visite photograph of the German mathematician Georg Cantor (1845–1918)",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-15468",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Saint George and the Dragon",
+      "credit": "Bernat Martorell (Spanish, active from 1427–died 1452) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/15468",
+      "image_url": "https://www.artic.edu/iiif/2/8a0e4ac9-43ea-bc3e-884b-ee27f8a10501/full/843,/0/default.jpg",
+      "alt_suggestion": "St. George on white horse, piercing green, gold dragon",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-89262795",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Georg Cantor.png",
+      "credit": "Sreyansu tm / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Georg_Cantor.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Georg_Cantor.png/960px-Georg_Cantor.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1177,
+      "height": 1179,
+      "alt_suggestion": "Georg Ferdinand Ludwig Philipp Cantor was a German mathematician. He created set theory, which has become a fundamental theory in mathematics.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-11",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Self-Portrait",
+      "credit": "Walter Shirlaw (American, 1838–1909) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/11",
+      "image_url": "https://www.artic.edu/iiif/2/7b7a6f39-1cd8-ea2f-9811-18b0e23edac0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-74820875",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Georg Cantor (Porträt).jpg",
+      "credit": "https://www.math.cmu.edu/~rcristof/pdf/Cantor_pubblicato.pdf and they had it from https://photos.aip.org/history-programs/niels-bohr-library/photos/cantor-georg",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Georg_Cantor_(Portr%C3%A4t).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Georg_Cantor_%28Portr%C3%A4t%29.jpg/960px-Georg_Cantor_%28Portr%C3%A4t%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1184,
+      "height": 1600,
+      "alt_suggestion": "Der deutsche Matematiker Georg Cantor (1845-1918)",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Georg Cantor Cantor portrait Georg Cantor mathematician\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Georg Cantor\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Georg Cantor Cantor portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

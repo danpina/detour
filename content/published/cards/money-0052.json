@@ -1,0 +1,58 @@
+{
+  "id": "money-0052",
+  "interest": "money",
+  "title": "The rumour that wasn't true",
+  "probes": [
+    {
+      "id": "money-0052-p1",
+      "question": "A bank run can become a self-____ prophecy: more withdrawals raise the chance of default, triggering further withdrawals.",
+      "kind": "cloze",
+      "answer": "fulfilling",
+      "accept": [
+        "fulfilling",
+        "self-fulfilling"
+      ]
+    },
+    {
+      "id": "money-0052-p2",
+      "question": "True or false: FDIC deposit insurance covers up to $250,000 per depositor, per insured bank, for each account ownership category.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bank run (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bank_run"
+    },
+    {
+      "title": "Federal Deposit Insurance Corporation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federal_Deposit_Insurance_Corporation"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:20:52.868Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "money-0052.webp",
+    "alt": "A black-and-white 1932 photograph of a large crowd of depositors gathered on the pavement outside a bank in New York during a bank run.",
+    "kind": "photo",
+    "credit": "Wikideas1 Wikideas1 (talk) (Uploads) / Wikimedia Commons",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bank_Run_on_American_Union_Bank.jpeg"
+  },
+  "body": {
+    "question": "A rumour says a bank is about to fail. It is false, and many customers know it. Can a run on the bank still start?",
+    "options": [
+      "No, people who know it is false stay put",
+      "Only if the bank really is short of money",
+      "Yes, if they suspect others will believe it"
+    ],
+    "answer": 2,
+    "reveal": "Yes. Even depositors who know the story is false have a reason to withdraw if they suspect others will believe it. Banks keep only a small proportion of their assets as cash, so more withdrawals raise the chance of default, which triggers still more. Deposit insurance, like the US FDIC's, is one protection."
+  }
+}

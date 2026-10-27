@@ -1,0 +1,66 @@
+{
+  "id": "num-0043",
+  "interest": "numbers",
+  "title": "The paper found after Bayes died",
+  "probes": [
+    {
+      "id": "num-0043-p1",
+      "question": "In Bayesian updating, what is the prior probability?",
+      "kind": "mcq",
+      "options": [
+        "The probability after seeing the evidence",
+        "The chance the evidence is wrong",
+        "The estimate before the new evidence is observed",
+        "The average of all outcomes"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "num-0043-p2",
+      "question": "True or false: Bayes' theorem is widely invoked to justify how someone should update beliefs after new information.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bayes' theorem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bayes%27_theorem"
+    },
+    {
+      "title": "Bayesian inference (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bayesian_inference"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:38.288Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0043.webp",
+    "alt": "Weathered stone tomb carved with names of the Bayes family, covered in moss at Bunhill Fields cemetery.",
+    "kind": "photo",
+    "credit": "Cory Doctorow / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tomb_of_Thomas_Bayes,_Bunhill_Cemetery,_London,_UK.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Thomas Bayes, an 18th-century minister and mathematician, studied how to use evidence to put limits on an unknown quantity."
+      },
+      {
+        "text": "After his death, his family passed his papers to a friend, Richard Price. Price edited the manuscript for two years."
+      },
+      {
+        "text": "It was read aloud at the Royal Society on 23 December 1763 and published that year as An Essay Towards Solving a Problem in the Doctrine of Chances."
+      },
+      {
+        "text": "Independently, Pierre-Simon Laplace worked out the same idea: take a prior probability, add evidence, and get an updated one. Today it is Bayes' theorem, a rule for updating your belief when new information arrives."
+      }
+    ]
+  }
+}

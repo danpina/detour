@@ -1,0 +1,61 @@
+{
+  "id": "money-0063",
+  "interest": "money",
+  "title": "Loans without collateral",
+  "probes": [
+    {
+      "id": "money-0063-p1",
+      "question": "What does Grameen Bank not require from the people it lends to?",
+      "kind": "mcq",
+      "options": [
+        "Collateral",
+        "Weekly instalments",
+        "A repayment plan"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "money-0063-p2",
+      "question": "True or false: Grameen Bank is owned by its borrowers.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Grameen Bank (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Grameen_Bank"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:23:18.721Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0063.webp",
+    "alt": "A close portrait of Nobel Peace Prize winner Muhammad Yunus, an older man with grey hair, gesturing while speaking.",
+    "kind": "photo",
+    "credit": "World Economic Forum / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Muhammad_Yunus_-_World_Economic_Forum_Annual_Meeting_2012.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "In 1976 Muhammad Yunus, a professor at the University of Chittagong, launched a research project on how to bring banking services to the rural poor."
+      },
+      {
+        "text": "It grew into Grameen Bank, founded in Bangladesh. It makes small loans, called microcredit, to poor people without requiring collateral."
+      },
+      {
+        "text": "Terms are kept reasonable, with group lending and weekly instalments. Around 97% of its members are women."
+      },
+      {
+        "text": "The bank is owned by its borrowers, most of whom are poor women. In 2006 the bank and Yunus were jointly awarded the Nobel Peace Prize."
+      }
+    ]
+  }
+}

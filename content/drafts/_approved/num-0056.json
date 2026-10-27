@@ -1,0 +1,94 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "numbers",
+    "topic": "Pigeonhole principle",
+    "angle": "Socks and birthdays: more items than boxes forces a repeat"
+  },
+  "created_at": "2026-10-26T20:31:10.332Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "num-0056",
+    "interest": "numbers",
+    "type": "guess_first",
+    "title": "How many socks guarantee a pair?",
+    "body": {
+      "question": "A drawer holds a mix of black and blue socks and you pull them out in the dark. How many must you pull to be certain of a matching pair?",
+      "options": [
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "reveal": "Three. With two colours there are only two 'pigeonholes', so by the third sock one colour must repeat. This is the pigeonhole principle: more items than boxes forces a box to hold two. The same idea says 367 people guarantee a shared birthday."
+    },
+    "probes": [
+      {
+        "id": "num-0056-p1",
+        "kind": "mcq",
+        "question": "How many people guarantee that at least two share a birthday?",
+        "options": [
+          "183",
+          "365",
+          "366",
+          "367"
+        ],
+        "answer": 3
+      },
+      {
+        "id": "num-0056-p2",
+        "kind": "tf",
+        "question": "True or false: if you pull 3 socks from a drawer of only black and blue socks, two of them must match.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Pigeonhole principle (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Pigeonhole_principle"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Read House Hotel Front Desk Cubbyholes.jpg, a wall of mail pigeonholes",
+    "keywords": [
+      "pigeonholes mail",
+      "cubbyholes",
+      "pigeonhole mailboxes"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:28:58.519Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Pulling socks of two colours: three socks guarantee a matching pair",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "By the pigeonhole principle ( m = 2 , using one pigeonhole per color), the answer is three ( n = 3 items)."
+      },
+      {
+        "claim": "367 people guarantee a shared birthday",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "we can also tell by the pigeonhole principle that among 367 people, there is at least one pair of people who share the same birthday"
+      },
+      {
+        "claim": "Pigeonhole principle: more items than boxes forces a box to hold two",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Pigeonhole_principle",
+        "quote": "then at least one container must contain more than one item"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "draft_id": "hist-0058",
+  "created_at": "2026-10-26T20:33:14.847Z",
+  "queries": [
+    "Code of Hammurabi stele Louvre Hammurabi stele Code of Hammurabi Louvre",
+    "Code of Hammurabi stele Louvre",
+    "Code of Hammurabi stele Louvre Hammurabi stele"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-16931676",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "P1050763 Louvre code Hammurabi face rwk.JPG",
+      "credit": "Mbzt / Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:P1050763_Louvre_code_Hammurabi_face_rwk.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/P1050763_Louvre_code_Hammurabi_face_rwk.JPG/960px-P1050763_Louvre_code_Hammurabi_face_rwk.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1215,
+      "height": 2000,
+      "alt_suggestion": "Code de Hammurabi, roi de Babylone ; face avant.",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-29149",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Buddhist Votive Stele",
+      "credit": "China / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/29149",
+      "image_url": "https://www.artic.edu/iiif/2/df7eff2d-b2f3-898e-88b4-4bf8d4292871/full/843,/0/default.jpg",
+      "alt_suggestion": "A large stone steele with multiple registers of images from Buddhas life and sacred texts carved on all four sides",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-65194220",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Code of Hammurabi (Louvre Sb 8)-31434550325.jpg",
+      "credit": "Fred Romero from Paris, France / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Code_of_Hammurabi_(Louvre_Sb_8)-31434550325.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Code_of_Hammurabi_%28Louvre_Sb_8%29-31434550325.jpg/960px-Code_of_Hammurabi_%28Louvre_Sb_8%29-31434550325.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4918,
+      "height": 3280,
+      "alt_suggestion": "(Saint-Germain l'Auxerrois) Cour Napoléon The Louvre Museum is the world's largest museum. In 1682, Louis XIV chose the Palace of Versailles for his household, leaving the Louvre primarily as a place ",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-11625",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Figure of a Youth from a Funerary Stele (Monument)",
+      "credit": "Greek; Athens / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/11625",
+      "image_url": "https://www.artic.edu/iiif/2/0c49ea9d-c9bc-381e-9ca5-0fce23cc70ec/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of marble.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-7680729",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Code of Hammurabi Louvre Sb8 - 08a.jpg",
+      "credit": "Georgezhao / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Code_of_Hammurabi_Louvre_Sb8_-_08a.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Code_of_Hammurabi_Louvre_Sb8_-_08a.jpg/960px-Code_of_Hammurabi_Louvre_Sb8_-_08a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2592,
+      "height": 1944,
+      "alt_suggestion": "Code of Hammurabi Louvre Sb8 - 08a.jpg",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [
+    {
+      "source": "wikimedia",
+      "title": "Code of Hammurabi IMG 1932.JPG",
+      "license": "Attribution",
+      "reason": "license not allowed"
+    }
+  ],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"Code of Hammurabi stele Louvre Hammurabi stele Code of Hammurabi Louvre\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Code of Hammurabi stele Louvre\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"Code of Hammurabi stele Louvre Hammurabi stele\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

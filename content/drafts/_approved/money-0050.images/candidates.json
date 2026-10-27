@@ -1,0 +1,98 @@
+{
+  "draft_id": "money-0050",
+  "created_at": "2026-10-27T06:08:40.070Z",
+  "queries": [
+    "David Ricardo portrait David Ricardo Thomas Phillips David Ricardo economist",
+    "David Ricardo portrait",
+    "David Ricardo portrait David Ricardo Thomas Phillips"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-134115407",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "1. Buste de Victor Hugo, par David d'Angers, 2013.7.1a.jpg",
+      "credit": "Los Rios, Ricardo de (Valladolid, 1846 - Madrid, 1929), graveur / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1._Buste_de_Victor_Hugo,_par_David_d%27Angers,_2013.7.1a.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/1._Buste_de_Victor_Hugo%2C_par_David_d%27Angers%2C_2013.7.1a.jpg/960px-1._Buste_de_Victor_Hugo%2C_par_David_d%27Angers%2C_2013.7.1a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2296,
+      "height": 3000,
+      "alt_suggestion": "Auteur(s): Los Rios, Ricardo de (Valladolid, 1846 - Madrid, 1929), graveur Flameng, François (Paris, 06–12–1856 - Paris, 28–02–1923), auteur du modèle Hébert L., editeur Autres titres : Illustration d",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "artic-22194",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Hermine David",
+      "credit": "Jules Pascin American, born Bulgaria, 1885-1930 / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/22194",
+      "image_url": "https://www.artic.edu/iiif/2/36d829a6-b07a-d84b-5774-02763512d73f/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-134115369",
+      "source": "wikimedia",
+      "kind": "artwork",
+      "title": "1. Buste de Victor Hugo, par David d'Angers, 2017.0.2432.jpg",
+      "credit": "Los Rios, Ricardo de (Valladolid, 1846 - Madrid, 1929), graveur / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1._Buste_de_Victor_Hugo,_par_David_d%27Angers,_2017.0.2432.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/1._Buste_de_Victor_Hugo%2C_par_David_d%27Angers%2C_2017.0.2432.jpg/960px-1._Buste_de_Victor_Hugo%2C_par_David_d%27Angers%2C_2017.0.2432.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2312,
+      "height": 3000,
+      "alt_suggestion": "Auteur(s): Los Rios, Ricardo de (Valladolid, 1846 - Madrid, 1929), graveur Flameng, François (Paris, 06–12–1856 - Paris, 28–02–1923), auteur du modèle Hébert L., editeur Autres titres : Illustration d",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "artic-11",
+      "source": "artic",
+      "kind": "artwork",
+      "title": "Self-Portrait",
+      "credit": "Walter Shirlaw (American, 1838–1909) / Art Institute of Chicago",
+      "license": "CC0",
+      "source_url": "https://www.artic.edu/artworks/11",
+      "image_url": "https://www.artic.edu/iiif/2/7b7a6f39-1cd8-ea2f-9811-18b0e23edac0/full/843,/0/default.jpg",
+      "alt_suggestion": "A work made of oil on canvas.",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-23374132",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Ford A1615 NLGRF photo contact sheet (1974-10-25)(Gerald Ford Library).jpg",
+      "credit": "White House Photographic Office (WHPO) - Thomas / Wikimedia Commons",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ford_A1615_NLGRF_photo_contact_sheet_(1974-10-25)(Gerald_Ford_Library).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Ford_A1615_NLGRF_photo_contact_sheet_%281974-10-25%29%28Gerald_Ford_Library%29.jpg/960px-Ford_A1615_NLGRF_photo_contact_sheet_%281974-10-25%29%28Gerald_Ford_Library%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1696,
+      "height": 2184,
+      "alt_suggestion": "The photo contact sheet, identified as A1615 by the White House Photographic Office (WHPO), is housed at the Gerald R. Ford Presidential Library, a branch of the National Archives and Records Administ",
+      "file": "cand-5.jpg"
+    },
+    {
+      "id": "wikimedia-131154859",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "David Ricardo (colorized).jpg",
+      "credit": "Vladimír Krupa 81 / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:David_Ricardo_(colorized).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/David_Ricardo_%28colorized%29.jpg/960px-David_Ricardo_%28colorized%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 2432,
+      "height": 3072,
+      "alt_suggestion": "Colorized picture of David Ricardo",
+      "file": "cand-6.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"David Ricardo portrait David Ricardo Thomas Phillips David Ricardo economist\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"David Ricardo portrait\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"David Ricardo portrait David Ricardo Thomas Phillips\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

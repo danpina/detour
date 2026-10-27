@@ -1,0 +1,107 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "mind",
+    "topic": "Sleep deprivation",
+    "angle": "Long wakefulness compared with drunkenness"
+  },
+  "created_at": "2026-10-26T20:29:12.577Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "mind-0038",
+    "interest": "mind",
+    "type": "story",
+    "title": "Awake too long is a bit like drunk",
+    "body": {
+      "panels": [
+        {
+          "text": "We often think of staying awake as willpower. Researchers have compared it with something else: alcohol."
+        },
+        {
+          "text": "In a 2000 study, people who drove after being awake for 17 to 19 hours performed worse than those with a blood alcohol level of 0.05 percent."
+        },
+        {
+          "text": "Another study suggested performance begins to degrade after 16 hours awake, and that 21 hours awake was equivalent to 0.08 percent."
+        },
+        {
+          "text": "Even a single night without sleep brings slower reaction times, weaker logical reasoning and less flexible thinking."
+        }
+      ]
+    },
+    "probes": [
+      {
+        "id": "mind-0038-p1",
+        "kind": "mcq",
+        "question": "After about how many hours awake did one study say performance begins to degrade?",
+        "options": [
+          "4",
+          "8",
+          "16",
+          "30"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "mind-0038-p2",
+        "kind": "tf",
+        "question": "True or false: a single night without sleep can slow reaction times.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sleep deprivation (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sleep_deprivation"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Classic alarm clock 20180513.jpg shows a mechanical alarm clock",
+    "keywords": [
+      "alarm clock",
+      "classic alarm clock",
+      "clock"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:07:59.676Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sleep_deprivation",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "2000 study: drivers awake 17-19 hours performed worse than BAC 0.05 percent",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sleep_deprivation",
+        "quote": "People who drove after being awake for 17-19 hours performed worse than those with a blood alcohol level of 0.05 percent"
+      },
+      {
+        "claim": "Another study suggested performance degrades after 16 hours awake; 21 hours equal to 0.08 percent (probe 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sleep_deprivation",
+        "quote": "Another study suggested that performance begins to degrade after 16 hours awake, and 21 hours awake was equivalent to a blood alcohol content of 0.08 percent"
+      },
+      {
+        "claim": "Single night without sleep: slower reaction times, weaker reasoning, less flexible thinking (panel 4, probe 2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sleep_deprivation",
+        "quote": "Participants displayed slower reaction times, impaired logical reasoning, and reduced cognitive flexibility",
+        "note": "Page: 2010 study, declines after just a single night of sleep deprivation."
+      },
+      {
+        "claim": "Researchers compared sleep deprivation with alcohol (panel 1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Sleep_deprivation",
+        "quote": "sleep deprivation can have some of the same hazardous effects as being intoxicated by alcohol"
+      }
+    ],
+    "overall": "pass"
+  }
+}

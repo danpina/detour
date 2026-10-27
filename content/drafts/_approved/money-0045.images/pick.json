@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-179569134",
+  "alt": "A blue metal fire insurance plaque with three silver heads and the number 5266, mounted on a red brick wall.",
+  "fits": true,
+  "note": "Fire mark plaque, no logos.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

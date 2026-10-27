@@ -1,0 +1,58 @@
+{
+  "id": "tech-0038",
+  "interest": "tech",
+  "title": "How sites can store passwords safely",
+  "probes": [
+    {
+      "id": "tech-0038-p1",
+      "question": "What does adding a unique salt to each password help defend against?",
+      "kind": "mcq",
+      "options": [
+        "Forgetting your password",
+        "Slow websites",
+        "Attacks using precomputed tables of hashes",
+        "Phishing emails"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "tech-0038-p2",
+      "question": "True or false: a hash is designed to be easy to reverse.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cryptographic hash function (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cryptographic_hash_function"
+    },
+    {
+      "title": "Salt (cryptography) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Salt_(cryptography)"
+    },
+    {
+      "title": "Password (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Password"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:25:08.174Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "tech-0038.webp",
+    "alt": "A black combination padlock with number dials hanging from a metal hasp on a box.",
+    "kind": "photo",
+    "credit": "Ivan Radic / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_padlock_with_number_combination_(50724043466).jpg"
+  },
+  "body": {
+    "claim": "A safer way for a site to store passwords is as salted hashes, not as the passwords themselves.",
+    "why": "A hash is a one-way operation that is quick to calculate but hard to reverse, and even a small change in the input gives a very different result. A salt is random data added to each password, which helps defend against precomputed tables like rainbow tables."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-127516063",
+  "alt": "A cylindrical metal paper-type capacitor with wire leads lies on a light background beside a second one.",
+  "fits": true,
+  "note": "Clear photo of the subject, adequate resolution.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

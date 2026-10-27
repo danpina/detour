@@ -1,0 +1,88 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "money",
+    "topic": "GDP",
+    "angle": "What gross domestic product does not count"
+  },
+  "created_at": "2026-10-26T20:32:13.790Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "money-0051",
+    "interest": "money",
+    "type": "fact_why",
+    "title": "What GDP leaves out",
+    "body": {
+      "claim": "GDP counts what passes through markets, so it leaves out unpaid household work and volunteering.",
+      "why": "GDP excludes activities not provided through the market, and pollution from industrial output is not counted either. Simon Kuznets, who first developed the modern concept for a 1934 US Congress report, warned against using it as a measure of welfare."
+    },
+    "probes": [
+      {
+        "id": "money-0051-p1",
+        "kind": "mcq",
+        "question": "Which of these is left out of GDP?",
+        "options": [
+          "Household spending on food",
+          "A firm buying new machinery",
+          "Unpaid household work"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "money-0051-p2",
+        "kind": "tf",
+        "question": "True or false: Simon Kuznets, who first developed the modern concept of GDP, warned against using it as a measure of welfare.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Gross domestic product (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Gross_domestic_product"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Simon Kuznets 1971.jpg (public domain press photo) shows the economist Simon Kuznets",
+    "keywords": [
+      "Simon Kuznets",
+      "Kuznets economist",
+      "Simon Kuznets 1971"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T06:17:29.978Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gross_domestic_product",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "GDP excludes activities not provided through the market: unpaid household work and volunteering",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gross_domestic_product",
+        "quote": "GDP excludes activities that are not provided through the market, such as household production, bartering of goods and services, and volunteer or unpaid services.",
+        "note": "Page says 'household production' (unpaid household work in substance); probe p1 answer relies on this."
+      },
+      {
+        "claim": "Pollution from industrial output is not counted",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gross_domestic_product",
+        "quote": "Increased industrial output might grow GDP, but any pollution is not counted."
+      },
+      {
+        "claim": "Simon Kuznets first developed the modern concept for a 1934 US Congress report and warned against using it as a measure of welfare (why; probe p2 true)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Gross_domestic_product",
+        "quote": "first developed by Simon Kuznets for a 1934 U.S. Congress report, where he warned against its use as a measure of welfare"
+      }
+    ],
+    "overall": "pass"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "money-0058",
+  "interest": "money",
+  "title": "Why you can't edit the blockchain",
+  "probes": [
+    {
+      "id": "money-0058-p1",
+      "question": "Why is altering an old block in the blockchain so hard?",
+      "kind": "mcq",
+      "options": [
+        "Blocks are stored on paper",
+        "A bank must approve each change",
+        "All the later blocks would have to be changed too"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0058-p2",
+      "question": "True or false: when nodes disagree, they trust the longest chain.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bitcoin (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bitcoin"
+    }
+  ],
+  "difficulty": 4,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:22:57.098Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0058.webp",
+    "alt": "A close-up of a brass physical Bitcoin collector coin dated 2011 with a large letter B.",
+    "kind": "photo",
+    "credit": "Tiberiandusk / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Physical_Bitcoin_2011_Casascius_1_Bitcoin_Coin_Token.png"
+  },
+  "body": {
+    "claim": "Bitcoin's record of payments is a chain of blocks, and each block contains the hash of the previous block.",
+    "why": "So altering one block requires changing all the blocks after it. When nodes disagree, they trust the longest chain, which took the greatest effort to produce. To tamper with the ledger, someone would need to control the majority of the global hashrate."
+  }
+}

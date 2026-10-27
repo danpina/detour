@@ -1,0 +1,54 @@
+{
+  "id": "num-0040",
+  "interest": "numbers",
+  "title": "Why averages draw a bell",
+  "probes": [
+    {
+      "id": "num-0040-p1",
+      "question": "What does the central limit theorem say about a sample mean?",
+      "kind": "mcq",
+      "options": [
+        "It is always exactly the true mean",
+        "Its distribution approaches a normal distribution",
+        "It gets more skewed as the sample grows",
+        "It only works for bell-shaped data"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0040-p2",
+      "question": "True or false: the individual values must themselves be normally distributed for the central limit theorem to apply.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Central limit theorem (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Central_limit_theorem"
+    },
+    {
+      "title": "Galton board (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bean_machine"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:33:34.739Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "num-0040.webp",
+    "alt": "Two wooden Galton boards side by side, one with metal beads piled at the bottom and one with beads forming a bell-shaped column pattern.",
+    "kind": "photo",
+    "credit": "Exhibit made by Estes Objethos Atelier, photo by Rodrigo Tetsuo Argenton / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tabuleiros_de_Galton_(antes_e_depois).jpg"
+  },
+  "body": {
+    "claim": "Averages of many independent random values form a bell curve, even when the individual values do not.",
+    "why": "This is the central limit theorem: the distribution of a sample mean approaches the normal distribution, even if the original variables are not normally distributed. In Francis Galton's bean machine, beads bounce left or right off rows of pegs, and the piles in the bins at the bottom approximate a bell curve."
+  }
+}

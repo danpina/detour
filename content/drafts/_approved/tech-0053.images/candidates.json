@@ -1,0 +1,84 @@
+{
+  "draft_id": "tech-0053",
+  "created_at": "2026-10-26T20:29:35.760Z",
+  "queries": [
+    "RAM module SDRAM memory module DDR4 RAM",
+    "RAM module",
+    "RAM module SDRAM memory module"
+  ],
+  "candidates": [
+    {
+      "id": "wikimedia-107866675",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "16 GiB-DDR4-RAM-Riegel RAM019FIX Small Crop 90 PCNT.png",
+      "credit": "PantheraLeo1359531 / Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png/960px-16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 23294,
+      "height": 5661,
+      "alt_suggestion": "A DDR4 SDRAM bar from Samsung with 16 GiB of memory at 2666 MHz. It is the model \"M378A2K43CB1-CTD\".",
+      "file": "cand-1.jpg"
+    },
+    {
+      "id": "nasa-0102170",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Space Station",
+      "credit": "MSFC / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/0102170",
+      "image_url": "https://images-assets.nasa.gov/image/0102170/0102170~medium.jpg",
+      "alt_suggestion": "This is an artist's concept of the Research and Applications Modules (RAM). Evolutionary growth was an important consideration in space station plarning, and another project was undertaken in 1971 to ",
+      "file": "cand-2.jpg"
+    },
+    {
+      "id": "wikimedia-50485412",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Pile of Laptop & Desktop RAM Memory Modules.jpg",
+      "credit": "Wilbysuffolk / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pile_of_Laptop_%26_Desktop_RAM_Memory_Modules.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Pile_of_Laptop_%26_Desktop_RAM_Memory_Modules.jpg/960px-Pile_of_Laptop_%26_Desktop_RAM_Memory_Modules.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 4612,
+      "height": 3203,
+      "alt_suggestion": "A large number of scrap laptop and desktop memory modules.",
+      "file": "cand-3.jpg"
+    },
+    {
+      "id": "nasa-iss062e115840",
+      "source": "nasa",
+      "kind": "photo",
+      "title": "Bartolomeo",
+      "credit": "Jessica Meir / NASA",
+      "license": "Public domain",
+      "source_url": "https://images.nasa.gov/details/iss062e115840",
+      "image_url": "https://images-assets.nasa.gov/image/iss062e115840/iss062e115840~medium.jpg",
+      "alt_suggestion": "iss062e115840 (3/27/2020) --- Bartolomeo in the parking position below the Destiny module on the International Space Station (ISS). The European external platform Bartolomeo is an enhancement of the I",
+      "file": "cand-4.jpg"
+    },
+    {
+      "id": "wikimedia-75911806",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "AST Research Ascentia A Series - RAM module-93303.jpg",
+      "credit": "Raimond Spekking / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AST_Research_Ascentia_A_Series_-_RAM_module-93303.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/AST_Research_Ascentia_A_Series_-_RAM_module-93303.jpg/960px-AST_Research_Ascentia_A_Series_-_RAM_module-93303.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 6190,
+      "height": 3482,
+      "alt_suggestion": "AST Research Ascentia A Series - RAM module with 4 x Samsung KM416V12004BT-L6 DRAM",
+      "file": "cand-5.jpg"
+    }
+  ],
+  "rejected": [],
+  "needs_generation": false,
+  "notes": [
+    "met failed for \"RAM module SDRAM memory module DDR4 RAM\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"RAM module\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i",
+    "met failed for \"RAM module SDRAM memory module\": HTTP 410 for https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&i"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-1170904",
+  "alt": "A weathered Babylonian clay tablet, Plimpton 322, covered in rows of cuneiform numerals.",
+  "fits": true,
+  "note": "Babylonian tablet, public domain, 1246 px wide.",
+  "crop": {
+    "fx": 0.5,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}

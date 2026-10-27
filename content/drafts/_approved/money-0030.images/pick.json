@@ -1,0 +1,11 @@
+{
+  "candidate_id": "wikimedia-58572647",
+  "alt": "A glass jar with a red lid holding copper coins and a folded banknote while another coin drops in through the slot.",
+  "fits": true,
+  "note": "Savings jar stands in for interest on savings; CC0, no brands.",
+  "crop": {
+    "fx": 0.4,
+    "fy": 0.5,
+    "zoom": 1
+  }
+}
