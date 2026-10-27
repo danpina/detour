@@ -1,6 +1,6 @@
 import { useState, type ReactNode } from "react";
 import type { Card, CardImage } from "@detour/content";
-import { imageUrl } from "../lib/content";
+import { INTEREST_INFO, imageUrl } from "../lib/content";
 import { track } from "../analytics";
 import { store } from "../lib/db";
 import { SEND_BACK_REASONS, getSendBack, isReviewer, sendBack, undoSendBack } from "../lib/reviewer";
@@ -47,7 +47,13 @@ export function CardShell({ card, index, total, dim, children }: Props) {
           ))}
         </div>
         <div className="mt-3 flex items-center justify-between text-xs text-white/80">
-          <span className="whitespace-nowrap rounded-full bg-black/40 px-2.5 py-1 backdrop-blur">{labelFor(card)}</span>
+          <span className="flex gap-1.5">
+            {/* The topic first, so it is always clear which section a card belongs to; then what kind of card it is. */}
+            <span className="whitespace-nowrap rounded-full bg-black/55 px-2.5 py-1 font-semibold text-white backdrop-blur">
+              {INTEREST_INFO[card.interest].emoji} {TOPIC_NAME[card.interest] ?? INTEREST_INFO[card.interest].name}
+            </span>
+            <span className="whitespace-nowrap rounded-full bg-black/40 px-2.5 py-1 backdrop-blur">{labelFor(card)}</span>
+          </span>
           <div className="flex gap-2">
             <button onClick={() => setSheet("sources")} className="rounded-full bg-black/40 px-3 py-1 backdrop-blur hover:bg-black/60">
               Sources
@@ -191,6 +197,9 @@ function Row({ k, v }: { k: string; v: string }) {
     </div>
   );
 }
+
+/** Short names that fit in the card header. */
+const TOPIC_NAME: Partial<Record<Card["interest"], string>> = { money: "Money", mind: "Mind", numbers: "Numbers" };
 
 function labelFor(card: Card): string {
   switch (card.type) {

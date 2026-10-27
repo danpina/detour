@@ -62,7 +62,9 @@ struct CardShell<Content: View>: View {
                         Capsule().fill(i <= index ? Color.white.opacity(i == index ? 0.9 : 1) : Color.white.opacity(0.3)).frame(height: 4)
                     }
                 }
-                HStack {
+                HStack(spacing: 6) {
+                    // The topic first, so it is always clear which section a card belongs to; then what kind of card it is.
+                    chip(card.interest.topicEmoji + " " + card.interest.topicName, bold: true)
                     chip(label)
                     Spacer()
                     Button { sheet = .sources } label: { chip("Sources") }
@@ -103,13 +105,41 @@ struct CardShell<Content: View>: View {
         }
     }
 
-    private func chip(_ text: String) -> some View {
+    private func chip(_ text: String, bold: Bool = false) -> some View {
         Text(text)
-            .font(.caption)
-            .foregroundStyle(.white.opacity(0.85))
+            .font(bold ? .caption.weight(.semibold) : .caption)
+            .foregroundStyle(.white.opacity(bold ? 1 : 0.85))
+            .lineLimit(1)
+            .fixedSize()
             .padding(.horizontal, 10)
             .padding(.vertical, 5)
-            .background(.black.opacity(0.4), in: Capsule())
+            .background(.black.opacity(bold ? 0.55 : 0.4), in: Capsule())
+    }
+}
+
+extension Interest {
+    /// The emoji shown with a card's topic. Matches the topic picker.
+    var topicEmoji: String {
+        switch self {
+        case .history: return "🏛️"
+        case .science: return "🔭"
+        case .money: return "🪙"
+        case .tech: return "💡"
+        case .mind: return "🧠"
+        case .numbers: return "🔢"
+        case .estimation: return "⚖️"
+        case .games: return "🎮"
+        }
+    }
+
+    /// A short name that fits in the card header.
+    var topicName: String {
+        switch self {
+        case .money: return "Money"
+        case .mind: return "Mind"
+        case .numbers: return "Numbers"
+        default: return displayName
+        }
     }
 }
 
