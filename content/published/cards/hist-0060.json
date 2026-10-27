@@ -1,0 +1,50 @@
+{
+  "id": "hist-0060",
+  "interest": "history",
+  "title": "The league with no founding day",
+  "probes": [
+    {
+      "id": "hist-0060-p1",
+      "question": "Why does the Hanseatic League have no founding date?",
+      "kind": "mcq",
+      "options": [
+        "Its records were all burned",
+        "It was never formally founded",
+        "It was founded in secret",
+        "It was founded many times"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "hist-0060-p2",
+      "question": "True or false: the Hanseatic League had trading posts as far east as Novgorod.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hanseatic League (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hanseatic_League"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:37:41.024Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "hist-0060.webp",
+    "alt": "A wooden model of a medieval Hanseatic cog with a red and white striped sail, hung in a museum in Lübeck",
+    "kind": "photo",
+    "credit": "Wikitarisch / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hansekogge_Holstentormuseum_(L%C3%BCbeck).jpg"
+  },
+  "body": {
+    "claim": "The Hanseatic League dominated Baltic and North Sea trade without ever being formally founded.",
+    "why": "Because it was never formally founded, it has no foundation date. Historians have traditionally traced its origins to the rebuilding of Lübeck in 1159. Its merchants set up trading posts called Kontors in London (the Steelyard), Bruges, Bergen and Novgorod, which had considerable legal autonomy. Treaties between members provided mutual defence. The league gradually unravelled and disintegrated in 1669."
+  }
+}

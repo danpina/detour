@@ -1,0 +1,62 @@
+{
+  "id": "hist-0051",
+  "interest": "history",
+  "title": "Writing may have started as a way to count",
+  "probes": [
+    {
+      "id": "hist-0051-p1",
+      "question": "What kind of job may writing have first grown out of?",
+      "kind": "mcq",
+      "options": [
+        "Recording amounts of livestock and goods",
+        "Writing down poems",
+        "Sending letters between kings",
+        "Drawing maps"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0051-p2",
+      "question": "True or false: clay tokens were gradually replaced by flat tablets marked with a stylus.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cuneiform (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cuneiform"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:37:36.374Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "hist-0051.webp",
+    "alt": "A late Uruk clay tablet with pressed round numerals and early pictographic signs recording goods, displayed in a museum case",
+    "kind": "photo",
+    "credit": "Osama Shukir Muhammed Amin FRCP(Glasg) / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Clay_tablet,_record_of_barley_and_emmer._Late_Uruk_period,_3300-3100_BCE._Purchased_via_Christie%27s,_no_provenance.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Before writing, people kept track of goods with small clay tokens. Each token is thought to have stood for a specific amount of livestock or other commodities."
+      },
+      {
+        "text": "The tokens were pressed into the surface of round clay envelopes, called bullae, and then stored inside them."
+      },
+      {
+        "text": "Little by little, flat clay tablets replaced the tokens. Signs were recorded on them with a stylus."
+      },
+      {
+        "text": "Writing is first recorded in Uruk, at the end of the 4th millennium BC. Cuneiform is thought to stem from a token system used for accounting, though how the tokens were used is still debated."
+      }
+    ]
+  }
+}

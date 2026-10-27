@@ -13,7 +13,7 @@
     "type": "fact_why",
     "title": "What placebos can and can't do",
     "body": {
-      "claim": "Placebos can change how pain and nausea feel, but they have no important clinical effects otherwise.",
+      "claim": "Placebos can change how pain and nausea feel, but they generally have no important clinical effects otherwise.",
       "why": "Modern studies find placebos can affect outcomes such as pain and nausea, but generally have no important clinical effects otherwise. Some improvement after a placebo is due to other factors, such as regression to the mean. In open-label placebos, patients know the pill is inert, and trials found possible benefits over no treatment, but the trials were small and need cautious reading."
     },
     "probes": [
@@ -56,7 +56,7 @@
     "real_photo_likely": true
   },
   "check": {
-    "checked_at": "2026-10-27T17:36:04.992Z",
+    "checked_at": "2026-10-27T17:36:52.038Z",
     "model": "independent agent",
     "sources": [
       {
@@ -72,11 +72,10 @@
         "quote": "Modern studies find that placebos can affect some outcomes such as pain and nausea"
       },
       {
-        "claim": "...but generally have no important clinical effects otherwise (claim line drops 'generally': 'they have no important clinical effects otherwise')",
-        "verdict": "unverified",
+        "claim": "...but generally have no important clinical effects otherwise (claim line and why)",
+        "verdict": "pass",
         "source_url": "https://en.wikipedia.org/wiki/Placebo",
-        "quote": "but otherwise do not generally have important clinical effects",
-        "note": "Page hedges with 'do not generally have important clinical effects'; the claim sentence is absolute. Supported: 'but they generally have no important clinical effects otherwise'."
+        "quote": "but otherwise do not generally have important clinical effects"
       },
       {
         "claim": "Some improvement is due to other factors such as regression to the mean (probe 1)",
@@ -109,6 +108,6 @@
         "quote": "they were done with a small number of participants and hence should be interpreted with"
       }
     ],
-    "overall": "flagged"
+    "overall": "pass"
   }
 }

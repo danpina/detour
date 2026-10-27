@@ -13,7 +13,7 @@
     "type": "fact_why",
     "title": "The hard part is factoring",
     "body": {
-      "claim": "Much online security leans on a lopsided task: RSA relies on the difficulty of factoring the product of two large primes.",
+      "claim": "RSA, widely used for secure data transmission, relies on the difficulty of factoring the product of two large primes.",
       "why": "In RSA, a user's public key is the product of two large prime numbers, and the primes stay secret. The security of RSA is related to the difficulty of factoring that product. There are no published methods to defeat the system if a large enough key is used."
     },
     "probes": [
@@ -55,7 +55,7 @@
     "real_photo_likely": true
   },
   "check": {
-    "checked_at": "2026-10-27T17:36:10.995Z",
+    "checked_at": "2026-10-27T17:36:48.354Z",
     "model": "independent agent",
     "sources": [
       {
@@ -85,12 +85,13 @@
         "quote": "There are no published methods to defeat the system if a large enough key is used."
       },
       {
-        "claim": "Much online security leans on a lopsided task (claim opening)",
-        "verdict": "unverified",
+        "claim": "RSA is widely used for secure data transmission",
+        "verdict": "pass",
         "source_url": "https://en.wikipedia.org/wiki/RSA_cryptosystem",
-        "note": "The page says RSA is 'widely used for secure data transmission' but not that 'much online security' leans on it, nor 'lopsided'. Suggested wording: 'RSA, widely used for secure data transmission, relies on the difficulty of factoring the product of two large primes.'"
+        "quote": "widely used for secure data transmission",
+        "note": "Page: RSA is a family of public-key cryptosystems (one of the oldest), widely used for secure data transmission."
       }
     ],
-    "overall": "flagged"
+    "overall": "pass"
   }
 }

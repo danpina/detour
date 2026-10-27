@@ -1,0 +1,66 @@
+{
+  "id": "mind-0056",
+  "interest": "mind",
+  "title": "The 37 witnesses who weren't",
+  "probes": [
+    {
+      "id": "mind-0056-p1",
+      "question": "True or false: later investigations showed the original newspaper account of the Genovese murder was exaggerated.",
+      "kind": "tf",
+      "answer": true
+    },
+    {
+      "id": "mind-0056-p2",
+      "question": "In a 2011 meta-analysis, when was the bystander effect most likely to occur?",
+      "kind": "mcq",
+      "options": [
+        "In dangerous emergencies",
+        "In non-dangerous emergencies",
+        "Only when the victim was a friend",
+        "Only with large crowds"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bystander effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bystander_effect"
+    },
+    {
+      "title": "Murder of Kitty Genovese (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Murder_of_Kitty_Genovese"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:37:45.421Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "mind-0056.webp",
+    "alt": "A quiet empty street at night lit by streetlamps, with trees and a few resting dogs by the curb.",
+    "kind": "photo",
+    "credit": "PattayaPatrol / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:DFC_0766_Empty_well-lit_street_at_night_with_a_few_stray_dogs_resting_along_the_curb_and_trees_lining_the_sidewalk.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "1964, Queens, New York. Two weeks after Kitty Genovese was murdered, a newspaper reported that thirty-seven witnesses saw or heard it and none helped."
+      },
+      {
+        "text": "Psychologists John Darley and Bibb Latané brought the topic into the lab. In one 1969 study by Latané and Judith Rodin, 70% of people alone called out or went to help a woman who seemed hurt, but only 40% did when paired with a stranger."
+      },
+      {
+        "text": "The famous story was exaggerated. Some neighbours heard cries but many did not realise how serious it was, and her friend Sophia Farrar held her until an ambulance arrived."
+      },
+      {
+        "text": "The effect itself is real but nuanced. A 2011 meta-analysis found it most likely in non-dangerous emergencies, and not in dangerous ones."
+      }
+    ]
+  }
+}

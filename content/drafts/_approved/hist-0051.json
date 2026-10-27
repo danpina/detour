@@ -66,5 +66,55 @@
       "Late Uruk tablet"
     ],
     "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:28.454Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Tokens are thought to have stood for specific amounts of livestock or other commodities",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "clay tokens were used to record specific amounts of livestock or commodities",
+        "note": "Card hedges ('thought to'); page also says token meaning is debated."
+      },
+      {
+        "claim": "Tokens were pressed into round clay envelopes (bullae) and stored inside",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "These tokens were initially impressed on the surface of round clay envelopes"
+      },
+      {
+        "claim": "Flat clay tablets with stylus signs replaced the tokens (panel 3, probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "The tokens were then progressively replaced by flat tablets, on which signs were recorded with a stylus."
+      },
+      {
+        "claim": "Writing is first recorded in Uruk at the end of the 4th millennium BC",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "Writing is first recorded in Uruk , at the end of the 4th millennium BC"
+      },
+      {
+        "claim": "Cuneiform is thought to stem from a token system used for accounting (title, panel 4, probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "stemming from the Near Eastern token system that was used for accounting"
+      },
+      {
+        "claim": "How the tokens were used is still debated",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Cuneiform",
+        "quote": "The meaning and usage of these tokens is still a matter of debate."
+      }
+    ],
+    "overall": "pass"
   }
 }

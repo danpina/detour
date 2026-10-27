@@ -1,0 +1,50 @@
+{
+  "id": "mind-0062",
+  "interest": "mind",
+  "title": "What placebos can and can't do",
+  "probes": [
+    {
+      "id": "mind-0062-p1",
+      "question": "Which of these can make people seem better after a placebo without the placebo doing anything?",
+      "kind": "mcq",
+      "options": [
+        "The colour of the pill",
+        "Regression to the mean",
+        "Taking it with water",
+        "The brand name"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "mind-0062-p2",
+      "question": "True or false: in an open-label placebo, patients are not told the treatment is inert.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Placebo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Placebo"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:38:04.529Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "mind-0062.webp",
+    "alt": "Many small beige and pink tablets arranged in a grid on a white plate on a wooden table.",
+    "kind": "photo",
+    "credit": "epSos .de / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Medicine_Drug_Pills_on_Plate.png"
+  },
+  "body": {
+    "claim": "Placebos can change how pain and nausea feel, but they generally have no important clinical effects otherwise.",
+    "why": "Modern studies find placebos can affect outcomes such as pain and nausea, but generally have no important clinical effects otherwise. Some improvement after a placebo is due to other factors, such as regression to the mean. In open-label placebos, patients know the pill is inert, and trials found possible benefits over no treatment, but the trials were small and need cautious reading."
+  }
+}

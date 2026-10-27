@@ -1,0 +1,62 @@
+{
+  "id": "num-0050",
+  "interest": "numbers",
+  "title": "Paint the target after you shoot",
+  "probes": [
+    {
+      "id": "num-0050-p1",
+      "question": "In the Texas sharpshooter fallacy, when is the target drawn?",
+      "kind": "mcq",
+      "options": [
+        "Before any shots",
+        "After the shots have landed",
+        "Only if the shooter misses",
+        "It is never drawn"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0050-p2",
+      "question": "True or false: the fallacy means inferring meaning from what is essentially a random distribution of data points.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Texas sharpshooter fallacy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:38:06.232Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0050.webp",
+    "alt": "A yellow wooden board on posts with many small bullet holes scattered around a dark square.",
+    "kind": "photo",
+    "credit": "Ian Cunliffe / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lydd_firing_range_-_target_with_bullet_holes_-_geograph.org.uk_-_1170924.jpg"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "A man in Texas fires a gun at the side of a barn. The bullets land in a scatter."
+      },
+      {
+        "text": "Then he paints a target around the tightest cluster of holes and calls himself a sharpshooter."
+      },
+      {
+        "text": "Statisticians call this the Texas sharpshooter fallacy: finding meaning in what is really a random scatter of data points. It is the rhetorical cousin of data dredging, or p-hacking."
+      },
+      {
+        "text": "The mathematician John Venn used the target-chalking analogy in 1866, though similar stories are older. Ask for the pattern to be named before you look at the data."
+      }
+    ]
+  }
+}

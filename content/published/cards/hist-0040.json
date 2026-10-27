@@ -1,0 +1,55 @@
+{
+  "id": "hist-0040",
+  "interest": "history",
+  "title": "Where did farming begin?",
+  "probes": [
+    {
+      "id": "hist-0040-p1",
+      "question": "What did the Neolithic Revolution change about how people lived?",
+      "kind": "mcq",
+      "options": [
+        "Nomadic hunter-gatherers became settled societies in villages and towns",
+        "People stopped using tools",
+        "Cities were first built at sea",
+        "People moved from farms to caves"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "hist-0040-p2",
+      "question": "True or false: farming was invented in one place and then spread to the entire world.",
+      "kind": "tf",
+      "answer": false
+    }
+  ],
+  "sources": [
+    {
+      "title": "Neolithic Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Neolithic_Revolution"
+    }
+  ],
+  "difficulty": 1,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:37:34.142Z"
+  },
+  "type": "guess_first",
+  "image": {
+    "file": "hist-0040.webp",
+    "alt": "A harvested wheat field of golden stubble at dusk, with a row of trees and the moon rising on the horizon",
+    "kind": "photo",
+    "credit": "ArticCynda / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wheat_field_and_Chapel_Avenue_in_Kraainem.jpg"
+  },
+  "body": {
+    "question": "Farming began in the Fertile Crescent roughly 10,000 years ago. Did it start there once and spread everywhere, or arise in several places?",
+    "options": [
+      "It started once and spread everywhere",
+      "It arose separately in several parts of the world"
+    ],
+    "answer": 1,
+    "reveal": "Domestication of plants and animals happened in separate places around the world, beginning about 11,700 years ago after the last Ice Age. In the Fertile Crescent it began around 10,000 to 8,000 BCE, and perhaps around 8000 BCE in Papua New Guinea. It turned small mobile groups of hunter-gatherers into settled villages and towns."
+  }
+}

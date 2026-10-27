@@ -86,6 +86,20 @@
       "height": 840,
       "alt_suggestion": "Beginning of neolithic in Levant",
       "file": "cand-6.jpg"
+    },
+    {
+      "id": "wikimedia-50746246",
+      "source": "wikimedia",
+      "kind": "photo",
+      "title": "Wheat field and Chapel Avenue in Kraainem.jpg",
+      "credit": "ArticCynda / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wheat_field_and_Chapel_Avenue_in_Kraainem.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Wheat_field_and_Chapel_Avenue_in_Kraainem.jpg/960px-Wheat_field_and_Chapel_Avenue_in_Kraainem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3648,
+      "height": 2736,
+      "alt_suggestion": "View of a ripe wheat field in Kraainem, with tree row of the Chapel Avenue (\"Kapellelaan\") in the background. Photographed in summer at dusk.",
+      "file": "cand-7.jpg"
     }
   ],
   "rejected": [],

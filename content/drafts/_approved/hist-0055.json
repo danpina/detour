@@ -1,0 +1,121 @@
+{
+  "status": "draft",
+  "topic": {
+    "interest": "history",
+    "topic": "When every town kept its own time",
+    "angle": "When every town kept its own time"
+  },
+  "created_at": "2026-10-26T20:31:39.965Z",
+  "model": "claude (in-session draft)",
+  "card": {
+    "id": "hist-0055",
+    "interest": "history",
+    "type": "fact_why",
+    "title": "When every town kept its own time",
+    "body": {
+      "claim": "Britain once had no single time: each town kept its own, until railways pushed them into line.",
+      "why": "Local-time differences were large enough to cause problems for railway schedules. Railway time began with the Great Western Railway in November 1840, partly to reduce accidents and near misses. A clock in Bristol even showed two minute hands, London time and Bristol time, which ran about 10 or 11 minutes behind. In North America, standard railway time was introduced at noon on 18 November 1883."
+    },
+    "probes": [
+      {
+        "id": "hist-0055-p1",
+        "kind": "mcq",
+        "question": "Why did railways push for one standard time?",
+        "options": [
+          "Different local times made timetables confusing and risked accidents",
+          "Passengers asked for later trains",
+          "Clocks were too expensive to keep local time",
+          "Governments had banned local time"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "hist-0055-p2",
+        "kind": "tf",
+        "question": "True or false: Bristol's local time ran about 10 or 11 minutes behind London time.",
+        "answer": true
+      }
+    ],
+    "sources": [
+      {
+        "title": "Railway time (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Railway_time"
+      },
+      {
+        "title": "Standard time (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Standard_time"
+      }
+    ],
+    "difficulty": 2,
+    "version": 1
+  },
+  "image_brief": {
+    "show": "File:Corn Exchange clock in Bristol.jpg (CC BY-SA 4.0): the Bristol Corn Exchange clock with an extra minute hand; also File:Corn Exchange Clock Bristol - geograph.org.uk - 2257846.jpg",
+    "keywords": [
+      "Corn Exchange clock Bristol",
+      "Bristol Time clock",
+      "Bristol Exchange two minute hands"
+    ],
+    "real_photo_likely": true
+  },
+  "check": {
+    "checked_at": "2026-10-27T17:36:28.458Z",
+    "model": "independent agent",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Railway_time",
+        "fetched": true
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Standard_time",
+        "fetched": true
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Britain had no single time; each town had local times, confusing railways",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Railway_time",
+        "quote": "confusion caused by having non-uniform local times in each town and station stop along the expanding railway network"
+      },
+      {
+        "claim": "Local-time differences were large enough to cause problems for railway schedules",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Railway_time",
+        "quote": "However, this variation in local times was large enough to present problems for the railway schedules."
+      },
+      {
+        "claim": "Railway time began with the Great Western Railway in November 1840",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Railway_time",
+        "quote": "Railway time was the standardised time arrangement first applied by the Great Western Railway in England in November 1840"
+      },
+      {
+        "claim": "Goal was partly to reduce accidents and near misses (probe p1)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Railway_time",
+        "quote": "to reduce the incidence of accidents and near misses, which were becoming more frequent as the number of train journeys increased"
+      },
+      {
+        "claim": "Bristol clock showed two minute hands, London and Bristol time",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Railway_time",
+        "quote": "one for London time ( GMT ) and one for Bristol time (GMT minus 11 minutes)"
+      },
+      {
+        "claim": "Bristol time ran about 10 or 11 minutes behind London (reveal, probe p2)",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Railway_time",
+        "quote": "Leeds time was six minutes behind London, while Bristol was ten minutes behind",
+        "note": "Page gives ten minutes in the text and 11 in the clock caption; 'about 10 or 11' matches both."
+      },
+      {
+        "claim": "In North America standard railway time was introduced at noon on 18 November 1883",
+        "verdict": "pass",
+        "source_url": "https://en.wikipedia.org/wiki/Standard_time",
+        "quote": "Sunday, November 18, 1883, all United States and Canadian railroads would readjust their clocks and watches"
+      }
+    ],
+    "overall": "pass"
+  }
+}

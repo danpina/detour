@@ -1,0 +1,54 @@
+{
+  "id": "sci-0056",
+  "interest": "science",
+  "title": "An earthquake is rock snapping free",
+  "probes": [
+    {
+      "id": "sci-0056-p1",
+      "question": "What builds up in the rock before an earthquake?",
+      "kind": "mcq",
+      "options": [
+        "Heat from the core",
+        "Pressure from the ocean",
+        "Stored elastic strain energy",
+        "Gas in cracks"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "sci-0056-p2",
+      "question": "True or false: tectonic plates typically move between zero and about 10 cm a year.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Earthquake (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Earthquake"
+    },
+    {
+      "title": "Plate tectonics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Plate_tectonics"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:38:12.492Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "sci-0056.webp",
+    "alt": "An aerial view of the San Andreas Fault as a line of ridges across the Carrizo Plain.",
+    "kind": "photo",
+    "credit": "Ikluft / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Kluft-photo-Carrizo-Plain-Nov-2007-Img_0327.jpg"
+  },
+  "body": {
+    "claim": "An earthquake is stored energy in rock being released all at once.",
+    "why": "Tectonic plates typically move between zero and about 10 cm a year. Where plates meet, the two sides of a fault can lock on rough spots, so strain slowly builds. When the stress finally breaks through, the rock suddenly slides and the stored energy is released as seismic waves. This build-up and sudden release is called elastic rebound."
+  }
+}

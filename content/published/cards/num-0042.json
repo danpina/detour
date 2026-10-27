@@ -1,0 +1,66 @@
+{
+  "id": "num-0042",
+  "interest": "numbers",
+  "title": "The planes that never came back",
+  "probes": [
+    {
+      "id": "num-0042-p1",
+      "question": "Why were holes on returned planes a misleading guide to where to add armour?",
+      "kind": "mcq",
+      "options": [
+        "The holes were made after landing",
+        "Planes hit in other places presumably did not return to be counted",
+        "Armour makes planes heavier",
+        "Returned planes were repaired first"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "num-0042-p2",
+      "question": "True or false: survivorship bias comes from focusing on what passed a selection process and ignoring what did not.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Survivorship bias (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Survivorship_bias"
+    },
+    {
+      "title": "Abraham Wald (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Abraham_Wald"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-27T17:38:05.726Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "num-0042.webp",
+    "alt": "Outline drawing of a twin-engine bomber from above covered with red dots marking damage hits.",
+    "kind": "artwork",
+    "credit": "McGeddon / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Survivorship-bias.png"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "World War II. The statistician Abraham Wald, in Columbia University's Statistical Research Group, studied how to protect bomber aircraft from damage."
+      },
+      {
+        "text": "The data came from planes that had returned from missions, with bullet holes mapped across them. It is tempting to add armour wherever the holes cluster."
+      },
+      {
+        "text": "Wald's catch: only survivors were in the data. Planes hit in other places presumably did not make it back to be counted, so reinforcing only the damaged areas would overlook where lost planes were fatally hit."
+      },
+      {
+        "text": "This is survivorship bias: concentrating on what passed a selection process and overlooking what did not. Wald took it into account, and his work was meant as a guide to where armour should go."
+      }
+    ]
+  }
+}
