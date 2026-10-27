@@ -103,7 +103,7 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
               </div>
             )}
 
-            <h1 className={`mt-8 text-center font-semibold leading-snug ${spec.track !== "estimation" && problem.prompt.length <= 14 ? "text-5xl tabular-nums" : spec.track !== "estimation" ? "text-3xl" : "text-xl"}`}>{problem.prompt}</h1>
+            <h1 className={`mt-8 text-center font-semibold leading-snug ${spec.track !== "estimation" && problem.prompt.length <= 14 ? "text-5xl tabular-nums" : spec.track !== "estimation" && problem.prompt.length <= 50 ? "text-3xl" : "text-xl"}`}>{problem.prompt}</h1>
 
             <form onSubmit={submit} className="mt-8">
               <input

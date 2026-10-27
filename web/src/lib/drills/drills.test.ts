@@ -217,8 +217,9 @@ describe("levelling up (80% over 20 attempts)", () => {
   it("alternates between tracks, least recent first", () => {
     expect(nextTrack([])).toBe("mental-math");
     const all = [{ ...emptyProgress("mental-math"), last_at: 10 }, { ...emptyProgress("estimation"), last_at: 20 }, { ...emptyProgress("algebra"), last_at: 30 }];
-    expect(nextTrack(all)).toBe("mental-math");
+    expect(nextTrack(all, ["mental-math", "estimation", "algebra"])).toBe("mental-math");
     expect(nextTrack(all, ["estimation", "algebra"])).toBe("estimation");
+    expect(nextTrack(all)).toBe("geometry"); // never practised, first in the list
   });
 });
 
@@ -315,6 +316,107 @@ describe("algebra and calculus", () => {
           expect(judge("algebra", p, String(p.answer + 1)).correct).toBe(false);
         }
       }
+    }
+  });
+});
+
+describe("geometry, probability, number theory and money tracks", () => {
+  const NEW = ["geometry", "probability", "number-theory", "money", "fractions", "statistics", "sequences", "rates"] as const;
+
+  it("have a name for every level, and statistics has the most", () => {
+    for (const track of NEW) {
+      expect(TRACKS[track].levels, track).toHaveLength(TRACKS[track].maxLevel);
+      expect(TRACKS[track].maxLevel, track).toBe(track === "statistics" ? 24 : 10);
+    }
+  });
+
+  it("give whole, non-negative answers with clean prompts and a hint", () => {
+    for (const track of NEW) {
+      for (let level = 1; level <= TRACKS[track].maxLevel; level++) {
+        for (let seed = 1; seed <= 200; seed++) {
+          const round = generateRound({ track, level, seed });
+          expect(round.length, `${track} ${level}`).toBe(3);
+          for (const p of round) {
+            expect(Number.isInteger(p.answer) && p.answer >= 0, `${p.prompt} = ${p.answer}`).toBe(true);
+            expect(p.prompt, p.prompt).not.toMatch(/NaN|undefined|Infinity/);
+            expect(p.hint ?? "", p.prompt).not.toMatch(/NaN|undefined|Infinity/);
+            expect(judge(track, p, String(p.answer)).correct).toBe(true);
+            expect(judge(track, p, String(p.answer + 1)).correct).toBe(false);
+          }
+        }
+      }
+    }
+  });
+
+  it("checks a few answers by an independent rule", () => {
+    for (let seed = 1; seed <= 100; seed++) {
+      for (const p of generateRound({ track: "geometry", level: 4, seed, count: 1 })) {
+        const m = /angles (\d+)° and (\d+)°/.exec(p.prompt)!;
+        expect(p.answer).toBe(180 - Number(m[1]) - Number(m[2]));
+      }
+      for (const p of generateRound({ track: "number-theory", level: 7, seed, count: 1 })) {
+        const bits = /Binary ([01]+) in decimal/.exec(p.prompt)![1]!;
+        expect(p.answer).toBe(parseInt(bits, 2));
+      }
+      for (const p of generateRound({ track: "number-theory", level: 8, seed, count: 1 })) {
+        const n = Number(/^(\d+) in binary$/.exec(p.prompt)![1]);
+        expect(p.answer).toBe(Number(n.toString(2)));
+      }
+      for (const p of generateRound({ track: "number-theory", level: 9, seed, count: 1 })) {
+        expect(p.answer).toBe(parseInt(/Hexadecimal ([0-9A-F]+) in/.exec(p.prompt)![1]!, 16));
+      }
+      for (const p of generateRound({ track: "probability", level: 6, seed, count: 1 })) {
+        const s = Number(/total (\d+)\?/.exec(p.prompt)![1]);
+        let ways = 0;
+        for (let a = 1; a <= 6; a++) for (let b = 1; b <= 6; b++) if (a + b === s) ways++;
+        expect(p.answer).toBe(ways);
+      }
+    }
+  });
+});
+
+describe("statistics answers match the textbook definitions", () => {
+  const numbersIn = (text: string) => text.replace(/^[^0-9-]*/, "").split(/,\s*/).map(Number);
+  const sorted = (xs: number[]) => [...xs].sort((a, b) => a - b);
+  const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
+  const first = (level: number, seed: number) => generateRound({ track: "statistics", level, seed, count: 1 })[0]!;
+
+  it("computes means, medians, modes, ranges, quartiles and variances", () => {
+    for (let seed = 1; seed <= 150; seed++) {
+      let p = first(1, seed);
+      expect(p.answer).toBe(mean(numbersIn(p.prompt.replace("Mean of ", ""))));
+      p = first(2, seed);
+      expect(p.answer).toBe(sorted(numbersIn(p.prompt.replace("Median of ", "")))[2]);
+      p = first(3, seed);
+      const counts = new Map<number, number>();
+      for (const x of numbersIn(p.prompt.replace("Mode of ", ""))) counts.set(x, (counts.get(x) ?? 0) + 1);
+      expect(counts.get(p.answer)).toBe(Math.max(...counts.values()));
+      p = first(4, seed);
+      const xs = numbersIn(p.prompt.replace("Range of ", ""));
+      expect(p.answer).toBe(Math.max(...xs) - Math.min(...xs));
+      p = first(5, seed);
+      expect(p.answer).toBe(mean(numbersIn(p.prompt.replace("Mean of ", ""))));
+      p = first(6, seed);
+      const s6 = sorted(numbersIn(p.prompt.replace("Median of ", "")));
+      expect(p.answer).toBe((s6[2]! + s6[3]!) / 2);
+      p = first(11, seed);
+      const s11 = sorted(numbersIn(p.prompt.replace("Interquartile range (Q3 − Q1) of ", "")));
+      expect(p.answer).toBe(s11[5]! - s11[1]!);
+      p = first(15, seed);
+      const v = numbersIn(p.prompt.replace("Variance of ", ""));
+      expect(p.answer).toBeCloseTo(v.reduce((a, x) => a + (x - mean(v)) ** 2, 0) / v.length, 10);
+      p = first(14, seed);
+      const w = numbersIn(p.prompt.replace("Standard deviation of ", ""));
+      expect(p.answer).toBeCloseTo(Math.sqrt(w.reduce((a, x) => a + (x - mean(w)) ** 2, 0) / w.length), 10);
+    }
+  });
+
+  it("gets the screening percentages right", () => {
+    for (let seed = 1; seed <= 100; seed++) {
+      const p = first(23, seed);
+      const [, sick, sens, fp] = /(\d+) have a condition.*catches (\d+)%.*flags (\d+)%/.exec(p.prompt)!.map(Number) as [number, number, number, number];
+      const real = (sick * sens) / 100, fake = ((1000 - sick) * fp) / 100;
+      expect(p.answer).toBeCloseTo((100 * real) / (real + fake), 10);
     }
   });
 });

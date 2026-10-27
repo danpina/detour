@@ -35,11 +35,18 @@ export function pickGames(count = DEFAULT_SET_SIZE, rng: () => number = Math.ran
  * A math round of `size` problems: a mental-math drill, then one more skill (the one practised least recently), each at the
  * player's level. The problems are split between the two, the first getting the extra one when the size is odd.
  */
-export function mathRound(skills: SkillProgress[], size = DEFAULT_SET_SIZE, seed: () => number = () => Math.floor(Math.random() * 2 ** 31)): SessionItem[] {
+export function mathRound(
+  skills: SkillProgress[],
+  size = DEFAULT_SET_SIZE,
+  seed: () => number = () => Math.floor(Math.random() * 2 ** 31),
+  off: readonly string[] = [],
+): SessionItem[] {
   const levelOf = (track: TrackId) => skills.find((s) => s.track_id === track)?.level ?? 1;
-  const second = nextTrack(skills, TRACK_IDS.filter((t) => t !== "mental-math"));
-  const first = Math.ceil(size / 2);
-  const counts: [TrackId, number][] = [["mental-math", first], [second, size - first]];
+  // Tracks the player switched off in Settings never join; mental math is always in. With every other track off, a round is all mental math.
+  const others = TRACK_IDS.filter((t) => t !== "mental-math" && !off.includes(t));
+  const second = others.length > 0 ? nextTrack(skills, others) : null;
+  const first = second ? Math.ceil(size / 2) : size;
+  const counts: [TrackId, number][] = second ? [["mental-math", first], [second, size - first]] : [["mental-math", first]];
   return counts
     .filter(([, count]) => count > 0)
     .map(([track, count]) => ({ kind: "drill" as const, drill: { track, level: levelOf(track), seed: seed(), count } }));
@@ -51,7 +58,7 @@ export async function nextSet(interests: Interest[], kind: RoundKind = "learning
   const settings = await store.getSettings();
   const setSize = sizeOverride ?? settings?.set_size ?? DEFAULT_SET_SIZE;
   if (kind === "games") return pickGames(setSize).map((game) => ({ kind: "game" as const, game }));
-  if (kind === "math") return mathRound(await store.getSkills(), setSize);
+  if (kind === "math") return mathRound(await store.getSkills(), setSize, undefined, settings?.math_off ?? []);
   const [reviews, completed, events] = await Promise.all([store.getReviews(), store.completedCardIds(), store.getEvents()]);
   // A learning round is cards only: reviews of what you learned, and new cards from your topics.
   return buildSession({

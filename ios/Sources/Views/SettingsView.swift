@@ -57,6 +57,31 @@ struct SettingsView: View {
                     Text("How many things in each round: 3 means 3 cards, 3 math problems or 3 games. Five is about a minute.").font(.footnote).foregroundStyle(.secondary)
                 }
 
+                Section {
+                    ForEach(TrackId.allCases.filter { $0 != .mentalMath }, id: \.self) { track in
+                        Toggle(isOn: Binding(
+                            get: { !(model.settings.mathOff ?? []).contains(track.rawValue) },
+                            set: { on in
+                                model.updateSettings { settings in
+                                    var off = settings.mathOff ?? []
+                                    off.removeAll { $0 == track.rawValue }
+                                    if !on { off.append(track.rawValue) }
+                                    settings.mathOff = off
+                                }
+                            }
+                        )) {
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(Drills.info(track).name)
+                                Text(Drills.info(track).blurb).font(.footnote).foregroundStyle(.secondary)
+                            }
+                        }
+                    }
+                } header: {
+                    Text("Math round skills")
+                } footer: {
+                    Text("Mental math is always part of a math round. Choose which other skills can join it.")
+                }
+
                 GuardSettingsSection(chooseApps: { sheet = .apps })
 
                 Section("Daily reminder") {

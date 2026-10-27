@@ -1,9 +1,19 @@
 import { ALGEBRA_LEVELS, ALGEBRA_MAX_LEVEL, generateAlgebra } from "./algebra";
 import { ESTIMATION_LEVELS, ESTIMATION_MAX_LEVEL, generateEstimation, isCloseEnough, timesOff, estimationVerdict } from "./estimation";
+import { GEOMETRY_LEVELS, GEOMETRY_MAX_LEVEL, generateGeometry } from "./geometry";
 import { MENTAL_MATH_LEVELS, MENTAL_MATH_MAX_LEVEL, generateMentalMath, mentalMathLevelFor, type Problem } from "./mentalMath";
-import { makeRng } from "./rng";
+import { MONEY_LEVELS, MONEY_MAX_LEVEL, generateMoney } from "./money";
+import { NUMBER_THEORY_LEVELS, NUMBER_THEORY_MAX_LEVEL, generateNumberTheory } from "./numberTheory";
+import { PROBABILITY_LEVELS, PROBABILITY_MAX_LEVEL, generateProbability } from "./probability";
+import { FRACTIONS_LEVELS, FRACTIONS_MAX_LEVEL, generateFractions } from "./fractions";
+import { RATES_LEVELS, RATES_MAX_LEVEL, generateRates } from "./rates";
+import { makeRng, type Rng } from "./rng";
+import { SEQUENCES_LEVELS, SEQUENCES_MAX_LEVEL, generateSequences } from "./sequences";
+import { STATISTICS_LEVELS, STATISTICS_MAX_LEVEL, generateStatistics } from "./statistics";
 
-export type TrackId = "mental-math" | "estimation" | "algebra";
+export type TrackId =
+  | "mental-math" | "algebra" | "geometry" | "probability" | "number-theory" | "money"
+  | "fractions" | "statistics" | "sequences" | "rates" | "estimation";
 /** `count` is how many problems the round has; left out, the track's usual number. */
 export type DrillSpec = { track: TrackId; level: number; seed: number; count?: number };
 export type { Problem };
@@ -25,6 +35,70 @@ export const TRACKS: Record<TrackId, { name: string; blurb: string; levels: read
     problems: 3,
     timeLimitMs: 60_000,
   },
+  geometry: {
+    name: "Geometry",
+    blurb: "Areas, angles, circles and right triangles",
+    levels: GEOMETRY_LEVELS,
+    maxLevel: GEOMETRY_MAX_LEVEL,
+    problems: 3,
+    timeLimitMs: 60_000,
+  },
+  probability: {
+    name: "Probability & counting",
+    blurb: "Chances, orders, codes and teams",
+    levels: PROBABILITY_LEVELS,
+    maxLevel: PROBABILITY_MAX_LEVEL,
+    problems: 3,
+    timeLimitMs: 60_000,
+  },
+  "number-theory": {
+    name: "Number theory",
+    blurb: "Factors, primes, remainders, binary and hex",
+    levels: NUMBER_THEORY_LEVELS,
+    maxLevel: NUMBER_THEORY_MAX_LEVEL,
+    problems: 3,
+    timeLimitMs: 60_000,
+  },
+  money: {
+    name: "Everyday money",
+    blurb: "Change, discounts, tips and interest",
+    levels: MONEY_LEVELS,
+    maxLevel: MONEY_MAX_LEVEL,
+    problems: 3,
+    timeLimitMs: 60_000,
+  },
+  fractions: {
+    name: "Fractions & ratios",
+    blurb: "Fractions, ratios, recipes and map scales",
+    levels: FRACTIONS_LEVELS,
+    maxLevel: FRACTIONS_MAX_LEVEL,
+    problems: 3,
+    timeLimitMs: 60_000,
+  },
+  statistics: {
+    name: "Statistics",
+    blurb: "Averages, spread, z-scores, risk and polls",
+    levels: STATISTICS_LEVELS,
+    maxLevel: STATISTICS_MAX_LEVEL,
+    problems: 3,
+    timeLimitMs: 75_000,
+  },
+  sequences: {
+    name: "Sequences & patterns",
+    blurb: "Next terms, nth terms and sums",
+    levels: SEQUENCES_LEVELS,
+    maxLevel: SEQUENCES_MAX_LEVEL,
+    problems: 3,
+    timeLimitMs: 60_000,
+  },
+  rates: {
+    name: "Rates & word problems",
+    blurb: "Speed, work, mixtures and growth",
+    levels: RATES_LEVELS,
+    maxLevel: RATES_MAX_LEVEL,
+    problems: 3,
+    timeLimitMs: 75_000,
+  },
   estimation: {
     name: "Estimation",
     blurb: "Fermi-style guesses",
@@ -36,6 +110,19 @@ export const TRACKS: Record<TrackId, { name: string; blurb: string; levels: read
 
 export const TRACK_IDS = Object.keys(TRACKS) as TrackId[];
 
+/** The tracks whose problems are made by level, the same way: a round draws from the player's level and the three below it. */
+const LEVELLED: Partial<Record<TrackId, (level: number, r: Rng) => Problem>> = {
+  algebra: generateAlgebra,
+  geometry: generateGeometry,
+  probability: generateProbability,
+  "number-theory": generateNumberTheory,
+  money: generateMoney,
+  fractions: generateFractions,
+  statistics: generateStatistics,
+  sequences: generateSequences,
+  rates: generateRates,
+};
+
 /** The problems for one drill round. Deterministic for a given spec. */
 export function generateRound(spec: DrillSpec): Problem[] {
   const rng = makeRng(spec.seed);
@@ -44,11 +131,13 @@ export function generateRound(spec: DrillSpec): Problem[] {
   const wanted = spec.count ?? TRACKS[spec.track].problems;
   for (let guard = 0; out.length < wanted && guard < 50; guard++) {
     // Mental-math rounds mix operations: the first problem is at the player's level, the rest from that level and below.
+    const levelAt = (max: number) => mentalMathLevelFor(spec.level, out.length, rng, max);
+    const generate = LEVELLED[spec.track];
     const p =
       spec.track === "mental-math"
         ? generateMentalMath(mentalMathLevelFor(spec.level, out.length, rng), rng)
-        : spec.track === "algebra"
-          ? generateAlgebra(mentalMathLevelFor(spec.level, out.length, rng, ALGEBRA_MAX_LEVEL), rng)
+        : generate
+          ? generate(levelAt(TRACKS[spec.track].maxLevel), rng)
           : generateEstimation(spec.level, rng);
     if (seen.has(p.prompt)) continue;
     seen.add(p.prompt);

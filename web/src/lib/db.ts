@@ -14,6 +14,8 @@ export type Settings = {
   drills?: boolean;
   /** How often the extras (mental math, estimation, games) join a set: every Nth set. Defaults to 3. */
   extras_every?: number;
+  /** Math tracks switched off for math rounds (ids such as "estimation"). Mental math is always in. */
+  math_off?: string[];
 };
 
 export type DetourEvent = {

@@ -4,6 +4,7 @@ import type { Interest } from "@detour/content";
 import { backupFileName, buildBackup, parseBackup } from "../lib/backup";
 import { analyticsEnabled, setAnalyticsEnabled } from "../analytics";
 import { store } from "../lib/db";
+import { TRACKS, TRACK_IDS } from "../lib/drills";
 import { setLastBackup } from "../lib/home";
 import { isInstalled } from "../lib/install";
 import { buildReminderIcs, parseTime } from "../lib/reminder";
@@ -23,11 +24,13 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
   const sentBack = reviewer ? getSendBack() : [];
   const refreshReview = () => setReviewTick((t) => t + 1);
   const [setSize, setSetSize] = useState(5);
+  const [mathOff, setMathOff] = useState<string[]>([]);
   const [reminderTime, setReminderTime] = useState("20:00");
 
   useEffect(() => {
     void store.getSettings().then((s) => {
       setSetSize(s?.set_size ?? 5);
+      setMathOff(s?.math_off ?? []);
     });
   }, []);
 
@@ -179,6 +182,34 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
           ))}
         </div>
         <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">How many things in each round: 3 means 3 cards, 3 math problems or 3 games. Five is about a minute.</p>
+      </section>
+
+      <section className={`${box} mt-4`}>
+        <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Math round skills</h2>
+        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">Mental math is always part of a math round. Choose which other skills can join it.</p>
+        <ul className="mt-3 space-y-1">
+          {TRACK_IDS.filter((id) => id !== "mental-math").map((id) => (
+            <li key={id}>
+              <label className="flex min-h-11 items-center justify-between gap-3">
+                <span>
+                  {TRACKS[id].name}
+                  <span className="block text-xs text-neutral-500 dark:text-neutral-400">{TRACKS[id].blurb}</span>
+                </span>
+                <input
+                  type="checkbox"
+                  className="h-5 w-5 accent-teal-600"
+                  checked={!mathOff.includes(id)}
+                  onChange={async (e) => {
+                    const next = e.target.checked ? mathOff.filter((t) => t !== id) : [...mathOff, id];
+                    setMathOff(next);
+                    const s = await store.getSettings();
+                    if (s) await store.saveSettings({ ...s, math_off: next });
+                  }}
+                />
+              </label>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section className={`${box} mt-4`}>

@@ -86,7 +86,7 @@ struct DrillView: View {
                     ProgressViewBar(fraction: remaining / limit)
                 }
                 Text(problem.prompt)
-                    .font(.system(size: spec.track != .estimation ? (problem.prompt.count <= 14 ? 48 : 30) : 22, weight: .semibold))
+                    .font(.system(size: spec.track != .estimation ? (problem.prompt.count <= 14 ? 48 : (problem.prompt.count > 50 ? 24 : 30)) : 22, weight: .semibold))
                     .minimumScaleFactor(0.6)
                     .multilineTextAlignment(.center)
                     .padding(.top, 12)
