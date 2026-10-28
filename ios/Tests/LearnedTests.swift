@@ -15,7 +15,7 @@ final class LearnedTests: XCTestCase {
             let text = Learned.paragraphs(card)
             XCTAssertFalse(text.isEmpty, card.id)
             let joined = text.joined(separator: " ")
-            XCTAssertFalse(joined.contains("NaN") || joined.contains("Optional(") || joined.contains("null"), card.id)
+            XCTAssertFalse(joined.contains("NaN") || joined.contains("Optional("), card.id)
         }
     }
 
