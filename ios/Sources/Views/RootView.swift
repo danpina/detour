@@ -22,7 +22,32 @@ struct RootView: View {
     @State private var run: SessionRun?
     @State private var tab: MainTab = .home
     /// Why the round choice is showing. It is always asked: when Detour is opened from a guarded app's shield, and after a round.
-    private enum Choice { case shield, another }
+    private enum Choice {
+        case shield, another, widget
+
+        var title: String {
+            switch self {
+            case .shield: return "Quick one first?"
+            case .another: return "Another one?"
+            case .widget: return "Quick one?"
+            }
+        }
+
+        var subtitle: String {
+            switch self {
+            case .shield: return "Pick a round, then your app is yours for a while."
+            case .another, .widget: return "Pick a round. Cards, math or games."
+            }
+        }
+
+        var closeLabel: String {
+            switch self {
+            case .shield: return "Not now"
+            case .another: return "Done for now"
+            case .widget: return "Not now"
+            }
+        }
+    }
     @State private var choosing: Choice?
 
     var body: some View {
@@ -56,9 +81,9 @@ struct RootView: View {
         .overlay {
             if let reason = choosing {
                 RoundChooserView(
-                    title: reason == .shield ? "Quick one first?" : "Another one?",
-                    subtitle: reason == .shield ? "Pick a round, then your app is yours for a while." : "Pick a round. Cards, math or games.",
-                    closeLabel: reason == .shield ? "Not now" : "Done for now",
+                    title: reason.title,
+                    subtitle: reason.subtitle,
+                    closeLabel: reason.closeLabel,
                     start: { kind in
                         choosing = nil
                         start(feed: false, why: reason == .shield ? "shield start" : "button", kind: kind)
@@ -67,6 +92,8 @@ struct RootView: View {
                 )
             }
         }
+        .onOpenURL { url in openedFromWidget(url) }
+        .onAppear { model.publishWidget() }
         .onChange(of: scenePhase) { _, phase in
             AppLog.log("scene: \(String(describing: phase))")
             if phase == .active { appBecameActive() }
@@ -111,9 +138,23 @@ struct RootView: View {
         }
     }
 
+    /// The widget opens detour://round (the three choices) or detour://learning, math, games (straight into that round).
+    private func openedFromWidget(_ url: URL) {
+        guard url.scheme == "detour", model.settings.onboardingDone else { return }
+        AppLog.log("opened from the widget: \(url.absoluteString)")
+        run = nil
+        switch url.host {
+        case "learning": start(feed: false, why: "widget", kind: .learning)
+        case "math": start(feed: false, why: "widget", kind: .math)
+        case "games": start(feed: false, why: "widget", kind: .games)
+        default: choosing = .widget
+        }
+    }
+
     /// Back in front: put the shield back if its timer never fired, and open a session if the shield's Start button asked for one.
     private func appBecameActive() {
         guardManager.refresh()
+        model.publishWidget()
         if guardManager.consumePendingSession() {
             AppLog.log("opened from the shield's Start button (session open already: \(run != nil))")
             // Coming from a guarded app always asks which round to take (cards, math or games), replacing anything already open.

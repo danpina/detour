@@ -1,5 +1,6 @@
 import Foundation
 import Observation
+import WidgetKit
 
 extension SessionItem {
     /// Stable identity of an item within a set (also used to tell "already completed").
@@ -333,5 +334,28 @@ final class AppModel {
 
     private func persist() {
         store.save(data)
+        publishWidget()
+    }
+
+    // MARK: Home Screen widget
+
+    /// What the widget shows, worked out now: the streak for each of the next days (the widget cannot run the freeze rules), and what is due.
+    func widgetSnapshot() -> WidgetSnapshot {
+        let now = clock()
+        var streakByDay: [String: Int] = [:]
+        for offset in 0..<WidgetSnapshot.daysAhead {
+            guard let day = calendar.date(byAdding: .day, value: offset, to: now) else { continue }
+            let key = Days.key(day, calendar: calendar)
+            streakByDay[key] = Streaks.display(data.streak, today: key).current
+        }
+        return WidgetSnapshot(streakByDay: streakByDay, lastActiveDay: data.streak.lastActiveDay, dueCount: dueCount, roundSize: data.settings.setSize)
+    }
+
+    /// Writes the widget's snapshot into the App Group and asks for a refresh when it changed.
+    func publishWidget() {
+        let snapshot = widgetSnapshot()
+        guard snapshot != WidgetSnapshot.read() else { return }
+        snapshot.write()
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }

@@ -27,6 +27,7 @@ targets:
       - target: DetourShield
       - target: DetourShieldAction
       - target: DetourActivityMonitor
+      - target: DetourWidget
     entitlements:
       path: Generated/Detour.entitlements
       properties:
@@ -39,6 +40,11 @@ targets:
         UILaunchScreen: {}
         CFBundleDisplayName: "Detour"
         ITSAppUsesNonExemptEncryption: false
+        # The widget opens Detour with detour://round (the choice), detour://learning, detour://math or detour://games.
+        CFBundleURLTypes:
+          - CFBundleURLName: com.danpina.detour
+            CFBundleURLSchemes:
+              - detour
         LSApplicationQueriesSchemes:
           - instagram
           - tiktok
@@ -154,6 +160,33 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.danpina.detour.activitymonitor
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_STYLE: Automatic
+  # The Home Screen and Lock Screen widget: streak, what is due, and a way into a round.
+  DetourWidget:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Extensions/Widget
+      - path: Shared/WidgetSnapshot.swift
+    entitlements:
+      path: Generated/DetourWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.danpina.detour
+    info:
+      path: Generated/DetourWidget-Info.plist
+      properties:
+        CFBundleDisplayName: "Detour"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.danpina.detour.widget
         SWIFT_VERSION: "5.0"
         TARGETED_DEVICE_FAMILY: "1"
         MARKETING_VERSION: "0.1"
