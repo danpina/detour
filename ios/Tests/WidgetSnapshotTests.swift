@@ -30,6 +30,7 @@ final class WidgetSnapshotTests: XCTestCase {
         XCTAssertEqual(try JSONDecoder().decode(WidgetSnapshot.self, from: data), snapshot)
     }
 
+    @MainActor
     func testTheAppWorksOutTheStreakAheadWithoutAnyData() {
         let url = FileManager.default.temporaryDirectory.appendingPathComponent("detour-test-\(UUID().uuidString).json")
         defer { try? FileManager.default.removeItem(at: url) }
