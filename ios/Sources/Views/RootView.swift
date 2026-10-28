@@ -34,7 +34,11 @@ struct RootView: View {
                 }
             } else {
                 TabView(selection: $tab) {
-                    HomeView { kind in start(feed: false, kind: kind) }
+                    HomeView(
+                        start: { kind in start(feed: false, kind: kind) },
+                        startSpecific: { specific, kind in start(feed: false, kind: kind, specific: specific) },
+                        openGames: { tab = .games }
+                    )
                         .tabItem { Label("Home", systemImage: "bolt.fill") }
                         .tag(MainTab.home)
                     GamesView()
@@ -120,8 +124,12 @@ struct RootView: View {
         }
     }
 
-    private func start(feed: Bool, why: String = "button", kind: AppModel.RoundKind = .learning) {
-        let items = model.makeSet(kind: kind)
+    private func start(feed: Bool, why: String = "button", kind: AppModel.RoundKind = .learning, specific: AppModel.Specific? = nil) {
+        let items = model.makeSet(kind: kind, specific: specific)
+        if items.isEmpty {
+            AppLog.log("start set: nothing to show for \(String(describing: specific))")
+            return
+        }
         AppLog.log("start set: feed=\(feed) why=\(why) kind=\(kind.rawValue) items=\(items.count)")
         run = SessionRun(items: items, feed: feed, guarded: why == "shield start", kind: kind)
     }

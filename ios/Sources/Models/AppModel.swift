@@ -99,8 +99,17 @@ final class AppModel {
         case learning, math, games
     }
 
+    /// What a round from "Pick something specific" is about: one topic's cards, only the cards due for review, or one math skill.
+    enum Specific: Hashable {
+        case topic(Interest)
+        case due
+        case skill(TrackId)
+    }
+
     /// Builds a round of the given kind: cards (learning), skill drills (math) or a few games (games).
-    func makeSet(kind: RoundKind = .learning) -> [SessionItem] {
+    /// With `specific` it is a round of one topic, the due cards, or one math skill instead.
+    func makeSet(kind: RoundKind = .learning, specific: Specific? = nil) -> [SessionItem] {
+        if let specific { return specificRound(specific) }
         switch kind {
         case .games:
             // One setting sets the length of every round: N cards, N math problems or N games (each a single puzzle).
@@ -114,34 +123,69 @@ final class AppModel {
         }
     }
 
-    /// A math round of N problems: a mental-math drill, then one more skill (the one practised least recently), each at the player's
-    /// level. The problems are split between the two, the first getting the extra one when N is odd.
+    /// The math skills that are in rounds. Skills can be switched off in the skills page; at least one stays on.
+    var mathSkillsOn: [TrackId] {
+        let off = data.settings.mathOff ?? []
+        return TrackId.allCases.filter { !off.contains($0.rawValue) }
+    }
+
+    /// A math round of N problems, mixed across the skills that are on: one problem per skill, the one practised least recently
+    /// first (never-practised ones before that), each at the player's level in it. With more problems than skills it goes round again.
     private func mathRound() -> [SessionItem] {
         let size = data.settings.setSize
-        // Tracks switched off in Settings never join; mental math is always in. With every other track off, a round is all mental math.
-        let off = data.settings.mathOff ?? []
-        let others = TrackId.allCases.filter { $0 != .mentalMath && !off.contains($0.rawValue) }
-        let second: TrackId? = others.isEmpty ? nil : Skills.nextTrack(data.skills, among: others)
-        let first = second == nil ? size : (size + 1) / 2
-        var counts: [(TrackId, Int)] = [(.mentalMath, first)]
-        if let second { counts.append((second, size - first)) }
-        let items = counts.filter { $0.1 > 0 }.map { track, count -> SessionItem in
+        let pool = mathSkillsOn.isEmpty ? TrackId.allCases : mathSkillsOn
+        func lastAt(_ track: TrackId) -> Date { data.skills.first { $0.track == track }?.lastAt ?? .distantPast }
+        // Least recently practised first; ties keep the list order, like the web app.
+        let ranked = pool.enumerated().sorted { a, b in
+            lastAt(a.element) == lastAt(b.element) ? a.offset < b.offset : lastAt(a.element) < lastAt(b.element)
+        }.map { $0.element }
+        var counts: [TrackId: Int] = [:]
+        for i in 0..<size { counts[ranked[i % ranked.count], default: 0] += 1 }
+        let items = ranked.filter { counts[$0] != nil }.map { track -> SessionItem in
             let level = data.skills.first { $0.track == track }?.level ?? 1
-            return .drill(DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)), count: count))
+            return .drill(DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)), count: counts[track] ?? 1))
         }
-        AppLog.log("round built: math level=\(mathLevel) items=[\(items.map { $0.key }.joined(separator: ", "))]")
+        AppLog.log("round built: math items=[\(items.map { $0.key }.joined(separator: ", "))]")
         return items
     }
 
+    private func specificRound(_ specific: Specific) -> [SessionItem] {
+        let size = data.settings.setSize
+        switch specific {
+        case .skill(let track):
+            let level = data.skills.first { $0.track == track }?.level ?? 1
+            return [.drill(DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)), count: size))]
+        case .due:
+            return SessionEngine.dueReviews(cards: cards, reviews: data.reviews, now: clock()).prefix(size).map {
+                SessionItem.review(card: $0.card, probe: $0.probe, review: $0.review)
+            }
+        case .topic(let interest):
+            return learningRound(only: interest)
+        }
+    }
+
+    /// A skill's level and how many problems have been answered in it.
+    func skillStatus(_ track: TrackId) -> (level: Int, attempts: Int) {
+        let p = data.skills.first { $0.track == track }
+        return (p?.level ?? 1, p?.attemptsTotal ?? 0)
+    }
+
+    /// How many cards a topic has, and how many of its checks are due. For the "Pick something specific" list.
+    func topicCounts(_ interest: Interest) -> (cards: Int, due: Int) {
+        let total = cards.filter { $0.interest == interest && $0.type != "drill" && $0.type != "recall" }.count
+        let due = SessionEngine.dueReviews(cards: cards, reviews: data.reviews, now: clock()).filter { $0.card.interest == interest }.count
+        return (total, due)
+    }
+
     /// A learning round is cards only: reviews of what you learned, and new cards from your topics.
-    private func learningRound() -> [SessionItem] {
+    private func learningRound(only topic: Interest? = nil) -> [SessionItem] {
         let now = clock()
         let events = data.events.map { (cardId: $0.cardId, kind: $0.kind.rawValue) }
         let input = EngineInput(
-            cards: cards,
+            cards: topic.map { t in cards.filter { $0.interest == t } } ?? cards,
             reviews: data.reviews,
             completed: completedCardIds,
-            interests: data.settings.interests,
+            interests: topic.map { [$0] } ?? data.settings.interests,
             engagement: SessionEngine.engagement(events: events, cards: cards),
             now: now,
             setSize: data.settings.setSize,

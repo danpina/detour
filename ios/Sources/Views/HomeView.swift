@@ -3,16 +3,35 @@ import SwiftUI
 /// The home screen: three rounds, each with its own place. Learning (cards), Math (skills with levels) and Games.
 struct HomeView: View {
     let start: (_ kind: AppModel.RoundKind) -> Void
+    let startSpecific: (_ specific: AppModel.Specific, _ kind: AppModel.RoundKind) -> Void
+    let openGames: () -> Void
 
     var body: some View {
-        VStack(spacing: 12) {
-            Spacer()
-            Text("Quick one?").font(.largeTitle.weight(.semibold))
-            Text("Pick a round. About a minute.").foregroundStyle(.secondary)
-            RoundChoiceList(start: start).padding(.top, 14)
-            Spacer()
+        NavigationStack {
+            VStack(spacing: 12) {
+                Spacer()
+                Text("Quick one?").font(.largeTitle.weight(.semibold))
+                Text("Pick a round. About a minute.").foregroundStyle(.secondary)
+                RoundChoiceList(start: start).padding(.top, 14)
+                Spacer()
+                NavigationLink {
+                    PickView(start: startSpecific, openGames: openGames)
+                } label: {
+                    HStack {
+                        Text("Pick something specific").font(.headline)
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.footnote).foregroundStyle(.secondary)
+                    }
+                    .padding(16)
+                    .frame(maxWidth: .infinity)
+                    .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(.separator), lineWidth: 1))
+                }
+                .buttonStyle(.plain)
+                .padding(.bottom, 8)
+            }
+            .padding(.horizontal, 24)
+            .toolbar(.hidden, for: .navigationBar)
         }
-        .padding(.horizontal, 24)
     }
 }
 
@@ -61,7 +80,7 @@ struct RoundChoiceList: View {
                     ? "\(model.settings.setSize) small cards. \(model.dueCount) to check if they stuck."
                     : "\(model.settings.setSize) small cards to learn something new."
             ),
-            Round(kind: .math, emoji: "🔢", title: "Math round", blurb: "\(model.settings.setSize) quick problems · level \(model.mathLevel)"),
+            Round(kind: .math, emoji: "🔢", title: "Math round", blurb: "\(model.settings.setSize) quick problems, a mix of your skills"),
             Round(kind: .games, emoji: "🎮", title: "Game round", blurb: "\(model.settings.setSize) quick games: language, map, chess and more."),
         ]
     }

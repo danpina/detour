@@ -166,6 +166,41 @@ final class AppModelTests: XCTestCase {
         XCTAssertEqual(alone.first?.count, 5)
     }
 
+    func testAMathRoundMixesEverySkillThatIsOn() {
+        let (model, url) = makeModel()
+        defer { try? FileManager.default.removeItem(at: url) }
+        model.completeOnboarding(interests: [.history, .science, .money])
+        model.updateSettings { $0.setSize = 5 }
+        let tracks: [TrackId] = model.makeSet(kind: .math).compactMap { if case .drill(let s) = $0 { return s.track } else { return nil } }
+        XCTAssertEqual(tracks, Array(TrackId.allCases.prefix(5)), "five different skills, in list order while none is practised")
+        XCTAssertEqual(model.mathSkillsOn.count, TrackId.allCases.count)
+    }
+
+    func testPickingSomethingSpecific() {
+        let (model, url) = makeModel()
+        defer { try? FileManager.default.removeItem(at: url) }
+        model.completeOnboarding(interests: [.history, .science, .money])
+        model.updateSettings { $0.setSize = 5 }
+
+        let skill = model.makeSet(specific: .skill(.geometry))
+        guard case .drill(let spec)? = skill.first else { return XCTFail("expected a drill") }
+        XCTAssertEqual(skill.count, 1)
+        XCTAssertEqual(spec.track, .geometry)
+        XCTAssertEqual(spec.count, 5)
+
+        let topic = model.makeSet(specific: .topic(.history))
+        XCTAssertFalse(topic.isEmpty)
+        for item in topic {
+            switch item {
+            case .new(let card): XCTAssertEqual(card.interest, .history)
+            case .review(let card, _, _): XCTAssertEqual(card.interest, .history)
+            default: XCTFail("a topic round is cards only")
+            }
+        }
+
+        XCTAssertTrue(model.makeSet(specific: .due).isEmpty, "nothing is due before anything was learned")
+    }
+
     func testAGamesRoundHasAsManyDifferentGamesAsTheRoundLength() {
         let (model, url) = makeModel()
         defer { try? FileManager.default.removeItem(at: url) }
