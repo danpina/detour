@@ -70,7 +70,7 @@ export function PickScreen({ onBack, onStartTopic, onStartDue, onStartSkill, onO
               const d = due.get(i) ?? 0;
               return (
                 <button key={i} onClick={() => onStartTopic(i)} className={row}>
-                  <span className="text-2xl">{INTEREST_INFO[i].emoji}</span>
+                  <span aria-hidden="true" className="text-2xl">{INTEREST_INFO[i].emoji}</span>
                   <span className="flex-1">
                     <span className="block font-semibold">{INTEREST_INFO[i].name}</span>
                     <span className="block text-sm text-neutral-500 dark:text-neutral-400">{cards} cards{d > 0 ? ` · ${d} to review` : ""}</span>
@@ -80,7 +80,7 @@ export function PickScreen({ onBack, onStartTopic, onStartDue, onStartSkill, onO
               );
             })}
             <button onClick={onStartDue} disabled={dueTotal === 0} className={`${row} mt-2 disabled:opacity-60`}>
-              <span className="text-2xl">🔁</span>
+              <span aria-hidden="true" className="text-2xl">🔁</span>
               <span className="flex-1">
                 <span className="block font-semibold">Check what stuck</span>
                 <span className="block text-sm text-neutral-500 dark:text-neutral-400">{dueTotal > 0 ? `Only cards due for review (${dueTotal})` : "Nothing due right now"}</span>

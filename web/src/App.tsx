@@ -5,6 +5,7 @@ import { EndScreen } from "./components/EndScreen";
 import { GamesScreen } from "./components/GamesScreen";
 import { HomeScreen } from "./components/HomeScreen";
 import { FirstRun } from "./components/FirstRun";
+import { LearnedScreen } from "./components/LearnedScreen";
 import { MathSkillsScreen } from "./components/MathSkillsScreen";
 import { Onboarding } from "./components/Onboarding";
 import { PickScreen } from "./components/PickScreen";
@@ -25,6 +26,7 @@ type Screen =
   | { name: "onboarding" }
   | { name: "interests" }
   | { name: "pick" }
+  | { name: "learned" }
   | { name: "skills"; back: "settings" | "pick" }
   | { name: Tab }
   | { name: "session"; items: SessionItem[]; run: number; feed: boolean; round: RoundKind; dryRun?: boolean }
@@ -93,7 +95,7 @@ export function App() {
     // Phone-sized column, centred on larger screens.
     <div className="flex min-h-dvh justify-center bg-neutral-200 dark:bg-black">
       <div className="relative h-dvh w-full max-w-[430px] overflow-hidden bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50 md:shadow-2xl">
-        {screen.name === "loading" && <div className="flex h-full items-center justify-center text-neutral-400">Loading…</div>}
+        {screen.name === "loading" && <div className="flex h-full items-center justify-center text-neutral-500">Loading…</div>}
 
         {screen.name === "onboarding" && <FirstRun initial={interests} onDone={finishOnboarding} />}
 
@@ -118,7 +120,9 @@ export function App() {
 
         {screen.name === "games" && <GamesScreen />}
 
-        {screen.name === "progress" && <ProgressScreen />}
+        {screen.name === "progress" && <ProgressScreen onOpenLearned={() => setScreen({ name: "learned" })} />}
+
+        {screen.name === "learned" && <LearnedScreen onBack={() => setScreen({ name: "progress" })} />}
 
         {screen.name === "settings" && (
           <SettingsScreen interests={interests} onChangeInterests={() => setScreen({ name: "interests" })} onOpenMathSkills={() => setScreen({ name: "skills", back: "settings" })} onDataChanged={() => void load()} />

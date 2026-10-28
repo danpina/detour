@@ -53,7 +53,7 @@ export function PatternsGame({ onExit, embedded }: GameProps) {
   if (finished || !puzzle) {
     return (
       <div className="flex h-full flex-col items-center justify-center gap-4 px-8 text-center">
-        <p className="text-6xl font-semibold tabular-nums">{score}<span className="text-3xl text-neutral-400">/{round.length}</span></p>
+        <p className="text-6xl font-semibold tabular-nums">{score}<span className="text-3xl text-neutral-500">/{round.length}</span></p>
         <p className="text-lg">{endLine(score, round.length)}</p>
         {isBest && score > 0 && <p className="text-sm font-medium text-teal-600 dark:text-teal-400">New best!</p>}
         <div className="mt-4 flex w-full max-w-xs flex-col gap-3">

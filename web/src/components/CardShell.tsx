@@ -58,7 +58,7 @@ export function CardShell({ card, index, total, dim, children }: Props) {
             <button onClick={() => setSheet("sources")} className="rounded-full bg-black/40 px-3 py-1 backdrop-blur hover:bg-black/60">
               Sources
             </button>
-            <button onClick={() => setSheet("report")} className="rounded-full bg-black/40 px-3 py-1 backdrop-blur hover:bg-black/60" aria-label="Report an error">
+            <button onClick={() => setSheet("report")} className="rounded-full bg-black/40 px-3 py-2 backdrop-blur hover:bg-black/60" aria-label="Report an error">
               Report
             </button>
           </div>
@@ -140,6 +140,7 @@ export function CardShell({ card, index, total, dim, children }: Props) {
               <input
                 value={note}
                 onChange={(e) => setNote(e.target.value)}
+                aria-label="Optional note for yourself"
                 placeholder="Optional note for yourself"
                 className="mb-1 w-full rounded-xl border border-neutral-300 bg-transparent px-3 py-2 text-sm dark:border-neutral-700"
               />

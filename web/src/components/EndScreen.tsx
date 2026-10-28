@@ -12,7 +12,7 @@ export function EndScreen({ learned, round = "learning", onAnother, onProgress }
   const copy = COPY[round];
   return (
     <div className="flex h-full flex-col justify-center px-8 pb-[max(2rem,env(safe-area-inset-bottom))] text-center">
-      <div className="text-5xl">{copy.emoji}</div>
+      <div aria-hidden="true" className="text-5xl">{copy.emoji}</div>
       <h1 className="mt-5 text-3xl font-semibold leading-tight tracking-tight">
         {copy.title(learned)}
       </h1>

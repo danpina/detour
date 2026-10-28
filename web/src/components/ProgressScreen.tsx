@@ -25,7 +25,7 @@ const DOT: Record<CardState, string> = {
 
 const card = "rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900";
 
-export function ProgressScreen() {
+export function ProgressScreen({ onOpenLearned }: { onOpenLearned: () => void }) {
   const [data, setData] = useState<Data | null>(null);
   const [saved, setSaved] = useState("");
   const [section, setSection] = useState<Section>("learning");
@@ -35,7 +35,7 @@ export function ProgressScreen() {
     markRecapSeen();
   }, []);
 
-  if (!data) return <div className="flex h-full items-center justify-center text-neutral-400">Loading…</div>;
+  if (!data) return <div className="flex h-full items-center justify-center text-neutral-500">Loading…</div>;
   const { streak, recall, map, skills, recap } = data;
 
   return (
@@ -96,7 +96,11 @@ export function ProgressScreen() {
                   <span className="text-xs text-neutral-500 dark:text-neutral-400">{cards.length ? `${solid} of ${cards.length} locked in` : "More coming soon"}</span>
                 </div>
                 {cards.length > 0 && (
-                  <div className="mt-2 flex flex-wrap gap-1.5">
+                  <div
+                    role="img"
+                    aria-label={`${cards.length} cards: ${(["solid", "learning", "seen", "new"] as CardState[]).map((st) => `${cards.filter((c) => c.state === st).length} ${{ new: "not yet", seen: "seen", learning: "sticking", solid: "locked in" }[st]}`).join(", ")}`}
+                    className="mt-2 flex flex-wrap gap-1.5"
+                  >
                     {cards.map((c) => (
                       <span key={c.id} title={`${c.id}: ${c.state}`} className={`h-4 w-4 rounded ${DOT[c.state]}`} />
                     ))}
@@ -115,6 +119,11 @@ export function ProgressScreen() {
           ))}
         </div>
       </section>
+
+      <button onClick={onOpenLearned} className={`${card} mt-4 flex w-full items-center justify-between text-left font-medium`}>
+        <span>Browse what you've learned</span>
+        <span aria-hidden="true" className="text-neutral-400">›</span>
+      </button>
 
       <section className="mt-4 overflow-hidden rounded-2xl bg-gradient-to-br from-teal-900 via-slate-900 to-black p-5 text-white">
         <h2 className="text-sm font-medium text-teal-200">Your week</h2>
@@ -144,7 +153,7 @@ export function ProgressScreen() {
             <div key={s.id}>
               <div className="flex items-baseline justify-between">
                 <span className="font-medium">{s.name}</span>
-                <span className="text-sm">Level {s.level}<span className="text-neutral-400"> / {s.maxLevel}</span></span>
+                <span className="text-sm">Level {s.level}<span className="text-neutral-500"> / {s.maxLevel}</span></span>
               </div>
               <div className="text-xs text-neutral-500 dark:text-neutral-400">{s.levelName} · {s.attempts} {s.attempts === 1 ? "problem" : "problems"} answered</div>
               <div className="mt-2 h-2 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800">

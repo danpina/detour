@@ -82,6 +82,7 @@ function ProbeInput({ probe, locked, onAnswer }: { probe: Probe; locked: boolean
             value={text}
             disabled={locked}
             onChange={(e) => setText(e.target.value)}
+            aria-label="Your answer"
             placeholder="Type your answer"
             className="w-full rounded-2xl border border-white/30 bg-white/15 px-4 py-3.5 text-white placeholder-white/50 backdrop-blur outline-none focus:border-white"
           />

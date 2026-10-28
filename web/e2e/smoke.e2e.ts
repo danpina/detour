@@ -61,6 +61,12 @@ test("progress and settings work after a set", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Your progress" })).toBeVisible();
   await expect(page.getByText(/1 day/)).toBeVisible();
 
+  await page.getByRole("button", { name: /Browse what you've learned/ }).click();
+  await expect(page.getByRole("heading", { name: "What you've learned" })).toBeVisible();
+  await expect(page.getByPlaceholder("Search your cards")).toBeVisible();
+  await expect(page.getByRole("list").getByRole("button").first()).toBeVisible();
+  await page.getByRole("button", { name: "← Progress" }).click();
+
   await page.getByRole("button", { name: /Settings/ }).click();
   const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "Export progress" }).click();

@@ -48,7 +48,7 @@ export function HomeScreen({ onStart, onPick, onOpenSettings, onOpenProgress, on
             onClick={() => onStart(r.kind)}
             className="flex w-full items-center gap-4 rounded-2xl border border-neutral-200 bg-white p-4 active:scale-[0.99] dark:border-neutral-800 dark:bg-neutral-900"
           >
-            <span className="text-3xl">{r.emoji}</span>
+            <span aria-hidden="true" className="text-3xl">{r.emoji}</span>
             <span className="flex-1">
               <span className="block text-lg font-semibold">{r.title}</span>
               <span className="block text-sm text-neutral-500 dark:text-neutral-400">{r.blurb(info)}</span>
