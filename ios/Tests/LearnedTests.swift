@@ -1,6 +1,7 @@
 import XCTest
 @testable import Detour
 
+@MainActor
 final class LearnedTests: XCTestCase {
     private let cards = ContentStore.load().cards
 
