@@ -67,7 +67,7 @@ struct LanguageGameView: View {
     private var finished: some View {
         VStack(spacing: 18) {
             Spacer()
-            Text(language.flag).font(.system(size: 64))
+            Text(language.flag).font(.system(size: 64)).accessibilityHidden(true)
             Text("\(score) / \(round.count)").font(.largeTitle.weight(.semibold))
             Text(endLine).foregroundStyle(.secondary).multilineTextAlignment(.center)
             Text("\(learned) of \(levelWords.count) " + LanguageBuilder.levelName(level).lowercased() + " words learned").font(.subheadline).foregroundStyle(.secondary)
@@ -126,7 +126,7 @@ struct LanguageGameView: View {
             VStack(spacing: 8) {
                 Text(q.title).foregroundStyle(.secondary)
                 Text(q.kind == .toWord ? q.prompt + "?" : q.prompt)
-                    .font(.system(size: q.kind == .cloze ? 26 : 34, weight: .semibold))
+                    .scaledFont(q.kind == .cloze ? 26 : 34, weight: .semibold, relativeTo: .title)
                     .multilineTextAlignment(.center)
                     .minimumScaleFactor(0.6)
                 if let hint = q.hint {

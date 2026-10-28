@@ -20,7 +20,7 @@ struct HomeView: View {
                     HStack {
                         Text("Pick something specific").font(.headline)
                         Spacer()
-                        Image(systemName: "chevron.right").font(.footnote).foregroundStyle(.secondary)
+                        Image(systemName: "chevron.right").font(.footnote).foregroundStyle(.secondary).accessibilityHidden(true)
                     }
                     .padding(16)
                     .frame(maxWidth: .infinity)

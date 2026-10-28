@@ -57,7 +57,7 @@ struct LogicGameView: View {
     private var finished: some View {
         VStack(spacing: 18) {
             Spacer()
-            Text("🧩").font(.system(size: 64))
+            Text("🧩").font(.system(size: 64)).accessibilityHidden(true)
             Text("\(score) / \(round.count)").font(.largeTitle.weight(.semibold))
             Text(endLine).foregroundStyle(.secondary).multilineTextAlignment(.center)
             Text("\(progress.solved.values.filter { $0 > 0 }.count) of \(items.count) puzzles solved").font(.subheadline).foregroundStyle(.secondary)
@@ -116,7 +116,7 @@ struct LogicGameView: View {
                 VStack(spacing: 8) {
                     Text(LogicBuilder.title(forKind: q.kind)).foregroundStyle(.secondary)
                     Text(q.prompt)
-                        .font(.system(size: 21, weight: .semibold))
+                        .scaledFont(21, weight: .semibold, relativeTo: .title3)
                         .multilineTextAlignment(.center)
                 }
                 .padding(.vertical, 28)

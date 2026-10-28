@@ -4,6 +4,7 @@ import SwiftUI
 /// When `embedded` is set the game is played inside a set of cards: it skips the end screen and calls
 /// `embedded(score)` when the round is finished; `onExit` then means "skip".
 struct ChessGameView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let onExit: () -> Void
     var embedded: ((Int) -> Void)? = nil
 
@@ -70,7 +71,7 @@ struct ChessGameView: View {
     private var doneView: some View {
         VStack(spacing: 18) {
             Spacer()
-            Text("\u{265F}\u{FE0F}").font(.system(size: 56))
+            Text("\u{265F}\u{FE0F}").font(.system(size: 56)).accessibilityHidden(true)
             Text("\(score) of \(round.count)").font(.largeTitle.weight(.semibold))
             Text(doneMessage())
                 .foregroundStyle(.secondary)
@@ -261,6 +262,7 @@ struct ChessGameView: View {
     }
 
     private func shake() {
+        if reduceMotion { return }
         Task { @MainActor in
             let steps: [CGFloat] = [-8, 8, -5, 5, 0]
             for dx in steps {

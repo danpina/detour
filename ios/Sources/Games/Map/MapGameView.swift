@@ -224,7 +224,7 @@ private struct MapRoundView: View {
     private var finished: some View {
         VStack(spacing: 18) {
             Spacer()
-            Text("🗺️").font(.system(size: 64))
+            Text("🗺️").font(.system(size: 64)).accessibilityHidden(true)
             Text("\(score) / \(round.count)").font(.largeTitle.weight(.semibold))
             Text(endLine).foregroundStyle(.secondary).multilineTextAlignment(.center)
             if isBest { Text("New best!").font(.subheadline.weight(.medium)).foregroundStyle(.tint) }
@@ -402,7 +402,7 @@ private struct MapRoundView: View {
         Button(action: action) {
             Image(systemName: symbol)
                 .font(.subheadline.weight(.semibold))
-                .frame(width: 38, height: 38)
+                .frame(width: 44, height: 44)
                 .background(.regularMaterial, in: Circle())
         }
         .buttonStyle(.plain)

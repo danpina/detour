@@ -20,6 +20,18 @@ struct GameProgressBar: View {
     }
 }
 
+/// The pop for the right answer. With Reduce Motion on, nothing moves.
+private struct AnswerPop: ViewModifier {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    let on: Bool
+
+    func body(content: Content) -> some View {
+        content
+            .scaleEffect(on && !reduceMotion ? 1.03 : 1)
+            .animation(reduceMotion ? nil : .spring(duration: 0.3), value: on)
+    }
+}
+
 extension View {
     /// A small tap on a right or wrong answer: a soft "success" or "error" haptic when the answer is picked.
     func answerHaptic(picked: Bool, correct: Bool) -> some View {
@@ -34,7 +46,6 @@ extension View {
 
     /// The right answer pops a little once the answer is in.
     func answerPop(_ on: Bool) -> some View {
-        scaleEffect(on ? 1.03 : 1)
-            .animation(.spring(duration: 0.3), value: on)
+        modifier(AnswerPop(on: on))
     }
 }

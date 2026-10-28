@@ -274,7 +274,7 @@ struct MemoryGameView: View {
         VStack(spacing: 12) {
             Spacer()
             Text(mode == .digits ? "Digit span" : "Pattern grid").foregroundStyle(.secondary)
-            Text("\(run.best)").font(.system(size: 72, weight: .bold))
+            Text("\(run.best)").scaledFont(72, weight: .bold, relativeTo: .largeTitle)
             Text(run.best > 0 ? "in a row remembered" : "Nice try. Warm up and go again.")
                 .font(.title3)
             if isNewBest && run.best > 0 {

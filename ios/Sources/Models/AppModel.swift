@@ -164,6 +164,21 @@ final class AppModel {
         }
     }
 
+    /// The finished cards, newest first, with how well each has stuck. For "What you've learned".
+    func learnedCards() -> [LearnedRow] {
+        var first: [String: Date] = [:]
+        for e in data.events where e.kind == .complete {
+            if let seen = first[e.cardId], seen <= e.at { continue }
+            first[e.cardId] = e.at
+        }
+        let completed = Set(first.keys)
+        let byProbe = Dictionary(data.reviews.map { ($0.probeId, $0) }, uniquingKeysWith: { a, _ in a })
+        return cards
+            .filter { completed.contains($0.id) }
+            .map { LearnedRow(card: $0, learnedAt: first[$0.id] ?? .distantPast, state: ProgressStats.cardState($0, completed: completed, reviews: byProbe)) }
+            .sorted { $0.learnedAt > $1.learnedAt }
+    }
+
     /// A skill's level and how many problems have been answered in it.
     func skillStatus(_ track: TrackId) -> (level: Int, attempts: Int) {
         let p = data.skills.first { $0.track == track }

@@ -13,6 +13,12 @@ struct ProgressScreen: View {
 
     @State private var section: Part = .learning
 
+    /// What the coloured squares say, in words: "12 cards: 3 locked in, 2 sticking, 5 seen, 2 not yet".
+    private func mapSummary(_ cards: [(id: String, state: ProgressStats.CardState)]) -> String {
+        let parts: [(ProgressStats.CardState, String)] = [(.solid, "locked in"), (.learning, "sticking"), (.seen, "seen"), (.new, "not yet")]
+        return "\(cards.count) cards: " + parts.map { state, name in "\(cards.filter { $0.state == state }.count) \(name)" }.joined(separator: ", ")
+    }
+
     private func color(_ state: ProgressStats.CardState) -> Color {
         switch state {
         case .new: return .clear
@@ -24,13 +30,14 @@ struct ProgressScreen: View {
 
     var body: some View {
         let snapshot = model.progress()
+        NavigationStack {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Your progress").font(.largeTitle.weight(.semibold))
 
                 card {
                     HStack(spacing: 12) {
-                        Text("🔥").font(.system(size: 40))
+                        Text("🔥").font(.system(size: 40)).accessibilityHidden(true)
                         VStack(alignment: .leading) {
                             Text("\(snapshot.streak) \(snapshot.streak == 1 ? "day" : "days")").font(.title2.weight(.semibold))
                             Text("Best: \(snapshot.bestStreak) · \(snapshot.freezesLeft) \(snapshot.freezesLeft == 1 ? "freeze" : "freezes") left this week")
@@ -53,6 +60,8 @@ struct ProgressScreen: View {
             }
             .padding(20)
         }
+        .toolbar(.hidden, for: .navigationBar)
+        }
     }
 
     // MARK: Learning
@@ -61,7 +70,7 @@ struct ProgressScreen: View {
         card {
             Text("Remembered").font(.subheadline).foregroundStyle(.secondary)
             if let rate = snapshot.recall.rate {
-                Text("\(Int((rate * 100).rounded()))%").font(.system(size: 40, weight: .semibold))
+                Text("\(Int((rate * 100).rounded()))%").scaledFont(40, weight: .semibold, relativeTo: .largeTitle)
                 Text("You recalled \(Int((rate * 100).rounded()))% of what you learned this month (\(snapshot.recall.correct) of \(snapshot.recall.total) checks).")
                     .font(.footnote).foregroundStyle(.secondary)
             } else {
@@ -89,11 +98,27 @@ struct ProgressScreen: View {
                                     .frame(width: 16, height: 16)
                             }
                         }
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel(mapSummary(cards))
                     }
                 }
             }
             Text("Not yet · Seen · Sticking · Locked in (21+ days)").font(.caption).foregroundStyle(.secondary)
         }
+
+        NavigationLink {
+            LearnedView()
+        } label: {
+            HStack {
+                Text("Browse what you've learned").font(.headline).foregroundStyle(.primary)
+                Spacer()
+                Image(systemName: "chevron.right").font(.footnote).foregroundStyle(.secondary).accessibilityHidden(true)
+            }
+            .padding(16)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 18))
+        }
+        .buttonStyle(.plain)
 
         VStack(alignment: .leading, spacing: 12) {
             Text("Your week").font(.subheadline).foregroundStyle(.white.opacity(0.7))
@@ -159,7 +184,7 @@ private struct GamesProgressView: View {
         let plays = GameId.allCases.reduce(0) { $0 + GameStats.plays($1) }
         card {
             Text("Rounds played").font(.subheadline).foregroundStyle(.secondary)
-            Text("\(plays)").font(.system(size: 40, weight: .semibold)).monospacedDigit()
+            Text("\(plays)").scaledFont(40, weight: .semibold, relativeTo: .largeTitle, monospaced: true)
             Text(plays == 0 ? "Try a Game round from the home screen." : "Across all your games.").font(.footnote).foregroundStyle(.secondary)
         }
 

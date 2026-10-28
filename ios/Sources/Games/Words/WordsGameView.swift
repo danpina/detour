@@ -20,6 +20,7 @@ private enum WordStatus {
 }
 
 struct WordsGameView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let onExit: () -> Void
     /// Set when played inside a set of cards: called with the score when the round is finished.
     var embedded: ((Int) -> Void)? = nil
@@ -77,10 +78,10 @@ struct WordsGameView: View {
     private var endView: some View {
         VStack(spacing: 12) {
             Spacer()
-            Text(score >= round.count - 1 ? "🌟" : "🔤").font(.system(size: 64))
+            Text(score >= round.count - 1 ? "🌟" : "🔤").font(.system(size: 64)).accessibilityHidden(true)
             Text("Nice round!").font(.title.weight(.semibold))
             Text("\(score) / \(round.count)")
-                .font(.system(size: 52, weight: .bold))
+                .scaledFont(52, weight: .bold, relativeTo: .largeTitle)
                 .monospacedDigit()
             Text(isBest ? "That's a new best for you." : "Every word is practice.")
                 .foregroundStyle(.secondary)
@@ -313,8 +314,12 @@ struct WordsGameView: View {
                 finishIfEmbeddedAndLast()
             } else {
                 status = .wrong
-                withAnimation(.linear(duration: 0.4)) {
+                if reduceMotion {
                     shakeCount += 1
+                } else {
+                    withAnimation(.linear(duration: 0.4)) {
+                        shakeCount += 1
+                    }
                 }
             }
         }

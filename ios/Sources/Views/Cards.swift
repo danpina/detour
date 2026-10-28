@@ -194,7 +194,7 @@ struct SliderGuess: View {
     var body: some View {
         VStack(spacing: 12) {
             Text("\(Scoring.format(value))\(unitLabel)")
-                .font(.system(size: 46, weight: .semibold))
+                .scaledFont(46, weight: .semibold, relativeTo: .largeTitle)
                 .monospacedDigit()
                 .frame(maxWidth: .infinity)
             Slider(value: $t, in: 0...1)

@@ -149,7 +149,7 @@ struct EndView: View {
     var body: some View {
         VStack(spacing: 12) {
             Spacer()
-            Text(kind == .math ? "🔢" : (kind == .games ? "🎮" : "✨")).font(.system(size: 56))
+            Text(kind == .math ? "🔢" : (kind == .games ? "🎮" : "✨")).font(.system(size: 56)).accessibilityHidden(true)
             Text(kind == .math ? "Math round done." : (kind == .games ? "That was fun." : "You learned \(learned > 0 ? learned : 5) things."))
                 .font(.largeTitle.weight(.semibold))
                 .multilineTextAlignment(.center)

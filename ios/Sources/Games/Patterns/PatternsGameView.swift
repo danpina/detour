@@ -95,7 +95,7 @@ struct PatternsGameView: View {
         VStack(spacing: 16) {
             Spacer()
             Text("\(score)/\(round.count)")
-                .font(.system(size: 64, weight: .semibold))
+                .scaledFont(64, weight: .semibold, relativeTo: .largeTitle)
             Text(endLine()).font(.title3).multilineTextAlignment(.center)
             if isBest && score > 0 {
                 Text("New best!").font(.subheadline.weight(.medium)).foregroundStyle(.teal)
@@ -216,7 +216,7 @@ struct PatternsGameView: View {
         }
         return Button(action: { choose(option, for: puzzle) }) {
             Text("\(option)")
-                .font(.system(size: 30, weight: .semibold).monospacedDigit())
+                .scaledFont(30, weight: .semibold, relativeTo: .title, monospaced: true)
                 .foregroundStyle(.primary)
                 .frame(maxWidth: .infinity, minHeight: 80)
                 .background(RoundedRectangle(cornerRadius: 16).fill(fill))

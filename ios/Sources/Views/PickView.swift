@@ -93,7 +93,7 @@ struct PickView: View {
                     }
                     Spacer()
                     Text("Edit").font(.subheadline).foregroundStyle(.secondary)
-                    Image(systemName: "chevron.right").font(.footnote).foregroundStyle(.secondary)
+                    Image(systemName: "chevron.right").font(.footnote).foregroundStyle(.secondary).accessibilityHidden(true)
                 }
                 .padding(14)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -108,7 +108,7 @@ struct PickView: View {
     private func row(leading: String?, title: String, detail: String, trailing: String, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             HStack(spacing: 12) {
-                if let leading { Text(leading).font(.title) }
+                if let leading { Text(leading).font(.title).accessibilityHidden(true) }
                 VStack(alignment: .leading, spacing: 2) {
                     Text(title).font(.headline).foregroundStyle(.primary)
                     Text(detail).font(.subheadline).foregroundStyle(.secondary)
@@ -116,7 +116,7 @@ struct PickView: View {
                 Spacer()
                 if !trailing.isEmpty {
                     Text(trailing).font(.subheadline.weight(.medium)).foregroundStyle(.teal)
-                    Image(systemName: "chevron.right").font(.footnote).foregroundStyle(.teal)
+                    Image(systemName: "chevron.right").font(.footnote).foregroundStyle(.teal).accessibilityHidden(true)
                 }
             }
             .padding(14)

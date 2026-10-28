@@ -62,6 +62,8 @@ struct CardShell<Content: View>: View {
                         Capsule().fill(i <= index ? Color.white.opacity(i == index ? 0.9 : 1) : Color.white.opacity(0.3)).frame(height: 4)
                     }
                 }
+                .accessibilityElement(children: .ignore)
+                .accessibilityLabel("Card \(index + 1) of \(total)")
                 HStack(spacing: 6) {
                     // The topic first, so it is always clear which section a card belongs to; then what kind of card it is.
                     chip(card.interest.topicEmoji + " " + card.interest.topicName, bold: true)

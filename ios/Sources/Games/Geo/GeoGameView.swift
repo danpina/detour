@@ -55,7 +55,7 @@ struct GeoGameView: View {
     private var finished: some View {
         VStack(spacing: 18) {
             Spacer()
-            Text("🌍").font(.system(size: 64))
+            Text("🌍").font(.system(size: 64)).accessibilityHidden(true)
             Text("\(score) / \(round.count)").font(.largeTitle.weight(.semibold))
             Text(endLine).foregroundStyle(.secondary).multilineTextAlignment(.center)
             if isBest {
@@ -116,7 +116,7 @@ struct GeoGameView: View {
                     Text(q.prompt).font(.system(size: 96))
                 } else {
                     Text(q.prompt + "?")
-                        .font(.system(size: 34, weight: .semibold))
+                        .scaledFont(34, weight: .semibold, relativeTo: .title)
                         .multilineTextAlignment(.center)
                         .minimumScaleFactor(0.6)
                 }
