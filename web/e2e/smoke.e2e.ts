@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { expect, test, type Page } from "@playwright/test";
 
 /** Plays whatever card is on screen until the end screen appears. Cards are random, so this handles every type. */
@@ -92,4 +93,35 @@ test("pick something specific: the skills page and a round of one math skill", a
 
   await page.getByRole("button", { name: /Geometry/ }).click();
   await expect(page.getByText("Drill · Geometry")).toBeVisible();
+});
+
+test("chess, hard: play a mate in two or three move by move", async ({ page }) => {
+  // The first hard puzzle is the lowest-rated one, because the test fixes the random pick at zero.
+  const data = JSON.parse(readFileSync("../content/games/chess.json", "utf8")) as { hard: { rating: number; line: string[]; mates: string[] }[] };
+  const puzzle = [...data.hard].sort((a, b) => a.rating - b.rating)[0]!;
+
+  await page.goto("/");
+  await page.getByRole("button", { name: "Not now" }).click();
+  for (const name of ["History", "Science", "Tech"]) await page.getByRole("button", { name }).first().click();
+  await page.getByRole("button", { name: "Show me a quick one" }).click();
+  await playSet(page);
+  await page.getByRole("button", { name: "Pick another round" }).click();
+  await page.getByRole("button", { name: /Games/ }).click();
+  await page.getByRole("button", { name: "Hard" }).click();
+  await page.evaluate(() => (Math.random = () => 0));
+  await page.getByRole("button", { name: /Chess tactics/ }).click();
+
+  const square = (name: string) => page.getByRole("button", { name: new RegExp(`^${name}( |$)`) });
+  const move = async (uci: string) => {
+    await square(uci.slice(0, 2)).click();
+    await square(uci.slice(2, 4)).click();
+  };
+  const line = puzzle.line;
+  await expect(page.getByText(/Find checkmate in (two|three)/)).toBeVisible();
+  for (let i = 0; i < line.length - 1; i += 2) {
+    await move(line[i]!);
+    if (i + 2 < line.length) await expect(page.getByText(/Good\. Now find/)).toBeVisible({ timeout: 4000 });
+  }
+  await move(line[line.length - 1]!);
+  await expect(page.getByText("Checkmate! Lovely.")).toBeVisible();
 });

@@ -2,15 +2,21 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { GameProps } from "../registry";
 import { recordRound, roundFor } from "../stats";
 import { getChessLevel, loadChessData } from "./chessData";
-import { acceptMove, buildRound, displayOrder, glyph, isOwnPiece, moveSquares, parseFen, puzzlesFor, squareName, type Puzzle } from "./chessLogic";
+import {
+  acceptStep, boardAfter, buildRound, displayOrder, glyph, isFinalStep, isOwnPiece, matePlies, moveSquares, parseFen, puzzlesFor, squareName, type Puzzle,
+} from "./chessLogic";
 
 const MAX_TRIES = 2;
 /** How long the last result stays visible before an embedded game hands over. */
 const EMBEDDED_DONE_MS = 1200;
+/** The pause before the opponent answers in a mate in two or three. */
+const REPLY_MS = 700;
 
 type Status = "playing" | "correct" | "revealed";
 
-/** Chess tactics: find the checkmate in one. A round has `getRoundSize()` puzzles, easy to hard. */
+const MATE_WORD = ["", "one", "two", "three", "four"];
+
+/** Chess tactics: find the checkmate, in one move or (hard) in two or three. A round has `getRoundSize()` puzzles, easy to hard. */
 export function ChessGame({ onExit, embedded }: GameProps) {
   const data = useMemo(() => loadChessData(), []);
   const [round, setRound] = useState<Puzzle[]>(() => (data ? buildRound(puzzlesFor(data, getChessLevel()), Math.random, roundFor(embedded)) : []));
@@ -21,6 +27,9 @@ export function ChessGame({ onExit, embedded }: GameProps) {
   const [selected, setSelected] = useState<string | null>(null);
   const [shake, setShake] = useState(0);
   const [answer, setAnswer] = useState<string | null>(null);
+  /** Every move played so far in this puzzle: yours and the opponent's replies. */
+  const [moves, setMoves] = useState<string[]>([]);
+  const [waiting, setWaiting] = useState(false);
   const [done, setDone] = useState(false);
   const [isBest, setIsBest] = useState(false);
   const timer = useRef<number | null>(null);
@@ -35,6 +44,15 @@ export function ChessGame({ onExit, embedded }: GameProps) {
         <button onClick={onExit} className="rounded-2xl bg-teal-600 px-6 py-3 font-semibold text-white">Back</button>
       </div>
     );
+  }
+
+  function resetPuzzle() {
+    setWrong(0);
+    setStatus("playing");
+    setSelected(null);
+    setAnswer(null);
+    setMoves([]);
+    setWaiting(false);
   }
 
   function finish(finalScore: number) {
@@ -53,10 +71,7 @@ export function ChessGame({ onExit, embedded }: GameProps) {
       return;
     }
     setIndex(index + 1);
-    setWrong(0);
-    setStatus("playing");
-    setSelected(null);
-    setAnswer(null);
+    resetPuzzle();
   }
 
   function playAgain() {
@@ -64,10 +79,7 @@ export function ChessGame({ onExit, embedded }: GameProps) {
     setRound(buildRound(puzzlesFor(data, getChessLevel()), Math.random, roundFor(embedded)));
     setIndex(0);
     setScore(0);
-    setWrong(0);
-    setStatus("playing");
-    setSelected(null);
-    setAnswer(null);
+    resetPuzzle();
     setDone(false);
   }
 
@@ -76,7 +88,7 @@ export function ChessGame({ onExit, embedded }: GameProps) {
     const msg = share >= 0.9 ? "Sharp eyes." : share >= 0.6 ? "Nicely done." : share >= 0.3 ? "Good practice." : "Every board teaches something.";
     return (
       <div className="flex h-full flex-col items-center justify-center gap-5 px-8 text-center">
-        <div className="text-5xl">♟️</div>
+        <div aria-hidden="true" className="text-5xl">♟️</div>
         <h1 className="text-3xl font-semibold">{score} of {round.length}</h1>
         <p className="text-neutral-500 dark:text-neutral-400">
           solved on the first try. {msg}
@@ -104,11 +116,15 @@ export function ChessGame({ onExit, embedded }: GameProps) {
   }
   const side = puzzle.sideToMove;
   const order = displayOrder(side);
+  const squares = boardAfter(parsed.squares, moves);
   const hint = answer ? moveSquares(answer) : null;
-  const isLast = index + 1 >= round.length;
+  const last = moves.length > 0 ? moveSquares(moves[moves.length - 1]!) : null;
+  const isLastPuzzle = index + 1 >= round.length;
+  const ply = moves.length;
+  const total = matePlies(puzzle);
 
   const tap = (sq: string, piece: string | null) => {
-    if (status !== "playing") return;
+    if (status !== "playing" || waiting) return;
     if (selected === null) {
       if (isOwnPiece(piece, side)) setSelected(sq);
       return;
@@ -121,14 +137,30 @@ export function ChessGame({ onExit, embedded }: GameProps) {
       setSelected(sq);
       return;
     }
-    const mate = acceptMove(puzzle, selected, sq);
-    if (mate) {
+    const step = acceptStep(puzzle, ply, selected, sq);
+    if (step && isFinalStep(puzzle, ply)) {
       const newScore = wrong === 0 ? score + 1 : score;
       setScore(newScore);
-      setAnswer(mate);
+      setAnswer(step);
+      setMoves([...moves, step]);
       setStatus("correct");
       setSelected(null);
-      timer.current = window.setTimeout(() => next(newScore), isLast && embedded ? EMBEDDED_DONE_MS : 1100);
+      timer.current = window.setTimeout(() => next(newScore), isLastPuzzle && embedded ? EMBEDDED_DONE_MS : 1100);
+      return;
+    }
+    if (step) {
+      // Right, but not the mate yet: play it, then the opponent answers and it is your turn again.
+      const played = [...moves, step];
+      const reply = puzzle.line?.[ply + 1];
+      setMoves(played);
+      setSelected(null);
+      if (reply) {
+        setWaiting(true);
+        timer.current = window.setTimeout(() => {
+          setMoves([...played, reply]);
+          setWaiting(false);
+        }, REPLY_MS);
+      }
       return;
     }
     const w = wrong + 1;
@@ -136,21 +168,25 @@ export function ChessGame({ onExit, embedded }: GameProps) {
     setSelected(null);
     setShake((n) => n + 1);
     if (w >= MAX_TRIES) {
-      setAnswer(puzzle.mates[0] ?? null);
+      setAnswer(puzzle.line && !isFinalStep(puzzle, ply) ? (puzzle.line[ply] ?? null) : (puzzle.mates[0] ?? null));
       setStatus("revealed");
-      if (isLast && embedded) timer.current = window.setTimeout(() => next(score), EMBEDDED_DONE_MS);
+      if (isLastPuzzle && embedded) timer.current = window.setTimeout(() => next(score), EMBEDDED_DONE_MS);
     }
   };
 
   const sideName = side === "w" ? "White" : "Black";
-  let message = `${sideName} to move. Find checkmate in one.`;
+  const mateWord = MATE_WORD[total] ?? String(total);
+  let message = `${sideName} to move. Find checkmate in ${mateWord}.`;
+  if (ply > 0 && status === "playing") {
+    message = waiting ? "Good move. Watching the reply…" : total - ply / 2 === 1 ? "Good. Now find the mating move." : "Good. Now find your next move.";
+  }
   if (status === "correct") message = "Checkmate! Lovely.";
-  else if (status === "revealed") message = "Here's the mate. On to the next one.";
+  else if (status === "revealed") message = puzzle.line ? "Here's the move. On to the next one." : "Here's the mate. On to the next one.";
   else if (wrong > 0) message = "Not that one, try again";
 
   return (
     <div className="flex h-full flex-col px-4 pb-6 pt-[max(1.5rem,env(safe-area-inset-top))]">
-      <style>{`@keyframes detour-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}`}</style>
+      <style>{`@keyframes detour-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}@media (prefers-reduced-motion: reduce){.detour-board{animation:none !important}}`}</style>
       <div className="flex items-center justify-between">
         {embedded ? (
           <span className="text-sm font-semibold">A quick board puzzle</span>
@@ -167,18 +203,20 @@ export function ChessGame({ onExit, embedded }: GameProps) {
       <p aria-live="polite" className="mt-3 min-h-12 text-center text-lg font-semibold">{message}</p>
       <div
         key={shake}
-        className="mx-auto mt-3 grid aspect-square w-full max-w-[390px] grid-cols-8 overflow-hidden rounded-xl border border-neutral-300 dark:border-neutral-700"
+        className="detour-board mx-auto mt-3 grid aspect-square w-full max-w-[390px] grid-cols-8 overflow-hidden rounded-xl border border-neutral-300 dark:border-neutral-700"
         style={shake > 0 ? { animation: "detour-shake 0.35s" } : undefined}
       >
         {order.map((i) => {
           const sq = squareName(i);
-          const piece = parsed.squares[i] ?? null;
+          const piece = squares[i] ?? null;
           const file = i % 8;
           const rank = Math.floor(i / 8);
           const light = (file + rank) % 2 === 0;
           const isSel = selected === sq;
           const isHint = hint !== null && (hint.from === sq || hint.to === sq);
+          const isLastMove = last !== null && status === "playing" && (last.from === sq || last.to === sq);
           let bg = light ? "bg-amber-100 dark:bg-amber-200/80" : "bg-teal-700 dark:bg-teal-800";
+          if (isLastMove) bg = light ? "bg-lime-200 dark:bg-lime-300/80" : "bg-lime-700 dark:bg-lime-800";
           if (isHint) bg = "bg-emerald-400";
           if (isSel) bg = "bg-yellow-300";
           const white = piece !== null && piece === piece.toUpperCase();
@@ -199,7 +237,7 @@ export function ChessGame({ onExit, embedded }: GameProps) {
         })}
       </div>
       <div className="mt-5 flex justify-center">
-        {status === "revealed" && !(embedded && isLast) && (
+        {status === "revealed" && !(embedded && isLastPuzzle) && (
           <button onClick={() => next(score)} className="rounded-2xl bg-teal-600 px-8 py-3 text-lg font-semibold text-white active:scale-[0.99]">Next</button>
         )}
       </div>

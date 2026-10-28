@@ -20,7 +20,7 @@ enum GameId: String, CaseIterable, Identifiable {
 
     var blurb: String {
         switch self {
-        case .chess: return "Find the checkmate in one"
+        case .chess: return "Find the checkmate, in one move or more"
         case .patterns: return "Spot the pattern in a sequence"
         case .words: return "Unscramble the word"
         case .geo: return "Flags, capitals and more"

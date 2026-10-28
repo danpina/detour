@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Chess tactics: find the checkmate in one. A round has `GameStats.roundSize` puzzles, easy to hard.
+/// Chess tactics: find the checkmate, in one move or (hard) in two or three. A round has `GameStats.roundSize` puzzles, easy to hard.
 /// When `embedded` is set the game is played inside a set of cards: it skips the end screen and calls
 /// `embedded(score)` when the round is finished; `onExit` then means "skip".
 struct ChessGameView: View {
@@ -24,6 +24,9 @@ struct ChessGameView: View {
     @State private var status: Status = .playing
     @State private var selected: String? = nil
     @State private var answer: String? = nil
+    /// Every move played so far in this puzzle: yours and the opponent's replies.
+    @State private var moves: [String] = []
+    @State private var waiting = false
     @State private var done = false
     @State private var isBest = false
     @State private var shakeOffset: CGFloat = 0
@@ -139,10 +142,11 @@ struct ChessGameView: View {
     private func boardView(puzzle: ChessPuzzle, parsed: ParsedFen) -> some View {
         let side = puzzle.sideToMove
         let order = ChessLogic.displayOrder(side: side)
+        let squares = ChessLogic.boardAfter(parsed.squares, moves)
         let columns = Array(repeating: GridItem(.flexible(), spacing: 0), count: 8)
         return LazyVGrid(columns: columns, spacing: 0) {
             ForEach(order, id: \.self) { i in
-                squareView(index: i, piece: parsed.squares[i], puzzle: puzzle)
+                squareView(index: i, piece: squares[i], puzzle: puzzle)
             }
         }
         .frame(maxWidth: 390)
@@ -160,6 +164,12 @@ struct ChessGameView: View {
             let from = String(a.prefix(2))
             let to = String(a.dropFirst(2).prefix(2))
             if name == from || name == to { fill = Color(red: 0.30, green: 0.80, blue: 0.55) }
+        }
+        // The opponent's last move stays marked, so you can see what changed.
+        if status == .playing, let last = moves.last, last.count >= 4 {
+            let from = String(last.prefix(2))
+            let to = String(last.dropFirst(2).prefix(2))
+            if name == from || name == to { fill = light ? Color(red: 0.80, green: 0.92, blue: 0.55) : Color(red: 0.40, green: 0.62, blue: 0.20) }
         }
         if selected == name { fill = Color(red: 0.98, green: 0.85, blue: 0.25) }
         return Button(action: { tap(name, piece, puzzle) }) {
@@ -188,10 +198,17 @@ struct ChessGameView: View {
 
     private func messageText(_ puzzle: ChessPuzzle) -> String {
         let sideName = puzzle.sideToMove == "w" ? "White" : "Black"
+        let total = ChessLogic.matePlies(puzzle)
+        let ply = moves.count
         if status == .correct { return "Checkmate! Lovely." }
-        if status == .revealed { return "Here's the mate. On to the next one." }
+        if status == .revealed { return puzzle.line != nil ? "Here's the move. On to the next one." : "Here's the mate. On to the next one." }
         if wrong > 0 { return "Not that one, try again" }
-        return "\(sideName) to move. Find checkmate in one."
+        if ply > 0 {
+            if waiting { return "Good move. Watching the reply…" }
+            return total - ply / 2 == 1 ? "Good. Now find the mating move." : "Good. Now find your next move."
+        }
+        let words = ["", "one", "two", "three", "four"]
+        return "\(sideName) to move. Find checkmate in \(total < words.count ? words[total] : String(total))."
     }
 
     private func doneMessage() -> String {
@@ -211,7 +228,7 @@ struct ChessGameView: View {
     }
 
     private func tap(_ name: String, _ piece: Character?, _ puzzle: ChessPuzzle) {
-        if status != .playing { return }
+        if status != .playing || waiting { return }
         let side = puzzle.sideToMove
         guard let current = selected else {
             if ChessLogic.isOwnPiece(piece, side: side) { selected = name }
@@ -225,10 +242,31 @@ struct ChessGameView: View {
             selected = name
             return
         }
-        if let mate = ChessLogic.acceptMove(puzzle, from: current, to: name) {
+        let ply = moves.count
+        if let step = ChessLogic.acceptStep(puzzle, ply: ply, from: current, to: name), !ChessLogic.isFinalStep(puzzle, ply: ply) {
+            // Right, but not the mate yet: play it, then the opponent answers and it is your turn again.
+            let played = moves + [step]
+            moves = played
+            selected = nil
+            if let line = puzzle.line, line.indices.contains(ply + 1) {
+                let reply = line[ply + 1]
+                let shownIndex = index
+                waiting = true
+                Task { @MainActor in
+                    try? await Task.sleep(nanoseconds: 700_000_000)
+                    if index == shownIndex && status == .playing && !done {
+                        moves = played + [reply]
+                        waiting = false
+                    }
+                }
+            }
+            return
+        }
+        if let mate = ChessLogic.acceptStep(puzzle, ply: ply, from: current, to: name) {
             let newScore = wrong == 0 ? score + 1 : score
             score = newScore
             answer = mate
+            moves = moves + [mate]
             status = .correct
             selected = nil
             let shownIndex = index
@@ -246,7 +284,11 @@ struct ChessGameView: View {
         selected = nil
         shake()
         if wrong >= maxTries {
-            answer = puzzle.mates.first
+            if let line = puzzle.line, !ChessLogic.isFinalStep(puzzle, ply: ply), line.indices.contains(ply) {
+                answer = line[ply]
+            } else {
+                answer = puzzle.mates.first
+            }
             status = .revealed
             if embedded != nil && index + 1 >= round.count {
                 let shownIndex = index
@@ -288,6 +330,8 @@ struct ChessGameView: View {
         status = .playing
         selected = nil
         answer = nil
+        moves = []
+        waiting = false
     }
 
     private func playAgain() {
@@ -299,6 +343,8 @@ struct ChessGameView: View {
         status = .playing
         selected = nil
         answer = nil
+        moves = []
+        waiting = false
         isBest = false
         done = false
     }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { acceptMove, buildRound, displayOrder, parseFen, puzzlesFor, squareName, type Puzzle } from "./chessLogic";
+import { acceptMove, acceptStep, applyUci, boardAfter, buildRound, displayOrder, isFinalStep, matePlies, parseFen, puzzlesFor, squareIndex, squareName, type Puzzle } from "./chessLogic";
 import { loadChessData } from "./chessData";
 
 const SCHOLAR = "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4";
@@ -106,15 +106,32 @@ describe("chess.json", () => {
 describe("easy and hard", () => {
   const data = loadChessData()!;
 
-  it("has a hard set that is clearly harder than the easy one, with every move a legal mating UCI", () => {
+  it("has a hard set of mates in two and three, clearly harder than the easy one", () => {
     expect(data.puzzles.length).toBeGreaterThanOrEqual(100);
     expect(data.hard!.length).toBeGreaterThanOrEqual(60);
-    expect(Math.min(...data.hard!.map((p) => p.rating))).toBeGreaterThan(Math.max(...data.puzzles.map((p) => p.rating)));
+    const median = (xs: number[]) => [...xs].sort((a, b) => a - b)[Math.floor(xs.length / 2)]!;
+    expect(median(data.hard!.map((p) => p.rating))).toBeGreaterThan(median(data.puzzles.map((p) => p.rating)) + 400);
     expect(new Set(data.hard!.map((p) => p.id)).size).toBe(data.hard!.length);
+    const uci = /^[a-h][1-8][a-h][1-8][qrbn]?$/;
     for (const p of data.hard!) {
-      expect(parseFen(p.fen), p.id).not.toBeNull();
+      const parsed = parseFen(p.fen);
+      expect(parsed, p.id).not.toBeNull();
       expect(p.mates.length, p.id).toBeGreaterThan(0);
-      for (const m of p.mates) expect(/^[a-h][1-8][a-h][1-8][qrbn]?$/.test(m), p.id + " " + m).toBe(true);
+      for (const m of p.mates) expect(uci.test(m), p.id + " " + m).toBe(true);
+      // A line: your move, their reply, your move... ending on a mate of yours.
+      expect(p.line, p.id).toBeDefined();
+      expect([3, 5], p.id).toContain(p.line!.length);
+      expect(p.mates, p.id).toContain(p.line![p.line!.length - 1]);
+      // Replaying it, every move starts on a piece of the right colour.
+      let squares = parsed!.squares;
+      p.line!.forEach((m, i) => {
+        expect(uci.test(m), p.id + " " + m).toBe(true);
+        const piece = squares[squareIndex(m.slice(0, 2))];
+        expect(piece, `${p.id} move ${i + 1}: ${m}`).toBeTruthy();
+        const white = piece === piece!.toUpperCase();
+        expect(white, `${p.id} move ${i + 1} colour`).toBe((i % 2 === 0) === (p.sideToMove === "w"));
+        squares = applyUci(squares, m);
+      });
     }
   });
 
@@ -122,5 +139,51 @@ describe("easy and hard", () => {
     expect(puzzlesFor(data, "easy")).toBe(data.puzzles);
     expect(puzzlesFor(data, "hard")).toBe(data.hard);
     expect(puzzlesFor({ credit: "", puzzles: data.puzzles }, "hard")).toBe(data.puzzles);
+  });
+});
+
+describe("playing a line", () => {
+  it("applies ordinary moves, captures and promotions", () => {
+    const start = parseFen("4k3/P7/8/8/8/8/8/R3K2R w KQ - 0 1")!.squares;
+    const promoted = applyUci(start, "a7a8q");
+    expect(promoted[squareIndex("a8")]).toBe("Q");
+    expect(promoted[squareIndex("a7")]).toBeNull();
+    const rookTakes = applyUci(parseFen("4k3/8/8/8/8/8/p7/R3K3 w - - 0 1")!.squares, "a1a2");
+    expect(rookTakes[squareIndex("a2")]).toBe("R");
+  });
+
+  it("moves the rook when castling and removes the pawn en passant", () => {
+    const board = parseFen("4k3/8/8/3pP3/8/8/8/R3K2R w KQ d6 0 1")!.squares;
+    const kingside = applyUci(board, "e1g1");
+    expect(kingside[squareIndex("g1")]).toBe("K");
+    expect(kingside[squareIndex("f1")]).toBe("R");
+    expect(kingside[squareIndex("h1")]).toBeNull();
+    const queenside = applyUci(board, "e1c1");
+    expect(queenside[squareIndex("d1")]).toBe("R");
+    expect(queenside[squareIndex("a1")]).toBeNull();
+    const enPassant = applyUci(board, "e5d6");
+    expect(enPassant[squareIndex("d6")]).toBe("P");
+    expect(enPassant[squareIndex("d5")]).toBeNull();
+    expect(boardAfter(board, ["e1g1", "e8d8"])[squareIndex("d8")]).toBe("k");
+  });
+
+  const line: Puzzle = { id: "t", fen: "4k3/8/8/8/8/8/8/R3K3 w - - 0 1", sideToMove: "w", mates: ["a1a8"], rating: 1500, line: ["e1d1", "e8d7", "a1a8"] };
+
+  it("counts the moves you play and knows the last one", () => {
+    expect(matePlies(line)).toBe(2);
+    expect(matePlies({ ...line, line: undefined })).toBe(1);
+    expect(isFinalStep(line, 0)).toBe(false);
+    expect(isFinalStep(line, 2)).toBe(true);
+    expect(isFinalStep({ ...line, line: undefined }, 0)).toBe(true);
+  });
+
+  it("accepts only the line before the last move, and any mate on the last", () => {
+    expect(acceptStep(line, 0, "e1", "d1")).toBe("e1d1");
+    expect(acceptStep(line, 0, "a1", "a8")).toBeNull();
+    expect(acceptStep(line, 2, "a1", "a8")).toBe("a1a8");
+    expect(acceptStep(line, 2, "d1", "d2")).toBeNull();
+    const promote: Puzzle = { ...line, line: ["h2h4", "a7a6", "g7g8q"], mates: ["g7g8q"] };
+    expect(acceptStep(promote, 0, "h2", "h4")).toBe("h2h4");
+    expect(acceptStep(promote, 2, "g7", "g8")).toBe("g7g8q");
   });
 });

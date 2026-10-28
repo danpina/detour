@@ -92,4 +92,56 @@ final class ChessTests: XCTestCase {
             XCTAssertFalse(p.mates.isEmpty, p.id)
         }
     }
+
+    // MARK: Mates in two or three
+
+    private func squares(_ fen: String) -> [Character?] { ChessLogic.parseFen(fen)!.squares }
+
+    private func at(_ board: [Character?], _ name: String) -> Character? { board[ChessLogic.squareIndex(name)] }
+
+    func testApplyUciHandlesPromotionCastlingAndEnPassant() {
+        let promoted = ChessLogic.applyUci(squares("4k3/P7/8/8/8/8/8/R3K2R w KQ - 0 1"), "a7a8q")
+        XCTAssertEqual(at(promoted, "a8"), "Q")
+        XCTAssertNil(at(promoted, "a7"))
+
+        let board = squares("4k3/8/8/3pP3/8/8/8/R3K2R w KQ d6 0 1")
+        let kingside = ChessLogic.applyUci(board, "e1g1")
+        XCTAssertEqual(at(kingside, "g1"), "K")
+        XCTAssertEqual(at(kingside, "f1"), "R")
+        XCTAssertNil(at(kingside, "h1"))
+        let queenside = ChessLogic.applyUci(board, "e1c1")
+        XCTAssertEqual(at(queenside, "d1"), "R")
+        XCTAssertNil(at(queenside, "a1"))
+        let enPassant = ChessLogic.applyUci(board, "e5d6")
+        XCTAssertEqual(at(enPassant, "d6"), "P")
+        XCTAssertNil(at(enPassant, "d5"))
+        XCTAssertEqual(at(ChessLogic.boardAfter(board, ["e1g1", "e8d8"]), "d8"), "k")
+    }
+
+    func testALineAcceptsOnlyItsOwnMovesUntilTheLastOne() {
+        let line = ChessPuzzle(id: "t", fen: "4k3/8/8/8/8/8/8/R3K3 w - - 0 1", sideToMove: "w", mates: ["a1a8"], rating: 1500, line: ["e1d1", "e8d7", "a1a8"])
+        XCTAssertEqual(ChessLogic.matePlies(line), 2)
+        XCTAssertEqual(ChessLogic.matePlies(puzzle(mates: ["h5f7"])), 1)
+        XCTAssertFalse(ChessLogic.isFinalStep(line, ply: 0))
+        XCTAssertTrue(ChessLogic.isFinalStep(line, ply: 2))
+        XCTAssertEqual(ChessLogic.acceptStep(line, ply: 0, from: "e1", to: "d1"), "e1d1")
+        XCTAssertNil(ChessLogic.acceptStep(line, ply: 0, from: "a1", to: "a8"))
+        XCTAssertEqual(ChessLogic.acceptStep(line, ply: 2, from: "a1", to: "a8"), "a1a8")
+        XCTAssertNil(ChessLogic.acceptStep(line, ply: 2, from: "d1", to: "d2"))
+    }
+
+    func testHardPuzzlesAreLinesThatReplayWithTheRightColoursMoving() {
+        guard let hard = ChessLogic.load()?.hard, !hard.isEmpty else { return }
+        for p in hard {
+            guard let line = p.line, let parsed = ChessLogic.parseFen(p.fen) else { return XCTFail("a hard puzzle is a line: " + p.id) }
+            XCTAssertTrue([3, 5].contains(line.count), p.id)
+            XCTAssertTrue(p.mates.contains(line[line.count - 1]), p.id)
+            var board = parsed.squares
+            for (i, move) in line.enumerated() {
+                guard let piece = board[ChessLogic.squareIndex(String(move.prefix(2)))] else { return XCTFail("empty start square in " + p.id) }
+                XCTAssertEqual(piece.isUppercase, (i % 2 == 0) == (p.sideToMove == "w"), p.id)
+                board = ChessLogic.applyUci(board, move)
+            }
+        }
+    }
 }

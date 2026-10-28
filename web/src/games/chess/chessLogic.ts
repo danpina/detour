@@ -4,12 +4,17 @@ export type Puzzle = {
   id: string;
   fen: string;
   sideToMove: "w" | "b";
-  /** UCI of every legal move that checkmates. */
+  /** UCI of every legal move that checkmates (for a line: at its last move). */
   mates: string[];
   rating: number;
+  /**
+   * Mate in two or three: your move, the opponent's reply, your next move, and so on. Your last move mates, and any move in `mates`
+   * counts. Left out, the puzzle is a mate in one.
+   */
+  line?: string[];
 };
 
-/** `puzzles` are the easy ones; `hard` is a separate set of busier boards with a single, quiet mating move. */
+/** `puzzles` are the easy ones (mate in one); `hard` are mates in two or three from real games. */
 export type ChessData = { credit: string; puzzles: Puzzle[]; hard?: Puzzle[] };
 
 export type ChessLevel = "easy" | "hard";
@@ -117,4 +122,63 @@ export function buildRound(puzzles: Puzzle[], rand: () => number = Math.random, 
 
 export function moveSquares(uci: string): { from: string; to: string } {
   return { from: uci.slice(0, 2), to: uci.slice(2, 4) };
+}
+
+// ---------- mates in two or three ----------
+
+/** Board index (0 = a8) of a square name like "e4". */
+export function squareIndex(name: string): number {
+  return (8 - Number(name[1])) * 8 + (name.charCodeAt(0) - 97);
+}
+
+/**
+ * The board after one move in UCI ("e2e4", "e7e8q"). The moves come from a puzzle's solution, so they are not checked for legality;
+ * castling, en passant and promotion are handled so the board stays right.
+ */
+export function applyUci(squares: (string | null)[], uci: string): (string | null)[] {
+  const next = [...squares];
+  const from = squareIndex(uci.slice(0, 2));
+  const to = squareIndex(uci.slice(2, 4));
+  const piece = next[from];
+  if (!piece) return next;
+  const white = piece === piece.toUpperCase();
+  const lower = piece.toLowerCase();
+  const sameRankStart = Math.floor(from / 8) * 8;
+  if (lower === "p" && from % 8 !== to % 8 && next[to] === null) next[sameRankStart + (to % 8)] = null; // en passant
+  if (lower === "k" && Math.abs((to % 8) - (from % 8)) === 2) {
+    const kingside = to % 8 > from % 8;
+    const rookFrom = sameRankStart + (kingside ? 7 : 0);
+    const rookTo = sameRankStart + (kingside ? 5 : 3);
+    next[rookTo] = next[rookFrom] ?? null;
+    next[rookFrom] = null;
+  }
+  const promo = uci[4];
+  next[to] = promo ? (white ? promo.toUpperCase() : promo.toLowerCase()) : piece;
+  next[from] = null;
+  return next;
+}
+
+/** The board after all of `moves` have been played from the starting squares. */
+export function boardAfter(squares: (string | null)[], moves: readonly string[]): (string | null)[] {
+  return moves.reduce(applyUci, squares);
+}
+
+/** How many moves you play to mate: 1 for a mate in one, 2 or 3 for a line. */
+export function matePlies(puzzle: Puzzle): number {
+  return puzzle.line ? Math.ceil(puzzle.line.length / 2) : 1;
+}
+
+/** Whether the move at `ply` (moves played so far, including replies) is your mating move. */
+export function isFinalStep(puzzle: Puzzle, ply: number): boolean {
+  return !puzzle.line || ply >= puzzle.line.length - 1;
+}
+
+/**
+ * The move to play for a from/to tap at `ply`, or null if it is not the right one. The last move may be any mate; earlier moves must be
+ * the puzzle's own, because only they lead where the line goes. A promotion that is not named defaults to a queen.
+ */
+export function acceptStep(puzzle: Puzzle, ply: number, from: string, to: string): string | null {
+  if (isFinalStep(puzzle, ply)) return acceptMove(puzzle, from, to);
+  const expected = puzzle.line?.[ply];
+  return expected !== undefined && expected.slice(0, 4) === from + to ? expected : null;
 }

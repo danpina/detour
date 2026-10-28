@@ -51,7 +51,7 @@ function logicProgress(): string | null {
 }
 
 export const GAMES: GameDef[] = [
-  { id: "chess", name: "Chess tactics", blurb: "Find the checkmate in one", emoji: "♟️", Component: ChessGame },
+  { id: "chess", name: "Chess tactics", blurb: "Find the checkmate, in one move or more", emoji: "♟️", Component: ChessGame },
   { id: "patterns", name: "What comes next?", blurb: "Spot the pattern in a sequence", emoji: "🔢", Component: PatternsGame },
   { id: "words", name: "Word scramble", blurb: "Unscramble the word", emoji: "🔤", Component: WordsGame },
   { id: "geo", name: "Geography", blurb: "Flags, capitals and more", emoji: "🌍", Component: GeoGame, learn: true },
