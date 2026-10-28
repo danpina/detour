@@ -66,3 +66,24 @@ test("progress and settings work after a set", async ({ page }) => {
   await page.getByRole("button", { name: "Export progress" }).click();
   expect((await download).suggestedFilename()).toMatch(/^detour-progress-\d{4}-\d{2}-\d{2}\.json$/);
 });
+
+test("pick something specific: the skills page and a round of one math skill", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Not now" }).click();
+  for (const name of ["History", "Science", "Tech"]) await page.getByRole("button", { name }).first().click();
+  await page.getByRole("button", { name: "Show me a quick one" }).click();
+  await playSet(page);
+  await page.getByRole("button", { name: "Pick another round" }).click();
+
+  await page.getByRole("button", { name: "Pick something specific" }).click();
+  await page.getByRole("tab", { name: "Math" }).click();
+  await page.getByRole("button", { name: /Choose your skills/ }).click();
+  await expect(page.getByRole("heading", { name: "Your math skills" })).toBeVisible();
+  await page.getByRole("switch", { name: /Estimation/ }).click();
+  await page.getByRole("button", { name: "Done" }).click();
+  await page.getByRole("tab", { name: "Math" }).click();
+  await expect(page.getByText("10 of 11 on in your rounds")).toBeVisible();
+
+  await page.getByRole("button", { name: /Geometry/ }).click();
+  await expect(page.getByText("Drill · Geometry")).toBeVisible();
+});

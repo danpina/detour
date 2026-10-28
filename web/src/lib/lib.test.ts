@@ -83,7 +83,7 @@ describe("the three rounds", () => {
     expect(pickGames(100)).toHaveLength(GAME_IDS.length);
   });
 
-  it("a math round has exactly as many problems as the round length, split over mental math and one other skill", () => {
+  it("a math round mixes the skills, least recently practised first, one problem each", () => {
     const skills = [
       { track_id: "mental-math" as const, level: 4, recent_results: [], attempts_total: 0, last_at: 5 },
       { track_id: "estimation" as const, level: 2, recent_results: [], attempts_total: 0, last_at: 1 },
@@ -92,8 +92,11 @@ describe("the three rounds", () => {
     ];
     const items = mathRound(skills, 5, () => 7);
     expect(items).toEqual([
-      { kind: "drill", drill: { track: "mental-math", level: 4, seed: 7, count: 3 } },
-      { kind: "drill", drill: { track: "estimation", level: 2, seed: 7, count: 2 } },
+      { kind: "drill", drill: { track: "estimation", level: 2, seed: 7, count: 1 } },
+      { kind: "drill", drill: { track: "mental-math", level: 4, seed: 7, count: 1 } },
+      { kind: "drill", drill: { track: "algebra", level: 3, seed: 7, count: 1 } },
+      { kind: "drill", drill: { track: "geometry", level: 1, seed: 7, count: 1 } },
+      { kind: "drill", drill: { track: "probability", level: 1, seed: 7, count: 1 } },
     ]);
     for (const size of [1, 2, 3, 5, 8, 12]) {
       const round = mathRound(skills, size, () => 11);
@@ -107,11 +110,11 @@ describe("the three rounds", () => {
 });
 
 describe("math rounds and switched-off skills", () => {
-  it("never pick a skill that is switched off, and fall back to mental math alone", () => {
-    const off = ["geometry", "probability", "number-theory", "money", "fractions", "sequences", "rates", "estimation"];
+  it("never pick a skill that is switched off, and go round again when there are more problems than skills", () => {
+    const off = ["geometry", "probability", "number-theory", "money", "fractions", "sequences", "rates", "estimation", "mental-math"];
     const items = mathRound([], 5, () => 1, off);
-    expect(items.map((x) => (x.kind === "drill" ? x.drill.track : ""))).toEqual(["mental-math", "algebra"]);
-    const everything = [...off, "algebra", "statistics"];
-    expect(mathRound([], 5, () => 3, everything)).toEqual([{ kind: "drill", drill: { track: "mental-math", level: 1, seed: 3, count: 5 } }]);
+    expect(items.map((x) => (x.kind === "drill" ? [x.drill.track, x.drill.count] : []))).toEqual([["algebra", 3], ["statistics", 2]]);
+    const one = [...off, "algebra"];
+    expect(mathRound([], 5, () => 3, one)).toEqual([{ kind: "drill", drill: { track: "statistics", level: 1, seed: 3, count: 5 } }]);
   });
 });

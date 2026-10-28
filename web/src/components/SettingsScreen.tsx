@@ -4,7 +4,7 @@ import type { Interest } from "@detour/content";
 import { backupFileName, buildBackup, parseBackup } from "../lib/backup";
 import { analyticsEnabled, setAnalyticsEnabled } from "../analytics";
 import { store } from "../lib/db";
-import { TRACKS, TRACK_IDS } from "../lib/drills";
+import { TRACK_IDS } from "../lib/drills";
 import { setLastBackup } from "../lib/home";
 import { isInstalled } from "../lib/install";
 import { buildReminderIcs, parseTime } from "../lib/reminder";
@@ -13,9 +13,9 @@ import { SEND_BACK_REASONS, clearSendBack, exportSendBack, getSendBack, isReview
 const box = "rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900";
 const btn = "w-full rounded-xl border border-neutral-300 px-4 py-3 text-left font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-800";
 
-type Props = { interests: Interest[]; onChangeInterests: () => void; onDataChanged: () => void };
+type Props = { interests: Interest[]; onChangeInterests: () => void; onOpenMathSkills: () => void; onDataChanged: () => void };
 
-export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: Props) {
+export function SettingsScreen({ interests, onChangeInterests, onOpenMathSkills, onDataChanged }: Props) {
   const [msg, setMsg] = useState<{ text: string; error?: boolean } | null>(null);
   const file = useRef<HTMLInputElement>(null);
   const [shareStats, setShareStats] = useState(analyticsEnabled());
@@ -185,31 +185,9 @@ export function SettingsScreen({ interests, onChangeInterests, onDataChanged }: 
       </section>
 
       <section className={`${box} mt-4`}>
-        <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Math round skills</h2>
-        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">Mental math is always part of a math round. Choose which other skills can join it.</p>
-        <ul className="mt-3 space-y-1">
-          {TRACK_IDS.filter((id) => id !== "mental-math").map((id) => (
-            <li key={id}>
-              <label className="flex min-h-11 items-center justify-between gap-3">
-                <span>
-                  {TRACKS[id].name}
-                  <span className="block text-xs text-neutral-500 dark:text-neutral-400">{TRACKS[id].blurb}</span>
-                </span>
-                <input
-                  type="checkbox"
-                  className="h-5 w-5 accent-teal-600"
-                  checked={!mathOff.includes(id)}
-                  onChange={async (e) => {
-                    const next = e.target.checked ? mathOff.filter((t) => t !== id) : [...mathOff, id];
-                    setMathOff(next);
-                    const s = await store.getSettings();
-                    if (s) await store.saveSettings({ ...s, math_off: next });
-                  }}
-                />
-              </label>
-            </li>
-          ))}
-        </ul>
+        <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Math skills</h2>
+        <p className="mt-2">{TRACK_IDS.length - mathOff.length} of {TRACK_IDS.length} skills on</p>
+        <button onClick={onOpenMathSkills} className={`${btn} mt-3`}>Choose math skills</button>
       </section>
 
       <section className={`${box} mt-4`}>

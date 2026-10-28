@@ -5,18 +5,18 @@ import type { RoundKind } from "../lib/session";
 import { isReviewer, seenInReview } from "../lib/reviewer";
 import { canPromptInstall, dismissInstall, installDismissed, installHint, isInstalled, isIos, promptInstall, type InstallHint } from "../lib/install";
 
-type Props = { onStart: (round: RoundKind) => void; onOpenSettings: () => void; onOpenProgress: () => void; onReview: () => void };
+type Props = { onStart: (round: RoundKind) => void; onPick: () => void; onOpenSettings: () => void; onOpenProgress: () => void; onReview: () => void };
 
 const ROUNDS: { kind: RoundKind; emoji: string; title: string; blurb: (info: HomeInfo | null) => string }[] = [
   { kind: "learning", emoji: "📚", title: "Learning round", blurb: (i) => {
     const n = i?.roundSize ?? 5;
     return i && i.dueCount > 0 ? `${n} small cards. ${i.dueCount} to check if they stuck.` : `${n} small cards to learn something new.`;
   } },
-  { kind: "math", emoji: "🔢", title: "Math round", blurb: (i) => `${i?.roundSize ?? 5} quick problems · level ${i?.mathLevel ?? 1}` },
+  { kind: "math", emoji: "🔢", title: "Math round", blurb: (i) => `${i?.roundSize ?? 5} quick problems, a mix of your skills` },
   { kind: "games", emoji: "🎮", title: "Game round", blurb: (i) => `${i?.roundSize ?? 5} quick games: language, map, chess and more.` },
 ];
 
-export function HomeScreen({ onStart, onOpenSettings, onOpenProgress, onReview }: Props) {
+export function HomeScreen({ onStart, onPick, onOpenSettings, onOpenProgress, onReview }: Props) {
   const [info, setInfo] = useState<HomeInfo | null>(null);
   const [hint, setHint] = useState<InstallHint>(null);
 
@@ -56,6 +56,14 @@ export function HomeScreen({ onStart, onOpenSettings, onOpenProgress, onReview }
           </button>
         ))}
       </div>
+
+      <button
+        onClick={onPick}
+        className="mt-3 flex w-full items-center justify-between rounded-2xl border border-neutral-300 px-4 py-3 text-left font-medium active:scale-[0.99] dark:border-neutral-700"
+      >
+        <span>Pick something specific</span>
+        <span aria-hidden="true" className="text-neutral-400">›</span>
+      </button>
 
       {isReviewer() && (
         <button onClick={onReview} disabled={toReview === 0} className="mt-5 rounded-2xl border-2 border-rose-500 px-4 py-3 text-sm font-medium text-rose-700 disabled:opacity-50 dark:text-rose-300">

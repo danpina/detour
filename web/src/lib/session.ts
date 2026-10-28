@@ -1,7 +1,7 @@
 import type { Interest } from "@detour/content";
 import { ALL_CARDS } from "./content";
-import { emptyProgress, applyResults, nextTrack, TRACK_IDS, type SkillProgress, type TrackId } from "./drills";
-import { buildSession, engagementFrom, DEFAULT_SET_SIZE, type SessionItem } from "./engine";
+import { emptyProgress, applyResults, TRACK_IDS, type SkillProgress, type TrackId } from "./drills";
+import { buildSession, dueReviews, engagementFrom, DEFAULT_SET_SIZE, type SessionItem } from "./engine";
 
 /** When each card was last shown, from the local view events. */
 export function lastShownFrom(events: { card_id: string; event: string; at: number }[]): Map<string, number> {
@@ -32,8 +32,8 @@ export function pickGames(count = DEFAULT_SET_SIZE, rng: () => number = Math.ran
 }
 
 /**
- * A math round of `size` problems: a mental-math drill, then one more skill (the one practised least recently), each at the
- * player's level. The problems are split between the two, the first getting the extra one when the size is odd.
+ * A math round of `size` problems, mixed across the skills that are on: one problem per skill, the one practised least recently
+ * first (never-practised ones before that), each at the player's level in it. With more problems than skills it goes round again.
  */
 export function mathRound(
   skills: SkillProgress[],
@@ -42,30 +42,45 @@ export function mathRound(
   off: readonly string[] = [],
 ): SessionItem[] {
   const levelOf = (track: TrackId) => skills.find((s) => s.track_id === track)?.level ?? 1;
-  // Tracks the player switched off in Settings never join; mental math is always in. With every other track off, a round is all mental math.
-  const others = TRACK_IDS.filter((t) => t !== "mental-math" && !off.includes(t));
-  const second = others.length > 0 ? nextTrack(skills, others) : null;
-  const first = second ? Math.ceil(size / 2) : size;
-  const counts: [TrackId, number][] = second ? [["mental-math", first], [second, size - first]] : [["mental-math", first]];
-  return counts
-    .filter(([, count]) => count > 0)
-    .map(([track, count]) => ({ kind: "drill" as const, drill: { track, level: levelOf(track), seed: seed(), count } }));
+  const lastAt = (track: TrackId) => skills.find((s) => s.track_id === track)?.last_at ?? 0;
+  // Skills switched off never join. With every one off (the settings page does not allow it), all of them count.
+  const on = TRACK_IDS.filter((t) => !off.includes(t));
+  const ranked = [...(on.length > 0 ? on : TRACK_IDS)].sort((a, b) => lastAt(a) - lastAt(b));
+  const counts = new Map<TrackId, number>();
+  for (let i = 0; i < size; i++) {
+    const track = ranked[i % ranked.length]!;
+    counts.set(track, (counts.get(track) ?? 0) + 1);
+  }
+  return ranked
+    .filter((track) => counts.has(track))
+    .map((track) => ({ kind: "drill" as const, drill: { track, level: levelOf(track), seed: seed(), count: counts.get(track)! } }));
 }
 
+/** What a round from "Pick something specific" is about: some topics, only the cards due for review, or one math skill. */
+export type Specific = { kind: "topics"; topics: Interest[] } | { kind: "due" } | { kind: "skill"; track: TrackId };
+
 /** Loads local history and builds the next round of the given kind. Used for quick rounds and for each page of the free-scroll feed. */
-export async function nextSet(interests: Interest[], kind: RoundKind = "learning", sizeOverride?: number): Promise<SessionItem[]> {
+export async function nextSet(interests: Interest[], kind: RoundKind = "learning", sizeOverride?: number, specific?: Specific): Promise<SessionItem[]> {
   // One setting sets the length of every round: N cards, N math problems or N games.
   const settings = await store.getSettings();
   const setSize = sizeOverride ?? settings?.set_size ?? DEFAULT_SET_SIZE;
+  if (specific?.kind === "skill") {
+    const level = (await store.getSkills()).find((s) => s.track_id === specific.track)?.level ?? 1;
+    return [{ kind: "drill", drill: { track: specific.track, level, seed: Math.floor(Math.random() * 2 ** 31), count: setSize } }];
+  }
   if (kind === "games") return pickGames(setSize).map((game) => ({ kind: "game" as const, game }));
   if (kind === "math") return mathRound(await store.getSkills(), setSize, undefined, settings?.math_off ?? []);
   const [reviews, completed, events] = await Promise.all([store.getReviews(), store.completedCardIds(), store.getEvents()]);
+  if (specific?.kind === "due") {
+    return dueReviews(ALL_CARDS, reviews, Date.now()).slice(0, setSize).map((r) => ({ kind: "review" as const, ...r }));
+  }
+  const topics = specific?.kind === "topics" ? specific.topics : null;
   // A learning round is cards only: reviews of what you learned, and new cards from your topics.
   return buildSession({
-    cards: ALL_CARDS,
+    cards: topics ? ALL_CARDS.filter((c) => topics.includes(c.interest)) : ALL_CARDS,
     reviews,
     completed,
-    interests,
+    interests: topics ?? interests,
     engagement: engagementFrom(events, ALL_CARDS),
     lastShown: lastShownFrom(events),
     now: Date.now(),

@@ -5,7 +5,9 @@ import { EndScreen } from "./components/EndScreen";
 import { GamesScreen } from "./components/GamesScreen";
 import { HomeScreen } from "./components/HomeScreen";
 import { FirstRun } from "./components/FirstRun";
+import { MathSkillsScreen } from "./components/MathSkillsScreen";
 import { Onboarding } from "./components/Onboarding";
+import { PickScreen } from "./components/PickScreen";
 import { ProgressScreen } from "./components/ProgressScreen";
 import { SessionView } from "./components/SessionView";
 import { SettingsScreen } from "./components/SettingsScreen";
@@ -16,12 +18,14 @@ import type { SessionItem } from "./lib/engine";
 import { EVENT_RETENTION_DAYS } from "./lib/progress";
 import { ALL_CARDS } from "./lib/content";
 import { seenInReview } from "./lib/reviewer";
-import { nextSet, type RoundKind } from "./lib/session";
+import { nextSet, type RoundKind, type Specific } from "./lib/session";
 
 type Screen =
   | { name: "loading" }
   | { name: "onboarding" }
   | { name: "interests" }
+  | { name: "pick" }
+  | { name: "skills"; back: "settings" | "pick" }
   | { name: Tab }
   | { name: "session"; items: SessionItem[]; run: number; feed: boolean; round: RoundKind; dryRun?: boolean }
   | { name: "end"; learned: number; round: RoundKind };
@@ -52,8 +56,9 @@ export function App() {
   }, [load]);
 
   /** Starts a round (learning, math or games); in feed mode the next set follows seamlessly (free scroll = same engine, endless). */
-  const startSet = useCallback(async (ints: Interest[], feed: boolean, round: RoundKind = "learning") => {
-    const items = await nextSet(ints, round);
+  const startSet = useCallback(async (ints: Interest[], feed: boolean, round: RoundKind = "learning", specific?: Specific) => {
+    const items = await nextSet(ints, round, undefined, specific);
+    if (items.length === 0) return;
     track("session.started", { mode: feed ? "feed" : "set", cards: items.length });
     setScreen((s) => ({ name: "session", items, feed, round, run: (s.name === "session" ? s.run : 0) + 1 }));
   }, []);
@@ -94,14 +99,29 @@ export function App() {
 
         {screen.name === "interests" && <Onboarding initial={interests} editing onDone={saveInterests} onCancel={() => setScreen({ name: "settings" })} />}
 
-        {screen.name === "home" && <HomeScreen onReview={startReview} onStart={(round) => startSet(interests, false, round)} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
+        {screen.name === "home" && <HomeScreen onReview={startReview} onStart={(round) => startSet(interests, false, round)} onPick={() => setScreen({ name: "pick" })} onOpenSettings={() => setScreen({ name: "settings" })} onOpenProgress={() => setScreen({ name: "progress" })} />}
+
+        {screen.name === "pick" && (
+          <PickScreen
+            onBack={() => setScreen({ name: "home" })}
+            onStartTopic={(topic) => void startSet(interests, false, "learning", { kind: "topics", topics: [topic] })}
+            onStartDue={() => void startSet(interests, false, "learning", { kind: "due" })}
+            onStartSkill={(skill) => void startSet(interests, false, "math", { kind: "skill", track: skill })}
+            onOpenGames={() => setScreen({ name: "games" })}
+            onOpenSkills={() => setScreen({ name: "skills", back: "pick" })}
+          />
+        )}
+
+        {screen.name === "skills" && (
+          <MathSkillsScreen backLabel={screen.back === "pick" ? "Pick something specific" : "Settings"} onBack={() => setScreen(screen.back === "pick" ? { name: "pick" } : { name: "settings" })} />
+        )}
 
         {screen.name === "games" && <GamesScreen />}
 
         {screen.name === "progress" && <ProgressScreen />}
 
         {screen.name === "settings" && (
-          <SettingsScreen interests={interests} onChangeInterests={() => setScreen({ name: "interests" })} onDataChanged={() => void load()} />
+          <SettingsScreen interests={interests} onChangeInterests={() => setScreen({ name: "interests" })} onOpenMathSkills={() => setScreen({ name: "skills", back: "settings" })} onDataChanged={() => void load()} />
         )}
 
         {screen.name === "session" && (
