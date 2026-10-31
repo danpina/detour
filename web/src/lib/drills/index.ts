@@ -15,7 +15,8 @@ export type TrackId =
   | "mental-math" | "algebra" | "geometry" | "probability" | "number-theory" | "money"
   | "fractions" | "statistics" | "sequences" | "rates" | "estimation";
 /** `count` is how many problems the round has; left out, the track's usual number. */
-export type DrillSpec = { track: TrackId; level: number; seed: number; count?: number };
+/** `practice` rounds are for trying a level: they do not count toward moving up. */
+export type DrillSpec = { track: TrackId; level: number; seed: number; count?: number; practice?: boolean };
 export type { Problem };
 
 export const TRACKS: Record<TrackId, { name: string; blurb: string; levels: readonly string[]; maxLevel: number; problems: number; timeLimitMs?: number }> = {

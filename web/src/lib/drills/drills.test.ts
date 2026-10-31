@@ -304,8 +304,9 @@ describe("algebra and calculus", () => {
   };
 
   it("has the levels it says, and every answer is a whole number that matches its prompt", () => {
-    expect(TRACKS.algebra.maxLevel).toBe(10);
-    for (let level = 1; level <= TRACKS.algebra.maxLevel; level++) {
+    expect(TRACKS.algebra.maxLevel).toBe(20);
+    // The first ten levels are solved here from the prompt alone; the later ones are checked below.
+    for (let level = 1; level <= 10; level++) {
       for (let seed = 1; seed <= 200; seed++) {
         const round = generateRound({ track: "algebra", level, seed });
         expect(round.length).toBe(3);
@@ -326,7 +327,7 @@ describe("geometry, probability, number theory and money tracks", () => {
   it("have a name for every level, and statistics has the most", () => {
     for (const track of NEW) {
       expect(TRACKS[track].levels, track).toHaveLength(TRACKS[track].maxLevel);
-      expect(TRACKS[track].maxLevel, track).toBe(track === "statistics" ? 24 : 10);
+      expect(TRACKS[track].maxLevel, track).toBe(track === "statistics" ? 24 : 20);
     }
   });
 
@@ -338,6 +339,13 @@ describe("geometry, probability, number theory and money tracks", () => {
           expect(round.length, `${track} ${level}`).toBe(3);
           for (const p of round) {
             expect(Number.isInteger(p.answer) && p.answer >= 0, `${p.prompt} = ${p.answer}`).toBe(true);
+            if (p.choices) {
+              // Multiple choice: the answer is the index of the right option; the options are different and few.
+              expect(p.choices.length, p.prompt).toBeGreaterThanOrEqual(2);
+              expect(p.choices.length, p.prompt).toBeLessThanOrEqual(4);
+              expect(new Set(p.choices).size, p.prompt).toBe(p.choices.length);
+              expect(p.answer, p.prompt).toBeLessThan(p.choices.length);
+            }
             expect(p.prompt, p.prompt).not.toMatch(/NaN|undefined|Infinity/);
             expect(p.hint ?? "", p.prompt).not.toMatch(/NaN|undefined|Infinity/);
             expect(judge(track, p, String(p.answer)).correct).toBe(true);
@@ -417,6 +425,82 @@ describe("statistics answers match the textbook definitions", () => {
       const [, sick, sens, fp] = /(\d+) have a condition.*catches (\d+)%.*flags (\d+)%/.exec(p.prompt)!.map(Number) as [number, number, number, number];
       const real = (sick * sens) / 100, fake = ((1000 - sick) * fp) / 100;
       expect(p.answer).toBeCloseTo((100 * real) / (real + fake), 10);
+    }
+  });
+});
+
+describe("the later levels check themselves", () => {
+  const first = (track: Parameters<typeof generateRound>[0]["track"], level: number, seed: number) => generateRound({ track, level, seed, count: 1 })[0]!;
+  const nums = (text: string) => (text.match(/\d+/g) ?? []).map(Number);
+
+  it("has about twenty levels in each skill, and some multiple-choice and true-or-false ones", () => {
+    let withChoices = 0;
+    for (const track of ["algebra", "geometry", "probability", "number-theory", "money", "fractions", "sequences", "rates"] as const) {
+      expect(TRACKS[track].maxLevel, track).toBe(20);
+      expect(new Set(TRACKS[track].levels).size, track).toBe(20);
+      for (let seed = 1; seed <= 20; seed++) if (first(track, 20, seed).choices || first(track, 16, seed).choices) withChoices++;
+    }
+    expect(withChoices).toBeGreaterThan(20);
+  });
+
+  it("algebra: two unknowns, brackets, expanding, cubics and integrals", () => {
+    for (let seed = 1; seed <= 100; seed++) {
+      let p = first("algebra", 13, seed);
+      let [a, b, c] = nums(p.prompt) as [number, number, number];
+      expect(a * (p.answer + b)).toBe(c);
+      p = first("algebra", 15, seed);
+      [a, b] = nums(p.prompt) as [number, number];
+      expect(p.answer + (a - p.answer)).toBe(a);
+      expect(p.answer - (a - p.answer)).toBe(b);
+      p = first("algebra", 20, seed);
+      [c, a, b] = nums(p.prompt).slice(1) as [number, number, number];
+      expect(p.answer).toBeCloseTo((a * c * c) / 2 + b * c, 10);
+    }
+  });
+
+  it("geometry: the right-triangle levels use real triples", () => {
+    for (let seed = 1; seed <= 100; seed++) {
+      const p = first("geometry", 15, seed);
+      const [x, y] = nums(p.prompt) as [number, number];
+      expect(p.answer ** 2).toBe(x * x + y * y);
+      const q = first("geometry", 20, seed);
+      const n = nums(q.prompt) as number[];
+      expect(q.answer ** 2).toBe((n[2]! - n[0]!) ** 2 + (n[3]! - n[1]!) ** 2);
+      const t = first("geometry", 16, seed);
+      const [s1, s2, s3] = nums(t.prompt) as [number, number, number];
+      expect(t.answer).toBe(s1 * s1 + s2 * s2 === s3 * s3 ? 0 : 1);
+    }
+  });
+
+  it("number theory: primes, sums of primes, squares, binary and hex", () => {
+    const isPrime = (n: number) => n > 1 && Array.from({ length: Math.floor(Math.sqrt(n)) - 1 }, (_, i) => i + 2).every((d) => n % d !== 0);
+    for (let seed = 1; seed <= 100; seed++) {
+      const p = first("number-theory", 11, seed);
+      expect(p.answer).toBe(isPrime(nums(p.prompt)[0]!) ? 0 : 1);
+      const q = first("number-theory", 15, seed);
+      const [x, y] = q.prompt.match(/[01]+/g)!.map((b) => parseInt(b, 2)) as [number, number];
+      expect(parseInt(String(q.answer), 2)).toBe(x + y);
+      const h = first("number-theory", 16, seed);
+      const [hx, hy] = (h.prompt.match(/0x([0-9A-F]+)/g) ?? []).map((m) => parseInt(m.slice(2), 16)) as [number, number];
+      expect(h.answer).toBe(hx + hy);
+      const sq = first("number-theory", 13, seed);
+      expect(sq.answer ** 2).toBeLessThanOrEqual(nums(sq.prompt)[1]!);
+      expect((sq.answer + 1) ** 2).toBeGreaterThan(nums(sq.prompt)[1]!);
+      const d = first("number-theory", 17, seed);
+      expect(Number(d.choices![d.answer]) % 9).toBe(0);
+      expect(d.choices!.filter((c) => Number(c) % 9 === 0)).toHaveLength(1);
+    }
+  });
+
+  it("money and fractions: the deal and the comparison point to the right option", () => {
+    for (let seed = 1; seed <= 100; seed++) {
+      const m = first("money", 12, seed);
+      const [nA, pA, nB, pB] = nums(m.prompt.replace("Pack A", "").replace("Pack B", "")) as [number, number, number, number];
+      expect(m.answer).toBe(pA / nA < pB / nB ? 0 : 1);
+      const f = first("fractions", 13, seed);
+      const [a, b] = f.choices![0]!.split("/").map(Number) as [number, number];
+      const [c, d] = f.choices![1]!.split("/").map(Number) as [number, number];
+      expect(f.answer).toBe(a * d > c * b ? 0 : 1);
     }
   });
 });

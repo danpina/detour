@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { INTERESTS } from "@detour/content";
 import { INTEREST_INFO } from "../lib/content";
+import type { TrackId } from "../lib/drills";
 import { LONG_TERM_DAYS, type CardState } from "../lib/progress";
 import { saveRecapImage } from "../lib/recapImage";
 import { markRecapSeen } from "../lib/home";
@@ -25,7 +26,7 @@ const DOT: Record<CardState, string> = {
 
 const card = "rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900";
 
-export function ProgressScreen({ onOpenLearned }: { onOpenLearned: () => void }) {
+export function ProgressScreen({ onOpenLearned, onOpenSkill }: { onOpenLearned: () => void; onOpenSkill: (track: TrackId) => void }) {
   const [data, setData] = useState<Data | null>(null);
   const [saved, setSaved] = useState("");
   const [section, setSection] = useState<Section>("learning");
@@ -151,7 +152,7 @@ export function ProgressScreen({ onOpenLearned }: { onOpenLearned: () => void })
         <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Your math levels</h2>
         <div className="mt-3 space-y-4">
           {skills.map((s) => (
-            <div key={s.id}>
+            <button key={s.id} onClick={() => onOpenSkill(s.id)} className="block w-full text-left" aria-label={`${s.name}: see all levels`}>
               <div className="flex items-baseline justify-between">
                 <span className="font-medium">{s.name}</span>
                 <span className="text-sm">Level {s.level}<span className="text-neutral-500"> / {s.maxLevel}</span></span>
@@ -163,7 +164,8 @@ export function ProgressScreen({ onOpenLearned }: { onOpenLearned: () => void })
               <div className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
                 {s.recentTotal ? `${s.recentRight} of ${s.recentTotal} recent answers right (level up at 80% over 20)` : "Practise in a Math round"}
               </div>
-            </div>
+              <div className="mt-1 text-xs font-medium text-teal-700 dark:text-teal-300">All levels ›</div>
+            </button>
           ))}
         </div>
       </section>

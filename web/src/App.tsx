@@ -10,6 +10,7 @@ import { MathSkillsScreen } from "./components/MathSkillsScreen";
 import { Onboarding } from "./components/Onboarding";
 import { PickScreen } from "./components/PickScreen";
 import { ProgressScreen } from "./components/ProgressScreen";
+import { SkillScreen } from "./components/SkillScreen";
 import { SessionView } from "./components/SessionView";
 import { SettingsScreen } from "./components/SettingsScreen";
 import { Toaster, toast } from "./components/Toast";
@@ -19,6 +20,7 @@ import type { SessionItem } from "./lib/engine";
 import { EVENT_RETENTION_DAYS } from "./lib/progress";
 import { ALL_CARDS } from "./lib/content";
 import { seenInReview } from "./lib/reviewer";
+import type { TrackId } from "./lib/drills";
 import { nextSet, type RoundKind, type Specific } from "./lib/session";
 
 type Screen =
@@ -27,6 +29,7 @@ type Screen =
   | { name: "interests" }
   | { name: "pick" }
   | { name: "learned" }
+  | { name: "skill"; track: TrackId }
   | { name: "skills"; back: "settings" | "pick" }
   | { name: Tab }
   | { name: "session"; items: SessionItem[]; run: number; feed: boolean; round: RoundKind; dryRun?: boolean }
@@ -120,7 +123,15 @@ export function App() {
 
         {screen.name === "games" && <GamesScreen />}
 
-        {screen.name === "progress" && <ProgressScreen onOpenLearned={() => setScreen({ name: "learned" })} />}
+        {screen.name === "progress" && <ProgressScreen onOpenLearned={() => setScreen({ name: "learned" })} onOpenSkill={(track) => setScreen({ name: "skill", track })} />}
+
+        {screen.name === "skill" && (
+          <SkillScreen
+            track={screen.track}
+            onBack={() => setScreen({ name: "progress" })}
+            onStart={(level) => void startSet(interests, false, "math", { kind: "skill", track: screen.track, ...(level ? { level } : {}) })}
+          />
+        )}
 
         {screen.name === "learned" && <LearnedScreen onBack={() => setScreen({ name: "progress" })} />}
 

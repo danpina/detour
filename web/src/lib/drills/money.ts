@@ -12,6 +12,16 @@ export const MONEY_LEVELS = [
   "Percent up and down",
   "Simple interest",
   "Compound interest, two years",
+  "Sales tax",
+  "The better deal",
+  "Profit as a percent",
+  "Break-even",
+  "Monthly payments",
+  "Exchanging currency",
+  "The rule of 72",
+  "Inflation",
+  "Overtime pay",
+  "Which loan costs less?",
 ] as const;
 
 type Gen = (r: Rng) => Problem;
@@ -74,6 +84,80 @@ const GENERATORS: Gen[] = [
       prompt: `$${hundreds * 100} grows ${rate}% a year, compounded. How much after 2 years?`,
       answer: (hundreds * (100 + rate) * (100 + rate)) / 100,
       hint: `Grow it twice: times ${(100 + rate) / 100} and times ${(100 + rate) / 100} again. The second year earns interest on the first.`,
+    };
+  },
+
+  // 11
+  (r) => {
+    const price = 20 * r.int(2, 15), tax = r.pick([10, 20, 25] as const);
+    return { prompt: `$${price} plus ${tax}% tax. The total?`, answer: price + (price * tax) / 100, hint: `${tax}% of ${price} is ${(price * tax) / 100}. Add it on.` };
+  },
+  // 12
+  (r) => {
+    const aCheaper = r.next() < 0.5;
+    const nA = r.pick([4, 6, 8, 10] as const), nB = r.pick([3, 5, 6, 12] as const);
+    const base = r.int(2, 8), diff = r.int(1, 2);
+    const uA = aCheaper ? base : base + diff, uB = aCheaper ? base + diff : base;
+    return {
+      prompt: `Pack A: ${nA} for $${nA * uA}. Pack B: ${nB} for $${nB * uB}. Which is cheaper per item?`,
+      choices: ["Pack A", "Pack B"],
+      answer: aCheaper ? 0 : 1,
+      hint: `A costs $${uA} each and B costs $${uB} each.`,
+    };
+  },
+  // 13
+  (r) => {
+    const cost = 20 * r.int(2, 10), pct = r.pick([10, 20, 25, 50] as const);
+    return { prompt: `Bought for $${cost}, sold for $${cost + (cost * pct) / 100}. The profit as a percent of the cost?`, answer: pct, hint: `The profit is $${(cost * pct) / 100}. That is ${(cost * pct) / 100} out of ${cost}.` };
+  },
+  // 14
+  (r) => {
+    const price = r.int(8, 20), unitCost = r.int(2, price - 3), units = r.int(5, 40);
+    return {
+      prompt: `A stall costs $${(price - unitCost) * units} to set up. Each item sells for $${price} and costs $${unitCost} to make. How many must it sell to break even?`,
+      answer: units,
+      hint: `Each sale earns $${price - unitCost}. Divide the set-up cost by that.`,
+    };
+  },
+  // 15
+  (r) => {
+    const months = r.pick([6, 12, 18, 24] as const), pay = r.int(15, 90);
+    return { prompt: `A $${months * pay} purchase is paid in ${months} equal monthly payments. Each payment, in dollars?`, answer: pay, hint: `${months * pay} ÷ ${months}.` };
+  },
+  // 16
+  (r) => {
+    const rate = r.pick([2, 3, 4, 5, 8, 10] as const), amount = r.int(5, 40);
+    return { prompt: `$1 buys ${rate} kroner. How many kroner for $${amount}?`, answer: rate * amount, hint: `${amount} × ${rate}.` };
+  },
+  // 17
+  (r) => {
+    const rate = r.pick([2, 3, 4, 6, 8, 9, 12] as const);
+    return { prompt: `Money grows ${rate}% a year. By the rule of 72, about how many years to double?`, answer: 72 / rate, hint: `Divide 72 by the rate: 72 ÷ ${rate}.` };
+  },
+  // 18
+  (r) => {
+    const price = 20 * r.int(2, 20), pct = r.pick([5, 10, 15, 20] as const);
+    return { prompt: `Prices rise ${pct}% in a year. Something that costs $${price} now costs how much next year?`, answer: price + (price * pct) / 100, hint: `${pct}% of ${price} is ${(price * pct) / 100}. Add it on.` };
+  },
+  // 19
+  (r) => {
+    const wage = 2 * r.int(5, 15), extra = 2 * r.int(1, 5);
+    return {
+      prompt: `You earn $${wage} an hour for 40 hours, then 1.5 times that for ${extra} more hours. The week's pay, in dollars?`,
+      answer: 40 * wage + (extra * wage * 3) / 2,
+      hint: `The 40 hours pay ${40 * wage}. Overtime is $${(wage * 3) / 2} an hour for ${extra} hours.`,
+    };
+  },
+  // 20
+  (r) => {
+    const h = r.int(2, 10), rA = r.int(2, 8), tA = r.int(2, 5), rB = r.int(2, 8), tB = r.int(2, 5);
+    const tBx = rA * tA === rB * tB ? tB + 1 : tB;
+    const iA = rA * tA, iB = rB * tBx;
+    return {
+      prompt: `$${h * 100} borrowed. Loan A: ${rA}% simple interest for ${tA} years. Loan B: ${rB}% for ${tBx} years. Which costs less?`,
+      choices: ["Loan A", "Loan B"],
+      answer: iA < iB ? 0 : 1,
+      hint: `Simple interest is the rate times the years: A is ${iA}% of the loan, B is ${iB}%.`,
     };
   },
 ];

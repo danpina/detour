@@ -57,7 +57,7 @@ export function mathRound(
 }
 
 /** What a round from "Pick something specific" is about: some topics, only the cards due for review, or one math skill. */
-export type Specific = { kind: "topics"; topics: Interest[] } | { kind: "due" } | { kind: "skill"; track: TrackId };
+export type Specific = { kind: "topics"; topics: Interest[] } | { kind: "due" } | { kind: "skill"; track: TrackId; level?: number };
 
 /** Loads local history and builds the next round of the given kind. Used for quick rounds and for each page of the free-scroll feed. */
 export async function nextSet(interests: Interest[], kind: RoundKind = "learning", sizeOverride?: number, specific?: Specific): Promise<SessionItem[]> {
@@ -65,8 +65,10 @@ export async function nextSet(interests: Interest[], kind: RoundKind = "learning
   const settings = await store.getSettings();
   const setSize = sizeOverride ?? settings?.set_size ?? DEFAULT_SET_SIZE;
   if (specific?.kind === "skill") {
-    const level = (await store.getSkills()).find((s) => s.track_id === specific.track)?.level ?? 1;
-    return [{ kind: "drill", drill: { track: specific.track, level, seed: Math.floor(Math.random() * 2 ** 31), count: setSize } }];
+    // A chosen level is practice: it does not count toward moving up.
+    const level = specific.level ?? (await store.getSkills()).find((s) => s.track_id === specific.track)?.level ?? 1;
+    const practice = specific.level !== undefined;
+    return [{ kind: "drill", drill: { track: specific.track, level, seed: Math.floor(Math.random() * 2 ** 31), count: setSize, ...(practice ? { practice: true } : {}) } }];
   }
   if (kind === "games") return pickGames(setSize).map((game) => ({ kind: "game" as const, game }));
   if (kind === "math") return mathRound(await store.getSkills(), setSize, undefined, settings?.math_off ?? []);

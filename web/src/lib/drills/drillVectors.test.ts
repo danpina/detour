@@ -9,7 +9,7 @@ const SEEDS = [1, 2, 3, 42, 12345, 987654321];
 function build() {
   const rounds = TRACK_IDS.flatMap((track) =>
     Array.from({ length: TRACKS[track].maxLevel }, (_, i) => i + 1).flatMap((level) =>
-      SEEDS.map((seed) => ({ track, level, seed, problems: generateRound({ track, level, seed }).map((p) => ({ prompt: p.prompt, answer: p.answer })) })),
+      SEEDS.map((seed) => ({ track, level, seed, problems: generateRound({ track, level, seed }).map((p) => ({ prompt: p.prompt, answer: p.answer, ...(p.choices ? { choices: p.choices } : {}) })) })),
     ),
   );
   const numbers = ["1,200", "1.5k", "3m", "2e6", "1.2 million", "abc", "", "  42 ", "-7", "0.5", "2b"].map((input) => ({ input, value: parseNumber(input) ?? null }));

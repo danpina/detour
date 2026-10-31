@@ -1,4 +1,5 @@
 import { sup, type Problem } from "./mentalMath";
+import { choose } from "./choice";
 import type { Rng } from "./rng";
 
 export const ALGEBRA_LEVELS = [
@@ -12,6 +13,16 @@ export const ALGEBRA_LEVELS = [
   "Derivatives: ax^n at a point",
   "Derivatives: ax² + bx at a point",
   "Integrals: area under ax^n",
+  "Solve x ÷ a + b = c",
+  "Unknowns on both sides",
+  "Brackets: a(x + b) = c",
+  "Evaluate with two letters",
+  "Two equations, two unknowns",
+  "Which value solves it?",
+  "Expanding (x + p)(x + q)",
+  "Quadratics: the smaller root",
+  "Derivatives of cubics",
+  "Integrals of straight lines",
 ] as const;
 
 type Gen = (r: Rng) => Problem;
@@ -77,6 +88,71 @@ const GENERATORS: Gen[] = [
       prompt: `∫ from 0 to ${c} of ${a * (n + 1)}x${sup(n)} dx`,
       answer: a * power,
       hint: `The antiderivative of ${a * (n + 1)}x${sup(n)} is ${coef(a)}x${sup(n + 1)}. Put ${c} in.`,
+    };
+  },
+
+  // 11
+  (r) => {
+    const a = r.int(2, 9), q = r.int(2, 8), b = r.int(1, 12);
+    return { prompt: `x ÷ ${a} + ${b} = ${q + b}`, answer: a * q, hint: `Take ${b} away first (${q}), then multiply by ${a}.` };
+  },
+  // 12
+  (r) => {
+    const x = r.int(2, 12), a = r.int(4, 9), c = r.int(1, a - 1), b = r.int(1, 15);
+    return {
+      prompt: `${a}x + ${b} = ${coef(c)}x + ${(a - c) * x + b}`,
+      answer: x,
+      hint: `Take ${coef(c) || "1"}x from both sides, then ${b} from both: ${a - c}x = ${(a - c) * x}.`,
+    };
+  },
+  // 13
+  (r) => {
+    const a = r.int(2, 9), b = r.int(1, 9), x = r.int(1, 10);
+    return { prompt: `${a}(x + ${b}) = ${a * (x + b)}`, answer: x, hint: `Divide both sides by ${a} first: x + ${b} = ${x + b}.` };
+  },
+  // 14
+  (r) => {
+    const x = r.int(5, 12), y = r.int(1, 4), a = r.int(3, 6), b = r.int(1, 2);
+    return { prompt: `${a}x − ${b}y, when x = ${x} and y = ${y}`, answer: a * x - b * y, hint: `${a} × ${x} = ${a * x}, then take away ${b} × ${y} = ${b * y}.` };
+  },
+  // 15
+  (r) => {
+    const x = r.int(5, 20), y = r.int(1, x - 1);
+    return { prompt: `x + y = ${x + y} and x − y = ${x - y}. Find x`, answer: x, hint: `Add the two equations: 2x = ${2 * x}.` };
+  },
+  // 16
+  (r) => {
+    const a = r.int(2, 9), b = r.int(1, 12), x = r.int(3, 12);
+    const pick = choose(r, String(x), [String(x + 1), String(x - 1), String(x + 2)]);
+    return { prompt: `Which value of x solves ${a}x + ${b} = ${a * x + b}?`, ...pick, hint: `Take ${b} away, then divide by ${a}: x = ${x}.` };
+  },
+  // 17
+  (r) => {
+    const p = r.int(1, 9), q = r.int(1, 9);
+    if (r.next() < 0.5) return { prompt: `(x + ${p})(x + ${q}) = x² + ?x + ${p * q}. What is ?`, answer: p + q, hint: `The middle term is ${p} + ${q}.` };
+    return { prompt: `(x + ${p})(x + ${q}) = x² + ${p + q}x + ?. What is ?`, answer: p * q, hint: `The last term is ${p} × ${q}.` };
+  },
+  // 18
+  (r) => {
+    const p = r.int(1, 9), q = r.int(1, 9);
+    return { prompt: `Smaller root of x² − ${p + q}x + ${p * q} = 0`, answer: Math.min(p, q), hint: `Two numbers that add to ${p + q} and multiply to ${p * q}. Pick the smaller.` };
+  },
+  // 19
+  (r) => {
+    const a = r.int(1, 4), b = r.int(1, 5), c = r.int(1, 3);
+    return {
+      prompt: `d/dx of ${coef(a)}x${sup(3)} + ${coef(b)}x${sup(2)} at x = ${c}`,
+      answer: 3 * a * c * c + 2 * b * c,
+      hint: `The derivative is ${3 * a}x${sup(2)} + ${2 * b}x. Put ${c} in.`,
+    };
+  },
+  // 20
+  (r) => {
+    const a = 2 * r.int(1, 4), b = r.int(1, 6), c = r.int(1, 4);
+    return {
+      prompt: `∫ from 0 to ${c} of (${a}x + ${b}) dx`,
+      answer: (a * c * c) / 2 + b * c,
+      hint: `The antiderivative is ${a / 2}x${sup(2)} + ${b}x. Put ${c} in.`,
     };
   },
 ];

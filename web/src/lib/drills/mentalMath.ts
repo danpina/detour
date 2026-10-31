@@ -5,6 +5,8 @@ export type Problem = {
   answer: number;
   /** A short trick shown after answering. */
   hint?: string;
+  /** For multiple-choice and true-or-false problems: the options to tap. `answer` is then the index of the right one. */
+  choices?: string[];
 };
 
 export const MENTAL_MATH_LEVELS = [

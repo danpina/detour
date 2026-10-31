@@ -4,6 +4,8 @@ import { formatNumber } from "../lib/scoring";
 import { LEVEL_WINDOW, LEVEL_THRESHOLD } from "../lib/drills";
 import { track as signal } from "../analytics";
 import { recordDrillRound } from "../lib/session";
+import { store } from "../lib/db";
+import { emptyProgress } from "../lib/drills";
 
 type Props = {
   spec: DrillSpec;
@@ -39,9 +41,13 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
     // Unanswered problems (time ran out) count as wrong attempts.
     const results = problems.map((_, k) => all[k]?.judgement.correct ?? false);
     const right = results.filter(Boolean).length;
-    void recordDrillRound(spec.track, results).then((r) => {
+    // Practice rounds (a level picked on the skill page) are not counted toward moving up.
+    const outcome: Promise<{ progress: SkillProgress; leveledUp: boolean }> = spec.practice
+      ? store.getSkills().then((rows) => ({ progress: rows.find((s) => s.track_id === spec.track) ?? emptyProgress(spec.track), leveledUp: false }))
+      : recordDrillRound(spec.track, results);
+    void outcome.then((r) => {
       setDone({ ...r, right });
-      signal("drill.completed", { track: spec.track, level: spec.level, right, total: problems.length });
+      if (!spec.practice) signal("drill.completed", { track: spec.track, level: spec.level, right, total: problems.length });
       if (r.leveledUp) signal("drill.levelUp", { track: spec.track, level: r.progress.level });
       onComplete({ correct: right >= Math.ceil(problems.length / 2) });
       // One problem in a mixed round: go straight on, unless there is a level up to see. (A beat later, so the round knows it is done.)
@@ -65,12 +71,16 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
 
   const problem = problems[i];
 
-  const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!problem || feedback || !input.trim()) return;
-    const a = { judgement: judge(spec.track, problem, input), input };
+  const answerWith = (text: string) => {
+    if (!problem || feedback || !text.trim()) return;
+    const a = { judgement: judge(spec.track, problem, text), input: text };
     setFeedback(a);
     setAnswers((prev) => [...prev, a]);
+  };
+
+  const submit = (e: React.FormEvent) => {
+    e.preventDefault();
+    answerWith(input);
   };
 
   const advance = () => {
@@ -110,6 +120,18 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
 
             <h1 className={`mt-8 text-center font-semibold leading-snug ${spec.track !== "estimation" && problem.prompt.length <= 14 ? "text-5xl tabular-nums" : spec.track !== "estimation" && problem.prompt.length <= 50 ? "text-3xl" : "text-xl"}`}>{problem.prompt}</h1>
 
+            {problem.choices ? (
+              <div className="mt-8 grid gap-3" role="group" aria-label="Pick your answer">
+                {problem.choices.map((label, i) => {
+                  const shown = feedback ? (i === problem.answer ? "border-emerald-300 bg-emerald-400/25" : Number(feedback.input) === i ? "border-rose-300 bg-rose-400/25" : "border-white/20 opacity-60") : "border-white/30 bg-white/10 active:scale-[0.98]";
+                  return (
+                    <button key={i} disabled={!!feedback} onClick={() => answerWith(String(i))} className={`min-h-14 rounded-2xl border px-4 py-3 text-lg font-semibold ${shown}`}>
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+            ) : (
             <form onSubmit={submit} className="mt-8">
               <input
                 ref={inputRef}
@@ -128,6 +150,7 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
                 </button>
               )}
             </form>
+            )}
 
             {feedback && (
               <div role="status" aria-live="polite" className="mt-4 rounded-2xl bg-white/10 p-4 text-center">
@@ -138,7 +161,9 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
                 <p className="mt-1 text-sm text-white/80">
                   {spec.track === "estimation" && feedback.judgement.guess !== undefined
                     ? `You said ${formatNumber(feedback.judgement.guess)} · answer ${formatNumber(problem.answer)} (${timesOff(feedback.judgement.guess, problem.answer).toFixed(1)}× off)`
-                    : `Answer: ${formatNumber(problem.answer)}`}
+                    : problem.choices
+                      ? `Answer: ${problem.choices[problem.answer]}`
+                      : `Answer: ${formatNumber(problem.answer)}`}
                 </p>
                 {problem.hint && <p className="mt-2 text-sm text-white/70">{problem.hint}</p>}
                 <button onClick={advance} className="mt-4 w-full rounded-2xl bg-white py-3 font-semibold text-neutral-900 active:scale-[0.98]">
@@ -155,7 +180,11 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
             <h1 className="mt-2 text-3xl font-semibold">
               {done.right} of {problems.length} right
             </h1>
-            {done.leveledUp ? (
+            {spec.practice ? (
+              <p className="mt-4 text-white/80">
+                Level {spec.level} practice. It doesn't count toward your level, so try anything.
+              </p>
+            ) : done.leveledUp ? (
               <p className="mt-4 rounded-2xl bg-emerald-500/25 px-4 py-3 text-emerald-200">
                 Level up! You're now on level {done.progress.level}: {track.levels[done.progress.level - 1]}.
               </p>
@@ -171,7 +200,7 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
               </p>
             )}
             <button onClick={onNext} className="mt-8 w-full rounded-2xl bg-white py-3.5 font-semibold text-neutral-900 active:scale-[0.98]">
-              Next
+              {spec.practice ? "Done" : "Next"}
             </button>
           </div>
         )}

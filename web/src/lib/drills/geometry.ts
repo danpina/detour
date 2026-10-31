@@ -1,4 +1,5 @@
 import type { Problem } from "./mentalMath";
+import { trueFalse } from "./choice";
 import type { Rng } from "./rng";
 
 export const GEOMETRY_LEVELS = [
@@ -12,6 +13,16 @@ export const GEOMETRY_LEVELS = [
   "Volume of a box",
   "Right triangles: Pythagoras",
   "Trapezoids and polygon angles",
+  "Square: area to perimeter",
+  "Area of a rhombus",
+  "Circumference from the diameter",
+  "Volume of a cylinder",
+  "The diagonal of a rectangle",
+  "True or false: right triangles",
+  "Angles of regular polygons",
+  "Enlarging a triangle",
+  "Surface area of a cube",
+  "Distance between two points",
 ] as const;
 
 type Gen = (r: Rng) => Problem;
@@ -88,6 +99,62 @@ const GENERATORS: Gen[] = [
     }
     const n = r.int(5, 10);
     return { prompt: `Angles inside a ${n}-sided polygon add up to?`, answer: (n - 2) * 180, hint: `(${n} − 2) × 180°.` };
+  },
+
+  // 11
+  (r) => {
+    const s = r.int(3, 12);
+    return { prompt: `A square has area ${s * s}. Its perimeter?`, answer: 4 * s, hint: `The side is ${s}, so the perimeter is 4 × ${s}.` };
+  },
+  // 12
+  (r) => {
+    const d1 = 2 * r.int(2, 8), d2 = r.int(3, 10);
+    return { prompt: `A rhombus with diagonals ${d1} and ${d2}. Its area?`, answer: (d1 * d2) / 2, hint: `Half of the diagonals multiplied: half of ${d1} × ${d2}.` };
+  },
+  // 13
+  (r) => {
+    const d = r.int(2, 14);
+    return { prompt: `Circumference of a circle with diameter ${d} (π ≈ 3)`, answer: 3 * d, hint: `π × diameter: 3 × ${d}.` };
+  },
+  // 14
+  (r) => {
+    const rad = r.int(1, 5), h = r.int(2, 9);
+    return { prompt: `Volume of a cylinder, radius ${rad}, height ${h} (π ≈ 3)`, answer: 3 * rad * rad * h, hint: `π × r² × h: 3 × ${rad * rad} × ${h}.` };
+  },
+  // 15
+  (r) => {
+    const [a, b, c] = r.pick(TRIPLES), k = r.int(1, 2);
+    return { prompt: `A ${a * k} by ${b * k} rectangle. Its diagonal?`, answer: c * k, hint: `The diagonal is the long side of a right triangle: a ${a}-${b}-${c} triangle${k > 1 ? ", doubled" : ""}.` };
+  },
+  // 16
+  (r) => {
+    const [a, b, c] = r.pick(TRIPLES);
+    const right = r.next() < 0.5;
+    return {
+      prompt: `True or false: a triangle with sides ${a}, ${b} and ${right ? c : c + 1} is a right triangle.`,
+      ...trueFalse(right),
+      hint: `Check ${a}² + ${b}² = ${a * a + b * b} against the long side squared: ${(right ? c : c + 1) ** 2}.`,
+    };
+  },
+  // 17
+  (r) => {
+    const n = r.pick([3, 4, 5, 6, 8, 9, 10, 12] as const);
+    return { prompt: `Each angle of a regular ${n}-sided polygon?`, answer: ((n - 2) * 180) / n, hint: `All angles add up to (${n} − 2) × 180°. Share that between ${n} angles.` };
+  },
+  // 18
+  (r) => {
+    const [a, b, c] = r.pick(TRIPLES), k = r.int(2, 5);
+    return { prompt: `A triangle with sides ${a}, ${b} and ${c} is enlarged ${k} times. The new perimeter?`, answer: (a + b + c) * k, hint: `Every side grows ${k} times, so the perimeter does too: ${a + b + c} × ${k}.` };
+  },
+  // 19
+  (r) => {
+    const s = r.int(2, 9);
+    return { prompt: `Surface area of a cube with side ${s}`, answer: 6 * s * s, hint: `Six square faces of ${s} × ${s}.` };
+  },
+  // 20
+  (r) => {
+    const [a, b, c] = r.pick(TRIPLES), x = r.int(0, 5), y = r.int(0, 5);
+    return { prompt: `Distance from (${x}, ${y}) to (${x + a}, ${y + b})`, answer: c, hint: `${a} across and ${b} up: a ${a}-${b}-${c} right triangle.` };
   },
 ];
 

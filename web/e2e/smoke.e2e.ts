@@ -146,3 +146,20 @@ test("math round: one tap on Next goes straight to the next problem", async ({ p
   await expect(answer).toBeVisible();
   await expect(page.locator("h1").first()).not.toHaveText(first);
 });
+
+test("a skill page lists its levels, and a true-or-false level can be practised", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Not now" }).click();
+  for (const name of ["History", "Science", "Tech"]) await page.getByRole("button", { name }).first().click();
+  await page.getByRole("button", { name: "Show me a quick one" }).click();
+  await playSet(page);
+  await page.getByRole("button", { name: "See my progress" }).click();
+  await page.getByRole("tab", { name: /Math/ }).click();
+  await page.getByRole("button", { name: "Geometry: see all levels" }).click();
+  await expect(page.getByRole("heading", { name: "Geometry" })).toBeVisible();
+
+  await page.getByRole("button", { name: /16\. True or false: right triangles/ }).click();
+  await expect(page.getByText(/True or false: a triangle with sides/)).toBeVisible();
+  await page.getByRole("button", { name: "True", exact: true }).click();
+  await expect(page.getByText(/Answer: (True|False)/)).toBeVisible();
+});

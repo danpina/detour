@@ -1,4 +1,5 @@
 import type { Problem } from "./mentalMath";
+import { choose } from "./choice";
 import type { Rng } from "./rng";
 
 export const NUMBER_THEORY_LEVELS = [
@@ -12,6 +13,16 @@ export const NUMBER_THEORY_LEVELS = [
   "Decimal to binary",
   "Hexadecimal to decimal",
   "Last digits of powers",
+  "Prime or not?",
+  "Prime factors added up",
+  "Counting perfect squares",
+  "Remainders of products",
+  "Adding in binary",
+  "Adding in hexadecimal",
+  "Which is divisible by 9?",
+  "Greatest common divisor of three",
+  "Least common multiple of three",
+  "Digital roots",
 ] as const;
 
 type Gen = (r: Rng) => Problem;
@@ -90,6 +101,77 @@ const GENERATORS: Gen[] = [
     let power = 1;
     for (let i = 0; i < b; i++) power *= a;
     return { prompt: `Last digit of ${a}^${b}`, answer: power % 10, hint: `Only the last digit matters: multiply ${b} times, keeping just the last digit each time.` };
+  },
+
+  // 11
+  (r) => {
+    const prime = r.next() < 0.5;
+    let n = r.int(20, 120);
+    if (prime) while (!isPrime(n)) n++;
+    else while (isPrime(n)) n++;
+    return { prompt: `Is ${n} prime?`, choices: ["Prime", "Not prime"], answer: prime ? 0 : 1, hint: prime ? `Nothing but 1 and ${n} divides it.` : `It has a smaller factor besides 1.` };
+  },
+  // 12
+  (r) => {
+    const p = r.pick([2, 3, 5] as const), q = r.pick([2, 3, 5, 7] as const), s = r.pick([2, 3, 5, 7, 11] as const);
+    return { prompt: `Write ${p * q * s} as a product of primes. What do those primes add up to?`, answer: p + q + s, hint: `${p * q * s} = ${p} × ${q} × ${s}, so ${p} + ${q} + ${s}.` };
+  },
+  // 13
+  (r) => {
+    const n = r.int(30, 200);
+    let k = 0;
+    while ((k + 1) * (k + 1) <= n) k++;
+    return { prompt: `How many perfect squares are there from 1 up to ${n}?`, answer: k, hint: `1², 2², 3²... The last one that fits is ${k}² = ${k * k}.` };
+  },
+  // 14
+  (r) => {
+    const a = r.int(12, 49), b = r.int(12, 49), m = r.int(5, 9);
+    return { prompt: `Remainder of ${a} × ${b} ÷ ${m}`, answer: (a * b) % m, hint: `Multiply the remainders instead: ${a % m} × ${b % m}, then take the remainder again.` };
+  },
+  // 15
+  (r) => {
+    const x = r.int(3, 15), y = r.int(3, 15);
+    return { prompt: `Add in binary: ${x.toString(2)} + ${y.toString(2)}`, answer: Number((x + y).toString(2)), hint: `In decimal that is ${x} + ${y} = ${x + y}. Write ${x + y} in binary.` };
+  },
+  // 16
+  (r) => {
+    const x = r.int(16, 120), y = r.int(16, 120);
+    return {
+      prompt: `0x${x.toString(16).toUpperCase()} + 0x${y.toString(16).toUpperCase()}, as a decimal number`,
+      answer: x + y,
+      hint: `Change each to decimal: ${x} + ${y}.`,
+    };
+  },
+  // 17
+  (r) => {
+    const n = 9 * r.int(12, 110);
+    return {
+      prompt: `Which of these is divisible by 9?`,
+      ...choose(r, String(n), [String(n + 1), String(n + 2), String(n + 4)]),
+      hint: `A number is divisible by 9 when its digits add up to a multiple of 9.`,
+    };
+  },
+  // 18
+  (r) => {
+    const g = r.int(2, 9), a = g * r.int(2, 6), b = g * r.int(2, 6), c = g * r.int(2, 6);
+    return { prompt: `Greatest common divisor of ${a}, ${b} and ${c}`, answer: gcd(gcd(a, b), c), hint: `The biggest number that goes into all three.` };
+  },
+  // 19
+  (r) => {
+    const a = r.int(2, 9), b = r.int(2, 9), c = r.int(2, 9);
+    const lcm2 = (a * b) / gcd(a, b);
+    return { prompt: `Least common multiple of ${a}, ${b} and ${c}`, answer: (lcm2 * c) / gcd(lcm2, c), hint: `The first number all three divide into.` };
+  },
+  // 20
+  (r) => {
+    const n = r.int(100, 99999);
+    let root = n;
+    while (root >= 10) {
+      let sum = 0;
+      for (const d of String(root)) sum += Number(d);
+      root = sum;
+    }
+    return { prompt: `Add the digits of ${n}, then the digits of that, until one digit is left. Which digit?`, answer: root, hint: `The result is also the remainder when dividing by 9 (with 9 for a multiple of 9).` };
   },
 ];
 
