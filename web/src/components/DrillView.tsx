@@ -20,7 +20,10 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
   const track = TRACKS[spec.track];
   const problems = useMemo(() => generateRound(spec), [spec]);
   // The time allowed grows or shrinks with the number of problems in the round.
-  const limitMs = track.timeLimitMs ? track.timeLimitMs * (problems.length / track.problems) : undefined;
+  // Mental math stays quick; the other skills (word problems, statistics) get at least half a minute per problem.
+  const limitMs = track.timeLimitMs
+    ? Math.max(track.timeLimitMs * (problems.length / track.problems), spec.track === "mental-math" ? 0 : 30_000 * problems.length)
+    : undefined;
   const [i, setI] = useState(0);
   const [answers, setAnswers] = useState<Answered[]>([]);
   const [input, setInput] = useState("");
@@ -41,6 +44,8 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
       signal("drill.completed", { track: spec.track, level: spec.level, right, total: problems.length });
       if (r.leveledUp) signal("drill.levelUp", { track: spec.track, level: r.progress.level });
       onComplete({ correct: right >= Math.ceil(problems.length / 2) });
+      // One problem in a mixed round: go straight on, unless there is a level up to see. (A beat later, so the round knows it is done.)
+      if (problems.length === 1 && !r.leveledUp) window.setTimeout(onNext, 60);
     });
   };
 
@@ -94,7 +99,7 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
         {!done && problem && (
           <>
             <p className="text-center text-xs uppercase tracking-widest text-white/60">
-              {track.levels[spec.level - 1]} · {i + 1} of {problems.length}
+              {track.levels[spec.level - 1]}{problems.length > 1 ? ` · ${i + 1} of ${problems.length}` : ""}
             </p>
 
             {limitMs && (
@@ -137,7 +142,7 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
                 </p>
                 {problem.hint && <p className="mt-2 text-sm text-white/70">{problem.hint}</p>}
                 <button onClick={advance} className="mt-4 w-full rounded-2xl bg-white py-3 font-semibold text-neutral-900 active:scale-[0.98]">
-                  {i + 1 >= problems.length ? "Finish" : "Next question"}
+                  {i + 1 >= problems.length ? (problems.length === 1 ? "Next" : "Finish") : "Next question"}
                 </button>
               </div>
             )}

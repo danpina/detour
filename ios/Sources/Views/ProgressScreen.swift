@@ -83,11 +83,12 @@ struct ProgressScreen: View {
             ForEach(Interest.allCases.filter { $0 != .estimation && $0 != .games }, id: \.self) { interest in
                 let cards = snapshot.map[interest] ?? []
                 let solid = cards.filter { $0.state == .solid }.count
+                let learnedCount = cards.filter { $0.state != .new }.count
                 VStack(alignment: .leading, spacing: 6) {
                     HStack {
                         Text(interest.displayName).font(.headline)
                         Spacer()
-                        Text(cards.isEmpty ? "More coming soon" : "\(solid) of \(cards.count) locked in").font(.caption).foregroundStyle(.secondary)
+                        Text(cards.isEmpty ? "More coming soon" : "\(learnedCount) of \(cards.count) learned · \(solid) locked in").font(.caption).foregroundStyle(.secondary)
                     }
                     if !cards.isEmpty {
                         LazyVGrid(columns: [GridItem(.adaptive(minimum: 16), spacing: 6)], alignment: .leading, spacing: 6) {
@@ -178,6 +179,8 @@ struct ProgressScreen: View {
 private struct GamesProgressView: View {
     /// Words learned per language (by id) and level, loaded once.
     @State private var learned: [String: [Int: Int]] = [:]
+    /// Words answered right once, not yet learned.
+    @State private var practising: [String: [Int: Int]] = [:]
     @State private var totals: [String: [Int: Int]] = [:]
 
     var body: some View {
@@ -195,12 +198,13 @@ private struct GamesProgressView: View {
                     Text(info.flag + " " + info.name).font(.headline)
                     ForEach([1, 2, 3], id: \.self) { level in
                         let done = learned[info.id]?[level] ?? 0
+                        let inProgress = practising[info.id]?[level] ?? 0
                         let total = totals[info.id]?[level] ?? 0
                         VStack(alignment: .leading, spacing: 2) {
                             HStack {
                                 Text(LanguageBuilder.levelName(level)).font(.caption).foregroundStyle(.secondary)
                                 Spacer()
-                                Text("\(done) of \(total) words").font(.caption).foregroundStyle(.secondary).monospacedDigit()
+                                Text("\(done) of \(total) learned" + (inProgress > 0 ? " · \(inProgress) practising" : "")).font(.caption).foregroundStyle(.secondary).monospacedDigit()
                             }
                             ProgressView(value: total > 0 ? min(1, Double(done) / Double(total)) : 0)
                         }
@@ -237,25 +241,30 @@ private struct GamesProgressView: View {
 
     /// The word lists are read here, off the main thread, and only to count what is learned per level.
     private func loadLanguages() async {
-        let result = await Task.detached { () -> ([String: [Int: Int]], [String: [Int: Int]]) in
+        let result = await Task.detached { () -> ([String: [Int: Int]], [String: [Int: Int]], [String: [Int: Int]]) in
             var done: [String: [Int: Int]] = [:]
+            var again: [String: [Int: Int]] = [:]
             var total: [String: [Int: Int]] = [:]
             for info in LanguageInfo.all {
                 let words = LanguageData.load(info)
                 let known = LanguageStore.load(info).known
                 var d: [Int: Int] = [:]
+                var p: [Int: Int] = [:]
                 var t: [Int: Int] = [:]
                 for w in words {
                     t[w.level, default: 0] += 1
-                    if (known[w.key] ?? 0) >= LanguageBuilder.learnedAt { d[w.level, default: 0] += 1 }
+                    let n = known[w.key] ?? 0
+                    if n >= LanguageBuilder.learnedAt { d[w.level, default: 0] += 1 } else if n >= 1 { p[w.level, default: 0] += 1 }
                 }
                 done[info.id] = d
+                again[info.id] = p
                 total[info.id] = t
             }
-            return (done, total)
+            return (done, again, total)
         }.value
         learned = result.0
-        totals = result.1
+        practising = result.1
+        totals = result.2
     }
 
     private func card<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {

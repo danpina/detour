@@ -182,7 +182,9 @@ enum LanguageBuilder {
         }
         let missedWords = progress.missed.compactMap { byKey[$0] }.shuffled(using: &rng)
         for word in missedWords.prefix((length + 1) / 2) { add(word) }
-        for word in all.filter({ (progress.known[$0.key] ?? 0) < learnedAt }).shuffled(using: &rng) { add(word) }
+        // Words you got right once come back before brand-new ones; otherwise a word is rarely seen twice and nothing ever counts as learned.
+        for word in all.filter({ (progress.known[$0.key] ?? 0) == 1 }).shuffled(using: &rng) { add(word) }
+        for word in all.filter({ (progress.known[$0.key] ?? 0) < 1 }).shuffled(using: &rng) { add(word) }
         for word in all.shuffled(using: &rng) { add(word) }
         return chosen.map { question(all: all, word: $0, kind: kind(forTimesRight: progress.known[$0.key] ?? 0), using: &rng) }
     }

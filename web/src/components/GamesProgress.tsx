@@ -10,7 +10,8 @@ import { bestLabel, getStats } from "../games/stats";
 const card = "rounded-2xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900";
 const LEVELS: Level[] = [1, 2, 3];
 
-type Learned = Record<string, Record<Level, number>>;
+type Counts = { learned: number; practising: number };
+type Learned = Record<string, Record<Level, Counts>>;
 
 /** Words learned per language and level. The word lists load here, not with the rest of the app. */
 async function learnedWords(): Promise<Learned> {
@@ -19,11 +20,15 @@ async function learnedWords(): Promise<Learned> {
   return out;
 }
 
-async function learnedFor(lang: Language): Promise<Record<Level, number>> {
+async function learnedFor(lang: Language): Promise<Record<Level, Counts>> {
   const known = loadLanguageProgress(lang).known;
-  const counts: Record<Level, number> = { 1: 0, 2: 0, 3: 0 };
-  if (Object.values(known).every((n) => n < LEARNED_AT)) return counts; // nothing learned yet: no need to load the list
-  for (const w of await lang.load()) if ((known[w.key] ?? 0) >= LEARNED_AT) counts[w.level]++;
+  const counts: Record<Level, Counts> = { 1: { learned: 0, practising: 0 }, 2: { learned: 0, practising: 0 }, 3: { learned: 0, practising: 0 } };
+  if (Object.values(known).every((n) => n < 1)) return counts; // nothing answered yet: no need to load the list
+  for (const w of await lang.load()) {
+    const n = known[w.key] ?? 0;
+    if (n >= LEARNED_AT) counts[w.level].learned++;
+    else if (n >= 1) counts[w.level].practising++;
+  }
   return counts;
 }
 
@@ -58,13 +63,14 @@ export function GamesProgress() {
               <div className="font-medium">{lang.flag} {lang.name}</div>
               <div className="mt-2 space-y-2">
                 {LEVELS.map((level) => {
-                  const done = learned?.[lang.id]?.[level] ?? 0;
+                  const done = learned?.[lang.id]?.[level]?.learned ?? 0;
+                  const practising = learned?.[lang.id]?.[level]?.practising ?? 0;
                   const total = wordCount(lang, level);
                   return (
                     <div key={level}>
                       <div className="flex items-baseline justify-between text-xs text-neutral-500 dark:text-neutral-400">
                         <span>{LEVEL_NAMES[level]}</span>
-                        <span className="tabular-nums">{done} of {total} words</span>
+                        <span className="tabular-nums">{done} of {total} learned{practising > 0 ? ` · ${practising} practising` : ""}</span>
                       </div>
                       <div className="mt-1 h-2 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800">
                         <div className="h-full rounded-full bg-teal-500" style={{ width: `${total ? Math.min(100, (done / total) * 100) : 0}%` }} />

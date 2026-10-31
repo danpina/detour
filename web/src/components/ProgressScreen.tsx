@@ -89,11 +89,12 @@ export function ProgressScreen({ onOpenLearned }: { onOpenLearned: () => void })
           {INTERESTS.filter((i) => i !== "estimation").map((i) => {
             const cards = map.get(i) ?? [];
             const solid = cards.filter((c) => c.state === "solid").length;
+            const learnedN = cards.filter((c) => c.state !== "new").length;
             return (
               <div key={i}>
                 <div className="flex items-baseline justify-between">
                   <span className="font-medium">{INTEREST_INFO[i].emoji} {INTEREST_INFO[i].name}</span>
-                  <span className="text-xs text-neutral-500 dark:text-neutral-400">{cards.length ? `${solid} of ${cards.length} locked in` : "More coming soon"}</span>
+                  <span className="text-xs text-neutral-500 dark:text-neutral-400">{cards.length ? `${learnedN} of ${cards.length} learned · ${solid} locked in` : "More coming soon"}</span>
                 </div>
                 {cards.length > 0 && (
                   <div

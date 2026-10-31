@@ -74,4 +74,15 @@ final class LanguageTests: XCTestCase {
         p = LanguageBuilder.apply(p, key: "gato", right: true)
         XCTAssertEqual(p.missed, [])
     }
+
+    func testWordsGotRightOnceComeBackBeforeNewOnes() {
+        var rng = SystemRandomNumberGenerator()
+        let level1 = words.filter { $0.level == 1 }
+        let once = level1.prefix(3).map { $0.key }
+        let progress = LanguageProgress(known: Dictionary(uniqueKeysWithValues: once.map { ($0, 1) }), missed: [])
+        for _ in 0..<25 {
+            let round = LanguageBuilder.round(everything: words, level: 1, progress: progress, length: 3, using: &rng)
+            XCTAssertEqual(Set(round.map { $0.key }), Set(once))
+        }
+    }
 }

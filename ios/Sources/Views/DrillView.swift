@@ -23,7 +23,10 @@ struct DrillView: View {
 
     /// The time allowed grows or shrinks with the number of problems in the round.
     private var limitSeconds: Double? {
-        Drills.info(spec.track).timeLimitSeconds.map { $0 * Double(max(problems.count, 1)) / Double(Drills.info(spec.track).problems) }
+        // Mental math stays quick; the other skills (word problems, statistics) get at least half a minute per problem.
+        Drills.info(spec.track).timeLimitSeconds.map {
+            max($0 * Double(max(problems.count, 1)) / Double(Drills.info(spec.track).problems), spec.track == .mentalMath ? 0 : 30 * Double(max(problems.count, 1)))
+        }
     }
 
     private var gradient: LinearGradient {
@@ -78,7 +81,7 @@ struct DrillView: View {
             let problem = problems[current]
             VStack(spacing: 14) {
                 Spacer()
-                Text("\(info.levels[spec.level - 1]) · \(current + 1) of \(problems.count)".uppercased())
+                Text((info.levels[spec.level - 1] + (problems.count > 1 ? " · \(current + 1) of \(problems.count)" : "")).uppercased())
                     .font(.caption)
                     .tracking(1.2)
                     .foregroundStyle(.white.opacity(0.6))
@@ -123,7 +126,7 @@ struct DrillView: View {
                 Text("Answer: \(Scoring.format(problem.answer))").font(.footnote).foregroundStyle(.white.opacity(0.8))
             }
             if let hint = problem.hint { Text(hint).font(.footnote).foregroundStyle(.white.opacity(0.7)).multilineTextAlignment(.center) }
-            Button(action: advance) { Text(current + 1 >= problems.count ? "Finish" : "Next question").whitePill() }.padding(.top, 8)
+            Button(action: advance) { Text(current + 1 >= problems.count ? (problems.count == 1 ? "Next" : "Finish") : "Next question").whitePill() }.padding(.top, 8)
         }
         .padding(14)
         .frame(maxWidth: .infinity)
@@ -184,6 +187,10 @@ struct DrillView: View {
         let out = model.recordDrillRound(track: spec.track, results: results)
         summary = (out.progress, out.leveledUp, right)
         actions.complete(right >= (problems.count + 1) / 2)
+        // One problem in a mixed round: go straight on, unless there is a level up to see.
+        if problems.count == 1 && !out.leveledUp {
+            DispatchQueue.main.async { actions.next() }
+        }
     }
 }
 

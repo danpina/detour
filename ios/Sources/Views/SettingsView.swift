@@ -51,7 +51,7 @@ struct SettingsView: View {
                         get: { model.settings.setSize },
                         set: { size in model.updateSettings { $0.setSize = size } }
                     )) {
-                        ForEach([3, 5, 8], id: \.self) { Text("\($0)").tag($0) }
+                        ForEach([3, 5, 8, 12], id: \.self) { Text("\($0)").tag($0) }
                     }
                     .pickerStyle(.segmented)
                     Text("How many things in each round: 3 means 3 cards, 3 math problems or 3 games. Five is about a minute.").font(.footnote).foregroundStyle(.secondary)

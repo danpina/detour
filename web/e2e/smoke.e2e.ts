@@ -125,3 +125,24 @@ test("chess, hard: play a mate in two or three move by move", async ({ page }) =
   await move(line[line.length - 1]!);
   await expect(page.getByText("Checkmate! Lovely.")).toBeVisible();
 });
+
+test("math round: one tap on Next goes straight to the next problem", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Not now" }).click();
+  for (const name of ["History", "Science", "Tech"]) await page.getByRole("button", { name }).first().click();
+  await page.getByRole("button", { name: "Show me a quick one" }).click();
+  await playSet(page);
+  await page.getByRole("button", { name: "Pick another round" }).click();
+  await page.getByRole("button", { name: /Math round/ }).click();
+
+  const answer = page.getByLabel("Your answer");
+  await expect(answer).toBeVisible();
+  const first = await page.locator("h1").first().innerText();
+  await answer.fill("1");
+  await page.getByRole("button", { name: "Check" }).click();
+  await page.getByRole("button", { name: "Next", exact: true }).click();
+  // No "1 of 1 right" screen in between: the next problem (a different skill) is already there.
+  await expect(page.getByText(/of 1 right/)).toHaveCount(0);
+  await expect(answer).toBeVisible();
+  await expect(page.locator("h1").first()).not.toHaveText(first);
+});

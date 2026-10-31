@@ -107,8 +107,11 @@ export function buildRound(everything: readonly Word[], progress: Progress, rng:
   };
   const missedWords = shuffle(progress.missed.map((k) => byKey.get(k)).filter((w): w is Word => !!w), rng);
   missedWords.slice(0, Math.ceil(length / 2)).forEach(add);
-  const learning = shuffle(all.filter((w) => (progress.known[w.key] ?? 0) < LEARNED_AT), rng);
-  learning.forEach(add);
+  // Words you got right once come back before brand-new ones; otherwise a word is rarely seen twice and nothing ever counts as learned.
+  const practising = shuffle(all.filter((w) => (progress.known[w.key] ?? 0) === 1), rng);
+  practising.forEach(add);
+  const fresh = shuffle(all.filter((w) => (progress.known[w.key] ?? 0) < 1), rng);
+  fresh.forEach(add);
   shuffle(all, rng).forEach(add);
   return chosen.map((w) => buildQuestion(all, w, kindFor(progress.known[w.key] ?? 0), rng));
 }

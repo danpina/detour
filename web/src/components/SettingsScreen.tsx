@@ -164,8 +164,8 @@ export function SettingsScreen({ interests, onChangeInterests, onOpenMathSkills,
 
       <section className={`${box} mt-4`}>
         <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">Round length</h2>
-        <div className="mt-3 grid grid-cols-3 gap-2" role="radiogroup" aria-label="Round length">
-          {[3, 5, 8].map((n) => (
+        <div className="mt-3 grid grid-cols-4 gap-2" role="radiogroup" aria-label="Round length">
+          {[3, 5, 8, 12].map((n) => (
             <button
               key={n}
               role="radio"

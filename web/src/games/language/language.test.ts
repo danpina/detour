@@ -84,3 +84,25 @@ describe("language rounds (Spanish)", () => {
     expect(p.missed).toEqual([]);
   });
 });
+
+describe("a word comes back until it is learned", () => {
+  it("asks the words you got right once before any brand-new word", () => {
+    const level1 = WORDS.filter((w) => w.level === 1);
+    const once = level1.slice(0, 3).map((w) => w.key);
+    const progress: Progress = { known: Object.fromEntries(once.map((k) => [k, 1])), missed: [] };
+    for (let seed = 1; seed <= 25; seed++) {
+      const round = buildRound(WORDS, progress, seeded(seed), 3, 1);
+      expect(round.map((q) => q.key).sort()).toEqual([...once].sort());
+    }
+  });
+
+  it("gets a word to learned within two rounds of one question each", () => {
+    let progress: Progress = { known: {}, missed: [] };
+    const first = buildRound(WORDS, progress, seeded(3), 1, 1)[0]!;
+    progress = applyAnswer(progress, first.key, true);
+    const second = buildRound(WORDS, progress, seeded(9), 1, 1)[0]!;
+    expect(second.key).toBe(first.key);
+    progress = applyAnswer(progress, second.key, true);
+    expect(progress.known[first.key]).toBe(2);
+  });
+});
