@@ -69,7 +69,7 @@ struct RootView: View {
                     GamesView()
                         .tabItem { Label("Games", systemImage: "gamecontroller.fill") }
                         .tag(MainTab.games)
-                    ProgressScreen()
+                    ProgressScreen(startRound: { specific, kind in start(feed: false, kind: kind, specific: specific) })
                         .tabItem { Label("Progress", systemImage: "chart.line.uptrend.xyaxis") }
                         .tag(MainTab.progress)
                     SettingsView()

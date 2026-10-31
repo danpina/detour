@@ -8,6 +8,7 @@ final class DrillTests: XCTestCase {
             struct Problem: Decodable {
                 let prompt: String
                 let answer: Double
+                let choices: [String]?
             }
             let track: String
             let level: Int
@@ -37,6 +38,7 @@ final class DrillTests: XCTestCase {
             XCTAssertEqual(mine.map { $0.prompt }, round.problems.map { $0.prompt }, label)
             for (a, b) in zip(mine, round.problems) {
                 XCTAssertEqual(a.answer, b.answer, accuracy: 1e-9, "\(label): \(a.prompt)")
+                XCTAssertEqual(a.choices ?? [], b.choices ?? [], "\(label): \(a.prompt)")
             }
         }
     }
@@ -100,5 +102,41 @@ final class DrillTests: XCTestCase {
         XCTAssertTrue(Scoring.closenessLabel(Scoring.closeness(guess: 5000, answer: 117, lo: 1, hi: 100_000, scale: "log")).hasPrefix("Not quite"))
         XCTAssertEqual(Scoring.closenessLabel(Scoring.closeness(guess: 100, answer: 117, lo: 1, hi: 100_000, scale: "log")), "Very close")
         XCTAssertEqual(Scoring.closenessLabel(Scoring.closeness(guess: 200, answer: 117, lo: 1, hi: 100_000, scale: "log")), "In the ballpark")
+    }
+
+    func testEveryLevelGivesWholeAnswersAndWellFormedOptions() {
+        var withOptions = 0
+        for track in TrackId.allCases where track != .estimation && track != .mentalMath {
+            for level in 1...Drills.info(track).maxLevel {
+                for seed in UInt32(1)...UInt32(25) {
+                    for p in Drills.generateRound(DrillSpec(track: track, level: level, seed: seed, count: 3)) {
+                        let label = "\(track.rawValue) \(level): \(p.prompt)"
+                        XCTAssertEqual(p.answer, p.answer.rounded(), label)
+                        XCTAssertGreaterThanOrEqual(p.answer, 0, label)
+                        if let options = p.choices {
+                            withOptions += 1
+                            XCTAssertTrue((2...4).contains(options.count), label)
+                            XCTAssertEqual(Set(options).count, options.count, label)
+                            XCTAssertLessThan(Int(p.answer), options.count, label)
+                        }
+                    }
+                }
+            }
+        }
+        XCTAssertGreaterThan(withOptions, 100)
+    }
+
+    func testSkillsHaveTheLevelsTheWebHas() {
+        for track in [TrackId.algebra, .geometry, .probability, .numberTheory, .money, .fractions, .sequences, .rates] {
+            XCTAssertEqual(Drills.info(track).maxLevel, 20, track.rawValue)
+            XCTAssertEqual(Set(Drills.info(track).levels).count, 20, track.rawValue)
+        }
+        XCTAssertEqual(Drills.info(.statistics).maxLevel, 24)
+    }
+
+    func testAMultipleChoiceAnswerIsJudgedByItsIndex() {
+        let p = DrillProblem(prompt: "Is 7 prime?", answer: 0, hint: nil, choices: ["Prime", "Not prime"])
+        XCTAssertTrue(Drills.judge(.numberTheory, p, input: "0").correct)
+        XCTAssertFalse(Drills.judge(.numberTheory, p, input: "1").correct)
     }
 }

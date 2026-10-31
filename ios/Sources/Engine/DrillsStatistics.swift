@@ -42,6 +42,16 @@ extension MoreLevels {
         "Map scales",
         "A fraction of a fraction",
         "Dividing by a fraction",
+        "Mixed numbers to fractions",
+        "Subtracting fractions",
+        "Which fraction is larger?",
+        "Fractions as percents",
+        "Ratios with three parts",
+        "Solving a proportion",
+        "Rates as fractions",
+        "How many fit in a fraction?",
+        "A percent of a percent",
+        "Working back from what is left",
     ]
 
     static let sequences = [
@@ -55,6 +65,16 @@ extension MoreLevels {
         "Each term is the sum of the last two",
         "Two sequences woven together",
         "Sums of sequences",
+        "Triangular numbers",
+        "Terms of a doubling or tripling sequence",
+        "What comes next? (pick one)",
+        "Growing steps: quadratic patterns",
+        "Sums of squares",
+        "Two rules in turn",
+        "Working backwards in a chain",
+        "Which term is it?",
+        "Adding powers of 2",
+        "True or false: sequences",
     ]
 
     static let rates = [
@@ -68,6 +88,16 @@ extension MoreLevels {
         "Mixing solutions",
         "Doubling",
         "Break-even",
+        "Metres per second to km/h",
+        "Fuel use",
+        "More workers, less time",
+        "Diluting a mixture",
+        "Catching up",
+        "Who is faster?",
+        "Tripling",
+        "Boats and currents",
+        "Ages in the future",
+        "A tank that empties",
     ]
 }
 
@@ -283,7 +313,9 @@ extension Drills {
     private static let scoops: [[Int]] = [[1, 2], [1, 4], [3, 4], [2, 3], [1, 3], [2, 5]]
 
     static func fractions(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), MoreLevels.fractions.count) {
+        let lv = min(max(level, 1), MoreLevels.fractions.count)
+        if lv > 10 { return fractionsDepth(lv, &r) }
+        switch lv {
         case 1:
             let b = r.int(2, 9), a = r.int(1, b - 1), k = r.int(2, 6)
             return entry("\(a)/\(b) = ?/\(b * k)", a * k, "\(b) times \(k) is \(b * k), so multiply the top by \(k) as well.")
@@ -334,7 +366,9 @@ extension Drills {
     // MARK: Sequences and patterns
 
     static func sequences(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), MoreLevels.sequences.count) {
+        let lv = min(max(level, 1), MoreLevels.sequences.count)
+        if lv > 10 { return sequencesDepth(lv, &r) }
+        switch lv {
         case 1:
             let a = r.int(1, 30), d = r.int(2, 9)
             return entry("\(a), \(a + d), \(a + 2 * d), \(a + 3 * d), ?", a + 4 * d, "It goes up by \(d) each time.")
@@ -402,7 +436,9 @@ extension Drills {
     private static let mixGroups: [[Int]] = [[1, 1], [1, 2], [2, 1], [2, 3], [3, 2], [1, 3], [3, 1]]
 
     static func rates(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), MoreLevels.rates.count) {
+        let lv = min(max(level, 1), MoreLevels.rates.count)
+        if lv > 10 { return ratesDepth(lv, &r) }
+        switch lv {
         case 1:
             let v = 10 * r.int(3, 12), t = r.int(2, 5)
             return entry("A train goes \(v) km/h for \(t) hours. How far?", v * t, "Distance = speed × time: \(v) × \(t).")

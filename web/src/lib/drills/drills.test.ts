@@ -504,3 +504,24 @@ describe("the later levels check themselves", () => {
     }
   });
 });
+
+describe("practice rounds and options that share a prompt", () => {
+  it("a practice round stays on the level that was picked, a normal one also draws from the levels below", () => {
+    for (let seed = 1; seed <= 30; seed++) {
+      const practice = generateRound({ track: "geometry", level: 17, seed, count: 5, practice: true });
+      expect(practice).toHaveLength(5);
+      expect(practice.every((p) => p.prompt.startsWith("Each angle of a regular"))).toBe(true);
+    }
+    const mixed = new Set<string>();
+    for (let seed = 1; seed <= 30; seed++) for (const p of generateRound({ track: "geometry", level: 17, seed, count: 5 })) mixed.add(p.prompt.split(" ").slice(0, 3).join(" "));
+    expect(mixed.size).toBeGreaterThan(2);
+  });
+
+  it("a round of 'which is…' problems still has every problem it should", () => {
+    for (let seed = 1; seed <= 30; seed++) {
+      const round = generateRound({ track: "probability", level: 16, seed, count: 5, practice: true });
+      expect(round).toHaveLength(5);
+      expect(new Set(round.map((p) => p.choices!.join("|"))).size).toBe(5);
+    }
+  });
+});

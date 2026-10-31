@@ -105,6 +105,8 @@ final class AppModel {
         case topic(Interest)
         case due
         case skill(TrackId)
+        /// A round of one level of a skill: practice, not counted toward moving up.
+        case level(TrackId, Int)
     }
 
     /// Builds a round of the given kind: cards (learning), skill drills (math) or a few games (games).
@@ -156,6 +158,8 @@ final class AppModel {
         case .skill(let track):
             let level = data.skills.first { $0.track == track }?.level ?? 1
             return [.drill(DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)), count: size))]
+        case .level(let track, let level):
+            return [.drill(DrillSpec(track: track, level: level, seed: UInt32.random(in: 0..<(1 << 31)), count: size, practice: true))]
         case .due:
             return SessionEngine.dueReviews(cards: cards, reviews: data.reviews, now: clock()).prefix(size).map {
                 SessionItem.review(card: $0.card, probe: $0.probe, review: $0.review)
@@ -178,6 +182,11 @@ final class AppModel {
             .filter { completed.contains($0.id) }
             .map { LearnedRow(card: $0, learnedAt: first[$0.id] ?? .distantPast, state: ProgressStats.cardState($0, completed: completed, reviews: byProbe)) }
             .sorted { $0.learnedAt > $1.learnedAt }
+    }
+
+    /// A skill's progress as it stands, without changing it.
+    func skillProgress(_ track: TrackId) -> SkillProgress {
+        data.skills.first { $0.track == track } ?? SkillProgress(track: track)
     }
 
     /// A skill's level and how many problems have been answered in it.

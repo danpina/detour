@@ -3,6 +3,8 @@ import SwiftUI
 /// Progress, in three parts that match the three rounds on the home screen: Learning (cards), Math (skills with levels) and Games.
 struct ProgressScreen: View {
     @Environment(AppModel.self) private var model
+    /// Starts a round from a skill page: one level of a skill, or the skill at your level.
+    let startRound: (_ specific: AppModel.Specific, _ kind: AppModel.RoundKind) -> Void
 
     private enum Part: String, CaseIterable, Identifiable {
         case learning = "📚 Learning"
@@ -143,17 +145,23 @@ struct ProgressScreen: View {
         card {
             Text("Your math levels").font(.subheadline).foregroundStyle(.secondary)
             ForEach(snapshot.skills) { s in
+                NavigationLink {
+                    SkillView(track: s.track, start: startRound)
+                } label: {
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
-                        Text(s.name).font(.headline)
+                        Text(s.name).font(.headline).foregroundStyle(.primary)
                         Spacer()
-                        Text("Level \(s.level) / \(s.maxLevel)").font(.subheadline)
+                        Text("Level \(s.level) / \(s.maxLevel)").font(.subheadline).foregroundStyle(.primary)
                     }
                     Text(s.levelName + " · " + String(s.attempts) + (s.attempts == 1 ? " problem" : " problems") + " answered").font(.caption).foregroundStyle(.secondary)
                     ProgressView(value: min(1, Double(s.recentTotal) / 20))
                     Text(s.recentTotal > 0 ? "\(s.recentRight) of \(s.recentTotal) recent answers right (level up at 80% over 20)" : "Practise in a Math round")
                         .font(.caption).foregroundStyle(.secondary)
+                    Text("All levels").font(.caption.weight(.medium)).foregroundStyle(.teal)
                 }
+                }
+                .buttonStyle(.plain)
             }
         }
     }

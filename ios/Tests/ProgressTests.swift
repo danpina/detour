@@ -271,4 +271,20 @@ final class AppModelTests: XCTestCase {
         XCTAssertTrue(leveled)
         XCTAssertEqual(model.data.skills.first?.level, 2)
     }
+
+    func testPractisingALevelIsPracticeAtThatLevel() {
+        let (model, url) = makeModel()
+        defer { try? FileManager.default.removeItem(at: url) }
+        model.completeOnboarding(interests: [.history, .science, .money])
+        model.updateSettings { $0.setSize = 5 }
+        let items = model.makeSet(specific: .level(.geometry, 16))
+        guard case .drill(let spec)? = items.first else { return XCTFail("expected a drill") }
+        XCTAssertEqual(items.count, 1)
+        XCTAssertEqual(spec.track, .geometry)
+        XCTAssertEqual(spec.level, 16)
+        XCTAssertEqual(spec.count, 5)
+        XCTAssertTrue(spec.practice)
+        guard case .drill(let normal)? = model.makeSet(specific: .skill(.geometry)).first else { return XCTFail("expected a drill") }
+        XCTAssertFalse(normal.practice)
+    }
 }

@@ -9452,8 +9452,13 @@
           "answer": 60
         },
         {
-          "prompt": "How many different ways can the letters of TOOTH be arranged?",
-          "answer": 30
+          "prompt": "Which is the most likely?",
+          "answer": 1,
+          "choices": [
+            "2 in 3",
+            "3 in 4",
+            "3 in 5"
+          ]
         }
       ]
     },
@@ -9476,8 +9481,13 @@
           "answer": 21
         },
         {
-          "prompt": "Roll 8 fair dice. The expected total?",
-          "answer": 28
+          "prompt": "Which is the most likely?",
+          "answer": 1,
+          "choices": [
+            "3 in 5",
+            "7 in 10",
+            "1 in 2"
+          ]
         }
       ]
     },
@@ -9500,8 +9510,13 @@
           "answer": 7
         },
         {
-          "prompt": "A bag has 4 red and 1 blue marbles. You draw two without putting any back. The chance both are red, in percent?",
-          "answer": 60
+          "prompt": "Which is the most likely?",
+          "answer": 1,
+          "choices": [
+            "3 in 10",
+            "2 in 5",
+            "1 in 4"
+          ]
         }
       ]
     },
@@ -9520,12 +9535,17 @@
           ]
         },
         {
-          "prompt": "How many different ways can the letters of NOON be arranged?",
-          "answer": 6
+          "prompt": "Which is the most likely?",
+          "answer": 0,
+          "choices": [
+            "7 in 10",
+            "3 in 5",
+            "1 in 2"
+          ]
         },
         {
-          "prompt": "How many different ways can the letters of APPLE be arranged?",
-          "answer": 60
+          "prompt": "How many different ways can the letters of NOON be arranged?",
+          "answer": 6
         }
       ]
     },
@@ -12115,12 +12135,18 @@
           ]
         },
         {
-          "prompt": "0x2C + 0x51, as a decimal number",
-          "answer": 125
+          "prompt": "Which of these is divisible by 9?",
+          "answer": 0,
+          "choices": [
+            "702",
+            "703",
+            "704",
+            "706"
+          ]
         },
         {
-          "prompt": "Remainder of 31 × 38 ÷ 8",
-          "answer": 2
+          "prompt": "0x2C + 0x51, as a decimal number",
+          "answer": 125
         }
       ]
     },

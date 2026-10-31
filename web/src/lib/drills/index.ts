@@ -132,16 +132,19 @@ export function generateRound(spec: DrillSpec): Problem[] {
   const wanted = spec.count ?? TRACKS[spec.track].problems;
   for (let guard = 0; out.length < wanted && guard < 50; guard++) {
     // Mental-math rounds mix operations: the first problem is at the player's level, the rest from that level and below.
-    const levelAt = (max: number) => mentalMathLevelFor(spec.level, out.length, rng, max);
+    // A practice round stays on the level that was picked; a normal round also draws from the three levels below.
+    const levelAt = (max: number) => (spec.practice ? Math.min(Math.max(spec.level, 1), max) : mentalMathLevelFor(spec.level, out.length, rng, max));
     const generate = LEVELLED[spec.track];
     const p =
       spec.track === "mental-math"
-        ? generateMentalMath(mentalMathLevelFor(spec.level, out.length, rng), rng)
+        ? generateMentalMath(levelAt(MENTAL_MATH_MAX_LEVEL), rng)
         : generate
           ? generate(levelAt(TRACKS[spec.track].maxLevel), rng)
           : generateEstimation(spec.level, rng);
-    if (seen.has(p.prompt)) continue;
-    seen.add(p.prompt);
+    // Problems with options can share a prompt ("Which is larger?"), so the options are part of what makes them the same.
+    const key = p.prompt + (p.choices ? "|" + p.choices.join("|") : "");
+    if (seen.has(key)) continue;
+    seen.add(key);
     out.push(p);
   }
   return out;

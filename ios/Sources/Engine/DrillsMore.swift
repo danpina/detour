@@ -15,6 +15,16 @@ enum MoreLevels {
         "Volume of a box",
         "Right triangles: Pythagoras",
         "Trapezoids and polygon angles",
+        "Square: area to perimeter",
+        "Area of a rhombus",
+        "Circumference from the diameter",
+        "Volume of a cylinder",
+        "The diagonal of a rectangle",
+        "True or false: right triangles",
+        "Angles of regular polygons",
+        "Enlarging a triangle",
+        "Surface area of a cube",
+        "Distance between two points",
     ]
 
     static let probability = [
@@ -28,6 +38,16 @@ enum MoreLevels {
         "Codes and passwords",
         "Two chances in a row",
         "Choosing a few from many",
+        "The chance of not",
+        "Either one or the other",
+        "Drawing without putting back",
+        "Expected total of dice",
+        "Arranging letters with repeats",
+        "Which is most likely?",
+        "Choosing exactly k heads",
+        "Odds to percent",
+        "True or false: chance myths",
+        "Expected profit",
     ]
 
     static let numberTheory = [
@@ -41,6 +61,16 @@ enum MoreLevels {
         "Decimal to binary",
         "Hexadecimal to decimal",
         "Last digits of powers",
+        "Prime or not?",
+        "Prime factors added up",
+        "Counting perfect squares",
+        "Remainders of products",
+        "Adding in binary",
+        "Adding in hexadecimal",
+        "Which is divisible by 9?",
+        "Greatest common divisor of three",
+        "Least common multiple of three",
+        "Digital roots",
     ]
 
     static let money = [
@@ -54,6 +84,16 @@ enum MoreLevels {
         "Percent up and down",
         "Simple interest",
         "Compound interest, two years",
+        "Sales tax",
+        "The better deal",
+        "Profit as a percent",
+        "Break-even",
+        "Monthly payments",
+        "Exchanging currency",
+        "The rule of 72",
+        "Inflation",
+        "Overtime pay",
+        "Which loan costs less?",
     ]
 }
 
@@ -79,7 +119,9 @@ extension Drills {
     private static let triples: [(Int, Int, Int)] = [(3, 4, 5), (5, 12, 13), (8, 15, 17), (7, 24, 25), (20, 21, 29)]
 
     static func geometry(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), MoreLevels.geometry.count) {
+        let lv = min(max(level, 1), MoreLevels.geometry.count)
+        if lv > 10 { return geometryDepth(lv, &r) }
+        switch lv {
         case 1:
             let w = r.int(3, 20), h = r.int(2, 15)
             return problem("Perimeter of a \(w) × \(h) rectangle", 2 * (w + h), "Two widths and two heights: 2 × (\(w) + \(h)).")
@@ -129,7 +171,9 @@ extension Drills {
     // MARK: Probability and counting
 
     static func probability(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), MoreLevels.probability.count) {
+        let lv = min(max(level, 1), MoreLevels.probability.count)
+        if lv > 10 { return probabilityDepth(lv, &r) }
+        switch lv {
         case 1:
             let n = r.int(2, 6)
             return problem("A fair coin is flipped \(n) times. How many different results are there?", 1 << n, "Each flip doubles the options: 2 multiplied \(n) times.")
@@ -186,7 +230,9 @@ extension Drills {
     private static let hexDigits = Array("0123456789ABCDEF")
 
     static func numberTheory(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), MoreLevels.numberTheory.count) {
+        let lv = min(max(level, 1), MoreLevels.numberTheory.count)
+        if lv > 10 { return numberTheoryDepth(lv, &r) }
+        switch lv {
         case 1:
             let n = r.int(6, 40)
             var count = 0
@@ -238,7 +284,9 @@ extension Drills {
     // MARK: Everyday money
 
     static func money(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), MoreLevels.money.count) {
+        let lv = min(max(level, 1), MoreLevels.money.count)
+        if lv > 10 { return moneyDepth(lv, &r) }
+        switch lv {
         case 1:
             let paid = r.pick([20, 50, 100])
             let cost = r.int(3, paid - 1)

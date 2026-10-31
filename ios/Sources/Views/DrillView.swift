@@ -93,23 +93,51 @@ struct DrillView: View {
                     .minimumScaleFactor(0.6)
                     .multilineTextAlignment(.center)
                     .padding(.top, 12)
-                TextField(spec.track != .estimation ? "Your answer" : "Your best guess (try 5k or 2m)", text: $input)
-                    .keyboardType(spec.track != .estimation ? .decimalPad : .numbersAndPunctuation)
-                    .multilineTextAlignment(.center)
-                    .font(.title2)
-                    .padding(14)
-                    .background(.white.opacity(0.12), in: RoundedRectangle(cornerRadius: 16))
-                    .focused($focused)
-                    .disabled(feedback != nil)
-                    .onSubmit { check(problem) }
+                if let choices = problem.choices {
+                    choiceButtons(choices, problem: problem)
+                } else {
+                    TextField(spec.track != .estimation ? "Your answer" : "Your best guess (try 5k or 2m)", text: $input)
+                        .keyboardType(spec.track != .estimation ? .decimalPad : .numbersAndPunctuation)
+                        .multilineTextAlignment(.center)
+                        .font(.title2)
+                        .padding(14)
+                        .background(.white.opacity(0.12), in: RoundedRectangle(cornerRadius: 16))
+                        .focused($focused)
+                        .disabled(feedback != nil)
+                        .onSubmit { check(problem) }
+                }
                 if let feedback {
                     feedbackView(feedback, problem: problem)
-                } else {
+                } else if problem.choices == nil {
                     Button { check(problem) } label: { Text("Check").whitePill() }
                         .disabled(input.trimmingCharacters(in: .whitespaces).isEmpty)
                         .opacity(input.trimmingCharacters(in: .whitespaces).isEmpty ? 0.4 : 1)
                 }
                 Spacer()
+            }
+        }
+    }
+
+    /// Multiple choice and true or false: tap an option. The right one turns green and a wrong pick red once answered.
+    private func choiceButtons(_ choices: [String], problem: DrillProblem) -> some View {
+        VStack(spacing: 10) {
+            ForEach(Array(choices.enumerated()), id: \.offset) { index, label in
+                let chosen = feedback != nil && Int(input) == index
+                let right = feedback != nil && index == Int(problem.answer)
+                Button {
+                    guard feedback == nil else { return }
+                    input = String(index)
+                    check(problem)
+                } label: {
+                    Text(label)
+                        .font(.title3.weight(.semibold))
+                        .frame(maxWidth: .infinity, minHeight: 52)
+                        .padding(.horizontal, 12)
+                        .background(right ? Color.green.opacity(0.3) : (chosen ? Color.red.opacity(0.3) : Color.white.opacity(0.12)), in: RoundedRectangle(cornerRadius: 16))
+                        .opacity(feedback != nil && !right && !chosen ? 0.6 : 1)
+                }
+                .buttonStyle(.plain)
+                .accessibilityAddTraits(chosen ? .isSelected : [])
             }
         }
     }
@@ -122,6 +150,8 @@ struct DrillView: View {
             if spec.track == .estimation, let guess = f.guess {
                 Text("You said \(Scoring.format(guess)) · answer \(Scoring.format(problem.answer)) (\(String(format: "%.1f", Scoring.timesOff(guess, problem.answer)))× off)")
                     .font(.footnote).foregroundStyle(.white.opacity(0.8))
+            } else if let choices = problem.choices, choices.indices.contains(Int(problem.answer)) {
+                Text("Answer: \(choices[Int(problem.answer)])").font(.footnote).foregroundStyle(.white.opacity(0.8))
             } else {
                 Text("Answer: \(Scoring.format(problem.answer))").font(.footnote).foregroundStyle(.white.opacity(0.8))
             }
@@ -139,7 +169,11 @@ struct DrillView: View {
             Spacer()
             Text(info.name.uppercased()).font(.caption).tracking(1.5).foregroundStyle(.white.opacity(0.6))
             Text("\(s.right) of \(problems.count) right").font(.largeTitle.weight(.semibold))
-            if s.leveledUp {
+            if spec.practice {
+                Text("Level \(spec.level) practice. It doesn't count toward your level, so try anything.")
+                    .foregroundStyle(.white.opacity(0.85))
+                    .multilineTextAlignment(.center)
+            } else if s.leveledUp {
                 Text("Level up! You're now on level \(s.progress.level): \(info.levels[s.progress.level - 1]).")
                     .padding(14)
                     .background(.green.opacity(0.25), in: RoundedRectangle(cornerRadius: 16))
@@ -150,7 +184,7 @@ struct DrillView: View {
                 Text(s.progress.level >= info.maxLevel ? "You're on the top level." : "Level up at 80% over 20 attempts.")
                     .font(.footnote).foregroundStyle(.white.opacity(0.6))
             }
-            Button { actions.next() } label: { Text("Next").whitePill() }.padding(.top, 24)
+            Button { actions.next() } label: { Text(spec.practice ? "Done" : "Next").whitePill() }.padding(.top, 24)
             Spacer()
         }
     }
@@ -184,7 +218,8 @@ struct DrillView: View {
         // Unanswered problems (time ran out) count as wrong attempts.
         let results = problems.indices.map { all.indices.contains($0) ? all[$0].correct : false }
         let right = results.filter { $0 }.count
-        let out = model.recordDrillRound(track: spec.track, results: results)
+        // Practice rounds (a level picked on the skill page) are not counted toward moving up.
+        let out = spec.practice ? (progress: model.skillProgress(spec.track), leveledUp: false) : model.recordDrillRound(track: spec.track, results: results)
         summary = (out.progress, out.leveledUp, right)
         actions.complete(right >= (problems.count + 1) / 2)
         // One problem in a mixed round: go straight on, unless there is a level up to see.

@@ -48,6 +48,8 @@ struct DrillSpec: Hashable {
     let seed: UInt32
     /// How many problems the round has. nil means the track's usual number.
     var count: Int? = nil
+    /// Practice rounds (a level picked on the skill page) do not count toward moving up.
+    var practice: Bool = false
 }
 
 struct DrillProblem: Hashable {
@@ -55,6 +57,8 @@ struct DrillProblem: Hashable {
     let answer: Double
     /// A short trick shown after answering.
     let hint: String?
+    /// For multiple-choice and true-or-false problems: the options to tap. `answer` is then the index of the right one.
+    var choices: [String]? = nil
 }
 
 struct TrackInfo {
@@ -117,6 +121,16 @@ enum Drills {
                 "Derivatives: ax^n at a point",
                 "Derivatives: ax² + bx at a point",
                 "Integrals: area under ax^n",
+                "Solve x ÷ a + b = c",
+                "Unknowns on both sides",
+                "Brackets: a(x + b) = c",
+                "Evaluate with two letters",
+                "Two equations, two unknowns",
+                "Which value solves it?",
+                "Expanding (x + p)(x + q)",
+                "Quadratics: the smaller root",
+                "Derivatives of cubics",
+                "Integrals of straight lines",
             ],
             problems: 3,
             timeLimitSeconds: 60
@@ -199,40 +213,42 @@ enum Drills {
             guardCount += 1
             let p: DrillProblem
             if spec.track == .mentalMath {
-                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.mentalMath).maxLevel, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.mentalMath).maxLevel, practice: spec.practice, &rng)
                 p = mentalMath(lv, &rng)
             } else if spec.track == .algebra {
-                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.algebra).maxLevel, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.algebra).maxLevel, practice: spec.practice, &rng)
                 p = algebra(lv, &rng)
             } else if spec.track == .geometry {
-                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.geometry).maxLevel, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.geometry).maxLevel, practice: spec.practice, &rng)
                 p = geometry(lv, &rng)
             } else if spec.track == .probability {
-                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.probability).maxLevel, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.probability).maxLevel, practice: spec.practice, &rng)
                 p = probability(lv, &rng)
             } else if spec.track == .numberTheory {
-                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.numberTheory).maxLevel, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.numberTheory).maxLevel, practice: spec.practice, &rng)
                 p = numberTheory(lv, &rng)
             } else if spec.track == .money {
-                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.money).maxLevel, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.money).maxLevel, practice: spec.practice, &rng)
                 p = money(lv, &rng)
             } else if spec.track == .fractions {
-                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.fractions).maxLevel, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.fractions).maxLevel, practice: spec.practice, &rng)
                 p = fractions(lv, &rng)
             } else if spec.track == .statistics {
-                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.statistics).maxLevel, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.statistics).maxLevel, practice: spec.practice, &rng)
                 p = statistics(lv, &rng)
             } else if spec.track == .sequences {
-                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.sequences).maxLevel, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.sequences).maxLevel, practice: spec.practice, &rng)
                 p = sequences(lv, &rng)
             } else if spec.track == .rates {
-                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.rates).maxLevel, &rng)
+                let lv = mentalMathLevel(spec.level, position: out.count, maxLevel: info(.rates).maxLevel, practice: spec.practice, &rng)
                 p = rates(lv, &rng)
             } else {
                 p = estimation(spec.level, &rng)
             }
-            if seen.contains(p.prompt) { continue }
-            seen.insert(p.prompt)
+            // Problems with options can share a prompt ("Which is larger?"), so the options are part of what makes them the same.
+            let key = p.prompt + (p.choices.map { "|" + $0.joined(separator: "|") } ?? "")
+            if seen.contains(key) { continue }
+            seen.insert(key)
             out.append(p)
         }
         return out
@@ -242,9 +258,9 @@ enum Drills {
 
     /// The level of the problem at `position` in a round. The first problem is at the player's level; the others are
     /// drawn from that level and the three below it, so a round mixes sums, differences, times and division.
-    private static func mentalMathLevel(_ level: Int, position: Int, maxLevel: Int, _ r: inout SeededRng) -> Int {
+    private static func mentalMathLevel(_ level: Int, position: Int, maxLevel: Int, practice: Bool = false, _ r: inout SeededRng) -> Int {
         let top = min(max(level, 1), maxLevel)
-        if position == 0 { return top }
+        if position == 0 || practice { return top }
         return r.int(max(1, top - 3), top)
     }
 
@@ -416,7 +432,9 @@ enum Drills {
     private static func coef(_ a: Int) -> String { a == 1 ? "" : String(a) }
 
     private static func algebra(_ level: Int, _ r: inout SeededRng) -> DrillProblem {
-        switch min(max(level, 1), info(.algebra).maxLevel) {
+        let lv = min(max(level, 1), info(.algebra).maxLevel)
+        if lv > 10 { return algebraDepth(lv, &r) }
+        switch lv {
         case 1:
             let x = r.int(2, 30), a = r.int(2, 30)
             return DrillProblem(prompt: "x + \(a) = \(x + a)", answer: Double(x), hint: "Take \(a) away from both sides.")
