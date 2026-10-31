@@ -159,7 +159,7 @@ export function DrillView({ spec, index, total, onComplete, onNext }: Props) {
                   {feedback.judgement.note}
                 </p>
                 <p className="mt-1 text-sm text-white/80">
-                  {spec.track === "estimation" && feedback.judgement.guess !== undefined
+                  {spec.track === "estimation" && !problem.choices && feedback.judgement.guess !== undefined
                     ? `You said ${formatNumber(feedback.judgement.guess)} · answer ${formatNumber(problem.answer)} (${timesOff(feedback.judgement.guess, problem.answer).toFixed(1)}× off)`
                     : problem.choices
                       ? `Answer: ${problem.choices[problem.answer]}`

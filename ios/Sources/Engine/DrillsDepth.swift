@@ -15,15 +15,31 @@ extension Drills {
     }
 
     /// The right option goes in a random place among the wrong ones (one random number is drawn for that).
-    private static func choose(_ r: inout SeededRng, correct: String, wrong: [String]) -> (choices: [String], answer: Int) {
+    static func choose(_ r: inout SeededRng, correct: String, wrong: [String]) -> (choices: [String], answer: Int) {
         let at = r.int(0, wrong.count)
         var choices = wrong
         choices.insert(correct, at: at)
         return (choices, at)
     }
 
-    private static func trueFalse(_ isTrue: Bool) -> (choices: [String], answer: Int) {
+    static func trueFalse(_ isTrue: Bool) -> (choices: [String], answer: Int) {
         (["True", "False"], isTrue ? 0 : 1)
+    }
+
+    /// A whole number rounded to its first two digits (half up): 912,500 becomes 910,000.
+    static func twoDigits(_ n: Int) -> Int {
+        var scale = 1
+        while n / scale >= 100 { scale *= 10 }
+        return (2 * n + scale) / (2 * scale) * scale
+    }
+
+    /// Friendly words for a rounded number: 910000 is "910 thousand", 1500000 is "1.5 million".
+    static func inWords(_ n: Int) -> String {
+        for (unit, name) in [(1_000_000_000, "billion"), (1_000_000, "million"), (1_000, "thousand")] where n >= unit {
+            let tenths = (n * 10) / unit
+            return (tenths % 10 == 0 ? String(tenths / 10) : "\(tenths / 10).\(tenths % 10)") + " " + name
+        }
+        return String(n)
     }
 
     private static func depthPow(_ base: Int, _ exponent: Int) -> Int {

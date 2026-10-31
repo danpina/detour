@@ -504,7 +504,11 @@ enum Drills {
         let answer = terms.reduce(1, *)
         var prompt = t.text
         for (name, value) in values { prompt = prompt.replacingOccurrences(of: "{" + name + "}", with: String(value)) }
-        return DrillProblem(prompt: prompt, answer: Double(answer), hint: terms.map { String($0) }.joined(separator: " × ") + ".")
+        // Nobody types a number like 912,500 on a phone: pick the closest ballpark. The wrong ones are 10 times too big, 10 times too small, and 3 times too big.
+        let right = inWords(twoDigits(answer))
+        let wrong = [inWords(twoDigits(answer * 10)), inWords(twoDigits(max(1, answer / 10))), inWords(twoDigits(answer * 3))]
+        let pick = choose(&r, correct: right, wrong: wrong)
+        return DrillProblem(prompt: prompt, answer: Double(pick.answer), hint: terms.map { String($0) }.joined(separator: " × ") + " is about \(right).", choices: pick.choices)
     }
 
     // MARK: Answers
@@ -536,8 +540,8 @@ enum Drills {
 
     static func judge(_ track: TrackId, _ problem: DrillProblem, input: String) -> Judgement {
         guard let guess = parseNumber(input) else { return Judgement(correct: false, guess: nil, note: "That wasn't a number.") }
-        // Everything except estimation has one exact answer.
-        if track != .estimation {
+        // Everything except estimation has one exact answer. Estimation by options does too: the right option.
+        if track != .estimation || problem.choices != nil {
             let ok = abs(guess - problem.answer) < 1e-9
             return Judgement(correct: ok, guess: guess, note: ok ? "Correct" : "Not quite")
         }

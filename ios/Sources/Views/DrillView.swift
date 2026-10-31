@@ -147,7 +147,7 @@ struct DrillView: View {
             Text("\(f.correct ? "✓ " : "✗ ")\(f.note)")
                 .font(.headline)
                 .foregroundStyle(f.correct ? Color.green : Color.red)
-            if spec.track == .estimation, let guess = f.guess {
+            if spec.track == .estimation, problem.choices == nil, let guess = f.guess {
                 Text("You said \(Scoring.format(guess)) · answer \(Scoring.format(problem.answer)) (\(String(format: "%.1f", Scoring.timesOff(guess, problem.answer)))× off)")
                     .font(.footnote).foregroundStyle(.white.opacity(0.8))
             } else if let choices = problem.choices, choices.indices.contains(Int(problem.answer)) {

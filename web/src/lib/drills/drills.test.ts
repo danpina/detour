@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ESTIMATION_MAX_LEVEL, estimationVerdict, timesOff } from "./estimation";
+import { ESTIMATION_MAX_LEVEL, estimationVerdict, inWords, timesOff, twoDigits } from "./estimation";
 import {
   LEVEL_WINDOW, TRACKS, applyResults, emptyProgress, generateRound, judge, nextTrack, parseNumber, shouldLevelUp, type SkillProgress,
 } from "./index";
@@ -129,27 +129,57 @@ describe("mental math generators", () => {
 });
 
 describe("estimation", () => {
-  it("generates positive, finite answers with a hint at every level", () => {
+  /** The option labels are plain words: "910 thousand", "1.5 million", "40". */
+  const WORDS = /^\d+(\.\d)?( thousand| million| billion)?$/;
+
+  it("asks you to pick the closest ballpark: four plain-word options, one of them right, at every level", () => {
     for (let level = 1; level <= ESTIMATION_MAX_LEVEL; level++) {
       for (let seed = 1; seed <= 200; seed++) {
         for (const p of generateRound({ track: "estimation", level, seed })) {
-          expect(p.answer).toBeGreaterThan(0);
-          expect(Number.isFinite(p.answer)).toBe(true);
+          expect(p.choices, p.prompt).toHaveLength(4);
+          expect(new Set(p.choices).size, p.prompt).toBe(4);
+          for (const label of p.choices!) expect(label, p.prompt).toMatch(WORDS);
+          expect(p.answer).toBeGreaterThanOrEqual(0);
+          expect(p.answer).toBeLessThan(4);
           expect(p.hint).toBeTruthy();
         }
       }
     }
   });
 
-  it("level 1 everyday totals multiply out exactly", () => {
-    for (let seed = 1; seed <= 100; seed++) {
-      for (const p of generateRound({ track: "estimation", level: 1, seed })) {
-        const nums = (p.prompt.match(/\d+/g) ?? []).map(Number);
-        expect(nums.length).toBeGreaterThanOrEqual(2);
-        expect(Number.isInteger(p.answer) && p.answer > 0).toBe(true);
-        expect(p.answer % nums[0]!).toBe(0);
+  it("the right option is the product the hint shows, rounded to two digits", () => {
+    for (let level = 1; level <= ESTIMATION_MAX_LEVEL; level++) {
+      for (let seed = 1; seed <= 100; seed++) {
+        for (const p of generateRound({ track: "estimation", level, seed })) {
+          const terms = (p.hint!.split(" is about ")[0] ?? "").split(" × ").map(Number);
+          const product = terms.reduce((x, y) => x * y, 1);
+          const right = p.choices![p.answer]!;
+          expect(right, p.prompt).toBe(inWords(twoDigits(product)));
+          // The wrong ones are 10 times too big, 10 times too small and 3 times too big.
+          expect(p.choices, p.prompt).toContain(inWords(twoDigits(product * 10)));
+          expect(p.choices, p.prompt).toContain(inWords(twoDigits(Math.floor(product / 10))));
+          expect(p.choices, p.prompt).toContain(inWords(twoDigits(product * 3)));
+        }
       }
     }
+  });
+
+  it("rounds to two digits and says it in words", () => {
+    expect(twoDigits(912_500)).toBe(910_000);
+    expect(twoDigits(99)).toBe(99);
+    expect(twoDigits(1_450)).toBe(1_500);
+    expect(twoDigits(2_600_000_000)).toBe(2_600_000_000);
+    expect(inWords(910_000)).toBe("910 thousand");
+    expect(inWords(1_500_000)).toBe("1.5 million");
+    expect(inWords(12_000_000)).toBe("12 million");
+    expect(inWords(2_600_000_000)).toBe("2.6 billion");
+    expect(inWords(840)).toBe("840");
+  });
+
+  it("is judged by the option tapped", () => {
+    const p = generateRound({ track: "estimation", level: 1, seed: 5, count: 1 })[0]!;
+    expect(judge("estimation", p, String(p.answer)).correct).toBe(true);
+    expect(judge("estimation", p, String((p.answer + 1) % 4)).correct).toBe(false);
   });
 
   it("scores by log distance", () => {
@@ -241,17 +271,6 @@ describe("estimation question variety", () => {
       expect(prompts.size).toBeGreaterThanOrEqual(150);
       const stems = new Set([...prompts.keys()].map((p) => p.replace(/\d+/g, "#")));
       expect(stems.size).toBeGreaterThanOrEqual(12);
-    }
-  });
-
-  it("every answer is the product of the numbers in the prompt's template", () => {
-    for (let level = 1; level <= ESTIMATION_MAX_LEVEL; level++) {
-      for (let seed = 1; seed <= 100; seed++) {
-        for (const p of generateRound({ track: "estimation", level, seed })) {
-          expect(Number.isInteger(p.answer) && p.answer > 0, p.prompt).toBe(true);
-          expect(p.hint).toBeTruthy();
-        }
-      }
     }
   });
 });

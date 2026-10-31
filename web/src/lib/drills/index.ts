@@ -167,8 +167,8 @@ export type Judgement = { correct: boolean; guess?: number; note: string };
 export function judge(track: TrackId, problem: Problem, input: string): Judgement {
   const guess = parseNumber(input);
   if (guess === undefined) return { correct: false, note: "That wasn't a number." };
-  // Everything except estimation has one exact answer.
-  if (track !== "estimation") {
+  // Everything except estimation has one exact answer. Estimation by options does too: the right option.
+  if (track !== "estimation" || problem.choices) {
     const ok = Math.abs(guess - problem.answer) < 1e-9;
     return { correct: ok, guess, note: ok ? "Correct" : "Not quite" };
   }

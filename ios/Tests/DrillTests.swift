@@ -139,4 +139,35 @@ final class DrillTests: XCTestCase {
         XCTAssertTrue(Drills.judge(.numberTheory, p, input: "0").correct)
         XCTAssertFalse(Drills.judge(.numberTheory, p, input: "1").correct)
     }
+
+    func testEstimationAsksForTheClosestBallpark() {
+        for level in 1...Drills.info(.estimation).maxLevel {
+            for seed in UInt32(1)...UInt32(60) {
+                for p in Drills.generateRound(DrillSpec(track: .estimation, level: level, seed: seed)) {
+                    let options = p.choices ?? []
+                    XCTAssertEqual(options.count, 4, p.prompt)
+                    XCTAssertEqual(Set(options).count, 4, p.prompt)
+                    XCTAssertLessThan(Int(p.answer), 4, p.prompt)
+                    for label in options {
+                        XCTAssertNotNil(label.range(of: #"^\d+(\.\d)?( thousand| million| billion)?$"#, options: .regularExpression), label)
+                    }
+                    // The hint shows the product; the right option is that product in two digits.
+                    let terms = (p.hint ?? "").components(separatedBy: " is about ")[0].components(separatedBy: " × ").compactMap { Int($0) }
+                    let product = terms.reduce(1, *)
+                    XCTAssertEqual(options[Int(p.answer)], Drills.inWords(Drills.twoDigits(product)), p.prompt)
+                }
+            }
+        }
+    }
+
+    func testRoundingToTwoDigitsAndSayingItInWords() {
+        XCTAssertEqual(Drills.twoDigits(912_500), 910_000)
+        XCTAssertEqual(Drills.twoDigits(99), 99)
+        XCTAssertEqual(Drills.twoDigits(1_450), 1_500)
+        XCTAssertEqual(Drills.inWords(910_000), "910 thousand")
+        XCTAssertEqual(Drills.inWords(1_500_000), "1.5 million")
+        XCTAssertEqual(Drills.inWords(12_000_000), "12 million")
+        XCTAssertEqual(Drills.inWords(2_600_000_000), "2.6 billion")
+        XCTAssertEqual(Drills.inWords(840), "840")
+    }
 }

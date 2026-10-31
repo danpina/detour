@@ -24837,11 +24837,23 @@
       "problems": [
         {
           "prompt": "A school serves 300 lunches a day, 5 days a week. How many lunches is that in a 40-week school year?",
-          "answer": 60000
+          "answer": 3,
+          "choices": [
+            "600 thousand",
+            "6 thousand",
+            "180 thousand",
+            "60 thousand"
+          ]
         },
         {
-          "prompt": "A roastery packs 900 bags of coffee a day, 5 days a week. How many bags is that in a year (52 weeks)?",
-          "answer": 234000
+          "prompt": "A roastery packs 400 bags of coffee a day, 6 days a week. How many bags is that in a year (52 weeks)?",
+          "answer": 2,
+          "choices": [
+            "1.2 million",
+            "12 thousand",
+            "120 thousand",
+            "370 thousand"
+          ]
         }
       ]
     },
@@ -24852,11 +24864,23 @@
       "problems": [
         {
           "prompt": "A farm's hens lay 500 eggs a day. How many eggs is that in 4 weeks?",
-          "answer": 14000
+          "answer": 2,
+          "choices": [
+            "140 thousand",
+            "1.4 thousand",
+            "14 thousand",
+            "42 thousand"
+          ]
         },
         {
-          "prompt": "A newspaper prints 50000 copies a day. How many copies is that in 7 years (365 days a year)?",
-          "answer": 127750000
+          "prompt": "A laundromat runs 120 loads a day. How many loads is that in 5 weeks?",
+          "answer": 1,
+          "choices": [
+            "42 thousand",
+            "4.2 thousand",
+            "420",
+            "13 thousand"
+          ]
         }
       ]
     },
@@ -24867,11 +24891,23 @@
       "problems": [
         {
           "prompt": "A farm's hens lay 200 eggs a day. How many eggs is that in 5 weeks?",
-          "answer": 7000
+          "answer": 0,
+          "choices": [
+            "7 thousand",
+            "70 thousand",
+            "700",
+            "21 thousand"
+          ]
         },
         {
-          "prompt": "A bakery bakes 250 loaves a day. How many loaves is that in a year (365 days)?",
-          "answer": 91250
+          "prompt": "A farm's hens lay 500 eggs a day. How many eggs is that in 5 weeks?",
+          "answer": 0,
+          "choices": [
+            "18 thousand",
+            "180 thousand",
+            "1.8 thousand",
+            "53 thousand"
+          ]
         }
       ]
     },
@@ -24882,11 +24918,23 @@
       "problems": [
         {
           "prompt": "A bike shop sells 12 bikes a week. How many bikes is that in 8 years (52 weeks a year)?",
-          "answer": 4992
+          "answer": 2,
+          "choices": [
+            "50 thousand",
+            "500",
+            "5 thousand",
+            "15 thousand"
+          ]
         },
         {
-          "prompt": "A school serves 300 lunches a day, 5 days a week. How many lunches is that in a 40-week school year?",
-          "answer": 60000
+          "prompt": "A jet seats 300 people and flies 5 full flights a day. How many passengers is that in a month (30 days)?",
+          "answer": 2,
+          "choices": [
+            "450 thousand",
+            "4.5 thousand",
+            "45 thousand",
+            "140 thousand"
+          ]
         }
       ]
     },
@@ -24897,11 +24945,23 @@
       "problems": [
         {
           "prompt": "A roastery packs 400 bags of coffee a day, 5 days a week. How many bags is that in a year (52 weeks)?",
-          "answer": 104000
+          "answer": 3,
+          "choices": [
+            "1 million",
+            "10 thousand",
+            "310 thousand",
+            "100 thousand"
+          ]
         },
         {
-          "prompt": "A stadium holds 40000 fans and hosts 13 games a season. If every seat is filled, how many tickets are sold in 2 seasons?",
-          "answer": 1040000
+          "prompt": "A newspaper prints 20000 copies a day. How many copies is that in 2 years (365 days a year)?",
+          "answer": 3,
+          "choices": [
+            "150 million",
+            "1.5 million",
+            "44 million",
+            "15 million"
+          ]
         }
       ]
     },
@@ -24912,11 +24972,23 @@
       "problems": [
         {
           "prompt": "A roastery packs 250 bags of coffee a day, 5 days a week. How many bags is that in a year (52 weeks)?",
-          "answer": 65000
+          "answer": 3,
+          "choices": [
+            "650 thousand",
+            "6.5 thousand",
+            "200 thousand",
+            "65 thousand"
+          ]
         },
         {
-          "prompt": "A laundromat runs 120 loads a day. How many loads is that in 5 weeks?",
-          "answer": 4200
+          "prompt": "A school serves 500 lunches a day, 4 days a week. How many lunches is that in a 40-week school year?",
+          "answer": 1,
+          "choices": [
+            "800 thousand",
+            "80 thousand",
+            "8 thousand",
+            "240 thousand"
+          ]
         }
       ]
     },
@@ -24927,11 +24999,23 @@
       "problems": [
         {
           "prompt": "A factory makes 200 bottles a minute. How many bottles in 6 hours?",
-          "answer": 72000
+          "answer": 3,
+          "choices": [
+            "720 thousand",
+            "7.2 thousand",
+            "220 thousand",
+            "72 thousand"
+          ]
         },
         {
-          "prompt": "A conveyor belt moves 45 boxes a minute. How many boxes in 4 days of 12 hours each?",
-          "answer": 129600
+          "prompt": "A conveyor belt moves 20 boxes a minute. How many boxes in 6 days of 24 hours each?",
+          "answer": 1,
+          "choices": [
+            "1.7 million",
+            "170 thousand",
+            "17 thousand",
+            "520 thousand"
+          ]
         }
       ]
     },
@@ -24942,11 +25026,23 @@
       "problems": [
         {
           "prompt": "A river carries 10 cubic metres of water every second. How many cubic metres in 4 hours?",
-          "answer": 144000
+          "answer": 2,
+          "choices": [
+            "1.4 million",
+            "14 thousand",
+            "140 thousand",
+            "430 thousand"
+          ]
         },
         {
-          "prompt": "A printer prints 40 pages a minute. How many pages in 7 hours?",
-          "answer": 16800
+          "prompt": "A clock ticks once a second. How many ticks in 8 hours?",
+          "answer": 1,
+          "choices": [
+            "290 thousand",
+            "29 thousand",
+            "2.9 thousand",
+            "86 thousand"
+          ]
         }
       ]
     },
@@ -24957,11 +25053,23 @@
       "problems": [
         {
           "prompt": "A river carries 10 cubic metres of water every second. How many cubic metres in 5 hours?",
-          "answer": 180000
+          "answer": 0,
+          "choices": [
+            "180 thousand",
+            "1.8 million",
+            "18 thousand",
+            "540 thousand"
+          ]
         },
         {
-          "prompt": "A heart beats 80 times a minute. How many beats in 5 days?",
-          "answer": 576000
+          "prompt": "A river carries 50 cubic metres of water every second. How many cubic metres in 5 hours?",
+          "answer": 0,
+          "choices": [
+            "900 thousand",
+            "9 million",
+            "90 thousand",
+            "2.7 million"
+          ]
         }
       ]
     },
@@ -24972,11 +25080,23 @@
       "problems": [
         {
           "prompt": "A shower uses 10 litres a minute. A family showers 60 minutes a day in total. How many litres in 23 days?",
-          "answer": 13800
+          "answer": 0,
+          "choices": [
+            "14 thousand",
+            "140 thousand",
+            "1.4 thousand",
+            "41 thousand"
+          ]
         },
         {
-          "prompt": "Someone walks 5 km every hour without stopping. How many metres in 14 hours?",
-          "answer": 70000
+          "prompt": "A printer prints 20 pages a minute. How many pages in 6 hours?",
+          "answer": 3,
+          "choices": [
+            "72 thousand",
+            "720",
+            "22 thousand",
+            "7.2 thousand"
+          ]
         }
       ]
     },
@@ -24987,11 +25107,23 @@
       "problems": [
         {
           "prompt": "A conveyor belt moves 20 boxes a minute. How many boxes in 5 days of 24 hours each?",
-          "answer": 144000
+          "answer": 2,
+          "choices": [
+            "1.4 million",
+            "14 thousand",
+            "140 thousand",
+            "430 thousand"
+          ]
         },
         {
-          "prompt": "A printer prints 20 pages a minute. How many pages in 2 hours?",
-          "answer": 2400
+          "prompt": "Someone blinks 12 times a minute while awake, about 18 hours a day. How many blinks in a week?",
+          "answer": 3,
+          "choices": [
+            "910 thousand",
+            "9.1 thousand",
+            "270 thousand",
+            "91 thousand"
+          ]
         }
       ]
     },
@@ -25002,11 +25134,23 @@
       "problems": [
         {
           "prompt": "A conveyor belt moves 10 boxes a minute. How many boxes in 2 days of 24 hours each?",
-          "answer": 28800
+          "answer": 2,
+          "choices": [
+            "290 thousand",
+            "2.9 thousand",
+            "29 thousand",
+            "86 thousand"
+          ]
         },
         {
-          "prompt": "A factory makes 500 bottles a minute. How many bottles in 5 hours?",
-          "answer": 150000
+          "prompt": "Someone blinks 15 times a minute while awake, about 16 hours a day. How many blinks in a week?",
+          "answer": 1,
+          "choices": [
+            "1 million",
+            "100 thousand",
+            "10 thousand",
+            "300 thousand"
+          ]
         }
       ]
     },
@@ -25017,11 +25161,23 @@
       "problems": [
         {
           "prompt": "A tanker holds 20 thousand litres. How many litres do 8 tankers hold?",
-          "answer": 160000
+          "answer": 3,
+          "choices": [
+            "1.6 million",
+            "16 thousand",
+            "480 thousand",
+            "160 thousand"
+          ]
         },
         {
-          "prompt": "A warehouse floor is 120 m long and 20 m wide. How many square metres of floor are there in a building with 5 such floors?",
-          "answer": 12000
+          "prompt": "A warehouse floor is 50 m long and 30 m wide. How many square metres of floor are there in a building with 5 such floors?",
+          "answer": 1,
+          "choices": [
+            "75 thousand",
+            "7.5 thousand",
+            "750",
+            "23 thousand"
+          ]
         }
       ]
     },
@@ -25032,11 +25188,23 @@
       "problems": [
         {
           "prompt": "A classroom has 5 rows of 5 desks. How many desks are there in a school with 26 classrooms?",
-          "answer": 650
+          "answer": 3,
+          "choices": [
+            "6.5 thousand",
+            "65",
+            "2 thousand",
+            "650"
+          ]
         },
         {
-          "prompt": "A water tank holds 500 cubic metres. How many 1-litre bottles of water is that? (1 m³ = 1,000 litres)",
-          "answer": 500000
+          "prompt": "A tanker holds 30 thousand litres. How many litres do 6 tankers hold?",
+          "answer": 3,
+          "choices": [
+            "1.8 million",
+            "18 thousand",
+            "540 thousand",
+            "180 thousand"
+          ]
         }
       ]
     },
@@ -25047,11 +25215,23 @@
       "problems": [
         {
           "prompt": "A classroom has 4 rows of 6 desks. How many desks are there in a school with 12 classrooms?",
-          "answer": 288
+          "answer": 3,
+          "choices": [
+            "2.9 thousand",
+            "28",
+            "860",
+            "290"
+          ]
         },
         {
-          "prompt": "A classroom has 6 rows of 6 desks. How many desks are there in a school with 15 classrooms?",
-          "answer": 540
+          "prompt": "A parking garage has 6 floors with 50 spaces each. How many cars fit in 4 such garages?",
+          "answer": 2,
+          "choices": [
+            "12 thousand",
+            "120",
+            "1.2 thousand",
+            "3.6 thousand"
+          ]
         }
       ]
     },
@@ -25062,11 +25242,23 @@
       "problems": [
         {
           "prompt": "An egg carton holds 12 eggs. A box holds 20 cartons and a pallet holds 47 boxes. How many eggs fit on one pallet?",
-          "answer": 11280
+          "answer": 0,
+          "choices": [
+            "11 thousand",
+            "110 thousand",
+            "1.1 thousand",
+            "34 thousand"
+          ]
         },
         {
-          "prompt": "How many 1 cm cubes fit inside a cube that is 4 m on each side? (1 m = 100 cm)",
-          "answer": 64000000
+          "prompt": "A parking garage has 5 floors with 80 spaces each. How many cars fit in 8 such garages?",
+          "answer": 1,
+          "choices": [
+            "32 thousand",
+            "3.2 thousand",
+            "320",
+            "9.6 thousand"
+          ]
         }
       ]
     },
@@ -25077,11 +25269,23 @@
       "problems": [
         {
           "prompt": "A warehouse floor is 50 m long and 30 m wide. How many square metres of floor are there in a building with 6 such floors?",
-          "answer": 9000
+          "answer": 2,
+          "choices": [
+            "90 thousand",
+            "900",
+            "9 thousand",
+            "27 thousand"
+          ]
         },
         {
-          "prompt": "A parking garage has 5 floors with 50 spaces each. How many cars fit in 8 such garages?",
-          "answer": 2000
+          "prompt": "A shipping box is 20 cm × 30 cm × 20 cm. How many 1 cm cubes fit inside it?",
+          "answer": 3,
+          "choices": [
+            "120 thousand",
+            "1.2 thousand",
+            "36 thousand",
+            "12 thousand"
+          ]
         }
       ]
     },
@@ -25092,11 +25296,23 @@
       "problems": [
         {
           "prompt": "A warehouse floor is 50 m long and 20 m wide. How many square metres of floor are there in a building with 6 such floors?",
-          "answer": 6000
+          "answer": 2,
+          "choices": [
+            "60 thousand",
+            "600",
+            "6 thousand",
+            "18 thousand"
+          ]
         },
         {
-          "prompt": "A tanker holds 30 thousand litres. How many litres do 7 tankers hold?",
-          "answer": 210000
+          "prompt": "A shipping box is 30 cm × 20 cm × 9 cm. How many 1 cm cubes fit inside it?",
+          "answer": 2,
+          "choices": [
+            "54 thousand",
+            "540",
+            "5.4 thousand",
+            "16 thousand"
+          ]
         }
       ]
     },
@@ -25107,11 +25323,23 @@
       "problems": [
         {
           "prompt": "A video is watched 2 million times a day, for 5 minutes each time. How many minutes of it are watched in a week?",
-          "answer": 70000000
+          "answer": 3,
+          "choices": [
+            "700 million",
+            "7 million",
+            "210 million",
+            "70 million"
+          ]
         },
         {
-          "prompt": "A website gets 60 thousand visits an hour. How many visits in 10 days?",
-          "answer": 14400000
+          "prompt": "A website gets 5 thousand visits an hour. How many visits in 19 days?",
+          "answer": 2,
+          "choices": [
+            "23 million",
+            "230 thousand",
+            "2.3 million",
+            "6.8 million"
+          ]
         }
       ]
     },
@@ -25122,11 +25350,23 @@
       "problems": [
         {
           "prompt": "A coffee chain serves 4 million cups a day. How many cups in a year (365 days)?",
-          "answer": 1460000000
+          "answer": 1,
+          "choices": [
+            "15 billion",
+            "1.5 billion",
+            "150 million",
+            "4.4 billion"
+          ]
         },
         {
-          "prompt": "A country has 24 million households and each throws away 5 kilograms of food a week. How many kilograms in a year (52 weeks)?",
-          "answer": 6240000000
+          "prompt": "An airport handles 900 flights a day, each carrying 150 passengers. How many passengers in a year (365 days)?",
+          "answer": 1,
+          "choices": [
+            "490 million",
+            "49 million",
+            "4.9 million",
+            "150 million"
+          ]
         }
       ]
     },
@@ -25137,11 +25377,23 @@
       "problems": [
         {
           "prompt": "A coffee chain serves 2 million cups a day. How many cups in a year (365 days)?",
-          "answer": 730000000
+          "answer": 1,
+          "choices": [
+            "7.3 billion",
+            "730 million",
+            "73 million",
+            "2.2 billion"
+          ]
         },
         {
-          "prompt": "70 million people unlock their phone 50 times a day. How many unlocks in a year (365 days)?",
-          "answer": 1277500000000
+          "prompt": "A city has 8 million people and each drinks 2 litres of water a day. How many litres does it drink in a year (365 days)?",
+          "answer": 1,
+          "choices": [
+            "58 billion",
+            "5.8 billion",
+            "580 million",
+            "18 billion"
+          ]
         }
       ]
     },
@@ -25152,11 +25404,23 @@
       "problems": [
         {
           "prompt": "A supermarket chain has 120 stores. Each sells 500 loaves of bread a day. How many loaves in a year (365 days)?",
-          "answer": 21900000
+          "answer": 2,
+          "choices": [
+            "220 million",
+            "2.2 million",
+            "22 million",
+            "66 million"
+          ]
         },
         {
-          "prompt": "A video is watched 10 million times a day, for 5 minutes each time. How many minutes of it are watched in a week?",
-          "answer": 350000000
+          "prompt": "A town has 5 thousand cars. Each drives 30 km a day. How many km in a 30-day month?",
+          "answer": 2,
+          "choices": [
+            "45 million",
+            "450 thousand",
+            "4.5 million",
+            "14 million"
+          ]
         }
       ]
     },
@@ -25167,11 +25431,23 @@
       "problems": [
         {
           "prompt": "A website gets 5 thousand visits an hour. How many visits in 16 days?",
-          "answer": 1920000
+          "answer": 3,
+          "choices": [
+            "19 million",
+            "190 thousand",
+            "5.8 million",
+            "1.9 million"
+          ]
         },
         {
-          "prompt": "A rail network has 6 million commuters, each making 10 trips a week. How many trips in a year (52 weeks)?",
-          "answer": 3120000000
+          "prompt": "An airport handles 600 flights a day, each carrying 120 passengers. How many passengers in a year (365 days)?",
+          "answer": 3,
+          "choices": [
+            "260 million",
+            "2.6 million",
+            "79 million",
+            "26 million"
+          ]
         }
       ]
     },
@@ -25182,11 +25458,23 @@
       "problems": [
         {
           "prompt": "A website gets 5 thousand visits an hour. How many visits in 2 days?",
-          "answer": 240000
+          "answer": 3,
+          "choices": [
+            "2.4 million",
+            "24 thousand",
+            "720 thousand",
+            "240 thousand"
+          ]
         },
         {
-          "prompt": "A power station produces 2000 megawatt-hours a day. How many megawatt-hours in 5 years (365 days a year)?",
-          "answer": 3650000
+          "prompt": "A video is watched 20 million times a day, for 4 minutes each time. How many minutes of it are watched in a week?",
+          "answer": 1,
+          "choices": [
+            "5.6 billion",
+            "560 million",
+            "56 million",
+            "1.7 billion"
+          ]
         }
       ]
     }
