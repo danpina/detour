@@ -1,0 +1,63 @@
+{
+  "id": "money-0041",
+  "interest": "money",
+  "title": "The rate on the card isn't the rate you pay",
+  "probes": [
+    {
+      "id": "money-0041-p1",
+      "question": "A card quotes 12.99% APR compounded daily. About what is the effective annual rate?",
+      "kind": "mcq",
+      "options": [
+        "12.99%",
+        "13.87%",
+        "16%"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "money-0041-p2",
+      "question": "True or false: compounding daily makes the effective annual rate higher than the quoted APR.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Credit card interest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_card_interest"
+    }
+  ],
+  "difficulty": 3,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-31T15:51:08.028Z"
+  },
+  "type": "story",
+  "image": {
+    "file": "money-0041.webp",
+    "alt": "Illustration of a curve rising slowly and then steeply, with orange coins growing larger along it, like a balance compounding over time",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "panels": [
+      {
+        "text": "Most US credit cards quote an APR, a nominal annual rate. A common example is 12.99%."
+      },
+      {
+        "text": "The card compounds it daily. Interest is added to the balance each day, and tomorrow's interest is charged on a slightly bigger balance."
+      },
+      {
+        "text": "Over a year, 12.99% compounded daily works out to an effective annual rate of about 13.87%."
+      },
+      {
+        "text": "So a $1,000 balance left alone would grow to about $1,139 in a year, before any new purchases or fees."
+      },
+      {
+        "text": "The twist: for a typical UK card issuer, between 80% and 90% of income from cardholders comes from interest charges."
+      }
+    ]
+  }
+}

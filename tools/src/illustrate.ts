@@ -101,6 +101,25 @@ const scenes: Record<string, Scene> = {
       );
     },
   },
+  market: {
+    alt: "Illustration of a busy market stall in solid colours next to a house drawn only as a dashed outline, with a pot and a broom inside",
+    svg: () => {
+      // Left: the market, drawn solid (it is counted). Right: the household, only outlined (it is left out).
+      const stripes = Array.from({ length: 6 }, (_, i) => `<rect x="${130 + i * 60}" y="520" width="60" height="90" fill="${i % 2 ? CREAM : TEAL}"/><circle cx="${160 + i * 60}" cy="610" r="30" fill="${i % 2 ? CREAM : TEAL}"/>`).join("");
+      const goods = [[190, ORANGE], [270, TEAL], [350, ORANGE], [430, DEEP]].map(([x, c]) => `<circle cx="${x}" cy="735" r="34" fill="${c}"/>`).join("");
+      return wrap(
+        `<rect y="900" width="${W}" height="450" fill="${SAND}"/>
+         ${stripes}<rect x="130" y="520" width="360" height="12" fill="${CHAR}"/>
+         <rect x="140" y="610" width="14" height="290" fill="${CHAR}"/><rect x="466" y="610" width="14" height="290" fill="${CHAR}"/>
+         <rect x="130" y="780" width="360" height="120" rx="12" fill="${DEEP}"/>${goods}
+         <circle cx="310" cy="400" r="70" fill="${ORANGE}"/><circle cx="310" cy="400" r="44" fill="none" stroke="#fff" stroke-opacity="0.45" stroke-width="6"/>
+         <path d="M 600 900 L 600 700 L 780 560 L 960 700 L 960 900" fill="none" stroke="${CHAR}" stroke-width="10" stroke-dasharray="26 22" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+         <rect x="690" y="760" width="90" height="140" rx="10" fill="none" stroke="${CHAR}" stroke-width="8" stroke-dasharray="14 14" opacity="0.5"/>
+         <g opacity="0.55"><circle cx="880" cy="820" r="40" fill="none" stroke="${CHAR}" stroke-width="8"/><rect x="850" y="855" width="60" height="30" rx="6" fill="${CHAR}"/>
+         <line x1="650" y1="860" x2="650" y2="720" stroke="${CHAR}" stroke-width="10" stroke-linecap="round"/><polygon points="625,860 675,860 690,895 610,895" fill="${CHAR}"/></g>`,
+      );
+    },
+  },
   fourcolor: {
     alt: "Illustration of an abstract map made of irregular regions in exactly four colours, with no two neighbouring regions sharing a colour",
     svg: () => {

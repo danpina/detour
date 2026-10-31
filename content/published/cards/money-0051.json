@@ -1,0 +1,48 @@
+{
+  "id": "money-0051",
+  "interest": "money",
+  "title": "What GDP leaves out",
+  "probes": [
+    {
+      "id": "money-0051-p1",
+      "question": "Which of these is left out of GDP?",
+      "kind": "mcq",
+      "options": [
+        "Household spending on food",
+        "A firm buying new machinery",
+        "Unpaid household work"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "money-0051-p2",
+      "question": "True or false: Simon Kuznets, who first developed the modern concept of GDP, warned against using it as a measure of welfare.",
+      "kind": "tf",
+      "answer": true
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gross domestic product (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gross_domestic_product"
+    }
+  ],
+  "difficulty": 2,
+  "version": 1,
+  "review": {
+    "by": "agent",
+    "at": "2026-10-31T15:51:10.732Z"
+  },
+  "type": "fact_why",
+  "image": {
+    "file": "money-0051.webp",
+    "alt": "Illustration of a busy market stall in solid colours next to a house drawn only as a dashed outline, with a pot and a broom inside",
+    "kind": "generated",
+    "credit": "Illustration",
+    "license": "Generated"
+  },
+  "body": {
+    "claim": "GDP counts what passes through markets, so it leaves out unpaid household work and volunteering.",
+    "why": "GDP excludes activities not provided through the market, and pollution from industrial output is not counted either. Simon Kuznets, who first developed the modern concept for a 1934 US Congress report, warned against using it as a measure of welfare."
+  }
+}

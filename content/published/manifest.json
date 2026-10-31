@@ -1,6 +1,6 @@
 {
-  "version": 403,
-  "generated_at": "2026-10-27T17:38:45.564Z",
+  "version": 405,
+  "generated_at": "2026-10-31T15:51:10.977Z",
   "cards": [
     {
       "id": "hist-0001",
@@ -858,6 +858,11 @@
       "sha256": "879e644ce780064138a0a857ee2f85c7edce3701945a18a30ba5074608faf6aa"
     },
     {
+      "id": "money-0041",
+      "file": "cards/money-0041.json",
+      "sha256": "232e9b08835dcdcd8d1808107c7d02fd8cbeaab6301f51af34f00b1d74a9a85c"
+    },
+    {
       "id": "money-0042",
       "file": "cards/money-0042.json",
       "sha256": "052f47d565a110fbefbc62f194985e46b4e43890809f6ac4f1feae5eaaae6f25"
@@ -901,6 +906,11 @@
       "id": "money-0050",
       "file": "cards/money-0050.json",
       "sha256": "6938190b75a621bddb87fb251d7f120ce81482a37576ff0d673803b265ac1617"
+    },
+    {
+      "id": "money-0051",
+      "file": "cards/money-0051.json",
+      "sha256": "4808857db05f7455fec2ba9e41db98cf53f7ed75d60483b5492c932668677977"
     },
     {
       "id": "money-0052",
@@ -2840,6 +2850,11 @@
       "bytes": 97488
     },
     {
+      "file": "images/money-0041.webp",
+      "sha256": "24b75d5f175efe3f0cf096686a34b143e9e4ad494a7c765893f33f69e47b0770",
+      "bytes": 8408
+    },
+    {
       "file": "images/money-0042.webp",
       "sha256": "38b71ab9f77681760ce4196813f5dcf829afe01b19d24602d1b36223ad1fcfe5",
       "bytes": 118234
@@ -2883,6 +2898,11 @@
       "file": "images/money-0050.webp",
       "sha256": "c7635695aca8938676b56858834bc7e31130230d6fd5966da8195490a7718c4b",
       "bytes": 22474
+    },
+    {
+      "file": "images/money-0051.webp",
+      "sha256": "a480399b980e883ffbd265db8f8a1fca505643c839c8bbda35c6cd9ccc1829fa",
+      "bytes": 11822
     },
     {
       "file": "images/money-0052.webp",

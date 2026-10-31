@@ -98,6 +98,16 @@
       "height": 1200,
       "alt_suggestion": "Credit cards",
       "file": "cand-7.jpg"
+    },
+    {
+      "id": "generated-growth",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: growth",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-growth.png",
+      "alt_suggestion": "Illustration of an exponential curve rising from flat to steep, with coins stacked along it"
     }
   ],
   "rejected": [],

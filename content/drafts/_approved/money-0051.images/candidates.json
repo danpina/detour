@@ -86,6 +86,16 @@
       "height": 3024,
       "alt_suggestion": "Moore Jackson Community Garden, Woodside, New York, 2025. Formerly the Moore-Jackson Cemetery. Volunteer-run with public programming.",
       "file": "cand-6.jpg"
+    },
+    {
+      "id": "generated-market",
+      "source": "generated",
+      "kind": "generated",
+      "title": "Illustration: market",
+      "credit": "Illustration",
+      "license": "Generated",
+      "file": "gen-market.png",
+      "alt_suggestion": "Illustration of a busy market stall in solid colours next to a house drawn only as a dashed outline, with a pot and a broom inside"
     }
   ],
   "rejected": [],
