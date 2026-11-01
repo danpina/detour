@@ -50,7 +50,7 @@ struct SessionView: View {
                 }
             }
 
-            // Its own strip below the card, so it never covers an answer.
+            // Its own strip below the card, so it never covers an answer. It is the way out of a round in the middle.
             if finishedCount == nil {
                 Button(run.feed ? "Done for now" : "Leave round", action: onClose)
                     .font(.caption)
