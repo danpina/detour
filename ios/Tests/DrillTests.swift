@@ -64,19 +64,19 @@ final class DrillTests: XCTestCase {
         XCTAssertFalse(Drills.judge(.estimation, e, input: "lots").correct)
     }
 
-    func testLevelingNeedsTwentyAttemptsAtEightyPercent() {
+    func testLevelingNeedsTenAttemptsAtEightyPercent() {
         func results(_ right: Int, _ total: Int) -> [Bool] { (0..<total).map { $0 < right } }
-        XCTAssertFalse(Skills.shouldLevelUp(results(16, 19)))
-        XCTAssertFalse(Skills.shouldLevelUp(results(15, 20)))
-        XCTAssertTrue(Skills.shouldLevelUp(results(16, 20)))
+        XCTAssertFalse(Skills.shouldLevelUp(results(8, 9)))
+        XCTAssertFalse(Skills.shouldLevelUp(results(7, 10)))
+        XCTAssertTrue(Skills.shouldLevelUp(results(8, 10)))
 
         var p = SkillProgress(track: .mentalMath)
         var leveledUp = false
-        for round in 0..<7 {
+        for round in 0..<4 {
             (p, leveledUp) = Skills.apply(p, results: [true, true, true], now: Date(timeIntervalSince1970: Double(round)))
         }
         XCTAssertEqual(p.level, 2)
-        XCTAssertEqual(p.attemptsTotal, 21)
+        XCTAssertEqual(p.attemptsTotal, 12)
         XCTAssertTrue(p.recentResults.isEmpty)
         XCTAssertTrue(leveledUp)
     }

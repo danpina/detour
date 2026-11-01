@@ -146,7 +146,7 @@ export function App() {
             source="free"
             dryRun={screen.dryRun}
             onFinish={(n) => (screen.dryRun ? setScreen({ name: "home" }) : screen.feed ? void startSet(interests, true, screen.round) : setScreen({ name: "end", learned: n, round: screen.round }))}
-            onExit={screen.feed ? () => setScreen({ name: "home" }) : undefined}
+            onExit={() => setScreen({ name: "home" })} exitLabel={screen.feed ? "Done for now" : "Leave round"}
           />
         )}
 

@@ -155,8 +155,8 @@ struct ProgressScreen: View {
                         Text("Level \(s.level) / \(s.maxLevel)").font(.subheadline).foregroundStyle(.primary)
                     }
                     Text(s.levelName + " · " + String(s.attempts) + (s.attempts == 1 ? " problem" : " problems") + " answered").font(.caption).foregroundStyle(.secondary)
-                    ProgressView(value: min(1, Double(s.recentTotal) / 20))
-                    Text(s.recentTotal > 0 ? "\(s.recentRight) of \(s.recentTotal) recent answers right (level up at 80% over 20)" : "Practise in a Math round")
+                    ProgressView(value: min(1, Double(s.recentTotal) / 10))
+                    Text(s.recentTotal > 0 ? "\(s.recentRight) of \(s.recentTotal) recent answers right (level up at 80% over 10)" : "Practise in a Math round")
                         .font(.caption).foregroundStyle(.secondary)
                     Text("All levels").font(.caption.weight(.medium)).foregroundStyle(.teal)
                 }

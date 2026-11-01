@@ -181,7 +181,7 @@ struct DrillView: View {
             } else {
                 Text("Level \(s.progress.level): \(s.progress.recentResults.filter { $0 }.count) of your last \(s.progress.recentResults.count) right.")
                     .foregroundStyle(.white.opacity(0.85))
-                Text(s.progress.level >= info.maxLevel ? "You're on the top level." : "Level up at 80% over 20 attempts.")
+                Text(s.progress.level >= info.maxLevel ? "You're on the top level." : "Level up at 80% over 10 attempts.")
                     .font(.footnote).foregroundStyle(.white.opacity(0.6))
             }
             Button { actions.next() } label: { Text(spec.practice ? "Done" : "Next").whitePill() }.padding(.top, 24)

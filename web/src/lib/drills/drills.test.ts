@@ -213,25 +213,25 @@ describe("answers", () => {
   });
 });
 
-describe("levelling up (80% over 20 attempts)", () => {
+describe("levelling up (80% over 10 attempts)", () => {
   const results = (right: number, total: number) => Array.from({ length: total }, (_, i) => i < right);
 
-  it("needs 20 attempts and 80%", () => {
-    expect(shouldLevelUp(results(16, 19))).toBe(false);
-    expect(shouldLevelUp(results(15, 20))).toBe(false);
-    expect(shouldLevelUp(results(16, 20))).toBe(true);
+  it("needs 10 attempts and 80%", () => {
+    expect(shouldLevelUp(results(8, 9))).toBe(false);
+    expect(shouldLevelUp(results(7, 10))).toBe(false);
+    expect(shouldLevelUp(results(8, 10))).toBe(true);
   });
 
-  it("only the last 20 attempts count", () => {
-    expect(shouldLevelUp([...results(0, 10), ...results(20, 20)])).toBe(true);
-    expect(shouldLevelUp([...results(20, 20), ...results(0, 10)])).toBe(false);
+  it("only the last 10 attempts count", () => {
+    expect(shouldLevelUp([...results(0, 10), ...results(10, 10)])).toBe(true);
+    expect(shouldLevelUp([...results(10, 10), ...results(0, 10)])).toBe(false);
   });
 
   it("levels up, resets the window, and keeps totals", () => {
     let p: SkillProgress = emptyProgress("mental-math");
     let up = false;
-    for (let round = 0; round < 7; round++) ({ progress: p, leveledUp: up } = applyResults(p, [true, true, true], 1000 + round));
-    expect(p.attempts_total).toBe(21);
+    for (let round = 0; round < 4; round++) ({ progress: p, leveledUp: up } = applyResults(p, [true, true, true], 1000 + round));
+    expect(p.attempts_total).toBe(12);
     expect(p.level).toBe(2);
     expect(p.recent_results).toEqual([]);
     expect(up).toBe(true);

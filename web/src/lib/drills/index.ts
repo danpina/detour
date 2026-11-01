@@ -179,7 +179,7 @@ export { timesOff };
 
 // ---------- levels ----------
 
-export const LEVEL_WINDOW = 20;
+export const LEVEL_WINDOW = 10;
 export const LEVEL_THRESHOLD = 0.8;
 
 export type SkillProgress = {
@@ -193,7 +193,7 @@ export type SkillProgress = {
 
 export const emptyProgress = (track_id: TrackId): SkillProgress => ({ track_id, level: 1, recent_results: [], attempts_total: 0, last_at: 0 });
 
-/** Level up at 80% over the last 20 attempts at this level. */
+/** Level up at 80% over the last 10 attempts at this level. */
 export function shouldLevelUp(recent: boolean[]): boolean {
   if (recent.length < LEVEL_WINDOW) return false;
   const last = recent.slice(-LEVEL_WINDOW);

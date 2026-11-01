@@ -163,3 +163,12 @@ test("a skill page lists its levels, and a true-or-false level can be practised"
   await page.getByRole("button", { name: "True", exact: true }).click();
   await expect(page.getByText(/Answer: (True|False)/)).toBeVisible();
 });
+
+test("a round can be left in the middle", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Not now" }).click();
+  for (const name of ["History", "Science", "Money & Markets"]) await page.getByRole("button", { name }).first().click();
+  await page.getByRole("button", { name: "Show me a quick one" }).click();
+  await page.getByRole("button", { name: "Leave round" }).click();
+  await expect(page.getByRole("button", { name: "Leave round" })).toHaveCount(0);
+});

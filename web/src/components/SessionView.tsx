@@ -18,8 +18,9 @@ type Props = {
   source: "free";
   /** Called after the last card. */
   onFinish: (completed: number) => void;
-  /** Free-scroll feed: show a way out. */
+  /** A way out in the middle: "Done for now" in the free-scroll feed, "Leave round" in a round. */
   onExit?: () => void;
+  exitLabel?: string;
   /** Reviewer mode: look at cards without recording progress, events or analytics. */
   dryRun?: boolean;
 };
@@ -29,7 +30,7 @@ const itemCardId = (it: SessionItem) => (it.kind === "drill" ? `drill:${it.drill
 const itemKey = (it: SessionItem) =>
   it.kind === "drill" ? `drill:${it.drill.track}:${it.drill.seed}` : it.kind === "game" ? `game:${it.game}` : `${it.kind}:${it.card.id}:${it.kind === "review" ? it.probe.id : ""}`;
 
-export function SessionView({ items, source, onFinish, onExit, dryRun = false }: Props) {
+export function SessionView({ items, source, onFinish, onExit, exitLabel = "Done for now", dryRun = false }: Props) {
   const [index, setIndex] = useState(0);
   const [completed, setCompleted] = useState<Set<string>>(new Set());
   const shownAt = useRef(Date.now());
@@ -144,11 +145,11 @@ export function SessionView({ items, source, onFinish, onExit, dryRun = false }:
       {onExit && (
         <button
           onClick={onExit}
-          aria-label="Stop scrolling"
+          aria-label={exitLabel}
           className="absolute inset-x-0 bottom-0 z-30 flex items-start justify-center bg-black pt-2 text-xs text-white/80 hover:text-white"
           style={{ height: "calc(2.25rem + env(safe-area-inset-bottom))" }}
         >
-          Done for now
+          {exitLabel}
         </button>
       )}
     </div>

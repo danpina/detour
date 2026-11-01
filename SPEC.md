@@ -65,7 +65,7 @@ Open guarded app ──> Shield ("Quick one?") ──> 5-card session ──> Un
 - **Each card carries probes** (1–2 recall questions: mcq, true/false, estimate, cloze). The probe comes back later, not the card.
 - **Scheduling: FSRS** (`ts-fsrs` on web, a Swift port on iOS; must produce identical schedules). Automatic rating: right + fast = Easy, right + slow = Good, wrong = Again.
 - **Session mix (5 cards):** 2 due reviews + 2 new + 1 skill drill; new cards fill empty review slots.
-- **Skill tracks:** mental math and estimation at launch (rule-generated drills, infinite content); level-up at 80% over 20 attempts.
+- **Skill tracks:** mental math and estimation at launch (rule-generated drills, infinite content); level-up at 80% over 10 attempts.
 - **Progress:** remembered score, knowledge map per interest, skill levels, streak with freezes, time rerouted (iOS, on-device report view only).
 
 All of this is computed and stored on the device.

@@ -159,10 +159,10 @@ export function ProgressScreen({ onOpenLearned, onOpenSkill }: { onOpenLearned: 
               </div>
               <div className="text-xs text-neutral-500 dark:text-neutral-400">{s.levelName} · {s.attempts} {s.attempts === 1 ? "problem" : "problems"} answered</div>
               <div className="mt-2 h-2 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800">
-                <div className="h-full rounded-full bg-teal-500" style={{ width: `${Math.min(100, (s.recentTotal / 20) * 100)}%` }} />
+                <div className="h-full rounded-full bg-teal-500" style={{ width: `${Math.min(100, (s.recentTotal / 10) * 100)}%` }} />
               </div>
               <div className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                {s.recentTotal ? `${s.recentRight} of ${s.recentTotal} recent answers right (level up at 80% over 20)` : "Practise in a Math round"}
+                {s.recentTotal ? `${s.recentRight} of ${s.recentTotal} recent answers right (level up at 80% over 10)` : "Practise in a Math round"}
               </div>
               <div className="mt-1 text-xs font-medium text-teal-700 dark:text-teal-300">All levels ›</div>
             </button>

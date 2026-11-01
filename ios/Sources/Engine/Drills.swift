@@ -549,7 +549,7 @@ enum Drills {
     }
 }
 
-// MARK: Levels (80% over the last 20 attempts)
+// MARK: Levels (80% over the last 10 attempts)
 
 struct SkillProgress: Codable, Hashable {
     var track: TrackId
@@ -561,7 +561,7 @@ struct SkillProgress: Codable, Hashable {
 }
 
 enum Skills {
-    static let window = 20
+    static let window = 10
     static let threshold = 0.8
 
     static func shouldLevelUp(_ recent: [Bool]) -> Bool {

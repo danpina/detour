@@ -51,8 +51,8 @@ struct SessionView: View {
             }
 
             // Its own strip below the card, so it never covers an answer.
-            if run.feed && finishedCount == nil {
-                Button("Done for now", action: onClose)
+            if finishedCount == nil {
+                Button(run.feed ? "Done for now" : "Leave round", action: onClose)
                     .font(.caption)
                     .foregroundStyle(.white.opacity(0.8))
                     .frame(maxWidth: .infinity)
