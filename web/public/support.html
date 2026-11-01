@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detour support</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#fafaf9; --ink:#1c1917; --mute:#57534e; --line:#e7e5e4; --accent:#0f766e; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0b0b0f; --ink:#f5f5f4; --mute:#a8a29e; --line:#292524; --accent:#2dd4bf; } }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width:640px; margin:0 auto; padding:32px 20px 64px; }
+    h1 { font-size:28px; margin:0 0 4px; }
+    h2 { font-size:18px; margin:32px 0 6px; }
+    p, li { color:var(--mute); }
+    li { margin:4px 0; }
+    a { color:var(--accent); }
+    .meta { font-size:14px; }
+    label { display:block; margin:14px 0 4px; font-weight:600; }
+    input, textarea { width:100%; box-sizing:border-box; padding:10px 12px; font:inherit; color:var(--ink); background:var(--bg); border:1px solid var(--line); border-radius:10px; }
+    button { margin-top:18px; padding:12px 22px; font:inherit; font-weight:600; color:#fff; background:var(--accent); border:0; border-radius:12px; }
+    .hp { position:absolute; left:-9999px; }
+    code { background:var(--line); padding:1px 5px; border-radius:4px; font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="./">← Back to Detour</a></p>
+  <h1>Support</h1>
+  <p>Found a bug, or have a question or an idea? Write to us here. The message goes straight to the person who makes Detour.</p>
+
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="de1be78e-ca57-468d-b516-4b9183849c9f">
+    <input type="hidden" name="subject" value="Detour support">
+    <input type="hidden" name="from_name" value="Detour support form">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+    <label for="msg">Your message</label>
+    <textarea id="msg" name="message" rows="6" required></textarea>
+    <label for="mail">Your email, only if you would like a reply</label>
+    <input id="mail" name="email" type="email" autocomplete="email">
+    <button type="submit">Send</button>
+  </form>
+
+  <p class="meta">Detour keeps no account or personal data. What you type here is used only to answer you. See <a href="privacy.html">Privacy</a>.</p>
+</main>
+</body>
+</html>
