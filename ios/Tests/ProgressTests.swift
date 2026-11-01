@@ -267,7 +267,7 @@ final class AppModelTests: XCTestCase {
         let (model, url) = makeModel()
         defer { try? FileManager.default.removeItem(at: url) }
         var leveled = false
-        for _ in 0..<7 { leveled = model.recordDrillRound(track: .mentalMath, results: [true, true, true]).leveledUp }
+        for _ in 0..<4 { leveled = model.recordDrillRound(track: .mentalMath, results: [true, true, true]).leveledUp }
         XCTAssertTrue(leveled)
         XCTAssertEqual(model.data.skills.first?.level, 2)
     }
